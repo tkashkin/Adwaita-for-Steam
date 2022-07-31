@@ -1,0 +1,11 @@
+accountmenu.layout
+{
+	layout
+	{
+		place { control="view_profile_button" width=max height=30 margin-top=4 margin-left=4 margin-right=4 }
+		place { control="view_wallet_button" width=max height=30 margin-top=34 margin-left=4 margin-right=4 }
+		place { control="view_preferences_button" width=max height=30 margin-top=64 margin-left=4 margin-right=4 }
+		place { control="change_user_button" width=100 height=30 margin-top=94 margin-right=4 align=right }
+		place { control="view_account_button" width=max height=30 margin-top=94 margin-left=4 margin-right=2 end-right="change_user_button" }
+	}
+}

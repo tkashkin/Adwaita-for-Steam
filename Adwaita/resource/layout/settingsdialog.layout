@@ -1,0 +1,33 @@
+settingsdialog.layout
+{
+	styles
+	{
+		FrameTitle
+		{
+			inset="0 0 0 0"
+			padding-left=320
+		}
+
+		Button
+		{
+			textcolor="headerbar_backdrop_fg"
+		}
+		Button:framefocus
+		{
+			textcolor="headerbar_fg"
+		}
+	}
+	layout
+	{
+		place { control="frame_title" x=0 y=0 width=max height=48 }
+
+		place { control="cancelbutton" align=left margin-left=7 margin-top=7 height=34 }
+		place { control="okbutton" align=right margin-right=7 margin-top=7 height=34 }
+
+		place { control="settingslist" x=0 y=48 width=200 height=max }
+		place { control="sheet" start=settingslist x=0 y=0 width=max height=max }
+
+		region { name="hidden" width=0 height=0 }
+		place { control="frame_minimize,frame_maximize,frame_close" region=hidden width=0 height=0 }
+	}
+}

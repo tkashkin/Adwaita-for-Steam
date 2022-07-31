@@ -1,0 +1,121 @@
+steam.styles
+{
+
+	include "adw/colors.styles"
+
+	include "adw/controls/window.styles"
+	include "adw/controls/button.styles"
+	include "adw/controls/entry.styles"
+	include "adw/controls/popup.styles"
+	include "adw/controls/scrollbar.styles"
+
+	include "adw/rootdialog.styles"
+
+	// include default Steam styles to ensure unstyled controls still work
+	include "../../resource/styles/steam.styles"
+
+	colors
+	{
+		basefont="Cantarell"
+		none="0 0 0 0"
+	}
+
+	styles
+	{
+		Page
+		{
+			bgcolor="view_bg"
+			textcolor="view_fg"
+			render_bg {}
+		}
+
+		CDialogSettings
+		{
+			inset="0 0 0 0"
+			minimum-width=700
+			minimum-height=600
+		}
+
+		PropertySheet
+		{
+			inset="0 0 0 0"
+			bgcolor="none"
+			render_bg {}
+		}
+
+		SettingsList
+		{
+			inset="0 0 0 0"
+			font-family=basefont
+			bgcolor="window_bg"
+			render_bg {}
+		}
+
+		ListPanel
+		{
+			inset="0 0 0 0"
+			selectedbgcolor="button_bg"
+			padding-left=16
+			font-family=basefont
+			font-size=16
+			font-style=none
+			render
+			{
+				0="fill(x1-1, y0, x1, y1, border)"
+			}
+		}
+
+		ListPanelColumnHeader
+		{
+			inset="0 0 0 0"
+			minimum-height=1
+			bgcolor="window_bg"
+			render_bg {}
+		}
+
+		ListPanelSectionHeader
+		{
+			inset="0 0 0 0"
+			minimum-height=1
+			bgcolor="window_bg"
+			render_bg {}
+		}
+
+		ListPanelInterior
+		{
+			inset="0 0 0 0"
+			bgcolor="window_bg"
+			render_bg {}
+		}
+
+		// splash screen
+		ProgressBox
+		{
+			render_bg
+			{
+				0="image(x0+160, y0+24, x1, y0, assets/splash_logo)"
+			}
+		}
+		"ProgressBox FrameTitle"
+		{
+			textcolor=none
+			bgcolor=none
+			render_bg {}
+		}
+		"ProgressBox Label"
+		{
+			textcolor=none
+			bgcolor=none
+		}
+		"ProgressBox FrameCloseButton"
+		{
+			render_bg {}
+		}
+		"ProgressBox Button"
+		{
+			textcolor=none
+			bgcolor=none
+			render_bg {}
+		}
+	}
+}

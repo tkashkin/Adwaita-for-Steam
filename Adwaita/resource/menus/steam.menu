@@ -1,0 +1,35 @@
+menubar
+{
+	Steam
+	{
+		text=""
+
+		StartVR			{ text="#steam_menu_startvr" command="startvr" }
+		ExitVR			{ text="#steam_menu_exitvr" command="exitvr" }
+		BigPicture		{ text="#steam_menu_bigpicturemode" shellcmd="steam://open/bigpicture" }
+		
+		Divider			{}
+		
+		GoOnline		{ text="#SteamUI_OfflineMode_GoOnline" command="goonline" }
+		GoOffline		{ text="#SteamUI_OfflineMode_GoOffline"	command="gooffline" }
+		ChangeUser		{ text="#steam_menu_changeuser" command="ChangeUser" }
+
+		Divider			{}
+
+		Announcements	{ text="Steam Announcements" shellcmd="steam://url/SteamAnnouncements" }
+		Support			{ text="#steam_menu_support" command="Support" }
+
+		Divider			{}
+
+		About			{ text="#steam_about" command="About" }
+		CheckForUpdates	{ text="#steam_menu_checkforupdates" command="CheckForUpdates" }
+		SystemInfo		{ text="#steam_menu_systeminfo" command="SystemInfo" }
+		Console			{ text="#app_task_console" shellcmd="steam://open/console" }
+		Settings		{ text="#steam_menu_settings" command="Settings" }
+
+		Divider			{}
+
+		Restart			{ text="#Steam_MustRestart_Button" command="RestartSteam" }	
+		Exit			{ text="#Steam_ExitSteam" command="Exit" }	
+	}
+}
