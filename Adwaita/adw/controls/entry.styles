@@ -27,6 +27,16 @@ entry.styles
 			}
 			render {}
 		}
+		TextEntry:empty
+		{
+			font-family=basefont
+			font-size=15
+			font-style=none
+			textcolor="button_disabled_fg"
+			shadowtextcolor="button_fg"
+			selectedtextcolor="accent_fg"
+			selectedbgcolor="accent_bg"
+		}
 		TextEntry:hover
 		{
 			render_bg

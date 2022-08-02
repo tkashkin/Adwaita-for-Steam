@@ -19,8 +19,7 @@ A skin to make Steam look more like a native GNOME app
 ### Limitations
 
 * **Rounded corners**: impossible to do in a Steam skin, use [mutter-rounded](https://github.com/yilozt/mutter-rounded) for GNOME or some other way to force rounded corners
-* **Height of menu items**: doesn't seem to be possible to increase
-* **Settings sidebar items**: seems to be impossible to modify anything other than colors
+* **Height of menu/sidebar items**: doesn't seem to be possible to increase
 * **New library, new chat, other web-based client parts**: not skinnable without third-party tools, not planned as part of this project
 
 ## Requirements
