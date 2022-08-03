@@ -10,7 +10,7 @@ settingsdialog.layout
 		place { control="settingslist" x=0 y=48 width=180 height=max }
 		place { control="sheet" x=0 y=48 width=max height=max }
 
-		region { name="hidden" width=0 height=0 }
-		place { control="frame_minimize,frame_maximize,frame_close" region=hidden width=0 height=0 }
+		region { name="hidden" width=0 height=0 margin-left=-999 }
+		place { control="frame_minimize,frame_maximize,frame_close" region="hidden" width=0 height=0 }
 	}
 }

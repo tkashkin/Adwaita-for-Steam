@@ -24,7 +24,7 @@ accountbutton.layout
 		place { control="account_menu_button" align=left height=28 width=28 }
 		place { control="account_avatar" align=right height=28 width=28 }
 
-		region { name="hidden" width=0 height=0 }
-		place { control="account_persona,account_balance,account_drop_down" width=0 height=0 region=hidden }
+		region { name="hidden" width=0 height=0 margin-left=-999 }
+		place { control="account_persona,account_balance,account_drop_down" region="hidden" width=0 height=0 }
 	}
 }

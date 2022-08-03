@@ -192,7 +192,7 @@ htmlfindbar.layout
 		place { control="Previous,Next" margin-left=232 margin-top=6 width=34 height=34 spacing=1 }
 		place { control="Close" align=right margin-right=11 margin-top=11 width=24 height=24 }
 
-		region { name="hidden" width=0 height=0 }
-		place { control="SearchThisPage" region=hidden width=0 height=0 }
+		region { name="hidden" width=0 height=0 margin-left=-999 }
+		place { control="SearchThisPage" region="hidden" width=0 height=0 }
 	}
 }

@@ -58,7 +58,7 @@ uistatuspanel.layout
 		place { control="StatusDownloading" align=left x=0 y=0 width=34 height=34 }
 		place { control="StatusProgressBar" align=left x=11 y=23 width=12 height=2 }
 
-		region { name="hidden" width=0 height=0 }
+		region { name="hidden" width=0 height=0 margin-left=-999 }
 		place { control="StatusPaused,StatusComplete" region="hidden" width=0 height=0 }
 	}
 }

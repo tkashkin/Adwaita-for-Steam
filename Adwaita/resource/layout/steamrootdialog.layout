@@ -11,7 +11,7 @@ steamrootdialog.layout
 
 		place { control="frame_captiongrip" margin=2 width=max height=104 }
 
-		region { name="hidden" width=0 height=0 }
-		place { control="fullscreen,startvr,exitvr,add_game,AnnouncementButton,ParentalLockButton,universe_label,EOLAlert,SupportAlert" width=0 height=0 region=hidden }
+		region { name="hidden" width=0 height=0 margin-left=-999 }
+		place { control="fullscreen,startvr,exitvr,add_game,AnnouncementButton,ParentalLockButton,universe_label,EOLAlert,SupportAlert" region="hidden" width=0 height=0 }
 	}
 }

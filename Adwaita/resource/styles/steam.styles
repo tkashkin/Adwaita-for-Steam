@@ -51,5 +51,31 @@ steam.styles
 			bgcolor=none
 			render_bg {}
 		}
+
+		QueryBox
+		{
+			bgcolor="popover_bg"
+			textcolor="popover_fg"
+		}
+		"QueryBox FrameTitle"
+		{
+			minimum-height=80
+			textcolor="popover_fg"
+			font-size=20
+			inset-left=10
+			render_bg {}
+		}
+		"QueryBox Label"
+		{
+			textcolor="popover_fg"
+			font-size=15
+			inset-bottom=16
+		}
+		"QueryBox Button"
+		{
+			textcolor="popover_fg"
+			font-size=15
+			inset-left=20
+		}
 	}
 }

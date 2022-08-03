@@ -1,0 +1,143 @@
+subpaneloptioncompat.layout
+{
+	styles
+	{
+		Highlight
+		{
+			textcolor="window_fg"
+			font-weight=700
+			render
+			{
+				0="image(x0, y1, x0+6, y1+6, assets/corners/6_mask_window_bg/tl)"
+				1="image(x1-6, y1, x1, y1+6, assets/corners/6_mask_window_bg/tr)"
+			}
+		}
+
+		CheckButton
+		{
+			inset=6
+			image="assets/checkbox_padded/unchecked"
+			render
+			{
+				0="fill(x0, y1-1, x1, y1, headerbar_shade)"
+			}
+			render_bg
+			{
+				0="fill(x0, y0, x1, y1, button_bg)"
+			}
+		}
+		CheckButton:hover
+		{
+			image="assets/checkbox_padded/unchecked_hover"
+			render_bg
+			{
+				0="fill(x0, y0, x1, y1, button_hover_bg)"
+			}
+		}
+		CheckButton:active
+		{
+			render_bg
+			{
+				0="fill(x0, y0, x1, y1, button_active_bg)"
+			}
+		}
+		CheckButton:selected
+		{
+			image="assets/checkbox_padded/checked"
+		}
+		CheckButton:selected:hover
+		{
+			image="assets/checkbox_padded/checked_hover"
+		}
+		CheckButton:disabled
+		{
+			image="assets/checkbox_padded/unchecked_disabled"
+		}
+		CheckButton:selected:disabled
+		{
+			image="assets/checkbox_padded/checked_disabled"
+		}
+
+		ComboBox
+		{
+			font-size=14
+			inset="300 0 -12 0"
+			render
+			{
+				0="image(x0+14, y0+17, x0+30, y1-17, assets/icons/settings)"
+			}
+			render_bg
+			{
+				0="fill(x0, y0, x1, y1-6, button_bg)"
+				1="fill(x0+6, y1-6, x1-6, y1, button_bg)"
+				2="image(x0, y1-6, x0+6, y1, assets/corners/6_w10/bl)"
+				3="image(x1-6, y1-6, x1, y1, assets/corners/6_w10/br)"
+			}
+		}
+		ComboBox:hover
+		{
+			render_bg
+			{
+				0="fill(x0, y0, x1, y1-6, button_hover_bg)"
+				1="fill(x0+6, y1-6, x1-6, y1, button_hover_bg)"
+				2="image(x0, y1-6, x0+6, y1, assets/corners/6_w15/bl)"
+				3="image(x1-6, y1-6, x1, y1, assets/corners/6_w15/br)"
+			}
+		}
+		ComboBox:active
+		{
+			render_bg
+			{
+				0="fill(x0, y0, x1, y1-6, button_hover_bg)"
+				1="fill(x0+6, y1-6, x1-6, y1, button_hover_bg)"
+				2="image(x0, y1-6, x0+6, y1, assets/corners/6_w15/bl)"
+				3="image(x1-6, y1-6, x1, y1, assets/corners/6_w15/br)"
+			}
+		}
+		ComboBox:disabled
+		{
+			render_bg
+			{
+				0="fill(x0, y0, x1, y1-6, button_disabled_bg)"
+				1="fill(x0+6, y1-6, x1-6, y1, button_disabled_bg)"
+				2="image(x0, y1-6, x0+6, y1, assets/corners/6_w5/bl)"
+				3="image(x1-6, y1-6, x1, y1, assets/corners/6_w5/br)"
+			}
+		}
+
+		Label
+		{
+			font-size=14
+			textcolor="window_fg"
+		}
+
+		URLLabel
+		{
+			font-style=none
+			font-weight=700
+			textcolor="window_fg"
+		}
+		URLLabel:hover
+		{
+			font-style=underline
+		}
+	}
+
+	layout
+	{
+		region { name="content" margin-top=16 margin-bottom=16 margin-left=16 width=500 height=max }
+
+		place { control="TitleLabel" region="content" width=max height=34 }
+
+		place { control="CompatEnabledCheckbox" region="content" start="TitleLabel" dir=down width=max height=50 }
+		place { control="CompatForcedCheckbox" region="content" start="CompatEnabledCheckbox" dir=down width=max height=50 }
+
+		place { control="AdvancedToolComboBox" region="content" start="CompatForcedCheckbox" dir=down width=max height=50 }
+		place { control="AdvancedToolLabel" region="content" start="CompatForcedCheckbox" dir=down margin-top=18 margin-left=45 width=200 }
+
+		place { control="DescriptionInfo,CompatForcedInfo,DescriptionLink" region="content" start="AdvancedToolComboBox" dir=down margin-top=16 width=max spacing=16 }
+
+		region { name="hidden" width=0 height=0 margin-left=-999 }
+		place { control="AdvancedTitle,Divider1" region="hidden" width=0 height=0 }
+	}
+}
