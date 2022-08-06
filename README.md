@@ -32,7 +32,7 @@ A skin to make Steam look more like a native GNOME app
 1. Download the [latest skin version](https://github.com/tkashkin/Adwaita-for-Steam/archive/master.zip)
 2. Extract `Adwaita` directory into Steam `skins` directory (create if it doesn't exist):
    * **Linux**: usually `~/.steam/steam/skins` or `~/.local/share/Steam/skins`
-   * **Linux (flatpak)**: `~/.var/app/com.valvesoftware.Steam/.steam/steam/skins`
+   * **Linux (flatpak)**: `~/.var/app/com.valvesoftware.Steam/.local/share/Steam/skins`
    * ~~Windows~~ (untested): `C:\Program Files (x86)\Steam\skins` by default
    * ~~macOS~~ (untested): `~/Library/Application Support/Steam/Steam.AppBundle/Steam/Contents/MacOS/skins`
 3. Open Steam and select `Adwaita` skin in Settings > Interface (restart Steam if it doesn't appear in the list)
