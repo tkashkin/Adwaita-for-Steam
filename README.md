@@ -33,16 +33,18 @@ A skin to make Steam look more like a native GNOME app
 ```
 git clone https://github.com/tkashkin/Adwaita-for-Steam.git
 cd Adwaita-for-Steam/
-mkdir -p ~/.local/share/Steam/skins
-cp -r ./Adwaita ~/.local/share/Steam/skins
+mkdir -p ~/.local/share/Steam/skins/
+cp -r ./Adwaita ~/.local/share/Steam/skins/
+ln -sf ~/.local/share/Steam/skins ~/.steam/steam/
 ```
 
 ### Linux Flatpak Version
 ```
 git clone https://github.com/tkashkin/Adwaita-for-Steam.git
 cd Adwaita-for-Steam/
-mkdir -p ~/.var/app/com.valvesoftware.Steam/.local/share/Steam/skins
-cp -r ./Adwaita ~/.var/app/com.valvesoftware.Steam/.local/share/Steam/skins
+mkdir -p ~/.var/app/com.valvesoftware.Steam/.local/share/skins/
+cp -rf ./Adwaita ~/.var/app/com.valvesoftware.Steam/.local/share/skins/
+ln -s ~/.var/app/com.valvesoftware.Steam/.local/share/skins ~/.var/app/com.valvesoftware.Steam/.steam/steam/skins
 ```
 
 1. Download the [latest skin version](https://github.com/tkashkin/Adwaita-for-Steam/archive/master.zip)
