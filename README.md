@@ -47,6 +47,7 @@ cp -rf ./Adwaita ~/.var/app/com.valvesoftware.Steam/.local/share/skins/
 ln -s ~/.var/app/com.valvesoftware.Steam/.local/share/skins ~/.var/app/com.valvesoftware.Steam/.steam/steam/skins
 ```
 
+### Manual Installation
 1. Download the [latest skin version](https://github.com/tkashkin/Adwaita-for-Steam/archive/master.zip)
 2. Extract `Adwaita` directory into Steam `skins` directory (create if it doesn't exist):
    * **Linux Native Version**: usually `~/.steam/steam/skins` or `~/.local/share/Steam/skins`
