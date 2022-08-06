@@ -7,13 +7,13 @@ AccountPage.res
 			render_bg
 			{
 				// background
-				0="fill(x0-6, y0-14, x0+466, y0+135, button_bg)"
-				-1="fill(x0-12, y0-8, x0-6, y0+129, button_bg)"
-				-2="fill(x0+466, y0-8, x0+472, y0+129, button_bg)"
-				-3="image(x0-12, y0-14, x0-6, y0-8, assets/corners/6_w10/tl)"
-				-4="image(x0+466, y0-14, x0+472, y0-8, assets/corners/6_w10/tr)"
-				-5="image(x0-12, y0+129, x0-6, y0+135, assets/corners/6_w10/bl)"
-				-6="image(x0+466, y0+129, x0+472, y0+135, assets/corners/6_w10/br)"
+				0="fill(x0, y0-14, x0+460, y0+135, button_bg)"
+				-1="fill(x0-12, y0-2, x0, y0+123, button_bg)"
+				-2="fill(x0+460, y0-2, x0+472, y0+123, button_bg)"
+				-3="image(x0-12, y0-14, x0, y0-2, assets/corners/12_w10/tl)"
+				-4="image(x0+460, y0-14, x0+472, y0-2, assets/corners/12_w10/tr)"
+				-5="image(x0-12, y0+123, x0, y0+135, assets/corners/12_w10/bl)"
+				-6="image(x0+460, y0+123, x0+472, y0+135, assets/corners/12_w10/br)"
 
 				// separators
 				1="fill(x0-12, y0+35, x0+472, y0+36, headerbar_shade)"

@@ -128,6 +128,38 @@ button.styles
 		{
 			image="assets/checkbox/checked_disabled"
 		}
+
+		RadioButton
+		{
+			image="assets/radiobutton/unchecked"
+			textcolor="button_fg"
+			font-family=basefont
+			font-size=15
+			font-weight=400
+			font-style=none
+		}
+		RadioButton:hover
+		{
+			image="assets/radiobutton/unchecked_hover"
+		}
+		RadioButton:selected
+		{
+			image="assets/radiobutton/checked"
+		}
+		RadioButton:selected:hover
+		{
+			image="assets/radiobutton/checked_hover"
+		}
+		RadioButton:disabled
+		{
+			image="assets/radiobutton/unchecked_disabled"
+			textcolor="button_disabled_fg"
+		}
+		RadioButton:selected:disabled
+		{
+			image="assets/radiobutton/checked_disabled"
+		}
+
 		CheckButtonList
 		{
 			bgcolor="view_bg"
