@@ -2,6 +2,12 @@ rootdialog.styles
 {
 	styles
 	{
+		CSteamRootDialog
+		{
+			minimum-width=1200
+			minimum-height=600
+		}
+
 		"CSteamRootDialog MenuBar"
 		{
 			inset="0 0 0 0"

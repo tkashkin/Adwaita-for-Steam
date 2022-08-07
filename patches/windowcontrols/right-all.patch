@@ -1,0 +1,20 @@
+# 3 buttons on the right side (Windows-like layout)
+diff -ruN Adwaita/resource/steamscheme.res Adwaita-patched/resource/steamscheme.res
+--- Adwaita/resource/steamscheme.res
++++ Adwaita-patched/resource/steamscheme.res
+@@ -15,7 +15,6 @@
+ 
+ 			frame_maximize
+ 			{
+-				visible	0
+ 				xpos	-999
+				ypos	0
+				wide	0
+@@ -25,7 +24,6 @@
+ 
+ 			frame_minimize
+ 			{
+-				visible	0
+ 				xpos	-999
+				ypos	0
+				wide	0

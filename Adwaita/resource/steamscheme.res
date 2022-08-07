@@ -16,21 +16,21 @@ Scheme
 			frame_maximize
 			{
 				visible	0
-				xpos	r62
-				ypos	7
-				wide	24
-				tall	24
-				PinCorner	1
+				xpos	-999
+				ypos	0
+				wide	0
+				tall	0
+				PinCorner	0
 			}
 
 			frame_minimize
 			{
 				visible	0
-				xpos	r93
-				ypos	7
-				wide	24
-				tall	24
-				PinCorner	1
+				xpos	-999
+				ypos	0
+				wide	0
+				tall	0
+				PinCorner	0
 			}
 			
 			frame_title
