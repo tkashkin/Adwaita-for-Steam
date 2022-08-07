@@ -1,0 +1,242 @@
+/* 
+This file provides overrides for web based elements in the steam client
+
+You can use steam's built in inspector to find classes by launching it 
+with the `-dev` argument and hitting F12
+
+Classes will be likely randomly suffixed, you will need the `*=` 
+selector for those
+*/
+
+/* -------------- */
+/* --- Colors --- */
+/* -------------- */
+
+:root {
+    --bg: #242424;
+    --fg: #ffffff;
+    --radius: 15px;
+
+    --shade_color: rgba(0, 0, 0, 0.36);
+
+    --accent: #78aeed;
+    --accent_bg_color: #3584e4;
+    --accent_fg_color: var(--fg);
+
+    --destructive_color: #ff7b63;
+    --destructive_bg_color: #c01c28;
+    --destructive_fg_color: var(--fg);
+
+    --success_color: #8ff0a4;
+    --success_bg_color: #26a269;
+    --success_fg_color: var(--fg);
+
+    --warning_color: #f8e45c;
+    --warning_bg_color: #cd9309;
+    --warning_fg_color: var(--fg);
+
+    --error_color: #ff7b63;
+    --error_bg_color: #c01c28;
+    --error_fg_color: var(--fg);
+
+    --window_bg_color: var(--bg);
+    --window_fg_color: var(--fg);
+
+    --view_bg_color: #1e1e1e;
+    --view_fg_color: var(--fg);
+
+    --headerbar_bg_color: #303030;
+    --headerbar_fb_color: var(--fg);
+    --headerbar_border_color: var(--fg);
+    --headerbar_backdrop_color: var(--bg);
+    --headerbar_shade_color: var(--shade_color);
+
+    --popover_bg_color: #383838;
+    --popover_fg_color: var(--fg);
+
+    --toast_bg: rgba(0, 0, 0, .75);
+
+    --scrollbar: #4d4e4e;
+    --scrollbar_hover: #6b6c6b;
+    --scrollbar_active: #898b8a;
+}
+
+/* -------------- */
+/* --- Global --- */
+/* -------------- */
+/* Background */
+div#responsive_page_template_content {
+    background: var(--view_bg_color);
+}
+
+/* Mid Page Gradient */
+.home_ctn.tab_container {
+    background: none !important;
+}
+
+/* --------------- */
+/* --- Library --- */
+/* --------------- */
+
+/* --- Main Library View --- */
+/* Backgrounds */
+[class*="gamelistbar_Container_"],
+[class*="libraryhome_LibraryHome_"],
+[class*="libraryhome_UpdatesContainer_"] {
+    background: var(--bg) !important;
+}
+
+/* Library Left Panel Section Headers */
+[class*="gamelistsectionheader_Container_"] {
+    background: var(--view_bg_color) !important;
+}
+
+/* Play Button */
+[class*="appportrait_Play_1"] {
+    background: var(--success_bg_color) !important;
+    border-radius: var(--radius) !important;
+}
+
+[class*="appportrait_Download_"] {
+    background: var(--accent_bg_color) !important;
+    border-radius: var(--radius) !important;
+}
+
+/* Rounded Corners on Game Logos */
+[class*="appportrait_LibraryItemBox_"],
+[class*="libraryhomenewupdates_PartnerEventRowCapsule_MainImageContainer_"] {
+    border-radius: var(--radius) !important;
+}
+
+/* Game Hours Subscript */
+[class*="appportrait_LibraryItemBoxSubscript_"] {
+    background: var(--toast_bg) !important;
+    border-radius: var(--radius) !important;
+    margin-top: -20px !important;
+}
+
+/* Update Summary */
+[class*="libraryhomenewupdates_HoversEnabled_"]:hover [class*="libraryhomenewupdates_EventSummaryContainer_"] {
+    background: var(--toast_bg) !important;
+    border-radius: var(--radius);
+}
+
+/* (Optional) Hide What's New Shelf */
+/*
+[class*="libraryhome_UpdatesContainer_"],
+[class*="libraryhomeshowcases_AddShowcaseRow_"] {
+    display: none !important;
+}
+ */
+
+/*  --- Collection View --- */
+/* Background */
+[class*="allcollections_ScrollContainer_"],
+[class*="collectionview_OuterContainer_"] {
+    background: var(--bg) !important;
+}
+
+/* --- Game Details View --- */
+/* Background */
+[class*="appdetails_Glassy_"] {
+    background: var(--bg) !important;
+}
+
+/*  Disable Blurred Background */
+[class*="sharedappdetailsheader_ImgBlurBackdrop_"] {
+    display: none !important;
+}
+
+/* Rounded Corners */
+[class*="appdetailsprimarylinkssection_LinksSectionBody_"],
+[class*="writereview_RightContainer_"] button,
+[class*="appdetailsspotlight_ReviewContainer_"],
+[class*="writereview_RatingContainer_"],
+[class*="appdetailssection_RightColumnSection_"],
+[class*="appdetailssection_Highlight_"],
+[class*="appdetailsworkshopsection_WorkshopContainer_"],
+[class*="appactionbutton_ButtonChild"],
+[class*="appactivityday_PartnerEventMediumImage_Container_"],
+[class*="appactivityday_PartnerEvent_"],
+[class*="appactivityday_EventBody_"] {
+    border-radius: var(--radius) !important;
+}
+
+/* Border Radius Fixes */
+[class*="appdetailsworkshopsection_WorkshopContainer_"] {
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+}
+
+[class*="appdetailsworkshopsection_WorkshopHightlight_"] {
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+
+[class*="appactivityday_PartnerEvent_"] {
+    border-image-source: none !important;
+}
+
+/* `Scroll to Top` Button */
+[class*="smartscrollcontainer_ScrollToTopButton_"] {
+    color: var(--fg) !important;
+    height: 40px !important;
+}
+
+[class*="smartscrollcontainer_ScrollToTopButton_"] div {
+    background: var(--toast_bg) !important;
+    border-radius: var(--radius) !important;
+    box-shadow: none !important;
+    padding: 8px 32px 8px 32px !important;
+}
+
+/* Play Button Color */
+[class*="appactionbutton_ButtonChild"] {
+    background: var(--accent_bg_color) !important;
+}
+
+[class*="appactionbutton_Green"] > [class*="appactionbutton_ButtonChild"] {
+    background: var(--success_bg_color) !important;
+}
+
+/* Progress Bar Color */
+[class*="appdetailsplaysection_DetailsProgressBar_"],
+[class*="appdetailsachievementssection_AchievementProgress_"] {
+    background: var(--accent_bg_color) !important;
+}
+
+/* ------------------ */
+/* --- Scrollbars --- */
+/* ------------------ */
+::-webkit-scrollbar {
+    height: 12px;
+    width: 14px;
+    background: transparent;
+    z-index: 12;
+    overflow: visible;
+}
+
+::-webkit-scrollbar-corner {
+    background: #202020;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 10px;
+    background-color: var(--scrollbar) !important;
+    border-radius: 10px;
+    z-index: 12;
+    border: 4px solid rgba(0,0,0,0);
+    background-clip: padding-box;
+    transition: background-color .32s ease-in-out;
+    margin: 4px;
+    min-height: 32px;
+    min-width: 32px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--scrollbar_hover) !important;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: var(--scrollbar_active) !important;
+}
