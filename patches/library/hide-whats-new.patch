@@ -1,0 +1,18 @@
+# Hides the What's New Shelf from the Library
+diff --git a/Adwaita/resource/webkit.css b/Adwaita/resource/webkit.css
+index 85700a9..5bac5b8 100644
+--- Adwaita/resource/webkit.css
++++ Adwaita/resource/webkit.css
+@@ -122,12 +122,10 @@ div#responsive_page_template_content {
+ }
+ 
+ /* (Optional) Hide What's New Shelf */
+-/*
+ [class*="libraryhome_UpdatesContainer_"],
+ [class*="libraryhomeshowcases_AddShowcaseRow_"] {
+     display: none !important;
+ }
+- */
+ 
+ /*  --- Collection View --- */
+ /* Background */
