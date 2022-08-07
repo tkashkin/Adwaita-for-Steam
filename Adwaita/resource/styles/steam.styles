@@ -1,81 +1,3673 @@
 steam.styles
 {
-	include "adw/colors.styles"
+  colors
+  {
+    // colors section can include colors in "R G B A" form, or references to already defined colors;
+    // it can also include just general settings controls can pull from for extra customization
 
-	include "adw/controls/window.styles"
-	include "adw/controls/button.styles"
-	include "adw/controls/entry.styles"
-	include "adw/controls/popup.styles"
-	include "adw/controls/scrollbar.styles"
+    black="0 0 0 255"
+    dark="28 33 42 255"
+    almostBlack="22 25 28 255"
+    almostBlackTrans="22 25 28 204"
+    white="255 255 255 255"
+    grey="142 152 167 255"
+    none="0 0 0 0"
+    yellow="255 255 0 255"
+    offwhite="159 162 168 255"
+    dullgreen="216 222 211 255"
+    maize="203 191 87 255"
+    red="255 51 51 255"
+    darkblue="35 55 75 255"
+    blue="94 109 140 255"
+    darkred="128 0 0 255"
+    darkpurple="64 0 64 255"
 
-	include "adw/rootdialog.styles"
-	include "adw/settingsdialog.styles"
+    dark_blue "27 44 61 255"
+    med_blue "13 36 82 255"
+    bg_blue "10 25 56 255"
 
-	// include default Steam styles to ensure unstyled controls still work
-	include "../../resource/styles/steam.styles"
+    // control colors
+    bordercolor="82 95 122 255"
+    darkcorner="58 68 88 255"
+    buttontext=Text
+    buttontextactive=Text
 
-	colors
-	{
-		basefont="Cantarell"
-		none="0 0 0 0"
-	}
+    // cool we can define font-families here as well
+    basefont="Arial"
+    basefont="Helvetica" [$OSX]
 
-	styles
-	{
-		// splash screen
-		ProgressBox
+    // new control colors
+    ButtonFace="98 108 119 20"
+    ButtonFace2="67 73 83 255" // for use in main client list panel column header, some button states
+    ButtonFace3="86 93 106 255" // button cornering pixels
+    ButtonFaceDisabled="86 93 106 15"
+    ButtonFaceHover="84 91 104  240"   /// hover!
+    ButtonFaceActive="86 93 106  240"  // not sure what this state is...
+    ButtonFaceFocus="89	97	110  240"  //  keyboard focus
+    ButtonFaceActiveFocus="89 97 110  255"  // this is the default choice
+    BlueBorder="26 31 40 255"
+    ButtonBorder="75 84 102 255"
+    ButtonBorderSubtle="75 84 102 255"
+    ButtonBorderPage="124 124 124 255"
+    ButtonBorderDisabled="112 120 136 255"
+    ButtonBorderDisabled2="52 61 78 255"  //cornering pixels
+    ButtonBorderActive="112 120 137 255"
+    ButtonBorderFocus="125 133 148 255"
+    ButtonBorderFocusSubtle="110 118 134 255"
+
+    Text="200 208 220 255"
+    Text2="178 186 196 255"
+    TextDisabled="102 106 112 255"
+    TextHover="213 217 234 255"
+    TextSelected="228 233 240 255"
+    TextentrySelected="228 233 240 235" // color of any selected text
+    TextSelectedBG="73 86 110 255" // background color of any selected text
+    TextGlowHover="100 110 125 255"
+    TextGlowSelected="163 173 186 255"
+    TextGlowHoverSm="123 123 123 255"
+    TextGlowSelectedSm="142 142 142 255"
+    redborder="169 72 71 255"
+
+    NavLabel="149 153 163 255"
+    Label="168 172 179 255"
+    Label2="107 112 123 255"
+    LabelDisabled="109 115 126 255"
+    LabelFocus="197 203 216 255"
+
+    SuperNav="white"
+    SuperNavHover="white"
+
+    ScrollGlyph="98 108 119 255"  // the color of the scroll bar arrows
+    ScrollGlyphDisabled="67 73 83 255"
+    ScrollGlyphFocus="242 242 242 255"
+
+    ScrollBG="53 59 66 255" // the color of the scroll bar gutter
+
+    HeaderClient="42 49 63 255" // the color of the List box header in the main client window
+    HeaderDialog="87 90 97 255" // the color of the list box header in other windows
+
+    TitleBar="21 24 31 80"
+    TitleBarFocus="14 31 56 80"
+    MenuBG="57 62 70 255"
+
+    Focus0="23 51 77 255" // used in window frame borders
+    Focus="25 55 84 255" // background color of any selected menu or list item
+    Focus2="21 70 107 255" 	// background color of view buttons and anything else in focus that needs more 'punch'
+    Focus3="75 80 89 255" 	// background color of highlighted friends
+    Focus4="61 102 143 255"   // bright cyan used in progress bars
+
+    FocusGrid="85 117 161 240"  	// background color of any grid item
+    Highlight="16 53 82 120" 	// same as focus
+
+    Highlight1="118 202 235 255"    // installing hover color
+    Highlight2="76 159 191 255" 	// installing color
+    Highlight3="173 69 71 255"    	// red for errors, blocked, etc.
+    Highlight5="24 53 82 255" 	// blue
+    Highlight5a="30 66 102 255" 	// lighter version of highlight5
+    Highlight5b="17 42 86 255" 	// as highlight5 but darker, for non-focused window borders
+
+    BackgroundStartSubtle="0 13 40 155"
+    BackgroundStartSubtle="0 15 46 45" [$OSX]
+    BackgroundStartSubtlest="0 15 44 100"
+    BackgroundStart="31 35 41 180"
+    BackgroundStartOpaque="31 35 41 255"
+
+    ClientBG="18 26 42 255"
+    ClientBGTop="25 32 46 255"
+    ClientGrouper="40 46 54 255"
+    DialogBG="42 46 51 255"
+    DialogBGFade1="42 46 51 255"
+    DialogBGFade2="42 46 51 0"
+
+    DarkClientBG="31 34 41 255"
+    DarkDialogBG="31 34 41 255"
+    DarkClientBGTransparent="28 31 37 19"
+    DarkDialogBGTransparent="41 47 55 170"
+
+    GameDetailsBlueTransparent="71 148 179 60"
+    GameDetailsGreenTransparent="71 148 179 160"
+    GameDetailsRedTransparent="71 148 179 160"
+
+    GameDetailsBlue="71 148 179 255"
+    GameDetailsGreen="71 148 179 255"
+    GameDetailsRed="71 148 179 255"
+
+    PropertySheetBG="50 55 61 255"
+    InteriorColor="46 49 54 255"
+
+    DialogBorder="110 113 119 255" // border color around any dialog
+
+    FillBG1="61 63 66 255" //gradient colors
+    FillBG2="64 65 69 255"
+
+    MenuBG1="56 60 68 255" //gradient colors
+    MenuBG2="41 45 51 255"
+
+    Divider="76 84 93 255"
+    SuperDivider="66 72 80 255"
+    DarkImageBorder="46 50 58 255"
+    DarkImageOverlay="0 0 0 80"
+
+    inbox_active "158 194 29 255"
+		inbox_active2 "155 199 9 255"
+		inbox_active4 "122 145 71 255"
+		inbox_active5 "85 102 47 255"
+
+
+		inbox_inactive "38 38 37 255"
+		inbox_inactive2 "142 194 12 255"
+		inbox_inactive4 "122 145 71 255"
+		inbox_inactive5 "74 102 29"
+
+		parental_lock_active1 "138 175 6 255"
+		parental_lock_active2 "49 49 49 255"
+		parental_lock_active4 "122 145 71 255"
+		parental_lock_active5 "85 102 47 255"
+		green5 "126 166 75 255"
+		green6 "92 126 16 255"
+		green7 "62 90 22 255"
+		green8 "38 48 2 255"
+
+
+		launch0 "119 215 250 255"
+		launch1 "83 172 204 255"
+		launch2 "54 125 153 255"
+
+
+		parental_lock_inactive1 "154 49 48 255"
+		parental_lock_inactive2 "189 79 79 255"
+		parental_lock_inactive3 "215 90 90 255"
+		parental_lock_inactive4 "146 72 71 255"
+		parental_lock_inactive5 "103 48 47 255"
+		red6="38 1 1 255"
+
+		support_lock_ack1 "187 157 47 255"
+		support_lock_ack2 "193 166 67 255"
+		AnnouncementBlue="61 146 175 255"
+
+
+    // colors pulled from steamscheme.res
+    "ClayBG"      "70 70 70 255"
+    "ClayButtonBG"      "85 85 85 255"
+    "ClayEnabled"     "88 88 88 255"
+    "ClayKeyFocus"      "92 92 92 255"
+    "ClayMouseDown"     "85 85 85 255"
+    "ClayDisabledText"    "134 134 134 255"
+    "ClayLightGreen"    "173 181 168 255" // frame button (close X) etc
+    "ClayDimLightGreen"   "166 172 162 255" // frame button and title without focus etc
+    "LightClayBG"     "104 106 101 255" // property sheet interior, active tab
+    "LightClayButtonBG"   "125 128 120 255" // buttons on property sheet interior, active tab
+    "DarkClayBG"      "47 49 45 255"    // shadow
+    "p_ClayMouseDown"   "94 94 94 255"
+    "ClaySheetBottom"   "92 90 87 255"
+    "MaizeBG"     "145 134 60 255"  // background color of any selected text or menu item
+    "GreenBG"     "76 88 68 255"
+    "LightGreenBG"      "90 106 80 255"   // darker background color
+    "DarkGreenBG"     "62 70 55 255"    // background color of text edit panes (chat, text Entries, etc.)
+    "LightGrayBG"     "121 126 121 255"
+    "GrayBG"      "73 73 73 255"
+    "GrayBG2"     "37 37 37 255"
+    "TempGradientTop" "52 52 52 255"
+
+
+    DragDrop.DragFrame        "255 255 255 192"
+    DragDrop.DropFrame        "150 255 150 255"
+
+    Frame.ClientInsetX        10
+    Frame.ClientInsetY        35
+    Frame.FocusTransitionEffectTime   "0"     // time it takes for a window to fade in/out on focus/out of focus
+    Frame.TransitionEffectTime      "0.25"      // time it takes for a window to fade in/out on open/close
+    Frame.OnDragAlphaDelayTime      "0.15"      // time it takes after clicking the title bar of a window before the alpha multiplier kicks in
+    Frame.OnDragAlphaMultiplier     "1.0"     // multiplier applied to alpha while dragging a frame
+    Frame.AutoSnapRange         "6"
+    Frame.UsesAlphaBlending       1
+    FrameSystemButton.Icon        ""
+    FrameSystemButton.DisabledIcon    ""
+
+    Notifications.PanelPosition     "BottomRight"   // Can be "BottomRight", "BottomLeft", "TopRight", "TopLeft"
+    Notifications.PanelPosition     "TopRight" [$OSX]  // the dock is on the bottom for OSX, so instead pop top right like other apps do
+    Notifications.SlideDirection    "None"    // Can be "Vertical", "Horizontal", "None" and controls slide effect
+    Notifications.FadeInTime      "0.0"    // Controls the time it takes to slide/fade into view
+    Notifications.FadeOutTime     "0.0"    // Controls the time it takes to slide/fade out of view
+    Notifications.DisplayTime     "6.0"     // Controls the length of time at steady state after fade in and before fade out
+    Notifications.StackSize       "5"     // Controls how many panels we will stack before background queuing
+
+    ListPanel.TextColor       Text
+    ListPanel.BgColor       none
+    ListPanel.SelectedTextColor     TextentrySelected
+    ListPanel.SelectedBgColor     TextSelectedBG
+    ListPanel.SelectedOutOfFocusBgColor   ClientBG
+    ListPanel.DisabledTextColor     TextDisabled
+    ListPanel.DisabledSelectedTextColor   ClientBG
+    ListPanel.EmptyListInfoTextColor    Label
+    ListPanel.PerPixelScrolling     1
+    ListPanel.PostSectionLeading	10
+
+		// Default tooltip delay pops fast, but lets the mouse pass through without popping
+		// Anchor=Cursor makes it stick to initial pop location like windows implementation.
+		// Anchor can also be 'Float' to move with the mouse, or 'Parent' to stick just outside
+		// the parent panel (useful for icon sized items)
+		Tooltip.Delay=75
+		Tooltip.Anchor=Cursor
+
+
+    WizardPanel.HeaderBGColor     HeaderDialog
+
+    Menu.TextInset          "6"
+
+    PropertySheet.TransitionEffectTime    "0"     // time to change from one tab to another
+    PropertySheet.TabGap        1
+    PropertySheet.FlashTabColor	"76 159 191 255"
+
+    RichText.InsetX         8
+    RichText.InsetY         7
+
+    ScrollBar.Wide          19
+
+    SectionedListPanel.CollapserWidth   16
+
+    HTML.SearchInsetY 5
+    HTML.SearchInsetX 10
+    HTML.SearchWide 348
+    HTML.SearchTall 38
+    HTML.SearchAnimationTime 0.25
+
+    HTML.IMEInsetY 5
+    HTML.IMEInsetX 10
+    HTML.IMEWide 348
+    HTML.IMETall 38
+    HTML.IMEAnimationTime 0.25
+
+    html.secureurl "126 166 75 255"
+    html.insecureurl "173 69 72 255"
+
+    MessageBox.ButtonHeight		24
+
+    TextEntry.IMEBGColor        "225 225 225 255"
+    TextEntry.IMEFGColor        "black"
+
+
+    // Friends List colors
+    Friends.InGameColor       "144 186 60 255"
+    Friends.InGameHoverColor  "182 235 76 255"
+    Friends.OnlineColor		   "84 165 196 255"
+    Friends.OnlineHoverColor	"104 203 242 255"
+    Friends.OfflineColor      "127 127 127 255"
+    Friends.OfflineHoverColor "185 185 185 255"
+    Friends.PanelDefault      "Label"
+    Friends.PanelOver       "Text"
+    Friends.PanelSelected     "ClientBG"
+    Friends.SectionHeader     "Label"
+    Friends.NoAvatarOver      "Text"
+    Friends.IgnoredColor      "White"
+    Friends.ListHeaderFadeOut	"54 54 54 0"
+	Friends.GoldenColor       "255 255 99 255"
+//	Friends.GoldenColor       "228 202 99 255"
+	Friends.GoldenHoverColor       "255 255 180 255"
+//	Friends.GoldenHoverColor       "248 218 109 255"
+
+
+    ChatDialog.URLColor       "text"
+    ChatOwnTextColor        "Label"
+		ChatDialog.HistoryColor	"124 124 124 255"
+    ChatGradientTop         "39 39 39 255"
+    ChatGradientBottom        "104 104 104 255"
+
+    AchievementPopup.TitleColor   "Text"
+    AchievementPopup.DescriptionColor "180 180 180 255"
+
+    GiftOnlyInfo.ImagePanelColor  "GrayBG"
+
+		dd_texture_bottom "16 16 16 255"
+ }
+
+  styles
+	  {
+		downarrow
 		{
+	      image="graphics/icon_down_default"
+		}
+
+		downarrow:hover
+		{
+	      image="graphics/icon_down_hover"
+
+				render_bg {
+
+				//background
+				0="fill( x0 + 5, y0 + 4, x1 - 2, y1 - 4, buttonfaceactive )"
+				//lines around
+				1="fill(x0 + 4, y0 + 5, x0 + 5, y1 - 5, buttonfaceactive )"  //left
+				2="fill(x1 - 2, y0 + 5, x1 - 1, y1 - 5, buttonfaceactive )"  //right
+				}
+		}
+
+		uparrow
+		{
+	      image="graphics/icon_up_default"
+		}
+
+		rightarrow
+		{
+	      image="graphics/icon_right_default"
+		}
+
+		rightarrow:hover
+		{
+	      image="graphics/icon_right_hover"
+		}
+
+	  Button
+	  {
+		font-family=basefont
+		font-size=13
+		font-weight=400
+		textcolor="Text"
+		font-style=uppercase
+		bgcolor=none
 			render_bg
 			{
-				0="image(x0+160, y0+24, x0+204, y0+86, assets/splash_logo)"
+				// background fill
+				0="gradient( x0, y0, x1, y1, buttonface2, propertysheetbg )"
+			}
+	  }
+
+    "Page Button"
+    {
+		render_bg
+		{
+			// background fill
+			0="gradient( x0, y0, x1, y1, buttonface2, propertysheetbg )"
+		}
+    }
+
+	Button:hover
+    {
+  		textcolor="TextHover"
+  		render_bg
+      {
+        // background fill
+        0="gradient( x0, y0, x1, y1, buttonfaceactive, propertysheetbg )"
+      }
+    }
+
+    "Page Button:hover"
+    {
+      textcolor="TextHover"
+      render_bg
+      {
+        // background fill
+        0="gradient( x0, y0, x1, y1, buttonfaceactive, propertysheetbg )"
+      }
+    }
+
+    Button:focus
+    {
+			textcolor="TextHover"
+			render_bg
+	      {
+	        0="gradient( x0, y0, x1, y1, buttonfacefocus, propertysheetbg )"
+	      }
+    }
+
+    "Page Button:focus"
+    {
+      textcolor="TextHover"
+      render_bg
+      {
+        0="gradient( x0, y0, x1, y1,  buttonfacefocus, propertysheetbg )"
+      }
+    }
+
+    Button:active // this is the left-mouse-currently-pressed state
+		{
+       textcolor="TextHover"
+       render_bg
+      {
+        // background fill
+        0="gradient( x0, y0, x1, y1, DialogBG, propertysheetbg )"
+      }
+    }
+
+    "Page Button:active"
+    {
+       textcolor="TextHover"
+       render_bg
+      {
+        // background fill
+        0="gradient( x0, y0, x1, y1, DialogBG, propertysheetbg )"
+      }
+    }
+
+    Button:selected
+    {
+      textcolor="TextHover"
+      render_bg
+      {
+        // background fill
+        0="gradient( x0, y0, x1, y1, buttonfaceactivefocus, propertysheetbg )"
+      }
+    }
+
+    "Page Button:selected"
+    {
+      textcolor="TextHover"
+      render_bg
+      {
+        // background fill
+        0="gradient( x0, y0, x1, y1, buttonfaceactivefocus, propertysheetbg )"
+      }
+    }
+
+    Button:disabled
+    {
+      textcolor="LabelDisabled"
+      render_bg
+      {
+        // background fill
+        0="gradient( x0, y0, x1, y1, buttonfacedisabled, buttonfacedisabled )"
+      }
+    }
+
+    "Page Button:disabled"
+    {
+			textcolor="LabelDisabled"
+      render_bg
+      {
+				// background fill
+        0="gradient( x0, y0, x1, y1, buttonfacedisabled, buttonfacedisabled )"
+      }
+    }
+
+    CFriendsListSectionAffordance
+    {
+      inset="0 0 0 0"
+      font-size=14
+      font-weight=400
+      textcolor="Label"
+    }
+
+    CFriendsListSectionHeader
+    {
+      bgcolor=none
+      font-family=basefont
+      font-size=14
+      font-size=13 [$OSX]
+      font-weight=400
+      textcolor="texthover"
+      inset="0 2 0 0"
+      render_bg
+			{
+				0="gradient_horizontal( x0-21, y0+1, x0+230, y1+1, propertysheetbg, Friends.ListHeaderFadeOut )"
+			}
+    }
+
+    CFriendPanel
+    {
+      inset="0 0 0 0"
+      bgcolor=none
+      font-family=basefont
+      font-size=14
+      font-size=13 [$OSX]
+      font-weight=400
+      textcolor="label"
+    }
+
+    CheckButton
+    {
+      font-family=basefont
+      font-size=14
+      font-weight=400
+      textcolor="Label"
+      image="graphics/chkUnselStd"
+    }
+
+    CheckButton:selected
+    {
+      image="graphics/chkSelStd"
+    }
+
+    CheckButton:focus
+    {
+      textcolor="Text"
+      bgcolor=none
+      image="graphics/chkUnselFocus"
+    }
+
+    CheckButton:selected:focus
+    {
+      textcolor="Texthover"
+      render_bg {}
+      bgcolor=none
+      image="graphics/chkSelFocus"
+    }
+
+    CheckButton:disabled
+    {
+      textcolor="TextDisabled"
+      bgcolor=none
+      image="graphics/chkUnselDis"
+    }
+
+    CheckButton:selected:disabled
+    {
+      textcolor="TextDisabled"
+      bgcolor=none
+      //!! bug - this needs to look disabled
+      image="graphics/chkSelDis"
+    }
+
+	IndeterminateCheckButton
+	{
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		textcolor="Label"
+		bgcolor=none
+		image="graphics/chkIndeterminate"
+	}
+
+    CheckButtonList
+    {
+        inset="1 1 1 1"
+        textcolor="text2"
+        bgcolor=none
+        render	{      	}
+			render_bg {
+					// background gradient
+					1="gradient( x0, y0, x1, y1, dialogbg, almostblack )"
+				}
+    }
+
+    CheckButtonList:scrollbar
+    {
+        inset="1 1 1 1"
+        textcolor="text2"
+        bgcolor=none
+				render	{     		}
+    		render_bg {
+				// background gradient
+				1="gradient( x0, y0, x1, y1, dialogbg, almostblack )"
+				}
+    }
+
+    "Page CheckButtonList"
+    {
+        inset="1 1 1 1"
+        textcolor="text2"
+        bgcolor=none
+        render	{      	}
+				render_bg
+        {
+					// background fill
+					1="gradient( x0, y0, x1, y1, dialogbg, almostblack )"
+      	}
+    }
+
+    "Page CheckButtonList:scrollbar"
+    {
+        inset="1 1 1 1"
+        textcolor="text2"
+        bgcolor=none
+        render { }
+        render_bg
+        {
+					// background fill
+					1="gradient( x0+1, y0, x1-1, y1-2, dialogbg, almostblack )"
+    	  }
+   	 }
+
+    "CheckbuttonList Checkbutton"
+    {textcolor="label"}
+
+    "CheckbuttonList Checkbutton:focus"
+    {textcolor="texthover"}
+
+    ComboBox
+    {
+      inset="3 0 0 0"
+      textcolor="Text"
+      font-family=basefont
+      font-size="14"
+      selectedtextcolor="TextEntrySelected"
+      selectedbgcolor="TextSelectedBG"
+      render_bg
+      {
+        // background fill
+        0="gradient( x0, y0, x1, y1, buttonface2, propertysheetbg )"
+      }
+    }
+
+    ComboBox:hover
+    {
+    selectedbgcolor="none"
+    selectedtextcolor="Text"
+    render_bg
+      {
+        // background fill
+        0="gradient( x0, y0, x1, y1, buttonfaceactive, propertysheetbg )"
+      }
+    }
+
+    ComboBox:focus
+    {
+    selectedbgcolor="none"
+    selectedtextcolor="Text"
+    render_bg
+      {
+        // background fill
+        0="gradient( x0, y0, x1, y1, buttonfaceactive, propertysheetbg )"
+      }
+    }
+
+    ComboBox:focus:hover
+    {
+    selectedbgcolor="none"
+    selectedtextcolor="Text"
+    render_bg
+      {
+        // background fill
+        0="gradient( x0, y0, x1, y1, buttonfaceactive, propertysheetbg )"
+      }
+    }
+
+    "Page ComboBox"
+    {
+      render_bg
+      {
+        // background fill
+        0="gradient( x0, y0, x1, y1, buttonface2, propertysheetbg )"
+      }
+    }
+
+    "Page ComboBox:focus"
+    {
+      render_bg
+      {
+        // background fill
+        0="gradient( x0, y0, x1, y1, buttonfaceactive, propertysheetbg )"
+      }
+    }
+
+    "Page ComboBox:hover"
+    {
+      render_bg
+      {
+        // background fill
+        0="gradient(x0, y0, x1, y1, buttonfacehover, propertysheetbg )"
+      }
+    }
+
+    "Page ComboBox:focus:hover"
+    {
+      render_bg
+      {
+        // background fill
+        0="gradient( x0, y0, x1, y1, buttonfaceactive, propertysheetbg )"
+      }
+    }
+
+
+    ComboBoxButton
+    {
+
+      bgcolor=none
+      padding-left=2
+      image="graphics/icon_down_default"
+      // just draw a single line to divide it from the text
+      render_bg
+      {
+        0="fill( x0, y0 + 2, x0 + 1, y1 - 4, ButtonBorder )"
+      }
+    }
+
+    ComboBoxButton:hover
+    {
+      image="graphics/icon_down_hover"
+      // just draw a single line to divide it from the text
+      render_bg
+      {
+        0="fill( x0, y0 + 2, x0 + 1, y1 - 4, label )"
+      }
+    }
+
+    ComboBoxButton:focus
+    {
+
+      bgcolor=none
+      image="graphics/icon_down_focus"
+      // just draw a single line to divide it from the text
+      render_bg
+      {
+        0="fill( x0, y0 + 2, x0 + 1, y1 - 4, ButtonBorderActive )"
+      }
+    }
+
+    ComboBoxButton:focus:hover
+    {
+
+      bgcolor=none
+      image="graphics/icon_down_default"
+      // just draw a single line to divide it from the text
+      render_bg
+      {
+        0="fill( x0, y0 + 2, x0 + 1, y1 - 4, ButtonBorderActive  )"
+      }
+    }
+
+
+    "Page ComboBoxButton"
+    {
+      bgcolor=none
+      image="graphics/icon_down_default"
+      // just draw a single line to divide it from the text
+      render_bg
+      {
+        0="fill( x0, y0 + 2, x0 + 1, y1 - 4, ButtonBorderPage )"
+      }
+    }
+
+    "Page ComboBoxButton:hover"
+    {
+      image="graphics/icon_down_hover"
+       // just draw a single line to divide it from the text
+      render_bg
+      {
+        0="fill( x0, y0 + 2, x0 + 1, y1 - 4, ButtonBorderActive  )"
+      }
+    }
+
+    "Page ComboBoxButton:focus"
+    {
+
+      bgcolor=none
+      image="graphics/icon_down_focus"
+      // just draw a single line to divide it from the text
+      render_bg
+      {
+        0="fill( x0, y0 + 2, x0 + 1, y1 - 4, ButtonBorderActive  )"
+      }
+   	}
+
+    "Page ComboBoxButton:focus:hover"
+    {
+      bgcolor=none
+      image="graphics/icon_down_focus"
+      // just draw a single line to divide it from the text
+      render_bg
+      {
+        0="fill( x0, y0 + 2, x0 + 1, y1 - 4, ButtonBorderActive )"
+      }
+    }
+
+    Divider
+    {
+      bgcolor="none"
+      render
+      {
+       0="gradient_horizontal( x0, y1 - 1, x1, y1, divider, propertysheetbg )"
+      }
+    }
+
+    Frame
+    {
+    bgcolor="DialogBG"
+      render
+      {
+        0="gradient_horizontal( x0, y1 - 1, x1 + 1, y1, ClientBG, focus )"
+        1="gradient( x1 - 1, y0, x1, y1, ClientBG, focus )"
+        2="gradient_horizontal( x0, y0, x1, y0 + 1, focus0, ClientBG )"
+        3="gradient( x0, y0, x0 + 1, y1, focus0, ClientBG )"
+      }
+    }
+
+    Frame:FrameFocus
+    {
+    bgcolor="DialogBG"
+      render
+      {
+        0="gradient_horizontal( x0, y1 - 1, x1 + 1, y1, ClientBG, black )"
+        1="gradient( x1 - 1, y0, x1, y1, ClientBG, black )"
+        2="gradient_horizontal( x0, y0, x1, y0 + 1, focus, ClientBG )"
+        3="gradient( x0, y0, x0 + 1, y1, focus, ClientBG )"
+      }
+    }
+
+    FrameBRGripPanel
+    {
+      image=graphics/resizer
+    }
+
+    FrameBRGripPanel:hover
+    {
+      image=graphics/resizer_over
+    }
+
+    FrameMinimizeButton
+    {
+		render_bg {}
+		image="graphics/win32_win_min"
+		image="graphics/osx_win_dis" [$OSX]
+		image="graphics/osx_win_dis_new_dark" [$OSX1010]
+		inset="-6 0 0 0" [$OSX]
+    }
+
+    FrameMinimizeButton:hover
+    {
+		render_bg {}
+		bgcolor="none"
+		image="graphics/win32_win_min_hover"
+		image="graphics/osx_min_hov" [$OSX]
+		image="graphics/osx_min_hov_new" [$OSX1010]
+		inset="-6 0 0 0" [$OSX]
+    }
+
+	FrameMinimizeButton:framefocus [$OSX]
+    {
+		render_bg {}
+		bgcolor="none"
+		image="graphics/osx_min_def"
+		image="graphics/osx_min_def_new" [$OSX1010]
+		inset="-6 0 0 0" [$OSX]
+    }
+
+	FrameMinimizeButton:framefocus:hover [$OSX]
+    {
+		render_bg {}
+		bgcolor="none"
+		image="graphics/osx_min_hov"
+		image="graphics/osx_min_hov_new" [$OSX1010]
+		inset="-6 0 0 0" [$OSX]
+    }
+
+	FrameMinimizeButton:active [$OSX]
+    {
+		render_bg {}
+		bgcolor="none"
+		image="graphics/osx_min_down"
+		image="graphics/osx_min_down_new" [$OSX1010]
+		inset="-6 0 0 0" [$OSX]
+    }
+
+	// need the maximize button to have different styles for OSX & win32
+  FrameMaximizeButton
+    {
+		render_bg {}
+		image="graphics/win32_win_max"
+		image="graphics/osx_win_dis" [$OSX]
+		image="graphics/osx_win_dis_new_dark" [$OSX1010]
+		inset="-6 0 0 0" [$OSX]
+    }
+
+	FrameMaximizeButton:hover
+    {
+		render_bg {}
+		bgcolor="none"
+		image="graphics/win32_win_max_hover"
+		image="graphics/osx_max_hov" [$OSX]
+		image="graphics/osx_max_hov_new" [$OSX1010]
+		inset="-6 0 0 0" [$OSX]
+    }
+
+	FrameMaximizeButton:framefocus
+    {
+		render_bg {}
+		bgcolor="none"
+		image="graphics/win32_win_max"
+		image="graphics/osx_max_def" [$OSX]
+		image="graphics/osx_max_def_new" [$OSX1010]
+		inset="-6 0 0 0" [$OSX]
+    }
+
+	FrameMaximizeButton:framefocus:hover
+    {
+		render_bg {}
+		bgcolor="none"
+		image="graphics/win32_win_max_hover"
+		image="graphics/osx_max_hov" [$OSX]
+		image="graphics/osx_max_hov_new" [$OSX1010]
+		inset="-6 0 0 0" [$OSX]
+    }
+
+	FrameMaximizeButton:active
+    {
+		render_bg {}
+		bgcolor="none"
+		image="graphics/win32_win_max_hover"
+		image="graphics/osx_max_down" [$OSX]
+		image="graphics/osx_max_down_new" [$OSX1010]
+		inset="-6 0 0 0" [$OSX]
+    }
+
+	// these are for when the maximize button becomes the restore button
+  FrameRestoreButton
+    {
+		render_bg {}
+		image="graphics/win32_win_restore"
+		image="graphics/osx_win_dis" [$OSX]
+		image="graphics/osx_win_dis_new" [$OSX1010]
+		inset="-6 0 0 0" [$OSX]
+    }
+
+	FrameRestoreButton:hover
+    {
+		render_bg {}
+		bgcolor="none"
+		image="graphics/win32_win_restore_hover"
+		image="graphics/osx_max_hov" [$OSX]
+		image="graphics/osx_max_hov_new" [$OSX1010]
+		inset="-6 0 0 0" [$OSX]
+    }
+
+	FrameRestoreButton:framefocus
+    {
+		render_bg {}
+		bgcolor="none"
+		image="graphics/win32_win_restore"
+    	image="graphics/osx_max_def" [$OSX]
+    	image="graphics/osx_max_def_new" [$OSX1010]
+		inset="-6 0 0 0" [$OSX]
+    }
+
+	FrameRestoreButton:framefocus:hover
+    {
+		render_bg {}
+		bgcolor="none"
+		image="graphics/win32_win_restore_hover"
+		image="graphics/osx_max_hov" [$OSX]
+		image="graphics/osx_max_hov_new" [$OSX1010]
+		inset="-6 0 0 0" [$OSX]
+    }
+
+	FrameRestoreButton:active
+    {
+		render_bg {}
+		bgcolor="none"
+		image="graphics/win32_win_restore_hover"
+		image="graphics/osx_max_down" [$OSX]
+		image="graphics/osx_max_down_new" [$OSX1010]
+		inset="-6 0 0 0" [$OSX]
+    }
+
+	FrameCloseButton
+    {
+		render_bg {}
+		image="graphics/win32_win_close"
+		image="graphics/osx_win_dis" [$OSX]
+		image="graphics/osx_win_dis_new_dark" [$OSX1010]
+		inset="-6 0 0 0" [$OSX]
+    }
+
+	FrameCloseButton:hover
+    {
+		render_bg {}
+		image="graphics/win32_win_close_hover"
+		image="graphics/osx_close_hov" [$OSX]
+		image="graphics/osx_close_hov_new" [$OSX1010]
+		inset="-6 0 0 0" [$OSX]
+    }
+
+	FrameCloseButton:framefocus [$OSX]
+    {
+		render_bg {}
+		bgcolor="none"
+		image="graphics/osx_close_def"
+		image="graphics/osx_close_def_new" [$OSX1010]
+		inset="-6 0 0 0" [$OSX]
+    }
+
+	FrameCloseButton:framefocus:hover [$OSX]
+    {
+		render_bg {}
+		bgcolor="none"
+		image="graphics/osx_close_hov"
+		image="graphics/osx_close_hov_new" [$OSX1010]
+		inset="-6 0 0 0" [$OSX]
+    }
+
+	FrameCloseButton:active [$OSX]
+    {
+		render_bg {}
+		bgcolor="none"
+		image="graphics/osx_close_down"
+		image="graphics/osx_close_down_new" [$OSX1010]
+		inset="-6 0 0 0" [$OSX]
+    }
+
+	FrameCloseButton:disabled
+    {
+		render_bg {}
+		bgcolor="none"
+		image="graphics/win32_win_close_disabled"
+		image="graphics/osx_win_dis" [$OSX]
+		image="graphics/osx_win_dis_new_dark" [$OSX1010]
+		inset="-6 0 0 0" [$OSX]
+    }
+
+    FrameTitle
+    {
+		font-family=basefont
+		inset="5 2 0 0"
+		inset="0 4 0 0" [$OSX]
+		padding-left="0"
+		padding-right="64"
+		padding-right="0" [$OSX]
+		font-size=14
+		font-weight=400
+		textcolor="buttonborderfocus"
+		bgcolor="none"
+		render_bg
+			{
+				1="gradient( x0, y0, x1, y0 + 48, titlebar, none )"
+
+			}
+    }
+
+
+    FrameTitle:framefocus
+    {
+		font-family=basefont
+		inset="0 4 0 0" [$OSX]
+		font-size=14
+		font-weight=400
+		bgcolor="none"
+		textcolor="texthover"
+		textcolor="texthover" [$OSX]
+	  render_bg
+	    {
+		     2="gradient( x0, y0, x1, y0 + 48, TitleBarfocus, none )"
+	    }
+    }
+
+
+	"CFriendsDialog SectionedListPanelInterior"
+	{
+		bgcolor=none
+		inset="-6 -1 -1 -1"
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		textcolor="Text"
+		selectedtextcolor="TextSelected"
+		selectedbgcolor="Focus"
+		shadowtextcolor="TextDisabled"	// the color of disabled line items
+		render
+			{	}
+		render_bg { }
+	}
+
+    GraphPanel
+    {
+		textcolor=Highlight5
+		bgcolor=none
+		render_bg { }
+    }
+
+    HTML
+    {
+		bgcolor="none"
+		render_bg
+			{
+			0="fill( x0, y0, x1, y1, almostblack )" // bg
+	    }
+    inset="2 2 2 2"
+    }
+
+	"HTMLFramelessPopup HTML"
+	{
+		inset="0 0 0 0"
+	}
+
+    Label
+		{
+		textcolor="Label"
+		selectedtextcolor="Text"
+		bgcolor="none"
+		font-family=basefont
+		font-size=14
+		font-weight=400
+ 		}
+
+    ListPanel
+    {
+		bgcolor=none
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		textcolor="text2"
+		selectedtextcolor="TextSelected"
+		selectedbgcolor="Focus"
+		shadowtextcolor="TextDisabled"	// the color of disabled line items
+		inset="0 -1 1 1"
+		render
+		{		}
+		render_bg
+		{
+			// background gradient
+			0="gradient( x0, y0, x1, y1, dialogbg, almostblack )"
+			1="gradient( x0, y0, x1, y0 + 31, backgroundstartsubtle, none )"
+
+		}
+	}
+
+    "Page ListPanel"
+	{
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		textcolor="Text2"
+		selectedtextcolor="TextSelected"
+		selectedbgcolor="Focus"
+		inset="0 -1 1 1"
+		bgcolor=none
+    render_bg
+    {
+ 		// background fill
+    0="gradient( x0, y0, x1, y0 + 80, Propertysheetbg, BackgroundStartOpaque )"
+    1="fill( x0, y0 + 80, x1, y1, BackgroundStartOpaque )"
+    2="gradient( x0, y0, x1, y0 + 30, backgroundstartsubtle, none )"
+		}
+	}
+
+    "CGamesListPanel"
+	{
+      font-family=basefont
+	  	bgcolor="none"
+      font-size=15
+      font-weight=400
+      textcolor="Text"
+      selectedtextcolor="textselected"
+      selectedbgcolor="Focus"
+      shadowtextcolor="TextDisabled"
+      inset="0 -1 1 1"
+      render_bg {
+        // background gradient
+        0="gradient( x0, y0, x1, y0 + 432, dialogbg, almostblack )"
+        1="fill( x0, y0 + 432, x1, y1, almostblack )"
+        2="gradient( x0, y0, x1, y0 + 31, dialogbgFade1, dialogbgFade2 )"
+
+        }
+    }
+
+    "GameItem_Uninstalled"
+    {
+      textcolor="labeldisabled"
+      selectedtextcolor="label"
+    }
+    "GameItem_Uninstalled:hover"
+    {
+      textcolor="label"
+      selectedtextcolor="label"
+    }
+
+    "GameItem_Installed"
+    {
+      textcolor="text"
+      selectedtextcolor="white"
+    }
+
+    "GameItem_Installed:hover"
+    {
+      textcolor="white"
+      selectedtextcolor="white"
+    }
+
+    "GameItem_Running"
+    {
+      textcolor="Friends.InGameColor"
+      selectedtextcolor="white"
+    }
+
+    "GameItem_Running:hover"
+    {
+      textcolor="white"
+      selectedtextcolor="white"
+    }
+
+    "GameItem_Shortcut"
+    {
+      textcolor="text"
+      selectedtextcolor="white"
+    }
+
+    "GameItem_Shortcut:hover"
+    {
+        textcolor="white"
+        selectedtextcolor="white"
+    }
+
+    "GameItem_Mod"
+    {
+      textcolor="text"
+      selectedtextcolor="white"
+    }
+
+    "GameItem_Mod:hover"
+    {
+        textcolor="white"
+        selectedtextcolor="white"
+    }
+
+    "GameItem_Updating"
+    {
+    	textcolor="highlight2"
+    	selectedtextcolor="highlight1"
+    }
+
+    "GameItem_Updating:hover"
+    {
+    	textcolor="highlight1"
+    	selectedtextcolor="highlight1"
+    }
+
+    "GameItem_Updating:selected"
+    {
+    	textcolor="highlight1"
+    	selectedtextcolor="highlight1"
+    }
+
+    "GameItem_Decrypting"
+    {
+    	textcolor="highlight2"
+    	selectedtextcolor="highlight1"
+    }
+
+    "GameItem_Decrypting:hover"
+    {
+    	textcolor="highlight1"
+    	selectedtextcolor="highlight1"
+    }
+
+    "GameItem_Decrypting:selected"
+    {
+    	textcolor="highlight1"
+    	selectedtextcolor="highlight1"
+    }
+
+    "GameItem_Syncing"
+    {
+    	textcolor="highlight2"
+    	selectedtextcolor="highlight1"
+    }
+
+    "GameItem_Syncing:hover"
+    {
+    	textcolor="highlight1"
+    	selectedtextcolor="highlight1"
+    }
+
+    "GameItem_Syncing:selected"
+    {
+    	textcolor="highlight1"
+    	selectedtextcolor="highlight1"
+    }
+
+    "GameItem_LockedSiteLicense"
+    {
+      textcolor="labeldisabled"
+      selectedtextcolor="label"
+    }
+    "GameItem_LockedSiteLicense:hover"
+    {
+      textcolor="label"
+      selectedtextcolor="label"
+    }
+
+    "GameColumn_BigText"
+		{
+		font-family=basefont
+		font-size=17
+		font-weight=700
+		textcolor="text"
+    }
+
+    ListPanelCheckBox
+    {
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		textcolor="Label"
+		image="graphics/chkUnselStd_Sm"
+		inset="0 5 0 0"
+    }
+
+    ListPanelCheckBox:selected
+    {
+		image="graphics/chkSelStd_Sm"
+    }
+
+		ListPanelCheckBox:focus
+    {
+		textcolor="TextSelected"
+		bgcolor=none
+		image="graphics/chkUnselFocus_Sm"
+    }
+
+    ListPanelCheckBox:selected:focus
+    {
+		textcolor="TextSelected"
+		render_bg {}
+		bgcolor=none
+		image="graphics/chkSelFocus_Sm"
+    }
+
+    ListPanelCheckBox:disabled
+    {
+		textcolor="TextDisabled"
+		bgcolor=none
+		image="graphics/chkUnselDis_Sm"
+    }
+
+    ListPanelCheckBox:disabled:select
+    {
+		textcolor="TextDisabled"
+		bgcolor=none
+		//!! bug - this needs to look disabled
+		image="graphics/chkUnselDis"
+    }
+
+    "ListPanelColumnheader ListPanelCheckBox"
+    {
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		textcolor="Label"
+		image="graphics/chkUnSelFocus_Sm"
+		inset="4 0 0 0"
+		}
+
+		"ListPanelColumnHeader ListPanelCheckBox:selected"
+    {
+		inset="4 0 0 0"
+		image="graphics/chkUnSelStd_Sm"
+    }
+
+		"ListPanelColumnheader ListPanelCheckBox:focus"
+    {
+      font-family=basefont
+      font-size=14
+      font-weight=400
+      textcolor="TextHover"
+      image="graphics/chkUnSelFocus_Sm"
+      inset="4 0 0 0"
+		}
+
+	"ListPanelColumnheader ListPanelCheckBox:selected:focus"
+    {
+      textcolor="TextHover"
+      render_bg {}
+      bgcolor=none
+      image="graphics/chkSelFocus_Sm"
+      inset="4 0 0 0"
+    }
+
+    ListPanelColumnheader
+    {
+		font-family=basefont
+		font-size=14
+		font-size=13 [$OSX]
+		font-weight=400
+		textcolor="label"
+		font-style="uppercase"
+		bgcolor="none"
+		inset="1 3 0 0"
+		render_bg
+			{
+				// fill
+				0="fill (x0, y0 + 1, x1, y1 + 1, propertysheetbg)" // bg fill
+				1="fill (x0 + 1, y0 + 1, x1, y0 + 3, propertysheetbg)" // bg fill2
 			}
 		}
-		"ProgressBox FrameTitle"
+
+    ListPanelColumnHeader:hover
+    {
+		textcolor="Texthover"
+    }
+
+	"Csteamrootdialog ListPanelColumnheader"
+    {
+		font-family=basefont
+		font-size=14
+		font-size=13 [$OSX]
+		font-weight=400
+		textcolor="label"
+		font-style="uppercase"
+		bgcolor="none"
+		inset="0 0 0 0"
+		inset="0 1 0 0" [$OSX]
+		padding-top=1
+		render_bg
 		{
-			textcolor=none
-			bgcolor=none
-			render_bg {}
+			// fill
+			0="fill (x0, y0 + 1, x1, y1, propertysheetbg )" // bg fill
 		}
-		"ProgressBox Label"
+	}
+
+
+    "Csteamrootdialog ListPanelColumnHeader:hover"
+    {
+		textcolor="TextHover"
+    }
+
+   	"Csteamrootdialog ListPanelSectionCollapser"
+	{
+		inset = "0 1 0 1"
+		bgcolor=none
+		render_bg
 		{
-			textcolor=none
-			bgcolor=none
+			1="fill( x0 , y0, x1, y1 - 1, propertysheetbg  )"
 		}
-		"ProgressBox FrameCloseButton"
+	}
+
+	  "CGamesPage_Mini ListPanelSectionCollapser"
+	{
+		inset = "0 1 0 1"
+		bgcolor=none
+		render_bg
 		{
-			render_bg {}
+			1="fill( x0 , y0, x1, y1 - 1, propertysheetbg  )"
 		}
-		"ProgressBox Button"
+	}
+
+
+
+	ListPanelColumnSelectButton // the games list column chooser
+	{
+        inset="-3 3 0 0"
+        render
+        {
+          0="image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse )"
+        }
+        render_bg {
+        1="fill( x0 + 1, y0, x1 - 1, y1, propertysheetbg )"
+        }
+	}
+
+  ListPanelColumnSelectButton:hover
+	{
+        inset="-3 3 0 0"
+        render
+        {
+          0="image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse_over )"
+        }
+        render_bg {
+        1="fill( x0 + 1, y0, x1 - 1, y1, propertysheetbg )"
+		  }
+  }
+  ListPanelColumnSelectButton:selected
+	{
+        inset="-3 3 0 0"
+        render
+        {
+          0="image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse_over )"
+        }
+        render_bg {
+        1="fill( x0 + 1, y0, x1 - 1, y1, propertysheetbg )"
+		  }
+  }
+
+	"CGamesListPanel ListPanelColumnSelectButton"
+	{
+        inset="-3 3 0 0"
+        render
+        {
+          0="image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse )"
+        }
+        render_bg {
+        1="fill( x0 + 1, y0, x1 - 1, y1, propertysheetbg )"
+        }
+	}
+	"CGamesListPanel ListPanelColumnSelectButton:hover"
+	{
+        inset="-3 3 0 0"
+        render
+        {
+          0="image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse_over )"
+        }
+        render_bg {
+        1="fill( x0 + 1, y0, x1 - 1, y1, propertysheetbg )"
+        }
+	}
+	"CGamesListPanel ListPanelColumnSelectButton:selected"
+	{
+        inset="-3 3 0 0"
+        render
+        {
+          0="image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse_over )"
+        }
+        render_bg {
+        1="fill( x0 + 1, y0, x1 - 1, y1, propertysheetbg )"
+        }
+	}
+
+    ListPanelDragger
+	{
+		bgcolor="none"
+		render
 		{
-			textcolor=none
+			//fill makes dragger visible
+			0="fill( x0, y0 + 2, x0 + 1, y1 - 3, dialogbg )" // left
+			1="fill (x0, y0, x0+1, y0+3, propertysheetbg )" //dot
+		}
+    }
+
+    ListPanelInterior
+    {
+		inset="3 1 0 0"
+		font-size=15
+		textcolor="text2"
+		bgcolor="none"
+    render
+			{
+
+			}
+		render_bg
+			{
+
+			}
+    }
+
+    ListPanelInterior:scrollbar
+    {
+		bgcolor=none
+		inset="3 1 -1 0"
+		textcolor="text2"
+		render
+			{
+
+			}
+		render_bg
+			{
+
+			}
+    }
+
+	"CSteamRootDialog ListPanel"
+	{
+		padding-left=2
+		padding-right=2
+	}
+
+     "Csteamrootdialog ListPanelInterior"
+    {
+      inset="3 0 3 0"
 			bgcolor=none
+
 			render_bg {}
 		}
 
-		QueryBox
-		{
-			bgcolor="popover_bg"
-			textcolor="popover_fg"
-		}
-		"QueryBox FrameTitle"
-		{
-			minimum-height=80
-			textcolor="popover_fg"
-			font-size=20
-			inset-left=10
+	"Csteamrootdialog ListPanelInterior:scrollbar"
+    {
+      inset="3 0 -1 0"
+			bgcolor=none
+			render
+				{
+
+				}
 			render_bg {}
-		}
-		"QueryBox Label"
+
+	}
+
+	"Page ListPanelInterior"
+	{
+		inset="3 1 -1 0"
+		font-size=15
+		bgcolor=none
+		render
 		{
-			textcolor="popover_fg"
-			font-size=15
-			inset-bottom=16
+
 		}
-		"QueryBox Button"
+		render_bg
 		{
-			textcolor="popover_fg"
-			font-size=15
-			inset-left=20
+			// background gradient
+			0="gradient( x0, y0, x1, y1, dialogbg, almostblack )"
 		}
 	}
+
+	"Page ListPanelInterior:scrollbar"
+	{
+		inset="3 1 -1 0"
+		bgcolor=none
+		render_bg
+		{
+			// background gradient
+			0="gradient( x0, y0, x1+16, y1, dialogbg, almostblack )"
+		}
+	}
+
+    ListPanelSectionHeader
+    {
+		inset="2 0 0 0"
+		textcolor=label
+		font-style="uppercase"
+		render_bg
+		{
+			0="gradient_horizontal( x0 - 1, y0, x0 + 250, y1 - 1, propertysheetbg, Friends.ListHeaderFadeOut  )"
+		}
+    }
+
+    ListPanelSectionHeader:hover
+    {
+        textcolor=texthover
+    }
+
+	"ListPanel RichText"
+	{
+		textcolor="Text"
+		font-family=basefont
+		font-size=15
+		bgcolor=none
+		render_bg {}
+	}
+
+	"ListPanel RichText url"
+	{
+		font-size=15
+		textcolor="Text"
+		font-style=underline
+	}
+
+    "ListPanel RichTextInterior"
+    {
+      bgcolor=DarkDialogBG
+      render_bg {}
+      bgcolor=none
+    }
+
+    ListPanelSectionCollapser [!$OSX]
+    {
+
+      bgcolor=none
+      render_bg {}
+      image="graphics/icon_collapse"
+      inset="-4 0 0 0"
+      padding-top=-2
+      padding-bottom=-2
+    }
+
+    ListPanelSectionCollapser [$OSX]
+    {
+      bgcolor=none
+      render_bg {}
+      image="graphics/icon_collapse_osx"
+      inset="-4 0 0 0"
+      padding-top=-2
+      padding-bottom=-2
+    }
+
+    ListPanelSectionCollapser:hover [!$OSX]
+    {
+      image="graphics/icon_collapse_over"
+    }
+
+    ListPanelSectionCollapser:hover [$OSX]
+    {
+      image="graphics/icon_collapse_over_osx"
+    }
+
+    ListPanelSectionCollapser:selected [!$OSX]
+    {
+      image="graphics/icon_expand"
+    }
+
+    ListPanelSectionCollapser:selected [$OSX]
+    {
+      image="graphics/icon_expand_osx"
+    }
+
+    ListPanelSectionCollapser:selected:hover [!$OSX]
+    {
+      image="graphics/icon_expand_over"
+    }
+
+     ListPanelSectionCollapser:selected:hover [$OSX]
+    {
+      image="graphics/icon_expand_over_osx"
+    }
+
+	MainNav
+    {
+		textcolor="Label"
+		selectedtextcolor="Text"
+		bgcolor="none"
+		font-family=basefont
+		font-size=21
+		font-weight=700
+		font-style="uppercase"
+    }
+
+	Menu
+    {
+		bgcolor="MenuBG2"
+		padding-right=4
+		inset="2 2 2 2"
+
+		render_bg
+		{
+			0="gradient( x0, y0, x1, y0 + 140, MenuBG1, MenuBG2 )"
+			1="fill( x0, y0 + 140, x1, y1, MenuBG2 )"
+
+
+		}
+
+		render {}
+		corner_rounding=1
+    }
+
+    MenuBar
+    {
+		bgcolor=dialogbg
+		padding-right=1
+		padding-left=6
+		padding-top=2
+		padding-bottom=-2
+    }
+
+    "Page MenuBar"
+    {
+		bgcolor=none
+    }
+
+	"MenuBar MenuButton"
+	{
+		textcolor="buttonborder"
+		padding-right=-2
+		inset="-2 0 2 0"
+	}
+
+ 	"MenuBar MenuButton:frameFocus"
+	{
+		textcolor="labeldisabled"
+	}
+
+	"MenuBar MenuButton:frameFocus:hover"
+	{
+		textcolor="texthover"
+		bgcolor=none
+		render_bg
+   		{
+   		}
+	}
+
+	"MenuBar MenuButton:frameFocus:selected"
+	{
+		textcolor="texthover"
+		bgcolor=none
+		render_bg
+   		{
+   		}
+	}
+
+	MenuButton
+    {
+      font-family=basefont
+      font-size=14
+      font-weight=400
+      textcolor="scrollglyph"
+      bgcolor="none"
+      render_bg {}
+    }
+
+  MenuButton:hover
+    {
+      textcolor="white"
+    }
+
+  MenuButton:selected
+    {
+		textcolor="white"
+    }
+
+	MenuItem
+    {
+		font-family=basefont
+		textcolor="label"
+		font-size=14
+		font-weight=400
+		inset="0 0 0 0"
+		padding-right=6
+		bgcolor="none"
+		render_bg {}
+    }
+
+  MenuItem:selected
+    {
+		textcolor="TextHover"
+		bgcolor="none"
+    }
+
+  MenuItem:hover
+    {
+		textcolor="white"
+		bgcolor="none"
+    }
+
+    MenuItem:disabled
+    {
+		textcolor="labeldisabled"
+		shadowtextcolor=none
+    }
+
+    MenuItem:disabled:hover
+    {
+		textcolor="labeldisabled"
+		shadowtextcolor=none
+    }
+
+    MenuSeparator
+    {
+		inset="-4 0 0 0"
+		textcolor="divider"
+		bgcolor=none
+    }
+
+    Notification
+    {
+		font-family=basefont
+		font-size=15
+		font-weight=400
+		bgcolor=none
+		render_bg
+		{
+			0="gradient( x0, y0, x1, y0+80, DialogBG, ClientBG )"
+
+			1="gradient_horizontal( x0, y1-1, x1, y1, ClientBG, Highlight5 )"    // bottom
+			2="gradient( x1-1, y0, x1, y1 , ClientBG, Highlight5 )" // right
+			3="fill( x0, y0, x1, y0+1, ClientBG )"  // top
+			4="fill( x0, y0, x0+1, y1, ClientBG )" // left
+		}
+		render {}
+    }
+
+
+    Page
+    {
+		bgcolor="none"
+		render_bg
+		{
+			// background gradient
+			0="gradient( x0, y0 + 18, x1, y1, DialogBG, PropertySheetBG )"
+		}
+    }
+
+    "CSteamRootDialog Page"
+    {
+		bgcolor="none"
+		render_bg {}
+    }
+
+    "Page RadioButtonList"
+    {
+		bgcolor="DialogBG"
+    }
+
+		PageTab
+    {
+		textcolor="Label"
+		font-family=basefont
+		font-size=13
+		font-style=Uppercase
+		font-weight=400
+		inset="0 -2 0 0"
+    render_bg
+		{
+			// background gradient
+			0="fill( x0, y0 , x1, y1 - 4, PropertySheetBG )"
+			1="fill(x0, y1-2, x1+3000, y1 -1, divider )"
+		}
+    }
+
+
+    PageTab:selected
+    {
+		textcolor="texthover"
+		font-family=basefont
+		font-size=13
+		font-style=Uppercase
+		font-weight=400
+		inset="0 -2 0 0"
+		bgcolor="none"
+	  render_bg
+			{
+				// background gradient
+				0="gradient( x0, y0 , x1, y1, divider, dialogbg )"
+		    1="fill(x1, y1-2, x1+3000, y1 - 1, divider )"
+			}
+    }
+
+
+ 	PageTab:hover
+    {
+		textcolor="texthover"
+		font-family=basefont
+		font-size=13
+		font-style=Uppercase
+		font-weight=400
+		inset="0 -2 0 0"
+		render_bg
+			{
+				// background gradient
+				0="fill( x0, y0 , x1, y1 - 4, buttonfacehover )"
+				1="fill(x0, y1-2, x1+3000, y1 -1, divider )"
+			}
+    }
+
+    PageTab:selected:hover
+    {
+		textcolor="texthover"
+		font-family=basefont
+		font-size=13
+		font-style=Uppercase
+		font-weight=400
+		inset="0 -2 0 0"
+		bgcolor="none"
+	  render_bg
+			{
+				// background gradient
+				0="gradient( x0, y0 , x1, y1, divider, dialogbg )"
+		    1="fill(x1, y1-2, x1+3000, y1 - 1, divider )"
+			}
+    }
+
+  PageTab:Focus
+	  {
+		textcolor="Texthover"
+    }
+
+	"PageDragFrame PageTab"
+	{
+		font-size=14
+		font-style=""
+	}
+
+  TabCloseButton
+    {
+		render_bg {}
+		image="graphics/tiny_x_default"
+    }
+
+	TabCloseButton:hover
+    {
+		image="graphics/tiny_x_hover"
+    }
+
+    Panel
+	{
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		textcolor="Text"
+		bgcolor="none"
+  }
+
+    ProgressBar
+    {
+		textcolor="highlight5a"
+		bgcolor="none"
+		render
+		{
+			// lines around
+		1="fill( x0 + 1, y0 + 1, x1 - 1, y0 + 2, ButtonBorder )"  // top
+		2="fill( x0 + 1, y1 - 2, x1 - 1, y1 - 1, ButtonBorder )"  // bottom
+		3="fill( x0 + 1, y0 + 1, x0 + 2, y1 - 1, ButtonBorder )"  // left
+		4="fill( x1 - 2, y0 + 1, x1 - 1, y1 - 1, ButtonBorder )"  // right
+		}
+	}
+
+	"Page ProgressBar"
+    {
+		textcolor="highlight5a"
+		bgcolor="none"
+		render
+		{
+			// lines around
+		1="fill( x0 + 1, y0 + 1, x1 - 1, y0 + 2, ButtonBorder )"  // top
+		2="fill( x0 + 1, y1 - 2, x1 - 1, y1 - 1, ButtonBorder )"  // bottom
+		3="fill( x0 + 1, y0 + 1, x0 + 2, y1 - 1, ButtonBorder )"  // left
+		4="fill( x1 - 2, y0 + 1, x1 - 1, y1 - 1, ButtonBorder )"  // right
+		}
+    }
+
+    PropertyPage
+    {
+		bgcolor="PropertySheetBG"
+    }
+
+    "CFriendsDialog PropertySheet"
+    {
+		bgcolor="none"
+    }
+
+    RadioButton
+    {
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		textcolor="Label"
+		render_bg {}
+		image="graphics/RadUnselStd"
+		bgcolor=none
+    }
+
+    RadioButton:selected
+    {
+		render_bg {}
+		image="graphics/radSelStd"
+    }
+
+    RadioButton:focus
+    {
+		textcolor="Texthover"
+		bgcolor=none
+		image="graphics/radSelDown"
+    }
+
+    RadioButton:selected:focus
+    {
+		textcolor="Texthover"
+		bgcolor=none
+		image="graphics/radSelFocus"
+    }
+
+    RadioButtonList
+    {
+		bgcolor="none"
+		inset="-2 0 0 0"
+		render_bg
+			{
+			0="gradient( x0, y0, x1, y1, DialogBG, ClientBG  )"
+			}
+    }
+
+    RichText
+    {
+		textcolor="Text"
+		selectedtextcolor="TextSelected"
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		inset="-1 -1 0 0"
+		render_bg
+		{
+		-1="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, DialogBG )"
+
+		// lines around
+		1="fill( x0 + 1, y0 + 1, x1 - 1, y0 + 2, ButtonBorder )"  // top
+		2="fill( x0 + 1, y1 - 1, x1 - 1, y1, ButtonBorder )"  // bottom
+		3="fill( x0 + 1, y0 + 1, x0 + 2, y1 - 1, ButtonBorder )"  // left
+		4="fill( x1 - 2, y0 + 1, x1 - 1, y1 - 1, ButtonBorder )"  // right
+		}
+    }
+
+    RichTextInterior
+		{
+		bgcolor=none
+    }
+
+	// style of links in a rich text control
+
+	"RichText url"
+	{
+		font-size=14
+		textcolor="label"
+		selectedtextcolor="label"
+		font-style=underline
+	}
+
+	"RichText url:hover"
+	{
+		textcolor="Texthover"
+	}
+
+	"CFriendPanel RichText URL"
+		{
+		textcolor="text"
+		font-style=underline
+		font-size=14
+		}
+
+	// style of bold text in a rich text control
+	"RichText bold"
+	{
+		font-size=15
+		font-weight=1000
+	}
+
+	"RichText emphasis"
+	{
+		font-size=15
+		font-style=italic
+	}
+
+	ScrollBar
+	{
+		inset="0 0 0 0"
+	}
+
+    ScrollBarButton.up
+    {
+		bgcolor=none
+		inset="-1 2 0 0"
+		image="graphics/icon_up_default"
+		render_bg
+		{
+			// background fill
+			0="fill( x0 + 2, y0 + 3, x1 - 4, y1 + 2, buttonface )"
+		}
+
+    }
+
+    ScrollBarButton.up:hover
+    {
+		bgcolor=none
+		inset="-1 2 0 0"
+		image="graphics/icon_up_hover"
+		render_bg
+		{
+			// background fill
+			0="fill( x0 + 2, y0 + 3, x1 - 4, y1 + 2, buttonfaceActive )"
+		}
+    }
+
+    ScrollBarButton.up:active
+    {
+		inset="-1 2 0 0"
+		image="graphics/icon_up_hover"
+		render_bg
+		{
+			// background fill
+			0="fill( x0 + 2, y0 + 3, x1 - 4, y1 + 2, buttonfaceActive )"
+		}
+    }
+
+    ScrollBarButton.up:disabled
+    {
+		inset="-1 2 0 0"
+		image="graphics/icon_up_disabled"
+		render_bg
+		{
+			// background fill
+			0="fill( x0 + 2, y0 + 3, x1 - 4, y1 + 2, buttonfaceDisabled )"
+		}
+    }
+
+    ScrollBarButton.down
+	{
+		bgcolor=none
+		inset="-2 0 0 0"
+		image="graphics/icon_down_default"
+		render_bg
+		{
+			// background fill
+			0="fill( x0 + 2, y0 - 1, x1 - 4, y1 - 3, buttonface )"
+		}
+    }
+
+    ScrollBarButton.down:hover
+		{
+		inset="-2 0 0 0"
+		image="graphics/icon_down_hover"
+		render_bg
+		{
+			// background fill
+			0="fill( x0 + 2, y0 - 1, x1 - 4, y1 - 3, buttonfaceActive )"
+		}
+    }
+
+    ScrollBarButton.down:active
+		{
+		inset="-2 0 0 0"
+		image="graphics/icon_down_hover"
+		render_bg
+		{
+			// background fill
+			0="fill( x0 + 2, y0 - 1, x1 - 4, y1 - 3, buttonfaceActive )"
+		}
+    }
+
+
+     ScrollBarButton.down:disabled
+		{
+		inset="-2 0 0 0"
+		image="graphics/icon_down_hover"
+		render_bg
+		{
+			// background fill
+			0="fill( x0 + 2, y0 - 1, x1 - 4, y1 - 3, buttonfaceDisabled )"
+		}
+    }
+
+    ScrollBarButton.left
+    {
+		bgcolor=none
+		inset="1 3 0 0"
+		image="graphics/icon_left_default"
+		render_bg
+			{
+				// center fill
+				0="fill( x0 + 2, y0 + 5, x1, y1 - 3, ButtonFace )"
+			}
+    }
+
+    ScrollBarButton.left:hover
+    {
+
+		image="graphics/icon_left_hover"
+		inset="1 3 0 0"
+		render_bg
+			{
+				// center fill
+				0="fill( x0 + 2, y0 + 5, x1, y1 - 3, ButtonFaceActive )"
+	    }
+    }
+
+    ScrollBarButton.right
+    {
+		bgcolor=none
+		image="graphics/icon_right_default"
+		inset="0 2 0 0"
+		render_bg
+			{
+				// center fill
+				0="fill( x0, y0 + 5, x1, y1 - 3, ButtonFace )"
+	    }
+    }
+
+    ScrollBarButton.right:hover
+    {
+		image="graphics/icon_right_hover"
+		inset="0 2 0 0"
+		render_bg
+			{
+			// center fill
+			0="fill( x0, y0 + 5, x1, y1 - 3, ButtonFaceActive )"
+      }
+    }
+
+    ScrollBarHandle  //vertical scrollbar thumb
+    {
+		bgcolor=none
+		image="graphics/icon_scroll_handle"
+		render_bg
+		{
+			// center fill
+			0="fill( x0 + 2, y0 + 6, x1 - 4, y1 - 5, ButtonFace )"
+		}
+    }
+
+    "ScrollBarHandle:hover"
+    {
+		image="graphics/icon_scroll_handle_over"
+		render_bg
+		{
+			// center fill
+			0="fill( x0 + 2, y0 + 6, x1 - 4, y1 - 5, ButtonFaceActive )"
+		}
+    }
+
+    "ScrollBarHandle:active"
+    {
+		image="graphics/icon_scroll_handle_over"
+		render_bg
+		{
+			// center fill
+			0="fill( x0 + 2, y0 + 6, x1 - 4, y1 - 5, ButtonFaceActive )"
+		}
+    }
+
+
+
+    "SliderHoriz"  //horizontal scrollbar thumb
+    {
+	 	image="graphics/icon_scroll_handle_horiz"
+      render
+      {
+      	// center fill
+        1="fill( x0 + 2, y0 + 6, x1 - 1, y1 - 3, ButtonFace )"
+			}
+    }
+
+    "SliderHoriz:hover"
+    {
+
+			image="graphics/icon_scroll_handle_over_horiz"
+      render
+      	{
+      	// center fill
+        	0="fill( x0 + 2, y0 + 6, x1 - 1, y1 - 3, ButtonFaceActive )"
+				}
+    }
+
+    "SliderHoriz:active"
+    {
+
+    	image="graphics/icon_scroll_handle_over_horiz"
+      	render {
+      	// center fill
+        	0="fill( x0 + 2, y0 + 6, x1 - 1, y1 - 3, ButtonFaceActive )"
+		}
+    }
+
+    ScrollBarSlider // gutter
+    {
+		bgcolor="none"
+		render{ }
+		render_bg
+		{
+
+			//background fill
+			2="gradient( x0 + 2, y0 + 6, x1 - 4, y0 + 200, scrollbg, none)"
+		}
+    }
+
+    ScrollBarSliderHoriz // gutter
+    {
+		bgcolor="none"
+		render{ }
+		render_bg { }
+    }
+
+
+    "GamesPage_Details ListPanel ScrollBarSlider" // gutter in games list detail view
+    {
+		bgcolor="none"
+		render{ }
+		render_bg
+		{
+			//background fill
+			0="gradient( x0 + 2, y0 + 6, x1 - 4, y0 + 200, scrollbg, none)"
+		}
+    }
+
+    ScrollBarSlider:disabled
+    {
+		bgcolor="none"
+		render_bg {}
+    }
+
+    "ScrollBar SliderHoriz" // gutter
+    {
+		bgcolor="dialogbg"
+    }
+
+	"HTML ScrollBar"
+	{
+		bgcolor="none"
+		render_bg {
+			0="fill(x0,y0,x1, y1 - 1, almostblack)"
+		}
+	}
+	"HTML ScrollBar.Horizontal"
+	{
+		bgcolor="none"
+		render_bg {
+			0="fill(x0,y0,x1+25,y1, almostblack)"
+		}
+	}
+
+	"HTML ScrollBarSlider.Horizontal"
+	{
+		bgcolor=none
+		render_bg {
+			//background fill
+			0="gradient_horizontal( x0 + 6, y0 + 5, x0 + 200, y1 - 2, dark, none)"
+		}
+
+	}
+
+	"HTML SliderHoriz"
+	{
+		bgcolor=none
+		render_bg
+		{
+		}
+	}
+
+    SectionedListPanel
+    {
+			bgcolor="propertysheetbg"
+			font-family=basefont
+			font-size=14
+			font-weight=400
+			textcolor="Text"
+			selectedtextcolor="TextSelected"
+			selectedbgcolor="Focus"
+			bgcolor="none"
+		render
+			{
+
+			}
+		      render_bg
+      {
+       	// background fill
+	   		0="gradient( x0, y0, x1, y0 + 140, dialogbg, almostblack )"
+	   		1="fill( x0, y0 + 140, x1, y1, almostblack )"
+      }
+      inset="1 -1 1 1"
+    }
+
+    "CFriendsDialog SectionedListPanel"
+    {
+      bgcolor="none"
+      font-family=basefont
+      font-size=14
+      font-weight=400
+      textcolor="Text"
+      selectedtextcolor="TextSelected"
+      selectedbgcolor="Focus"
+      render { }
+      render_bg
+      {
+       	// background fill
+	   		0="gradient( x0, y0, x1, y0 + 140, dialogbg, almostblack )"
+	   		1="fill( x0, y0 + 140, x1, y1, almostblack )"
+      }
+    }
+
+    SectionedlistpanelCollapser
+    {
+      render_bg {}
+      bgcolor=none
+      image="graphics/icon_collapse"
+      inset="2 1 0 0"
+    }
+
+    SectionedListPanelCollapser:hover
+    {
+      image="graphics/icon_collapse_over"
+    }
+
+    SectionedListPanelCollapser:selected
+    {
+      image="graphics/icon_expand"
+    }
+
+    SectionedListPanelCollapser:selected:hover
+    {
+      image="graphics/icon_expand_over"
+    }
+
+    Slider
+    {
+      font-family=basefont
+      font-size=10
+      font-weight=400
+      textcolor="label"
+      font-style=uppercase
+    }
+
+    Slider:focus
+    {
+      textcolor="Text"
+    }
+
+    StatusLabel
+    {
+      font-family=basefont
+      font-size=14
+      font-weight=400
+      textcolor="labelfocus"
+      font-style=uppercase
+    }
+
+    StatusLabelDim
+    {
+      font-family=basefont
+      font-size=14
+      font-weight=400
+      textcolor="TextDisabled"
+      font-style=normal
+    }
+
+    StatusLabel:hover
+    {
+      font-family=basefont
+      font-size=14
+      font-weight=400
+      textcolor="white"
+      font-style=uppercase
+    }
+
+    TextEntry
+    {
+      font-family=basefont
+      font-size=14
+      textcolor="Text"
+      font-weight=400
+      bgcolor="none"
+      selectedtextcolor="white"
+      selectedbgcolor="TextSelectedBG"
+      shadowtextcolor="text"  // this is the cursor color
+
+      inset-left=4
+      inset-top=0
+      render
+      {
+
+			// lines around
+		1="fill( x0 + 1, y0 + 1, x1 - 1, y0 + 2, ButtonBorder )"  // top
+		2="fill( x0 + 1, y1 - 2, x1 - 1, y1 - 1, ButtonBorder )"  // bottom
+		3="fill( x0 + 1, y0 + 1, x0 + 2, y1 - 1, ButtonBorder )"  // left
+		4="fill( x1 - 2, y0 + 1, x1 - 1, y1 - 1, ButtonBorder )"  // right
+
+      }
+    }
+
+	"Page TextEntry"
+    {
+      render
+      {
+
+			// lines around
+		1="fill( x0 + 1, y0 + 1, x1 - 1, y0 + 2, ButtonBorder )"  // top
+		2="fill( x0 + 1, y1 - 2, x1 - 1, y1 - 1, ButtonBorder )"  // bottom
+		3="fill( x0 + 1, y0 + 1, x0 + 2, y1 - 1, ButtonBorder )"  // left
+		4="fill( x1 - 2, y0 + 1, x1 - 1, y1 - 1, ButtonBorder )"  // right
+      }
+    }
+
+    TextEntry:focus
+    {
+		textcolor="TextHover"
+		bgcolor=none
+		render
+		{
+			// lines around
+		1="fill( x0 + 1, y0 + 1, x1 - 1, y0 + 2, ButtonBorderFocus )"  // top
+		2="fill( x0 + 1, y1 - 2, x1 - 1, y1 - 1, ButtonBorderFocus )"  // bottom
+		3="fill( x0 + 1, y0 + 1, x0 + 2, y1 - 1, ButtonBorderFocus )"  // left
+		4="fill( x1 - 2, y0 + 1, x1 - 1, y1 - 1, ButtonBorderFocus )"  // right
+		}
+    }
+
+    "Page TextEntry:focus"
+    {
+      textcolor="TextHover"
+      render
+      {
+			// lines around
+		1="fill( x0 + 1, y0 + 1, x1 - 1, y0 + 2, ButtonBorderFocus )"  // top
+		2="fill( x0 + 1, y1 - 2, x1 - 1, y1 - 1, ButtonBorderFocus )"  // bottom
+		3="fill( x0 + 1, y0 + 1, x0 + 2, y1 - 1, ButtonBorderFocus )"  // left
+		4="fill( x1 - 2, y0 + 1, x1 - 1, y1 - 1, ButtonBorderFocus )"  // right
+      }
+    }
+
+
+    TextEntry:disabled
+    {
+      textcolor="TextDisabled"
+      bgcolor="ButtonFaceDisabled"
+      render
+      {
+			// lines around
+		1="fill( x0 + 1, y0 + 1, x1 - 1, y0 + 2, ButtonBorderDisabled )"  // top
+		2="fill( x0 + 1, y1 - 2, x1 - 1, y1 - 1, ButtonBorderDisabled )"  // bottom
+		3="fill( x0 + 1, y0 + 1, x0 + 2, y1 - 1, ButtonBorderDisabled )"  // left
+		4="fill( x1 - 2, y0 + 1, x1 - 1, y1 - 1, ButtonBorderDisabled )"  // right
+      }
+    }
+
+	// The 'empty' style is used for 'hint text' in text entry fields.
+	// If the text box does not have focus and does not have content, a
+	// hint text property will be shown with this style. This is comment
+	// to pre-fill to box with something like 'Search' that goes away when active
+	TextEntry:empty
+	{
+		font-style=italic
+		textcolor=LabelDisabled
+	}
+
+    TextEntryLarge
+    {
+      font-family=basefont
+      font-size=18
+      textcolor="Text"
+      font-weight=400
+      bgcolor="none"
+      selectedtextcolor="TextEntrySelected"
+      selectedbgcolor="TextSelectedBG"
+      shadowtextcolor="text"  // this is the cursor color
+
+      inset-left=4
+      render
+      {
+        // lines around
+		1="fill( x0 + 1, y0 + 1, x1 - 1, y0 + 2, ButtonBorder )"  // top
+		2="fill( x0 + 1, y1 - 2, x1 - 1, y1 - 1, ButtonBorder )"  // bottom
+		3="fill( x0 + 1, y0 + 1, x0 + 2, y1 - 1, ButtonBorder )"  // left
+		4="fill( x1 - 2, y0 + 1, x1 - 1, y1 - 1, ButtonBorder )"  // right
+      }
+    }
+
+    TextEntryLarge:focus
+    {
+      textcolor="TextHover"
+      render
+      {
+        // lines around
+		1="fill( x0 + 1, y0 + 1, x1 - 1, y0 + 2, ButtonBorderFocus )"  // top
+		2="fill( x0 + 1, y1 - 2, x1 - 1, y1 - 1, ButtonBorderFocus  )"  // bottom
+		3="fill( x0 + 1, y0 + 1, x0 + 2, y1 - 1, ButtonBorderFocus  )"  // left
+		4="fill( x1 - 2, y0 + 1, x1 - 1, y1 - 1, ButtonBorderFocus  )"  // right
+      }
+    }
+
+    TextEntryLarge:disabled
+    {
+      textcolor="TextDisabled"
+      bgcolor="ButtonFaceDisabled"
+      render
+      {
+        // lines around
+		1="fill( x0 + 1, y0 + 1, x1 - 1, y0 + 2, ButtonBorderDisabled )"  // top
+		2="fill( x0 + 1, y1 - 2, x1 - 1, y1 - 1, ButtonBorderDisabled )"  // bottom
+		3="fill( x0 + 1, y0 + 1, x0 + 2, y1 - 1, ButtonBorderDisabled )"  // left
+		4="fill( x1 - 2, y0 + 1, x1 - 1, y1 - 1, ButtonBorderDisabled )"  // right
+      }
+    }
+
+    TextEntryURL
+	{
+		font-family=basefont
+		font-size=14
+		textcolor="text"
+		font-weight=400
+		bgcolor="none"
+		selectedtextcolor="TextEntrySelected"
+		selectedbgcolor="TextSelectedBG"
+		shadowtextcolor="Text"	// this is the cursor color
+		inset-left=0
+		inset-top=-1
+		render { }
+	}
+
+	TextEntryURL:Hover
+	{
+		textcolor="texthover"
+		render
+		{
+			// lines around
+		1="fill( x0 + 1, y0 + 1, x1 - 1, y0 + 2, ButtonFaceDisabled )"  // top
+		2="fill( x0 + 1, y1 - 2, x1 - 1, y1 - 1, ButtonFaceDisabled )"  // bottom
+		3="fill( x0 + 1, y0 + 1, x0 + 2, y1 - 1, ButtonFaceDisabled )"  // left
+		4="fill( x1 - 2, y0 + 1, x1 - 1, y1 - 1, ButtonFaceDisabled )"  // right
+		}
+	}
+
+	ToggleButton
+    {
+      inset="1 0 0 0"
+      inset="1 3 0 0" [$OSX]
+      font-family=basefont
+      font-size=13
+      font-weight=400
+      textcolor="Text"
+      bgcolor=none
+      render_bg
+      {
+
+        // background fill
+	   0="gradient( x0, y0, x1, y1, buttonface2, propertysheetbg )"
+      }
+    }
+
+    ToggleButton:focus
+    {
+            textcolor="TextHover"
+            bgcolor="none"
+	 		render_bg
+		{
+			// background fill
+			0="gradient( x0, y0, x1, y1, buttonface2, propertysheetbg )"
+		}
+    }
+
+    ToggleButton:hover
+    {
+      textcolor="TextHover"
+      bgcolor="none"
+      render_bg
+      {
+
+        // background fill
+        0="gradient( x0, y0, x1, y1, buttonfaceactive, propertysheetbg )"
+      }
+    }
+
+    ToggleButton:selected
+    {
+
+      textcolor="TextHover"
+      bgcolor="none"
+      render_bg
+      {
+        	// background fill
+		0="gradient( x0, y0, x1, y1, backgroundstartopaque, propertysheetbg )"
+      }
+    }
+
+
+    "Page ToggleButton"
+    {
+      font-family=basefont
+      font-size=13
+      font-weight=400
+      textcolor="Text"
+      bgcolor=none
+      render_bg
+      {
+      // background fill
+			0="gradient( x0, y0, x1, y1, buttonface2, propertysheetbg )"
+      }
+    }
+
+    "Page ToggleButton:hover"
+    {
+      textcolor="TextHover"
+      bgcolor="none"
+      render_bg
+      {
+      	0="gradient( x0, y0, x1, y1, buttonfacehover, propertysheetbg )"
+      }
+    }
+
+    "Page ToggleButton:focus"
+    {
+      textcolor="TextHover"
+      bgcolor="none"
+      render_bg
+      {
+				0="gradient( x0, y0, x1, y1, buttonfacefocus, propertysheetbg )"
+      }
+    }
+
+    "Page ToggleButton:selected"
+    {
+      textcolor="TextHover"
+      bgcolor="none"
+      render_bg
+      {
+				0="gradient( x0, y0, x1, y1, backgroundstartopaque, propertysheetbg )"
+      }
+    }
+
+    // the background and frame of a tooltip
+    TooltipWindow
+    {
+        bgcolor="MenuBG1"
+    }
+
+	// body text inside a tooltip
+    "TooltipWindow Label"
+    {
+		padding-left=4
+        textcolor="Text"
+    }
+
+    // headline text inside a tooltip
+   	tooltip_headline
+   	{
+   		textcolor="TextSelected"
+   		padding-left=4
+   		padding-top=1
+   		padding-bottom=0
+   		font-weight=1000
+   	}
+
+    TreeNode
+    {
+      bgcolor=none
+      render_bg {}
+    }
+
+    TreeNodeImage
+    {
+      bgcolor=none
+    }
+
+    TreeViewSubPanel
+    {
+      bgcolor=none
+    }
+
+    TreeNodeText
+    {
+      font-family=basefont
+      font-size=13
+      textcolor="Text"
+      selectedtextcolor="TextSelected"
+      selectedbgcolor="TextSelectedBG"
+      bgcolor=none
+      render {}
+      render_bg {}
+    }
+
+    TreeView
+    {
+      render_bg
+      {
+        -1="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, none )"
+
+      // lines around
+			1="fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorder )"  // top
+			2="fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorder )"  // bottom
+			3="fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorder )"  // left
+			4="fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorder )"  // right
+
+      // single pixel fills in the corners
+			5="fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorderDisabled )"  // top
+			6="fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorderDisabled )"  // bottom
+			7="fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorderDisabled )"  // left
+			8="fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorderDisabled )"  // right
+			11="fill( x0, y0 + 1, x0 + 1, y0 + 2, ButtonBorderDisabled2 )"
+			12="fill( x1 - 1, y0 + 1, x1, y0 + 2, ButtonBorderDisabled2 )"
+			13="fill( x0, y1 - 2, x0 + 1, y1 - 1, ButtonBorderDisabled2 )"
+			14="fill( x1 - 1, y1 - 2, x1, y1 - 1, ButtonBorderDisabled2 )"
+			15="fill( x0 + 1, y0, x0 + 2, y0 + 1, ButtonBorderDisabled2 )"
+			16="fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonBorderDisabled2 )"
+			17="fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonBorderDisabled2 )"
+			18="fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonBorderDisabled2 )"
+      }
+    }
+
+    URLLabel
+    {
+      textcolor="label"
+      bgcolor="none"
+      font-family=basefont
+      font-size=14
+      font-weight=400
+      font-style=underline
+    }
+
+   	URLLabel:Hover
+	{
+	 textcolor="texthover"
+	 font-size=14
+	}
+
+	URLLabelSimple
+    {
+      textcolor="labelfocus"
+      bgcolor="none"
+      font-family=basefont
+      font-size=14
+      font-weight=400
+      font-style=regular
+    }
+
+	URLLabelSimple [$OSX]
+    {
+      textcolor="labelfocus"
+      bgcolor="none"
+      font-family=basefont
+      font-size=13
+      font-weight=400
+      font-style=regular
+    }
+
+  URLLabelSimple:Hover
+    {
+      font-style=underline
+      textcolor="WHITE"
+    }
+
+	URLLabelSimple2
+    {
+      textcolor="labelfocus"
+      bgcolor="none"
+      font-family=basefont
+      font-size=14
+      font-weight=400
+      font-style=regular
+    }
+
+	URLLabelSimple2 [$OSX]
+    {
+      textcolor="labelfocus"
+      bgcolor="none"
+      font-family=basefont
+      font-size=13
+      font-weight=400
+      font-style=regular
+    }
+
+  URLLabelSimple2:Hover
+    {
+      textcolor="WHITE"
+    }
+
+
+    // Steam-specific styles
+    CConsoleHistory
+    {
+      font-family="Lucida Console"
+      font-size=9
+      font-family="DejaVu Sans Mono" [$LINUX]
+      font-size=12 [$LINUX]
+      font-family="Menlo" [$OSX]
+      font-size=14 [$OSX]
+      textcolor="label"
+      selectedtextcolor="TextSelected"
+
+      render
+			{
+
+			}
+			render_bg
+			{
+				// background gradient
+				1="gradient( x0, y0, x1, y1, dialogbg, almostblack )"
+			}
+    }
+
+    GameColumnHeaderFavorites
+    {
+      image="steam/cached/fav_remove"
+
+    }
+
+    CGamesListFavoritesToggle
+    {
+      image="steam/cached/fav_addTo"
+    }
+
+    CGamesListFavoritesToggle:hover
+    {
+      image="steam/cached/fav_addTo_ovr"
+    }
+
+    CGamesListFavoritesToggle:selected
+    {
+      image="steam/cached/fav_remove"
+    }
+
+    CGamesListFavoritesToggle:selected:hover
+    {
+      image="steam/cached/fav_remove_ovr"
+    }
+
+    WrapPanel
+    {
+      inset="0 0 0 0"
+      font-family=basefont
+      font-size=14
+      font-weight=400
+      textcolor="Text"
+      selectedtextcolor="TextSelected"
+      selectedbgcolor="Focus"
+      bgcolor=none
+      render_bg {
+        // background gradient
+        1="gradient( x0, y0, x1, y0 + 240, propertysheetbg, DarkDialogBG )"
+        2="fill( x0, y0 + 240, x1, y1, DarkDialogBG )"
+            }
+        inset="1 -1 1 1"
+    }
+
+    BackButton
+    {
+      bgcolor=none
+      inset="-5 -1 0 0"
+      render_bg={}
+      image="graphics/icon_button_back"
+    }
+
+    BackButton:hover
+    {
+      bgcolor=none
+      render_bg={}
+      image="graphics/icon_button_back_down"
+    }
+
+    BackButton:active
+    {
+      bgcolor=none
+      render_bg={}
+      image="graphics/icon_button_back_down"
+    }
+
+    BackButton:disabled
+    {
+      bgcolor=none
+      render_bg={}
+      image="graphics/icon_button_back_disabled"
+    }
+
+    FullscreenButton
+    {
+      bgcolor=none
+      render_bg={}
+      image="graphics/icon_controller_bpm"
+    }
+
+
+    FullscreenButton:hover
+    {
+      bgcolor=none
+      render_bg={}
+      image="graphics/icon_controller_bpm_over"
+    }
+
+    FullscreenButton:active
+    {
+      bgcolor=none
+      render_bg={}
+      image="graphics/icon_controller_bpm_down"
+    }
+
+    FullscreenButton:disabled
+    {
+      bgcolor=none
+      render_bg={}
+      image="graphics/icon_controller_bpm_disabled"
+    }
+
+    VRButton
+    {
+      bgcolor=none
+      render_bg={}
+      image="graphics/icon_vr"
+    }
+
+    VRButton:hover
+    {
+      bgcolor=none
+      render_bg={}
+      image="graphics/icon_vr_over"
+    }
+
+    VRButton:active
+    {
+      bgcolor=none
+      render_bg={}
+      image="graphics/icon_vr_down"
+    }
+
+    VRButton:disabled
+    {
+      bgcolor=none
+      render_bg={}
+      image="graphics/icon_vr_disabled"
+    }
+
+    VRButtonExit
+    {
+      bgcolor=none
+      render_bg={}
+      image="graphics/icon_vr_happy"
+    }
+
+    VRButtonExit:hover
+    {
+      bgcolor=none
+      render_bg={}
+      image="graphics/icon_vr_happy_over"
+    }
+
+    VRButtonExit:active
+    {
+      bgcolor=none
+      render_bg={}
+      image="graphics/icon_vr_happy_down"
+    }
+
+    VRButtonExit:disabled
+    {
+      bgcolor=none
+      render_bg={}
+      image="graphics/icon_vr_disabled"
+    }
+
+    ForwardButton
+    {
+      bgcolor=none
+      inset="-5 -1 0 0"
+      render_bg={}
+      image="graphics/icon_button_forward"
+    }
+
+    ForwardButton:hover
+    {
+      bgcolor=none
+      render_bg={}
+      image="graphics/icon_button_forward_over"
+    }
+
+    ForwardButton:active
+    {
+      bgcolor=none
+      render_bg={}
+      image="graphics/icon_button_forward_down"
+    }
+
+    ForwardButton:disabled
+    {
+      bgcolor=none
+      render_bg={}
+      image="graphics/icon_button_forward_disabled"
+    }
+
+    HomeButton
+    {
+      bgcolor=none
+      inset="-5 0 0 0"
+      render_bg={}
+      image="graphics/icon_button_home"
+    }
+
+    HomeButton:hover
+    {
+      bgcolor=none
+      render_bg={}
+      image="graphics/icon_button_home_over"
+    }
+
+    HomeButton:active
+    {
+      bgcolor=none
+      render_bg={}
+      image="graphics/icon_button_home_down"
+    }
+
+    HomeButton:disabled
+    {
+      bgcolor=none
+      render_bg={}
+      image="graphics/icon_button_home_disabled"
+    }
+
+    ReloadButton
+    {
+      bgcolor=none
+      inset="-5 0 0 0"
+      render_bg={}
+      image="graphics/icon_button_reload"
+    }
+
+    ReloadButton:hover
+    {
+      bgcolor=none
+      render_bg={}
+      image="graphics/icon_button_reload_over"
+    }
+
+    ReloadButton:active
+    {
+      bgcolor=none
+      render_bg={}
+      image="graphics/icon_button_reload_down"
+    }
+
+    ReloadButton:disabled
+    {
+      bgcolor=none
+      render_bg={}
+      image="graphics/icon_button_reload_disabled"
+    }
+
+    StopButton
+    {
+      bgcolor=none
+      inset="-5 0 0 0"
+      render_bg={}
+      image="graphics/icon_button_stop"
+    }
+
+    StopButton:hover
+    {
+      bgcolor=none
+      render_bg={}
+      image="graphics/icon_button_stop_over"
+    }
+
+    StopButton:active
+    {
+      bgcolor=none
+      render_bg={}
+      image="graphics/icon_button_stop_down"
+    }
+
+    StopButton:disabled
+    {
+      bgcolor=none
+      render_bg={}
+      image="graphics/icon_button_stop_disabled"
+    }
+
+
+	gamedetails-headerlabel
+	{
+		font-size="17"
+		font-style="normal"
+		font-family=basefont
+		font-weight=700
+		textcolor="Text"
+		font-style="uppercase;"
+	}
+
+	gamedetails-headerlabel-red
+	{
+		font-size="17"
+		font-style="normal"
+		font-family=basefont
+		font-weight=700
+		textcolor="GameDetailsRed"
+		font-style="uppercase;"
+	}
+
+ 	"html-findbar"
+ 	{
+		font-family=basefont
+		font-size=14
+		textcolor="text2"
+		font-weight=400
+		bgcolor="DarkClientBG"
+		selectedtextcolor="TextEntrySelected"
+		selectedbgcolor="TextSelectedBG"
+		shadowtextcolor="Text"	// this is the cursor color
+		inset-left=0
+		inset-top=0
+
+			render
+		      {
+		        // lines around
+		        0="fill( x0, y0, x0 + 1, y1, ButtonBorder )"
+		        1="gradient_horizontal( x0, y0, x1, y0 + 1, ButtonBorder, none )"
+		        2="gradient_horizontal( x0, y1 - 1, x1, y1, ButtonBorder, none )"
+		      }
+	}
+
+ 	"html-imebar"
+ 	{
+		font-family=basefont
+		font-size=14
+		textcolor="text2"
+		font-weight=400
+		bgcolor="DarkClientBG"
+		selectedtextcolor="TextEntrySelected"
+		selectedbgcolor="TextSelectedBG"
+		shadowtextcolor="Text"	// this is the cursor color
+		inset-left=0
+		inset-top=0
+
+			render
+		      {
+		        // lines around
+		        0="fill( x0, y0, x0 + 1, y1, ButtonBorder )"
+		        1="gradient_horizontal( x0, y0, x1, y0 + 1, ButtonBorder, none )"
+		        2="gradient_horizontal( x0, y1 - 1, x1, y1, ButtonBorder, none )"
+		      }
+	}
+
+	gamedetails-headerlabel-green
+	{
+		font-size="17"
+		font-style="normal"
+		textcolor="GameDetailsGreen"
+		font-family=basefont
+		font-weight=700
+		font-style="uppercase;"
+	}
+
+	gamedetails-headerlabel-blue
+	{
+		font-size="17"
+		font-style="normal"
+		textcolor="GameDetailsBlue"
+		font-family=basefont
+		font-weight=700
+		font-style="uppercase;"
+	}
+
+	// styles for text used in RichText controls in various places
+
+	console_text_error
+	{
+		textcolor="Highlight3"
+		font-size=14
+		font-family="DejaVu Sans Mono" [$LINUX]
+		font-size=12 [$LINUX]
+		font-family="Menlo" [$OSX]
+      	font-size=16 [$OSX]
+		selectedtextcolor="TextSelected"
+		selectedbgcolor="Focus"
+	}
+
+	console_text
+	{
+		font-family="Lucida Console"
+		font-size=9
+		font-family="DejaVu Sans Mono" [$LINUX]
+		font-size=12 [$LINUX]
+		font-family="Menlo" [$OSX]
+		font-size=14 [$OSX]
+		textcolor="text"
+		selectedtextcolor="TextSelected"
+		selectedbgcolor="Focus"
+	}
+
+	friends_chat_text
+	{
+		textcolor="text"
+		selectedtextcolor="TextentrySelected"
+		SelectedBgColor="focus"
+		font-size=16
+	}
+
+	friends_chat_text_self
+	{
+		textcolor="ChatOwnTextColor"
+		selectedtextcolor="TextentrySelected"
+		selectedbgcolor="focus"
+		font-size=16
+	}
+
+	friends_chat_history
+	{
+		textcolor="ChatDialog.HistoryColor"
+		selectedtextcolor="TextentrySelected"
+		selectedbgcolor="focus"
+		font-size=16
+	}
+
+	friends_chat_event
+	{
+		textcolor="Text"
+		font-size=16
+		selectedtextcolor="TextentrySelected"
+		selectedbgcolor="focus"
+	}
+
+	friends_chat_bright_event
+	{
+		textcolor="text"
+		selectedtextcolor="TextentrySelected"
+		font-size=16
+		font-weight=1000
+	}
+
+	friends_chat_url
+	{
+		textcolor="text"
+   		SelectedBgColor="focus"
+		font-style=underline
+		font-size=16
+		selectedtextcolor="TextentrySelected"
+		selectedbgcolor="focus"
+	}
+
+	friends_chat_name_ingame
+	{
+		textcolor="Friends.InGameColor"
+		selectedtextcolor="TextentrySelected"
+		selectedbgcolor="focus"
+		font-size=16
+	}
+
+	friends_chat_name_golden
+	{
+		textcolor="Friends.GoldenColor"
+		selectedtextcolor="TextentrySelected"
+		selectedbgcolor="focus"
+		font-size=16
+	}
+
+
+	friends_chat_self
+	{
+		textcolor="Friends.OnlineColor"
+		selectedtextcolor="TextentrySelected"
+		selectedbgcolor="focus"
+		font-size=16
+	}
+
+	friends_chat_name
+	{
+		textcolor="Friends.OnlineColor"
+		selectedtextcolor="TextentrySelected"
+		selectedbgcolor="focus"
+		font-size=16
+	}
+
+	friends_chat_accountid
+	{
+		selectedtextcolor="TextentrySelected"
+		selectedbgcolor="focus"
+		textcolor="text"
+		font-size=16
+	}
+
+	friends_chat_securitylink
+	{
+		textcolor="text"
+		bgcolor="none"
+		font-family=basefont
+		font-size=16
+		font-weight=400
+		font-style=underline
+		selectedtextcolor="TextSelected"
+		selectedbgcolor="Focus"
+	}
+
+		CChatRoomDlg
+		{
+			bgcolor="none"
+
+			render
+			{
+
+			}
+			render_bg
+			{
+
+			}
+
+		}
+
+		ChatListPanel
+		{
+		render {}
+
+		render_bg
+			{
+						 0="gradient( x0, y0, x1 -16, y1, darkdialogbg, almostblack )"
+			}
+		}
+
+
+	Chat_MenuButton_withChrome
+	{
+		font-family=basefont
+		font-style="uppercase"
+		font-size="13"
+		font-weight=400
+		textcolor="text"
+		bgcolor="none"
+		render_bg
+		{
+			// background fill
+			0="gradient( x0, y0, x1, y1, buttonface, propertysheetbg )"
+		}
+		minimum-width=120
+	}
+
+	Chat_MenuButton_withChrome:disabled
+  {
+      textcolor="LabelDisabled"
+      render_bg
+      {
+        // background fill
+        0="fill( x0, y0, x1, y1, none )"
+
+      }
+    }
+
+   	// used in friends tooltip and friends list for overriding regular styles with custom colors
+   	friends_offline
+   	{
+   		textcolor="Friends.OfflineColor"
+   	}
+
+    friends_offline:hover
+   	{
+   		textcolor="Friends.OfflineHoverColor"
+   	}
+
+   	friends_online
+   	{
+   		textcolor="Friends.OnlineColor"
+   	}
+
+   	friends_online:hover
+   	{
+   		textcolor="Friends.OnlineHoverColor"
+   	}
+
+   	friends_ingame
+   	{
+   		textcolor="Friends.InGameColor"
+   	}
+
+   	friends_ingame:hover
+   	{
+   		textcolor="Friends.InGameHoverColor"
+   	}
+
+   	friends_golden
+   	{
+   		textcolor="Friends.GoldenColor"
+   	}
+
+   	friends_golden:hover
+   	{
+   		textcolor="Friends.GoldenHoverColor"
+   	}
+
+   	friends_ignored
+   	{
+   		textcolor="Friends.IgnoredColor"
+   	}
+
+	view_friends [!$OSX]
+	{
+		textcolor="LabelFocus"
+		bgcolor="none"
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		font-style=regular,uppercase
+		padding-top=0
+		padding-right=28
+
+		render_bg
+		{
+			1="image( x1-30, y0+20, x1, y1, graphics/icon_friendslist )"
+		}
+	}
+
+	view_friends [$OSX]
+	{
+		textcolor="LabelFocus"
+		bgcolor="none"
+		font-family=basefont
+		font-size=13
+		font-weight=400
+		font-style=regular,uppercase
+		padding-top=-1
+		padding-right=28
+
+		render_bg
+		{
+			1="image( x1-30, y0+20, x0, y0, graphics/icon_friendslist )"
+		}
+	}
+
+	view_friends:Hover
+	{
+		 textcolor="white"
+
+		 render_bg
+		{
+			1="image( x1-30, y0+20, x1, y1, graphics/icon_friendslist_over )"
+		}
+	}
+
+	view_friends:disabled
+	{
+		textcolor="TextDisabled"
+	}
+
+
+   	TabPageCloseButton
+   	{
+   		padding-right=16
+   	}
+
+	SuperNavMenu
+	{
+		padding-left=8
+		padding-right=8
+
+		render {}
+
+		render_bg
+		{
+			// top area and graphic
+			0="fill( x0, y0, x1, y1, MenuBg )"
+			1="image( x0, y0, x1, y1, graphics/clienttexture8)"
+
+								// lines around
+				2="fill( x0 + 1, y0, x1 - 1, y0 + 1, blueborder )"  // top
+				3="fill( x0 + 1, y1 - 1, x1 - 1, y1, blueborder )"  // bottom
+				4="fill( x0, y0 + 1, x0 + 1, y1 - 1, blueborder )"  // left
+				5="fill( x1 - 1, y0 + 1, x1, y1 - 1, blueborder )"  // right
+		}
+	}
+
+	SuperNavMenuItem
+	{
+		padding=1
+		font-size=14
+		font-weight=regular
+		textcolor="label"
+		bgcolor=none
+		font-style="uppercase"
+	}
+
+	SuperNavMenuItem:selected
+	{
+		textcolor="SuperNav"
+	}
+
+	SuperNavMenuItem:hover
+	{
+		textcolor="SuperNavHover"
+	}
+
+	"SuperNavMenuDivider"
+	{
+		textcolor="none"
+		render {
+			1="fill( x0+6, y0+1, x1-6, y0+2, SuperDivider )"
+		}
+	}
+
+	"NotifyRemoteClientTitle"
+	{
+		textcolor="LabelDisabled"
+	}
+
+	"NotifyRemoteClientInfo"
+	{
+		textcolor="176 172 165 255"
+	}
+
+	"NotifyRemotePlayTogetherTitle"
+	{
+		textcolor="white"
+	}
+
+  }
 }
