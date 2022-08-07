@@ -41,11 +41,11 @@ def list_patches(patches: list[Path]) -> NoReturn:
 
 def apply_patch(parentdir: Path, patch: Path):
 	with patch.open() as patch_file:
-		print(f"Applying patch {TEXT_BOLD}{patch_name(patch)}{TEXT_RESET}...")
+		print(f"\nApplying patch {TEXT_BOLD}{patch_name(patch)}{TEXT_RESET}...")
 		try:
 			subprocess.run(["patch", "-l", "-p0"], cwd = parentdir, stdin = patch_file)
 		except Exception as e:
-			print(f"Error applying patch: {e}")
+			print(f"\nError applying patch: {e}")
 
 def install(source: Path, target: Path, name: str):
 	if target.is_dir():

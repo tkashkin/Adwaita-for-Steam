@@ -2,20 +2,21 @@ uinavigatorpanel.layout
 {
 	layout
 	{
-		region { name="left_buttons" x=0 y=7 width=250 height=34 }
-		place { control="label_console" region="left_buttons" x=7 y=0 width=34 height=42 }
-		place { control="back,forward,refresh,stop" region="left_buttons" start="label_console" x=7 y=0 width=34 height=34 spacing=6 }
+		region { name="left" x=0 y=7 width=166 height=34 }
+		region { name="tabs" margin-left=170 margin-right=170 }
 
-		place { control="label_store,label_library,label_community,label_me,label_news" spacing=4 margin-top=7 width=120 height=42 align=top-center }
-		place { control="label_community_new" y=7 width=0 height=34 align=right end-right="label_store" margin-right=6 } // tab icons
+		place { control="label_console" region="left" x=7 y=0 width=34 height=42 }
+		place { control="back,forward" region="left" start="label_console" x=7 y=0 width=34 height=34 spacing=6 }
+
+		place { control="label_store,label_library,label_community,label_me,label_news" region="tabs" spacing=4 margin-top=7 width=120 height=42 align=top-center }
+		place { control="label_community_new" region="tabs" y=7 width=0 height=34 align=right end-right="label_store" } // tab icons
 
 		place { control="label_community_friends,label_community_profile,label_community_gamehubs,label_community_forums,label_community_workshop,label_community_greenlight,label_community_marketplace" x=0 y=48 spacing=0 height=32 }
 
-		place { control="URLBar" width=600 height=30 margin-top=52 margin-left=16 margin-right=16 align=top-center }
+		place { control="URLBar" width=600 height=30 margin-top=52 margin-left=16 margin-right=46 align=top-center }
 		place { control="URLStatusImage" align=left start="URLBar" width=16 height=16 margin-left=-594 margin-top=7 }
-		place { control="PageLoadThrobber" align=left start="URLBar" width=16 height=16 margin-left=-24 margin-top=7 }
-
-		region { name="dropdown" width=200 x=82 y=80 height=20 }
+		place { control="PageLoadThrobber" align=left start="URLBar" width=16 height=16 margin-left=-594 margin-top=7 }
+		place { control="refresh,stop" align=left start="URLBar" width=30 height=30 }
 
 		place { control="URLAnchor" align=left y=48 height=38 width=max }
 		place { control="LibraryAnchor" height=38 width=max start="URLAnchor" dir=down }
