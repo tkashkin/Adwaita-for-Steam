@@ -70,6 +70,18 @@ selector for those
     --toast_padding: 6px;
     --toast_padding_left: 12px;
 
+    --button_bg: rgba(255, 255, 255, 0.1);
+    --button_hover_bg: rgba(255, 255, 255, .14);
+    --button_active_bg: rgba(255, 255, 255, .29);
+    --button_disabled_bg: rgba(255, 255, 255, .05);
+    --button_fg: rgba(255, 255, 255, 1);
+    --button_disabled_fg: rgba(255, 255, 255, .5);
+
+    --border: rgba(255, 255, 255, 38);
+
+    --card_bg_color: rgba(255, 255, 255, .08);
+    --card_fg_color: var(--fg);
+
     --scrollbar: #4d4e4e;
     --scrollbar_hover: #6b6c6b;
     --scrollbar_active: #898b8a;
@@ -103,6 +115,23 @@ div#responsive_page_template_content {
 /* Library Left Panel Section Headers */
 [class*="gamelistsectionheader_Container_"] {
     background: var(--view_bg_color) !important;
+}
+
+/* Left Panel Section Rows */
+[class*="gamelistentry_Container_"] {
+    border-radius: var(--menu_radius) !important;
+}
+
+[class*="gamelistentry_Container_"]:hover {
+    background: var(--button_hover_bg) !important;
+}
+
+[class*="gamelistentry_Selected_"] {
+    background: var(--button_bg) !important;
+}
+
+[class*="gamelistentry_Selected_"] [class*="gamelistentry_GameListEntryContainer_"]:hover {
+    background: var(--button_active_bg) !important;
 }
 
 /* Play Button */
@@ -141,7 +170,7 @@ div#responsive_page_template_content {
 [class*="libraryhomeshowcases_AddShowcaseRow_"] {
     display: none !important;
 }
- */
+*/
 
 /*  --- Collection View --- */
 /* Background */
@@ -162,18 +191,56 @@ div#responsive_page_template_content {
 }
 
 /* Rounded Corners */
-[class*="appdetailsprimarylinkssection_LinksSectionBody_"],
-[class*="writereview_RightContainer_"] button,
-[class*="appdetailsspotlight_ReviewContainer_"],
-[class*="writereview_RatingContainer_"],
-[class*="appdetailssection_RightColumnSection_"],
-[class*="appdetailssection_Highlight_"],
-[class*="appdetailsworkshopsection_WorkshopContainer_"],
 [class*="appactionbutton_ButtonChild"],
-[class*="appactivityday_PartnerEventMediumImage_Container_"],
+[class*="appactivityday_EventBody_"],
+[class*="appactivityday_PartnerEventMediumImage_Image_"],
+[class*="appactivityday_PartnerEventLargeImage_Image_"],
+[class*="appactivityday_PartnerEventLargeImage_Container_"],
 [class*="appactivityday_PartnerEvent_"],
-[class*="appactivityday_EventBody_"] {
+[class*="appdetailsactivitysection_FetchMoreContainer_"],
+[class*="appdetailscommunityfeed_HeaderStyles_"],
+[class*="appdetailsdlcsection_Art_"],
+[class*="appdetailsprimarylinkssection_LinksSectionBody_"],
+[class*="appdetailssection_Highlight_"],
+[class*="appdetailssection_RightColumnSection_"],
+[class*="appdetailsspotlight_ReviewContainer_"],
+[class*="appdetailsworkshopsection_FeaturedItemImage_"],
+[class*="appdetailsworkshopsection_WorkshopContainer_"],
+[class*="libraryassetimage_Visible_"],
+[class*="spotlight_MajorEventImageContainer_"],
+[class*="spotlight_MajorEventContainer_"],
+[class*="spotlight_MajorEventBackground_"],
+[class*="writereview_RightContainer_"] button {
     border-radius: var(--card_radius) !important;
+    background: var(--card_bg_color) !important;
+    border: none !important;
+}
+
+/* Hover Highlight */
+[class*="appactivityday_PartnerEventTextOnly_Container_"]:hover,
+[class*="appactivityday_PartnerEventMediumImage_Container_"]:hover,
+[class*="appactivityday_PartnerEventLargeImage_Container_"]:hover {
+    background: var(--button_hover_bg) !important;
+}
+
+[class*="appactivityday_PartnerEventTextOnly_Container_"],
+[class*="appactivityday_PartnerEventMediumImage_Container_"],
+[class*="appactivityday_PartnerEventLargeImage_Container_"] {
+    border-radius: var(--card_radius) !important;
+}
+
+/* Remove Unneeded Backgrounds */
+[class*="appactivityday_PartnerEventMediumImage_Container_"],
+[class*="appdetailsdlcsection_Gloss_"],
+[class*="writereview_RatingContainer_"] {
+    background: none !important;
+}
+
+/* Remove Image Borders */
+[class*="appactivityday_PartnerEvent_"],
+[class*="appactivityday_PartnerEventLargeUpdate_"],
+[class*="spotlight_MajorEventContainer_"] {
+    border-image-source: none !important;
 }
 
 /* Border Radius Fixes */
@@ -187,8 +254,13 @@ div#responsive_page_template_content {
     border-bottom-right-radius: 0px !important;
 }
 
-[class*="appactivityday_PartnerEvent_"] {
-    border-image-source: none !important;
+[class*="appdetailsachievementssection_Icon_"] {
+    border-radius: var(--button_radius) !important;
+}
+
+/* Hide Blur From Major Updates */
+[class*="appactivityday_Blur_"] {
+    display:none;
 }
 
 /* `Scroll to Top` Button */
