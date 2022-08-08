@@ -13,8 +13,8 @@ TEXT_RESET = "\033[0m"
 SKIN_DIR = "Adwaita"
 PATCH_DIR = "patches"
 
-TARGET_NORMAL = "~/.local/share/Steam"
-TARGET_FLATPAK = "~/.var/app/com.valvesoftware.Steam/.local/share/Steam"
+TARGET_NORMAL = "~/.steam/steam"
+TARGET_FLATPAK = "~/.var/app/com.valvesoftware.Steam/.steam/steam"
 
 skindir = Path(SKIN_DIR)
 patchdir = Path(PATCH_DIR)
@@ -53,6 +53,7 @@ def install(source: Path, target: Path, name: str):
 			target = target / "skins"
 			target.mkdir(exist_ok = True)
 	else:
+		print(f"Directory {TEXT_BOLD}{target}{TEXT_RESET} does not exist")
 		return
 	print(f"Installing skin {TEXT_BOLD}{name}{TEXT_RESET} into {TEXT_BOLD}{target}{TEXT_RESET}...")
 	target_skin = target / name
@@ -65,8 +66,7 @@ if __name__ == "__main__":
 		raise SystemExit(f"Skin directory {TEXT_BOLD}{SKIN_DIR}{TEXT_RESET} does not exist. Make sure you're running the installer from its root directory")
 
 	parser = ArgumentParser(description = "Adwaita-for-Steam installer")
-	parser.add_argument("-t", "--target", choices = ["normal", "flatpak", "all"], default = "all", help = "Default install targets")
-	parser.add_argument("-d", "--target-dirs", type = Path, nargs = "+", action = "extend", help = "Custom install paths")
+	parser.add_argument("-t", "--target", nargs = "+", action = "extend", default = ["normal", "flatpak"], help = "Install targets: 'normal', 'flatpak', custom paths")
 	parser.add_argument("-l", "--list-patches", action = "store_true", help = "List available patches and exit")
 	parser.add_argument("-p", "--patch", nargs = "+", action = "extend", help = "Apply one or multiple patches")
 	parser.add_argument("-n", "--name", default = SKIN_DIR, help = "Rename installed skin")
@@ -88,16 +88,16 @@ if __name__ == "__main__":
 				if patch.exists():
 					apply_patch(tmp, patch)
 		
-		targets = []
+		targets = set()
 
-		if "normal" in args.target or "all" in args.target:
-			targets.append(Path(TARGET_NORMAL).expanduser())
-		if "flatpak" in args.target or "all" in args.target:
-			targets.append(Path(TARGET_FLATPAK).expanduser())
-		
-		if args.target_dirs:
-			for dir in args.target_dirs:
-				targets.append(dir)
-			
+		for t in args.target:
+			match t:
+				case "normal":
+					targets.add(Path(TARGET_NORMAL).expanduser().resolve())
+				case "flatpak":
+					targets.add(Path(TARGET_FLATPAK).expanduser().resolve())
+				case _:
+					targets.add(Path(t).expanduser().resolve())
+
 		for target in targets:
 			install(sourcedir, target, args.name)

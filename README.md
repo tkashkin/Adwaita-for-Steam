@@ -45,7 +45,7 @@ Run `./install.py -h` to see all installer options.
 
 1. Download the [latest skin version](https://github.com/tkashkin/Adwaita-for-Steam/archive/master.zip)
 2. Extract `Adwaita` directory into Steam `skins` directory (create if it doesn't exist):
-   * **Linux**: `~/.local/share/Steam/skins`
+   * **Linux**: `~/.steam/steam/skins` or `~/.local/share/Steam/skins`
    * **Linux (flatpak)**: `~/.var/app/com.valvesoftware.Steam/.local/share/Steam/skins`
    * ~~Windows~~ (untested): `C:\Program Files (x86)\Steam\skins` by default
    * ~~macOS~~ (untested): `~/Library/Application Support/Steam/Steam.AppBundle/Steam/Contents/MacOS/skins`
