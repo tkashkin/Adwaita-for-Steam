@@ -2,71 +2,9 @@ subpaneloptioncompat.layout
 {
 	styles
 	{
-		Highlight
-		{
-			textcolor="window_fg"
-			font-weight=700
-			render
-			{
-				0="image(x0, y1, x0+12, y1+12, assets/corners/12_mask_window_bg/tl)"
-				1="image(x1-12, y1, x1, y1+12, assets/corners/12_mask_window_bg/tr)"
-			}
-		}
-
-		CheckButton
-		{
-			inset="5 6 6 6"
-			padding-right=64
-			image="assets/pixel"
-			render
-			{
-				0="image(x1-56, y0+12, x1-8, y1-12, assets/switch/unchecked)"
-			}
-			render_bg
-			{
-				0="fill(x0, y0, x1, y1, button_bg)"
-				1="fill(x0, y1-1, x1, y1, headerbar_shade)"
-			}
-		}
-		CheckButton:hover
-		{
-			render
-			{
-				0="image(x1-56, y0+12, x1-8, y1-12, assets/switch/unchecked_hover)"
-			}
-			render_bg
-			{
-				0="fill(x0, y0, x1, y1, button_hover_bg)"
-				1="fill(x0, y1-1, x1, y1, headerbar_shade)"
-			}
-		}
-		CheckButton:active
-		{
-			render_bg
-			{
-				0="fill(x0, y0, x1, y1, button_active_bg)"
-			}
-		}
-		CheckButton:selected
-		{
-			render
-			{
-				0="image(x1-56, y0+12, x1-8, y1-12, assets/switch/checked)"
-			}
-		}
-		CheckButton:selected:hover
-		{
-			render
-			{
-				0="image(x1-56, y0+12, x1-8, y1-12, assets/switch/checked_hover)"
-			}
-		}
-
 		ComboBox
 		{
-			font-size=14
-			inset="320 0 -12 0"
-			render_bg {}
+			inset-left=320
 			render
 			{
 				0="fill(x0, y0, x1, y1-12, button_bg)"
@@ -105,31 +43,6 @@ subpaneloptioncompat.layout
 				3="image(x1-12, y1-12, x1, y1, assets/corners/12_w5/br)"
 			}
 		}
-
-		ComboBoxButton
-		{
-			render_bg
-			{
-				0="fill(x0, y0, x1, y1, window_bg)"
-			}
-		}
-
-		Label
-		{
-			font-size=14
-			textcolor="window_fg"
-		}
-
-		URLLabel
-		{
-			font-style=none
-			font-weight=700
-			textcolor="window_fg"
-		}
-		URLLabel:hover
-		{
-			font-style=underline
-		}
 	}
 
 	layout
@@ -137,11 +50,9 @@ subpaneloptioncompat.layout
 		region { name="content" margin-top=16 margin-bottom=16 margin-left=16 width=500 height=max }
 
 		place { control="TitleLabel" region="content" width=max height=34 }
-
 		place { control="CompatEnabledCheckbox,CompatForcedCheckbox,AdvancedToolComboBox" region="content" start="TitleLabel" dir=down width=max height=50 }
 
 		place { control="AdvancedToolLabel" region="content" start="AdvancedToolComboBox" dir=down margin-top=-32 margin-left=12 width=320 }
-
 		place { control="DescriptionInfo,CompatForcedInfo,DescriptionLink" region="content" start="AdvancedToolComboBox" dir=down margin-top=16 width=max spacing=16 }
 
 		region { name="hidden" width=0 height=0 margin-left=-999 }

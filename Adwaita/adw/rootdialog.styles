@@ -242,6 +242,61 @@ rootdialog.styles
 			image="assets/icons/inbox_unread"
 		}
 
+		parental_lock_button
+		{
+			inset="3 0 0 0"
+			image="assets/icons/family_view_backdrop"
+			render_bg {}
+		}
+		parental_lock_button:framefocus
+		{
+			image="assets/icons/family_view"
+		}
+		parental_lock_button:hover
+		{
+			render_bg
+			{
+				0="fill(x0+6, y0, x0+28, y0+34, button_hover_bg)"
+				1="fill(x0, y0+6, x0+6, y0+28, button_hover_bg)"
+				2="fill(x0+28, y0+6, x0+34, y0+28, button_hover_bg)"
+				3="image(x0, y0, x0+6, y0+6, assets/corners/6_w15/tl)"
+				4="image(x0+28, y0, x0+34, y0+6, assets/corners/6_w15/tr)"
+				5="image(x0, y0+28, x0+6, y0+34, assets/corners/6_w15/bl)"
+				6="image(x0+28, y0+28, x0+34, y0+34, assets/corners/6_w15/br)"
+			}
+		}
+		parental_lock_button:selected
+		{
+			image="assets/icons/family_view_active_backdrop"
+			render_bg {}
+		}
+		parental_lock_button:selected:framefocus
+		{
+			image="assets/icons/family_view_active"
+		}
+		parental_lock_button:selected:hover
+		{
+			render_bg
+			{
+				0="fill(x0+6, y0, x0+28, y0+34, button_hover_bg)"
+				1="fill(x0, y0+6, x0+6, y0+28, button_hover_bg)"
+				2="fill(x0+28, y0+6, x0+34, y0+28, button_hover_bg)"
+				3="image(x0, y0, x0+6, y0+6, assets/corners/6_w15/tl)"
+				4="image(x0+28, y0, x0+34, y0+6, assets/corners/6_w15/tr)"
+				5="image(x0, y0+28, x0+6, y0+34, assets/corners/6_w15/bl)"
+				6="image(x0+28, y0+28, x0+34, y0+34, assets/corners/6_w15/br)"
+			}
+		}
+
+		support_alert
+		{
+			image="assets/icons/warning_backdrop"
+		}
+		support_alert:framefocus
+		{
+			image="assets/icons/warning"
+		}
+
 		CUINavButton
 		{
 			inset="8 0 8 0"
