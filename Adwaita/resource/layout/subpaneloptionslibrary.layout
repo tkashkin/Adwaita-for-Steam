@@ -6,9 +6,9 @@ subpaneloptionslibrary.layout
 		{
 			render
 			{
-				0="image(x0+196, y0+237, x0+208, y0+249, assets/corners/12_mask_window_bg/bl)"
-				1="image(x1-32, y0+237, x1-20, y0+249, assets/corners/12_mask_window_bg/br)"
-				2="fill(x0+196, y0+249, x1-20, y0+250, window_bg)"
+				0="image(x0+196, y0+229, x0+208, y0+241, assets/corners/12_mask_window_bg/bl)"
+				1="image(x1-32, y0+229, x1-20, y0+241, assets/corners/12_mask_window_bg/br)"
+				2="fill(x0+196, y0+241, x1-20, y0+242, window_bg)"
 			}
 		}
 
@@ -28,7 +28,7 @@ subpaneloptionslibrary.layout
 
 	layout
 	{
-		region { name="content" margin-top=16 margin-bottom=16 margin-left=16 width=500 height=max }
+		region { name="content" margin-top=8 margin-left=16 width=500 height=max }
 
 		place { control="TitleLabel" region="content" width=max height=34 }
 		place { control="LibraryLowBandwidthCheckbox,LibraryLowPerfCheckbox,LibraryDisableCommunityContentCheckbox,LibraryDisplayIconInGameListCheckbox" region="content" start="TitleLabel" dir=down width=max height=50 }

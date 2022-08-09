@@ -76,7 +76,7 @@ subpaneloptionsingame.layout
 
 		Highlight
 		{
-			inset-top=16
+			inset-top=8
 			render
 			{
 				0="fill(x0, y0-1, x1, y0, window_bg)"
@@ -95,12 +95,11 @@ subpaneloptionsingame.layout
 	{
 		region { name="content" margin-left=16 width=520 height=max overflow=scroll-vertical }
 
-		place { control="TitleLabel" region="content" dir=down width=484 height=50 }
+		place { control="TitleLabel" region="content" dir=down width=484 height=42 }
 		place { control="EnableOverlayCheck,EnableVRDesktopGameTheaterCheck,EnableSCTenfootOverlayCheck" region="content" start="TitleLabel" dir=down width=484 height=50 }
 
 		place { control="ShowIngameFPSCombo,ShowIngameFPSContrastCheck" region="content" start="EnableSCTenfootOverlayCheck" dir=down width=484 height=50 margin-top=16 }
 		place { control="ShowIngameFPSLabel" region="content" start="ShowIngameFPSCombo" dir=down margin-top=-34 margin-left=12 width=335 }
-		
 		
 		place { control="Divider1" region="content" start="ShowIngameFPSContrastCheck" dir=down width=484 height=34 }
 		place { control="ScreenshotActionLabel" region="content" start="ShowIngameFPSContrastCheck" dir=down width=484 height=34 }

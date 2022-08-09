@@ -79,6 +79,20 @@ entry.styles
 			}
 			render {}
 		}
+		TextEntry:disabled
+		{
+			render_bg
+			{
+				0="fill(x0+6, y0, x1-6, y1, button_disabled_bg)"
+				1="fill(x0, y0+6, x0+6, y1-6, button_disabled_bg)"
+				2="fill(x1-6, y0+6, x1, y1-6, button_disabled_bg)"
+				3="image(x0, y0, x0+6, y0+6, assets/corners/6_w5/tl)"
+				4="image(x1-6, y0, x1, y0+6, assets/corners/6_w5/tr)"
+				5="image(x0, y1-6, x0+6, y1, assets/corners/6_w5/bl)"
+				6="image(x1-6, y1-6, x1, y1, assets/corners/6_w5/br)"
+			}
+			render {}
+		}
 
 		RichText
 		{
