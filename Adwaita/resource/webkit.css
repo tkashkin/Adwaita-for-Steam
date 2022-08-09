@@ -77,7 +77,7 @@ selector for those
     --button_fg: rgba(255, 255, 255, 1);
     --button_disabled_fg: rgba(255, 255, 255, .5);
 
-    --border: rgba(255, 255, 255, 38);
+    --border: rgba(255, 255, 255, .14);
 
     --card_bg_color: rgba(255, 255, 255, .08);
     --card_fg_color: var(--fg);
@@ -277,7 +277,6 @@ div#responsive_page_template_content {
     margin-bottom: var(--toast_margin_bottom) !important;
     margin: var(--toast_margin) !important;
     padding: var(--toast_padding) !important;
-    padding-left: var(--toast_padding_left) !important;
 }
 
 /* Play Button Color */
@@ -293,6 +292,65 @@ div#responsive_page_template_content {
 [class*="appdetailsplaysection_DetailsProgressBar_"],
 [class*="appdetailsachievementssection_AchievementProgress_"] {
     background: var(--accent_bg_color) !important;
+}
+
+/* --- Downloads View --- */
+/* BG */
+[class*="downloads_DownloadsPage_"] {
+    background: var(--bg) !important;
+}
+
+/* - Header - */
+[class*="downloadgraph_GraphAndStats_"] {
+    background: var(--view_bg_color) !important;
+}
+
+/* Remove Gradient when Downloads are Empty */
+[class*="downloadgraph_HeroAndLogo_"] {
+    background: none !important;
+}
+
+/* Fix Logo Border */
+[class*="downloadgraph_HeroContainer"] [class*="libraryassetimage_Visible_"] {
+    background: none !important;
+}
+
+/* Top Right Settings Button */
+[class*="downloadgraph_SettingsButton_"] button {
+    background: var(--button_bg) !important;
+    border-radius: var(--button_radius) !important;
+}
+
+[class*="downloadgraph_SettingsButton_"] button:hover {
+    background: var(--button_hover_bg) !important;
+    border-radius: var(--button_radius) !important;
+}
+
+/* Blue Separator Line */
+[class*="downloads_TopBar_SEmVp"] {
+    background: none !important;
+}
+
+/* - Downloads - */
+/* Download Items */
+[class*="downloads_SectionItem_"] {
+    background: var(--card_bg_color) !important;
+    border-radius: var(--card_radius) !important;
+}
+
+[class*="downloads_SectionItem_"]:hover {
+    background: var(--button_active_bg) !important;
+    border-radius: var(--card_radius) !important;
+}
+
+/* Active Download Item */
+[class*="downloads_SectionItem_"][class*="downloads_Active_"] {
+    margin: 10px 12px 0px 12px !important;
+    padding: 8px 0px 8px 12px !important;
+}
+
+[class*="downloads_Active_"] [class*="downloads_SectionList_"] {
+    border: none !important;
 }
 
 /* ------------------ */
