@@ -4,7 +4,7 @@ menubar
 	{
 		text=""
 
-		SkinVersion			{ text="Adwaita for Steam v0.2" shellcmd="steam://openurl/https://github.com/tkashkin/Adwaita-for-Steam" }
+		SkinVersion			{ text="Adwaita for Steam v0.3" shellcmd="steam://openurl/https://github.com/tkashkin/Adwaita-for-Steam" }
 
 		Divider				{}
 
@@ -38,8 +38,8 @@ menubar
 		About				{ text="#steam_about" command="About" }
 		CheckForUpdates		{ text="#steam_menu_checkforupdates" command="CheckForUpdates" }
 		SystemInfo			{ text="#steam_menu_systeminfo" command="SystemInfo" }
-		Console				{ text="#app_task_console" shellcmd="steam://open/console" }
 		Settings			{ text="#steam_menu_settings" command="Settings" }
+		Console				{ text="#app_task_console" shellcmd="steam://open/console" }
 
 		Divider				{}
 

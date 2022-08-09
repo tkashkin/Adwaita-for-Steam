@@ -7,38 +7,33 @@ AccountPage.res
 			render_bg
 			{
 				// background
-				0="fill(x0, y0-14, x0+460, y0+135, button_bg)"
-				-1="fill(x0-12, y0-2, x0, y0+123, button_bg)"
-				-2="fill(x0+460, y0-2, x0+472, y0+123, button_bg)"
-				-3="image(x0-12, y0-14, x0, y0-2, assets/corners/12_w10/tl)"
-				-4="image(x0+460, y0-14, x0+472, y0-2, assets/corners/12_w10/tr)"
-				-5="image(x0-12, y0+123, x0, y0+135, assets/corners/12_w10/bl)"
-				-6="image(x0+460, y0+123, x0+472, y0+135, assets/corners/12_w10/br)"
-
-				// separators
-				1="fill(x0-12, y0+35, x0+472, y0+36, headerbar_shade)"
-				2="fill(x0-12, y0+85, x0+472, y0+86, headerbar_shade)"
-
-				// icons
-				3="image(x0, y0+50, x0+24, y0+74, assets/icons_24/shield)"
-				4="image(x0, y0+98, x0+24, y0+122, assets/icons_24/bug)"
+				0="fill(x0, y0-14, x0+460, y0+86, button_bg)"
+				1="fill(x0-12, y0-2, x0, y0+86, button_bg)"
+				2="fill(x0+460, y0-2, x0+472, y0+86, button_bg)"
+				3="image(x0-12, y0-14, x0, y0-2, assets/corners/12_w10/tl)"
+				4="image(x0+460, y0-14, x0+472, y0-2, assets/corners/12_w10/tr)"
 			}
-		}
-
-		Label
-		{
-			textcolor="window_fg"
+			render
+			{
+				// separators
+				0="fill(x0-12, y0+35, x0+472, y0+36, headerbar_shade)"
+				1="fill(x0-12, y0+85, x0+472, y0+86, headerbar_shade)"
+				// icons
+				2="image(x0, y0+50, x0+24, y0+74, assets/icons_24/shield)"
+				3="image(x0, y0+98, x0+24, y0+122, assets/icons_24/bug)"
+			}
 		}
 
 		URLLabel
 		{
-			font-style=none
-			font-weight=700
-			textcolor="window_fg"
-		}
-		URLLabel:hover
-		{
-			font-style=underline
+			render
+			{
+				0="fill(x0, y0-17, x0+484, y0-16, window_bg)"
+				1="image(x0, y0-28, x0+12, y0-16, assets/corners/12_mask_window_bg/bl)"
+				2="image(x0+472, y0-28, x0+484, y0-16, assets/corners/12_mask_window_bg/br)"
+				3="image(x0, y1, x0+12, y1+12, assets/corners/12_mask_window_bg/tl)"
+				4="image(x0+472, y1, x0+484, y1+12, assets/corners/12_mask_window_bg/tr)"
+			}
 		}
 	}
 
@@ -52,12 +47,13 @@ AccountPage.res
 		place { control="Label2,VacInfoLink" region="content" x=48 y=57 spacing=2 dir=down }
 
 		place { control="BetaParticipationLabel,CurrentBetaLabel" region="content" x=48 y=106 spacing=2 dir=down }
-		place { control="ChangeBetaButton" region="content" y=110 align=right margin-right=12 height=25 }
+		place { control="ChangeBetaButton" region="content" margin-left=-300 y=100 width=max height=50 }
 
-		place { control="AccountLink" region="content" y=156 }
-		place { control="ReportBugLink" region="content" y=156 align=right }
+		place { control="AccountLink" region="content" dir=down start="ChangeBetaButton" margin-top=16 width=max height=28 }
 
-		place { control="NoPersonalInfoCheck,ChangeUserButton,ManageSecurityButton,ChangePasswordButton,ChangeContactEmailButton,ValidateContactEmailButton,MachineLockAccountButton" region="content" y=180 width=max height=34 spacing=6 dir=down }
+		place { control="NoPersonalInfoCheck,ChangeUserButton,ManageSecurityButton,ChangePasswordButton,ChangeContactEmailButton,ValidateContactEmailButton,MachineLockAccountButton" region="content" dir=down start="AccountLink" width=max height=50 }
+
+		place { control="ReportBugLink" region="content" dir=down start="MachineLockAccountButton" margin-top=16 width=max height=28 }
 
 		region { name="hidden" width=0 height=0 margin-left=-999 }
 		place { control="LogOutLabel,AccountInfo,ContactEmailLabel,EmailInfo,Label1,Divider1,Divider2" region="hidden" }

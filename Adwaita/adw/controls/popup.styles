@@ -3,6 +3,14 @@ popup.styles
 	colors
 	{
 		Menu.TextInset=4
+		Tooltip.Delay=75
+		Tooltip.Anchor=Parent
+		Notifications.PanelPosition=TopRight
+		Notifications.SlideDirection=None
+		Notifications.FadeInTime=0
+		Notifications.FadeOutTime=0
+		Notifications.DisplayTime=6
+		Notifications.StackSize=5
 	}
 
 	styles

@@ -1,0 +1,33 @@
+subpaneloptionsshadercache.layout
+{
+	styles
+	{
+		CSubPanelShaderCache
+		{
+			render
+			{
+				0="image(x0+196, y0+16, x0+208, y0+28, assets/corners/12_mask_window_bg/tl)"
+				1="image(x1-32, y0+16, x1-20, y0+28, assets/corners/12_mask_window_bg/tr)"
+				2="image(x0+196, y0+104, x0+208, y0+116, assets/corners/12_mask_window_bg/bl)"
+				3="image(x1-32, y0+104, x1-20, y0+116, assets/corners/12_mask_window_bg/br)"
+				4="fill(x0+196, y0+115, x1-20, y0+116, window_bg)"
+			}
+		}
+
+		CheckButton
+		{
+			inset-top=58
+		}
+	}
+
+	layout
+	{
+		region { name="content" margin-top=16 margin-bottom=16 margin-left=16 width=500 height=max }
+
+		place { control="ShaderCacheEnabledCheckbox,ShaderCacheBGProcessingEnabledCheckbox" region="content" dir=down width=max height=50 }
+
+		place { control="ShaderCacheBGProcessingProgress,ShaderCacheInfo" region="content" start="ShaderCacheBGProcessingEnabledCheckbox" dir=down margin-top=16 width=max spacing=16 }
+
+		region { name="hidden" width=0 height=0 margin-left=-999 }
+	}
+}

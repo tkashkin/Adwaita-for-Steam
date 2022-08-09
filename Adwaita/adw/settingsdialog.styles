@@ -82,173 +82,424 @@ settingsdialog.styles
 			render_bg {}
 		}
 
-		// Fake sidebar rounded corners
-		CAccountPage
+		"CDialogSettings Page Button"
+		{
+			bgcolor="button_bg"
+			font-size=14
+			font-weight=400
+			inset-left=6
+			render_bg
+			{
+				0="fill(x0, y1-1, x1, y1, headerbar_shade)"
+			}
+			render
+			{
+				0="image(x1-28, y0+17, x1-12, y1-17, assets/icons/forward)"
+			}
+		}
+		"CDialogSettings Page Button:hover"
+		{
+			bgcolor="button_hover_bg"
+		}
+		"CDialogSettings Page Button:active"
+		{
+			bgcolor="button_active_bg"
+		}
+		"CDialogSettings Page Button:disabled"
+		{
+			bgcolor="button_disabled_bg"
+		}
+
+		"CDialogSettings Page CheckButton"
+		{
+			inset="5 6 6 6"
+			padding-right=64
+			image="assets/pixel"
+			render
+			{
+				0="image(x1-60, y0+12, x1-12, y1-12, assets/switch/unchecked)"
+			}
+			render_bg
+			{
+				0="fill(x0, y0, x1, y1, button_bg)"
+				1="fill(x0, y1-1, x1, y1, headerbar_shade)"
+			}
+		}
+		"CDialogSettings Page CheckButton:hover"
+		{
+			image="assets/pixel"
+			render
+			{
+				0="image(x1-60, y0+12, x1-12, y1-12, assets/switch/unchecked_hover)"
+			}
+			render_bg
+			{
+				0="fill(x0, y0, x1, y1, button_hover_bg)"
+				1="fill(x0, y1-1, x1, y1, headerbar_shade)"
+			}
+		}
+		"CDialogSettings Page CheckButton:active"
+		{
+			image="assets/pixel"
+			render_bg
+			{
+				0="fill(x0, y0, x1, y1, button_active_bg)"
+				1="fill(x0, y1-1, x1, y1, headerbar_shade)"
+			}
+		}
+		"CDialogSettings Page CheckButton:selected"
+		{
+			image="assets/pixel"
+			render
+			{
+				0="image(x1-60, y0+12, x1-12, y1-12, assets/switch/checked)"
+			}
+		}
+		"CDialogSettings Page CheckButton:selected:hover"
+		{
+			image="assets/pixel"
+			render
+			{
+				0="image(x1-60, y0+12, x1-12, y1-12, assets/switch/checked_hover)"
+			}
+		}
+		"CDialogSettings Page CheckButton:disabled"
+		{
+			image="assets/pixel"
+			render
+			{
+				0="image(x1-60, y0+12, x1-12, y1-12, assets/switch/unchecked_disabled)"
+			}
+			render_bg
+			{
+				0="fill(x0, y0, x1, y1, button_disabled_bg)"
+				1="fill(x0, y1-1, x1, y1, headerbar_shade)"
+			}
+		}
+		"CDialogSettings Page CheckButton:disabled:selected"
+		{
+			image="assets/pixel"
+			render
+			{
+				0="image(x1-60, y0+12, x1-12, y1-12, assets/switch/checked_disabled)"
+			}
+			render_bg
+			{
+				0="fill(x0, y0, x1, y1, button_disabled_bg)"
+				1="fill(x0, y1-1, x1, y1, headerbar_shade)"
+			}
+		}
+
+		"CDialogSettings Page RadioButton"
+		{
+			inset="6 6 6 6"
+			image="assets/radiobutton_padded/unchecked"
+			render_bg
+			{
+				0="fill(x0, y0, x1, y1, button_bg)"
+				1="fill(x0, y1-1, x1, y1, headerbar_shade)"
+			}
+		}
+		"CDialogSettings Page RadioButton:hover"
+		{
+			image="assets/radiobutton_padded/unchecked_hover"
+			render_bg
+			{
+				0="fill(x0, y0, x1, y1, button_hover_bg)"
+				1="fill(x0, y1-1, x1, y1, headerbar_shade)"
+			}
+		}
+		"CDialogSettings Page RadioButton:selected"
+		{
+			image="assets/radiobutton_padded/checked"
+		}
+		"CDialogSettings Page RadioButton:selected:hover"
+		{
+			image="assets/radiobutton_padded/checked_hover"
+		}
+		"CDialogSettings Page RadioButton:active"
+		{
+			render_bg
+			{
+				0="fill(x0, y0, x1, y1, button_active_bg)"
+				1="fill(x0, y1-1, x1, y1, headerbar_shade)"
+			}
+		}
+		"CDialogSettings Page RadioButton:disabled"
+		{
+			image="assets/radiobutton_padded/unchecked_disabled"
+		}
+		"CDialogSettings Page RadioButton:selected:disabled"
+		{
+			image="assets/radiobutton_padded/checked_disabled"
+		}
+
+		"CDialogSettings Page Highlight"
+		{
+			textcolor="window_fg"
+			font-weight=700
+			render
+			{
+				0="image(x0, y1, x0+12, y1+12, assets/corners/12_mask_window_bg/tl)"
+				1="image(x1-12, y1, x1, y1+12, assets/corners/12_mask_window_bg/tr)"
+			}
+		}
+
+		"CDialogSettings Page Label"
+		{
+			font-size=14
+			textcolor="window_fg"
+			selectedtextcolor="window_fg"
+		}
+
+		"CDialogSettings Page URLLabel"
+		{
+			font-style=none
+			font-weight=700
+			textcolor="window_fg"
+		}
+		"CDialogSettings Page URLLabel:hover"
+		{
+			font-style=underline
+		}
+
+		"CDialogSettings Page Divider"
+		{
+			render_bg {}
+			render
+			{
+				0="fill(x0, y0-1, x1, y0, window_bg)"
+				1="image(x0, y0-12, x0+12, y0, assets/corners/12_mask_window_bg/bl)"
+				2="image(x1-12, y0-12, x1, y0, assets/corners/12_mask_window_bg/br)"
+				3="image(x0, y1, x0+12, y1+12, assets/corners/12_mask_window_bg/tl)"
+				4="image(x1-12, y1, x1, y1+12, assets/corners/12_mask_window_bg/tr)"
+			}
+		}
+
+		"CDialogSettings Page ComboBox"
+		{
+			font-size=14
+			inset="350 0 -6 0"
+			render_bg {}
+			render
+			{
+				0="fill(x0+12, y0, x1-12, y0+12, button_bg)"
+				1="fill(x0, y0+12, x1, y1, button_bg)"
+				2="image(x0, y0, x0+12, y0+12, assets/corners/12_w10/tl)"
+				3="image(x1-12, y0, x1, y0+12, assets/corners/12_w10/tr)"
+				4="fill(x0, y1-1, x1, y1, headerbar_shade)"
+			}
+		}
+		"CDialogSettings Page ComboBox:hover"
 		{
 			render
 			{
-				0="fill(x0+6, y0+10, x0+12, y0+22, button_bg)"
-				1="fill(x0+168, y0+10, x0+174, y0+22, button_bg)"
-				2="image(x0+6, y0+4, x0+12, y0+10, assets/corners/6_w10/tl)"
-				3="image(x0+168, y0+4, x0+174, y0+10, assets/corners/6_w10/tr)"
-				4="image(x0+6, y0+22, x0+12, y0+28, assets/corners/6_w10/bl)"
-				5="image(x0+168, y0+22, x0+174, y0+28, assets/corners/6_w10/br)"
+				0="fill(x0+12, y0, x1-12, y0+12, button_hover_bg)"
+				1="fill(x0, y0+12, x1, y1, button_hover_bg)"
+				2="image(x0, y0, x0+12, y0+12, assets/corners/12_w15/tl)"
+				3="image(x1-12, y0, x1, y0+12, assets/corners/12_w15/tr)"
+				4="fill(x0, y1-1, x1, y1, headerbar_shade)"
+			}
+		}
+		"CDialogSettings Page ComboBox:active"
+		{
+			render
+			{
+				0="fill(x0+12, y0, x1-12, y0+12, button_hover_bg)"
+				1="fill(x0, y0+12, x1, y1, button_hover_bg)"
+				2="image(x0, y0, x0+12, y0+12, assets/corners/12_w15/tl)"
+				3="image(x1-12, y0, x1, y0+12, assets/corners/12_w15/tr)"
+				4="fill(x0, y1-1, x1, y1, headerbar_shade)"
+			}
+		}
+		"CDialogSettings Page ComboBox:disabled"
+		{
+			render
+			{
+				0="fill(x0+12, y0, x1-12, y0+12, button_disabled_bg)"
+				1="fill(x0, y0+12, x1, y1, button_disabled_bg)"
+				2="image(x0, y0, x0+12, y0+12, assets/corners/12_w5/tl)"
+				3="image(x1-12, y0, x1, y0+12, assets/corners/12_w5/tr)"
+				4="fill(x0, y1-1, x1, y1, headerbar_shade)"
+			}
+		}
+		"CDialogSettings Page ComboBoxButton"
+		{
+			render {}
+			render_bg
+			{
+				0="gradient_horizontal(x0-6, y0, x0+6, y1, window_bg_transparent, window_bg)"
+				1="fill(x0+6, y0, x1, y1, window_bg)"
+			}
+		}
+
+		// Fake sidebar rounded corners
+		CAccountPage
+		{
+			render_bg
+			{
+				0="fill(x0-174, y0+10, x0-168, y0+22, button_bg)"
+				1="fill(x0-12, y0+10, x0-6, y0+22, button_bg)"
+				2="image(x0-174, y0+4, x0-168, y0+10, assets/corners/6_w10/tl)"
+				3="image(x0-12, y0+4, x0-6, y0+10, assets/corners/6_w10/tr)"
+				4="image(x0-174, y0+22, x0-168, y0+28, assets/corners/6_w10/bl)"
+				5="image(x0-12, y0+22, x0-6, y0+28, assets/corners/6_w10/br)"
 			}
 		}
 		CSubPanelOptionsFamily
 		{
-			render
+			render_bg
 			{
-				0="fill(x0+6, y0+34, x0+12, y0+46, button_bg)"
-				1="fill(x0+168, y0+34, x0+174, y0+46, button_bg)"
-				2="image(x0+6, y0+28, x0+12, y0+34, assets/corners/6_w10/tl)"
-				3="image(x0+168, y0+28, x0+174, y0+34, assets/corners/6_w10/tr)"
-				4="image(x0+6, y0+46, x0+12, y0+52, assets/corners/6_w10/bl)"
-				5="image(x0+168, y0+46, x0+174, y0+52, assets/corners/6_w10/br)"
+				0="fill(x0-174, y0+34, x0-168, y0+46, button_bg)"
+				1="fill(x0-12, y0+34, x0-6, y0+46, button_bg)"
+				2="image(x0-174, y0+28, x0-168, y0+34, assets/corners/6_w10/tl)"
+				3="image(x0-12, y0+28, x0-6, y0+34, assets/corners/6_w10/tr)"
+				4="image(x0-174, y0+46, x0-168, y0+52, assets/corners/6_w10/bl)"
+				5="image(x0-12, y0+46, x0-6, y0+52, assets/corners/6_w10/br)"
 			}
 		}
 		CSettingsSubInGame
 		{
-			render
+			render_bg
 			{
-				0="fill(x0+6, y0+58, x0+12, y0+70, button_bg)"
-				1="fill(x0+168, y0+58, x0+174, y0+70, button_bg)"
-				2="image(x0+6, y0+52, x0+12, y0+58, assets/corners/6_w10/tl)"
-				3="image(x0+168, y0+52, x0+174, y0+58, assets/corners/6_w10/tr)"
-				4="image(x0+6, y0+70, x0+12, y0+76, assets/corners/6_w10/bl)"
-				5="image(x0+168, y0+70, x0+174, y0+76, assets/corners/6_w10/br)"
+				0="fill(x0-174, y0+58, x0-168, y0+70, button_bg)"
+				1="fill(x0-12, y0+58, x0-6, y0+70, button_bg)"
+				2="image(x0-174, y0+52, x0-168, y0+58, assets/corners/6_w10/tl)"
+				3="image(x0-12, y0+52, x0-6, y0+58, assets/corners/6_w10/tr)"
+				4="image(x0-174, y0+70, x0-168, y0+76, assets/corners/6_w10/bl)"
+				5="image(x0-12, y0+70, x0-6, y0+76, assets/corners/6_w10/br)"
 			}
 		}
 		CSubPanelOptionsInterface
 		{
-			render
+			render_bg
 			{
-				0="fill(x0+6, y0+82, x0+12, y0+94, button_bg)"
-				1="fill(x0+168, y0+82, x0+174, y0+94, button_bg)"
-				2="image(x0+6, y0+76, x0+12, y0+82, assets/corners/6_w10/tl)"
-				3="image(x0+168, y0+76, x0+174, y0+82, assets/corners/6_w10/tr)"
-				4="image(x0+6, y0+94, x0+12, y0+100, assets/corners/6_w10/bl)"
-				5="image(x0+168, y0+94, x0+174, y0+100, assets/corners/6_w10/br)"
+				0="fill(x0-174, y0+82, x0-168, y0+94, button_bg)"
+				1="fill(x0-12, y0+82, x0-6, y0+94, button_bg)"
+				2="image(x0-174, y0+76, x0-168, y0+82, assets/corners/6_w10/tl)"
+				3="image(x0-12, y0+76, x0-6, y0+82, assets/corners/6_w10/tr)"
+				4="image(x0-174, y0+94, x0-168, y0+100, assets/corners/6_w10/bl)"
+				5="image(x0-12, y0+94, x0-6, y0+100, assets/corners/6_w10/br)"
 			}
 		}
 		CSettingsSubLibrary
 		{
-			render
+			render_bg
 			{
-				0="fill(x0+6, y0+106, x0+12, y0+118, button_bg)"
-				1="fill(x0+168, y0+106, x0+174, y0+118, button_bg)"
-				2="image(x0+6, y0+100, x0+12, y0+106, assets/corners/6_w10/tl)"
-				3="image(x0+168, y0+100, x0+174, y0+106, assets/corners/6_w10/tr)"
-				4="image(x0+6, y0+118, x0+12, y0+124, assets/corners/6_w10/bl)"
-				5="image(x0+168, y0+118, x0+174, y0+124, assets/corners/6_w10/br)"
+				0="fill(x0-174, y0+106, x0-168, y0+118, button_bg)"
+				1="fill(x0-12, y0+106, x0-6, y0+118, button_bg)"
+				2="image(x0-174, y0+100, x0-168, y0+106, assets/corners/6_w10/tl)"
+				3="image(x0-12, y0+100, x0-6, y0+106, assets/corners/6_w10/tr)"
+				4="image(x0-174, y0+118, x0-168, y0+124, assets/corners/6_w10/bl)"
+				5="image(x0-12, y0+118, x0-6, y0+124, assets/corners/6_w10/br)"
 			}
 		}
 		CSubPanelOptionsDownloads
 		{
-			render
+			render_bg
 			{
-				0="fill(x0+6, y0+130, x0+12, y0+142, button_bg)"
-				1="fill(x0+168, y0+130, x0+174, y0+142, button_bg)"
-				2="image(x0+6, y0+124, x0+12, y0+130, assets/corners/6_w10/tl)"
-				3="image(x0+168, y0+124, x0+174, y0+130, assets/corners/6_w10/tr)"
-				4="image(x0+6, y0+142, x0+12, y0+148, assets/corners/6_w10/bl)"
-				5="image(x0+168, y0+142, x0+174, y0+148, assets/corners/6_w10/br)"
+				0="fill(x0-174, y0+130, x0-168, y0+142, button_bg)"
+				1="fill(x0-12, y0+130, x0-6, y0+142, button_bg)"
+				2="image(x0-174, y0+124, x0-168, y0+130, assets/corners/6_w10/tl)"
+				3="image(x0-12, y0+124, x0-6, y0+130, assets/corners/6_w10/tr)"
+				4="image(x0-174, y0+142, x0-168, y0+148, assets/corners/6_w10/bl)"
+				5="image(x0-12, y0+142, x0-6, y0+148, assets/corners/6_w10/br)"
 			}
 		}
 		CSubPanelOptionsCloud
 		{
-			render
+			render_bg
 			{
-				0="fill(x0+6, y0+154, x0+12, y0+166, button_bg)"
-				1="fill(x0+168, y0+154, x0+174, y0+166, button_bg)"
-				2="image(x0+6, y0+148, x0+12, y0+154, assets/corners/6_w10/tl)"
-				3="image(x0+168, y0+148, x0+174, y0+154, assets/corners/6_w10/tr)"
-				4="image(x0+6, y0+166, x0+12, y0+172, assets/corners/6_w10/bl)"
-				5="image(x0+168, y0+166, x0+174, y0+172, assets/corners/6_w10/br)"
+				0="fill(x0-174, y0+154, x0-168, y0+166, button_bg)"
+				1="fill(x0-12, y0+154, x0-6, y0+166, button_bg)"
+				2="image(x0-174, y0+148, x0-168, y0+154, assets/corners/6_w10/tl)"
+				3="image(x0-12, y0+148, x0-6, y0+154, assets/corners/6_w10/tr)"
+				4="image(x0-174, y0+166, x0-168, y0+172, assets/corners/6_w10/bl)"
+				5="image(x0-12, y0+166, x0-6, y0+172, assets/corners/6_w10/br)"
 			}
 		}
 		CSettingsSubMusic
 		{
-			render
+			render_bg
 			{
-				0="fill(x0+6, y0+178, x0+12, y0+190, button_bg)"
-				1="fill(x0+168, y0+178, x0+174, y0+190, button_bg)"
-				2="image(x0+6, y0+172, x0+12, y0+178, assets/corners/6_w10/tl)"
-				3="image(x0+168, y0+172, x0+174, y0+178, assets/corners/6_w10/tr)"
-				4="image(x0+6, y0+190, x0+12, y0+196, assets/corners/6_w10/bl)"
-				5="image(x0+168, y0+190, x0+174, y0+196, assets/corners/6_w10/br)"
+				0="fill(x0-174, y0+178, x0-168, y0+190, button_bg)"
+				1="fill(x0-12, y0+178, x0-6, y0+190, button_bg)"
+				2="image(x0-174, y0+172, x0-168, y0+178, assets/corners/6_w10/tl)"
+				3="image(x0-12, y0+172, x0-6, y0+178, assets/corners/6_w10/tr)"
+				4="image(x0-174, y0+190, x0-168, y0+196, assets/corners/6_w10/bl)"
+				5="image(x0-12, y0+190, x0-6, y0+196, assets/corners/6_w10/br)"
 			}
 		}
 		CSettingsSubBroadcast
 		{
-			render
+			render_bg
 			{
-				0="fill(x0+6, y0+202, x0+12, y0+214, button_bg)"
-				1="fill(x0+168, y0+202, x0+174, y0+214, button_bg)"
-				2="image(x0+6, y0+196, x0+12, y0+202, assets/corners/6_w10/tl)"
-				3="image(x0+168, y0+196, x0+174, y0+202, assets/corners/6_w10/tr)"
-				4="image(x0+6, y0+214, x0+12, y0+220, assets/corners/6_w10/bl)"
-				5="image(x0+168, y0+214, x0+174, y0+220, assets/corners/6_w10/br)"
+				0="fill(x0-174, y0+202, x0-168, y0+214, button_bg)"
+				1="fill(x0-12, y0+202, x0-6, y0+214, button_bg)"
+				2="image(x0-174, y0+196, x0-168, y0+202, assets/corners/6_w10/tl)"
+				3="image(x0-12, y0+196, x0-6, y0+202, assets/corners/6_w10/tr)"
+				4="image(x0-174, y0+214, x0-168, y0+220, assets/corners/6_w10/bl)"
+				5="image(x0-12, y0+214, x0-6, y0+220, assets/corners/6_w10/br)"
 			}
 		}
 		CSettingsSubStreaming
 		{
-			render
+			render_bg
 			{
-				0="fill(x0+6, y0+226, x0+12, y0+238, button_bg)"
-				1="fill(x0+168, y0+226, x0+174, y0+238, button_bg)"
-				2="image(x0+6, y0+220, x0+12, y0+226, assets/corners/6_w10/tl)"
-				3="image(x0+168, y0+220, x0+174, y0+226, assets/corners/6_w10/tr)"
-				4="image(x0+6, y0+238, x0+12, y0+244, assets/corners/6_w10/bl)"
-				5="image(x0+168, y0+238, x0+174, y0+244, assets/corners/6_w10/br)"
+				0="fill(x0-174, y0+226, x0-168, y0+238, button_bg)"
+				1="fill(x0-12, y0+226, x0-6, y0+238, button_bg)"
+				2="image(x0-174, y0+220, x0-168, y0+226, assets/corners/6_w10/tl)"
+				3="image(x0-12, y0+220, x0-6, y0+226, assets/corners/6_w10/tr)"
+				4="image(x0-174, y0+238, x0-168, y0+244, assets/corners/6_w10/bl)"
+				5="image(x0-12, y0+238, x0-6, y0+244, assets/corners/6_w10/br)"
 			}
 		}
 		CSettingsSubBrowser
 		{
-			render
+			render_bg
 			{
-				0="fill(x0+6, y0+250, x0+12, y0+262, button_bg)"
-				1="fill(x0+168, y0+250, x0+174, y0+262, button_bg)"
-				2="image(x0+6, y0+244, x0+12, y0+250, assets/corners/6_w10/tl)"
-				3="image(x0+168, y0+244, x0+174, y0+250, assets/corners/6_w10/tr)"
-				4="image(x0+6, y0+262, x0+12, y0+268, assets/corners/6_w10/bl)"
-				5="image(x0+168, y0+262, x0+174, y0+268, assets/corners/6_w10/br)"
+				0="fill(x0-174, y0+250, x0-168, y0+262, button_bg)"
+				1="fill(x0-12, y0+250, x0-6, y0+262, button_bg)"
+				2="image(x0-174, y0+244, x0-168, y0+250, assets/corners/6_w10/tl)"
+				3="image(x0-12, y0+244, x0-6, y0+250, assets/corners/6_w10/tr)"
+				4="image(x0-174, y0+262, x0-168, y0+268, assets/corners/6_w10/bl)"
+				5="image(x0-12, y0+262, x0-6, y0+268, assets/corners/6_w10/br)"
 			}
 		}
 		CSettingsSubController
 		{
-			render
+			render_bg
 			{
-				0="fill(x0+6, y0+274, x0+12, y0+286, button_bg)"
-				1="fill(x0+168, y0+274, x0+174, y0+286, button_bg)"
-				2="image(x0+6, y0+268, x0+12, y0+274, assets/corners/6_w10/tl)"
-				3="image(x0+168, y0+268, x0+174, y0+274, assets/corners/6_w10/tr)"
-				4="image(x0+6, y0+286, x0+12, y0+292, assets/corners/6_w10/bl)"
-				5="image(x0+168, y0+286, x0+174, y0+292, assets/corners/6_w10/br)"
+				0="fill(x0-174, y0+274, x0-168, y0+286, button_bg)"
+				1="fill(x0-12, y0+274, x0-6, y0+286, button_bg)"
+				2="image(x0-174, y0+268, x0-168, y0+274, assets/corners/6_w10/tl)"
+				3="image(x0-12, y0+268, x0-6, y0+274, assets/corners/6_w10/tr)"
+				4="image(x0-174, y0+286, x0-168, y0+292, assets/corners/6_w10/bl)"
+				5="image(x0-12, y0+286, x0-6, y0+292, assets/corners/6_w10/br)"
 			}
 		}
 		CSubPanelShaderCache
 		{
-			render
+			render_bg
 			{
-				0="fill(x0+6, y0+298, x0+12, y0+310, button_bg)"
-				1="fill(x0+168, y0+298, x0+174, y0+310, button_bg)"
-				2="image(x0+6, y0+292, x0+12, y0+298, assets/corners/6_w10/tl)"
-				3="image(x0+168, y0+292, x0+174, y0+298, assets/corners/6_w10/tr)"
-				4="image(x0+6, y0+310, x0+12, y0+316, assets/corners/6_w10/bl)"
-				5="image(x0+168, y0+310, x0+174, y0+316, assets/corners/6_w10/br)"
+				0="fill(x0-174, y0+298, x0-168, y0+310, button_bg)"
+				1="fill(x0-12, y0+298, x0-6, y0+310, button_bg)"
+				2="image(x0-174, y0+292, x0-168, y0+298, assets/corners/6_w10/tl)"
+				3="image(x0-12, y0+292, x0-6, y0+298, assets/corners/6_w10/tr)"
+				4="image(x0-174, y0+310, x0-168, y0+316, assets/corners/6_w10/bl)"
+				5="image(x0-12, y0+310, x0-6, y0+316, assets/corners/6_w10/br)"
 			}
 		}
 		CSubPanelCompat
 		{
-			render
+			render_bg
 			{
-				0="fill(x0+6, y0+322, x0+12, y0+334, button_bg)"
-				1="fill(x0+168, y0+322, x0+174, y0+334, button_bg)"
-				2="image(x0+6, y0+316, x0+12, y0+322, assets/corners/6_w10/tl)"
-				3="image(x0+168, y0+316, x0+174, y0+322, assets/corners/6_w10/tr)"
-				4="image(x0+6, y0+334, x0+12, y0+340, assets/corners/6_w10/bl)"
-				5="image(x0+168, y0+334, x0+174, y0+340, assets/corners/6_w10/br)"
+				0="fill(x0-174, y0+322, x0-168, y0+334, button_bg)"
+				1="fill(x0-12, y0+322, x0-6, y0+334, button_bg)"
+				2="image(x0-174, y0+316, x0-168, y0+322, assets/corners/6_w10/tl)"
+				3="image(x0-12, y0+316, x0-6, y0+322, assets/corners/6_w10/tr)"
+				4="image(x0-174, y0+334, x0-168, y0+340, assets/corners/6_w10/bl)"
+				5="image(x0-12, y0+334, x0-6, y0+340, assets/corners/6_w10/br)"
 			}
 		}
 	}

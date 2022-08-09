@@ -24,6 +24,7 @@ colors.styles
 		error_fg="255 255 255 255"
 
 		window_bg="36 36 36 255"
+		window_bg_transparent="36 36 36 0"
 		window_fg="255 255 255 255"
 		window_border="255 255 255 28"
 

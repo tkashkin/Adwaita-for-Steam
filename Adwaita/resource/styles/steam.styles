@@ -2,14 +2,14 @@ steam.styles
 {
 	include "adw/colors.styles"
 
+	include "adw/rootdialog.styles"
+	include "adw/settingsdialog.styles"
+
 	include "adw/controls/window.styles"
 	include "adw/controls/button.styles"
 	include "adw/controls/entry.styles"
 	include "adw/controls/popup.styles"
 	include "adw/controls/scrollbar.styles"
-
-	include "adw/rootdialog.styles"
-	include "adw/settingsdialog.styles"
 
 	// include default Steam styles to ensure unstyled controls still work
 	include "../../resource/styles/steam.styles"
@@ -22,6 +22,19 @@ steam.styles
 
 	styles
 	{
+		ProgressBar
+		{
+			bgcolor="view_bg"
+			textcolor="accent"
+			render
+			{
+				0="fill(x0, y0, x1, y0+1, border)"
+				1="fill(x0, y1-1, x1, y1, border)"
+				2="fill(x0, y0+1, x0+1, y1-1, border)"
+				3="fill(x1-1, y0+1, x1, y1-1, border)"
+			}
+		}
+
 		// splash screen
 		ProgressBox
 		{
@@ -72,6 +85,32 @@ steam.styles
 			inset-bottom=16
 		}
 		"QueryBox Button"
+		{
+			textcolor="popover_fg"
+			font-size=15
+			inset-left=20
+		}
+
+		MessageBox
+		{
+			bgcolor="popover_bg"
+			textcolor="popover_fg"
+		}
+		"MessageBox FrameTitle"
+		{
+			minimum-height=80
+			textcolor="popover_fg"
+			font-size=20
+			inset-left=10
+			render_bg {}
+		}
+		"MessageBox Label"
+		{
+			textcolor="popover_fg"
+			font-size=15
+			inset-bottom=16
+		}
+		"MessageBox Button"
 		{
 			textcolor="popover_fg"
 			font-size=15
