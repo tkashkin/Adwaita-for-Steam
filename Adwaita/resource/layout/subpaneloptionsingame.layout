@@ -76,7 +76,7 @@ subpaneloptionsingame.layout
 
 		Highlight
 		{
-			inset-top=8
+			inset-top=20
 			render
 			{
 				0="fill(x0, y0-1, x1, y0, window_bg)"
@@ -95,7 +95,7 @@ subpaneloptionsingame.layout
 	{
 		region { name="content" margin-left=16 width=520 height=max overflow=scroll-vertical }
 
-		place { control="TitleLabel" region="content" dir=down width=484 height=42 }
+		place { control="TitleLabel" region="content" dir=down width=484 margin-top=-12 height=54 }
 		place { control="EnableOverlayCheck,EnableVRDesktopGameTheaterCheck,EnableSCTenfootOverlayCheck" region="content" start="TitleLabel" dir=down width=484 height=50 }
 
 		place { control="ShowIngameFPSCombo,ShowIngameFPSContrastCheck" region="content" start="EnableSCTenfootOverlayCheck" dir=down width=484 height=50 margin-top=16 }
@@ -112,7 +112,6 @@ subpaneloptionsingame.layout
 		place { control="Divider2" region="content" start="ShareIPNetworkingURL" dir=down width=484 height=16 }
 		
 		region { name="hidden" width=0 height=0 margin-left=-999 }
-
 		place { control="DescriptionLabel,HotKeySelectorLabel,ScreenshotLabel,TextFilterLabel,TextFilterStatus,TextFilterUpdateSettingURL,PingRateLabel,PingRateInfo,PingRateCombo" region="hidden" width=0 height=0 }
 
 		// hidden because of invalid font issues, no idea what's wrong
