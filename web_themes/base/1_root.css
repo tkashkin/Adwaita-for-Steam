@@ -1,10 +1,10 @@
-/* 
+/*
 This file provides overrides for web based elements in the steam client
 
-You can use steam's built in inspector to find classes by launching it 
+You can use steam's built in inspector to find classes by launching it
 with the `-dev` argument and hitting F12
 
-Classes will be likely randomly suffixed, you will need the `*=` 
+Classes will be likely randomly suffixed, you will need the `*=`
 selector for those
 */
 
@@ -12,78 +12,79 @@ selector for those
 /* --- Colors --- */
 /* -------------- */
 
-:root {
-    --bg: #242424;
-    --fg: #ffffff;
+:root
+{
+	--bg: #242424;
+	--fg: #ffffff;
 
-    --button_radius: 6px;
-    --card_radius: calc(var(--button_radius) + 6px);
-    --menu_radius: 6px;
-    --menu_margin: 6px;
-    --menu_padding: 12px;
-    --window_radius: calc(var(--button_radius) + 6px);
-    --popover_radius: var(--window_radius);
+	--button_radius: 6px;
+	--card_radius: calc(var(--button_radius) + 6px);
+	--menu_radius: 6px;
+	--menu_margin: 6px;
+	--menu_padding: 12px;
+	--window_radius: calc(var(--button_radius) + 6px);
+	--popover_radius: var(--window_radius);
 
-    --shade_color: rgba(0, 0, 0, 0.36);
+	--shade_color: rgba(0, 0, 0, 0.36);
 
-    --accent: #78aeed;
-    --accent_bg_color: #3584e4;
-    --accent_fg_color: var(--fg);
+	--accent: #78aeed;
+	--accent_bg_color: #3584e4;
+	--accent_fg_color: var(--fg);
 
-    --destructive_color: #ff7b63;
-    --destructive_bg_color: #c01c28;
-    --destructive_fg_color: var(--fg);
+	--destructive_color: #ff7b63;
+	--destructive_bg_color: #c01c28;
+	--destructive_fg_color: var(--fg);
 
-    --success_color: #8ff0a4;
-    --success_bg_color: #26a269;
-    --success_fg_color: var(--fg);
+	--success_color: #8ff0a4;
+	--success_bg_color: #26a269;
+	--success_fg_color: var(--fg);
 
-    --warning_color: #f8e45c;
-    --warning_bg_color: #cd9309;
-    --warning_fg_color: var(--fg);
+	--warning_color: #f8e45c;
+	--warning_bg_color: #cd9309;
+	--warning_fg_color: var(--fg);
 
-    --error_color: #ff7b63;
-    --error_bg_color: #c01c28;
-    --error_fg_color: var(--fg);
+	--error_color: #ff7b63;
+	--error_bg_color: #c01c28;
+	--error_fg_color: var(--fg);
 
-    --window_bg_color: var(--bg);
-    --window_fg_color: var(--fg);
+	--window_bg_color: var(--bg);
+	--window_fg_color: var(--fg);
 
-    --view_bg_color: #1e1e1e;
-    --view_fg_color: var(--fg);
+	--view_bg_color: #1e1e1e;
+	--view_fg_color: var(--fg);
 
-    --headerbar_bg_color: #303030;
-    --headerbar_fb_color: var(--fg);
-    --headerbar_border_color: var(--fg);
-    --headerbar_backdrop_color: var(--bg);
-    --headerbar_shade_color: var(--shade_color);
+	--headerbar_bg_color: #303030;
+	--headerbar_fb_color: var(--fg);
+	--headerbar_border_color: var(--fg);
+	--headerbar_backdrop_color: var(--bg);
+	--headerbar_shade_color: var(--shade_color);
 
-    --popover_bg_color: #383838;
-    --popover_fg_color: var(--fg);
+	--popover_bg_color: #383838;
+	--popover_fg_color: var(--fg);
 
-    --toast_bg: rgba(0, 0, 0, .7);
-    --toast_fg: rgba(255, 255, 255, .9);
-    --toast_margin: 12px;
-    --toast_margin_bottom: 24px;
-    --toast_border_radius: 150px;
-    --toast_border_spacing: 6px;
-    --toast_padding: 6px;
-    --toast_padding_left: 12px;
+	--toast_bg: rgba(0, 0, 0, .7);
+	--toast_fg: rgba(255, 255, 255, .9);
+	--toast_margin: 12px;
+	--toast_margin_bottom: 24px;
+	--toast_border_radius: 150px;
+	--toast_border_spacing: 6px;
+	--toast_padding: 6px;
+	--toast_padding_left: 12px;
 
-    --button_bg: rgba(255, 255, 255, 0.1);
-    --button_hover_bg: rgba(255, 255, 255, .14);
-    --button_active_bg: rgba(255, 255, 255, .29);
-    --button_disabled_bg: rgba(255, 255, 255, .05);
-    --button_fg: rgba(255, 255, 255, 1);
-    --button_disabled_fg: rgba(255, 255, 255, .5);
+	--button_bg: rgba(255, 255, 255, 0.1);
+	--button_hover_bg: rgba(255, 255, 255, .14);
+	--button_active_bg: rgba(255, 255, 255, .29);
+	--button_disabled_bg: rgba(255, 255, 255, .05);
+	--button_fg: rgba(255, 255, 255, 1);
+	--button_disabled_fg: rgba(255, 255, 255, .5);
 
-    --border: rgba(255, 255, 255, .14);
+	--border: rgba(255, 255, 255, .14);
 
-    --card_bg_color: rgba(255, 255, 255, .08);
-    --card_fg_color: var(--fg);
+	--card_bg_color: rgba(255, 255, 255, .08);
+	--card_fg_color: var(--fg);
 
-    --scrollbar: #4d4e4e;
-    --scrollbar_hover: #6b6c6b;
-    --scrollbar_active: #898b8a;
+	--scrollbar: #4d4e4e;
+	--scrollbar_hover: #6b6c6b;
+	--scrollbar_active: #898b8a;
 }
 
