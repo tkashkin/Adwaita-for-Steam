@@ -1,0 +1,49 @@
+/* --------------- */
+/* --- Library --- */
+/* --------------- */
+
+/* --- Main Library View --- */
+/* Backgrounds */
+[class*="gamelistbar_Container_"],
+[class*="libraryhome_LibraryHome_"],
+[class*="libraryhome_UpdatesContainer_"] {
+    background: var(--bg) !important;
+}
+
+/* Library Left Panel Section Headers */
+[class*="gamelistsectionheader_Container_"] {
+    background: var(--view_bg_color) !important;
+}
+
+/* Left Panel Section Rows */
+[class*="gamelistentry_Container_"] {
+    border-radius: var(--menu_radius) !important;
+}
+
+[class*="gamelistentry_Container_"]:hover {
+    background: var(--button_hover_bg) !important;
+}
+
+[class*="gamelistentry_Selected_"] {
+    background: var(--button_bg) !important;
+}
+
+[class*="gamelistentry_Selected_"] [class*="gamelistentry_GameListEntryContainer_"]:hover {
+    background: var(--button_active_bg) !important;
+}
+
+/* Play Button */
+[class*="appportrait_Play_1"] {
+    background: var(--success_bg_color) !important;
+}
+
+[class*="appportrait_Download_"] {
+    background: var(--accent_bg_color) !important;
+}
+
+/* Update Summary */
+[class*="libraryhomenewupdates_HoversEnabled_"]:hover [class*="libraryhomenewupdates_EventSummaryContainer_"] {
+    background: var(--toast_bg) !important;
+    border-radius: var(--card_radius);
+}
+

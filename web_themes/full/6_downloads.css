@@ -1,0 +1,31 @@
+/* Fix Logo Border */
+[class*="downloadgraph_HeroContainer"] [class*="libraryassetimage_Visible_"] {
+    background: none !important;
+}
+
+/* Top Right Settings Button */
+[class*="downloadgraph_SettingsButton_"] button {
+    background: var(--button_bg) !important;
+    border-radius: var(--button_radius) !important;
+}
+
+[class*="downloadgraph_SettingsButton_"] button:hover {
+    background: var(--button_hover_bg) !important;
+    border-radius: var(--button_radius) !important;
+}
+
+/* Download Items */
+[class*="downloads_SectionItem_"] {
+    border-radius: var(--card_radius) !important;
+}
+
+[class*="downloads_SectionItem_"]:hover {
+    border-radius: var(--card_radius) !important;
+}
+
+/* Active Download Item */
+[class*="downloads_SectionItem_"][class*="downloads_Active_"] {
+    margin: 10px 12px 0px 12px !important;
+    padding: 8px 0px 8px 12px !important;
+}
+

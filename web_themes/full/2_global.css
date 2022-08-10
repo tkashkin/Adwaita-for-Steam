@@ -1,0 +1,13 @@
+/* -------------- */
+/* --- Global --- */
+/* -------------- */
+/* Store/Community Background */
+div#responsive_page_template_content {
+    background: var(--view_bg_color);
+}
+
+/* Mid Page Gradient */
+.home_ctn.tab_container {
+    background: none !important;
+}
+

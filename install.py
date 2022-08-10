@@ -12,12 +12,40 @@ TEXT_RESET = "\033[0m"
 
 SKIN_DIR = "Adwaita"
 PATCH_DIR = "patches"
+WEB_THEME_DIR = "web_themes"
+
+CSS_FILE = "resource/webkit.css"
 
 TARGET_NORMAL = "~/.steam/steam"
 TARGET_FLATPAK = "~/.var/app/com.valvesoftware.Steam/.steam/steam"
 
 skindir = Path(SKIN_DIR)
 patchdir = Path(PATCH_DIR)
+webthemedir = Path(WEB_THEME_DIR)
+
+WEB_BASE_FILES = [
+	webthemedir / "base/1_root.css",
+	webthemedir / "base/3_library.css",
+	webthemedir / "base/4_collections.css",
+	webthemedir / "base/5_game_details.css",
+	webthemedir / "base/6_downloads.css",
+	webthemedir / "base/9_scrollbars.css",
+]
+
+WEB_FULL_FILES = [
+	webthemedir / "base/1_root.css",
+	webthemedir / "full/2_global.css",
+	webthemedir / "base/3_library.css",
+	webthemedir / "full/3_library.css",
+	webthemedir / "base/4_collections.css",
+	webthemedir / "base/5_game_details.css",
+	webthemedir / "full/5_game_details.css",
+	webthemedir / "base/6_downloads.css",
+	webthemedir / "full/6_downloads.css",
+	webthemedir / "full/7_uninstall_dialog.css",
+	webthemedir / "full/8_chat.css",
+	webthemedir / "base/9_scrollbars.css",
+]
 
 def find_patches() -> list[Path]:
 	return list(patchdir.glob("**/*.patch"))
@@ -47,6 +75,30 @@ def apply_patch(parentdir: Path, patch: Path):
 		except Exception as e:
 			print(f"\nError applying patch: {e}")
 
+def gen_webkit_theme(target: Path, name: str, selected_extras: list[Path]):
+	if name == "none":
+		return
+	elif name == "base":
+		selected_files = WEB_BASE_FILES
+	elif name == "full":
+		selected_files = WEB_FULL_FILES
+	else:
+		raise SystemExit(f"Invalid web theme selected: {name}")
+
+	with open(target,'wb') as wfd:
+		for f in selected_files:
+			with open(f,'rb') as fd:
+				shutil.copyfileobj(fd, wfd)
+
+		if selected_extras:
+			for f in selected_extras:
+				f = webthemedir / "extras/{}{}".format(f.removesuffix(".css"), ".css")
+				if f.exists():
+					with open(f,'rb') as fd:
+						shutil.copyfileobj(fd, wfd)
+				else:
+					print(f"Web Extra: {TEXT_BOLD}{f}{TEXT_RESET} not found!")
+
 def install(source: Path, target: Path, name: str):
 	if target.is_dir():
 		if target.stem != "skins":
@@ -64,29 +116,34 @@ def install(source: Path, target: Path, name: str):
 if __name__ == "__main__":
 	if not skindir.exists():
 		raise SystemExit(f"Skin directory {TEXT_BOLD}{SKIN_DIR}{TEXT_RESET} does not exist. Make sure you're running the installer from its root directory")
+	if not webthemedir.exists():
+		raise SystemExit(f"Web Theme directory {TEXT_BOLD}{WEB_THEME_DIR}{TEXT_RESET} does not exist. Make sure you're running the installer from its root directory")
 
 	parser = ArgumentParser(description = "Adwaita-for-Steam installer")
 	parser.add_argument("-t", "--target", nargs = "+", action = "extend", default = ["normal", "flatpak"], help = "Install targets: 'normal', 'flatpak', custom paths")
 	parser.add_argument("-l", "--list-patches", action = "store_true", help = "List available patches and exit")
 	parser.add_argument("-p", "--patch", nargs = "+", action = "extend", help = "Apply one or multiple patches")
 	parser.add_argument("-n", "--name", default = SKIN_DIR, help = "Rename installed skin")
+	parser.add_argument("-w", "--web-theme", choices = ["base", "full", "none"], default = "base", help = "Choose web theme variant")
+	parser.add_argument("-we", "--web-extras", nargs = "+", action = "extend", help = "Enable one or multiple web theme extras")
 	args = parser.parse_args()
 
 	if args.list_patches:
 		list_patches(find_patches())
 	
 	with TemporaryDirectory() as tmpdir:
-		sourcedir = skindir
+		tmp = Path(tmpdir)
+		sourcedir = tmp / SKIN_DIR
+		print(f"Copying to the stage directory {TEXT_BOLD}{sourcedir}{TEXT_RESET}")
+		shutil.copytree(skindir, sourcedir)
 
 		if args.patch:
-			tmp = Path(tmpdir)
-			sourcedir = tmp / SKIN_DIR
-			print(f"Copying to the stage directory {TEXT_BOLD}{sourcedir}{TEXT_RESET}")
-			shutil.copytree(skindir, sourcedir)
 			for patch_file in args.patch:
 				patch = patchdir / "{}{}".format(patch_file.removesuffix(".patch"), ".patch")
 				if patch.exists():
 					apply_patch(tmp, patch)
+
+		gen_webkit_theme(sourcedir / CSS_FILE, args.web_theme, args.web_extras)
 		
 		targets = set()
 

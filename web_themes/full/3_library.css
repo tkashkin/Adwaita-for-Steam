@@ -1,0 +1,22 @@
+/* Play Button */
+[class*="appportrait_Play_1"] {
+    border-radius: var(--button_radius) !important;
+}
+
+[class*="appportrait_Download_"] {
+    border-radius: var(--button_radius) !important;
+}
+
+/* Rounded Corners on Game Logos */
+[class*="appportrait_LibraryItemBox_"],
+[class*="libraryhomenewupdates_PartnerEventRowCapsule_MainImageContainer_"] {
+    border-radius: var(--card_radius) !important;
+}
+
+/* Game Hours Subscript */
+[class*="appportrait_LibraryItemBoxSubscript_"] {
+    background: var(--toast_bg) !important;
+    border-radius: var(--toast_border_radius) !important;
+    margin-top: -20px !important;
+}
+

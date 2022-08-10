@@ -1,0 +1,20 @@
+/* --- Uninstall Dialog --- */
+.DialogContent {
+    background: var(--bg) !important;
+    border-radius: var(--card_radius) !important;
+}
+
+.ModalPosition_TopBar {
+    background: none !important;
+}
+
+.DialogButton.Primary {
+    background: var(--success_bg_color) !important;
+    border-radius: var(--card_radius) !important;
+}
+
+.GenericConfirmDialog .DialogButton {
+    background: var(--button_bg) !important;
+    border-radius: var(--card_radius) !important;
+}
+
