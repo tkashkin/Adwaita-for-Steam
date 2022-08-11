@@ -35,7 +35,6 @@
 .friendsListSectionTitle,
 .chatRoomListContainer,
 .friendListFooter
-
 {
 	background: var(--view_bg_color) !important;
 	border: none !important;
@@ -62,7 +61,7 @@
 
 .currentUserAvatar img.avatar
 {
-	margin-top 1px !important;
+	margin-top: 1px !important;
 }
 
 .currentUserAvatar .avatarHolder
@@ -80,6 +79,11 @@
 .currentUserContainer .labelHolder
 {
 	margin-bottom: -4px !important;
+}
+
+.currentUserContainer .statusHeaderGlow
+{
+	display: none !important;
 }
 
 .friendListButton.friendSettingsButton
@@ -133,7 +137,6 @@
 .titleBarContainer.ChatTabs,
 .chatWindow,
 .chatWindow .chatEntry
-
 {
 	background: var(--bg) !important;
 	border: none !important;

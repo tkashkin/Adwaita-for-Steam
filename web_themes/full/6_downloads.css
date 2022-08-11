@@ -35,3 +35,11 @@
 	padding: 8px 0px 8px 12px !important;
 }
 
+/* Download Buttons */
+[class*="downloads_Button_"],
+[class*="downloads_Button_"]:hover,
+[class*="downloads_RemoveAllButton_"],
+[class*="downloads_RemoveAllButton_"]:hover
+{
+	border-radius: var(--button_radius) !important;
+}

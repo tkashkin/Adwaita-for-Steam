@@ -6,3 +6,12 @@
 	background: var(--bg) !important;
 }
 
+[class*="allcollections_Collection_"]
+{
+	background: var(--button_bg) !important;
+}
+
+[class*="allcollections_Collection_"]:hover
+{
+	background: var(--button_hover_bg) !important;
+}

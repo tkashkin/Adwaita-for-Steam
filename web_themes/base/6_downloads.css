@@ -40,3 +40,20 @@
 	border: none !important;
 }
 
+/* Buttons */
+[class*="downloads_Button_"]
+{
+	background: none !important;
+}
+
+[class*="downloads_RemoveAllButton_"]
+{
+	background: var(--button_bg) !important;
+}
+
+[class*="downloads_Button_"]:hover,
+[class*="downloads_RemoveAllButton_"]:hover
+{
+	background: var(--button_hover_bg) !important;
+	border: none !important;
+}

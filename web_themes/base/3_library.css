@@ -4,38 +4,28 @@
 
 /* --- Main Library View --- */
 /* Backgrounds */
-[class*="gamelistbar_Container_"],
+#root > [class*="library_Container_"],
 [class*="libraryhome_LibraryHome_"],
 [class*="libraryhome_UpdatesContainer_"]
 {
 	background: var(--bg) !important;
+	box-shadow: none !important;
 }
 
-/* Library Left Panel Section Headers */
-[class*="gamelistsectionheader_Container_"]
+/* Mouse Over Descriptions */
+[class*="appdetailsgameinfopanel_Description_"]
 {
-	background: var(--view_bg_color) !important;
+	background: var(--popover_bg_color) !important;
 }
 
-/* Left Panel Section Rows */
-[class*="gamelistentry_Container_"]
+/* Popup Elements */
+[class*="contextmenu_ContextMenuFocusContainer_"] [class*="dropdown_DialogDropDownMenu_"],
+[class*="libraryhomeshowcases_CollectionDropDownContainer_"][class*="libraryhomeshowcases_CollectionDropDownContainer_"] ._DialogInputContainer[class*="dropdown_DialogDropDownMenu_"],
+[class*="appgrid_SortingDropDownContainer_"] > div,
+[class*="tooltip_TextToolTip_"]
 {
-	border-radius: var(--menu_radius) !important;
-}
-
-[class*="gamelistentry_Container_"]:hover
-{
-	background: var(--button_hover_bg) !important;
-}
-
-[class*="gamelistentry_Selected_"]
-{
-	background: var(--button_bg) !important;
-}
-
-[class*="gamelistentry_Selected_"] [class*="gamelistentry_GameListEntryContainer_"]:hover
-{
-	background: var(--button_active_bg) !important;
+	background: var(--popover_bg_color) !important;
+	border: none !important;
 }
 
 /* Play Button */
@@ -53,6 +43,123 @@
 [class*="libraryhomenewupdates_HoversEnabled_"]:hover [class*="libraryhomenewupdates_EventSummaryContainer_"]
 {
 	background: var(--toast_bg) !important;
-	border-radius: var(--card_radius);
 }
 
+[class*="libraryhomenewupdates_EventOptions_"] > div
+{
+	background-color: var(--button_bg) !important;
+}
+
+[class*="libraryhomenewupdates_EventOptions_"]:hover > div
+{
+	background-color: var(--button_hover_bg) !important;
+}
+
+/* --- Left Panel --- */
+/* Backgrounds */
+[class*="gamelistbar_Container_"],
+[class*="gamelistbar_GameListHomeAndSearch_"],
+[class*="gamelistsectionheader_Container_"],
+[class*="gamelisthome_Bar_"]
+{
+	background: var(--bg) !important;
+	box-shadow: none !important;
+}
+
+/* Filters and Buttons */
+[class*="gamelistdropdown_MenuHeader_"],
+[class*="gamelistdropdown_ScrollToTop_"] .SVGIcon_Arrow,
+[class*="appfilterpane_SaveButton_"],
+[class*="gamelistsearchbar_FilterTag_"]
+{
+	background: var(--button_bg) !important;
+	border: none !important;
+}
+
+[class*="gamelistdropdown_MenuHeader_"]:hover,
+[class*="gamelistdropdown_ScrollToTop_"]:hover .SVGIcon_Arrow
+{
+	background: var(--button_hover_bg) !important;
+	border: none !important;
+}
+
+[class*="gamelistdropdown_Active_"] svg
+{
+	fill: var(--accent_bg_color) !important;
+}
+
+[class*="gamelistdropdown_Active_"] svg circle
+{
+	stroke: var(--accent_bg_color) !important;
+}
+
+[class*="gamelistdropdown_DropDown_"],
+[class*="appfilterpane_Container_"],
+[class*="appfilterpane_Description_"]
+{
+	background: var(--popover_bg_color) !important;
+}
+
+[class*="appfilterpane_FilterBucketLabel_"]
+{
+	color: var(--fg) !important;
+}
+
+[class*="appfilterpane_SaveButton_"].Disabled
+{
+	background: var(--button_disabled_bg) !important;
+	color: var(--button_disabled_fg) !important;
+}
+
+[class*="gamelistsearchbar_AdvancedSearchPane_Woh0k"]::before
+{
+	background: none !important;
+}
+
+/* Game Search */
+[class*="gamelistsearchbar_SearchInput_"] input
+{
+	background-color: var(--button_bg) !important;
+	color: var(--fg) !important;
+}
+
+[class*="gamelistsearchbar_AdvancedSearchButton_"]
+{
+	background: var(--button_bg) !important;
+}
+
+[class*="gamelistsearchbar_AdvancedSearchButton_"]:hover
+{
+	background: var(--button_hover_bg) !important;
+}
+
+/* Game Headers and Rows */
+[class*="gamelistsectionheader_SectionName"]
+{
+	color: var(--fg) !important;
+	font-weight: 500 !important;
+}
+
+[class*="gamelistentry_Container_"]:hover,
+[class*="gamelistsectionheader_Container_"]:hover
+{
+	background: var(--button_hover_bg) !important;
+}
+
+[class*="gamelistentry_Selected_"],
+[class*="gamelistsectionheader_Selected_"]
+{
+	background: var(--button_bg) !important;
+}
+
+[class*="gamelistentry_Selected_"] [class*="gamelistentry_GameListEntryContainer_"]:hover,
+[class*="gamelistsectionheader_Selected_"]:hover
+{
+	background: var(--button_active_bg) !important;
+}
+
+[class*="gamelistentry_Updating_"],
+[class*="gamelistentry_DownloadProgress_"]
+{
+	color: var(--accent) !important;
+}
