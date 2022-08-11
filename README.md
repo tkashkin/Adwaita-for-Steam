@@ -6,13 +6,14 @@ A skin to make Steam look more like a native GNOME app
 
 ## Current state and plans
 
-* **Main window**: mostly done, should be usable
+* **Main window**: mostly done
 * **Settings**: partially done
 * **Common controls**: mostly done
-* **High resolutions**: all new graphics assets have `@2x` variants that will be used when scaling is enabled in both Steam and OS settings
+* **New library, new chat, other web-based client parts**: [in progress](https://github.com/tkashkin/Adwaita-for-Steam/pull/6)
+* **Old library, old chat, other old unused windows**: not planned
 * **Small mode and other secondary windows**: planned if requested
 * **Overlay**: unchanged, not planned
-* **Old library, old chat, other old unused windows**: not planned
+* **High resolutions**: all new graphics assets have `@2x` variants that will be used when scaling is enabled in both Steam and OS settings
 * **Recoloring**: colors can be changed in `Adwaita/adw/colors.styles`
 * **Light theme**: not planned, would require redrawing all assets to be visible on light backgrounds
 
@@ -20,7 +21,6 @@ A skin to make Steam look more like a native GNOME app
 
 * **Rounded corners**: impossible to do in a Steam skin, use [Rounded Window Corners extension](https://github.com/yilozt/rounded-window-corners) or [mutter-rounded](https://github.com/yilozt/mutter-rounded) on GNOME
 * **Height of menu/sidebar items**: doesn't seem to be possible to increase
-* **New library, new chat, other web-based client parts**: not skinnable without third-party tools, not planned as part of this project
 
 ## Requirements
 

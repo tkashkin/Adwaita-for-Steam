@@ -24,6 +24,7 @@ UseOfflineModeChosen.res
 
 		Button
 		{
+			inset-left=10
 			render
 			{
 				0="fill(x0, y0-1, x1+1, y0, border)"

@@ -33,7 +33,7 @@ subpaneloptionsdownloads.layout
 
 		ComboBoxButton
 		{
-			inset-left=-6
+			inset-left=-4
 			render_bg {}
 		}
 
@@ -65,19 +65,6 @@ subpaneloptionsdownloads.layout
 			}
 		}
 		ComboBox:active
-		{
-			render
-			{
-				0="fill(x0+6, y0, x1-6, y1, button_active_bg)"
-				1="fill(x0, y0+6, x0+6, y1-6, button_active_bg)"
-				2="fill(x1-6, y0+6, x1, y1-6, button_active_bg)"
-				3="image(x0, y0, x0+6, y0+6, assets/corners/6_w30/tl)"
-				4="image(x1-6, y0, x1, y0+6, assets/corners/6_w30/tr)"
-				5="image(x0, y1-6, x0+6, y1, assets/corners/6_w30/bl)"
-				6="image(x1-6, y1-6, x1, y1, assets/corners/6_w30/br)"
-			}
-		}
-		ComboBox:focus
 		{
 			render
 			{
@@ -229,15 +216,15 @@ subpaneloptionsdownloads.layout
 		place { control="ManageInstalledApps" region="content" start="LibrariesLabel" dir=down width=max height=50 }
 
 		place { control="RegionLabel" region="content" start="ManageInstalledApps" dir=down width=max height=34 }
-		place { control="DownloadRegionCombo" region="content" start="RegionLabel" dir=down margin-top=8 margin-left=278 width=200 height=34 }
+		place { control="DownloadRegionCombo" region="content" start="RegionLabel" dir=down margin-top=8 margin-left=276 width=200 height=34 }
 		place { control="RegionInfoLabel" region="content" start="RegionLabel" dir=down margin-top=8 margin-left=12 width=254 height=34 }
 
 		place { control="RestrictionsLabel" region="content" start="RegionLabel" margin-top=50 dir=down width=max height=34 }
 		place { control="AutoUpdateTimeRestrictCheckbox,ThrottleCheckbox" region="content" start="RestrictionsLabel" dir=down width=272 height=50 }
 
-		place { control="AutoUpdateTimeRestrictStart,AutoUpdateTimeRestrictEnd" region="content" start="AutoUpdateTimeRestrictCheckbox" align=right margin-top=7 margin-right=6 width=97 height=34 spacing=6 }
+		place { control="AutoUpdateTimeRestrictStart,AutoUpdateTimeRestrictEnd" region="content" start="AutoUpdateTimeRestrictCheckbox" align=right margin-top=7 margin-right=8 width=97 height=34 spacing=6 }
 
-		place { control="ThrottleRateEdit,ThrottleRateApply" region="content" start="ThrottleCheckbox" align=right margin-top=7 margin-right=6 width=97 height=34 spacing=6 }
+		place { control="ThrottleRateEdit,ThrottleRateApply" region="content" start="ThrottleCheckbox" align=right margin-top=7 margin-right=8 width=97 height=34 spacing=6 }
 		place { control="ThrottleRateEditSuffix" region="content" align=right start="ThrottleRateApply" end-right="ThrottleRateApply" margin-right=10 height=34 }
 
 		place { control="AllowDownloadsDuringGameplayCheckbox,ThrottleDownloadsWhileStreamingCheckbox,DownloadRatesInBitsCheckbox" region="content" start="ThrottleCheckbox" dir=down width=max height=50 }
