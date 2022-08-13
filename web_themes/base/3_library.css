@@ -71,6 +71,14 @@
 	box-shadow: none !important;
 }
 
+/* Separator */
+[class*="library_LibraryWindowDivider"]
+{
+	background: var(--border) !important;
+	min-width: 1px !important;
+	width: 1px !important;
+}
+
 /* Filters and Buttons */
 [class*="gamelistdropdown_MenuHeader_"],
 [class*="gamelistdropdown_ScrollToTop_"] .SVGIcon_Arrow,
