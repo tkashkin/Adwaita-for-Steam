@@ -24,16 +24,15 @@
 }
 
 /* Popup Elements */
-[class*="contextmenu_ContextMenuFocusContainer_"],
 [class*="libraryhomeshowcases_CollectionDropDownContainer_"][class*="libraryhomeshowcases_CollectionDropDownContainer_"] ._DialogInputContainer[class*="dropdown_DialogDropDownMenu_"],
-[class*="appgrid_SortingDropDownContainer_"] > div,
+.DialogMenuPosition[class*="appgrid_SortingDropDownContainer_"] > div,
 [class*="tooltip_TextToolTip_"]
 {
 	background: var(--popover_bg_color) !important;
 	border: none !important;
 }
 
-[class*="contextmenu_ContextMenuFocusContainer_"] [class*="dropdown_DialogDropDownMenu_"]:hover
+[class*="contextmenu_ContextMenuFocusContainer_"] [class*="dropdown_DialogDropDownMenu_Item_"]:hover
 {
 	background: var(--button_hover_bg) !important;
 }
