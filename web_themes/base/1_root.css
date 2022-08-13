@@ -1,13 +1,3 @@
-/*
-This file provides overrides for web based elements in the steam client
-
-You can use steam's built in inspector to find classes by launching it
-with the `-dev` argument and hitting F12
-
-Classes will be likely randomly suffixed, you will need the `*=`
-selector for those
-*/
-
 /* -------------- */
 /* --- Colors --- */
 /* -------------- */
