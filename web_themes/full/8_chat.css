@@ -132,6 +132,24 @@
 	border-radius: var(--button_radius) !important;
 }
 
+/* Friend Status Text */
+.friend.online,
+.friend.online [class*="personanameandstatus_playerName_"],
+.friend.online [class*="personanameandstatus_richPresenceLabel_"]
+{
+	color: var(--accent) !important;
+}
+
+.friend.ingame [class*="personanameandstatus_playerName_"]
+{
+	color: var(--success_color) !important;
+}
+
+.friend.ingame [class*="personanameandstatus_richPresenceLabel_"]
+{
+	color: var(--success_bg_color) !important;
+}
+
 /* - Right Side - */
 .chatDialogs,
 .titleBarContainer.ChatTabs,
