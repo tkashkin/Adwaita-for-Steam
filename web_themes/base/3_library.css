@@ -12,6 +12,11 @@
 	box-shadow: none !important;
 }
 
+[class*="libraryhome_Container_"]
+{
+	background: none !important;
+}
+
 /* Mouse Over Descriptions */
 [class*="appdetailsgameinfopanel_Description_"]
 {

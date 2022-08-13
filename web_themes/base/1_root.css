@@ -83,8 +83,8 @@ selector for those
 	--card_bg_color: rgba(255, 255, 255, .08);
 	--card_fg_color: var(--fg);
 
-	--scrollbar: #4d4e4e;
-	--scrollbar_hover: #6b6c6b;
-	--scrollbar_active: #898b8a;
+	--scrollbar: rgba(255,255,255,0.2);
+	--scrollbar_hover: rgba(255,255,255,0.4);
+	--scrollbar_active: rgba(255,255,255,0.6);
 }
 
