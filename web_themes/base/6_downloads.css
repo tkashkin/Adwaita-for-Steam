@@ -23,6 +23,17 @@
 	background: none !important;
 }
 
+/* Top Right Settings Button */
+[class*="downloadgraph_SettingsButton_"] button
+{
+	background: var(--button_bg) !important;
+}
+
+[class*="downloadgraph_SettingsButton_"] button:hover
+{
+	background: var(--button_hover_bg) !important;
+}
+
 /* - Downloads - */
 /* Download Items */
 [class*="downloads_SectionItem_"]

@@ -5,15 +5,9 @@
 }
 
 /* Top Right Settings Button */
-[class*="downloadgraph_SettingsButton_"] button
-{
-	background: var(--button_bg) !important;
-	border-radius: var(--button_radius) !important;
-}
-
+[class*="downloadgraph_SettingsButton_"] button,
 [class*="downloadgraph_SettingsButton_"] button:hover
 {
-	background: var(--button_hover_bg) !important;
 	border-radius: var(--button_radius) !important;
 }
 
