@@ -207,6 +207,11 @@
 	border-bottom-left-radius: 0px !important;
 }
 
+[class*="gamelistsearchbar_AdvancedSearchContainer_"]
+{
+	background: none !important;
+}
+
 [class*="gamelistsearchbar_AdvancedSearchContainer_"]:hover,
 [class*="gamelistsearchbar_AdvancedSearchContainer_"][class*="gamelistsearchbar_Extended_"]
 {
