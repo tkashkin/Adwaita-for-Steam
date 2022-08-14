@@ -41,6 +41,7 @@
 [class*="contextmenu_ContextMenuFocusContainer_"] [class*="dropdown_DialogDropDownMenu_Item_"]:hover
 {
 	background: var(--button_hover_bg) !important;
+	border-radius: var(--menu_radius) !important;
 }
 
 /* Play Button */
