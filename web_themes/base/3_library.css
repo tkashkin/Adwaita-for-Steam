@@ -91,6 +91,7 @@
 {
 	background: var(--button_bg) !important;
 	border: none !important;
+	border-radius: var(--button_radius) !important;
 }
 
 [class*="gamelistdropdown_MenuHeader_"]:hover,
@@ -98,6 +99,7 @@
 {
 	background: var(--button_hover_bg) !important;
 	border: none !important;
+	border-radius: var(--button_radius) !important;
 }
 
 [class*="gamelistdropdown_Active_"] svg
@@ -137,17 +139,24 @@
 [class*="gamelistsearchbar_SearchInput_"] input
 {
 	background-color: var(--button_bg) !important;
+	border-radius: var(--button_radius) !important;
 	color: var(--fg) !important;
 }
 
 [class*="gamelistsearchbar_AdvancedSearchButton_"]
 {
 	background: var(--button_bg) !important;
+	border-radius: var(--button_radius) !important;
+	border-top-left-radius: 0px !important;
+	border-bottom-left-radius: 0px !important;
 }
 
 [class*="gamelistsearchbar_AdvancedSearchButton_"]:hover
 {
 	background: var(--button_hover_bg) !important;
+	border-radius: var(--button_radius) !important;
+	border-top-left-radius: 0px !important;
+	border-bottom-left-radius: 0px !important;
 }
 
 /* Game Headers and Rows */
@@ -161,18 +170,21 @@
 [class*="gamelistsectionheader_Container_"]:hover
 {
 	background: var(--button_hover_bg) !important;
+	border-radius: var(--menu_radius) !important;
 }
 
 [class*="gamelistentry_Selected_"],
 [class*="gamelistsectionheader_Selected_"]
 {
 	background: var(--button_bg) !important;
+	border-radius: var(--button_radius) !important;
 }
 
 [class*="gamelistentry_Selected_"] [class*="gamelistentry_GameListEntryContainer_"]:hover,
 [class*="gamelistsectionheader_Selected_"]:hover
 {
 	background: var(--button_active_bg) !important;
+	border-radius: var(--button_radius) !important;
 }
 
 [class*="gamelistentry_Updating_"],
