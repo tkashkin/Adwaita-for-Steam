@@ -9,6 +9,7 @@
 [class*="downloadgraph_GraphAndStats_"]
 {
 	background: var(--view_bg_color) !important;
+	border-bottom: 1px solid var(--border) !important;
 }
 
 /* Remove Gradient when Downloads are Empty */
