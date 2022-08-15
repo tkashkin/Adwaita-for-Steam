@@ -1,3 +1,4 @@
+# Web Themes
 These files provide overrides for web based elements in the steam client.
 
 Each theme is split into sections and combined by `install.py` to produce the final theme.
