@@ -32,15 +32,27 @@
 /* Popup Elements */
 [class*="libraryhomeshowcases_CollectionDropDownContainer_"][class*="libraryhomeshowcases_CollectionDropDownContainer_"] ._DialogInputContainer[class*="dropdown_DialogDropDownMenu_"],
 .DialogMenuPosition[class*="appgrid_SortingDropDownContainer_"] > div,
-[class*="tooltip_TextToolTip_"]
+[class*="tooltip_TextToolTip_"],
+[class*="contextmenu_contextMenu_"]
 {
 	background: var(--popover_bg_color) !important;
 	border: none !important;
+	border-radius: var(--menu_radius) !important;
+	color: var(--fg) !important;
 }
 
-[class*="contextmenu_ContextMenuFocusContainer_"] [class*="dropdown_DialogDropDownMenu_Item_"]:hover
+[class*="contextmenu_ContextMenuFocusContainer_"] [class*="dropdown_DialogDropDownMenu_Item_"]:hover,
+[class*="contextmenu_contextMenuItem_"]:hover,
+[class*="contextmenu_contextMenuItem_"][class*="contextmenu_active_"],
+[class*="library_ContextMenuAction_"]:hover
 {
 	background: var(--button_hover_bg) !important;
+	border-radius: var(--menu_radius) !important;
+}
+
+[class*="library_ContextMenuAction_"]
+{
+	background: none !important;
 	border-radius: var(--menu_radius) !important;
 }
 
