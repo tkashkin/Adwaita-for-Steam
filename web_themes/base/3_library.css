@@ -231,12 +231,20 @@
 [class*="gamelistsectionheader_Container_"],
 [class*="gamelistentry_Container_"]
 {
+	border: none !important;
 	margin-left: 6px !important;
 }
 
 [class*="gamelistentry_GameListEntryContainer_"]
 {
+	border: none !important;
 	padding-left: 6px !important;
+}
+
+[class*="gamelist_Container_"] .ReactVirtualized__Grid[style*="overflow: hidden;"]
+{
+	/* Only try to pad if the list doesnt overflow */
+	padding-right: 6px !important;
 }
 
 [class*="gamelistentry_GameIcon_"]
@@ -251,13 +259,16 @@
 	border-radius: var(--menu_radius) !important;
 }
 
-[class*="gamelistentry_Selected_"][class*="gamelistentry_Container_"] :hover
+[class*="gamelistentry_Selected_"][class*="gamelistentry_Container_"],
+[class*="gamelistentry_Selected_"] > [class*="gamelistentry_Container_"],
+[class*="gamelistentry_Selected_"] > [class*="gamelistentry_Container_"]:hover
 {
 	background: none !important;
 }
 
-[class*="gamelistentry_Selected_"],
 [class*="gamelistsectionheader_Selected_"],
+[class*="gamelistentry_HasContextMenuOpen_"],
+[class*="gamelistentry_Selected_"] [class*="gamelistentry_GameListEntryContainer_"],
 [class*="gamelistentry_Selected_"] [class*="gamelistentry_GameListEntryContainer_"][class*="gamelistentry_CloudError_"]
 {
 	background: var(--button_bg) !important;
@@ -265,7 +276,6 @@
 }
 
 [class*="gamelistsectionheader_Selected_"]:hover,
-[class*="gamelistentry_Selected_"]:hover,
 [class*="gamelistentry_Selected_"] [class*="gamelistentry_GameListEntryContainer_"]:hover,
 [class*="gamelistentry_Selected_"] [class*="gamelistentry_GameListEntryContainer_"][class*="gamelistentry_CloudError_"]:hover
 {
@@ -282,7 +292,8 @@
 	color: var(--accent) !important;
 }
 
-[class*="gamelistentry_HoverOverlay_"]
+[class*="gamelistentry_HoverOverlay_"],
+[class*="gamelistentry_HoverOverlay_"][class*="gamelistentry_Selected_"]
 {
 	background: var(--bg) !important;
 	border-radius: var(--menu_radius) !important;
