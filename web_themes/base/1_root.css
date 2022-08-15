@@ -44,7 +44,7 @@
 	--view_fg_color: var(--fg);
 
 	--headerbar_bg_color: #303030;
-	--headerbar_fb_color: var(--fg);
+	--headerbar_fg_color: var(--fg);
 	--headerbar_border_color: var(--fg);
 	--headerbar_backdrop_color: var(--bg);
 	--headerbar_shade_color: var(--shade_color);
@@ -62,8 +62,8 @@
 	--toast_padding_left: 12px;
 
 	--button_bg: rgba(255, 255, 255, 0.1);
-	--button_hover_bg: rgba(255, 255, 255, .14);
-	--button_active_bg: rgba(255, 255, 255, .29);
+	--button_hover_bg: rgba(255, 255, 255, .15);
+	--button_active_bg: rgba(255, 255, 255, .3);
 	--button_disabled_bg: rgba(255, 255, 255, .05);
 	--button_fg: rgba(255, 255, 255, 1);
 	--button_disabled_fg: rgba(255, 255, 255, .5);
