@@ -186,5 +186,30 @@ steam.styles
 			font-size=15
 			inset-left=20
 		}
+
+		WizardPanelButton
+		{
+			minimum-height=34
+		}
+		WizardPanelButton:disabled
+		{
+			minimum-height=0
+			textcolor=none
+			render_bg {}
+		}
+
+		"CInstallAppWizard FrameTitle"
+		{
+			minimum-height=48
+			textcolor=none
+			font-size=1
+		}
+		"CInstallAppWizard FrameCloseButton"
+		{
+			minimum-width=0
+			minimum-height=0
+			image="assets/pixel"
+			render_bg {}
+		}
 	}
 }

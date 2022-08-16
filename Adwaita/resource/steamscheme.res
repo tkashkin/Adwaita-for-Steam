@@ -8,8 +8,8 @@ Scheme
 			{
 				xpos	r31
 				ypos	7
-				wide	24
-				tall	24
+				wide	0
+				tall	0
 				PinCorner	1
 			}
 
@@ -70,10 +70,11 @@ Scheme
 		{
 			sheet
 			{
-				xpos	6
-				ypos	44
-				wide	r6
-				tall	r48
+				xpos	0
+				ypos	48
+				wide	r0
+				tall	r0
+				AutoResize	3
 			}
 			
 			// these buttons are still a bit special - if some of them are hidden, they shuffle
@@ -107,47 +108,50 @@ Scheme
 		{
 			subpanel
 			{
-				xpos	10
-				ypos	28
-				wide	r10
-				tall	r48
+				xpos	0
+				ypos	48
+				wide	r0
+				tall	r0
 				AutoResize	3
+			}
+
+			CancelButton
+			{
+				xpos	7
+				ypos	7
+				wide	80
+				tall	0
+				PinCorner	0
 			}
 		
 			PrevButton
 			{
-				xpos	r306
-				ypos	r36
-				wide	92
-				tall	24
-				PinCorner	3
+				xpos	93
+				ypos	7
+				zpos	2
+				wide	80
+				tall	0
+				PinCorner	0
 			}
+
 			NextButton
 			{
-				xpos	r204
-				ypos	r36
-				wide	92
-				tall	24
-				PinCorner	3
+				xpos	r87
+				ypos	7
+				wide	80
+				tall	0
+				PinCorner	1
 			}
-			CancelButton
-			{
-				xpos	r102
-				ypos	r36
-				wide	92
-				tall	24
-				PinCorner	3
-			}
+
 			FinishButton
 			{
-				xpos	r102
-				ypos	r36
-				wide	92
-				tall	24
-				PinCorner	3
+				xpos	r87
+				ypos	7
+				zpos	2
+				wide	80
+				tall	0
+				PinCorner	1
 			}
 		}
 	}
-	Colors {}
-	BaseSettings {}
 }

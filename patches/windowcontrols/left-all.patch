@@ -57,8 +57,8 @@
 -				xpos	r31
 +				xpos	7
  				ypos	7
- 				wide	24
- 				tall	24
+ 				wide	0
+ 				tall	0
 -				PinCorner	1
 +				PinCorner	0
  			}
@@ -121,7 +121,7 @@
 
 --- Adwaita/resource/layout/htmlpopup.layout
 +++ Adwaita/resource/layout/htmlpopup.layout
-@@ -231,8 +231,8 @@
+@@ -227,8 +227,8 @@
  
  	layout
  	{
