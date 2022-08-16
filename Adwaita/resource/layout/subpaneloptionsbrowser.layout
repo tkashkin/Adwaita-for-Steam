@@ -2,12 +2,6 @@ subpaneloptionsbrowser.layout
 {
 	styles
 	{
-		Label
-		{
-			font-size=12
-			textcolor="button_disabled_fg"
-		}
-
 		TextEntry
 		{
 			inset-left=9
@@ -50,6 +44,12 @@ subpaneloptionsbrowser.layout
 			}
 		}
 
+		Label
+		{
+			font-size=12
+			textcolor="button_disabled_fg"
+		}
+
 		Button
 		{
 			bgcolor=none
@@ -81,6 +81,58 @@ subpaneloptionsbrowser.layout
 				1="fill(x0+12, y1-12, x1-12, y1, button_active_bg)"
 				2="image(x0, y1-12, x0+12, y1, assets/corners/12_w30/bl)"
 				3="image(x1-12, y1-12, x1, y1, assets/corners/12_w30/br)"
+			}
+		}
+
+		"QueryBox Label"
+		{
+			textcolor="popover_fg"
+			font-size=15
+			inset-bottom=16
+		}
+		"QueryBox Button"
+		{
+			textcolor="popover_fg"
+			font-family=basefont
+			font-size=15
+			font-weight=700
+			font-style=none
+			inset-left=20
+			render_bg
+			{
+				0="fill(x0+6, y0, x1-6, y1, button_bg)"
+				1="fill(x0, y0+6, x0+6, y1-6, button_bg)"
+				2="fill(x1-6, y0+6, x1, y1-6, button_bg)"
+				3="image(x0, y0, x0+6, y0+6, assets/corners/6_w10/tl)"
+				4="image(x1-6, y0, x1, y0+6, assets/corners/6_w10/tr)"
+				5="image(x0, y1-6, x0+6, y1, assets/corners/6_w10/bl)"
+				6="image(x1-6, y1-6, x1, y1, assets/corners/6_w10/br)"
+			}
+		}
+		"QueryBox Button:hover"
+		{
+			render_bg
+			{
+				0="fill(x0+6, y0, x1-6, y1, button_hover_bg)"
+				1="fill(x0, y0+6, x0+6, y1-6, button_hover_bg)"
+				2="fill(x1-6, y0+6, x1, y1-6, button_hover_bg)"
+				3="image(x0, y0, x0+6, y0+6, assets/corners/6_w15/tl)"
+				4="image(x1-6, y0, x1, y0+6, assets/corners/6_w15/tr)"
+				5="image(x0, y1-6, x0+6, y1, assets/corners/6_w15/bl)"
+				6="image(x1-6, y1-6, x1, y1, assets/corners/6_w15/br)"
+			}
+		}
+		"QueryBox Button:active"
+		{
+			render_bg
+			{
+				0="fill(x0+6, y0, x1-6, y1, button_active_bg)"
+				1="fill(x0, y0+6, x0+6, y1-6, button_active_bg)"
+				2="fill(x1-6, y0+6, x1, y1-6, button_active_bg)"
+				3="image(x0, y0, x0+6, y0+6, assets/corners/6_w30/tl)"
+				4="image(x1-6, y0, x1, y0+6, assets/corners/6_w30/tr)"
+				5="image(x0, y1-6, x0+6, y1, assets/corners/6_w30/bl)"
+				6="image(x1-6, y1-6, x1, y1, assets/corners/6_w30/br)"
 			}
 		}
 	}

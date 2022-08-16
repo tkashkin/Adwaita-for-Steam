@@ -38,6 +38,7 @@ colors.styles
 		view_fg="255 255 255 255"
 
 		popover_bg="56 56 56 255"
+		popover_bg_transparent="56 56 56 0"
 		popover_fg="255 255 255 255"
 
 		button_bg="255 255 255 26"

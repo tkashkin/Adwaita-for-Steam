@@ -1,0 +1,15 @@
+accountsettingswebdialog.layout
+{
+	styles
+	{
+		HTML
+		{
+			inset="2 0 2 2"
+		}
+	}
+	
+	layout
+	{
+		place { controls="HTML" width=max height=max margin-top=38 }
+	}
+}

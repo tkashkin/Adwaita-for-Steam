@@ -103,3 +103,17 @@
 +		place { control="CloseButton,BgRect,frame_maximize,frame_minimize" region="hidden" width=0 height=0 }
  	}
  }
+
+--- Adwaita/resource/layout/htmlpopup.layout
++++ Adwaita/resource/layout/htmlpopup.layout
+@@ -231,8 +231,8 @@
+ 
+ 	layout
+ 	{
+-		place { control="frame_minimize,frame_close" align=right spacing=14 margin-right=12 y=12 }
+-		place { control="BackButton,ForwardButton,ReloadButton,StopButton" x=7 y=7 width=34 height=34 spacing=6 }
++		place { control="frame_close,frame_minimize" align=left spacing=14 margin-left=12 y=12 }
++		place { control="BackButton,ForwardButton,ReloadButton,StopButton" x=47 y=7 width=34 height=34 spacing=6 }
+ 
+ 		place { control="frame_title" width=max height=48 }
+ 
