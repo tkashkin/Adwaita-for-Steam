@@ -39,6 +39,10 @@ cd Adwaita-for-Steam
 
 Run `./install.py -l` to see customization options and `./install.py -p ${patch_name}` to apply them.
 
+Run `./install.py -w {base, full, none}` to change the type of theme for web based elements of steam. base is a basic default, full includes heavier theming (including chat), and none disables this feature.
+
+Run `./install.py -we ${web_extra_name}` to add an optional extra to the web theme.
+
 Run `./install.py -h` to see all installer options.
 
 ### Manual installation

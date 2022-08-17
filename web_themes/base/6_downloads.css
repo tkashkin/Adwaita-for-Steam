@@ -1,0 +1,72 @@
+/* --- Downloads View --- */
+/* BG */
+[class*="downloads_DownloadsPage_"]
+{
+	background: var(--bg) !important;
+}
+
+/* - Header - */
+[class*="downloadgraph_GraphAndStats_"]
+{
+	background: var(--view_bg_color) !important;
+	border-bottom: 1px solid var(--border) !important;
+}
+
+/* Remove Gradient when Downloads are Empty */
+[class*="downloadgraph_HeroAndLogo_"]
+{
+	background: none !important;
+}
+
+/* Blue Separator Line */
+[class*="downloads_TopBar_SEmVp"]
+{
+	background: none !important;
+}
+
+/* Top Right Settings Button */
+[class*="downloadgraph_SettingsButton_"] button
+{
+	background: var(--button_bg) !important;
+}
+
+[class*="downloadgraph_SettingsButton_"] button:hover
+{
+	background: var(--button_hover_bg) !important;
+}
+
+/* - Downloads - */
+/* Download Items */
+[class*="downloads_SectionItem_"]
+{
+	background: var(--card_bg_color) !important;
+}
+
+[class*="downloads_SectionItem_"]:hover
+{
+	background: var(--button_active_bg) !important;
+}
+
+[class*="downloads_Active_"] [class*="downloads_SectionList_"]
+{
+	border: none !important;
+}
+
+/* Buttons */
+[class*="downloads_Button_"]
+{
+	background: none !important;
+}
+
+[class*="downloads_RemoveAllButton_"]
+{
+	background: var(--button_bg) !important;
+}
+
+[class*="downloads_Button_"]:hover,
+[class*="downloads_RemoveAllButton_"]:hover
+{
+	background: var(--button_hover_bg) !important;
+	border: none !important;
+}
+
