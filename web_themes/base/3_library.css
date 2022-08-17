@@ -272,8 +272,10 @@
 }
 
 [class*="gamelistentry_Selected_"][class*="gamelistentry_Container_"],
+[class*="gamelistentry_Selected_"][class*="gamelistentry_Container_"] :hover,
 [class*="gamelistentry_Selected_"] > [class*="gamelistentry_Container_"],
-[class*="gamelistentry_Selected_"] > [class*="gamelistentry_Container_"]:hover
+[class*="gamelistentry_Selected_"] > [class*="gamelistentry_Container_"]:hover,
+[class*="gamelistentry_Selected_"] > [class*="gamelistentry_Container_"] :hover
 {
 	background: none !important;
 }
@@ -305,7 +307,8 @@
 }
 
 [class*="gamelistentry_HoverOverlay_"],
-[class*="gamelistentry_HoverOverlay_"][class*="gamelistentry_Selected_"]
+[class*="gamelistentry_HoverOverlay_"][class*="gamelistentry_Selected_"],
+[class*="gamelistentry_Selected_"] [class*="gamelistentry_Container_"][class*="gamelistentry_HoverOverlay_"]
 {
 	background: var(--bg) !important;
 	border-radius: var(--menu_radius) !important;
