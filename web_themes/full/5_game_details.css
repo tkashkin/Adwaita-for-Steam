@@ -26,14 +26,19 @@
 }
 
 /* Rounded Corners for Play button with segmented dropdown menu */
-[class*="appactionbutton_PlayButtonContainer"] > [class*="appactionbutton_ButtonChild"] {
+[class*="appactionbutton_PlayButtonContainer"] > [class*="appactionbutton_ButtonChild"]
+{
 	border-radius: var(--button_radius) !important;
 }
-[class*="appactionbutton_PlayButtonContainer"] > [class*="appactionbutton_ButtonChild"]:first-child:not(:last-child) {
+
+[class*="appactionbutton_PlayButtonContainer"] > [class*="appactionbutton_ButtonChild"]:first-child:not(:last-child)
+{
 	border-top-right-radius: 0 !important;
 	border-bottom-right-radius: 0 !important;
 }
-[class*="appactionbutton_PlayButtonContainer"] > [class*="appactionbutton_ButtonChild"]:last-child:not(:first-child) {
+
+[class*="appactionbutton_PlayButtonContainer"] > [class*="appactionbutton_ButtonChild"]:last-child:not(:first-child)
+{
 	border-top-left-radius: 0 !important;
 	border-bottom-left-radius: 0 !important;
 	margin-left: 0 !important;
