@@ -25,6 +25,20 @@
 	border: none !important;
 }
 
+/* Rounded Corners for Play button with segmented dropdown menu */
+[class*="appactionbutton_PlayButtonContainer"] > [class*="appactionbutton_ButtonChild"]:first-child {
+	border-top-right-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+}
+[class*="appactionbutton_PlayButtonContainer"] > [class*="appactionbutton_ButtonChild"]:last-child {
+	border-top-left-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
+	margin-left: 0 !important;
+}
+[class*="appactionbutton_PlayButtonContainer"] > [class*="appactionbutton_ButtonChild"]:only-child {
+	border-radius: var(--button_radius) !important;
+}
+
 /* Hover Highlight */
 [class*="appactivityday_PartnerEventTextOnly_Container_"]:hover,
 [class*="appactivityday_PartnerEventMediumImage_Container_"]:hover,
