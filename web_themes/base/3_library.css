@@ -2,6 +2,13 @@
 /* --- Library --- */
 /* --------------- */
 
+/* Post Login Loading Screen */
+
+[class*="index_Container_"][class*="index_PreloadThrobber_"]
+{
+	background: var(--bg) !important;
+}
+
 /* --- Main Library View --- */
 /* Backgrounds */
 #root > [class*="library_Container_"],
