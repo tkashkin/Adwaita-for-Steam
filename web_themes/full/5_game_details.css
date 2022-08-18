@@ -41,6 +41,7 @@
 {
 	border-top-left-radius: 0 !important;
 	border-bottom-left-radius: 0 !important;
+	border-left: 1px solid #fff4 !important;
 	margin-left: 0 !important;
 }
 
