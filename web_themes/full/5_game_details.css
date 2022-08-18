@@ -25,6 +25,69 @@
 	border: none !important;
 }
 
+/* Play button, streaming device dropdown */
+[class*="appactionbutton_PlayButtonContainer"]
+{
+	border-radius: var(--button_radius) !important;
+	background-color: var(--accent_bg_color) !important;
+	color: var(--accent_fg_color) !important;
+}
+
+[class*="appactionbutton_PlayButtonContainer"][class*="appactionbutton_Green"]
+{
+	background-color: var(--success_bg_color) !important;
+	color: var(--success_fg_color) !important;
+}
+
+[class*="appactionbutton_PlayButtonContainer"][class*="appactionbutton_Disabled"]
+{
+	background-color: var(--button_disabled_bg) !important;
+	color: var(--button_disabled_fg) !important;
+}
+
+[class*="appactionbutton_PlayButtonContainer"] [class*="appactionbutton_ButtonText"]
+{
+	text-transform: none !important;
+}
+
+[class*="appactionbutton_PlayButtonContainer"] > [class*="appactionbutton_ButtonChild"] > svg > path,
+[class*="appactionbutton_PlayButtonContainer"] > [class*="appactionbutton_ButtonChild"] > svg > polygon
+{
+	stroke: currentColor !important;
+	fill: currentColor !important;
+}
+
+[class*="appactionbutton_PlayButtonContainer"] > [class*="appactionbutton_ButtonChild"]
+{
+	margin: 0 !important;
+	border-radius: var(--button_radius) !important;
+	background-color: transparent !important;
+	transition: background 0.15s, border-color 0.15s, border-top-left-radius 0s, border-bottom-left-radius 0s !important;
+}
+
+[class*="appactionbutton_PlayButtonContainer"] > [class*="appactionbutton_ButtonChild"]:hover
+{
+	background-color: var(--button_hover_bg) !important;
+}
+
+[class*="appactionbutton_PlayButtonContainer"] > [class*="appactionbutton_ButtonChild"]:active
+{
+	background-color: var(--button_active_bg) !important;
+}
+
+[class*="appactionbutton_PlayButtonContainer"] > [class*="appactionbutton_ButtonChild"]:last-child:not(:first-child)
+{
+	border-top-left-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
+	border-left: 1px var(--button_active_bg) solid !important;
+}
+
+[class*="appactionbutton_PlayButtonContainer"]:hover > [class*="appactionbutton_ButtonChild"]:last-child:not(:first-child)
+{
+	border-radius: var(--button_radius) !important;
+	border-color: transparent !important;
+}
+
 /* Hover Highlight */
 [class*="appactivityday_PartnerEventTextOnly_Container_"]:hover,
 [class*="appactivityday_PartnerEventMediumImage_Container_"]:hover,
