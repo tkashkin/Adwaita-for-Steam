@@ -15,42 +15,40 @@
 	--window_radius: calc(var(--button_radius) + 6px);
 	--popover_radius: var(--window_radius);
 
-	--shade_color: rgba(0, 0, 0, 0.36);
-
 	--accent: #78aeed;
-	--accent_bg_color: #3584e4;
-	--accent_fg_color: var(--fg);
+	--accent_bg: #3584e4;
+	--accent_fg: var(--fg);
 
-	--destructive_color: #ff7b63;
-	--destructive_bg_color: #c01c28;
-	--destructive_fg_color: var(--fg);
+	--destructive: #ff7b63;
+	--destructive_bg: #c01c28;
+	--destructive_fg: var(--fg);
 
-	--success_color: #8ff0a4;
-	--success_bg_color: #26a269;
-	--success_fg_color: var(--fg);
+	--success: #8ff0a4;
+	--success_bg: #26a269;
+	--success_fg: var(--fg);
 
-	--warning_color: #f8e45c;
-	--warning_bg_color: #cd9309;
-	--warning_fg_color: var(--fg);
+	--warning: #f8e45c;
+	--warning_bg: #cd9309;
+	--warning_fg: var(--fg);
 
-	--error_color: #ff7b63;
-	--error_bg_color: #c01c28;
-	--error_fg_color: var(--fg);
+	--error: #ff7b63;
+	--error_bg: #c01c28;
+	--error_fg: var(--fg);
 
-	--window_bg_color: var(--bg);
-	--window_fg_color: var(--fg);
+	--window_bg: var(--bg);
+	--window_fg: var(--fg);
 
-	--view_bg_color: #1e1e1e;
-	--view_fg_color: var(--fg);
+	--view_bg: #1e1e1e;
+	--view_fg: var(--fg);
 
-	--headerbar_bg_color: #303030;
-	--headerbar_fg_color: var(--fg);
-	--headerbar_border_color: var(--fg);
-	--headerbar_backdrop_color: var(--bg);
-	--headerbar_shade_color: var(--shade_color);
+	--headerbar_bg: #303030;
+	--headerbar_fg: var(--fg);
+	--headerbar_border: var(--fg);
+	--headerbar_backdrop: var(--bg);
+	--headerbar_shade: rgba(0, 0, 0, 0.5);
 
-	--popover_bg_color: #383838;
-	--popover_fg_color: var(--fg);
+	--popover_bg: #383838;
+	--popover_fg: var(--fg);
 
 	--toast_bg: rgba(0, 0, 0, 0.7);
 	--toast_fg: rgba(255, 255, 255, 0.9);
@@ -70,11 +68,15 @@
 
 	--border: rgba(255, 255, 255, 0.15);
 
-	--card_bg_color: rgba(255, 255, 255, 0.1);
-	--card_fg_color: var(--fg);
+	--card_bg: rgba(255, 255, 255, 0.1);
+	--card_fg: var(--fg);
 
 	--scrollbar: rgba(255, 255, 255, 0.2);
 	--scrollbar_hover: rgba(255, 255, 255, 0.4);
 	--scrollbar_active: rgba(255, 255, 255, 0.6);
+
+	--focus_ring: rgba(120, 174, 237, 0.5);
+
+	--basefont: "Cantarell";
 }
 

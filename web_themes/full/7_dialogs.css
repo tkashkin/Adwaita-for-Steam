@@ -1,0 +1,271 @@
+.ModalPosition_Content,
+.ModalPosition_Content > .DialogContent
+{
+	border-radius: var(--card_radius) !important;
+	overflow: hidden !important;
+}
+
+.ModalPosition_TopBar
+{
+	display: none !important;
+}
+
+.ModalPosition_Content > .DialogContent
+{
+	background: var(--popover_bg) !important;
+	color: var(--popover_fg) !important;
+}
+
+.GenericConfirmDialog
+{
+	padding: 0 !important;
+}
+
+.GenericConfirmDialog .DialogHeader,
+.GenericConfirmDialog .DialogBodyText
+{
+	color: var(--popover_fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: 20px !important;
+	line-height: normal !important;
+	font-weight: 800 !important;
+	letter-spacing: normal !important;
+	text-transform: none !important;
+	text-align: center;
+	margin: 0 !important;
+	padding: 24px 24px 16px 24px !important
+}
+
+.GenericConfirmDialog .DialogBodyText
+{
+	font-size: 15px !important;
+	font-weight: 400 !important;
+	padding: 0 24px !important;
+}
+
+.ModalPosition_Content > .ModalPosition_Dismiss
+{
+	display: none !important;
+}
+
+.GenericConfirmDialog .DialogFooter
+{
+	margin-top: 24px !important;
+}
+
+/* Swap buttons to make the Cancel button first */
+.GenericConfirmDialog .DialogFooter ._DialogColLayout
+{
+	flex-direction: row-reverse !important;
+	overflow: hidden !important;
+}
+
+.GenericConfirmDialog .DialogFooter .DialogButton
+{
+	height: 42px !important;
+	color: var(--button_fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: 15px !important;
+	line-height: normal !important;
+	font-weight: 700 !important;
+	letter-spacing: normal !important;
+	background: transparent !important;
+	box-shadow: none !important;
+	border-radius: 0 !important;
+	border-top: 1px var(--border) solid !important;
+	border-left: 1px var(--border) solid !important;
+	margin: 0 !important;
+	margin-left: -1px !important;
+	max-width: none !important;
+	transition: background 0.15s;
+}
+
+.GenericConfirmDialog .DialogFooter .DialogButton::before
+{
+	display: none !important;
+}
+
+.GenericConfirmDialog .DialogFooter .DialogButton:hover
+{
+	background: rgba(255, 255, 255, 0.07) !important;
+	box-shadow: none !important;
+}
+
+.GenericConfirmDialog .DialogFooter .DialogButton:active
+{
+	background: rgba(255, 255, 255, 0.16) !important;
+	box-shadow: none !important;
+}
+
+[class*="uninstalldialog_UninstallDialog_"]
+{
+	min-width: 500px !important;
+	width: 500px !important;
+}
+
+/* Uninstall button */
+[class*="uninstalldialog_UninstallDialog_"] .DialogButton.Primary
+{
+	color: var(--destructive) !important;
+}
+
+[class*="uninstalldialog_UninstallDialog_"] .DialogButton.Primary:hover
+{
+	background: rgba(255, 123, 99, 0.07) !important;
+}
+
+[class*="uninstalldialog_UninstallDialog_"] .DialogButton.Primary:active
+{
+	background: rgba(255, 123, 99, 0.16) !important;
+}
+
+/* Window controls */
+.title-bar-actions
+{
+	position: absolute !important;
+	top: 12px !important;
+	right: 12px !important;
+}
+
+.title-bar-actions .title-area-icon
+{
+	width: 24px !important;
+	height: 24px !important;
+	border-radius: 50% !important;
+	margin-left: 14px !important;
+	background-color: var(--button_bg) !important;
+	transition: background-color 0.15s !important;
+}
+
+.title-bar-actions .title-area-icon:hover
+{
+	background-color: var(--button_hover_bg) !important;
+}
+
+.title-bar-actions .title-area-icon:active
+{
+	background-color: var(--button_active_bg) !important;
+}
+
+.title-bar-actions .title-area-icon > svg
+{
+	width: 12px !important;
+	height: 12px !important;
+	margin-left: 6px !important;
+	margin-top: 6px !important;
+}
+
+.title-bar-actions .title-area-icon > svg > *
+{
+	stroke: var(--headerbar_fg) !important;
+	stroke-width: 32px !important;
+}
+
+.title-bar-actions .title-area-icon.minimizeButton,
+.title-bar-actions .title-area-icon.maximizeButton
+{
+	display: none !important;
+}
+
+/* PagedSettingsDialog */
+.ModalDialogPopup .DialogContent,
+.ModalDialogPopup .DialogContentTransition,
+.ModalDialogPopup [class*="pagedsettings_PagedSettingsDialog_PageListColumn_"]
+{
+	background: var(--window_bg) !important;
+	color: var(--window_fg) !important;
+	padding: 0 !important;
+}
+
+.ModalDialogPopup [class*="pagedsettings_PagedSettingsDialog_PageListColumn_"]
+{
+	border-right: 1px var(--border) solid !important;
+}
+
+.ModalDialogPopup .DialogHeader,
+.ModalDialogPopup [class*="pagedsettings_PagedSettingsDialog_PageListColumn_"] > [class*="pagedsettings_PagedSettingsDialog_Title_"]
+{
+    box-sizing: border-box !important;
+	height: 48px !important;
+	display: grid !important;
+	grid-template-columns: 1fr !important;
+	align-items: center !important;
+	padding: 12px !important;
+	margin: 0 !important;
+	background: var(--headerbar_backdrop) !important;
+	color: var(--headerbar_fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: 14px !important;
+	line-height: normal !important;
+	font-weight: 700 !important;
+	letter-spacing: normal !important;
+	text-align: center !important;
+	text-transform: none !important;
+	white-space: nowrap !important;
+	overflow: hidden !important;
+	text-overflow: ellipsis !important;
+	border-bottom: 1px var(--headerbar_shade) solid !important;
+}
+
+.ModalDialogPopup [class*="pagedsettings_PagedSettingsDialog_PageListColumn_"] > div[class*="pagedsettings_PagedSettingsDialog_Title_"]
+{
+	margin-bottom: 5px !important;
+}
+
+.ModalDialogPopup:focus-within .DialogHeader,
+.ModalDialogPopup:focus-within [class*="pagedsettings_PagedSettingsDialog_PageListColumn_"] > [class*="pagedsettings_PagedSettingsDialog_Title_"]
+{
+	background: var(--headerbar_bg) !important;
+}
+
+.ModalDialogPopup .title-area
+{
+	height: 48px !important;
+}
+
+.ModalDialogPopup [class*="pagedsettings_PagedSettingsDialog_PageListItem_"]
+{
+	color: var(--button_fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: 15px !important;
+	line-height: normal !important;
+	font-weight: 400 !important;
+	letter-spacing: normal !important;
+	text-transform: none !important;
+	white-space: nowrap !important;
+	overflow: hidden !important;
+	text-overflow: ellipsis !important;
+	margin: 1px 6px 1px 8px !important;
+	padding: 8px 12px !important;
+	border-radius: var(--button_radius) !important;
+}
+
+.ModalDialogPopup [class*="pagedsettings_PagedSettingsDialog_PageListItem_"]:hover
+{
+	background-color: rgba(255, 255, 255, 0.07) !important;
+}
+
+.ModalDialogPopup [class*="pagedsettings_PagedSettingsDialog_PageListItem_"]:active
+{
+	background-color: rgba(255, 255, 255, 0.16) !important;
+}
+
+.ModalDialogPopup [class*="pagedsettings_PagedSettingsDialog_PageListItem_"][class*="pagedsettings_Active_"]
+{
+	background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.ModalDialogPopup [class*="pagedsettings_PagedSettingsDialog_PageListItem_"][class*="pagedsettings_Active_"]:hover
+{
+	background-color: rgba(255, 255, 255, 0.13) !important;
+}
+
+.ModalDialogPopup [class*="pagedsettings_PagedSettingsDialog_PageListItem_"][class*="pagedsettings_Active_"]:active
+{
+	background-color: rgba(255, 255, 255, 0.19) !important;
+}
+
+.ModalDialogPopup .DialogContent_InnerWidth > *:not(.DialogHeader)
+{
+	padding: 16px !important;
+}

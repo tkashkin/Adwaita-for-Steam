@@ -42,7 +42,7 @@ WEB_FULL_FILES = [
 	webthemedir / "full/5_game_details.css",
 	webthemedir / "base/6_downloads.css",
 	webthemedir / "full/6_downloads.css",
-	webthemedir / "full/7_uninstall_dialog.css",
+	webthemedir / "full/7_dialogs.css",
 	webthemedir / "full/8_chat.css",
 	webthemedir / "base/9_scrollbars.css",
 ]

@@ -32,18 +32,18 @@
 /* Play Button Color */
 [class*="appactionbutton_ButtonChild"]
 {
-	background: var(--accent_bg_color) !important;
+	background: var(--accent_bg) !important;
 }
 
 [class*="appactionbutton_Green"] > [class*="appactionbutton_ButtonChild"]
 {
-	background: var(--success_bg_color) !important;
+	background: var(--success_bg) !important;
 }
 
 /* Progress Bar Color */
 [class*="appdetailsplaysection_DetailsProgressBar_"],
 [class*="appdetailsachievementssection_AchievementProgress_"]
 {
-	background: var(--accent_bg_color) !important;
+	background: var(--accent_bg) !important;
 }
 

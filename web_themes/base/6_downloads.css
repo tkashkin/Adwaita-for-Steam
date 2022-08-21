@@ -8,7 +8,7 @@
 /* - Header - */
 [class*="downloadgraph_GraphAndStats_"]
 {
-	background: var(--view_bg_color) !important;
+	background: var(--view_bg) !important;
 	border-bottom: 1px solid var(--border) !important;
 }
 
@@ -39,7 +39,7 @@
 /* Download Items */
 [class*="downloads_SectionItem_"]
 {
-	background: var(--card_bg_color) !important;
+	background: var(--card_bg) !important;
 }
 
 [class*="downloads_SectionItem_"]:hover

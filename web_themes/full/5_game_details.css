@@ -21,7 +21,7 @@
 [class*="writereview_RightContainer_"] button
 {
 	border-radius: var(--card_radius) !important;
-	background: var(--card_bg_color) !important;
+	background: var(--card_bg) !important;
 	border: none !important;
 }
 
@@ -29,14 +29,20 @@
 [class*="appactionbutton_PlayButtonContainer"]
 {
 	border-radius: var(--button_radius) !important;
-	background-color: var(--accent_bg_color) !important;
-	color: var(--accent_fg_color) !important;
+	background-color: var(--accent_bg) !important;
+	color: var(--accent_fg) !important;
+}
+
+[class*="appactionbutton_PlayButtonContainer"],
+[class*="appactionbutton_ShowingStreaming"]
+{
+	min-width: 140px !important;
 }
 
 [class*="appactionbutton_PlayButtonContainer"][class*="appactionbutton_Green"]
 {
-	background-color: var(--success_bg_color) !important;
-	color: var(--success_fg_color) !important;
+	background-color: var(--success_bg) !important;
+	color: var(--success_fg) !important;
 }
 
 [class*="appactionbutton_PlayButtonContainer"][class*="appactionbutton_Disabled"]
@@ -47,7 +53,18 @@
 
 [class*="appactionbutton_PlayButtonContainer"] [class*="appactionbutton_ButtonText"]
 {
+	color: var(--button_fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: 18px !important;
+	line-height: 32px !important;
+	font-weight: 700 !important;
+	letter-spacing: normal !important;
 	text-transform: none !important;
+}
+
+[class*="appactionbutton_PlayButtonContainer"] > [class*="appactionbutton_ButtonChild"]:first-child > svg
+{
+	display: none !important;
 }
 
 [class*="appactionbutton_PlayButtonContainer"] > [class*="appactionbutton_ButtonChild"] > svg > path,

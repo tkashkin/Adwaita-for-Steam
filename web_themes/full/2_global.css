@@ -4,7 +4,7 @@
 /* Store/Community Background */
 div#responsive_page_template_content
 {
-	background: var(--view_bg_color);
+	background: var(--view_bg);
 }
 
 /* Mid Page Gradient */

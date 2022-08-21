@@ -21,7 +21,7 @@
 
 [class*="libraryhome_UpdatesContainer_"]
 {
-	background: var(--view_bg_color) !important;
+	background: var(--view_bg) !important;
 	border-bottom: 1px solid var(--border) !important;
 }
 
@@ -33,7 +33,7 @@
 /* Mouse Over Descriptions */
 [class*="appdetailsgameinfopanel_Description_"]
 {
-	background: var(--popover_bg_color) !important;
+	background: var(--popover_bg) !important;
 }
 
 /* Popup Elements */
@@ -42,7 +42,7 @@
 [class*="tooltip_TextToolTip_"],
 [class*="contextmenu_contextMenu_"]
 {
-	background: var(--popover_bg_color) !important;
+	background: var(--popover_bg) !important;
 	border: none !important;
 	border-radius: var(--menu_radius) !important;
 	color: var(--fg) !important;
@@ -66,12 +66,12 @@
 /* Play Button */
 [class*="appportrait_Play_1"]
 {
-	background: var(--success_bg_color) !important;
+	background: var(--success_bg) !important;
 }
 
 [class*="appportrait_Download_"]
 {
-	background: var(--accent_bg_color) !important;
+	background: var(--accent_bg) !important;
 }
 
 /* Update Summary */
@@ -159,19 +159,19 @@
 
 [class*="gamelistdropdown_Active_"] svg
 {
-	fill: var(--accent_bg_color) !important;
+	fill: var(--accent_bg) !important;
 }
 
 [class*="gamelistdropdown_Active_"] svg circle
 {
-	stroke: var(--accent_bg_color) !important;
+	stroke: var(--accent_bg) !important;
 }
 
 [class*="gamelistdropdown_DropDown_"],
 [class*="appfilterpane_Container_"],
 [class*="appfilterpane_Description_"]
 {
-	background: var(--popover_bg_color) !important;
+	background: var(--popover_bg) !important;
 }
 
 [class*="appfilterpane_FilterBucketLabel_"]
@@ -285,6 +285,7 @@
 [class*="gamelistentry_Selected_"] > [class*="gamelistentry_Container_"] :hover
 {
 	background: none !important;
+	box-shadow: none !important;
 }
 
 [class*="gamelistsectionheader_Selected_"],
@@ -294,6 +295,16 @@
 {
 	background: var(--button_bg) !important;
 	border-radius: var(--button_radius) !important;
+}
+
+[class*="gamelistentry_HasContextMenuOpen_"]
+{
+	border: 1px var(--focus_ring) solid !important;
+}
+
+[class*="gamelistentry_HasContextMenuOpen_"] [class*="gamelistentry_GameListEntryContainer_"]
+{
+	margin-left: -1px !important;
 }
 
 [class*="gamelistsectionheader_Selected_"]:hover,

@@ -14,18 +14,6 @@
 	display: none !important
 }
 
-/* Window Controls */
-.ChatTabs .title-bar-actions
-{
-	margin: 12px 6px 12px 0px !important;
-}
-
-.ChatTabs .title-bar-actions .maximizeButton,
-.ChatTabs .title-bar-actions .minimizeButton
-{
-	display:none !important;
-}
-
 /* - Left Panel - */
 .friendListHeaderContainer,
 .activeTab,
@@ -36,7 +24,7 @@
 .chatRoomListContainer,
 .friendListFooter
 {
-	background: var(--view_bg_color) !important;
+	background: var(--view_bg) !important;
 	border: none !important;
 	box-shadow: none !important;
 }
@@ -45,12 +33,12 @@
 .currentUserContainer
 {
 	border-bottom: 1px solid var(--border);
-	background: var(--headerbar_bg_color);
+	background: var(--headerbar_bg);
 }
 
 .singlewindow:not(.focused) .currentUserContainer
 {
-	background: var(--headerbar_backdrop_color);
+	background: var(--headerbar_backdrop);
 }
 
 .AvatarAndUser
@@ -113,7 +101,7 @@
 /* Set Online Status Menu */
 .client_chat_frame [class*="contextmenu_contextMenu_"]
 {
-	background: var(--popover_bg_color) !important;
+	background: var(--popover_bg) !important;
 }
 
 .client_chat_frame [class*="contextmenu_contextMenuItem_"]:hover
@@ -159,12 +147,12 @@
 
 .friend.ingame [class*="personanameandstatus_playerName_"]
 {
-	color: var(--success_color) !important;
+	color: var(--success) !important;
 }
 
 .friend.ingame [class*="personanameandstatus_richPresenceLabel_"]
 {
-	color: var(--success_bg_color) !important;
+	color: var(--success_bg) !important;
 }
 
 /* - Right Side - */
@@ -254,7 +242,7 @@ button[class*="chatentry_EmoticonPickerButton_"]
 /* Message Addons */
 [class*="messages_Addons_"]
 {
-	background: var(--popover_bg_color) !important;
+	background: var(--popover_bg) !important;
 	border: 1px solid var(--border) !important;
 }
 
@@ -269,14 +257,14 @@ button[class*="chatentry_EmoticonPickerButton_"]
 /* Chat Tabs Headerbar */
 .ChatTabs .title-area
 {
-	background: var(--headerbar_bg_color) !important;
+	background: var(--headerbar_bg) !important;
 	border-bottom: 1px solid var(--border) !important;
 	min-height: 48px !important;
 }
 
 .singlewindow:not(.focused) .ChatTabs .title-area
 {
-	background: var(--headerbar_backdrop_color) !important;
+	background: var(--headerbar_backdrop) !important;
 }
 
 /* Chat Tabs Bottom Separator */
