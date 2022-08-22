@@ -211,5 +211,35 @@ steam.styles
 			image="assets/pixel"
 			render_bg {}
 		}
+
+		"CRegisterCDKeyWizard FrameTitle"
+		{
+			minimum-height=48
+			textcolor=none
+			font-size=1
+		}
+		"CRegisterCDKeyWizard FrameCloseButton"
+		{
+			minimum-width=0
+			minimum-height=0
+			image="assets/pixel"
+			render_bg {}
+		}
+		"CRegisterCDKeyWizard Label"
+		{
+			textcolor="window_fg"
+			font-size=14
+		}
+		"CRegisterCDKeyWizard URLLabel"
+		{
+			font-size=14
+			font-style=none
+			font-weight=700
+			textcolor="window_fg"
+		}
+		"CRegisterCDKeyWizard URLLabel:hover"
+		{
+			font-style=underline
+		}
 	}
 }

@@ -140,7 +140,7 @@ SteamLoginDialog.res
 				0="fill(x0, y0, x1, y1, button_hover_bg)"
 			}
 		}
-		TextEntry:disabled
+		TextEntryLarge:disabled
 		{
 			bgcolor=none
 			textcolor="button_disabled_fg"
