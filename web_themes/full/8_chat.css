@@ -98,6 +98,12 @@
 	width: 14px !important;
 }
 
+.currentUserContainer.online [class*="personanameandstatus_richPresenceLabel_"],
+.currentUserContainer.online [class*="personanameandstatus_playerName_"]
+{
+	color: var(--accent) !important;
+}
+
 /* Set Online Status Menu */
 .client_chat_frame [class*="contextmenu_contextMenu_"]
 {
@@ -126,11 +132,17 @@
 .singleWindowDivider
 {
 	background: var(--border) !important;
+	border: none !important;
 	min-width: 1px !important;
 	width: 1px !important;
 }
 
 /* Friend Hover BG */
+.friendStatusHover
+{
+	margin: 0px var(--menu_margin) !important;
+}
+
 .friendStatusHover:hover
 {
 	background: var(--button_bg) !important;
@@ -179,6 +191,18 @@
 {
 	border: 2px solid var(--accent) !important;
 	border-radius: var(--button_radius) !important;
+}
+
+/* File Upload */
+.chatFileUploadPreviewContainer
+{
+	background: var(--popover_bg) !important;
+	border-radius: var(--menu_radius) !important;
+}
+
+.chatFileUploadPreviewContainer img
+{
+	border-radius: var(--card_radius) !important;
 }
 
 /* Chat Buttons */
@@ -254,6 +278,44 @@ button[class*="chatentry_EmoticonPickerButton_"]
 	text-decoration: underline !important;
 }
 
+/* Message Images */
+.chatHistory .chatImageContainer img,
+.BBCodeImageWrapper
+{
+	border-radius: var(--card_radius) !important;
+}
+
+/* Image Popup */
+.client_chat_frame #popup_target [class*="bbcode_ImageModalBackground_"],
+.client_chat_frame.ModalDialogPopup body.ModalDialogBody
+{
+	background: var(--popover_bg) !important;
+	border: none !important;
+	box-shadow: none !important;
+}
+
+/* Message Steam Store Link */
+.msgText > [class*="bbcode_ChatMessageSteamStore_"]
+{
+	background: var(--card_bg) !important;
+	border-radius: var(--card_radius) !important;
+}
+
+.msgText [class*="bbcode_ChatMessageSteamStore_Header_"]
+{
+	background: none !important;
+}
+
+.msgText [class*="bbcode_ChatMessageSteamStore_HeaderImage_"]
+{
+	border-radius: var(--card_radius) !important;
+}
+
+.msgText [class*="bbcode_Blurred_"]
+{
+	display: none !important;
+}
+
 /* Chat Tabs Headerbar */
 .ChatTabs .title-area
 {
@@ -310,6 +372,20 @@ button[class*="chatentry_EmoticonPickerButton_"]
 [class*="miniprofile_miniProfile_"]
 {
 	border-radius: var(--card_radius) !important;
+}
+
+/* Chat Tab Unread */
+.ChatTabs [class*="chattabs_UnreadGlow_"]
+{
+	background: var(--button_bg) !important;
+	width: 100% !important;
+	height: 100% !important;
+	border-radius: var(--button_radius) !important
+}
+
+.ChatTabs [class*="chattabs_UnreadCircle_"]
+{
+	background: var(--accent_bg) !important;
 }
 
 /* Hide Close Button unless Hover */
