@@ -25,6 +25,14 @@
 	border: none !important;
 }
 
+[class*="appdetailsachievementssection_AdditionalItem_"],
+[class*="appdetailscommunityfeed_LoadContentButton_"]
+{
+	border-radius: var(--button_radius) !important;
+	background: var(--button_bg) !important;
+	border: none !important;
+}
+
 /* Play button, streaming device dropdown */
 [class*="appactionbutton_PlayButtonContainer"]
 {
@@ -108,7 +116,9 @@
 /* Hover Highlight */
 [class*="appactivityday_PartnerEventTextOnly_Container_"]:hover,
 [class*="appactivityday_PartnerEventMediumImage_Container_"]:hover,
-[class*="appactivityday_PartnerEventLargeImage_Container_"]:hover
+[class*="appactivityday_PartnerEventLargeImage_Container_"]:hover,
+[class*="appdetailsachievementssection_AdditionalItem_"]:hover,
+[class*="appdetailscommunityfeed_LoadContentButton_"]:hover
 {
 	background: var(--button_hover_bg) !important;
 }
@@ -149,9 +159,16 @@
 	border-bottom-right-radius: 0px !important;
 }
 
-[class*="appdetailsachievementssection_Icon_"]
+[class*="appdetailsachievementssection_Icon_"],
+[class*="appdetailsachievementssection_AdditionalItem_"]
 {
 	border-radius: var(--button_radius) !important;
+}
+
+[class*="appdetailshover_AppDetailsHover_"],
+[class*="appdetailshover_Background_"]
+{
+	border-radius: var(--card_radius) !important;
 }
 
 /* Hide Blur From Major Updates */
@@ -213,7 +230,12 @@
 	border-radius: var(--button_radius) !important;
 }
 
-/* AppDetails Buttons */
+[class*="comment_thread_ActivityCommentThread_"]
+{
+	background: none !important;
+}
+
+/* AppDetails Play Section Buttons */
 [class*="appdetailsplaysection_MenuButton_"]
 {
 	background: var(--button_bg) !important;
@@ -226,3 +248,42 @@
 	border-radius: var(--button_radius) !important;
 }
 
+/* App Details Link Buttons */
+[class*="appdetailsprimarylinkssection_LinksSectionBody_"]
+{
+	padding: 0px 10px !important;
+}
+
+[class*="appdetailsprimarylinkssection_Link_"]
+{
+	padding: 5px 10px !important;
+}
+
+[class*="appdetailsprimarylinkssection_Link_"]
+{
+	border-radius: var(--button_radius) !important;
+}
+
+[class*="appdetailsprimarylinkssection_Link_"]:hover
+{
+	background: var(--button_hover_bg) !important;
+}
+
+/* Right Side Buttons */
+[class*="appdetailsbutton_AppDetailsButton_"]
+{
+	background: none !important;
+	border-radius: var(--button_radius) !important;
+}
+
+[class*="appdetailsbutton_AppDetailsButton_"]:hover
+{
+	background: var(--button_hover_bg) !important;
+	border-radius: var(--button_radius) !important;
+}
+
+/* Fetch More Padding */
+[class*="appdetailsactivitysection_FetchMoreContainer_"]
+{
+	padding: 4px 0px !important;
+}
