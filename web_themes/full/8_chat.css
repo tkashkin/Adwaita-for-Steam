@@ -194,7 +194,8 @@
 }
 
 /* File Upload */
-.chatFileUploadPreviewContainer
+.chatFileUploadPreviewContainer,
+.chatFileUploadProgressContainer
 {
 	background: var(--popover_bg) !important;
 	border-radius: var(--menu_radius) !important;
@@ -203,6 +204,10 @@
 .chatFileUploadPreviewContainer img
 {
 	border-radius: var(--card_radius) !important;
+}
+
+.chatFileUploadProgressBarContainer .DialogProgressBar_Value {
+	background: var(--accent_bg) !important;
 }
 
 /* Chat Buttons */
