@@ -193,6 +193,19 @@
 	border-radius: var(--button_radius) !important;
 }
 
+/* /command popup suggestions */
+.chatEntry [class*="suggestdialog_mentionDialog_"]
+{
+	background: var(--popover_bg) !important;
+	border-radius: var(--menu_radius) !important;
+}
+
+.chatEntry [class*="suggestdialog_selected_"]
+{
+	background: var(--button_bg) !important;
+	border-radius: var(--menu_radius) !important;
+}
+
 /* File Upload */
 .chatFileUploadPreviewContainer,
 .chatFileUploadProgressContainer
@@ -319,6 +332,17 @@ button[class*="chatentry_EmoticonPickerButton_"]
 .msgText [class*="bbcode_Blurred_"]
 {
 	display: none !important;
+}
+
+/* Message /me emote */
+.msg.ChatMsgSlashEmote .speaker
+{
+	background: none !important;
+}
+
+.msg.ChatMsgSlashEmote .msgText
+{
+	font-weight: bold !important;
 }
 
 /* Chat Tabs Headerbar */
