@@ -32,13 +32,13 @@
 /* Avatar HeaderBar */
 .currentUserContainer
 {
-	border-bottom: 1px solid var(--border);
-	background: var(--headerbar_bg);
+	border-bottom: 1px solid var(--border) !important;
+	background: var(--headerbar_bg) !important;
 }
 
 .singlewindow:not(.focused) .currentUserContainer
 {
-	background: var(--headerbar_backdrop);
+	background: var(--headerbar_backdrop) !important;
 }
 
 .AvatarAndUser
