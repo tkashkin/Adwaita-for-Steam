@@ -296,6 +296,13 @@ button[class*="chatentry_EmoticonPickerButton_"]
 	text-decoration: underline !important;
 }
 
+/* Time Divider */
+.msg.timeDivision.time_passes .preHorizDivider,
+.msg.timeDivision.time_passes .horizDivider
+{
+	border: 1px dashed var(--border) !important;
+}
+
 /* Message Images */
 .chatHistory .chatImageContainer img,
 .BBCodeImageWrapper
