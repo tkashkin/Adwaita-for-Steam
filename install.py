@@ -130,7 +130,7 @@ if __name__ == "__main__":
 
 	if args.list_patches:
 		list_patches(find_patches())
-	
+
 	with TemporaryDirectory() as tmpdir:
 		tmp = Path(tmpdir)
 		sourcedir = tmp / SKIN_DIR
@@ -144,17 +144,16 @@ if __name__ == "__main__":
 					apply_patch(tmp, patch)
 
 		gen_webkit_theme(sourcedir / CSS_FILE, args.web_theme, args.web_extras)
-		
+
 		targets = set()
 
 		for t in args.target:
-			match t:
-				case "normal":
-					targets.add(Path(TARGET_NORMAL).expanduser().resolve())
-				case "flatpak":
-					targets.add(Path(TARGET_FLATPAK).expanduser().resolve())
-				case _:
-					targets.add(Path(t).expanduser().resolve())
+			if t == "normal":
+				targets.add(Path(TARGET_NORMAL).expanduser().resolve())
+			elif t == "flatpak":
+				targets.add(Path(TARGET_FLATPAK).expanduser().resolve())
+			else:
+				targets.add(Path(t).expanduser().resolve())
 
 		for target in targets:
 			install(sourcedir, target, args.name)
