@@ -17,7 +17,7 @@
  	layout
  	{
 -		place { control="frame_minimize,frame_maximize,frame_close" align=right spacing=14 margin-right=12 y=12 }
-+		place { control="frame_close,frame_maximize,frame_minimize" spacing=14 margin-left=12 y=12 }
++		place { control="frame_close,frame_minimize,frame_maximize" spacing=14 margin-left=12 y=12 }
  		
  		place { control="frame_title" width=max height=48 }
  		place { control="UINavigatorPanel" width=max height=max }
