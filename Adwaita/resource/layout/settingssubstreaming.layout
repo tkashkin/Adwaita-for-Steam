@@ -117,13 +117,13 @@ settingssubstreaming.layout
 	{
 		region { name="content" margin-left=16 width=520 height=max overflow=scroll-vertical }
 
-		place { control="EnableStreaming,P2PScope,AdvancedHostOptions" region="content" dir=down margin-top=16 width=484 height=50 }
+		place { control="EnableStreaming,P2PScope,SetPIN,AdvancedHostOptions" region="content" dir=down margin-top=16 width=484 height=50 }
 
 		place { control="HostDivider" region="content" start="AdvancedHostOptions" dir=down width=484 height=0 }
 
 		place { control="RemoteClientList" region="content" start="HostDivider" dir=down margin-top=16 width=484 height=100 }
-		place { control="Pair" region="content" start="RemoteClientList" dir=down width=162 height=50 }
-		place { control="Unpair,SetPIN" region="content" start="Pair" dir=right margin-left=1 width=160 height=50 spacing=1 }
+		place { control="Pair" region="content" start="RemoteClientList" dir=down width=242 height=50 }
+		place { control="Unpair" region="content" start="Pair" dir=right margin-left=1 width=241 height=50 }
 
 		place { control="ClientDivider" region="content" start="Pair" dir=down width=484 height=34 }
 		place { control="ClientLabelLocal,ClientLabelRemote" region="content" start="ClientDivider" dir=down margin-top=-24 width=484 height=34 }

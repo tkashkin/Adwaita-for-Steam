@@ -42,11 +42,11 @@ AccountPage.res
 		region { name="content" margin-top=16 margin-left=16 width=500 height=max }
 
 		place { control="SecurityIcon" region="content" x=12 y=14 width=24 height=24 }
-		place { control="SecurityStatusLabel,SecurityStatusState" region="content" x=48 y=7 spacing=2 dir=down }
+		place { control="SecurityStatusLabel,SecurityStatusState" region="content" x=48 y=7 spacing=2 dir=down width=max margin-right=12 }
 
-		place { control="Label2,VacInfoLink" region="content" x=48 y=57 spacing=2 dir=down }
+		place { control="Label2,VacInfoLink" region="content" x=48 y=57 spacing=2 dir=down width=max margin-right=12 }
 
-		place { control="BetaParticipationLabel,CurrentBetaLabel" region="content" x=48 y=106 spacing=2 dir=down }
+		place { control="BetaParticipationLabel,CurrentBetaLabel" region="content" x=48 y=106 spacing=2 dir=down width=max margin-right=48 }
 		place { control="ChangeBetaButton" region="content" margin-left=-300 y=100 width=max height=50 }
 
 		place { control="AccountLink" region="content" dir=down start="ChangeBetaButton" margin-top=16 width=max height=28 }

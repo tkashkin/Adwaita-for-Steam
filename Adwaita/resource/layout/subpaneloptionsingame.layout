@@ -107,7 +107,7 @@ subpaneloptionsingame.layout
 
 		place { control="ShareIPNetworkingLabel" region="content" start="SetScreenshotFolderButton" dir=down width=484 height=34 }
 		place { control="ShareIPNetworkingCombo,ShareIPNetworkingURL" region="content" start="ShareIPNetworkingLabel" dir=down width=484 height=50 }
-		place { control="ShareIPNetworkingInfo" region="content" start="ShareIPNetworkingCombo" dir=down margin-top=-42 margin-left=12 width=335 }
+		place { control="ShareIPNetworkingInfo" region="content" start="ShareIPNetworkingCombo" dir=down margin-top=-42 margin-left=12 width=335 height=36 }
 
 		place { control="Divider2" region="content" start="ShareIPNetworkingURL" dir=down width=484 height=16 }
 		
