@@ -41,11 +41,11 @@
     layout
     {
         region { name="bottom" align=bottom height=180 margin-bottom=60 }
-        region { name="bottompanel" region="bottom" align=top-center width=720 height=120 }
-        place { controls="TaskbarPanel" region="bottompanel" width=210 height=120 }
+        region { name="bottompanel" region="bottom" align=top-center width=820 height=120 }
+        place { controls="TaskbarPanel" region="bottompanel" align=right width=180 height=80 margin-right=20 margin-top=20 }
 
         region { name="closewrapper" align=bottom height=190}
-        region { name="closealigner" region="closewrapper" align=top-center width=748 }
+        region { name="closealigner" region="closewrapper" align=top-center width=848 }
         place { controls="CloseButton" region="closealigner" align=right width=40 height=40 margin-right=4 }
 
         region { name="hidden" width=0 height=0 margin-left=-999 }

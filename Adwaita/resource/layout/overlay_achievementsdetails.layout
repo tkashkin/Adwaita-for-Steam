@@ -4,15 +4,7 @@
     {
         detailsbox {
             bgcolor="window_bg"
-            render_bg {}
-        }
-
-        detailsboxtitle
-        {
-            textcolor=none
-            bgcolor=none
-            render_bg
-            {
+            render_bg {
                 0="image(x0+34, y0+44, x1, y1, assets/icons_32/achievements)"
             }
         }
@@ -55,9 +47,8 @@
     layout
     {
         place { controls="ViewAchievementsButton" width=80 height=80 margin-top=20 margin-left=10 }
-        place { controls="TitleText" x=0 y=0 width=0 height=0 }
 
         region { name="hidden" width=0 height=0 margin-left=-999 }
-        place { controls="ProgressTextEarned,progressbackground,progressbarimage,*achievement" region="hidden" width=0 height=0 }
+        place { controls="TitleText,ProgressTextEarned,progressbackground,progressbarimage,*achievement" region="hidden" width=0 height=0 }
     }
 }
