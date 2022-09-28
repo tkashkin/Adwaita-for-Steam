@@ -52,6 +52,11 @@
 	border: none !important;
 }
 
+[class*="downloads_SectionList_"] [class*="downloads_SectionItemWrapper_"]
+{
+	padding: var(--menu_margin) 0px !important;
+}
+
 /* Buttons */
 [class*="downloads_Button_"]
 {
