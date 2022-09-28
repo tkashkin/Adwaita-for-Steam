@@ -1,33 +1,33 @@
 "resource/layout/overlay_friendsdetail.layout"
 {
-    styles
-    {
-        highlight {
-            textcolor=none
-        }
+	styles
+	{
+		highlight {
+			textcolor=none
+		}
 
-        detailsbox {
-            bgcolor=none
-            render_bg {
-                0="fill(x0+40, y0, x1, y1, window_bg)"
-                1="fill(x0, y0+40, x0+40, y1-40, window_bg)"
-                2="image(x0, y0, x0+40, y0+40, assets/corners/40_window_bg/tl)"
-                3="image(x0, y1-40, x0+40, y1, assets/corners/40_window_bg/bl)"
+		detailsbox {
+			bgcolor=none
+			render_bg {
+				0="fill(x0+40, y0, x1, y1, window_bg)"
+				1="fill(x0, y0+40, x0+40, y1-40, window_bg)"
+				2="image(x0, y0, x0+40, y0+40, assets/corners/40_window_bg/tl)"
+				3="image(x0, y1-40, x0+40, y1, assets/corners/40_window_bg/bl)"
 
-                4="image(x0+44, y0+44, x1, y1, assets/icons_32/chat)"
-                5="image(x0+144, y0+44, x1, y1, assets/icons_32/history)"
-            }
-        }
+				4="image(x0+44, y0+44, x1, y1, assets/icons_32/chat)"
+				5="image(x0+144, y0+44, x1, y1, assets/icons_32/history)"
+			}
+		}
 
-        Button
-        {
-            textcolor=none
-            render_bg {}
-        }
+		Button
+		{
+			textcolor=none
+			render_bg {}
+		}
 
-        Button:hover
-        {
-            render_bg
+		Button:hover
+		{
+			render_bg
 			{
 				0="fill(x0+24, y0, x1-24, y1, button_hover_bg)"
 				1="fill(x0, y0+24, x0+24, y1-24, button_hover_bg)"
@@ -37,28 +37,28 @@
 				5="image(x0, y1-24, x0+24, y1, assets/corners/24_w15/bl)"
 				6="image(x1-24, y1-24, x1, y1, assets/corners/24_w15/br)"
 			}
-        }
+		}
 
-        Button:active
-        {
-            render_bg
+		Button:active
+		{
+			render_bg
 			{
 				0="fill(x0+24, y0, x1-24, y1, button_hover_bg)"
-                1="fill(x0, y0+24, x0+24, y1-24, button_hover_bg)"
-                2="fill(x1-24, y0+24, x1, y1-24, button_hover_bg)"
-                3="image(x0, y0, x0+24, y0+24, assets/corners/24_w15/tl)"
-                4="image(x1-24, y0, x1, y0+24, assets/corners/24_w15/tr)"
-                5="image(x0, y1-24, x0+24, y1, assets/corners/24_w15/bl)"
-                6="image(x1-24, y1-24, x1, y1, assets/corners/24_w15/br)"
+				1="fill(x0, y0+24, x0+24, y1-24, button_hover_bg)"
+				2="fill(x1-24, y0+24, x1, y1-24, button_hover_bg)"
+				3="image(x0, y0, x0+24, y0+24, assets/corners/24_w15/tl)"
+				4="image(x1-24, y0, x1, y0+24, assets/corners/24_w15/tr)"
+				5="image(x0, y1-24, x0+24, y1, assets/corners/24_w15/bl)"
+				6="image(x1-24, y1-24, x1, y1, assets/corners/24_w15/br)"
 			}
-        }
-    }
+		}
+	}
 
-    layout
-    {
-        place { controls="AllFriendsButton,ViewPlayersButton" width=80 height=80 margin-top=20 margin-left=20 spacing=20 }
+	layout
+	{
+		place { controls="AllFriendsButton,ViewPlayersButton" width=80 height=80 margin-top=20 margin-left=20 spacing=20 }
 
-        region { name="hidden" width=0 height=0 margin-left=-999 }
-        place { controls="TitleText,grid" region="hidden" width=0 height=0 }
-    }
+		region { name="hidden" width=0 height=0 margin-left=-999 }
+		place { controls="TitleText,grid" region="hidden" width=0 height=0 }
+	}
 }

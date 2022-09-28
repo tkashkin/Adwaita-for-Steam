@@ -1,54 +1,55 @@
 "resource/layout/overlaydashboard.layout"
 {
-    controls
-    {
-        BaseDashboardPanel
-        {
-            controlname="EditablePanel"
-            style="overlaymain"
-        }
-    }
+	controls
+	{
+		BaseDashboardPanel
+		{
+			controlname="EditablePanel"
+			style="overlaymain"
+		}
+	}
 
-    styles
-    {
-        overlaymain
-        {
-            bgcolor="43 43 43 96"
-        }
+	styles
+	{
+		overlaymain
+		{
+			bgcolor="0 0 0 80"
+		}
 
-        OverlayURLLabel
-        {
-            textcolor=none
-            render
-            {
-                0="image(x0-4, y0, x1+4, y1+8, assets/overlay/close_shadow)"
-                1="image(x0, y0, x1, y1, assets/overlay/close_bg)"
-                2="image(x0+12, y0+12, x1-12, y1-12, assets/icons/stop)"
-            }
-        }
+		OverlayURLLabel
+		{
+			textcolor=none
+			render
+			{
+				0="image(x0-4, y0, x1+4, y1+8, assets/overlay/close_shadow)"
+				1="image(x0, y0, x1, y1, assets/overlay/close_bg)"
+				2="image(x0+12, y0+12, x1-12, y1-12, assets/overlay/close)"
+			}
+		}
 
-        OverlayURLLabel:hover
-        {
-            render
-            {
-                0="image(x0-4, y0, x1+4, y1+8, assets/overlay/close_shadow)"
-                1="image(x0, y0, x1, y1, assets/overlay/close_bg_hover)"
-                2="image(x0+12, y0+12, x1-12, y1-12, assets/overlay/close)"
-            }
-        }
-    }
+		OverlayURLLabel:hover
+		{
+			render
+			{
+				0="image(x0-4, y0, x1+4, y1+8, assets/overlay/close_shadow)"
+				1="image(x0, y0, x1, y1, assets/overlay/close_bg)"
+				2="image(x0, y0, x1, y1, assets/overlay/close_hover)"
+				3="image(x0+12, y0+12, x1-12, y1-12, assets/overlay/close)"
+			}
+		}
+	}
 
-    layout
-    {
-        region { name="bottom" align=bottom height=180 margin-bottom=60 }
-        region { name="bottompanel" region="bottom" align=top-center width=820 height=120 }
-        place { controls="TaskbarPanel" region="bottompanel" align=right width=180 height=80 margin-right=20 margin-top=20 }
+	layout
+	{
+		region { name="bottom" align=bottom height=180 margin-bottom=60 }
+		region { name="bottompanel" region="bottom" align=top-center width=820 height=120 }
+		place { controls="TaskbarPanel" region="bottompanel" align=right width=180 height=80 margin-right=20 margin-top=20 }
 
-        region { name="closewrapper" align=bottom height=190}
-        region { name="closealigner" region="closewrapper" align=top-center width=848 }
-        place { controls="CloseButton" region="closealigner" align=right width=40 height=40 margin-right=4 }
+		region { name="closewrapper" align=bottom height=190}
+		region { name="closealigner" region="closewrapper" align=top-center width=848 }
+		place { controls="CloseButton" region="closealigner" align=right width=40 height=40 margin-right=4 }
 
-        region { name="hidden" width=0 height=0 margin-left=-999 }
-        place { controls="TopFadePanel,BottomFadePanel,HotkeyLabel,HotkeyExplain,gamename,PowerMeterDim" region="hidden" width=0 height=0 }
-    }
+		region { name="hidden" width=0 height=0 margin-left=-999 }
+		place { controls="TopFadePanel,BottomFadePanel,HotkeyLabel,HotkeyExplain,gamename,PowerMeterDim" region="hidden" width=0 height=0 }
+	}
 }
