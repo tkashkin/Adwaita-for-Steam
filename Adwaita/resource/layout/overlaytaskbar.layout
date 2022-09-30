@@ -11,13 +11,13 @@
 		{
 			render_bg
 			{
-				0="fill(x0+24, y0, x1-24, y1, button_hover_bg)"
-				1="fill(x0, y0+24, x0+24, y1-24, button_hover_bg)"
-				2="fill(x1-24, y0+24, x1, y1-24, button_hover_bg)"
-				3="image(x0, y0, x0+24, y0+24, assets/corners/24_w15/tl)"
-				4="image(x1-24, y0, x1, y0+24, assets/corners/24_w15/tr)"
-				5="image(x0, y1-24, x0+24, y1, assets/corners/24_w15/bl)"
-				6="image(x1-24, y1-24, x1, y1, assets/corners/24_w15/br)"
+				0="fill(x0+20, y0, x1-20, y1, button_hover_bg)"
+				1="fill(x0, y0+20, x0+20, y1-20, button_hover_bg)"
+				2="fill(x1-20, y0+20, x1, y1-20, button_hover_bg)"
+				3="image(x0, y0, x0+20, y0+20, assets/corners/20_w15/tl)"
+				4="image(x1-20, y0, x1, y0+20, assets/corners/20_w15/tr)"
+				5="image(x0, y1-20, x0+20, y1, assets/corners/20_w15/bl)"
+				6="image(x1-20, y1-20, x1, y1, assets/corners/20_w15/br)"
 			}
 		}
 
