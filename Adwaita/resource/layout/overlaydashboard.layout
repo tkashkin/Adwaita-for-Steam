@@ -1,14 +1,5 @@
 "resource/layout/overlaydashboard.layout"
 {
-	controls
-	{
-		BaseDashboardPanel
-		{
-			controlname="EditablePanel"
-			style="overlaymain"
-		}
-	}
-
 	styles
 	{
 		overlaymain
@@ -45,7 +36,9 @@
 		region { name="bottompanel" region="bottom" align=top-center width=820 height=120 }
 		place { controls="TaskbarPanel" region="bottompanel" align=right width=180 height=80 margin-right=20 margin-top=20 }
 
+		// height = bottom height + 10 (offset)
 		region { name="closewrapper" align=bottom height=190}
+		// width = bottompanel width + 2*10 (offset) + 2*4 (shadow)
 		region { name="closealigner" region="closewrapper" align=top-center width=848 }
 		place { controls="CloseButton" region="closealigner" align=right width=40 height=40 margin-right=4 }
 

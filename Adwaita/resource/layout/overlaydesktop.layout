@@ -1,35 +1,5 @@
 "resource/layout/overlaydesktop.layout"
 {
-	controls
-	{
-		GameGroupsButton { controlname="URLLabel" labeltext="#Overlay_Taskbar_GameGroups" style=sidemenu }
-		ChatRoomButton { controlname="URLLabel" labeltext="#Overlay_Taskbar_ChatRoom" style=sidemenu }
-		DLCButton {	controlname="URLLabel" labeltext="#Overlay_Taskbar_DLC" style=sidemenu }
-		GuideButton {	controlname="URLLabel" labeltext="#Overlay_Taskbar_Guide" style=sidemenu }
-		LegacyCDKeyButton {	controlname="URLLabel" labeltext="#Overlay_Taskbar_legacycdkey" style=sidemenu }
-		WebSiteButton { controlname="URLLabel" labeltext="#Overlay_Taskbar_WebSite" style=sidemenu }
-		RecommendButton { controlname="URLLabel" labeltext="#Overlay_Taskbar_Recommend" style=sidemenu }
-		WorkshopButton { controlname="URLLabel" labeltext="#Overlay_Taskbar_Workshop" style=sidemenu }
-		EditControllerConfig { controlname="URLLabel" labeltext="#Overlay_Taskbar_EditControllerConfig" style=sidemenu }
-		ForceQuitButton { controlname="URLLabel" labeltext="#Overlay_Taskbar_ForceQuit" style=sidemenu }
-
-		FriendsDetailPanel { controlname="COverlay_Details_Friends" style="detailsbox" }
-		AchievementsDetailPanel { controlname="COverlay_Details_Achievements" style="detailsbox" }
-		NewsDetailPanel { controlname="COverlay_Details_News" style="detailsbox" }
-		ScreenshotsDetailPanel { controlname="COverlay_Details_Screenshots_Panel" style="detailsbox" }
-		GuidesDetailPanel { controlname="COverlay_Details_Guides_Panel" style="detailsbox" }
-		CommunityHubDetailPanel { controlname="COverlay_Details_CommunityHub_Panel" style="detailsbox" }
-		CommunityDiscussionsDetailPanel { controlname="COverlay_Details_CommunityDiscussions_Panel" style="detailsbox" }
-		BroadcastDetailPanel { controlname="COverlay_Details_Broadcast_Panel" style="detailsbox" }
-
-		Clock { controlname="Label" labeltext="10:43" style=topbar }
-		ClockSuffix { controlname="Label" labeltext="am" style=clocksuffix }
-		SessionText { controlname=label style=TimeStrings labeltext="#Overlay_Playtime_Session" }
-		TwoWeeksText { controlname=label style="timeStrings" }
-		ForeverText { controlname=label style="timeStrings" }
-		TimedTrialText { controlname=label style="timeStrings" }
-	}
-
 	styles
 	{
 		topbar
@@ -81,9 +51,7 @@
 
 	layout
 	{
-
 		region { name="toppanel" width=400 align=top-center margin-top=20 }
-
 		place { controls="Clock,ClockSuffix" region="toppanel" align=top-center }
 		place { controls="SessionText,TwoWeeksText,ForeverText" region="toppanel" start=Clock align=top-center dir=down }
 
@@ -98,7 +66,6 @@
 		place { controls="EditControllerConfig" region="bottompanel" start="AchievementsDetailPanel" width=80 height=80 margin-top=20 margin-left=110 }
 
 		region { name="hidden" width=0 height=0 margin-left=-999 }
-		place { controls="ForceQuitButton" region="hidden" width=0 height=0 }
-		place { controls="GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,LegacyCDKeyButton,WebSiteButton,RecommendButton,WorkshopButton,BroadcastDetailPanel,GuidesDetailPanel,CommunityDiscussionsDetailPanel,MewsDetailPanel" region="hidden" width=0 height=0 }
+		place { controls="ForceQuitButton,GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,LegacyCDKeyButton,WebSiteButton,RecommendButton,WorkshopButton,BroadcastDetailPanel,GuidesDetailPanel,CommunityDiscussionsDetailPanel,MewsDetailPanel" region="hidden" width=0 height=0 }
 	}
 }

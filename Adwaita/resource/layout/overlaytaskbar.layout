@@ -1,9 +1,5 @@
 "resource/layout/overlaytaskbar.layout"
 {
-	controls
-	{
-	}
-
 	styles
 	{
 		taskbar
