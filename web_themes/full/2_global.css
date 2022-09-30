@@ -2,9 +2,16 @@
 /* --- Global --- */
 /* -------------- */
 /* Store/Community Background */
-div#responsive_page_template_content
+div#responsive_page_template_content,
+body.v6
 {
-	background: var(--view_bg);
+	background: var(--view_bg) !important;
+}
+
+/* Store Game Page Blue BG */
+div#responsive_page_template_content .game_page_background.game,
+div#responsive_page_template_content .game_background_glow {
+	background: none !important;
 }
 
 /* Mid Page Gradient */
