@@ -14,8 +14,8 @@
 				2="image(x0, y0, x0+40, y0+40, assets/corners/40_window_bg/tl)"
 				3="image(x0, y1-40, x0+40, y1, assets/corners/40_window_bg/bl)"
 
-				4="image(x0+44, y0+44, x1, y1, assets/icons_32/chat)"
-				5="image(x0+144, y0+44, x1, y1, assets/icons_32/history)"
+				4="image(x0+44, y0+44, x0+76, y0+76, assets/icons_32/chat)"
+				5="image(x0+144, y0+44, x0+176, y0+76, assets/icons_32/history)"
 			}
 		}
 

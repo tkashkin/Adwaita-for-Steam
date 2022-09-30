@@ -5,7 +5,7 @@
 		detailsbox {
 			bgcolor="window_bg"
 			render_bg {
-				0="image(x0+34, y0+44, x1, y1, assets/icons_32/achievements)"
+				0="image(x0+34, y0+44, x0+66, y0+76, assets/icons_32/achievements)"
 			}
 		}
 

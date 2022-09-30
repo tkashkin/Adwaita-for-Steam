@@ -10,9 +10,9 @@
 				2="image(x1-40, y0, x1, y0+40, assets/corners/40_window_bg/tr)"
 				3="image(x1-40, y1-40, x1, y1, assets/corners/40_window_bg/br)"
 
-				4="image(x0+34, y0+44, x1, y1, assets/icons_32/community)"
+				4="image(x0+34, y0+44, x0+66, y0+76, assets/icons_32/community)"
 
-				5="image(x0+134, y0+44, x1, y1, assets/icons_32/gamepad)"
+				5="image(x0+134, y0+44, x0+166, y0+76, assets/icons_32/gamepad)"
 			}
 		}
 

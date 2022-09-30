@@ -24,8 +24,8 @@
 		EditablePanel
 		{
 			render_bg {
-				0="image(x0+24, y0+24, x1, y1, assets/icons_32/settings)"
-				1="image(x0+124, y0+24, x1, y1, assets/icons_32/browser)"
+				0="image(x0+24, y0+24, x0+56, y0+56, assets/icons_32/settings)"
+				1="image(x0+124, y0+24, x0+156, y0+56, assets/icons_32/browser)"
 			}
 		}
 	}
