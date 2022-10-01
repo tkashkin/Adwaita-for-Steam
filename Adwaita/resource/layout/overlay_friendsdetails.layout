@@ -15,7 +15,7 @@
 				3="image(x0, y1-40, x0+40, y1, assets/corners/40_window_bg/bl)"
 
 				4="image(x0+44, y0+44, x0+76, y0+76, assets/icons_32/chat)"
-				5="image(x0+144, y0+44, x0+176, y0+76, assets/icons_32/history)"
+				5="image(x0+136, y0+44, x0+168, y0+76, assets/icons_32/history)"
 			}
 		}
 
@@ -42,7 +42,7 @@
 
 	layout
 	{
-		place { controls="AllFriendsButton,ViewPlayersButton" width=80 height=80 margin-top=20 margin-left=20 spacing=20 }
+		place { controls="AllFriendsButton,ViewPlayersButton" width=80 height=80 margin-top=20 margin-left=20 spacing=12 }
 
 		region { name="hidden" width=0 height=0 margin-left=-999 }
 		place { controls="TitleText,grid" region="hidden" width=0 height=0 }

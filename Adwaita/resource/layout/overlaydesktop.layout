@@ -55,15 +55,26 @@
 		place { controls="Clock,ClockSuffix" region="toppanel" align=top-center }
 		place { controls="SessionText,TwoWeeksText,ForeverText" region="toppanel" start=Clock align=top-center dir=down }
 
+		// popover_padding = 20, button_width = 80, button_spacing = 12
+
+		// width = FriendsDetailPanel + ScreenshotsDetailPanel + AchievementsDetailPanel + CommunityHubDetailPanel
 		region { name="bottom" align=bottom height=180 margin-bottom=60 }
-		region { name="bottompanel" region="bottom" align=top-center width=820 height=120 }
-		place { controls="FriendsDetailPanel" region="bottompanel" height=120 width=210 }
-		place { controls="ScreenshotsDetailPanel,AchievementsDetailPanel" region="bottompanel" start="FriendsDetailPanel" height=120 width=100 }
+		region { name="bottompanel" region="bottom" align=top-center width=764 height=120 }
+
+		// width = popover_padding + button_width*2 + button_spacing*1.5
+		place { controls="FriendsDetailPanel" region="bottompanel" height=120 width=198 }
+
+		// width = button_width + button_spacing
+		place { controls="ScreenshotsDetailPanel,AchievementsDetailPanel" region="bottompanel" start="FriendsDetailPanel" height=120 width=92 }
+		
 		// CommunityHubDetailPanel has extra width to provide ...
 		// ... background and icon for EditControllerConfig
 		// ... background for TaskbarPanel (in overlaydashboard.layout/overlaytaskbar.layout)
-		place { controls="CommunityHubDetailPanel" region="bottompanel" start="AchievementsDetailPanel" height=120 width=410 }
-		place { controls="EditControllerConfig" region="bottompanel" start="AchievementsDetailPanel" width=80 height=80 margin-top=20 margin-left=110 }
+		// width = popover_padding + button_width*4 + button_spacing*3.5
+		place { controls="CommunityHubDetailPanel" region="bottompanel" start="AchievementsDetailPanel" height=120 width=382 }
+
+		// width = button_width, margin-left = button_width + button_spacing*1.5
+		place { controls="EditControllerConfig" region="bottompanel" start="AchievementsDetailPanel" width=80 height=80 margin-top=20 margin-left=98 }
 
 		region { name="hidden" width=0 height=0 margin-left=-999 }
 		place { controls="ForceQuitButton,GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,LegacyCDKeyButton,WebSiteButton,RecommendButton,WorkshopButton,BroadcastDetailPanel,GuidesDetailPanel,CommunityDiscussionsDetailPanel,MewsDetailPanel" region="hidden" width=0 height=0 }
