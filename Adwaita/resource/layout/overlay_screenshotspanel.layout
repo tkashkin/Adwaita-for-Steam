@@ -5,7 +5,8 @@
 		detailsbox {
 			bgcolor="window_bg"
 			render_bg {
-				0="image(x0+30, y0+44, x0+62, y0+76, assets/icons_32/screenshots)"
+				0="image(x0+35, y0+34, x0+67, y0+66, assets/icons_32/screenshots)"
+				1="image(x0+6, y0+70, x0+96, y0+86, assets/overlay/labels/en/screenshots)"
 			}
 		}
 
@@ -32,7 +33,7 @@
 
 	layout
 	{
-		place { controls="ViewScreenshots" width=80 height=80 margin-top=20 margin-left=6 }
+		place { controls="ViewScreenshots" width=90 height=80 margin-top=20 margin-left=6 }
 
 		region { name="hidden" width=0 height=0 margin-left=-999 }
 		place { controls="TitleText,InstructionText,SetShortcut" region="hidden" width=0 height=0 }

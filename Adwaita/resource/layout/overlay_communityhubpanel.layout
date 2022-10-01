@@ -10,9 +10,11 @@
 				2="image(x1-40, y0, x1, y0+40, assets/corners/40_window_bg/tr)"
 				3="image(x1-40, y1-40, x1, y1, assets/corners/40_window_bg/br)"
 
-				4="image(x0+30, y0+44, x0+62, y0+76, assets/icons_32/community)"
+				4="image(x0+35, y0+34, x0+67, y0+66, assets/icons_32/community)"
+				5="image(x0+6, y0+70, x0+96, y0+86, assets/overlay/labels/en/community2)"
 
-				5="image(x0+122, y0+44, x0+154, y0+76, assets/icons_32/gamepad)"
+				6="image(x0+137, y0+34, x0+169, y0+66, assets/icons_32/gamepad)"
+				7="image(x0+108, y0+70, x0+198, y0+86, assets/overlay/labels/en/gamepad2)"
 			}
 		}
 
@@ -39,7 +41,7 @@
 
 	layout
 	{
-		place { controls="ViewCommunityHub" width=80 height=80 margin-top=20 margin-left=6 }
+		place { controls="ViewCommunityHub" width=90 height=80 margin-top=20 margin-left=6 }
 
 		region { name="hidden" width=0 height=0 margin-left=-999 }
 		place { controls="TitleText,NumContributionsText" region="hidden" width=0 height=0 }
