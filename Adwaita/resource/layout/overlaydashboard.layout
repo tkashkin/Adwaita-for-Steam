@@ -33,9 +33,8 @@
 	layout
 	{
 		// use same values as in overlaydesktop.layout
-		region { name="bottom" align=bottom height=240 margin-bottom=60 }
-		region { name="bottompanel" region="bottom" align=top-center width=538 height=180 }
-
+		region { name="bottom" align=bottom height=232 margin-bottom=60 }
+		region { name="bottompanel" region="bottom" align=top-center width=538 height=172 }
 		region { name="lowerrow" region="bottompanel" align=bottom width=538 height=60 margin-bottom=20 }
 
 		// width = lowerrow width - popover_padding*2 - button_sm_side - button_spacing

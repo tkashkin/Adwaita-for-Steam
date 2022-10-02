@@ -60,9 +60,11 @@
 
 		// popover_padding = 20, button_width = 90, button_height = 80, button_spacing = 12, button_sm_side = 40
 
-		// width = FriendsDetailPanel + ScreenshotsDetailPanel + AchievementsDetailPanel + CommunityHubDetailPanel
-		// height = popover_padding*2 + button_height + button_sm_side + button_spacing
+		// height = bottompanel height + margin-bottom
 		region { name="bottom" align=bottom height=232 margin-bottom=60 }
+
+		// width = FriendsDetailPanel + CommunityHubDetailPanel + AchievementsDetailPanel + ScreenshotsDetailPanel
+		// height = popover_padding*2 + button_height + button_sm_side + button_spacing
 		region { name="bottompanel" region="bottom" align=top-center width=538 height=172 }
 
 		region { name="lowerrow" region="bottompanel" align=bottom width=538 height=60 margin-bottom=20 }
