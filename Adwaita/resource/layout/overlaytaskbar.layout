@@ -11,33 +11,28 @@
 		{
 			render_bg
 			{
-				0="fill(x0+20, y0, x1-20, y1, button_hover_bg)"
-				1="fill(x0, y0+20, x0+20, y1-20, button_hover_bg)"
-				2="fill(x1-20, y0+20, x1, y1-20, button_hover_bg)"
-				3="image(x0, y0, x0+20, y0+20, assets/corners/20_w15/tl)"
-				4="image(x1-20, y0, x1, y0+20, assets/corners/20_w15/tr)"
-				5="image(x0, y1-20, x0+20, y1, assets/corners/20_w15/bl)"
-				6="image(x1-20, y1-20, x1, y1, assets/corners/20_w15/br)"
+				0="image(x0, y0, x0+20, y0+20, assets/corners/20_w15/tl)"
+				1="image(x1-20, y0, x1, y0+20, assets/corners/20_w15/tr)"
+				2="image(x0, y1-20, x0+20, y1, assets/corners/20_w15/bl)"
+				3="image(x1-20, y1-20, x1, y1, assets/corners/20_w15/br)"
 			}
 		}
 
 		EditablePanel
 		{
 			render_bg {
-				0="image(x0+29, y0+14, x0+61, y0+46, assets/icons_32/settings)"
-				1="image(x0, y0+50, x0+90, y0+66, assets/overlay/labels/en/settings)"
-
-				2="image(x0+131, y0+14, x0+163, y0+46, assets/icons_32/browser)"
-				3="image(x0+102, y0+50, x0+192, y0+66, assets/overlay/labels/en/browser)"
+				0="image(x0+10, y0+10, x0+30, y0+30, assets/icons_20/browser)"
+				
+				1="image(x1-30, y0+10, x1-10, y0+30, assets/icons_20/settings)"
 			}
 		}
 	}
 
 	layout
 	{
-		region { name="panel" height=80 }
-		// width = button_width, spacing = button_spacing
-		place { controls="SettingsButton,WebBrowserButton" region="panel" width=90 height=80 spacing=12 }
+		region { name="panel" width=446 height=40 }
+		place { controls="WebBrowserButton" region="panel" width=40 height=40 }
+		place { controls="SettingsButton" region="panel" align=right width=40 height=40 }
 
 		region { name="hidden" width=0 height=0 margin-left=-999 }
 		place { controls="TaskbarPanel,SteamLogo,MusicPlayerButton,ScreenshotsButton,view_friends" region="hidden" width=0 height=0 }

@@ -33,16 +33,18 @@
 	layout
 	{
 		// use same values as in overlaydesktop.layout
-		region { name="bottom" align=bottom height=180 margin-bottom=60 }
-		region { name="bottompanel" region="bottom" align=top-center width=844 height=120 }
+		region { name="bottom" align=bottom height=240 margin-bottom=60 }
+		region { name="bottompanel" region="bottom" align=top-center width=538 height=180 }
 
-		// width = button_width*2 + button_spacing, margins = popover_padding
-		place { controls="TaskbarPanel" region="bottompanel" align=right width=192 height=80 margin-right=20 margin-top=20 }
+		region { name="lowerrow" region="bottompanel" align=bottom width=538 height=60 margin-bottom=20 }
+
+		// width = lowerrow width - popover_padding*2 - button_sm_side - button_spacing
+		place { controls="TaskbarPanel" region="lowerrow" width=446 height=40 margin-left=20 }
 
 		// height = bottom height + 10 (offset)
-		region { name="closewrapper" align=bottom height=190}
+		region { name="closewrapper" align=bottom height=242 }
 		// width = bottompanel width + 2*10 (offset) + 2*4 (shadow)
-		region { name="closealigner" region="closewrapper" align=top-center width=872 }
+		region { name="closealigner" region="closewrapper" align=top-center width=566 }
 		place { controls="CloseButton" region="closealigner" align=right width=40 height=40 margin-right=4 }
 
 		region { name="hidden" width=0 height=0 margin-left=-999 }
