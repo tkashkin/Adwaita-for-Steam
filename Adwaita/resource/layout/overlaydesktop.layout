@@ -4,19 +4,20 @@
 	{
 		topbar
 		{
-			font-size=36
 			textcolor="window_fg"
 			padding-top=10
+			font-family="Open Sans"
+			font-size=36
 			font-weight=400
 		}
 
 		clocksuffix
 		{
-			font-size=36
 			textcolor="window_fg"
 			padding-top=10
+			font-size=36
 			font-weight=400
-			font-style=uppercase;
+			font-style=uppercase
 		}
 
 		timeStrings
@@ -78,6 +79,6 @@
 		place { controls="EditControllerConfig" region="lowerrow" align=right width=40 height=40 margin-right=20 }
 
 		region { name="hidden" width=0 height=0 margin-left=-999 }
-		place { controls="ForceQuitButton,GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,LegacyCDKeyButton,WebSiteButton,RecommendButton,WorkshopButton,BroadcastDetailPanel,GuidesDetailPanel,CommunityDiscussionsDetailPanel,MewsDetailPanel" region="hidden" width=0 height=0 }
+		place { controls="ForceQuitButton,GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,LegacyCDKeyButton,WebSiteButton,RecommendButton,WorkshopButton,BroadcastDetailPanel,GuidesDetailPanel,CommunityDiscussionsDetailPanel,NewsDetailPanel" region="hidden" width=0 height=0 }
 	}
 }

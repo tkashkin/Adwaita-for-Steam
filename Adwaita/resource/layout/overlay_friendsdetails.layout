@@ -14,11 +14,11 @@
 				2="image(x0, y0, x0+40, y0+40, assets/corners/40_window_bg/tl)"
 				3="image(x0, y1-40, x0+40, y1, assets/corners/40_window_bg/bl)"
 
-				4="image(x0+49, y0+34, x0+81, y0+66, assets/icons_32/chat)"
-				5="image(x0+151, y0+34, x0+183, y0+66, assets/icons_32/history)"
+				4="image(x0+49, y0+31, x0+81, y0+63, assets/icons_32/chat)"
+				5="image(x0+151, y0+31, x0+183, y0+63, assets/icons_32/history)"
 
-				6="image(x0+20, y0+70, x0+110, y0+86, assets/overlay/labels/en/friends)"
-				7="image(x0+122, y0+70, x0+212, y0+86, assets/overlay/labels/en/players)"
+				6="image(x0+25, y0+65, x0+105, y0+89, assets/overlay/labels/en/friends)"
+				7="image(x0+127, y0+65, x0+207, y0+89, assets/overlay/labels/en/players)"
 			}
 		}
 
