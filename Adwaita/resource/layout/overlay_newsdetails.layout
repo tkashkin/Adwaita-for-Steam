@@ -1,4 +1,4 @@
-"resource/layout/overlay_achievementsdetails.layout"
+"resource/layout/overlay_newsdetails.layout"
 {
 	styles
 	{
@@ -10,8 +10,8 @@
 				2="image(x1-40, y0, x1, y0+40, assets/corners/40_window_bg/tr)"
 				3="image(x1-40, y1-40, x1, y1, assets/corners/40_window_bg/br)"
 
-				4="image(x0+35, y0+31, x0+67, y0+63, assets/icons_32/achievements)"
-				5="image(x0+11, y0+65, x0+91, y0+89, assets/overlay/labels/en/achievements)"
+				4="image(x0+35, y0+31, x0+67, y0+63, assets/icons_32/news)"
+				5="image(x0+11, y0+65, x0+91, y0+89, assets/overlay/labels/en/news)"
 			}
 		}
 
@@ -38,9 +38,9 @@
 
 	layout
 	{
-		place { controls="ViewAchievementsButton" width=90 height=80 margin-top=20 margin-left=6 }
+		place { controls="ViewNewsButton" width=90 height=80 margin-top=20 margin-left=6 }
 
 		region { name="hidden" width=0 height=0 margin-left=-999 }
-		place { controls="TitleText,ProgressTextEarned,progressbackground,progressbarimage,*achievement" region="hidden" width=0 height=0 }
+		place { controls="TitleText,*newsitem" region="hidden" width=0 height=0 }
 	}
 }
