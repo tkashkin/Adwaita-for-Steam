@@ -1,0 +1,53 @@
+"resource/layout/overlay_friendsdetail.layout"
+{
+	styles
+	{
+		highlight {
+			textcolor=none
+		}
+
+		detailsbox {
+			bgcolor=none
+			render_bg {
+				0="fill(x0+40, y0, x1, y1, window_bg)"
+				1="fill(x0, y0+40, x0+40, y1-40, window_bg)"
+				2="image(x0, y0, x0+40, y0+40, assets/corners/40_window_bg/tl)"
+				3="image(x0, y1-40, x0+40, y1, assets/corners/40_window_bg/bl)"
+
+				4="image(x0+49, y0+31, x0+81, y0+63, assets/icons_32/chat)"
+				5="image(x0+151, y0+31, x0+183, y0+63, assets/icons_32/history)"
+
+				6="image(x0+25, y0+65, x0+105, y0+89, assets/overlay/labels/en/friends)"
+				7="image(x0+127, y0+65, x0+207, y0+89, assets/overlay/labels/en/players)"
+			}
+		}
+
+		Button
+		{
+			textcolor=none
+			render_bg {}
+		}
+
+		Button:hover
+		{
+			render_bg
+			{
+				0="fill(x0+20, y0, x1-20, y1, button_hover_bg)"
+				1="fill(x0, y0+20, x0+20, y1-20, button_hover_bg)"
+				2="fill(x1-20, y0+20, x1, y1-20, button_hover_bg)"
+				3="image(x0, y0, x0+20, y0+20, assets/corners/20_w15/tl)"
+				4="image(x1-20, y0, x1, y0+20, assets/corners/20_w15/tr)"
+				5="image(x0, y1-20, x0+20, y1, assets/corners/20_w15/bl)"
+				6="image(x1-20, y1-20, x1, y1, assets/corners/20_w15/br)"
+			}
+		}
+	}
+
+	layout
+	{
+		place { controls="AllFriendsButton,ViewPlayersButton" width=90 height=80 margin-top=20 margin-left=20 spacing=12 }
+
+		region { name="hidden" width=0 height=0 margin-left=-999 }
+		place { controls="TitleText,grid" region="hidden" width=0 height=0 }
+	}
+}
