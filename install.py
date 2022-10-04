@@ -131,6 +131,9 @@ if __name__ == "__main__":
 	if args.list_patches:
 		list_patches(find_patches())
 
+	if args.patch and not shutil.which("patch"):
+		raise SystemExit(f"{TEXT_BOLD}patch{TEXT_RESET} executable not found in $PATH. Make sure you have GNU Patch installed")
+
 	with TemporaryDirectory() as tmpdir:
 		tmp = Path(tmpdir)
 		sourcedir = tmp / SKIN_DIR
