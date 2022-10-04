@@ -1,0 +1,26 @@
+"resource/layout/overlay_newsdetails.layout"
+{
+	styles
+	{
+		detailsbox {
+			bgcolor=none
+			render_bg {
+				0="fill(x0, y0, x1-40, y1, window_bg)"
+				1="fill(x1-40, y0+40, x1, y1-40, window_bg)"
+				2="image(x1-40, y0, x1, y0+40, assets/corners/40_window_bg/tr)"
+				3="image(x1-40, y1-40, x1, y1, assets/corners/40_window_bg/br)"
+
+				4="image(x0+35, y0+31, x0+67, y0+63, assets/icons_32/achievements_disabled)"
+				5="image(x0+11, y0+65, x0+91, y0+89, assets/overlay/labels/en/achievements_disabled)"
+			}
+		}
+	}
+
+	layout
+	{
+		// Only used to show a disabled achievements button
+
+		region { name="hidden" width=0 height=0 margin-left=-999 }
+		place { controls="ViewNewsButton,TitleText,*newsitem" region="hidden" width=0 height=0 }
+	}
+}

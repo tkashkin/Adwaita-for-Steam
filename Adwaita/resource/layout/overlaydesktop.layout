@@ -73,14 +73,14 @@
 		place { controls="FriendsDetailPanel" region="bottompanel" height=172 width=218 }
 
 		// width = button_width + button_spacing
-		place { controls="CommunityHubDetailPanel,AchievementsDetailPanel" region="bottompanel" start="FriendsDetailPanel" height=172 width=102 }
+		place { controls="CommunityHubDetailPanel,ScreenshotsDetailPanel" region="bottompanel" start="FriendsDetailPanel" height=172 width=102 }
 		
 		// width = popover_padding + button_width + button_spacing*0.5
-		place { controls="ScreenshotsDetailPanel" region="bottompanel" start="AchievementsDetailPanel" height=172 width=116 }
+		place { controls="AchievementsDetailPanel,NewsDetailPanel" region="bottompanel" start="ScreenshotsDetailPanel" height=172 width=116 }
 
 		place { controls="EditControllerConfig" region="lowerrow" align=right width=40 height=40 margin-right=20 }
 
 		region { name="hidden" width=0 height=0 margin-left=-999 }
-		place { controls="ForceQuitButton,GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,LegacyCDKeyButton,WebSiteButton,RecommendButton,WorkshopButton,BroadcastDetailPanel,GuidesDetailPanel,CommunityDiscussionsDetailPanel,NewsDetailPanel" region="hidden" width=0 height=0 }
+		place { controls="ForceQuitButton,GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,LegacyCDKeyButton,WebSiteButton,RecommendButton,WorkshopButton,BroadcastDetailPanel,GuidesDetailPanel,CommunityDiscussionsDetailPanel" region="hidden" width=0 height=0 }
 	}
 }
