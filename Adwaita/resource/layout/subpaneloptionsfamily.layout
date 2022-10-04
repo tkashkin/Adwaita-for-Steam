@@ -65,7 +65,7 @@ subpaneloptionsfamily.layout
 
 	layout
 	{
-		region { name="content" margin-top=8 margin-left=16 width=500 height=max }
+		region { name="content" margin-top=24 margin-left=16 width=500 height=max }
 
 		place { control="FamilyOptionsTitle" region="content" dir=down width=max height=34 }
 		place { control="ManageOptionsLabel" region="content" start="FamilyOptionsTitle" dir=down width=max height=50 }

@@ -47,7 +47,7 @@ subpaneloptioncompat.layout
 
 	layout
 	{
-		region { name="content" margin-top=8 margin-left=16 width=500 height=max }
+		region { name="content" margin-top=24 margin-left=16 width=500 height=max }
 
 		place { control="TitleLabel" region="content" width=max height=34 }
 		place { control="CompatEnabledCheckbox,CompatForcedCheckbox,AdvancedToolComboBox" region="content" start="TitleLabel" dir=down width=max height=50 }

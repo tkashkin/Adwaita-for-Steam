@@ -23,7 +23,7 @@ settingssubmusic.layout
 
 	layout
 	{
-		region { name="content" margin-left=16 width=520 height=max overflow=scroll-vertical }
+		region { name="content" margin-left=16 margin-top=16 width=520 height=max overflow=scroll-vertical }
 
 		place { control="LibraryHeader" region="content" dir=down margin-top=8 width=484 height=34 }
 		place { control="DatabaseInfoLabel" region="content" dir=down align=right margin-top=8 margin-right=8 height=34 }

@@ -115,7 +115,7 @@ settingssubstreaming.layout
 	
 	layout
 	{
-		region { name="content" margin-left=16 width=520 height=max overflow=scroll-vertical }
+		region { name="content" margin-top=16 margin-left=16 width=520 height=max overflow=scroll-vertical }
 
 		place { control="EnableStreaming,P2PScope,SetPIN,AdvancedHostOptions" region="content" dir=down margin-top=16 width=484 height=50 }
 

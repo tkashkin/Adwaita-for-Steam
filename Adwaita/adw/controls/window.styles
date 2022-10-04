@@ -4,6 +4,7 @@ window.styles
 	{
 		Frame.ClientInsetX=0
 		Frame.ClientInsetY=48
+		Frame.TransitionEffectTime=0
 	}
 
 	styles

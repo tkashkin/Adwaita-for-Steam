@@ -2,7 +2,7 @@ SettingsSubInterface.res
 {
 	layout
 	{
-		region { name="content" margin-left=16 width=520 height=max overflow=scroll-vertical }
+		region { name="content" margin-top=16 margin-left=16 width=520 height=max overflow=scroll-vertical }
 
 		place { control="LanguageCombo,NotifyAvailableGamesCheck" region="content" margin-top=16 dir=down width=484 height=50 }
 

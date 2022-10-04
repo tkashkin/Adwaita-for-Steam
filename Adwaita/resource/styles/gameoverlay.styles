@@ -1,0 +1,29 @@
+gameoverlay.styles
+{
+	include "resource/styles/steam.styles"
+	
+	styles 
+	{
+		Frame
+		{
+			minimum-width=534
+		}
+
+		FrameTitle
+		{
+			minimum-height=48
+			textcolor=none
+			font-size=1
+		}
+
+		Page
+		{
+			bgcolor=none
+		}
+
+		PageTab
+		{
+			minimum-height=34
+		}
+	}
+}

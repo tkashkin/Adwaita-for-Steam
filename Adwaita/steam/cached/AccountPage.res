@@ -87,7 +87,7 @@ AccountPage.res
 
 	layout
 	{
-		region { name="content" margin-top=16 margin-left=16 width=500 height=max }
+		region { name="content" margin-top=32 margin-left=16 width=500 height=max }
 
 		place { control="SecurityIcon" region="content" x=12 y=14 width=24 height=24 }
 		place { control="SecurityStatusLabel,SecurityStatusState" region="content" x=48 y=7 spacing=2 dir=down width=max margin-right=12 }

@@ -50,7 +50,7 @@ settingsdialog.layout
 		place { control="okbutton" align=right margin-right=7 margin-top=7 height=34 }
 
 		place { control="settingslist" x=0 y=48 width=180 height=max }
-		place { control="sheet" x=0 y=48 width=max height=max }
+		place { control="sheet" x=0 y=48 width=max height=max margin-bottom=-16 }
 
 		region { name="hidden" width=0 height=0 margin-left=-999 }
 		place { control="frame_minimize,frame_maximize,frame_close" region="hidden" width=0 height=0 }

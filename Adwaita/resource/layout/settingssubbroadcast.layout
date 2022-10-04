@@ -6,6 +6,15 @@ settingssubbroadcast.layout
 		{
 			render
 			{
+				0="image(x0+16, y0+32, x0+28, y0+44, assets/corners/12_mask_window_bg/tl)"
+				1="image(x1-32, y0+32, x1-20, y0+44, assets/corners/12_mask_window_bg/tr)"
+			}
+		}
+
+		"CDialogSettings CSettingsSubBroadcast"
+		{
+			render
+			{
 				0="image(x0+196, y0+16, x0+208, y0+28, assets/corners/12_mask_window_bg/tl)"
 				1="image(x1-32, y0+16, x1-20, y0+28, assets/corners/12_mask_window_bg/tr)"
 			}
@@ -40,7 +49,7 @@ settingssubbroadcast.layout
 
 	layout
 	{
-		region { name="content" margin-top=16 margin-left=16 width=500 height=max }
+		region { name="content" margin-top=32 margin-left=16 width=500 height=max }
 
 		place { control="RequiresRestartLabel,BroadcastDisabledLabel,BroadcastDisabledSupportURL" region="content" dir=down width=max spacing=8 }
 

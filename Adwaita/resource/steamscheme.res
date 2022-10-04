@@ -70,37 +70,57 @@ Scheme
 		{
 			sheet
 			{
-				xpos	0
-				ypos	48
-				wide	r0
+				xpos	24
+				ypos	3
+				wide	520
 				tall	r0
-				AutoResize	3
+			}
+
+			frame_close
+			{
+				visible	0
+				xpos	-999
+				ypos	0
+				wide	0
+				tall	0
+				PinCorner	0
 			}
 			
-			// these buttons are still a bit special - if some of them are hidden, they shuffle
-			// across taking the place of other buttons to make sure there aren't gaps
+			frame_title
+			{
+				xpos	0
+				ypos	0
+				wide	max
+				tall	48
+				AutoResize	1
+			}
+			
 			ApplyButton
 			{
-				xpos	r101
-				ypos	r36
-				wide	92
-				tall	24
+				visible	0
+				xpos	-999
+				ypos	0
+				wide	50
+				tall	0
+				PinCorner	1
 			}
 			
 			CancelButton
 			{
-				xpos	r203
-				ypos	r36
-				wide	92
-				tall	24
+				xpos	r57
+				ypos	7
+				wide	50
+				tall	34
+				PinCorner	1
 			}
 			
 			OKButton
 			{
-				xpos	r304
-				ypos	r36
-				wide	92
-				tall	24
+				xpos	-999
+				ypos	0
+				wide	50
+				tall	34
+				PinCorner	1
 			}
 		}
 		

@@ -6,13 +6,13 @@ A skin to make Steam look more like a native GNOME app
 
 ## Current state and plans
 
-* **Main window**: mostly done
-* **Settings**: partially done
+* **Main window**: done
+* **Settings**: mostly done
 * **Common controls**: mostly done
-* **New library, new chat, other web-based client parts**: [in progress](https://github.com/tkashkin/Adwaita-for-Steam/pull/6)
+* **New library, new chat, other web-based client parts**: partially done
+* **Overlay**: partially done
 * **Old library, old chat, other old unused windows**: not planned
 * **Small mode and other secondary windows**: planned if requested
-* **Overlay**: unchanged, not planned
 * **High resolutions**: all new graphics assets have `@2x` variants that will be used when scaling is enabled in both Steam and OS settings
 * **Recoloring**: colors can be changed in `Adwaita/adw/colors.styles`
 * **Light theme**: not planned, would require redrawing all assets to be visible on light backgrounds
