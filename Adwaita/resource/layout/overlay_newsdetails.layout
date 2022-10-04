@@ -10,37 +10,17 @@
 				2="image(x1-40, y0, x1, y0+40, assets/corners/40_window_bg/tr)"
 				3="image(x1-40, y1-40, x1, y1, assets/corners/40_window_bg/br)"
 
-				4="image(x0+35, y0+31, x0+67, y0+63, assets/icons_32/news)"
-				5="image(x0+11, y0+65, x0+91, y0+89, assets/overlay/labels/en/news)"
-			}
-		}
-
-		Button
-		{
-			textcolor=none
-			render_bg {}
-		}
-
-		Button:hover
-		{
-			render_bg
-			{
-				0="fill(x0+20, y0, x1-20, y1, button_hover_bg)"
-				1="fill(x0, y0+20, x0+20, y1-20, button_hover_bg)"
-				2="fill(x1-20, y0+20, x1, y1-20, button_hover_bg)"
-				3="image(x0, y0, x0+20, y0+20, assets/corners/20_w15/tl)"
-				4="image(x1-20, y0, x1, y0+20, assets/corners/20_w15/tr)"
-				5="image(x0, y1-20, x0+20, y1, assets/corners/20_w15/bl)"
-				6="image(x1-20, y1-20, x1, y1, assets/corners/20_w15/br)"
+				4="image(x0+35, y0+31, x0+67, y0+63, assets/icons_32/achievements_backdrop)"
+				5="image(x0+11, y0+65, x0+91, y0+89, assets/overlay/labels/en/achievements_backdrop)"
 			}
 		}
 	}
 
 	layout
 	{
-		place { controls="ViewNewsButton" width=90 height=80 margin-top=20 margin-left=6 }
+		// Only used to show a disabled achievements button
 
 		region { name="hidden" width=0 height=0 margin-left=-999 }
-		place { controls="TitleText,*newsitem" region="hidden" width=0 height=0 }
+		place { controls="ViewNewsButton,TitleText,*newsitem" region="hidden" width=0 height=0 }
 	}
 }
