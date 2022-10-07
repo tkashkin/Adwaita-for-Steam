@@ -8,6 +8,7 @@
 	--fg: #ffffff;
 
 	--button_radius: 6px;
+	--button_pill_radius: 9999px;
 	--card_radius: calc(var(--button_radius) + 6px);
 	--menu_radius: 6px;
 	--menu_margin: 6px;
@@ -66,6 +67,11 @@
 	--button_fg: rgba(255, 255, 255, 1);
 	--button_disabled_fg: rgba(255, 255, 255, 0.5);
 
+	--button_suggested_bg: linear-gradient(0deg, var(--accent_bg), var(--accent_bg));
+	--button_suggested_hover_bg: rgba(255, 255, 255, 0.1);
+	--button_suggested_click_bg: rgba(0, 0, 0, 0.2);
+	--button_suggested_blend: overlay;
+
 	--border: rgba(255, 255, 255, 0.15);
 
 	--card_bg: rgba(255, 255, 255, 0.1);
@@ -76,6 +82,10 @@
 	--scrollbar_active: rgba(255, 255, 255, 0.6);
 
 	--focus_ring: rgba(120, 174, 237, 0.5);
+	--focus_ring_bs: inset 0px 0px 0px 2px var(--focus_ring);
+
+	--ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	--focus_transition: box-shadow 200ms var(--ease-out-quad), background 200ms var(--ease-out-quad);
 
 	--basefont: "Cantarell";
 }

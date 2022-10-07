@@ -30,6 +30,7 @@ WEB_BASE_FILES = [
 	webthemedir / "base/5_game_details.css",
 	webthemedir / "base/6_downloads.css",
 	webthemedir / "base/9_scrollbars.css",
+	webthemedir / "base/10_new_login.css",
 ]
 
 WEB_FULL_FILES = [
@@ -45,6 +46,7 @@ WEB_FULL_FILES = [
 	webthemedir / "full/7_dialogs.css",
 	webthemedir / "full/8_chat.css",
 	webthemedir / "base/9_scrollbars.css",
+	webthemedir / "base/10_new_login.css",
 ]
 
 def find_patches() -> list[Path]:
