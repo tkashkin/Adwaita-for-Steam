@@ -1,7 +1,8 @@
 /* --- New Login View --- */
 /* BG */
 #root [class*="login_Login_"],
-#root [class*="login_Login_"] [class*="newlogindialog_EmbeddedRoot"]
+#root [class*="login_Login_"] [class*="newlogindialog_EmbeddedRoot"],
+#root [class*="login_Login_"] [class*="newlogindialog_StandardLayout_"][class*="newlogindialog_Embedded_"]
 {
 	background: var(--bg) !important;
 }
