@@ -13,6 +13,11 @@
 	color: var(--fg) !important;
 }
 
+#root [class*="login_Login_"] [class*="newlogindialog_FormError_"]
+{
+	color: var(--error) !important;
+}
+
 /* Entry */
 #root [class*="login_Login_"] [class*="newlogindialog_TextInput_"]
 {
