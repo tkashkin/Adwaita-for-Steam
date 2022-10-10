@@ -18,16 +18,28 @@
 	color: var(--error) !important;
 }
 
+/* Labels */
+#root [class*="login_Login_"] [class*="newlogindialog_FieldLabel_"]
+{
+	color: var(--dim_label_fg) !important;
+	font-size: x-small !important;
+	font-weight: 400 !important;
+	left: 14px !important;
+	margin-bottom: -3px !important;
+	pointer-events: none !important;
+	position: relative !important;
+	top: 22px !important;
+}
+
 /* Entry */
 #root [class*="login_Login_"] [class*="newlogindialog_TextInput_"]
 {
 	background: var(--card_bg) !important;
 	border-radius: var(--card_radius) !important;
 	border: none !important;
-	transition: var(--focus_transition) !important;
 	min-height: 34px !important;
-	padding-left: 9px !important;
-	padding-right: 9px !important;
+	padding: 18px 14px 2px 14px !important;
+	transition: var(--focus_transition) !important;
 }
 
 #root [class*="login_Login_"] [class*="newlogindialog_TextInput_"]:hover
@@ -40,6 +52,19 @@
 	box-shadow: var(--focus_ring_bs) !important;
 }
 
+#root [class*="login_Login_"] [class*="newlogindialog_LoginForm_"] [class*="newlogindialog_TextInput_"][type="text"]
+{
+	border-bottom-left-radius: 0px !important;
+	border-bottom-right-radius: 0px !important;
+	margin-bottom: -24px !important;
+}
+
+#root [class*="login_Login_"] [class*="newlogindialog_LoginForm_"] [class*="newlogindialog_TextInput_"][type="password"]
+{
+	border-top-right-radius: 0px !important;
+	border-top-left-radius: 0px !important;
+}
+
 /* Remember Me */
 #root [class*="login_Login_"] [class*="newlogindialog_Checkbox_"]:focus
 {
@@ -49,10 +74,11 @@
 /* Submit Button */
 #root [class*="login_Login_"] [class*="newlogindialog_SubmitButton_"]
 {
-	background: var(--button_suggested_bg) !important;
 	background-blend-mode: var(--button_suggested_blend) !important;
-	transition: var(--focus_transition) !important;
+	background: var(--button_suggested_bg) !important;
 	border-radius: var(--button_pill_radius) !important;
+	margin-bottom: 24px !important;
+	transition: var(--focus_transition) !important;
 }
 
 #root [class*="login_Login_"] [class*="newlogindialog_SubmitButton_"]:hover
@@ -69,12 +95,12 @@
 /* Window Controls */
 #root [class*="login_CloseButton_"]
 {
-	width: 24px !important;
-	height: 24px !important;
-	border-radius: 50% !important;
-	margin-left: 14px !important;
 	background-color: var(--button_bg) !important;
+	border-radius: 50% !important;
+	height: 24px !important;
+	margin-left: 14px !important;
 	transition: var(--focus_transition) !important;
+	width: 24px !important;
 }
 
 #root [class*="login_CloseButton_"]:hover
@@ -89,10 +115,10 @@
 
 #root [class*="login_CloseButton_"] > svg
 {
-	width: 10px !important;
 	height: 10px !important;
 	margin-left: 7px !important;
 	margin-top: 5px !important;
+	width: 10px !important;
 }
 
 #root [class*="login_CloseButton_"] > svg > *
