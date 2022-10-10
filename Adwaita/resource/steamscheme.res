@@ -15,7 +15,7 @@ Scheme
 
 			frame_maximize
 			{
-				visible 0
+				visible	0
 				xpos	-999
 				ypos	0
 				wide	0
@@ -25,7 +25,7 @@ Scheme
 
 			frame_minimize
 			{
-				visible 0
+				visible	0
 				xpos	-999
 				ypos	0
 				wide	0
@@ -75,15 +75,6 @@ Scheme
 				wide	520
 				tall	r0
 			}
-			
-			frame_title
-			{
-				xpos	0
-				ypos	0
-				wide	max
-				tall	48
-				AutoResize	1
-			}
 
 			frame_close
 			{
@@ -93,6 +84,15 @@ Scheme
 				wide	0
 				tall	0
 				PinCorner	0
+			}
+			
+			frame_title
+			{
+				xpos	0
+				ypos	0
+				wide	max
+				tall	48
+				AutoResize	1
 			}
 			
 			ApplyButton
