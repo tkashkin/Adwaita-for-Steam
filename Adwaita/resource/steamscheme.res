@@ -15,7 +15,6 @@ Scheme
 
 			frame_maximize
 			{
-				visible	0
 				xpos	-999
 				ypos	0
 				wide	0
@@ -25,7 +24,6 @@ Scheme
 
 			frame_minimize
 			{
-				visible	0
 				xpos	-999
 				ypos	0
 				wide	0
@@ -74,16 +72,6 @@ Scheme
 				ypos	3
 				wide	520
 				tall	r0
-			}
-
-			frame_close
-			{
-				visible	0
-				xpos	-999
-				ypos	0
-				wide	0
-				tall	0
-				PinCorner	0
 			}
 			
 			frame_title

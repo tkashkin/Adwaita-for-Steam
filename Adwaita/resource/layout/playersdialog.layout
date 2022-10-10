@@ -1,0 +1,10 @@
+playersdialog.layout
+{
+	layout
+	{
+		place { control="frame_close" align=right width=24 height=24 margin-top=12 margin-right=12 }
+		place { control="frame_title" x=0 y=0 width=max height=48 }
+		place { control="frame_captiongrip" width=max height=48 margin=2 }
+		place { control="sheet" width=max y=3 margin-left=12 margin-right=12 margin-bottom=12 }
+	}
+}
