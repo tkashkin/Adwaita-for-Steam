@@ -22,7 +22,8 @@
 }
 
 .GenericConfirmDialog .DialogHeader,
-.GenericConfirmDialog .DialogBodyText
+.GenericConfirmDialog .DialogBodyText,
+.GenericConfirmDialog .DialogBodyText[class*="cloudconflict_CloudConflictWarning_"]
 {
 	color: var(--popover_fg) !important;
 	font-family: var(--basefont) !important;
@@ -36,11 +37,18 @@
 	padding: 24px 24px 16px 24px !important
 }
 
-.GenericConfirmDialog .DialogBodyText
+.GenericConfirmDialog .DialogBodyText,
+.GenericConfirmDialog .DialogBodyText[class*="cloudconflict_CloudConflictWarning_"]
 {
 	font-size: 15px !important;
 	font-weight: 400 !important;
 	padding: 0 24px !important;
+	flex-grow: 1 !important;
+}
+
+.GenericConfirmDialog .DialogBody
+{
+	overflow: hidden !important;
 }
 
 .ModalPosition_Content > .ModalPosition_Dismiss
@@ -97,24 +105,39 @@
 	box-shadow: none !important;
 }
 
-[class*="uninstalldialog_UninstallDialog_"]
+.GenericConfirmDialog .DialogFooter .DialogButton.Primary
+{
+	color: var(--accent) !important;
+}
+
+.GenericConfirmDialog .DialogFooter .DialogButton.Primary:hover
+{
+	background: rgba(120, 174, 237, 0.07) !important;
+}
+
+.GenericConfirmDialog .DialogFooter .DialogButton.Primary:active
+{
+	background: rgba(120, 174, 237, 0.16) !important;
+}
+
+.GenericConfirmDialog > .DialogContent_InnerWidth > form > div[class*="uninstalldialog_UninstallDialog_"]
 {
 	min-width: 500px !important;
 	width: 500px !important;
 }
 
 /* Uninstall button */
-[class*="uninstalldialog_UninstallDialog_"] .DialogButton.Primary
+.GenericConfirmDialog > .DialogContent_InnerWidth > form > div[class*="uninstalldialog_UninstallDialog_"] .DialogButton.Primary
 {
 	color: var(--destructive) !important;
 }
 
-[class*="uninstalldialog_UninstallDialog_"] .DialogButton.Primary:hover
+.GenericConfirmDialog > .DialogContent_InnerWidth > form > div[class*="uninstalldialog_UninstallDialog_"] .DialogButton.Primary:hover
 {
 	background: rgba(255, 123, 99, 0.07) !important;
 }
 
-[class*="uninstalldialog_UninstallDialog_"] .DialogButton.Primary:active
+.GenericConfirmDialog > .DialogContent_InnerWidth > form > div[class*="uninstalldialog_UninstallDialog_"] .DialogButton.Primary:active
 {
 	background: rgba(255, 123, 99, 0.16) !important;
 }
@@ -168,8 +191,8 @@
 }
 
 /* PagedSettingsDialog */
-.ModalDialogPopup .DialogContent,
-.ModalDialogPopup .DialogContentTransition,
+.ModalDialogPopup .DialogContent:not(.GenericConfirmDialog),
+.ModalDialogPopup .DialogContent:not(.GenericConfirmDialog) .DialogContentTransition,
 .ModalDialogPopup [class*="pagedsettings_PagedSettingsDialog_PageListColumn_"]
 {
 	background: var(--window_bg) !important;
@@ -182,7 +205,7 @@
 	border-right: 1px var(--border) solid !important;
 }
 
-.ModalDialogPopup .DialogHeader,
+.ModalDialogPopup .DialogContent:not(.GenericConfirmDialog) .DialogHeader,
 .ModalDialogPopup [class*="pagedsettings_PagedSettingsDialog_PageListColumn_"] > [class*="pagedsettings_PagedSettingsDialog_Title_"]
 {
     box-sizing: border-box !important;
@@ -207,12 +230,17 @@
 	border-bottom: 1px var(--headerbar_shade) solid !important;
 }
 
+.ModalDialogPopup .DialogHeader > svg
+{
+	display: none !important;
+}
+
 .ModalDialogPopup [class*="pagedsettings_PagedSettingsDialog_PageListColumn_"] > div[class*="pagedsettings_PagedSettingsDialog_Title_"]
 {
 	margin-bottom: 5px !important;
 }
 
-.ModalDialogPopup:focus-within .DialogHeader,
+.ModalDialogPopup:focus-within .DialogContent:not(.GenericConfirmDialog) .DialogHeader,
 .ModalDialogPopup:focus-within [class*="pagedsettings_PagedSettingsDialog_PageListColumn_"] > [class*="pagedsettings_PagedSettingsDialog_Title_"]
 {
 	background: var(--headerbar_bg) !important;
@@ -265,7 +293,7 @@
 	background-color: rgba(255, 255, 255, 0.19) !important;
 }
 
-.ModalDialogPopup .DialogContent_InnerWidth > *:not(.DialogHeader)
+.ModalDialogPopup .DialogContent_InnerWidth > *:not(.DialogHeader):not(form)
 {
 	padding: 16px !important;
 }
