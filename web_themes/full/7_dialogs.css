@@ -85,7 +85,7 @@
 	margin: 0 !important;
 	margin-left: -1px !important;
 	max-width: none !important;
-	transition: background 0.15s;
+	transition: var(--focus_transition) !important;
 }
 
 .GenericConfirmDialog .DialogFooter .DialogButton::before
@@ -157,7 +157,7 @@
 	border-radius: 50% !important;
 	margin-left: 14px !important;
 	background-color: var(--button_bg) !important;
-	transition: background-color 0.15s !important;
+	transition: var(--focus_transition) !important;
 }
 
 .title-bar-actions .title-area-icon:hover

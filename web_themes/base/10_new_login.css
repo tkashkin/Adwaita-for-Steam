@@ -1,0 +1,127 @@
+/* --- New Login View --- */
+/* BG */
+#root [class*="login_Login_"],
+#root [class*="login_Login_"] [class*="newlogindialog_EmbeddedRoot"],
+#root [class*="login_Login_"] [class*="newlogindialog_StandardLayout_"][class*="newlogindialog_Embedded_"]
+{
+	background: var(--bg) !important;
+}
+
+/* Text */
+#root [class*="login_Login_"] [class*="newlogindialog_Highlight_"]
+{
+	color: var(--fg) !important;
+}
+
+#root [class*="login_Login_"] [class*="newlogindialog_FormError_"]
+{
+	color: var(--error) !important;
+}
+
+/* Labels */
+#root [class*="login_Login_"] [class*="newlogindialog_FieldLabel_"]
+{
+	color: var(--dim_label_fg) !important;
+	font-size: x-small !important;
+	font-weight: 400 !important;
+	left: 14px !important;
+	margin-bottom: -3px !important;
+	pointer-events: none !important;
+	position: relative !important;
+	top: 22px !important;
+}
+
+/* Entry */
+#root [class*="login_Login_"] [class*="newlogindialog_TextInput_"]
+{
+	background: var(--card_bg) !important;
+	border-radius: var(--card_radius) !important;
+	border: none !important;
+	min-height: 34px !important;
+	padding: 18px 14px 2px 14px !important;
+	transition: var(--focus_transition) !important;
+}
+
+#root [class*="login_Login_"] [class*="newlogindialog_TextInput_"]:hover
+{
+	background: var(--button_hover_bg) !important;
+}
+
+#root [class*="login_Login_"] [class*="newlogindialog_TextInput_"]:focus
+{
+	box-shadow: var(--focus_ring_bs) !important;
+}
+
+#root [class*="login_Login_"] [class*="newlogindialog_LoginForm_"] [class*="newlogindialog_TextInput_"][type="text"]
+{
+	border-bottom-left-radius: 0px !important;
+	border-bottom-right-radius: 0px !important;
+	margin-bottom: -24px !important;
+}
+
+#root [class*="login_Login_"] [class*="newlogindialog_LoginForm_"] [class*="newlogindialog_TextInput_"][type="password"]
+{
+	border-top-right-radius: 0px !important;
+	border-top-left-radius: 0px !important;
+}
+
+/* Remember Me */
+#root [class*="login_Login_"] [class*="newlogindialog_Checkbox_"]:focus
+{
+	outline: none !important;
+}
+
+/* Submit Button */
+#root [class*="login_Login_"] [class*="newlogindialog_SubmitButton_"]
+{
+	background-blend-mode: var(--button_suggested_blend) !important;
+	background: var(--button_suggested_bg) !important;
+	border-radius: var(--button_pill_radius) !important;
+	margin-bottom: 24px !important;
+	transition: var(--focus_transition) !important;
+}
+
+#root [class*="login_Login_"] [class*="newlogindialog_SubmitButton_"]:hover
+{
+	background-color: var(--button_suggested_hover_bg) !important;
+}
+
+#root [class*="login_Login_"] [class*="newlogindialog_SubmitButton_"]:focus
+{
+	background-color: var(--button_suggested_click_bg) !important;
+	outline: none !important;
+}
+
+/* Window Controls */
+#root [class*="login_CloseButton_"]
+{
+	background-color: var(--button_bg) !important;
+	border-radius: 50% !important;
+	height: 24px !important;
+	margin-left: 14px !important;
+	transition: var(--focus_transition) !important;
+	width: 24px !important;
+}
+
+#root [class*="login_CloseButton_"]:hover
+{
+	background-color: var(--button_hover_bg) !important;
+}
+
+#root [class*="login_CloseButton_"]:active
+{
+	background-color: var(--button_active_bg) !important;
+}
+
+#root [class*="login_CloseButton_"] > svg
+{
+	height: 10px !important;
+	margin-left: 7px !important;
+	margin-top: 5px !important;
+	width: 10px !important;
+}
+
+#root [class*="login_CloseButton_"] > svg > *
+{
+	stroke: var(--headerbar_fg) !important;
+}
