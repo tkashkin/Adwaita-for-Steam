@@ -5,6 +5,7 @@
 #root [class*="login_Login_"] [class*="newlogindialog_StandardLayout_"][class*="newlogindialog_Embedded_"]
 {
 	background: var(--bg) !important;
+	overflow: hidden !important;
 }
 
 /* Text */
@@ -22,13 +23,15 @@
 #root [class*="login_Login_"] [class*="newlogindialog_FieldLabel_"]
 {
 	color: var(--dim_label_fg) !important;
-	font-size: x-small !important;
-	font-weight: 400 !important;
 	left: 14px !important;
 	margin-bottom: -3px !important;
 	pointer-events: none !important;
 	position: relative !important;
 	top: 22px !important;
+	text-transform: none !important;
+	font-family: var(--basefont) !important;
+	font-size: 12px !important;
+	font-weight: 400 !important;
 }
 
 /* Entry */
@@ -56,7 +59,7 @@
 {
 	border-bottom-left-radius: 0px !important;
 	border-bottom-right-radius: 0px !important;
-	margin-bottom: -24px !important;
+	margin-bottom: -25px !important;
 }
 
 #root [class*="login_Login_"] [class*="newlogindialog_LoginForm_"] [class*="newlogindialog_TextInput_"][type="password"]
@@ -77,8 +80,14 @@
 	background-blend-mode: var(--button_suggested_blend) !important;
 	background: var(--button_suggested_bg) !important;
 	border-radius: var(--button_pill_radius) !important;
-	margin-bottom: 24px !important;
+	margin-bottom: 16px !important;
 	transition: var(--focus_transition) !important;
+	padding: 12px 24px !important;
+	width: auto !important;
+	min-width: 150px !important;
+	font-family: var(--basefont) !important;
+	font-size: 15px !important;
+	font-weight: 700 !important;
 }
 
 #root [class*="login_Login_"] [class*="newlogindialog_SubmitButton_"]:hover
@@ -86,9 +95,13 @@
 	background-color: var(--button_suggested_hover_bg) !important;
 }
 
-#root [class*="login_Login_"] [class*="newlogindialog_SubmitButton_"]:focus
+#root [class*="login_Login_"] [class*="newlogindialog_SubmitButton_"]:active
 {
 	background-color: var(--button_suggested_click_bg) !important;
+}
+
+#root [class*="login_Login_"] [class*="newlogindialog_SubmitButton_"]:focus
+{
 	outline: none !important;
 }
 
@@ -124,4 +137,56 @@
 #root [class*="login_CloseButton_"] > svg > *
 {
 	stroke: var(--headerbar_fg) !important;
+}
+
+#root [class*="login_Login_"]
+{
+	height: 100% !important;
+}
+
+#root [class*="login_Login_"] [class*="newlogindialog_Login_"]
+{
+	display: flex !important;
+	height: 100% !important;
+}
+
+#root [class*="login_Login_"] [class*="newlogindialog_BetaContainer_"],
+#root [class*="login_Login_"] [class*="newlogindialog_LoginForm_"]
+{
+	align-items: stretch !important;
+	align-content: center !important;
+	align-self: center !important;
+}
+
+#root [class*="login_Login_"] [class*="newlogindialog_EmbeddedRoot_"]
+{
+	gap: 16px !important;
+	flex-grow: 1 !important;
+}
+
+#root [class*="login_Login_"] [class*="newlogindialog_JoinBetaButton_"]
+{
+	text-decoration: none !important;
+	border-radius: var(--button_pill_radius) !important;
+}
+
+#root [class*="login_Login_"] [class*="newlogindialog_HeaderLogo_"]
+{
+	margin: auto !important;
+}
+
+/* Steam Guard dialog */
+#root [class*="login_Login_"] [class*="newlogindialog_Compact_"]
+{
+	width: 100% !important;
+}
+
+#root [class*="login_Login_"] [class*="newlogindialog_Compact_"] [class*="newlogindialog_PrimaryHeader_"]
+{
+	text-transform: none !important;
+}
+
+#root [class*="login_Login_"] [class*="newlogindialog_Compact_"] [class*="newlogindialog_FormContainer_"]
+{
+	padding: 0 !important;
 }
