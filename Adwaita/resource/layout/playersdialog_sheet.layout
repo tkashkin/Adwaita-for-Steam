@@ -2,6 +2,6 @@ playersdialog_sheet.layout
 {
 	layout
 	{
-		place { controls="*tab" region="tabs" height=34 }
+		place { controls="*tab" height=34 }
 	}
 }

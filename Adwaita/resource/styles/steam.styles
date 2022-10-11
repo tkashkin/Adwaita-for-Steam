@@ -245,6 +245,10 @@ steam.styles
 		{
 			bgcolor=none
 		}
+		"CPlayersDialog CPlayersSubCurrentPlayers"
+		{
+			bgcolor=none
+		}
 		"CPlayersDialog FrameTitle"
 		{
 			textcolor=none
