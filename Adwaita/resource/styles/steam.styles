@@ -241,5 +241,17 @@ steam.styles
 		{
 			font-style=underline
 		}
+		"CPlayersDialog CPlayersSubRecentPlayers"
+		{
+			bgcolor=none
+		}
+		"CPlayersDialog CPlayersSubCurrentPlayers"
+		{
+			bgcolor=none
+		}
+		"CPlayersDialog FrameTitle"
+		{
+			textcolor=none
+		}
 	}
 }

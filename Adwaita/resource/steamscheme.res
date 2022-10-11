@@ -78,7 +78,7 @@ Scheme
 
 			frame_close
 			{
-				visible	0
+				visible	1
 				xpos	-999
 				ypos	0
 				wide	0

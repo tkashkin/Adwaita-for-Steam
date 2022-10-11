@@ -1,0 +1,7 @@
+playersdialog_sheet.layout
+{
+	layout
+	{
+		place { controls="*tab" height=34 }
+	}
+}
