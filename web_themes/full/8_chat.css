@@ -9,7 +9,8 @@
 }
 
 /* Window Focus Indicator */
-.singleWindowFocusBar
+.singleWindowFocusBar,
+.title-area-highlight
 {
 	display: none !important
 }
@@ -78,6 +79,14 @@
 {
 	margin-top: -16px !important;
 	margin-right: 2px !important;
+}
+
+.chat_main.fullheight.responsive_friends .friendListButton.friendSettingsButton
+{
+	margin-right: 0px !important;
+	margin-top: 0px !important;
+	position: relative !important;
+	top: 40px !important;
 }
 
 .friendListButton.friendCollapseButton
