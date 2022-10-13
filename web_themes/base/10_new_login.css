@@ -218,6 +218,20 @@
 {
 	align-self: flex-end !important;
 	margin-bottom: -10px !important;
+	margin-right: -124px !important;
+	visibility: hidden !important;
+}
+
+#root [class*="login_Login_"] [class*="newlogindialog_QRCodeContainer_"] [class*="newlogindialog_UseMobileAppForQR_"]::before
+{
+	content: " Hover to view QR code" !important;
+	visibility: visible !important;
+	margin-right: -35px !important;
+}
+
+#root [class*="login_Login_"] [class*="newlogindialog_QRCodeContainer_"] [class*="newlogindialog_UseMobileAppForQR_"] a
+{
+	visibility: visible !important;
 }
 
 #root [class*="login_Login_"] [class*="newlogindialog_QRCodeContainer_"]:hover [class*="newlogindialog_QR_"] [class*="qrlogin_Column_"]
