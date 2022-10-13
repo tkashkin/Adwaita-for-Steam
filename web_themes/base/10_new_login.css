@@ -1,11 +1,22 @@
 /* --- New Login View --- */
 /* BG */
 #root [class*="login_Login_"],
-#root [class*="login_Login_"] [class*="newlogindialog_EmbeddedRoot"],
+#root [class*="login_Login_"] [class*="newlogindialog_EmbeddedRoot_"],
 #root [class*="login_Login_"] [class*="newlogindialog_StandardLayout_"][class*="newlogindialog_Embedded_"]
 {
 	background: var(--bg) !important;
 	overflow: hidden !important;
+	user-select: none !important;
+}
+
+#root [class*="login_Login_"] [class*="login_TitleBar_"]
+{
+	height: 100px !important;
+}
+
+#root [class*="login_Login_"] [class*="newlogindialog_EmbeddedRoot_"]
+{
+	padding: 40px 24px 16px 24px !important;
 }
 
 /* Text */
@@ -43,6 +54,9 @@
 	min-height: 34px !important;
 	padding: 18px 14px 2px 14px !important;
 	transition: var(--focus_transition) !important;
+	font-family: var(--basefont) !important;
+	font-size: 15px !important;
+	font-weight: 400 !important;
 }
 
 #root [class*="login_Login_"] [class*="newlogindialog_TextInput_"]:hover
@@ -53,6 +67,12 @@
 #root [class*="login_Login_"] [class*="newlogindialog_TextInput_"]:focus
 {
 	box-shadow: var(--focus_ring_bs) !important;
+}
+
+#root [class*="login_Login_"] [class*="newlogindialog_LoginForm_"]
+{
+	max-width: 480px !important;
+	margin: auto !important;
 }
 
 #root [class*="login_Login_"] [class*="newlogindialog_LoginForm_"] [class*="newlogindialog_TextInput_"][type="text"]
@@ -189,4 +209,26 @@
 #root [class*="login_Login_"] [class*="newlogindialog_Compact_"] [class*="newlogindialog_FormContainer_"]
 {
 	padding: 0 !important;
+}
+
+#root [class*="login_Login_"] [class*="newlogindialog_CheckboxField_"] [class*="newlogindialog_CheckboxFieldLabel_"],
+#root [class*="login_Login_"] [class*="newlogindialog_TextLink_"],
+#root [class*="login_Login_"] [class*="newlogindialog_UseMobileAppForQR_"],
+#root [class*="login_Login_"] [class*="newlogindialog_EmbeddedRootFooter_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: 13px !important;
+	font-weight: 400 !important;
+}
+
+#root [class*="login_Login_"] [class*="newlogindialog_TextLink_"]
+{
+	font-weight: 700 !important;
+	text-decoration: none !important;
+}
+
+#root [class*="login_Login_"] [class*="newlogindialog_TextLink_"]:hover
+{
+	text-decoration: underline !important;
 }

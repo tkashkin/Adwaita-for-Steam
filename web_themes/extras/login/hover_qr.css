@@ -3,7 +3,8 @@
 /* ------------------------------- */
 #root [class*="login_Login_"] [class*="qrlogin_Column_"]
 {
-	box-shadow: 0px 0px 30px 10px black;
+	box-shadow: 0px 0px 16px 8px black !important;
+	border-radius: var(--popover_radius) !important;
 	left: 50% !important;
 	opacity: 0 !important;
 	position: absolute !important;
@@ -13,9 +14,16 @@
 	visibility: hidden !important;
 }
 
+#root [class*="login_Login_"] [class*="qrlogin_LoginQR_"]
+{
+	border-radius: var(--popover_radius) !important;
+	width: 250px !important;
+	height: 250px !important;
+}
+
 #root [class*="login_Login_"] [class*="newlogindialog_QRSection_"]
 {
-	margin-left: none !important;
+	margin-left: 0 !important;
 }
 
 #root [class*="login_Login_"] [class*="newlogindialog_QRCodeContainer_"] [class*="newlogindialog_FieldLabel_"]
@@ -25,17 +33,13 @@
 
 #root [class*="login_Login_"] [class*="newlogindialog_QRCodeContainer_"] [class*="newlogindialog_UseMobileAppForQR_"]
 {
-	align-self: flex-end !important;
-	margin-bottom: -10px !important;
-	margin-right: -124px !important;
-	visibility: hidden !important;
+	align-self: center !important;
 }
 
-#root [class*="login_Login_"] [class*="newlogindialog_QRCodeContainer_"] [class*="newlogindialog_UseMobileAppForQR_"]::before
+#root [class*="login_Login_"] [class*="newlogindialog_QRCodeContainer_"] [class*="newlogindialog_UseMobileAppForQR_"]::after
 {
-	content: " Hover to view QR code" !important;
-	visibility: visible !important;
-	margin-right: -35px !important;
+	content: ". Hover to view QR code" !important;
+	font-weight: 700 !important;
 }
 
 #root [class*="login_Login_"] [class*="newlogindialog_QRCodeContainer_"] [class*="newlogindialog_UseMobileAppForQR_"] a
