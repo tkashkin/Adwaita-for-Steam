@@ -37,6 +37,14 @@ cd Adwaita-for-Steam
 ./install.py
 ```
 
+### With one line script
+
+This script will install basic skin without any options.
+
+```bash
+curl https://raw.githubusercontent.com/tkashkin/Adwaita-for-Steam/master/install.sh | bash
+```
+
 Run `./install.py -l` to see customization options and `./install.py -p ${patch_name}` to apply them.
 
 Run `./install.py -w {base, full, none}` to change the type of theme for web based elements of steam. base is a basic default, full includes heavier theming (including chat), and none disables this feature.
