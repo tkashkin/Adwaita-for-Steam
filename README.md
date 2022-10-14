@@ -40,7 +40,7 @@ cd Adwaita-for-Steam
 ### With one line script
 
 ```bash
-curl https://raw.githubusercontent.com/tkashkin/Adwaita-for-Steam/master/install.sh | bash
+sh -c "$(curl -sSL https://raw.githubusercontent.com/tkashkin/Adwaita-for-Steam/master/install.sh)"
 ```
 
 Run `./install.py -l` to see customization options and `./install.py -p ${patch_name}` to apply them.
