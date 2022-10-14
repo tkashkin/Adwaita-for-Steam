@@ -39,8 +39,6 @@ cd Adwaita-for-Steam
 
 ### With one line script
 
-This script will install basic skin without any options.
-
 ```bash
 curl https://raw.githubusercontent.com/tkashkin/Adwaita-for-Steam/master/install.sh | bash
 ```
