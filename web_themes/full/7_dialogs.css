@@ -408,3 +408,191 @@
 {
 	padding: 16px !important;
 }
+
+/* Checkboxes */
+.ModalDialogPopup .DialogCheckbox_Container
+{
+	flex-direction: row-reverse !important;
+	background: var(--entry_bg) !important;
+	border-radius: var(--entry_radius) !important;
+	min-height: var(--entry_min_height) !important;
+	align-items: center !important;
+	transition: var(--focus_transition) !important;
+}
+
+.ModalDialogPopup .DialogCheckbox_Container:hover
+{
+	background: var(--button_hover_bg) !important;
+	box-shadow: none !important;
+}
+
+.ModalDialogPopup .DialogCheckbox_Container:active
+{
+	background: var(--button_active_bg) !important;
+}
+
+.ModalDialogPopup .DialogToggle_Label
+{
+	flex-grow: 1 !important;
+}
+
+.ModalDialogPopup .DialogCheckbox
+{
+	background: var(--card_bg) !important;
+	border-radius: 14px !important;
+	box-shadow: none !important;
+	padding: 2px !important;
+	min-height: 22px !important;
+	min-width: 44px !important;
+}
+
+.ModalDialogPopup .DialogCheckbox.Active
+{
+	background: var(--accent_bg) !important;
+}
+
+.ModalDialogPopup .DialogCheckbox .SVGIcon_DialogCheck
+{
+	opacity: 1 !important;
+	transition: margin-left 60ms linear !important;
+	margin-left: -2px !important;
+}
+
+.ModalDialogPopup .DialogCheckbox.Active .SVGIcon_DialogCheck
+{
+	margin-left: 20px !important;
+}
+
+.ModalDialogPopup .DialogCheckbox svg path
+{
+	d: path("M 100, 100 m -75, 0 a 160,160 0 1,0 320,0 a 160,160 0 1,0 -320,0") !important;
+	fill: var(--fg) !important;
+	stroke: none !important;
+}
+
+/* Text Input */
+.ModalDialogPopup .DialogTextInputBase
+{
+	background: var(--entry_bg) !important;
+	border-radius: var(--entry_radius) !important;
+	border: none !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--entry_font_size) !important;
+	font-weight: var(--entry_font_weight) !important;
+	min-height: var(--entry_min_height) !important;
+	padding: var(--entry_padding) !important;
+	transition: var(--focus_transition) !important;
+}
+
+.ModalDialogPopup .DialogTextInputBase:hover
+{
+	background: var(--button_hover_bg) !important;
+}
+
+.ModalDialogPopup .DialogTextInputBase:focus
+{
+	box-shadow: var(--focus_ring_bs) !important;
+}
+
+/* Buttons */
+.ModalDialogPopup .DialogButton
+{
+	background: var(--button_bg) !important;
+	border-radius: var(--button_radius) !important;
+	transition: var(--focus_transition) !important;
+}
+
+.ModalDialogPopup .DialogButton:hover
+{
+	background: var(--button_hover_bg) !important;
+}
+
+.ModalDialogPopup .DialogButton::before,
+.ModalDialogPopup .DialogButton:hover::before
+{
+	box-shadow: none !important;
+}
+
+.ModalDialogPopup .DialogButton:active
+{
+	background: var(--button_active_bg) !important;
+}
+
+/* DropDown */
+
+.ModalDialogPopup .DialogDropDown
+{
+	background: var(--entry_bg) !important;
+	border-radius: var(--entry_radius) !important;
+	min-height: var(--entry_min_height) !important;
+	transition: var(--focus_transition) !important;
+}
+
+.ModalDialogPopup .DialogDropDown:hover
+{
+	background: var(--button_hover_bg) !important;
+	box-shadow: none !important;
+}
+
+.ModalDialogPopup .DialogDropDown:active
+{
+	background: var(--button_active_bg) !important;
+}
+
+.ModalDialogPopup .DialogDropDown_CurrentDisplay,
+.ModalDialogPopup .DialogDropDown_CurrentDisplay [class*="dropdownlabel_DropDownLabelTitle_"]
+{
+	line-height: var(--entry_min_height) !important;
+}
+
+.ModalDialogPopup .DialogDropDown_Arrow .SVGIcon_DownArrowContextMenu
+{
+	fill: var(--dim_label_fg) !important;
+	transition: transform 200ms var(--ease-out-quad) !important;
+}
+
+.ModalDialogPopup .DialogDropDown.Active .DialogDropDown_Arrow .SVGIcon_DownArrowContextMenu
+{
+	fill: var(--accent) !important;
+	margin-top: -6px !important;
+	transform: rotateX(0.5turn) !important;
+}
+
+.ModalDialogPopup .DialogDropDown_Arrow
+{
+	left: 95% !important;
+	position: absolute !important;
+	top: 40% !important;
+}
+
+.ModalDialogPopup [class*="dropdown_DialogDropDownMenu_"]
+{
+	background: var(--popover_bg) !important;
+	border-radius: var(--popover_radius) !important;
+}
+
+/* Blue Highlighted Text */
+.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_BlueHighlight_"]
+{
+	color: var(--fg) !important;
+	font-weight: 500 !important;
+}
+
+/* Controller List */
+.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_SteamInputStatusGrid_"]
+{
+	background: var(--card_bg) !important;
+	border-radius: var(--card_radius) !important;
+}
+
+/* DLC Grid */
+.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_DlcGrid_"]
+{
+	border-radius: var(--card_radius) !important;
+}
+
+.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_DlcGrid_"] [class*="appproperties_DlcHeader_"]
+{
+	background: var(--card_bg) !important;
+}
+
