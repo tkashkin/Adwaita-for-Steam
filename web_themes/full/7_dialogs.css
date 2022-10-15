@@ -585,13 +585,15 @@
 	border-radius: var(--card_radius) !important;
 }
 
-/* DLC Grid */
-.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_DlcGrid_"]
+/* DLC & Workshop Grid */
+.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_DlcGrid_"],
+.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_WorkshopGrid_"]
 {
 	border-radius: var(--card_radius) !important;
 }
 
-.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_DlcGrid_"] [class*="appproperties_DlcHeader_"]
+.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_DlcGrid_"] [class*="appproperties_DlcHeader_"],
+.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_WorkshopGrid_"] [class*="appproperties_WorkshopHeader_"]
 {
 	background: var(--card_bg) !important;
 }
