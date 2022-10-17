@@ -30,6 +30,13 @@
 	box-shadow: none !important;
 }
 
+/* Header Drag */
+.client_chat_frame .currentUserContainer [class*="personanameandstatus_statusAndName_"],
+.client_chat_frame .currentUserContainer [class*="personanameandstatus_gameName_"]
+{
+	-webkit-app-region: drag !important;
+}
+
 /* Avatar HeaderBar */
 .currentUserContainer
 {
