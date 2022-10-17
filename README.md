@@ -2,20 +2,20 @@
 
 A skin to make Steam look more like a native GNOME app
 
-<p align="center"><img src="screenshot.png?raw=true" /></p>
+<p align="center"><img src="screenshot.png?raw=true"/></p>
 
 ## Current state and plans
 
-* **Main window**: done
-* **Settings**: mostly done
-* **Common controls**: mostly done
-* **New library, new chat, other web-based client parts**: partially done
-* **Overlay**: partially done
-* **Old library, old chat, other old unused windows**: not planned
-* **Small mode and other secondary windows**: planned if requested
-* **High resolutions**: all new graphics assets have `@2x` variants that will be used when scaling is enabled in both Steam and OS settings
-* **Recoloring**: colors can be changed in `Adwaita/adw/colors.styles`
-* **Light theme**: not planned, would require redrawing all assets to be visible on light backgrounds
+* **Main window**: done.
+* **Settings**: mostly done.
+* **Common controls**: mostly done.
+* **New library, new chat, other web-based client parts**: partially done.
+* **Overlay**: partially done.
+* **Old library, old chat, other old unused windows**: not planned.
+* **Small mode and other secondary windows**: planned if requested.
+* **High resolutions**: all new graphics assets have `@2x` variants that will be used when scaling is enabled in both Steam and OS settings.
+* **Recoloring**: colors can be changed in `Adwaita/adw/colors.styles`.
+* **Light theme**: not planned, would require redrawing all assets to be visible on light backgrounds.
 
 ### Limitations
 
@@ -24,8 +24,8 @@ A skin to make Steam look more like a native GNOME app
 
 ## Requirements
 
-* The skin was created for Linux version of Steam and wasn't tested on Windows or macOS. It will probably work with additional visual issues
-* The skin uses [Cantarell](https://gitlab.gnome.org/GNOME/cantarell-fonts) as the default font, it may look broken without it
+* [Cantarell fonts](https://gitlab.gnome.org/GNOME/cantarell-fonts) as static fonts. Some distros install Cantarell as a variable font that is not supported by Steam, see [#45](https://github.com/tkashkin/Adwaita-for-Steam/issues/45).
+* The skin was created for the Linux version of Steam and wasn't tested on Windows or macOS. It will work with some visual problems.
 
 ## Installation
 
@@ -44,6 +44,12 @@ Run `./install.py -w {base, full, none}` to change the type of theme for web bas
 Run `./install.py -we ${web_extra_name}` to add an optional extra to the web theme.
 
 Run `./install.py -h` to see all installer options.
+
+### With graphical installer
+
+Use the [graphical installer](https://github.com/Foldex/AdwSteamGtk) by [@Foldex](https://github.com/Foldex).
+
+<a href="https://flathub.org/apps/details/io.github.Foldex.AdwSteamGtk"><img width="200" alt="Download on Flathub" src="https://flathub.org/assets/badges/flathub-badge-i-en.svg"/></a>
 
 ### Manual installation
 
