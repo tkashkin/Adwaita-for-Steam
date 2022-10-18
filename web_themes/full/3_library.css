@@ -19,6 +19,12 @@
 	border-radius: var(--card_radius) !important;
 }
 
+[class*="appportrait_LibraryItemBox_"][class*="appportrait_FeaturedCapsule_"] [class*="libraryassetimage_Image_"]
+{
+	border-bottom-left-radius: 0px !important;
+	border-bottom-right-radius: 0px !important;
+}
+
 /* Game Hours Subscript */
 [class*="appportrait_LibraryItemBoxSubscript_"]
 {
