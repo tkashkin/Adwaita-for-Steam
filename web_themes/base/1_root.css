@@ -72,6 +72,12 @@
 	--button_suggested_click_bg: rgba(0, 0, 0, 0.2);
 	--button_suggested_blend: overlay;
 
+	--checkbox_checked_bg: var(--button_suggested_bg);
+	--checkbox_checked_sw: 45;
+	--checkbox_radius: 6px;
+	--checkbox_bg: transparent;
+	--checkbox_bs: inset 0px 0px 0px 2px var(--button_hover_bg);
+
 	--border: rgba(255, 255, 255, 0.15);
 
 	--card_bg: rgba(255, 255, 255, 0.1);
