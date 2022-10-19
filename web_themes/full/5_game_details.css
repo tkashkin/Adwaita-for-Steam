@@ -136,7 +136,9 @@
 [class*="appactivityday_PartnerEventMediumImage_Container_"],
 [class*="appdetailsdlcsection_Gloss_"],
 [class*="writereview_RatingContainer_"],
-[class*="appdetailsgameinfopanel_Container_"]
+[class*="appdetailsgameinfopanel_Container_"],
+[class*="appactivityday_LeftSideMajorUpdateBar_"],
+[class*="appactivityday_PartnerEventLargeUpdate_"]
 {
 	background: none !important;
 }
@@ -144,7 +146,8 @@
 /* Remove Image Borders */
 [class*="appactivityday_PartnerEvent_"],
 [class*="appactivityday_PartnerEventLargeUpdate_"],
-[class*="spotlight_MajorEventContainer_"]
+[class*="spotlight_MajorEventContainer_"],
+[class*="appactivityday_PartnerEventLargeUpdate_"]
 {
 	border-image-source: none !important;
 }
@@ -178,6 +181,27 @@
 [class*="appactivityday_Blur_"]
 {
 	display:none;
+}
+
+/* Partner Updates */
+[class*="appactivityday_PartnerEventLargeUpdate_"]
+{
+	box-shadow: none !important;
+}
+
+[class*="appactivityday_PartnerEventTypeUpdate_"]
+{
+	color: var(--fg) import !important;
+}
+
+[class*="appactivityday_PartnerEventLargeImage_Summary_"]
+{
+	color: #929799 !important;
+}
+
+[class*="appactivityday_PartnerEventFeaturedHeader_"]
+{
+	background: none !important;
 }
 
 /* Post Game Summary */
@@ -312,10 +336,4 @@
 {
 	background: var(--button_hover_bg) !important;
 	border-radius: var(--button_radius) !important;
-}
-
-/* Fetch More Padding */
-[class*="appdetailsactivitysection_FetchMoreContainer_"]
-{
-	padding: 4px 0px !important;
 }
