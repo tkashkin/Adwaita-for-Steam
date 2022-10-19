@@ -19,7 +19,8 @@
 [class*="spotlight_MajorEventContainer_"],
 [class*="spotlight_MajorEventBackground_"],
 [class*="writereview_RightContainer_"] button,
-[class*="appdetailsgameinfopanel_Description_"]
+[class*="appdetailsgameinfopanel_Description_"],
+[class*="appactivitydlc_Contents_"]
 {
 	border-radius: var(--card_radius) !important;
 	background: var(--card_bg) !important;
@@ -207,6 +208,35 @@
 [class*="appdetailsoverview_Container_"]
 {
 	background: var(--bg) !important;
+}
+
+/* Available DLC */
+[class*="appactivitydlc_Contents_"],
+[class*="appactivitydlc_CarouselItem_"] [class*="appactivitydlc_CarouselImage_"]
+{
+	box-shadow: none !important;
+}
+
+[class*="appactivitydlc_ViewAll_"]
+{
+	border-radius: var(--button_radius) !important;
+}
+
+[class*="appactivitydlc_ViewAll_"]:hover
+{
+	background: var(--button_hover_bg) !important;
+	border-radius: var(--button_radius) !important;
+}
+
+[class*="appdetailsdlcsection_StoreHover_"]
+{
+	border-radius: var(--card_radius) !important;
+}
+
+[class*="tooltip_ToolTipCustom_"]
+{
+	background: var(--popover_bg) !important;
+	border-radius: var(--popover_radius) !important;
 }
 
 /* Activity Post */
