@@ -1,0 +1,9 @@
+/* --------------------------------- */
+/* --- Hide Window Close Button  --- */
+/* --------------------------------- */
+.title-bar-actions .title-area-icon.closeButton,
+#root [class*="login_CloseButton_"]
+{
+	display: none !important;
+}
+
