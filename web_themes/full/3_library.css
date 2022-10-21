@@ -33,6 +33,19 @@
 	margin-top: -20px !important;
 }
 
+/* New to Library */
+[class*="appportrait_AppPortraitBannerContainer_"]
+{
+	top: 1px !important;
+}
+
+[class*="appportrait_AppPortraitBannerContainer_"] [class*="appportrait_AppPortraitBanner_"]
+{
+	background: var(--accent_bg) !important;
+	border-bottom-left-radius: var(--card_radius) !important;
+	border-bottom-right-radius: var(--card_radius) !important;
+}
+
 /* Update Summary */
 [class*="libraryhomenewupdates_HoversEnabled_"]:hover [class*="libraryhomenewupdates_EventSummaryContainer_"]
 {
