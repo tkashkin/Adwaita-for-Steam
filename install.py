@@ -49,6 +49,11 @@ WEB_FULL_FILES = [
 	webthemedir / "base/10_new_login.css",
 ]
 
+SHARED_PATCHES = [
+	"windowcontrols/hide-close",
+	"windowcontrols/right-all",
+]
+
 def find_patches() -> list[Path]:
 	return list(patchdir.glob("**/*.patch"))
 
@@ -93,13 +98,17 @@ def gen_webkit_theme(target: Path, name: str, selected_extras: list[Path]):
 				shutil.copyfileobj(fd, wfd)
 
 		if selected_extras:
+			print()
 			for f in selected_extras:
-				f = webthemedir / "extras/{}{}".format(f.removesuffix(".css"), ".css")
+				we = f.removesuffix(".css")
+				f = webthemedir / "extras/{}{}".format(we, ".css")
 				if f.exists():
 					with open(f,'rb') as fd:
+						print(f"Applying web_extra {TEXT_BOLD}{we}{TEXT_RESET}...")
 						shutil.copyfileobj(fd, wfd)
 				else:
 					print(f"Web Extra: {TEXT_BOLD}{f}{TEXT_RESET} not found!")
+			print()
 
 def install(source: Path, target: Path, name: str):
 	if target.is_dir():
@@ -144,8 +153,16 @@ if __name__ == "__main__":
 
 		if args.patch:
 			for patch_file in args.patch:
-				patch = patchdir / "{}{}".format(patch_file.removesuffix(".patch"), ".patch")
+				p = patch_file.removesuffix(".patch")
+				patch = patchdir / "{}{}".format(p, ".patch")
+
 				if patch.exists():
+					if [s for s in SHARED_PATCHES if p == s]:
+						if not args.web_extras:
+							args.web_extras = [p]
+						elif not [s for s in args.web_extras if p in s]:
+							args.web_extras.append(p)
+
 					apply_patch(tmp, patch)
 
 		gen_webkit_theme(sourcedir / CSS_FILE, args.web_theme, args.web_extras)
