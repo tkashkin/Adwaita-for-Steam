@@ -89,6 +89,41 @@
 }
 
 /* Remember Me */
+#root [class*="login_Login_"] [class*="newlogindialog_Checkbox_"]:empty
+{
+	background: var(--checkbox_bg) !important;
+	border-radius: var(--checkbox_radius) !important;
+	box-shadow: var(--checkbox_bs) !important;
+}
+
+#root [class*="login_Login_"] [class*="newlogindialog_Checkbox_"]
+{
+	background: var(--checkbox_checked_bg) !important;
+	background-blend-mode: var(--button_suggested_blend) !important;
+	border-radius: var(--checkbox_radius) !important;
+	box-shadow: none !important;
+}
+
+#root [class*="login_Login_"] [class*="newlogindialog_Checkbox_"]:hover
+{
+	background-color: var(--button_suggested_hover_bg) !important;
+}
+
+#root [class*="login_Login_"] [class*="newlogindialog_Checkbox_"]:empty:active
+{
+	background: var(--button_hover_bg) !important;
+}
+
+#root [class*="login_Login_"] [class*="newlogindialog_Checkbox_"]:active
+{
+	background-color: var(--button_suggested_click_bg) !important;
+}
+
+#root [class*="login_Login_"] [class*="newlogindialog_Checkbox_"] [class*="newlogindialog_Check_"] svg
+{
+	stroke-width: var(--checkbox_checked_sw) !important;
+}
+
 #root [class*="login_Login_"] [class*="newlogindialog_Checkbox_"]:focus
 {
 	outline: none !important;
