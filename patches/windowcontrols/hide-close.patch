@@ -1,0 +1,11 @@
+# Hide Close Button (Display no Controls)
+--- Adwaita/resource/steamscheme.res
++++ Adwaita/resource/steamscheme.res
+@@ -6,6 +6,7 @@
+ 		{
+ 			frame_close
+ 			{
++				visible 0
+ 				xpos	r31
+ 				ypos	7
+ 				wide	0

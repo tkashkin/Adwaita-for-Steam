@@ -190,6 +190,31 @@
 	display: none !important;
 }
 
+.title-area-icon.maximizeButton svg
+{
+	width: 7px !important;
+	margin-left: 9px !important;
+	margin-top: 6px !important;
+}
+
+.title-area-icon.maximizeButton svg rect
+{
+	width: 160px !important;
+	height: 160px !important;
+	stroke-width: 70px !important;
+}
+
+.title-area-icon.maximizeButton svg line
+{
+	display: none !important;
+}
+
+.title-area-icon.minimizeButton svg
+{
+	width: 10px !important;
+	margin-left: 7px !important;
+}
+
 /* PagedSettingsDialog */
 .ModalDialogPopup .DialogContent:not(.GenericConfirmDialog),
 .ModalDialogPopup .DialogContent:not(.GenericConfirmDialog) .DialogContentTransition,
