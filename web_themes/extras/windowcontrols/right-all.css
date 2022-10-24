@@ -1,0 +1,9 @@
+/* ------------------------------------------ */
+/* --- Show Minimize and Maximize Button  --- */
+/* ------------------------------------------ */
+.title-bar-actions .title-area-icon.minimizeButton,
+.title-bar-actions .title-area-icon.maximizeButton
+{
+	display: block !important;
+}
+

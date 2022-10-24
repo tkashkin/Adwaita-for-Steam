@@ -29,6 +29,8 @@
 	--error_bg: #c01c28;
 	--error_fg: var(--fg);
 
+	--border: rgba(255, 255, 255, 0.15);
+
 	--button_bg: rgba(255, 255, 255, 0.1);
 	--button_fg: rgba(255, 255, 255, 1);
 	--button_hover_bg: rgba(255, 255, 255, 0.15);
@@ -41,6 +43,12 @@
 	--button_suggested_blend: overlay;
 	--button_radius: 6px;
 	--button_pill_radius: 9999px;
+  
+	--checkbox_checked_bg: var(--button_suggested_bg);
+	--checkbox_checked_sw: 45;
+	--checkbox_radius: 6px;
+	--checkbox_bg: transparent;
+	--checkbox_bs: inset 0px 0px 0px 2px var(--button_hover_bg);
 
 	--card_bg: rgba(255, 255, 255, 0.1);
 	--card_fg: var(--fg);
@@ -92,8 +100,6 @@
 	--toast_border_spacing: 6px;
 	--toast_padding: 6px;
 	--toast_padding_left: 12px;
-
-	--border: rgba(255, 255, 255, 0.15);
 
 	--scrollbar: rgba(255, 255, 255, 0.2);
 	--scrollbar_hover: rgba(255, 255, 255, 0.4);
