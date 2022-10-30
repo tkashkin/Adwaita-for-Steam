@@ -107,7 +107,7 @@ Scheme
 			
 			CancelButton
 			{
-				xpos	r57
+				xpos	r88
 				ypos	7
 				wide	50
 				tall	34

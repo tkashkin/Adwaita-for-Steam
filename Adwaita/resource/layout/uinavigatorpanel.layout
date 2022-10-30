@@ -24,8 +24,8 @@ uinavigatorpanel.layout
  	  	place { control="emailreminderbar" margin-top=0 width=max height=48 start="LibraryAnchor" dir=down}
  	  	place { control="phonereminderbar" margin-top=0 width=max height=80 start="emailreminderbar" dir=down}
 
-		place { control="WebPanel" width=max height=max start="phonereminderbar" dir=down margin-right=2 }
-		place { control="NewLibraryPage" width=max height=max start="phonereminderbar" dir=down margin-right=2 }
+		place { control="WebPanel" width=max height=max start="phonereminderbar" dir=down }
+		place { control="NewLibraryPage" width=max height=max start="phonereminderbar" dir=down }
 		place { control="ConsolePage" width=max height=max start="phonereminderbar" dir=down }
 
 		place { control=DownloadsPage 			width=max height=max start=phonereminderbar dir=down }

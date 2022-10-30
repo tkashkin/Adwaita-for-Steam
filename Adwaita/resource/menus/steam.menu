@@ -4,7 +4,7 @@ menubar
 	{
 		text=""
 
-		SkinVersion			{ text="Adwaita for Steam v0.17" shellcmd="steam://openurl/https://github.com/tkashkin/Adwaita-for-Steam" }
+		SkinVersion			{ text="Adwaita for Steam v0.18" shellcmd="steam://openurl/https://github.com/tkashkin/Adwaita-for-Steam" }
 
 		Divider				{}
 
@@ -16,7 +16,10 @@ menubar
 		StartVR				{ text="#steam_menu_startvr" command="startvr" }
 		ExitVR				{ text="#steam_menu_exitvr" command="exitvr" }
 		BigPicture			{ text="#steam_menu_bigpicturemode" shellcmd="steam://open/bigpicture" }
-		
+
+		MiniMode			{ text="#steam_menu_minimode" shellcmd="steam://open/minigameslist" }
+		Divider				{}
+		LargeMode			{ text="#steam_menu_largemode" shellcmd="steam://open/largegameslist" }
 		Divider				{}
 
 		ActivateRetail		{ text="#Steam_RegisterProductCode" command="ActivateRetail" }
@@ -41,8 +44,11 @@ menubar
 		About				{ text="#steam_about" command="About" }
 		CheckForUpdates		{ text="#steam_menu_checkforupdates" command="CheckForUpdates" }
 		SystemInfo			{ text="#steam_menu_systeminfo" command="SystemInfo" }
-		Settings			{ text="#steam_menu_settings" command="Settings" }
 		Console				{ text="#app_task_console" shellcmd="steam://open/console" }
+
+		Divider				{}
+
+		Settings			{ text="#steam_menu_settings" command="Settings" }
 
 		Divider				{}
 

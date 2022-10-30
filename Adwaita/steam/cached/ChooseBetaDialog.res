@@ -27,7 +27,7 @@ ChooseBetaDialog.res
 		{
 			font-style=none
 			font-weight=700
-			textcolor="window_fg"
+			textcolor="popover_fg"
 		}
 		URLLabel:hover
 		{

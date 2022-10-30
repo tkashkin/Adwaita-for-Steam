@@ -32,7 +32,7 @@ colors.styles
 		headerbar_fg="255 255 255 255"
 		headerbar_backdrop="36 36 36 255"
 		headerbar_backdrop_fg="255 255 255 128"
-		headerbar_shade="0 0 0 128"
+		headerbar_shade="0 0 0 96"
 
 		view_bg="30 30 30 255"
 		view_fg="255 255 255 255"

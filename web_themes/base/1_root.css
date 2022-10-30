@@ -46,7 +46,7 @@
 	--headerbar_fg: var(--fg);
 	--headerbar_border: var(--fg);
 	--headerbar_backdrop: var(--bg);
-	--headerbar_shade: rgba(0, 0, 0, 0.5);
+	--headerbar_shade: rgba(0, 0, 0, 0.38);
 
 	--popover_bg: #383838;
 	--popover_fg: var(--fg);

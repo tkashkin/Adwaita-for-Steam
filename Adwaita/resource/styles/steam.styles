@@ -108,6 +108,7 @@ steam.styles
 		// splash screen
 		ProgressBox
 		{
+			bgcolor="popover_bg"
 			render_bg
 			{
 				0="image(x0+160, y0+24, x0+204, y0+86, assets/splash_logo)"
