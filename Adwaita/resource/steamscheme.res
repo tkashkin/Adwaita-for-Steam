@@ -78,7 +78,7 @@ Scheme
 
 			frame_close
 			{
-				visible	1
+				visible	0
 				xpos	-999
 				ypos	0
 				wide	0
@@ -107,7 +107,7 @@ Scheme
 			
 			CancelButton
 			{
-				xpos	r88
+				xpos	r57
 				ypos	7
 				wide	50
 				tall	34
