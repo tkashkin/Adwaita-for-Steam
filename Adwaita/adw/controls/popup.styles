@@ -4,7 +4,7 @@ popup.styles
 	{
 		Menu.TextInset=4
 		Tooltip.Delay=75
-		Tooltip.Anchor=Parent
+		Tooltip.Anchor=Cursor
 		Notifications.PanelPosition=TopRight
 		Notifications.SlideDirection=None
 		Notifications.FadeInTime=0
