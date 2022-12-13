@@ -1,36 +1,36 @@
 colors.styles
 {
-	// Adwaita colors from https://gnome.pages.gitlab.gnome.org/libadwaita/doc/1-latest/named-colors.html
+	// Yaru colors from https://github.com/ubuntu/yaru/blob/master/gtk/src/default/gtk-4.0/_colors.scss
 	colors
 	{
-		accent="120 174 237 255"
-		accent_bg="53 132 228 255"
+		accent="233 84 32 255"
+		accent_bg="233 84 32 255"
 		accent_fg="255 255 255 255"
 
-		destructive="255 123 99 255"
-		destructive_bg="192 28 40 255"
+		destructive="199 22 43 255"
+		destructive_bg="199 22 43 255"
 		destructive_fg="255 255 255 255"
 
-		success="143 240 164 255"
-		success_bg="38 162 105 255"
+		success="14 132 32 255"
+		success_bg="14 132 32 255"
 		success_fg="255 255 255 255"
 
-		warning="248 228 92 255"
-		warning_bg="205 147 9 255"
+		warning="249 155 17 255"
+		warning_bg="249 155 17 255"
 		warning_fg="0 0 0 204"
 
-		error="255 123 99 255"
-		error_bg="192 28 40 255"
+		error="199 22 43 255"
+		error_bg="199 22 43 255"
 		error_fg="255 255 255 255"
 
-		window_bg="36 36 36 255"
-		window_bg_transparent="36 36 36 0"
+		window_bg="44 44 44 255"
+		window_bg_transparent="44 44 44 0"
 		window_fg="255 255 255 255"
 		window_border="255 255 255 28"
 
-		headerbar_bg="48 48 48 255"
+		headerbar_bg="36 36 36 255"
 		headerbar_fg="255 255 255 255"
-		headerbar_backdrop="36 36 36 255"
+		headerbar_backdrop="44 44 44 255"
 		headerbar_backdrop_fg="255 255 255 128"
 		headerbar_shade="0 0 0 96"
 
@@ -54,6 +54,6 @@ colors.styles
 		scrollbar_hover="255 255 255 102"
 		scrollbar_active="255 255 255 153"
 
-		focusring="120 174 237 128"
+		focusring="239 134 97 364"
 	}
 }

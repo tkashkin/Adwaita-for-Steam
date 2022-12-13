@@ -4,7 +4,7 @@
 
 :root
 {
-	--bg: #242424;
+	--bg: #2c2c2c;
 	--fg: #ffffff;
 
 	--button_radius: 6px;
@@ -16,24 +16,24 @@
 	--window_radius: calc(var(--button_radius) + 6px);
 	--popover_radius: var(--window_radius);
 
-	--accent: #78aeed;
-	--accent_bg: #3584e4;
+	--accent: #e95420;
+	--accent_bg: #e95420;
 	--accent_fg: var(--fg);
 
-	--destructive: #ff7b63;
-	--destructive_bg: #c01c28;
+	--destructive: #c7162b;
+	--destructive_bg: #c7162b;
 	--destructive_fg: var(--fg);
 
-	--success: #8ff0a4;
-	--success_bg: #26a269;
+	--success: #0e8420;
+	--success_bg: #0e8420;
 	--success_fg: var(--fg);
 
-	--warning: #f8e45c;
-	--warning_bg: #cd9309;
+	--warning: #f99b11;
+	--warning_bg: #f99b11;
 	--warning_fg: var(--fg);
 
-	--error: #ff7b63;
-	--error_bg: #c01c28;
+	--error: #c7162b;
+	--error_bg: #c7162b;
 	--error_fg: var(--fg);
 
 	--window_bg: var(--bg);
@@ -42,7 +42,7 @@
 	--view_bg: #1e1e1e;
 	--view_fg: var(--fg);
 
-	--headerbar_bg: #303030;
+	--headerbar_bg: #242424;
 	--headerbar_fg: var(--fg);
 	--headerbar_border: var(--fg);
 	--headerbar_backdrop: var(--bg);
@@ -87,7 +87,7 @@
 	--scrollbar_hover: rgba(255, 255, 255, 0.4);
 	--scrollbar_active: rgba(255, 255, 255, 0.6);
 
-	--focus_ring: rgba(120, 174, 237, 0.5);
+	--focus_ring: rgba(239, 134, 97, 0.7);
 	--focus_ring_bs: inset 0px 0px 0px 2px var(--focus_ring);
 
 	--ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
