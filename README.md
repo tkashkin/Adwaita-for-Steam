@@ -1,6 +1,8 @@
-# Adwaita for Steam
+# Yaru for Steam
 
-A skin to make Steam look more like a native GNOME app
+A skin to make Steam look more like a native Ubuntu app.
+
+This is a fork of [Adwaita-for-Steam](https://github.com/tkashkin/Adwaita-for-Steam), all the credit goes to them.
 
 <p align="center"><img src="screenshot.png?raw=true"/></p>
 
@@ -22,7 +24,7 @@ A skin to make Steam look more like a native GNOME app
 
 ## Requirements
 
-* [Cantarell fonts](https://gitlab.gnome.org/GNOME/cantarell-fonts) as static fonts. Some distros install Cantarell as a variable font that is not supported by Steam, see [#45](https://github.com/tkashkin/Adwaita-for-Steam/issues/45).
+* [Ubuntu fonts](https://design.ubuntu.com/font/) as static fonts. Some distros install it as a variable font that is not supported by Steam, see [#45](https://github.com/tkashkin/Adwaita-for-Steam/issues/45).
 * The skin was created for the Linux version of Steam and wasn't tested on Windows or macOS. It will work with some visual problems.
 
 ## Installation
@@ -30,8 +32,8 @@ A skin to make Steam look more like a native GNOME app
 ### With installer script
 
 ```bash
-git clone https://github.com/tkashkin/Adwaita-for-Steam
-cd Adwaita-for-Steam
+git clone https://github.com/Jupi007/Yaru-for-Steam
+cd Yaru-for-Steam
 ./install.py
 ```
 
@@ -43,18 +45,13 @@ Run `./install.py -we ${web_extra_name}` to add an optional extra to the web the
 
 Run `./install.py -h` to see all installer options.
 
-### With graphical installer
-
-Use the [graphical installer](https://github.com/Foldex/AdwSteamGtk) by [@Foldex](https://github.com/Foldex).
-
-<a href="https://flathub.org/apps/details/io.github.Foldex.AdwSteamGtk"><img width="200" alt="Download on Flathub" src="https://flathub.org/assets/badges/flathub-badge-i-en.svg"/></a>
-
 ### Manual installation
 
-1. Download the [latest skin version](https://github.com/tkashkin/Adwaita-for-Steam/archive/master.zip)
+1. Download the [latest skin version](https://github.com/Jupi007/Yaru-for-Steam/archive/master.zip)
 2. Extract `Adwaita` directory into Steam `skins` directory (create if it doesn't exist):
    * **Linux**: `~/.steam/steam/skins` or `~/.local/share/Steam/skins`
    * **Linux (flatpak)**: `~/.var/app/com.valvesoftware.Steam/.local/share/Steam/skins`
    * ~~Windows~~ (untested): `C:\Program Files (x86)\Steam\skins` by default
    * ~~macOS~~ (untested): `~/Library/Application Support/Steam/Steam.AppBundle/Steam/Contents/MacOS/skins`
-3. Open Steam and select `Adwaita` skin in Settings > Interface (restart Steam if it doesn't appear in the list)
+3. Rename it into `Yaru`
+4. Open Steam and select `Yaru` skin in Settings > Interface (restart Steam if it doesn't appear in the list)

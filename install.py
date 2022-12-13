@@ -10,6 +10,7 @@ import os
 TEXT_BOLD = "\033[1m"
 TEXT_RESET = "\033[0m"
 
+SKIN_NAME = "Yaru"
 SKIN_DIR = "Adwaita"
 PATCH_DIR = "patches"
 WEB_THEME_DIR = "web_themes"
@@ -132,11 +133,11 @@ if __name__ == "__main__":
 	if not webthemedir.exists():
 		raise SystemExit(f"Web Theme directory {TEXT_BOLD}{WEB_THEME_DIR}{TEXT_RESET} does not exist. Make sure you're running the installer from its root directory")
 
-	parser = ArgumentParser(description = "Adwaita-for-Steam installer")
+	parser = ArgumentParser(description = "Yaru-for-Steam installer")
 	parser.add_argument("-t", "--target", nargs = "+", action = "extend", default = ["normal", "flatpak"], help = "Install targets: 'normal', 'flatpak', custom paths")
 	parser.add_argument("-l", "--list-patches", action = "store_true", help = "List available patches and exit")
 	parser.add_argument("-p", "--patch", nargs = "+", action = "extend", help = "Apply one or multiple patches")
-	parser.add_argument("-n", "--name", default = SKIN_DIR, help = "Rename installed skin")
+	parser.add_argument("-n", "--name", default = SKIN_NAME, help = "Rename installed skin")
 	parser.add_argument("-w", "--web-theme", choices = ["base", "full", "none"], default = "base", help = "Choose web theme variant")
 	parser.add_argument("-we", "--web-extras", nargs = "+", action = "extend", help = "Enable one or multiple web theme extras")
 	args = parser.parse_args()
