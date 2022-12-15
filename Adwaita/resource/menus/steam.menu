@@ -4,10 +4,6 @@ menubar
 	{
 		text=""
 
-		SkinVersion			{ text="Yaru for Steam v0.21" shellcmd="steam://openurl/https://github.com/Jupi007/Yaru-for-Steam" }
-
-		Divider				{}
-
 		ViewFriends			{ text="#steam_menu_view_friends" shellcmd="steam://open/friends" }
 		ViewPlayerList		{ text="#steam_menu_view_players" shellcmd="steam://friends/players" }
 		
