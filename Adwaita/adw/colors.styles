@@ -54,6 +54,6 @@ colors.styles
 		scrollbar_hover="255 255 255 102"
 		scrollbar_active="255 255 255 153"
 
-		focusring="239 134 97 364"
+		focusring="239 134 97 178"
 	}
 }
