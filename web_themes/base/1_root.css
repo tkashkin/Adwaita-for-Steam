@@ -2,8 +2,7 @@
 /* --- Colors --- */
 /* -------------- */
 
-:root
-{
+:root {
 	--bg: #2c2c2c;
 	--fg: #ffffff;
 
@@ -95,6 +94,5 @@
 
 	--dim_label_fg: rgba(255, 255, 255, 0.55);
 
-	--basefont: "Cantarell";
+	--basefont: "Ubuntu";
 }
-

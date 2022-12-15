@@ -16,7 +16,7 @@ steam.styles
 
 	colors
 	{
-		basefont="Cantarell"
+		basefont="Ubuntu"
 		none="0 0 0 0"
 	}
 
