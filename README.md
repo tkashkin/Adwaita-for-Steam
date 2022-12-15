@@ -4,6 +4,8 @@ A skin to make Steam look more like a native Ubuntu app.
 
 This is a fork of [Adwaita-for-Steam](https://github.com/tkashkin/Adwaita-for-Steam), all the credit goes to them.
 
+The Yaru icon assets (any and all source `.svg` files under `Yaru/` or related rendered `.png` files) are licensed under the terms of the [Creative Commons Attribution-ShareAlike 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/).
+
 <p align="center"><img src="screenshot.png?raw=true"/></p>
 
 ## Current state and plans
