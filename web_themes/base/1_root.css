@@ -19,10 +19,16 @@
 	--accent: #78aeed;
 	--accent_bg: #3584e4;
 	--accent_fg: var(--fg);
+	--accent_disabled: rgba(120, 174, 237, 0.5);
+	--accent_hover_bg: rgba(120, 174, 237, 0.07);
+	--accent_active_bg: rgba(120, 174, 237, 0.16);
 
 	--destructive: #ff7b63;
 	--destructive_bg: #c01c28;
 	--destructive_fg: var(--fg);
+	--destructive_disabled: rgba(255, 123, 99, 0.5);
+	--destructive_hover_bg: rgba(255, 123, 99, 0.07);
+	--destructive_active_bg: rgba(255, 123, 99, 0.16);
 
 	--success: #8ff0a4;
 	--success_bg: #26a269;
