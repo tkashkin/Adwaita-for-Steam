@@ -1,8 +1,4 @@
-menubar
-{
-	Steam
-	{
-		text=""
+menubar { Steam { text=""
 
 		ViewFriends			{ text="#steam_menu_view_friends" shellcmd="steam://open/friends" }
 		ViewPlayerList		{ text="#steam_menu_view_players" shellcmd="steam://friends/players" }
@@ -32,7 +28,7 @@ menubar
 		Divider				{}
 		
 		GoOnline			{ text="#SteamUI_OfflineMode_GoOnline" command="goonline" }
-		GoOffline			{ text="#SteamUI_OfflineMode_GoOffline"	command="gooffline" }
+		GoOffline			{ text="#SteamUI_OfflineMode_GoOffline" command="gooffline" }
 		ChangeUser			{ text="#steam_menu_changeuser" command="ChangeUser" }
 
 		Divider				{}
