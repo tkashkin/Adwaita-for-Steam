@@ -184,7 +184,8 @@
 }
 
 /* Partner Updates */
-[class*="appactivityday_PartnerEventLargeUpdate_"]
+[class*="appactivityday_PartnerEventLargeUpdate_"],
+[class*="appactivityday_PartnerEventFeatured_"]
 {
 	box-shadow: none !important;
 }
