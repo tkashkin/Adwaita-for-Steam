@@ -60,7 +60,8 @@
 	margin-top: 1px !important;
 }
 
-.currentUserAvatar .avatarHolder
+.currentUserAvatar .avatarHolder,
+.currentUserAvatar .avatarFrame img
 {
 	border: none !important;
 	height: 44px !important;
