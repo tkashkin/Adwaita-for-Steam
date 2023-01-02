@@ -181,7 +181,8 @@
 
 #root [class*="login_Login_"] [class*="newlogindialog_EmbeddedRoot_"]
 {
-	gap: 16px !important;
+	column-gap: 16px !important;
+	row-gap: 0 !important;
 	flex-grow: 1 !important;
 }
 
@@ -200,11 +201,28 @@
 #root [class*="login_Login_"] [class*="newlogindialog_Compact_"]
 {
 	width: 100% !important;
+	padding: 24px !important;
+	gap: 0 !important;
+	color: var(--popover_fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: 15px !important;
+	line-height: normal !important;
+	font-weight: 400 !important;
+	letter-spacing: normal !important;
+	text-transform: none !important;
 }
 
-#root [class*="login_Login_"] [class*="newlogindialog_Compact_"] [class*="newlogindialog_PrimaryHeader_"]
+#root [class*="login_Login_"] [class*="newlogindialog_Compact_"] [class*="newlogindialog_PrimaryHeader_"],
+#root [class*="login_Login_"] [class*="newlogindialog_Compact_"] [class*="newlogindialog_FailureTitle_"]
 {
+	color: var(--popover_fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: 20px !important;
+	line-height: normal !important;
+	font-weight: 800 !important;
+	letter-spacing: normal !important;
 	text-transform: none !important;
+	text-align: center;
 }
 
 #root [class*="login_Login_"] [class*="newlogindialog_Compact_"] [class*="newlogindialog_FormContainer_"]
