@@ -160,40 +160,6 @@
 	outline: none !important;
 }
 
-/* Window Controls */
-#root [class*="login_CloseButton_"]
-{
-	background-color: var(--button_bg) !important;
-	border-radius: 50% !important;
-	height: 24px !important;
-	margin-left: 14px !important;
-	transition: var(--focus_transition) !important;
-	width: 24px !important;
-}
-
-#root [class*="login_CloseButton_"]:hover
-{
-	background-color: var(--button_hover_bg) !important;
-}
-
-#root [class*="login_CloseButton_"]:active
-{
-	background-color: var(--button_active_bg) !important;
-}
-
-#root [class*="login_CloseButton_"] > svg
-{
-	height: 10px !important;
-	margin-left: 7px !important;
-	margin-top: 5px !important;
-	width: 10px !important;
-}
-
-#root [class*="login_CloseButton_"] > svg > *
-{
-	stroke: var(--headerbar_fg) !important;
-}
-
 #root [class*="login_Login_"]
 {
 	height: 100% !important;
@@ -215,7 +181,8 @@
 
 #root [class*="login_Login_"] [class*="newlogindialog_EmbeddedRoot_"]
 {
-	gap: 16px !important;
+	column-gap: 16px !important;
+	row-gap: 0 !important;
 	flex-grow: 1 !important;
 }
 
@@ -234,11 +201,28 @@
 #root [class*="login_Login_"] [class*="newlogindialog_Compact_"]
 {
 	width: 100% !important;
+	padding: 24px !important;
+	gap: 0 !important;
+	color: var(--popover_fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: 15px !important;
+	line-height: normal !important;
+	font-weight: 400 !important;
+	letter-spacing: normal !important;
+	text-transform: none !important;
 }
 
-#root [class*="login_Login_"] [class*="newlogindialog_Compact_"] [class*="newlogindialog_PrimaryHeader_"]
+#root [class*="login_Login_"] [class*="newlogindialog_Compact_"] [class*="newlogindialog_PrimaryHeader_"],
+#root [class*="login_Login_"] [class*="newlogindialog_Compact_"] [class*="newlogindialog_FailureTitle_"]
 {
+	color: var(--popover_fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: 20px !important;
+	line-height: normal !important;
+	font-weight: 800 !important;
+	letter-spacing: normal !important;
 	text-transform: none !important;
+	text-align: center;
 }
 
 #root [class*="login_Login_"] [class*="newlogindialog_Compact_"] [class*="newlogindialog_FormContainer_"]

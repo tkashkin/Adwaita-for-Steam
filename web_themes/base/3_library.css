@@ -336,3 +336,25 @@
 {
 	background: var(--button_hover_bg) !important;
 }
+
+/* Drag & Drop */
+[class*="gamelistentry_Container_"][class*="gamelistentry_DropTarget_"] {
+	background-color: var(--button_bg) !important;
+	border-left: 1px solid var(--accent_bg) !important;
+	border-right: 1px solid var(--accent_bg) !important;
+}
+
+[class*="gamelistsectionheader_Container_"][class*="gamelistsectionheader_DropOption_"] {
+	background-color: var(--button_bg) !important;
+}
+
+[class*="gamelistsectionheader_Container_"][class*="gamelistsectionheader_DropTarget_"] {
+	border-left: 1px solid var(--accent_bg) !important;
+	border-right: 1px solid var(--accent_bg) !important;
+	border-top: 1px solid var(--accent_bg) !important;
+}
+
+[class*="gamelistentry_Container_"][class*="gamelistentry_DropTarget_"][class*="gamelistentry_LastInCollection_"],
+[class*="gamelistsectionheader_Container_"][class*="gamelistsectionheader_DropTarget_"][class*="gamelistsectionheader_SingleLine_"] {
+	border-bottom: 1px solid var(--accent_bg) !important;
+}
