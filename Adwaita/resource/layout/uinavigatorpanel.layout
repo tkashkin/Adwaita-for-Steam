@@ -21,28 +21,25 @@ uinavigatorpanel.layout
 		place { control="URLAnchor" align=left y=48 height=38 width=max }
 		place { control="LibraryAnchor" height=38 width=max start="URLAnchor" dir=down }
 
- 	  	place { control="emailreminderbar" margin-top=0 width=max height=48 start="LibraryAnchor" dir=down}
- 	  	place { control="phonereminderbar" margin-top=0 width=max height=80 start="emailreminderbar" dir=down}
+		place { control="WebPanel" width=max height=max start="LibraryAnchor" dir=down }
+		place { control="NewLibraryPage" width=max height=max start="LibraryAnchor" dir=down }
+		place { control="ConsolePage" width=max height=max start="LibraryAnchor" dir=down }
 
-		place { control="WebPanel" width=max height=max start="phonereminderbar" dir=down }
-		place { control="NewLibraryPage" width=max height=max start="phonereminderbar" dir=down }
-		place { control="ConsolePage" width=max height=max start="phonereminderbar" dir=down }
+		place { control="DownloadsPage" width=max height=max start="LibraryAnchor" dir=down }
+		place { control="ScreenshotsPage" width=max height=max start="LibraryAnchor" dir=down }
+		place { control="GamesPage_List" width=max height=max start="LibraryAnchor" dir=down }
+		place { control="GamesPage_Details" width=max height=max start="LibraryAnchor" dir=down }
+		place { control="GamesPage_Grid" width=max height=max start="LibraryAnchor" dir=down }
+		place { control="BroadcastPage" width=max height=max start="LibraryAnchor" dir=down }
+		place { control="BroadcastPageMin" width=298 height=168 margin-top=0 margin-left=2 margin-right=30 margin-bottom=26 dir=down align=bottom-right }
+		place { control="BroadcastPageMinHoriz" width=298 height=168 margin-top=0 margin-left=2 margin-right=30 margin-bottom=40 dir=down align=bottom-right }
 
-		place { control=DownloadsPage 			width=max height=max start=phonereminderbar dir=down }
-		place { control=ScreenshotsPage 		width=max height=max start=phonereminderbar dir=down }
-		place { control=GamesPage_List			width=max height=max start=phonereminderbar dir=down }
-		place { control=GamesPage_Details 		width=max height=max start=phonereminderbar dir=down }
-		place { control=GamesPage_Grid 			width=max height=max start=phonereminderbar dir=down }
-		place { control=BroadcastPage			width=max height=max start=phonereminderbar dir=down }
-		place { control=BroadcastPageMin		width=298 height=168 margin-top=0 margin-left=2 margin-right=30 margin-bottom=26 dir=down align=bottom-right }
-		place { control=BroadcastPageMinHoriz	width=298 height=168 margin-top=0 margin-left=2 margin-right=30 margin-bottom=40 dir=down align=bottom-right }
+		place { control="MediaPage" width=max height=max margin-top=0 margin-left=2 margin-right=8 start="LibraryAnchor" dir=down }
+		place { control="ToolsPage" width=max height=max margin-top=0 margin-left=2 margin-right=8 start="LibraryAnchor" dir=down }
 
-		place { control=MediaPage 		width=max height=max margin-top=0 margin-left=2 margin-right=8 start=phonereminderbar dir=down }
-		place { control=ToolsPage 		width=max height=max margin-top=0 margin-left=2 margin-right=8 start=phonereminderbar dir=down }
-
-		place { control=MusicPage_Details width=max height=max margin-top=0 margin-left=2 margin-right=8 start=phonereminderbar dir=down }
+		place { control="MusicPage_Details" width=max height=max margin-top=0 margin-left=2 margin-right=8 start="LibraryAnchor" dir=down }
 
 		region { name="hidden" width=0 height=0 margin-left=-999 }
-		place { control="label_oldlibrary,subnavgroup_library,label_search_icon,library_search,library_filters,library_zoom,label_library_zoom,library_zoom,label_zoom_separator,label_library_view,library_music_menu,library_music_add_button,library_filters_details,library_filters_list,library_filters_grid,library_music_player_icon,EVCert" region="hidden" width=0 height=0 }
+		place { control="label_oldlibrary,subnavgroup_library,label_search_icon,library_search,library_filters,library_zoom,label_library_zoom,library_zoom,label_zoom_separator,label_library_view,library_music_menu,library_music_add_button,library_filters_details,library_filters_list,library_filters_grid,library_music_player_icon,EVCert,emailreminderbar,phonereminderbar" region="hidden" width=0 height=0 }
 	}
 }
