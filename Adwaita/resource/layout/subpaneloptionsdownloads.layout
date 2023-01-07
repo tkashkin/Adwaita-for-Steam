@@ -2,35 +2,6 @@ subpaneloptionsdownloads.layout
 {
 	styles
 	{
-		CSubPanelOptionsDownloads
-		{
-			render
-			{
-				// library folders button
-				0="image(x0+196, y0+80, x0+208, y0+92, assets/corners/12_mask_window_bg/bl)"
-				1="image(x1-32, y0+80, x1-20, y0+92, assets/corners/12_mask_window_bg/br)"
-				2="image(x1-48, y0+59, x1-32, y0+75, assets/icons/forward)"
-				// region row
-				3="fill(x0+208, y0+126, x1-32, y0+176, button_bg)"
-				4="fill(x0+196, y0+138, x0+208, y0+164, button_bg)"
-				5="fill(x1-32, y0+138, x1-20, y0+164, button_bg)"
-				6="image(x0+196, y0+126, x0+208, y0+138, assets/corners/12_w10/tl)"
-				7="image(x1-32, y0+126, x1-20, y0+138, assets/corners/12_w10/tr)"
-				8="image(x0+196, y0+164, x0+208, y0+176, assets/corners/12_w10/bl)"
-				9="image(x1-32, y0+164, x1-20, y0+176, assets/corners/12_w10/br)"
-				// download restrictions section
-				10="image(x0+196, y0+448, x0+208, y0+460, assets/corners/12_mask_window_bg/bl)"
-				11="image(x1-32, y0+448, x1-20, y0+460, assets/corners/12_mask_window_bg/br)"
-				13="fill(x0+196, y0+459, x1-20, y0+460, window_bg)"
-				// clear download cache button
-				14="image(x0+196, y0+476, x0+208, y0+488, assets/corners/12_mask_window_bg/tl)"
-				15="image(x1-32, y0+476, x1-20, y0+488, assets/corners/12_mask_window_bg/tr)"
-				16="image(x0+196, y0+514, x0+208, y0+526, assets/corners/12_mask_window_bg/bl)"
-				17="image(x1-32, y0+514, x1-20, y0+526, assets/corners/12_mask_window_bg/br)"
-				18="image(x1-44, y0+493, x1-32, y0+509, assets/icons/forward)"
-			}
-		}
-
 		ComboBoxButton
 		{
 			inset-left=-4
@@ -39,6 +10,7 @@ subpaneloptionsdownloads.layout
 
 		ComboBox
 		{
+			minimum-height=34
 			inset-left=8
 			render
 			{
@@ -80,69 +52,6 @@ subpaneloptionsdownloads.layout
 		ComboBox:disabled
 		{
 			render
-			{
-				0="fill(x0+6, y0, x1-6, y1, button_disabled_bg)"
-				1="fill(x0, y0+6, x0+6, y1-6, button_disabled_bg)"
-				2="fill(x1-6, y0+6, x1, y1-6, button_disabled_bg)"
-				3="image(x0, y0, x0+6, y0+6, assets/corners/6_w5/tl)"
-				4="image(x1-6, y0, x1, y0+6, assets/corners/6_w5/tr)"
-				5="image(x0, y1-6, x0+6, y1, assets/corners/6_w5/bl)"
-				6="image(x1-6, y1-6, x1, y1, assets/corners/6_w5/br)"
-			}
-		}
-
-		Button
-		{
-			inset="8 0 8 0"
-			font-family=basefont
-			font-size=14
-			font-weight=400
-			font-style=none
-			bgcolor=none
-			render_bg
-			{
-				0="fill(x0+6, y0, x1-6, y1, button_bg)"
-				1="fill(x0, y0+6, x0+6, y1-6, button_bg)"
-				2="fill(x1-6, y0+6, x1, y1-6, button_bg)"
-				3="image(x0, y0, x0+6, y0+6, assets/corners/6_w10/tl)"
-				4="image(x1-6, y0, x1, y0+6, assets/corners/6_w10/tr)"
-				5="image(x0, y1-6, x0+6, y1, assets/corners/6_w10/bl)"
-				6="image(x1-6, y1-6, x1, y1, assets/corners/6_w10/br)"
-			}
-			render {}
-		}
-		Button:hover
-		{
-			bgcolor=none
-			render_bg
-			{
-				0="fill(x0+6, y0, x1-6, y1, button_hover_bg)"
-				1="fill(x0, y0+6, x0+6, y1-6, button_hover_bg)"
-				2="fill(x1-6, y0+6, x1, y1-6, button_hover_bg)"
-				3="image(x0, y0, x0+6, y0+6, assets/corners/6_w15/tl)"
-				4="image(x1-6, y0, x1, y0+6, assets/corners/6_w15/tr)"
-				5="image(x0, y1-6, x0+6, y1, assets/corners/6_w15/bl)"
-				6="image(x1-6, y1-6, x1, y1, assets/corners/6_w15/br)"
-			}
-		}
-		Button:active
-		{
-			bgcolor=none
-			render_bg
-			{
-				0="fill(x0+6, y0, x1-6, y1, button_active_bg)"
-				1="fill(x0, y0+6, x0+6, y1-6, button_active_bg)"
-				2="fill(x1-6, y0+6, x1, y1-6, button_active_bg)"
-				3="image(x0, y0, x0+6, y0+6, assets/corners/6_w30/tl)"
-				4="image(x1-6, y0, x1, y0+6, assets/corners/6_w30/tr)"
-				5="image(x0, y1-6, x0+6, y1, assets/corners/6_w30/bl)"
-				6="image(x1-6, y1-6, x1, y1, assets/corners/6_w30/br)"
-			}
-		}
-		Button:disabled
-		{
-			bgcolor=none
-			render_bg
 			{
 				0="fill(x0+6, y0, x1-6, y1, button_disabled_bg)"
 				1="fill(x0, y0+6, x0+6, y1-6, button_disabled_bg)"
@@ -206,33 +115,57 @@ subpaneloptionsdownloads.layout
 			font-size=14
 			inset-right=32
 		}
+
+		Label
+		{
+			textcolor="button_disabled_fg"
+		}
+
+		Highlight
+		{
+			textcolor="window_fg"
+			inset-top=16
+		}
+
+		Divider
+		{
+			render
+			{
+				0="fill(x0, y0-1, x1, y0, window_bg)"
+				1="image(x0, y0-12, x0+12, y0, assets/corners/12_mask_window_bg/bl)"
+				2="image(x1-12, y0-12, x1, y0, assets/corners/12_mask_window_bg/br)"
+				3="image(x0, y1, x0+12, y1+12, assets/corners/12_mask_window_bg/tl)"
+				4="image(x1-12, y1, x1, y1+12, assets/corners/12_mask_window_bg/tr)"
+				5="fill(x0, y1+99, x1, y1+100, window_bg)"
+				6="image(x0, y1+88, x0+12, y1+100, assets/corners/12_mask_window_bg/bl)"
+				7="image(x1-12, y1+88, x1, y1+100, assets/corners/12_mask_window_bg/br)"
+			}
+		}
 	}
 	
 	layout
 	{
-		region { name="content" margin-top=24 margin-left=16 width=500 height=max }
+		region { name="content" margin-top=16 margin-left=16 width=520 height=max overflow=scroll-vertical }
 
-		place { control="LibrariesLabel" region="content" dir=down width=max height=34 }
-		place { control="ManageInstalledApps" region="content" start="LibrariesLabel" dir=down width=max height=50 }
+		place { control="PeerContentLabel,PeerContentInfoLabel,PeerContentCombo" region="content" dir=down width=484 spacing=4 }
+		place { control="RegionLabel,RegionInfoLabel,DownloadRegionCombo" region="content" start="PeerContentCombo" dir=down width=484 spacing=4 }
 
-		place { control="RegionLabel" region="content" start="ManageInstalledApps" dir=down width=max height=34 }
-		place { control="DownloadRegionCombo" region="content" start="RegionLabel" dir=down margin-top=8 margin-left=276 width=200 height=34 }
-		place { control="RegionInfoLabel" region="content" start="RegionLabel" dir=down margin-top=8 margin-left=12 width=254 height=34 }
+		place { control="Divider1" region="content" start="DownloadRegionCombo" dir=down margin-top=16 width=484 height=0 }
+		place { control="ManageInstalledApps,FlushDownloadConfig" region="content" start="Divider1" dir=down width=484 height=50 }
 
-		place { control="RestrictionsLabel" region="content" start="RegionLabel" margin-top=50 dir=down width=max height=34 }
-		place { control="AutoUpdateTimeRestrictCheckbox,ThrottleCheckbox" region="content" start="RestrictionsLabel" dir=down width=272 height=50 }
+		place { control="RestrictionsLabel" region="content" start="FlushDownloadConfig" dir=down width=484 height=42 }
 
-		place { control="AutoUpdateTimeRestrictStart,AutoUpdateTimeRestrictEnd" region="content" start="AutoUpdateTimeRestrictCheckbox" align=right margin-top=7 margin-right=8 width=97 height=34 spacing=6 }
+		place { control="AutoUpdateTimeRestrictCheckbox,ThrottleCheckbox" region="content" start="RestrictionsLabel" dir=down width=312 height=50 }
+		place { control="ThrottleRateApply,AllowDownloadsDuringGameplayCheckbox,ThrottleDownloadsWhileStreamingCheckbox,DownloadRatesInBitsCheckbox" region="content" start="ThrottleCheckbox" dir=down width=484 height=50 }
 
-		place { control="ThrottleRateEdit,ThrottleRateApply" region="content" start="ThrottleCheckbox" align=right margin-top=7 margin-right=8 width=97 height=34 spacing=6 }
-		place { control="ThrottleRateEditSuffix" region="content" align=right start="ThrottleRateApply" end-right="ThrottleRateApply" margin-right=10 height=34 }
+		place { control="Divider2" region="content" start="DownloadRatesInBitsCheckbox" dir=down width=484 height=0 }
 
-		place { control="AllowDownloadsDuringGameplayCheckbox,ThrottleDownloadsWhileStreamingCheckbox,DownloadRatesInBitsCheckbox" region="content" start="ThrottleCheckbox" dir=down width=max height=50 }
+		place { control="AutoUpdateTimeRestrictStart,AutoUpdateTimeRestrictEnd" region="content" start="AutoUpdateTimeRestrictCheckbox" margin-top=7 width=80 height=34 spacing=6 }
 
-		place { control="FlushDownloadConfig" region="content" start="DownloadRatesInBitsCheckbox" dir=down width=max height=50 margin-top=16 }
+		place { control="ThrottleRateEdit" region="content" start="ThrottleCheckbox" margin-top=7 width=166 height=34 }
+		place { control="ThrottleRateEditSuffix" region="content" start="ThrottleCheckbox" margin-left=132 height=48 }
 		
 		region { name="hidden" width=0 height=0 margin-left=-999 }
-		place { control="Divider1,Divider2,Divider3,ManageInstalledappsLabel" region="hidden" width=0 height=0 }
-		place { control="AutoUpdateTimeRestrictEndLabel,ThrottleRateCurrent,ThrottleRateEditLabel,FlushDownloadConfigLabel" region="hidden" width=0 height=0 }
+		place { control="Divider3,LibrariesLabel,AutoUpdateTimeRestrictEndLabel,ThrottleRateCurrent,ThrottleRateEditLabel,ManageInstalledappsLabel,FlushDownloadConfigLabel" region="hidden" width=0 height=0 }
 	}
 }

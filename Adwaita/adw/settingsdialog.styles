@@ -63,6 +63,10 @@ settingsdialog.styles
 		"Page Button:disabled"
 		{
 			bgcolor="button_disabled_bg"
+			render
+			{
+				0="image(x1-28, y0+17, x1-12, y1-17, assets/icons/forward_backdrop)"
+			}
 		}
 
 		"Page CheckButton"

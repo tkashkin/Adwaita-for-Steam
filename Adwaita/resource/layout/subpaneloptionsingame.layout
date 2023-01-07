@@ -95,7 +95,7 @@ subpaneloptionsingame.layout
 	{
 		region { name="content" margin-top=16 margin-left=16 width=520 height=max overflow=scroll-vertical }
 
-		place { control="TitleLabel" region="content" dir=down width=484 margin-top=-12 height=54 }
+		place { control="TitleLabel" region="content" dir=down width=484 height=54 margin-top=-12 }
 		place { control="EnableOverlayCheck,EnableVRDesktopGameTheaterCheck,EnableSCTenfootOverlayCheck" region="content" start="TitleLabel" dir=down width=484 height=50 }
 
 		place { control="ShowIngameFPSCombo,ShowIngameFPSContrastCheck" region="content" start="EnableSCTenfootOverlayCheck" dir=down width=484 height=50 margin-top=16 }
