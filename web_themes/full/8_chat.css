@@ -203,12 +203,14 @@
 }
 
 /* Friend Hover BG */
-.friendStatusHover
+.friendStatusHover,
+.ChatRoomListGroupItem
 {
 	margin: 0px var(--menu_margin) !important;
 }
 
-.friendStatusHover:hover
+.friendStatusHover:hover,
+.ChatRoomListGroupItem:hover
 {
 	background: var(--button_bg) !important;
 	border-radius: var(--button_radius) !important;
