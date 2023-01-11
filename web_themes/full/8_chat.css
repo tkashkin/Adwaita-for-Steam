@@ -450,6 +450,24 @@ button[class*="chatentry_EmoticonPickerButton_"]
 	display: none !important;
 }
 
+/* Message Link Preview */
+.msgText div.ChatMessageOpenGraph, .msg div.SteamPublishedFile
+{
+	background: var(--card_bg) !important;
+	border-radius: var(--card_radius) !important;
+}
+
+.msgText .OpenGraphImgBackground
+{
+	display: none !important;
+}
+
+.msgText .OpenGraphMessageURL,
+.msgText .OpenGraphMessageURL_full
+{
+	color: var(--accent) !important;
+}
+
 /* Message /me emote */
 .msg.ChatMsgSlashEmote .speaker
 {
