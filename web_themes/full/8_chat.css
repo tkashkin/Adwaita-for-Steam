@@ -386,6 +386,48 @@ button[class*="chatentry_EmoticonPickerButton_"]
 	box-shadow: none !important;
 }
 
+/* Message Invite */
+.msgText .ChatMessageInvite,
+.msgText .ChatMessageInvite.InviteExpired,
+.msgText .ChatMessageInvite.GroupAlreadyJoined,
+.msgText .ChatMessageInvite.Inviter
+{
+	background: var(--card_bg) !important;
+	border-radius: var(--card_radius) !important;
+	box-shadow: none !important;
+}
+
+.msgText .ChatMessageInvite button.DialogButton.GreenPlay
+{
+	background-blend-mode: var(--button_suggested_blend) !important;
+	background: var(--button_success_bg) !important;
+	border-radius: var(--button_radius) !important;
+	box-shadow: none !important;
+	transition: var(--focus_transition) !important;
+}
+
+.msgText .ChatMessageInvite button.DialogButton.GreenPlay:hover
+{
+	background-color: var(--button_suggested_hover_bg) !important;
+	box-shadow: none !important;
+}
+
+.msgText .ChatMessageInvite button.DialogButton.GreenPlay:active
+{
+	background-color: var(--button_suggested_click_bg) !important;
+}
+
+.msgText .ChatMessageInvite .leftInviteContainer .productImage
+{
+	border-radius: var(--card_radius) !important;
+	box-shadow: none !important;
+}
+
+.msgText .ChatMessageInvite .leftInviteContainer .productImageBlur
+{
+	display: none !important;
+}
+
 /* Message Steam Store Link */
 .msgText > [class*="bbcode_ChatMessageSteamStore_"]
 {

@@ -74,6 +74,7 @@
 	--button_disabled_fg: rgba(255, 255, 255, 0.5);
 
 	--button_suggested_bg: linear-gradient(0deg, var(--accent_bg), var(--accent_bg));
+	--button_success_bg: linear-gradient(0deg, var(--success_bg), var(--success_bg));
 	--button_suggested_hover_bg: rgba(255, 255, 255, 0.1);
 	--button_suggested_click_bg: rgba(0, 0, 0, 0.2);
 	--button_suggested_blend: overlay;
