@@ -61,7 +61,8 @@
 }
 
 .currentUserAvatar .avatarHolder,
-.currentUserAvatar .avatarFrame img
+.currentUserAvatar .avatarFrame img,
+.friends_loading_error .currentUserAvatar
 {
 	border: none !important;
 	height: 44px !important;
@@ -121,6 +122,53 @@
 	color: var(--accent) !important;
 }
 
+/* Signed Out */
+.friends_loading_error,
+.FriendsFailureContainer
+{
+	background: var(--window_bg) !important;
+}
+
+.FriendsFailureContainer .summaryText
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: 700 !important;
+}
+
+.FriendsFailureContainer .detailText
+{
+	font-family: var(--basefont) !important;
+}
+
+.FriendsFailureContainer .retryButton
+{
+	background-blend-mode: var(--button_suggested_blend) !important;
+	background: var(--button_suggested_bg) !important;
+	border-radius: var(--button_radius) !important;
+	box-shadow: none !important;
+	font-family: var(--basefont) !important;
+	font-size: 15px !important;
+	font-weight: 700 !important;
+	transition: var(--focus_transition) !important;
+}
+
+.FriendsFailureContainer .retryButton:hover
+{
+	background-color: var(--button_suggested_hover_bg) !important;
+}
+
+.FriendsFailureContainer .retryButton:active
+{
+	background-color: var(--button_suggested_click_bg) !important;
+}
+
+.friends_loading_error .currentUserContainer,
+.friends_loading_error .TitleBar.title-area
+{
+	height: 48px !important;
+}
+
 /* Set Online Status Menu */
 .client_chat_frame [class*="contextmenu_contextMenu_"]
 {
@@ -155,12 +203,14 @@
 }
 
 /* Friend Hover BG */
-.friendStatusHover
+.friendStatusHover,
+.ChatRoomListGroupItem
 {
 	margin: 0px var(--menu_margin) !important;
 }
 
-.friendStatusHover:hover
+.friendStatusHover:hover,
+.ChatRoomListGroupItem:hover
 {
 	background: var(--button_bg) !important;
 	border-radius: var(--button_radius) !important;
@@ -336,6 +386,48 @@ button[class*="chatentry_EmoticonPickerButton_"]
 	box-shadow: none !important;
 }
 
+/* Message Invite */
+.msgText .ChatMessageInvite,
+.msgText .ChatMessageInvite.InviteExpired,
+.msgText .ChatMessageInvite.GroupAlreadyJoined,
+.msgText .ChatMessageInvite.Inviter
+{
+	background: var(--card_bg) !important;
+	border-radius: var(--card_radius) !important;
+	box-shadow: none !important;
+}
+
+.msgText .ChatMessageInvite button.DialogButton.GreenPlay
+{
+	background-blend-mode: var(--button_suggested_blend) !important;
+	background: var(--button_success_bg) !important;
+	border-radius: var(--button_radius) !important;
+	box-shadow: none !important;
+	transition: var(--focus_transition) !important;
+}
+
+.msgText .ChatMessageInvite button.DialogButton.GreenPlay:hover
+{
+	background-color: var(--button_suggested_hover_bg) !important;
+	box-shadow: none !important;
+}
+
+.msgText .ChatMessageInvite button.DialogButton.GreenPlay:active
+{
+	background-color: var(--button_suggested_click_bg) !important;
+}
+
+.msgText .ChatMessageInvite .leftInviteContainer .productImage
+{
+	border-radius: var(--card_radius) !important;
+	box-shadow: none !important;
+}
+
+.msgText .ChatMessageInvite .leftInviteContainer .productImageBlur
+{
+	display: none !important;
+}
+
 /* Message Steam Store Link */
 .msgText > [class*="bbcode_ChatMessageSteamStore_"]
 {
@@ -356,6 +448,24 @@ button[class*="chatentry_EmoticonPickerButton_"]
 .msgText [class*="bbcode_Blurred_"]
 {
 	display: none !important;
+}
+
+/* Message Link Preview */
+.msgText div.ChatMessageOpenGraph, .msg div.SteamPublishedFile
+{
+	background: var(--card_bg) !important;
+	border-radius: var(--card_radius) !important;
+}
+
+.msgText .OpenGraphImgBackground
+{
+	display: none !important;
+}
+
+.msgText .OpenGraphMessageURL,
+.msgText .OpenGraphMessageURL_full
+{
+	color: var(--accent) !important;
 }
 
 /* Message /me emote */
