@@ -11,6 +11,7 @@ settingsdialog.layout
 			padding-left=2
 			font-family=basefont
 			font-size=16
+			font-size=18 [$WINDOWS]
 			font-style=none
 			render_bg {}
 			render

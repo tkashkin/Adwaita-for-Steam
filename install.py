@@ -49,6 +49,7 @@ WEB_FULL_FILES = [
 	webthemedir / "base/9_scrollbars.css",
 	webthemedir / "base/10_login.css",
 	webthemedir / "base/11_launch_options.css",
+	webthemedir / "full/12_content_management.css",
 ]
 
 SHARED_PATCHES = [

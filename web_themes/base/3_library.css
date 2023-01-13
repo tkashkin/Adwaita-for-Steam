@@ -102,9 +102,9 @@
 }
 
 /* Separator */
-[class*="library_LibraryWindowDivider"]
+[class*="library_LibraryWindowDivider_"]
 {
-	background: var(--border) !important;
+	background: rgba(255, 255, 255, 0.2) !important;
 	min-width: 1px !important;
 	width: 1px !important;
 }

@@ -1,0 +1,248 @@
+.DialogBody[class*="contentmanagement_ContentManagement_"]
+{
+	background: var(--window_bg) !important;
+	color: var(--window_fg) !important;
+	user-select: none !important;
+	font-family: var(--basefont) !important;
+	line-height: normal !important;
+	letter-spacing: normal !important;
+}
+
+[class*="contentmanagement_ContentManagement_"] [class*="contentmanagement_Header_"]
+{
+	padding: 0 !important;
+}
+
+[class*="contentmanagement_ContentManagement_"] [class*="contentmanagement_Title_"]
+{
+	box-sizing: border-box !important;
+	height: 48px !important;
+	display: grid !important;
+	grid-template-columns: 1fr !important;
+	align-items: center !important;
+	padding: 12px !important;
+	margin: 0 !important;
+	background: var(--headerbar_backdrop) !important;
+	color: var(--headerbar_fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: 14px !important;
+	line-height: normal !important;
+	font-weight: 700 !important;
+	letter-spacing: normal !important;
+	text-align: center !important;
+	text-transform: none !important;
+	white-space: nowrap !important;
+	overflow: hidden !important;
+	text-overflow: ellipsis !important;
+	border-bottom: 1px var(--headerbar_shade) solid !important;
+}
+
+[class*="contentmanagement_ContentManagement_"] [class*="contentmanagement_PageableCarousel_"]
+{
+	height: 34px !important;
+	margin: -41px 48px 7px 7px !important;
+	display: flex !important;
+	flex-direction: row !important;
+	z-index: 2 !important;
+	background: var(--headerbar_backdrop) !important;
+	align-items: center !important;
+}
+
+:focus-within [class*="contentmanagement_ContentManagement_"] [class*="contentmanagement_Title_"],
+:focus-within [class*="contentmanagement_ContentManagement_"] [class*="contentmanagement_PageableCarousel_"]
+{
+	background: var(--headerbar_bg) !important;
+}
+
+[class*="contentmanagement_InstallFolder_"]
+{
+	padding: 0 8px !important;
+	margin-right: 4px !important;
+	height: 34px !important;
+	color: var(--button_disabled_fg) !important;
+	background: transparent !important;
+	border-radius: var(--button_radius) !important;
+	-webkit-app-region: no-drag !important;
+	box-shadow: none !important;
+	box-sizing: border-box !important;
+	width: 150px;
+	overflow: hidden !important;
+}
+
+[class*="contentmanagement_InstallFolder_"] > svg
+{
+	width: 16px !important;
+	height: 16px !important;
+	margin-right: 8px !important;
+	color: var(--button_disabled_fg) !important;
+}
+
+:focus-within [class*="contentmanagement_InstallFolder_"],
+:focus-within [class*="contentmanagement_InstallFolder_"] > svg
+{
+	color: var(--button_fg) !important;
+}
+
+[class*="contentmanagement_InstallFolder_"][class*="contentmanagement_IsSelected_"]
+{
+	background: var(--button_bg) !important;
+	box-shadow: none !important;
+}
+
+[class*="contentmanagement_InstallFolder_"]:hover
+{
+	background: var(--button_hover_bg) !important;
+	box-shadow: none !important;
+}
+
+[class*="contentmanagement_InstallFolder_"]:active
+{
+	background: var(--button_active_bg) !important;
+	box-shadow: none !important;
+}
+
+[class*="contentmanagement_InstallFolder_"] [class*="contentmanagement_FolderInfo_"],
+[class*="contentmanagement_InstallFolder_"] [class*="contentmanagement_FolderInfo_"] [class*="contentmanagement_DriveName_"],
+[class*="contentmanagement_InstallFolder_"] [class*="contentmanagement_FolderInfo_"] [class*="contentmanagement_DriveSize_"]
+{
+	color: inherit !important;
+	text-transform: none !important;
+	white-space: nowrap !important;
+	overflow: hidden !important;
+	text-overflow: ellipsis !important;
+}
+
+[class*="contentmanagement_InstallFolder_"] [class*="contentmanagement_FolderInfo_"] [class*="contentmanagement_DriveName_"]
+{
+	font-size: 14px !important;
+	font-weight: 700 !important;
+}
+
+[class*="contentmanagement_InstallFolder_"] [class*="contentmanagement_FolderInfo_"] [class*="contentmanagement_DriveSize_"]
+{
+	font-size: 10px !important;
+	font-weight: 400 !important;
+	opacity: 0.5 !important;
+}
+
+[class*="contentmanagement_AddFolder_"]
+{
+	width: 34px !important;
+	height: 34px !important;
+	margin-right: 24px !important;
+	padding: 9px !important;
+}
+
+[class*="contentmanagement_AddFolder_"] > svg
+{
+	margin-right: 0 !important;
+}
+
+[class*="pageablecontainer_HeaderPageControls_"]
+{
+	display: none !important;
+}
+
+[class*="contentmanagement_LibraryContent_"]
+{
+	padding: 0 !important;
+}
+
+[class*="contentmanagement_LibraryHeader_"]
+{
+	padding: 8px 8px 0 8px !important;
+}
+
+[class*="contentmanagement_LibraryHeader_"] [class*="contentmanagement_DriveUsage_"] [class*="contentmanagement_DriveName_"]
+{
+	color: var(--window_fg) !important;
+	text-transform: none !important;
+	white-space: nowrap !important;
+	overflow: hidden !important;
+	text-overflow: ellipsis !important;
+	font-size: 14px !important;
+	font-weight: 700 !important;
+}
+
+[class*="contentmanagement_AppsGrid_"] .ReactVirtualized__Grid__innerScrollContainer
+{
+	pointer-events: all !important;
+}
+
+[class*="contentmanagement_AppActionBar_"]
+{
+	flex-direction: row-reverse !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+}
+
+[class*="contentmanagement_AppActionBar_"] [class*="contentmanagement_AppActionSelected_"]
+{
+	display: none !important;
+}
+
+[class*="contentmanagement_AppActionBar_"] .DialogButton
+{
+	height: 42px !important;
+	color: var(--button_fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: 15px !important;
+	line-height: normal !important;
+	font-weight: 700 !important;
+	letter-spacing: normal !important;
+	background: transparent !important;
+	box-shadow: none !important;
+	border-radius: 0 !important;
+	border-top: 1px var(--border) solid !important;
+	border-left: 1px var(--border) solid !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	margin-left: -1px !important;
+	max-width: none !important;
+	transition: var(--focus_transition) !important;
+	flex-grow: 1 !important;
+}
+
+[class*="contentmanagement_AppActionBar_"] .DialogButton::before
+{
+	display: none !important;
+}
+
+[class*="contentmanagement_AppActionBar_"] .DialogButton.Disabled
+{
+	color: var(--button_disabled_fg) !important;
+}
+
+[class*="contentmanagement_AppActionBar_"] .DialogButton:hover
+{
+	background: rgba(255, 255, 255, 0.07) !important;
+	box-shadow: none !important;
+}
+
+[class*="contentmanagement_AppActionBar_"] .DialogButton:active
+{
+	background: rgba(255, 255, 255, 0.16) !important;
+	box-shadow: none !important;
+}
+
+/* Uninstall button */
+[class*="contentmanagement_AppActionBar_"] .DialogButton:not(:last-child)
+{
+	color: var(--destructive) !important;
+}
+
+[class*="contentmanagement_AppActionBar_"] .DialogButton:not(:last-child).Disabled
+{
+	color: var(--destructive_disabled) !important;
+}
+
+[class*="contentmanagement_AppActionBar_"] .DialogButton:not(:last-child):hover
+{
+	background: var(--destructive_hover_bg) !important;
+}
+
+[class*="contentmanagement_AppActionBar_"] .DialogButton:not(:last-child):active
+{
+	background: var(--destructive_active_bg) !important;
+}
+
