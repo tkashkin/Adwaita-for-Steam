@@ -482,6 +482,30 @@
 	stroke: none !important;
 }
 
+.ModalDialogPopup .DialogControlsSection .DialogCheckbox_Container:not(:last-child):first-child,
+.ModalDialogPopup .DialogBody .DialogCheckbox_Container:not(:last-child):first-child,
+.ModalDialogPopup .DialogBody .DialogDropDown:not(:last-child):first-child
+{
+	border-bottom-right-radius: 0px !important;
+	border-bottom-left-radius: 0px !important;
+}
+
+.ModalDialogPopup .DialogControlsSection .DialogCheckbox_Container:not(:first-child):last-child,
+.ModalDialogPopup .DialogBody .DialogCheckbox_Container:not(:first-child):last-child,
+.ModalDialogPopup .DialogBody .DialogDropDown:not(:first-child):last-child,
+.ModalDialogPopup .DialogBody .DialogCheckbox_Container + .DialogInputLabelGroup > .DialogDropDown,
+.ModalDialogPopup .DialogBody .DialogInputLabelGroup > .DialogDropDown + .DialogCheckbox_Container
+{
+	border-top-right-radius: 0px !important;
+	border-top-left-radius: 0px !important;
+}
+
+.ModalDialogPopup .DialogBody .DialogInputLabelGroup > .DialogLabel + .DialogDropDown
+{
+	border-top-right-radius: 14px !important;
+	border-top-left-radius: 14px !important;
+}
+
 /* Text Input */
 .ModalDialogPopup .DialogTextInputBase
 {
@@ -591,6 +615,11 @@
 	border-radius: var(--popover_radius) !important;
 }
 
+/* Top Gap */
+.ModalDialogPopup [class*="appproperties_TopGap_"] {
+	margin-top: 1px !important;
+}
+
 /* Blue Highlighted Text */
 .ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_BlueHighlight_"]
 {
@@ -645,6 +674,37 @@
 .FriendSettingsContainer .advancedSettings.showAdvanced
 {
 	background: none !important;
+}
+
+.FriendSettingsContainer .SettingsGroup ._DialogInputContainer
+{
+	margin-bottom: 1px !important;
+}
+
+.FriendSettingsContainer ._DialogInputContainer .displayColumn.alignSelfCenter
+{
+	margin-top: 6px !important;
+	margin-bottom: 6px !important;
+}
+
+.FriendSettingsContainer .SettingsGroup ._DialogInputContainer:first-child
+{
+	border-bottom-right-radius: 0px !important;
+	border-bottom-left-radius: 0px !important;
+}
+
+.FriendSettingsContainer .SettingsGroup ._DialogInputContainer:last-child,
+.FriendSettingsContainer .SettingsGroup ._DialogInputContainer + ._DialogInputContainer:last-child
+{
+	border-bottom-left-radius: 14px !important;
+	border-bottom-right-radius: 14px !important;
+	border-top-left-radius: 0px !important;
+	border-top-right-radius: 0px !important;
+}
+
+.FriendSettingsContainer .SettingsGroup ._DialogInputContainer + ._DialogInputContainer:not(:last-child)
+{
+	border-radius: 0px !important;
 }
 
 /* Toggle Buttons */
@@ -708,6 +768,37 @@
 .FriendSettingsContainer .DialogToggle_Label a:hover
 {
 	text-decoration: underline !important;
+}
+
+/* Friend Notifications */
+.FriendSettingsContainer .FriendsSettingsNotificationRow
+{
+	align-items: center !important;
+	display: flex !important;
+	margin-top: -9px !important;
+}
+
+.FriendSettingsContainer div.FriendsSettingsNotificationRow.FriendsSettingsNotificationRow_Header + div > .FriendsSettingsNotificationRow
+{
+	border-bottom-right-radius: 0px !important;
+	border-bottom-left-radius: 0px !important;
+	border-top-right-radius: 14px !important;
+	border-top-left-radius: 14px !important;
+	margin-top: 0px !important;
+}
+
+.FriendSettingsContainer .SettingsGroup div:last-child .FriendsSettingsNotificationRow,
+.FriendSettingsContainer .SettingsGroup div + div:last-child .FriendsSettingsNotificationRow
+{
+	border-bottom-left-radius: 14px !important;
+	border-bottom-right-radius: 14px !important;
+	border-top-left-radius: 0px !important;
+	border-top-right-radius: 0px !important;
+}
+
+.FriendSettingsContainer div + div:not(:last-child) .FriendsSettingsNotificationRow
+{
+	border-radius: 0px !important;
 }
 
 /* Voice Slider */
@@ -787,5 +878,26 @@
 .FriendSettingsContainer [class*="toggle_ToggleRow_"]
 {
 	padding-right: 20px !important;
+	margin-bottom: 1px !important;
 }
 
+.FriendSettingsContainer .VoiceSettings .showAdvanced > .DialogLabel + [class*="toggle_ToggleRow_"]
+{
+	border-bottom-left-radius: 0px !important;
+	border-bottom-right-radius: 0px !important;
+	border-top-left-radius: 14px !important;
+	border-top-right-radius: 14px !important;
+}
+
+.FriendSettingsContainer .VoiceSettings .showAdvanced [class*="toggle_ToggleRow_"] + [class*="toggle_ToggleRow_"]
+{
+	border-radius: 0px !important;
+}
+
+.FriendSettingsContainer .VoiceSettings .showAdvanced [class*="toggle_ToggleRow_"]:nth-of-type(5)
+{
+	border-bottom-left-radius: 14px !important;
+	border-bottom-right-radius: 14px !important;
+	border-top-left-radius: 0px !important;
+	border-top-right-radius: 0px !important;
+}
