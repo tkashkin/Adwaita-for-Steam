@@ -319,7 +319,7 @@
 .ModalDialogPopup .DialogContent:not(.GenericConfirmDialog) .DialogHeader,
 .ModalDialogPopup [class*="pagedsettings_PagedSettingsDialog_PageListColumn_"] > [class*="pagedsettings_PagedSettingsDialog_Title_"]
 {
-    box-sizing: border-box !important;
+	box-sizing: border-box !important;
 	height: 48px !important;
 	display: grid !important;
 	grid-template-columns: 1fr !important;
@@ -412,11 +412,12 @@
 /* Checkboxes */
 .ModalDialogPopup .DialogCheckbox_Container
 {
-	flex-direction: row-reverse !important;
+	align-items: center !important;
 	background: var(--entry_bg) !important;
 	border-radius: var(--entry_radius) !important;
+	flex-direction: row-reverse !important;
 	min-height: var(--entry_min_height) !important;
-	align-items: center !important;
+	padding: var(--entry_padding) !important;
 	transition: var(--focus_transition) !important;
 }
 
@@ -542,12 +543,14 @@
 }
 
 /* DropDown */
-
 .ModalDialogPopup .DialogDropDown
 {
+	align-items: center !important;
 	background: var(--entry_bg) !important;
 	border-radius: var(--entry_radius) !important;
+	display: flex !important;
 	min-height: var(--entry_min_height) !important;
+	padding: var(--entry_padding) !important;
 	transition: var(--focus_transition) !important;
 }
 
@@ -560,12 +563,6 @@
 .ModalDialogPopup .DialogDropDown:active
 {
 	background: var(--button_active_bg) !important;
-}
-
-.ModalDialogPopup .DialogDropDown_CurrentDisplay,
-.ModalDialogPopup .DialogDropDown_CurrentDisplay [class*="dropdownlabel_DropDownLabelTitle_"]
-{
-	line-height: var(--entry_min_height) !important;
 }
 
 .ModalDialogPopup .DialogDropDown_Arrow .SVGIcon_DownArrowContextMenu
@@ -638,6 +635,7 @@
 	border-radius: var(--card_radius) !important;
 	border: none !important;
 	min-height: var(--entry_min_height) !important;
+	padding: var(--entry_padding) !important;
 }
 
 .FriendSettingsContainer .FriendsSettingsFlashSection_ButtonRow,
@@ -650,6 +648,11 @@
 }
 
 /* Toggle Buttons */
+.FriendSettingsContainer .DialogToggleField_Control
+{
+	align-self: center !important;
+}
+
 .FriendSettingsContainer .DialogToggleField_Option.Off
 {
 	border-top-left-radius: var(--button_radius) !important;
