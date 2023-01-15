@@ -953,6 +953,13 @@
 }
 
 /* Toggle Switch */
+
+.FriendSettingsContainer [class*="toggle_Toggle_"]
+{
+	display: flex;
+	align-items: center;
+}
+
 .FriendSettingsContainer [class*="toggle_ToggleSwitch_"]
 {
 	background: var(--fg) !important;
@@ -967,7 +974,7 @@
 	margin-left: -4px !important;
 	margin-top: -7px !important;
 	min-height: 26px !important;
-	width: 52px !important;
+	width: 48px !important;
 }
 
 .FriendSettingsContainer [class*="toggle_ToggleRail_"]:hover
@@ -993,12 +1000,17 @@
 .FriendSettingsContainer [class*="toggle_ToggleSwitch_"]
 {
 	border-radius: var(--button_pill_radius) !important;
-	height: 22px !important;
-	margin-left: 2px !important;
-	margin-top: -2px !important;
+	height: 22.5px !important;
+	margin-left: -3px !important;
+	margin-top: 2px !important;
 	pointer-events: none !important;
 	transition: transform 60ms linear, background 60ms !important;
-	width: 22px !important;
+	width: 22.5px !important;
+}
+
+.FriendSettingsContainer [class*="toggle_ToggleSwitch_"][class*="toggle_Off_"]
+{
+	margin-left: 1px !important;
 }
 
 /* Advanced Settings */
