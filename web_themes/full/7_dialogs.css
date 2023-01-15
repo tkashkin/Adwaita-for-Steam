@@ -451,7 +451,7 @@
 {
 	background: var(--card_bg) !important;
 	background-blend-mode: var(--button_suggested_blend) !important;
-	border-radius: 14px !important;
+	border-radius: var(--entry_radius) !important;
 	box-shadow: none !important;
 	padding: 2px !important;
 	min-height: 22px !important;
@@ -512,8 +512,8 @@
 
 .ModalDialogPopup .DialogBody .DialogInputLabelGroup > .DialogLabel + .DialogDropDown
 {
-	border-top-right-radius: 14px !important;
-	border-top-left-radius: 14px !important;
+	border-top-right-radius: var(--entry_radius) !important;
+	border-top-left-radius: var(--entry_radius) !important;
 }
 
 /* Text Input */
@@ -796,8 +796,8 @@
 .FriendSettingsContainer .SettingsGroup ._DialogInputContainer:last-child,
 .FriendSettingsContainer .SettingsGroup ._DialogInputContainer + ._DialogInputContainer:last-child
 {
-	border-bottom-left-radius: 14px !important;
-	border-bottom-right-radius: 14px !important;
+	border-bottom-left-radius: var(--entry_radius) !important;
+	border-bottom-right-radius: var(--entry_radius) !important;
 	border-top-left-radius: 0px !important;
 	border-top-right-radius: 0px !important;
 }
@@ -898,16 +898,16 @@
 {
 	border-bottom-right-radius: 0px !important;
 	border-bottom-left-radius: 0px !important;
-	border-top-right-radius: 14px !important;
-	border-top-left-radius: 14px !important;
+	border-top-right-radius: var(--entry_radius) !important;
+	border-top-left-radius: var(--entry_radius) !important;
 	margin-top: 0px !important;
 }
 
 .FriendSettingsContainer .SettingsGroup div:last-child .FriendsSettingsNotificationRow,
 .FriendSettingsContainer .SettingsGroup div + div:last-child .FriendsSettingsNotificationRow
 {
-	border-bottom-left-radius: 14px !important;
-	border-bottom-right-radius: 14px !important;
+	border-bottom-left-radius: var(--entry_radius) !important;
+	border-bottom-right-radius: var(--entry_radius) !important;
 	border-top-left-radius: 0px !important;
 	border-top-right-radius: 0px !important;
 }
@@ -1013,8 +1013,8 @@
 {
 	border-bottom-left-radius: 0px !important;
 	border-bottom-right-radius: 0px !important;
-	border-top-left-radius: 14px !important;
-	border-top-right-radius: 14px !important;
+	border-top-left-radius: var(--entry_radius) !important;
+	border-top-right-radius: var(--entry_radius) !important;
 }
 
 .FriendSettingsContainer .VoiceSettings .showAdvanced [class*="toggle_ToggleRow_"] + [class*="toggle_ToggleRow_"]
@@ -1024,8 +1024,8 @@
 
 .FriendSettingsContainer .VoiceSettings .showAdvanced [class*="toggle_ToggleRow_"]:nth-of-type(5)
 {
-	border-bottom-left-radius: 14px !important;
-	border-bottom-right-radius: 14px !important;
+	border-bottom-left-radius: var(--entry_radius) !important;
+	border-bottom-right-radius: var(--entry_radius) !important;
 	border-top-left-radius: 0px !important;
 	border-top-right-radius: 0px !important;
 }
