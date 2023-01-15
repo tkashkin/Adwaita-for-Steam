@@ -687,6 +687,12 @@
 	font-weight: var(--label_weight) !important;
 }
 
+/* Top Border */
+.ModalDialogPopup [class*="appproperties_SectionTopLine_"]
+{
+	border-top: none !important;
+}
+
 /* Blue Highlighted Text */
 .ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_BlueHighlight_"]
 {
