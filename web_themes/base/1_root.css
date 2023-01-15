@@ -4,10 +4,9 @@
 
 :root
 {
+	/* General */
 	--bg: #242424;
 	--fg: #ffffff;
-
-	--basefont: "Cantarell";
 
 	--accent: #78aeed;
 	--accent_bg: #3584e4;
@@ -35,8 +34,45 @@
 	--error_bg: #c01c28;
 	--error_fg: var(--fg);
 
+	/* Fonts */
+	--basefont: "Cantarell";
+	--basesize: 15px;
+	--baseweight: normal;
+
+	--large_title_size: 24px;
+	--large_title_weight: 300;
+
+	--title_1_size: 20px;
+	--title_1_weight: 800;
+
+	--title_2_size: 15px;
+	--title_2_weight: 800;
+
+	--title_3_size: 14px;
+	--title_3_weight: bold;
+
+	--title_4_size: 13px;
+	--title_4_weight: bold;
+
+	--header_size: var(--title_3_size);
+	--header_weight: var(--title_3_weight);
+
+	--label_size: var(--basesize);
+	--label_weight: normal;
+
+	--link_size: var(--title_3_size);
+	--link_weight: var(--title_3_weight);
+
+	--subtitle_size: smaller;
+	--subtitle_weight: normal;
+
+	/* Widgets */
 	--button_bg: rgba(255, 255, 255, 0.1);
 	--button_fg: rgba(255, 255, 255, 1);
+	--button_radius: 6px;
+	--button_pill_radius: 9999px;
+	--button_font_weight: var(--title_3_weight);
+	--button_font_size: var(--title_3_size);
 	--button_hover_bg: rgba(255, 255, 255, 0.15);
 	--button_active_bg: rgba(255, 255, 255, 0.3);
 	--button_disabled_bg: rgba(255, 255, 255, 0.05);
@@ -46,8 +82,6 @@
 	--button_suggested_hover_bg: rgba(255, 255, 255, 0.1);
 	--button_suggested_click_bg: rgba(0, 0, 0, 0.2);
 	--button_suggested_blend: overlay;
-	--button_radius: 6px;
-	--button_pill_radius: 9999px;
 
 	--checkbox_checked_bg: var(--button_suggested_bg);
 	--checkbox_checked_sw: 45;
@@ -72,8 +106,11 @@
 	--entry_min_height_labeled: 34px;
 	--entry_padding: 2px 14px 2px 14px;
 	--entry_padding_labeled: 18px 14px 2px 14px;
-	--entry_font_size: 15px;
-	--entry_font_weight: 400;
+	--entry_font_size: var(--label_size);
+	--entry_font_weight: var(--label_weight);
+	--entry_subtitle_fg: var(--dim_label_fg);
+	--entry_subtitle_font_size: var(--subtitle_size);
+	--entry_subtitle_font_weight: var(--subtitle_weight);
 
 	--dim_label_fg: rgba(255, 255, 255, 0.55);
 

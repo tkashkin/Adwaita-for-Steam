@@ -5,6 +5,13 @@
 	overflow: hidden !important;
 }
 
+.ModalDialogPopup .DialogBody
+{
+	font-family: var(--basefont) !important;
+	font-size: var(--basesize) !important;
+	font-weight: var(--baseweight) !important;
+}
+
 .ModalPosition_TopBar
 {
 	display: none !important;
@@ -30,9 +37,9 @@
 {
 	color: var(--popover_fg) !important;
 	font-family: var(--basefont) !important;
-	font-size: 15px !important;
+	font-size: var(--basesize) !important;
 	line-height: normal !important;
-	font-weight: 400 !important;
+	font-weight: var(--baseweight) !important;
 	letter-spacing: normal !important;
 	text-transform: none !important;
 	text-align: center;
@@ -54,8 +61,8 @@
 
 .GenericConfirmDialog .DialogHeader
 {
-	font-size: 20px !important;
-	font-weight: 800 !important;
+	font-size: var(--title_1_size) !important;
+	font-weight: var(--title_1_weight) !important;
 	padding: 24px 24px 16px 24px !important;
 }
 
@@ -149,9 +156,9 @@
 	height: 42px !important;
 	color: var(--button_fg) !important;
 	font-family: var(--basefont) !important;
-	font-size: 15px !important;
+	font-size: var(--button_font_size) !important;
 	line-height: normal !important;
-	font-weight: 700 !important;
+	font-weight: var(--button_font_weight) !important;
 	letter-spacing: normal !important;
 	background: transparent !important;
 	box-shadow: none !important;
@@ -329,9 +336,9 @@
 	background: var(--headerbar_backdrop) !important;
 	color: var(--headerbar_fg) !important;
 	font-family: var(--basefont) !important;
-	font-size: 14px !important;
+	font-size: var(--header_size) !important;
 	line-height: normal !important;
-	font-weight: 700 !important;
+	font-weight: var(--header_weight) !important;
 	letter-spacing: normal !important;
 	text-align: center !important;
 	text-transform: none !important;
@@ -366,9 +373,9 @@
 {
 	color: var(--button_fg) !important;
 	font-family: var(--basefont) !important;
-	font-size: 15px !important;
+	font-size: var(--basesize) !important;
 	line-height: normal !important;
-	font-weight: 400 !important;
+	font-weight: var(--baseweight) !important;
 	letter-spacing: normal !important;
 	text-transform: none !important;
 	white-space: nowrap !important;
@@ -435,6 +442,9 @@
 .ModalDialogPopup .DialogToggle_Label
 {
 	flex-grow: 1 !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--label_size) !important;
+	font-weight: var(--label_weight) !important;
 }
 
 .ModalDialogPopup .DialogCheckbox
@@ -536,6 +546,10 @@
 {
 	background: var(--button_bg) !important;
 	border-radius: var(--button_radius) !important;
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--button_font_size) !important;
+	font-weight: var(--button_font_weight) !important;
 	transition: var(--focus_transition) !important;
 }
 
@@ -566,6 +580,23 @@
 	background: var(--button_active_bg) !important;
 }
 
+/* Labels */
+.ModalDialogPopup .DialogLabel
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--header_size) !important;
+	font-weight: var(--header_weight) !important;
+}
+
+.ModalDialogPopup .DialogLabelExplainer,
+.ModalDialogPopup .DialogLabelStrong
+{
+	font-family: var(--basefont) !important;
+	font-size: var(--label_size) !important;
+	font-weight: var(--label_weight) !important;
+}
+
 /* DropDown */
 .ModalDialogPopup .DialogDropDown
 {
@@ -573,6 +604,9 @@
 	background: var(--entry_bg) !important;
 	border-radius: var(--entry_radius) !important;
 	display: flex !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--entry_font_size) !important;
+	font-weight: var(--entry_font_weight) !important;
 	min-height: var(--entry_min_height) !important;
 	padding: var(--entry_padding) !important;
 	transition: var(--focus_transition) !important;
@@ -615,9 +649,42 @@
 	border-radius: var(--popover_radius) !important;
 }
 
+.ModalDialogPopup [class*="dropdownlabel_DropDownLabelTitle_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--entry_font_size) !important;
+	font-weight: var(--entry_font_weight) !important;
+
+}
+
+.ModalDialogPopup [class*="dropdownlabel_DropDownLabelDescription_"]
+{
+	color: var(--entry_subtitle_fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--entry_subtitle_font_size) !important;
+	font-weight: var(--entry_subtitle_font_weight) !important;
+}
+
 /* Top Gap */
-.ModalDialogPopup [class*="appproperties_TopGap_"] {
+.ModalDialogPopup [class*="appproperties_TopGap_"]
+{
 	margin-top: 1px !important;
+}
+
+/* Headings */
+.ModalDialogPopup [class*="appproperties_Title_"]
+{
+	font-family: var(--basefont) !important;
+	font-size: var(--header_size) !important;
+	font-weight: var(--header_weight) !important;
+}
+
+.ModalDialogPopup [class*="appproperties_Detail_"]
+{
+	font-family: var(--basefont) !important;
+	font-size: var(--label_size) !important;
+	font-weight: var(--label_weight) !important;
 }
 
 /* Blue Highlighted Text */
@@ -632,6 +699,20 @@
 {
 	background: var(--card_bg) !important;
 	border-radius: var(--card_radius) !important;
+}
+
+.ModalDialogPopup span[class*="appproperties_SteamInputLink_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--link_size) !important;
+	font-weight: var(--link_weight) !important;
+	text-decoration: none !important;
+}
+
+.ModalDialogPopup span[class*="appproperties_SteamInputLink_"]:hover
+{
+	text-decoration: underline !important;
 }
 
 /* DLC & Workshop Grid */
@@ -653,6 +734,17 @@
 	padding: 16px !important;
 }
 
+.FriendSettingsContainer .friendSettingsSubheader,
+.FriendSettingsContainer .FriendsSettingsNotificationRow_Header .FriendsSettingsNotificationRow_Label,
+.FriendSettingsContainer .FriendsSettingsNotificationRow .FriendsSettingsNotificationRow_Checkbox,
+.FriendSettingsContainer .FriendsSettingsFlashSection_Header
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--header_size) !important;
+	font-weight: var(--header_weight) !important;
+}
+
 .FriendSettingsContainer .SettingsGroup .DialogToggleField,
 .FriendSettingsContainer ._DialogInputContainer,
 .FriendSettingsContainer .FriendsSettingsNotificationRow:not(.FriendsSettingsNotificationRow_Header),
@@ -665,6 +757,14 @@
 	border: none !important;
 	min-height: var(--entry_min_height) !important;
 	padding: var(--entry_padding) !important;
+}
+
+.FriendSettingsContainer .DialogToggle_Description
+{
+	color: var(--entry_subtitle_fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--entry_subtitle_font_size) !important;
+	font-weight: var(--entry_subtitle_font_weight) !important;
 }
 
 .FriendSettingsContainer .FriendsSettingsFlashSection_ButtonRow,
@@ -740,7 +840,9 @@
 {
 	background: var(--button_bg) !important;
 	color: var(--fg) !important;
-	font-weight: 700 !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--button_font_size) !important;
+	font-weight: var(--button_font_weight) !important;
 }
 
 .FriendSettingsContainer .DialogToggleField_Option.Off:hover,
@@ -761,7 +863,9 @@
 .FriendSettingsContainer .DialogToggle_Label a
 {
 	color: var(--fg) !important;
-	font-weight: 700 !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--link_size) !important;
+	font-weight: var(--link_weight) !important;
 	text-decoration: none !important;
 }
 
@@ -770,11 +874,23 @@
 	text-decoration: underline !important;
 }
 
+/* Chat Settings Subtitle */
+.FriendSettingsContainer .DialogToggle_Description
+{
+	color: var(--entry_subtitle_fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--label_size) !important;
+	font-weight: var(--label_weight) !important;
+}
+
 /* Friend Notifications */
 .FriendSettingsContainer .FriendsSettingsNotificationRow
 {
 	align-items: center !important;
 	display: flex !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--entry_font_size) !important;
+	font-weight: var(--entry_font_weight) !important;
 	margin-top: -9px !important;
 }
 
@@ -823,6 +939,11 @@
 .FriendSettingsContainer [class*="radio_Group_"]
 {
 	box-shadow: none !important;
+}
+
+.FriendSettingsContainer [class*="radio_Group_"] [class*="voicesettings_RecommendedNote_"]
+{
+	font-weight: var(--label_weight) !important;
 }
 
 /* Toggle Switch */
@@ -879,6 +1000,13 @@
 {
 	padding-right: 20px !important;
 	margin-bottom: 1px !important;
+}
+
+.FriendSettingsContainer [class*="toggle_ToggleRow_"] [class*="toggle_Label_"]
+{
+	font-family: var(--basefont) !important;
+	font-size: var(--entry_font_size) !important;
+	font-weight: var(--entry_font_weight) !important;
 }
 
 .FriendSettingsContainer .VoiceSettings .showAdvanced > .DialogLabel + [class*="toggle_ToggleRow_"]
