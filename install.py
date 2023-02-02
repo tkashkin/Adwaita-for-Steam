@@ -18,6 +18,7 @@ WEB_THEME_DIR = "web_themes"
 WEB_EXTRAS_DIR = "web_themes/extras"
 COLOR_THEME_DIR = "color_themes"
 
+ASSETS_DIR = "assets"
 COLORS_FILE = "adw/colors.styles"
 CSS_FILE = "resource/webkit.css"
 
@@ -70,6 +71,10 @@ def list_options(type: str, options: list[Path], suffix: str, sourcedir: Path, a
 		print(f"{type.upper()}: {len(options)}")
 		for option in options:
 			name = os.path.relpath(option, sourcedir).removesuffix(suffix)
+
+			if type == "color themes":
+				name = name.split("/")[1]
+
 			description = ""
 
 			if type == "patches":
@@ -130,7 +135,7 @@ def gen_webkit_theme(target: Path, name: str, selected_extras: list[Path]):
 
 # Color Themes
 def find_color_themes() -> list[Path]:
-	return list(colorthemedir.glob("*.theme"))
+	return list(sorted(colorthemedir.glob("**/*.theme")))
 
 def hex2rgba(hex: str) -> str:
 	return tuple(int(hex[i:i+2], 16) for i in (1, 3, 5, 7))
@@ -217,9 +222,12 @@ if __name__ == "__main__":
 		selected_theme = None
 	else:
 		t = args.color_theme.removesuffix(".theme")
-		selected_theme = colorthemedir / "{}{}".format(t, ".theme")
+		selected_theme = colorthemedir / "{}/{}{}".format(t, t, ".theme")
+		selected_theme_assets = colorthemedir / "{}/{}".format(t, "assets")
 		if not selected_theme.exists():
 			raise SystemExit(f"{TEXT_BOLD}{selected_theme}{TEXT_RESET} theme not found.")
+		if not selected_theme_assets.exists():
+			raise SystemExit(f"{TEXT_BOLD}{selected_theme}{TEXT_RESET} theme assets not found.")
 
 	with TemporaryDirectory() as tmpdir:
 		tmp = Path(tmpdir)
@@ -249,6 +257,7 @@ if __name__ == "__main__":
 			config.read(selected_theme)
 			replace_css_colors(sourcedir / CSS_FILE, config)
 			replace_vgui_colors(sourcedir / COLORS_FILE, config)
+			shutil.copytree(selected_theme_assets, sourcedir / ASSETS_DIR, dirs_exist_ok=True)
 
 		targets = set()
 
