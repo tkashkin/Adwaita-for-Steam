@@ -256,7 +256,7 @@
 
 [class*="chatentry_chatEntryControls_"] textarea:focus
 {
-	box-shadow: var(--focus_ring_bs) !important;
+	box-shadow: var(--focusring_bs) !important;
 	border-radius: var(--button_radius) !important;
 }
 

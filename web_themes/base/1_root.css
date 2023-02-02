@@ -93,8 +93,8 @@
 	--card_fg: var(--fg);
 	--card_radius: calc(var(--button_radius) + 6px);
 
-	--focus_ring: rgba(120, 174, 237, 0.5);
-	--focus_ring_bs: inset 0px 0px 0px 2px var(--focus_ring);
+	--focusring: rgba(120, 174, 237, 0.5);
+	--focusring_bs: inset 0px 0px 0px 2px var(--focusring);
 
 	--ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 	--focus_transition: box-shadow 200ms var(--ease-out-quad), background 200ms var(--ease-out-quad);

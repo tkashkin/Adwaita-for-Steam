@@ -299,7 +299,7 @@
 
 [class*="gamelistentry_HasContextMenuOpen_"]
 {
-	border: 1px var(--focus_ring) solid !important;
+	border: 1px var(--focusring) solid !important;
 }
 
 [class*="gamelistentry_HasContextMenuOpen_"] [class*="gamelistentry_GameListEntryContainer_"]

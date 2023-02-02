@@ -537,7 +537,7 @@
 
 .ModalDialogPopup .DialogTextInputBase:focus
 {
-	box-shadow: var(--focus_ring_bs) !important;
+	box-shadow: var(--focusring_bs) !important;
 }
 
 /* Buttons */
