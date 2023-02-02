@@ -3,6 +3,8 @@ from argparse import ArgumentParser
 from pathlib import Path
 from tempfile import TemporaryDirectory
 from typing import NoReturn
+import configparser
+import re
 import subprocess
 import shutil
 import os
@@ -13,7 +15,9 @@ TEXT_RESET = "\033[0m"
 SKIN_DIR = "Adwaita"
 PATCH_DIR = "patches"
 WEB_THEME_DIR = "web_themes"
+COLOR_THEME_DIR = "color_themes"
 
+COLORS_FILE = "adw/colors.styles"
 CSS_FILE = "resource/webkit.css"
 
 TARGET_NORMAL = "~/.steam/steam"
@@ -22,6 +26,7 @@ TARGET_FLATPAK = "~/.var/app/com.valvesoftware.Steam/.steam/steam"
 skindir = Path(SKIN_DIR)
 patchdir = Path(PATCH_DIR)
 webthemedir = Path(WEB_THEME_DIR)
+colorthemedir = Path(COLOR_THEME_DIR)
 
 WEB_BASE_FILES = [
 	webthemedir / "base/1_root.css",
@@ -113,6 +118,50 @@ def gen_webkit_theme(target: Path, name: str, selected_extras: list[Path]):
 					print(f"Web Extra: {TEXT_BOLD}{f}{TEXT_RESET} not found!")
 			print()
 
+# Color Themes
+def find_color_themes() -> list[Path]:
+	return list(colorthemedir.glob("*.theme"))
+
+def hex2rgba(hex: str) -> str:
+	return tuple(int(hex[i:i+2], 16) for i in (1, 3, 5, 7))
+
+def rgba2vgui(name: str, rgba: str) -> str:
+	return f'{name}="{rgba[0]} {rgba[1]} {rgba[2]} {rgba[3]}"'
+
+def hex2css(name: str, hex: str) -> str:
+	return f'--{name}: {hex};'
+
+def hex2vgui(name: str, hex: str) -> str:
+	return rgba2vgui(name, hex2rgba(hex))
+
+def replace_css_colors(target: Path, config: configparser.ConfigParser):
+	with open (target, 'r' ) as f:
+		content = f.read()
+
+	for section in config.sections():
+		for (key, val) in config.items(section):
+			s = hex2css(key, val)
+			content = re.sub(f'^\s+--{key}: [^;]+;$', s, content, flags = re.M)
+
+	with open (target, 'w' ) as f:
+		f.write(content)
+
+def replace_vgui_colors(target: Path, config: configparser.ConfigParser):
+	with open (target, 'r' ) as f:
+		content = f.read()
+
+	for section in config.sections():
+		if section == "font":
+			continue
+
+		for (key, val) in config.items(section):
+			s = hex2vgui(key, val)
+			content = re.sub(f'^\s+{key}="[^"]+"$', s, content, flags = re.M)
+
+	with open (target, 'w' ) as f:
+		f.write(content)
+
+# Install
 def install(source: Path, target: Path, name: str):
 	if target.is_dir():
 		if target.stem != "skins":
@@ -132,8 +181,11 @@ if __name__ == "__main__":
 		raise SystemExit(f"Skin directory {TEXT_BOLD}{SKIN_DIR}{TEXT_RESET} does not exist. Make sure you're running the installer from its root directory")
 	if not webthemedir.exists():
 		raise SystemExit(f"Web Theme directory {TEXT_BOLD}{WEB_THEME_DIR}{TEXT_RESET} does not exist. Make sure you're running the installer from its root directory")
+	if not colorthemedir.exists():
+		raise SystemExit(f"Color Theme directory {TEXT_BOLD}{COLOR_THEME_DIR}{TEXT_RESET} does not exist. Make sure you're running the installer from its root directory")
 
 	parser = ArgumentParser(description = "Adwaita-for-Steam installer")
+	parser.add_argument("-c", "--color-theme", default = "adwaita", help = "Choose color theme")
 	parser.add_argument("-t", "--target", nargs = "+", action = "extend", default = ["normal", "flatpak"], help = "Install targets: 'normal', 'flatpak', custom paths")
 	parser.add_argument("-l", "--list-patches", action = "store_true", help = "List available patches and exit")
 	parser.add_argument("-p", "--patch", nargs = "+", action = "extend", help = "Apply one or multiple patches")
@@ -147,6 +199,14 @@ if __name__ == "__main__":
 
 	if args.patch and not shutil.which("patch"):
 		raise SystemExit(f"{TEXT_BOLD}patch{TEXT_RESET} executable not found in $PATH. Make sure you have GNU Patch installed")
+
+	if args.color_theme.removesuffix(".theme") == "adwaita":
+		selected_theme = None
+	else:
+		t = args.color_theme.removesuffix(".theme")
+		selected_theme = colorthemedir / "{}{}".format(t, ".theme")
+		if not selected_theme.exists():
+			raise SystemExit(f"{TEXT_BOLD}{selected_theme}{TEXT_RESET} theme not found.")
 
 	with TemporaryDirectory() as tmpdir:
 		tmp = Path(tmpdir)
@@ -169,6 +229,13 @@ if __name__ == "__main__":
 					apply_patch(tmp, patch)
 
 		gen_webkit_theme(sourcedir / CSS_FILE, args.web_theme, args.web_extras)
+
+		if selected_theme:
+			print(f"Applying color theme {TEXT_BOLD}{selected_theme}{TEXT_RESET}...")
+			config = configparser.ConfigParser()
+			config.read(selected_theme)
+			replace_css_colors(sourcedir / CSS_FILE, config)
+			replace_vgui_colors(sourcedir / COLORS_FILE, config)
 
 		targets = set()
 
