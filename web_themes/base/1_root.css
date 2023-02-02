@@ -92,6 +92,7 @@
 	--card_bg: rgba(255, 255, 255, 0.1);
 	--card_fg: var(--fg);
 	--card_radius: calc(var(--button_radius) + 6px);
+	--card_solid_bg: #3A3A3A;
 
 	--focusring: rgba(120, 174, 237, 0.5);
 	--focusring_bs: inset 0px 0px 0px 2px var(--focusring);
