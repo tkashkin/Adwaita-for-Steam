@@ -15,6 +15,7 @@ TEXT_RESET = "\033[0m"
 SKIN_DIR = "Adwaita"
 PATCH_DIR = "patches"
 WEB_THEME_DIR = "web_themes"
+WEB_EXTRAS_DIR = "web_themes/extras"
 COLOR_THEME_DIR = "color_themes"
 
 COLORS_FILE = "adw/colors.styles"
@@ -26,6 +27,7 @@ TARGET_FLATPAK = "~/.var/app/com.valvesoftware.Steam/.steam/steam"
 skindir = Path(SKIN_DIR)
 patchdir = Path(PATCH_DIR)
 webthemedir = Path(WEB_THEME_DIR)
+webextrasdir = Path(WEB_EXTRAS_DIR)
 colorthemedir = Path(COLOR_THEME_DIR)
 
 WEB_BASE_FILES = [
@@ -62,25 +64,29 @@ SHARED_PATCHES = [
 	"windowcontrols/right-all",
 ]
 
+# List Options
+def list_options(type: str, options: list[Path], suffix: str, sourcedir: Path, arg: str) -> NoReturn:
+	if options:
+		print(f"{type.upper()}: {len(options)}")
+		for option in options:
+			name = os.path.relpath(option, sourcedir).removesuffix(suffix)
+			description = ""
+
+			if type == "patches":
+				with option.open() as patch_file:
+					description = " - {}".format(patch_file.readline().removeprefix("#").strip())
+
+			print(f"{TEXT_BOLD}{name}{TEXT_RESET}{description}")
+		print(f"\nApply {type} using {TEXT_BOLD}'./install.py --{arg} NAME'{TEXT_RESET}\n")
+	else:
+		print("No {type} available\n")
+
+# Patches
 def find_patches() -> list[Path]:
 	return list(patchdir.glob("**/*.patch"))
 
 def patch_name(patch: Path) -> str:
 	return os.path.relpath(patch, patchdir).removesuffix(".patch")
-
-def list_patches(patches: list[Path]) -> NoReturn:
-	if patches:
-		print(f"{len(patches)} patches available:\n")
-		for patch in patches:
-			patch_name = os.path.relpath(patch, patchdir).removesuffix(".patch")
-			patch_description = ""
-			with patch.open() as patch_file:
-				patch_description = " - {}".format(patch_file.readline().removeprefix("#").strip())
-			print(f"{TEXT_BOLD}{patch_name}{TEXT_RESET}{patch_description}")
-		print(f"\nApply patches using {TEXT_BOLD}'./install.py --patch PATCH_NAME'{TEXT_RESET}")
-	else:
-		print("No patches available")
-	exit(0)
 
 def apply_patch(parentdir: Path, patch: Path):
 	with patch.open() as patch_file:
@@ -89,6 +95,10 @@ def apply_patch(parentdir: Path, patch: Path):
 			subprocess.run(["patch", "-l", "-p0"], cwd = parentdir, stdin = patch_file)
 		except Exception as e:
 			print(f"\nError applying patch: {e}")
+
+# Webkit CSS
+def find_web_extras() -> list[Path]:
+	return list(webextrasdir.glob("**/*.css"))
 
 def gen_webkit_theme(target: Path, name: str, selected_extras: list[Path]):
 	if name == "none":
@@ -187,15 +197,18 @@ if __name__ == "__main__":
 	parser = ArgumentParser(description = "Adwaita-for-Steam installer")
 	parser.add_argument("-c", "--color-theme", default = "adwaita", help = "Choose color theme")
 	parser.add_argument("-t", "--target", nargs = "+", action = "extend", default = ["normal", "flatpak"], help = "Install targets: 'normal', 'flatpak', custom paths")
-	parser.add_argument("-l", "--list-patches", action = "store_true", help = "List available patches and exit")
+	parser.add_argument("-l", "--list-options", action = "store_true", help = "List available patches, themes, web extras and exit")
 	parser.add_argument("-p", "--patch", nargs = "+", action = "extend", help = "Apply one or multiple patches")
 	parser.add_argument("-n", "--name", default = SKIN_DIR, help = "Rename installed skin")
 	parser.add_argument("-w", "--web-theme", choices = ["base", "full", "none"], default = "base", help = "Choose web theme variant")
 	parser.add_argument("-we", "--web-extras", nargs = "+", action = "extend", help = "Enable one or multiple web theme extras")
 	args = parser.parse_args()
 
-	if args.list_patches:
-		list_patches(find_patches())
+	if args.list_options:
+		list_options("patches", find_patches(), ".patch", patchdir, "patch")
+		list_options("color themes", find_color_themes(), ".theme", colorthemedir, "color-theme")
+		list_options("web extras", find_web_extras(), ".css", webextrasdir, "web-extras")
+		exit(0)
 
 	if args.patch and not shutil.which("patch"):
 		raise SystemExit(f"{TEXT_BOLD}patch{TEXT_RESET} executable not found in $PATH. Make sure you have GNU Patch installed")
