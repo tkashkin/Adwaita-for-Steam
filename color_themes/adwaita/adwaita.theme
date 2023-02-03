@@ -59,6 +59,9 @@ warning_fg = #FFFFFFFF
 [card]
 card_solid_bg = #3A3A3AFF
 
+[focusring]
+focusring = #78AEED80
+
 [scrollbar]
 scrollbar = #FFFFFF33
 scrollbar_hover = #FFFFFF66
