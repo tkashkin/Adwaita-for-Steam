@@ -25,6 +25,90 @@ A skin to make Steam look more like a native GNOME app
 * [Cantarell fonts](https://gitlab.gnome.org/GNOME/cantarell-fonts) as static fonts. Some distros install Cantarell as a variable font that is not supported by Steam, see [#45](https://github.com/tkashkin/Adwaita-for-Steam/issues/45).
 * The skin was created for the Linux version of Steam and wasn't tested on Windows or macOS. It will work with some visual problems.
 
+## Previews
+
+<details><summary>Previews</summary>
+
+<details><summary>Adwaita</summary>
+
+![Adwaita](/preview/adwaita.png?raw=true)
+
+</details>
+
+<details><summary>Breeze</summary>
+
+![Breeze](/preview/breeze.png?raw=true)
+
+</details>
+
+<details><summary>Catppuccin-Frappe</summary>
+
+![Catppuccin-Frappe](/preview/catppuccin-frappe.png?raw=true)
+
+</details>
+
+<details><summary>Catppuccin-Macchiato</summary>
+
+![Catppuccin-Macchiato](/preview/catppuccin-macchiato.png?raw=true)
+
+</details>
+
+<details><summary>Catppuccin-Mocha</summary>
+
+![Catppuccin-Mocha](/preview/catppuccin-mocha.png?raw=true)
+
+</details>
+
+<details><summary>Dracula</summary>
+
+![Dracula](/preview/dracula.png?raw=true)
+
+</details>
+
+<details><summary>Kate</summary>
+
+![Kate](/preview/kate.png?raw=true)
+
+</details>
+
+<details><summary>Nord</summary>
+
+![Nord](/preview/nord.png?raw=true)
+
+</details>
+
+<details><summary>One Pro</summary>
+
+![One Pro](/preview/one-pro.png?raw=true)
+
+</details>
+
+<details><summary>Pop</summary>
+
+![Pop](/preview/pop.png?raw=true)
+
+</details>
+
+<details><summary>Tokyo Night</summary>
+
+![Tokyo Night](/preview/tokyo-night.png?raw=true)
+
+</details>
+
+<details><summary>Tomorrow Night</summary>
+
+![Tomorrow Night](/preview/tomorrow-night.png?raw=true)
+
+</details>
+
+<details><summary>Yaru</summary>
+
+![Yaru](/preview/yaru.png?raw=true)
+
+</details>
+
+</details>
+
 ## Installation
 
 ### With installer script
