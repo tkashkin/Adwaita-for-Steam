@@ -12,7 +12,7 @@ A skin to make Steam look more like a native GNOME app
 * **Overlay**: done.
 * **Small mode**: done.
 * **Old library, old chat, other old unused windows**: not planned.
-* **Recoloring**: colors can be changed in `Adwaita/adw/colors.styles` and `web_themes/base/1_root.css`.
+* **Recoloring**: colors can be changed via making a new theme. See `color_themes` dir.
 * **Light theme**: not planned, would require redrawing all assets to be visible on light backgrounds.
 
 ### Limitations
@@ -35,7 +35,11 @@ cd Adwaita-for-Steam
 ./install.py
 ```
 
-Run `./install.py -l` to see customization options and `./install.py -p ${patch_name}` to apply them.
+Run `./install.py -l` to see customization options.
+
+Run `./install.py -c ${color_theme}` to change the color theme.
+
+Run `./install.py -p ${patch_name}` to apply patches.
 
 Run `./install.py -w {base, full, none}` to change the type of theme for web based elements of steam. base is a basic default, full includes heavier theming (including chat), and none disables this feature.
 
