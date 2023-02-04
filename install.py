@@ -10,7 +10,16 @@ import shutil
 import os
 
 TEXT_BOLD = "\033[1m"
+TEXT_BLUE = "\033[1;34m"
+TEXT_GREEN = "\033[1;32m"
+TEXT_PURPLE = "\033[1;35m"
+TEXT_RED = "\033[1;31m"
 TEXT_RESET = "\033[0m"
+
+TEXT_ARROW="→"
+TEXT_CHECK="✓"
+TEXT_CROSS="✖"
+TEXT_INFO="✦"
 
 COLOR_THEME_DIR = "extras/colorthemes"
 PATCH_DIR = "extras/patches"
@@ -68,7 +77,7 @@ SHARED_PATCHES = [
 # List Options
 def list_options(type: str, options: list[Path], suffix: str, sourcedir: Path, arg: str) -> NoReturn:
 	if options:
-		print(f"{type.upper()}: {len(options)}")
+		print(f"{TEXT_BLUE}{TEXT_BOLD}{type.upper()}: {len(options)}{TEXT_RESET}")
 		for option in options:
 			name = os.path.relpath(option, sourcedir).removesuffix(suffix)
 
@@ -81,10 +90,10 @@ def list_options(type: str, options: list[Path], suffix: str, sourcedir: Path, a
 				with option.open() as patch_file:
 					description = " - {}".format(patch_file.readline().removeprefix("#").strip())
 
-			print(f"{TEXT_BOLD}{name}{TEXT_RESET}{description}")
-		print(f"\nApply {type} using {TEXT_BOLD}'./install.py --{arg} NAME'{TEXT_RESET}\n")
+			print(f"{TEXT_PURPLE}{TEXT_BOLD}{name}{TEXT_RESET}{description}")
+		print(f"\nApply {type} using {TEXT_GREEN}'./install.py --{arg} NAME'{TEXT_RESET}\n")
 	else:
-		print("No {type} available\n")
+		print(f"{TEXT_PURPLE}{TEXT_INFO} No {type} available\n{TEXT_RESET}")
 
 # Patches
 def find_patches() -> list[Path]:
@@ -95,11 +104,11 @@ def patch_name(patch: Path) -> str:
 
 def apply_patch(parentdir: Path, patch: Path):
 	with patch.open() as patch_file:
-		print(f"\nApplying patch {TEXT_BOLD}{patch_name(patch)}{TEXT_RESET}...")
+		print(f"\n{TEXT_BLUE}{TEXT_ARROW} Applying patch {TEXT_BOLD}{patch_name(patch)}{TEXT_RESET}{TEXT_BLUE}...{TEXT_RESET}")
 		try:
 			subprocess.run(["patch", "-l", "-p0"], cwd = parentdir, stdin = patch_file)
 		except Exception as e:
-			print(f"\nError applying patch: {e}")
+			print(f"\n{TEXT_RED}{TEXT_CROSS} Error applying patch: {e}{TEXT_RESET}")
 
 # Webkit CSS
 def find_web_extras() -> list[Path]:
@@ -113,7 +122,7 @@ def gen_webkit_theme(target: Path, name: str, selected_extras: list[Path]):
 	elif name == "full":
 		selected_files = WEB_FULL_FILES
 	else:
-		raise SystemExit(f"Invalid web theme selected: {name}")
+		raise SystemExit(f"{TEXT_RED}{TEXT_CROSS} Invalid web theme selected: {name}{TEXT_RESET}")
 
 	with open(target,'wb') as wfd:
 		for f in selected_files:
@@ -131,10 +140,10 @@ def gen_webkit_theme(target: Path, name: str, selected_extras: list[Path]):
 
 				if f.exists():
 					with open(f,'rb') as fd:
-						print(f"Applying web_extra {TEXT_BOLD}{we}{TEXT_RESET}...")
+						print(f"{TEXT_BLUE}{TEXT_ARROW} Applying web_extra {TEXT_BOLD}{we}{TEXT_RESET}{TEXT_BLUE}...{TEXT_RESET}")
 						shutil.copyfileobj(fd, wfd)
 				else:
-					print(f"Web Extra: {TEXT_BOLD}{f}{TEXT_RESET} not found!")
+					print(f"{TEXT_PURPLE}{TEXT_INFO} Web Extra: {TEXT_BOLD}{f}{TEXT_RESET}{TEXT_PURPLE} not found!{TEXT_RESET}")
 			print()
 
 # Color Themes
@@ -187,9 +196,9 @@ def install(source: Path, target: Path, name: str):
 			target = target / "skins"
 			target.mkdir(exist_ok = True)
 	else:
-		print(f"Directory {TEXT_BOLD}{target}{TEXT_RESET} does not exist")
+		print(f"{TEXT_PURPLE}{TEXT_INFO} Directory {TEXT_BOLD}{target}{TEXT_RESET}{TEXT_PURPLE} does not exist{TEXT_RESET}")
 		return
-	print(f"Installing skin {TEXT_BOLD}{name}{TEXT_RESET} into {TEXT_BOLD}{target}{TEXT_RESET}...")
+	print(f"{TEXT_BLUE}{TEXT_ARROW} Installing skin {TEXT_BOLD}{name}{TEXT_RESET}{TEXT_BLUE} into {TEXT_BOLD}{target}{TEXT_RESET}{TEXT_BLUE}...{TEXT_RESET}")
 	target_skin = target / name
 	if target_skin.exists():
 		shutil.rmtree(target_skin)
@@ -197,11 +206,11 @@ def install(source: Path, target: Path, name: str):
 
 if __name__ == "__main__":
 	if not skindir.exists():
-		raise SystemExit(f"Skin directory {TEXT_BOLD}{SKIN_DIR}{TEXT_RESET} does not exist. Make sure you're running the installer from its root directory")
+		raise SystemExit(f"{TEXT_RED}{TEXT_CROSS} Skin directory {TEXT_BOLD}{SKIN_DIR}{TEXT_RESET}{TEXT_RED} does not exist. Make sure you're running the installer from its root directory{TEXT_RESET}")
 	if not webthemedir.exists():
-		raise SystemExit(f"Web Theme directory {TEXT_BOLD}{WEB_THEME_DIR}{TEXT_RESET} does not exist. Make sure you're running the installer from its root directory")
+		raise SystemExit(f"{TEXT_RED}{TEXT_CROSS} Web Theme directory {TEXT_BOLD}{WEB_THEME_DIR}{TEXT_RESET}{TEXT_RED} does not exist. Make sure you're running the installer from its root directory{TEXT_RESET}")
 	if not colorthemedir.exists():
-		raise SystemExit(f"Color Theme directory {TEXT_BOLD}{COLOR_THEME_DIR}{TEXT_RESET} does not exist. Make sure you're running the installer from its root directory")
+		raise SystemExit(f"{TEXT_RED}{TEXT_CROSS} Color Theme directory {TEXT_BOLD}{COLOR_THEME_DIR}{TEXT_RESET}{TEXT_RED} does not exist. Make sure you're running the installer from its root directory{TEXT_RESET}")
 
 	parser = ArgumentParser(description = "Adwaita-for-Steam installer")
 	parser.add_argument("-c", "--color-theme", default = "adwaita", help = "Choose color theme")
@@ -220,7 +229,7 @@ if __name__ == "__main__":
 		exit(0)
 
 	if args.patch and not shutil.which("patch"):
-		raise SystemExit(f"{TEXT_BOLD}patch{TEXT_RESET} executable not found in $PATH. Make sure you have GNU Patch installed")
+		raise SystemExit(f"{TEXT_RED}{TEXT_CROSS} {TEXT_BOLD}patch{TEXT_RESET}{TEXT_RED} executable not found in $PATH. Make sure you have GNU Patch installed{TEXT_RESET}")
 
 	if args.color_theme:
 		ct = Path(args.color_theme)
@@ -236,14 +245,14 @@ if __name__ == "__main__":
 			selected_theme = colorthemedir / "{}/{}{}".format(t, t, ".theme")
 			selected_theme_assets = colorthemedir / "{}/{}".format(t, "assets")
 			if not selected_theme.exists():
-				raise SystemExit(f"{TEXT_BOLD}{selected_theme}{TEXT_RESET} theme not found.")
+				raise SystemExit(f"{TEXT_RED}{TEXT_CROSS} {TEXT_BOLD}{selected_theme}{TEXT_RESET}{TEXT_RED} theme not found.{TEXT_RESET}")
 			if not selected_theme_assets.exists():
-				raise SystemExit(f"{TEXT_BOLD}{selected_theme}{TEXT_RESET} theme assets not found.")
+				raise SystemExit(f"{TEXT_RED}{TEXT_CROSS} {TEXT_BOLD}{selected_theme}{TEXT_RESET}{TEXT_RED} theme assets not found.{TEXT_RESET}")
 
 	with TemporaryDirectory() as tmpdir:
 		tmp = Path(tmpdir)
 		sourcedir = tmp / SKIN_DIR
-		print(f"Copying to the stage directory {TEXT_BOLD}{sourcedir}{TEXT_RESET}")
+		print(f"{TEXT_BLUE}{TEXT_ARROW} Copying to the stage directory {TEXT_BOLD}{sourcedir}{TEXT_RESET}")
 		shutil.copytree(skindir, sourcedir)
 
 		if args.patch:
@@ -263,13 +272,14 @@ if __name__ == "__main__":
 							args.web_extras = [p]
 						elif not [s for s in args.web_extras if p in s]:
 							args.web_extras.append(p)
-
 					apply_patch(tmp, patch)
+				else:
+					print(f"{TEXT_PURPLE}{TEXT_INFO} {patch} not found.{TEXT_RESET}")
 
 		gen_webkit_theme(sourcedir / CSS_FILE, args.web_theme, args.web_extras)
 
 		if selected_theme:
-			print(f"Applying color theme {TEXT_BOLD}{selected_theme}{TEXT_RESET}...")
+			print(f"{TEXT_BLUE}{TEXT_ARROW} Applying color theme {TEXT_BOLD}{selected_theme}{TEXT_RESET}{TEXT_BLUE}...{TEXT_RESET}")
 			config = configparser.ConfigParser()
 			config.read(selected_theme)
 			replace_css_colors(sourcedir / CSS_FILE, config)
@@ -288,3 +298,4 @@ if __name__ == "__main__":
 
 		for target in targets:
 			install(sourcedir, target, args.name)
+		print(f"{TEXT_GREEN}{TEXT_CHECK} Done!{TEXT_RESET}")
