@@ -287,7 +287,7 @@ settingsdialog.styles
 			render {}
 			render_bg
 			{
-				0="gradient_horizontal(x0-6, y0, x0+6, y1, window_bg_transparent, window_bg)"
+				0="gradient_horizontal(x0-6, y0, x0+6, y1, window_bg_transparent, window_bg_transparent)"
 				1="fill(x0+6, y0, x1, y1, window_bg)"
 			}
 		}
