@@ -12,11 +12,11 @@ import os
 TEXT_BOLD = "\033[1m"
 TEXT_RESET = "\033[0m"
 
+COLOR_THEME_DIR = "extras/colorthemes"
+PATCH_DIR = "extras/patches"
 SKIN_DIR = "Adwaita"
-PATCH_DIR = "patches"
-WEB_THEME_DIR = "web_themes"
-WEB_EXTRAS_DIR = "web_themes/extras"
-COLOR_THEME_DIR = "color_themes"
+WEB_EXTRAS_DIR = "extras/web/extras"
+WEB_THEME_DIR = "extras/web"
 
 ASSETS_DIR = "assets"
 COLORS_FILE = "adw/colors.styles"

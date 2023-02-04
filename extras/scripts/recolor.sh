@@ -1,5 +1,5 @@
 #!/bin/bash
-SKINS_DIR=".."
+SKINS_DIR="../colorthemes"
 SOURCE_DIR="../../Adwaita/assets"
 OUT_DIR="recolored"
 

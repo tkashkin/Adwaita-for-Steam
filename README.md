@@ -31,79 +31,79 @@ A skin to make Steam look more like a native GNOME app
 
 <details><summary>Adwaita</summary>
 
-![Adwaita](/preview/adwaita.png?raw=true)
+![Adwaita](/extras/colorthemes/adwaita/preview.png?raw=true)
 
 </details>
 
 <details><summary>Breeze</summary>
 
-![Breeze](/preview/breeze.png?raw=true)
+![Breeze](/extras/colorthemes/breeze/preview.png?raw=true)
 
 </details>
 
 <details><summary>Catppuccin-Frappe</summary>
 
-![Catppuccin-Frappe](/preview/catppuccin-frappe.png?raw=true)
+![Catppuccin-Frappe](/extras/colorthemes/catppuccin-frappe/preview.png?raw=true)
 
 </details>
 
 <details><summary>Catppuccin-Macchiato</summary>
 
-![Catppuccin-Macchiato](/preview/catppuccin-macchiato.png?raw=true)
+![Catppuccin-Macchiato](/extras/colorthemes/catppuccin-macchiato/preview.png?raw=true)
 
 </details>
 
 <details><summary>Catppuccin-Mocha</summary>
 
-![Catppuccin-Mocha](/preview/catppuccin-mocha.png?raw=true)
+![Catppuccin-Mocha](/extras/colorthemes/catppuccin-mocha/preview.png?raw=true)
 
 </details>
 
 <details><summary>Dracula</summary>
 
-![Dracula](/preview/dracula.png?raw=true)
+![Dracula](/extras/colorthemes/dracula/preview.png?raw=true)
 
 </details>
 
 <details><summary>Kate</summary>
 
-![Kate](/preview/kate.png?raw=true)
+![Kate](/extras/colorthemes/kate/preview.png?raw=true)
 
 </details>
 
 <details><summary>Nord</summary>
 
-![Nord](/preview/nord.png?raw=true)
+![Nord](/extras/colorthemes/nord/preview.png?raw=true)
 
 </details>
 
 <details><summary>One Pro</summary>
 
-![One Pro](/preview/one-pro.png?raw=true)
+![One Pro](/extras/colorthemes/one-pro/preview.png?raw=true)
 
 </details>
 
 <details><summary>Pop</summary>
 
-![Pop](/preview/pop.png?raw=true)
+![Pop](/extras/colorthemes/pop/preview.png?raw=true)
 
 </details>
 
 <details><summary>Tokyo Night</summary>
 
-![Tokyo Night](/preview/tokyo-night.png?raw=true)
+![Tokyo Night](/extras/colorthemes/tokyo-night/preview.png?raw=true)
 
 </details>
 
 <details><summary>Tomorrow Night</summary>
 
-![Tomorrow Night](/preview/tomorrow-night.png?raw=true)
+![Tomorrow Night](/extras/colorthemes/tomorrow-night/preview.png?raw=true)
 
 </details>
 
 <details><summary>Yaru</summary>
 
-![Yaru](/preview/yaru.png?raw=true)
+![Yaru](/extras/colorthemes/yaru/preview.png?raw=true)
 
 </details>
 
