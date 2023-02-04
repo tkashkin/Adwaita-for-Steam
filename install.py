@@ -137,10 +137,10 @@ def gen_webkit_theme(target: Path, name: str, selected_extras: list[Path]):
 def find_color_themes() -> list[Path]:
 	return list(sorted(colorthemedir.glob("**/*.theme")))
 
-def hex2rgba(hex: str) -> str:
+def hex2rgba(hex: str) -> tuple:
 	return tuple(int(hex[i:i+2], 16) for i in (1, 3, 5, 7))
 
-def rgba2vgui(name: str, rgba: str) -> str:
+def rgba2vgui(name: str, rgba: tuple) -> str:
 	return f'{name}="{rgba[0]} {rgba[1]} {rgba[2]} {rgba[3]}"'
 
 def hex2css(name: str, hex: str) -> str:
