@@ -63,6 +63,6 @@ card_solid_bg = #393C3FFF
 focusring = #3DAEE980
 
 [scrollbar]
-scrollbar = #FFFFFF33
-scrollbar_hover = #FFFFFF66
-scrollbar_active = #FFFFFF99
+scrollbar = #3DAEE933
+scrollbar_hover = #3DAEE966
+scrollbar_active = #3DAEE999

@@ -105,12 +105,14 @@ ACCENT=$(get_color "accent")
 WINDOW_BG=$(get_color "window_bg")
 HEADERBAR_BG=$(get_color "headerbar_bg")
 HEADERBAR_BACKDROP=$(get_color "headerbar_backdrop")
+SCROLLBAR=$(get_color "scrollbar")
 
 cecho p "Theme: $THEME"
 cecho p "Accent: $ACCENT"
 cecho p "Window BG: $WINDOW_BG"
 cecho p "Headerbar BG: $HEADERBAR_BG"
 cecho p "Headerbar Backdrop: $HEADERBAR_BACKDROP"
+cecho p "Scrollbar BG: $SCROLLBAR"
 
 mkdir -p "$OUT_DIR"
 
@@ -176,12 +178,12 @@ accent_shift_both_sizes "$sub_dir" "checked_disabled@2x"
 accent_shift_both_sizes "$sub_dir" "checked_hover@2x"
 
 set_cur "scrollbar"
-mask_fill_both_sizes "$sub_dir" "bottom@2x" "$ACCENT"
-mask_fill_both_sizes "$sub_dir" "bottom_active@2x" "$ACCENT"
-mask_fill_both_sizes "$sub_dir" "bottom_hover@2x" "$ACCENT"
-mask_fill_both_sizes "$sub_dir" "top@2x" "$ACCENT"
-mask_fill_both_sizes "$sub_dir" "top_active@2x" "$ACCENT"
-mask_fill_both_sizes "$sub_dir" "top_hover@2x" "$ACCENT"
+mask_fill_both_sizes "$sub_dir" "bottom@2x" "$SCROLLBAR"
+mask_fill_both_sizes "$sub_dir" "bottom_active@2x" "$SCROLLBAR"
+mask_fill_both_sizes "$sub_dir" "bottom_hover@2x" "$SCROLLBAR"
+mask_fill_both_sizes "$sub_dir" "top@2x" "$SCROLLBAR"
+mask_fill_both_sizes "$sub_dir" "top_active@2x" "$SCROLLBAR"
+mask_fill_both_sizes "$sub_dir" "top_hover@2x" "$SCROLLBAR"
 
 set_cur "switch"
 accent_shift_both_sizes "$sub_dir" "checked@2x"
