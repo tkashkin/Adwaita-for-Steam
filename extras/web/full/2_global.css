@@ -3,7 +3,8 @@
 /* -------------- */
 /* Store/Community Background */
 div#responsive_page_template_content,
-body.v6
+body.v6,
+body.v6 #footer
 {
 	background: var(--view_bg) !important;
 }
@@ -38,3 +39,8 @@ div#responsive_page_template_content .game_background_glow {
 	background: var(--bg) !important;
 }
 
+/* Wishlist Entries */
+body.wishlist .wishlist_row
+{
+	background: var(--card_bg) !important;
+}
