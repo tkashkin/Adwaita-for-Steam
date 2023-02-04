@@ -124,7 +124,11 @@ def gen_webkit_theme(target: Path, name: str, selected_extras: list[Path]):
 			print()
 			for f in selected_extras:
 				we = f.removesuffix(".css")
-				f = webthemedir / "extras/{}{}".format(we, ".css")
+				f = Path(f)
+
+				if not f.exists or f.suffix != ".css":
+					f = webthemedir / "extras/{}{}".format(we, ".css")
+
 				if f.exists():
 					with open(f,'rb') as fd:
 						print(f"Applying web_extra {TEXT_BOLD}{we}{TEXT_RESET}...")
@@ -218,16 +222,23 @@ if __name__ == "__main__":
 	if args.patch and not shutil.which("patch"):
 		raise SystemExit(f"{TEXT_BOLD}patch{TEXT_RESET} executable not found in $PATH. Make sure you have GNU Patch installed")
 
-	if args.color_theme.removesuffix(".theme") == "adwaita":
-		selected_theme = None
-	else:
-		t = args.color_theme.removesuffix(".theme")
-		selected_theme = colorthemedir / "{}/{}{}".format(t, t, ".theme")
-		selected_theme_assets = colorthemedir / "{}/{}".format(t, "assets")
-		if not selected_theme.exists():
-			raise SystemExit(f"{TEXT_BOLD}{selected_theme}{TEXT_RESET} theme not found.")
-		if not selected_theme_assets.exists():
-			raise SystemExit(f"{TEXT_BOLD}{selected_theme}{TEXT_RESET} theme assets not found.")
+	if args.color_theme:
+		ct = Path(args.color_theme)
+		cta = ct.parents[0] / "assets"
+
+		if args.color_theme.removesuffix(".theme") == "adwaita":
+			selected_theme = None
+		elif ct.exists() and ct.suffix == ".theme" and cta.exists():
+			selected_theme = ct
+			selected_theme_assets = cta
+		else:
+			t = args.color_theme.removesuffix(".theme")
+			selected_theme = colorthemedir / "{}/{}{}".format(t, t, ".theme")
+			selected_theme_assets = colorthemedir / "{}/{}".format(t, "assets")
+			if not selected_theme.exists():
+				raise SystemExit(f"{TEXT_BOLD}{selected_theme}{TEXT_RESET} theme not found.")
+			if not selected_theme_assets.exists():
+				raise SystemExit(f"{TEXT_BOLD}{selected_theme}{TEXT_RESET} theme assets not found.")
 
 	with TemporaryDirectory() as tmpdir:
 		tmp = Path(tmpdir)
@@ -237,8 +248,14 @@ if __name__ == "__main__":
 
 		if args.patch:
 			for patch_file in args.patch:
-				p = patch_file.removesuffix(".patch")
-				patch = patchdir / "{}{}".format(p, ".patch")
+
+				pf = Path(patch_file)
+				if pf.exists() and pf.suffix == ".patch":
+					patch = pf
+					p = None
+				else:
+					p = patch_file.removesuffix(".patch")
+					patch = patchdir / "{}{}".format(p, ".patch")
 
 				if patch.exists():
 					if [s for s in SHARED_PATCHES if p == s]:
