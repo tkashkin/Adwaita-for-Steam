@@ -1,0 +1,69 @@
+[general]
+bg = #24273AFF
+fg = #CAD3F5FF
+
+[window]
+border = #6E738DFF
+window_bg = #24273AFF
+window_bg_transparent = #24273A00
+window_fg = #CAD3F5FF
+
+[headerbar]
+headerbar_backdrop = #24273AFF
+headerbar_bg = #181926FF
+headerbar_fg = #CAD3F5FF
+headerbar_shade = #000000D9
+
+[popover]
+popover_bg = #1E2030FF
+popover_fg = #CAD3F5FF
+
+[toast]
+toast_bg = #1E2030B3
+toast_fg = #CAD3F5FF
+
+[view]
+view_bg = #1E2030FF
+view_fg = #CAD3F5FF
+
+[accent]
+accent = #5B6078FF
+accent_bg = #494D64FF
+accent_fg =#CAD3F5FF
+accent_disabled = #5B607880
+accent_hover_bg = #5B607812
+accent_active_bg = #5B607829
+
+[destructive]
+destructive = #EE99A0FF
+destructive_bg = #ED8796FF
+destructive_fg = #CAD3F5FF
+destructive_disabled = #EE99A080
+destructive_hover_bg = #EE99A012
+destructive_active_bg = #EE99A029
+
+[error]
+error = #EE99A0FF
+error_bg = #ED8796FF
+error_fg = #CAD3F5FF
+
+[success]
+success = #A6DA95FF
+success_bg = #8BD5CAFF
+success_fg = #CAD3F5FF
+
+[warning]
+warning = #F5A87FFF
+warning_bg = #EED49FFF
+warning_fg = #181926FF
+
+[card]
+card_solid_bg = #3A3D4EFF
+
+[focusring]
+focusring = #5B607880
+
+[scrollbar]
+scrollbar = #5B607833
+scrollbar_hover = #5B607866
+scrollbar_active = #5B607899
