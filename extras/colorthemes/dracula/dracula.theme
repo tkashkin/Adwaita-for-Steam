@@ -5,6 +5,7 @@ fg = #F8F8F2FF
 [window]
 border = #FFFFFF26
 window_bg = #282A36FF
+window_bg_transparent = #282A3600
 window_fg = #F8F8F2FF
 
 [headerbar]
