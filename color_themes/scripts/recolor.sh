@@ -19,9 +19,6 @@ CHECK="✓"
 CROSS="✖"
 INFO="✦"
 
-ORIG_ACCENT="#3584E4"
-ACCURATE_ACCENT=0
-
 function cecho {
 	local text
 
@@ -48,11 +45,7 @@ function set_cur() {
 
 function accent_shift() {
 	local fname="${1##*/}"
-	if [[ "$ACCURATE_ACCENT" -eq 1 ]]; then
-		./replacecolor -i "$ORIG_ACCENT" -o "$ACCENT" "$SOURCE_DIR/$1" "$out_sub_dir/$fname";
-	else
-		magick "$SOURCE_DIR/$1" -alpha deactivate -colorspace gray -auto-level +level-colors "$ACCENT",white -alpha activate "$out_sub_dir/$fname"
-	fi
+	magick "$SOURCE_DIR/$1" -alpha deactivate -colorspace gray -sigmoidal-contrast 10,90% +level-colors "$ACCENT",white -alpha activate "$out_sub_dir/$fname"
 }
 
 function mask_fill() {
@@ -77,15 +70,6 @@ cecho p "Accent: $ACCENT"
 cecho p "Window BG: $WINDOW_BG"
 cecho p "Headerbar BG: $HEADERBAR_BG"
 cecho p "Headerbar Backdrop: $HEADERBAR_BACKDROP"
-
-if [[ ! -f "./replacecolor" ]]; then
-	cecho p "---------"
-	cecho p "replacecolor script not in current dir, using less accurate accent method"
-	cecho p "replacecolor can be downloaded from: "
-	cecho p "http://www.fmwconcepts.com/imagemagick/replacecolor/index.php"
-else
-	ACCURATE_ACCENT=1
-fi
 
 mkdir -p "$OUT_DIR"
 
