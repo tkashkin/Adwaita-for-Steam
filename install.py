@@ -156,7 +156,7 @@ def replace_css_colors(target: Path, config: configparser.ConfigParser):
 	for section in config.sections():
 		for (key, val) in config.items(section):
 			s = hex2css(key, val)
-			content = re.sub(f'^\s+--{key}: [^;]+;$', s, content, flags = re.M)
+			content = re.sub(f'^(\s+)--{key}: [^;]+;$', r'\1' + s, content, flags = re.M)
 
 	with open (target, 'w' ) as f:
 		f.write(content)
@@ -171,7 +171,7 @@ def replace_vgui_colors(target: Path, config: configparser.ConfigParser):
 
 		for (key, val) in config.items(section):
 			s = hex2vgui(key, val)
-			content = re.sub(f'^\s+{key}="[^"]+"$', s, content, flags = re.M)
+			content = re.sub(f'^(\s+){key}="[^"]+"$', r'\1' + s, content, flags = re.M)
 
 	with open (target, 'w' ) as f:
 		f.write(content)
