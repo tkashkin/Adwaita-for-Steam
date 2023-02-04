@@ -44,14 +44,55 @@ function set_cur() {
 }
 
 function accent_shift() {
-	local fname="${1##*/}"
-	magick "$SOURCE_DIR/$1" -alpha deactivate -colorspace gray -sigmoidal-contrast 10,90% +level-colors "$ACCENT",white -alpha activate "$out_sub_dir/$fname"
+	local sub_dir="$1"
+	local fname="$2"
+	local scale_down="${3:-0}"
+
+	local args=()
+	args+=("$SOURCE_DIR/$sub_dir/$fname.tga")
+	args+=(-alpha "deactivate")
+	args+=(-colorspace "gray")
+	args+=(-sigmoidal-contrast "10,80%")
+	args+=(+level-colors "$ACCENT,white")
+	args+=(-alpha "activate")
+
+	if [[ "$scale_down" -eq 1 ]]; then
+		fname="${fname%@*}"
+		args+=(-resize "50%")
+	fi
+
+	args+=("$out_sub_dir/$fname.tga")
+	magick "${args[@]}"
+}
+
+function accent_shift_both_sizes() {
+	accent_shift "$@"
+	accent_shift "$@" 1
 }
 
 function mask_fill() {
-	local fname="${1##*/}"
-	local color="$2"
-	convert "$SOURCE_DIR/$1" -fill "$color" -colorize 100% "$out_sub_dir/$fname";
+	local sub_dir="$1"
+	local fname="$2"
+	local color="$3"
+	local scale_down="${4:-0}"
+
+	local args=()
+	args+=("$SOURCE_DIR/$sub_dir/$fname.tga")
+	args+=(-fill "$color")
+	args+=(-colorize "100%")
+
+	if [[ "$scale_down" -eq 1 ]]; then
+		fname="${fname%@*}"
+		args+=(-resize "50%")
+	fi
+
+	args+=("$out_sub_dir/$fname.tga")
+	convert "${args[@]}"
+}
+
+function mask_fill_both_sizes() {
+	mask_fill "$@"
+	mask_fill "$@" 1
 }
 
 ### Start
@@ -74,123 +115,77 @@ cecho p "Headerbar Backdrop: $HEADERBAR_BACKDROP"
 mkdir -p "$OUT_DIR"
 
 set_cur "avatar"
-mask_fill "$sub_dir/mask.tga" "$HEADERBAR_BG"
-mask_fill "$sub_dir/mask@2x.tga" "$HEADERBAR_BG"
-mask_fill "$sub_dir/mask_backdrop.tga" "$HEADERBAR_BACKDROP"
-mask_fill "$sub_dir/mask_backdrop@2x.tga" "$HEADERBAR_BACKDROP"
+mask_fill_both_sizes "$sub_dir" "mask@2x" "$HEADERBAR_BG"
+mask_fill_both_sizes "$sub_dir" "mask_backdrop@2x" "$HEADERBAR_BACKDROP"
 
 set_cur "checkbox"
-accent_shift "$sub_dir/checked.tga"
-accent_shift "$sub_dir/checked@2x.tga"
-accent_shift "$sub_dir/checked_disabled.tga"
-accent_shift "$sub_dir/checked_disabled@2x.tga"
-accent_shift "$sub_dir/checked_hover.tga"
-accent_shift "$sub_dir/checked_hover@2x.tga"
+accent_shift_both_sizes "$sub_dir" "checked@2x"
+accent_shift_both_sizes "$sub_dir" "checked_disabled@2x"
+accent_shift_both_sizes "$sub_dir" "checked_hover@2x"
 
 set_cur "checkbox_padded"
-accent_shift "$sub_dir/checked.tga"
-accent_shift "$sub_dir/checked@2x.tga"
-accent_shift "$sub_dir/checked_disabled.tga"
-accent_shift "$sub_dir/checked_disabled@2x.tga"
-accent_shift "$sub_dir/checked_hover.tga"
-accent_shift "$sub_dir/checked_hover@2x.tga"
+accent_shift_both_sizes "$sub_dir" "checked@2x"
+accent_shift_both_sizes "$sub_dir" "checked_disabled@2x"
+accent_shift_both_sizes "$sub_dir" "checked_hover@2x"
 
 set_cur "corners/6_mask_window_bg"
-mask_fill "$sub_dir/bl.tga" "$WINDOW_BG"
-mask_fill "$sub_dir/bl@2x.tga" "$WINDOW_BG"
-mask_fill "$sub_dir/br.tga" "$WINDOW_BG"
-mask_fill "$sub_dir/br@2x.tga" "$WINDOW_BG"
-mask_fill "$sub_dir/tl.tga" "$WINDOW_BG"
-mask_fill "$sub_dir/tl@2x.tga" "$WINDOW_BG"
-mask_fill "$sub_dir/tr.tga" "$WINDOW_BG"
-mask_fill "$sub_dir/tr@2x.tga" "$WINDOW_BG"
+mask_fill_both_sizes "$sub_dir" "bl@2x" "$WINDOW_BG"
+mask_fill_both_sizes "$sub_dir" "br@2x" "$WINDOW_BG"
+mask_fill_both_sizes "$sub_dir" "tl@2x" "$WINDOW_BG"
+mask_fill_both_sizes "$sub_dir" "tr@2x" "$WINDOW_BG"
 
 set_cur "corners/12_mask_window_bg"
-mask_fill "$sub_dir/bl.tga" "$WINDOW_BG"
-mask_fill "$sub_dir/bl@2x.tga" "$WINDOW_BG"
-mask_fill "$sub_dir/br.tga" "$WINDOW_BG"
-mask_fill "$sub_dir/br@2x.tga" "$WINDOW_BG"
-mask_fill "$sub_dir/tl.tga" "$WINDOW_BG"
-mask_fill "$sub_dir/tl@2x.tga" "$WINDOW_BG"
-mask_fill "$sub_dir/tr.tga" "$WINDOW_BG"
-mask_fill "$sub_dir/tr@2x.tga" "$WINDOW_BG"
+mask_fill_both_sizes "$sub_dir" "bl@2x" "$WINDOW_BG"
+mask_fill_both_sizes "$sub_dir" "br@2x" "$WINDOW_BG"
+mask_fill_both_sizes "$sub_dir" "tl@2x" "$WINDOW_BG"
+mask_fill_both_sizes "$sub_dir" "tr@2x" "$WINDOW_BG"
 
 set_cur "corners/40_window_bg"
-mask_fill "$sub_dir/bl.tga" "$WINDOW_BG"
-mask_fill "$sub_dir/bl@2x.tga" "$WINDOW_BG"
-mask_fill "$sub_dir/br.tga" "$WINDOW_BG"
-mask_fill "$sub_dir/br@2x.tga" "$WINDOW_BG"
-mask_fill "$sub_dir/tl.tga" "$WINDOW_BG"
-mask_fill "$sub_dir/tl@2x.tga" "$WINDOW_BG"
-mask_fill "$sub_dir/tr.tga" "$WINDOW_BG"
-mask_fill "$sub_dir/tr@2x.tga" "$WINDOW_BG"
+mask_fill_both_sizes "$sub_dir" "bl@2x" "$WINDOW_BG"
+mask_fill_both_sizes "$sub_dir" "br@2x" "$WINDOW_BG"
+mask_fill_both_sizes "$sub_dir" "tl@2x" "$WINDOW_BG"
+mask_fill_both_sizes "$sub_dir" "tr@2x" "$WINDOW_BG"
 
 set_cur "focusring/6"
-accent_shift "$sub_dir/bl.tga"
-accent_shift "$sub_dir/bl@2x.tga"
-accent_shift "$sub_dir/br.tga"
-accent_shift "$sub_dir/br@2x.tga"
-accent_shift "$sub_dir/tl.tga"
-accent_shift "$sub_dir/tl@2x.tga"
-accent_shift "$sub_dir/tr.tga"
-accent_shift "$sub_dir/tr@2x.tga"
+accent_shift_both_sizes "$sub_dir" "bl@2x"
+accent_shift_both_sizes "$sub_dir" "br@2x"
+accent_shift_both_sizes "$sub_dir" "tl@2x"
+accent_shift_both_sizes "$sub_dir" "tr@2x"
 
 set_cur "focusring/12"
-accent_shift "$sub_dir/bl.tga"
-accent_shift "$sub_dir/bl@2x.tga"
-accent_shift "$sub_dir/br.tga"
-accent_shift "$sub_dir/br@2x.tga"
-accent_shift "$sub_dir/tl.tga"
-accent_shift "$sub_dir/tl@2x.tga"
-accent_shift "$sub_dir/tr.tga"
-accent_shift "$sub_dir/tr@2x.tga"
+accent_shift_both_sizes "$sub_dir" "bl@2x"
+accent_shift_both_sizes "$sub_dir" "br@2x"
+accent_shift_both_sizes "$sub_dir" "tl@2x"
+accent_shift_both_sizes "$sub_dir" "tr@2x"
 
 set_cur "icons"
-accent_shift "$sub_dir/inbox_unread.tga"
-accent_shift "$sub_dir/inbox_unread@2x.tga"
-accent_shift "$sub_dir/inbox_unread_backdrop.tga"
-accent_shift "$sub_dir/inbox_unread_backdrop@2x.tga"
+accent_shift_both_sizes "$sub_dir" "inbox_unread@2x"
+accent_shift_both_sizes "$sub_dir" "inbox_unread_backdrop@2x"
 
 set_cur "overlay"
-mask_fill "$sub_dir/close_bg.tga" "$HEADERBAR_BG"
-mask_fill "$sub_dir/close_bg@2x.tga" "$HEADERBAR_BG"
+mask_fill_both_sizes "$sub_dir" "close_bg@2x" "$HEADERBAR_BG"
 
 set_cur "radiobutton"
-accent_shift "$sub_dir/checked.tga"
-accent_shift "$sub_dir/checked@2x.tga"
-accent_shift "$sub_dir/checked_disabled.tga"
-accent_shift "$sub_dir/checked_disabled@2x.tga"
-accent_shift "$sub_dir/checked_hover.tga"
-accent_shift "$sub_dir/checked_hover@2x.tga"
+accent_shift_both_sizes "$sub_dir" "checked@2x"
+accent_shift_both_sizes "$sub_dir" "checked_disabled@2x"
+accent_shift_both_sizes "$sub_dir" "checked_hover@2x"
 
 set_cur "radiobutton_padded"
-accent_shift "$sub_dir/checked.tga"
-accent_shift "$sub_dir/checked@2x.tga"
-accent_shift "$sub_dir/checked_disabled.tga"
-accent_shift "$sub_dir/checked_disabled@2x.tga"
-accent_shift "$sub_dir/checked_hover.tga"
-accent_shift "$sub_dir/checked_hover@2x.tga"
+accent_shift_both_sizes "$sub_dir" "checked@2x"
+accent_shift_both_sizes "$sub_dir" "checked_disabled@2x"
+accent_shift_both_sizes "$sub_dir" "checked_hover@2x"
 
 set_cur "scrollbar"
-mask_fill "$sub_dir/bottom.tga" "$ACCENT"
-mask_fill "$sub_dir/bottom@2x.tga" "$ACCENT"
-mask_fill "$sub_dir/bottom_active.tga" "$ACCENT"
-mask_fill "$sub_dir/bottom_active@2x.tga" "$ACCENT"
-mask_fill "$sub_dir/bottom_hover.tga" "$ACCENT"
-mask_fill "$sub_dir/bottom_hover@2x.tga" "$ACCENT"
-mask_fill "$sub_dir/top.tga" "$ACCENT"
-mask_fill "$sub_dir/top@2x.tga" "$ACCENT"
-mask_fill "$sub_dir/top_active.tga" "$ACCENT"
-mask_fill "$sub_dir/top_active@2x.tga" "$ACCENT"
-mask_fill "$sub_dir/top_hover.tga" "$ACCENT"
-mask_fill "$sub_dir/top_hover@2x.tga" "$ACCENT"
+mask_fill_both_sizes "$sub_dir" "bottom@2x" "$ACCENT"
+mask_fill_both_sizes "$sub_dir" "bottom_active@2x" "$ACCENT"
+mask_fill_both_sizes "$sub_dir" "bottom_hover@2x" "$ACCENT"
+mask_fill_both_sizes "$sub_dir" "top@2x" "$ACCENT"
+mask_fill_both_sizes "$sub_dir" "top_active@2x" "$ACCENT"
+mask_fill_both_sizes "$sub_dir" "top_hover@2x" "$ACCENT"
 
 set_cur "switch"
-accent_shift "$sub_dir/checked.tga"
-accent_shift "$sub_dir/checked@2x.tga"
-accent_shift "$sub_dir/checked_disabled.tga"
-accent_shift "$sub_dir/checked_disabled@2x.tga"
-accent_shift "$sub_dir/checked_hover.tga"
-accent_shift "$sub_dir/checked_hover@2x.tga"
+accent_shift_both_sizes "$sub_dir" "checked@2x"
+accent_shift_both_sizes "$sub_dir" "checked_disabled@2x"
+accent_shift_both_sizes "$sub_dir" "checked_hover@2x"
 
 cecho g "Done!"
