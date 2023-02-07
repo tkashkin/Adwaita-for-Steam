@@ -116,52 +116,58 @@
 
 [class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogCheckbox
 {
-	background: var(--checkbox_bg) !important;
-	border-radius: var(--checkbox_radius) !important;
-	box-shadow: var(--checkbox_bs) !important;
-}
-
-[class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogCheckbox:active
-{
-	background: var(--button_hover_bg) !important;
-}
-
-[class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogCheckbox:focus
-{
-	outline: none !important;
+	background: var(--card_bg) !important;
+	background-blend-mode: var(--button_suggested_blend) !important;
+	border-radius: var(--entry_radius) !important;
+	box-shadow: none !important;
+	padding: 2px !important;
+	min-height: 22px !important;
+	min-width: 44px !important;
 }
 
 [class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogCheckbox.Active
 {
-	background: var(--checkbox_checked_bg) !important;
-	background-blend-mode: var(--button_suggested_blend) !important;
-	border-radius: var(--checkbox_radius) !important;
-	box-shadow: none !important;
+	background: var(--button_suggested_bg) !important;
 }
 
-[class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogCheckbox.Active:hover
+[class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogCheckbox:hover
 {
-	background: var(--button_suggested_hover_bg) !important;
+	background-color: var(--button_suggested_hover_bg) !important;
 }
 
-[class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogCheckbox.Active:active
+[class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogCheckbox:active
 {
-	background: var(--button_suggested_click_bg) !important;
+	background-color: var(--button_suggested_click_bg) !important;
 }
 
-[class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogCheckbox > svg
+[class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogCheckbox .SVGIcon_DialogCheck
 {
-	stroke-width: var(--checkbox_checked_sw) !important;
+	opacity: 1 !important;
+	transition: margin-left 60ms linear !important;
+	margin-left: -2px !important;
 }
 
-[class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogCheckbox > svg > path
+[class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogCheckbox.Active .SVGIcon_DialogCheck
 {
-	stroke: var(--button_fg) !important;
+	margin-left: 20px !important;
+}
+
+[class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogCheckbox svg path
+{
+	d: path("M 100, 100 m -75, 0 a 160,160 0 1,0 320,0 a 160,160 0 1,0 -320,0") !important;
+	fill: var(--fg) !important;
+	stroke: none !important;
+	stroke-dasharray: none !important;
+}
+
+[class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogCheckbox_Container
+{
+	margin-bottom: 9px !important;
 }
 
 [class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogToggle_Label
 {
-	padding-top: 2px !important;
+	padding-top: 4px !important;
 	color: var(--button_fg) !important;
 	font-family: var(--basefont) !important;
 	font-size: 14px !important;
@@ -238,3 +244,31 @@
 	background: rgba(120, 174, 237, 0.16) !important;
 }
 
+.ModalPosition_TopBar
+{
+	display: none !important;
+}
+
+[class*="launchoptionsdialog_ListContainer_"] input[type="radio"]
+{
+	appearance: var(--radio_appearance) !important;
+	border: var(--radio_border) !important;
+	border-radius: var(--radio_radius) !important;
+	min-height: var(--radio_min_height) !important;
+	min-width: var(--radio_min_width) !important;
+}
+
+[class*="launchoptionsdialog_ListContainer_"] input[type="radio"]:checked
+{
+	appearance: var(--radio_appearance) !important;
+	background: var(--radio_checked_bg) !important;
+	border-radius: var(--radio_radius) !important;
+	border: var(--radio_checked_border) !important;
+	min-height: var(--radio_min_height) !important;
+	min-width: var(--radio_min_width) !important;
+}
+
+[class*="launchoptionsdialog_ListContainer_"] input[type="radio"]:focus
+{
+	outline: none !important;
+}

@@ -417,7 +417,7 @@
 }
 
 /* Checkboxes */
-.ModalDialogPopup .DialogCheckbox_Container
+.ModalDialogPopup div:not([class*="launchoptionsdialog_CheckboxRow_"]) > .DialogCheckbox_Container
 {
 	align-items: center !important;
 	background: var(--entry_bg) !important;
@@ -428,13 +428,13 @@
 	transition: var(--focus_transition) !important;
 }
 
-.ModalDialogPopup .DialogCheckbox_Container:hover
+.ModalDialogPopup div:not([class*="launchoptionsdialog_CheckboxRow_"]) > .DialogCheckbox_Container:hover
 {
 	background: var(--button_hover_bg) !important;
 	box-shadow: none !important;
 }
 
-.ModalDialogPopup .DialogCheckbox_Container:active
+.ModalDialogPopup div:not([class*="launchoptionsdialog_CheckboxRow_"]) > .DialogCheckbox_Container:active
 {
 	background: var(--button_active_bg) !important;
 }
@@ -490,6 +490,7 @@
 	d: path("M 100, 100 m -75, 0 a 160,160 0 1,0 320,0 a 160,160 0 1,0 -320,0") !important;
 	fill: var(--fg) !important;
 	stroke: none !important;
+	stroke-dasharray: none !important;
 }
 
 .ModalDialogPopup .DialogControlsSection .DialogCheckbox_Container:not(:last-child):first-child,
