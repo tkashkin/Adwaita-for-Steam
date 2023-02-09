@@ -88,6 +88,8 @@
 	--checkbox_radius: 6px;
 	--checkbox_bg: transparent;
 	--checkbox_bs: inset 0px 0px 0px 2px var(--button_hover_bg);
+	--checkbox_hover_bs: inset 0px 0px 0px 2px var(--button_active_bg);
+	--checkbox_active_bg: var(--button_active_bg);
 
 	--radio_appearance: none;
 	--radio_border: solid 2px var(--button_hover_bg);

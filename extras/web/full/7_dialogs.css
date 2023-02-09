@@ -417,7 +417,58 @@
 }
 
 /* Checkboxes */
-.ModalDialogPopup div:not([class*="launchoptionsdialog_CheckboxRow_"]) > .DialogCheckbox_Container
+.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_Install_"] > .DialogCheckbox
+{
+	background-color: var(--checkbox_bg) !important;
+	box-shadow: var(--checkbox_bs) !important;
+	border-radius: var(--checkbox_radius) !important;
+	height: 20px !important;
+	width: 20px !important;
+}
+
+.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_Install_"] > .DialogCheckbox:hover
+{
+	box-shadow: var(--checkbox_hover_bs) !important;
+}
+
+.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_Install_"] > .DialogCheckbox:active:not(.Active)
+{
+	box-shadow: none !important;
+	background: var(--checkbox_active_bg) !important;
+}
+
+.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_Install_"] > .DialogCheckbox.Active
+{
+	background: var(--checkbox_checked_bg) !important;
+	background-blend-mode: var(--button_suggested_blend) !important;
+	border-radius: var(--checkbox_radius) !important;
+	box-shadow: none !important;
+}
+
+.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_Install_"] > .DialogCheckbox.Active:hover
+{
+	background-color: var(--button_suggested_hover_bg) !important;
+}
+
+.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_Install_"] > .DialogCheckbox.Active:active
+{
+	background-color: var(--button_suggested_click_bg) !important;
+}
+
+.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_Install_"] > .DialogCheckbox svg
+{
+	stroke-width: var(--checkbox_checked_sw) !important;
+}
+
+.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_Install_"] > .DialogCheckbox svg path
+{
+	stroke: var(--fg) !important;
+	d: path("M 185 63 L 92 170 l -53 -52") !important;
+	transition: none !important;
+}
+
+/* Checkboxes as Switches */
+.ModalDialogPopup [class*="appproperties_AppProperties_"] .DialogCheckbox_Container
 {
 	align-items: center !important;
 	background: var(--entry_bg) !important;
@@ -428,13 +479,13 @@
 	transition: var(--focus_transition) !important;
 }
 
-.ModalDialogPopup div:not([class*="launchoptionsdialog_CheckboxRow_"]) > .DialogCheckbox_Container:hover
+.ModalDialogPopup [class*="appproperties_AppProperties_"] .DialogCheckbox_Container:hover
 {
 	background: var(--button_hover_bg) !important;
 	box-shadow: none !important;
 }
 
-.ModalDialogPopup div:not([class*="launchoptionsdialog_CheckboxRow_"]) > .DialogCheckbox_Container:active
+.ModalDialogPopup [class*="appproperties_AppProperties_"] .DialogCheckbox_Container:active
 {
 	background: var(--button_active_bg) !important;
 }
@@ -447,7 +498,8 @@
 	font-weight: var(--label_weight) !important;
 }
 
-.ModalDialogPopup .DialogCheckbox
+.ModalDialogPopup [class*="appproperties_AppProperties_"] div:not([class*="appproperties_Install_"]) > .DialogCheckbox,
+.FriendsSettingsNotificationRow_Checkbox .DialogCheckbox
 {
 	background: var(--card_bg) !important;
 	background-blend-mode: var(--button_suggested_blend) !important;
@@ -458,34 +510,40 @@
 	min-width: 44px !important;
 }
 
-.ModalDialogPopup .DialogCheckbox.Active
+.ModalDialogPopup [class*="appproperties_AppProperties_"] div:not([class*="appproperties_Install_"]) > .DialogCheckbox.Active,
+.FriendsSettingsNotificationRow_Checkbox .DialogCheckbox.Active
 {
 	background: var(--button_suggested_bg) !important;
 }
 
-.ModalDialogPopup .DialogCheckbox:hover
+.ModalDialogPopup [class*="appproperties_AppProperties_"] div:not([class*="appproperties_Install_"]) > .DialogCheckbox:hover,
+.FriendsSettingsNotificationRow_Checkbox .DialogCheckbox:hover
 {
 	background-color: var(--button_suggested_hover_bg) !important;
 }
 
-.ModalDialogPopup .DialogCheckbox:active
+.ModalDialogPopup [class*="appproperties_AppProperties_"] div:not([class*="appproperties_Install_"]) > .DialogCheckbox:active,
+.FriendsSettingsNotificationRow_Checkbox .DialogCheckbox:active
 {
 	background-color: var(--button_suggested_click_bg) !important;
 }
 
-.ModalDialogPopup .DialogCheckbox .SVGIcon_DialogCheck
+.ModalDialogPopup [class*="appproperties_AppProperties_"] div:not([class*="appproperties_Install_"]) > .DialogCheckbox .SVGIcon_DialogCheck,
+.FriendsSettingsNotificationRow_Checkbox .DialogCheckbox .SVGIcon_DialogCheck
 {
 	opacity: 1 !important;
 	transition: margin-left 60ms linear !important;
 	margin-left: -2px !important;
 }
 
-.ModalDialogPopup .DialogCheckbox.Active .SVGIcon_DialogCheck
+.ModalDialogPopup [class*="appproperties_AppProperties_"] div:not([class*="appproperties_Install_"]) > .DialogCheckbox.Active .SVGIcon_DialogCheck,
+.FriendsSettingsNotificationRow_Checkbox .DialogCheckbox.Active .SVGIcon_DialogCheck
 {
 	margin-left: 20px !important;
 }
 
-.ModalDialogPopup .DialogCheckbox svg path
+.ModalDialogPopup [class*="appproperties_AppProperties_"] div:not([class*="appproperties_Install_"]) > .DialogCheckbox svg path,
+.FriendsSettingsNotificationRow_Checkbox .DialogCheckbox svg path
 {
 	d: path("M 100, 100 m -75, 0 a 160,160 0 1,0 320,0 a 160,160 0 1,0 -320,0") !important;
 	fill: var(--fg) !important;
@@ -493,25 +551,25 @@
 	stroke-dasharray: none !important;
 }
 
-.ModalDialogPopup .DialogControlsSection .DialogCheckbox_Container:not(:last-child):first-child,
-.ModalDialogPopup .DialogBody .DialogCheckbox_Container:not(:last-child):first-child,
-.ModalDialogPopup .DialogBody .DialogDropDown:not(:last-child):first-child
+.ModalDialogPopup [class*="appproperties_AppProperties_"] .DialogControlsSection .DialogCheckbox_Container:not(:last-child):first-child,
+.ModalDialogPopup [class*="appproperties_AppProperties_"] .DialogBody .DialogCheckbox_Container:not(:last-child):first-child,
+.ModalDialogPopup [class*="appproperties_AppProperties_"] .DialogBody .DialogDropDown:not(:last-child):first-child
 {
 	border-bottom-right-radius: 0px !important;
 	border-bottom-left-radius: 0px !important;
 }
 
-.ModalDialogPopup .DialogControlsSection .DialogCheckbox_Container:not(:first-child):last-child,
-.ModalDialogPopup .DialogBody .DialogCheckbox_Container:not(:first-child):last-child,
-.ModalDialogPopup .DialogBody .DialogDropDown:not(:first-child):last-child,
-.ModalDialogPopup .DialogBody .DialogCheckbox_Container + .DialogInputLabelGroup > .DialogDropDown,
-.ModalDialogPopup .DialogBody .DialogInputLabelGroup > .DialogDropDown + .DialogCheckbox_Container
+.ModalDialogPopup [class*="appproperties_AppProperties_"] .DialogControlsSection .DialogCheckbox_Container:not(:first-child):last-child,
+.ModalDialogPopup [class*="appproperties_AppProperties_"] .DialogBody .DialogCheckbox_Container:not(:first-child):last-child,
+.ModalDialogPopup [class*="appproperties_AppProperties_"] .DialogBody .DialogDropDown:not(:first-child):last-child,
+.ModalDialogPopup [class*="appproperties_AppProperties_"] .DialogBody .DialogCheckbox_Container + .DialogInputLabelGroup > .DialogDropDown,
+.ModalDialogPopup [class*="appproperties_AppProperties_"] .DialogBody .DialogInputLabelGroup > .DialogDropDown + .DialogCheckbox_Container
 {
 	border-top-right-radius: 0px !important;
 	border-top-left-radius: 0px !important;
 }
 
-.ModalDialogPopup .DialogBody .DialogInputLabelGroup > .DialogLabel + .DialogDropDown
+.ModalDialogPopup [class*="appproperties_AppProperties_"] .DialogBody .DialogInputLabelGroup > .DialogLabel + .DialogDropDown
 {
 	border-top-right-radius: var(--entry_radius) !important;
 	border-top-left-radius: var(--entry_radius) !important;

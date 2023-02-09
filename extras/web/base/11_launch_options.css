@@ -116,48 +116,53 @@
 
 [class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogCheckbox
 {
-	background: var(--card_bg) !important;
-	background-blend-mode: var(--button_suggested_blend) !important;
-	border-radius: var(--entry_radius) !important;
-	box-shadow: none !important;
-	padding: 2px !important;
-	min-height: 22px !important;
-	min-width: 44px !important;
-}
-
-[class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogCheckbox.Active
-{
-	background: var(--button_suggested_bg) !important;
+	background-color: var(--checkbox_bg) !important;
+	box-shadow: var(--checkbox_bs) !important;
+	border-radius: var(--checkbox_radius) !important;
+	height: 20px !important;
+	width: 20px !important;
+	margin-top: 3px !important;
 }
 
 [class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogCheckbox:hover
 {
+	box-shadow: var(--checkbox_hover_bs) !important;
+}
+
+[class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogCheckbox:active:not(.Active)
+{
+	box-shadow: none !important;
+	background: var(--checkbox_active_bg) !important;
+}
+
+[class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogCheckbox.Active
+{
+	background: var(--checkbox_checked_bg) !important;
+	background-blend-mode: var(--button_suggested_blend) !important;
+	border-radius: var(--checkbox_radius) !important;
+	box-shadow: none !important;
+}
+
+[class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogCheckbox.Active:hover
+{
 	background-color: var(--button_suggested_hover_bg) !important;
 }
 
-[class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogCheckbox:active
+[class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogCheckbox.Active:active
 {
 	background-color: var(--button_suggested_click_bg) !important;
 }
 
-[class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogCheckbox .SVGIcon_DialogCheck
+[class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogCheckbox svg
 {
-	opacity: 1 !important;
-	transition: margin-left 60ms linear !important;
-	margin-left: -2px !important;
-}
-
-[class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogCheckbox.Active .SVGIcon_DialogCheck
-{
-	margin-left: 20px !important;
+	stroke-width: var(--checkbox_checked_sw) !important;
 }
 
 [class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogCheckbox svg path
 {
-	d: path("M 100, 100 m -75, 0 a 160,160 0 1,0 320,0 a 160,160 0 1,0 -320,0") !important;
-	fill: var(--fg) !important;
-	stroke: none !important;
-	stroke-dasharray: none !important;
+	stroke: var(--fg) !important;
+	d: path("M 185 63 L 92 170 l -53 -52") !important;
+	transition: none !important;
 }
 
 [class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogCheckbox_Container
