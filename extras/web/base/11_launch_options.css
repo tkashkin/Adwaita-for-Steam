@@ -249,11 +249,6 @@
 	background: rgba(120, 174, 237, 0.16) !important;
 }
 
-.ModalPosition_TopBar
-{
-	display: none !important;
-}
-
 [class*="launchoptionsdialog_ListContainer_"] input[type="radio"]
 {
 	appearance: var(--radio_appearance) !important;
