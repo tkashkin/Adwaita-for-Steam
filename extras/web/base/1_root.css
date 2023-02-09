@@ -88,6 +88,16 @@
 	--checkbox_radius: 6px;
 	--checkbox_bg: transparent;
 	--checkbox_bs: inset 0px 0px 0px 2px var(--button_hover_bg);
+	--checkbox_hover_bs: inset 0px 0px 0px 2px var(--button_active_bg);
+	--checkbox_active_bg: var(--button_active_bg);
+
+	--radio_appearance: none;
+	--radio_border: solid 2px var(--button_hover_bg);
+	--radio_checked_bg: var(--button_fg);
+	--radio_checked_border: solid 6px var(--accent_bg);
+	--radio_min_height: 20px;
+	--radio_min_width: 20px;
+	--radio_radius: 50%;
 
 	--card_bg: rgba(255, 255, 255, 0.1);
 	--card_fg: var(--fg);
