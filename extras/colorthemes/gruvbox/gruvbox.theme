@@ -60,6 +60,9 @@ warning_fg = #EBDBB2FF
 [button]
 button_fg = #EBDBB2FF
 
+[label]
+dim_label_fg = #EBDBB28C
+
 [card]
 card_solid_bg = #3E3E3EFF
 

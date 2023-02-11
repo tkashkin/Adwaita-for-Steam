@@ -57,6 +57,12 @@ warning = #FDBC4BFF
 warning_bg = #FDBC4BFF
 warning_fg = #FCFCFCFF
 
+[button]
+button_fg = #FCFCFCFF
+
+[label]
+dim_label_fg = #FCFCFC8C
+
 [card]
 card_solid_bg = #393C3FFF
 
