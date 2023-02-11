@@ -36,6 +36,17 @@
 	position: fixed !important;
 }
 
+/* Content Management */
+.TitleBar.title-area
+{
+	z-index: 3 !important;
+}
+
+.ModalDialogPopup [class*="contentmanagement_ContentManagement_"] [class*="boxcarousel_BoxCarouselContents_"]
+{
+	padding-left: 70px;
+}
+
 /* ------------------------------------------ */
 /* --- Show Minimize and Maximize Button  --- */
 /* ------------------------------------------ */
