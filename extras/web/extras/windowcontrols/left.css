@@ -25,12 +25,7 @@
 }
 
 /* Content Management */
-.TitleBar.title-area
+[class*="contentmanagement_ContentManagement_"] [class*="contentmanagement_PageableCarousel_"]
 {
-	z-index: 3 !important;
-}
-
-.ModalDialogPopup [class*="contentmanagement_ContentManagement_"] [class*="boxcarousel_BoxCarouselContents_"]
-{
-	padding-left: 70px;
+	margin-left: 70px !important;
 }
