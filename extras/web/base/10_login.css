@@ -51,6 +51,7 @@
 	background: var(--card_bg) !important;
 	border-radius: var(--card_radius) !important;
 	border: none !important;
+	color: var(--fg) !important;
 	min-height: var(--entry_min_height_labeled) !important;
 	padding: var(--entry_padding_labeled) !important;
 	transition: var(--focus_transition) !important;
