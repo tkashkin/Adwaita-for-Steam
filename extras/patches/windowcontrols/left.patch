@@ -118,3 +118,13 @@
  
  		place { control="frame_title" width=max height=48 }
  
+--- Adwaita/steam/cached/SingleUpdateNewsDialog.res
++++ Adwaita/steam/cached/SingleUpdateNewsDialog.res
+@@ -10,7 +10,7 @@
+ 
+        layout
+        {
+-               place { control="frame_minimize,frame_close" align=right spacing=14 margin-right=12 y=12 }
++               place { control="frame_minimize,frame_close" align=left spacing=14 margin-left=12 y=12 }
+ 
+                place { control="frame_title" width=max height=48 }

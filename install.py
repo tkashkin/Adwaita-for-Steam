@@ -74,6 +74,8 @@ WEB_FULL_FILES = [
 SHARED_PATCHES = [
 	"windowcontrols/hide-close",
 	"windowcontrols/right-all",
+	"windowcontrols/left-all",
+	"windowcontrols/left",
 ]
 
 # List Options
@@ -137,7 +139,7 @@ def gen_webkit_theme(target: Path, name: str, selected_extras: list[Path]):
 				we = f.removesuffix(".css")
 				f = Path(f)
 
-				if not f.exists or f.suffix != ".css":
+				if not f.exists() or f.suffix != ".css":
 					f = webthemedir / "extras/{}{}".format(we, ".css")
 
 				if f.exists():
