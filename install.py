@@ -74,6 +74,8 @@ WEB_FULL_FILES = [
 SHARED_PATCHES = [
 	"windowcontrols/hide-close",
 	"windowcontrols/right-all",
+	"windowcontrols/left-all",
+	"windowcontrols/left",
 ]
 
 # List Options
