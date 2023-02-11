@@ -65,6 +65,13 @@
 	fill: var(--fg) !important;
 }
 
+[class*="libraryhomerecentgames_AddedDate_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--baseweight) !important;
+}
+
 /* Popup Elements */
 [class*="libraryhomeshowcases_CollectionDropDownContainer_"][class*="libraryhomeshowcases_CollectionDropDownContainer_"] ._DialogInputContainer[class*="dropdown_DialogDropDownMenu_"],
 .DialogMenuPosition[class*="appgrid_SortingDropDownContainer_"] > div,

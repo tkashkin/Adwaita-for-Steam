@@ -120,7 +120,8 @@
 [class*="appactivityday_PartnerEventMediumImage_Container_"]:hover,
 [class*="appactivityday_PartnerEventLargeImage_Container_"]:hover,
 [class*="appdetailsachievementssection_AdditionalItem_"]:hover,
-[class*="appdetailscommunityfeed_LoadContentButton_"]:hover
+[class*="appdetailscommunityfeed_LoadContentButton_"]:hover,
+[class*="appdetailsactivitysection_FetchMoreContainer_"]:hover
 {
 	background: var(--button_hover_bg) !important;
 }
@@ -205,6 +206,32 @@
 	background: none !important;
 }
 
+/* Fetch More */
+[class*="appdetailsactivitysection_FetchMoreContainer_"]::before,
+[class*="appdetailsactivitysection_FetchMoreContainer_"]:active
+{
+	box-shadow: none !important;
+}
+
+/* Pop Up Update */
+[class*="apppartnereventspage_PartnerEvent_"]
+{
+	border-radius: var(--popover_radius) !important;
+	background: var(--popover_bg) !important;
+	border: none !important;
+	box-shadow: none !important;
+}
+
+[class*="partnereventdisplay_EventBackgroundBlur_"]
+{
+	display: none !important;
+}
+
+[class*="partnereventdisplay_EventDetailsBody_"]
+{
+	color: var(--fg) !important;
+}
+
 /* Post Game Summary */
 [class*="spotlightgameplaysummary_SummaryCarouselContainer_"]
 {
@@ -262,6 +289,18 @@
 {
 	background: var(--popover_bg) !important;
 	border-radius: var(--popover_radius) !important;
+}
+
+/* Write a Review */
+[class*="writereview_Playtime_"],
+[class*="writereview_ReviewThumbButton_"]
+{
+	color: var(--accent) !important;
+}
+
+[class*="writereview_ThumbIcon_"]
+{
+	fill: var(--accent) !important;
 }
 
 /* Activity Post */

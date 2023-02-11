@@ -234,6 +234,12 @@
 	color: var(--success_bg) !important;
 }
 
+.friend.offline [class*="personanameandstatus_playerName_"],
+.friend.offline [class*="personanameandstatus_richPresenceLabel_"]
+{
+	color: var(--dim_label_fg) !important;
+}
+
 /* - Right Side - */
 .chatDialogs,
 .titleBarContainer.ChatTabs,
@@ -364,10 +370,15 @@ button[class*="chatentry_EmoticonPickerButton_"]
 }
 
 /* Time Divider */
-.msg.timeDivision.time_passes .preHorizDivider,
-.msg.timeDivision.time_passes .horizDivider
+.msg.timeDivision
 {
-	border: 1px dashed var(--border) !important;
+	color: var(--dim_label_fg) !important;
+}
+
+.msg.timeDivision .preHorizDivider,
+.msg.timeDivision .horizDivider
+{
+	background-color: var(--dim_label_fg) !important;
 }
 
 /* Message Images */
@@ -413,6 +424,12 @@ button[class*="chatentry_EmoticonPickerButton_"]
 .chatHistory .isCurrentUser [class*="messages_SpeakerName_Default_"]
 .chatHistory .isCurrentUser .GamepadMode[class*="messages_SpeakerName_Default_"],
 .chatHistory .GamepadMode .isCurrentUser [class*="messages_SpeakerName_Default_"]
+{
+	color: var(--dim_label_fg) !important;
+}
+
+/* Message Timestamp */
+.chatHistory .speakerTimeStamp
 {
 	color: var(--dim_label_fg) !important;
 }
