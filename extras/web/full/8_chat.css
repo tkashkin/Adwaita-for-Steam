@@ -373,12 +373,14 @@ button[class*="chatentry_EmoticonPickerButton_"]
 .msg.timeDivision
 {
 	color: var(--dim_label_fg) !important;
+	opacity: 0.55 !important;
 }
 
 .msg.timeDivision .preHorizDivider,
 .msg.timeDivision .horizDivider
 {
 	background-color: var(--dim_label_fg) !important;
+	opacity: 0.55 !important;
 }
 
 /* Message Images */
@@ -432,6 +434,7 @@ button[class*="chatentry_EmoticonPickerButton_"]
 .chatHistory .speakerTimeStamp
 {
 	color: var(--dim_label_fg) !important;
+	opacity: 0.55 !important;
 }
 
 /* Message Text */

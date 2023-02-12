@@ -67,7 +67,7 @@
 
 [class*="libraryhomerecentgames_AddedDate_"]
 {
-	color: var(--fg) !important;
+	color: var(--dim_label_fg) !important;
 	font-family: var(--basefont) !important;
 	font-weight: var(--baseweight) !important;
 }
