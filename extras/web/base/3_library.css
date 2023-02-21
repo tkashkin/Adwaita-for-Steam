@@ -165,6 +165,8 @@
 {
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
+	font-size: var(--button_font_size) !important;
+	font-weight: var(--button_font_weight) !important;
 }
 
 [class*="gamelisthome_CollectionIconBox_"]
@@ -194,6 +196,8 @@
 	border-radius: var(--button_radius) !important;
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
+	font-size: var(--button_font_size) !important;
+	font-weight: var(--button_font_weight) !important;
 }
 
 [class*="gamelistdropdown_MenuHeader_"]:hover,
