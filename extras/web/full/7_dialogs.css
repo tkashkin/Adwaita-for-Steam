@@ -414,6 +414,7 @@
 
 .ModalDialogPopup .DialogToggle_Label
 {
+	color: var(--fg) !important;
 	flex-grow: 1 !important;
 	font-family: var(--basefont) !important;
 	font-size: var(--label_size) !important;
@@ -503,6 +504,7 @@
 	background: var(--entry_bg) !important;
 	border-radius: var(--entry_radius) !important;
 	border: none !important;
+	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
 	font-size: var(--entry_font_size) !important;
 	font-weight: var(--entry_font_weight) !important;
@@ -584,6 +586,7 @@
 	align-items: center !important;
 	background: var(--entry_bg) !important;
 	border-radius: var(--entry_radius) !important;
+	color: var(--fg) !important;
 	display: flex !important;
 	font-family: var(--basefont) !important;
 	font-size: var(--entry_font_size) !important;
@@ -700,6 +703,12 @@
 .ModalDialogPopup span[class*="appproperties_SteamInputLink_"]:hover
 {
 	text-decoration: underline !important;
+}
+
+.ModalDialogPopup span[class*="appproperties_SteamInputStatus_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
 }
 
 /* DLC & Workshop Grid */

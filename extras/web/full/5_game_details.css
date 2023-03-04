@@ -20,7 +20,10 @@
 [class*="spotlight_MajorEventBackground_"],
 [class*="writereview_RightContainer_"] button,
 [class*="appdetailsgameinfopanel_Description_"],
-[class*="appactivitydlc_Contents_"]
+[class*="appactivitydlc_Contents_"],
+[class*="discussionwidget_VoteContainer_"],
+[class*="discussionwidget_ShareContainer_"],
+[class*="discussionwidget_DiscussContainer_"]
 {
 	border-radius: var(--card_radius) !important;
 	background: var(--card_bg) !important;
@@ -28,11 +31,23 @@
 }
 
 [class*="appdetailsachievementssection_AdditionalItem_"],
-[class*="appdetailscommunityfeed_LoadContentButton_"]
+[class*="appdetailscommunityfeed_LoadContentButton_"],
+[class*="appdetailsactivitysection_ViewLastNews_"]
 {
 	border-radius: var(--button_radius) !important;
 	background: var(--button_bg) !important;
 	border: none !important;
+}
+
+[class*="appdetailsactivitysection_FetchMoreContainer_"],
+[class*="appdetailscommunityfeed_LoadContentButton_"],
+[class*="appdetailsactivitysection_ViewLastNews_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--button_font_size) !important;
+	font-weight: var(--button_font_weight) !important;
+	line-height: 32px !important;
 }
 
 /* Play button, streaming device dropdown */
@@ -120,7 +135,9 @@
 [class*="appactivityday_PartnerEventMediumImage_Container_"]:hover,
 [class*="appactivityday_PartnerEventLargeImage_Container_"]:hover,
 [class*="appdetailsachievementssection_AdditionalItem_"]:hover,
-[class*="appdetailscommunityfeed_LoadContentButton_"]:hover
+[class*="appdetailscommunityfeed_LoadContentButton_"]:hover,
+[class*="appdetailsactivitysection_FetchMoreContainer_"]:hover,
+[class*="appdetailsactivitysection_ViewLastNews_"]:hover
 {
 	background: var(--button_hover_bg) !important;
 }
@@ -192,7 +209,8 @@
 
 [class*="appactivityday_PartnerEventTypeUpdate_"]
 {
-	color: var(--fg) import !important;
+	color: var(--fg) !important;
+	text-shadow: none !important;
 }
 
 [class*="appactivityday_PartnerEventLargeImage_Summary_"]
@@ -203,6 +221,240 @@
 [class*="appactivityday_PartnerEventFeaturedHeader_"]
 {
 	background: none !important;
+}
+
+[class*="appactivityday_PartnerEventType_"]
+{
+	color: var(--dim_label_fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--title_4_weight) !important;
+	font-size: var(--title_4_size) !important;
+	text-shadow: none !important;
+}
+
+[class*="appactivityday_PartnerEventMediumImage_Title_"],
+[class*="appactivityday_PartnerEventLargeImage_Title_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--title_1_weight) !important;
+	font-size: var(--title_1_size) !important;
+	text-shadow: none !important;
+}
+
+[class*="appactivityday_PartnerEventMediumImage_Summary_"],
+[class*="appactivityday_PartnerEventLargeImage_Summary_"],
+[class*="appactivityday_PartnerEventTextOnly_Summary_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--baseweight) !important;
+	text-shadow: none !important;
+}
+
+[class*="appactivityday_PartnerEventTextOnly_Title_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--title_3_weight) !important;
+	text-shadow: none !important;
+}
+
+[class*="appactivityday_PartnerEventTextOnly_Icon_"] svg path
+{
+	fill: var(--dim_label_fg) !important;
+}
+
+[class*="appactivityday_Event_"] [class*="comment_thread_RatingBar_"]
+{
+	margin-top: 4px !important;
+}
+
+/* Achievement Activity */
+[class*="appdetailsachievementssection_Name_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_3_size) !important;
+	font-weight: var(--title_3_weight) !important;
+}
+
+[class*="appdetailsachievementssection_Desc_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--baseweight) !important;
+}
+
+/* Fetch More */
+[class*="appdetailsactivitysection_FetchMoreContainer_"]::before,
+[class*="appdetailsactivitysection_FetchMoreContainer_"]:active
+{
+	box-shadow: none !important;
+}
+
+[class*="appdetailsactivitysection_FetchMoreContainer_"].Disabled
+{
+	background-color: var(--button_disabled_bg) !important;
+	color: var(--button_disabled_fg) !important;
+}
+
+/* Pop Up Update */
+[class*="apppartnereventspage_PartnerEvent_"]
+{
+	border-radius: var(--popover_radius) !important;
+	background: var(--popover_bg) !important;
+	border: none !important;
+	box-shadow: none !important;
+}
+
+[class*="partnereventdisplay_EventBackgroundBlur_"]
+{
+	display: none !important;
+}
+
+[class*="apppartnereventspage_EventType_"],
+[class*="discussionwidget_VoteCount_"],
+[class*="discussionwidget_DiscussionCount_"]
+{
+	color: var(--accent) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--title_4_weight) !important;
+}
+
+[class*="partnereventdisplay_EventDetailTimeInfo_"] [class*="localdateandtime_ShortDateAndTime_"],
+[class*="partnereventdisplay_EventDetailTimeInfo_"] [class*="localdateandtime_RightSideTitles_"]
+{
+	color: var(--dim_label_fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--baseweight) !important;
+}
+
+[class*="partnereventdisplay_EventDetailTitle_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_1_size) !important;
+	font-weight: var(--title_1_weight) !important;
+}
+
+[class*="partnereventdisplay_EventDetailsSubTitle_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_3_size) !important;
+	font-weight: var(--title_3_weight) !important;
+}
+
+[class*="apppartnereventspage_CloseButton_"]
+{
+	background: var(--popover_bg) !important;
+	height: 24px !important;
+	width: 24px !important;
+}
+
+[class*="apppartnereventspage_CloseButton_"] svg line
+{
+	stroke: var(--headerbar_fg) !important;
+	stroke-width: 32px !important;
+}
+
+[class*="apppartnereventspage_ScrollButton_"]
+{
+	background: var(--popover_bg) !important;
+	height: 24px !important;
+	width: 40px !important;
+}
+
+[class*="apppartnereventspage_ScrollButton_"] svg polygon
+{
+	fill: var(--headerbar_fg) !important;
+}
+
+[class*="apppartnereventspage_ScrollButton_"][class*="apppartnereventspage_GameArt_"]
+{
+	height: 40px !important;
+	width: 40px !important;
+}
+
+[class*="partnereventdisplay_EventDetailsBody_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--baseweight) !important;
+}
+
+[class*="partnereventdisplay_EventDetailsBody_"] a:not(.LinkButton)
+{
+	color: var(--accent) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--baseweight) !important;
+}
+
+[class*="partnereventdisplay_EventDetailsBody_"] img,
+[class*="youtubeembed_PreviewYouTubeVideo_"]
+{
+	border-radius: var(--card_radius) !important;
+}
+
+[class*="eventbbcodeparser_Header1_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_1_size) !important;
+	font-weight: var(--title_1_weight) !important;
+}
+
+[class*="eventbbcodeparser_Header2_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_2_size) !important;
+	font-weight: var(--title_2_weight) !important;
+}
+
+[class*="eventbbcodeparser_Header3_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_3_size) !important;
+	font-weight: var(--title_3_weight) !important;
+}
+
+[class*="eventbbcodeparser_Header4_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_4_size) !important;
+	font-weight: var(--title_4_weight) !important;
+}
+
+[class*="discussionwidget_VoteUpStaticIcon_"],
+[class*="discussionwidget_DiscussionCount_"] > svg
+{
+	fill: var(--accent) !important;
+}
+
+[class*="partnereventshared_Button_"][class*="partnereventshared_Icon_"]
+{
+	background: var(--button_bg) !important;
+	border-radius: var(--button_radius) !important;
+	box-shadow: none !important;
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--button_font_size) !important;
+	font-weight: var(--button_font_weight) !important;
+	transition: var(--focus_transition) !important;
+}
+
+[class*="partnereventshared_Button_"][class*="partnereventshared_Icon_"]:hover
+{
+	background: var(--button_hover_bg) !important;
+}
+
+[class*="partnereventshared_Button_"][class*="partnereventshared_Icon_"]:active
+{
+	background: var(--button_active_bg) !important;
 }
 
 /* Post Game Summary */
@@ -264,6 +516,60 @@
 	border-radius: var(--popover_radius) !important;
 }
 
+/* Write a Review */
+[class*="writereview_Playtime_"],
+[class*="writereview_ReviewThumbButton_"]
+{
+	color: var(--accent) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_4_size) !important;
+	font-weight: var(--title_4_weight) !important;
+}
+
+[class*="writereview_ThumbIcon_"]
+{
+	fill: var(--accent) !important;
+}
+
+[class*="writereview_ThumbIcon_"][class*="writereview_Up_"]
+{
+	top: -1px !important;
+}
+
+[class*="writereview_ThumbIcon_"][class*="writereview_Down_2DXZF"]
+{
+	bottom: -1px !important;
+}
+
+[class*="writereview_RatingContainer_"] [class*="writereview_RecommendGame_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--baseweight) !important;
+}
+
+/* Gameplay Summary */
+[class*="spotlightgameplaysummary_EventHeaderBlock_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_3_size) !important;
+	font-weight: var(--title_3_weight) !important;
+}
+
+[class*="spotlightgameplaysummary_EventDaySeparator_"]
+{
+	background-color: var(--dim_label_fg) !important;
+	opacity: 0.55 !important;
+}
+
+[class*="appdetailsachievementssection_Stats_"]
+{
+	color: var(--dim_label_fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--baseweight) !important;
+}
+
 /* Activity Post */
 [class*="posttextentry_PostTextEntryArea_"],
 [class*="posttextentry_PostTextEntryArea_"]:focus,
@@ -272,6 +578,11 @@
 	background: var(--button_bg) !important;
 	border-radius: var(--button_radius) !important;
 	box-shadow: none !important;
+}
+
+[class*="posttextentry_PostTextEntryArea_"]::placeholder
+{
+	color: var(--dim_label_fg) !important;
 }
 
 [class*="posttextentry_PostButton_"]:hover
@@ -290,6 +601,56 @@
 [class*="comment_thread_ActivityCommentThread_"]
 {
 	background: none !important;
+}
+
+[class*="appdetailssectionheader_LabelText_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_3_size) !important;
+	font-weight: var(--title_3_weight) !important;
+}
+
+[class*="appactivityday_AppActivityDate_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_4_size) !important;
+	font-weight: var(--title_4_weight) !important;
+}
+
+/* AppDetails Play Section */
+[class*="appdetailsplaysection_PlayBarLabel_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_3_size) !important;
+	font-weight: var(--title_3_weight) !important;
+}
+
+[class*="appdetailsplaysection_PlayBarDetailLabel_"]
+{
+	color: var(--dim_label_fg) !important;
+	font-family: var(--basefont) !important;
+}
+
+[class*="appdetailsplaysection_PlayBarCloudStatusContainer_"] [class*="appdetailsplaysection_GameStatIconForced_"]
+{
+	color: var(--dim_label_fg) !important;
+}
+
+[class*="appdetailsplaysection_PlaytimeIcon_"] > svg > *,
+[class*="appdetailsplaysection_GameStatIcon_"] > svg > *
+{
+	stroke: var(--dim_label_fg) !important;
+}
+
+[class*="appdetailsplaysection_PlayBarGameName_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_2_size) !important;
+	font-weight: var(--title_2_weight) !important;
 }
 
 /* AppDetails Play Section Buttons */
@@ -326,15 +687,42 @@
 	background: var(--button_hover_bg) !important;
 }
 
+[class*="appdetailsprimarylinkssection_Text_"],
+[class*="appdetailsprimarylinkssection_Link_"]:hover [class*="appdetailsprimarylinkssection_Text_"]
+{
+	color: var(--button_fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--button_font_size) !important;
+	font-weight: var(--button_font_weight) !important;
+}
+
 /* Right Side Buttons */
 [class*="appdetailsbutton_AppDetailsButton_"]
 {
 	background: none !important;
 	border-radius: var(--button_radius) !important;
+	color: var(--button_fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--button_font_size) !important;
+	font-weight: var(--button_font_weight) !important;
 }
 
 [class*="appdetailsbutton_AppDetailsButton_"]:hover
 {
 	background: var(--button_hover_bg) !important;
 	border-radius: var(--button_radius) !important;
+}
+
+[class*="appdetailsscreenshotssection_InstructionText_"],
+[class*="appdetailsscreenshotssection_NoneTaken_"],
+[class*="appdetailsreviewsection_PlayedForTime_"]
+{
+	color: var(--dim_label_fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--baseweight) !important;
+}
+
+[class*="appdetailssection_Body_"] span[style="color: white;"]
+{
+	color: var(--accent) !important;
 }

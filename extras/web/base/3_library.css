@@ -3,7 +3,6 @@
 /* --------------- */
 
 /* Post Login Loading Screen */
-
 [class*="index_Container_"][class*="index_PreloadThrobber_"]
 {
 	background: var(--bg) !important;
@@ -36,16 +35,56 @@
 	background: var(--popover_bg) !important;
 }
 
+/* Showcase Headers */
+[class*="libraryhomeshowcases_CollectionDropDown_"] ._DialogInputContainer,
+[class*="libraryhomeshowcases_CountDisplay_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--title_2_weight) !important;
+	font-size: var(--title_2_size) !important;
+}
+
+[class*="appgrid_SortingDropDownLabel_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--title_3_weight) !important;
+	font-size: var(--title_3_size) !important;
+}
+
+[class*="appgrid_SortingDropDown_"] > ._DialogInputContainer
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--baseweight) !important;
+}
+
+[class*="appgrid_SortingDropDown_"] > ._DialogInputContainer .DialogDropDown_Arrow svg
+{
+	fill: var(--fg) !important;
+}
+
+[class*="libraryhomerecentgames_AddedDate_"]
+{
+	color: var(--dim_label_fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--baseweight) !important;
+}
+
 /* Popup Elements */
 [class*="libraryhomeshowcases_CollectionDropDownContainer_"][class*="libraryhomeshowcases_CollectionDropDownContainer_"] ._DialogInputContainer[class*="dropdown_DialogDropDownMenu_"],
 .DialogMenuPosition[class*="appgrid_SortingDropDownContainer_"] > div,
 [class*="tooltip_TextToolTip_"],
-[class*="contextmenu_contextMenu_"]
+[class*="contextmenu_contextMenu_"],
+[class*="contextmenu_ContextMenuFocusContainer_"] [class*="dropdown_DialogDropDownMenu_Item_"]
 {
 	background: var(--popover_bg) !important;
 	border: none !important;
 	border-radius: var(--menu_radius) !important;
 	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--baseweight) !important;
 }
 
 [class*="contextmenu_ContextMenuFocusContainer_"] [class*="dropdown_DialogDropDownMenu_Item_"]:hover,
@@ -122,6 +161,14 @@
 	border-radius: var(--button_radius) !important;
 }
 
+[class*="gamelisthome_Label_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--button_font_size) !important;
+	font-weight: var(--button_font_weight) !important;
+}
+
 [class*="gamelisthome_CollectionIconBox_"]
 {
 	background: var(--button_fg) !important;
@@ -147,6 +194,10 @@
 	background: var(--button_bg) !important;
 	border: none !important;
 	border-radius: var(--button_radius) !important;
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--button_font_size) !important;
+	font-weight: var(--button_font_weight) !important;
 }
 
 [class*="gamelistdropdown_MenuHeader_"]:hover,
@@ -244,7 +295,8 @@
 [class*="gamelistsectionheader_SectionName"]
 {
 	color: var(--fg) !important;
-	font-weight: 500 !important;
+	font-weight: var(--title_3_weight) !important;
+	font-family: var(--basefont) !important;
 }
 
 [class*="gamelistsectionheader_Container_"],
@@ -258,6 +310,20 @@
 {
 	border: none !important;
 	padding-left: 6px !important;
+}
+
+[class*="gamelistentry_Installed_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--baseweight) !important;
+}
+
+[class*="gamelistentry_Uninstalled_"]
+{
+	color: var(--dim_label_fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--baseweight) !important;
 }
 
 [class*="gamelist_Container_"] .ReactVirtualized__Grid[style*="overflow: hidden;"]

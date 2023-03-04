@@ -234,6 +234,12 @@
 	color: var(--success_bg) !important;
 }
 
+.friend.offline [class*="personanameandstatus_playerName_"],
+.friend.offline [class*="personanameandstatus_richPresenceLabel_"]
+{
+	color: var(--dim_label_fg) !important;
+}
+
 /* - Right Side - */
 .chatDialogs,
 .titleBarContainer.ChatTabs,
@@ -364,10 +370,17 @@ button[class*="chatentry_EmoticonPickerButton_"]
 }
 
 /* Time Divider */
-.msg.timeDivision.time_passes .preHorizDivider,
-.msg.timeDivision.time_passes .horizDivider
+.msg.timeDivision
 {
-	border: 1px dashed var(--border) !important;
+	color: var(--dim_label_fg) !important;
+	opacity: 0.55 !important;
+}
+
+.msg.timeDivision .preHorizDivider,
+.msg.timeDivision .horizDivider
+{
+	background-color: var(--dim_label_fg) !important;
+	opacity: 0.55 !important;
 }
 
 /* Message Images */
@@ -384,6 +397,57 @@ button[class*="chatentry_EmoticonPickerButton_"]
 	background: var(--popover_bg) !important;
 	border: none !important;
 	box-shadow: none !important;
+}
+
+/* Message Sender */
+.chatHistory [class*="messages_SpeakerName_Online_"],
+.chatHistory .GamepadMode[class*="messages_SpeakerName_Online_"],
+.chatHistory .GamepadMode [class*="messages_SpeakerName_Online_"],
+.chatHistory .isCurrentUser [class*="messages_SpeakerName_Online_"],
+.chatHistory .isCurrentUser .GamepadMode[class*="messages_SpeakerName_Online_"],
+.chatHistory .GamepadMode .isCurrentUser [class*="messages_SpeakerName_Online_"]
+{
+	color: var(--accent) !important;
+}
+
+.chatHistory [class*="messages_SpeakerName_InGame_"]
+.chatHistory .GamepadMode[class*="messages_SpeakerName_InGame_"],
+.chatHistory .GamepadMode [class*="messages_SpeakerName_InGame_"],
+.chatHistory .isCurrentUser [class*="messages_SpeakerName_InGame_"],
+.chatHistory .isCurrentUser [class*="messages_SpeakerName_InGame_"].GamepadMode,
+.chatHistory .GamepadMode .isCurrentUser [class*="messages_SpeakerName_InGame_"]
+{
+	color: var(--success) !important;
+}
+
+.chatHistory [class*="messages_SpeakerName_Default_"],
+.chatHistory .GamepadMode[class*="messages_SpeakerName_Default_"],
+.chatHistory .GamepadMode [class*="messages_SpeakerName_Default_"]
+.chatHistory .isCurrentUser [class*="messages_SpeakerName_Default_"]
+.chatHistory .isCurrentUser .GamepadMode[class*="messages_SpeakerName_Default_"],
+.chatHistory .GamepadMode .isCurrentUser [class*="messages_SpeakerName_Default_"]
+{
+	color: var(--dim_label_fg) !important;
+}
+
+/* Message Timestamp */
+.chatHistory .speakerTimeStamp
+{
+	color: var(--dim_label_fg) !important;
+	opacity: 0.55 !important;
+}
+
+/* Message Text */
+.msgText,
+.isCurrentUser .msgText
+{
+	color: var(--fg) !important;
+}
+
+.msgText > span,
+.isCurrentUser .msgText > span
+{
+	opacity: 0.8 !important;
 }
 
 /* Message Invite */
@@ -466,6 +530,12 @@ button[class*="chatentry_EmoticonPickerButton_"]
 .msgText .OpenGraphMessageURL_full
 {
 	color: var(--accent) !important;
+}
+
+.msgText div.ChatMessageOpenGraph_Description
+{
+	color: var(--fg) !important;
+	text-shadow: none !important;
 }
 
 /* Message /me emote */
