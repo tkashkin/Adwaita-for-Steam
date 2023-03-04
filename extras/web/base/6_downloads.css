@@ -12,6 +12,23 @@
 	border-bottom: 1px solid var(--border) !important;
 }
 
+[class*="downloadgraph_StatsPanel_"] [class*="downloadgraph_Figure_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_4_size) !important;
+	font-weight: var(--title_4_weight) !important;
+}
+
+[class*="downloadgraph_StatsPanel_"] [class*="downloadgraph_Label_"],
+[class*="downloadgraph_DownloadGraphLegend_"] [class*="downloadgraph_LegendText_"]
+{
+	color: var(--dim_label_fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_4_size) !important;
+	font-weight: var(--title_4_weight) !important;
+}
+
 /* Remove Gradient when Downloads are Empty */
 [class*="downloadgraph_HeroAndLogo_"],
 [class*="downloadgraph_HeroAndLogo_"] img[class*="libraryassetimage_Visible_"]
@@ -36,7 +53,67 @@
 	background: var(--button_hover_bg) !important;
 }
 
+[class*="downloadgraph_SettingsButton_"] button.DialogButton:enabled
+{
+	color: var(--button_fg) !important;
+}
+
+/* Graph Colors */
+[class*="downloadgraph_DownloadGraph_"] [class*="downloadgraph_GraphBarDownload_"],
+[class*="downloadgraph_DownloadGraphLegend_"] [class*="downloadgraph_Network_"] svg
+{
+	color: var(--accent_bg) !important;
+}
+
+[class*="downloadgraph_DownloadGraph_"] [class*="downloadgraph_GraphLine_"]
+{
+	stroke: var(--success_bg) !important;
+}
+
+[class*="downloadgraph_DownloadGraphLegend_"] [class*="downloadgraph_Disk_"]
+{
+	background: var(--success_bg) !important;
+}
+
 /* - Downloads - */
+[class*="downloads_Title_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_3_size) !important;
+	font-weight: var(--title_3_weight) !important;
+}
+
+[class*="downloads_EmptyTransfers_"] [class*="downloads_Text_"]
+{
+	color: var(--dim_label_fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_4_size) !important;
+	font-weight: var(--title_4_weight) !important;
+}
+
+[class*="downloads_SectionTitle_"] [class*="downloads_Count_"]
+{
+	color: var(--dim_label_fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_3_size) !important;
+	font-weight: var(--title_3_weight) !important;
+}
+
+[class*="downloads_SectionTitle_"] [class*="downloads_Rule_"]
+{
+	background-color: var(--dim_label_fg) !important;
+	opacity: 0.55 !important;
+}
+
+[class*="downloads_AutoUpdateHours_"]
+{
+	color: var(--dim_label_fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_4_size) !important;
+	font-weight: var(--title_4_weight) !important;
+}
+
 /* Download Items */
 [class*="downloads_SectionItem_"]
 {
@@ -46,6 +123,35 @@
 [class*="downloads_SectionItem_"]:hover
 {
 	background: var(--button_hover_bg) !important;
+}
+
+[class*="downloads_SectionItem_"] [class*="downloads_Name_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_3_size) !important;
+	font-weight: var(--title_3_weight) !important;
+}
+
+[class*="downloads_ProgressDetails_"] [class*="downloads_Value_"]
+{
+	color: var(--dim_label_fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_4_size) !important;
+	font-weight: var(--title_4_weight) !important;
+}
+
+[class*="downloads_ProgressDetails_"] [class*="downloads_Value_"][class*="downloads_InProgress_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_4_size) !important;
+	font-weight: var(--title_4_weight) !important;
+}
+
+[class*="downloads_ContentTypes_"]
+{
+	color: var(--fg) !important;
 }
 
 [class*="downloads_Active_"] [class*="downloads_SectionList_"]
@@ -58,15 +164,56 @@
 	padding: var(--menu_margin) 0px !important;
 }
 
+[classs*="downloads_SectionItemStatus_"]
+{
+	color: var(--dim_label_fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_3_size) !important;
+	font-weight: var(--title_3_weight) !important;
+}
+
+[class*="downloads_SectionItemStatus_"] [class*="downloads_InProgress_"]
+{
+	color: var(--dim_label_fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_4_size) !important;
+	font-weight: var(--title_4_weight) !important;
+}
+
+[class*="downloads_SectionItemStatus_"] [class*="downloads_Progress_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_4_size) !important;
+	font-weight: var(--title_4_weight) !important;
+}
+
+[class*="downloads_SectionItemStatus_"] [class*="downloads_ProgressBar_"]
+{
+	background: var(--button_bg) !important;
+}
+
 /* Buttons */
 [class*="downloads_Button_"]
 {
 	background: none !important;
+	color: var(--button_fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--button_font_size) !important;
+	font-weight: var(--button_font_weight) !important;
 }
 
 [class*="downloads_RemoveAllButton_"]
 {
 	background: var(--button_bg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--button_font_size) !important;
+	font-weight: var(--button_font_weight) !important;
+}
+
+[class*="downloads_RemoveAllButton_"].DialogButton:enabled
+{
+	color: var(--button_fg) !important;
 }
 
 [class*="downloads_Button_"]:hover,
@@ -75,4 +222,3 @@
 	background: var(--button_hover_bg) !important;
 	border: none !important;
 }
-
