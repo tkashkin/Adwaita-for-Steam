@@ -16,3 +16,18 @@
 	background: var(--button_hover_bg) !important;
 }
 
+/* Title */
+[class*="allcollections_Label_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--title_2_weight) !important;
+	font-size: var(--title_2_size) !important;
+}
+
+/* Horiz Rule */
+[class*="allcollections_Rule_"]
+{
+	background-color: var(--dim_label_fg) !important;
+	opacity: 0.55 !important;
+}
