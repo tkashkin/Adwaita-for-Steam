@@ -545,6 +545,7 @@
 {
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
+	font-weight: var(--baseweight) !important;
 }
 
 /* Gameplay Summary */
