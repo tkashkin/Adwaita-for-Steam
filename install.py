@@ -233,7 +233,7 @@ def patch_client_css(source: Path, target: Path, name: str):
 	elif name == "Friends":
 		target_css = target / STEAM_FRIENDS_CSS
 		custom_css = target / STEAM_CUSTOM_FRIENDS
-		custom_css_name = STEAM_CUSTOM_FRIENDS.name
+		custom_css_name = custom_css.name
 	else:
 		raise SystemExit(f"{TEXT_RED}{TEXT_CROSS} Invalid steam css patch selected: {name}{TEXT_RESET}")
 
