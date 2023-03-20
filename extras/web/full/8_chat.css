@@ -2,6 +2,18 @@
 /* --- Chat --- */
 /* ------------ */
 
+/* Window Controls */
+.friendsui-container .title-area-icon
+{
+	margin-top: 0px !important;
+}
+
+.friendsui-container .title-area-icon.closeButton svg
+{
+	margin-top: 0px !important;
+	margin-left: 0px !important;
+}
+
 /* BG */
 .client_chat_frame body
 {
