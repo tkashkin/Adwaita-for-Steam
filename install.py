@@ -272,7 +272,7 @@ if __name__ == "__main__":
 	parser.add_argument("-p", "--patch", nargs = "+", action = "extend", help = "Apply one or multiple patches")
 	parser.add_argument("-n", "--name", default = SKIN_DIR, help = "Rename installed skin")
 	parser.add_argument("-nsp", "--no-steam-patch", action = "store_true", help = "Do not patch steam files")
-	parser.add_argument("-w", "--web-theme", choices = ["base", "full", "none"], default = "base", help = "Choose web theme variant")
+	parser.add_argument("-w", "--web-theme", choices = ["base", "full", "none"], default = "full", help = "Choose web theme variant")
 	parser.add_argument("-we", "--web-extras", nargs = "+", action = "extend", help = "Enable one or multiple web theme extras")
 	args = parser.parse_args()
 
