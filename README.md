@@ -12,7 +12,7 @@ A skin to make Steam look more like a native GNOME app
 * **Overlay**: done.
 * **Small mode**: done.
 * **Old library, old chat, other old unused windows**: not planned.
-* **Recoloring**: colors can be changed via making a new theme. See `color_themes` dir.
+* **Recoloring**: colors can be changed via making a new theme. See `extras/colorthemes` dir.
 * **Light theme**: not planned, would require redrawing all assets to be visible on light backgrounds.
 
 ### Limitations
@@ -62,6 +62,12 @@ A skin to make Steam look more like a native GNOME app
 <details><summary>Dracula</summary>
 
 ![Dracula](/extras/colorthemes/dracula/preview.png?raw=true)
+
+</details>
+
+<details><summary>Gruvbox</summary>
+
+![Gruvbox](/extras/colorthemes/gruvbox/preview.png?raw=true)
 
 </details>
 
