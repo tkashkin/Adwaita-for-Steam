@@ -241,6 +241,8 @@ def patch_client_css(source: Path, target: Path, name: str):
 		print(f"{TEXT_PURPLE}{TEXT_INFO} File {TEXT_BOLD}{target_css}{TEXT_RESET}{TEXT_PURPLE} does not exist{TEXT_RESET}")
 		return
 
+	shutil.copyfile(source / CSS_FILE, custom_css)
+
 	with target_css.open() as css_file:
 		if css_file.readline().strip() == STEAM_PATCHED_HEADER:
 			return
@@ -254,8 +256,6 @@ def patch_client_css(source: Path, target: Path, name: str):
 	size_diff = orig_css.stat().st_size - target_css.stat().st_size
 	padding = "\t" * size_diff
 	target_css.open('a').write(padding)
-
-	shutil.copyfile(source / CSS_FILE, custom_css)
 
 if __name__ == "__main__":
 	if not skindir.exists():
