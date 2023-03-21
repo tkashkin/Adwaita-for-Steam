@@ -8,7 +8,7 @@ A skin to make Steam look more like a native GNOME app
 
 * **Main window**: done.
 * **Settings**: mostly done.
-* **New library, new chat, other web-based client parts**: mostly done, with slight [limitations]((#limitations).
+* **New library, new chat, other web-based client parts**: mostly done, with slight [limitations](#limitations).
 * **Overlay**: done.
 * **Small mode**: done.
 * **Old library, old chat, other old unused windows**: not planned.
