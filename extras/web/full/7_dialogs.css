@@ -943,19 +943,18 @@
 }
 
 /* Toggle Switch */
-
-.FriendSettingsContainer [class*="toggle_Toggle_"]
+.ModalDialogPopup [class*="toggle_Toggle_"]
 {
 	display: flex;
 	align-items: center;
 }
 
-.FriendSettingsContainer [class*="toggle_ToggleSwitch_"]
+.ModalDialogPopup [class*="toggle_ToggleSwitch_"]
 {
 	background: var(--fg) !important;
 }
 
-.FriendSettingsContainer [class*="toggle_ToggleRail_"]
+.ModalDialogPopup [class*="toggle_ToggleRail_"]
 {
 	background: var(--entry_bg) !important;
 	background-blend-mode: var(--button_suggested_blend) !important;
@@ -967,27 +966,27 @@
 	width: 48px !important;
 }
 
-.FriendSettingsContainer [class*="toggle_ToggleRail_"]:hover
+.ModalDialogPopup [class*="toggle_ToggleRail_"]:hover
 {
 	background-color: var(--button_suggested_hover_bg) !important;
 }
 
-.FriendSettingsContainer [class*="toggle_ToggleRail_"]:active
+.ModalDialogPopup [class*="toggle_ToggleRail_"]:active
 {
 	background-color: var(--button_suggested_click_bg) !important;
 }
 
-.FriendSettingsContainer [class*="toggle_Highlight_"]
+.ModalDialogPopup [class*="toggle_Highlight_"]
 {
 	background: var(--button_suggested_bg) !important;
 }
 
-.FriendSettingsContainer [class*="toggle_Highlight_"][class*="toggle_Off_"]
+.ModalDialogPopup [class*="toggle_Highlight_"][class*="toggle_Off_"]
 {
 	display: none !important;
 }
 
-.FriendSettingsContainer [class*="toggle_ToggleSwitch_"]
+.ModalDialogPopup [class*="toggle_ToggleSwitch_"]
 {
 	border-radius: var(--button_pill_radius) !important;
 	height: 22.5px !important;
@@ -998,7 +997,7 @@
 	width: 22.5px !important;
 }
 
-.FriendSettingsContainer [class*="toggle_ToggleSwitch_"][class*="toggle_Off_"]
+.ModalDialogPopup [class*="toggle_ToggleSwitch_"][class*="toggle_Off_"]
 {
 	margin-left: 1px !important;
 }
@@ -1036,4 +1035,74 @@
 	border-bottom-right-radius: var(--entry_radius) !important;
 	border-top-left-radius: 0px !important;
 	border-top-right-radius: 0px !important;
+}
+
+/* Whats New Dialog */
+[class*="libraryhomenewupdates_WhatsNewSettingsContent_"]
+{
+	background: var(--bg) !important;
+	padding: 0px !important;
+}
+
+[class*="libraryhomenewupdates_WhatsNewSettings_"]
+{
+	padding: 24px !important;
+}
+
+[class*="libraryhomenewupdates_WhatsNewSettingsContent_"] .DialogHeader
+{
+	align-items: center !important;
+	background: var(--headerbar_backdrop) !important;
+	border-bottom: 1px var(--headerbar_shade) solid !important;
+	box-sizing: border-box !important;
+	color: var(--headerbar_fg) !important;
+	display: grid !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--header_size) !important;
+	font-weight: var(--header_weight) !important;
+	height: 48px !important;
+	letter-spacing: normal !important;
+	line-height: normal !important;
+	margin: 0 !important;
+	padding: 12px !important;
+	text-align: center !important;
+	text-transform: none !important;
+	width: 100%;
+}
+
+.ModalDialogPopup:focus-within [class*="libraryhomenewupdates_WhatsNewSettingsContent_"] .DialogHeader
+{
+	background: var(--headerbar_bg) !important;
+}
+
+[class*="libraryhomenewupdates_WhatsNewSettingsContent_"] ._DialogInputContainer
+{
+	align-items: center !important;
+	background: var(--entry_bg) !important;
+	border-radius: var(--entry_radius) !important;
+	color: var(--fg) !important;
+	display: flex !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--entry_font_size) !important;
+	font-weight: var(--entry_font_weight) !important;
+	line-height: 18px;
+	margin-bottom: 22px;
+	min-height: var(--entry_min_height) !important;
+	padding: var(--entry_padding);
+}
+
+[class*="libraryhomenewupdates_DialogLabelSoft_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--basesize) !important;
+	font-weight: var(--baseweight) !important;
+}
+
+[class*="libraryhomenewupdates_WhatsNewSettingsContent_"] .DialogToggle_Description
+{
+	color: var(--dim_label_fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--basesize) !important;
+	font-weight: var(--baseweight) !important;
 }
