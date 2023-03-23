@@ -8,6 +8,12 @@
 	background: var(--bg) !important;
 }
 
+/* Library Horizontal Scrollbar Workaround */
+html[class*="gamepadui_SteamUIPopupHTML_"]
+{
+	overflow-x: hidden;
+}
+
 /* --- Main Library View --- */
 /* Backgrounds */
 #root > [class*="library_Container_"],
