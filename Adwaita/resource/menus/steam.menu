@@ -4,7 +4,7 @@ menubar
 	{
 		text=""
 
-		SkinVersion			{ text="Adwaita for Steam v0.34" shellcmd="steam://openurl/https://github.com/tkashkin/Adwaita-for-Steam" }
+		SkinVersion			{ text="Adwaita for Steam v0.35" shellcmd="steam://openurl/https://github.com/tkashkin/Adwaita-for-Steam" }
 
 		Divider				{}
 
