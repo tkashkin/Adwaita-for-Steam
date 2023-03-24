@@ -8,6 +8,12 @@
 	background: var(--bg) !important;
 }
 
+/* Library Horizontal Scrollbar Workaround */
+html[class*="gamepadui_SteamUIPopupHTML_"]
+{
+	overflow-x: hidden;
+}
+
 /* --- Main Library View --- */
 /* Backgrounds */
 #root > [class*="library_Container_"],
@@ -37,7 +43,8 @@
 
 /* Showcase Headers */
 [class*="libraryhomeshowcases_CollectionDropDown_"] ._DialogInputContainer,
-[class*="libraryhomeshowcases_CountDisplay_"]
+[class*="libraryhomeshowcases_CountDisplay_"],
+[class*="libraryhome_UpdatesContainer_"] [class*="pageablecontainer_Name_"]
 {
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
@@ -63,6 +70,11 @@
 [class*="appgrid_SortingDropDown_"] > ._DialogInputContainer .DialogDropDown_Arrow svg
 {
 	fill: var(--fg) !important;
+}
+
+[class*="libraryhomenewupdates_SettingsButton_"] svg path
+{
+	fill: var(--dim_label_fg) !important;
 }
 
 [class*="libraryhomerecentgames_AddedDate_"]

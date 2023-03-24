@@ -138,7 +138,7 @@
 	margin-right: 0 !important;
 }
 
-[class*="pageablecontainer_HeaderPageControls_"]
+[class*="contentmanagement_ContentManagement_"] [class*="pageablecontainer_HeaderPageControls_"]
 {
 	display: none !important;
 }
