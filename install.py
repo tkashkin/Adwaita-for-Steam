@@ -30,6 +30,7 @@ WEB_THEME_DIR = "extras/web"
 ASSETS_DIR = "assets"
 COLORS_FILE = "adw/colors.styles"
 CSS_FILE = "resource/webkit.css"
+LIBRARY_CSS_FILE = "resource/libraryroot.custom.css"
 
 TARGET_NORMAL = "~/.steam/steam"
 TARGET_FLATPAK = "~/.var/app/com.valvesoftware.Steam/.steam/steam"
@@ -48,35 +49,68 @@ webthemedir = Path(WEB_THEME_DIR)
 webextrasdir = Path(WEB_EXTRAS_DIR)
 colorthemedir = Path(COLOR_THEME_DIR)
 
+# CSS for webkit.css
 WEB_BASE_FILES = [
-	webthemedir / "base/1_root.css",
-	webthemedir / "base/3_library.css",
-	webthemedir / "base/4_collections.css",
-	webthemedir / "base/5_game_details.css",
-	webthemedir / "base/6_downloads.css",
-	webthemedir / "base/7_dialogs.css",
-	webthemedir / "base/9_scrollbars.css",
-	webthemedir / "base/10_login.css",
-	webthemedir / "base/11_launch_options.css",
+	# Web
+	webthemedir / "base/_root.css",
+	webthemedir / "base/scrollbars.css",
+	# Web Dialogs
+	webthemedir / "base/dialogs/_dialogs.css",
+	webthemedir / "base/dialogs/login.css",
 ]
 
 WEB_FULL_FILES = [
-	webthemedir / "base/1_root.css",
-	webthemedir / "full/2_global.css",
-	webthemedir / "base/3_library.css",
-	webthemedir / "full/3_library.css",
-	webthemedir / "base/4_collections.css",
-	webthemedir / "base/5_game_details.css",
-	webthemedir / "full/5_game_details.css",
-	webthemedir / "base/6_downloads.css",
-	webthemedir / "full/6_downloads.css",
-	webthemedir / "base/7_dialogs.css",
-	webthemedir / "full/7_dialogs.css",
-	webthemedir / "full/8_chat.css",
-	webthemedir / "base/9_scrollbars.css",
-	webthemedir / "base/10_login.css",
-	webthemedir / "base/11_launch_options.css",
-	webthemedir / "full/12_content_management.css",
+	# Web
+	webthemedir / "base/_root.css",
+	webthemedir / "base/scrollbars.css",
+	webthemedir / "full/web.css",
+	webthemedir / "full/chat.css",
+	# Web Dialogs
+	webthemedir / "base/dialogs/_dialogs.css",
+	webthemedir / "full/dialogs/_dialogs.css",
+	webthemedir / "base/dialogs/login.css",
+	webthemedir / "full/dialogs/friends_settings.css",
+	webthemedir / "full/dialogs/paged_settings.css",
+]
+
+# CSS for Steam Library Patching
+LIBRARY_BASE_FILES = [
+	# Web
+	webthemedir / "base/_root.css",
+	webthemedir / "base/scrollbars.css",
+	# Library
+	webthemedir / "base/library.css",
+	webthemedir / "base/game_details.css",
+	webthemedir / "base/downloads.css",
+	webthemedir / "base/collections.css",
+	# Web Dialogs
+	webthemedir / "base/dialogs/_dialogs.css",
+	# Library Dialogs
+	webthemedir / "base/dialogs/launch_options.css",
+]
+
+LIBRARY_FULL_FILES = [
+	# Web
+	webthemedir / "base/_root.css",
+	webthemedir / "base/scrollbars.css",
+	# Library
+	webthemedir / "base/library.css",
+	webthemedir / "full/library.css",
+	webthemedir / "base/game_details.css",
+	webthemedir / "full/game_details.css",
+	webthemedir / "base/downloads.css",
+	webthemedir / "full/downloads.css",
+	webthemedir / "base/collections.css",
+	# Web Dialogs
+	webthemedir / "base/dialogs/_dialogs.css",
+	webthemedir / "full/dialogs/_dialogs.css",
+	webthemedir / "full/dialogs/paged_settings.css",
+	# Library Dialogs
+	webthemedir / "base/dialogs/launch_options.css",
+	webthemedir / "full/dialogs/app_properties.css",
+	webthemedir / "full/dialogs/content_management.css",
+	webthemedir / "full/dialogs/uninstall.css",
+	webthemedir / "full/dialogs/whats_new.css",
 ]
 
 SHARED_PATCHES = [
@@ -133,6 +167,10 @@ def gen_webkit_theme(target: Path, name: str, selected_extras: list[Path]):
 		selected_files = WEB_BASE_FILES
 	elif name == "full":
 		selected_files = WEB_FULL_FILES
+	elif name == "library_base":
+		selected_files = LIBRARY_BASE_FILES
+	elif name == "library_full":
+		selected_files = LIBRARY_FULL_FILES
 	else:
 		raise SystemExit(f"{TEXT_RED}{TEXT_CROSS} Invalid web theme selected: {name}{TEXT_RESET}")
 
@@ -175,6 +213,9 @@ def hex2vgui(name: str, hex: str) -> str:
 	return rgba2vgui(name, hex2rgba(hex))
 
 def replace_css_colors(target: Path, config: configparser.ConfigParser):
+	if args.web_theme == "none":
+		return
+
 	with open (target, 'r' ) as f:
 		content = f.read()
 
@@ -217,7 +258,7 @@ def install(source: Path, target: Path, name: str):
 	shutil.copytree(source, target_skin)
 
 def patch_client_css(source: Path, target: Path, name: str):
-	if args.no_steam_patch or args.web_theme == "none":
+	if args.no_steam_patch:
 		return
 
 	print(f"{TEXT_BLUE}{TEXT_ARROW} Patching Steam Client {TEXT_BOLD}{name}{TEXT_RESET}{TEXT_BLUE} Files...{TEXT_RESET}")
@@ -241,7 +282,11 @@ def patch_client_css(source: Path, target: Path, name: str):
 		print(f"{TEXT_PURPLE}{TEXT_INFO} File {TEXT_BOLD}{target_css}{TEXT_RESET}{TEXT_PURPLE} does not exist{TEXT_RESET}")
 		return
 
-	shutil.copyfile(source / CSS_FILE, custom_css)
+	if args.web_theme == "none":
+		print(f"{TEXT_BLUE}{TEXT_ARROW} Web Theme is {TEXT_BOLD}none{TEXT_RESET}{TEXT_BLUE}, resetting patched Steam {name} CSS...{TEXT_RESET}")
+		open(custom_css, 'w').close()
+	else:
+		shutil.move(source / LIBRARY_CSS_FILE, custom_css)
 
 	with target_css.open() as css_file:
 		if css_file.readline().strip() == STEAM_PATCHED_HEADER:
@@ -330,13 +375,19 @@ if __name__ == "__main__":
 				else:
 					print(f"{TEXT_PURPLE}{TEXT_INFO} {patch} not found.{TEXT_RESET}")
 
-		gen_webkit_theme(sourcedir / CSS_FILE, args.web_theme, args.web_extras)
+		if args.web_theme == "full":
+			gen_webkit_theme(sourcedir / CSS_FILE, "full", args.web_extras)
+			gen_webkit_theme(sourcedir / LIBRARY_CSS_FILE, "library_full", args.web_extras)
+		elif args.web_theme == "base":
+			gen_webkit_theme(sourcedir / CSS_FILE, "base", args.web_extras)
+			gen_webkit_theme(sourcedir / LIBRARY_CSS_FILE, "library_base", args.web_extras)
 
 		if selected_theme:
 			print(f"{TEXT_BLUE}{TEXT_ARROW} Applying color theme {TEXT_BOLD}{selected_theme}{TEXT_RESET}{TEXT_BLUE}...{TEXT_RESET}")
 			config = configparser.ConfigParser()
 			config.read(selected_theme)
 			replace_css_colors(sourcedir / CSS_FILE, config)
+			replace_css_colors(sourcedir / LIBRARY_CSS_FILE, config)
 			replace_vgui_colors(sourcedir / COLORS_FILE, config)
 			shutil.copytree(selected_theme_assets, sourcedir / ASSETS_DIR, dirs_exist_ok=True)
 

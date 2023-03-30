@@ -1,3 +1,4 @@
+/* --- Content Management */
 .DialogBody[class*="contentmanagement_ContentManagement_"]
 {
 	background: var(--window_bg) !important;

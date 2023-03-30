@@ -1,0 +1,173 @@
+/* --- App Properties --- */
+/* Top Gap */
+.ModalDialogPopup [class*="appproperties_TopGap_"]
+{
+	margin-top: 1px !important;
+}
+
+/* Headings */
+.ModalDialogPopup [class*="appproperties_Title_"]
+{
+	font-family: var(--basefont) !important;
+	font-size: var(--header_size) !important;
+	font-weight: var(--header_weight) !important;
+}
+
+.ModalDialogPopup [class*="appproperties_Detail_"]
+{
+	font-family: var(--basefont) !important;
+	font-size: var(--label_size) !important;
+	font-weight: var(--label_weight) !important;
+}
+
+/* Top Border */
+.ModalDialogPopup [class*="appproperties_SectionTopLine_"]
+{
+	border-top: none !important;
+}
+
+/* Blue Highlighted Text */
+.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_BlueHighlight_"]
+{
+	color: var(--fg) !important;
+	font-weight: 500 !important;
+}
+
+/* Controller List */
+.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_SteamInputStatusGrid_"]
+{
+	background: var(--card_bg) !important;
+	border-radius: var(--card_radius) !important;
+}
+
+.ModalDialogPopup span[class*="appproperties_SteamInputLink_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--link_size) !important;
+	font-weight: var(--link_weight) !important;
+	text-decoration: none !important;
+}
+
+.ModalDialogPopup span[class*="appproperties_SteamInputLink_"]:hover
+{
+	text-decoration: underline !important;
+}
+
+.ModalDialogPopup span[class*="appproperties_SteamInputStatus_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+}
+
+/* DLC & Workshop Grid */
+.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_DlcGrid_"],
+.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_WorkshopGrid_"]
+{
+	border-radius: var(--card_radius) !important;
+}
+
+.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_DlcGrid_"] [class*="appproperties_DlcHeader_"],
+.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_WorkshopGrid_"] [class*="appproperties_WorkshopHeader_"]
+{
+	background: var(--card_solid_bg) !important;
+}
+
+/* Checkboxes */
+.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_Install_"] > .DialogCheckbox
+{
+	background-color: var(--checkbox_bg) !important;
+	box-shadow: var(--checkbox_bs) !important;
+	border-radius: var(--checkbox_radius) !important;
+	height: 20px !important;
+	width: 20px !important;
+}
+
+.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_Install_"] > .DialogCheckbox:hover
+{
+	box-shadow: var(--checkbox_hover_bs) !important;
+}
+
+.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_Install_"] > .DialogCheckbox:active:not(.Active)
+{
+	box-shadow: none !important;
+	background: var(--checkbox_active_bg) !important;
+}
+
+.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_Install_"] > .DialogCheckbox.Active
+{
+	background: var(--checkbox_checked_bg) !important;
+	background-blend-mode: var(--button_suggested_blend) !important;
+	border-radius: var(--checkbox_radius) !important;
+	box-shadow: none !important;
+}
+
+.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_Install_"] > .DialogCheckbox.Active:hover
+{
+	background-color: var(--button_suggested_hover_bg) !important;
+}
+
+.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_Install_"] > .DialogCheckbox.Active:active
+{
+	background-color: var(--button_suggested_click_bg) !important;
+}
+
+.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_Install_"] > .DialogCheckbox svg
+{
+	stroke-width: var(--checkbox_checked_sw) !important;
+}
+
+.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_Install_"] > .DialogCheckbox svg path
+{
+	stroke: var(--fg) !important;
+	d: path("M 185 63 L 92 170 l -53 -52") !important;
+	transition: none !important;
+}
+
+/* Checkboxes as Switches */
+.ModalDialogPopup [class*="appproperties_AppProperties_"] .DialogCheckbox_Container
+{
+	align-items: center !important;
+	background: var(--entry_bg) !important;
+	border-radius: var(--entry_radius) !important;
+	flex-direction: row-reverse !important;
+	min-height: var(--entry_min_height) !important;
+	padding: var(--entry_padding) !important;
+	transition: var(--focus_transition) !important;
+}
+
+.ModalDialogPopup [class*="appproperties_AppProperties_"] .DialogCheckbox_Container:hover
+{
+	background: var(--button_hover_bg) !important;
+	box-shadow: none !important;
+}
+
+.ModalDialogPopup [class*="appproperties_AppProperties_"] .DialogCheckbox_Container:active
+{
+	background: var(--button_active_bg) !important;
+}
+
+.ModalDialogPopup [class*="appproperties_AppProperties_"] .DialogControlsSection .DialogCheckbox_Container:not(:last-child):first-child,
+.ModalDialogPopup [class*="appproperties_AppProperties_"] .DialogBody .DialogCheckbox_Container:not(:last-child):first-child,
+.ModalDialogPopup [class*="appproperties_AppProperties_"] .DialogBody .DialogDropDown:not(:last-child):first-child
+{
+	border-bottom-right-radius: 0px !important;
+	border-bottom-left-radius: 0px !important;
+}
+
+.ModalDialogPopup [class*="appproperties_AppProperties_"] .DialogControlsSection .DialogCheckbox_Container:not(:first-child):last-child,
+.ModalDialogPopup [class*="appproperties_AppProperties_"] .DialogBody .DialogCheckbox_Container:not(:first-child):last-child,
+.ModalDialogPopup [class*="appproperties_AppProperties_"] .DialogBody .DialogDropDown:not(:first-child):last-child,
+.ModalDialogPopup [class*="appproperties_AppProperties_"] .DialogBody .DialogCheckbox_Container + .DialogInputLabelGroup > .DialogDropDown,
+.ModalDialogPopup [class*="appproperties_AppProperties_"] .DialogBody .DialogInputLabelGroup > .DialogDropDown + .DialogCheckbox_Container
+{
+	border-top-right-radius: 0px !important;
+	border-top-left-radius: 0px !important;
+}
+
+.ModalDialogPopup [class*="appproperties_AppProperties_"] .DialogBody .DialogInputLabelGroup > .DialogLabel + .DialogDropDown
+{
+	border-top-right-radius: var(--entry_radius) !important;
+	border-top-left-radius: var(--entry_radius) !important;
+}
+
