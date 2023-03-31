@@ -182,6 +182,11 @@
 	display: none !important;
 }
 
+[class*="contentmanagement_AppActionBarButtons_"]
+{
+	width: 100% !important;
+}
+
 [class*="contentmanagement_AppActionBar_"] .DialogButton
 {
 	height: 42px !important;
