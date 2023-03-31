@@ -216,7 +216,8 @@
 
 /* Friend Hover BG */
 .friendStatusHover,
-.ChatRoomListGroupItem
+.ChatRoomListGroupItem,
+.SteamPlayerGroupFooter
 {
 	margin: 0px var(--menu_margin) !important;
 }
@@ -241,9 +242,16 @@
 	color: var(--success) !important;
 }
 
-.friend.ingame [class*="personanameandstatus_richPresenceLabel_"]
+.friend.ingame [class*="personanameandstatus_richPresenceLabel_"],
+.SteamPlayerGroupFooter,
+.SteamPlayerGroupFooterLabel
 {
 	color: var(--success_bg) !important;
+}
+
+.SteamPlayerGroupFooterLabel
+{
+	opacity: 0.5 !important;
 }
 
 .friend.offline [class*="personanameandstatus_playerName_"],
