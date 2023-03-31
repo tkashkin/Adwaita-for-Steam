@@ -549,7 +549,8 @@
 }
 
 /* Gameplay Summary */
-[class*="spotlightgameplaysummary_EventHeaderBlock_"]
+[class*="spotlightgameplaysummary_EventHeaderBlock_"],
+[class*="spotlightgameplaysummary_GamePlaySummaryHeader_"]
 {
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
