@@ -582,6 +582,13 @@
 	box-shadow: none !important;
 }
 
+[class*="posttextentry_PostButton_"]
+{
+	font-family: var(--basefont) !important;
+	font-size: var(--button_font_size) !important;
+	font-weight: var(--button_font_weight) !important;
+}
+
 [class*="posttextentry_PostTextEntryArea_"]::placeholder
 {
 	color: var(--dim_label_fg) !important;
