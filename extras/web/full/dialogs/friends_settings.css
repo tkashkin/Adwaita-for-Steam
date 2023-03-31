@@ -1,0 +1,256 @@
+/* --- Friends Settings --- */
+.FriendSettingsContainer .DialogBody
+{
+	padding: 16px !important;
+}
+
+.FriendSettingsContainer .friendSettingsSubheader,
+.FriendSettingsContainer .FriendsSettingsNotificationRow_Header .FriendsSettingsNotificationRow_Label,
+.FriendSettingsContainer .FriendsSettingsNotificationRow .FriendsSettingsNotificationRow_Checkbox,
+.FriendSettingsContainer .FriendsSettingsFlashSection_Header
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--header_size) !important;
+	font-weight: var(--header_weight) !important;
+}
+
+.FriendSettingsContainer .SettingsGroup .DialogToggleField,
+.FriendSettingsContainer ._DialogInputContainer,
+.FriendSettingsContainer .FriendsSettingsNotificationRow:not(.FriendsSettingsNotificationRow_Header),
+.FriendSettingsContainer .voiceMicTestContainer,
+.FriendSettingsContainer [class*="toggle_ToggleRow_"],
+.FriendSettingsContainer [class*="voicesettings_TransmissionTypeSettings_"]
+{
+	background: var(--card_bg) !important;
+	border-radius: var(--card_radius) !important;
+	border: none !important;
+	min-height: var(--entry_min_height) !important;
+	padding: var(--entry_padding) !important;
+}
+
+.FriendSettingsContainer .DialogToggle_Description
+{
+	color: var(--entry_subtitle_fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--entry_subtitle_font_size) !important;
+	font-weight: var(--entry_subtitle_font_weight) !important;
+}
+
+.FriendSettingsContainer .FriendsSettingsFlashSection_ButtonRow,
+.FriendSettingsContainer .DialogToggleField_Control,
+.FriendSettingsContainer .voiceSelfDirections,
+.FriendSettingsContainer [class*="radio_Group_"],
+.FriendSettingsContainer .advancedSettings.showAdvanced
+{
+	background: none !important;
+}
+
+.FriendSettingsContainer .SettingsGroup ._DialogInputContainer
+{
+	margin-bottom: 1px !important;
+}
+
+.FriendSettingsContainer ._DialogInputContainer .displayColumn.alignSelfCenter
+{
+	margin-top: 6px !important;
+	margin-bottom: 6px !important;
+}
+
+.FriendSettingsContainer .SettingsGroup ._DialogInputContainer:first-child
+{
+	border-bottom-right-radius: 0px !important;
+	border-bottom-left-radius: 0px !important;
+}
+
+.FriendSettingsContainer .SettingsGroup ._DialogInputContainer:last-child,
+.FriendSettingsContainer .SettingsGroup ._DialogInputContainer + ._DialogInputContainer:last-child
+{
+	border-bottom-left-radius: var(--entry_radius) !important;
+	border-bottom-right-radius: var(--entry_radius) !important;
+	border-top-left-radius: 0px !important;
+	border-top-right-radius: 0px !important;
+}
+
+.FriendSettingsContainer .SettingsGroup ._DialogInputContainer + ._DialogInputContainer:not(:last-child)
+{
+	border-radius: 0px !important;
+}
+
+/* Toggle Buttons */
+.FriendSettingsContainer .DialogToggleField_Control
+{
+	align-self: center !important;
+}
+
+.FriendSettingsContainer .DialogToggleField_Option.Off
+{
+	border-top-left-radius: var(--button_radius) !important;
+	border-bottom-left-radius: var(--button_radius) !important;
+}
+
+.FriendSettingsContainer .DialogToggleField_Option.On
+{
+	border-top-right-radius: var(--button_radius) !important;
+	border-bottom-right-radius: var(--button_radius) !important;
+}
+
+.FriendSettingsContainer .DialogToggleField_Option.Off,
+.FriendSettingsContainer .DialogToggleField_Option.On,
+.FriendSettingsContainer [class*="radio_Button_"]
+{
+	background: var(--button_disabled_bg) !important;
+	color: var(--button_disabled_fg) !important;
+	transition: var(--focus_transition) !important;
+}
+
+.FriendSettingsContainer .DialogToggleField_Option.Off.Active,
+.FriendSettingsContainer .DialogToggleField_Option.On.Active,
+.FriendSettingsContainer [class*="radio_Active_"]
+{
+	background: var(--button_bg) !important;
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--button_font_size) !important;
+	font-weight: var(--button_font_weight) !important;
+}
+
+.FriendSettingsContainer .DialogToggleField_Option.Off:hover,
+.FriendSettingsContainer .DialogToggleField_Option.On:hover,
+.FriendSettingsContainer [class*="radio_Button_"]:hover
+{
+	background: var(--button_hover_bg) !important;
+}
+
+.FriendSettingsContainer .DialogToggleField_Option.Off:active,
+.FriendSettingsContainer .DialogToggleField_Option.On:active,
+.FriendSettingsContainer [class*="radio_Button_"]:active
+{
+	background: var(--button_active_bg) !important;
+}
+
+/* Chat Filter Label */
+.FriendSettingsContainer .DialogToggle_Label a
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--link_size) !important;
+	font-weight: var(--link_weight) !important;
+	text-decoration: none !important;
+}
+
+.FriendSettingsContainer .DialogToggle_Label a:hover
+{
+	text-decoration: underline !important;
+}
+
+/* Chat Settings Subtitle */
+.FriendSettingsContainer .DialogToggle_Description
+{
+	color: var(--entry_subtitle_fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--label_size) !important;
+	font-weight: var(--label_weight) !important;
+}
+
+/* Friend Notifications */
+.FriendSettingsContainer .FriendsSettingsNotificationRow
+{
+	align-items: center !important;
+	display: flex !important;
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--entry_font_size) !important;
+	font-weight: var(--entry_font_weight) !important;
+	margin-top: -9px !important;
+}
+
+.FriendSettingsContainer div.FriendsSettingsNotificationRow.FriendsSettingsNotificationRow_Header + div > .FriendsSettingsNotificationRow
+{
+	border-bottom-right-radius: 0px !important;
+	border-bottom-left-radius: 0px !important;
+	border-top-right-radius: var(--entry_radius) !important;
+	border-top-left-radius: var(--entry_radius) !important;
+	margin-top: 0px !important;
+}
+
+.FriendSettingsContainer .SettingsGroup div:last-child .FriendsSettingsNotificationRow,
+.FriendSettingsContainer .SettingsGroup div + div:last-child .FriendsSettingsNotificationRow
+{
+	border-bottom-left-radius: var(--entry_radius) !important;
+	border-bottom-right-radius: var(--entry_radius) !important;
+	border-top-left-radius: 0px !important;
+	border-top-right-radius: 0px !important;
+}
+
+.FriendSettingsContainer div + div:not(:last-child) .FriendsSettingsNotificationRow
+{
+	border-radius: 0px !important;
+}
+
+/* Voice Slider */
+.FriendSettingsContainer .DialogSlider_Slider
+{
+	border: none !important;
+}
+
+.FriendSettingsContainer .DialogSlider_Value
+{
+	background: var(--accent_bg) !important;
+	border-top-right-radius: var(--button_radius) !important;
+	border-bottom-right-radius: var(--button_radius) !important;
+}
+
+.FriendSettingsContainer .DialogSlider_Grabber
+{
+	display: none !important;
+}
+
+/* Radio Group */
+.FriendSettingsContainer [class*="radio_Group_"]
+{
+	box-shadow: none !important;
+}
+
+.FriendSettingsContainer [class*="radio_Group_"] [class*="voicesettings_RecommendedNote_"]
+{
+	font-weight: var(--label_weight) !important;
+}
+
+/* Advanced Settings */
+.FriendSettingsContainer [class*="toggle_ToggleRow_"]
+{
+	padding-right: 20px !important;
+	margin-bottom: 1px !important;
+}
+
+.FriendSettingsContainer [class*="toggle_ToggleRow_"] [class*="toggle_Label_"],
+.FriendSettingsContainer [class*="voicesettings_HotkeySettingRow_"] [class*="voicesettings_HotkeySettingDescription_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--entry_font_size) !important;
+	font-weight: var(--entry_font_weight) !important;
+}
+
+.FriendSettingsContainer .VoiceSettings .showAdvanced > .DialogLabel + [class*="toggle_ToggleRow_"]
+{
+	border-bottom-left-radius: 0px !important;
+	border-bottom-right-radius: 0px !important;
+	border-top-left-radius: var(--entry_radius) !important;
+	border-top-right-radius: var(--entry_radius) !important;
+}
+
+.FriendSettingsContainer .VoiceSettings .showAdvanced [class*="toggle_ToggleRow_"] + [class*="toggle_ToggleRow_"]
+{
+	border-radius: 0px !important;
+}
+
+.FriendSettingsContainer .VoiceSettings .showAdvanced [class*="toggle_ToggleRow_"]:nth-of-type(5)
+{
+	border-bottom-left-radius: var(--entry_radius) !important;
+	border-bottom-right-radius: var(--entry_radius) !important;
+	border-top-left-radius: 0px !important;
+	border-top-right-radius: 0px !important;
+}
+

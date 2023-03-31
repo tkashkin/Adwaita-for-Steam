@@ -1,3 +1,4 @@
+/* --- Launch Options --- */
 [class*="launchoptionsdialog_LaunchOptionDialog_"]
 {
 	background: var(--popover_bg) !important;
