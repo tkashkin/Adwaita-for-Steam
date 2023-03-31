@@ -573,7 +573,8 @@
 /* Activity Post */
 [class*="posttextentry_PostTextEntryArea_"],
 [class*="posttextentry_PostTextEntryArea_"]:focus,
-[class*="posttextentry_PostButton_"]
+[class*="posttextentry_PostButton_"],
+[class*="posttextentry_EmoticonButton_"]
 {
 	background: var(--button_bg) !important;
 	border-radius: var(--button_radius) !important;
@@ -585,7 +586,8 @@
 	color: var(--dim_label_fg) !important;
 }
 
-[class*="posttextentry_PostButton_"]:hover
+[class*="posttextentry_PostButton_"]:hover,
+[class*="posttextentry_EmoticonButton_"]:hover
 {
 	background: var(--button_hover_bg) !important;
 	border-radius: var(--button_radius) !important;
