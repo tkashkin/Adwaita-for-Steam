@@ -165,9 +165,37 @@
 	font-weight: 700 !important;
 }
 
+[class*="contentmanagement_DriveSettingsButton_"]
+{
+	background: var(--button_bg);
+	border-radius: var(--button_radius);
+	transition: var(--focus_transition) !important;
+}
+
+[class*="contentmanagement_DriveSettingsButton_"]:hover
+{
+	background: var(--button_hover_bg);
+}
+
+[class*="contentmanagement_DriveSettingsButton_"]:active
+{
+	background: var(--button_active_bg);
+}
+
 [class*="contentmanagement_AppsGrid_"] .ReactVirtualized__Grid__innerScrollContainer
 {
 	pointer-events: all !important;
+}
+
+[class*="contentmanagement_AppBody_"]
+{
+	border-radius: var(--entry_radius) !important;
+	transition: var(--focus_transition) !important;
+}
+
+[class*="contentmanagement_AppBody_"]:hover
+{
+	background: var(--entry_hover_bg) !important;
 }
 
 [class*="contentmanagement_AppActionBar_"]

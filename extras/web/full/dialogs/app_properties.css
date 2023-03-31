@@ -73,57 +73,6 @@
 	background: var(--card_solid_bg) !important;
 }
 
-/* Checkboxes */
-.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_Install_"] > .DialogCheckbox
-{
-	background-color: var(--checkbox_bg) !important;
-	box-shadow: var(--checkbox_bs) !important;
-	border-radius: var(--checkbox_radius) !important;
-	height: 20px !important;
-	width: 20px !important;
-}
-
-.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_Install_"] > .DialogCheckbox:hover
-{
-	box-shadow: var(--checkbox_hover_bs) !important;
-}
-
-.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_Install_"] > .DialogCheckbox:active:not(.Active)
-{
-	box-shadow: none !important;
-	background: var(--checkbox_active_bg) !important;
-}
-
-.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_Install_"] > .DialogCheckbox.Active
-{
-	background: var(--checkbox_checked_bg) !important;
-	background-blend-mode: var(--button_suggested_blend) !important;
-	border-radius: var(--checkbox_radius) !important;
-	box-shadow: none !important;
-}
-
-.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_Install_"] > .DialogCheckbox.Active:hover
-{
-	background-color: var(--button_suggested_hover_bg) !important;
-}
-
-.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_Install_"] > .DialogCheckbox.Active:active
-{
-	background-color: var(--button_suggested_click_bg) !important;
-}
-
-.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_Install_"] > .DialogCheckbox svg
-{
-	stroke-width: var(--checkbox_checked_sw) !important;
-}
-
-.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_Install_"] > .DialogCheckbox svg path
-{
-	stroke: var(--fg) !important;
-	d: path("M 185 63 L 92 170 l -53 -52") !important;
-	transition: none !important;
-}
-
 /* Checkboxes as Switches */
 .ModalDialogPopup [class*="appproperties_AppProperties_"] .DialogCheckbox_Container
 {
