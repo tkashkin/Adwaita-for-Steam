@@ -3,7 +3,8 @@
 /* ------------ */
 
 /* BG */
-.client_chat_frame body
+.client_chat_frame body,
+.client_chat_frame .friendlist
 {
 	background: var(--bg) !important;
 }
