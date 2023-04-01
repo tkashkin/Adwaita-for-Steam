@@ -1,26 +1,38 @@
 accountmenu.layout
 {
+	controls
+	{
+		view_profile_button { controlname="Button" style="account_menu_button" labelText="#steam_menu_account_view_profile" }
+		view_account_button { controlname="Button" style="account_menu_button" labelText="#steam_menu_account_details" }
+		view_wallet_button	{ controlname="Button" style="account_menu_button" labelText="#steam_menu_account_wallet" }
+		view_preferences_button { controlname="Button" style="account_menu_button" labelText="#steam_menu_account_preferences" }
+		change_user_button	{ controlname="Button" style="account_menu_button" labelText="#steam_menu_changeuser" }
+		sign_out_button 	{ controlname="Button" style="account_menu_button" labelText="#steam_menu_account_logout" }
+		account_name_label	{ controlname="Label"  style="account_menu_label" labelText="%account%" }
+		wallet_amount_label { controlname="Label"  style="account_menu_label" labelText="%wallet%" }
+	}
+	
 	styles
 	{
 		AccountMenuStyle
 		{
-			minimum-width=170
-			minimum-height=188
-
+			minimum-width=178
+			minimum-height=158
 		}
-
 		
 		account_menu_label
 		{
-			padding-right=8
+			padding-right=4
 		}
 	}
+	
 	layout
 	{
-		place { control="view_profile_button" width=max height=30 margin-top=34 margin-left=4 margin-right=4 }
-		place { control="view_account_button" width=max height=30 margin-top=64 margin-left=4 margin-right=4 }
-		place { control="change_user_button" width=max height=30 margin-top=94 margin-left=4 margin-right=4 }
-		place { control="view_preferences_button" width=max height=30 margin-top=124 margin-left=4 margin-right=4 }
-		place { control="view_wallet_button" width=max height=30 margin-top=154 margin-left=4 margin-right=4 }
+		place { control="view_profile_button" align=left margin-left=4 margin-top=4  height=24 width=max margin-right=4 }
+		place { control="view_account_button" align=left margin-left=4 margin-top=28 height=24 width=max margin-right=4 }
+		place { control="change_user_button"  align=left margin-left=4 margin-top=52 height=24 width=max margin-right=4 }
+		place { control="sign_out_button"  align=left margin-left=4 margin-top=76 height=24 width=max margin-right=4 }
+		place { control="view_preferences_button" align=left margin-left=4 margin-top=100 height=24 width=max margin-right=4 }
+		place { control="view_wallet_button" align=left margin-left=4 margin-top=124 height=24 width=max margin-right=4 }
 	}
 }
