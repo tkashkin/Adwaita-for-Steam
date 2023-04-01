@@ -648,6 +648,21 @@ button[class*="chatentry_EmoticonPickerButton_"]
 	background: none !important;
 }
 
+/* Chat Tabs Selector */
+.client_chat_frame .chatTabSelector
+{
+	background: none !important;
+	box-shadow: none !important;
+	margin-right: 43px;
+	margin-top: -6px;
+}
+
+.client_chat_frame .chatTabSelector:hover,
+.client_chat_frame .chatTabSelector:active
+{
+	background: none !important;
+}
+
 /* Open Friends List Button */
 .ChatTabs .chatTabOpenFriendsList
 {
