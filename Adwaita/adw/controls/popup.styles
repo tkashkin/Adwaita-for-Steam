@@ -214,6 +214,8 @@ popup.styles
 
 		AccountMenuStyle
 		{
+			minimum-width=200
+			minimum-height=188
 			inset=0
 			corner_rounding=6
 			bgcolor="popover_bg"
@@ -252,7 +254,7 @@ popup.styles
 		account_menu_label
 		{
 			inset-top=6
-			padding-right=-8
+			inset-left=12
 			font-family=basefont
 			font-size=14
 			font-weight=400
