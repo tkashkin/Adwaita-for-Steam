@@ -1,0 +1,19 @@
+# Friends button in the main window headerbar
+--- Adwaita/resource/layout/steamrootdialog.layout
++++ Adwaita/resource/layout/steamrootdialog.layout
+@@ -8,13 +8,13 @@
+ 		place { control="UINavigatorPanel" width=max height=max }
+ 		place { control="UIStatusPanel" width=max height=2 y=48 }
+ 
+-		place { control="InboxButton,SupportAlert,ParentalLockButton,MenuBar" width=34 height=34 y=7 margin-right=12 spacing=6 align=right end-right="frame_minimize" }
++		place { control="InboxButton,view_friends,SupportAlert,ParentalLockButton,MenuBar" width=34 height=34 y=7 margin-right=12 spacing=6 align=right end-right="frame_minimize" }
+ 
+ 		place { control="AccountButton" width=28 height=28 y=10 margin-right=12 align=right end-right="InboxButton" }
+ 
+ 		place { control="frame_captiongrip" margin=2 width=max height=104 }
+ 
+ 		region { name="hidden" width=0 height=0 margin-left=-999 }
+-		place { control="view_friends,fullscreen,startvr,exitvr,add_game,AnnouncementButton,universe_label,EOLAlert" region="hidden" width=0 height=0 }
++		place { control="fullscreen,startvr,exitvr,add_game,AnnouncementButton,universe_label,EOLAlert" region="hidden" width=0 height=0 }
+ 	}
+ }
