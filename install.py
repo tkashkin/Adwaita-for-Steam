@@ -121,11 +121,11 @@ SHARED_PATCHES = [
 ]
 
 # List Options
-def list_options(type: str, options: list[Path], suffix: str, sourcedir: Path, arg: str) -> NoReturn:
+def list_options(type: str, options: list[Path], suffix: str, sourcedir: Path, arg: str):
 	if options:
 		print(f"{TEXT_BLUE}{TEXT_BOLD}{type.upper()}: {len(options)}{TEXT_RESET}")
 		for option in options:
-			name = os.path.relpath(option, sourcedir).removesuffix(suffix)
+			name = os.path.relpath(option, sourcedir).removesuffix(suffix).replace("\\", "/")
 
 			if type == "color themes":
 				name = name.split("/")[1]
@@ -186,7 +186,7 @@ def gen_webkit_theme(target: Path, name: str, selected_extras: list[Path]):
 				f = Path(f)
 
 				if not f.exists() or f.suffix != ".css":
-					f = webthemedir / "extras/{}{}".format(we, ".css")
+					f = webthemedir / "extras" / "{}{}".format(we, ".css")
 
 				if f.exists():
 					with open(f,'rb') as fd:
@@ -286,7 +286,7 @@ def patch_client_css(source: Path, target: Path, name: str):
 		print(f"{TEXT_BLUE}{TEXT_ARROW} Web Theme is {TEXT_BOLD}none{TEXT_RESET}{TEXT_BLUE}, resetting patched Steam {name} CSS...{TEXT_RESET}")
 		open(custom_css, 'w').close()
 	else:
-		shutil.move(source / LIBRARY_CSS_FILE, custom_css)
+		shutil.copy(source / LIBRARY_CSS_FILE, custom_css)
 
 	with target_css.open() as css_file:
 		if css_file.readline().strip() == STEAM_PATCHED_HEADER:
@@ -341,8 +341,8 @@ if __name__ == "__main__":
 			selected_theme_assets = cta
 		else:
 			t = args.color_theme.removesuffix(".theme")
-			selected_theme = colorthemedir / "{}/{}{}".format(t, t, ".theme")
-			selected_theme_assets = colorthemedir / "{}/{}".format(t, "assets")
+			selected_theme = colorthemedir / t / "{}{}".format(t, t, ".theme")
+			selected_theme_assets = colorthemedir / t / "assets"
 			if not selected_theme.exists():
 				raise SystemExit(f"{TEXT_RED}{TEXT_CROSS} {TEXT_BOLD}{selected_theme}{TEXT_RESET}{TEXT_RED} theme not found.{TEXT_RESET}")
 			if not selected_theme_assets.exists():
