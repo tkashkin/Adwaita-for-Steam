@@ -341,7 +341,7 @@ if __name__ == "__main__":
 			selected_theme_assets = cta
 		else:
 			t = args.color_theme.removesuffix(".theme")
-			selected_theme = colorthemedir / t / "{}{}".format(t, t, ".theme")
+			selected_theme = colorthemedir / t / "{}{}".format(t, ".theme")
 			selected_theme_assets = colorthemedir / t / "assets"
 			if not selected_theme.exists():
 				raise SystemExit(f"{TEXT_RED}{TEXT_CROSS} {TEXT_BOLD}{selected_theme}{TEXT_RESET}{TEXT_RED} theme not found.{TEXT_RESET}")
