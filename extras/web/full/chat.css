@@ -2,20 +2,9 @@
 /* --- Chat --- */
 /* ------------ */
 
-/* Window Controls */
-.friendsui-container .title-area-icon
-{
-	margin-top: 0px !important;
-}
-
-.friendsui-container .title-area-icon.closeButton svg
-{
-	margin-top: 0px !important;
-	margin-left: 0px !important;
-}
-
 /* BG */
-.client_chat_frame body
+.client_chat_frame body,
+.client_chat_frame .friendlist
 {
 	background: var(--bg) !important;
 }
@@ -94,6 +83,25 @@
 .currentUserContainer .statusHeaderGlow
 {
 	display: none !important;
+}
+
+.currentUserContainer .playerName,
+.currentUserContainer .gameName,
+.currentUserContainer [class*="personanameandstatus_playerName_"],
+.currentUserContainer [class*="personanameandstatus_gameName_"]
+{
+	text-shadow: none !important;
+	font-weight: var(--baseweight) !important;
+}
+
+.currentUserContainer.ingame [class*="personanameandstatus_playerName_"]
+{
+	color: var(--success) !important;
+}
+
+.currentUserContainer.ingame [class*="personanameandstatus_gameName_"]
+{
+	color: var(--success_bg) !important;
 }
 
 .friendListButton.friendSettingsButton
@@ -216,7 +224,8 @@
 
 /* Friend Hover BG */
 .friendStatusHover,
-.ChatRoomListGroupItem
+.ChatRoomListGroupItem,
+.SteamPlayerGroupFooter
 {
 	margin: 0px var(--menu_margin) !important;
 }
@@ -241,9 +250,16 @@
 	color: var(--success) !important;
 }
 
-.friend.ingame [class*="personanameandstatus_richPresenceLabel_"]
+.friend.ingame [class*="personanameandstatus_richPresenceLabel_"],
+.SteamPlayerGroupFooter,
+.SteamPlayerGroupFooterLabel
 {
 	color: var(--success_bg) !important;
+}
+
+.SteamPlayerGroupFooterLabel
+{
+	opacity: 0.5 !important;
 }
 
 .friend.offline [class*="personanameandstatus_playerName_"],
@@ -647,6 +663,21 @@ button[class*="chatentry_EmoticonPickerButton_"]
 /* Hide Tab Separator */
 [class*="chattabs_ChatTab_"]::before,
 [class*="chattabs_ChatTab_"]::after
+{
+	background: none !important;
+}
+
+/* Chat Tabs Selector */
+.client_chat_frame .chatTabSelector
+{
+	background: none !important;
+	box-shadow: none !important;
+	margin-right: 43px;
+	margin-top: -6px;
+}
+
+.client_chat_frame .chatTabSelector:hover,
+.client_chat_frame .chatTabSelector:active
 {
 	background: none !important;
 }

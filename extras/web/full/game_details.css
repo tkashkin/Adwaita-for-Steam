@@ -388,7 +388,12 @@
 {
 	color: var(--accent) !important;
 	font-family: var(--basefont) !important;
-	font-weight: var(--baseweight) !important;
+	font-weight: var(--title_4_weight) !important;
+}
+
+[class*="partnereventdisplay_EventDetailsBody_"] a:not(.LinkButton):hover
+{
+	text-decoration: underline !important;
 }
 
 [class*="partnereventdisplay_EventDetailsBody_"] img,
@@ -549,7 +554,8 @@
 }
 
 /* Gameplay Summary */
-[class*="spotlightgameplaysummary_EventHeaderBlock_"]
+[class*="spotlightgameplaysummary_EventHeaderBlock_"],
+[class*="spotlightgameplaysummary_GamePlaySummaryHeader_"]
 {
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
@@ -573,11 +579,19 @@
 /* Activity Post */
 [class*="posttextentry_PostTextEntryArea_"],
 [class*="posttextentry_PostTextEntryArea_"]:focus,
-[class*="posttextentry_PostButton_"]
+[class*="posttextentry_PostButton_"],
+[class*="posttextentry_EmoticonButton_"]
 {
 	background: var(--button_bg) !important;
 	border-radius: var(--button_radius) !important;
 	box-shadow: none !important;
+}
+
+[class*="posttextentry_PostButton_"]
+{
+	font-family: var(--basefont) !important;
+	font-size: var(--button_font_size) !important;
+	font-weight: var(--button_font_weight) !important;
 }
 
 [class*="posttextentry_PostTextEntryArea_"]::placeholder
@@ -585,7 +599,8 @@
 	color: var(--dim_label_fg) !important;
 }
 
-[class*="posttextentry_PostButton_"]:hover
+[class*="posttextentry_PostButton_"]:hover,
+[class*="posttextentry_EmoticonButton_"]:hover
 {
 	background: var(--button_hover_bg) !important;
 	border-radius: var(--button_radius) !important;

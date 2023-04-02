@@ -226,6 +226,24 @@
 	text-align: center;
 }
 
+#root [class*="login_Login_"] [class*="newlogindialog_Compact_"] [class*="newlogindialog_SegmentedCharacterInput_"]
+{
+	background: var(--entry_bg) !important;
+	border-radius: var(--entry_radius) !important;
+	transition: var(--focus_transition) !important;
+}
+
+#root [class*="login_Login_"] [class*="newlogindialog_Compact_"] [class*="newlogindialog_SegmentedCharacterInput_"]:focus-within
+{
+	box-shadow: var(--focusring_bs) !important;
+}
+
+#root [class*="login_Login_"] [class*="newlogindialog_Compact_"] [class*="newlogindialog_SegmentedCharacterInput_"] input
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+}
+
 #root [class*="login_Login_"] [class*="newlogindialog_Compact_"] [class*="newlogindialog_FormContainer_"]
 {
 	padding: 0 !important;

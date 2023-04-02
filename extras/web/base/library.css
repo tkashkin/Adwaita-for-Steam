@@ -402,6 +402,11 @@ html[class*="gamepadui_SteamUIPopupHTML_"]
 	color: var(--accent) !important;
 }
 
+[class*="gamelistentry_Running_"]
+{
+	color: var(--success) !important;
+}
+
 [class*="gamelistentry_HoverOverlay_"],
 [class*="gamelistentry_HoverOverlay_"][class*="gamelistentry_Selected_"],
 [class*="gamelistentry_Selected_"] [class*="gamelistentry_Container_"][class*="gamelistentry_HoverOverlay_"]

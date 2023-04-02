@@ -76,6 +76,18 @@
 	margin-left: 7px !important;
 }
 
+/* Friends Window Controls */
+.friendsui-container .title-area-icon
+{
+	margin-top: 0px !important;
+}
+
+.friendsui-container .title-area-icon.closeButton svg
+{
+	margin-top: 0px !important;
+	margin-left: 0px !important;
+}
+
 /* Blue Line on Dialog Window */
 .ModalPosition_TopBar
 {
