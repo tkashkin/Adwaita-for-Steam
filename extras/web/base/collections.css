@@ -1,23 +1,23 @@
 /*  --- Collection View --- */
 /* Background */
-[class*="allcollections_ScrollContainer_"],
-[class*="collectionview_OuterContainer_"]
+#SteamDesktop div[class*="allcollections_ScrollContainer_"],
+#SteamDesktop div[class*="collectionview_OuterContainer_"]
 {
 	background: var(--bg) !important;
 }
 
-[class*="allcollections_Collection_"]
+#SteamDesktop div[class*="allcollections_Collection_"]
 {
 	background: var(--button_bg) !important;
 }
 
-[class*="allcollections_Collection_"]:hover
+#SteamDesktop div[class*="allcollections_Collection_"]:hover
 {
 	background: var(--button_hover_bg) !important;
 }
 
 /* Title */
-[class*="allcollections_Label_"]
+#SteamDesktop div[class*="allcollections_Label_"]
 {
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
@@ -26,7 +26,7 @@
 }
 
 /* Horiz Rule */
-[class*="allcollections_Rule_"]
+#SteamDesktop div[class*="allcollections_Rule_"]
 {
 	background-color: var(--dim_label_fg) !important;
 	opacity: 0.55 !important;
