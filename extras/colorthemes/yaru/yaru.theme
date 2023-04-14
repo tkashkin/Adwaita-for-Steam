@@ -10,7 +10,7 @@ window_fg = #F7F7F7FF
 
 [headerbar]
 headerbar_backdrop = #2C2C2CFF
-headerbar_bg = #3030303FF
+headerbar_bg = #303030FF
 headerbar_fg = #FFFFFFFF
 headerbar_shade = #00000061
 
