@@ -12,18 +12,18 @@ A skin to make Steam look more like a native GNOME app
 * **Overlay**: done.
 * **Small mode**: done.
 * **Old library, old chat, other old unused windows**: not planned.
-* **Recoloring**: colors can be changed via making a new theme. See `extras/colorthemes` dir.
+* **Recoloring**: colors can be changed via making a new theme. See [colorthemes](extras/colorthemes) dir.
 * **Light theme**: not planned, would require redrawing all assets to be visible on light backgrounds.
 
 ### Limitations
 
 * **Rounded corners**: impossible to do in a Steam skin, use [Rounded Window Corners extension](https://github.com/yilozt/rounded-window-corners) or [mutter-rounded](https://github.com/yilozt/mutter-rounded) on GNOME
 * **Height of menu/sidebar items**: doesn't seem to be possible to increase
-* **Library Theming**: While the installer will patch steam files to allow theming the library, when steam updates these files they will be reset. A reinstall is currently needed to repatch them.
+* **Library Theming**: While the installer will patch steam files to allow theming the library, these files may be reset by steam updates. A reinstall is currently needed to repatch them.
 
 ## Requirements
 
-* [Cantarell fonts](https://gitlab.gnome.org/GNOME/cantarell-fonts) as static fonts. Some distros install Cantarell as a variable font that is not supported by Steam, see [#45](https://github.com/tkashkin/Adwaita-for-Steam/issues/45).
+* [Cantarell fonts](https://gitlab.gnome.org/GNOME/cantarell-fonts) as static fonts. Some distros install Cantarell as a variable font that is not supported by Steam, see [#45](https://github.com/tkashkin/Adwaita-for-Steam/issues/45). An option to install these is included in the install script.
 * The skin was created for the Linux version of Steam and wasn't tested on Windows or macOS. It will work with some visual problems.
 
 ## Previews
@@ -126,17 +126,28 @@ cd Adwaita-for-Steam
 ./install.py
 ```
 
-Run `./install.py -l` to see customization options.
+#### Arguments
 
-Run `./install.py -c ${color_theme}` to change the color theme.
+| Argument         | Short  | Required Values                  | Description                                              |
+| ---------------- | ------ | -------------------------------- | -------------------------------------------------------- |
+| --color-theme    | -c     | [Colortheme](extras/colorthemes) | Change color theme                                       |
+| --font-install   | -fi    |                                  | Installs static Cantarell fonts                          |
+| --list-options   | -l     |                                  | List available patches, themes, and web extras           |
+| --name           | -n     | [name]                           | Rename the installed skin                                |
+| --no-steam-patch | -nsp   |                                  | Do not patch steam client files                          |
+| --patch          | -p     | [Patch](extras/patches)          | Apply one or multiple patches                            |
+| --target         | -t     | normal / flatpak / [custom dir]  | Choose target location for install (default: both)       |
+| --web-theme      | -w     | full / base / none               | Choose web theme variant (default: full)                 |
+| --web-extras     | -we    | [Web Extra](extras/web/extras)   | Enable one or multiple web theme extras                  |
 
-Run `./install.py -p ${patch_name}` to apply patches.
+#### Example Usage
 
-Run `./install.py -w {base, full, none}` to change the type of theme for web based elements of steam. base is a basic default, full includes heavier theming (including chat), and none disables this feature.
-
-Run `./install.py -we ${web_extra_name}` to add an optional extra to the web theme.
-
-Run `./install.py -h` to see all installer options.
+```bash
+# List options
+./install.py -l
+# Install with options
+./install.py -c nord -fi -p windowcontrols/right-all -we login/hide_qr -we library/hide_whats_new
+```
 
 ### With graphical installer
 
