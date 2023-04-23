@@ -22,6 +22,7 @@ TEXT_CROSS="✖"
 TEXT_INFO="✦"
 
 COLOR_THEME_DIR = "extras/colorthemes"
+FONTS_DIR = "extras/fonts"
 PATCH_DIR = "extras/patches"
 SKIN_DIR = "Adwaita"
 WEB_EXTRAS_DIR = "extras/web/extras"
@@ -35,6 +36,8 @@ LIBRARY_CSS_FILE = "resource/libraryroot.custom.css"
 TARGET_NORMAL = "~/.steam/steam"
 TARGET_FLATPAK = "~/.var/app/com.valvesoftware.Steam/.steam/steam"
 
+TARGET_FONTS = "~/.local/share/fonts"
+
 STEAM_LOOPBACK = "https://steamloopback.host"
 STEAM_PATCHED_HEADER = "/*patched*/"
 
@@ -43,11 +46,12 @@ STEAM_LIBRARY_CSS = "steamui/css/library.css"
 STEAM_CUSTOM_LIBRARY = "steamui/libraryroot.custom.css"
 STEAM_CUSTOM_FRIENDS = "clientui/friends.custom.css"
 
-skindir = Path(SKIN_DIR)
-patchdir = Path(PATCH_DIR)
-webthemedir = Path(WEB_THEME_DIR)
-webextrasdir = Path(WEB_EXTRAS_DIR)
 colorthemedir = Path(COLOR_THEME_DIR)
+fontdir = Path(FONTS_DIR)
+patchdir = Path(PATCH_DIR)
+skindir = Path(SKIN_DIR)
+webextrasdir = Path(WEB_EXTRAS_DIR)
+webthemedir = Path(WEB_THEME_DIR)
 
 # CSS for webkit.css
 WEB_BASE_FILES = [
@@ -155,6 +159,19 @@ def apply_patch(parentdir: Path, patch: Path):
 			subprocess.run(["patch", "-l", "-p0"], cwd = parentdir, stdin = patch_file)
 		except Exception as e:
 			print(f"\n{TEXT_RED}{TEXT_CROSS} Error applying patch: {e}{TEXT_RESET}")
+
+# Fonts
+def install_font(name: str, ext: str):
+    font = fontdir / name / ext
+    if font.exists():
+        print(f"\n{TEXT_BLUE}{TEXT_ARROW} Installing font {TEXT_BOLD}{name}{TEXT_RESET}{TEXT_BLUE}...{TEXT_RESET}")
+        files = font.glob(f"*.{ext}")
+        target = Path(TARGET_FONTS).expanduser().resolve()
+        target.mkdir(exist_ok = True)
+        for f in files:
+            shutil.copy(f, target)
+    else:
+        print(f"{TEXT_PURPLE}{TEXT_INFO} Font: {TEXT_BOLD}{name}{TEXT_RESET}{TEXT_PURPLE} not found!{TEXT_RESET}")
 
 # Webkit CSS
 def find_web_extras() -> list[Path]:
@@ -312,11 +329,12 @@ if __name__ == "__main__":
 
 	parser = ArgumentParser(description = "Adwaita-for-Steam installer")
 	parser.add_argument("-c", "--color-theme", default = "adwaita", help = "Choose color theme")
-	parser.add_argument("-t", "--target", nargs = "+", action = "extend", default = ["normal", "flatpak"], help = "Install targets: 'normal', 'flatpak', custom paths")
+	parser.add_argument("-fi", "--font-install", action = "store_true", help = "Install Fonts")
 	parser.add_argument("-l", "--list-options", action = "store_true", help = "List available patches, themes, web extras and exit")
-	parser.add_argument("-p", "--patch", nargs = "+", action = "extend", help = "Apply one or multiple patches")
 	parser.add_argument("-n", "--name", default = SKIN_DIR, help = "Rename installed skin")
 	parser.add_argument("-nsp", "--no-steam-patch", action = "store_true", help = "Do not patch steam files")
+	parser.add_argument("-p", "--patch", nargs = "+", action = "extend", help = "Apply one or multiple patches")
+	parser.add_argument("-t", "--target", nargs = "+", action = "extend", default = ["normal", "flatpak"], help = "Install targets: 'normal', 'flatpak', custom paths")
 	parser.add_argument("-w", "--web-theme", choices = ["base", "full", "none"], default = "full", help = "Choose web theme variant")
 	parser.add_argument("-we", "--web-extras", nargs = "+", action = "extend", help = "Enable one or multiple web theme extras")
 	args = parser.parse_args()
@@ -329,6 +347,9 @@ if __name__ == "__main__":
 
 	if args.patch and not shutil.which("patch"):
 		raise SystemExit(f"{TEXT_RED}{TEXT_CROSS} {TEXT_BOLD}patch{TEXT_RESET}{TEXT_RED} executable not found in $PATH. Make sure you have GNU Patch installed{TEXT_RESET}")
+
+	if args.font_install:
+		install_font("Cantarell", "otf")
 
 	if args.color_theme:
 		ct = Path(args.color_theme)
