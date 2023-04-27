@@ -1,47 +1,47 @@
 /* Rounded Corners */
-[class*="appactionbutton_ButtonChild"],
-[class*="appactivityday_EventBody_"],
-[class*="appactivityday_PartnerEventMediumImage_Image_"],
-[class*="appactivityday_PartnerEventLargeImage_Image_"],
-[class*="appactivityday_PartnerEventLargeImage_Container_"],
-[class*="appactivityday_PartnerEvent_"],
-[class*="appdetailsactivitysection_FetchMoreContainer_"],
-[class*="appdetailscommunityfeed_HeaderStyles_"],
-[class*="appdetailsdlcsection_Art_"],
-[class*="appdetailsprimarylinkssection_LinksSectionBody_"],
-[class*="appdetailssection_Highlight_"],
-[class*="appdetailssection_RightColumnSection_"],
-[class*="appdetailsspotlight_ReviewContainer_"],
-[class*="appdetailsworkshopsection_FeaturedItemImage_"],
-[class*="appdetailsworkshopsection_WorkshopContainer_"],
-[class*="libraryassetimage_Visible_"],
-[class*="spotlight_MajorEventImageContainer_"],
-[class*="spotlight_MajorEventContainer_"],
-[class*="spotlight_MajorEventBackground_"],
-[class*="writereview_RightContainer_"] button,
-[class*="appdetailsgameinfopanel_Description_"],
-[class*="appactivitydlc_Contents_"],
-[class*="discussionwidget_VoteContainer_"],
-[class*="discussionwidget_ShareContainer_"],
-[class*="discussionwidget_DiscussContainer_"]
+#SteamDesktop div[class*="appactionbutton_ButtonChild"],
+#SteamDesktop div[class*="appactivityday_EventBody_"],
+#SteamDesktop img[class*="appactivityday_PartnerEventMediumImage_Image_"],
+#SteamDesktop img[class*="appactivityday_PartnerEventLargeImage_Image_"],
+#SteamDesktop div[class*="appactivityday_PartnerEventLargeImage_Container_"],
+#SteamDesktop div[class*="appactivityday_PartnerEvent_"],
+#SteamDesktop button[class*="appdetailsactivitysection_FetchMoreContainer_"],
+#SteamDesktop div[class*="appdetailscommunityfeed_HeaderStyles_"],
+#SteamDesktop div[class*="appdetailsdlcsection_Art_"],
+#SteamDesktop div[class*="appdetailsprimarylinkssection_LinksSectionBody_"],
+#SteamDesktop div[class*="appdetailssection_Highlight_"],
+#SteamDesktop div[class*="appdetailssection_RightColumnSection_"],
+#SteamDesktop div[class*="appdetailsspotlight_ReviewContainer_"],
+#SteamDesktop img[class*="appdetailsworkshopsection_FeaturedItemImage_"],
+#SteamDesktop div[class*="appdetailsworkshopsection_WorkshopContainer_"],
+#SteamDesktop img[class*="libraryassetimage_Visible_"],
+#SteamDesktop div[class*="spotlight_MajorEventImageContainer_"],
+#SteamDesktop div[class*="spotlight_MajorEventContainer_"],
+#SteamDesktop [class*="spotlight_MajorEventBackground_"],
+#SteamDesktop div[class*="writereview_RightContainer_"] button,
+#SteamDesktop div[class*="appdetailsgameinfopanel_Description_"],
+#SteamDesktop div[class*="appactivitydlc_Contents_"],
+#SteamDesktop div[class*="discussionwidget_VoteContainer_"],
+#SteamDesktop div[class*="discussionwidget_ShareContainer_"],
+#SteamDesktop div[class*="discussionwidget_DiscussContainer_"]
 {
 	border-radius: var(--card_radius) !important;
 	background: var(--card_bg) !important;
 	border: none !important;
 }
 
-[class*="appdetailsachievementssection_AdditionalItem_"],
-[class*="appdetailscommunityfeed_LoadContentButton_"],
-[class*="appdetailsactivitysection_ViewLastNews_"]
+#SteamDesktop div[class*="appdetailsachievementssection_AdditionalItem_"],
+#SteamDesktop div[class*="appdetailscommunityfeed_LoadContentButton_"],
+#SteamDesktop div[class*="appdetailsactivitysection_ViewLastNews_"]
 {
 	border-radius: var(--button_radius) !important;
 	background: var(--button_bg) !important;
 	border: none !important;
 }
 
-[class*="appdetailsactivitysection_FetchMoreContainer_"],
-[class*="appdetailscommunityfeed_LoadContentButton_"],
-[class*="appdetailsactivitysection_ViewLastNews_"]
+#SteamDesktop button[class*="appdetailsactivitysection_FetchMoreContainer_"],
+#SteamDesktop div[class*="appdetailscommunityfeed_LoadContentButton_"],
+#SteamDesktop div[class*="appdetailsactivitysection_ViewLastNews_"]
 {
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
@@ -51,32 +51,32 @@
 }
 
 /* Play button, streaming device dropdown */
-[class*="appactionbutton_PlayButtonContainer"]
+#SteamDesktop div[class*="appactionbutton_PlayButtonContainer"]
 {
 	border-radius: var(--button_radius) !important;
 	background-color: var(--accent_bg) !important;
 	color: var(--accent_fg) !important;
 }
 
-[class*="appactionbutton_PlayButtonContainer"],
-[class*="appactionbutton_ShowingStreaming"]
+#SteamDesktop div[class*="appactionbutton_PlayButtonContainer"],
+#SteamDesktop [class*="appactionbutton_ShowingStreaming"]
 {
 	min-width: 140px !important;
 }
 
-[class*="appactionbutton_PlayButtonContainer"][class*="appactionbutton_Green"]
+#SteamDesktop div[class*="appactionbutton_PlayButtonContainer"][class*="appactionbutton_Green"]
 {
 	background-color: var(--success_bg) !important;
 	color: var(--success_fg) !important;
 }
 
-[class*="appactionbutton_PlayButtonContainer"][class*="appactionbutton_Disabled"]
+#SteamDesktop div[class*="appactionbutton_PlayButtonContainer"][class*="appactionbutton_Disabled"]
 {
 	background-color: var(--button_disabled_bg) !important;
 	color: var(--button_disabled_fg) !important;
 }
 
-[class*="appactionbutton_PlayButtonContainer"] [class*="appactionbutton_ButtonText"]
+#SteamDesktop div[class*="appactionbutton_PlayButtonContainer"] div[class*="appactionbutton_ButtonText"]
 {
 	color: var(--button_fg) !important;
 	font-family: var(--basefont) !important;
@@ -87,19 +87,19 @@
 	text-transform: none !important;
 }
 
-[class*="appactionbutton_PlayButtonContainer"] > [class*="appactionbutton_ButtonChild"]:first-child > svg
+#SteamDesktop div[class*="appactionbutton_PlayButtonContainer"] > div[class*="appactionbutton_ButtonChild"]:first-child > svg
 {
 	display: none !important;
 }
 
-[class*="appactionbutton_PlayButtonContainer"] > [class*="appactionbutton_ButtonChild"] > svg > path,
-[class*="appactionbutton_PlayButtonContainer"] > [class*="appactionbutton_ButtonChild"] > svg > polygon
+#SteamDesktop div[class*="appactionbutton_PlayButtonContainer"] > div[class*="appactionbutton_ButtonChild"] > svg > path,
+#SteamDesktop div[class*="appactionbutton_PlayButtonContainer"] > div[class*="appactionbutton_ButtonChild"] > svg > polygon
 {
 	stroke: currentColor !important;
 	fill: currentColor !important;
 }
 
-[class*="appactionbutton_PlayButtonContainer"] > [class*="appactionbutton_ButtonChild"]
+#SteamDesktop div[class*="appactionbutton_PlayButtonContainer"] > div[class*="appactionbutton_ButtonChild"]
 {
 	margin: 0 !important;
 	border-radius: var(--button_radius) !important;
@@ -107,83 +107,83 @@
 	transition: background 0.15s, border-color 0.15s, border-top-left-radius 0s, border-bottom-left-radius 0s !important;
 }
 
-[class*="appactionbutton_PlayButtonContainer"] > [class*="appactionbutton_ButtonChild"]:hover
+#SteamDesktop div[class*="appactionbutton_PlayButtonContainer"] > div[class*="appactionbutton_ButtonChild"]:hover
 {
 	background-color: var(--button_hover_bg) !important;
 }
 
-[class*="appactionbutton_PlayButtonContainer"] > [class*="appactionbutton_ButtonChild"]:active
+#SteamDesktop div[class*="appactionbutton_PlayButtonContainer"] > div[class*="appactionbutton_ButtonChild"]:active
 {
 	background-color: var(--button_active_bg) !important;
 }
 
-[class*="appactionbutton_PlayButtonContainer"] > [class*="appactionbutton_ButtonChild"]:last-child:not(:first-child)
+#SteamDesktop div[class*="appactionbutton_PlayButtonContainer"] > div[class*="appactionbutton_ButtonChild"]:last-child:not(:first-child)
 {
 	border-top-left-radius: 0 !important;
 	border-bottom-left-radius: 0 !important;
 	border-left: 1px var(--button_active_bg) solid !important;
 }
 
-[class*="appactionbutton_PlayButtonContainer"]:hover > [class*="appactionbutton_ButtonChild"]:last-child:not(:first-child)
+#SteamDesktop div[class*="appactionbutton_PlayButtonContainer"]:hover > div[class*="appactionbutton_ButtonChild"]:last-child:not(:first-child)
 {
 	border-radius: var(--button_radius) !important;
 	border-color: transparent !important;
 }
 
 /* Hover Highlight */
-[class*="appactivityday_PartnerEventTextOnly_Container_"]:hover,
-[class*="appactivityday_PartnerEventMediumImage_Container_"]:hover,
-[class*="appactivityday_PartnerEventLargeImage_Container_"]:hover,
-[class*="appdetailsachievementssection_AdditionalItem_"]:hover,
-[class*="appdetailscommunityfeed_LoadContentButton_"]:hover,
-[class*="appdetailsactivitysection_FetchMoreContainer_"]:hover,
-[class*="appdetailsactivitysection_ViewLastNews_"]:hover
+#SteamDesktop div[class*="appactivityday_PartnerEventTextOnly_Container_"]:hover,
+#SteamDesktop div[class*="appactivityday_PartnerEventMediumImage_Container_"]:hover,
+#SteamDesktop div[class*="appactivityday_PartnerEventLargeImage_Container_"]:hover,
+#SteamDesktop div[class*="appdetailsachievementssection_AdditionalItem_"]:hover,
+#SteamDesktop div[class*="appdetailscommunityfeed_LoadContentButton_"]:hover,
+#SteamDesktop button[class*="appdetailsactivitysection_FetchMoreContainer_"]:hover,
+#SteamDesktop div[class*="appdetailsactivitysection_ViewLastNews_"]:hover
 {
 	background: var(--button_hover_bg) !important;
 }
 
-[class*="appactivityday_PartnerEventTextOnly_Container_"],
-[class*="appactivityday_PartnerEventMediumImage_Container_"],
-[class*="appactivityday_PartnerEventLargeImage_Container_"]
+#SteamDesktop div[class*="appactivityday_PartnerEventTextOnly_Container_"],
+#SteamDesktop div[class*="appactivityday_PartnerEventMediumImage_Container_"],
+#SteamDesktop div[class*="appactivityday_PartnerEventLargeImage_Container_"]
 {
 	border-radius: var(--card_radius) !important;
 }
 
 /* Remove Unneeded Backgrounds */
-[class*="appactivityday_PartnerEventMediumImage_Container_"],
-[class*="appdetailsdlcsection_Gloss_"],
-[class*="writereview_RatingContainer_"],
-[class*="appdetailsgameinfopanel_Container_"],
-[class*="appactivityday_LeftSideMajorUpdateBar_"],
-[class*="appactivityday_PartnerEventLargeUpdate_"]
+#SteamDesktop div[class*="appactivityday_PartnerEventMediumImage_Container_"],
+#SteamDesktop div[class*="appdetailsdlcsection_Gloss_"],
+#SteamDesktop div[class*="writereview_RatingContainer_"],
+#SteamDesktop div[class*="appdetailsgameinfopanel_Container_"],
+#SteamDesktop div[class*="appactivityday_LeftSideMajorUpdateBar_"],
+#SteamDesktop div[class*="appactivityday_PartnerEventLargeUpdate_"]
 {
 	background: none !important;
 }
 
 /* Remove Image Borders */
-[class*="appactivityday_PartnerEvent_"],
-[class*="appactivityday_PartnerEventLargeUpdate_"],
-[class*="spotlight_MajorEventContainer_"],
-[class*="appactivityday_PartnerEventLargeUpdate_"]
+#SteamDesktop div[class*="appactivityday_PartnerEvent_"],
+#SteamDesktop div[class*="appactivityday_PartnerEventLargeUpdate_"],
+#SteamDesktop div[class*="spotlight_MajorEventContainer_"],
+#SteamDesktop div[class*="appactivityday_PartnerEventLargeUpdate_"]
 {
 	border-image-source: none !important;
 }
 
 /* Border Radius Fixes */
-[class*="appdetailsworkshopsection_WorkshopContainer_"]
+#SteamDesktop div[class*="appdetailsworkshopsection_WorkshopContainer_"]
 {
 	border-top-left-radius: 0px !important;
 	border-top-right-radius: 0px !important;
 }
 
-[class*="appdetailsworkshopsection_WorkshopHightlight_"]
+#SteamDesktop div[class*="appdetailsworkshopsection_WorkshopHightlight_"]
 {
 	border-bottom-left-radius: 0px !important;
 	border-bottom-right-radius: 0px !important;
 }
 
-[class*="appdetailsachievementssection_Icon_"],
-[class*="appdetailsachievementssection_AdditionalItem_"]
+#SteamDesktop div[class*="appdetailsachievementssection_Icon_"],
+#SteamDesktop div[class*="appdetailsachievementssection_AdditionalItem_"]
 {
 	border-radius: var(--button_radius) !important;
 }
@@ -195,35 +195,35 @@
 }
 
 /* Hide Blur From Major Updates */
-[class*="appactivityday_Blur_"]
+#SteamDesktop img[class*="appactivityday_Blur_"]
 {
 	display:none;
 }
 
 /* Partner Updates */
-[class*="appactivityday_PartnerEventLargeUpdate_"],
-[class*="appactivityday_PartnerEventFeatured_"]
+#SteamDesktop div[class*="appactivityday_PartnerEventLargeUpdate_"],
+#SteamDesktop [class*="appactivityday_PartnerEventFeatured_"]
 {
 	box-shadow: none !important;
 }
 
-[class*="appactivityday_PartnerEventTypeUpdate_"]
+#SteamDesktop div[class*="appactivityday_PartnerEventTypeUpdate_"]
 {
 	color: var(--fg) !important;
 	text-shadow: none !important;
 }
 
-[class*="appactivityday_PartnerEventLargeImage_Summary_"]
+#SteamDesktop div[class*="appactivityday_PartnerEventLargeImage_Summary_"]
 {
 	color: #929799 !important;
 }
 
-[class*="appactivityday_PartnerEventFeaturedHeader_"]
+#SteamDesktop [class*="appactivityday_PartnerEventFeaturedHeader_"]
 {
 	background: none !important;
 }
 
-[class*="appactivityday_PartnerEventType_"]
+#SteamDesktop div[class*="appactivityday_PartnerEventType_"]
 {
 	color: var(--dim_label_fg) !important;
 	font-family: var(--basefont) !important;
@@ -232,8 +232,8 @@
 	text-shadow: none !important;
 }
 
-[class*="appactivityday_PartnerEventMediumImage_Title_"],
-[class*="appactivityday_PartnerEventLargeImage_Title_"]
+#SteamDesktop div[class*="appactivityday_PartnerEventMediumImage_Title_"],
+#SteamDesktop div[class*="appactivityday_PartnerEventLargeImage_Title_"]
 {
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
@@ -242,9 +242,9 @@
 	text-shadow: none !important;
 }
 
-[class*="appactivityday_PartnerEventMediumImage_Summary_"],
-[class*="appactivityday_PartnerEventLargeImage_Summary_"],
-[class*="appactivityday_PartnerEventTextOnly_Summary_"]
+#SteamDesktop div[class*="appactivityday_PartnerEventMediumImage_Summary_"],
+#SteamDesktop div[class*="appactivityday_PartnerEventLargeImage_Summary_"],
+#SteamDesktop span[class*="appactivityday_PartnerEventTextOnly_Summary_"]
 {
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
@@ -252,7 +252,7 @@
 	text-shadow: none !important;
 }
 
-[class*="appactivityday_PartnerEventTextOnly_Title_"]
+#SteamDesktop div[class*="appactivityday_PartnerEventTextOnly_Title_"]
 {
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
@@ -260,18 +260,18 @@
 	text-shadow: none !important;
 }
 
-[class*="appactivityday_PartnerEventTextOnly_Icon_"] svg path
+#SteamDesktop div[class*="appactivityday_PartnerEventTextOnly_Icon_"] svg path
 {
 	fill: var(--dim_label_fg) !important;
 }
 
-[class*="appactivityday_Event_"] [class*="comment_thread_RatingBar_"]
+#SteamDesktop div[class*="appactivityday_Event_"] div[class*="comment_thread_RatingBar_"]
 {
 	margin-top: 4px !important;
 }
 
 /* Achievement Activity */
-[class*="appdetailsachievementssection_Name_"]
+#SteamDesktop div[class*="appdetailsachievementssection_Name_"]
 {
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
@@ -279,7 +279,7 @@
 	font-weight: var(--title_3_weight) !important;
 }
 
-[class*="appdetailsachievementssection_Desc_"]
+#SteamDesktop div[class*="appdetailsachievementssection_Desc_"]
 {
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
@@ -287,20 +287,20 @@
 }
 
 /* Fetch More */
-[class*="appdetailsactivitysection_FetchMoreContainer_"]::before,
-[class*="appdetailsactivitysection_FetchMoreContainer_"]:active
+#SteamDesktop button[class*="appdetailsactivitysection_FetchMoreContainer_"]::before,
+#SteamDesktop button[class*="appdetailsactivitysection_FetchMoreContainer_"]:active
 {
 	box-shadow: none !important;
 }
 
-[class*="appdetailsactivitysection_FetchMoreContainer_"].Disabled
+#SteamDesktop button[class*="appdetailsactivitysection_FetchMoreContainer_"].Disabled
 {
 	background-color: var(--button_disabled_bg) !important;
 	color: var(--button_disabled_fg) !important;
 }
 
 /* Pop Up Update */
-[class*="apppartnereventspage_PartnerEvent_"]
+#SteamDesktop div[class*="apppartnereventspage_PartnerEvent_"]
 {
 	border-radius: var(--popover_radius) !important;
 	background: var(--popover_bg) !important;
@@ -308,29 +308,29 @@
 	box-shadow: none !important;
 }
 
-[class*="partnereventdisplay_EventBackgroundBlur_"]
+#SteamDesktop img[class*="partnereventdisplay_EventBackgroundBlur_"]
 {
 	display: none !important;
 }
 
-[class*="apppartnereventspage_EventType_"],
-[class*="discussionwidget_VoteCount_"],
-[class*="discussionwidget_DiscussionCount_"]
+#SteamDesktop span[class*="apppartnereventspage_EventType_"],
+#SteamDesktop div[class*="discussionwidget_VoteCount_"],
+#SteamDesktop div[class*="discussionwidget_DiscussionCount_"]
 {
 	color: var(--accent) !important;
 	font-family: var(--basefont) !important;
 	font-weight: var(--title_4_weight) !important;
 }
 
-[class*="partnereventdisplay_EventDetailTimeInfo_"] [class*="localdateandtime_ShortDateAndTime_"],
-[class*="partnereventdisplay_EventDetailTimeInfo_"] [class*="localdateandtime_RightSideTitles_"]
+#SteamDesktop div[class*="partnereventdisplay_EventDetailTimeInfo_"] div[class*="localdateandtime_ShortDateAndTime_"],
+#SteamDesktop div[class*="partnereventdisplay_EventDetailTimeInfo_"] div[class*="localdateandtime_RightSideTitles_"]
 {
 	color: var(--dim_label_fg) !important;
 	font-family: var(--basefont) !important;
 	font-weight: var(--baseweight) !important;
 }
 
-[class*="partnereventdisplay_EventDetailTitle_"]
+#SteamDesktop a[class*="partnereventdisplay_EventDetailTitle_"]
 {
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
@@ -338,7 +338,7 @@
 	font-weight: var(--title_1_weight) !important;
 }
 
-[class*="partnereventdisplay_EventDetailsSubTitle_"]
+#SteamDesktop div[class*="partnereventdisplay_EventDetailsSubTitle_"]
 {
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
@@ -346,63 +346,63 @@
 	font-weight: var(--title_3_weight) !important;
 }
 
-[class*="apppartnereventspage_CloseButton_"]
+#SteamDesktop div[class*="apppartnereventspage_CloseButton_"]
 {
 	background: var(--popover_bg) !important;
 	height: 24px !important;
 	width: 24px !important;
 }
 
-[class*="apppartnereventspage_CloseButton_"] svg line
+#SteamDesktop div[class*="apppartnereventspage_CloseButton_"] svg line
 {
 	stroke: var(--headerbar_fg) !important;
 	stroke-width: 32px !important;
 }
 
-[class*="apppartnereventspage_ScrollButton_"]
+#SteamDesktop div[class*="apppartnereventspage_ScrollButton_"]
 {
 	background: var(--popover_bg) !important;
 	height: 24px !important;
 	width: 40px !important;
 }
 
-[class*="apppartnereventspage_ScrollButton_"] svg polygon
+#SteamDesktop div[class*="apppartnereventspage_ScrollButton_"] svg polygon
 {
 	fill: var(--headerbar_fg) !important;
 }
 
-[class*="apppartnereventspage_ScrollButton_"][class*="apppartnereventspage_GameArt_"]
+#SteamDesktop div[class*="apppartnereventspage_ScrollButton_"][class*="apppartnereventspage_GameArt_"]
 {
 	height: 40px !important;
 	width: 40px !important;
 }
 
-[class*="partnereventdisplay_EventDetailsBody_"]
+#SteamDesktop div[class*="partnereventdisplay_EventDetailsBody_"]
 {
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
 	font-weight: var(--baseweight) !important;
 }
 
-[class*="partnereventdisplay_EventDetailsBody_"] a:not(.LinkButton)
+#SteamDesktop div[class*="partnereventdisplay_EventDetailsBody_"] a:not(.LinkButton)
 {
 	color: var(--accent) !important;
 	font-family: var(--basefont) !important;
 	font-weight: var(--title_4_weight) !important;
 }
 
-[class*="partnereventdisplay_EventDetailsBody_"] a:not(.LinkButton):hover
+#SteamDesktop div[class*="partnereventdisplay_EventDetailsBody_"] a:not(.LinkButton):hover
 {
 	text-decoration: underline !important;
 }
 
-[class*="partnereventdisplay_EventDetailsBody_"] img,
-[class*="youtubeembed_PreviewYouTubeVideo_"]
+#SteamDesktop div[class*="partnereventdisplay_EventDetailsBody_"] img,
+#SteamDesktop div[class*="youtubeembed_PreviewYouTubeVideo_"]
 {
 	border-radius: var(--card_radius) !important;
 }
 
-[class*="eventbbcodeparser_Header1_"]
+#SteamDesktop div[class*="eventbbcodeparser_Header1_"]
 {
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
@@ -410,7 +410,7 @@
 	font-weight: var(--title_1_weight) !important;
 }
 
-[class*="eventbbcodeparser_Header2_"]
+#SteamDesktop div[class*="eventbbcodeparser_Header2_"]
 {
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
@@ -418,7 +418,7 @@
 	font-weight: var(--title_2_weight) !important;
 }
 
-[class*="eventbbcodeparser_Header3_"]
+#SteamDesktop div[class*="eventbbcodeparser_Header3_"]
 {
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
@@ -426,7 +426,7 @@
 	font-weight: var(--title_3_weight) !important;
 }
 
-[class*="eventbbcodeparser_Header4_"]
+#SteamDesktop div[class*="eventbbcodeparser_Header4_"]
 {
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
@@ -434,13 +434,13 @@
 	font-weight: var(--title_4_weight) !important;
 }
 
-[class*="discussionwidget_VoteUpStaticIcon_"],
-[class*="discussionwidget_DiscussionCount_"] > svg
+#SteamDesktop svg[class*="discussionwidget_VoteUpStaticIcon_"],
+#SteamDesktop div[class*="discussionwidget_DiscussionCount_"] > svg
 {
 	fill: var(--accent) !important;
 }
 
-[class*="partnereventshared_Button_"][class*="partnereventshared_Icon_"]
+#SteamDesktop div[class*="partnereventshared_Button_"][class*="partnereventshared_Icon_"]
 {
 	background: var(--button_bg) !important;
 	border-radius: var(--button_radius) !important;
@@ -452,65 +452,65 @@
 	transition: var(--focus_transition) !important;
 }
 
-[class*="partnereventshared_Button_"][class*="partnereventshared_Icon_"]:hover
+#SteamDesktop div[class*="partnereventshared_Button_"][class*="partnereventshared_Icon_"]:hover
 {
 	background: var(--button_hover_bg) !important;
 }
 
-[class*="partnereventshared_Button_"][class*="partnereventshared_Icon_"]:active
+#SteamDesktop div[class*="partnereventshared_Button_"][class*="partnereventshared_Icon_"]:active
 {
 	background: var(--button_active_bg) !important;
 }
 
 /* Post Game Summary */
-[class*="spotlightgameplaysummary_SummaryCarouselContainer_"]
+#SteamDesktop div[class*="spotlightgameplaysummary_SummaryCarouselContainer_"]
 {
 	background: var(--card_bg) !important;
 	border-radius: var(--card_radius) !important;
 }
 
-[class*="spotlightgameplaysummary_SummaryCarouselContainer_"]::after
+#SteamDesktop div[class*="spotlightgameplaysummary_SummaryCarouselContainer_"]::after
 {
 	box-shadow: none !important;
 }
 
 /* Remove Glassy Background */
-[class*="appdetailsoverview_BackdropGlass_"]
+#SteamDesktop div[class*="appdetailsoverview_BackdropGlass_"]
 {
 	background: none !important;
 	border-top: 1px solid var(--border) !important;
 }
 
-[class*="appdetailsplaysection_Glassy_"][class*="appdetailsplaysection_PlayBar_"]
+#SteamDesktop div[class*="appdetailsplaysection_Glassy_"][class*="appdetailsplaysection_PlayBar_"]
 {
 	background: var(--view_bg) !important;
 	border-bottom: 1px solid var(--border) !important;
 }
 
-[class*="appdetailsoverview_Container_"]
+#SteamDesktop div[class*="appdetailsoverview_Container_"]
 {
 	background: var(--bg) !important;
 }
 
 /* Available DLC */
-[class*="appactivitydlc_Contents_"],
-[class*="appactivitydlc_CarouselItem_"] [class*="appactivitydlc_CarouselImage_"]
+#SteamDesktop div[class*="appactivitydlc_Contents_"],
+#SteamDesktop a[class*="appactivitydlc_CarouselItem_"] div[class*="appactivitydlc_CarouselImage_"]
 {
 	box-shadow: none !important;
 }
 
-[class*="appactivitydlc_ViewAll_"]
+#SteamDesktop a[class*="appactivitydlc_ViewAll_"]
 {
 	border-radius: var(--button_radius) !important;
 }
 
-[class*="appactivitydlc_ViewAll_"]:hover
+#SteamDesktop a[class*="appactivitydlc_ViewAll_"]:hover
 {
 	background: var(--button_hover_bg) !important;
 	border-radius: var(--button_radius) !important;
 }
 
-[class*="appdetailsdlcsection_StoreHover_"]
+body:not([class*="gamepadui_GamepadUIPopupWindowBody_"]) iframe[class*="appdetailsdlcsection_StoreHover_"]
 {
 	border-radius: var(--card_radius) !important;
 }
@@ -522,8 +522,8 @@
 }
 
 /* Write a Review */
-[class*="writereview_Playtime_"],
-[class*="writereview_ReviewThumbButton_"]
+#SteamDesktop div[class*="writereview_Playtime_"],
+#SteamDesktop button[class*="writereview_ReviewThumbButton_"]
 {
 	color: var(--accent) !important;
 	font-family: var(--basefont) !important;
@@ -531,22 +531,22 @@
 	font-weight: var(--title_4_weight) !important;
 }
 
-[class*="writereview_ThumbIcon_"]
+#SteamDesktop svg[class*="writereview_ThumbIcon_"]
 {
 	fill: var(--accent) !important;
 }
 
-[class*="writereview_ThumbIcon_"][class*="writereview_Up_"]
+#SteamDesktop svg[class*="writereview_ThumbIcon_"][class*="writereview_Up_"]
 {
 	top: -1px !important;
 }
 
-[class*="writereview_ThumbIcon_"][class*="writereview_Down_2DXZF"]
+#SteamDesktop svg[class*="writereview_ThumbIcon_"][class*="writereview_Down_"]
 {
 	bottom: -1px !important;
 }
 
-[class*="writereview_RatingContainer_"] [class*="writereview_RecommendGame_"]
+#SteamDesktop div[class*="writereview_RatingContainer_"] div[class*="writereview_RecommendGame_"]
 {
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
@@ -554,8 +554,8 @@
 }
 
 /* Gameplay Summary */
-[class*="spotlightgameplaysummary_EventHeaderBlock_"],
-[class*="spotlightgameplaysummary_GamePlaySummaryHeader_"]
+#SteamDesktop [class*="spotlightgameplaysummary_EventHeaderBlock_"],
+#SteamDesktop [class*="spotlightgameplaysummary_GamePlaySummaryHeader_"]
 {
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
@@ -563,13 +563,13 @@
 	font-weight: var(--title_3_weight) !important;
 }
 
-[class*="spotlightgameplaysummary_EventDaySeparator_"]
+#SteamDesktop [class*="spotlightgameplaysummary_EventDaySeparator_"]
 {
 	background-color: var(--dim_label_fg) !important;
 	opacity: 0.55 !important;
 }
 
-[class*="appdetailsachievementssection_Stats_"]
+#SteamDesktop [class*="appdetailsachievementssection_Stats_"]
 {
 	color: var(--dim_label_fg) !important;
 	font-family: var(--basefont) !important;
@@ -577,48 +577,48 @@
 }
 
 /* Activity Post */
-[class*="posttextentry_PostTextEntryArea_"],
-[class*="posttextentry_PostTextEntryArea_"]:focus,
-[class*="posttextentry_PostButton_"],
-[class*="posttextentry_EmoticonButton_"]
+#SteamDesktop textarea[class*="posttextentry_PostTextEntryArea_"],
+#SteamDesktop textarea[class*="posttextentry_PostTextEntryArea_"]:focus,
+#SteamDesktop div[class*="posttextentry_PostButton_"],
+#SteamDesktop button[class*="posttextentry_EmoticonButton_"]
 {
 	background: var(--button_bg) !important;
 	border-radius: var(--button_radius) !important;
 	box-shadow: none !important;
 }
 
-[class*="posttextentry_PostButton_"]
+#SteamDesktop div[class*="posttextentry_PostButton_"]
 {
 	font-family: var(--basefont) !important;
 	font-size: var(--button_font_size) !important;
 	font-weight: var(--button_font_weight) !important;
 }
 
-[class*="posttextentry_PostTextEntryArea_"]::placeholder
+#SteamDesktop textarea[class*="posttextentry_PostTextEntryArea_"]::placeholder
 {
 	color: var(--dim_label_fg) !important;
 }
 
-[class*="posttextentry_PostButton_"]:hover,
-[class*="posttextentry_EmoticonButton_"]:hover
+#SteamDesktop div[class*="posttextentry_PostButton_"]:hover,
+#SteamDesktop button[class*="posttextentry_EmoticonButton_"]:hover
 {
 	background: var(--button_hover_bg) !important;
 	border-radius: var(--button_radius) !important;
 }
 
 /* Comment and Like Buttons */
-[class*="comment_thread_CanClick_"]:hover
+#SteamDesktop div[class*="comment_thread_CanClick_"]:hover
 {
 	background: var(--button_hover_bg) !important;
 	border-radius: var(--button_radius) !important;
 }
 
-[class*="comment_thread_ActivityCommentThread_"]
+#SteamDesktop [class*="comment_thread_ActivityCommentThread_"]
 {
 	background: none !important;
 }
 
-[class*="appdetailssectionheader_LabelText_"]
+#SteamDesktop div[class*="appdetailssectionheader_LabelText_"]
 {
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
@@ -626,7 +626,7 @@
 	font-weight: var(--title_3_weight) !important;
 }
 
-[class*="appactivityday_AppActivityDate_"]
+#SteamDesktop div[class*="appactivityday_AppActivityDate_"]
 {
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
@@ -635,7 +635,7 @@
 }
 
 /* AppDetails Play Section */
-[class*="appdetailsplaysection_PlayBarLabel_"]
+#SteamDesktop div[class*="appdetailsplaysection_PlayBarLabel_"]
 {
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
@@ -643,24 +643,24 @@
 	font-weight: var(--title_3_weight) !important;
 }
 
-[class*="appdetailsplaysection_PlayBarDetailLabel_"]
+#SteamDesktop div[class*="appdetailsplaysection_PlayBarDetailLabel_"]
 {
 	color: var(--dim_label_fg) !important;
 	font-family: var(--basefont) !important;
 }
 
-[class*="appdetailsplaysection_PlayBarCloudStatusContainer_"] [class*="appdetailsplaysection_GameStatIconForced_"]
+#SteamDesktop div[class*="appdetailsplaysection_PlayBarCloudStatusContainer_"] div[class*="appdetailsplaysection_GameStatIconForced_"]
 {
 	color: var(--dim_label_fg) !important;
 }
 
-[class*="appdetailsplaysection_PlaytimeIcon_"] > svg > *,
-[class*="appdetailsplaysection_GameStatIcon_"] > svg > *
+#SteamDesktop div[class*="appdetailsplaysection_PlaytimeIcon_"] > svg > *,
+#SteamDesktop div[class*="appdetailsplaysection_GameStatIcon_"] > svg > *
 {
 	stroke: var(--dim_label_fg) !important;
 }
 
-[class*="appdetailsplaysection_PlayBarGameName_"]
+#SteamDesktop span[class*="appdetailsplaysection_PlayBarGameName_"]
 {
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
@@ -669,41 +669,37 @@
 }
 
 /* AppDetails Play Section Buttons */
-[class*="appdetailsplaysection_MenuButton_"]
+#SteamDesktop div[class*="appdetailsplaysection_MenuButton_"]
 {
 	background: var(--button_bg) !important;
 	border-radius: var(--button_radius) !important;
 }
 
-[class*="appdetailsplaysection_MenuButton_"]:hover
+#SteamDesktop div[class*="appdetailsplaysection_MenuButton_"]:hover
 {
 	background: var(--button_hover_bg) !important;
 	border-radius: var(--button_radius) !important;
 }
 
 /* App Details Link Buttons */
-[class*="appdetailsprimarylinkssection_LinksSectionBody_"]
+#SteamDesktop div[class*="appdetailsprimarylinkssection_LinksSectionBody_"]
 {
 	padding: 0px 10px !important;
 }
 
-[class*="appdetailsprimarylinkssection_Link_"]
+#SteamDesktop div[class*="appdetailsprimarylinkssection_Link_"]
 {
+	border-radius: var(--button_radius) !important;
 	padding: 5px 10px !important;
 }
 
-[class*="appdetailsprimarylinkssection_Link_"]
-{
-	border-radius: var(--button_radius) !important;
-}
-
-[class*="appdetailsprimarylinkssection_Link_"]:hover
+#SteamDesktop div[class*="appdetailsprimarylinkssection_Link_"]:hover
 {
 	background: var(--button_hover_bg) !important;
 }
 
-[class*="appdetailsprimarylinkssection_Text_"],
-[class*="appdetailsprimarylinkssection_Link_"]:hover [class*="appdetailsprimarylinkssection_Text_"]
+#SteamDesktop span[class*="appdetailsprimarylinkssection_Text_"],
+#SteamDesktop div[class*="appdetailsprimarylinkssection_Link_"]:hover span[class*="appdetailsprimarylinkssection_Text_"]
 {
 	color: var(--button_fg) !important;
 	font-family: var(--basefont) !important;
@@ -712,7 +708,7 @@
 }
 
 /* Right Side Buttons */
-[class*="appdetailsbutton_AppDetailsButton_"]
+#SteamDesktop button[class*="appdetailsbutton_AppDetailsButton_"]
 {
 	background: none !important;
 	border-radius: var(--button_radius) !important;
@@ -722,22 +718,22 @@
 	font-weight: var(--button_font_weight) !important;
 }
 
-[class*="appdetailsbutton_AppDetailsButton_"]:hover
+#SteamDesktop button[class*="appdetailsbutton_AppDetailsButton_"]:hover
 {
 	background: var(--button_hover_bg) !important;
 	border-radius: var(--button_radius) !important;
 }
 
-[class*="appdetailsscreenshotssection_InstructionText_"],
-[class*="appdetailsscreenshotssection_NoneTaken_"],
-[class*="appdetailsreviewsection_PlayedForTime_"]
+#SteamDesktop div[class*="appdetailsscreenshotssection_InstructionText_"],
+#SteamDesktop div[class*="appdetailsscreenshotssection_NoneTaken_"],
+#SteamDesktop div[class*="appdetailsreviewsection_PlayedForTime_"]
 {
 	color: var(--dim_label_fg) !important;
 	font-family: var(--basefont) !important;
 	font-weight: var(--baseweight) !important;
 }
 
-[class*="appdetailssection_Body_"] span[style="color: white;"]
+#SteamDesktop div[class*="appdetailssection_Body_"] span[style="color: white;"]
 {
 	color: var(--accent) !important;
 }

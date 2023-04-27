@@ -1,32 +1,28 @@
 /* --- Main Library View --- */
 /* Play Button */
-[class*="appportrait_Play_1"]
-{
-	border-radius: var(--button_radius) !important;
-}
-
-[class*="appportrait_Download_"]
+#SteamDesktop div[class*="appportrait_Play_"],
+#SteamDesktop div[class*="appportrait_Download_"]
 {
 	border-radius: var(--button_radius) !important;
 }
 
 /* Rounded Corners on Game Logos */
-[class*="appportrait_LibraryItemBox_"],
-[class*="libraryhomenewupdates_PartnerEventRowCapsule_MainImageContainer_"],
-[class*="appportraithover_AppPortraitHover_"],
-[class*="appportraithover_CapsuleBackgroundContainer_"]
+#SteamDesktop div[class*="appportrait_LibraryItemBox_"],
+#SteamDesktop div[class*="libraryhomenewupdates_PartnerEventRowCapsule_MainImageContainer_"],
+body:not([class*="gamepadui_GamepadUIPopupWindowBody_"]) div[class*="appportraithover_AppPortraitHover_"],
+body:not([class*="gamepadui_GamepadUIPopupWindowBody_"]) div[class*="appportraithover_CapsuleBackgroundContainer_"]
 {
 	border-radius: var(--card_radius) !important;
 }
 
-[class*="appportrait_LibraryItemBox_"][class*="appportrait_FeaturedCapsule_"] [class*="libraryassetimage_Image_"]
+#SteamDesktop div[class*="appportrait_LibraryItemBox_"][class*="appportrait_FeaturedCapsule_"] img[class*="libraryassetimage_Image_"]
 {
 	border-bottom-left-radius: 0px !important;
 	border-bottom-right-radius: 0px !important;
 }
 
 /* Game Hours Subscript */
-[class*="appportrait_LibraryItemBoxSubscript_"]
+#SteamDesktop div[class*="appportrait_LibraryItemBoxSubscript_"]
 {
 	background: var(--toast_bg) !important;
 	border-radius: var(--toast_border_radius) !important;
@@ -34,12 +30,12 @@
 }
 
 /* New to Library */
-[class*="appportrait_AppPortraitBannerContainer_"]
+#SteamDesktop [class*="appportrait_AppPortraitBannerContainer_"]
 {
 	top: 1px !important;
 }
 
-[class*="appportrait_AppPortraitBannerContainer_"] [class*="appportrait_AppPortraitBanner_"]
+#SteamDesktop [class*="appportrait_AppPortraitBannerContainer_"] [class*="appportrait_AppPortraitBanner_"]
 {
 	background: var(--accent_bg) !important;
 	border-bottom-left-radius: var(--card_radius) !important;
@@ -47,7 +43,7 @@
 }
 
 /* Update Summary */
-[class*="libraryhomenewupdates_HoversEnabled_"]:hover [class*="libraryhomenewupdates_EventSummaryContainer_"]
+#SteamDesktop div[class*="libraryhomenewupdates_HoversEnabled_"]:hover div[class*="libraryhomenewupdates_EventSummaryContainer_"]
 {
 	border-radius: var(--card_radius);
 }
