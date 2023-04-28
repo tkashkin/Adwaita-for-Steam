@@ -1,16 +1,16 @@
 /* --- Whats New Dialog --- */
-[class*="libraryhomenewupdates_WhatsNewSettingsContent_"]
+.ModalDialogPopup div[class*="libraryhomenewupdates_WhatsNewSettingsContent_"]
 {
 	background: var(--bg) !important;
 	padding: 0px !important;
 }
 
-[class*="libraryhomenewupdates_WhatsNewSettings_"]
+.ModalDialogPopup form[class*="libraryhomenewupdates_WhatsNewSettings_"]
 {
 	padding: 24px !important;
 }
 
-[class*="libraryhomenewupdates_WhatsNewSettingsContent_"] .DialogHeader
+.ModalDialogPopup div[class*="libraryhomenewupdates_WhatsNewSettingsContent_"] .DialogHeader
 {
 	align-items: center !important;
 	background: var(--headerbar_backdrop) !important;
@@ -31,12 +31,12 @@
 	width: 100%;
 }
 
-.ModalDialogPopup:focus-within [class*="libraryhomenewupdates_WhatsNewSettingsContent_"] .DialogHeader
+.ModalDialogPopup:focus-within div[class*="libraryhomenewupdates_WhatsNewSettingsContent_"] .DialogHeader
 {
 	background: var(--headerbar_bg) !important;
 }
 
-[class*="libraryhomenewupdates_WhatsNewSettingsContent_"] ._DialogInputContainer
+.ModalDialogPopup div[class*="libraryhomenewupdates_WhatsNewSettingsContent_"] ._DialogInputContainer
 {
 	align-items: center !important;
 	background: var(--entry_bg) !important;
@@ -52,7 +52,7 @@
 	padding: var(--entry_padding);
 }
 
-[class*="libraryhomenewupdates_DialogLabelSoft_"]
+.ModalDialogPopup div[class*="libraryhomenewupdates_DialogLabelSoft_"]
 {
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
@@ -60,7 +60,7 @@
 	font-weight: var(--baseweight) !important;
 }
 
-[class*="libraryhomenewupdates_WhatsNewSettingsContent_"] .DialogToggle_Description
+.ModalDialogPopup div[class*="libraryhomenewupdates_WhatsNewSettingsContent_"] .DialogToggle_Description
 {
 	color: var(--dim_label_fg) !important;
 	font-family: var(--basefont) !important;

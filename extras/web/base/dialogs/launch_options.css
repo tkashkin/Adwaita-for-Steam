@@ -1,12 +1,12 @@
 /* --- Launch Options --- */
-[class*="launchoptionsdialog_LaunchOptionDialog_"]
+.ModalDialogPopup div[class*="launchoptionsdialog_LaunchOptionDialog_"]
 {
 	background: var(--popover_bg) !important;
 	color: var(--popover_fg) !important;
 	padding: 0 !important;
 }
 
-[class*="launchoptionsdialog_AppNameHeader_"]
+.ModalDialogPopup div[class*="launchoptionsdialog_AppNameHeader_"]
 {
 	box-sizing: border-box !important;
 	height: 48px !important;
@@ -28,12 +28,12 @@
 	text-overflow: ellipsis !important;
 }
 
-[class*="launchoptionsdialog_OptionList_"]
+.ModalDialogPopup div[class*="launchoptionsdialog_OptionList_"]
 {
 	padding: 0 16px 16px 16px !important;
 }
 
-[class*="launchoptionsdialog_ListHeader_"]
+.ModalDialogPopup div[class*="launchoptionsdialog_ListHeader_"]
 {
 	font-family: var(--basefont) !important;
 	font-size: 14px !important;
@@ -45,7 +45,7 @@
 	margin-bottom: 8px !important;
 }
 
-[class*="launchoptionsdialog_ListContainer_"]
+.ModalDialogPopup div[class*="launchoptionsdialog_ListContainer_"]
 {
 	padding: 0 !important;
 	margin: 0 !important;
@@ -55,7 +55,7 @@
 	border-radius: 0 !important;
 }
 
-[class*="launchoptionsdialog_ListItem_"]
+.ModalDialogPopup div[class*="launchoptionsdialog_ListItem_"]
 {
 	background: var(--button_bg) !important;
 	box-sizing: border-box !important;
@@ -68,37 +68,37 @@
 	display: flex !important;
 }
 
-[class*="launchoptionsdialog_ListItem_"]:first-child
+.ModalDialogPopup div[class*="launchoptionsdialog_ListItem_"]:first-child
 {
 	border-top-left-radius: var(--card_radius) !important;
 	border-top-right-radius: var(--card_radius) !important;
 }
 
-[class*="launchoptionsdialog_ListItem_"]:last-child
+.ModalDialogPopup div[class*="launchoptionsdialog_ListItem_"]:last-child
 {
 	border-bottom-left-radius: var(--card_radius) !important;
 	border-bottom-right-radius: var(--card_radius) !important;
 	border-bottom: none !important;
 }
 
-[class*="launchoptionsdialog_ListItem_"]:hover
+.ModalDialogPopup div[class*="launchoptionsdialog_ListItem_"]:hover
 {
 	background: var(--button_hover_bg) !important;
 }
 
-[class*="launchoptionsdialog_ListItem_"]:active
+.ModalDialogPopup div[class*="launchoptionsdialog_ListItem_"]:active
 {
 	background: var(--button_active_bg) !important;
 }
 
-[class*="launchoptionsdialog_ListItem_"] > input
+.ModalDialogPopup div[class*="launchoptionsdialog_ListItem_"] > input
 {
 	width: 16px !important;
 	height: 16px !important;
 	margin: 16px !important;
 }
 
-[class*="launchoptionsdialog_ListItem_"] > label
+.ModalDialogPopup div[class*="launchoptionsdialog_ListItem_"] > label
 {
 	box-sizing: border-box !important;
 	flex-grow: 1 !important;
@@ -115,7 +115,7 @@
 	letter-spacing: normal !important;
 }
 
-[class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogCheckbox
+.ModalDialogPopup div[class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogCheckbox
 {
 	background-color: var(--checkbox_bg) !important;
 	box-shadow: var(--checkbox_bs) !important;
@@ -125,18 +125,18 @@
 	margin-top: 3px !important;
 }
 
-[class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogCheckbox:hover
+.ModalDialogPopup div[class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogCheckbox:hover
 {
 	box-shadow: var(--checkbox_hover_bs) !important;
 }
 
-[class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogCheckbox:active:not(.Active)
+.ModalDialogPopup div[class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogCheckbox:active:not(.Active)
 {
 	box-shadow: none !important;
 	background: var(--checkbox_active_bg) !important;
 }
 
-[class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogCheckbox.Active
+.ModalDialogPopup div[class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogCheckbox.Active
 {
 	background: var(--checkbox_checked_bg) !important;
 	background-blend-mode: var(--button_suggested_blend) !important;
@@ -144,34 +144,34 @@
 	box-shadow: none !important;
 }
 
-[class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogCheckbox.Active:hover
+.ModalDialogPopup div[class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogCheckbox.Active:hover
 {
 	background-color: var(--button_suggested_hover_bg) !important;
 }
 
-[class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogCheckbox.Active:active
+.ModalDialogPopup div[class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogCheckbox.Active:active
 {
 	background-color: var(--button_suggested_click_bg) !important;
 }
 
-[class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogCheckbox svg
+.ModalDialogPopup div[class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogCheckbox svg
 {
 	stroke-width: var(--checkbox_checked_sw) !important;
 }
 
-[class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogCheckbox svg path
+.ModalDialogPopup div[class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogCheckbox svg path
 {
 	stroke: var(--fg) !important;
 	d: path("M 185 63 L 92 170 l -53 -52") !important;
 	transition: none !important;
 }
 
-[class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogCheckbox_Container
+.ModalDialogPopup div[class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogCheckbox_Container
 {
 	margin-bottom: 9px !important;
 }
 
-[class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogToggle_Label
+.ModalDialogPopup div[class*="launchoptionsdialog_LaunchOptionDialog_"] .DialogToggle_Label
 {
 	padding-top: 4px !important;
 	color: var(--button_fg) !important;
@@ -182,7 +182,7 @@
 	letter-spacing: normal !important;
 }
 
-[class*="launchoptionsdialog_SeeProperties_"]
+.ModalDialogPopup div[class*="launchoptionsdialog_SeeProperties_"]
 {
 	color: var(--dim_label_fg) !important;
 	font-family: var(--basefont) !important;
@@ -193,14 +193,14 @@
 }
 
 /* Swap buttons to make the Cancel button first */
-[class*="launchoptionsdialog_ButtonContainer_"]
+.ModalDialogPopup div[class*="launchoptionsdialog_ButtonContainer_"]
 {
 	flex-direction: row-reverse !important;
 	overflow: hidden !important;
 	margin: 0 !important;
 }
 
-[class*="launchoptionsdialog_ButtonContainer_"] > *
+.ModalDialogPopup div[class*="launchoptionsdialog_ButtonContainer_"] > *
 {
 	height: 42px !important;
 	line-height: 42px !important;
@@ -223,34 +223,34 @@
 }
 
 
-[class*="launchoptionsdialog_ButtonContainer_"] > *:hover
+.ModalDialogPopup div[class*="launchoptionsdialog_ButtonContainer_"] > *:hover
 {
 	background: rgba(255, 255, 255, 0.07) !important;
 	box-shadow: none !important;
 }
 
-[class*="launchoptionsdialog_ButtonContainer_"] > *:active
+.ModalDialogPopup div[class*="launchoptionsdialog_ButtonContainer_"] > *:active
 {
 	background: rgba(255, 255, 255, 0.16) !important;
 	box-shadow: none !important;
 }
 
-[class*="launchoptionsdialog_ButtonContainer_"] > [class*="launchoptionsdialog_PlayButton_"]
+.ModalDialogPopup div[class*="launchoptionsdialog_ButtonContainer_"] > [class*="launchoptionsdialog_PlayButton_"]
 {
 	color: var(--accent) !important;
 }
 
-[class*="launchoptionsdialog_ButtonContainer_"] > [class*="launchoptionsdialog_PlayButton_"]:hover
+.ModalDialogPopup div[class*="launchoptionsdialog_ButtonContainer_"] > [class*="launchoptionsdialog_PlayButton_"]:hover
 {
 	background: rgba(120, 174, 237, 0.07) !important;
 }
 
-[class*="launchoptionsdialog_ButtonContainer_"] > [class*="launchoptionsdialog_PlayButton_"]:active
+.ModalDialogPopup div[class*="launchoptionsdialog_ButtonContainer_"] > [class*="launchoptionsdialog_PlayButton_"]:active
 {
 	background: rgba(120, 174, 237, 0.16) !important;
 }
 
-[class*="launchoptionsdialog_ListContainer_"] input[type="radio"]
+.ModalDialogPopup div[class*="launchoptionsdialog_ListContainer_"] input[type="radio"]
 {
 	appearance: var(--radio_appearance) !important;
 	border: var(--radio_border) !important;
@@ -259,7 +259,7 @@
 	min-width: var(--radio_min_width) !important;
 }
 
-[class*="launchoptionsdialog_ListContainer_"] input[type="radio"]:checked
+.ModalDialogPopup div[class*="launchoptionsdialog_ListContainer_"] input[type="radio"]:checked
 {
 	appearance: var(--radio_appearance) !important;
 	background: var(--radio_checked_bg) !important;
@@ -269,7 +269,7 @@
 	min-width: var(--radio_min_width) !important;
 }
 
-[class*="launchoptionsdialog_ListContainer_"] input[type="radio"]:focus
+.ModalDialogPopup div[class*="launchoptionsdialog_ListContainer_"] input[type="radio"]:focus
 {
 	outline: none !important;
 }

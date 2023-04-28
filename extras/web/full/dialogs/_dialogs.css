@@ -30,7 +30,7 @@
 .GenericConfirmDialog .DialogBodyText[class*="cloudconflict_CloudConflictWarning_"],
 .GenericConfirmDialog [class*="cloudconflict_FooterNote_"],
 .GenericConfirmDialog [class*="cloudconflict_ChoiceNote_"],
-.GenericConfirmDialog [class*="moveappsdialog_MoveAppsDialog_"] > .DialogBody
+.GenericConfirmDialog div[class*="moveappsdialog_MoveAppsDialog_"] > .DialogBody
 {
 	color: var(--popover_fg) !important;
 	font-family: var(--basefont) !important;
@@ -129,7 +129,7 @@
 	padding: 0 !important;
 }
 
-.GenericConfirmDialog [class*="moveappsdialog_MoveAppsDialog_"] > .DialogBody .DialogInputLabelGroup
+.GenericConfirmDialog div[class*="moveappsdialog_MoveAppsDialog_"] > .DialogBody .DialogInputLabelGroup
 {
 	margin-top: 24px !important;
 	margin-bottom: 0 !important;
@@ -334,13 +334,13 @@
 	top: 40% !important;
 }
 
-.ModalDialogPopup [class*="dropdown_DialogDropDownMenu_"]
+.ModalDialogPopup div[class*="dropdown_DialogDropDownMenu_"]
 {
 	background: var(--popover_bg) !important;
 	border-radius: var(--popover_radius) !important;
 }
 
-.ModalDialogPopup [class*="dropdownlabel_DropDownLabelTitle_"]
+.ModalDialogPopup div[class*="dropdownlabel_DropDownLabelTitle_"]
 {
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
@@ -349,7 +349,7 @@
 
 }
 
-.ModalDialogPopup [class*="dropdownlabel_DropDownLabelDescription_"]
+.ModalDialogPopup div[class*="dropdownlabel_DropDownLabelDescription_"]
 {
 	color: var(--entry_subtitle_fg) !important;
 	font-family: var(--basefont) !important;
@@ -368,8 +368,8 @@
 }
 
 /* Checkboxes */
-.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_Install_"] > .DialogCheckbox,
-.ModalDialogPopup [class*="contentmanagement_AppSelected_"] > .DialogCheckbox
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_Install_"] > .DialogCheckbox,
+.ModalDialogPopup div[class*="contentmanagement_AppSelected_"] > .DialogCheckbox
 {
 	background-color: var(--checkbox_bg) !important;
 	box-shadow: var(--checkbox_bs) !important;
@@ -378,21 +378,21 @@
 	width: 20px !important;
 }
 
-.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_Install_"] > .DialogCheckbox:hover,
-.ModalDialogPopup [class*="contentmanagement_AppSelected_"] > .DialogCheckbox:hover
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_Install_"] > .DialogCheckbox:hover,
+.ModalDialogPopup div[class*="contentmanagement_AppSelected_"] > .DialogCheckbox:hover
 {
 	box-shadow: var(--checkbox_hover_bs) !important;
 }
 
-.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_Install_"] > .DialogCheckbox:active:not(.Active),
-.ModalDialogPopup [class*="contentmanagement_AppSelected_"] > .DialogCheckbox:active:not(.Active)
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_Install_"] > .DialogCheckbox:active:not(.Active),
+.ModalDialogPopup div[class*="contentmanagement_AppSelected_"] > .DialogCheckbox:active:not(.Active)
 {
 	box-shadow: none !important;
 	background: var(--checkbox_active_bg) !important;
 }
 
-.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_Install_"] > .DialogCheckbox.Active,
-.ModalDialogPopup [class*="contentmanagement_AppSelected_"] > .DialogCheckbox.Active
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_Install_"] > .DialogCheckbox.Active,
+.ModalDialogPopup div[class*="contentmanagement_AppSelected_"] > .DialogCheckbox.Active
 {
 	background: var(--checkbox_checked_bg) !important;
 	background-blend-mode: var(--button_suggested_blend) !important;
@@ -400,26 +400,26 @@
 	box-shadow: none !important;
 }
 
-.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_Install_"] > .DialogCheckbox.Active:hover,
-.ModalDialogPopup [class*="contentmanagement_AppSelected_"] > .DialogCheckbox.Active:hover
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_Install_"] > .DialogCheckbox.Active:hover,
+.ModalDialogPopup div[class*="contentmanagement_AppSelected_"] > .DialogCheckbox.Active:hover
 {
 	background-color: var(--button_suggested_hover_bg) !important;
 }
 
-.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_Install_"] > .DialogCheckbox.Active:active,
-.ModalDialogPopup [class*="contentmanagement_AppSelected_"] > .DialogCheckbox.Active:active
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_Install_"] > .DialogCheckbox.Active:active,
+.ModalDialogPopup div[class*="contentmanagement_AppSelected_"] > .DialogCheckbox.Active:active
 {
 	background-color: var(--button_suggested_click_bg) !important;
 }
 
-.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_Install_"] > .DialogCheckbox svg,
-.ModalDialogPopup [class*="contentmanagement_AppSelected_"] > .DialogCheckbox svg
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_Install_"] > .DialogCheckbox svg,
+.ModalDialogPopup div[class*="contentmanagement_AppSelected_"] > .DialogCheckbox svg
 {
 	stroke-width: var(--checkbox_checked_sw) !important;
 }
 
-.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_Install_"] > .DialogCheckbox svg path,
-.ModalDialogPopup [class*="contentmanagement_AppSelected_"] > .DialogCheckbox svg path
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_Install_"] > .DialogCheckbox svg path,
+.ModalDialogPopup div[class*="contentmanagement_AppSelected_"] > .DialogCheckbox svg path
 {
 	stroke: var(--fg) !important;
 	d: path("M 185 63 L 92 170 l -53 -52") !important;
@@ -427,7 +427,7 @@
 }
 
 /* Checkboxes as Switches */
-.ModalDialogPopup [class*="appproperties_AppProperties_"] div:not([class*="appproperties_Install_"]) > .DialogCheckbox,
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div:not([class*="appproperties_Install_"]) > .DialogCheckbox,
 .FriendsSettingsNotificationRow_Checkbox .DialogCheckbox
 {
 	background: var(--card_bg) !important;
@@ -439,25 +439,25 @@
 	min-width: 44px !important;
 }
 
-.ModalDialogPopup [class*="appproperties_AppProperties_"] div:not([class*="appproperties_Install_"]) > .DialogCheckbox.Active,
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div:not([class*="appproperties_Install_"]) > .DialogCheckbox.Active,
 .FriendsSettingsNotificationRow_Checkbox .DialogCheckbox.Active
 {
 	background: var(--button_suggested_bg) !important;
 }
 
-.ModalDialogPopup [class*="appproperties_AppProperties_"] div:not([class*="appproperties_Install_"]) > .DialogCheckbox:hover,
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div:not([class*="appproperties_Install_"]) > .DialogCheckbox:hover,
 .FriendsSettingsNotificationRow_Checkbox .DialogCheckbox:hover
 {
 	background-color: var(--button_suggested_hover_bg) !important;
 }
 
-.ModalDialogPopup [class*="appproperties_AppProperties_"] div:not([class*="appproperties_Install_"]) > .DialogCheckbox:active,
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div:not([class*="appproperties_Install_"]) > .DialogCheckbox:active,
 .FriendsSettingsNotificationRow_Checkbox .DialogCheckbox:active
 {
 	background-color: var(--button_suggested_click_bg) !important;
 }
 
-.ModalDialogPopup [class*="appproperties_AppProperties_"] div:not([class*="appproperties_Install_"]) > .DialogCheckbox .SVGIcon_DialogCheck,
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div:not([class*="appproperties_Install_"]) > .DialogCheckbox .SVGIcon_DialogCheck,
 .FriendsSettingsNotificationRow_Checkbox .DialogCheckbox .SVGIcon_DialogCheck
 {
 	opacity: 1 !important;
@@ -465,13 +465,13 @@
 	margin-left: -2px !important;
 }
 
-.ModalDialogPopup [class*="appproperties_AppProperties_"] div:not([class*="appproperties_Install_"]) > .DialogCheckbox.Active .SVGIcon_DialogCheck,
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div:not([class*="appproperties_Install_"]) > .DialogCheckbox.Active .SVGIcon_DialogCheck,
 .FriendsSettingsNotificationRow_Checkbox .DialogCheckbox.Active .SVGIcon_DialogCheck
 {
 	margin-left: 20px !important;
 }
 
-.ModalDialogPopup [class*="appproperties_AppProperties_"] div:not([class*="appproperties_Install_"]) > .DialogCheckbox svg path,
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div:not([class*="appproperties_Install_"]) > .DialogCheckbox svg path,
 .FriendsSettingsNotificationRow_Checkbox .DialogCheckbox svg path
 {
 	d: path("M 100, 100 m -75, 0 a 160,160 0 1,0 320,0 a 160,160 0 1,0 -320,0") !important;
@@ -481,18 +481,18 @@
 }
 
 /* Toggle Switch */
-.ModalDialogPopup [class*="toggle_Toggle_"]
+.ModalDialogPopup div[class*="toggle_Toggle_"]
 {
 	display: flex;
 	align-items: center;
 }
 
-.ModalDialogPopup [class*="toggle_ToggleSwitch_"]
+.ModalDialogPopup div[class*="toggle_ToggleSwitch_"]
 {
 	background: var(--fg) !important;
 }
 
-.ModalDialogPopup [class*="toggle_ToggleRail_"]
+.ModalDialogPopup div[class*="toggle_ToggleRail_"]
 {
 	background: var(--entry_bg) !important;
 	background-blend-mode: var(--button_suggested_blend) !important;
@@ -504,27 +504,27 @@
 	width: 48px !important;
 }
 
-.ModalDialogPopup [class*="toggle_ToggleRail_"]:hover
+.ModalDialogPopup div[class*="toggle_ToggleRail_"]:hover
 {
 	background-color: var(--button_suggested_hover_bg) !important;
 }
 
-.ModalDialogPopup [class*="toggle_ToggleRail_"]:active
+.ModalDialogPopup div[class*="toggle_ToggleRail_"]:active
 {
 	background-color: var(--button_suggested_click_bg) !important;
 }
 
-.ModalDialogPopup [class*="toggle_Highlight_"]
+.ModalDialogPopup div[class*="toggle_Highlight_"]
 {
 	background: var(--button_suggested_bg) !important;
 }
 
-.ModalDialogPopup [class*="toggle_Highlight_"][class*="toggle_Off_"]
+.ModalDialogPopup div[class*="toggle_Highlight_"][class*="toggle_Off_"]
 {
 	display: none !important;
 }
 
-.ModalDialogPopup [class*="toggle_ToggleSwitch_"]
+.ModalDialogPopup div[class*="toggle_ToggleSwitch_"]
 {
 	border-radius: var(--button_pill_radius) !important;
 	height: 22.5px !important;
@@ -535,7 +535,7 @@
 	width: 22.5px !important;
 }
 
-.ModalDialogPopup [class*="toggle_ToggleSwitch_"][class*="toggle_Off_"]
+.ModalDialogPopup div[class*="toggle_ToggleSwitch_"][class*="toggle_Off_"]
 {
 	margin-left: 1px !important;
 }

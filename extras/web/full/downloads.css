@@ -1,39 +1,39 @@
 /* Fix Logo Border */
-[class*="downloadgraph_HeroContainer"] [class*="libraryassetimage_Visible_"]
+#SteamDesktop div[class*="downloadgraph_HeroContainer"] img[class*="libraryassetimage_Visible_"]
 {
 	background: none !important;
 }
 
 /* Top Right Settings Button */
-[class*="downloadgraph_SettingsButton_"] button,
-[class*="downloadgraph_SettingsButton_"] button:hover
+#SteamDesktop div[class*="downloadgraph_SettingsButton_"] button,
+#SteamDesktop div[class*="downloadgraph_SettingsButton_"] button:hover
 {
 	border-radius: var(--button_radius) !important;
 }
 
 /* Download Items */
-[class*="downloads_SectionItem_"]
+#SteamDesktop div[class*="downloads_SectionItem_"]
 {
 	border-radius: var(--card_radius) !important;
 }
 
-[class*="downloads_SectionItem_"]:hover
+#SteamDesktop div[class*="downloads_SectionItem_"]:hover
 {
 	border-radius: var(--card_radius) !important;
 }
 
 /* Active Download Item */
-[class*="downloads_SectionItem_"][class*="downloads_Active_"]
+#SteamDesktop div[class*="downloads_SectionItem_"][class*="downloads_Active_"]
 {
 	margin: 10px 12px 0px 12px !important;
 	padding: 8px 0px 8px 12px !important;
 }
 
 /* Download Buttons */
-[class*="downloads_Button_"],
-[class*="downloads_Button_"]:hover,
-[class*="downloads_RemoveAllButton_"],
-[class*="downloads_RemoveAllButton_"]:hover
+#SteamDesktop button[class*="downloads_Button_"],
+#SteamDesktop button[class*="downloads_Button_"]:hover,
+#SteamDesktop button[class*="downloads_RemoveAllButton_"],
+#SteamDesktop button[class*="downloads_RemoveAllButton_"]:hover
 {
 	border-radius: var(--button_radius) !important;
 }
