@@ -1,5 +1,5 @@
 /* --- Content Management */
-.DialogBody[class*="contentmanagement_ContentManagement_"]
+.ModalDialogPopup .DialogBody[class*="contentmanagement_ContentManagement_"]
 {
 	background: var(--window_bg) !important;
 	color: var(--window_fg) !important;
@@ -9,12 +9,12 @@
 	letter-spacing: normal !important;
 }
 
-[class*="contentmanagement_ContentManagement_"] [class*="contentmanagement_Header_"]
+.ModalDialogPopup .DialogBody[class*="contentmanagement_ContentManagement_"] div[class*="contentmanagement_Header_"]
 {
 	padding: 0 !important;
 }
 
-[class*="contentmanagement_ContentManagement_"] [class*="contentmanagement_Title_"]
+.ModalDialogPopup .DialogBody[class*="contentmanagement_ContentManagement_"] div[class*="contentmanagement_Title_"]
 {
 	box-sizing: border-box !important;
 	height: 48px !important;
@@ -38,7 +38,7 @@
 	border-bottom: 1px var(--headerbar_shade) solid !important;
 }
 
-[class*="contentmanagement_ContentManagement_"] [class*="contentmanagement_PageableCarousel_"]
+.ModalDialogPopup .DialogBody[class*="contentmanagement_ContentManagement_"] div[class*="contentmanagement_PageableCarousel_"]
 {
 	height: 34px !important;
 	margin: -41px 48px 7px 7px !important;
@@ -49,13 +49,13 @@
 	align-items: center !important;
 }
 
-:focus-within [class*="contentmanagement_ContentManagement_"] [class*="contentmanagement_Title_"],
-:focus-within [class*="contentmanagement_ContentManagement_"] [class*="contentmanagement_PageableCarousel_"]
+.ModalDialogPopup:focus-within .DialogBody[class*="contentmanagement_ContentManagement_"] div[class*="contentmanagement_Title_"],
+.ModalDialogPopup:focus-within .DialogBody[class*="contentmanagement_ContentManagement_"] div[class*="contentmanagement_PageableCarousel_"]
 {
 	background: var(--headerbar_bg) !important;
 }
 
-[class*="contentmanagement_InstallFolder_"]
+.ModalDialogPopup div[class*="contentmanagement_InstallFolder_"]
 {
 	padding: 0 8px !important;
 	margin-right: 4px !important;
@@ -70,7 +70,7 @@
 	overflow: hidden !important;
 }
 
-[class*="contentmanagement_InstallFolder_"] > svg
+.ModalDialogPopup div[class*="contentmanagement_InstallFolder_"] > svg
 {
 	width: 16px !important;
 	height: 16px !important;
@@ -78,33 +78,33 @@
 	color: var(--button_disabled_fg) !important;
 }
 
-:focus-within [class*="contentmanagement_InstallFolder_"],
-:focus-within [class*="contentmanagement_InstallFolder_"] > svg
+.ModalDialogPopup:focus-within div[class*="contentmanagement_InstallFolder_"],
+.ModalDialogPopup:focus-within div[class*="contentmanagement_InstallFolder_"] > svg
 {
 	color: var(--button_fg) !important;
 }
 
-[class*="contentmanagement_InstallFolder_"][class*="contentmanagement_IsSelected_"]
+.ModalDialogPopup div[class*="contentmanagement_InstallFolder_"][class*="contentmanagement_IsSelected_"]
 {
 	background: var(--button_bg) !important;
 	box-shadow: none !important;
 }
 
-[class*="contentmanagement_InstallFolder_"]:hover
+.ModalDialogPopup div[class*="contentmanagement_InstallFolder_"]:hover
 {
 	background: var(--button_hover_bg) !important;
 	box-shadow: none !important;
 }
 
-[class*="contentmanagement_InstallFolder_"]:active
+.ModalDialogPopup div[class*="contentmanagement_InstallFolder_"]:active
 {
 	background: var(--button_active_bg) !important;
 	box-shadow: none !important;
 }
 
-[class*="contentmanagement_InstallFolder_"] [class*="contentmanagement_FolderInfo_"],
-[class*="contentmanagement_InstallFolder_"] [class*="contentmanagement_FolderInfo_"] [class*="contentmanagement_DriveName_"],
-[class*="contentmanagement_InstallFolder_"] [class*="contentmanagement_FolderInfo_"] [class*="contentmanagement_DriveSize_"]
+.ModalDialogPopup div[class*="contentmanagement_InstallFolder_"] div[class*="contentmanagement_FolderInfo_"],
+.ModalDialogPopup div[class*="contentmanagement_InstallFolder_"] div[class*="contentmanagement_FolderInfo_"] div[class*="contentmanagement_DriveName_"],
+.ModalDialogPopup div[class*="contentmanagement_InstallFolder_"] div[class*="contentmanagement_FolderInfo_"] div[class*="contentmanagement_DriveSize_"]
 {
 	color: inherit !important;
 	text-transform: none !important;
@@ -113,20 +113,20 @@
 	text-overflow: ellipsis !important;
 }
 
-[class*="contentmanagement_InstallFolder_"] [class*="contentmanagement_FolderInfo_"] [class*="contentmanagement_DriveName_"]
+.ModalDialogPopup div[class*="contentmanagement_InstallFolder_"] div[class*="contentmanagement_FolderInfo_"] div[class*="contentmanagement_DriveName_"]
 {
 	font-size: 14px !important;
 	font-weight: 700 !important;
 }
 
-[class*="contentmanagement_InstallFolder_"] [class*="contentmanagement_FolderInfo_"] [class*="contentmanagement_DriveSize_"]
+.ModalDialogPopup div[class*="contentmanagement_InstallFolder_"] div[class*="contentmanagement_FolderInfo_"] div[class*="contentmanagement_DriveSize_"]
 {
 	font-size: 10px !important;
 	font-weight: 400 !important;
 	opacity: 0.5 !important;
 }
 
-[class*="contentmanagement_AddFolder_"]
+.ModalDialogPopup div[class*="contentmanagement_AddFolder_"]
 {
 	width: 34px !important;
 	height: 34px !important;
@@ -134,27 +134,27 @@
 	padding: 9px !important;
 }
 
-[class*="contentmanagement_AddFolder_"] > svg
+.ModalDialogPopup div[class*="contentmanagement_AddFolder_"] > svg
 {
 	margin-right: 0 !important;
 }
 
-[class*="contentmanagement_ContentManagement_"] [class*="pageablecontainer_HeaderPageControls_"]
+.ModalDialogPopup .DialogBody[class*="contentmanagement_ContentManagement_"] div[class*="pageablecontainer_HeaderPageControls_"]
 {
 	display: none !important;
 }
 
-[class*="contentmanagement_LibraryContent_"]
+.ModalDialogPopup div[class*="contentmanagement_LibraryContent_"]
 {
 	padding: 0 !important;
 }
 
-[class*="contentmanagement_LibraryHeader_"]
+.ModalDialogPopup div[class*="contentmanagement_LibraryHeader_"]
 {
 	padding: 8px 8px 0 8px !important;
 }
 
-[class*="contentmanagement_LibraryHeader_"] [class*="contentmanagement_DriveUsage_"] [class*="contentmanagement_DriveName_"]
+.ModalDialogPopup div[class*="contentmanagement_LibraryHeader_"] div[class*="contentmanagement_DriveUsage_"] div[class*="contentmanagement_DriveName_"]
 {
 	color: var(--window_fg) !important;
 	text-transform: none !important;
@@ -165,57 +165,57 @@
 	font-weight: 700 !important;
 }
 
-[class*="contentmanagement_DriveSettingsButton_"]
+.ModalDialogPopup div[class*="contentmanagement_DriveSettingsButton_"]
 {
 	background: var(--button_bg);
 	border-radius: var(--button_radius);
 	transition: var(--focus_transition) !important;
 }
 
-[class*="contentmanagement_DriveSettingsButton_"]:hover
+.ModalDialogPopup div[class*="contentmanagement_DriveSettingsButton_"]:hover
 {
 	background: var(--button_hover_bg);
 }
 
-[class*="contentmanagement_DriveSettingsButton_"]:active
+.ModalDialogPopup div[class*="contentmanagement_DriveSettingsButton_"]:active
 {
 	background: var(--button_active_bg);
 }
 
-[class*="contentmanagement_AppsGrid_"] .ReactVirtualized__Grid__innerScrollContainer
+.ModalDialogPopup div[class*="contentmanagement_AppsGrid_"] .ReactVirtualized__Grid__innerScrollContainer
 {
 	pointer-events: all !important;
 }
 
-[class*="contentmanagement_AppBody_"]
+.ModalDialogPopup div[class*="contentmanagement_AppBody_"]
 {
 	border-radius: var(--entry_radius) !important;
 	transition: var(--focus_transition) !important;
 }
 
-[class*="contentmanagement_AppBody_"]:hover
+.ModalDialogPopup div[class*="contentmanagement_AppBody_"]:hover
 {
 	background: var(--entry_hover_bg) !important;
 }
 
-[class*="contentmanagement_AppActionBar_"]
+.ModalDialogPopup div[class*="contentmanagement_AppActionBar_"]
 {
 	flex-direction: row-reverse !important;
 	overflow: hidden !important;
 	padding: 0 !important;
 }
 
-[class*="contentmanagement_AppActionBar_"] [class*="contentmanagement_AppActionSelected_"]
+.ModalDialogPopup div[class*="contentmanagement_AppActionBar_"] div[class*="contentmanagement_AppActionSelected_"]
 {
 	display: none !important;
 }
 
-[class*="contentmanagement_AppActionBarButtons_"]
+.ModalDialogPopup div[class*="contentmanagement_AppActionBarButtons_"]
 {
 	width: 100% !important;
 }
 
-[class*="contentmanagement_AppActionBar_"] .DialogButton
+.ModalDialogPopup div[class*="contentmanagement_AppActionBar_"] .DialogButton
 {
 	height: 42px !important;
 	color: var(--button_fg) !important;
@@ -237,45 +237,45 @@
 	flex-grow: 1 !important;
 }
 
-[class*="contentmanagement_AppActionBar_"] .DialogButton::before
+.ModalDialogPopup div[class*="contentmanagement_AppActionBar_"] .DialogButton::before
 {
 	display: none !important;
 }
 
-[class*="contentmanagement_AppActionBar_"] .DialogButton.Disabled
+.ModalDialogPopup div[class*="contentmanagement_AppActionBar_"] .DialogButton.Disabled
 {
 	color: var(--button_disabled_fg) !important;
 }
 
-[class*="contentmanagement_AppActionBar_"] .DialogButton:hover
+.ModalDialogPopup div[class*="contentmanagement_AppActionBar_"] .DialogButton:hover
 {
 	background: rgba(255, 255, 255, 0.07) !important;
 	box-shadow: none !important;
 }
 
-[class*="contentmanagement_AppActionBar_"] .DialogButton:active
+.ModalDialogPopup div[class*="contentmanagement_AppActionBar_"] .DialogButton:active
 {
 	background: rgba(255, 255, 255, 0.16) !important;
 	box-shadow: none !important;
 }
 
 /* Uninstall button */
-[class*="contentmanagement_AppActionBar_"] .DialogButton:not(:last-child)
+.ModalDialogPopup div[class*="contentmanagement_AppActionBar_"] .DialogButton:not(:last-child)
 {
 	color: var(--destructive) !important;
 }
 
-[class*="contentmanagement_AppActionBar_"] .DialogButton:not(:last-child).Disabled
+.ModalDialogPopup div[class*="contentmanagement_AppActionBar_"] .DialogButton:not(:last-child).Disabled
 {
 	color: var(--destructive_disabled) !important;
 }
 
-[class*="contentmanagement_AppActionBar_"] .DialogButton:not(:last-child):hover
+.ModalDialogPopup div[class*="contentmanagement_AppActionBar_"] .DialogButton:not(:last-child):hover
 {
 	background: var(--destructive_hover_bg) !important;
 }
 
-[class*="contentmanagement_AppActionBar_"] .DialogButton:not(:last-child):active
+.ModalDialogPopup div[class*="contentmanagement_AppActionBar_"] .DialogButton:not(:last-child):active
 {
 	background: var(--destructive_active_bg) !important;
 }

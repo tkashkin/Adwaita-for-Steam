@@ -1,19 +1,19 @@
 /* --- App Properties --- */
 /* Top Gap */
-.ModalDialogPopup [class*="appproperties_TopGap_"]
+.ModalDialogPopup div[class*="appproperties_TopGap_"]
 {
 	margin-top: 1px !important;
 }
 
 /* Headings */
-.ModalDialogPopup [class*="appproperties_Title_"]
+.ModalDialogPopup div[class*="appproperties_Title_"]
 {
 	font-family: var(--basefont) !important;
 	font-size: var(--header_size) !important;
 	font-weight: var(--header_weight) !important;
 }
 
-.ModalDialogPopup [class*="appproperties_Detail_"]
+.ModalDialogPopup div[class*="appproperties_Detail_"]
 {
 	font-family: var(--basefont) !important;
 	font-size: var(--label_size) !important;
@@ -21,20 +21,20 @@
 }
 
 /* Top Border */
-.ModalDialogPopup [class*="appproperties_SectionTopLine_"]
+.ModalDialogPopup div[class*="appproperties_SectionTopLine_"]
 {
 	border-top: none !important;
 }
 
 /* Blue Highlighted Text */
-.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_BlueHighlight_"]
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] span[class*="appproperties_BlueHighlight_"]
 {
 	color: var(--fg) !important;
 	font-weight: 500 !important;
 }
 
 /* Controller List */
-.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_SteamInputStatusGrid_"]
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_SteamInputStatusGrid_"]
 {
 	background: var(--card_bg) !important;
 	border-radius: var(--card_radius) !important;
@@ -61,20 +61,20 @@
 }
 
 /* DLC & Workshop Grid */
-.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_DlcGrid_"],
-.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_WorkshopGrid_"]
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_DlcGrid_"],
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_WorkshopGrid_"]
 {
 	border-radius: var(--card_radius) !important;
 }
 
-.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_DlcGrid_"] [class*="appproperties_DlcHeader_"],
-.ModalDialogPopup [class*="appproperties_AppProperties_"] [class*="appproperties_WorkshopGrid_"] [class*="appproperties_WorkshopHeader_"]
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_DlcGrid_"] div[class*="appproperties_DlcHeader_"],
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_WorkshopGrid_"] div[class*="appproperties_WorkshopHeader_"]
 {
 	background: var(--card_solid_bg) !important;
 }
 
 /* Checkboxes as Switches */
-.ModalDialogPopup [class*="appproperties_AppProperties_"] .DialogCheckbox_Container
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] .DialogCheckbox_Container
 {
 	align-items: center !important;
 	background: var(--entry_bg) !important;
@@ -85,36 +85,36 @@
 	transition: var(--focus_transition) !important;
 }
 
-.ModalDialogPopup [class*="appproperties_AppProperties_"] .DialogCheckbox_Container:hover
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] .DialogCheckbox_Container:hover
 {
 	background: var(--button_hover_bg) !important;
 	box-shadow: none !important;
 }
 
-.ModalDialogPopup [class*="appproperties_AppProperties_"] .DialogCheckbox_Container:active
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] .DialogCheckbox_Container:active
 {
 	background: var(--button_active_bg) !important;
 }
 
-.ModalDialogPopup [class*="appproperties_AppProperties_"] .DialogControlsSection .DialogCheckbox_Container:not(:last-child):first-child,
-.ModalDialogPopup [class*="appproperties_AppProperties_"] .DialogBody .DialogCheckbox_Container:not(:last-child):first-child,
-.ModalDialogPopup [class*="appproperties_AppProperties_"] .DialogBody .DialogDropDown:not(:last-child):first-child
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] .DialogControlsSection .DialogCheckbox_Container:not(:last-child):first-child,
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] .DialogBody .DialogCheckbox_Container:not(:last-child):first-child,
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] .DialogBody .DialogDropDown:not(:last-child):first-child
 {
 	border-bottom-right-radius: 0px !important;
 	border-bottom-left-radius: 0px !important;
 }
 
-.ModalDialogPopup [class*="appproperties_AppProperties_"] .DialogControlsSection .DialogCheckbox_Container:not(:first-child):last-child,
-.ModalDialogPopup [class*="appproperties_AppProperties_"] .DialogBody .DialogCheckbox_Container:not(:first-child):last-child,
-.ModalDialogPopup [class*="appproperties_AppProperties_"] .DialogBody .DialogDropDown:not(:first-child):last-child,
-.ModalDialogPopup [class*="appproperties_AppProperties_"] .DialogBody .DialogCheckbox_Container + .DialogInputLabelGroup > .DialogDropDown,
-.ModalDialogPopup [class*="appproperties_AppProperties_"] .DialogBody .DialogInputLabelGroup > .DialogDropDown + .DialogCheckbox_Container
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] .DialogControlsSection .DialogCheckbox_Container:not(:first-child):last-child,
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] .DialogBody .DialogCheckbox_Container:not(:first-child):last-child,
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] .DialogBody .DialogDropDown:not(:first-child):last-child,
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] .DialogBody .DialogCheckbox_Container + .DialogInputLabelGroup > .DialogDropDown,
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] .DialogBody .DialogInputLabelGroup > .DialogDropDown + .DialogCheckbox_Container
 {
 	border-top-right-radius: 0px !important;
 	border-top-left-radius: 0px !important;
 }
 
-.ModalDialogPopup [class*="appproperties_AppProperties_"] .DialogBody .DialogInputLabelGroup > .DialogLabel + .DialogDropDown
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] .DialogBody .DialogInputLabelGroup > .DialogLabel + .DialogDropDown
 {
 	border-top-right-radius: var(--entry_radius) !important;
 	border-top-left-radius: var(--entry_radius) !important;

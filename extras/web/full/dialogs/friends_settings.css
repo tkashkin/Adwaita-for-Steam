@@ -19,8 +19,8 @@
 .FriendSettingsContainer ._DialogInputContainer,
 .FriendSettingsContainer .FriendsSettingsNotificationRow:not(.FriendsSettingsNotificationRow_Header),
 .FriendSettingsContainer .voiceMicTestContainer,
-.FriendSettingsContainer [class*="toggle_ToggleRow_"],
-.FriendSettingsContainer [class*="voicesettings_TransmissionTypeSettings_"]
+.FriendSettingsContainer div[class*="toggle_ToggleRow_"],
+.FriendSettingsContainer div[class*="voicesettings_TransmissionTypeSettings_"]
 {
 	background: var(--card_bg) !important;
 	border-radius: var(--card_radius) !important;
@@ -40,7 +40,7 @@
 .FriendSettingsContainer .FriendsSettingsFlashSection_ButtonRow,
 .FriendSettingsContainer .DialogToggleField_Control,
 .FriendSettingsContainer .voiceSelfDirections,
-.FriendSettingsContainer [class*="radio_Group_"],
+.FriendSettingsContainer div[class*="radio_Group_"],
 .FriendSettingsContainer .advancedSettings.showAdvanced
 {
 	background: none !important;
@@ -97,7 +97,7 @@
 
 .FriendSettingsContainer .DialogToggleField_Option.Off,
 .FriendSettingsContainer .DialogToggleField_Option.On,
-.FriendSettingsContainer [class*="radio_Button_"]
+.FriendSettingsContainer div[class*="radio_Button_"]
 {
 	background: var(--button_disabled_bg) !important;
 	color: var(--button_disabled_fg) !important;
@@ -106,7 +106,7 @@
 
 .FriendSettingsContainer .DialogToggleField_Option.Off.Active,
 .FriendSettingsContainer .DialogToggleField_Option.On.Active,
-.FriendSettingsContainer [class*="radio_Active_"]
+.FriendSettingsContainer div[class*="radio_Active_"]
 {
 	background: var(--button_bg) !important;
 	color: var(--fg) !important;
@@ -117,14 +117,14 @@
 
 .FriendSettingsContainer .DialogToggleField_Option.Off:hover,
 .FriendSettingsContainer .DialogToggleField_Option.On:hover,
-.FriendSettingsContainer [class*="radio_Button_"]:hover
+.FriendSettingsContainer div[class*="radio_Button_"]:hover
 {
 	background: var(--button_hover_bg) !important;
 }
 
 .FriendSettingsContainer .DialogToggleField_Option.Off:active,
 .FriendSettingsContainer .DialogToggleField_Option.On:active,
-.FriendSettingsContainer [class*="radio_Button_"]:active
+.FriendSettingsContainer div[class*="radio_Button_"]:active
 {
 	background: var(--button_active_bg) !important;
 }
@@ -207,25 +207,25 @@
 }
 
 /* Radio Group */
-.FriendSettingsContainer [class*="radio_Group_"]
+.FriendSettingsContainer div[class*="radio_Group_"]
 {
 	box-shadow: none !important;
 }
 
-.FriendSettingsContainer [class*="radio_Group_"] [class*="voicesettings_RecommendedNote_"]
+.FriendSettingsContainer div[class*="radio_Group_"] span[class*="voicesettings_RecommendedNote_"]
 {
 	font-weight: var(--label_weight) !important;
 }
 
 /* Advanced Settings */
-.FriendSettingsContainer [class*="toggle_ToggleRow_"]
+.FriendSettingsContainer div[class*="toggle_ToggleRow_"]
 {
 	padding-right: 20px !important;
 	margin-bottom: 1px !important;
 }
 
-.FriendSettingsContainer [class*="toggle_ToggleRow_"] [class*="toggle_Label_"],
-.FriendSettingsContainer [class*="voicesettings_HotkeySettingRow_"] [class*="voicesettings_HotkeySettingDescription_"]
+.FriendSettingsContainer div[class*="toggle_ToggleRow_"] div[class*="toggle_Label_"],
+.FriendSettingsContainer div[class*="voicesettings_HotkeySettingRow_"] [class*="voicesettings_HotkeySettingDescription_"]
 {
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
@@ -233,7 +233,7 @@
 	font-weight: var(--entry_font_weight) !important;
 }
 
-.FriendSettingsContainer .VoiceSettings .showAdvanced > .DialogLabel + [class*="toggle_ToggleRow_"]
+.FriendSettingsContainer .VoiceSettings .showAdvanced > .DialogLabel + div[class*="toggle_ToggleRow_"]
 {
 	border-bottom-left-radius: 0px !important;
 	border-bottom-right-radius: 0px !important;
@@ -241,12 +241,12 @@
 	border-top-right-radius: var(--entry_radius) !important;
 }
 
-.FriendSettingsContainer .VoiceSettings .showAdvanced [class*="toggle_ToggleRow_"] + [class*="toggle_ToggleRow_"]
+.FriendSettingsContainer .VoiceSettings .showAdvanced div[class*="toggle_ToggleRow_"] + div[class*="toggle_ToggleRow_"]
 {
 	border-radius: 0px !important;
 }
 
-.FriendSettingsContainer .VoiceSettings .showAdvanced [class*="toggle_ToggleRow_"]:nth-of-type(5)
+.FriendSettingsContainer .VoiceSettings .showAdvanced div[class*="toggle_ToggleRow_"]:nth-of-type(5)
 {
 	border-bottom-left-radius: var(--entry_radius) !important;
 	border-bottom-right-radius: var(--entry_radius) !important;
