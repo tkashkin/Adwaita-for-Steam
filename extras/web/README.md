@@ -24,7 +24,7 @@ Some classes will be randomly suffixed, eg `library_MainPanel_3BFcm`
 You will need to use the `*=` selector for those:
 
 ```css
-[class*="library_MainPanel_"]
+div[class*="library_MainPanel_"]
 {
 	background: purple !important;
 }
