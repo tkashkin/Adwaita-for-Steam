@@ -167,3 +167,9 @@ Note: Installation with this method is lacking in several features, one of the i
    * ~~Windows~~ (untested): `C:\Program Files (x86)\Steam\skins` by default
    * ~~macOS~~ (untested): `~/Library/Application Support/Steam/Steam.AppBundle/Steam/Contents/MacOS/skins`
 3. Open Steam and select `Adwaita` skin in Settings > Interface (restart Steam if it doesn't appear in the list)
+
+## Uninstallation
+
+Since the installer patches steam client files directly, simply changing the steam skin will not undo all changes.
+
+Reinstall with `--web-theme none` to unpatch these files.
