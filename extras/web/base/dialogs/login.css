@@ -2,7 +2,8 @@
 /* BG */
 #root div[class*="login_Login_"].DesktopUI,
 #root div[class*="login_Login_"].DesktopUI div[class*="newlogindialog_EmbeddedRoot_"],
-#root div[class*="login_Login_"].DesktopUI div[class*="newlogindialog_StandardLayout_"][class*="newlogindialog_Embedded_"]
+#root div[class*="login_Login_"].DesktopUI div[class*="newlogindialog_StandardLayout_"][class*="newlogindialog_Embedded_"],
+#root > div[class*="index_PreloadThrobber_"]
 {
 	background: var(--bg) !important;
 	overflow: hidden !important;
