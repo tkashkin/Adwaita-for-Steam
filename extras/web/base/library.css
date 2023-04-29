@@ -106,6 +106,7 @@ body:not([class*="gamepadui_GamepadUIPopupWindowBody_"]) > div[class*="contextme
 {
 	background: var(--button_hover_bg) !important;
 	border-radius: var(--menu_radius) !important;
+	color: var(--fg) !important;
 }
 
 body:not([class*="gamepadui_GamepadUIPopupWindowBody_"]) > div[class*="contextmenu_contextMenu_"] [class*="library_ContextMenuAction_"]
