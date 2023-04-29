@@ -1,0 +1,111 @@
+/* Entire Top Bar */
+#SteamDesktop div[class*="steamdesktop_TopBar_"]
+{
+	background: var(--headerbar_bg) !important;
+}
+
+/* Title Bar */
+#SteamDesktop div[class*="steamdesktop_TitleBar_"]
+{
+	background: var(--headerbar_bg) !important;
+}
+
+/* --- Left Side --- */
+/* Menu Bar */
+#SteamDesktop div[class*="steamdesktop_RootMenuBar_"]
+{
+	background: var(--headerbar_bg) !important;
+}
+
+/* Menu item */
+#SteamDesktop div[class*="menu_MenuWrapper_"]
+{
+	background: var(--headerbar_bg) !important;
+}
+
+/* Navigation */
+#SteamDesktop div[class*="steamdesktop_SuperNavBar_"]
+{
+	background: var(--headerbar_bg) !important;
+}
+
+#SteamDesktop div[class*="supernav_SuperNavMenu_"][class*="supernav_Selected_"]:not([class*="supernav_Disabled_"]) div[class*="supernav_MenuButton_"]
+{
+	color: var(--accent) !important;
+	text-shadow: none !important;
+}
+
+#SteamDesktop div[class*="supernav_SuperNavMenu_"][class*="supernav_Selected_"]:not([class*="supernav_Disabled_"]) div[class*="supernav_MenuButton_"]::after
+{
+	background: var(--accent) !important;
+}
+
+/* --- Middle --- */
+/* Drag */
+#SteamDesktop div[class*="steamdesktop_DragArea_"]
+{
+	background: var(--headerbar_bg) !important;
+}
+
+/* Url Bar */
+#SteamDesktop div[class*="steamdesktop_URLBarReplacement_"]
+{
+	background: var(--headerbar_bg) !important;
+}
+
+#SteamDesktop div[class*="steamdesktop_URLBar_"]
+{
+	background: var(--headerbar_bg) !important;
+}
+
+#SteamDesktop div[class*="steamdesktop_URL_"]
+{
+	color: var(--fg) !important;
+}
+
+/* --- Right Side --- */
+/* Profile, Notifications, etc */
+#SteamDesktop div[class*="steamdesktop_TitleBarControls_"]
+{
+	background: var(--headerbar_bg) !important;
+}
+
+#SteamDesktop div[class*="titlebarcontrols_AnnouncementsButton"][class*="titlebarcontrols_Active_"]
+{
+	background: var(--accent_bg) !important;
+}
+
+/* Window Controls */
+#SteamDesktop div[class*="steamdesktop_WindowControls_"]
+{
+	background: var(--headerbar_bg) !important;
+}
+
+/* --- Context Menu --- */
+body.ContextMenuPopupBody.DesktopUI
+{
+	overflow: hidden !important;
+}
+
+body.ContextMenuPopupBody.DesktopUI div[class*="contextmenu_contextMenu_"]
+{
+	border-radius: var(--menu_radius) !important;
+}
+
+body.ContextMenuPopupBody.DesktopUI div[class*="menu_MenuPopup_"]
+{
+	background: var(--popover_bg) !important;
+	border: none !important;
+	border-radius: var(--menu_radius) !important;
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--baseweight) !important;
+}
+
+body.ContextMenuPopupBody.DesktopUI div[class*="menu_MenuItem_"]:hover
+{
+	background: var(--button_hover_bg) !important;
+	border-radius: var(--menu_radius) !important;
+	color: var(--fg) !important;
+}
+

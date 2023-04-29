@@ -82,6 +82,9 @@ LIBRARY_BASE_FILES = [
 	# Web
 	webthemedir / "base/_root.css",
 	webthemedir / "base/scrollbars.css",
+    # Header/Footer
+    webthemedir / "base/top_bar.css",
+    webthemedir / "base/bottom_bar.css",
 	# Library
 	webthemedir / "base/library.css",
 	webthemedir / "base/game_details.css",
@@ -98,6 +101,9 @@ LIBRARY_FULL_FILES = [
 	# Web
 	webthemedir / "base/_root.css",
 	webthemedir / "base/scrollbars.css",
+    # Header/Footer
+    webthemedir / "base/top_bar.css",
+    webthemedir / "base/bottom_bar.css",
 	# Library
 	webthemedir / "base/library.css",
 	webthemedir / "full/library.css",
