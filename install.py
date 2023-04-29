@@ -90,6 +90,7 @@ LIBRARY_BASE_FILES = [
 	# Web Dialogs
 	webthemedir / "base/dialogs/_dialogs.css",
 	# Library Dialogs
+	webthemedir / "base/dialogs/login.css",
 	webthemedir / "base/dialogs/launch_options.css",
 ]
 
@@ -110,6 +111,7 @@ LIBRARY_FULL_FILES = [
 	webthemedir / "full/dialogs/_dialogs.css",
 	webthemedir / "full/dialogs/paged_settings.css",
 	# Library Dialogs
+	webthemedir / "base/dialogs/login.css",
 	webthemedir / "base/dialogs/launch_options.css",
 	webthemedir / "full/dialogs/app_properties.css",
 	webthemedir / "full/dialogs/content_management.css",
