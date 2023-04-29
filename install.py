@@ -101,6 +101,7 @@ LIBRARY_FULL_FILES = [
 	# Web
 	webthemedir / "base/_root.css",
 	webthemedir / "base/scrollbars.css",
+	webthemedir / "full/chat.css",
     # Header/Footer
     webthemedir / "base/top_bar.css",
     webthemedir / "base/bottom_bar.css",
@@ -435,6 +436,6 @@ if __name__ == "__main__":
 		for target in targets:
 			install(sourcedir, target, args.name)
 			patch_client_css(sourcedir, target, "Library")
-            patch_client_css(sourcedir, target, "Friends")
+			#patch_client_css(sourcedir, target, "Friends")
 
 		print(f"{TEXT_GREEN}{TEXT_CHECK} Done!{TEXT_RESET}")
