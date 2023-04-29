@@ -24,7 +24,8 @@
 .FriendsListContent .friendlistListContainer .friendGroup.onlineFriends,
 .friendsListSectionTitle,
 .chatRoomListContainer,
-.friendListFooter
+.friendListFooter,
+.client_chat_frame div[class*="friendslist_OfflineContainer_"]
 {
 	background: var(--view_bg) !important;
 	border: none !important;
