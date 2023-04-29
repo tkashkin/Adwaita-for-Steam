@@ -296,10 +296,12 @@ def patch_client_css(source: Path, target: Path, name: str):
 		target_css = target / STEAM_LIBRARY_CSS
 		custom_css = target / STEAM_CUSTOM_LIBRARY
 		custom_css_name = custom_css.name
+		source_css = source / LIBRARY_CSS_FILE
 	elif name == "Friends":
 		target_css = target / STEAM_FRIENDS_CSS
 		custom_css = target / STEAM_CUSTOM_FRIENDS
 		custom_css_name = custom_css.name
+		source_css = source / CSS_FILE
 	else:
 		raise SystemExit(f"{TEXT_RED}{TEXT_CROSS} Invalid steam css patch selected: {name}{TEXT_RESET}")
 
@@ -311,7 +313,7 @@ def patch_client_css(source: Path, target: Path, name: str):
 		print(f"{TEXT_BLUE}{TEXT_ARROW} Web Theme is {TEXT_BOLD}none{TEXT_RESET}{TEXT_BLUE}, resetting patched Steam {name} CSS...{TEXT_RESET}")
 		open(custom_css, 'w').close()
 	else:
-		shutil.copy(source / LIBRARY_CSS_FILE, custom_css)
+		shutil.copy(source_css, custom_css)
 
 	with target_css.open() as css_file:
 		if css_file.readline().strip() == STEAM_PATCHED_HEADER:
@@ -433,5 +435,6 @@ if __name__ == "__main__":
 		for target in targets:
 			install(sourcedir, target, args.name)
 			patch_client_css(sourcedir, target, "Library")
+            patch_client_css(sourcedir, target, "Friends")
 
 		print(f"{TEXT_GREEN}{TEXT_CHECK} Done!{TEXT_RESET}")
