@@ -1,0 +1,11 @@
+/* Entire Bottom Bar */
+#SteamDesktop div[class*="bottombar_BottomBarContainer_"]
+{
+	background: var(--headerbar_bg) !important;
+}
+
+#SteamDesktop div[class*="bottombar_BottomBar_"]
+{
+	background: var(--headerbar_bg) !important;
+}
+
