@@ -7,7 +7,7 @@
 .title-bar-actions
 {
 	position: absolute !important;
-	top: 12px !important;
+	top: 4px !important;
 	right: 12px !important;
 }
 
@@ -35,8 +35,6 @@
 {
 	width: 12px !important;
 	height: 12px !important;
-	/* margin-left: 6px !important; */
-	/* margin-top: 6px !important; */
 }
 
 .title-bar-actions .title-area-icon > svg > *
@@ -77,6 +75,11 @@
 }
 
 /* Friends Window Controls */
+.friendsui-container .title-bar-actions
+{
+	margin-top: 6px !important;
+}
+
 .friendsui-container .title-area-icon
 {
 	margin-top: 0px !important;
