@@ -272,3 +272,9 @@ body.DesktopUI div[class*="login_Login_"].DesktopUI [class*="newlogindialog_Text
 {
 	text-decoration: underline !important;
 }
+
+/* Loading */
+body.DesktopUI div[class*="login_Login_"].DesktopUI div[class*="loadingthrobber_Spacer_"]:first-child
+{
+	flex-grow: 0.2 !important;
+}
