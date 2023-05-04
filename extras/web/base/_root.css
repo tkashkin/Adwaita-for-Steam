@@ -70,6 +70,9 @@
 	--button_bg: rgba(255, 255, 255, 0.1);
 	--button_fg: rgba(255, 255, 255, 1);
 	--button_radius: 6px;
+	--button_padding: 5px 10px;
+	--button_min_height: 24px;
+	--button_min_width: 16px;
 	--button_pill_radius: 9999px;
 	--button_font_weight: var(--title_3_weight);
 	--button_font_size: var(--title_3_size);
