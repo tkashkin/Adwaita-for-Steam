@@ -99,7 +99,7 @@
 	min-width: var(--button_min_width) !important;
 	overflow: hidden !important;
 	padding: var(--button_padding) !important;
-	text-overflow: ellipses !important;
+	text-overflow: ellipsis !important;
 	text-transform: capitalize !important;
 	transition: var(--focus_transition) !important;
 }
