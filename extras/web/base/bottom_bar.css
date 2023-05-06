@@ -1,3 +1,7 @@
+/* ------------------ */
+/* --- Bottom Bar --- */
+/* ------------------ */
+
 /* Entire Bottom Bar */
 #SteamDesktop div[class*="bottombar_BottomBarContainer_"]
 {
