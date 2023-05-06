@@ -38,6 +38,8 @@ STEAM_PATCHED_HEADER = "/*patched*/"
 
 STEAM_FRIENDS_CSS = "clientui/css/friends.css"
 STEAM_LIBRARY_CSS = "steamui/css/library.css"
+STEAM_ORIG_LIBRARY = "steamui/css/library.original.css"
+STEAM_ORIG_FRIENDS = "clientui/css/friends.original.css"
 STEAM_CUSTOM_LIBRARY = "steamui/libraryroot.custom.css"
 STEAM_CUSTOM_FRIENDS = "clientui/friends.custom.css"
 
@@ -51,9 +53,9 @@ LIBRARY_BASE_FILES = [
 	# Web
 	webthemedir / "base/_root.css",
 	webthemedir / "base/scrollbars.css",
-    # Header/Footer
-    webthemedir / "base/top_bar.css",
-    webthemedir / "base/bottom_bar.css",
+	# Header/Footer
+	webthemedir / "base/top_bar.css",
+	webthemedir / "base/bottom_bar.css",
 	# Library
 	webthemedir / "base/library.css",
 	webthemedir / "base/game_details.css",
@@ -71,9 +73,9 @@ LIBRARY_FULL_FILES = [
 	webthemedir / "base/_root.css",
 	webthemedir / "base/scrollbars.css",
 	webthemedir / "full/chat.css",
-    # Header/Footer
-    webthemedir / "base/top_bar.css",
-    webthemedir / "base/bottom_bar.css",
+	# Header/Footer
+	webthemedir / "base/top_bar.css",
+	webthemedir / "base/bottom_bar.css",
 	# Library
 	webthemedir / "base/library.css",
 	webthemedir / "full/library.css",
@@ -114,16 +116,16 @@ def list_options(type: str, options: list[Path], suffix: str, sourcedir: Path, a
 
 # Fonts
 def install_font(name: str, ext: str):
-    font = fontdir / name / ext
-    if font.exists():
-        print(f"\n{TEXT_BLUE}{TEXT_ARROW} Installing font {TEXT_BOLD}{name}{TEXT_RESET}{TEXT_BLUE}...{TEXT_RESET}")
-        files = font.glob(f"*.{ext}")
-        target = Path(TARGET_FONTS).expanduser().resolve()
-        target.mkdir(exist_ok = True)
-        for f in files:
-            shutil.copy(f, target)
-    else:
-        print(f"{TEXT_PURPLE}{TEXT_INFO} Font: {TEXT_BOLD}{name}{TEXT_RESET}{TEXT_PURPLE} not found!{TEXT_RESET}")
+	font = fontdir / name / ext
+	if font.exists():
+		print(f"\n{TEXT_BLUE}{TEXT_ARROW} Installing font {TEXT_BOLD}{name}{TEXT_RESET}{TEXT_BLUE}...{TEXT_RESET}")
+		files = font.glob(f"*.{ext}")
+		target = Path(TARGET_FONTS).expanduser().resolve()
+		target.mkdir(exist_ok = True)
+		for f in files:
+			shutil.copy(f, target)
+	else:
+		print(f"{TEXT_PURPLE}{TEXT_INFO} Font: {TEXT_BOLD}{name}{TEXT_RESET}{TEXT_PURPLE} not found!{TEXT_RESET}")
 
 # Webkit CSS
 def find_web_extras() -> list[Path]:
@@ -210,11 +212,13 @@ def patch_client_css(source: Path, target: Path, name: str):
 
 	if name == "Library":
 		target_css = target / STEAM_LIBRARY_CSS
+		orig_css = target / STEAM_ORIG_LIBRARY
 		custom_css = target / STEAM_CUSTOM_LIBRARY
 		custom_css_name = custom_css.name
 		source_css = source / LIBRARY_CSS_FILE
 	# elif name == "Friends":
 	# 	target_css = target / STEAM_FRIENDS_CSS
+	# 	orig_css = target / STEAM_ORIG_FRIENDS
 	# 	custom_css = target / STEAM_CUSTOM_FRIENDS
 	# 	custom_css_name = custom_css.name
 	# 	source_css = source / CSS_FILE
@@ -242,7 +246,7 @@ def patch_client_css(source: Path, target: Path, name: str):
 	target_css.open('w').write(content)
 
 	size_diff = orig_css.stat().st_size - target_css.stat().st_size
-	padding = "\t" * size_diff
+	padding = " " * size_diff
 	target_css.open('a').write(padding)
 
 if __name__ == "__main__":
