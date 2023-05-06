@@ -2,8 +2,13 @@
 /* --- Show Minimize and Maximize Button  --- */
 /* ------------------------------------------ */
 .title-bar-actions .title-area-icon.minimizeButton,
-.title-bar-actions .title-area-icon.maximizeButton
+.title-bar-actions .title-area-icon.maximizeButton,
+.title-bar-actions .title-area-icon.restoreButton
 {
 	display: block !important;
 }
 
+#SteamDesktop div[class*="steamdesktop_WindowControls_"]
+{
+	flex-basis: 114px !important;
+}

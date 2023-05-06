@@ -7,6 +7,11 @@
 	right: auto !important;
 }
 
+#SteamDesktop div[class*="steamdesktop_WindowControls_"]
+{
+	order: -1 !important;
+}
+
 /* App Properties Titles */
 .ModalDialogPopup [class*="pagedsettings_PagedSettingsDialog_PageListColumn_"] > [class*="pagedsettings_PagedSettingsDialog_Title_"]
 {
