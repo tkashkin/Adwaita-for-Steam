@@ -1,9 +1,0 @@
-accountmenu.layout
-{
-	layout
-	{
-		place { control="view_profile_button,view_wallet_button,view_preferences_button,view_account_button,change_user_button,sign_out_button" dir=down margin-left=4 margin-top=4 margin-right=4 width=max height=24 }
-		place { control="wallet_amount_label" start="view_wallet_button" align=right margin-right=12 height=24 }
-		place { control="account_name_label" start="sign_out_button" align=right margin-right=12 height=24 }
-	}
-}

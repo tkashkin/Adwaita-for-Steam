@@ -21,10 +21,10 @@ TEXT_CHECK="✓"
 TEXT_CROSS="✖"
 TEXT_INFO="✦"
 
-COLOR_THEME_DIR = "extras/colorthemes"
-FONTS_DIR = "extras/fonts"
-WEB_EXTRAS_DIR = "extras/web/extras"
-WEB_THEME_DIR = "extras/web"
+COLOR_THEME_DIR = "colorthemes"
+FONTS_DIR = "fonts"
+WEB_EXTRAS_DIR = "web/extras"
+WEB_THEME_DIR = "web"
 
 LIBRARY_CSS_FILE = "libraryroot.custom.css"
 

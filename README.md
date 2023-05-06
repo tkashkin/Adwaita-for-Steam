@@ -13,7 +13,7 @@ A skin to make Steam look more like a native GNOME app
 * **Overlay**: done.
 * **Small mode**: done.
 * **Old library, old chat, other old unused windows**: not planned.
-* **Recoloring**: colors can be changed via making a new theme. See [colorthemes](extras/colorthemes) dir.
+* **Recoloring**: colors can be changed via making a new theme. See [colorthemes](colorthemes) dir.
 * **Light theme**: not planned, would require redrawing all assets to be visible on light backgrounds.
 
 ### Limitations
@@ -33,85 +33,85 @@ A skin to make Steam look more like a native GNOME app
 
 <details><summary>Adwaita</summary>
 
-![Adwaita](/extras/colorthemes/adwaita/preview.png?raw=true)
+![Adwaita](/colorthemes/adwaita/preview.png?raw=true)
 
 </details>
 
 <details><summary>Breeze</summary>
 
-![Breeze](/extras/colorthemes/breeze/preview.png?raw=true)
+![Breeze](/colorthemes/breeze/preview.png?raw=true)
 
 </details>
 
 <details><summary>Catppuccin-Frappe</summary>
 
-![Catppuccin-Frappe](/extras/colorthemes/catppuccin-frappe/preview.png?raw=true)
+![Catppuccin-Frappe](/colorthemes/catppuccin-frappe/preview.png?raw=true)
 
 </details>
 
 <details><summary>Catppuccin-Macchiato</summary>
 
-![Catppuccin-Macchiato](/extras/colorthemes/catppuccin-macchiato/preview.png?raw=true)
+![Catppuccin-Macchiato](/colorthemes/catppuccin-macchiato/preview.png?raw=true)
 
 </details>
 
 <details><summary>Catppuccin-Mocha</summary>
 
-![Catppuccin-Mocha](/extras/colorthemes/catppuccin-mocha/preview.png?raw=true)
+![Catppuccin-Mocha](/colorthemes/catppuccin-mocha/preview.png?raw=true)
 
 </details>
 
 <details><summary>Dracula</summary>
 
-![Dracula](/extras/colorthemes/dracula/preview.png?raw=true)
+![Dracula](/colorthemes/dracula/preview.png?raw=true)
 
 </details>
 
 <details><summary>Gruvbox</summary>
 
-![Gruvbox](/extras/colorthemes/gruvbox/preview.png?raw=true)
+![Gruvbox](/colorthemes/gruvbox/preview.png?raw=true)
 
 </details>
 
 <details><summary>Kate</summary>
 
-![Kate](/extras/colorthemes/kate/preview.png?raw=true)
+![Kate](/colorthemes/kate/preview.png?raw=true)
 
 </details>
 
 <details><summary>Nord</summary>
 
-![Nord](/extras/colorthemes/nord/preview.png?raw=true)
+![Nord](/colorthemes/nord/preview.png?raw=true)
 
 </details>
 
 <details><summary>One Pro</summary>
 
-![One Pro](/extras/colorthemes/one-pro/preview.png?raw=true)
+![One Pro](/colorthemes/one-pro/preview.png?raw=true)
 
 </details>
 
 <details><summary>Pop</summary>
 
-![Pop](/extras/colorthemes/pop/preview.png?raw=true)
+![Pop](/colorthemes/pop/preview.png?raw=true)
 
 </details>
 
 <details><summary>Tokyo Night</summary>
 
-![Tokyo Night](/extras/colorthemes/tokyo-night/preview.png?raw=true)
+![Tokyo Night](/colorthemes/tokyo-night/preview.png?raw=true)
 
 </details>
 
 <details><summary>Tomorrow Night</summary>
 
-![Tomorrow Night](/extras/colorthemes/tomorrow-night/preview.png?raw=true)
+![Tomorrow Night](/colorthemes/tomorrow-night/preview.png?raw=true)
 
 </details>
 
 <details><summary>Yaru</summary>
 
-![Yaru](/extras/colorthemes/yaru/preview.png?raw=true)
+![Yaru](/colorthemes/yaru/preview.png?raw=true)
 
 </details>
 
@@ -131,15 +131,13 @@ cd Adwaita-for-Steam
 
 | Argument         | Short  | Required Values                  | Description                                              |
 | ---------------- | ------ | -------------------------------- | -------------------------------------------------------- |
-| --color-theme    | -c     | [Colortheme](extras/colorthemes) | Change color theme                                       |
+| --color-theme    | -c     | [Colortheme](colorthemes)        | Change color theme                                       |
 | --font-install   | -fi    |                                  | Installs static Cantarell fonts                          |
 | --list-options   | -l     |                                  | List available patches, themes, and web extras           |
-| --name           | -n     | [name]                           | Rename the installed skin                                |
 | --no-steam-patch | -nsp   |                                  | Do not patch steam client files                          |
-| --patch          | -p     | [Patch](extras/patches)          | Apply one or multiple patches                            |
 | --target         | -t     | normal / flatpak / [custom dir]  | Choose target location for install (default: both)       |
 | --web-theme      | -w     | full / base / none               | Choose web theme variant (default: full)                 |
-| --web-extras     | -we    | [Web Extra](extras/web/extras)   | Enable one or multiple web theme extras                  |
+| --web-extras     | -we    | [Web Extra](web/extras)          | Enable one or multiple web theme extras                  |
 
 #### Example Usage
 
