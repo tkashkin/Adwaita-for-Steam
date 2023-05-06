@@ -69,19 +69,21 @@
 	justify-content: center !important;
 }
 
-/* Hidden Back/Forward Arrows until we can figure what to do with them */
 #SteamDesktop div[class*="supernav_SuperNav_"] svg
 {
 	display: none
 }
 
-/*
-#SteamDesktop div[class*="supernav_SuperNav_"] div[class*="supernav_SuperNavMenu_"]:last-child,
-#SteamDesktop div[class*="supernav_SuperNav_"] svg[class*="supernav_Arrow_"]:nth-child(2)
+#SteamDesktop div[class*="supernav_SuperNav_"] svg[class*="supernav_Arrow_"]
 {
-	margin-right: auto;
+	color: var(--fg) !important;
+	margin-top: 10px !important;
 }
-*/
+
+#SteamDesktop div[class*="supernav_SuperNav_"] svg[class*="supernav_Arrow_"][class*="supernav_Disabled_"]
+{
+	color: var(--dim_label_fg) !important;
+}
 
 #SteamDesktop div[class*="supernav_MenuButton_"]
 {

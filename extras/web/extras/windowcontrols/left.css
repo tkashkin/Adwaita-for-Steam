@@ -12,6 +12,11 @@
 	order: -1 !important;
 }
 
+#SteamDesktop div[class*="supernav_SuperNav_"] svg[class*="supernav_Arrow_"]:first-child
+{
+	margin-left: 50px !important;
+}
+
 /* App Properties Titles */
 .ModalDialogPopup [class*="pagedsettings_PagedSettingsDialog_PageListColumn_"] > [class*="pagedsettings_PagedSettingsDialog_Title_"]
 {
