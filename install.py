@@ -277,21 +277,16 @@ if __name__ == "__main__":
 	selected_theme = None
 	if args.color_theme:
 		ct = Path(args.color_theme)
-		cta = ct.parents[0] / "assets"
 
 		if args.color_theme.removesuffix(".theme") == "adwaita":
 			selected_theme = None
-		elif ct.exists() and ct.suffix == ".theme" and cta.exists():
+		elif ct.exists() and ct.suffix == ".theme":
 			selected_theme = ct
-			selected_theme_assets = cta
 		else:
 			t = args.color_theme.removesuffix(".theme")
 			selected_theme = colorthemedir / t / "{}{}".format(t, ".theme")
-			selected_theme_assets = colorthemedir / t / "assets"
 			if not selected_theme.exists():
 				raise SystemExit(f"{TEXT_RED}{TEXT_CROSS} {TEXT_BOLD}{selected_theme}{TEXT_RESET}{TEXT_RED} theme not found.{TEXT_RESET}")
-			if not selected_theme_assets.exists():
-				raise SystemExit(f"{TEXT_RED}{TEXT_CROSS} {TEXT_BOLD}{selected_theme}{TEXT_RESET}{TEXT_RED} theme assets not found.{TEXT_RESET}")
 
 	with TemporaryDirectory() as tmpdir:
 		tmp = Path(tmpdir)
