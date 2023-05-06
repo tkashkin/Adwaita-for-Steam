@@ -87,18 +87,21 @@
 
 #SteamDesktop div[class*="supernav_MenuButton_"]
 {
+	-webkit-app-region: no-drag;
 	border-radius: var(--button_radius) !important;
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
 	font-size: var(--button_font_size) !important;
 	font-weight: var(--button_font_weight) !important;
 	line-height: 24px !important;
+	max-width: 100px !important;
 	min-height: var(--button_min_height) !important;
 	min-width: var(--button_min_width) !important;
+	overflow: hidden !important;
 	padding: var(--button_padding) !important;
-	transition: var(--focus_transition) !important;
+	text-overflow: ellipses !important;
 	text-transform: capitalize !important;
-	-webkit-app-region: no-drag;
+	transition: var(--focus_transition) !important;
 }
 
 #SteamDesktop div[class*="supernav_MenuButton_"]:hover
