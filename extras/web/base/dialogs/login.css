@@ -3,7 +3,8 @@
 body.DesktopUI div[class*="login_Login_"].DesktopUI,
 body.DesktopUI div[class*="login_Login_"].DesktopUI div[class*="newlogindialog_EmbeddedRoot_"],
 body.DesktopUI div[class*="login_Login_"].DesktopUI div[class*="newlogindialog_StandardLayout_"][class*="newlogindialog_Embedded_"],
-body.DesktopUI > div[class*="index_PreloadThrobber_"]
+body.DesktopUI > div[class*="index_PreloadThrobber_"],
+body.DesktopUI div[class*="steamdesktop_InitContainer_"]
 {
 	background: var(--bg) !important;
 	overflow: hidden !important;
