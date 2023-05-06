@@ -1,0 +1,14 @@
+/* ------------------------ */
+/* --- Hide Bottom Bar  --- */
+/* ------------------------ */
+/* display: none causes the resize widget to go crazy */
+#SteamDesktop div[class*="bottombar_BottomBarContainer_"]
+{
+	height: 0px !important;
+}
+
+#SteamDesktop div[class*="steamdesktop_OuterFrame_"]
+{
+	overflow-y: hidden !important;
+}
+
