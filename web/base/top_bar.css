@@ -271,6 +271,13 @@ body:not([class*="gamepadui_GamepadUIPopupWindowBody_"]) > div[class*="steamdesk
 	transition: var(--focus_transition) !important;
 }
 
+#SteamDesktop div[class*="titlebarcontrols_AccountMenu_"] div
+{
+	max-width: 100px !important;
+	overflow: hidden !important;
+	text-overflow: ellipsis !important;
+}
+
 #SteamDesktop div[class*="titlebarcontrols_NotificationButtonContainer_"]
 {
 	margin-right: 0px !important;
