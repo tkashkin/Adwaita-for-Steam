@@ -1,0 +1,7 @@
+/* -------------------------------- */
+/* --- Hide Big Picture Button  --- */
+/* -------------------------------- */
+#SteamDesktop div[class*="titlebarcontrols_GamepadUIToggle_"]
+{
+	display: none !important;
+}
