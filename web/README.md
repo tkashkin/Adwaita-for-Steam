@@ -9,26 +9,30 @@ Each theme is split into sections and combined by `install.py` to produce the fi
 
 `extras` are optional bits that may be added to the above themes.
 
-# Configuring Colors
+# Inspecting Steam
 
-Edit `base/1_root.css`
+## Remote Debugging
 
-# Inspecting Classes
+To remotely inspect steam with a chromium browser:
 
-You can use steam's built in chrome inspector to find classes by launching it with the `-dev` argument and hitting `F12`
+1. Ensure nothing is running on your machine that uses port `8080` (Syncthing, etc)
+2. Launch steam with the `-cef-enable-debugging` argument e.g. `steam -cef-enable-debugging`
+3. Visit [Chrome Inspect](chrome://inspect/#devices) in your Chromium based browser
+4. Under `Discover network targets`, make sure `localhost:8080` is present
+5. Steam entries should start showing up
 
-(The Chat window will open two inspectors, only one is relevant)
+This method has several benefits over the below method, allowing you to inspect Steam's In-Game Overlay and other hidden menus.
 
-Some classes will be randomly suffixed, eg `library_MainPanel_3BFcm`
+## Dev Mode
 
-You will need to use the `*=` selector for those:
+While more limited than the above, you can use steam's built in chrome inspector to find classes.
 
-```css
-div[class*="library_MainPanel_"]
-{
-	background: purple !important;
-}
-```
+1. Launch steam with the `-dev` argument e.g. `steam -dev`
+2. Press `F12` or Right Click -> inspect element
+
+(Some windows may open two inspectors, only one is relevant)
+
+### Hover Elements
 
 To inspect JS created hover elements, the typical `F8` keybind to pause script execution doesn't seem to function.
 
@@ -36,6 +40,19 @@ However you may enter this snippet in the console and then hit `]` to achieve th
 
 ```javascript
 document.addEventListener('keydown', function (e) {
-  if (e.keyCode == 221) debugger;
-}, { capture: true });
+        if (e.keyCode == 221) debugger;
+        }, { capture: true });
+```
+
+# Writing CSS rules
+
+Some classes will be randomly suffixed, eg `library_MainPanel_3BFcm`
+
+You will need to use the `*=` selector for these:
+
+```css
+div[class*="library_MainPanel_"]
+{
+	background: purple !important;
+}
 ```
