@@ -329,9 +329,7 @@
 
 .ModalDialogPopup .DialogDropDown_Arrow
 {
-	left: 95% !important;
-	position: absolute !important;
-	top: 40% !important;
+	margin-top: 4px !important;
 }
 
 .ModalDialogPopup div[class*="dropdown_DialogDropDownMenu_"]
