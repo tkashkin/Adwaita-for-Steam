@@ -17,7 +17,7 @@ To remotely inspect steam with a chromium browser:
 
 1. Ensure nothing is running on your machine that uses port `8080` (Syncthing, etc)
 2. Launch steam with the `-cef-enable-debugging` argument e.g. `steam -cef-enable-debugging`
-3. Visit [Chrome Inspect](chrome://inspect/#devices) in your Chromium based browser
+3. Visit `chrome://inspect/#devices` in your Chromium based browser
 4. Under `Discover network targets`, make sure `localhost:8080` is present
 5. Steam entries should start showing up
 
