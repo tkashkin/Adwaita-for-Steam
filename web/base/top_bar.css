@@ -319,6 +319,7 @@ body:not([class*="gamepadui_GamepadUIPopupWindowBody_"]) > div[class*="steamdesk
 /* --- Context Menu --- */
 body.ContextMenuPopupBody.DesktopUI
 {
+	background: none !important;
 	overflow: hidden !important;
 }
 
@@ -348,6 +349,11 @@ body.ContextMenuPopupBody.DesktopUI div[class*="menu_MenuItem_"]:hover
 	background: var(--button_hover_bg) !important;
 	border-radius: var(--menu_radius) !important;
 	color: var(--fg) !important;
+}
+
+body.ContextMenuPopupBody.DesktopUI hr[class*="menu_Separator_"]
+{
+	border-color: var(--bg) !important;
 }
 
 /* --- Small Window Size --- */
