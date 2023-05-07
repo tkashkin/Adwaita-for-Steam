@@ -101,6 +101,11 @@
 	background-color: rgba(255, 255, 255, 0.19) !important;
 }
 
+.ModalDialogPopup div[class*="pagedsettings_PagedSettingsDialog_PageListItem_"]:not([class*=pagedsettings_Active_]):hover div[class*="pagedsettings_PageListItem_Icon_"]
+{
+	color: var(--fg) !important;
+}
+
 .ModalDialogPopup .DialogContent_InnerWidth > *:not(.DialogHeader):not(form)
 {
 	padding: 16px !important;
