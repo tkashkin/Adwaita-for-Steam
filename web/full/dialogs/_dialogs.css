@@ -538,3 +538,58 @@
 	margin-left: 1px !important;
 }
 
+/* New Toggle */
+.ModalDialogPopup div[class*="gamepaddialog_ToggleRail_"]
+{
+	background: var(--entry_bg) !important;
+	background-blend-mode: var(--button_suggested_blend) !important;
+	height: 26px !important;
+	width: 48px !important;
+}
+
+.ModalDialogPopup div[class*="gamepaddialog_Toggle_"][class*="gamepaddialog_On_"] div[class*="gamepaddialog_ToggleRail_"]
+{
+	background: var(--accent_bg) !important;
+}
+
+.ModalDialogPopup div[class*="gamepaddialog_Toggle_"] div[class*="gamepaddialog_ToggleRail_"]::before
+{
+	background: none !important;
+	transform: translateX(-50px) !important;
+	transition: none !important;
+}
+
+.ModalDialogPopup div[class*="gamepaddialog_Toggle_"]:hover div[class*="gamepaddialog_ToggleRail_"]::before
+{
+	background-color: var(--button_suggested_hover_bg) !important;
+}
+
+.ModalDialogPopup div[class*="gamepaddialog_Toggle_"]:active div[class*="gamepaddialog_ToggleRail_"]::before
+{
+	background-color: var(--button_suggested_click_bg) !important;
+}
+
+.ModalDialogPopup div[class*="gamepaddialog_Toggle_"][class*="gamepaddialog_On_"] div[class*="gamepaddialog_ToggleRail_"]::before
+{
+	transform: translateX(0px) !important;
+}
+
+.ModalDialogPopup div[class*="gamepaddialog_Toggle_"] div[class*="gamepaddialog_ToggleSwitch_"]
+{
+	background: var(--fg);
+	height: 22px;
+	margin-left: 3px;
+	margin-top: 2px;
+	transition: transform 60ms linear, background 60ms !important;
+	width: 22px;
+}
+
+.ModalDialogPopup div[class*="gamepaddialog_Toggle_"]:not(:hover):not([class*="gamepaddialog_On_"]) div[class*="gamepaddialog_ToggleSwitch_"]
+{
+	opacity: 0.8 !important;
+}
+
+.ModalDialogPopup div[class*="gamepaddialog_Toggle_"][class*="gamepaddialog_On_"] div[class*="gamepaddialog_ToggleSwitch_"]
+{
+	transform: translateX(21px) !important;
+}
