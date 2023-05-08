@@ -56,6 +56,8 @@ LIBRARY_BASE_FILES = [
 	# Header/Footer
 	webthemedir / "base/top_bar.css",
 	webthemedir / "base/bottom_bar.css",
+	# Notifications
+	webthemedir / "base/notifications.css",
 	# Library
 	webthemedir / "base/library.css",
 	webthemedir / "base/game_details.css",
@@ -76,6 +78,8 @@ LIBRARY_FULL_FILES = [
 	# Header/Footer
 	webthemedir / "base/top_bar.css",
 	webthemedir / "base/bottom_bar.css",
+	# Notifications
+	webthemedir / "base/notifications.css",
 	# Library
 	webthemedir / "base/library.css",
 	webthemedir / "full/library.css",

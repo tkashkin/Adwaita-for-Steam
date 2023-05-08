@@ -1,0 +1,34 @@
+/* --------------------- */
+/* --- Notifications --- */
+/* --------------------- */
+
+body.DesktopUI [class*="desktoptoasts_DesktopToastPopup_"]
+{
+	background: var(--popover_bg) !important;
+	border-radius: var(--card_radius) !important;
+	color: var(--fg) !important;
+}
+
+body.ContextMenuPopupBody.DesktopUI div[class*="standardtemplates_Icon_"]
+{
+	color: var(--dim_label_fg) !important;
+	fill: var(--dim_label_fg) !important;
+}
+
+body.DesktopUI div[class*="standardtemplates_Title_"],
+body.DesktopUI div[class*="notificationcontent_TimestampDesktop_"],
+body.DesktopUI div[class*="standardtemplates_StandardNotificationSubText_"]
+{
+	font-family: var(--basefont) !important;
+	font-weight: var(--baseweight) !important;
+	color: var(--dim_label_fg) !important;
+}
+
+body.DesktopUI div[class*="standardtemplates_StandardNotificationDescription_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--title_4_weight) !important;
+	font-size: var(--title_4_size) !important;
+}
+

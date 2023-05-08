@@ -295,6 +295,11 @@ body:not([class*="gamepadui_GamepadUIPopupWindowBody_"]) > div[class*="steamdesk
 	color: var(--fg) !important;
 }
 
+#SteamDesktop div[class*="titlebarcontrols_NotificationsButton_"][class*="titlebarcontrols_HasNew_"]
+{
+	background: var(--accent_bg) !important;
+}
+
 #SteamDesktop div[class*="titlebarcontrols_GamepadUIToggle_"]
 {
 	width: 24px !important;
@@ -349,6 +354,66 @@ body.ContextMenuPopupBody.DesktopUI div[class*="menu_MenuItem_"]:hover
 body.ContextMenuPopupBody.DesktopUI hr[class*="menu_Separator_"]
 {
 	border-color: var(--bg) !important;
+}
+
+/* Notification Menu */
+body.ContextMenuPopupBody.DesktopUI div[class*="titlebarcontrols_NotificationsMenu_"]
+{
+	padding-bottom: 10px !important;
+	box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.05) !important;
+}
+
+body.ContextMenuPopupBody.DesktopUI button[class*="titlebarcontrols_AllNotificationsButton_"],
+body.DesktopUI div[class*="standardtemplates_StandardTemplateDesktop_"],
+body.ContextMenuPopupBody.DesktopUI div[class*="standardtemplates_PinnedTemplateDesktop_"]
+{
+	background: var(--button_bg) !important;
+	border-radius: var(--button_radius) !important;
+	border: none !important;
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--button_font_size) !important;
+	font-weight: var(--button_font_weight) !important;
+	padding: var(--button_padding) !important;
+	transition: var(--focus_transition) !important;
+}
+
+body.ContextMenuPopupBody.DesktopUI div[class*="standardtemplates_PinnedBody_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--button_font_size) !important;
+	font-weight: var(--button_font_weight) !important;
+}
+
+body.ContextMenuPopupBody.DesktopUI div[class*="titlebarcontrols_EmptyNotificationsBody_"]
+{
+	color: var(--entry_subtitle_fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--entry_subtitle_font_size) !important;
+	font-weight: var(--entry_subtitle_font_weight) !important;
+}
+
+body.ContextMenuPopupBody.DesktopUI button[class*="titlebarcontrols_AllNotificationsButton_"]:hover
+{
+	background: var(--button_hover_bg) !important;
+	border-radius: var(--button_radius) !important;
+}
+
+body.ContextMenuPopupBody.DesktopUI button[class*="titlebarcontrols_AllNotificationsButton_"]:active
+{
+	background: var(--button_active_bg) !important;
+	border-radius: var(--button_radius) !important;
+}
+
+body.ContextMenuPopupBody.DesktopUI div[class*="steamtemplates_NewIndicator_"]
+{
+	filter: none !important;
+}
+
+body.ContextMenuPopupBody.DesktopUI div[class*="steamtemplates_NewIndicator_"] svg
+{
+	color: var(--accent) !important;
 }
 
 /* --- Small Window Size --- */
