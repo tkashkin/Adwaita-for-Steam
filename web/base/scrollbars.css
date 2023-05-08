@@ -2,10 +2,13 @@
 /* --- Scrollbars --- */
 /* ------------------ */
 
+/* Disabled as it now affects much more
+/*
 body
 {
 	overflow: overlay !important;
 }
+*/
 
 ::-webkit-scrollbar
 {
