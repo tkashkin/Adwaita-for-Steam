@@ -17,7 +17,8 @@
 }
 
 /* Title */
-#SteamDesktop div[class*="allcollections_Label_"]
+#SteamDesktop div[class*="allcollections_Label_"],
+#SteamDesktop div[class*="collectionview_CollectionName_"]
 {
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
@@ -30,4 +31,13 @@
 {
 	background-color: var(--dim_label_fg) !important;
 	opacity: 0.55 !important;
+}
+
+/* Ready to Play Filter */
+#SteamDesktop div[class*="appgrid_ShowingReadyToPlay_"]
+{
+	color: var(--accent) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--title_4_weight) !important;
+	font-size: var(--title_4_size) !important;
 }
