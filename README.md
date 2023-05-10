@@ -6,25 +6,26 @@ A skin to make Steam look more like a native GNOME app
 
 ## Current state and plans
 
-* **Main window**: done.
-* **Settings**: mostly done.
-* **New library, new chat, other web-based client parts**: mostly done, with slight [limitations](#limitations).
+* **Main Window**: Done.
+* **Login**: Done
+* **Library**: Done
+* **Small Mode**: Done.
+* **Chat**: Done
+* **Settings**: Mostly done.
+* **New Overlay**: Mostly done.
 * **New Big Picture**: Not done.
-* **Overlay**: done.
-* **Small mode**: done.
-* **Old library, old chat, other old unused windows**: not planned.
-* **Recoloring**: colors can be changed via making a new theme. See [colorthemes](colorthemes) dir.
-* **Light theme**: not planned, would require redrawing all assets to be visible on light backgrounds.
+* **Recoloring**: Colors can be changed via making a new theme. See [colorthemes](colorthemes) dir.
+* **Light Themes**: Not currently planned, though may now be more feasible with the new UI.
 
 ### Limitations
 
-* **Rounded corners**: impossible to do in a Steam skin, use [Rounded Window Corners extension](https://github.com/yilozt/rounded-window-corners) or [mutter-rounded](https://github.com/yilozt/mutter-rounded) on GNOME
-* **Height of menu/sidebar items**: doesn't seem to be possible to increase
-* **Library Theming**: While the installer will patch steam files to allow theming the library, these files may be reset by steam updates. A reinstall is currently needed to repatch them.
+* **Steam updates may reset theme**: While the installer will patch steam files in order to theme the interface, these files may be reset by steam updates. If this happens, you will need to reinstall to repatch them.
+* **Rounded corners**: Not all elements can be rounded, use [Rounded Window Corners extension](https://github.com/yilozt/rounded-window-corners) or [mutter-rounded](https://github.com/yilozt/mutter-rounded) on GNOME.
+* **Height of sidebar items**: Doesn't seem to be possible to increase.
 
 ## Requirements
 
-* [Cantarell fonts](https://gitlab.gnome.org/GNOME/cantarell-fonts) as static fonts. Some distros install Cantarell as a variable font that is not supported by Steam, see [#45](https://github.com/tkashkin/Adwaita-for-Steam/issues/45). An option to install these is included in the install script.
+* [Cantarell fonts](https://gitlab.gnome.org/GNOME/cantarell-fonts): An option to install these is included in the install script, but fonts packaged by your distro are preferred.
 * The skin was created for the Linux version of Steam and wasn't tested on Windows or macOS. It will work with some visual problems.
 
 ## Previews
@@ -153,18 +154,6 @@ cd Adwaita-for-Steam
 Use the [graphical installer](https://github.com/Foldex/AdwSteamGtk) by [@Foldex](https://github.com/Foldex).
 
 <a href="https://flathub.org/apps/details/io.github.Foldex.AdwSteamGtk"><img width="200" alt="Download on Flathub" src="https://flathub.org/assets/badges/flathub-badge-i-en.svg"/></a>
-
-### Manual installation
-
-Note: Installation with this method is lacking in several features, one of the installers is preferred.
-
-1. Download the [latest skin version](https://github.com/tkashkin/Adwaita-for-Steam/archive/master.zip)
-2. Extract `Adwaita` directory into Steam `skins` directory (create if it doesn't exist):
-   * **Linux**: `~/.steam/steam/skins` or `~/.local/share/Steam/skins`
-   * **Linux (flatpak)**: `~/.var/app/com.valvesoftware.Steam/.local/share/Steam/skins`
-   * ~~Windows~~ (untested): `C:\Program Files (x86)\Steam\skins` by default
-   * ~~macOS~~ (untested): `~/Library/Application Support/Steam/Steam.AppBundle/Steam/Contents/MacOS/skins`
-3. Open Steam and select `Adwaita` skin in Settings > Interface (restart Steam if it doesn't appear in the list)
 
 ## Uninstallation
 
