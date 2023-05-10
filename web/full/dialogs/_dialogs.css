@@ -146,6 +146,12 @@
 {
 	flex-direction: row-reverse !important;
 	overflow: hidden !important;
+	width: 100% !important;
+}
+
+.GenericConfirmDialog .DialogFooter .DialogTwoColLayout._DialogColLayout
+{
+	gap: 0px !important;
 }
 
 .GenericConfirmDialog .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"])
