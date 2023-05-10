@@ -510,7 +510,7 @@
 	border-radius: var(--button_radius) !important;
 }
 
-body:not([class*="gamepadui_GamepadUIPopupWindowBody_"]) iframe[class*="appdetailsdlcsection_StoreHover_"]
+body.DesktopUI iframe[class*="appdetailsdlcsection_StoreHover_"]
 {
 	border-radius: var(--card_radius) !important;
 }
