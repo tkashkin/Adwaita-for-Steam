@@ -1,12 +1,23 @@
 /* --------------- */
 /* --- Top Bar --- */
 /* --------------- */
+/* --- Rounded Window Corners --- */
+body.DesktopUI
+{
+	border-radius: var(--window_radius) !important;
+}
+
+body.DesktopUI div[class*="steamdesktop_Wrapper_"]
+{
+	border: none !important;
+}
 
 /* --- Entire Top Bar --- */
 #SteamDesktop div[class*="steamdesktop_TopBar_"]
 {
 	background: var(--headerbar_bg) !important;
 	height: 44px !important;
+	box-shadow: none !important;
 }
 
 /* Title Bar */
@@ -216,7 +227,7 @@
 	color: var(--fg) !important;
 }
 
-body:not([class*="gamepadui_GamepadUIPopupWindowBody_"]) > div[class*="steamdesktop_URLBarCopied_"]
+body.DesktopUI > div[class*="steamdesktop_URLBarCopied_"]
 {
 	background: var(--toast_bg) !important;
 	border-radius: var(--toast_border_radius) !important;
