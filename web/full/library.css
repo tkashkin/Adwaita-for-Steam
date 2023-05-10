@@ -9,8 +9,8 @@
 /* Rounded Corners on Game Logos */
 #SteamDesktop div[class*="appportrait_LibraryItemBox_"],
 #SteamDesktop div[class*="libraryhomenewupdates_PartnerEventRowCapsule_MainImageContainer_"],
-body:not([class*="gamepadui_GamepadUIPopupWindowBody_"]) div[class*="appportraithover_AppPortraitHover_"],
-body:not([class*="gamepadui_GamepadUIPopupWindowBody_"]) div[class*="appportraithover_CapsuleBackgroundContainer_"]
+body.DesktopUI div[class*="appportraithover_AppPortraitHover_"],
+body.DesktopUI div[class*="appportraithover_CapsuleBackgroundContainer_"]
 {
 	border-radius: var(--card_radius) !important;
 }
