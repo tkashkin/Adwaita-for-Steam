@@ -197,6 +197,13 @@ body.DesktopUI.WindowFocus div[class*="steamdesktopoverlay_FocusIndicator_"] {
 	color: var(--dim_label_fg) !important;
 }
 
+.ModalDialogPopup .GameOverview div[class*="steamdesktopoverlay_RecentNewsItem_"],
+.ModalDialogPopup .GameOverview div[class*="steamdesktopoverlay_RecentNewsItem_"]:hover
+{
+	background: none !important;
+	color: var(--fg) !important;
+}
+
 .ModalDialogPopup .GameOverview div[class*="steamdesktopoverlay_Playtime_"]
 {
 	color: var(--fg) !important;
