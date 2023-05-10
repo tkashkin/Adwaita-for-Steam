@@ -1,7 +1,6 @@
 /* ------------------ */
 /* --- Bottom Bar --- */
 /* ------------------ */
-
 /* Entire Bottom Bar */
 #SteamDesktop div[class*="bottombar_BottomBarContainer_"]
 {
@@ -42,4 +41,45 @@
 	font-family: var(--basefont) !important;
 	font-size: var(--button_font_size) !important;
 	font-weight: var(--button_font_weight) !important;
+}
+
+/* Update Check */
+#SteamDesktop div[class*="bottombar_BottomBarContainer_"] div[style*="height:68px"],
+#SteamDesktop div[class*="updatealert_ActionAlert_"]
+{
+	height: 44px !important;
+	min-height: 44px !important;
+}
+
+#SteamDesktop div[class*="updatealert_Alert_"]
+{
+	background: var(--headerbar_bg) !important;
+}
+
+#SteamDesktop div[class*="updatealert_PrimaryMessage_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_3_size) !important;
+	font-weight: var(--title_3_weight) !important;
+}
+
+#SteamDesktop div[class*="updatealert_AlertButton_"]
+{
+	background: var(--button_bg) !important;
+	border-radius: var(--button_radius) !important;
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--button_font_size) !important;
+	font-weight: var(--button_font_weight) !important;
+	line-height: var(--button_min_height) !important;
+	min-height: var(--button_min_height) !important;
+	padding: var(--button_padding) !important;
+	transition: var(--focus_transition) !important;
+}
+
+#SteamDesktop div[class*="updatealert_AlertButton_"]:hover
+{
+	background: var(--button_hover_bg) !important;
+	border-radius: var(--button_radius) !important;
 }
