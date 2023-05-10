@@ -150,19 +150,22 @@
 	background: var(--window_bg) !important;
 }
 
-.FriendsFailureContainer .summaryText
+.FriendsFailureContainer .summaryText,
+.friendlist div[class*="friendslist_summaryText_"]
 {
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
 	font-weight: 700 !important;
 }
 
-.FriendsFailureContainer .detailText
+.FriendsFailureContainer .detailText,
+.friendlist div[class*="friendslist_detailText_"]
 {
 	font-family: var(--basefont) !important;
 }
 
-.FriendsFailureContainer .retryButton
+.FriendsFailureContainer .retryButton,
+.friendlist button[class*="friendslist_retryButton_"]
 {
 	background-blend-mode: var(--button_suggested_blend) !important;
 	background: var(--button_suggested_bg) !important;
