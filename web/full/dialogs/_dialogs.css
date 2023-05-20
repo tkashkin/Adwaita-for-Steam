@@ -212,11 +212,12 @@
 }
 
 /* Text Input */
-.ModalDialogPopup .DialogTextInputBase
+.DialogTextInputBase
 {
 	background: var(--entry_bg) !important;
 	border-radius: var(--entry_radius) !important;
 	border: none !important;
+	box-shadow: none !important;
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
 	font-size: var(--entry_font_size) !important;
@@ -226,12 +227,12 @@
 	transition: var(--focus_transition) !important;
 }
 
-.ModalDialogPopup .DialogTextInputBase:hover
+.DialogTextInputBase:hover
 {
 	background: var(--button_hover_bg) !important;
 }
 
-.ModalDialogPopup .DialogTextInputBase:focus
+.DialogTextInputBase:focus
 {
 	box-shadow: var(--focusring_bs) !important;
 }

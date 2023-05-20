@@ -104,6 +104,7 @@ LIBRARY_FULL_FILES = [
 	webthemedir / "full/dialogs/uninstall.css",
 	webthemedir / "full/dialogs/whats_new.css",
 	webthemedir / "full/dialogs/server_browser.css",
+	webthemedir / "full/dialogs/product_activation.css",
 ]
 
 # List Options
