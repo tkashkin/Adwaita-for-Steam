@@ -4,6 +4,11 @@
 
 /* --- Global --- */
 /* Window controls */
+.title-area
+{
+	min-height: 45px;
+}
+
 .title-bar-actions
 {
 	max-height: 36px !important;
