@@ -1,18 +1,18 @@
 /* ---------------------------------- */
 /* --- Show Forward/Back Buttons  --- */
 /* ---------------------------------- */
-#SteamDesktop div[class*="supernav_SuperNav_"] svg[class*="supernav_Arrow_"]
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] svg[class*="supernav_Arrow_"]
 {
 	display: block !important;
 }
 
-#SteamDesktop div[class*="supernav_SuperNav_"] div[class*="supernav_SuperNavMenu_"]:last-child,
-#SteamDesktop div[class*="supernav_SuperNav_"] svg[class*="supernav_Arrow_"]:nth-child(2)
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] div[class*="supernav_SuperNavMenu_"]:last-child,
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] svg[class*="supernav_Arrow_"]:nth-child(2)
 {
 	margin-right: auto !important;
 }
 
-#SteamDesktop div[class*="steamdesktop_RootMenuBar_"]
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="steamdesktop_RootMenuBar_"]
 {
 	margin-left: 75px !important;
 }

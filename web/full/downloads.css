@@ -1,39 +1,39 @@
 /* Fix Logo Border */
-#SteamDesktop div[class*="downloadgraph_HeroContainer"] img[class*="libraryassetimage_Visible_"]
+#SteamDesktop .downloads_DownloadsPage_1bq4x div[class*="downloadgraph_HeroContainer"] img[class*="libraryassetimage_Visible_"]
 {
 	background: none !important;
 }
 
 /* Top Right Settings Button */
-#SteamDesktop div[class*="downloadgraph_SettingsButton_"] button,
-#SteamDesktop div[class*="downloadgraph_SettingsButton_"] button:hover
+#SteamDesktop .downloads_DownloadsPage_1bq4x div[class*="downloadgraph_SettingsButton_"] button,
+#SteamDesktop .downloads_DownloadsPage_1bq4x div[class*="downloadgraph_SettingsButton_"] button:hover
 {
 	border-radius: var(--button_radius) !important;
 }
 
 /* Download Items */
-#SteamDesktop div[class*="downloads_SectionItem_"]
+#SteamDesktop .downloads_DownloadsPage_1bq4x div[class*="downloads_SectionItem_"]
 {
 	border-radius: var(--card_radius) !important;
 }
 
-#SteamDesktop div[class*="downloads_SectionItem_"]:hover
+#SteamDesktop .downloads_DownloadsPage_1bq4x div[class*="downloads_SectionItem_"]:hover
 {
 	border-radius: var(--card_radius) !important;
 }
 
 /* Active Download Item */
-#SteamDesktop div[class*="downloads_SectionItem_"][class*="downloads_Active_"]
+#SteamDesktop .downloads_DownloadsPage_1bq4x div[class*="downloads_SectionItem_"][class*="downloads_Active_"]
 {
 	margin: 10px 12px 0px 12px !important;
 	padding: 8px 0px 8px 12px !important;
 }
 
 /* Download Buttons */
-#SteamDesktop button[class*="downloads_Button_"],
-#SteamDesktop button[class*="downloads_Button_"]:hover,
-#SteamDesktop button[class*="downloads_RemoveAllButton_"],
-#SteamDesktop button[class*="downloads_RemoveAllButton_"]:hover
+#SteamDesktop .downloads_DownloadsPage_1bq4x button[class*="downloads_Button_"],
+#SteamDesktop .downloads_DownloadsPage_1bq4x button[class*="downloads_Button_"]:hover,
+#SteamDesktop .downloads_DownloadsPage_1bq4x button[class*="downloads_RemoveAllButton_"],
+#SteamDesktop .downloads_DownloadsPage_1bq4x button[class*="downloads_RemoveAllButton_"]:hover
 {
 	border-radius: var(--button_radius) !important;
 }

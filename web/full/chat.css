@@ -3,29 +3,29 @@
 /* ------------ */
 
 /* BG */
-.client_chat_frame body,
-.client_chat_frame .friendlist
+html.client_chat_frame body,
+html.client_chat_frame .friendlist
 {
 	background: var(--bg) !important;
 }
 
 /* Window Focus Indicator */
-.singleWindowFocusBar,
-.title-area-highlight
+html.client_chat_frame .singleWindowFocusBar,
+html.client_chat_frame .title-area-highlight
 {
 	display: none !important
 }
 
 /* - Left Panel - */
-.friendListHeaderContainer,
-.activeTab,
-.friendSearchInput[type=text],
-.friendlistListContainer,
-.FriendsListContent .friendlistListContainer .friendGroup.onlineFriends,
-.friendsListSectionTitle,
-.chatRoomListContainer,
-.friendListFooter,
-.client_chat_frame div[class*="friendslist_OfflineContainer_"]
+html.client_chat_frame .friendListHeaderContainer,
+html.client_chat_frame .activeTab,
+html.client_chat_frame .friendSearchInput[type=text],
+html.client_chat_frame .friendlistListContainer,
+html.client_chat_frame .FriendsListContent .friendlistListContainer .friendGroup.onlineFriends,
+html.client_chat_frame .friendsListSectionTitle,
+html.client_chat_frame .chatRoomListContainer,
+html.client_chat_frame .friendListFooter,
+html.client_chat_frame div[class*="friendslist_OfflineContainer_"]
 {
 	background: var(--view_bg) !important;
 	border: none !important;
@@ -33,85 +33,85 @@
 }
 
 /* Header Drag */
-.client_chat_frame .currentUserContainer [class*="personanameandstatus_statusAndName_"],
-.client_chat_frame .currentUserContainer [class*="personanameandstatus_gameName_"]
+html.client_chat_frame .currentUserContainer [class*="personanameandstatus_statusAndName_"],
+html.client_chat_frame .currentUserContainer [class*="personanameandstatus_gameName_"]
 {
 	-webkit-app-region: drag !important;
 }
 
 /* Avatar HeaderBar */
-.currentUserContainer
+html.client_chat_frame .currentUserContainer
 {
 	border-bottom: 1px solid var(--border) !important;
 	background: var(--headerbar_bg) !important;
 }
 
-.singlewindow:not(.focused) .currentUserContainer
+html.client_chat_frame .singlewindow:not(.focused) .currentUserContainer
 {
 	background: var(--headerbar_backdrop) !important;
 }
 
-.AvatarAndUser
+html.client_chat_frame .AvatarAndUser
 {
 	padding-top: 2px !important;
 	max-height: 38px !important;
 }
 
-.currentUserAvatar img.avatar
+html.client_chat_frame .currentUserAvatar img.avatar
 {
 	margin-top: 1px !important;
 }
 
-.currentUserAvatar .avatarHolder,
-.currentUserAvatar .avatarFrame img,
-.friends_loading_error .currentUserAvatar
+html.client_chat_frame .currentUserAvatar .avatarHolder,
+html.client_chat_frame .currentUserAvatar .avatarFrame img,
+html.client_chat_frame .friends_loading_error .currentUserAvatar
 {
 	border: none !important;
 	height: 44px !important;
 	width: 44px !important;
 }
 
-.currentUserAvatar img.avatar
+html.client_chat_frame .currentUserAvatar img.avatar
 {
 	border-radius: var(--button_radius) !important;
 }
 
-.currentUserContainer .labelHolder
+html.client_chat_frame .currentUserContainer .labelHolder
 {
 	margin-bottom: -4px !important;
 }
 
-.currentUserContainer .statusHeaderGlow
+html.client_chat_frame .currentUserContainer .statusHeaderGlow
 {
 	display: none !important;
 }
 
-.currentUserContainer .playerName,
-.currentUserContainer .gameName,
-.currentUserContainer [class*="personanameandstatus_playerName_"],
-.currentUserContainer [class*="personanameandstatus_gameName_"]
+html.client_chat_frame .currentUserContainer .playerName,
+html.client_chat_frame .currentUserContainer .gameName,
+html.client_chat_frame .currentUserContainer [class*="personanameandstatus_playerName_"],
+html.client_chat_frame .currentUserContainer [class*="personanameandstatus_gameName_"]
 {
 	text-shadow: none !important;
 	font-weight: var(--baseweight) !important;
 }
 
-.currentUserContainer.ingame [class*="personanameandstatus_playerName_"]
+html.client_chat_frame .currentUserContainer.ingame [class*="personanameandstatus_playerName_"]
 {
 	color: var(--success) !important;
 }
 
-.currentUserContainer.ingame [class*="personanameandstatus_gameName_"]
+html.client_chat_frame .currentUserContainer.ingame [class*="personanameandstatus_gameName_"]
 {
 	color: var(--success_bg) !important;
 }
 
-.friendListButton.friendSettingsButton
+html.client_chat_frame .friendListButton.friendSettingsButton
 {
 	margin-top: -16px !important;
 	margin-right: 2px !important;
 }
 
-.chat_main.fullheight.responsive_friends .friendListButton.friendSettingsButton
+html.client_chat_frame .chat_main.fullheight.responsive_friends .friendListButton.friendSettingsButton
 {
 	margin-right: 0px !important;
 	margin-top: 0px !important;
@@ -119,53 +119,53 @@
 	top: 40px !important;
 }
 
-.friendListButton.friendCollapseButton
+html.client_chat_frame .friendListButton.friendCollapseButton
 {
 	margin-right: 1px !important;
 	margin-top: -2px !important;
 }
 
-.friendListButton.friendSettingsButton .SVGIcon_Settings
+html.client_chat_frame .friendListButton.friendSettingsButton .SVGIcon_Settings
 {
 	height: 16px !important;
 	width: 16px !important;
 }
 
-.friendListButton.friendCollapseButton .SVGIcon_DoubleArrow
+html.client_chat_frame .friendListButton.friendCollapseButton .SVGIcon_DoubleArrow
 {
 	height: 14px !important;
 	width: 14px !important;
 }
 
-.currentUserContainer.online [class*="personanameandstatus_richPresenceLabel_"],
-.currentUserContainer.online [class*="personanameandstatus_playerName_"]
+html.client_chat_frame .currentUserContainer.online [class*="personanameandstatus_richPresenceLabel_"],
+html.client_chat_frame .currentUserContainer.online [class*="personanameandstatus_playerName_"]
 {
 	color: var(--accent) !important;
 }
 
 /* Signed Out */
-.friends_loading_error,
-.FriendsFailureContainer
+html.client_chat_frame .friends_loading_error,
+html.client_chat_frame .FriendsFailureContainer
 {
 	background: var(--window_bg) !important;
 }
 
-.FriendsFailureContainer .summaryText,
-.friendlist div[class*="friendslist_summaryText_"]
+html.client_chat_frame .FriendsFailureContainer .summaryText,
+html.client_chat_frame .friendlist div[class*="friendslist_summaryText_"]
 {
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
 	font-weight: 700 !important;
 }
 
-.FriendsFailureContainer .detailText,
-.friendlist div[class*="friendslist_detailText_"]
+html.client_chat_frame .FriendsFailureContainer .detailText,
+html.client_chat_frame .friendlist div[class*="friendslist_detailText_"]
 {
 	font-family: var(--basefont) !important;
 }
 
-.FriendsFailureContainer .retryButton,
-.friendlist button[class*="friendslist_retryButton_"]
+html.client_chat_frame .FriendsFailureContainer .retryButton,
+html.client_chat_frame .friendlist button[class*="friendslist_retryButton_"]
 {
 	background-blend-mode: var(--button_suggested_blend) !important;
 	background: var(--button_suggested_bg) !important;
@@ -177,48 +177,48 @@
 	transition: var(--focus_transition) !important;
 }
 
-.FriendsFailureContainer .retryButton:hover
+html.client_chat_frame .FriendsFailureContainer .retryButton:hover
 {
 	background-color: var(--button_suggested_hover_bg) !important;
 }
 
-.FriendsFailureContainer .retryButton:active
+html.client_chat_frame .FriendsFailureContainer .retryButton:active
 {
 	background-color: var(--button_suggested_click_bg) !important;
 }
 
-.friends_loading_error .currentUserContainer,
-.friends_loading_error .TitleBar.title-area
+html.client_chat_frame .friends_loading_error .currentUserContainer,
+html.client_chat_frame .friends_loading_error .TitleBar.title-area
 {
 	height: 48px !important;
 }
 
 /* Set Online Status Menu */
-.client_chat_frame [class*="contextmenu_contextMenu_"]
+html.client_chat_frame [class*="contextmenu_contextMenu_"]
 {
 	background: var(--popover_bg) !important;
 }
 
-.client_chat_frame [class*="contextmenu_contextMenuItem_"]:hover
+html.client_chat_frame [class*="contextmenu_contextMenuItem_"]:hover
 {
 	background: var(--button_hover_bg) !important;
 	border-radius: var(--button_radius) !important;
 }
 
-.client_chat_frame [class*="ntextmenu_contextMenuItem_"].menuChecked
+html.client_chat_frame [class*="ntextmenu_contextMenuItem_"].menuChecked
 {
 	color: var(--accent) !important;
 }
 
 /* Remove Box Shadow */
-[class*="insetshadow_FriendListInsetShadowBottom_"],
-[class*="insetshadow_FriendListInsetShadowTop_"]
+html.client_chat_frame [class*="insetshadow_FriendListInsetShadowBottom_"],
+html.client_chat_frame [class*="insetshadow_FriendListInsetShadowTop_"]
 {
 	background: none !important;
 }
 
 /* Panel Resizer */
-.singleWindowDivider
+html.client_chat_frame .singleWindowDivider
 {
 	background: var(--border) !important;
 	border: none !important;
@@ -227,56 +227,56 @@
 }
 
 /* Friend Hover BG */
-.friendStatusHover,
-.ChatRoomListGroupItem,
-.SteamPlayerGroupFooter
+html.client_chat_frame .friendStatusHover,
+html.client_chat_frame .ChatRoomListGroupItem,
+html.client_chat_frame .SteamPlayerGroupFooter
 {
 	margin: 0px var(--menu_margin) !important;
 }
 
-.friendStatusHover:hover,
-.ChatRoomListGroupItem:hover
+html.client_chat_frame .friendStatusHover:hover,
+html.client_chat_frame .ChatRoomListGroupItem:hover
 {
 	background: var(--button_bg) !important;
 	border-radius: var(--button_radius) !important;
 }
 
 /* Friend Status Text */
-.friend.online,
-.friend.online [class*="personanameandstatus_playerName_"],
-.friend.online [class*="personanameandstatus_richPresenceLabel_"]
+html.client_chat_frame .friend.online,
+html.client_chat_frame .friend.online [class*="personanameandstatus_playerName_"],
+html.client_chat_frame .friend.online [class*="personanameandstatus_richPresenceLabel_"]
 {
 	color: var(--accent) !important;
 }
 
-.friend.ingame [class*="personanameandstatus_playerName_"]
+html.client_chat_frame .friend.ingame [class*="personanameandstatus_playerName_"]
 {
 	color: var(--success) !important;
 }
 
-.friend.ingame [class*="personanameandstatus_richPresenceLabel_"],
-.SteamPlayerGroupFooter,
-.SteamPlayerGroupFooterLabel
+html.client_chat_frame .friend.ingame [class*="personanameandstatus_richPresenceLabel_"],
+html.client_chat_frame .SteamPlayerGroupFooter,
+html.client_chat_frame .SteamPlayerGroupFooterLabel
 {
 	color: var(--success_bg) !important;
 }
 
-.SteamPlayerGroupFooterLabel
+html.client_chat_frame .SteamPlayerGroupFooterLabel
 {
 	opacity: 0.5 !important;
 }
 
-.friend.offline [class*="personanameandstatus_playerName_"],
-.friend.offline [class*="personanameandstatus_richPresenceLabel_"]
+html.client_chat_frame .friend.offline [class*="personanameandstatus_playerName_"],
+html.client_chat_frame .friend.offline [class*="personanameandstatus_richPresenceLabel_"]
 {
 	color: var(--dim_label_fg) !important;
 }
 
 /* - Right Side - */
-.chatDialogs,
-.titleBarContainer.ChatTabs,
-.chatWindow,
-.chatWindow .chatEntry
+html.client_chat_frame .chatDialogs,
+html.client_chat_frame .titleBarContainer.ChatTabs,
+html.client_chat_frame .chatWindow,
+html.client_chat_frame .chatWindow .chatEntry
 {
 	background: var(--bg) !important;
 	border: none !important;
@@ -284,7 +284,7 @@
 }
 
 /* Text Entry */
-[class*="chatentry_chatEntryControls_"]
+html.client_chat_frame [class*="chatentry_chatEntryControls_"]
 {
 	background: var(--button_bg) !important;
 	border: 2px solid transparent;
@@ -292,46 +292,46 @@
 	box-shadow: none !important;
 }
 
-[class*="chatentry_chatEntryControls_"] textarea:focus
+html.client_chat_frame [class*="chatentry_chatEntryControls_"] textarea:focus
 {
 	box-shadow: var(--focusring_bs) !important;
 	border-radius: var(--button_radius) !important;
 }
 
 /* /command popup suggestions */
-.chatEntry [class*="suggestdialog_mentionDialog_"]
+html.client_chat_frame .chatEntry [class*="suggestdialog_mentionDialog_"]
 {
 	background: var(--popover_bg) !important;
 	border-radius: var(--menu_radius) !important;
 }
 
-.chatEntry [class*="suggestdialog_selected_"]
+html.client_chat_frame .chatEntry [class*="suggestdialog_selected_"]
 {
 	background: var(--button_bg) !important;
 	border-radius: var(--menu_radius) !important;
 }
 
 /* File Upload */
-.chatFileUploadPreviewContainer,
-.chatFileUploadProgressContainer
+html.client_chat_frame .chatFileUploadPreviewContainer,
+html.client_chat_frame .chatFileUploadProgressContainer
 {
 	background: var(--popover_bg) !important;
 	border-radius: var(--menu_radius) !important;
 }
 
-.chatFileUploadPreviewContainer img
+html.client_chat_frame .chatFileUploadPreviewContainer img
 {
 	border-radius: var(--card_radius) !important;
 }
 
-.chatFileUploadProgressBarContainer .DialogProgressBar_Value {
+html.client_chat_frame .chatFileUploadProgressBarContainer .DialogProgressBar_Value {
 	background: var(--accent_bg) !important;
 }
 
 /* Chat Buttons */
-button[class*="chatentry_chatSubmitButton_"],
-.chatEntry .VoiceToggle,
-.chatBody .inviteAnotherFriendButton
+html.client_chat_frame button[class*="chatentry_chatSubmitButton_"],
+html.client_chat_frame .chatEntry .VoiceToggle,
+html.client_chat_frame .chatBody .inviteAnotherFriendButton
 {
 	background: var(--button_bg) !important;
 	border-radius: var(--button_radius) !important;
@@ -339,18 +339,18 @@ button[class*="chatentry_chatSubmitButton_"],
 	box-shadow: none !important;
 }
 
-button[class*="chatentry_EmoticonPickerButton_"]
+html.client_chat_frame button[class*="chatentry_EmoticonPickerButton_"]
 {
 	margin-right: 3px !important;
 }
 
-.chatEntry .ChatMessageEntryVoice
+html.client_chat_frame .chatEntry .ChatMessageEntryVoice
 {
 	margin-left: -1px !important;
 }
 
-[class*="chatentry_chatEntryActionsGroup_"],
-.chatEntry .ChatMessageEntryVoice
+html.client_chat_frame [class*="chatentry_chatEntryActionsGroup_"],
+html.client_chat_frame .chatEntry .ChatMessageEntryVoice
 {
 	background: none !important;
 	box-shadow: none !important;
@@ -358,17 +358,17 @@ button[class*="chatentry_EmoticonPickerButton_"]
 	outline: none !important;
 }
 
-.chatBody .inviteAnotherFriendButton .SVGIcon_Button
+html.client_chat_frame .chatBody .inviteAnotherFriendButton .SVGIcon_Button
 {
 	fill: var(--button_active_bg) !important;
 }
 
-.ChatRoomGroupDialog_history .ScrollToBottomButton
+html.client_chat_frame .ChatRoomGroupDialog_history .ScrollToBottomButton
 {
 	color: var(--fg) !important;
 }
 
-.ChatRoomGroupDialog_history .ScrollToBottomButton span
+html.client_chat_frame .ChatRoomGroupDialog_history .ScrollToBottomButton span
 {
 	background: var(--toast_bg) !important;
 	border-radius: var(--toast_border_radius) !important;
@@ -380,21 +380,21 @@ button[class*="chatentry_EmoticonPickerButton_"]
 }
 
 /* Message Hover */
-[class*="messages_MsgWithAddons_"]:hover
+html.client_chat_frame [class*="messages_MsgWithAddons_"]:hover
 {
 	background: var(--button_bg) !important;
 	border-radius: var(--menu_radius) !important;
 }
 
 /* Message Addons */
-[class*="messages_Addons_"]
+html.client_chat_frame [class*="messages_Addons_"]
 {
 	background: var(--popover_bg) !important;
 	border: 1px solid var(--border) !important;
 }
 
 /* Message Links */
-.chatHistory .msg a
+html.client_chat_frame .chatHistory .msg a
 {
 	border-bottom: none !important;
 	color: var(--accent) !important;
@@ -402,29 +402,29 @@ button[class*="chatentry_EmoticonPickerButton_"]
 }
 
 /* Time Divider */
-.msg.timeDivision
+html.client_chat_frame .msg.timeDivision
 {
 	color: var(--dim_label_fg) !important;
 	opacity: 0.55 !important;
 }
 
-.msg.timeDivision .preHorizDivider,
-.msg.timeDivision .horizDivider
+html.client_chat_frame .msg.timeDivision .preHorizDivider,
+html.client_chat_frame .msg.timeDivision .horizDivider
 {
 	background-color: var(--dim_label_fg) !important;
 	opacity: 0.55 !important;
 }
 
 /* Message Images */
-.chatHistory .chatImageContainer img,
-.BBCodeImageWrapper
+html.client_chat_frame .chatHistory .chatImageContainer img,
+html.client_chat_frame .BBCodeImageWrapper
 {
 	border-radius: var(--card_radius) !important;
 }
 
 /* Image Popup */
-.client_chat_frame #popup_target [class*="bbcode_ImageModalBackground_"],
-.client_chat_frame.ModalDialogPopup body.ModalDialogBody
+html.client_chat_frame #popup_target [class*="bbcode_ImageModalBackground_"],
+html.client_chat_frame.ModalDialogPopup body.ModalDialogBody
 {
 	background: var(--popover_bg) !important;
 	border: none !important;
@@ -432,68 +432,68 @@ button[class*="chatentry_EmoticonPickerButton_"]
 }
 
 /* Message Sender */
-.chatHistory [class*="messages_SpeakerName_Online_"],
-.chatHistory .GamepadMode[class*="messages_SpeakerName_Online_"],
-.chatHistory .GamepadMode [class*="messages_SpeakerName_Online_"],
-.chatHistory .isCurrentUser [class*="messages_SpeakerName_Online_"],
-.chatHistory .isCurrentUser .GamepadMode[class*="messages_SpeakerName_Online_"],
-.chatHistory .GamepadMode .isCurrentUser [class*="messages_SpeakerName_Online_"]
+html.client_chat_frame .chatHistory [class*="messages_SpeakerName_Online_"],
+html.client_chat_frame .chatHistory .GamepadMode[class*="messages_SpeakerName_Online_"],
+html.client_chat_frame .chatHistory .GamepadMode [class*="messages_SpeakerName_Online_"],
+html.client_chat_frame .chatHistory .isCurrentUser [class*="messages_SpeakerName_Online_"],
+html.client_chat_frame .chatHistory .isCurrentUser .GamepadMode[class*="messages_SpeakerName_Online_"],
+html.client_chat_frame .chatHistory .GamepadMode .isCurrentUser [class*="messages_SpeakerName_Online_"]
 {
 	color: var(--accent) !important;
 }
 
-.chatHistory [class*="messages_SpeakerName_InGame_"]
-.chatHistory .GamepadMode[class*="messages_SpeakerName_InGame_"],
-.chatHistory .GamepadMode [class*="messages_SpeakerName_InGame_"],
-.chatHistory .isCurrentUser [class*="messages_SpeakerName_InGame_"],
-.chatHistory .isCurrentUser [class*="messages_SpeakerName_InGame_"].GamepadMode,
-.chatHistory .GamepadMode .isCurrentUser [class*="messages_SpeakerName_InGame_"]
+html.client_chat_frame .chatHistory [class*="messages_SpeakerName_InGame_"]
+html.client_chat_frame .chatHistory .GamepadMode[class*="messages_SpeakerName_InGame_"],
+html.client_chat_frame .chatHistory .GamepadMode [class*="messages_SpeakerName_InGame_"],
+html.client_chat_frame .chatHistory .isCurrentUser [class*="messages_SpeakerName_InGame_"],
+html.client_chat_frame .chatHistory .isCurrentUser [class*="messages_SpeakerName_InGame_"].GamepadMode,
+html.client_chat_frame .chatHistory .GamepadMode .isCurrentUser [class*="messages_SpeakerName_InGame_"]
 {
 	color: var(--success) !important;
 }
 
-.chatHistory [class*="messages_SpeakerName_Default_"],
-.chatHistory .GamepadMode[class*="messages_SpeakerName_Default_"],
-.chatHistory .GamepadMode [class*="messages_SpeakerName_Default_"]
-.chatHistory .isCurrentUser [class*="messages_SpeakerName_Default_"]
-.chatHistory .isCurrentUser .GamepadMode[class*="messages_SpeakerName_Default_"],
-.chatHistory .GamepadMode .isCurrentUser [class*="messages_SpeakerName_Default_"]
+html.client_chat_frame .chatHistory [class*="messages_SpeakerName_Default_"],
+html.client_chat_frame .chatHistory .GamepadMode[class*="messages_SpeakerName_Default_"],
+html.client_chat_frame .chatHistory .GamepadMode [class*="messages_SpeakerName_Default_"]
+html.client_chat_frame .chatHistory .isCurrentUser [class*="messages_SpeakerName_Default_"]
+html.client_chat_frame .chatHistory .isCurrentUser .GamepadMode[class*="messages_SpeakerName_Default_"],
+html.client_chat_frame .chatHistory .GamepadMode .isCurrentUser [class*="messages_SpeakerName_Default_"]
 {
 	color: var(--dim_label_fg) !important;
 }
 
 /* Message Timestamp */
-.chatHistory .speakerTimeStamp
+html.client_chat_frame .chatHistory .speakerTimeStamp
 {
 	color: var(--dim_label_fg) !important;
 	opacity: 0.55 !important;
 }
 
 /* Message Text */
-.msgText,
-.isCurrentUser .msgText
+html.client_chat_frame .msgText,
+html.client_chat_frame .isCurrentUser .msgText
 {
 	color: var(--fg) !important;
 }
 
-.msgText > span,
-.isCurrentUser .msgText > span
+html.client_chat_frame .msgText > span,
+html.client_chat_frame .isCurrentUser .msgText > span
 {
 	opacity: 0.8 !important;
 }
 
 /* Message Invite */
-.msgText .ChatMessageInvite,
-.msgText .ChatMessageInvite.InviteExpired,
-.msgText .ChatMessageInvite.GroupAlreadyJoined,
-.msgText .ChatMessageInvite.Inviter
+html.client_chat_frame .msgText .ChatMessageInvite,
+html.client_chat_frame .msgText .ChatMessageInvite.InviteExpired,
+html.client_chat_frame .msgText .ChatMessageInvite.GroupAlreadyJoined,
+html.client_chat_frame .msgText .ChatMessageInvite.Inviter
 {
 	background: var(--card_bg) !important;
 	border-radius: var(--card_radius) !important;
 	box-shadow: none !important;
 }
 
-.msgText .ChatMessageInvite button.DialogButton.GreenPlay
+html.client_chat_frame .msgText .ChatMessageInvite button.DialogButton.GreenPlay
 {
 	background-blend-mode: var(--button_suggested_blend) !important;
 	background: var(--button_success_bg) !important;
@@ -502,145 +502,153 @@ button[class*="chatentry_EmoticonPickerButton_"]
 	transition: var(--focus_transition) !important;
 }
 
-.msgText .ChatMessageInvite button.DialogButton.GreenPlay:hover
+html.client_chat_frame .msgText .ChatMessageInvite button.DialogButton.GreenPlay:hover
 {
 	background-color: var(--button_suggested_hover_bg) !important;
 	box-shadow: none !important;
 }
 
-.msgText .ChatMessageInvite button.DialogButton.GreenPlay:active
+html.client_chat_frame .msgText .ChatMessageInvite button.DialogButton.GreenPlay:active
 {
 	background-color: var(--button_suggested_click_bg) !important;
 }
 
-.msgText .ChatMessageInvite .leftInviteContainer .productImage
+html.client_chat_frame .msgText .ChatMessageInvite .leftInviteContainer .productImage
 {
 	border-radius: var(--card_radius) !important;
 	box-shadow: none !important;
 }
 
-.msgText .ChatMessageInvite .leftInviteContainer .productImageBlur
+html.client_chat_frame .msgText .ChatMessageInvite .leftInviteContainer .productImageBlur
 {
 	display: none !important;
 }
 
 /* Message Steam Store Link */
-.msgText > [class*="bbcode_ChatMessageSteamStore_"]
+html.client_chat_frame .msgText > [class*="bbcode_ChatMessageSteamStore_"]
 {
 	background: var(--card_bg) !important;
 	border-radius: var(--card_radius) !important;
 }
 
-.msgText [class*="bbcode_ChatMessageSteamStore_Header_"]
+html.client_chat_frame .msgText [class*="bbcode_ChatMessageSteamStore_Header_"]
 {
 	background: none !important;
 }
 
-.msgText [class*="bbcode_ChatMessageSteamStore_HeaderImage_"]
+html.client_chat_frame .msgText [class*="bbcode_ChatMessageSteamStore_HeaderImage_"]
 {
 	border-radius: var(--card_radius) !important;
 }
 
-.msgText [class*="bbcode_Blurred_"]
+html.client_chat_frame .msgText [class*="bbcode_Blurred_"]
 {
 	display: none !important;
 }
 
 /* Message Link Preview */
-.msgText div.ChatMessageOpenGraph, .msg div.SteamPublishedFile
+html.client_chat_frame .msgText div.ChatMessageOpenGraph, .msg div.SteamPublishedFile
 {
 	background: var(--card_bg) !important;
 	border-radius: var(--card_radius) !important;
 }
 
-.msgText .OpenGraphImgBackground
+html.client_chat_frame .msgText .OpenGraphImgBackground
 {
 	display: none !important;
 }
 
-.msgText .OpenGraphMessageURL,
-.msgText .OpenGraphMessageURL_full
+html.client_chat_frame .msgText .OpenGraphMessageURL,
+html.client_chat_frame .msgText .OpenGraphMessageURL_full
 {
 	color: var(--accent) !important;
 }
 
-.msgText div.ChatMessageOpenGraph_Description
+html.client_chat_frame .msgText div.ChatMessageOpenGraph_Description
 {
 	color: var(--fg) !important;
 	text-shadow: none !important;
 }
 
 /* Message /me emote */
-.msg.ChatMsgSlashEmote .speaker
+html.client_chat_frame .msg.ChatMsgSlashEmote .speaker
 {
 	background: none !important;
 }
 
-.msg.ChatMsgSlashEmote .msgText
+html.client_chat_frame .msg.ChatMsgSlashEmote .msgText
 {
 	font-weight: bold !important;
 }
 
+/* Typing Notification */
+html.client_chat_frame .FriendChatTypingNotification
+{
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 12px, rgba(0, 0, 0, 0) 80%);
+	font-weight: var(--baseweight);
+	color: var(--dim_label_fg) !important;
+}
+
 /* Chat Tabs Headerbar */
-.ChatTabs .title-area
+html.client_chat_frame .ChatTabs .title-area
 {
 	background: var(--headerbar_bg) !important;
 	border-bottom: 1px solid var(--border) !important;
 	min-height: 48px !important;
 }
 
-.singlewindow:not(.focused) .ChatTabs .title-area
+html.client_chat_frame .singlewindow:not(.focused) .ChatTabs .title-area
 {
 	background: var(--headerbar_backdrop) !important;
 }
 
 /* Chat Tabs Bottom Separator */
-.chatWindow .chatHeader
+html.client_chat_frame .chatWindow .chatHeader
 {
 	background: none !important;
 	min-height: 1px !important;
 }
 
 /* Center Tabs */
-.ChatTabs
+html.client_chat_frame .ChatTabs
 {
 	display: flex !important;
 	justify-content: center !important;
 }
 
 /* Tabs Margin */
-.chatTabSetContainer [class*="chattabs_ChatTab_"]
+html.client_chat_frame .chatTabSetContainer [class*="chattabs_ChatTab_"]
 {
 	margin-right: 4px !important;
 }
 
 /* Active Chat Tab */
-[class*="chattabs_Active_"]
+html.client_chat_frame [class*="chattabs_Active_"]
 {
 	background: var(--button_bg) !important;
 	border-radius: var(--button_radius) !important;
 }
 
 /* Tab Hover */
-[class*="chattabs_ChatTab_"]:hover
+html.client_chat_frame [class*="chattabs_ChatTab_"]:hover
 {
 	background: var(--button_hover_bg) !important;
 	border-radius: var(--button_radius) !important;
 }
 
-[class*="chattabs_Active_"]:hover
+html.client_chat_frame [class*="chattabs_Active_"]:hover
 {
 	background: var(--button_active_bg) !important;
 	border-radius: var(--button_radius) !important;
 }
 
-[class*="miniprofile_miniProfile_"]
+html.client_chat_frame [class*="miniprofile_miniProfile_"]
 {
 	border-radius: var(--card_radius) !important;
 }
 
 /* Chat Tab Unread */
-.ChatTabs [class*="chattabs_UnreadGlow_"]
+html.client_chat_frame .ChatTabs [class*="chattabs_UnreadGlow_"]
 {
 	background: var(--button_bg) !important;
 	width: 100% !important;
@@ -648,31 +656,31 @@ button[class*="chatentry_EmoticonPickerButton_"]
 	border-radius: var(--button_radius) !important
 }
 
-.ChatTabs [class*="chattabs_UnreadCircle_"]
+html.client_chat_frame .ChatTabs [class*="chattabs_UnreadCircle_"]
 {
 	background: var(--accent_bg) !important;
 }
 
 /* Hide Close Button unless Hover */
-[class*="chattabs_ChatTab_"]:not(:hover) [class*="chattabs_CloseButton_"]
+html.client_chat_frame [class*="chattabs_ChatTab_"]:not(:hover) [class*="chattabs_CloseButton_"]
 {
 	display: none !important;
 }
 
-[class*="chattabs_CloseButton_"] .SVGIcon_X_Line line
+html.client_chat_frame [class*="chattabs_CloseButton_"] .SVGIcon_X_Line line
 {
 	stroke: var(--fg) !important;
 }
 
 /* Hide Tab Separator */
-[class*="chattabs_ChatTab_"]::before,
-[class*="chattabs_ChatTab_"]::after
+html.client_chat_frame [class*="chattabs_ChatTab_"]::before,
+html.client_chat_frame [class*="chattabs_ChatTab_"]::after
 {
 	background: none !important;
 }
 
 /* Chat Tabs Selector */
-.client_chat_frame .chatTabSelector
+html.client_chat_frame .chatTabSelector
 {
 	background: none !important;
 	box-shadow: none !important;
@@ -680,14 +688,14 @@ button[class*="chatentry_EmoticonPickerButton_"]
 	margin-top: -6px;
 }
 
-.client_chat_frame .chatTabSelector:hover,
-.client_chat_frame .chatTabSelector:active
+html.client_chat_frame .chatTabSelector:hover,
+html.client_chat_frame .chatTabSelector:active
 {
 	background: none !important;
 }
 
 /* Open Friends List Button */
-.ChatTabs .chatTabOpenFriendsList
+html.client_chat_frame .ChatTabs .chatTabOpenFriendsList
 {
 	background: var(--button_bg) !important;
 	border-radius: var(--button_radius) !important;
@@ -695,7 +703,7 @@ button[class*="chatentry_EmoticonPickerButton_"]
 	height: 36px !important;
 }
 
-.ChatTabs .chatTabOpenFriendsList:hover
+html.client_chat_frame .ChatTabs .chatTabOpenFriendsList:hover
 {
 	background: var(--button_active_bg) !important;
 	border-radius: var(--button_radius) !important;

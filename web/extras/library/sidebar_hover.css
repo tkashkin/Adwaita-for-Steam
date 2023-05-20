@@ -1,7 +1,7 @@
 /* -------------------------------------- */
 /* --- Show Library Sidebar on Hover  --- */
 /* -------------------------------------- */
-[class*="library_LeftListSizableContainer_"]:not(:hover)
+#SteamDesktop .library_Container_3xRRJ > div[class*="library_LeftListSizableContainer_"]:not(:hover)
 {
 	min-width: 6px !important;
 	opacity: 0 !important;
@@ -9,12 +9,12 @@
 	width: 6px !important;
 }
 
-[class*="library_LeftListSizableContainer_"]:hover
+#SteamDesktop .library_Container_3xRRJ > div[class*="library_LeftListSizableContainer_"]:hover
 {
 	opacity: 1 !important;
 }
 
-[class*="library_Container_"]
+#SteamDesktop .library_Container_3xRRJ
 {
 	background: var(--bg) !important;
 }

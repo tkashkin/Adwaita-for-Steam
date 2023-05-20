@@ -2,21 +2,21 @@
 /* --- Bottom Bar --- */
 /* ------------------ */
 /* Entire Bottom Bar */
-#SteamDesktop div[class*="bottombar_BottomBarContainer_"]
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5
 {
 	background: var(--headerbar_bg) !important;
 }
 
-#SteamDesktop div[class*="bottombar_BottomBar_"]
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="bottombar_BottomBar_"]
 {
 	background: var(--headerbar_bg) !important;
 	flex: 0 0 44px !important;
 }
 
 /* Buttons */
-#SteamDesktop div[class*="bottombar_AddGameButton"],
-#SteamDesktop div[class*="bottombar_FriendsButton"],
-#SteamDesktop div[class*="bottombar_DownloadStatusContent_"]
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="bottombar_AddGameButton"],
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="bottombar_FriendsButton"],
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="bottombar_DownloadStatusContent_"]
 {
 	border-radius: var(--button_radius) !important;
 	line-height: var(--button_min_height) !important;
@@ -25,17 +25,17 @@
 	transition: var(--focus_transition) !important;
 }
 
-#SteamDesktop div[class*="bottombar_AddGameButton"]:hover,
-#SteamDesktop div[class*="bottombar_FriendsButton"]:hover,
-#SteamDesktop div[class*="bottombar_DownloadStatusContent_"]:hover
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="bottombar_AddGameButton"]:hover,
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="bottombar_FriendsButton"]:hover,
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="bottombar_DownloadStatusContent_"]:hover
 {
 	background: var(--button_hover_bg) !important;
 	border-radius: var(--button_radius) !important;
 }
 
-#SteamDesktop div[class*="bottombar_AddGameButton"] div,
-#SteamDesktop div[class*="bottombar_FriendsButton"] div,
-#SteamDesktop div[class*="bottombar_DownloadStatusContent_"] div
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="bottombar_AddGameButton"] div,
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="bottombar_FriendsButton"] div,
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="bottombar_DownloadStatusContent_"] div
 {
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
@@ -44,19 +44,19 @@
 }
 
 /* Update Check */
-#SteamDesktop div[class*="bottombar_BottomBarContainer_"] div[style*="height:68px"],
-#SteamDesktop div[class*="updatealert_ActionAlert_"]
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[style*="height:68px"],
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="updatealert_ActionAlert_"]
 {
 	height: 44px !important;
 	min-height: 44px !important;
 }
 
-#SteamDesktop div[class*="updatealert_Alert_"]
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="updatealert_Alert_"]
 {
 	background: var(--headerbar_bg) !important;
 }
 
-#SteamDesktop div[class*="updatealert_PrimaryMessage_"]
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="updatealert_PrimaryMessage_"]
 {
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
@@ -64,7 +64,7 @@
 	font-weight: var(--title_3_weight) !important;
 }
 
-#SteamDesktop div[class*="updatealert_AlertButton_"]
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="updatealert_AlertButton_"]
 {
 	background: var(--button_bg) !important;
 	border-radius: var(--button_radius) !important;
@@ -78,7 +78,7 @@
 	transition: var(--focus_transition) !important;
 }
 
-#SteamDesktop div[class*="updatealert_AlertButton_"]:hover
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="updatealert_AlertButton_"]:hover
 {
 	background: var(--button_hover_bg) !important;
 	border-radius: var(--button_radius) !important;

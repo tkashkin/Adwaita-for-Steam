@@ -43,7 +43,7 @@
 	stroke-width: 32px !important;
 }
 
-#SteamDesktop div[class*="steamdesktop_WindowControls_"]
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="steamdesktop_WindowControls_"]
 {
 	flex-basis: 50px !important;
 }

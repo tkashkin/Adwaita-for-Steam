@@ -1,24 +1,24 @@
 /* --- Game Details View --- */
 /* Background */
-#SteamDesktop div[class*="appdetails_Glassy_"]
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetails_Glassy_"]
 {
 	background: var(--bg) !important;
 }
 
 /*  Disable Blurred Background */
-#SteamDesktop img[class*="sharedappdetailsheader_ImgBlurBackdrop_"]
+#SteamDesktop .appdetails_Container_2iE-7 img[class*="sharedappdetailsheader_ImgBlurBackdrop_"]
 {
 	display: none !important;
 }
 
 /* `Scroll to Top` Button */
-#SteamDesktop div[class*="smartscrollcontainer_ScrollToTopButton_"]
+#SteamDesktop .steamdesktop_ContentFrame_1rDh5 div[class*="smartscrollcontainer_ScrollToTopButton_"]
 {
 	color: var(--toast_fg) !important;
 	height: 50px !important;
 }
 
-#SteamDesktop div[class*="smartscrollcontainer_ScrollToTopButton_"] > div
+#SteamDesktop .steamdesktop_ContentFrame_1rDh5 div[class*="smartscrollcontainer_ScrollToTopButton_"] > div
 {
 	background: var(--toast_bg) !important;
 	border-radius: var(--toast_border_radius) !important;
@@ -30,19 +30,19 @@
 }
 
 /* Play Button Color */
-#SteamDesktop div[class*="appactionbutton_ButtonChild"]
+#SteamDesktop .library_AppDetailsMain_2Nq6o div[class*="appactionbutton_ButtonChild"]
 {
 	background: var(--accent_bg) !important;
 }
 
-#SteamDesktop div[class*="appactionbutton_Green"] > div[class*="appactionbutton_ButtonChild"]
+#SteamDesktop .library_AppDetailsMain_2Nq6o div[class*="appactionbutton_Green"] > div[class*="appactionbutton_ButtonChild"]
 {
 	background: var(--success_bg) !important;
 }
 
 /* Progress Bar Color */
-#SteamDesktop div[class*="appdetailsplaysection_DetailsProgressBar_"],
-#SteamDesktop div[class*="appdetailsachievementssection_AchievementProgress_"]
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsplaysection_DetailsProgressBar_"],
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsachievementssection_AchievementProgress_"]
 {
 	background: var(--accent_bg) !important;
 }

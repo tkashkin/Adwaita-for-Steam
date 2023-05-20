@@ -1,18 +1,18 @@
 /* --- Downloads View --- */
 /* BG */
-#SteamDesktop div[class*="downloads_DownloadsPage_"]
+#SteamDesktop .downloads_DownloadsPage_1bq4x
 {
 	background: var(--bg) !important;
 }
 
 /* - Header - */
-#SteamDesktop div[class*="downloadgraph_GraphAndStats_"]
+#SteamDesktop .downloads_DownloadsPage_1bq4x div[class*="downloadgraph_GraphAndStats_"]
 {
 	background: var(--view_bg) !important;
 	border-bottom: 1px solid var(--border) !important;
 }
 
-#SteamDesktop div[class*="downloadgraph_StatsPanel_"] div[class*="downloadgraph_Figure_"]
+#SteamDesktop .downloads_DownloadsPage_1bq4x div[class*="downloadgraph_StatsPanel_"] div[class*="downloadgraph_Figure_"]
 {
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
@@ -20,8 +20,8 @@
 	font-weight: var(--title_4_weight) !important;
 }
 
-#SteamDesktop div[class*="downloadgraph_StatsPanel_"] div[class*="downloadgraph_Label_"],
-#SteamDesktop div[class*="downloadgraph_DownloadGraphLegend_"] div[class*="downloadgraph_LegendText_"]
+#SteamDesktop .downloads_DownloadsPage_1bq4x div[class*="downloadgraph_StatsPanel_"] div[class*="downloadgraph_Label_"],
+#SteamDesktop .downloads_DownloadsPage_1bq4x div[class*="downloadgraph_DownloadGraphLegend_"] div[class*="downloadgraph_LegendText_"]
 {
 	color: var(--dim_label_fg) !important;
 	font-family: var(--basefont) !important;
@@ -30,53 +30,53 @@
 }
 
 /* Remove Gradient when Downloads are Empty */
-#SteamDesktop div[class*="downloadgraph_HeroAndLogo_"],
-#SteamDesktop div[class*="downloadgraph_HeroAndLogo_"] img[class*="libraryassetimage_Visible_"]
+#SteamDesktop .downloads_DownloadsPage_1bq4x div[class*="downloadgraph_HeroAndLogo_"],
+#SteamDesktop .downloads_DownloadsPage_1bq4x div[class*="downloadgraph_HeroAndLogo_"] img[class*="libraryassetimage_Visible_"]
 {
 	background: none !important;
 }
 
 /* Blue Separator Line */
-#SteamDesktop div[class*="downloads_TopBar_"]
+#SteamDesktop .downloads_DownloadsPage_1bq4x div[class*="downloads_TopBar_"]
 {
 	background: none !important;
 }
 
 /* Top Right Settings Button */
-#SteamDesktop div[class*="downloadgraph_SettingsButton_"] button
+#SteamDesktop .downloads_DownloadsPage_1bq4x div[class*="downloadgraph_SettingsButton_"] button
 {
 	background: var(--button_bg) !important;
 }
 
-#SteamDesktop div[class*="downloadgraph_SettingsButton_"] button:hover
+#SteamDesktop .downloads_DownloadsPage_1bq4x div[class*="downloadgraph_SettingsButton_"] button:hover
 {
 	background: var(--button_hover_bg) !important;
 }
 
-#SteamDesktop div[class*="downloadgraph_SettingsButton_"] button.DialogButton:enabled
+#SteamDesktop .downloads_DownloadsPage_1bq4x div[class*="downloadgraph_SettingsButton_"] button.DialogButton:enabled
 {
 	color: var(--button_fg) !important;
 }
 
 /* Graph Colors */
-#SteamDesktop div[class*="downloadgraph_DownloadGraph_"] rect[class*="downloadgraph_GraphBarDownload_"],
-#SteamDesktop div[class*="downloadgraph_DownloadGraphLegend_"] div[class*="downloadgraph_Network_"] svg
+#SteamDesktop .downloads_DownloadsPage_1bq4x div[class*="downloadgraph_DownloadGraph_"] rect[class*="downloadgraph_GraphBarDownload_"],
+#SteamDesktop .downloads_DownloadsPage_1bq4x div[class*="downloadgraph_DownloadGraphLegend_"] div[class*="downloadgraph_Network_"] svg
 {
 	color: var(--accent_bg) !important;
 }
 
-#SteamDesktop div[class*="downloadgraph_DownloadGraph_"] path[class*="downloadgraph_GraphLine_"]
+#SteamDesktop .downloads_DownloadsPage_1bq4x div[class*="downloadgraph_DownloadGraph_"] path[class*="downloadgraph_GraphLine_"]
 {
 	stroke: var(--success_bg) !important;
 }
 
-#SteamDesktop div[class*="downloadgraph_DownloadGraphLegend_"] div[class*="downloadgraph_Disk_"]
+#SteamDesktop .downloads_DownloadsPage_1bq4x div[class*="downloadgraph_DownloadGraphLegend_"] div[class*="downloadgraph_Disk_"]
 {
 	background: var(--success_bg) !important;
 }
 
 /* - Downloads - */
-#SteamDesktop span[class*="downloads_Title_"]
+#SteamDesktop .downloads_DownloadsPage_1bq4x span[class*="downloads_Title_"]
 {
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
@@ -84,7 +84,7 @@
 	font-weight: var(--title_3_weight) !important;
 }
 
-#SteamDesktop div[class*="downloads_EmptyTransfers_"] div[class*="downloads_Text_"]
+#SteamDesktop .downloads_DownloadsPage_1bq4x div[class*="downloads_EmptyTransfers_"] div[class*="downloads_Text_"]
 {
 	color: var(--dim_label_fg) !important;
 	font-family: var(--basefont) !important;
@@ -92,7 +92,7 @@
 	font-weight: var(--title_4_weight) !important;
 }
 
-#SteamDesktop div[class*="downloads_SectionTitle_"] span[class*="downloads_Count_"]
+#SteamDesktop .downloads_DownloadsPage_1bq4x div[class*="downloads_SectionTitle_"] span[class*="downloads_Count_"]
 {
 	color: var(--dim_label_fg) !important;
 	font-family: var(--basefont) !important;
@@ -100,13 +100,13 @@
 	font-weight: var(--title_3_weight) !important;
 }
 
-#SteamDesktop div[class*="downloads_SectionTitle_"] div[class*="downloads_Rule_"]
+#SteamDesktop .downloads_DownloadsPage_1bq4x div[class*="downloads_SectionTitle_"] div[class*="downloads_Rule_"]
 {
 	background-color: var(--dim_label_fg) !important;
 	opacity: 0.55 !important;
 }
 
-#SteamDesktop div[class*="downloads_AutoUpdateHours_"]
+#SteamDesktop .downloads_DownloadsPage_1bq4x div[class*="downloads_AutoUpdateHours_"]
 {
 	color: var(--dim_label_fg) !important;
 	font-family: var(--basefont) !important;
@@ -115,17 +115,17 @@
 }
 
 /* Download Items */
-#SteamDesktop div[class*="downloads_SectionItem_"]
+#SteamDesktop .downloads_DownloadsPage_1bq4x div[class*="downloads_SectionItem_"]
 {
 	background: var(--card_bg) !important;
 }
 
-#SteamDesktop div[class*="downloads_SectionItem_"]:hover
+#SteamDesktop .downloads_DownloadsPage_1bq4x div[class*="downloads_SectionItem_"]:hover
 {
 	background: var(--button_hover_bg) !important;
 }
 
-#SteamDesktop div[class*="downloads_SectionItem_"] span[class*="downloads_Name_"]
+#SteamDesktop .downloads_DownloadsPage_1bq4x div[class*="downloads_SectionItem_"] span[class*="downloads_Name_"]
 {
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
@@ -133,7 +133,7 @@
 	font-weight: var(--title_3_weight) !important;
 }
 
-#SteamDesktop div[class*="downloads_ProgressDetails_"] span[class*="downloads_Value_"]
+#SteamDesktop .downloads_DownloadsPage_1bq4x div[class*="downloads_ProgressDetails_"] span[class*="downloads_Value_"]
 {
 	color: var(--dim_label_fg) !important;
 	font-family: var(--basefont) !important;
@@ -141,7 +141,7 @@
 	font-weight: var(--title_4_weight) !important;
 }
 
-#SteamDesktop div[class*="downloads_ProgressDetails_"] span[class*="downloads_Value_"][class*="downloads_InProgress_"]
+#SteamDesktop .downloads_DownloadsPage_1bq4x div[class*="downloads_ProgressDetails_"] span[class*="downloads_Value_"][class*="downloads_InProgress_"]
 {
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
@@ -149,22 +149,22 @@
 	font-weight: var(--title_4_weight) !important;
 }
 
-#SteamDesktop div[class*="downloads_ContentTypes_"]
+#SteamDesktop .downloads_DownloadsPage_1bq4x div[class*="downloads_ContentTypes_"]
 {
 	color: var(--fg) !important;
 }
 
-#SteamDesktop div[class*="downloads_Active_"] div[class*="downloads_SectionList_"]
+#SteamDesktop .downloads_DownloadsPage_1bq4x div[class*="downloads_Active_"] div[class*="downloads_SectionList_"]
 {
 	border: none !important;
 }
 
-#SteamDesktop div[class*="downloads_SectionList_"] div[class*="downloads_SectionItemWrapper_"]
+#SteamDesktop .downloads_DownloadsPage_1bq4x div[class*="downloads_SectionList_"] div[class*="downloads_SectionItemWrapper_"]
 {
 	padding: var(--menu_margin) 0px !important;
 }
 
-#SteamDesktop div[classs*="downloads_SectionItemStatus_"]
+#SteamDesktop .downloads_DownloadsPage_1bq4x div[classs*="downloads_SectionItemStatus_"]
 {
 	color: var(--dim_label_fg) !important;
 	font-family: var(--basefont) !important;
@@ -172,7 +172,7 @@
 	font-weight: var(--title_3_weight) !important;
 }
 
-#SteamDesktop div[class*="downloads_SectionItemStatus_"] span[class*="downloads_InProgress_"]
+#SteamDesktop .downloads_DownloadsPage_1bq4x div[class*="downloads_SectionItemStatus_"] span[class*="downloads_InProgress_"]
 {
 	color: var(--dim_label_fg) !important;
 	font-family: var(--basefont) !important;
@@ -180,7 +180,7 @@
 	font-weight: var(--title_4_weight) !important;
 }
 
-#SteamDesktop div[class*="downloads_SectionItemStatus_"] span[class*="downloads_Progress_"]
+#SteamDesktop .downloads_DownloadsPage_1bq4x div[class*="downloads_SectionItemStatus_"] span[class*="downloads_Progress_"]
 {
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
@@ -188,13 +188,13 @@
 	font-weight: var(--title_4_weight) !important;
 }
 
-#SteamDesktop div[class*="downloads_SectionItemStatus_"] div[class*="downloads_ProgressBar_"]
+#SteamDesktop .downloads_DownloadsPage_1bq4x div[class*="downloads_SectionItemStatus_"] div[class*="downloads_ProgressBar_"]
 {
 	background: var(--button_bg) !important;
 }
 
 /* Buttons */
-#SteamDesktop button[class*="downloads_Button_"]
+#SteamDesktop .downloads_DownloadsPage_1bq4x button[class*="downloads_Button_"]
 {
 	background: none !important;
 	color: var(--button_fg) !important;
@@ -203,7 +203,7 @@
 	font-weight: var(--button_font_weight) !important;
 }
 
-#SteamDesktop button[class*="downloads_RemoveAllButton_"]
+#SteamDesktop .downloads_DownloadsPage_1bq4x button[class*="downloads_RemoveAllButton_"]
 {
 	background: var(--button_bg) !important;
 	font-family: var(--basefont) !important;
@@ -211,13 +211,13 @@
 	font-weight: var(--button_font_weight) !important;
 }
 
-#SteamDesktop button[class*="downloads_RemoveAllButton_"].DialogButton:enabled
+#SteamDesktop .downloads_DownloadsPage_1bq4x button[class*="downloads_RemoveAllButton_"].DialogButton:enabled
 {
 	color: var(--button_fg) !important;
 }
 
-#SteamDesktop button[class*="downloads_Button_"]:hover,
-#SteamDesktop button[class*="downloads_RemoveAllButton_"]:hover
+#SteamDesktop .downloads_DownloadsPage_1bq4x button[class*="downloads_Button_"]:hover,
+#SteamDesktop .downloads_DownloadsPage_1bq4x button[class*="downloads_RemoveAllButton_"]:hover
 {
 	background: var(--button_hover_bg) !important;
 	border: none !important;

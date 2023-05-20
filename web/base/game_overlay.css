@@ -2,7 +2,7 @@
 /* --- In-Game Overlay --- */
 /* ----------------------- */
 /* --- Top Section --- */
-body.DesktopUI [class*="steamdesktopoverlay_CurrentTime_"]
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl [class*="steamdesktopoverlay_CurrentTime_"]
 {
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
@@ -10,7 +10,7 @@ body.DesktopUI [class*="steamdesktopoverlay_CurrentTime_"]
 	font-weight: var(--title_1_weight) !important;
 }
 
-body.DesktopUI [class*="steamdesktopoverlay_GameName_"]
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl [class*="steamdesktopoverlay_GameName_"]
 {
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
@@ -18,10 +18,9 @@ body.DesktopUI [class*="steamdesktopoverlay_GameName_"]
 	font-weight: var(--title_1_weight) !important;
 }
 
-body.DesktopUI [class*="steamdesktopoverlay_CurrentDate_"],
-body.DesktopUI [class*="steamdesktopoverlay_PlaytimeCurrentSession_"],
-body.DesktopUI [class*=steamdesktopoverlay_KBShortcut_]
-
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl [class*="steamdesktopoverlay_CurrentDate_"],
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl [class*="steamdesktopoverlay_PlaytimeCurrentSession_"],
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl [class*="steamdesktopoverlay_KBShortcut_"]
 {
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
@@ -29,8 +28,8 @@ body.DesktopUI [class*=steamdesktopoverlay_KBShortcut_]
 	font-weight: var(--title_3_weight) !important;
 }
 
-body.DesktopUI button[class*="steamdesktopoverlay_ExitGameBtn_"],
-body.DesktopUI button[class*="steamdesktopoverlay_BackToGameBtn_"]
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl button[class*="steamdesktopoverlay_ExitGameBtn_"],
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl button[class*="steamdesktopoverlay_BackToGameBtn_"]
 {
 	background: var(--button_bg) !important;
 	border-radius: var(--button_radius) !important;
@@ -42,27 +41,27 @@ body.DesktopUI button[class*="steamdesktopoverlay_BackToGameBtn_"]
 	transition: var(--focus_transition) !important;
 }
 
-body.DesktopUI button[class*="steamdesktopoverlay_ExitGameBtn_"]:hover,
-body.DesktopUI button[class*="steamdesktopoverlay_BackToGameBtn_"]:hover
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl button[class*="steamdesktopoverlay_ExitGameBtn_"]:hover,
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl button[class*="steamdesktopoverlay_BackToGameBtn_"]:hover
 {
 	background: var(--button_hover_bg) !important;
 	border-radius: var(--button_radius) !important;
 }
 
-body.DesktopUI button[class*="steamdesktopoverlay_ExitGameBtn_"]:active,
-body.DesktopUI button[class*="steamdesktopoverlay_BackToGameBtn_"]:active
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl button[class*="steamdesktopoverlay_ExitGameBtn_"]:active,
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl button[class*="steamdesktopoverlay_BackToGameBtn_"]:active
 {
 	background: var(--button_active_bg) !important;
 	border-radius: var(--button_radius) !important;
 }
 
-body.DesktopUI button[class*="steamdesktopoverlay_BackToGameBtn_"]
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl button[class*="steamdesktopoverlay_BackToGameBtn_"]
 {
 	width: 35px !important;
 	height: 35px !important;
 }
 
-body.DesktopUI button[class*="steamdesktopoverlay_BackToGameBtn_"] svg
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl button[class*="steamdesktopoverlay_BackToGameBtn_"] svg
 {
 	width: 15px !important;
 	height: 15px !important;
@@ -70,40 +69,40 @@ body.DesktopUI button[class*="steamdesktopoverlay_BackToGameBtn_"] svg
 }
 
 /* Flexbox Positioning */
-body.DesktopUI [class*="steamdesktopoverlay_TimeStats_"]
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl [class*="steamdesktopoverlay_TimeStats_"]
 {
 	flex: 5 1 0 !important;
 	align-items: center !important;
 	justify-content: center !important;
 }
 
-body.DesktopUI [class*="steamdesktopoverlay_CurrentGameLogoContainer_"]
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl [class*="steamdesktopoverlay_CurrentGameLogoContainer_"]
 {
 	order: -1 !important;
 	flex: 1 1 300 !important;
 }
 
-body.DesktopUI [class*="steamdesktopoverlay_CurrentGameLogoContainer_"] img
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl [class*="steamdesktopoverlay_CurrentGameLogoContainer_"] img
 {
 	max-width: 300px !important;
 	margin-top: -20px !important;
 }
 
-body.DesktopUI [class*="steamdesktopoverlay_BackToGame_"]
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl [class*="steamdesktopoverlay_BackToGame_"]
 {
 	margin-top: 20px !important;
 }
 
 /* --- Bottom Section --- */
 /* Toolbar */
-body.DesktopUI div[class*="steamdesktopoverlay_Toolbar_"]
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl div[class*="steamdesktopoverlay_Toolbar_"]
 {
 	background: var(--card_bg) !important;
 	border-radius: var(--card_radius) !important;
 	padding: 20px;
 }
 
-body.DesktopUI button[class*="steamdesktopoverlay_ToolbarButton_"]
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl button[class*="steamdesktopoverlay_ToolbarButton_"]
 {
 	background: var(--button_bg) !important;
 	border-radius: var(--button_radius) !important;
@@ -115,43 +114,43 @@ body.DesktopUI button[class*="steamdesktopoverlay_ToolbarButton_"]
 	transition: var(--focus_transition) !important;
 }
 
-body.DesktopUI button[class*="steamdesktopoverlay_ToolbarButton_"]:hover
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl button[class*="steamdesktopoverlay_ToolbarButton_"]:hover
 {
 	background: var(--button_hover_bg) !important;
 	border-radius: var(--button_radius) !important;
 }
 
-body.DesktopUI button[class*="steamdesktopoverlay_ToolbarButton_"]:active
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl button[class*="steamdesktopoverlay_ToolbarButton_"]:active
 {
 	background: var(--button_active_bg) !important;
 	border-radius: var(--button_radius) !important;
 }
 
-body.DesktopUI button[class*="steamdesktopoverlay_ToolbarButton_"][class*="steamdesktopoverlay_Toggled_"]
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl button[class*="steamdesktopoverlay_ToolbarButton_"][class*="steamdesktopoverlay_Toggled_"]
 {
 	background: var(--button_suggested_bg) !important;
 	background-blend-mode: var(--button_suggested_blend) !important;
 
 }
 
-body.DesktopUI button[class*="steamdesktopoverlay_ToolbarButton_"][class*="steamdesktopoverlay_Toggled_"]:hover
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl button[class*="steamdesktopoverlay_ToolbarButton_"][class*="steamdesktopoverlay_Toggled_"]:hover
 {
 	background-color: var(--button_suggested_hover_bg) !important;
 }
 
-body.DesktopUI button[class*="steamdesktopoverlay_ToolbarButton_"][class*="steamdesktopoverlay_Toggled_"]:hover
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl button[class*="steamdesktopoverlay_ToolbarButton_"][class*="steamdesktopoverlay_Toggled_"]:hover
 {
 	background-color: var(--button_suggested_click_bg) !important;
 }
 
-body.DesktopUI button[class*="steamdesktopoverlay_ToolbarButton_"][class*="steamdesktopoverlay_AchievementsToggleButton_"] > svg path
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl button[class*="steamdesktopoverlay_ToolbarButton_"][class*="steamdesktopoverlay_AchievementsToggleButton_"] > svg path
 {
 	fill: var(--fg) !important;
 }
 
 /* --- Windows --- */
 /* Focus Indicator */
-body.DesktopUI.WindowFocus div[class*="steamdesktopoverlay_FocusIndicator_"] {
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl.WindowFocus div[class*="steamdesktopoverlay_FocusIndicator_"] {
 	opacity: 0 !important;
 }
 
@@ -396,7 +395,7 @@ body.DesktopUI.WindowFocus div[class*="steamdesktopoverlay_FocusIndicator_"] {
 
 /* Browser */
 /*
-body.DesktopUI .OverlayBrowser_Guides .title-area-children
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl .OverlayBrowser_Guides .title-area-children
 {
 	box-sizing: border-box !important;
 	height: 48px !important;

@@ -1,8 +1,8 @@
 /* --------------------- */
 /* --- Notifications --- */
 /* --------------------- */
-body.DesktopUI [class*="desktoptoasts_DesktopToastPopup_"],
-body.DesktopUI div[class*="standardtemplates_BottomBar_"]
+body.DesktopUI.desktoptoasts_DesktopToastContainer_zXrpA [class*="desktoptoasts_DesktopToastPopup_"],
+body.DesktopUI.desktoptoasts_DesktopToastContainer_zXrpA div[class*="standardtemplates_BottomBar_"]
 {
 	background: var(--popover_bg) !important;
 	border-radius: var(--card_radius) !important;
@@ -15,17 +15,17 @@ body.ContextMenuPopupBody.DesktopUI div[class*="standardtemplates_Icon_"]
 	fill: var(--dim_label_fg) !important;
 }
 
-body.DesktopUI div[class*="standardtemplates_Title_"],
-body.DesktopUI div[class*="notificationcontent_TimestampDesktop_"],
-body.DesktopUI div[class*="standardtemplates_StandardNotificationSubText_"]
+body.DesktopUI.desktoptoasts_DesktopToastContainer_zXrpA div[class*="standardtemplates_Title_"],
+body.DesktopUI.desktoptoasts_DesktopToastContainer_zXrpA div[class*="notificationcontent_TimestampDesktop_"],
+body.DesktopUI.desktoptoasts_DesktopToastContainer_zXrpA div[class*="standardtemplates_StandardNotificationSubText_"]
 {
 	font-family: var(--basefont) !important;
 	font-weight: var(--baseweight) !important;
 	color: var(--dim_label_fg) !important;
 }
 
-body.DesktopUI div[class*="standardtemplates_StandardNotificationDescription_"],
-body.DesktopUI div[class*="standardtemplates_GroupMessageUserName_"]
+body.DesktopUI.desktoptoasts_DesktopToastContainer_zXrpA div[class*="standardtemplates_StandardNotificationDescription_"],
+body.DesktopUI.desktoptoasts_DesktopToastContainer_zXrpA div[class*="standardtemplates_GroupMessageUserName_"]
 {
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
@@ -33,7 +33,7 @@ body.DesktopUI div[class*="standardtemplates_GroupMessageUserName_"]
 	font-size: var(--title_4_size) !important;
 }
 
-body.DesktopUI div[class*="standardtemplates_GroupMessageBody_"]
+body.DesktopUI.desktoptoasts_DesktopToastContainer_zXrpA div[class*="standardtemplates_GroupMessageBody_"]
 {
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
@@ -41,34 +41,34 @@ body.DesktopUI div[class*="standardtemplates_GroupMessageBody_"]
 	font-size: var(--title_4_size) !important;
 }
 
-body.DesktopUI div[class*="desktoptoasts_DesktopToastBackground_"]
+body.DesktopUI.desktoptoasts_DesktopToastContainer_zXrpA div[class*="desktoptoasts_DesktopToastBackground_"]
 {
 	display: none !important;
 }
 
-body.DesktopUI img[class*="notificationcontent_StandardLogoDimensions_"]
+body.DesktopUI.desktoptoasts_DesktopToastContainer_zXrpA img[class*="notificationcontent_StandardLogoDimensions_"]
 {
 	border-top-left-radius: var(--button_radius) !important;
 	border-bottom-left-radius: var(--button_radius) !important;
 }
 
-body.DesktopUI div[class*="standardtemplates_AvatarStatus_"]
+body.DesktopUI.desktoptoasts_DesktopToastContainer_zXrpA div[class*="standardtemplates_AvatarStatus_"]
 {
 	border-top-right-radius: var(--button_radius) !important;
 	border-bottom-right-radius: var(--button_radius) !important;
 }
 
-body.DesktopUI div[class*="standardtemplates_AvatarStatus_"].online
+body.DesktopUI.desktoptoasts_DesktopToastContainer_zXrpA div[class*="standardtemplates_AvatarStatus_"].online
 {
 	background-color: var(--accent_bg) !important;
 }
 
-body.DesktopUI div[class*="standardtemplates_AvatarStatus_"].ingame
+body.DesktopUI.desktoptoasts_DesktopToastContainer_zXrpA div[class*="standardtemplates_AvatarStatus_"].ingame
 {
 	background-color: var(--success_bg) !important;
 }
 
-body.DesktopUI div[class*="standardtemplates_AvatarStatus_"].offline
+body.DesktopUI.desktoptoasts_DesktopToastContainer_zXrpA div[class*="standardtemplates_AvatarStatus_"].offline
 {
 	background-color: var(--dim_label_fg) !important;
 }
