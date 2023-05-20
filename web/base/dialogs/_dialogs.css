@@ -6,9 +6,10 @@
 /* Window controls */
 .title-bar-actions
 {
+	max-height: 36px !important;
 	position: absolute !important;
-	top: 4px !important;
 	right: 12px !important;
+	top: 4px !important;
 }
 
 .title-bar-actions .title-area-icon

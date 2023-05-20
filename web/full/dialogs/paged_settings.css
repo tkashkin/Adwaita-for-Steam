@@ -106,7 +106,7 @@
 	color: var(--fg) !important;
 }
 
-.ModalDialogPopup .DialogContent_InnerWidth > *:not(.DialogHeader):not(form)
+.ModalDialogPopup .DialogContent_InnerWidth > *:not(.DialogHeader):not(form):not(:only-child)
 {
 	padding: 16px !important;
 }

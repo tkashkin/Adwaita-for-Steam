@@ -103,6 +103,7 @@ LIBRARY_FULL_FILES = [
 	webthemedir / "full/dialogs/content_management.css",
 	webthemedir / "full/dialogs/uninstall.css",
 	webthemedir / "full/dialogs/whats_new.css",
+	webthemedir / "full/dialogs/server_browser.css",
 ]
 
 # List Options
