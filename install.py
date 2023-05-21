@@ -107,6 +107,7 @@ LIBRARY_FULL_FILES = [
 	webthemedir / "full/dialogs/product_activation.css",
 	webthemedir / "full/dialogs/system_information.css",
 	webthemedir / "full/dialogs/recent_players.css",
+	webthemedir / "full/dialogs/about_steam.css",
 ]
 
 # List Options
