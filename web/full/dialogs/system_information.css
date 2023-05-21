@@ -32,3 +32,8 @@
 	font-size: var(--title_4_size) !important;
 }
 
+/* Footer */
+.ModalDialogPopup div[class*="hardwaresurveydialog_Desktop_"] > .DialogFooter
+{
+	padding: 16px !important;
+}
