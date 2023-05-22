@@ -186,7 +186,7 @@ def hex2css(name: str, hex: str) -> str:
 	return f'--{name}: {hex};'
 
 def replace_css_colors(target: Path, config: configparser.ConfigParser):
-	if args.web_theme == "none":
+	if args.uninstall:
 		return
 
 	with open (target, 'r' ) as f:
@@ -216,9 +216,6 @@ def install(source: Path, target: Path, name: str):
 	shutil.copytree(source, target_skin)
 
 def patch_client_css(source: Path, target: Path, name: str):
-	if args.no_steam_patch:
-		return
-
 	print(f"{TEXT_BLUE}{TEXT_ARROW} Patching Steam Client {TEXT_BOLD}{name}{TEXT_RESET}{TEXT_BLUE} Files...{TEXT_RESET}")
 
 	if not target.is_dir():
@@ -244,8 +241,8 @@ def patch_client_css(source: Path, target: Path, name: str):
 		print(f"{TEXT_PURPLE}{TEXT_INFO} File {TEXT_BOLD}{target_css}{TEXT_RESET}{TEXT_PURPLE} does not exist{TEXT_RESET}")
 		return
 
-	if args.web_theme == "none":
-		print(f"{TEXT_BLUE}{TEXT_ARROW} Web Theme is {TEXT_BOLD}none{TEXT_RESET}{TEXT_BLUE}, resetting patched Steam {name} CSS...{TEXT_RESET}")
+	if args.uninstall:
+		print(f"{TEXT_BLUE}{TEXT_ARROW} Uninstalling, resetting patched Steam {name} CSS...{TEXT_RESET}")
 		open(custom_css, 'w').close()
 	else:
 		shutil.copy(source_css, custom_css)
@@ -273,11 +270,10 @@ if __name__ == "__main__":
 	parser = ArgumentParser(description = "Adwaita-for-Steam installer")
 	parser.add_argument("-c", "--color-theme", default = "adwaita", help = "Choose color theme")
 	parser.add_argument("-fi", "--font-install", action = "store_true", help = "Install Fonts")
-	parser.add_argument("-l", "--list-options", action = "store_true", help = "List available patches, themes, web extras and exit")
-	parser.add_argument("-nsp", "--no-steam-patch", action = "store_true", help = "Do not patch steam files")
-	parser.add_argument("-p", "--patch", nargs = "+", action = "extend", help = "Apply one or multiple patches")
+	parser.add_argument("-l", "--list-options", action = "store_true", help = "List available themes & web extras and exit")
 	parser.add_argument("-t", "--target", nargs = "+", action = "extend", default = ["normal", "flatpak"], help = "Install targets: 'normal', 'flatpak', custom paths")
-	parser.add_argument("-w", "--web-theme", choices = ["base", "full", "none"], default = "full", help = "Choose web theme variant")
+	parser.add_argument("-u", "--uninstall", action = "store_true", help = "Uninstall theme")
+	parser.add_argument("-w", "--web-theme", choices = ["base", "full"], default = "full", help = "Choose web theme variant")
 	parser.add_argument("-we", "--web-extras", nargs = "+", action = "extend", help = "Enable one or multiple web theme extras")
 	args = parser.parse_args()
 
@@ -307,9 +303,6 @@ if __name__ == "__main__":
 		tmp = Path(tmpdir)
 		sourcedir = tmp
 		print(f"{TEXT_BLUE}{TEXT_ARROW} Creating stage directory {TEXT_BOLD}{sourcedir}{TEXT_RESET}")
-
-		if args.patch:
-			print(f"{TEXT_PURPLE}{TEXT_INFO} New UI does not support patches.{TEXT_RESET}")
 
 		if args.web_theme == "full":
 			gen_webkit_theme(sourcedir / LIBRARY_CSS_FILE, "library_full", args.web_extras)

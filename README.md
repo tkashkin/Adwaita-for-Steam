@@ -135,8 +135,8 @@ cd Adwaita-for-Steam
 | --color-theme    | -c     | [Colortheme](colorthemes)        | Change color theme                                       |
 | --font-install   | -fi    |                                  | Installs static Cantarell fonts                          |
 | --list-options   | -l     |                                  | List available patches, themes, and web extras           |
-| --no-steam-patch | -nsp   |                                  | Do not patch steam client files                          |
 | --target         | -t     | normal / flatpak / [custom dir]  | Choose target location for install (default: both)       |
+| --uninstall      | -u     |                                  | Uninstall theme                                          |
 | --web-theme      | -w     | full / base / none               | Choose web theme variant (default: full)                 |
 | --web-extras     | -we    | [Web Extra](web/extras)          | Enable one or multiple web theme extras                  |
 
@@ -155,8 +155,3 @@ Use the [graphical installer](https://github.com/Foldex/AdwSteamGtk) by [@Foldex
 
 <a href="https://flathub.org/apps/details/io.github.Foldex.AdwSteamGtk"><img width="200" alt="Download on Flathub" src="https://flathub.org/assets/badges/flathub-badge-i-en.svg"/></a>
 
-## Uninstallation
-
-Since the installer patches steam client files directly, simply changing the steam skin will not undo all changes.
-
-Reinstall with `--web-theme none` to unpatch these files.
