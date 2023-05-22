@@ -14,47 +14,6 @@
 	padding: 0 !important;
 }
 
-.ModalDialogPopup .DialogBody[class*="contentmanagement_ContentManagement_"] div[class*="contentmanagement_Title_"]
-{
-	box-sizing: border-box !important;
-	height: 48px !important;
-	display: grid !important;
-	grid-template-columns: 1fr !important;
-	align-items: center !important;
-	padding: 12px !important;
-	margin: 0 !important;
-	background: var(--headerbar_backdrop) !important;
-	color: var(--headerbar_fg) !important;
-	font-family: var(--basefont) !important;
-	font-size: 14px !important;
-	line-height: normal !important;
-	font-weight: 700 !important;
-	letter-spacing: normal !important;
-	text-align: center !important;
-	text-transform: none !important;
-	white-space: nowrap !important;
-	overflow: hidden !important;
-	text-overflow: ellipsis !important;
-	border-bottom: 1px var(--headerbar_shade) solid !important;
-}
-
-.ModalDialogPopup .DialogBody[class*="contentmanagement_ContentManagement_"] div[class*="contentmanagement_PageableCarousel_"]
-{
-	height: 34px !important;
-	margin: -41px 48px 7px 7px !important;
-	display: flex !important;
-	flex-direction: row !important;
-	z-index: 2 !important;
-	background: var(--headerbar_backdrop) !important;
-	align-items: center !important;
-}
-
-.ModalDialogPopup:focus-within .DialogBody[class*="contentmanagement_ContentManagement_"] div[class*="contentmanagement_Title_"],
-.ModalDialogPopup:focus-within .DialogBody[class*="contentmanagement_ContentManagement_"] div[class*="contentmanagement_PageableCarousel_"]
-{
-	background: var(--headerbar_bg) !important;
-}
-
 .ModalDialogPopup div[class*="contentmanagement_InstallFolder_"]
 {
 	padding: 0 8px !important;
@@ -137,11 +96,6 @@
 .ModalDialogPopup div[class*="contentmanagement_AddFolder_"] > svg
 {
 	margin-right: 0 !important;
-}
-
-.ModalDialogPopup .DialogBody[class*="contentmanagement_ContentManagement_"] div[class*="pageablecontainer_HeaderPageControls_"]
-{
-	display: none !important;
 }
 
 .ModalDialogPopup div[class*="contentmanagement_LibraryContent_"]
