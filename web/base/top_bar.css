@@ -50,7 +50,7 @@ body.DesktopUI .steamdesktop_Wrapper_1ENHE
 	font-size: var(--button_font_size) !important;
 	font-weight: var(--button_font_weight) !important;
 	line-height: 24px !important;
-	min-height: var(--button_min_height) !important;
+	min-height: 32px !important;
 	padding: var(--button_padding) !important;
 	transition: var(--focus_transition) !important;
 }
