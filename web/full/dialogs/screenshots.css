@@ -103,6 +103,18 @@
 	margin-bottom: 10px !important;
 }
 
+/* Explainer */
+.ModalDialogPopup div[class*="screenshotmanagerdialog_ExplainerBox_"]
+{
+	background: none !important;
+}
+
+.ModalDialogPopup div[class*="screenshotmanagerdialog_Explainer_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+}
+
 /* Caption Entry */
 .ModalDialogPopup textarea[class*="screenshotmanagerdialog_CaptionField_"]
 {
