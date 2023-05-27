@@ -143,15 +143,51 @@ body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl button[class*="steamdesktopove
 	background-color: var(--button_suggested_click_bg) !important;
 }
 
-body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl button[class*="steamdesktopoverlay_ToolbarButton_"][class*="steamdesktopoverlay_AchievementsToggleButton_"] > svg path
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl button[class*="steamdesktopoverlay_ToolbarButton_"].Disabled
+{
+	background-color: var(--button_disabled_bg) !important;
+	color: var(--button_disabled_fg) !important;
+}
+
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl button.Achievements[class*="steamdesktopoverlay_ToolbarButton_"] > svg path
 {
 	fill: var(--fg) !important;
 }
 
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl button.Achievements.Disabled[class*="steamdesktopoverlay_ToolbarButton_"] > svg path
+{
+	fill: var(--button_disabled_fg) !important;
+}
+
 /* --- Windows --- */
+.ModalDialogPopup div.PopupFullWindow[class*="steamdesktopoverlay_OverlayPopup_"] {
+	background: var(--bg) !important;
+}
+
 /* Focus Indicator */
-body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl.WindowFocus div[class*="steamdesktopoverlay_FocusIndicator_"] {
+.ModalDialogPopup .PopupFullWindow div[class*="steamdesktopoverlay_FocusIndicator_"] {
 	opacity: 0 !important;
+}
+
+/* Window Controls */
+.ModalDialogPopup .PopupFullWindow div[class*="steamdesktopoverlay_WindowControls_"] .title-bar-actions .Focusable
+{
+	margin-top: 6px !important;
+}
+
+.ModalDialogPopup .PopupFullWindow div[class*="steamdesktopoverlay_WindowControls_"] .title-bar-actions .Focusable div[class*="steamdesktopoverlay_OpacityButton_"]
+{
+	color: var(--fg) !important;
+}
+
+.ModalDialogPopup .PopupFullWindow div[class*="steamdesktopoverlay_PinWindowButton_"]
+{
+	color: var(--fg) !important;
+}
+
+.ModalDialogPopup .PopupFullWindow div[class*="steamdesktopoverlay_Pinned_"]
+{
+	color: var(--accent) !important;
 }
 
 /* Game Overview */
@@ -292,14 +328,37 @@ body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl.WindowFocus div[class*="steamd
 	gap: 1px !important;
 }
 
+
 .ModalDialogPopup .Achievements div[class*="achievementslist_AchievementListItemBase_"],
 .ModalDialogPopup .Achievements div[class*="achievementslist_GlobalAchievementListItem_"]
 {
 	background: var(--card_bg) !important;
 }
 
+.ModalDialogPopup .Achievements div[class*="achievementspage_SortableAchievementsList_"]
+{
+	gap: 1px !important;
+}
+
+.ModalDialogPopup .Achievements div[class*="achievementspage_SortableUserAchievement_"]
+{
+	background: var(--card_bg) !important;
+}
+
+.ModalDialogPopup .Achievements div[class*="achievementspage_SortableUserAchievement_"]:first-child
+{
+	border-top-right-radius: var(--card_radius) !important;
+	border-top-left-radius: var(--card_radius) !important;
+}
+
+.ModalDialogPopup .Achievements div[class*="achievementspage_SortableUserAchievement_"]:last-child
+{
+	border-bottom-right-radius: var(--card_radius) !important;
+	border-bottom-left-radius: var(--card_radius) !important;
+}
+
 .ModalDialogPopup .Achievements div[class*="achievementslist_AchievementListItemBase_"]:nth-child(2),
-.ModalDialogPopup .Achievements div[class*="achievementslist_GlobalAchievementListItem_"]:nth-child(2)
+.ModalDialogPopup .Achievements .Focusable:nth-child(2) > div[class*="achievementslist_GlobalAchievementListItem_"]
 {
 	border-top-right-radius: var(--card_radius) !important;
 	border-top-left-radius: var(--card_radius) !important;
@@ -307,7 +366,7 @@ body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl.WindowFocus div[class*="steamd
 }
 
 .ModalDialogPopup .Achievements div[class*="achievementslist_AchievementListItemBase_"]:last-child,
-.ModalDialogPopup .Achievements div[class*="achievementslist_GlobalAchievementListItem_"]:last-child
+.ModalDialogPopup .Achievements .Focusable:last-child > div[class*="achievementslist_GlobalAchievementListItem_"]
 {
 	border-bottom-right-radius: var(--card_radius) !important;
 	border-bottom-left-radius: var(--card_radius) !important;
@@ -343,10 +402,23 @@ body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl.WindowFocus div[class*="steamd
 	font-family: var(--basefont) !important;
 }
 
-/* Game Notes */
-.ModalDialogPopup .GameNotes div[class*="gamenotes_Toolbar_"]
+.ModalDialogPopup .Achievements div[class*="achievementspage_HeaderContainer_"][class*="achievementspage_PinnedView_"],
+.ModalDialogPopup .Achievements div[class*="achievementspage_MyAchievementsHeader_"][class*="achievementspage_PinnedView_"],
+.ModalDialogPopup .Achievements div[class*="achievementspage_PinnedView_"] div[class*="gamepadtabbedpage_TabHeaderRowWrapper_"]
 {
-	padding: 30px 0px 10px 0px !important;
+	display: none !important;
+}
+
+.ModalDialogPopup .Achievements div[class*="achievementspage_PinnedView_"] ._TabContentsScroll
+{
+	padding-top: 0px !important;
+}
+
+/* Game Notes */
+.ModalDialogPopup .GameNotes:not([class*="steamdesktopoverlay_PinnedView_"]) div[class*="gamenotes_Toolbar_"]
+{
+	margin-top: 30px !important;
+	margin-left: 10px !important;
 }
 
 .ModalDialogPopup .GameNotes .SVGIcon_Button,
@@ -391,6 +463,17 @@ body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl.WindowFocus div[class*="steamd
 	font-family: var(--basefont) !important;
 	font-size: var(--basesize) !important;
 	font-weight: var(--baseweight) !important;
+}
+
+.ModalDialogPopup .GameNotes[class*="steamdesktopoverlay_PinnedView_"] div[class*="pagedsettings_PagedSettingsDialog_PageListColumn_"],
+.ModalDialogPopup .GameNotes[class*="steamdesktopoverlay_PinnedView_"] div[class*="gamenotes_Toolbar_"]
+{
+	display: none !important;
+}
+
+.ModalDialogPopup .GameNotes[class*="steamdesktopoverlay_PinnedView_"] div[class*="gamenotes_NoteEditorArea_"]
+{
+	margin: 0px !important;
 }
 
 /* Browser */
