@@ -1,0 +1,7 @@
+/* --------------------- */
+/* --- Hide URL Bar  --- */
+/* --------------------- */
+#SteamDesktop .steamdesktop_BrowserWrapper_1bGew div[class*="steamdesktop_URLBar_"]
+{
+	display: none !important;
+}
