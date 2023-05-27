@@ -43,7 +43,10 @@
 	height: 12px !important;
 }
 
-.title-bar-actions .title-area-icon > svg > *
+.title-bar-actions .closeButton > svg > *,
+.title-bar-actions .maximizeButton > svg > *,
+.title-bar-actions .minimizeButton > svg > *,
+.title-bar-actions .restoreButton > svg > *
 {
 	stroke: var(--headerbar_fg) !important;
 	stroke-width: 32px !important;
