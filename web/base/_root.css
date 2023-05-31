@@ -116,7 +116,7 @@
 	--entry_bg: var(--button_bg);
 	--entry_hover_bg: var(--button_hover_bg);
 	--entry_radius: var(--card_radius);
-	--entry_min_height: 42px;
+	--entry_min_height: 50px;
 	--entry_min_height_labeled: 34px;
 	--entry_padding: 2px 14px 2px 14px;
 	--entry_padding_labeled: 18px 14px 2px 14px;
