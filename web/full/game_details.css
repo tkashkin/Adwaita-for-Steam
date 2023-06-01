@@ -23,6 +23,7 @@
 #SteamDesktop .appdetails_Container_2iE-7 div[class*="appactivitydlc_Contents_"],
 #SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsscreenshotssection_Thumbnail_"],
 #SteamDesktop .appdetails_Container_2iE-7 img[class*="screenshots_ClickableScreenshotImg_"],
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsspotlight_SpotlightDLC_"],
 #SteamDesktop .apppartnereventspage_AppPartnerEventsBody_1nzwr div[class*="discussionwidget_VoteContainer_"],
 #SteamDesktop .apppartnereventspage_AppPartnerEventsBody_1nzwr div[class*="discussionwidget_ShareContainer_"],
 #SteamDesktop .apppartnereventspage_AppPartnerEventsBody_1nzwr div[class*="discussionwidget_DiscussContainer_"]
@@ -139,7 +140,8 @@
 #SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsachievementssection_AdditionalItem_"]:hover,
 #SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailscommunityfeed_LoadContentButton_"]:hover,
 #SteamDesktop .appdetails_Container_2iE-7 button[class*="appdetailsactivitysection_FetchMoreContainer_"]:hover,
-#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsactivitysection_ViewLastNews_"]:hover
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsactivitysection_ViewLastNews_"]:hover,
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsspotlight_SpotlightDLC_"]:hover
 {
 	background: var(--button_hover_bg) !important;
 }
@@ -474,6 +476,55 @@
 #SteamDesktop .appdetails_Container_2iE-7 div[class*="spotlightgameplaysummary_SummaryCarouselContainer_"]::after
 {
 	box-shadow: none !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="pageablecontainer_PageableCloseButton_"] > svg line
+{
+	stroke: var(--fg) !important;
+}
+
+/* DLC Notification Banner */
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsspotlight_SpotlightDLC_"]
+{
+	box-shadow: none !important;
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--baseweight) !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsspotlight_SpotlightDLC_"] > svg
+{
+	color: var(--fg) !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsspotlight_HideButton_"] > svg line
+{
+	stroke: var(--fg) !important;
+}
+
+/* Available Content */
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appactivitydlc_CarouselHeader_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--title_4_weight) !important;
+	font-size: var(--title_4_size) !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appactivitydlc_CarouselBody_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--baseweight) !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 a[class*="appactivitydlc_ViewAll_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--button_font_size) !important;
+	font-weight: var(--button_font_weight) !important;
+	margin-bottom: 10px;
 }
 
 /* Remove Glassy Background */
