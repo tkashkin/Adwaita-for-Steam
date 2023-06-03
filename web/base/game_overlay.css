@@ -523,6 +523,12 @@ body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl div[class*="steamdesktopoverla
 	margin: 0px !important;
 }
 
+/* Soundtrack */
+.ModalDialogPopup .\#SoundtrackControls_OverlayLibrary_Title div[class*="soundtrackoverlay_OuterContainer_"]
+{
+	background: none !important;
+}
+
 /* Browser */
 /*
 body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl .OverlayBrowser_Guides .title-area-children
