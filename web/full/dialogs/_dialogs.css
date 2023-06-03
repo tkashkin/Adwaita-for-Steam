@@ -237,6 +237,18 @@
 	box-shadow: var(--focusring_bs) !important;
 }
 
+/* Radio Group */
+.ModalDialogPopup .Shared_Radio_Group
+{
+	background: none !important;
+	box-shadow: none !important;
+}
+
+.ModalDialogPopup .Shared_Radio_Group div[class*="radio_Active_3ZBFo "]
+{
+	background: var(--button_hover_bg) !important;
+}
+
 /* Buttons */
 .ModalDialogPopup .DialogButton,
 .ModalDialogPopup .RadioButton
@@ -378,8 +390,7 @@
 }
 
 /* Checkboxes */
-.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_Install_"] > .DialogCheckbox,
-.ModalDialogPopup div[class*="contentmanagement_AppSelected_"] > .DialogCheckbox
+.ModalDialogPopup .DialogCheckbox
 {
 	background-color: var(--checkbox_bg) !important;
 	box-shadow: var(--checkbox_bs) !important;
@@ -388,21 +399,18 @@
 	width: 20px !important;
 }
 
-.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_Install_"] > .DialogCheckbox:hover,
-.ModalDialogPopup div[class*="contentmanagement_AppSelected_"] > .DialogCheckbox:hover
+.ModalDialogPopup .DialogCheckbox:hover
 {
 	box-shadow: var(--checkbox_hover_bs) !important;
 }
 
-.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_Install_"] > .DialogCheckbox:active:not(.Active),
-.ModalDialogPopup div[class*="contentmanagement_AppSelected_"] > .DialogCheckbox:active:not(.Active)
+.ModalDialogPopup .DialogCheckbox:active:not(.Active)
 {
 	box-shadow: none !important;
 	background: var(--checkbox_active_bg) !important;
 }
 
-.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_Install_"] > .DialogCheckbox.Active,
-.ModalDialogPopup div[class*="contentmanagement_AppSelected_"] > .DialogCheckbox.Active
+.ModalDialogPopup .DialogCheckbox.Active
 {
 	background: var(--checkbox_checked_bg) !important;
 	background-blend-mode: var(--button_suggested_blend) !important;
@@ -410,26 +418,22 @@
 	box-shadow: none !important;
 }
 
-.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_Install_"] > .DialogCheckbox.Active:hover,
-.ModalDialogPopup div[class*="contentmanagement_AppSelected_"] > .DialogCheckbox.Active:hover
+.ModalDialogPopup .DialogCheckbox.Active:hover
 {
 	background-color: var(--button_suggested_hover_bg) !important;
 }
 
-.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_Install_"] > .DialogCheckbox.Active:active,
-.ModalDialogPopup div[class*="contentmanagement_AppSelected_"] > .DialogCheckbox.Active:active
+.ModalDialogPopup .DialogCheckbox.Active:active
 {
 	background-color: var(--button_suggested_click_bg) !important;
 }
 
-.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_Install_"] > .DialogCheckbox svg,
-.ModalDialogPopup div[class*="contentmanagement_AppSelected_"] > .DialogCheckbox svg
+.ModalDialogPopup .DialogCheckbox svg
 {
 	stroke-width: var(--checkbox_checked_sw) !important;
 }
 
-.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_Install_"] > .DialogCheckbox svg path,
-.ModalDialogPopup div[class*="contentmanagement_AppSelected_"] > .DialogCheckbox svg path
+.ModalDialogPopup .DialogCheckbox svg path
 {
 	stroke: var(--fg) !important;
 	d: path("M 185 63 L 92 170 l -53 -52") !important;
@@ -437,8 +441,7 @@
 }
 
 /* Checkboxes as Switches */
-.ModalDialogPopup div[class*="appproperties_AppProperties_"] div:not([class*="appproperties_Install_"]) > .DialogCheckbox,
-.FriendsSettingsNotificationRow_Checkbox .DialogCheckbox
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div:not([class*="appproperties_Install_"]) > .DialogCheckbox
 {
 	background: var(--card_bg) !important;
 	background-blend-mode: var(--button_suggested_blend) !important;
@@ -449,40 +452,34 @@
 	min-width: 44px !important;
 }
 
-.ModalDialogPopup div[class*="appproperties_AppProperties_"] div:not([class*="appproperties_Install_"]) > .DialogCheckbox.Active,
-.FriendsSettingsNotificationRow_Checkbox .DialogCheckbox.Active
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div:not([class*="appproperties_Install_"]) > .DialogCheckbox.Active
 {
 	background: var(--button_suggested_bg) !important;
 }
 
-.ModalDialogPopup div[class*="appproperties_AppProperties_"] div:not([class*="appproperties_Install_"]) > .DialogCheckbox:hover,
-.FriendsSettingsNotificationRow_Checkbox .DialogCheckbox:hover
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div:not([class*="appproperties_Install_"]) > .DialogCheckbox:hover
 {
 	background-color: var(--button_suggested_hover_bg) !important;
 }
 
-.ModalDialogPopup div[class*="appproperties_AppProperties_"] div:not([class*="appproperties_Install_"]) > .DialogCheckbox:active,
-.FriendsSettingsNotificationRow_Checkbox .DialogCheckbox:active
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div:not([class*="appproperties_Install_"]) > .DialogCheckbox:active
 {
 	background-color: var(--button_suggested_click_bg) !important;
 }
 
-.ModalDialogPopup div[class*="appproperties_AppProperties_"] div:not([class*="appproperties_Install_"]) > .DialogCheckbox .SVGIcon_DialogCheck,
-.FriendsSettingsNotificationRow_Checkbox .DialogCheckbox .SVGIcon_DialogCheck
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div:not([class*="appproperties_Install_"]) > .DialogCheckbox .SVGIcon_DialogCheck
 {
 	opacity: 1 !important;
 	transition: margin-left 60ms linear !important;
 	margin-left: -2px !important;
 }
 
-.ModalDialogPopup div[class*="appproperties_AppProperties_"] div:not([class*="appproperties_Install_"]) > .DialogCheckbox.Active .SVGIcon_DialogCheck,
-.FriendsSettingsNotificationRow_Checkbox .DialogCheckbox.Active .SVGIcon_DialogCheck
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div:not([class*="appproperties_Install_"]) > .DialogCheckbox.Active .SVGIcon_DialogCheck
 {
 	margin-left: 20px !important;
 }
 
-.ModalDialogPopup div[class*="appproperties_AppProperties_"] div:not([class*="appproperties_Install_"]) > .DialogCheckbox svg path,
-.FriendsSettingsNotificationRow_Checkbox .DialogCheckbox svg path
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div:not([class*="appproperties_Install_"]) > .DialogCheckbox svg path
 {
 	d: path("M 100, 100 m -75, 0 a 160,160 0 1,0 320,0 a 160,160 0 1,0 -320,0") !important;
 	fill: var(--fg) !important;
