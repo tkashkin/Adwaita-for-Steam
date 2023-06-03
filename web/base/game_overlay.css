@@ -159,6 +159,20 @@ body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl button.Achievements.Disabled[c
 	fill: var(--button_disabled_fg) !important;
 }
 
+/* --- List Mode --- */
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl div[class*="steamdesktopoverlay_LocationLeft_"] > div[class*="steamdesktopoverlay_Toolbar_"]
+{
+	background: none !important;
+}
+
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl div[class*="steamdesktopoverlay_LocationLeft_"] span[class*="steamdesktopoverlay_ToolbarToolTip_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--button_font_size) !important;
+	font-weight: var(--button_font_weight) !important;
+}
+
 /* --- Windows --- */
 .ModalDialogPopup div.PopupFullWindow[class*="steamdesktopoverlay_OverlayPopup_"] {
 	background: var(--bg) !important;
