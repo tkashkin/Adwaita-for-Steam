@@ -244,7 +244,7 @@
 	box-shadow: none !important;
 }
 
-.ModalDialogPopup .Shared_Radio_Group div[class*="radio_Active_3ZBFo "]
+.ModalDialogPopup .Shared_Radio_Group div[class*="radio_Active_"]
 {
 	background: var(--button_hover_bg) !important;
 }
