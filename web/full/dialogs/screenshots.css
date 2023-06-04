@@ -61,6 +61,26 @@
 	border-radius: var(--menu_radius) !important;
 }
 
+/* Error */
+.ModalDialogPopup div[class*="screenshotmanagerdialog_ErrorScreenshot_"],
+.ModalDialogPopup div[class*="screenshotmanagerdialog_Message_"]
+{
+	background: none !important;
+	color: var(--fg) !important;
+}
+
+.ModalDialogPopup div[class*="screenshotmanagerdialog_ErrorScreenshot_"] svg g.triangle *
+{
+	stroke: var(--fg) !important;
+}
+
+.ModalDialogPopup div[class*="screenshotmanagerdialog_ErrorScreenshot_"] svg g.exclamation *
+{
+	stroke: var(--fg) !important;
+	fill: var(--fg) !important;
+}
+
+
 /* - Left Panel -*/
 .ModalDialogPopup div[class*="screenshotmanagerdialog_LeftList_"]
 {
