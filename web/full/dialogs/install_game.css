@@ -1,0 +1,68 @@
+/* --- Install Game --- */
+/* Header */
+#SteamDesktop .FullModalOverlay div[class*="installrequest_Header_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--title_3_weight) !important;
+	font-size: var(--title_3_size) !important;
+}
+
+/* Game */
+#SteamDesktop .FullModalOverlay div[class*="installrequest_AppToInstall_"] img[class*="libraryassetimage_Image_"]
+{
+	border-radius: var(--card_radius) !important;
+}
+
+#SteamDesktop .FullModalOverlay div[class*="installrequest_AppName_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--title_2_weight) !important;
+	font-size: var(--title_2_size) !important;
+}
+
+#SteamDesktop .FullModalOverlay div[class*="installrequest_AppSizeRequired_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--title_3_weight) !important;
+	font-size: var(--title_3_size) !important;
+}
+
+/* Folders */
+#SteamDesktop .FullModalOverlay div[class*="installrequest_FolderOption_"]
+{
+	background: none !important;
+	border-radius: var(--button_radius) !important;;
+}
+
+#SteamDesktop .FullModalOverlay div[class*="installrequest_FolderOption_"]:hover
+{
+	background: var(--button_hover_bg) !important;
+}
+
+#SteamDesktop .FullModalOverlay div[class*="installrequest_FolderOption_"]:active
+{
+	background: var(--button_active_bg) !important;
+}
+
+#SteamDesktop .FullModalOverlay div[class*="installrequest_Active_"]
+{
+	background: var(--button_hover_bg) !important;
+}
+
+#SteamDesktop .FullModalOverlay div[class*="installrequest_FolderFlag_"],
+#SteamDesktop .FullModalOverlay div[class*="installrequest_FolderFlagStar_"]
+{
+	color: var(--fg) !important;
+}
+
+#SteamDesktop .FullModalOverlay div[class*="installrequest_FolderName_"],
+#SteamDesktop .FullModalOverlay div[class*="installrequest_FreeSpace_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--title_3_weight) !important;
+	font-size: var(--title_3_size) !important;
+}

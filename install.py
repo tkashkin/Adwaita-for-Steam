@@ -103,6 +103,7 @@ LIBRARY_FULL_FILES = [
 	webthemedir / "full/dialogs/add_game.css",
 	webthemedir / "full/dialogs/app_properties.css",
 	webthemedir / "full/dialogs/content_management.css",
+	webthemedir / "full/dialogs/install_game.css",
 	webthemedir / "full/dialogs/product_activation.css",
 	webthemedir / "full/dialogs/recent_players.css",
 	webthemedir / "full/dialogs/screenshots.css",

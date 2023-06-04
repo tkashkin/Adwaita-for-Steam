@@ -19,18 +19,18 @@
 	color: var(--popover_fg) !important;
 }
 
-/* Generic Confirm */
-.GenericConfirmDialog
+/* Modal Overlays */
+.FullModalOverlay .DialogContent
 {
 	padding: 0 !important;
 }
 
-.GenericConfirmDialog .DialogHeader,
-.GenericConfirmDialog .DialogBodyText,
-.GenericConfirmDialog .DialogBodyText[class*="cloudconflict_CloudConflictWarning_"],
-.GenericConfirmDialog [class*="cloudconflict_FooterNote_"],
-.GenericConfirmDialog [class*="cloudconflict_ChoiceNote_"],
-.GenericConfirmDialog div[class*="moveappsdialog_MoveAppsDialog_"] > .DialogBody
+.FullModalOverlay .DialogHeader,
+.FullModalOverlay .DialogBodyText,
+.FullModalOverlay .DialogBodyText[class*="cloudconflict_CloudConflictWarning_"],
+.FullModalOverlay [class*="cloudconflict_FooterNote_"],
+.FullModalOverlay [class*="cloudconflict_ChoiceNote_"],
+.FullModalOverlay div[class*="moveappsdialog_MoveAppsDialog_"] > .DialogBody
 {
 	color: var(--popover_fg) !important;
 	font-family: var(--basefont) !important;
@@ -45,6 +45,99 @@
 	box-sizing: border-box !important;
 }
 
+.FullModalOverlay .DialogContent .DialogHeader
+{
+	font-size: var(--title_1_size) !important;
+	font-weight: var(--title_1_weight) !important;
+	padding: 24px 24px 16px 24px !important;
+}
+
+.FullModalOverlay .DialogContent .DialogBody
+{
+	overflow: hidden !important;
+}
+
+.ModalPosition_Content > .ModalPosition_Dismiss
+{
+	display: none !important;
+}
+
+.FullModalOverlay .DialogContent .DialogFooter
+{
+	margin-top: 24px !important;
+}
+
+/* Swap buttons to make the Cancel button first */
+.FullModalOverlay .DialogContent .DialogFooter ._DialogColLayout
+{
+	flex-direction: row-reverse !important;
+	overflow: hidden !important;
+	width: 100% !important;
+}
+
+.FullModalOverlay .DialogContent .DialogFooter .DialogTwoColLayout._DialogColLayout
+{
+	gap: 0px !important;
+}
+
+.FullModalOverlay .DialogContent .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"])
+{
+	height: 42px !important;
+	color: var(--button_fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--button_font_size) !important;
+	line-height: normal !important;
+	font-weight: var(--button_font_weight) !important;
+	letter-spacing: normal !important;
+	background: transparent !important;
+	box-shadow: none !important;
+	border-radius: 0 !important;
+	border-top: 1px var(--border) solid !important;
+	border-left: 1px var(--border) solid !important;
+	margin: 0 !important;
+	margin-left: -1px !important;
+	max-width: none !important;
+	transition: var(--focus_transition) !important;
+}
+
+.FullModalOverlay .DialogContent .DialogFooter .DialogButton::before
+{
+	display: none !important;
+}
+
+.FullModalOverlay .DialogContent .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"]):hover
+{
+	background: rgba(255, 255, 255, 0.07) !important;
+	box-shadow: none !important;
+}
+
+.FullModalOverlay .DialogContent .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"]):active
+{
+	background: rgba(255, 255, 255, 0.16) !important;
+	box-shadow: none !important;
+}
+
+.FullModalOverlay .DialogContent .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"]).Primary
+{
+	color: var(--accent) !important;
+}
+
+.FullModalOverlay .DialogContent .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"]).Primary.Disabled
+{
+	color: var(--accent_disabled) !important;
+}
+
+.FullModalOverlay .DialogContent .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"]).Primary:hover
+{
+	background: var(--accent_hover_bg) !important;
+}
+
+.FullModalOverlay .DialogContent .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"]).Primary:active
+{
+	background: var(--accent_active_bg) !important;
+}
+
+/* Generic Confirm */
 .GenericConfirmDialog [class*="cloudconflict_FooterNote_"]
 {
 	flex-grow: 1 !important;
@@ -54,23 +147,6 @@
 .GenericConfirmDialog [class*="cloudconflict_ChoiceNote_"]
 {
 	padding-top: 24px !important;
-}
-
-.GenericConfirmDialog .DialogHeader
-{
-	font-size: var(--title_1_size) !important;
-	font-weight: var(--title_1_weight) !important;
-	padding: 24px 24px 16px 24px !important;
-}
-
-.GenericConfirmDialog .DialogBody
-{
-	overflow: hidden !important;
-}
-
-.ModalPosition_Content > .ModalPosition_Dismiss
-{
-	display: none !important;
 }
 
 .GenericConfirmDialog .DialogBodyText[class*="cloudconflict_Title_"]
@@ -136,81 +212,6 @@
 	text-align: start !important;
 }
 
-.GenericConfirmDialog .DialogFooter
-{
-	margin-top: 24px !important;
-}
-
-/* Swap buttons to make the Cancel button first */
-.GenericConfirmDialog .DialogFooter ._DialogColLayout
-{
-	flex-direction: row-reverse !important;
-	overflow: hidden !important;
-	width: 100% !important;
-}
-
-.GenericConfirmDialog .DialogFooter .DialogTwoColLayout._DialogColLayout
-{
-	gap: 0px !important;
-}
-
-.GenericConfirmDialog .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"])
-{
-	height: 42px !important;
-	color: var(--button_fg) !important;
-	font-family: var(--basefont) !important;
-	font-size: var(--button_font_size) !important;
-	line-height: normal !important;
-	font-weight: var(--button_font_weight) !important;
-	letter-spacing: normal !important;
-	background: transparent !important;
-	box-shadow: none !important;
-	border-radius: 0 !important;
-	border-top: 1px var(--border) solid !important;
-	border-left: 1px var(--border) solid !important;
-	margin: 0 !important;
-	margin-left: -1px !important;
-	max-width: none !important;
-	transition: var(--focus_transition) !important;
-}
-
-.GenericConfirmDialog .DialogFooter .DialogButton::before
-{
-	display: none !important;
-}
-
-.GenericConfirmDialog .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"]):hover
-{
-	background: rgba(255, 255, 255, 0.07) !important;
-	box-shadow: none !important;
-}
-
-.GenericConfirmDialog .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"]):active
-{
-	background: rgba(255, 255, 255, 0.16) !important;
-	box-shadow: none !important;
-}
-
-.GenericConfirmDialog .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"]).Primary
-{
-	color: var(--accent) !important;
-}
-
-.GenericConfirmDialog .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"]).Primary.Disabled
-{
-	color: var(--accent_disabled) !important;
-}
-
-.GenericConfirmDialog .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"]).Primary:hover
-{
-	background: var(--accent_hover_bg) !important;
-}
-
-.GenericConfirmDialog .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"]).Primary:active
-{
-	background: var(--accent_active_bg) !important;
-}
-
 /* Text Input */
 .DialogTextInputBase
 {
@@ -251,6 +252,7 @@
 
 /* Buttons */
 .ModalDialogPopup .DialogButton,
+.FullModalOverlay .DialogButton,
 .ModalDialogPopup .RadioButton
 {
 	background: var(--button_bg) !important;
@@ -262,7 +264,8 @@
 	transition: var(--focus_transition) !important;
 }
 
-.ModalDialogPopup .DialogButton.Secondary.Off
+.ModalDialogPopup .DialogButton.Secondary.Off,
+.FullModalOverlay .DialogButton.Secondary.Off
 {
 	background: var(--button_disabled_bg) !important;
 	color: var(--button_disabled_fg) !important;
@@ -270,21 +273,26 @@
 }
 
 .ModalDialogPopup .DialogButton:hover,
+.FullModalOverlay .DialogButton:hover,
 .ModalDialogPopup .RadioButton:hover,
 .ModalDialogPopup .DialogButton.Secondary.Off:hover
+.FullModalOverlay .DialogButton.Secondary.Off:hover
 {
 	background: var(--button_hover_bg) !important;
 }
 
 .ModalDialogPopup .DialogButton::before,
-.ModalDialogPopup .DialogButton:hover::before
+.ModalDialogPopup .DialogButton:hover::before,
+.FullModalOverlay .DialogButton::before
 {
 	box-shadow: none !important;
 }
 
 .ModalDialogPopup .DialogButton:active,
+.FullModalOverlay .DialogButton:active,
 .ModalDialogPopup .RadioButton:active,
-.ModalDialogPopup .DialogButton.Secondary.Off:active
+.ModalDialogPopup .DialogButton.Secondary.Off:active,
+.FullModalOverlay .DialogButton.Secondary.Off:active
 {
 	background: var(--button_active_bg) !important;
 }
@@ -380,7 +388,8 @@
 }
 
 /* Dialog Toggle */
-.ModalDialogPopup .DialogToggle_Label
+.ModalDialogPopup .DialogToggle_Label,
+.FullModalOverlay .DialogToggle_Label
 {
 	color: var(--fg) !important;
 	flex-grow: 1 !important;
@@ -390,7 +399,8 @@
 }
 
 /* Checkboxes */
-.ModalDialogPopup .DialogCheckbox
+.ModalDialogPopup .DialogCheckbox,
+.FullModalOverlay .DialogCheckbox
 {
 	background-color: var(--checkbox_bg) !important;
 	box-shadow: var(--checkbox_bs) !important;
@@ -399,18 +409,21 @@
 	width: 20px !important;
 }
 
-.ModalDialogPopup .DialogCheckbox:hover
+.ModalDialogPopup .DialogCheckbox:hover,
+.FullModalOverlay .DialogCheckbox:hover
 {
 	box-shadow: var(--checkbox_hover_bs) !important;
 }
 
-.ModalDialogPopup .DialogCheckbox:active:not(.Active)
+.ModalDialogPopup .DialogCheckbox:active:not(.Active),
+.FullModalOverlay .DialogCheckbox:active:not(.Active)
 {
 	box-shadow: none !important;
 	background: var(--checkbox_active_bg) !important;
 }
 
-.ModalDialogPopup .DialogCheckbox.Active
+.ModalDialogPopup .DialogCheckbox.Active,
+.FullModalOverlay .DialogCheckbox.Active
 {
 	background: var(--checkbox_checked_bg) !important;
 	background-blend-mode: var(--button_suggested_blend) !important;
@@ -418,22 +431,26 @@
 	box-shadow: none !important;
 }
 
-.ModalDialogPopup .DialogCheckbox.Active:hover
+.ModalDialogPopup .DialogCheckbox.Active:hover,
+.FullModalOverlay .DialogCheckbox.Active:hover
 {
 	background-color: var(--button_suggested_hover_bg) !important;
 }
 
-.ModalDialogPopup .DialogCheckbox.Active:active
+.ModalDialogPopup .DialogCheckbox.Active:active,
+.FullModalOverlay .DialogCheckbox.Active:active
 {
 	background-color: var(--button_suggested_click_bg) !important;
 }
 
-.ModalDialogPopup .DialogCheckbox svg
+.ModalDialogPopup .DialogCheckbox svg,
+.FullModalOverlay .DialogCheckbox svg
 {
 	stroke-width: var(--checkbox_checked_sw) !important;
 }
 
-.ModalDialogPopup .DialogCheckbox svg path
+.ModalDialogPopup .DialogCheckbox svg path,
+.FullModalOverlay .DialogCheckbox svg path
 {
 	stroke: var(--fg) !important;
 	d: path("M 185 63 L 92 170 l -53 -52") !important;
