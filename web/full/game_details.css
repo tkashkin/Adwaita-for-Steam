@@ -791,3 +791,13 @@ body.DesktopUI iframe[class*="appdetailsdlcsection_StoreHover_"]
 {
 	color: var(--accent) !important;
 }
+
+/* Notes */
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsnotessection_NoteLink_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont);
+	font-size: var(--basesize);
+	font-weight: var(--baseweight);
+}
+
