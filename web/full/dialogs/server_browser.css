@@ -63,3 +63,15 @@
 	background: var(--entry_bg) !important;
 	border-radius: var(--menu_radius) !important;
 }
+
+/* Filters */
+.ModalDialogPopup div[class*="serverbrowserdialog_FilterOptionsCtr_"] span
+{
+	font-weight: var(--title_3_weight) !important;
+}
+
+.ModalDialogPopup div[class*="serverbrowserdialog_FilterOptionsCtr_"] .DialogInput_Wrapper,
+.ModalDialogPopup div[class*="serverbrowserdialog_FilterOptionsCtr_"] ._DialogInputContainer
+{
+	margin: 6px 0px !important;
+}
