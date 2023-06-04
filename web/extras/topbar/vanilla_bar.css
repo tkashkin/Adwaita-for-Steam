@@ -1,0 +1,42 @@
+/* ------------------------------- */
+/* --- Vanilla Steam Headerbar --- */
+/* ------------------------------- */
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ
+{
+	height: initial !important;
+}
+
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="steamdesktop_SuperNavBar_"]
+{
+	position: initial !important;
+	top: 0px;
+}
+
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"]
+{
+	-webkit-app-region: drag;
+	justify-content: start !important;
+	margin-bottom: 2px !important;
+}
+
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] > div > div::before
+{
+	display: none
+}
+
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_MenuButton_"]
+{
+	font-size: var(--title_2_size) !important;
+	max-width: 300px !important;
+}
+
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNavMenu_"][class*="supernav_Selected_"]:not([class*="supernav_Disabled_"]) div[class*="supernav_MenuButton_"]::after
+{
+	background: var(--accent) !important;
+	height: 3px !important;
+}
+
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNavMenu_"][class*="supernav_Selected_"]:not([class*="supernav_Disabled_"]):not(:hover) div[class*="supernav_MenuButton_"]
+{
+	background: none !important;
+}
