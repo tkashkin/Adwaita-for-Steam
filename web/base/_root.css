@@ -125,6 +125,9 @@
 	--entry_subtitle_fg: var(--dim_label_fg);
 	--entry_subtitle_font_size: var(--subtitle_size);
 	--entry_subtitle_font_weight: var(--subtitle_weight);
+	--entry_small_min_height: calc(var(--entry_min_height) - 20px);
+	--entry_small_radius: calc(var(--entry_radius) - 6px);
+
 
 	--dim_label_fg: rgba(255, 255, 255, 0.55);
 

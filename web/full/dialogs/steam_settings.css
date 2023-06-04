@@ -44,6 +44,11 @@
 	width: 20px !important;
 }
 
+.ModalDialogPopup div[class*="settings_SettingsModal_"] .DialogDropDown_CurrentDisplay
+{
+	padding-right: 20px !important;
+}
+
 /* - Account Panel - */
 /* Fat Buttons */
 .ModalDialogPopup div[class*="settings_SettingsModal_"] button[class*="accountpanel_FatButton_"] svg

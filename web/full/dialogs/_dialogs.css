@@ -20,7 +20,8 @@
 }
 
 /* Modal Overlays */
-.FullModalOverlay .DialogContent
+.FullModalOverlay .DialogContent,
+.GenericConfirmDialog .DialogContent
 {
 	padding: 0 !important;
 }
@@ -30,7 +31,13 @@
 .FullModalOverlay .DialogBodyText[class*="cloudconflict_CloudConflictWarning_"],
 .FullModalOverlay [class*="cloudconflict_FooterNote_"],
 .FullModalOverlay [class*="cloudconflict_ChoiceNote_"],
-.FullModalOverlay div[class*="moveappsdialog_MoveAppsDialog_"] > .DialogBody
+.FullModalOverlay div[class*="moveappsdialog_MoveAppsDialog_"] > .DialogBody,
+.GenericConfirmDialog .DialogHeader,
+.GenericConfirmDialog .DialogBodyText,
+.GenericConfirmDialog .DialogBodyText[class*="cloudconflict_CloudConflictWarning_"],
+.GenericConfirmDialog [class*="cloudconflict_FooterNote_"],
+.GenericConfirmDialog [class*="cloudconflict_ChoiceNote_"],
+.GenericConfirmDialog div[class*="moveappsdialog_MoveAppsDialog_"] > .DialogBody
 {
 	color: var(--popover_fg) !important;
 	font-family: var(--basefont) !important;
@@ -45,14 +52,16 @@
 	box-sizing: border-box !important;
 }
 
-.FullModalOverlay .DialogContent .DialogHeader
+.FullModalOverlay .DialogContent .DialogHeader,
+.GenericConfirmDialog .DialogContent .DialogHeader
 {
 	font-size: var(--title_1_size) !important;
 	font-weight: var(--title_1_weight) !important;
 	padding: 24px 24px 16px 24px !important;
 }
 
-.FullModalOverlay .DialogContent .DialogBody
+.FullModalOverlay .DialogContent .DialogBody,
+.GenericConfirmDialog .DialogContent .DialogBody
 {
 	overflow: hidden !important;
 }
@@ -62,25 +71,29 @@
 	display: none !important;
 }
 
-.FullModalOverlay .DialogContent .DialogFooter
+.FullModalOverlay .DialogContent .DialogFooter,
+.GenericConfirmDialog .DialogContent .DialogFooter
 {
 	margin-top: 24px !important;
 }
 
 /* Swap buttons to make the Cancel button first */
-.FullModalOverlay .DialogContent .DialogFooter ._DialogColLayout
+.FullModalOverlay .DialogContent .DialogFooter ._DialogColLayout,
+.GenericConfirmDialog .DialogContent .DialogFooter ._DialogColLayout
 {
 	flex-direction: row-reverse !important;
 	overflow: hidden !important;
 	width: 100% !important;
 }
 
-.FullModalOverlay .DialogContent .DialogFooter .DialogTwoColLayout._DialogColLayout
+.FullModalOverlay .DialogContent .DialogFooter .DialogTwoColLayout._DialogColLayout,
+.GenericConfirmDialog .DialogContent .DialogFooter .DialogTwoColLayout._DialogColLayout
 {
 	gap: 0px !important;
 }
 
-.FullModalOverlay .DialogContent .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"])
+.FullModalOverlay .DialogContent .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"]),
+.GenericConfirmDialog .DialogContent .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"])
 {
 	height: 42px !important;
 	color: var(--button_fg) !important;
@@ -100,39 +113,46 @@
 	transition: var(--focus_transition) !important;
 }
 
-.FullModalOverlay .DialogContent .DialogFooter .DialogButton::before
+.FullModalOverlay .DialogContent .DialogFooter .DialogButton::before,
+.GenericConfirmDialog .DialogContent .DialogFooter .DialogButton::before
 {
 	display: none !important;
 }
 
-.FullModalOverlay .DialogContent .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"]):hover
+.FullModalOverlay .DialogContent .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"]):hover,
+.GenericConfirmDialog .DialogContent .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"]):hover
 {
 	background: rgba(255, 255, 255, 0.07) !important;
 	box-shadow: none !important;
 }
 
-.FullModalOverlay .DialogContent .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"]):active
+.FullModalOverlay .DialogContent .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"]):active,
+.GenericConfirmDialog .DialogContent .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"]):active
 {
 	background: rgba(255, 255, 255, 0.16) !important;
 	box-shadow: none !important;
 }
 
-.FullModalOverlay .DialogContent .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"]).Primary
+.FullModalOverlay .DialogContent .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"]).Primary,
+.GenericConfirmDialog .DialogContent .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"]).Primary
 {
 	color: var(--accent) !important;
 }
 
-.FullModalOverlay .DialogContent .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"]).Primary.Disabled
+.FullModalOverlay .DialogContent .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"]).Primary.Disabled,
+.GenericConfirmDialog .DialogContent .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"]).Primary.Disabled
 {
 	color: var(--accent_disabled) !important;
 }
 
-.FullModalOverlay .DialogContent .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"]).Primary:hover
+.FullModalOverlay .DialogContent .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"]).Primary:hover,
+.GenericConfirmDialog .DialogContent .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"]).Primary:hover
 {
 	background: var(--accent_hover_bg) !important;
 }
 
-.FullModalOverlay .DialogContent .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"]).Primary:active
+.FullModalOverlay .DialogContent .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"]).Primary:active,
+.GenericConfirmDialog .DialogContent .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"]).Primary:active
 {
 	background: var(--accent_active_bg) !important;
 }
@@ -216,14 +236,14 @@
 .DialogTextInputBase
 {
 	background: var(--entry_bg) !important;
-	border-radius: var(--entry_radius) !important;
+	border-radius: var(--entry_small_radius) !important;
 	border: none !important;
 	box-shadow: none !important;
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
 	font-size: var(--entry_font_size) !important;
 	font-weight: var(--entry_font_weight) !important;
-	min-height: var(--entry_min_height) !important;
+	min-height: var(--entry_small_min_height) !important;
 	padding: var(--entry_padding) !important;
 	transition: var(--focus_transition) !important;
 }
@@ -236,6 +256,11 @@
 .DialogTextInputBase:focus
 {
 	box-shadow: var(--focusring_bs) !important;
+}
+
+.DialogTextInputBase::placeholder
+{
+	color: var(--dim_label_fg) !important;
 }
 
 /* Radio Group */
@@ -319,13 +344,13 @@
 {
 	align-items: center !important;
 	background: var(--entry_bg) !important;
-	border-radius: var(--entry_radius) !important;
+	border-radius: var(--entry_small_radius) !important;
 	color: var(--fg) !important;
 	display: flex !important;
 	font-family: var(--basefont) !important;
 	font-size: var(--entry_font_size) !important;
 	font-weight: var(--entry_font_weight) !important;
-	min-height: var(--entry_min_height) !important;
+	min-height: var(--entry_small_min_height) !important;
 	padding: var(--entry_padding) !important;
 	transition: var(--focus_transition) !important;
 }
@@ -357,6 +382,9 @@
 .ModalDialogPopup .DialogDropDown_Arrow
 {
 	margin-top: 4px !important;
+	position: absolute !important;
+	top: 50% !important;
+	transform: translateY(-50%) !important;
 }
 
 .ModalDialogPopup div[class*="dropdown_DialogDropDownMenu_"]
