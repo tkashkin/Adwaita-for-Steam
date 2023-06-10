@@ -218,11 +218,12 @@ def install(source: Path, target: Path, name: str):
 	shutil.copytree(source, target_skin)
 
 def patch_client_css(source: Path, target: Path, name: str):
-	print(f"{TEXT_BLUE}{TEXT_ARROW} Patching Steam Client {TEXT_BOLD}{name}{TEXT_RESET}{TEXT_BLUE} Files...{TEXT_RESET}")
-
 	if not target.is_dir():
 		print(f"{TEXT_PURPLE}{TEXT_INFO} Directory {TEXT_BOLD}{target}{TEXT_RESET}{TEXT_PURPLE} does not exist{TEXT_RESET}")
 		return
+
+	print(f"{TEXT_BLUE}{TEXT_ARROW} Patching Steam Client {TEXT_BOLD}{name}{TEXT_RESET}{TEXT_BLUE} Files...{TEXT_RESET}")
+
 
 	if name == "Library":
 		target_css = target / STEAM_LIBRARY_CSS
