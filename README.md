@@ -32,89 +32,61 @@ A skin to make Steam look more like a native GNOME app
 
 <details><summary>Previews</summary>
 
-<details><summary>Adwaita</summary>
+### Adwaita
 
 ![Adwaita](/colorthemes/adwaita/preview.png?raw=true)
 
-</details>
-
-<details><summary>Breeze</summary>
+### Breeze
 
 ![Breeze](/colorthemes/breeze/preview.png?raw=true)
 
-</details>
-
-<details><summary>Catppuccin-Frappe</summary>
+### Catppuccin-Frappe
 
 ![Catppuccin-Frappe](/colorthemes/catppuccin-frappe/preview.png?raw=true)
 
-</details>
-
-<details><summary>Catppuccin-Macchiato</summary>
+### Catppuccin-Macchiato
 
 ![Catppuccin-Macchiato](/colorthemes/catppuccin-macchiato/preview.png?raw=true)
 
-</details>
-
-<details><summary>Catppuccin-Mocha</summary>
+### Catppuccin-Mocha
 
 ![Catppuccin-Mocha](/colorthemes/catppuccin-mocha/preview.png?raw=true)
 
-</details>
-
-<details><summary>Dracula</summary>
+### Dracula
 
 ![Dracula](/colorthemes/dracula/preview.png?raw=true)
 
-</details>
-
-<details><summary>Gruvbox</summary>
+### Gruvbox
 
 ![Gruvbox](/colorthemes/gruvbox/preview.png?raw=true)
 
-</details>
-
-<details><summary>Kate</summary>
+### Kate
 
 ![Kate](/colorthemes/kate/preview.png?raw=true)
 
-</details>
-
-<details><summary>Nord</summary>
+### Nord
 
 ![Nord](/colorthemes/nord/preview.png?raw=true)
 
-</details>
-
-<details><summary>One Pro</summary>
+### One Pro
 
 ![One Pro](/colorthemes/one-pro/preview.png?raw=true)
 
-</details>
-
-<details><summary>Pop</summary>
+### Pop
 
 ![Pop](/colorthemes/pop/preview.png?raw=true)
 
-</details>
-
-<details><summary>Tokyo Night</summary>
+### Tokyo Night
 
 ![Tokyo Night](/colorthemes/tokyo-night/preview.png?raw=true)
 
-</details>
-
-<details><summary>Tomorrow Night</summary>
+### Tomorrow Night
 
 ![Tomorrow Night](/colorthemes/tomorrow-night/preview.png?raw=true)
 
-</details>
-
-<details><summary>Yaru</summary>
+### Yaru
 
 ![Yaru](/colorthemes/yaru/preview.png?raw=true)
-
-</details>
 
 </details>
 
