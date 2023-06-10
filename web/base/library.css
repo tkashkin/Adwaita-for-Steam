@@ -78,6 +78,16 @@
 	font-weight: var(--baseweight) !important;
 }
 
+#SteamDesktop .library_Container_3xRRJ div[class*="libraryhomeshowcases_ShowcaseHeader_"] .SVGIcon_ReadyToPlay circle
+{
+	stroke: var(--accent) !important;
+}
+
+#SteamDesktop .library_Container_3xRRJ div[class*="libraryhomeshowcases_ShowcaseHeader_"] .SVGIcon_ReadyToPlay path
+{
+	fill: var(--accent) !important;
+}
+
 /* Whats New */
 #SteamDesktop .library_Container_3xRRJ div[class*="libraryhome_UpdatesContainer_"] div[class*="libraryhomenewupdates_PartnerEventRowCapsule_TextTitle_"]
 {
