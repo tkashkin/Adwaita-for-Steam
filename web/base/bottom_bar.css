@@ -43,6 +43,14 @@
 	font-weight: var(--button_font_weight) !important;
 }
 
+/* Download */
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="bottombar_ProgressBar_"]
+{
+	--color-progress-bar-background: var(--card_bg) !important;
+	--color-progress-bar-foreground: var(--accent) !important;
+	border-radius: var(--card_radius) !important;
+}
+
 /* Update Check */
 #SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[style*="height:68px"],
 #SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="updatealert_ActionAlert_"]
