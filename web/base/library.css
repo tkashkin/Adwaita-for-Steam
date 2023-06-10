@@ -78,6 +78,47 @@
 	font-weight: var(--baseweight) !important;
 }
 
+/* Whats New */
+#SteamDesktop .library_Container_3xRRJ div[class*="libraryhome_UpdatesContainer_"] div[class*="libraryhomenewupdates_PartnerEventRowCapsule_TextTitle_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--title_3_weight) !important;
+	font-size: var(--title_3_size) !important;
+}
+
+#SteamDesktop .library_Container_3xRRJ div[class*="libraryhome_UpdatesContainer_"] div[class*="libraryhomenewupdates_GameName_"]
+{
+	color: var(--dim_label_fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--title_4_weight) !important;
+	font-size: var(--title_4_size) !important;
+}
+
+#SteamDesktop .library_Container_3xRRJ div[class*="libraryhome_UpdatesContainer_"] div[class*="libraryhomenewupdates_GameIconAndName_"]
+{
+	background: var(--button_bg) !important;
+	border: none !important;
+	border-radius: var(--button_radius) !important;
+}
+
+#SteamDesktop .library_Container_3xRRJ div[class*="libraryhome_UpdatesContainer_"] div[class*="libraryhomenewupdates_GameIconAndName_"]:hover
+{
+	background: var(--button_hover_bg) !important;
+}
+
+#SteamDesktop .library_Container_3xRRJ div[class*="libraryhome_UpdatesContainer_"] div[class*="libraryhomenewupdates_GameIconAndName_"]:active
+{
+	background: var(--button_active_bg) !important;
+}
+
+#SteamDesktop .library_Container_3xRRJ div[class*="libraryhome_UpdatesContainer_"] div[class*="libraryhomenewupdates_EventTime_"]
+{
+	color: var(--dim_label_fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--baseweight) !important;
+}
+
 /* Popup Elements */
 body.DesktopUI div[class*="libraryhomeshowcases_CollectionDropDownContainer_"][class*="libraryhomeshowcases_CollectionDropDownContainer_"] ._DialogInputContainer[class*="dropdown_DialogDropDownMenu_"],
 body.DesktopUI .DialogMenuPosition[class*="appgrid_SortingDropDownContainer_"] > div,
