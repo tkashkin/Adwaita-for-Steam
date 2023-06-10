@@ -37,16 +37,16 @@
 	background-color: var(--button_active_bg) !important;
 }
 
-.title-bar-actions .title-area-icon > svg
+.title-bar-actions .title-area-icon svg
 {
 	width: 12px !important;
 	height: 12px !important;
 }
 
-.title-bar-actions .closeButton > svg > *,
-.title-bar-actions .maximizeButton > svg > *,
-.title-bar-actions .minimizeButton > svg > *,
-.title-bar-actions .restoreButton > svg > *
+.title-bar-actions .closeButton svg > *,
+.title-bar-actions .maximizeButton svg > *,
+.title-bar-actions .minimizeButton svg > *,
+.title-bar-actions .restoreButton svg > *
 {
 	stroke: var(--headerbar_fg) !important;
 	stroke-width: 32px !important;
@@ -67,8 +67,6 @@
 .title-area-icon.maximizeButton svg
 {
 	width: 7px !important;
-	margin-left: 9px !important;
-	margin-top: 6px !important;
 }
 
 .title-area-icon.maximizeButton svg rect
@@ -86,30 +84,7 @@
 .title-area-icon.minimizeButton svg
 {
 	width: 10px !important;
-	margin-left: 7px !important;
-}
-
-.title-area-icon.restoreButton svg
-{
-	margin-left: 6px !important;
-	margin-top: 6px !important;
-}
-
-/* Friends Window Controls */
-.friendsui-container .title-bar-actions
-{
-	margin-top: 6px !important;
-}
-
-.friendsui-container .title-area-icon
-{
-	margin-top: 0px !important;
-}
-
-.friendsui-container .title-area-icon.closeButton svg
-{
-	margin-top: 0px !important;
-	margin-left: 0px !important;
+    transform: translateY(0px) !important;
 }
 
 /* Blue Line on Dialog Window */
