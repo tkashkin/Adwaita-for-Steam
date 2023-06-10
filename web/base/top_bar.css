@@ -24,6 +24,7 @@ body.DesktopUI .steamdesktop_Wrapper_1ENHE
 #SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="steamdesktop_TitleBar_"]
 {
 	background: var(--headerbar_bg) !important;
+	height: 44px !important;
 }
 
 /* Focus Bar */
@@ -36,8 +37,8 @@ body.DesktopUI .steamdesktop_Wrapper_1ENHE
 /* Menu Bar */
 #SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="steamdesktop_RootMenuBar_"]
 {
-	padding-top: 6px !important;
-	gap: 0px !important;
+	padding: 6px 4px !important;
+	gap: 3px !important;
 	z-index: 1 !important;
 }
 
@@ -72,7 +73,7 @@ body.DesktopUI .steamdesktop_Wrapper_1ENHE
 {
 	-webkit-app-region: inherit;
 	position: relative;
-	top: -29px;
+	top: -40px;
 }
 
 #SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"]
@@ -244,7 +245,7 @@ body.DesktopUI > div[class*="steamdesktop_URLBarCopied_"]
 #SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="steamdesktop_TitleBarControls_"]
 {
 	background: var(--headerbar_bg) !important;
-	margin-top: 11px !important;
+	margin-top: 0px !important;
 	z-index: 1 !important;
 }
 
@@ -439,6 +440,11 @@ body.ContextMenuPopupBody.DesktopUI div[class*="steamtemplates_NewIndicator_"] s
 	#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="rootmenu_RootMenuButton_"]
 	{
 		padding: 5px 5px !important;
+	}
+
+	#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="steamdesktop_RootMenuBar_"]
+	{
+		padding-left: 9px !important;
 	}
 
 	#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] > div:nth-child(n+3):nth-child(-n+7) > div::before
