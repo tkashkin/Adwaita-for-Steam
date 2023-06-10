@@ -84,7 +84,7 @@
 .title-area-icon.minimizeButton svg
 {
 	width: 10px !important;
-    transform: translateY(0px) !important;
+	transform: translateY(0px) !important;
 }
 
 /* Blue Line on Dialog Window */
