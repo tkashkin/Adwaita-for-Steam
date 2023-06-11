@@ -199,6 +199,15 @@ body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl div[class*="steamdesktopoverla
 	color: var(--fg) !important;
 }
 
+/* Icon Alignment Workaround */
+.ModalDialogPopup .PopupFullWindow div[class*="steamdesktopoverlay_PinWindowButton_"],
+.ModalDialogPopup .PopupFullWindow div[class*="steamdesktopoverlay_OpacityButton_"]
+{
+	align-items: center !important;
+	display: flex !important;
+	justify-content: center !important;
+}
+
 .ModalDialogPopup .PopupFullWindow div[class*="steamdesktopoverlay_Pinned_"]
 {
 	color: var(--accent) !important;
