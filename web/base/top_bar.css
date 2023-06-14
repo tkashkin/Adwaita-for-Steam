@@ -255,7 +255,8 @@ body.DesktopUI > div[class*="steamdesktop_URLBarCopied_"]
 	order: 99 !important;
 }
 
-#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_AnnouncementsButton"][class*="titlebarcontrols_Active_"]
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_AnnouncementsButton"][class*="titlebarcontrols_Active_"],
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_AnnouncementsButton"][class*="titlebarcontrols_Active_"]:hover
 {
 	background: var(--accent_bg) !important;
 }
