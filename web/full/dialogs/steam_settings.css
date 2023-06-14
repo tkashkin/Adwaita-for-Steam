@@ -119,7 +119,8 @@
 }
 
 /* Expanded */
-.ModalDialogPopup div[class*="settings_SettingsModal_"] div[class*="notificationssettings_NotificationPrefDetails_"]
+.ModalDialogPopup div[class*="settings_SettingsModal_"] div[class*="notificationssettings_NotificationPrefDetails_"],
+.ModalDialogPopup div[class*="settings_SettingsModal_"] div[class*="notificationssettings_NotificationGroupExpanded_"]
 {
 	background: none !important;
 	box-shadow: none !important;;
