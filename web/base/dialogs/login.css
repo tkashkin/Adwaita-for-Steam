@@ -7,6 +7,8 @@ body.DesktopUI > div[class*="index_PreloadThrobber_"],
 body.DesktopUI div[class*="steamdesktop_InitContainer_"]
 {
 	background: var(--bg) !important;
+	border: none !important;
+	box-shadow: none !important;
 	overflow: hidden !important;
 	user-select: none !important;
 }
