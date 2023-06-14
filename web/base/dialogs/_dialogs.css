@@ -11,6 +11,7 @@
 
 .title-bar-actions
 {
+	height: 36px !important;
 	max-height: 36px !important;
 	position: absolute !important;
 	right: 12px !important;
