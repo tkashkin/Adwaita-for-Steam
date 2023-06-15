@@ -59,7 +59,7 @@
 	stroke-width: 40px !important;
 }
 
-.title-bar-actions .title-area-icon svg > *
+.title-bar-actions.window-controls .title-area-icon svg > *
 {
 	stroke: var(--headerbar_bg) !important;
 	stroke-width: 32px !important;
