@@ -184,17 +184,14 @@ body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl div[class*="steamdesktopoverla
 }
 
 /* Window Controls */
-.ModalDialogPopup .PopupFullWindow div[class*="steamdesktopoverlay_WindowControls_"] .title-bar-actions .Focusable
-{
-	margin-top: 6px !important;
-}
-
 .ModalDialogPopup .PopupFullWindow div[class*="steamdesktopoverlay_WindowControls_"] .title-bar-actions .Focusable div[class*="steamdesktopoverlay_OpacityButton_"]
 {
 	color: var(--fg) !important;
 }
 
-.ModalDialogPopup .PopupFullWindow div[class*="steamdesktopoverlay_PinWindowButton_"]
+.ModalDialogPopup .PopupFullWindow div[class*="steamdesktopoverlay_PinWindowButton_"],
+.ModalDialogPopup .PopupFullWindow div[class*="steamdesktopoverlay_CloudSyncButton_"],
+.ModalDialogPopup .PopupFullWindow div[class*="steamdesktopoverlay_OpacityButton_"]
 {
 	color: var(--fg) !important;
 }

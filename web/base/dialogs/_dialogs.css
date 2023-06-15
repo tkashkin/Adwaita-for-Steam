@@ -13,9 +13,12 @@
 {
 	height: 36px !important;
 	max-height: 36px !important;
-	position: absolute !important;
-	right: 12px !important;
-	top: 4px !important;
+	margin-top: 4px !important;
+}
+
+.title-bar-actions.window-controls
+{
+	margin-right: 12px !important;
 }
 
 .title-bar-actions .title-area-icon
