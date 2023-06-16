@@ -1,0 +1,14 @@
+/* ------------------------------- */
+/* --- Remove Rounded Corners  --- */
+/* ------------------------------- */
+:root
+{
+	--button_radius: 0px;
+	--button_pill_radius: 0px;
+	--checkbox_radius: 0px;
+	--card_radius: 0px;
+	--entry_radius: 0px;
+	--menu_radius: 0px;
+	--window_radius: 0px;
+	--popover_radius: 0px;
+}

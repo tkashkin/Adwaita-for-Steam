@@ -1,0 +1,18 @@
+/* ---------------------------------- */
+/* --- Show Forward/Back Buttons  --- */
+/* ---------------------------------- */
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] svg[class*="supernav_Arrow_"]
+{
+	display: block !important;
+}
+
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] div[class*="supernav_SuperNavMenu_"]:last-child,
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] svg[class*="supernav_Arrow_"]:nth-child(2)
+{
+	margin-right: auto !important;
+}
+
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="steamdesktop_RootMenuBar_"]
+{
+	margin-left: 75px !important;
+}

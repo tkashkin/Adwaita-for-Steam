@@ -1,0 +1,85 @@
+/* ------------------------------------- */
+/* --- Left Aligned Window Controls  --- */
+/* ------------------------------------- */
+.title-bar-actions
+{
+	flex-direction: row !important;
+	left: 0px !important;
+	right: auto !important;
+}
+
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="steamdesktop_WindowControls_"]
+{
+	flex-basis: 114px !important;
+	order: -1 !important;
+}
+
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] svg[class*="supernav_Arrow_"]:first-child
+{
+	margin-left: 125px !important;
+}
+
+/* App Properties Titles */
+.ModalDialogPopup [class*="pagedsettings_PagedSettingsDialog_PageListColumn_"] > [class*="pagedsettings_PagedSettingsDialog_Title_"]
+{
+	padding-left: 50px !important;
+	padding-right: 50px !important;
+}
+
+/* Friendslist */
+.currentUserContainer .AvatarAndUser
+{
+	padding-left: 125px !important;
+}
+
+.multiChatDialog .title-bar-actions {
+	position: fixed !important;
+}
+
+/* Content Management */
+.ModalDialogPopup [class*="contentmanagement_ContentManagement_"] [class*="contentmanagement_PageableCarousel_"]
+{
+	margin-left: 70px !important;
+}
+
+/* ------------------------------------------ */
+/* --- Show Minimize and Maximize Button  --- */
+/* ------------------------------------------ */
+.title-bar-actions .title-area-icon.minimizeButton,
+.title-bar-actions .title-area-icon.maximizeButton,
+.title-bar-actions .title-area-icon.restoreButton
+{
+	display: block !important;
+}
+
+.title-bar-actions .title-area-icon.maximizeButton,
+.title-bar-actions .title-area-icon.restoreButton
+{
+	order: 3 !important;
+}
+
+
+/* --- Small Window Size --- */
+@media (max-width: 1350px)
+{
+	#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_AccountMenu_"] > *:not([class*="steamavatar_avatarHolder_"])
+	{
+		display: none !important;
+	}
+
+	#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_MenuButton_"],
+	#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="rootmenu_RootMenuButton_"]
+	{
+		padding: 5px 3px !important;
+	}
+
+	#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] > div:nth-child(3) > div::before,
+	#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] > div:nth-child(4) > div::before,
+	#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] > div:nth-child(5) > div::before,
+	#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] > div:nth-child(6) > div::before,
+	#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] > div:nth-child(7) > div::before
+	{
+		display: none !important;
+	}
+}
+

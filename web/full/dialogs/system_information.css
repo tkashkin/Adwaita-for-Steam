@@ -1,0 +1,39 @@
+/* --- System Information --- */
+/* Initial Text */
+.ModalDialogPopup div[class*="hardwaresurveydialog_Desktop_"] > div[class*="hardwaresurveydialog_DialogBodyText_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--baseweight) !important;
+	padding: 0 18px !important;
+}
+
+/* Hardware Results */
+.ModalDialogPopup div[class*="hardwaresurveydialog_HardwareSurveySections_"]
+{
+	background: none !important;
+	border: none !important;
+	box-shadow: none !important;
+}
+
+.ModalDialogPopup div[class*="hardwaresurveydialog_HardwareSurveySection_"] h3
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--title_3_weight) !important;
+	font-size: var(--title_3_size) !important;
+}
+
+.ModalDialogPopup div[class*="hardwaresurveydialog_HardwareSurveySection_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--baseweight) !important;
+	font-size: var(--title_4_size) !important;
+}
+
+/* Footer */
+.ModalDialogPopup div[class*="hardwaresurveydialog_Desktop_"] > .DialogFooter
+{
+	padding: 16px !important;
+}

@@ -1,0 +1,803 @@
+/* Rounded Corners */
+#SteamDesktop .library_AppDetailsMain_2Nq6o div[class*="appactionbutton_ButtonChild"],
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appactivityday_EventBody_"],
+#SteamDesktop .appdetails_Container_2iE-7 img[class*="appactivityday_PartnerEventMediumImage_Image_"],
+#SteamDesktop .appdetails_Container_2iE-7 img[class*="appactivityday_PartnerEventLargeImage_Image_"],
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appactivityday_PartnerEventLargeImage_Container_"],
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appactivityday_PartnerEvent_"],
+#SteamDesktop .appdetails_Container_2iE-7 button[class*="appdetailsactivitysection_FetchMoreContainer_"],
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailscommunityfeed_HeaderStyles_"],
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsdlcsection_Art_"],
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsprimarylinkssection_LinksSectionBody_"],
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailssection_Highlight_"],
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailssection_RightColumnSection_"],
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsspotlight_ReviewContainer_"],
+#SteamDesktop .appdetails_Container_2iE-7 img[class*="appdetailsworkshopsection_FeaturedItemImage_"],
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsworkshopsection_WorkshopContainer_"],
+#SteamDesktop .appdetails_Container_2iE-7 img[class*="libraryassetimage_Visible_"],
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="spotlight_MajorEventImageContainer_"],
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="spotlight_MajorEventContainer_"],
+#SteamDesktop .appdetails_Container_2iE-7 [class*="spotlight_MajorEventBackground_"],
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="writereview_RightContainer_"] button,
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsgameinfopanel_Description_"],
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appactivitydlc_Contents_"],
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsscreenshotssection_Thumbnail_"],
+#SteamDesktop .appdetails_Container_2iE-7 img[class*="screenshots_ClickableScreenshotImg_"],
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsspotlight_SpotlightDLC_"],
+#SteamDesktop .apppartnereventspage_AppPartnerEventsBody_1nzwr div[class*="discussionwidget_VoteContainer_"],
+#SteamDesktop .apppartnereventspage_AppPartnerEventsBody_1nzwr div[class*="discussionwidget_ShareContainer_"],
+#SteamDesktop .apppartnereventspage_AppPartnerEventsBody_1nzwr div[class*="discussionwidget_DiscussContainer_"]
+{
+	border-radius: var(--card_radius) !important;
+	background: var(--card_bg) !important;
+	border: none !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsachievementssection_AdditionalItem_"],
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailscommunityfeed_LoadContentButton_"],
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsactivitysection_ViewLastNews_"]
+{
+	border-radius: var(--button_radius) !important;
+	background: var(--button_bg) !important;
+	border: none !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 button[class*="appdetailsactivitysection_FetchMoreContainer_"],
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailscommunityfeed_LoadContentButton_"],
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsactivitysection_ViewLastNews_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--button_font_size) !important;
+	font-weight: var(--button_font_weight) !important;
+	line-height: 32px !important;
+}
+
+/* Play button, streaming device dropdown */
+#SteamDesktop .library_AppDetailsMain_2Nq6o div[class*="appactionbutton_PlayButtonContainer"]
+{
+	border-radius: var(--button_radius) !important;
+	background-color: var(--accent_bg) !important;
+	color: var(--accent_fg) !important;
+}
+
+#SteamDesktop .library_AppDetailsMain_2Nq6o div[class*="appactionbutton_PlayButtonContainer"],
+#SteamDesktop .library_AppDetailsMain_2Nq6o [class*="appactionbutton_ShowingStreaming"]
+{
+	min-width: 140px !important;
+}
+
+#SteamDesktop .library_AppDetailsMain_2Nq6o div[class*="appactionbutton_PlayButtonContainer"][class*="appactionbutton_Green"]
+{
+	background-color: var(--success_bg) !important;
+	color: var(--success_fg) !important;
+}
+
+#SteamDesktop .library_AppDetailsMain_2Nq6o div[class*="appactionbutton_PlayButtonContainer"][class*="appactionbutton_Disabled"]
+{
+	background-color: var(--button_disabled_bg) !important;
+	color: var(--button_disabled_fg) !important;
+}
+
+#SteamDesktop .library_AppDetailsMain_2Nq6o div[class*="appactionbutton_PlayButtonContainer"] div[class*="appactionbutton_ButtonText"]
+{
+	color: var(--button_fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: 18px !important;
+	line-height: 32px !important;
+	font-weight: 700 !important;
+	letter-spacing: normal !important;
+	text-transform: none !important;
+}
+
+#SteamDesktop .library_AppDetailsMain_2Nq6o div[class*="appactionbutton_PlayButtonContainer"] > div[class*="appactionbutton_ButtonChild"]:first-child > svg
+{
+	display: none !important;
+}
+
+#SteamDesktop .library_AppDetailsMain_2Nq6o div[class*="appactionbutton_PlayButtonContainer"] > div[class*="appactionbutton_ButtonChild"] > svg > path,
+#SteamDesktop .library_AppDetailsMain_2Nq6o div[class*="appactionbutton_PlayButtonContainer"] > div[class*="appactionbutton_ButtonChild"] > svg > polygon
+{
+	stroke: currentColor !important;
+	fill: currentColor !important;
+}
+
+#SteamDesktop .library_AppDetailsMain_2Nq6o div[class*="appactionbutton_PlayButtonContainer"] > div[class*="appactionbutton_ButtonChild"]
+{
+	margin: 0 !important;
+	border-radius: var(--button_radius) !important;
+	background-color: transparent !important;
+	transition: background 0.15s, border-color 0.15s, border-top-left-radius 0s, border-bottom-left-radius 0s !important;
+}
+
+#SteamDesktop .library_AppDetailsMain_2Nq6o div[class*="appactionbutton_PlayButtonContainer"] > div[class*="appactionbutton_ButtonChild"]:hover
+{
+	background-color: var(--button_hover_bg) !important;
+}
+
+#SteamDesktop .library_AppDetailsMain_2Nq6o div[class*="appactionbutton_PlayButtonContainer"] > div[class*="appactionbutton_ButtonChild"]:active
+{
+	background-color: var(--button_active_bg) !important;
+}
+
+#SteamDesktop .library_AppDetailsMain_2Nq6o div[class*="appactionbutton_PlayButtonContainer"] > div[class*="appactionbutton_ButtonChild"]:last-child:not(:first-child)
+{
+	border-top-left-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
+	border-left: 1px var(--button_active_bg) solid !important;
+}
+
+#SteamDesktop .library_AppDetailsMain_2Nq6o div[class*="appactionbutton_PlayButtonContainer"]:hover > div[class*="appactionbutton_ButtonChild"]:last-child:not(:first-child)
+{
+	border-radius: var(--button_radius) !important;
+	border-color: transparent !important;
+}
+
+/* Hover Highlight */
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appactivityday_PartnerEventTextOnly_Container_"]:hover,
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appactivityday_PartnerEventMediumImage_Container_"]:hover,
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appactivityday_PartnerEventLargeImage_Container_"]:hover,
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsachievementssection_AdditionalItem_"]:hover,
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailscommunityfeed_LoadContentButton_"]:hover,
+#SteamDesktop .appdetails_Container_2iE-7 button[class*="appdetailsactivitysection_FetchMoreContainer_"]:hover,
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsactivitysection_ViewLastNews_"]:hover,
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsspotlight_SpotlightDLC_"]:hover
+{
+	background: var(--button_hover_bg) !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appactivityday_PartnerEventTextOnly_Container_"],
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appactivityday_PartnerEventMediumImage_Container_"],
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appactivityday_PartnerEventLargeImage_Container_"]
+{
+	border-radius: var(--card_radius) !important;
+}
+
+/* Remove Unneeded Backgrounds */
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appactivityday_PartnerEventMediumImage_Container_"],
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsdlcsection_Gloss_"],
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="writereview_RatingContainer_"],
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsgameinfopanel_Container_"],
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appactivityday_LeftSideMajorUpdateBar_"],
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appactivityday_PartnerEventLargeUpdate_"]
+{
+	background: none !important;
+}
+
+/* Remove Image Borders */
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appactivityday_PartnerEvent_"],
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appactivityday_PartnerEventLargeUpdate_"],
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="spotlight_MajorEventContainer_"],
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appactivityday_PartnerEventLargeUpdate_"]
+{
+	border-image-source: none !important;
+}
+
+/* Border Radius Fixes */
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsworkshopsection_WorkshopContainer_"]
+{
+	border-top-left-radius: 0px !important;
+	border-top-right-radius: 0px !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsworkshopsection_WorkshopHightlight_"]
+{
+	border-bottom-left-radius: 0px !important;
+	border-bottom-right-radius: 0px !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsachievementssection_Icon_"],
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsachievementssection_AdditionalItem_"]
+{
+	border-radius: var(--button_radius) !important;
+}
+
+[class*="appdetailshover_AppDetailsHover_"],
+[class*="appdetailshover_Background_"]
+{
+	border-radius: var(--card_radius) !important;
+}
+
+/* Hide Blur From Major Updates */
+#SteamDesktop .appdetails_Container_2iE-7 img[class*="appactivityday_Blur_"]
+{
+	display:none;
+}
+
+/* Partner Updates */
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appactivityday_PartnerEventLargeUpdate_"],
+#SteamDesktop .appdetails_Container_2iE-7 [class*="appactivityday_PartnerEventFeatured_"]
+{
+	box-shadow: none !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appactivityday_PartnerEventTypeUpdate_"]
+{
+	color: var(--fg) !important;
+	text-shadow: none !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appactivityday_PartnerEventLargeImage_Summary_"]
+{
+	color: #929799 !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 [class*="appactivityday_PartnerEventFeaturedHeader_"]
+{
+	background: none !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appactivityday_PartnerEventType_"]
+{
+	color: var(--dim_label_fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--title_4_weight) !important;
+	font-size: var(--title_4_size) !important;
+	text-shadow: none !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appactivityday_PartnerEventMediumImage_Title_"],
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appactivityday_PartnerEventLargeImage_Title_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--title_1_weight) !important;
+	font-size: var(--title_1_size) !important;
+	text-shadow: none !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appactivityday_PartnerEventMediumImage_Summary_"],
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appactivityday_PartnerEventLargeImage_Summary_"],
+#SteamDesktop .appdetails_Container_2iE-7 span[class*="appactivityday_PartnerEventTextOnly_Summary_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--baseweight) !important;
+	text-shadow: none !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appactivityday_PartnerEventTextOnly_Title_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--title_3_weight) !important;
+	text-shadow: none !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appactivityday_PartnerEventTextOnly_Icon_"] svg path
+{
+	fill: var(--dim_label_fg) !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appactivityday_Event_"] div[class*="comment_thread_RatingBar_"]
+{
+	margin-top: 4px !important;
+}
+
+/* Achievement Activity */
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsachievementssection_Name_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_3_size) !important;
+	font-weight: var(--title_3_weight) !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsachievementssection_Desc_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--baseweight) !important;
+}
+
+/* Fetch More */
+#SteamDesktop .appdetails_Container_2iE-7 button[class*="appdetailsactivitysection_FetchMoreContainer_"]::before,
+#SteamDesktop .appdetails_Container_2iE-7 button[class*="appdetailsactivitysection_FetchMoreContainer_"]:active
+{
+	box-shadow: none !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 button[class*="appdetailsactivitysection_FetchMoreContainer_"].Disabled
+{
+	background-color: var(--button_disabled_bg) !important;
+	color: var(--button_disabled_fg) !important;
+}
+
+/* Pop Up Update */
+#SteamDesktop .apppartnereventspage_AppPartnerEventsBody_1nzwr div[class*="apppartnereventspage_PartnerEvent_"]
+{
+	border-radius: var(--popover_radius) !important;
+	background: var(--popover_bg) !important;
+	border: none !important;
+	box-shadow: none !important;
+}
+
+#SteamDesktop .apppartnereventspage_AppPartnerEventsBody_1nzwr img[class*="partnereventdisplay_EventBackgroundBlur_"]
+{
+	display: none !important;
+}
+
+#SteamDesktop .apppartnereventspage_AppPartnerEventsBody_1nzwr span[class*="apppartnereventspage_EventType_"],
+#SteamDesktop .apppartnereventspage_AppPartnerEventsBody_1nzwr div[class*="discussionwidget_VoteCount_"],
+#SteamDesktop .apppartnereventspage_AppPartnerEventsBody_1nzwr div[class*="discussionwidget_DiscussionCount_"]
+{
+	color: var(--accent) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--title_4_weight) !important;
+}
+
+#SteamDesktop .apppartnereventspage_AppPartnerEventsBody_1nzwr div[class*="partnereventdisplay_EventDetailTimeInfo_"] div[class*="localdateandtime_ShortDateAndTime_"],
+#SteamDesktop .apppartnereventspage_AppPartnerEventsBody_1nzwr div[class*="partnereventdisplay_EventDetailTimeInfo_"] div[class*="localdateandtime_RightSideTitles_"]
+{
+	color: var(--dim_label_fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--baseweight) !important;
+}
+
+#SteamDesktop .apppartnereventspage_AppPartnerEventsBody_1nzwr a[class*="partnereventdisplay_EventDetailTitle_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_1_size) !important;
+	font-weight: var(--title_1_weight) !important;
+}
+
+#SteamDesktop .apppartnereventspage_AppPartnerEventsBody_1nzwr div[class*="partnereventdisplay_EventDetailsSubTitle_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_3_size) !important;
+	font-weight: var(--title_3_weight) !important;
+}
+
+#SteamDesktop .apppartnereventspage_AppPartnerEventsBody_1nzwr div[class*="apppartnereventspage_CloseButton_"]
+{
+	background: var(--popover_bg) !important;
+	height: 24px !important;
+	width: 24px !important;
+}
+
+#SteamDesktop .apppartnereventspage_AppPartnerEventsBody_1nzwr div[class*="apppartnereventspage_CloseButton_"] svg line
+{
+	stroke: var(--headerbar_fg) !important;
+	stroke-width: 32px !important;
+}
+
+#SteamDesktop .apppartnereventspage_AppPartnerEventsBody_1nzwr div[class*="apppartnereventspage_ScrollButton_"]
+{
+	background: var(--popover_bg) !important;
+	height: 24px !important;
+	width: 40px !important;
+}
+
+#SteamDesktop .apppartnereventspage_AppPartnerEventsBody_1nzwr div[class*="apppartnereventspage_ScrollButton_"] svg polygon
+{
+	fill: var(--headerbar_fg) !important;
+}
+
+#SteamDesktop .apppartnereventspage_AppPartnerEventsBody_1nzwr div[class*="apppartnereventspage_ScrollButton_"][class*="apppartnereventspage_GameArt_"]
+{
+	height: 40px !important;
+	width: 40px !important;
+}
+
+#SteamDesktop .apppartnereventspage_AppPartnerEventsBody_1nzwr div[class*="partnereventdisplay_EventDetailsBody_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--baseweight) !important;
+}
+
+#SteamDesktop .apppartnereventspage_AppPartnerEventsBody_1nzwr div[class*="partnereventdisplay_EventDetailsBody_"] a:not(.LinkButton)
+{
+	color: var(--accent) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--title_4_weight) !important;
+}
+
+#SteamDesktop .apppartnereventspage_AppPartnerEventsBody_1nzwr div[class*="partnereventdisplay_EventDetailsBody_"] a:not(.LinkButton):hover
+{
+	text-decoration: underline !important;
+}
+
+#SteamDesktop .apppartnereventspage_AppPartnerEventsBody_1nzwr div[class*="partnereventdisplay_EventDetailsBody_"] img,
+#SteamDesktop .apppartnereventspage_AppPartnerEventsBody_1nzwr div[class*="youtubeembed_PreviewYouTubeVideo_"]
+{
+	border-radius: var(--card_radius) !important;
+}
+
+#SteamDesktop .apppartnereventspage_AppPartnerEventsBody_1nzwr div[class*="eventbbcodeparser_Header1_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_1_size) !important;
+	font-weight: var(--title_1_weight) !important;
+}
+
+#SteamDesktop .apppartnereventspage_AppPartnerEventsBody_1nzwr div[class*="eventbbcodeparser_Header2_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_2_size) !important;
+	font-weight: var(--title_2_weight) !important;
+}
+
+#SteamDesktop .apppartnereventspage_AppPartnerEventsBody_1nzwr div[class*="eventbbcodeparser_Header3_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_3_size) !important;
+	font-weight: var(--title_3_weight) !important;
+}
+
+#SteamDesktop .apppartnereventspage_AppPartnerEventsBody_1nzwr div[class*="eventbbcodeparser_Header4_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_4_size) !important;
+	font-weight: var(--title_4_weight) !important;
+}
+
+#SteamDesktop .apppartnereventspage_AppPartnerEventsBody_1nzwr svg[class*="discussionwidget_VoteUpStaticIcon_"],
+#SteamDesktop .apppartnereventspage_AppPartnerEventsBody_1nzwr div[class*="discussionwidget_DiscussionCount_"] > svg
+{
+	fill: var(--accent) !important;
+}
+
+#SteamDesktop .apppartnereventspage_AppPartnerEventsBody_1nzwr div[class*="partnereventshared_Button_"][class*="partnereventshared_Icon_"]
+{
+	background: var(--button_bg) !important;
+	border-radius: var(--button_radius) !important;
+	box-shadow: none !important;
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--button_font_size) !important;
+	font-weight: var(--button_font_weight) !important;
+	transition: var(--focus_transition) !important;
+}
+
+#SteamDesktop .apppartnereventspage_AppPartnerEventsBody_1nzwr div[class*="partnereventshared_Button_"][class*="partnereventshared_Icon_"]:hover
+{
+	background: var(--button_hover_bg) !important;
+}
+
+#SteamDesktop .apppartnereventspage_AppPartnerEventsBody_1nzwr div[class*="partnereventshared_Button_"][class*="partnereventshared_Icon_"]:active
+{
+	background: var(--button_active_bg) !important;
+}
+
+/* Post Game Summary */
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="spotlightgameplaysummary_SummaryCarouselContainer_"]
+{
+	background: var(--card_bg) !important;
+	border-radius: var(--card_radius) !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="spotlightgameplaysummary_SummaryCarouselContainer_"]::after
+{
+	box-shadow: none !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="pageablecontainer_PageableCloseButton_"] > svg line
+{
+	stroke: var(--fg) !important;
+}
+
+/* DLC Notification Banner */
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsspotlight_SpotlightDLC_"]
+{
+	box-shadow: none !important;
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--baseweight) !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsspotlight_SpotlightDLC_"] > svg
+{
+	color: var(--fg) !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsspotlight_HideButton_"] > svg line
+{
+	stroke: var(--fg) !important;
+}
+
+/* Available Content */
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appactivitydlc_CarouselHeader_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--title_4_weight) !important;
+	font-size: var(--title_4_size) !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appactivitydlc_CarouselBody_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--baseweight) !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 a[class*="appactivitydlc_ViewAll_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--button_font_size) !important;
+	font-weight: var(--button_font_weight) !important;
+	margin-bottom: 10px;
+}
+
+/* Remove Glassy Background */
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsoverview_BackdropGlass_"]
+{
+	background: none !important;
+	border-top: 1px solid var(--border) !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsplaysection_PlayBar_"],
+#SteamDesktop .appdetails_PlayBar_2L3s2 div[class*="appdetailsplaysection_Glassy_"][class*="appdetailsplaysection_PlayBar_"]
+{
+	background: var(--view_bg) !important;
+	border-bottom: 1px solid var(--border) !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsoverview_Container_"]
+{
+	background: var(--bg) !important;
+}
+
+/* Available DLC */
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appactivitydlc_Contents_"],
+#SteamDesktop .appdetails_Container_2iE-7 a[class*="appactivitydlc_CarouselItem_"] div[class*="appactivitydlc_CarouselImage_"]
+{
+	box-shadow: none !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 a[class*="appactivitydlc_ViewAll_"]
+{
+	border-radius: var(--button_radius) !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 a[class*="appactivitydlc_ViewAll_"]:hover
+{
+	background: var(--button_hover_bg) !important;
+	border-radius: var(--button_radius) !important;
+}
+
+body.DesktopUI iframe[class*="appdetailsdlcsection_StoreHover_"]
+{
+	border-radius: var(--card_radius) !important;
+}
+
+[class*="tooltip_ToolTipCustom_"]
+{
+	background: var(--popover_bg) !important;
+	border-radius: var(--popover_radius) !important;
+}
+
+/* Write a Review */
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="writereview_Playtime_"],
+#SteamDesktop .appdetails_Container_2iE-7 button[class*="writereview_ReviewThumbButton_"]
+{
+	color: var(--accent) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_4_size) !important;
+	font-weight: var(--title_4_weight) !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 svg[class*="writereview_ThumbIcon_"]
+{
+	fill: var(--accent) !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 svg[class*="writereview_ThumbIcon_"][class*="writereview_Up_"]
+{
+	top: -1px !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 svg[class*="writereview_ThumbIcon_"][class*="writereview_Down_"]
+{
+	bottom: -1px !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="writereview_RatingContainer_"] div[class*="writereview_RecommendGame_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--baseweight) !important;
+}
+
+/* Gameplay Summary */
+#SteamDesktop .appdetails_Container_2iE-7 [class*="spotlightgameplaysummary_EventHeaderBlock_"],
+#SteamDesktop .appdetails_Container_2iE-7 [class*="spotlightgameplaysummary_GamePlaySummaryHeader_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_3_size) !important;
+	font-weight: var(--title_3_weight) !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 [class*="spotlightgameplaysummary_EventDaySeparator_"]
+{
+	background-color: var(--dim_label_fg) !important;
+	opacity: 0.55 !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 [class*="appdetailsachievementssection_Stats_"]
+{
+	color: var(--dim_label_fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--baseweight) !important;
+}
+
+/* Activity Post */
+#SteamDesktop .appdetails_Container_2iE-7 textarea[class*="posttextentry_PostTextEntryArea_"],
+#SteamDesktop .appdetails_Container_2iE-7 textarea[class*="posttextentry_PostTextEntryArea_"]:focus,
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="posttextentry_PostButton_"],
+#SteamDesktop .appdetails_Container_2iE-7 button[class*="posttextentry_EmoticonButton_"]
+{
+	background: var(--button_bg) !important;
+	border-radius: var(--button_radius) !important;
+	box-shadow: none !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="posttextentry_PostButton_"]
+{
+	font-family: var(--basefont) !important;
+	font-size: var(--button_font_size) !important;
+	font-weight: var(--button_font_weight) !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 textarea[class*="posttextentry_PostTextEntryArea_"]::placeholder
+{
+	color: var(--dim_label_fg) !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="posttextentry_PostButton_"]:hover,
+#SteamDesktop .appdetails_Container_2iE-7 button[class*="posttextentry_EmoticonButton_"]:hover
+{
+	background: var(--button_hover_bg) !important;
+	border-radius: var(--button_radius) !important;
+}
+
+/* Comment and Like Buttons */
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="comment_thread_CanClick_"]:hover
+{
+	background: var(--button_hover_bg) !important;
+	border-radius: var(--button_radius) !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 [class*="comment_thread_ActivityCommentThread_"]
+{
+	background: none !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailssectionheader_LabelText_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_3_size) !important;
+	font-weight: var(--title_3_weight) !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appactivityday_AppActivityDate_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_4_size) !important;
+	font-weight: var(--title_4_weight) !important;
+}
+
+/* AppDetails Play Section */
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsplaysection_PlayBarLabel_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_3_size) !important;
+	font-weight: var(--title_3_weight) !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsplaysection_PlayBarDetailLabel_"]
+{
+	color: var(--dim_label_fg) !important;
+	font-family: var(--basefont) !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsplaysection_PlayBarCloudStatusContainer_"] div[class*="appdetailsplaysection_GameStatIconForced_"]
+{
+	color: var(--dim_label_fg) !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsplaysection_PlaytimeIcon_"] > svg > *,
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsplaysection_GameStatIcon_"] > svg > *
+{
+	stroke: var(--dim_label_fg) !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 span[class*="appdetailsplaysection_PlayBarGameName_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_2_size) !important;
+	font-weight: var(--title_2_weight) !important;
+}
+
+/* AppDetails Play Section Buttons */
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsplaysection_MenuButton_"]
+{
+	background: var(--button_bg) !important;
+	border-radius: var(--button_radius) !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsplaysection_MenuButton_"]:hover
+{
+	background: var(--button_hover_bg) !important;
+	border-radius: var(--button_radius) !important;
+}
+
+/* App Details Link Buttons */
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsprimarylinkssection_LinksSectionBody_"]
+{
+	padding: 0px 10px !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsprimarylinkssection_Link_"]
+{
+	border-radius: var(--button_radius) !important;
+	padding: 5px 10px !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsprimarylinkssection_Link_"]:hover
+{
+	background: var(--button_hover_bg) !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 span[class*="appdetailsprimarylinkssection_Text_"],
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsprimarylinkssection_Link_"]:hover span[class*="appdetailsprimarylinkssection_Text_"]
+{
+	color: var(--button_fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--button_font_size) !important;
+	font-weight: var(--button_font_weight) !important;
+}
+
+/* Right Side Buttons */
+#SteamDesktop .appdetails_Container_2iE-7 button[class*="appdetailsbutton_AppDetailsButton_"]
+{
+	background: none !important;
+	border-radius: var(--button_radius) !important;
+	color: var(--button_fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--button_font_size) !important;
+	font-weight: var(--button_font_weight) !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 button[class*="appdetailsbutton_AppDetailsButton_"]:hover
+{
+	background: var(--button_hover_bg) !important;
+	border-radius: var(--button_radius) !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsscreenshotssection_InstructionText_"],
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsscreenshotssection_NoneTaken_"],
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsreviewsection_PlayedForTime_"]
+{
+	color: var(--dim_label_fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--baseweight) !important;
+}
+
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailssection_Body_"] span[style="color: white;"]
+{
+	color: var(--accent) !important;
+}
+
+/* Notes */
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsnotessection_NoteLink_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont);
+	font-size: var(--basesize);
+	font-weight: var(--baseweight);
+}
+

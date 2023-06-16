@@ -1,0 +1,190 @@
+/* --- Screenshot Manager --- */
+/* - General -*/
+/* Buttons */
+.ModalDialogPopup div[class*="screenshotmanagerdialog_ButtonBox_"]
+{
+	background: var(--button_bg) !important;
+	border-radius: var(--button_radius) !important;
+	box-shadow: none !important;
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--button_font_size) !important;
+	font-weight: var(--button_font_weight) !important;
+	transition: var(--focus_transition) !important;
+}
+
+.ModalDialogPopup div[class*="screenshotmanagerdialog_ButtonBox_"]:hover
+{
+	background: var(--button_hover_bg) !important;
+}
+
+.ModalDialogPopup div[class*="screenshotmanagerdialog_ButtonBox_"]:active
+{
+	background: var(--button_active_bg) !important;
+}
+
+.ModalDialogPopup svg[class*="screenshotmanagerdialog_IconButtonIcon_"][class*="screenshotmanagerdialog_Active_"]
+{
+	color: var(--accent) !important;
+}
+
+.ModalDialogPopup span[class*="screenshotmanagerdialog_Text_"]
+{
+	color: var(--fg) !important;
+}
+
+/* Context Menu */
+.ModalDialogPopup div[class*="screenshotmanagerdialog_ComboboxSelectorContextMenu_"]
+{
+	border-radius: var(--popover_radius) !important;
+	background: var(--popover_bg) !important;
+	border: none !important;
+	box-shadow: none !important;
+}
+
+.ModalDialogPopup div[class*="screenshotmanagerdialog_ComboboxSelector_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--baseweight) !important;
+	font-size: var(--title_3_size) !important;
+}
+
+.ModalDialogPopup div[class*="screenshotmanagerdialog_Option_"]
+{
+	border-radius: var(--menu_radius) !important;
+}
+
+.ModalDialogPopup div[class*="screenshotmanagerdialog_Option_"]:hover
+{
+	background: var(--button_hover_bg) !important;
+	border-radius: var(--menu_radius) !important;
+}
+
+/* Error */
+.ModalDialogPopup div[class*="screenshotmanagerdialog_ErrorScreenshot_"],
+.ModalDialogPopup div[class*="screenshotmanagerdialog_Message_"]
+{
+	background: none !important;
+	color: var(--fg) !important;
+}
+
+.ModalDialogPopup div[class*="screenshotmanagerdialog_ErrorScreenshot_"] svg g.triangle *
+{
+	stroke: var(--fg) !important;
+}
+
+.ModalDialogPopup div[class*="screenshotmanagerdialog_ErrorScreenshot_"] svg g.exclamation *
+{
+	stroke: var(--fg) !important;
+	fill: var(--fg) !important;
+}
+
+
+/* - Left Panel -*/
+.ModalDialogPopup div[class*="screenshotmanagerdialog_LeftList_"]
+{
+	padding-left: 16px !important;
+	padding-bottom: 16px !important;
+}
+
+/* Heading */
+.ModalDialogPopup div[class*="screenshotmanagerdialog_SectionHeading_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--title_3_weight) !important;
+	font-size: var(--title_3_size) !important;
+}
+
+/* Item */
+.ModalDialogPopup div[class*="screenshotmanagerdialog_ScreenshotListItem_"],
+.ModalDialogPopup img[class*="screenshotmanagerdialog_ScreenshotListItemImg_"]
+{
+	border-radius: var(--card_radius) !important;
+}
+
+.ModalDialogPopup div[class*="screenshotmanagerdialog_Selected_"]
+{
+	border-color: var(--accent) !important;
+}
+
+/* - Right Panel - */
+.ModalDialogPopup div[class*="screenshotmanagerdialog_FocusedContainer_"]
+{
+	padding-right: 16px !important;
+	padding-bottom: 16px !important;
+}
+
+/* Image */
+.ModalDialogPopup div[class*="screenshotmanagerdialog_FocusedScreenshotImageContainer_"]
+{
+	border-radius: var(--card_radius) !important;
+	margin-bottom: 10px !important;
+}
+
+/* Explainer */
+.ModalDialogPopup div[class*="screenshotmanagerdialog_ExplainerBox_"]
+{
+	background: none !important;
+}
+
+.ModalDialogPopup div[class*="screenshotmanagerdialog_Explainer_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+}
+
+/* Caption Entry */
+.ModalDialogPopup textarea[class*="screenshotmanagerdialog_CaptionField_"]
+{
+	background: var(--entry_bg) !important;
+	border-radius: var(--entry_radius) !important;
+	border: none !important;
+	box-shadow: none !important;
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--entry_font_size) !important;
+	font-weight: var(--entry_font_weight) !important;
+	min-height: var(--entry_min_height) !important;
+	padding: var(--entry_padding) !important;
+	transition: var(--focus_transition) !important;
+}
+
+.ModalDialogPopup textarea[class*="screenshotmanagerdialog_CaptionField_"]:hover
+{
+	background: var(--button_hover_bg) !important;
+}
+
+.ModalDialogPopup textarea[class*="screenshotmanagerdialog_CaptionField_"]:focus
+{
+	box-shadow: var(--focusring_bs) !important;
+}
+
+.ModalDialogPopup textarea[class*="screenshotmanagerdialog_CaptionField_"]::placeholder
+{
+	color: var(--dim_label_fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--entry_font_size) !important;
+	font-weight: var(--entry_font_weight) !important;
+}
+
+/* Dim Text */
+.ModalDialogPopup div[class*="screenshotmanagerdialog_Metadata_"],
+.ModalDialogPopup div[class*="screenshotmanagerdialog_CloudStorageImpact_"]
+{
+	color: var(--dim_label_fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--baseweight) !important;
+	font-size: var(--title_3_size) !important;
+}
+
+/* Label */
+.ModalDialogPopup div[class*="screenshotmanagerdialog_Label_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--baseweight) !important;
+	font-size: var(--title_3_size) !important;
+}
+

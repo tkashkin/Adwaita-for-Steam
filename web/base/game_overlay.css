@@ -1,0 +1,561 @@
+/* ----------------------- */
+/* --- In-Game Overlay --- */
+/* ----------------------- */
+/* --- Top Section --- */
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl [class*="steamdesktopoverlay_CurrentTime_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: 30px !important;
+	font-weight: var(--title_1_weight) !important;
+}
+
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl [class*="steamdesktopoverlay_GameName_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_1_weight) !important;
+	font-weight: var(--title_1_weight) !important;
+}
+
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl [class*="steamdesktopoverlay_CurrentDate_"],
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl [class*="steamdesktopoverlay_PlaytimeCurrentSession_"],
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl [class*="steamdesktopoverlay_KBShortcut_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_3_size) !important;
+	font-weight: var(--title_3_weight) !important;
+}
+
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl button[class*="steamdesktopoverlay_ExitGameBtn_"],
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl button[class*="steamdesktopoverlay_BackToGameBtn_"]
+{
+	background: var(--button_bg) !important;
+	border-radius: var(--button_radius) !important;
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--button_font_size) !important;
+	font-weight: var(--button_font_weight) !important;
+	min-height: var(--button_min_height) !important;
+	transition: var(--focus_transition) !important;
+}
+
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl button[class*="steamdesktopoverlay_ExitGameBtn_"]:hover,
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl button[class*="steamdesktopoverlay_BackToGameBtn_"]:hover
+{
+	background: var(--button_hover_bg) !important;
+	border-radius: var(--button_radius) !important;
+}
+
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl button[class*="steamdesktopoverlay_ExitGameBtn_"]:active,
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl button[class*="steamdesktopoverlay_BackToGameBtn_"]:active
+{
+	background: var(--button_active_bg) !important;
+	border-radius: var(--button_radius) !important;
+}
+
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl button[class*="steamdesktopoverlay_BackToGameBtn_"]
+{
+	width: 35px !important;
+	height: 35px !important;
+}
+
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl button[class*="steamdesktopoverlay_BackToGameBtn_"] svg
+{
+	width: 15px !important;
+	height: 15px !important;
+	margin-bottom: 2px !important;
+}
+
+/* Flexbox Positioning */
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl [class*="steamdesktopoverlay_TimeStats_"]
+{
+	flex: 5 1 0 !important;
+	align-items: center !important;
+	justify-content: center !important;
+}
+
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl [class*="steamdesktopoverlay_CurrentGameLogoContainer_"]
+{
+	order: -1 !important;
+	flex: 1 1 300 !important;
+}
+
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl [class*="steamdesktopoverlay_CurrentGameLogoContainer_"] img
+{
+	max-width: 300px !important;
+	margin-top: -20px !important;
+}
+
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl [class*="steamdesktopoverlay_BackToGame_"]
+{
+	margin-top: 20px !important;
+}
+
+/* --- Bottom Section --- */
+/* Toolbar */
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl div[class*="steamdesktopoverlay_Toolbar_"]
+{
+	background: var(--card_bg) !important;
+	border-radius: var(--card_radius) !important;
+	padding: 20px;
+}
+
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl button[class*="steamdesktopoverlay_ToolbarButton_"]
+{
+	background: var(--button_bg) !important;
+	border-radius: var(--button_radius) !important;
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--button_font_size) !important;
+	font-weight: var(--button_font_weight) !important;
+	min-height: var(--button_min_height) !important;
+	transition: var(--focus_transition) !important;
+}
+
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl button[class*="steamdesktopoverlay_ToolbarButton_"]:hover
+{
+	background: var(--button_hover_bg) !important;
+	border-radius: var(--button_radius) !important;
+}
+
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl button[class*="steamdesktopoverlay_ToolbarButton_"]:active
+{
+	background: var(--button_active_bg) !important;
+	border-radius: var(--button_radius) !important;
+}
+
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl button[class*="steamdesktopoverlay_ToolbarButton_"][class*="steamdesktopoverlay_Toggled_"]
+{
+	background: var(--button_suggested_bg) !important;
+	background-blend-mode: var(--button_suggested_blend) !important;
+
+}
+
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl button[class*="steamdesktopoverlay_ToolbarButton_"][class*="steamdesktopoverlay_Toggled_"]:hover
+{
+	background-color: var(--button_suggested_hover_bg) !important;
+}
+
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl button[class*="steamdesktopoverlay_ToolbarButton_"][class*="steamdesktopoverlay_Toggled_"]:hover
+{
+	background-color: var(--button_suggested_click_bg) !important;
+}
+
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl button[class*="steamdesktopoverlay_ToolbarButton_"].Disabled
+{
+	background-color: var(--button_disabled_bg) !important;
+	color: var(--button_disabled_fg) !important;
+}
+
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl button.Achievements[class*="steamdesktopoverlay_ToolbarButton_"] > svg path
+{
+	fill: var(--fg) !important;
+}
+
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl button.Achievements.Disabled[class*="steamdesktopoverlay_ToolbarButton_"] > svg path
+{
+	fill: var(--button_disabled_fg) !important;
+}
+
+/* --- List Mode --- */
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl div[class*="steamdesktopoverlay_LocationLeft_"] > div[class*="steamdesktopoverlay_Toolbar_"]
+{
+	background: none !important;
+}
+
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl div[class*="steamdesktopoverlay_LocationLeft_"] span[class*="steamdesktopoverlay_ToolbarToolTip_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--button_font_size) !important;
+	font-weight: var(--button_font_weight) !important;
+}
+
+/* --- Windows --- */
+.ModalDialogPopup div.PopupFullWindow[class*="steamdesktopoverlay_OverlayPopup_"] {
+	background: var(--bg) !important;
+}
+
+/* Focus Indicator */
+.ModalDialogPopup .PopupFullWindow div[class*="steamdesktopoverlay_FocusIndicator_"] {
+	opacity: 0 !important;
+}
+
+/* Window Controls */
+.ModalDialogPopup .PopupFullWindow div[class*="steamdesktopoverlay_WindowControls_"] .title-bar-actions .Focusable div[class*="steamdesktopoverlay_OpacityButton_"]
+{
+	color: var(--fg) !important;
+}
+
+.ModalDialogPopup .PopupFullWindow div[class*="steamdesktopoverlay_PinWindowButton_"],
+.ModalDialogPopup .PopupFullWindow div[class*="steamdesktopoverlay_CloudSyncButton_"],
+.ModalDialogPopup .PopupFullWindow div[class*="steamdesktopoverlay_OpacityButton_"]
+{
+	color: var(--fg) !important;
+}
+
+/* Icon Alignment Workaround */
+.ModalDialogPopup .PopupFullWindow div[class*="steamdesktopoverlay_PinWindowButton_"],
+.ModalDialogPopup .PopupFullWindow div[class*="steamdesktopoverlay_OpacityButton_"]
+{
+	align-items: center !important;
+	display: flex !important;
+	justify-content: center !important;
+}
+
+.ModalDialogPopup .PopupFullWindow div[class*="steamdesktopoverlay_Pinned_"]
+{
+	color: var(--accent) !important;
+}
+
+/* Game Overview */
+.ModalDialogPopup .GameOverview
+{
+	background: var(--bg) !important;
+}
+
+.ModalDialogPopup .GameOverview div[class*="steamdesktopoverlay_OverviewTitle_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_2_size) !important;
+	font-weight: var(--title_2_weight) !important;
+}
+
+.ModalDialogPopup .GameOverview div[class*="steamdesktopoverlay_GameOverview_"]
+{
+	background: var(--bg) !important;
+}
+
+.ModalDialogPopup .GameOverview div[class*="steamdesktopoverlay_GameOverviewSection_"][class*="steamdesktopoverlay_HasBackground_"]
+{
+	background: var(--bg) !important;
+	border-radius: var(--card_radius) !important;
+}
+
+.ModalDialogPopup .GameOverview div[class*="steamdesktopoverlay_GameOverviewSectionHeader_"]
+{
+	background: var(--card_bg) !important;
+	border-top-left-radius: var(--card_radius) !important;
+	border-top-right-radius: var(--card_radius) !important;
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_4_size) !important;
+	font-weight: var(--title_4_weight) !important;
+}
+
+.ModalDialogPopup .GameOverview svg[class*="steamdesktopoverlay_DragHandle_"],
+.ModalDialogPopup .GameOverview div[class*="steamdesktopoverlay_GameOverviewSectionHeader_"] > svg
+{
+	color: var(--dim_label_fg) !important;
+}
+
+.ModalDialogPopup .GameOverview div[class*="steamdesktopoverlay_RecentNewsItem_"],
+.ModalDialogPopup .GameOverview div[class*="steamdesktopoverlay_RecentNewsItem_"]:hover
+{
+	background: none !important;
+	color: var(--fg) !important;
+}
+
+.ModalDialogPopup .GameOverview div[class*="steamdesktopoverlay_Playtime_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--baseweight) !important;
+}
+
+.ModalDialogPopup .GameOverview div[class*="steamdesktopoverlay_RecentAchievement_"]
+{
+	background: none !important;
+}
+
+.ModalDialogPopup .GameOverview div[class*="achievementiconbase_Icon_"]
+{
+	border-radius: var(--card_radius) !important;
+}
+
+.ModalDialogPopup .GameOverview div[class*="steamdesktopoverlay_UnlockTime_"],
+.ModalDialogPopup .GameOverview div[class*="steamdesktopoverlay_AchievementTitle_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--title_4_weight) !important;
+	font-size: var(--title_4_size) !important;
+}
+
+.ModalDialogPopup .GameOverview div[class*="steamdesktopoverlay_AchievementDescription_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--baseweight) !important;
+}
+
+.ModalDialogPopup .GameOverview div[class*="steamdesktopoverlay_AchievementGlobalPercentage_"]
+{
+	color: var(--dim_label_fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--baseweight) !important;
+}
+
+.ModalDialogPopup .GameOverview div[class*="steamdesktopoverlay_GuideListItem_"]
+{
+	background: none !important;
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--baseweight) !important;
+}
+
+.ModalDialogPopup .GameOverview div[class*="steamdesktopoverlay_GameOverviewSectionChildren_"]
+{
+	background: var(--card_bg) !important;
+	border-bottom-left-radius: var(--card_radius) !important;
+	border-bottom-right-radius: var(--card_radius) !important;
+}
+
+/* Achievements */
+.ModalDialogPopup .Achievements
+{
+	background: var(--bg) !important;
+}
+
+.ModalDialogPopup .Achievements div[class*="achievementsheader_Title_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_2_size) !important;
+	font-weight: var(--title_2_weight) !important;
+}
+
+.ModalDialogPopup .Achievements div[class*="achievementsheader_StatsBlock_"]
+{
+	background: var(--card_bg) !important;
+	border-radius: var(--card_radius) !important;
+}
+
+.ModalDialogPopup .Achievements div[class*="achievementsheader_Label_"],
+.ModalDialogPopup .Achievements div[class*="achievementspage_Label_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_3_size) !important;
+	font-weight: var(--title_3_weight) !important;
+}
+
+.ModalDialogPopup .Achievements div[class*="progressbar_ProgressBar_"]
+{
+	background: var(--card_bg) !important;
+}
+
+.ModalDialogPopup .Achievements div[class*="progressbar_Percent_"]
+{
+	background: var(--accent) !important;
+}
+
+.ModalDialogPopup .Achievements div[class*="gamepadtabbedpage_Tab_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_3_size) !important;
+	font-weight: var(--title_3_weight) !important;
+}
+
+.ModalDialogPopup .Achievements div[class*="gamepadtabbedpage_Selected_"]
+{
+	background: var(--button_bg) !important;
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_3_size) !important;
+	font-weight: var(--title_3_weight) !important;
+}
+
+.ModalDialogPopup .Achievements div[class*="gamepadtabbedpage_Tab_"].gpfocus
+{
+	box-shadow: none !important;
+}
+
+.ModalDialogPopup .Achievements div[class*="achievementslist_AchievementList_"]
+{
+	background: none !important;
+	gap: 1px !important;
+}
+
+
+.ModalDialogPopup .Achievements div[class*="achievementslist_AchievementListItemBase_"],
+.ModalDialogPopup .Achievements div[class*="achievementslist_GlobalAchievementListItem_"]
+{
+	background: var(--card_bg) !important;
+}
+
+.ModalDialogPopup .Achievements div[class*="achievementspage_SortableAchievementsList_"]
+{
+	gap: 1px !important;
+}
+
+.ModalDialogPopup .Achievements div[class*="achievementspage_SortableUserAchievement_"]
+{
+	background: var(--card_bg) !important;
+}
+
+.ModalDialogPopup .Achievements div[class*="achievementspage_SortableUserAchievement_"]:first-child
+{
+	border-top-right-radius: var(--card_radius) !important;
+	border-top-left-radius: var(--card_radius) !important;
+}
+
+.ModalDialogPopup .Achievements div[class*="achievementspage_SortableUserAchievement_"]:last-child
+{
+	border-bottom-right-radius: var(--card_radius) !important;
+	border-bottom-left-radius: var(--card_radius) !important;
+}
+
+.ModalDialogPopup .Achievements div[class*="achievementslist_AchievementListItemBase_"]:nth-child(2),
+.ModalDialogPopup .Achievements .Focusable:nth-child(2) > div[class*="achievementslist_GlobalAchievementListItem_"]
+{
+	border-top-right-radius: var(--card_radius) !important;
+	border-top-left-radius: var(--card_radius) !important;
+	margin-top: 2px;
+}
+
+.ModalDialogPopup .Achievements div[class*="achievementslist_AchievementListItemBase_"]:last-child,
+.ModalDialogPopup .Achievements .Focusable:last-child > div[class*="achievementslist_GlobalAchievementListItem_"]
+{
+	border-bottom-right-radius: var(--card_radius) !important;
+	border-bottom-left-radius: var(--card_radius) !important;
+}
+
+.ModalDialogPopup .Achievements div[class*="achievementslist_AchievementTitle_"],
+.ModalDialogPopup .Achievements div[class*="achievementslist_Title_"],
+.ModalDialogPopup .Achievements div[class*="achievementslist_Percent_"],
+.ModalDialogPopup .Achievements div[class*="achievementslist_HeaderText_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_3_size) !important;
+	font-weight: var(--title_3_weight) !important;
+}
+
+.ModalDialogPopup .Achievements div[class*="achievementslist_AchievementDescription_"],
+.ModalDialogPopup .Achievements div[class*="achievementslist_Description_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+}
+
+.ModalDialogPopup .Achievements div[class*="achievementslist_UnlockDate_"]
+{
+	color: var(--dim_label_fg) !important;
+	font-family: var(--basefont) !important;
+}
+
+.ModalDialogPopup .Achievements div[class*="achievementslist_UnlockContainer_"]
+{
+	color: var(--accent) !important;
+	font-family: var(--basefont) !important;
+}
+
+.ModalDialogPopup .Achievements div[class*="achievementspage_HeaderContainer_"][class*="achievementspage_PinnedView_"],
+.ModalDialogPopup .Achievements div[class*="achievementspage_MyAchievementsHeader_"][class*="achievementspage_PinnedView_"],
+.ModalDialogPopup .Achievements div[class*="achievementspage_PinnedView_"] div[class*="gamepadtabbedpage_TabHeaderRowWrapper_"]
+{
+	display: none !important;
+}
+
+.ModalDialogPopup .Achievements div[class*="achievementspage_PinnedView_"] ._TabContentsScroll
+{
+	padding-top: 0px !important;
+}
+
+/* Game Notes */
+.ModalDialogPopup .GameNotes:not([class*="steamdesktopoverlay_PinnedView_"]) div[class*="gamenotes_Toolbar_"]
+{
+	margin-top: 30px !important;
+	margin-left: 10px !important;
+}
+
+.ModalDialogPopup .GameNotes .SVGIcon_Button,
+.ModalDialogPopup .GameNotes .SVGIcon_Button path
+{
+	fill: var(--fg) !important;
+	color: var(--fg) !important;
+}
+
+.ModalDialogPopup .GameNotes div[class*="pagedsettings_HidePageListButton_"]
+{
+	background: var(--button_bg) !important;
+	border-radius: var(--button_radius) !important;
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--button_font_size) !important;
+	font-weight: var(--button_font_weight) !important;
+	min-height: var(--button_min_height) !important;
+	transition: var(--focus_transition) !important;
+}
+
+.ModalDialogPopup .GameNotes div[class*="pagedsettings_HidePageListButton_"]:hover
+{
+	background: var(--button_hover_bg) !important;
+}
+
+.ModalDialogPopup .GameNotes div[class*="pagedsettings_HidePageListButton_"]:active
+{
+	background: var(--button_active_bg) !important;
+}
+
+.ModalDialogPopup .GameNotes div[class*="gamenotes_EditorInput_"]
+{
+	background: var(--view_bg) !important;
+	border-radius: var(--menu_radius) !important;
+	box-shadow: none !important;
+}
+
+.ModalDialogPopup .GameNotes .ProseMirror
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--basesize) !important;
+	font-weight: var(--baseweight) !important;
+}
+
+.ModalDialogPopup .GameNotes[class*="steamdesktopoverlay_PinnedView_"] div[class*="pagedsettings_PagedSettingsDialog_PageListColumn_"],
+.ModalDialogPopup .GameNotes[class*="steamdesktopoverlay_PinnedView_"] div[class*="gamenotes_Toolbar_"]
+{
+	display: none !important;
+}
+
+.ModalDialogPopup .GameNotes[class*="steamdesktopoverlay_PinnedView_"] div[class*="gamenotes_NoteEditorArea_"]
+{
+	margin: 0px !important;
+}
+
+/* Soundtrack */
+.ModalDialogPopup .\#SoundtrackControls_OverlayLibrary_Title div[class*="soundtrackoverlay_OuterContainer_"]
+{
+	background: none !important;
+}
+
+/* Browser */
+/*
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl .OverlayBrowser_Guides .title-area-children
+{
+	box-sizing: border-box !important;
+	height: 48px !important;
+	display: grid !important;
+	grid-template-columns: 1fr !important;
+	align-items: center !important;
+	padding: 12px !important;
+	margin: 0 !important;
+	color: var(--headerbar_fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: 14px !important;
+	line-height: normal !important;
+	font-weight: 700 !important;
+	letter-spacing: normal !important;
+	text-align: center !important;
+	text-transform: none !important;
+	white-space: nowrap !important;
+	overflow: hidden !important;
+	text-overflow: ellipsis !important;
+}
+*/

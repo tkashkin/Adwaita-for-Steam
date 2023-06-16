@@ -1,0 +1,22 @@
+/* --- Product Activation --- */
+.GenericConfirmDialog div[class*="activateproductdialog_ProductActivationInfoContainerDesktop_"] > *,
+.GenericConfirmDialog div[class*="activateproductdialog_ProductActivationInfoContainerDesktop_"] + .DialogInput_Wrapper
+{
+	padding: 0 24px !important;
+}
+
+.GenericConfirmDialog div[class*="activateproductdialog_InfoExampleHeader_"]
+{
+	font-family: var(--basefont) !important;
+	font-weight: var(--title_3_weight) !important;
+	font-size: var(--title_3_size) !important;
+	color: var(--fg) !important;
+}
+
+.GenericConfirmDialog div[class*="activateproductdialog_InfoExample_"]
+{
+	font-family: var(--basefont) !important;
+	font-weight: var(--title_4_weight) !important;
+	font-size: var(--title_4_size) !important;
+	color: var(--dim_label_fg) !important;
+}

@@ -1,0 +1,348 @@
+/* --- App Properties --- */
+/* Top Gap */
+.ModalDialogPopup div.DialogInputLabelGroup[class*="appproperties_TopGap_"]
+{
+	margin-top: 1px !important;
+}
+
+/* Headings */
+.ModalDialogPopup div[class*="appproperties_Title_"]
+{
+	font-family: var(--basefont) !important;
+	font-size: var(--header_size) !important;
+	font-weight: var(--header_weight) !important;
+}
+
+.ModalDialogPopup div[class*="appproperties_Detail_"]
+{
+	font-family: var(--basefont) !important;
+	font-size: var(--label_size) !important;
+	font-weight: var(--label_weight) !important;
+}
+
+/* Top Border */
+.ModalDialogPopup div[class*="appproperties_SectionTopLine_"]
+{
+	border-top: none !important;
+}
+
+/* Blue Highlighted Text */
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] [class*="appproperties_BlueHighlight_"]
+{
+	color: var(--fg) !important;
+	font-weight: 500 !important;
+}
+
+/* Entry */
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] .DialogTextInputBase,
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] .DialogDropDown
+{
+	border-radius: var(--entry_radius) !important;
+	min-height: var(--entry_min_height) !important;
+}
+
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_FieldChildren_14_HB"] .DialogDropDown_Arrow
+{
+	right: 0px !important;
+}
+
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_FieldChildren_14_HB"] .DialogDropDown_CurrentDisplay
+{
+	padding-right: 26px !important;
+}
+
+/* Controller List */
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_SteamInputStatusGrid_"]
+{
+	background: var(--card_bg) !important;
+	border-radius: var(--card_radius) !important;
+}
+
+.ModalDialogPopup span[class*="appproperties_SteamInputLink_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--link_size) !important;
+	font-weight: var(--link_weight) !important;
+	text-decoration: none !important;
+}
+
+.ModalDialogPopup span[class*="appproperties_SteamInputLink_"]:hover
+{
+	text-decoration: underline !important;
+}
+
+.ModalDialogPopup span[class*="appproperties_SteamInputStatus_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+}
+
+/* DLC & Workshop Grid */
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_DlcGrid_"],
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_WorkshopGrid_"]
+{
+	border-radius: var(--card_radius) !important;
+}
+
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_DlcGrid_"] div[class*="appproperties_DlcHeader_"],
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_WorkshopGrid_"] div[class*="appproperties_WorkshopHeader_"]
+{
+	background: var(--card_solid_bg) !important;
+}
+
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_DlcGrid_"] div[class*="appproperties_NameText_"],
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_WorkshopGrid_"] div[class*="appproperties_NameText_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--link_weight) !important;
+}
+
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_DlcGrid_"] div[class*="appproperties_NameText_"]:hover,
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_WorkshopGrid_"] div[class*="appproperties_NameText_"]:hover
+{
+	text-decoration: underline !important;
+}
+
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_DlcTopRow_"],
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_WorkshopTopRow_"]
+{
+	height: var(--entry_small_min_height) !important;
+}
+
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_DlcTopRow_"] .DialogInput_Wrapper,
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_WorkshopTopRow_"] .DialogInput_Wrapper
+{
+	flex: 3 1 0 !important;
+}
+
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_DlcTopRow_"] .DialogTextInputBase,
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_WorkshopTopRow_"] .DialogTextInputBase
+{
+	border-radius: var(--entry_small_radius) !important;
+	flex: initial !important;
+	min-height: var(--entry_small_min_height) !important;
+}
+
+/* Checkboxes as Switches */
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] .DialogCheckbox_Container
+{
+	align-items: center !important;
+	background: var(--entry_bg) !important;
+	border-radius: var(--entry_radius) !important;
+	flex-direction: row-reverse !important;
+	min-height: var(--entry_min_height) !important;
+	padding: var(--entry_padding) !important;
+	transition: var(--focus_transition) !important;
+}
+
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] .DialogCheckbox_Container:hover
+{
+	background: var(--button_hover_bg) !important;
+	box-shadow: none !important;
+}
+
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] .DialogCheckbox_Container:active
+{
+	background: var(--button_active_bg) !important;
+}
+
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] .DialogCheckbox_Container .DialogCheckbox
+{
+	margin-right: -2px !important;
+}
+
+/* Rounded List Corners */
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] .DialogControlsSection .DialogCheckbox_Container:not(:last-child):first-child,
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] .DialogBody .DialogCheckbox_Container:not(:last-child):first-child,
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] .DialogBody .DialogDropDown:not(:last-child):first-child
+{
+	border-bottom-right-radius: 0px !important;
+	border-bottom-left-radius: 0px !important;
+}
+
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] .DialogControlsSection .DialogCheckbox_Container:not(:first-child):last-child,
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] .DialogBody .DialogCheckbox_Container:not(:first-child):last-child,
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] .DialogBody .DialogDropDown:not(:first-child):last-child,
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] .DialogBody .DialogCheckbox_Container + .DialogInputLabelGroup > .DialogDropDown,
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] .DialogBody .DialogInputLabelGroup > .DialogDropDown + .DialogCheckbox_Container
+{
+	border-top-right-radius: 0px !important;
+	border-top-left-radius: 0px !important;
+}
+
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] .DialogBody .DialogInputLabelGroup > .DialogLabel + .DialogDropDown
+{
+	border-top-right-radius: var(--entry_radius) !important;
+	border-top-left-radius: var(--entry_radius) !important;
+}
+
+/* New Rounded Lists */
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_Field_"]
+{
+	background: var(--card_bg) !important;
+	border-radius: var(--card_radius) !important;
+	padding: 0px !important;
+	margin-top: 1px !important;
+}
+
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_FieldLabelRow_"]
+{
+	min-height: 50px !important;
+	padding: 2px 18px;
+}
+
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_FieldLabel_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--label_size) !important;
+	font-weight: var(--label_weight) !important;
+}
+
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_TopGapSmall_"]
+{
+	margin-top: 18px !important;
+}
+
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_AsyncBackedInputChildren_"]:only-child
+{
+	margin-top: 5px !important;
+}
+
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_BrowseDiskRow_"] + div[class*="appproperties_SectionTopLine_"]
+{
+	margin-top: 1px !important;
+}
+
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] .DialogControlsSection div[class*="gamepaddialog_Field_"]:not(:last-child):first-child,
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_BrowseDiskRow_"] + div[class*="appproperties_SectionTopLine_"] div[class*="gamepaddialog_Field_"]:not(:last-child):first-child
+{
+	border-bottom-right-radius: 0px !important;
+	border-bottom-left-radius: 0px !important;
+}
+
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] .DialogControlsSection div[class*="gamepaddialog_Field_"]:not(:first-child):last-child,
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_BrowseDiskRow_"] + div[class*="appproperties_SectionTopLine_"] div[class*="gamepaddialog_Field_"]:not(:first-child):last-child
+{
+	border-top-right-radius: 0px !important;
+	border-top-left-radius: 0px !important;
+}
+
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_BrowseDiskRow_"] + div[class*="appproperties_SectionTopLine_"] div[class*="gamepaddialog_Field_"]:not(:last-child):not(:first-child)
+{
+	border-radius: 0px !important;
+}
+
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_WithChildrenBelow_"]
+{
+	align-items: center !important;
+	display: flex !important;;
+	flex-direction: row !important;
+	justify-content: space-between !important;
+}
+
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_FieldChildren_"]
+{
+	display: flex !important;;
+	flex-direction: row !important;
+	padding-top: 0px !important;
+}
+
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_FieldChildren_"] > .DialogDropDown
+{
+	margin-right: 18px !important;
+}
+
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_FieldLabel_"] + div[class*="gamepaddialog_FieldChildren_"] > .DialogDropDown
+{
+	margin-right: 0px !important;
+}
+
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_FieldChildren_"] div[class*="dropdownlabel_DropDownLabelDescription_"],
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_WithChildrenBelow_"] > div[class*="gamepaddialog_FieldDescription_"]
+{
+	display: none !important;
+}
+
+/* DropDowns */
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_Field_"] .DialogDropDown,
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_Field_"] .DialogDropDown:hover,
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_Field_"] .DialogDropDown:active
+{
+	background: none !important;
+	padding: 0px !important;
+}
+
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_Field_"][class*="gamepaddialog_WithDescription_"]:not([class*="appproperties_BottomGap_"])
+{
+	padding-top: 4px !important;
+	padding-bottom: 4px !important;
+}
+
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_Field_"][class*="gamepaddialog_WithDescription_"]:not([class*="appproperties_BottomGap_"]) div[class*="gamepaddialog_FieldLabel_"]
+{
+	margin-top: -14px !important;
+}
+
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_FieldDescription_"]
+{
+	color: var(--dim_label_fg) !important;
+	margin-left: 18px !important;
+	margin-top: -22px !important;
+}
+
+/* Beta Access Code */
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_BetaAccessCodeRow_"]
+{
+	margin-top: 2px !important;
+}
+
+/* Installed Files */
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_FieldLabel_"] > div
+{
+	display: flex !important;
+}
+
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_FieldLabel_"] > div > div:nth-child(2)
+{
+	flex-basis: 36px !important;
+	align-self: center !important;
+	min-height: var(--button_min_height) !important;
+	padding-left: 5px !important;
+}
+
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_FieldLabel_"] > div > div:nth-child(2) a
+{
+	background: var(--button_bg) !important;
+	border-radius: var(--button_radius) !important;
+	color: var(--button_fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--button_font_size) !important;
+	font-weight: var(--button_font_weight) !important;
+	line-height: var(--button_min_height) !important;
+	min-height: var(--button_min_height) !important;
+	padding: 8px 14px !important;
+	text-align: center !important;
+	transition: var(--focus_transition) !important;
+	word-break: keep-all !important;
+}
+
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_FieldLabel_"] > div > div:nth-child(2) a:hover
+{
+	background: var(--button_hover_bg) !important;
+}
+
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_FieldLabel_"] > div > div:nth-child(2) a:active
+{
+	background: var(--button_active_bg) !important;
+}
+
+/* Launch Options */
+/* Currently Launch Options is the only Dropdown without a Label */
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_FieldLabel_"]:empty::after
+{
+	content: "Default Action" !important;
+}
+

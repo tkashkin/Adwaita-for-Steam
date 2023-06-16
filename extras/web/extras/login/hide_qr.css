@@ -1,8 +1,0 @@
-/* ---------------------- */
-/* --- Hide QR Login  --- */
-/* ---------------------- */
-#root [class*="login_Login_"] [class*="newlogindialog_QRSection_"]
-{
-	display: none !important;
-}
-

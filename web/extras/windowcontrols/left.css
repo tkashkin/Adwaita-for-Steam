@@ -1,0 +1,41 @@
+/* ------------------------------------- */
+/* --- Left Aligned Window Controls  --- */
+/* ------------------------------------- */
+.title-bar-actions
+{
+	left: 0px !important;
+	right: auto !important;
+}
+
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="steamdesktop_WindowControls_"]
+{
+	order: -1 !important;
+}
+
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] svg[class*="supernav_Arrow_"]:first-child
+{
+	margin-left: 50px !important;
+}
+
+/* App Properties Titles */
+.ModalDialogPopup [class*="pagedsettings_PagedSettingsDialog_PageListColumn_"] > [class*="pagedsettings_PagedSettingsDialog_Title_"]
+{
+	padding-left: 50px !important;
+	padding-right: 50px !important;
+}
+
+/* Friendslist */
+.currentUserContainer .AvatarAndUser
+{
+	padding-left: 50px !important;
+}
+
+.multiChatDialog .title-bar-actions {
+	position: fixed !important;
+}
+
+/* Content Management */
+.ModalDialogPopup [class*="contentmanagement_ContentManagement_"] [class*="contentmanagement_PageableCarousel_"]
+{
+	margin-left: 70px !important;
+}

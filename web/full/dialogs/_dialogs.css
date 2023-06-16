@@ -1,0 +1,649 @@
+
+.ModalPosition_Content,
+.ModalPosition_Content > .DialogContent
+{
+	border-radius: var(--card_radius) !important;
+	overflow: hidden !important;
+}
+
+.ModalDialogPopup .DialogBody
+{
+	font-family: var(--basefont) !important;
+	font-size: var(--basesize) !important;
+	font-weight: var(--baseweight) !important;
+}
+
+.ModalPosition_Content > .DialogContent
+{
+	background: var(--popover_bg) !important;
+	color: var(--popover_fg) !important;
+}
+
+/* Modal Overlays */
+.FullModalOverlay .DialogContent,
+.GenericConfirmDialog
+{
+	padding: 0 !important;
+}
+
+.FullModalOverlay .DialogHeader,
+.FullModalOverlay .DialogBodyText,
+.FullModalOverlay .DialogBodyText[class*="cloudconflict_CloudConflictWarning_"],
+.FullModalOverlay [class*="cloudconflict_FooterNote_"],
+.FullModalOverlay [class*="cloudconflict_ChoiceNote_"],
+.FullModalOverlay div[class*="moveappsdialog_MoveAppsDialog_"] > .DialogBody,
+.GenericConfirmDialog .DialogHeader,
+.GenericConfirmDialog .DialogBodyText,
+.GenericConfirmDialog .DialogBodyText[class*="cloudconflict_CloudConflictWarning_"],
+.GenericConfirmDialog [class*="cloudconflict_FooterNote_"],
+.GenericConfirmDialog [class*="cloudconflict_ChoiceNote_"],
+.GenericConfirmDialog div[class*="moveappsdialog_MoveAppsDialog_"] > .DialogBody
+{
+	color: var(--popover_fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--basesize) !important;
+	line-height: normal !important;
+	font-weight: var(--baseweight) !important;
+	letter-spacing: normal !important;
+	text-transform: none !important;
+	text-align: center;
+	margin: 0 !important;
+	padding: 0 24px !important;
+	box-sizing: border-box !important;
+}
+
+.FullModalOverlay .DialogContent .DialogHeader,
+.GenericConfirmDialog .DialogHeader
+{
+	font-size: var(--title_1_size) !important;
+	font-weight: var(--title_1_weight) !important;
+	padding: 24px 24px 16px 24px !important;
+}
+
+.FullModalOverlay .DialogContent .DialogBody,
+.GenericConfirmDialog .DialogBody
+{
+	overflow: hidden !important;
+}
+
+.ModalPosition_Content > .ModalPosition_Dismiss
+{
+	display: none !important;
+}
+
+.FullModalOverlay .DialogContent .DialogFooter,
+.GenericConfirmDialog .DialogFooter
+{
+	margin-top: 24px !important;
+}
+
+/* Swap buttons to make the Cancel button first */
+.FullModalOverlay .DialogContent .DialogFooter ._DialogColLayout,
+.GenericConfirmDialog .DialogFooter ._DialogColLayout
+{
+	flex-direction: row-reverse !important;
+	overflow: hidden !important;
+	width: 100% !important;
+}
+
+.FullModalOverlay .DialogContent .DialogFooter .DialogTwoColLayout._DialogColLayout,
+.GenericConfirmDialog .DialogFooter .DialogTwoColLayout._DialogColLayout
+{
+	gap: 0px !important;
+}
+
+.FullModalOverlay .DialogContent .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"]),
+.GenericConfirmDialog .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"])
+{
+	height: 42px !important;
+	color: var(--button_fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--button_font_size) !important;
+	line-height: normal !important;
+	font-weight: var(--button_font_weight) !important;
+	letter-spacing: normal !important;
+	background: transparent !important;
+	box-shadow: none !important;
+	border-radius: 0 !important;
+	border-top: 1px var(--border) solid !important;
+	border-left: 1px var(--border) solid !important;
+	margin: 0 !important;
+	margin-left: -1px !important;
+	max-width: none !important;
+	transition: var(--focus_transition) !important;
+}
+
+.FullModalOverlay .DialogContent .DialogFooter .DialogButton::before,
+.GenericConfirmDialog .DialogFooter .DialogButton::before
+{
+	display: none !important;
+}
+
+.FullModalOverlay .DialogContent .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"]):hover,
+.GenericConfirmDialog .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"]):hover
+{
+	background: rgba(255, 255, 255, 0.07) !important;
+	box-shadow: none !important;
+}
+
+.FullModalOverlay .DialogContent .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"]):active,
+.GenericConfirmDialog .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"]):active
+{
+	background: rgba(255, 255, 255, 0.16) !important;
+	box-shadow: none !important;
+}
+
+.FullModalOverlay .DialogContent .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"]).Primary,
+.GenericConfirmDialog .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"]).Primary
+{
+	color: var(--accent) !important;
+}
+
+.FullModalOverlay .DialogContent .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"]).Primary.Disabled,
+.GenericConfirmDialog .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"]).Primary.Disabled
+{
+	color: var(--accent_disabled) !important;
+}
+
+.FullModalOverlay .DialogContent .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"]).Primary:hover,
+.GenericConfirmDialog .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"]).Primary:hover
+{
+	background: var(--accent_hover_bg) !important;
+}
+
+.FullModalOverlay .DialogContent .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"]).Primary:active,
+.GenericConfirmDialog .DialogFooter .DialogButton:not([class*="cloudconflict_DialogChoiceButton_"]).Primary:active
+{
+	background: var(--accent_active_bg) !important;
+}
+
+/* Generic Confirm */
+.GenericConfirmDialog [class*="cloudconflict_FooterNote_"]
+{
+	flex-grow: 1 !important;
+}
+
+.GenericConfirmDialog [class*="cloudconflict_FooterNote_"],
+.GenericConfirmDialog [class*="cloudconflict_ChoiceNote_"]
+{
+	padding-top: 24px !important;
+}
+
+.GenericConfirmDialog .DialogBodyText[class*="cloudconflict_Title_"]
+{
+	font-weight: 800 !important;
+}
+
+.GenericConfirmDialog [class*="cloudconflict_DialogChoiceRow_"]
+{
+	width: auto !important;
+	margin: 0 24px !important;
+	height: 50px !important;
+}
+
+.GenericConfirmDialog [class*="cloudconflict_DialogChoiceRow_"] > [class*="cloudconflict_DialogChoiceButton_"]
+{
+	background: var(--button_bg) !important;
+	box-sizing: border-box !important;
+	box-shadow: none !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	height: 50px !important;
+	border: none !important;
+	border-radius: 0 !important;
+	border-bottom: 1px var(--headerbar_shade) solid !important;
+	user-select: none !important;
+}
+
+.GenericConfirmDialog [class*="cloudconflict_DialogChoiceRow_"]:nth-child(1) > [class*="cloudconflict_DialogChoiceButton_"]
+{
+	border-top-left-radius: var(--card_radius) !important;
+	border-top-right-radius: var(--card_radius) !important;
+}
+
+.GenericConfirmDialog [class*="cloudconflict_DialogChoiceRow_"]:nth-child(2) > [class*="cloudconflict_DialogChoiceButton_"]
+{
+	border-bottom-left-radius: var(--card_radius) !important;
+	border-bottom-right-radius: var(--card_radius) !important;
+	border-bottom: none !important;
+}
+
+.GenericConfirmDialog [class*="cloudconflict_DialogChoiceRow_"] > [class*="cloudconflict_DialogChoiceButton_"]:hover
+{
+	background: var(--button_hover_bg) !important;
+	box-shadow: none !important;
+}
+
+.GenericConfirmDialog [class*="cloudconflict_DialogChoiceRow_"] > [class*="cloudconflict_DialogChoiceButton_"]:active
+{
+	background: var(--button_active_bg) !important;
+	box-shadow: none !important;
+}
+
+.GenericConfirmDialog [class*="cloudconflict_ConflictChoiceText_"] .DialogBodyText
+{
+	padding: 0 !important;
+}
+
+.GenericConfirmDialog div[class*="moveappsdialog_MoveAppsDialog_"] > .DialogBody .DialogInputLabelGroup
+{
+	margin-top: 24px !important;
+	margin-bottom: 0 !important;
+	text-align: start !important;
+}
+
+/* Text Input */
+.DialogTextInputBase
+{
+	background: var(--entry_bg) !important;
+	border-radius: var(--entry_small_radius) !important;
+	border: none !important;
+	box-shadow: none !important;
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--entry_font_size) !important;
+	font-weight: var(--entry_font_weight) !important;
+	min-height: var(--entry_small_min_height) !important;
+	padding: var(--entry_padding) !important;
+	transition: var(--focus_transition) !important;
+}
+
+.DialogTextInputBase:hover
+{
+	background: var(--button_hover_bg) !important;
+}
+
+.DialogTextInputBase:focus
+{
+	box-shadow: var(--focusring_bs) !important;
+}
+
+.DialogTextInputBase::placeholder
+{
+	color: var(--dim_label_fg) !important;
+}
+
+/* Radio Group */
+.ModalDialogPopup .Shared_Radio_Group
+{
+	background: none !important;
+	box-shadow: none !important;
+}
+
+.ModalDialogPopup .Shared_Radio_Group div[class*="radio_Active_"]
+{
+	background: var(--button_hover_bg) !important;
+}
+
+/* Buttons */
+.ModalDialogPopup .DialogButton,
+.FullModalOverlay .DialogButton,
+.ModalDialogPopup .RadioButton
+{
+	background: var(--button_bg) !important;
+	border-radius: var(--button_radius) !important;
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--button_font_size) !important;
+	font-weight: var(--button_font_weight) !important;
+	transition: var(--focus_transition) !important;
+}
+
+.ModalDialogPopup .DialogButton.Secondary.Off,
+.FullModalOverlay .DialogButton.Secondary.Off
+{
+	background: var(--button_disabled_bg) !important;
+	color: var(--button_disabled_fg) !important;
+	box-shadow: none !important;
+}
+
+.ModalDialogPopup .DialogButton:hover,
+.FullModalOverlay .DialogButton:hover,
+.ModalDialogPopup .RadioButton:hover,
+.ModalDialogPopup .DialogButton.Secondary.Off:hover
+.FullModalOverlay .DialogButton.Secondary.Off:hover
+{
+	background: var(--button_hover_bg) !important;
+}
+
+.ModalDialogPopup .DialogButton::before,
+.ModalDialogPopup .DialogButton:hover::before,
+.FullModalOverlay .DialogButton::before
+{
+	box-shadow: none !important;
+}
+
+.ModalDialogPopup .DialogButton:active,
+.FullModalOverlay .DialogButton:active,
+.ModalDialogPopup .RadioButton:active,
+.ModalDialogPopup .DialogButton.Secondary.Off:active,
+.FullModalOverlay .DialogButton.Secondary.Off:active
+{
+	background: var(--button_active_bg) !important;
+}
+
+/* Labels */
+.ModalDialogPopup .DialogLabel
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--header_size) !important;
+	font-weight: var(--header_weight) !important;
+}
+
+.ModalDialogPopup .DialogLabelExplainer,
+.ModalDialogPopup .DialogLabelStrong
+{
+	font-family: var(--basefont) !important;
+	font-size: var(--label_size) !important;
+	font-weight: var(--label_weight) !important;
+}
+
+/* DropDown */
+.ModalDialogPopup .DialogDropDown
+{
+	align-items: center !important;
+	background: var(--entry_bg) !important;
+	border-radius: var(--entry_small_radius) !important;
+	color: var(--fg) !important;
+	display: flex !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--entry_font_size) !important;
+	font-weight: var(--entry_font_weight) !important;
+	min-height: var(--entry_small_min_height) !important;
+	padding: var(--entry_padding) !important;
+	transition: var(--focus_transition) !important;
+}
+
+.ModalDialogPopup .DialogDropDown:hover
+{
+	background: var(--button_hover_bg) !important;
+	box-shadow: none !important;
+}
+
+.ModalDialogPopup .DialogDropDown:active
+{
+	background: var(--button_active_bg) !important;
+}
+
+.ModalDialogPopup .DialogDropDown_Arrow .SVGIcon_DownArrowContextMenu
+{
+	fill: var(--dim_label_fg) !important;
+	transition: transform 200ms var(--ease-out-quad) !important;
+}
+
+.ModalDialogPopup .DialogDropDown.Active .DialogDropDown_Arrow .SVGIcon_DownArrowContextMenu
+{
+	fill: var(--accent) !important;
+	margin-top: -6px !important;
+	transform: rotateX(0.5turn) !important;
+}
+
+.ModalDialogPopup .DialogDropDown_Arrow
+{
+	margin-top: 4px !important;
+	position: absolute !important;
+	top: 50% !important;
+	transform: translateY(-50%) !important;
+}
+
+.ModalDialogPopup div[class*="dropdown_DialogDropDownMenu_"]
+{
+	background: var(--popover_bg) !important;
+	border-radius: var(--popover_radius) !important;
+}
+
+.ModalDialogPopup div[class*="dropdown_DialogDropDownMenu_"]._DialogInputContainer
+{
+	box-shadow: 0px 0px 0px 2px rgba(0,0,0,0.1) !important;
+}
+
+.ModalDialogPopup div[class*="dropdownlabel_DropDownLabelTitle_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--entry_font_size) !important;
+	font-weight: var(--entry_font_weight) !important;
+
+}
+
+.ModalDialogPopup div[class*="dropdownlabel_DropDownLabelDescription_"]
+{
+	color: var(--entry_subtitle_fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--entry_subtitle_font_size) !important;
+	font-weight: var(--entry_subtitle_font_weight) !important;
+}
+
+/* Dialog Toggle */
+.ModalDialogPopup .DialogToggle_Label,
+.FullModalOverlay .DialogToggle_Label
+{
+	color: var(--fg) !important;
+	flex-grow: 1 !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--label_size) !important;
+	font-weight: var(--label_weight) !important;
+}
+
+/* Checkboxes */
+.ModalDialogPopup .DialogCheckbox,
+.FullModalOverlay .DialogCheckbox
+{
+	background-color: var(--checkbox_bg) !important;
+	box-shadow: var(--checkbox_bs) !important;
+	border-radius: var(--checkbox_radius) !important;
+	height: 20px !important;
+	width: 20px !important;
+}
+
+.ModalDialogPopup .DialogCheckbox:hover,
+.FullModalOverlay .DialogCheckbox:hover
+{
+	box-shadow: var(--checkbox_hover_bs) !important;
+}
+
+.ModalDialogPopup .DialogCheckbox:active:not(.Active),
+.FullModalOverlay .DialogCheckbox:active:not(.Active)
+{
+	box-shadow: none !important;
+	background: var(--checkbox_active_bg) !important;
+}
+
+.ModalDialogPopup .DialogCheckbox.Active,
+.FullModalOverlay .DialogCheckbox.Active
+{
+	background: var(--checkbox_checked_bg) !important;
+	background-blend-mode: var(--button_suggested_blend) !important;
+	border-radius: var(--checkbox_radius) !important;
+	box-shadow: none !important;
+}
+
+.ModalDialogPopup .DialogCheckbox.Active:hover,
+.FullModalOverlay .DialogCheckbox.Active:hover
+{
+	background-color: var(--button_suggested_hover_bg) !important;
+}
+
+.ModalDialogPopup .DialogCheckbox.Active:active,
+.FullModalOverlay .DialogCheckbox.Active:active
+{
+	background-color: var(--button_suggested_click_bg) !important;
+}
+
+.ModalDialogPopup .DialogCheckbox svg,
+.FullModalOverlay .DialogCheckbox svg
+{
+	stroke-width: var(--checkbox_checked_sw) !important;
+}
+
+.ModalDialogPopup .DialogCheckbox svg path,
+.FullModalOverlay .DialogCheckbox svg path
+{
+	stroke: var(--fg) !important;
+	d: path("M 185 63 L 92 170 l -53 -52") !important;
+	transition: none !important;
+}
+
+/* Checkboxes as Switches */
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div:not([class*="appproperties_Install_"]) > .DialogCheckbox
+{
+	background: var(--card_bg) !important;
+	background-blend-mode: var(--button_suggested_blend) !important;
+	border-radius: var(--entry_radius) !important;
+	box-shadow: none !important;
+	padding: 2px !important;
+	min-height: 22px !important;
+	min-width: 44px !important;
+}
+
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div:not([class*="appproperties_Install_"]) > .DialogCheckbox.Active
+{
+	background: var(--button_suggested_bg) !important;
+}
+
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div:not([class*="appproperties_Install_"]) > .DialogCheckbox:hover
+{
+	background-color: var(--button_suggested_hover_bg) !important;
+}
+
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div:not([class*="appproperties_Install_"]) > .DialogCheckbox:active
+{
+	background-color: var(--button_suggested_click_bg) !important;
+}
+
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div:not([class*="appproperties_Install_"]) > .DialogCheckbox .SVGIcon_DialogCheck
+{
+	opacity: 1 !important;
+	transition: margin-left 60ms linear !important;
+	margin-left: -2px !important;
+}
+
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div:not([class*="appproperties_Install_"]) > .DialogCheckbox.Active .SVGIcon_DialogCheck
+{
+	margin-left: 20px !important;
+}
+
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div:not([class*="appproperties_Install_"]) > .DialogCheckbox svg path
+{
+	d: path("M 100, 100 m -75, 0 a 160,160 0 1,0 320,0 a 160,160 0 1,0 -320,0") !important;
+	fill: var(--fg) !important;
+	stroke: none !important;
+	stroke-dasharray: none !important;
+}
+
+/* Toggle Switch */
+.ModalDialogPopup div[class*="toggle_Toggle_"]
+{
+	display: flex;
+	align-items: center;
+}
+
+.ModalDialogPopup div[class*="toggle_ToggleSwitch_"]
+{
+	background: var(--fg) !important;
+}
+
+.ModalDialogPopup div[class*="toggle_ToggleRail_"]
+{
+	background: var(--entry_bg) !important;
+	background-blend-mode: var(--button_suggested_blend) !important;
+	border-radius: var(--entry_radius) !important;
+	box-shadow: none !important;
+	margin-left: -4px !important;
+	margin-top: -7px !important;
+	min-height: 26px !important;
+	width: 48px !important;
+}
+
+.ModalDialogPopup div[class*="toggle_ToggleRail_"]:hover
+{
+	background-color: var(--button_suggested_hover_bg) !important;
+}
+
+.ModalDialogPopup div[class*="toggle_ToggleRail_"]:active
+{
+	background-color: var(--button_suggested_click_bg) !important;
+}
+
+.ModalDialogPopup div[class*="toggle_Highlight_"]
+{
+	background: var(--button_suggested_bg) !important;
+}
+
+.ModalDialogPopup div[class*="toggle_Highlight_"][class*="toggle_Off_"]
+{
+	display: none !important;
+}
+
+.ModalDialogPopup div[class*="toggle_ToggleSwitch_"]
+{
+	border-radius: var(--button_pill_radius) !important;
+	height: 22.5px !important;
+	margin-left: -3px !important;
+	margin-top: 2px !important;
+	pointer-events: none !important;
+	transition: transform 60ms linear, background 60ms !important;
+	width: 22.5px !important;
+}
+
+.ModalDialogPopup div[class*="toggle_ToggleSwitch_"][class*="toggle_Off_"]
+{
+	margin-left: 1px !important;
+}
+
+/* New Toggle */
+.ModalDialogPopup div[class*="gamepaddialog_ToggleRail_"]
+{
+	background: var(--entry_bg) !important;
+	background-blend-mode: var(--button_suggested_blend) !important;
+	height: 26px !important;
+	width: 48px !important;
+}
+
+.ModalDialogPopup div[class*="gamepaddialog_Toggle_"][class*="gamepaddialog_On_"] div[class*="gamepaddialog_ToggleRail_"]
+{
+	background: var(--accent_bg) !important;
+}
+
+.ModalDialogPopup div[class*="gamepaddialog_Toggle_"] div[class*="gamepaddialog_ToggleRail_"]::before
+{
+	background: none !important;
+	transform: translateX(-50px) !important;
+	transition: none !important;
+}
+
+.ModalDialogPopup div[class*="gamepaddialog_Toggle_"]:hover div[class*="gamepaddialog_ToggleRail_"]::before
+{
+	background-color: var(--button_suggested_hover_bg) !important;
+}
+
+.ModalDialogPopup div[class*="gamepaddialog_Toggle_"]:active div[class*="gamepaddialog_ToggleRail_"]::before
+{
+	background-color: var(--button_suggested_click_bg) !important;
+}
+
+.ModalDialogPopup div[class*="gamepaddialog_Toggle_"][class*="gamepaddialog_On_"] div[class*="gamepaddialog_ToggleRail_"]::before
+{
+	transform: translateX(0px) !important;
+}
+
+.ModalDialogPopup div[class*="gamepaddialog_Toggle_"] div[class*="gamepaddialog_ToggleSwitch_"]
+{
+	background: var(--fg);
+	height: 22px;
+	margin-left: 3px;
+	margin-top: 2px;
+	transition: transform 60ms linear, background 60ms !important;
+	width: 22px;
+}
+
+.ModalDialogPopup div[class*="gamepaddialog_Toggle_"]:not(:hover):not([class*="gamepaddialog_On_"]) div[class*="gamepaddialog_ToggleSwitch_"]
+{
+	opacity: 0.8 !important;
+}
+
+.ModalDialogPopup div[class*="gamepaddialog_Toggle_"][class*="gamepaddialog_On_"] div[class*="gamepaddialog_ToggleSwitch_"]
+{
+	transform: translateX(21px) !important;
+}

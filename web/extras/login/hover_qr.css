@@ -1,0 +1,64 @@
+/* ------------------------------- */
+/* --- Show QR Login on Hover  --- */
+/* ------------------------------- */
+body.DesktopUI .login_Login_VZ6x_ [class*="qrlogin_Column_"]
+{
+	box-shadow: 0px 0px 16px 8px black !important;
+	border-radius: var(--popover_radius) !important;
+	left: 50% !important;
+	opacity: 0 !important;
+	position: absolute !important;
+	top: 50% !important;
+	transform: translate(-50%, -50%) !important;
+	transition: visibility 200ms linear, opacity 200ms linear !important;
+	visibility: hidden !important;
+}
+
+body.DesktopUI .login_Login_VZ6x_ [class*="qrlogin_LoginQR_"]
+{
+	border-radius: var(--popover_radius) !important;
+	width: 250px !important;
+	height: 250px !important;
+}
+
+body.DesktopUI .login_Login_VZ6x_ [class*="newlogindialog_QRSection_"]
+{
+	margin-left: 0 !important;
+}
+
+body.DesktopUI .login_Login_VZ6x_ [class*="newlogindialog_QRCodeContainer_"] [class*="newlogindialog_FieldLabel_"]
+{
+	display: none !important;
+}
+
+body.DesktopUI .login_Login_VZ6x_ [class*="newlogindialog_QRCodeContainer_"] [class*="newlogindialog_UseMobileAppForQR_"]
+{
+	align-self: center !important;
+}
+
+body.DesktopUI .login_Login_VZ6x_ [class*="newlogindialog_QRCodeContainer_"] [class*="newlogindialog_UseMobileAppForQR_"]::after
+{
+	content: ". Hover to view QR code" !important;
+	font-weight: 700 !important;
+}
+
+body.DesktopUI .login_Login_VZ6x_ [class*="newlogindialog_QRCodeContainer_"] [class*="newlogindialog_UseMobileAppForQR_"] a
+{
+	visibility: visible !important;
+}
+
+body.DesktopUI .login_Login_VZ6x_ [class*="newlogindialog_QRCodeContainer_"]:hover [class*="newlogindialog_QR_"] [class*="qrlogin_Column_"]
+{
+	visibility: visible !important;
+	opacity: 1 !important;
+}
+
+body.DesktopUI .login_Login_VZ6x_ [class*="newlogindialog_Login_"] [class*="newlogindialog_SideBySide_"]
+{
+	flex-direction: column !important;
+}
+
+body.DesktopUI .login_Login_VZ6x_ [class*="newlogindialog_LoginForm_"]
+{
+	width: 100% !important;
+}

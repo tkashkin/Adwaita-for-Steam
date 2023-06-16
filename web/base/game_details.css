@@ -1,0 +1,49 @@
+/* --- Game Details View --- */
+/* Background */
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetails_Glassy_"]
+{
+	background: var(--bg) !important;
+}
+
+/*  Disable Blurred Background */
+#SteamDesktop .appdetails_Container_2iE-7 img[class*="sharedappdetailsheader_ImgBlurBackdrop_"]
+{
+	display: none !important;
+}
+
+/* `Scroll to Top` Button */
+#SteamDesktop .steamdesktop_ContentFrame_1rDh5 div[class*="smartscrollcontainer_ScrollToTopButton_"]
+{
+	color: var(--toast_fg) !important;
+	height: 50px !important;
+}
+
+#SteamDesktop .steamdesktop_ContentFrame_1rDh5 div[class*="smartscrollcontainer_ScrollToTopButton_"] > div
+{
+	background: var(--toast_bg) !important;
+	border-radius: var(--toast_border_radius) !important;
+	border-spacing: var(--toast_border_spacing) !important;
+	box-shadow: none !important;
+	margin-bottom: var(--toast_margin_bottom) !important;
+	margin: var(--toast_margin) !important;
+	padding: var(--toast_padding) !important;
+}
+
+/* Play Button Color */
+#SteamDesktop .library_AppDetailsMain_2Nq6o div[class*="appactionbutton_ButtonChild"]
+{
+	background: var(--accent_bg) !important;
+}
+
+#SteamDesktop .library_AppDetailsMain_2Nq6o div[class*="appactionbutton_Green"] > div[class*="appactionbutton_ButtonChild"]
+{
+	background: var(--success_bg) !important;
+}
+
+/* Progress Bar Color */
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsplaysection_DetailsProgressBar_"],
+#SteamDesktop .appdetails_Container_2iE-7 div[class*="appdetailsachievementssection_AchievementProgress_"]
+{
+	background: var(--accent_bg) !important;
+}
+

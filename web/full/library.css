@@ -1,0 +1,49 @@
+/* --- Main Library View --- */
+/* Play Button */
+#SteamDesktop .library_Container_3xRRJ div[class*="appportrait_Play_"],
+#SteamDesktop .library_Container_3xRRJ div[class*="appportrait_Download_"]
+{
+	border-radius: var(--button_radius) !important;
+}
+
+/* Rounded Corners on Game Logos */
+#SteamDesktop .library_Container_3xRRJ div[class*="appportrait_LibraryItemBox_"],
+#SteamDesktop .library_Container_3xRRJ div[class*="libraryhomenewupdates_PartnerEventRowCapsule_MainImageContainer_"],
+body.DesktopUI div[class*="appportraithover_AppPortraitHover_"],
+body.DesktopUI div[class*="appportraithover_CapsuleBackgroundContainer_"]
+{
+	border-radius: var(--card_radius) !important;
+}
+
+#SteamDesktop .library_Container_3xRRJ div[class*="appportrait_LibraryItemBox_"][class*="appportrait_FeaturedCapsule_"] img[class*="libraryassetimage_Image_"]
+{
+	border-bottom-left-radius: 0px !important;
+	border-bottom-right-radius: 0px !important;
+}
+
+/* Game Hours Subscript */
+#SteamDesktop .library_Container_3xRRJ div[class*="appportrait_LibraryItemBoxSubscript_"]
+{
+	background: var(--toast_bg) !important;
+	border-radius: var(--toast_border_radius) !important;
+	margin-top: -20px !important;
+}
+
+/* New to Library */
+#SteamDesktop .library_Container_3xRRJ [class*="appportrait_AppPortraitBannerContainer_"]
+{
+	top: 1px !important;
+}
+
+#SteamDesktop .library_Container_3xRRJ [class*="appportrait_AppPortraitBannerContainer_"] [class*="appportrait_AppPortraitBanner_"]
+{
+	background: var(--accent_bg) !important;
+	border-bottom-left-radius: var(--card_radius) !important;
+	border-bottom-right-radius: var(--card_radius) !important;
+}
+
+/* Update Summary */
+#SteamDesktop .library_Container_3xRRJ div[class*="libraryhomenewupdates_HoversEnabled_"]:hover div[class*="libraryhomenewupdates_EventSummaryContainer_"]
+{
+	border-radius: var(--card_radius);
+}

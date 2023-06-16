@@ -6,114 +6,89 @@ A skin to make Steam look more like a native GNOME app
 
 ## Current state and plans
 
-* **Main window**: done.
-* **Settings**: mostly done.
-* **New library, new chat, other web-based client parts**: mostly done, with slight [limitations](#limitations).
+* **Main Window**: Done.
+* **Login**: Done
+* **Library**: Done
+* **Small Mode**: Done.
+* **Chat**: Done
+* **Settings**: Mostly done.
+* **New Overlay**: Mostly done.
 * **New Big Picture**: Not done.
-* **Overlay**: done.
-* **Small mode**: done.
-* **Old library, old chat, other old unused windows**: not planned.
-* **Recoloring**: colors can be changed via making a new theme. See [colorthemes](extras/colorthemes) dir.
-* **Light theme**: not planned, would require redrawing all assets to be visible on light backgrounds.
+* **Recoloring**: Colors can be changed via making a new theme. See [colorthemes](colorthemes) dir.
+* **Light Themes**: Not currently planned, though may now be more feasible with the new UI.
 
 ### Limitations
 
-* **Rounded corners**: impossible to do in a Steam skin, use [Rounded Window Corners extension](https://github.com/yilozt/rounded-window-corners) or [mutter-rounded](https://github.com/yilozt/mutter-rounded) on GNOME
-* **Height of menu/sidebar items**: doesn't seem to be possible to increase
-* **Library Theming**: While the installer will patch steam files to allow theming the library, these files may be reset by steam updates. A reinstall is currently needed to repatch them.
+* **Steam updates may reset theme**: While the installer will patch steam files in order to theme the interface, these files may be reset by steam updates. If this happens, you will need to reinstall to repatch them.
+* **Rounded corners**: Not all elements can be rounded, use [Rounded Window Corners extension](https://github.com/yilozt/rounded-window-corners) or [mutter-rounded](https://github.com/yilozt/mutter-rounded) on GNOME.
+* **Steam website pages (Store/Community/Profiles/Etc)**: No longer themable with our current method.
+* **Position of notifications**: Doesn't seem to be possible to change.
+* **Height of sidebar items**: Doesn't seem to be possible to increase.
 
 ## Requirements
 
-* [Cantarell fonts](https://gitlab.gnome.org/GNOME/cantarell-fonts) as static fonts. Some distros install Cantarell as a variable font that is not supported by Steam, see [#45](https://github.com/tkashkin/Adwaita-for-Steam/issues/45). An option to install these is included in the install script.
+* [Cantarell fonts](https://gitlab.gnome.org/GNOME/cantarell-fonts): An option to install these is included in the install script, but fonts packaged by your distro are preferred.
 * The skin was created for the Linux version of Steam and wasn't tested on Windows or macOS. It will work with some visual problems.
 
 ## Previews
 
 <details><summary>Previews</summary>
 
-<details><summary>Adwaita</summary>
+### Adwaita
 
-![Adwaita](/extras/colorthemes/adwaita/preview.png?raw=true)
+![Adwaita](/colorthemes/adwaita/preview.png?raw=true)
 
-</details>
+### Breeze
 
-<details><summary>Breeze</summary>
+![Breeze](/colorthemes/breeze/preview.png?raw=true)
 
-![Breeze](/extras/colorthemes/breeze/preview.png?raw=true)
+### Catppuccin-Frappe
 
-</details>
+![Catppuccin-Frappe](/colorthemes/catppuccin-frappe/preview.png?raw=true)
 
-<details><summary>Catppuccin-Frappe</summary>
+### Catppuccin-Macchiato
 
-![Catppuccin-Frappe](/extras/colorthemes/catppuccin-frappe/preview.png?raw=true)
+![Catppuccin-Macchiato](/colorthemes/catppuccin-macchiato/preview.png?raw=true)
 
-</details>
+### Catppuccin-Mocha
 
-<details><summary>Catppuccin-Macchiato</summary>
+![Catppuccin-Mocha](/colorthemes/catppuccin-mocha/preview.png?raw=true)
 
-![Catppuccin-Macchiato](/extras/colorthemes/catppuccin-macchiato/preview.png?raw=true)
+### Dracula
 
-</details>
+![Dracula](/colorthemes/dracula/preview.png?raw=true)
 
-<details><summary>Catppuccin-Mocha</summary>
+### Gruvbox
 
-![Catppuccin-Mocha](/extras/colorthemes/catppuccin-mocha/preview.png?raw=true)
+![Gruvbox](/colorthemes/gruvbox/preview.png?raw=true)
 
-</details>
+### Kate
 
-<details><summary>Dracula</summary>
+![Kate](/colorthemes/kate/preview.png?raw=true)
 
-![Dracula](/extras/colorthemes/dracula/preview.png?raw=true)
+### Nord
 
-</details>
+![Nord](/colorthemes/nord/preview.png?raw=true)
 
-<details><summary>Gruvbox</summary>
+### One Pro
 
-![Gruvbox](/extras/colorthemes/gruvbox/preview.png?raw=true)
+![One Pro](/colorthemes/one-pro/preview.png?raw=true)
 
-</details>
+### Pop
 
-<details><summary>Kate</summary>
+![Pop](/colorthemes/pop/preview.png?raw=true)
 
-![Kate](/extras/colorthemes/kate/preview.png?raw=true)
+### Tokyo Night
 
-</details>
+![Tokyo Night](/colorthemes/tokyo-night/preview.png?raw=true)
 
-<details><summary>Nord</summary>
+### Tomorrow Night
 
-![Nord](/extras/colorthemes/nord/preview.png?raw=true)
+![Tomorrow Night](/colorthemes/tomorrow-night/preview.png?raw=true)
 
-</details>
+### Yaru
 
-<details><summary>One Pro</summary>
-
-![One Pro](/extras/colorthemes/one-pro/preview.png?raw=true)
-
-</details>
-
-<details><summary>Pop</summary>
-
-![Pop](/extras/colorthemes/pop/preview.png?raw=true)
-
-</details>
-
-<details><summary>Tokyo Night</summary>
-
-![Tokyo Night](/extras/colorthemes/tokyo-night/preview.png?raw=true)
-
-</details>
-
-<details><summary>Tomorrow Night</summary>
-
-![Tomorrow Night](/extras/colorthemes/tomorrow-night/preview.png?raw=true)
-
-</details>
-
-<details><summary>Yaru</summary>
-
-![Yaru](/extras/colorthemes/yaru/preview.png?raw=true)
-
-</details>
+![Yaru](/colorthemes/yaru/preview.png?raw=true)
 
 </details>
 
@@ -131,15 +106,13 @@ cd Adwaita-for-Steam
 
 | Argument         | Short  | Required Values                  | Description                                              |
 | ---------------- | ------ | -------------------------------- | -------------------------------------------------------- |
-| --color-theme    | -c     | [Colortheme](extras/colorthemes) | Change color theme                                       |
+| --color-theme    | -c     | [Colortheme](colorthemes)        | Change color theme                                       |
 | --font-install   | -fi    |                                  | Installs static Cantarell fonts                          |
 | --list-options   | -l     |                                  | List available patches, themes, and web extras           |
-| --name           | -n     | [name]                           | Rename the installed skin                                |
-| --no-steam-patch | -nsp   |                                  | Do not patch steam client files                          |
-| --patch          | -p     | [Patch](extras/patches)          | Apply one or multiple patches                            |
 | --target         | -t     | normal / flatpak / [custom dir]  | Choose target location for install (default: both)       |
+| --uninstall      | -u     |                                  | Uninstall theme                                          |
 | --web-theme      | -w     | full / base / none               | Choose web theme variant (default: full)                 |
-| --web-extras     | -we    | [Web Extra](extras/web/extras)   | Enable one or multiple web theme extras                  |
+| --web-extras     | -we    | [Web Extra](web/extras)          | Enable one or multiple web theme extras                  |
 
 #### Example Usage
 
@@ -156,20 +129,3 @@ Use the [graphical installer](https://github.com/Foldex/AdwSteamGtk) by [@Foldex
 
 <a href="https://flathub.org/apps/details/io.github.Foldex.AdwSteamGtk"><img width="200" alt="Download on Flathub" src="https://flathub.org/assets/badges/flathub-badge-i-en.svg"/></a>
 
-### Manual installation
-
-Note: Installation with this method is lacking in several features, one of the installers is preferred.
-
-1. Download the [latest skin version](https://github.com/tkashkin/Adwaita-for-Steam/archive/master.zip)
-2. Extract `Adwaita` directory into Steam `skins` directory (create if it doesn't exist):
-   * **Linux**: `~/.steam/steam/skins` or `~/.local/share/Steam/skins`
-   * **Linux (flatpak)**: `~/.var/app/com.valvesoftware.Steam/.local/share/Steam/skins`
-   * ~~Windows~~ (untested): `C:\Program Files (x86)\Steam\skins` by default
-   * ~~macOS~~ (untested): `~/Library/Application Support/Steam/Steam.AppBundle/Steam/Contents/MacOS/skins`
-3. Open Steam and select `Adwaita` skin in Settings > Interface (restart Steam if it doesn't appear in the list)
-
-## Uninstallation
-
-Since the installer patches steam client files directly, simply changing the steam skin will not undo all changes.
-
-Reinstall with `--web-theme none` to unpatch these files.

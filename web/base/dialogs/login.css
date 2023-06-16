@@ -1,0 +1,283 @@
+/* --- New Login View --- */
+/* BG */
+body.DesktopUI .login_Login_VZ6x_.DesktopUI,
+body.DesktopUI .login_Login_VZ6x_.DesktopUI div[class*="newlogindialog_EmbeddedRoot_"],
+body.DesktopUI .login_Login_VZ6x_.DesktopUI div[class*="newlogindialog_StandardLayout_"][class*="newlogindialog_Embedded_"],
+body.DesktopUI > div[class*="index_PreloadThrobber_"],
+body.DesktopUI div[class*="steamdesktop_InitContainer_"]
+{
+	background: var(--bg) !important;
+	border: none !important;
+	box-shadow: none !important;
+	overflow: hidden !important;
+	user-select: none !important;
+}
+
+body.DesktopUI .login_Login_VZ6x_.DesktopUI div[class*="login_TitleBar_"]
+{
+	height: 100px !important;
+}
+
+body.DesktopUI .login_Login_VZ6x_.DesktopUI div[class*="newlogindialog_EmbeddedRoot_"]
+{
+	padding: 40px 24px 16px 24px !important;
+}
+
+/* Text */
+body.DesktopUI .login_Login_VZ6x_.DesktopUI div[class*="newlogindialog_Highlight_"]
+{
+	color: var(--fg) !important;
+}
+
+body.DesktopUI .login_Login_VZ6x_.DesktopUI div[class*="newlogindialog_FormError_"]
+{
+	color: var(--error) !important;
+}
+
+/* Labels */
+body.DesktopUI .login_Login_VZ6x_.DesktopUI div[class*="newlogindialog_FieldLabel_"]
+{
+	color: var(--dim_label_fg) !important;
+	left: 14px !important;
+	margin-bottom: -3px !important;
+	pointer-events: none !important;
+	position: relative !important;
+	top: 22px !important;
+	text-transform: none !important;
+	font-family: var(--basefont) !important;
+	font-size: 12px !important;
+	font-weight: 400 !important;
+}
+
+/* Entry */
+body.DesktopUI .login_Login_VZ6x_.DesktopUI input[class*="newlogindialog_TextInput_"]
+{
+	background: var(--card_bg) !important;
+	border-radius: var(--card_radius) !important;
+	border: none !important;
+	color: var(--fg) !important;
+	min-height: var(--entry_min_height_labeled) !important;
+	padding: var(--entry_padding_labeled) !important;
+	transition: var(--focus_transition) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--entry_font_size) !important;
+	font-weight: var(--entry_font_weight) !important;
+}
+
+body.DesktopUI .login_Login_VZ6x_.DesktopUI input[class*="newlogindialog_TextInput_"]:hover
+{
+	background: var(--button_hover_bg) !important;
+}
+
+body.DesktopUI .login_Login_VZ6x_.DesktopUI input[class*="newlogindialog_TextInput_"]:focus
+{
+	box-shadow: var(--focusring_bs) !important;
+}
+
+body.DesktopUI .login_Login_VZ6x_.DesktopUI form[class*="newlogindialog_LoginForm_"]
+{
+	max-width: 480px !important;
+	margin: auto !important;
+}
+
+body.DesktopUI .login_Login_VZ6x_.DesktopUI form[class*="newlogindialog_LoginForm_"] input[class*="newlogindialog_TextInput_"][type="text"]
+{
+	border-bottom-left-radius: 0px !important;
+	border-bottom-right-radius: 0px !important;
+	margin-bottom: -25px !important;
+}
+
+body.DesktopUI .login_Login_VZ6x_.DesktopUI form[class*="newlogindialog_LoginForm_"] input[class*="newlogindialog_TextInput_"][type="password"]
+{
+	border-top-right-radius: 0px !important;
+	border-top-left-radius: 0px !important;
+}
+
+/* Remember Me */
+body.DesktopUI .login_Login_VZ6x_.DesktopUI div[class*="newlogindialog_Checkbox_"]:empty
+{
+	background: var(--checkbox_bg) !important;
+	border-radius: var(--checkbox_radius) !important;
+	box-shadow: var(--checkbox_bs) !important;
+}
+
+body.DesktopUI .login_Login_VZ6x_.DesktopUI div[class*="newlogindialog_Checkbox_"]
+{
+	background: var(--checkbox_checked_bg) !important;
+	background-blend-mode: var(--button_suggested_blend) !important;
+	border-radius: var(--checkbox_radius) !important;
+	box-shadow: none !important;
+}
+
+body.DesktopUI .login_Login_VZ6x_.DesktopUI div[class*="newlogindialog_Checkbox_"]:hover
+{
+	background-color: var(--button_suggested_hover_bg) !important;
+}
+
+body.DesktopUI .login_Login_VZ6x_.DesktopUI div[class*="newlogindialog_Checkbox_"]:empty:active
+{
+	background: var(--button_hover_bg) !important;
+}
+
+body.DesktopUI .login_Login_VZ6x_.DesktopUI div[class*="newlogindialog_Checkbox_"]:active
+{
+	background-color: var(--button_suggested_click_bg) !important;
+}
+
+body.DesktopUI .login_Login_VZ6x_.DesktopUI div[class*="newlogindialog_Checkbox_"] div[class*="newlogindialog_Check_"] svg
+{
+	stroke-width: var(--checkbox_checked_sw) !important;
+}
+
+body.DesktopUI .login_Login_VZ6x_.DesktopUI div[class*="newlogindialog_Checkbox_"]:focus
+{
+	outline: none !important;
+}
+
+/* Submit Button */
+body.DesktopUI .login_Login_VZ6x_.DesktopUI button[class*="newlogindialog_SubmitButton_"]
+{
+	background-blend-mode: var(--button_suggested_blend) !important;
+	background: var(--button_suggested_bg) !important;
+	border-radius: var(--button_pill_radius) !important;
+	margin-bottom: 16px !important;
+	transition: var(--focus_transition) !important;
+	padding: 12px 24px !important;
+	width: auto !important;
+	min-width: 150px !important;
+	font-family: var(--basefont) !important;
+	font-size: 15px !important;
+	font-weight: 700 !important;
+}
+
+body.DesktopUI .login_Login_VZ6x_.DesktopUI button[class*="newlogindialog_SubmitButton_"]:hover
+{
+	background-color: var(--button_suggested_hover_bg) !important;
+}
+
+body.DesktopUI .login_Login_VZ6x_.DesktopUI button[class*="newlogindialog_SubmitButton_"]:active
+{
+	background-color: var(--button_suggested_click_bg) !important;
+}
+
+body.DesktopUI .login_Login_VZ6x_.DesktopUI button[class*="newlogindialog_SubmitButton_"]:focus
+{
+	outline: none !important;
+}
+
+body.DesktopUI .login_Login_VZ6x_.DesktopUI
+{
+	height: 100% !important;
+}
+
+body.DesktopUI .login_Login_VZ6x_.DesktopUI div[class*="newlogindialog_Login_"]
+{
+	display: flex !important;
+	height: 100% !important;
+}
+
+body.DesktopUI .login_Login_VZ6x_.DesktopUI [class*="newlogindialog_BetaContainer_"],
+body.DesktopUI .login_Login_VZ6x_.DesktopUI form[class*="newlogindialog_LoginForm_"]
+{
+	align-items: stretch !important;
+	align-content: center !important;
+	align-self: center !important;
+}
+
+body.DesktopUI .login_Login_VZ6x_.DesktopUI div[class*="newlogindialog_EmbeddedRoot_"]
+{
+	column-gap: 16px !important;
+	row-gap: 0 !important;
+	flex-grow: 1 !important;
+}
+
+body.DesktopUI .login_Login_VZ6x_.DesktopUI [class*="newlogindialog_JoinBetaButton_"]
+{
+	text-decoration: none !important;
+	border-radius: var(--button_pill_radius) !important;
+}
+
+body.DesktopUI .login_Login_VZ6x_.DesktopUI svg[class*="newlogindialog_HeaderLogo_"]
+{
+	margin: auto !important;
+}
+
+/* Steam Guard dialog */
+/* TODO */
+body.DesktopUI .login_Login_VZ6x_.DesktopUI [class*="newlogindialog_Compact_"]
+{
+	width: 100% !important;
+	padding: 24px !important;
+	gap: 0 !important;
+	color: var(--popover_fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: 15px !important;
+	line-height: normal !important;
+	font-weight: 400 !important;
+	letter-spacing: normal !important;
+	text-transform: none !important;
+}
+
+body.DesktopUI .login_Login_VZ6x_.DesktopUI [class*="newlogindialog_Compact_"] [class*="newlogindialog_PrimaryHeader_"],
+body.DesktopUI .login_Login_VZ6x_.DesktopUI [class*="newlogindialog_Compact_"] [class*="newlogindialog_FailureTitle_"]
+{
+	color: var(--popover_fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: 20px !important;
+	line-height: normal !important;
+	font-weight: 800 !important;
+	letter-spacing: normal !important;
+	text-transform: none !important;
+	text-align: center;
+}
+
+body.DesktopUI .login_Login_VZ6x_.DesktopUI [class*="newlogindialog_Compact_"] [class*="newlogindialog_SegmentedCharacterInput_"]
+{
+	background: var(--entry_bg) !important;
+	border-radius: var(--entry_radius) !important;
+	transition: var(--focus_transition) !important;
+}
+
+body.DesktopUI .login_Login_VZ6x_.DesktopUI [class*="newlogindialog_Compact_"] [class*="newlogindialog_SegmentedCharacterInput_"]:focus-within
+{
+	box-shadow: var(--focusring_bs) !important;
+}
+
+body.DesktopUI .login_Login_VZ6x_.DesktopUI [class*="newlogindialog_Compact_"] [class*="newlogindialog_SegmentedCharacterInput_"] input
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+}
+
+body.DesktopUI .login_Login_VZ6x_.DesktopUI [class*="newlogindialog_Compact_"] [class*="newlogindialog_FormContainer_"]
+{
+	padding: 0 !important;
+}
+
+body.DesktopUI .login_Login_VZ6x_.DesktopUI div[class*="newlogindialog_CheckboxField_"] div[class*="newlogindialog_CheckboxFieldLabel_"],
+body.DesktopUI .login_Login_VZ6x_.DesktopUI [class*="newlogindialog_TextLink_"],
+body.DesktopUI .login_Login_VZ6x_.DesktopUI div[class*="newlogindialog_UseMobileAppForQR_"],
+body.DesktopUI .login_Login_VZ6x_.DesktopUI div[class*="newlogindialog_EmbeddedRootFooter_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: 13px !important;
+	font-weight: 400 !important;
+}
+
+body.DesktopUI .login_Login_VZ6x_.DesktopUI [class*="newlogindialog_TextLink_"]
+{
+	font-weight: 700 !important;
+	text-decoration: none !important;
+}
+
+body.DesktopUI .login_Login_VZ6x_.DesktopUI [class*="newlogindialog_TextLink_"]:hover
+{
+	text-decoration: underline !important;
+}
+
+/* Loading */
+body.DesktopUI .login_Login_VZ6x_.DesktopUI div[class*="loadingthrobber_Spacer_"]:first-child
+{
+	flex-grow: 0.2 !important;
+}

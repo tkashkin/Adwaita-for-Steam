@@ -1,0 +1,77 @@
+/* --- Server Browser --- */
+.ModalDialogPopup div[class*="serverbrowserdialog_ServerBrowserDialog_"] > *:not(.DialogHeader):not(form):not(:only-child)
+{
+	padding: 16px !important;
+}
+
+/* Entire List */
+.ModalDialogPopup div[class*="serverbrowserdialog_ServerList_"]
+{
+	background: none !important;
+	box-shadow: none !important;
+	border: none !important;
+}
+
+/* Header */
+.ModalDialogPopup div[class*="serverbrowserdialog_ServerListHeaderCtr_"]
+{
+	background: var(--card_solid_bg) !important;
+	border-top-right-radius: var(--card_radius) !important;
+	border-top-left-radius: var(--card_radius) !important;
+}
+
+.ModalDialogPopup div[class*="serverbrowserdialog_ServerListHeaderSort_"]
+{
+	font-weight: var(--title_3_weight) !important;
+	text-transform: capitalize !important;
+}
+
+.ModalDialogPopup button[class*="serverbrowserdialog_SwitchTabButton_"] svg,
+.ModalDialogPopup button[class*="serverbrowserdialog_SearchButton_"] svg,
+.ModalDialogPopup button[class*="serverbrowserdialog_ToggleShowFilterDetailsButton_"] svg
+{
+	color: var(--fg) !important;
+}
+
+.ModalDialogPopup span[class*="serverbrowserdialog_SelectColumnsButton_"]
+{
+	background: var(--button_bg) !important;
+	border-radius: var(--button_radius) !important;
+}
+
+.ModalDialogPopup span[class*="serverbrowserdialog_SelectColumnsButton_"]:hover
+{
+	background: var(--button_hover_bg) !important;
+	border-radius: var(--button_radius) !important;
+}
+
+.ModalDialogPopup span[class*="serverbrowserdialog_SelectColumnsButton_"]:active
+{
+	background: var(--button_active_bg) !important;
+	border-radius: var(--button_radius) !important;
+}
+
+/* Rows */
+.ModalDialogPopup div[class*="serverbrowserdialog_ServerRow_"]:hover
+{
+	background: var(--entry_hover_bg) !important;
+	border-radius: var(--menu_radius) !important;
+}
+
+.ModalDialogPopup div[class*="serverbrowserdialog_SelectedRow_"]
+{
+	background: var(--entry_bg) !important;
+	border-radius: var(--menu_radius) !important;
+}
+
+/* Filters */
+.ModalDialogPopup div[class*="serverbrowserdialog_FilterOptionsCtr_"] span
+{
+	font-weight: var(--title_3_weight) !important;
+}
+
+.ModalDialogPopup div[class*="serverbrowserdialog_FilterOptionsCtr_"] .DialogInput_Wrapper,
+.ModalDialogPopup div[class*="serverbrowserdialog_FilterOptionsCtr_"] ._DialogInputContainer
+{
+	margin: 6px 0px !important;
+}
