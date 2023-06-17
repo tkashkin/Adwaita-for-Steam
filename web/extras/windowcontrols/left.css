@@ -1,10 +1,10 @@
 /* ------------------------------------- */
 /* --- Left Aligned Window Controls  --- */
 /* ------------------------------------- */
-.title-bar-actions
+.title-bar-actions.window-controls
 {
-	left: 0px !important;
-	right: auto !important;
+	flex-direction: row !important;
+	order: -99 !important;
 }
 
 #SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="steamdesktop_WindowControls_"]
@@ -18,7 +18,7 @@
 }
 
 /* App Properties Titles */
-.ModalDialogPopup [class*="pagedsettings_PagedSettingsDialog_PageListColumn_"] > [class*="pagedsettings_PagedSettingsDialog_Title_"]
+.ModalDialogPopup div[class*="pagedsettings_PagedSettingsDialog_PageListColumn_"] > div[class*="pagedsettings_PagedSettingsDialog_Title_"]
 {
 	padding-left: 50px !important;
 	padding-right: 50px !important;
@@ -30,12 +30,34 @@
 	padding-left: 50px !important;
 }
 
-.multiChatDialog .title-bar-actions {
+.multiChatDialog .title-bar-actions.window-controls {
 	position: fixed !important;
+	left: 0px !important;
+	right: auto !important;
 }
 
-/* Content Management */
-.ModalDialogPopup [class*="contentmanagement_ContentManagement_"] [class*="contentmanagement_PageableCarousel_"]
+/* Overlay */
+.ModalDialogPopup:not([class*="steamdesktopoverlay_NoTitlebarSpacer_"]) div[class*="steamdesktopoverlay_OverlayPopup_"] div[class*="steamdesktopoverlay_WindowControls_"]
 {
-	margin-left: 70px !important;
+	height: 48px !important;
+}
+
+.ModalDialogPopup div[class*="steamdesktopoverlay_OverlayPopup_"] div[class*="steamdesktopoverlay_WindowControls_"] .title-bar-actions.window-controls
+{
+	margin-right: 0px !important;
+}
+
+.ModalDialogPopup div[class*="steamdesktopoverlay_OverlayPopup_"] div[class*="steamdesktopoverlay_WindowControls_"] .title-bar-actions.extra-actions
+{
+	margin-right: 12px !important;
+}
+
+.ModalDialogPopup:not([class*="steamdesktopoverlay_NoTitlebarSpacer_"]) div[class*="steamdesktopoverlay_OverlayPopup_"] div[class*="steamdesktopoverlay_WindowControls_"] .title-bar-actions.extra-actions
+{
+	order: -98 !important;
+}
+
+.ModalDialogPopup[class*="steamdesktopoverlay_NoTitlebarSpacer_"] div[class*="pagedsettings_Hidden_"] + .DialogContentTransition div[class*="pagedsettings_HidePageListButton_"]
+{
+	margin-left: 30px !important;
 }
