@@ -489,6 +489,7 @@ body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl div[class*="steamdesktopoverla
 	font-family: var(--basefont) !important;
 	font-size: var(--button_font_size) !important;
 	font-weight: var(--button_font_weight) !important;
+	margin-top: 2px !important;
 	min-height: var(--button_min_height) !important;
 	transition: var(--focus_transition) !important;
 }

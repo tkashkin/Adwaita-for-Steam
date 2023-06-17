@@ -122,7 +122,7 @@ html.client_chat_frame .chat_main.fullheight.responsive_friends .friendListButto
 html.client_chat_frame .friendListButton.friendCollapseButton
 {
 	margin-right: 1px !important;
-	margin-top: -2px !important;
+	margin-top: 16px !important;
 }
 
 html.client_chat_frame .friendListButton.friendSettingsButton .SVGIcon_Settings
