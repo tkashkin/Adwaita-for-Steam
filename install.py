@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 from argparse import ArgumentParser
 from pathlib import Path
-from tempfile import TemporaryDirectory
+from tempfile import TemporaryDirectory, NamedTemporaryFile
 from typing import NoReturn
 import configparser
 import re
-import subprocess
 import shutil
+import time
 import os
 
 TEXT_BOLD = "\033[1m"
@@ -264,6 +264,22 @@ def patch_client_css(source: Path, target: Path, name: str):
 	padding = " " * size_diff
 	target_css.open('a').write(padding)
 
+# It is possible to force the steam client to reload the theme by creating a uniquely named new file inside the steamui dir.
+# This only seems to work when Steam is run with the -dev arg, and reloading repeatedly can leak a lot of memory.
+# Still, this is useful for testing changes
+def dev_reload(target: Path):
+	if not args.dev or not target.is_dir():
+		return
+
+	sd = target / "steamui"
+	if not sd.is_dir():
+		print("{TEXT_PURPLE}steamui dir not found. Cannot hot reload.{TEXT_RESET}")
+		return
+
+	with NamedTemporaryFile(dir=sd) as tmpfile:
+		tmpfile.write(b"")
+		time.sleep(3)
+
 if __name__ == "__main__":
 	if not webthemedir.exists():
 		raise SystemExit(f"{TEXT_RED}{TEXT_CROSS} Web Theme directory {TEXT_BOLD}{WEB_THEME_DIR}{TEXT_RESET}{TEXT_RED} does not exist. Make sure you're running the installer from its root directory{TEXT_RESET}")
@@ -272,6 +288,7 @@ if __name__ == "__main__":
 
 	parser = ArgumentParser(description = "Adwaita-for-Steam installer")
 	parser.add_argument("-c", "--color-theme", default = "adwaita", help = "Choose color theme")
+	parser.add_argument("-d", "--dev", action = "store_true", help = "Dev Mode")
 	parser.add_argument("-fi", "--font-install", action = "store_true", help = "Install Fonts")
 	parser.add_argument("-l", "--list-options", action = "store_true", help = "List available themes & web extras and exit")
 	parser.add_argument("-t", "--target", nargs = "+", action = "extend", default = ["normal", "flatpak"], help = "Install targets: 'normal', 'flatpak', custom paths")
@@ -330,5 +347,6 @@ if __name__ == "__main__":
 
 		for target in targets:
 			patch_client_css(sourcedir, target, "Library")
+			dev_reload(target)
 
 		print(f"{TEXT_GREEN}{TEXT_CHECK} Done!{TEXT_RESET}")
