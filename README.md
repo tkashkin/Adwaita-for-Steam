@@ -27,8 +27,9 @@ A skin to make Steam look more like a native GNOME app
 
 ## Requirements
 
+* [Python 3](https://www.python.org/downloads/)
 * [Cantarell fonts](https://gitlab.gnome.org/GNOME/cantarell-fonts): An option to install these is included in the install script, but fonts packaged by your distro are preferred.
-* The skin was created for the Linux version of Steam and wasn't tested on Windows or macOS. It will work with some visual problems.
+* The skin is created and tested mostly on the Linux version of Steam. Steam's new UI has largely unified platform differences, so other platforms should work, but are not a priority.
 
 ## Previews
 
@@ -65,6 +66,10 @@ A skin to make Steam look more like a native GNOME app
 ### Kate
 
 ![Kate](/colorthemes/kate/preview.png?raw=true)
+
+### Metro
+
+![Metro](/colorthemes/metro/preview.png?raw=true)
 
 ### Nord
 
@@ -122,6 +127,12 @@ cd Adwaita-for-Steam
 # Install with options
 ./install.py -c nord -fi -p windowcontrols/right-all -we login/hide_qr -we library/hide_whats_new
 ```
+
+#### Windows
+
+- Download the [Latest Release](https://github.com/tkashkin/Adwaita-for-Steam/releases)
+- Ensure you have [Python](#requirements) installed
+- Double click the `install_windows` bat script and follow the prompts
 
 ### With graphical installer
 
