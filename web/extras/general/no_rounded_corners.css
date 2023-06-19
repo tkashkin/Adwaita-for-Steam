@@ -3,12 +3,13 @@
 /* ------------------------------- */
 :root
 {
-	--button_radius: 0px;
-	--button_pill_radius: 0px;
-	--checkbox_radius: 0px;
-	--card_radius: 0px;
-	--entry_radius: 0px;
-	--menu_radius: 0px;
-	--window_radius: 0px;
-	--popover_radius: 0px;
+	--button_pill_radius: 1px;
+	--button_radius: 1px;
+	--card_radius: 1px;
+	--checkbox_radius: 1px;
+	--entry_radius: 1px;
+	--icon_small_radius: 1px;
+	--menu_radius: 1px;
+	--popover_radius: 1px;
+	--window_radius: 1px;
 }
