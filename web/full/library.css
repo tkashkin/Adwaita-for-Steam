@@ -15,6 +15,12 @@ body.DesktopUI div[class*="appportraithover_CapsuleBackgroundContainer_"]
 	border-radius: var(--card_radius) !important;
 }
 
+#SteamDesktop .library_Container_3xRRJ div[class*="gamelistentry_Container_"] img[class*="libraryassetimage_Image_"],
+body.DesktopUI div[class*="hoverposition_HoverPosition_"] div[class*="gamelistentry_Container_"] img[class*="libraryassetimage_Image_"]
+{
+	border-radius: var(--icon_small_radius) !important;
+}
+
 #SteamDesktop .library_Container_3xRRJ div[class*="appportrait_LibraryItemBox_"][class*="appportrait_FeaturedCapsule_"] img[class*="libraryassetimage_Image_"]
 {
 	border-bottom-left-radius: 0px !important;

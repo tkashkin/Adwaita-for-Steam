@@ -128,6 +128,7 @@
 	--entry_small_min_height: calc(var(--entry_min_height) - 20px);
 	--entry_small_radius: calc(var(--entry_radius) - 6px);
 
+	--icon_small_radius: var(--button_radius);
 
 	--dim_label_fg: rgba(255, 255, 255, 0.55);
 
