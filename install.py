@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from argparse import ArgumentParser
 from pathlib import Path
+from sys import platform
 from tempfile import TemporaryDirectory, NamedTemporaryFile
 from typing import NoReturn
 import configparser
@@ -9,17 +10,36 @@ import shutil
 import time
 import os
 
-TEXT_BOLD = "\033[1m"
-TEXT_BLUE = "\033[1;34m"
-TEXT_GREEN = "\033[1;32m"
-TEXT_PURPLE = "\033[1;35m"
-TEXT_RED = "\033[1;31m"
-TEXT_RESET = "\033[0m"
+# Platform Specific
+if platform == "win32":
+	import winreg
+	WINDOWS_RUN = True
 
-TEXT_ARROW="→"
-TEXT_CHECK="✓"
-TEXT_CROSS="✖"
-TEXT_INFO="✦"
+	TEXT_BOLD = ""
+	TEXT_BLUE = ""
+	TEXT_GREEN = ""
+	TEXT_PURPLE = ""
+	TEXT_RED = ""
+	TEXT_RESET = ""
+
+	TEXT_ARROW = ""
+	TEXT_CHECK = ""
+	TEXT_CROSS = ""
+	TEXT_INFO = ""
+else:
+	WINDOWS_RUN = False
+
+	TEXT_BOLD = "\033[1m"
+	TEXT_BLUE = "\033[1;34m"
+	TEXT_GREEN = "\033[1;32m"
+	TEXT_PURPLE = "\033[1;35m"
+	TEXT_RED = "\033[1;31m"
+	TEXT_RESET = "\033[0m"
+
+	TEXT_ARROW = "→"
+	TEXT_CHECK = "✓"
+	TEXT_CROSS = "✖"
+	TEXT_INFO = "✦"
 
 COLOR_THEME_DIR = "colorthemes"
 FONTS_DIR = "fonts"
@@ -30,8 +50,10 @@ LIBRARY_CSS_FILE = "libraryroot.custom.css"
 
 TARGET_NORMAL = "~/.steam/steam"
 TARGET_FLATPAK = "~/.var/app/com.valvesoftware.Steam/.steam/steam"
+TARGET_WINDOWS = "C:/Program Files (x86)/Steam"
 
 TARGET_FONTS = "~/.local/share/fonts"
+TARGET_FONTS_WIN = "AppData/Local/Microsoft/Windows/Fonts"
 
 STEAM_LOOPBACK = "https://steamloopback.host"
 STEAM_PATCHED_HEADER = "/*patched*/"
@@ -132,17 +154,38 @@ def list_options(type: str, options: list[Path], suffix: str, sourcedir: Path, a
 		print(f"{TEXT_PURPLE}{TEXT_INFO} No {type} available\n{TEXT_RESET}")
 
 # Fonts
-def install_font(name: str, ext: str):
-	font = fontdir / name / ext
-	if font.exists():
-		print(f"\n{TEXT_BLUE}{TEXT_ARROW} Installing font {TEXT_BOLD}{name}{TEXT_RESET}{TEXT_BLUE}...{TEXT_RESET}")
-		files = font.glob(f"*.{ext}")
-		target = Path(TARGET_FONTS).expanduser().resolve()
-		target.mkdir(exist_ok = True)
-		for f in files:
-			shutil.copy(f, target)
+def install_font(name: str):
+	if WINDOWS_RUN:
+		target = Path.home() / TARGET_FONTS_WIN
+		ext = "ttf"
 	else:
+		target = Path(TARGET_FONTS).expanduser().resolve()
+		ext = "otf"
+
+	font = fontdir / name / ext
+
+	if not font.is_dir():
 		print(f"{TEXT_PURPLE}{TEXT_INFO} Font: {TEXT_BOLD}{name}{TEXT_RESET}{TEXT_PURPLE} not found!{TEXT_RESET}")
+		return
+
+	print(f"\n{TEXT_BLUE}{TEXT_ARROW} Installing font {TEXT_BOLD}{name}{TEXT_RESET}{TEXT_BLUE}...{TEXT_RESET}")
+	files = font.glob(f"*.{ext}")
+	target.mkdir(exist_ok = True)
+	for f in files:
+		target_file = target / f.name
+
+		if target_file.is_file():
+			print(f"  {TEXT_BLUE}{TEXT_ARROW} Font {TEXT_BOLD}{f.name}{TEXT_RESET}{TEXT_BLUE} exists. Skipping...{TEXT_RESET}")
+			continue
+
+		shutil.copy(f, target)
+		if WINDOWS_RUN:
+			win_reg_font(f.name, target_file)
+
+def win_reg_font(name: str, target: Path):
+	key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, r"SOFTWARE\Microsoft\Windows NT\CurrentVersion\Fonts", 0, winreg.KEY_ALL_ACCESS)
+	winreg.SetValueEx(key, str(name), 0, winreg.REG_SZ, str(target))
+	winreg.CloseKey(key)
 
 # Webkit CSS
 def find_web_extras() -> list[Path]:
@@ -280,6 +323,7 @@ def dev_reload(target: Path):
 		tmpfile.write(b"")
 		time.sleep(3)
 
+# Run
 if __name__ == "__main__":
 	if not webthemedir.exists():
 		raise SystemExit(f"{TEXT_RED}{TEXT_CROSS} Web Theme directory {TEXT_BOLD}{WEB_THEME_DIR}{TEXT_RESET}{TEXT_RED} does not exist. Make sure you're running the installer from its root directory{TEXT_RESET}")
@@ -297,13 +341,16 @@ if __name__ == "__main__":
 	parser.add_argument("-we", "--web-extras", nargs = "+", action = "extend", help = "Enable one or multiple web theme extras")
 	args = parser.parse_args()
 
+	if WINDOWS_RUN:
+		args.target = ["windows"]
+
 	if args.list_options:
 		list_options("color themes", find_color_themes(), ".theme", colorthemedir, "color-theme")
 		list_options("web extras", find_web_extras(), ".css", webextrasdir, "web-extras")
 		exit(0)
 
 	if args.font_install:
-		install_font("Cantarell", "otf")
+		install_font("Cantarell")
 
 	selected_theme = None
 	if args.color_theme:
@@ -342,6 +389,8 @@ if __name__ == "__main__":
 				targets.add(Path(TARGET_NORMAL).expanduser().resolve())
 			elif t == "flatpak":
 				targets.add(Path(TARGET_FLATPAK).expanduser().resolve())
+			elif t == "windows":
+				targets.add(Path(TARGET_WINDOWS))
 			else:
 				targets.add(Path(t).expanduser().resolve())
 
