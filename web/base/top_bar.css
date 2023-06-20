@@ -114,6 +114,7 @@ body.DesktopUI .steamdesktop_Wrapper_1ENHE
 	text-overflow: ellipsis !important;
 	text-transform: capitalize !important;
 	transition: var(--focus_transition) !important;
+	white-space: nowrap !important;
 }
 
 #SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_MenuButton_"]:hover
