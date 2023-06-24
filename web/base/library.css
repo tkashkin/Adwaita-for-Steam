@@ -199,16 +199,16 @@ body.DesktopUI div[class*="contextmenu_contextMenuItem_"] .SVGIcon_Button line
 
 /* --- Left Panel --- */
 /* Backgrounds */
-#SteamDesktop .library_Container_3xRRJ div[class*="gamelistbar_Container_"],
-#SteamDesktop .library_Container_3xRRJ div[class*="gamelistbar_GameListHomeAndSearch_"],
-#SteamDesktop .library_Container_3xRRJ div[class*="gamelistsectionheader_Container_"]
+#SteamDesktop .gamelistbar_Container_3x1Hk,
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistbar_GameListHomeAndSearch_"],
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistsectionheader_Container_"]
 {
 	background: var(--bg) !important;
 	box-shadow: none !important;
 }
 
 /* Separator */
-#SteamDesktop .library_Container_3xRRJ div[class*="library_LibraryWindowDivider_"]
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="library_LibraryWindowDivider_"]
 {
 	background: rgba(255, 255, 255, 0.2) !important;
 	min-width: 1px !important;
@@ -216,20 +216,20 @@ body.DesktopUI div[class*="contextmenu_contextMenuItem_"] .SVGIcon_Button line
 }
 
 /* Home and Collections */
-#SteamDesktop .library_Container_3xRRJ a[class*="gamelisthome_Bar_"]
+#SteamDesktop .gamelistbar_Container_3x1Hk a[class*="gamelisthome_Bar_"]
 {
 	background: var(--button_bg) !important;
 	border-radius: var(--button_radius) !important;
 	box-shadow: none !important;
 }
 
-#SteamDesktop .library_Container_3xRRJ a[class*="gamelisthome_Bar_"]:hover
+#SteamDesktop .gamelistbar_Container_3x1Hk a[class*="gamelisthome_Bar_"]:hover
 {
 	background: var(--button_hover_bg) !important;
 	border-radius: var(--button_radius) !important;
 }
 
-#SteamDesktop .library_Container_3xRRJ div[class*="gamelisthome_Label_"]
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelisthome_Label_"]
 {
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
@@ -237,27 +237,27 @@ body.DesktopUI div[class*="contextmenu_contextMenuItem_"] .SVGIcon_Button line
 	font-weight: var(--button_font_weight) !important;
 }
 
-#SteamDesktop .library_Container_3xRRJ div[class*="gamelisthome_CollectionIconBox_"]
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelisthome_CollectionIconBox_"]
 {
 	background: var(--button_fg) !important;
 	opacity: 0.2 !important;
 }
 
-#SteamDesktop .library_Container_3xRRJ a[class*="gamelisthome_CollectionButton_"]:hover div[class*="gamelisthome_CollectionIconBox_"]
+#SteamDesktop .gamelistbar_Container_3x1Hk a[class*="gamelisthome_CollectionButton_"]:hover div[class*="gamelisthome_CollectionIconBox_"]
 {
 	opacity: 0.8 !important;
 }
 
 /* Filters and Buttons */
-#SteamDesktop .library_Container_3xRRJ div[class*="gamelistdropdown_Bar_"]
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistdropdown_Bar_"]
 {
 	padding: 0px 6px !important;
 }
 
-#SteamDesktop .library_Container_3xRRJ div[class*="gamelistdropdown_MenuHeader_"],
-#SteamDesktop .library_Container_3xRRJ div[class*="gamelistdropdown_ScrollToTop_"] .SVGIcon_Arrow,
-#SteamDesktop .library_Container_3xRRJ button[class*="appfilterpane_SaveButton_"],
-#SteamDesktop .library_Container_3xRRJ div[class*="gamelistsearchbar_FilterTag_"]
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistdropdown_MenuHeader_"],
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistdropdown_ScrollToTop_"] .SVGIcon_Arrow,
+#SteamDesktop .gamelistbar_Container_3x1Hk button[class*="appfilterpane_SaveButton_"],
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistsearchbar_FilterTag_"]
 {
 	background: var(--button_bg) !important;
 	border: none !important;
@@ -268,88 +268,88 @@ body.DesktopUI div[class*="contextmenu_contextMenuItem_"] .SVGIcon_Button line
 	font-weight: var(--button_font_weight) !important;
 }
 
-#SteamDesktop .library_Container_3xRRJ div[class*="gamelistdropdown_MenuHeader_"]:hover,
-#SteamDesktop .library_Container_3xRRJ div[class*="gamelistdropdown_ScrollToTop_"]:hover .SVGIcon_Arrow
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistdropdown_MenuHeader_"]:hover,
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistdropdown_ScrollToTop_"]:hover .SVGIcon_Arrow
 {
 	background: var(--button_hover_bg) !important;
 	border: none !important;
 	border-radius: var(--button_radius) !important;
 }
 
-#SteamDesktop .library_Container_3xRRJ div[class*="gamelistdropdown_MenuHeader_"] div[class*="gamelistdropdown_Arrow_"] polygon,
-#SteamDesktop .library_Container_3xRRJ div[class*="gamelistdropdown_CheckboxWithImage_"] svg,
-#SteamDesktop .library_Container_3xRRJ div[class*="gamelistsearchbar_AdvancedSearchButton_"] svg path
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistdropdown_MenuHeader_"] div[class*="gamelistdropdown_Arrow_"] polygon,
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistdropdown_CheckboxWithImage_"] svg,
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistsearchbar_AdvancedSearchButton_"] svg path
 {
 	fill: var(--dim_label_fg) !important;
 }
 
-#SteamDesktop .library_Container_3xRRJ div[class*="gamelistdropdown_CheckboxWithImage_"]:hover svg,
-#SteamDesktop .library_Container_3xRRJ div[class*="gamelistsearchbar_AdvancedSearchButton_"]:hover svg path
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistdropdown_CheckboxWithImage_"]:hover svg,
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistsearchbar_AdvancedSearchButton_"]:hover svg path
 {
 	fill: var(--fg) !important;
 }
 
-#SteamDesktop .library_Container_3xRRJ div[class*="gamelistdropdown_CheckboxWithImage_"] svg circle,
-#SteamDesktop .library_Container_3xRRJ div[class*="gamelistdropdown_CheckboxWithImage_"] svg polyline,
-#SteamDesktop .library_Container_3xRRJ div[class*="gamelistdropdown_ScrollToTop_"] polyline
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistdropdown_CheckboxWithImage_"] svg circle,
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistdropdown_CheckboxWithImage_"] svg polyline,
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistdropdown_ScrollToTop_"] polyline
 {
 	stroke: var(--dim_label_fg) !important;
 }
 
-#SteamDesktop .library_Container_3xRRJ div[class*="gamelistdropdown_CheckboxWithImage_"]:hover svg circle,
-#SteamDesktop .library_Container_3xRRJ div[class*="gamelistdropdown_CheckboxWithImage_"]:hover svg polyline,
-#SteamDesktop .library_Container_3xRRJ div[class*="gamelistdropdown_ScrollToTop_"]:hover polyline
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistdropdown_CheckboxWithImage_"]:hover svg circle,
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistdropdown_CheckboxWithImage_"]:hover svg polyline,
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistdropdown_ScrollToTop_"]:hover polyline
 {
 	stroke: var(--fg) !important;
 }
 
-#SteamDesktop .library_Container_3xRRJ div[class*="gamelistdropdown_Active_"] svg
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistdropdown_Active_"] svg
 {
 	fill: var(--accent_bg) !important;
 }
 
-#SteamDesktop .library_Container_3xRRJ div[class*="gamelistdropdown_Active_"]:hover svg
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistdropdown_Active_"]:hover svg
 {
 	fill: var(--accent) !important;
 }
 
-#SteamDesktop .library_Container_3xRRJ div[class*="gamelistdropdown_Active_"] svg circle,
-#SteamDesktop .library_Container_3xRRJ div[class*="gamelistdropdown_Active_"] svg polyline
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistdropdown_Active_"] svg circle,
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistdropdown_Active_"] svg polyline
 {
 	stroke: var(--accent_bg) !important;
 }
 
-#SteamDesktop .library_Container_3xRRJ div[class*="gamelistdropdown_Active_"]:hover svg circle,
-#SteamDesktop .library_Container_3xRRJ div[class*="gamelistdropdown_Active_"]:hover svg polyline
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistdropdown_Active_"]:hover svg circle,
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistdropdown_Active_"]:hover svg polyline
 {
 	stroke: var(--accent) !important;
 }
 
 body.DesktopUI > div[class*="gamelistdropdown_DropDown_"],
-#SteamDesktop .library_Container_3xRRJ div[class*="appfilterpane_Container_"],
-#SteamDesktop .library_Container_3xRRJ [class*="appfilterpane_Description_"]
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="appfilterpane_Container_"],
+#SteamDesktop .gamelistbar_Container_3x1Hk [class*="appfilterpane_Description_"]
 {
 	background: var(--popover_bg) !important;
 }
 
-#SteamDesktop .library_Container_3xRRJ div[class*="appfilterpane_FilterBucketLabel_"]
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="appfilterpane_FilterBucketLabel_"]
 {
 	color: var(--fg) !important;
 }
 
-#SteamDesktop .library_Container_3xRRJ button[class*="appfilterpane_SaveButton_"].Disabled
+#SteamDesktop .gamelistbar_Container_3x1Hk button[class*="appfilterpane_SaveButton_"].Disabled
 {
 	background: var(--button_disabled_bg) !important;
 	color: var(--button_disabled_fg) !important;
 }
 
-#SteamDesktop .library_Container_3xRRJ div[class*="gamelistsearchbar_AdvancedSearchPane_"]::before
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistsearchbar_AdvancedSearchPane_"]::before
 {
 	background: none !important;
 }
 
 /* Game Search */
-#SteamDesktop .library_Container_3xRRJ div[class*="gamelistsearchbar_SearchInput_"] input
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistsearchbar_SearchInput_"] input
 {
 	background-color: transparent !important;
 	color: var(--fg) !important;
@@ -357,17 +357,17 @@ body.DesktopUI > div[class*="gamelistdropdown_DropDown_"],
 	font-family: var(--basefont) !important;
 }
 
-#SteamDesktop .library_Container_3xRRJ div[class*="gamelistsearchbar_SearchInput_"] .DialogInput_ClearAction svg line
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistsearchbar_SearchInput_"] .DialogInput_ClearAction svg line
 {
 	stroke: var(--dim_label_fg) !important;
 }
 
-#SteamDesktop .library_Container_3xRRJ div[class*="gamelistsearchbar_SearchInput_"] .DialogInput_ClearAction:hover svg line
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistsearchbar_SearchInput_"] .DialogInput_ClearAction:hover svg line
 {
 	stroke: var(--fg) !important;
 }
 
-#SteamDesktop .library_Container_3xRRJ div[class*="gamelistsearchbar_SearchInput_"]
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistsearchbar_SearchInput_"]
 {
 	background-color: var(--button_bg) !important;
 	border-radius: var(--button_radius) !important;
@@ -376,7 +376,7 @@ body.DesktopUI > div[class*="gamelistdropdown_DropDown_"],
 	color: var(--fg) !important;
 }
 
-#SteamDesktop .library_Container_3xRRJ div[class*="gamelistsearchbar_SearchInput_"]:hover
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistsearchbar_SearchInput_"]:hover
 {
 	background-color: var(--button_hover_bg) !important;
 	border-radius: var(--button_radius) !important;
@@ -384,12 +384,12 @@ body.DesktopUI > div[class*="gamelistdropdown_DropDown_"],
 	border-bottom-right-radius: 0px !important;
 }
 
-#SteamDesktop .library_Container_3xRRJ div[class*="gamelistsearchbar_SearchInput_"] input:focus
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistsearchbar_SearchInput_"] input:focus
 {
 	box-shadow: none !important;
 }
 
-#SteamDesktop .library_Container_3xRRJ div[class*="gamelistsearchbar_AdvancedSearchButton_"]
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistsearchbar_AdvancedSearchButton_"]
 {
 	background: var(--button_bg) !important;
 	border-radius: var(--button_radius) !important;
@@ -397,13 +397,13 @@ body.DesktopUI > div[class*="gamelistdropdown_DropDown_"],
 	border-bottom-left-radius: 0px !important;
 }
 
-#SteamDesktop .library_Container_3xRRJ div[class*="gamelistsearchbar_AdvancedSearchContainer_"]
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistsearchbar_AdvancedSearchContainer_"]
 {
 	background: none !important;
 }
 
-#SteamDesktop .library_Container_3xRRJ div[class*="gamelistsearchbar_AdvancedSearchContainer_"]:hover,
-#SteamDesktop .library_Container_3xRRJ div[class*="gamelistsearchbar_AdvancedSearchContainer_"][class*="gamelistsearchbar_Extended_"]
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistsearchbar_AdvancedSearchContainer_"]:hover,
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistsearchbar_AdvancedSearchContainer_"][class*="gamelistsearchbar_Extended_"]
 {
 	background: var(--button_hover_bg) !important;
 	border-radius: var(--button_radius) !important;
@@ -412,112 +412,112 @@ body.DesktopUI > div[class*="gamelistdropdown_DropDown_"],
 }
 
 /* Game Headers and Rows */
-body.DesktopUI span[class*="gamelistsectionheader_SectionName"]
+#SteamDesktop .gamelistbar_Container_3x1Hk span[class*="gamelistsectionheader_SectionName"]
 {
 	color: var(--fg) !important;
 	font-weight: var(--title_3_weight) !important;
 	font-family: var(--basefont) !important;
 }
 
-body.DesktopUI div[class*="gamelistsectionheader_SectionCount_"]
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistsectionheader_SectionCount_"]
 {
 	color: var(--dim_label_fg) !important;
 	font-family: var(--basefont) !important;
 	font-weight: var(--title_4_weight) !important;
 }
 
-body.DesktopUI div[class*="gamelistsectionheader_Container_"],
-body.DesktopUI div[class*="gamelistentry_Container_"]
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistsectionheader_Container_"],
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistentry_Container_"]
 {
 	border: none !important;
 	margin-left: 6px !important;
 }
 
-body.DesktopUI div[class*="gamelistentry_GameListEntryContainer_"]
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistentry_GameListEntryContainer_"]
 {
 	border: none !important;
 	padding-left: 6px !important;
 }
 
-body.DesktopUI div[class*="gamelistentry_Installed_"]
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistentry_Installed_"]
 {
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
 	font-weight: var(--baseweight) !important;
 }
 
-body.DesktopUI div[class*="gamelistentry_Uninstalled_"]
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistentry_Uninstalled_"]
 {
 	color: var(--dim_label_fg) !important;
 	font-family: var(--basefont) !important;
 	font-weight: var(--baseweight) !important;
 }
 
-body.DesktopUI div[class*="gamelist_Container_"] .ReactVirtualized__Grid[style*="overflow: hidden;"]
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelist_Container_"] .ReactVirtualized__Grid[style*="overflow: hidden;"]
 {
 	/* Only try to pad if the list doesnt overflow */
 	padding-right: 6px !important;
 }
 
-body.DesktopUI div[class*="gamelistentry_GameIcon_"]
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistentry_GameIcon_"]
 {
 	margin: 0px 6px 0px 0px !important;
 }
 
-body.DesktopUI div[class*="gamelistentry_Container_"]:hover,
-body.DesktopUI div[class*="gamelistsectionheader_Container_"]:hover
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistentry_Container_"]:hover,
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistsectionheader_Container_"]:hover
 {
 	background: var(--button_hover_bg) !important;
 	border-radius: var(--menu_radius) !important;
 }
 
-body.DesktopUI div[class*="gamelistentry_Selected_"][class*="gamelistentry_Container_"],
-body.DesktopUI div[class*="gamelistentry_Selected_"][class*="gamelistentry_Container_"] :hover,
-body.DesktopUI div[class*="gamelistentry_Selected_"] > [class*="gamelistentry_Container_"],
-body.DesktopUI div[class*="gamelistentry_Selected_"] > [class*="gamelistentry_Container_"]:hover,
-body.DesktopUI div[class*="gamelistentry_Selected_"] > [class*="gamelistentry_Container_"] :hover
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistentry_Selected_"][class*="gamelistentry_Container_"],
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistentry_Selected_"][class*="gamelistentry_Container_"] :hover,
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistentry_Selected_"] > [class*="gamelistentry_Container_"],
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistentry_Selected_"] > [class*="gamelistentry_Container_"]:hover,
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistentry_Selected_"] > [class*="gamelistentry_Container_"] :hover
 {
 	background: none !important;
 	box-shadow: none !important;
 }
 
-body.DesktopUI div[class*="gamelistsectionheader_Selected_"],
-body.DesktopUI div[class*="gamelistentry_HasContextMenuOpen_"],
-body.DesktopUI div[class*="gamelistentry_Selected_"] div[class*="gamelistentry_GameListEntryContainer_"],
-body.DesktopUI div[class*="gamelistentry_Selected_"] div[class*="gamelistentry_GameListEntryContainer_"][class*="gamelistentry_CloudError_"]
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistsectionheader_Selected_"],
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistentry_HasContextMenuOpen_"],
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistentry_Selected_"] div[class*="gamelistentry_GameListEntryContainer_"],
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistentry_Selected_"] div[class*="gamelistentry_GameListEntryContainer_"][class*="gamelistentry_CloudError_"]
 {
 	background: var(--button_bg) !important;
 	border-radius: var(--button_radius) !important;
 }
 
-body.DesktopUI div[class*="gamelistentry_HasContextMenuOpen_"]
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistentry_HasContextMenuOpen_"]
 {
 	border: 1px var(--focusring) solid !important;
 }
 
-body.DesktopUI div[class*="gamelistentry_HasContextMenuOpen_"] div[class*="gamelistentry_GameListEntryContainer_"]
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistentry_HasContextMenuOpen_"] div[class*="gamelistentry_GameListEntryContainer_"]
 {
 	margin-left: -1px !important;
 }
 
-body.DesktopUI div[class*="gamelistsectionheader_Selected_"]:hover,
-body.DesktopUI div[class*="gamelistentry_Selected_"] div[class*="gamelistentry_GameListEntryContainer_"]:hover,
-body.DesktopUI div[class*="gamelistentry_Selected_"] div[class*="gamelistentry_GameListEntryContainer_"][class*="gamelistentry_CloudError_"]:hover
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistsectionheader_Selected_"]:hover,
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistentry_Selected_"] div[class*="gamelistentry_GameListEntryContainer_"]:hover,
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistentry_Selected_"] div[class*="gamelistentry_GameListEntryContainer_"][class*="gamelistentry_CloudError_"]:hover
 {
 	background: var(--button_hover_bg) !important;
 	border-radius: var(--button_radius) !important;
 }
 
-body.DesktopUI div[class*="gamelistentry_Updating_"],
-body.DesktopUI div[class*="gamelistentry_DownloadProgress_"],
-body.DesktopUI div[class*="gamelistentry_Synchronizing_"],
-body.DesktopUI div[class*="gamelistentry_CloudError_"],
-body.DesktopUI div[class*="gamelistentry_CloudOutOfDate_"]
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistentry_Updating_"],
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistentry_DownloadProgress_"],
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistentry_Synchronizing_"],
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistentry_CloudError_"],
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistentry_CloudOutOfDate_"]
 {
 	color: var(--accent) !important;
 }
 
-body.DesktopUI div[class*="gamelistentry_Running_"]
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistentry_Running_"]
 {
 	color: var(--success) !important;
 }
@@ -536,23 +536,37 @@ body.DesktopUI > div > div[class*="hoverposition_HoverPosition_"] div[class*="ga
 }
 
 /* Drag & Drop */
-#SteamDesktop .library_Container_3xRRJ div[class*="gamelistentry_Container_"][class*="gamelistentry_DropTarget_"] {
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistentry_Container_"][class*="gamelistentry_DropTarget_"] {
 	background-color: var(--button_bg) !important;
 	border-left: 1px solid var(--accent_bg) !important;
 	border-right: 1px solid var(--accent_bg) !important;
 }
 
-#SteamDesktop .library_Container_3xRRJ div[class*="gamelistsectionheader_Container_"][class*="gamelistsectionheader_DropOption_"] {
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistsectionheader_Container_"][class*="gamelistsectionheader_DropOption_"] {
 	background-color: var(--button_bg) !important;
 }
 
-#SteamDesktop .library_Container_3xRRJ div[class*="gamelistsectionheader_Container_"][class*="gamelistsectionheader_DropTarget_"] {
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistsectionheader_Container_"][class*="gamelistsectionheader_DropTarget_"] {
 	border-left: 1px solid var(--accent_bg) !important;
 	border-right: 1px solid var(--accent_bg) !important;
 	border-top: 1px solid var(--accent_bg) !important;
 }
 
-#SteamDesktop .library_Container_3xRRJ div[class*="gamelistentry_Container_"][class*="gamelistentry_DropTarget_"][class*="gamelistentry_LastInCollection_"],
-#SteamDesktop .library_Container_3xRRJ div[class*="gamelistsectionheader_Container_"][class*="gamelistsectionheader_DropTarget_"][class*="gamelistsectionheader_SingleLine_"] {
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistentry_Container_"][class*="gamelistentry_DropTarget_"][class*="gamelistentry_LastInCollection_"],
+#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="gamelistsectionheader_Container_"][class*="gamelistsectionheader_DropTarget_"][class*="gamelistsectionheader_SingleLine_"] {
 	border-bottom: 1px solid var(--accent_bg) !important;
 }
+
+/* Small Mode */
+#SteamDesktop .steamdesktop_BrowserWrapper_1bGew[style*="display: none;"] + .gamelistbar_Container_3x1Hk > div[class*="gamelistdropdown_Bar_"]
+{
+	margin-top: 6px !important;
+}
+
+#SteamDesktop .steamdesktop_BrowserWrapper_1bGew[style*="display: none;"] + .gamelistbar_Container_3x1Hk div[class*="gamelistsearchbar_SearchInput_"]
+{
+	border-top-right-radius: var(--button_radius) !important;
+	border-bottom-right-radius: var(--button_radius) !important;
+}
+
+
