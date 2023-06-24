@@ -12,6 +12,7 @@ declare -A classes=(
 	["collectionview_Container"]=""
 	["desktoptoasts_DesktopToastContainer_"]=""
 	["downloads_DownloadsPage"]=""
+	["gamelistbar_Container"]=""
 	["library_AppDetailsMain"]=""
 	["library_Container"]=""
 	["login_Login_"]=""
