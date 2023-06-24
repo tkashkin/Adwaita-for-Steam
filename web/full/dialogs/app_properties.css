@@ -41,12 +41,12 @@
 	min-height: var(--entry_min_height) !important;
 }
 
-.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_FieldChildren_14_HB"] .DialogDropDown_Arrow
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_FieldChildren_"] .DialogDropDown_Arrow
 {
 	right: 0px !important;
 }
 
-.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_FieldChildren_14_HB"] .DialogDropDown_CurrentDisplay
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_FieldChildren_"] .DialogDropDown_CurrentDisplay
 {
 	padding-right: 26px !important;
 }
@@ -230,7 +230,8 @@
 	border-top-left-radius: 0px !important;
 }
 
-.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_BrowseDiskRow_"] + div[class*="appproperties_SectionTopLine_"] div[class*="gamepaddialog_Field_"]:not(:last-child):not(:first-child)
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_BrowseDiskRow_"] + div[class*="appproperties_SectionTopLine_"] div[class*="gamepaddialog_Field_"]:not(:last-child):not(:first-child),
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] .DialogControlsSection div[class*="gamepaddialog_Field_"] + div[class*="gamepaddialog_Field_"]:not(:first-child):not(:last-child)
 {
 	border-radius: 0px !important;
 }
@@ -266,6 +267,12 @@
 	display: none !important;
 }
 
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_Field_"][class*="gamepaddialog_WithDescription_"] div[class*="gamepaddialog_FieldChildren_"] > button:only-child
+{
+	margin-top: 14px !important;
+	margin-right: -4px !important;
+}
+
 /* DropDowns */
 .ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_Field_"] .DialogDropDown,
 .ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_Field_"] .DialogDropDown:hover,
@@ -289,7 +296,10 @@
 .ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_FieldDescription_"]
 {
 	color: var(--dim_label_fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--entry_subtitle_font_size) !important;
 	margin-left: 18px !important;
+	margin-right: 90px !important;
 	margin-top: -22px !important;
 }
 
