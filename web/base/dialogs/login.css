@@ -140,6 +140,7 @@ body.DesktopUI .login_Login_VZ6x_.DesktopUI button[class*="newlogindialog_Submit
 	background-blend-mode: var(--button_suggested_blend) !important;
 	background: var(--button_suggested_bg) !important;
 	border-radius: var(--button_pill_radius) !important;
+	color: var(--button_suggested_fg) !important;
 	margin-bottom: 16px !important;
 	transition: var(--focus_transition) !important;
 	padding: 12px 24px !important;
