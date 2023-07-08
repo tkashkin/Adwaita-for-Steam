@@ -124,19 +124,43 @@ cd Adwaita-for-Steam
 ```bash
 # List options
 ./install.py -l
-# Install with options
-./install.py -c nord -fi -p windowcontrols/right-all -we login/hide_qr -we library/hide_whats_new
+# Install with customizations (including fonts)
+./install.py -fi -c nord -we login/hide_qr -we library/hide_whats_new
+# For those who prefer a less adwaita-like theme
+./install.py -we general/no_rounded_corners -we topbar/vanilla_bar
 ```
 
-#### Windows
+<details><summary>Custom CSS</summary>
 
-- Download the [Latest Release](https://github.com/tkashkin/Adwaita-for-Steam/releases)
-- Ensure you have [Python](#requirements) installed
-- Double click the `install_windows` bat script and follow the prompts
+If you wish to include your own custom CSS, `-we` supports passing arbitrary css files:
+
+`./install.py -we ~/path/to/wherever/custom.css`
+
+This is capable of overriding any of the current [css variables](https://github.com/tkashkin/Adwaita-for-Steam/blob/master/web/base/_root.css):
+
+```css
+:root
+{
+	--bg: #FF0000;
+	--fg: #000000;
+}
+```
+
+For more advanced edits, you should reference [Inspecting Steam](https://github.com/tkashkin/Adwaita-for-Steam/tree/master/web#inspecting-steam)
+
+**Warning:** It is entirely possible to cause UI breakages using this feature. Please disable any custom css before troubleshooting or submitting issues.
+
+</details>
 
 ### With graphical installer
 
 Use the [graphical installer](https://github.com/Foldex/AdwSteamGtk) by [@Foldex](https://github.com/Foldex).
 
 <a href="https://flathub.org/apps/details/io.github.Foldex.AdwSteamGtk"><img width="200" alt="Download on Flathub" src="https://flathub.org/assets/badges/flathub-badge-i-en.svg"/></a>
+
+### Windows Install
+
+- Download the [Latest Release](https://github.com/tkashkin/Adwaita-for-Steam/releases)
+- Ensure you have [Python](#requirements) installed
+- Double click the `install_windows` bat script and follow the prompts
 
