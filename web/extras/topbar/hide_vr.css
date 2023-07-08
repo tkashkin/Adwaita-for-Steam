@@ -1,0 +1,7 @@
+/* ----------------------- */
+/* --- Hide VR Button  --- */
+/* ----------------------- */
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_VRToggle_"]
+{
+	display: none !important;
+}
