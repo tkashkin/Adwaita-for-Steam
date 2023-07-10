@@ -28,7 +28,7 @@ view_fg = #ECEFF4FF
 [accent]
 accent = #88C0D0FF
 accent_bg = #88C0D0FF
-accent_fg = #2E3440FF
+accent_fg = #ECEFF4FF
 accent_disabled = #88C0D080
 accent_hover_bg = #88C0D012
 accent_active_bg = #88C0D029
@@ -49,7 +49,7 @@ error_fg = #2E3440FF
 [success]
 success = #A3BE8CFF
 success_bg = #A3BE8CFF
-success_fg = #2E3440FF
+success_fg = #ECEFF4FF
 
 [warning]
 warning = #EBCB8BFF

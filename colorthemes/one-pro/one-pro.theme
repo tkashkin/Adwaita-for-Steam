@@ -49,7 +49,7 @@ error_fg = #282C34FF
 [success]
 success = #98C379FF
 success_bg = #98C379FF
-success_fg = #282C34FF
+success_fg = #FFFFFFFF
 
 [warning]
 warning = #E5C07BFF
