@@ -75,8 +75,10 @@ LIBRARY_BASE_FILES = [
 	# Web
 	webthemedir / "base/_root.css",
 	webthemedir / "base/scrollbars.css",
-	# Header/Footer
-	webthemedir / "base/top_bar.css",
+	# Main window
+	webthemedir / "base/main_window/headerbar/headerbar.css",
+	webthemedir / "base/main_window/headerbar/navigation.css",
+	# Footer
 	webthemedir / "base/bottom_bar.css",
 	# In-Game Overlay
 	webthemedir / "base/game_overlay.css",
@@ -99,8 +101,10 @@ LIBRARY_FULL_FILES = [
 	webthemedir / "base/_root.css",
 	webthemedir / "base/scrollbars.css",
 	webthemedir / "full/chat.css",
-	# Header/Footer
-	webthemedir / "base/top_bar.css",
+	# Main window
+	webthemedir / "base/main_window/headerbar/headerbar.css",
+	webthemedir / "base/main_window/headerbar/navigation.css",
+	# Footer
 	webthemedir / "base/bottom_bar.css",
 	# In-Game Overlay
 	webthemedir / "base/game_overlay.css",
