@@ -26,12 +26,12 @@ view_bg = #181825FF
 view_fg = #CDD6F4FF
 
 [accent]
-accent = #585B70FF
-accent_bg = #45475AFF
-accent_fg = #CDD6F4FF
-accent_disabled = #585B7080
-accent_hover_bg = #585B7012
-accent_active_bg = #585B7029
+accent = #B4BEFEFF
+accent_bg = #B4BEFEFF
+accent_fg = #11111BFF
+accent_disabled = #B4BEFE80
+accent_hover_bg = #B4BEFE12
+accent_active_bg = #B4BEFE29
 
 [destructive]
 destructive = #EE99A0FF
@@ -49,7 +49,7 @@ error_fg = #CDD6F4FF
 [success]
 success = #A6DA95FF
 success_bg = #8BD5CAFF
-success_fg = #CDD6F4FF
+success_fg = #C1FFCBFF
 
 [warning]
 warning = #F5A97FFF
@@ -66,7 +66,7 @@ dim_label_fg = #CDD6F48C
 card_solid_bg = #353543FF
 
 [focusring]
-focusring = #585B7080
+focusring = #B4BEFE80
 
 [scrollbar]
 scrollbar = #585B7033

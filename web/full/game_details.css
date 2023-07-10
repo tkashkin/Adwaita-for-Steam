@@ -70,18 +70,29 @@
 #SteamDesktop .library_AppDetailsMain_2Nq6o div[class*="appactionbutton_PlayButtonContainer"][class*="appactionbutton_Green"]
 {
 	background-color: var(--success_bg) !important;
+}
+
+#SteamDesktop .library_AppDetailsMain_2Nq6o div[class*="appactionbutton_PlayButtonContainer"][class*="appactionbutton_Green"] div[class*="appactionbutton_ButtonText_"],
+#SteamDesktop .library_AppDetailsMain_2Nq6o div[class*="appactionbutton_PlayButtonContainer"][class*="appactionbutton_Green"] > div[class*="appactionbutton_ButtonChild"] svg
+{
 	color: var(--success_fg) !important;
 }
 
 #SteamDesktop .library_AppDetailsMain_2Nq6o div[class*="appactionbutton_PlayButtonContainer"][class*="appactionbutton_Disabled"]
 {
 	background-color: var(--button_disabled_bg) !important;
+}
+
+#SteamDesktop .library_AppDetailsMain_2Nq6o div[class*="appactionbutton_PlayButtonContainer"][class*="appactionbutton_Disabled"] div[class*="appactionbutton_ButtonText_"],
+#SteamDesktop .library_AppDetailsMain_2Nq6o div[class*="appactionbutton_PlayButtonContainer"][class*="appactionbutton_Disabled"] > div[class*="appactionbutton_ButtonChild"] svg
+{
 	color: var(--button_disabled_fg) !important;
 }
 
-#SteamDesktop .library_AppDetailsMain_2Nq6o div[class*="appactionbutton_PlayButtonContainer"] div[class*="appactionbutton_ButtonText"]
+#SteamDesktop .library_AppDetailsMain_2Nq6o div[class*="appactionbutton_PlayButtonContainer"] div[class*="appactionbutton_ButtonText"],
+#SteamDesktop .library_AppDetailsMain_2Nq6o div[class*="appactionbutton_PlayButtonContainer"] > div[class*="appactionbutton_ButtonChild"] svg
 {
-	color: var(--button_fg) !important;
+	color: var(--accent_fg) !important;
 	font-family: var(--basefont) !important;
 	font-size: 18px !important;
 	line-height: 32px !important;
@@ -124,7 +135,7 @@
 {
 	border-top-left-radius: 0 !important;
 	border-bottom-left-radius: 0 !important;
-	border-left: 1px var(--button_active_bg) solid !important;
+	border-left: 1px var(--button_bg) solid !important;
 }
 
 #SteamDesktop .library_AppDetailsMain_2Nq6o div[class*="appactionbutton_PlayButtonContainer"]:hover > div[class*="appactionbutton_ButtonChild"]:last-child:not(:first-child)

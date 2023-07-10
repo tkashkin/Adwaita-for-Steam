@@ -3,7 +3,7 @@ bg = #303446FF
 fg = #C6D0F5FF
 
 [window]
-border = #838BA7FF
+border = #232634FF
 window_bg = #303446FF
 window_fg = #C6D0F5FF
 
@@ -14,24 +14,24 @@ headerbar_fg = #C6D0F5FF
 headerbar_shade = #000000D9
 
 [popover]
-popover_bg = #292C3CFF
+popover_bg = #303446FF
 popover_fg = #C6D0F5FF
 
 [toast]
-toast_bg = #292C3CB3
+toast_bg = #303446B3
 toast_fg = #C6D0F5FF
 
 [view]
-view_bg = #292C3CFF
+view_bg = #303446FF
 view_fg = #C6D0F5FF
 
 [accent]
-accent = #51576DFF
-accent_bg = #414559FF
-accent_fg = #C6D0F5FF
-accent_disabled = #51576D80
-accent_hover_bg = #51576D12
-accent_active_bg = #51576D29
+accent = #B4BEFEFF
+accent_bg = #B4BEFEFF
+accent_fg = #232634FF
+accent_disabled = #B4BEFE80
+accent_hover_bg = #B4BEFE12
+accent_active_bg = #B4BEFE29
 
 [destructive]
 destructive = #EA999CFF
@@ -49,7 +49,7 @@ error_fg = #C6D0F5FF
 [success]
 success = #A6D189FF
 success_bg = #81C8BEFF
-success_fg = #C6D0F5FF
+success_fg = #C1FFCBFF
 
 [warning]
 warning = #EF9E76FF
@@ -66,7 +66,7 @@ dim_label_fg = #C6D0F58C
 card_solid_bg = #454959FF
 
 [focusring]
-focusring = #51576D80
+focusring = #B4BEFE80
 
 [scrollbar]
 scrollbar = #51576D33

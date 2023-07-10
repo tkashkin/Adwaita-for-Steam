@@ -46,6 +46,7 @@ body.DesktopUI div[class*="hoverposition_HoverPosition_"] div[class*="gamelisten
 	background: var(--accent_bg) !important;
 	border-bottom-left-radius: var(--card_radius) !important;
 	border-bottom-right-radius: var(--card_radius) !important;
+	color: var(--accent_fg) !important;
 }
 
 /* Update Summary */

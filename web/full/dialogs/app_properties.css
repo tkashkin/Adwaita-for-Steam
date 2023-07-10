@@ -273,6 +273,11 @@
 	margin-right: -4px !important;
 }
 
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_Field_"][class*="gamepaddialog_WithBottomSeparatorStandard_"]::after
+{
+	background: none !important;
+}
+
 /* DropDowns */
 .ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_Field_"] .DialogDropDown,
 .ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_Field_"] .DialogDropDown:hover,

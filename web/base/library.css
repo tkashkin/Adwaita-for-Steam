@@ -208,9 +208,9 @@ body.DesktopUI div[class*="contextmenu_contextMenuItem_"] .SVGIcon_Button line
 }
 
 /* Separator */
-#SteamDesktop .gamelistbar_Container_3x1Hk div[class*="library_LibraryWindowDivider_"]
+#SteamDesktop .library_Container_3xRRJ div[class*="library_LibraryWindowDivider_"]
 {
-	background: rgba(255, 255, 255, 0.2) !important;
+	background: var(--border) !important;
 	min-width: 1px !important;
 	width: 1px !important;
 }

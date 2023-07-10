@@ -85,6 +85,7 @@
 	--button_suggested_hover_bg: rgba(255, 255, 255, 0.1);
 	--button_suggested_click_bg: rgba(0, 0, 0, 0.2);
 	--button_suggested_blend: overlay;
+	--button_suggested_fg: var(--accent_fg);
 
 	--checkbox_checked_bg: var(--button_suggested_bg);
 	--checkbox_checked_sw: 45;
