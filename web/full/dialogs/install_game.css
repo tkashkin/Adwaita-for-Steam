@@ -67,6 +67,12 @@
 	font-size: var(--title_3_size) !important;
 }
 
+/* Modal Version */
+#SteamDesktop .FullModalOverlay div[class*="installrequest_InstallRequestModal_"] .DialogBody
+{
+	justify-content: space-between !important;
+}
+
 /* EULA Agreement */
 #SteamDesktop .FullModalOverlay .GenericConfirmDialog div[class*="euladialog_LanguageFieldContainer_"]
 {
