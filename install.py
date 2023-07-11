@@ -77,6 +77,7 @@ LIBRARY_BASE_FILES = [
 	webthemedir / "base/scrollbars.css",
 	# Main window
 	webthemedir / "base/main_window/headerbar/headerbar.css",
+	webthemedir / "base/main_window/headerbar/buttons.css",
 	webthemedir / "base/main_window/headerbar/navigation.css",
 	# Footer
 	webthemedir / "base/bottom_bar.css",
@@ -103,6 +104,7 @@ LIBRARY_FULL_FILES = [
 	webthemedir / "full/chat.css",
 	# Main window
 	webthemedir / "base/main_window/headerbar/headerbar.css",
+	webthemedir / "base/main_window/headerbar/buttons.css",
 	webthemedir / "base/main_window/headerbar/navigation.css",
 	# Footer
 	webthemedir / "base/bottom_bar.css",

@@ -1,0 +1,131 @@
+/* --- Right Side --- */
+/* Profile, Notifications, etc */
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="steamdesktop_TitleBarControls_"]
+{
+	background: var(--headerbar_bg) !important;
+	margin: 0 !important;
+	z-index: 1 !important;
+	gap: 6px !important;
+}
+
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_AnnouncementsButton"][class*="titlebarcontrols_Active_"],
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_AnnouncementsButton"][class*="titlebarcontrols_Active_"]:hover
+{
+	color: var(--accent) !important;
+}
+
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_Button_"],
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_AccountMenu_"]
+{
+	-webkit-app-region: no-drag;
+	cursor: default !important;
+	box-sizing: border-box !important;
+	width: 32px !important;
+	height: 32px !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	background: transparent !important;
+	border-radius: var(--button_radius) !important;
+	color: var(--button_fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--button_font_size) !important;
+	font-weight: var(--button_font_weight) !important;
+	line-height: var(--button_min_height) !important;
+	transition: var(--focus_transition) !important;
+}
+
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_Button_"]:hover,
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_AccountMenu_"]:hover
+{
+	background: var(--button_hover_bg) !important;
+}
+
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_Button_"]:active,
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_AccountMenu_"]:active
+{
+	background: var(--button_active_bg) !important;
+}
+
+/* Account Button - move to the last slot */
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="steamdesktop_TitleBarControls_"] div.Focusable:nth-child(3)
+{
+	order: 99 !important;
+	box-sizing: border-box !important;
+	width: 32px !important;
+	height: 32px !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	border-radius: 50% !important;
+	overflow: hidden !important;
+}
+
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_AccountMenu_"],
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"],
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="steamdesktop_TitleBarControls_"] div.Focusable:nth-child(3) > div[class*="menu_MenuWrapper_"],
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"] img.avatar
+{
+	box-sizing: border-box !important;
+	width: 32px !important;
+	height: 32px !important;
+	min-width: 32px !important;
+	min-height: 32px !important;
+	max-width: 32px !important;
+	max-height: 32px !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	overflow: hidden !important;
+	transform: none !important;
+	box-shadow: none !important;
+	border: none !important;
+}
+
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"]
+{
+	border-radius: 50% !important;
+	border: 2px var(--profile_offline) solid !important;
+	transition: border-color 0.25s;
+}
+
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"].online
+{
+	border-color: var(--profile_online) !important;
+}
+
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"].online.awayOrSnooze
+{
+	border-style: dashed !important;
+}
+
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"].ingame
+{
+	border-color: var(--profile_ingame) !important;
+}
+
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"] div.avatarStatus,
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"] + div,
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_AccountMenu_"] div[class*="titlebarcontrols_WalletBalance_"],
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_AccountMenu_"] svg[class*="titlebarcontrols_Chevron_"]
+{
+	display: none !important;
+}
+
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_NotificationButtonContainer_"]
+{
+	margin-right: 0px !important;
+}
+
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_NotificationsButton_"] svg
+{
+	color: var(--fg) !important;
+}
+
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_NotificationsButton_"][class*="titlebarcontrols_HasNew_"]
+{
+	color: var(--accent) !important;
+}
+
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_GamepadUIToggle_"] svg[class*="titlebarcontrols_Icon_"]
+{
+	position: revert !important;
+}
+

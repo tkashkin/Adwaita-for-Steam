@@ -1,10 +1,11 @@
 /* Navigation */
 #SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="steamdesktop_SuperNavBar_"]
 {
-	-webkit-app-region: inherit;
-	position: relative;
+	-webkit-app-region: inherit !important;
+	position: relative !important;
 	top: -48px !important;
 	height: 48px !important;
+	padding: 0 !important;
 }
 
 #SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"]
@@ -57,7 +58,7 @@
 /* Navigation buttons */
 #SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_MenuButton_"]
 {
-	-webkit-app-region: no-drag;
+	-webkit-app-region: no-drag !important;
 	border-radius: var(--button_radius) !important;
 	color: var(--fg) !important;
 	font-family: var(--basefont) !important;
@@ -157,13 +158,13 @@
 		padding: 2px 0 !important;
 		gap: 2px !important;
 		font-size: 11px !important;
-		line-height: 16px !important;
+		line-height: 14px !important;
 	}
 
 	/* Profile button fake text */
 	#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] > div:nth-child(6) > div > span::after
 	{
-		line-height: 16px !important;
+		line-height: 14px !important;
 	}
 }
 
