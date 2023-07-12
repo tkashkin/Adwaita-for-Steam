@@ -2,10 +2,10 @@
 /* Profile, Notifications, etc */
 #SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="steamdesktop_TitleBarControls_"]
 {
-	background: var(--headerbar_bg) !important;
 	margin: 0 !important;
 	z-index: 1 !important;
 	gap: 6px !important;
+	margin-right: 40px !important; /* Space for the menu button */
 }
 
 #SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_AnnouncementsButton"][class*="titlebarcontrols_Active_"],
@@ -20,8 +20,12 @@
 	-webkit-app-region: no-drag;
 	cursor: default !important;
 	box-sizing: border-box !important;
-	width: 32px !important;
-	height: 32px !important;
+	width: 34px !important;
+	height: 34px !important;
+	min-width: 34px !important;
+	min-height: 34px !important;
+	max-width: 34px !important;
+	max-height: 34px !important;
 	padding: 0 !important;
 	margin: 0 !important;
 	background: transparent !important;
@@ -46,33 +50,17 @@
 	background: var(--button_active_bg) !important;
 }
 
-/* Account Button - move to the last slot */
-#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="steamdesktop_TitleBarControls_"] div.Focusable:nth-child(3)
-{
-	order: 99 !important;
-	box-sizing: border-box !important;
-	width: 32px !important;
-	height: 32px !important;
-	padding: 0 !important;
-	margin: 0 !important;
-	border-radius: 50% !important;
-	overflow: hidden !important;
-}
-
+/* Account Button */
 #SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_AccountMenu_"],
 #SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"],
-#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="steamdesktop_TitleBarControls_"] div.Focusable:nth-child(3) > div[class*="menu_MenuWrapper_"],
 #SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"] img.avatar
 {
 	box-sizing: border-box !important;
-	width: 32px !important;
-	height: 32px !important;
-	min-width: 32px !important;
-	min-height: 32px !important;
-	max-width: 32px !important;
-	max-height: 32px !important;
+	width: 34px !important;
+	height: 34px !important;
 	padding: 0 !important;
 	margin: 0 !important;
+	border-radius: 50% !important;
 	overflow: hidden !important;
 	transform: none !important;
 	box-shadow: none !important;

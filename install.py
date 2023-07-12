@@ -79,6 +79,7 @@ LIBRARY_BASE_FILES = [
 	webthemedir / "base/main_window/headerbar/headerbar.css",
 	webthemedir / "base/main_window/headerbar/buttons.css",
 	webthemedir / "base/main_window/headerbar/navigation.css",
+	webthemedir / "base/main_window/headerbar/menu.css",
 	# Footer
 	webthemedir / "base/bottom_bar.css",
 	# In-Game Overlay
@@ -106,6 +107,7 @@ LIBRARY_FULL_FILES = [
 	webthemedir / "base/main_window/headerbar/headerbar.css",
 	webthemedir / "base/main_window/headerbar/buttons.css",
 	webthemedir / "base/main_window/headerbar/navigation.css",
+	webthemedir / "base/main_window/headerbar/menu.css",
 	# Footer
 	webthemedir / "base/bottom_bar.css",
 	# In-Game Overlay
