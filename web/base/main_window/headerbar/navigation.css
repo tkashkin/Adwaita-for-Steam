@@ -43,23 +43,50 @@
 	height: 0px !important;
 }
 
-#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] svg
-{
-	display: none;
-}
 
+/* Back and Forward buttons */
 #SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] svg[class*="supernav_Arrow_"]
 {
-	color: var(--fg) !important;
-	margin-top: 10px !important;
+	position: absolute !important;
+	top: 7px !important;
+	left: 6px !important;
+	-webkit-app-region: no-drag;
+	cursor: default !important;
+	border-radius: var(--button_radius) !important;
+	box-sizing: border-box !important;
+	width: 34px !important;
+	height: 34px !important;
+	padding: 9px !important;
+	transition: var(--focus_transition);
+	color: var(--button_fg) !important;
+}
+
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] svg[class*="supernav_Arrow_"]:nth-child(2)
+{
+	left: 46px !important;
+}
+
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] svg[class*="supernav_Arrow_"] > path
+{
+	d: var(--icon_nav_forward_path) !important;
 }
 
 #SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] svg[class*="supernav_Arrow_"][class*="supernav_Disabled_"]
 {
-	color: var(--dim_label_fg) !important;
+	color: var(--button_disabled_fg) !important;
 }
 
-/* Navigation buttons */
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] svg[class*="supernav_Arrow_"]:not([class*="supernav_Disabled_"]):hover
+{
+	background: var(--button_hover_bg) !important;
+}
+
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] svg[class*="supernav_Arrow_"]:not([class*="supernav_Disabled_"]):active
+{
+	background: var(--button_active_bg) !important;
+}
+
+/* Navigation menu buttons */
 #SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_MenuButton_"]
 {
 	-webkit-app-region: no-drag !important;

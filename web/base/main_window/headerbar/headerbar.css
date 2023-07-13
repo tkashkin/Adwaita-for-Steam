@@ -37,7 +37,7 @@ body.DesktopUI div[class*="steamdesktop_Wrapper_"].Maximized
 	background: none !important;
 }
 
-/* Url Bar */
+/* URL Bar placeholder */
 #SteamDesktop .steamdesktop_LocalContentContainer_RGNMW > div[class*="steamdesktop_URLBarReplacement_"]
 {
 	display: none !important;
@@ -46,49 +46,70 @@ body.DesktopUI div[class*="steamdesktop_Wrapper_"].Maximized
 	max-height: 0 !important;
 }
 
+/* URL Bar (refresh button only) */
 #SteamDesktop .steamdesktop_BrowserWrapper_1bGew div[class*="steamdesktop_URLBar_"]
 {
-	background: var(--headerbar_bg) !important;
-	display: flex !important;
-	justify-content: center;
+	background: transparent !important;
+	box-shadow: none !important;
+	border: none !important;
+	padding: 0 !important;
+	position: absolute !important;
+	top: -40px !important;
+	left: 86px !important;
+	width: 34px !important;
+	height: 34px !important;
 }
 
-#SteamDesktop .steamdesktop_BrowserWrapper_1bGew div[class*="steamdesktop_URL_"]
+#SteamDesktop .steamdesktop_BrowserWrapper_1bGew div[class*="steamdesktop_URLBar_"] div[class*="steamdesktop_ReloadButton_"]
 {
-	color: var(--fg) !important;
-	font-family: var(--basefont);
-	font-size: var(--title_4_size);
-	font-weight: var(--title_4_weight);
-}
-
-#SteamDesktop .steamdesktop_BrowserWrapper_1bGew div[class*="steamdesktop_ReloadButton_"],
-#SteamDesktop .steamdesktop_BrowserWrapper_1bGew div[class*="steamdesktop_URLBarText_"]
-{
+	-webkit-app-region: no-drag;
+	cursor: default !important;
 	border-radius: var(--button_radius) !important;
+	box-sizing: border-box !important;
+	width: 34px !important;
+	height: 34px !important;
+	padding: 9px !important;
+	transition: var(--focus_transition);
+	color: var(--button_fg) !important;
 }
 
-#SteamDesktop .steamdesktop_BrowserWrapper_1bGew div[class*="steamdesktop_ReloadButton_"]:hover,
-#SteamDesktop .steamdesktop_BrowserWrapper_1bGew div[class*="steamdesktop_URLBarText_"]:hover
+#SteamDesktop .steamdesktop_BrowserWrapper_1bGew div[class*="steamdesktop_URLBar_"] div[class*="steamdesktop_ReloadButton_"] > svg
+{
+	display: none !important;
+}
+
+#SteamDesktop .steamdesktop_BrowserWrapper_1bGew div[class*="steamdesktop_URLBar_"] div[class*="steamdesktop_ReloadButton_"]::before
+{
+	background-color: var(--fg);
+	content: "";
+	display: block;
+	width: 16px;
+	height: 16px;
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	-webkit-mask-size: 16px;
+	-webkit-mask-image: var(--icon_nav_refresh);
+}
+
+#SteamDesktop .steamdesktop_BrowserWrapper_1bGew div[class*="steamdesktop_URLBar_"] div[class*="steamdesktop_ReloadButton_"]:hover
 {
 	background: var(--button_hover_bg) !important;
-	border-radius: var(--button_radius) !important;
 }
 
-#SteamDesktop .steamdesktop_BrowserWrapper_1bGew div[class*="steamdesktop_ReloadButton_"] svg,
-#SteamDesktop .steamdesktop_BrowserWrapper_1bGew div[class*="steamdesktop_LockIcon_"] svg
+#SteamDesktop .steamdesktop_BrowserWrapper_1bGew div[class*="steamdesktop_URLBar_"] div[class*="steamdesktop_ReloadButton_"]:active
 {
-	color: var(--fg) !important;
+	background: var(--button_active_bg) !important;
 }
 
-body.DesktopUI > div[class*="steamdesktop_URLBarCopied_"]
+#SteamDesktop .steamdesktop_BrowserWrapper_1bGew div[class*="steamdesktop_URLBarText_"]
 {
-	background: var(--toast_bg) !important;
-	border-radius: var(--toast_border_radius) !important;
-	color: var(--toast_fg) !important;
-	font-family: var(--basefont) !important;
-	font-size: var(--basesize) !important;
-	font-weight: var(--baseweight) !important;
-	padding: var(--toast_padding) !important;
+	display: none !important;
+}
+
+/* Content frame - enable overflow to make the refresh button visible */
+#SteamDesktop div[class*="steamdesktop_ContentFrame_"]
+{
+	overflow: visible !important;
 }
 
 /* --- Context Menu --- */
