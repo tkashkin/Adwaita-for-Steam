@@ -58,7 +58,7 @@
 
 #SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="steamdesktop_WindowControls_"]
 {
-	flex-basis: 50px !important;
+	flex-basis: 40px !important;
 }
 
 .title-bar-actions .title-area-icon.minimizeButton,
