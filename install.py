@@ -74,14 +74,13 @@ webthemedir = Path(WEB_THEME_DIR)
 LIBRARY_BASE_FILES = [
 	# Web
 	webthemedir / "base/_root.css",
+	webthemedir / "base/_localization.css",
 	webthemedir / "base/scrollbars.css",
 	# Main window
 	webthemedir / "base/main_window/headerbar/headerbar.css",
 	webthemedir / "base/main_window/headerbar/buttons.css",
 	webthemedir / "base/main_window/headerbar/navigation.css",
 	webthemedir / "base/main_window/headerbar/menu.css",
-	# Footer
-	webthemedir / "base/bottom_bar.css",
 	# In-Game Overlay
 	webthemedir / "base/game_overlay.css",
 	# Notifications
@@ -101,6 +100,7 @@ LIBRARY_BASE_FILES = [
 LIBRARY_FULL_FILES = [
 	# Web
 	webthemedir / "base/_root.css",
+	webthemedir / "base/_localization.css",
 	webthemedir / "base/scrollbars.css",
 	webthemedir / "full/chat.css",
 	# Main window
@@ -108,8 +108,6 @@ LIBRARY_FULL_FILES = [
 	webthemedir / "base/main_window/headerbar/buttons.css",
 	webthemedir / "base/main_window/headerbar/navigation.css",
 	webthemedir / "base/main_window/headerbar/menu.css",
-	# Footer
-	webthemedir / "base/bottom_bar.css",
 	# In-Game Overlay
 	webthemedir / "base/game_overlay.css",
 	# Notifications

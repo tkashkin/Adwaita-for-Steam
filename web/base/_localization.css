@@ -1,0 +1,10 @@
+:root
+{
+	--string_nav_profile: "Profile";
+}
+
+:root:lang(ru)
+{
+	--string_nav_profile: "Профиль";
+}
+

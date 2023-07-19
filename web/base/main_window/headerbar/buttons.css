@@ -4,18 +4,13 @@
 {
 	margin: 0 !important;
 	z-index: 1 !important;
-	gap: 6px !important;
-	margin-right: 40px !important; /* Space for the menu button */
-}
-
-#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_AnnouncementsButton"][class*="titlebarcontrols_Active_"],
-#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_AnnouncementsButton"][class*="titlebarcontrols_Active_"]:hover
-{
-	color: var(--accent) !important;
+	margin-right: 114px !important; /* Space for menu, downloads, chat buttons */
 }
 
 #SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_Button_"],
-#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_AccountMenu_"]
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_AccountMenu_"],
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="bottombar_FriendsButton_"],
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="bottombar_DownloadStatusContent_"]
 {
 	-webkit-app-region: no-drag;
 	cursor: default !important;
@@ -28,9 +23,10 @@
 	max-height: 34px !important;
 	padding: 0 !important;
 	margin: 0 !important;
+	margin-right: 6px !important;
 	background: transparent !important;
 	border-radius: var(--button_radius) !important;
-	color: var(--button_fg) !important;
+	color: var(--headerbar_button_fg) !important;
 	font-family: var(--basefont) !important;
 	font-size: var(--button_font_size) !important;
 	font-weight: var(--button_font_weight) !important;
@@ -39,15 +35,19 @@
 }
 
 #SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_Button_"]:hover,
-#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_AccountMenu_"]:hover
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_AccountMenu_"]:hover,
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="bottombar_FriendsButton_"]:hover,
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="bottombar_DownloadStatusContent_"]:hover
 {
-	background: var(--button_hover_bg) !important;
+	background: var(--headerbar_button_bg_hover) !important;
 }
 
 #SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_Button_"]:active,
-#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_AccountMenu_"]:active
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_AccountMenu_"]:active,
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="bottombar_FriendsButton_"]:active,
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="bottombar_DownloadStatusContent_"]:active
 {
-	background: var(--button_active_bg) !important;
+	background: var(--headerbar_button_bg_active) !important;
 }
 
 /* Account Button */
@@ -59,12 +59,19 @@
 	width: 34px !important;
 	height: 34px !important;
 	padding: 0 !important;
-	margin: 0 !important;
 	border-radius: 50% !important;
 	overflow: hidden !important;
 	transform: none !important;
 	box-shadow: none !important;
 	border: none !important;
+}
+
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"] img.avatar
+{
+	width: 32px !important;
+	height: 32px !important;
+	padding: 0 !important;
+	margin: 0 !important;
 }
 
 #SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"]
@@ -112,8 +119,140 @@
 	color: var(--accent) !important;
 }
 
-#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_GamepadUIToggle_"] svg[class*="titlebarcontrols_Icon_"]
+/* Friends */
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="bottombar_FriendsButton_"]
 {
-	position: revert !important;
+	-webkit-app-region: no-drag;
+	padding: 9px !important;
+	margin: 0 !important;
+	position: absolute !important;
+	right: 90px !important;
+	top: 7px !important;
+}
+
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="bottombar_FriendsButton_"] > div
+{
+	display: none !important;
+}
+
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="bottombar_FriendsButton_"]::before
+{
+	background-color: var(--fg);
+	content: "";
+	width: 16px;
+	height: 16px;
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	-webkit-mask-size: 16px;
+	-webkit-mask-image: var(--icon_chats);
+}
+
+/* Downloads */
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="bottombar_DownloadStatus_"]
+{
+	-webkit-app-region: no-drag;
+	display: block !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	position: absolute !important;
+	right: 130px !important;
+	top: 7px !important;
+}
+
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="bottombar_DownloadStatusContent_"]
+{
+	position: relative !important;
+	display: block !important;
+	margin: 0 !important;
+	overflow: hidden !important;
+}
+
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="bottombar_DownloadStatusContent_"] > div,
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="bottombar_DownloadStatusContent_"] div[class*="bottombar_IconBevel_"],
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="bottombar_DownloadStatusContent_"] div[class*="bottombar_StatusLine_"]
+{
+	display: none !important;
+}
+
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="bottombar_DownloadStatusContent_"]::before
+{
+	background-color: var(--fg);
+	content: "";
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	top: 9px;
+	left: 9px;
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	-webkit-mask-size: 16px;
+	-webkit-mask-image: var(--icon_downloads);
+}
+
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="bottombar_DownloadStatusContent_"] > div[class*="bottombar_DetailedDownloadProgress_"]
+{
+	display: block !important;
+	box-shadow: none !important;
+	width: 34px !important;
+	height: 34px !important;
+	border-radius: var(--button_radius) !important;
+}
+
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="bottombar_DownloadStatusContent_"] > div[class*="bottombar_DetailedDownloadProgress_"] > div[class*="bottombar_Icon_"]
+{
+	display: block !important;
+	width: 32px !important;
+	height: 32px !important;
+	border: 1px transparent solid;
+	border-radius: var(--button_radius) !important;
+	box-shadow: none !important;
+}
+
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="bottombar_DownloadStatusContent_"] > div[class*="bottombar_DetailedDownloadProgress_"] > div[class*="bottombar_Icon_"] img
+{
+	border-radius: var(--button_radius) !important;
+}
+
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="bottombar_DownloadStatusContent_"] > div[class*="bottombar_DetailedDownloadProgress_"] > div[class*="bottombar_ProgressBarWrapper_"]
+{
+	width: 32px !important;
+	height: 3px !important;
+	position: absolute !important;
+	bottom: 1px !important;
+	left: 1px !important;
+	border-radius: 0 !important;
+}
+
+
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="bottombar_DownloadStatusContent_"] > div[class*="bottombar_DetailedDownloadProgress_"] > div[class*="bottombar_ProgressBarWrapper_"] > div[class*="bottombar_ProgressBar_"]
+{
+	--color-progress-bar-background: transparent !important;
+	--color-progress-bar-foreground: var(--accent) !important;
+}
+
+/**
+<div class="bottombar_DetailedDownloadProgress_2VtAq">
+	<div class="bottombar_Icon_1KrJ3">
+		<div class="libraryassetimage_Container_1R9r2 libraryassetimage_GreyBackground_2E7G8 ">
+			<img src="/assets/251570_icon.jpg?v=f6515dd177b2992aebcb563151fbe836a600f364" class="libraryassetimage_Image_24_Au libraryassetimage_Visibility_3d_bT libraryassetimage_Visible_yDr03" alt="7 Days to Die">
+		</div>
+		<div class="bottombar_IconBevel_21vPQ"></div>
+	</div>
+	<div class="bottombar_ProgressBarWrapper_2_Fom">
+		<div class="bottombar_StatusLine_1xCcF">
+			<div class="bottombar_Status_1sCy-">Downloading 1 of 2</div>
+			<div class="bottombar_Status_1sCy- bottombar_Percentage_1-TLi">16%</div>
+		</div>
+		<div class="progressbar_ProgressBar_yZ55N progressbar_AnimateProgress_1Ccdv bottombar_ProgressBar_wi0pD" style="--percent:0.168638;"></div>
+	</div>
+</div>
+*/
+
+/* Hidden buttons */
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_AnnouncementsButton"],
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_GamepadUIToggle_"],
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_VRToggle_"]
+{
+	display: none !important;
 }
 

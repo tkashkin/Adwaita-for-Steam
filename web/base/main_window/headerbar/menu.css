@@ -27,13 +27,7 @@
 	padding: 9px !important;
 	transition: var(--focus_transition);
 	display: none !important;
-}
-
-#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="rootmenu_RootMenuButton_"]:hover
-{
-	color: var(--fg) !important;
-	background: var(--button_hover_bg) !important;
-	border-radius: var(--button_radius) !important;
+	color: var(--headerbar_button_fg) !important;
 }
 
 #SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="steamdesktop_RootMenuBar_"]:hover div[class*="rootmenu_RootMenuButton_"],
@@ -48,9 +42,34 @@
 	display: none !important;
 }
 
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="rootmenu_RootMenuButton_"]:hover
+{
+	background: var(--headerbar_button_bg_hover) !important;
+}
+
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="rootmenu_RootMenuButton_"]:active
+{
+	background: var(--headerbar_button_bg_active) !important;
+}
+
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="rootmenu_RootMenuButton_"][class*="menu_MenuOpen_"]
+{
+	background: var(--headerbar_button_bg_checked) !important;
+}
+
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="rootmenu_RootMenuButton_"][class*="menu_MenuOpen_"]:hover
+{
+	background: var(--headerbar_button_bg_checked_hover) !important;
+}
+
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="rootmenu_RootMenuButton_"][class*="menu_MenuOpen_"]:active
+{
+	background: var(--headerbar_button_bg_checked_active) !important;
+}
+
 #SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="rootmenu_RootMenuButton_"]::before
 {
-	background-color: var(--fg);
+	background-color: var(--headerbar_button_fg);
 	content: "";
 	display: block;
 	width: 16px;
