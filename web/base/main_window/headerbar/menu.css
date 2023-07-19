@@ -9,7 +9,7 @@
 	flex-direction: row-reverse !important;
 	justify-content: end !important;
 	position: absolute !important;
-	right: 50px !important;
+	right: calc(var(--windowcontrols_margin_right) + 6px) !important;
 	top: 7px !important;
 	height: 34px !important;
 	border-radius: var(--button_radius) !important;

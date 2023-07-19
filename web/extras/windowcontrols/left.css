@@ -1,6 +1,13 @@
 /* ------------------------------------- */
 /* --- Left Aligned Window Controls  --- */
 /* ------------------------------------- */
+
+:root
+{
+	--windowcontrols_margin_left: 40px;
+	--windowcontrols_margin_right: 0px;
+}
+
 .title-bar-actions.window-controls
 {
 	flex-direction: row !important;
@@ -10,11 +17,6 @@
 #SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="steamdesktop_WindowControls_"]
 {
 	order: -1 !important;
-}
-
-#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] svg[class*="supernav_Arrow_"]:first-child
-{
-	margin-left: 50px !important;
 }
 
 /* App Properties Titles */

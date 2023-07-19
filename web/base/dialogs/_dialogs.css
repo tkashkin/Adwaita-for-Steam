@@ -6,19 +6,19 @@
 /* Window controls */
 .title-area
 {
-	min-height: 45px;
+	min-height: 46px;
 }
 
 .title-bar-actions
 {
 	height: 36px !important;
 	max-height: 36px !important;
-	margin-top: 4px !important;
+	margin-top: 5px !important;
 }
 
 .title-bar-actions.window-controls
 {
-	margin-right: 12px !important;
+	margin-right: 10px !important;
 }
 
 .title-bar-actions .title-area-icon

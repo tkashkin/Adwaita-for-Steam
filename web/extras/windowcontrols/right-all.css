@@ -1,6 +1,13 @@
 /* ------------------------------------------ */
 /* --- Show Minimize and Maximize Button  --- */
 /* ------------------------------------------ */
+
+:root
+{
+	--windowcontrols_margin_left: 0px;
+	--windowcontrols_margin_right: 114px;
+}
+
 .title-bar-actions .title-area-icon.minimizeButton,
 .title-bar-actions .title-area-icon.maximizeButton,
 .title-bar-actions .title-area-icon.restoreButton

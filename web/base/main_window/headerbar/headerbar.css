@@ -57,7 +57,7 @@ body.DesktopUI div[class*="steamdesktop_Wrapper_"].Maximized
 	padding: 0 !important;
 	position: absolute !important;
 	top: 7px !important;
-	left: 86px !important;
+	left: calc(var(--windowcontrols_margin_left) + 86px) !important;
 	width: 34px !important;
 	height: 34px !important;
 }
