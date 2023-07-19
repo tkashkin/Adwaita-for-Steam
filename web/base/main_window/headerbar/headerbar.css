@@ -1,0 +1,289 @@
+/* --------------- */
+/* --- Top Bar --- */
+/* --------------- */
+
+/* --- Rounded Window Corners --- */
+body.DesktopUI div[class*="steamdesktop_Wrapper_"]
+{
+	border-radius: var(--window_radius) !important;
+	border: 1px var(--window_outline) solid !important;
+	box-shadow: 0 0 0 1px var(--window_outline), 0 0 0 1px var(--window_outline) inset !important;
+	overflow: hidden !important;
+}
+
+body.DesktopUI div[class*="steamdesktop_Wrapper_"].Maximized
+{
+	border-radius: 0 !important;
+	border: 1px transparent solid !important;
+	box-shadow: none !important;
+}
+
+/* --- Entire Top Bar --- */
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ
+{
+	height: 46px !important;
+	background: var(--headerbar_bg) !important;
+	box-shadow: inset 0 -1px var(--headerbar_shade);
+	order: 1 !important;
+}
+
+/* Title Bar */
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="steamdesktop_TitleBar_"]
+{
+	height: 46px !important;
+}
+
+/* Focus Bar */
+#SteamDesktop .steamdesktop_Wrapper_1ENHE > div[class*="steamdesktop_FocusBar_"]
+{
+	background: none !important;
+}
+
+/* URL Bar placeholder */
+#SteamDesktop .steamdesktop_LocalContentContainer_RGNMW > div[class*="steamdesktop_URLBarReplacement_"]
+{
+	display: none !important;
+	height: 0 !important;
+	min-height: 0 !important;
+	max-height: 0 !important;
+}
+
+/* URL Bar (refresh button only) */
+#SteamDesktop .steamdesktop_BrowserWrapper_1bGew div[class*="steamdesktop_URLBar_"]
+{
+	background: transparent !important;
+	box-shadow: none !important;
+	border: none !important;
+	padding: 0 !important;
+	position: absolute !important;
+	top: 7px !important;
+	left: 86px !important;
+	width: 34px !important;
+	height: 34px !important;
+}
+
+#SteamDesktop .steamdesktop_BrowserWrapper_1bGew div[class*="steamdesktop_URLBar_"] div[class*="steamdesktop_ReloadButton_"]
+{
+	-webkit-app-region: no-drag;
+	cursor: default !important;
+	border-radius: var(--button_radius) !important;
+	box-sizing: border-box !important;
+	width: 34px !important;
+	height: 34px !important;
+	padding: 9px !important;
+	transition: var(--focus_transition);
+}
+
+#SteamDesktop .steamdesktop_BrowserWrapper_1bGew div[class*="steamdesktop_URLBar_"] div[class*="steamdesktop_ReloadButton_"] > svg
+{
+	display: none !important;
+}
+
+#SteamDesktop .steamdesktop_BrowserWrapper_1bGew div[class*="steamdesktop_URLBar_"] div[class*="steamdesktop_ReloadButton_"]::before
+{
+	background-color: var(--headerbar_button_fg);
+	content: "";
+	display: block;
+	width: 16px;
+	height: 16px;
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	-webkit-mask-size: 16px;
+	-webkit-mask-image: var(--icon_nav_refresh);
+}
+
+#SteamDesktop .steamdesktop_BrowserWrapper_1bGew div[class*="steamdesktop_URLBar_"] div[class*="steamdesktop_ReloadButton_"]:hover
+{
+	background: var(--headerbar_button_bg_hover) !important;
+}
+
+#SteamDesktop .steamdesktop_BrowserWrapper_1bGew div[class*="steamdesktop_URLBar_"] div[class*="steamdesktop_ReloadButton_"]:active
+{
+	background: var(--headerbar_button_bg_active) !important;
+}
+
+#SteamDesktop .steamdesktop_BrowserWrapper_1bGew div[class*="steamdesktop_URLBarText_"]
+{
+	display: none !important;
+}
+
+/* Content frame - enable overflow to make the refresh button visible */
+#SteamDesktop div[class*="steamdesktop_ContentFrame_"]
+{
+	overflow: visible !important;
+	position: initial !important;
+	order: 3 !important;
+}
+
+/* --- Context Menu --- */
+body.ContextMenuPopupBody.DesktopUI
+{
+	background: none !important;
+	overflow: hidden !important;
+}
+
+body.ContextMenuPopupBody.DesktopUI div[class*="contextmenu_contextMenu_"]
+{
+	border-radius: var(--menu_radius) !important;
+}
+
+body.ContextMenuPopupBody.DesktopUI div[class*="menu_MenuPopup_"]
+{
+	background: var(--popover_bg) !important;
+	border: none !important;
+	border-radius: var(--menu_radius) !important;
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--baseweight) !important;
+}
+
+body.ContextMenuPopupBody.DesktopUI div[class*="menu_MenuItem_"]
+{
+	border-radius: var(--menu_radius) !important;
+	color: var(--fg) !important;
+}
+
+body.ContextMenuPopupBody.DesktopUI div[class*="menu_MenuItem_"]:hover
+{
+	background: var(--button_hover_bg) !important;
+	border-radius: var(--menu_radius) !important;
+	color: var(--fg) !important;
+}
+
+body.ContextMenuPopupBody.DesktopUI hr[class*="menu_Separator_"]
+{
+	border-color: var(--bg) !important;
+}
+
+/* Notification Menu */
+body.ContextMenuPopupBody.DesktopUI div[class*="titlebarcontrols_NotificationsMenu_"]
+{
+	padding-bottom: 10px !important;
+	box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.05) !important;
+}
+
+body.ContextMenuPopupBody.DesktopUI button[class*="titlebarcontrols_AllNotificationsButton_"],
+body.DesktopUI div[class*="standardtemplates_StandardTemplateDesktop_"],
+body.ContextMenuPopupBody.DesktopUI div[class*="standardtemplates_PinnedTemplateDesktop_"]
+{
+	background: var(--button_bg) !important;
+	border-radius: var(--button_radius) !important;
+	border: none !important;
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--button_font_size) !important;
+	font-weight: var(--button_font_weight) !important;
+	padding: var(--button_padding) !important;
+	transition: var(--focus_transition) !important;
+}
+
+body.ContextMenuPopupBody.DesktopUI div[class*="standardtemplates_PinnedBody_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--button_font_size) !important;
+	font-weight: var(--button_font_weight) !important;
+}
+
+body.ContextMenuPopupBody.DesktopUI div[class*="titlebarcontrols_EmptyNotificationsBody_"]
+{
+	color: var(--entry_subtitle_fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--entry_subtitle_font_size) !important;
+	font-weight: var(--entry_subtitle_font_weight) !important;
+}
+
+body.ContextMenuPopupBody.DesktopUI button[class*="titlebarcontrols_AllNotificationsButton_"]:hover
+{
+	background: var(--button_hover_bg) !important;
+	border-radius: var(--button_radius) !important;
+}
+
+body.ContextMenuPopupBody.DesktopUI button[class*="titlebarcontrols_AllNotificationsButton_"]:active
+{
+	background: var(--button_active_bg) !important;
+	border-radius: var(--button_radius) !important;
+}
+
+body.ContextMenuPopupBody.DesktopUI div[class*="steamtemplates_NewIndicator_"]
+{
+	filter: none !important;
+}
+
+body.ContextMenuPopupBody.DesktopUI div[class*="steamtemplates_NewIndicator_"] svg
+{
+	color: var(--accent) !important;
+}
+
+/* Remove bottom bar, keep some buttons and update banner */
+
+/* Entire Bottom Bar */
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5
+{
+	display: block !important;
+	background: var(--headerbar_bg) !important;
+	order: 2 !important;
+}
+
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="bottombar_BottomBar_"]
+{
+	height: 0 !important;
+	overflow: hidden !important;
+}
+
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="bottombar_AddGameButton_"]
+{
+	display: none !important;
+}
+
+/* Update Check */
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[style*="height:68px"],
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="updatealert_ActionAlert_"]
+{
+	height: 46px !important;
+	min-height: 46px !important;
+}
+
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="updatealert_Alert_"]
+{
+	background: var(--banner_bg) !important;
+	color: var(--banner_fg) !important;
+	box-shadow: inset 0 -1px var(--headerbar_shade);
+	border-radius: 0 !important;
+	height: 46px !important;
+	min-height: 46px !important;
+}
+
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="updatealert_PrimaryMessage_"]
+{
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--title_3_size) !important;
+	font-weight: var(--title_3_weight) !important;
+}
+
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="updatealert_AlertButton_"]
+{
+	background: var(--button_bg) !important;
+	border-radius: var(--button_radius) !important;
+	color: var(--fg) !important;
+	font-family: var(--basefont) !important;
+	font-size: var(--button_font_size) !important;
+	font-weight: var(--button_font_weight) !important;
+	line-height: var(--button_min_height) !important;
+	min-height: var(--button_min_height) !important;
+	padding: var(--button_padding) !important;
+	transition: var(--focus_transition) !important;
+}
+
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="updatealert_AlertButton_"]:hover
+{
+	background: var(--button_hover_bg) !important;
+	border-radius: var(--button_radius) !important;
+}
+
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="bottombar_BottomBar_"] div.window_resize_grip
+{
+	opacity: 0 !important;
+}
+
