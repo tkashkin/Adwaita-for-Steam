@@ -28,13 +28,12 @@
 	padding: 0 !important;
 }
 
-
 /* Back and Forward buttons */
 #SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] svg[class*="supernav_Arrow_"]
 {
 	position: absolute !important;
 	top: 7px !important;
-	left: 6px !important;
+	left: calc(var(--windowcontrols_margin_left) + 6px) !important;
 	-webkit-app-region: no-drag;
 	cursor: default !important;
 	border-radius: var(--button_radius) !important;
@@ -48,7 +47,7 @@
 
 #SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] svg[class*="supernav_Arrow_"]:nth-child(2)
 {
-	left: 46px !important;
+	left: calc(var(--windowcontrols_margin_left) + 46px) !important;
 }
 
 #SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] svg[class*="supernav_Arrow_"] > path

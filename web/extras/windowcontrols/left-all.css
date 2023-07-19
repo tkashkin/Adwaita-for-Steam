@@ -1,6 +1,13 @@
 /* ------------------------------------- */
 /* --- Left Aligned Window Controls  --- */
 /* ------------------------------------- */
+
+:root
+{
+	--windowcontrols_margin_left: 114px;
+	--windowcontrols_margin_right: 0px;
+}
+
 .title-bar-actions.window-controls
 {
 	flex-direction: row !important;
@@ -10,13 +17,8 @@
 #SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="steamdesktop_WindowControls_"]
 {
 	flex-basis: 114px !important;
-	margin-left: 12px !important;
+	margin-left: 10px !important;
 	order: -1 !important;
-}
-
-#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] svg[class*="supernav_Arrow_"]:first-child
-{
-	margin-left: 125px !important;
 }
 
 /* App Properties Titles */
@@ -78,30 +80,5 @@
 .title-bar-actions .title-area-icon.restoreButton
 {
 	order: 3 !important;
-}
-
-
-/* --- Small Window Size --- */
-@media (max-width: 1350px)
-{
-	#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_AccountMenu_"] > *:not([class*="steamavatar_avatarHolder_"])
-	{
-		display: none !important;
-	}
-
-	#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_MenuButton_"],
-	#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="rootmenu_RootMenuButton_"]
-	{
-		padding: 5px 3px !important;
-	}
-
-	#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] > div:nth-child(3) > div::before,
-	#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] > div:nth-child(4) > div::before,
-	#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] > div:nth-child(5) > div::before,
-	#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] > div:nth-child(6) > div::before,
-	#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] > div:nth-child(7) > div::before
-	{
-		display: none !important;
-	}
 }
 

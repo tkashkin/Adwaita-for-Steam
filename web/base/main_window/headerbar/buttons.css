@@ -4,7 +4,7 @@
 {
 	margin: 0 !important;
 	z-index: 1 !important;
-	margin-right: 114px !important; /* Space for menu, downloads, chat buttons */
+	margin-right: 120px !important; /* Space for menu, downloads, chat buttons */
 }
 
 #SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_Button_"],
@@ -126,7 +126,7 @@
 	padding: 9px !important;
 	margin: 0 !important;
 	position: absolute !important;
-	right: 90px !important;
+	right: calc(var(--windowcontrols_margin_right) + 46px) !important;
 	top: 7px !important;
 }
 
@@ -155,7 +155,7 @@
 	padding: 0 !important;
 	margin: 0 !important;
 	position: absolute !important;
-	right: 130px !important;
+	right: calc(var(--windowcontrols_margin_right) + 86px) !important;
 	top: 7px !important;
 }
 
@@ -229,24 +229,6 @@
 	--color-progress-bar-background: transparent !important;
 	--color-progress-bar-foreground: var(--accent) !important;
 }
-
-/**
-<div class="bottombar_DetailedDownloadProgress_2VtAq">
-	<div class="bottombar_Icon_1KrJ3">
-		<div class="libraryassetimage_Container_1R9r2 libraryassetimage_GreyBackground_2E7G8 ">
-			<img src="/assets/251570_icon.jpg?v=f6515dd177b2992aebcb563151fbe836a600f364" class="libraryassetimage_Image_24_Au libraryassetimage_Visibility_3d_bT libraryassetimage_Visible_yDr03" alt="7 Days to Die">
-		</div>
-		<div class="bottombar_IconBevel_21vPQ"></div>
-	</div>
-	<div class="bottombar_ProgressBarWrapper_2_Fom">
-		<div class="bottombar_StatusLine_1xCcF">
-			<div class="bottombar_Status_1sCy-">Downloading 1 of 2</div>
-			<div class="bottombar_Status_1sCy- bottombar_Percentage_1-TLi">16%</div>
-		</div>
-		<div class="progressbar_ProgressBar_yZ55N progressbar_AnimateProgress_1Ccdv bottombar_ProgressBar_wi0pD" style="--percent:0.168638;"></div>
-	</div>
-</div>
-*/
 
 /* Hidden buttons */
 #SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_AnnouncementsButton"],
