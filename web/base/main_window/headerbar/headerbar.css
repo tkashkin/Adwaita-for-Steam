@@ -39,6 +39,11 @@ body.DesktopUI div[class*="steamdesktop_Wrapper_"].Maximized
 	background: none !important;
 }
 
+#SteamDesktop div[class*="steamdesktop_DragArea_"]
+{
+	-webkit-app-region: initial !important;
+}
+
 /* URL Bar placeholder */
 #SteamDesktop .steamdesktop_LocalContentContainer_RGNMW > div[class*="steamdesktop_URLBarReplacement_"]
 {
@@ -107,10 +112,9 @@ body.DesktopUI div[class*="steamdesktop_Wrapper_"].Maximized
 	display: none !important;
 }
 
-/* Content frame - enable overflow to make the refresh button visible */
+/* Content frame */
 #SteamDesktop div[class*="steamdesktop_ContentFrame_"]
 {
-	overflow: visible !important;
 	position: initial !important;
 	order: 3 !important;
 }
@@ -240,7 +244,6 @@ body.ContextMenuPopupBody.DesktopUI div[class*="steamtemplates_NewIndicator_"] s
 #SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[style*="height:68px"],
 #SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="updatealert_ActionAlert_"]
 {
-	height: 46px !important;
 	min-height: 46px !important;
 }
 
@@ -250,8 +253,23 @@ body.ContextMenuPopupBody.DesktopUI div[class*="steamtemplates_NewIndicator_"] s
 	color: var(--banner_fg) !important;
 	box-shadow: inset 0 -1px var(--headerbar_shade);
 	border-radius: 0 !important;
-	height: 46px !important;
 	min-height: 46px !important;
+	padding: 0 10px !important;
+}
+
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="updatealert_Alert_"][class*="updatealert_SmallMode_"]
+{
+	padding: 0 10px !important;
+}
+
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="updatealert_Alert_"][class*="updatealert_SmallMode_"] > div[class*="updatealert_ActionAlert_"]
+{
+	flex-direction: row !important;
+}
+
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="updatealert_Content_"]
+{
+	padding: 8px 0 !important;
 }
 
 #SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="updatealert_PrimaryMessage_"]
