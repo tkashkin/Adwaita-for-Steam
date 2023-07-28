@@ -18,5 +18,5 @@ This is capable of overriding any of the current [css variables](/adwaita/varian
 }
 ```
 
-For more advanced edits, you should reference [Inspecting Steam](https://github.com/tkashkin/Adwaita-for-Steam/tree/master/web#inspecting-steam)
+For more advanced edits, you should reference [Inspecting Steam](https://github.com/tkashkin/Adwaita-for-Steam/tree/master/adwaita#inspecting-steam)
 
