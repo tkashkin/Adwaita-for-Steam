@@ -43,7 +43,7 @@ ADWAITA_DIR = "adwaita"
 COLOR_THEME_DIR = f"{ADWAITA_DIR}/colorthemes"
 CUSTOM_DIR = "custom"
 FONTS_DIR = "fonts"
-WEB_EXTRAS_DIR = f"{ADWAITA_DIR}/extras"
+EXTRAS_DIR = f"{ADWAITA_DIR}/extras"
 
 TARGET_NORMAL = "~/.steam/steam"
 TARGET_FLATPAK = "~/.var/app/com.valvesoftware.Steam/.steam/steam"
@@ -72,7 +72,7 @@ adwaitadir = Path(ADWAITA_DIR)
 colorthemedir = Path(COLOR_THEME_DIR)
 customdir = Path(CUSTOM_DIR)
 fontdir = Path(FONTS_DIR)
-webextrasdir = Path(WEB_EXTRAS_DIR)
+extrasdir = Path(EXTRAS_DIR)
 
 # CSS List for @import
 LIBRARY_FILES = [
@@ -181,8 +181,8 @@ def win_reg_font(name: str, target: Path):
 	winreg.CloseKey(key)
 
 # CSS Theme
-def find_web_extras() -> list[Path]:
-	return list(webextrasdir.glob("**/*.css"))
+def find_extras() -> list[Path]:
+	return list(extrasdir.glob("**/*.css"))
 
 def format_import(prefix: str, string: str) -> str:
 	return f"@import url(\"{prefix}/{string}\");\n"
@@ -198,12 +198,12 @@ def generate_libraryroot(target: Path, selected_extras: list[Path], selected_the
 
 		for extra in selected_extras:
 			we = extra.removesuffix(".css")
-			test = webextrasdir / we
+			test = extrasdir / we
 			if test.with_suffix(".css").exists():
-				print(f"{TEXT_BLUE}{TEXT_ARROW} Applying web_extra {TEXT_BOLD}{we}{TEXT_RESET}{TEXT_BLUE}...{TEXT_RESET}")
+				print(f"{TEXT_BLUE}{TEXT_ARROW} Applying extra {TEXT_BOLD}{we}{TEXT_RESET}{TEXT_BLUE}...{TEXT_RESET}")
 				content += format_import(STEAM_LOOPBACK_ADWAITA, f"extras/{we}.css")
 			else:
-				print(f"{TEXT_PURPLE}{TEXT_INFO} Web Extra: {TEXT_BOLD}{we}{TEXT_RESET}{TEXT_PURPLE} not found!{TEXT_RESET}")
+				print(f"{TEXT_PURPLE}{TEXT_INFO} Extra: {TEXT_BOLD}{we}{TEXT_RESET}{TEXT_PURPLE} not found!{TEXT_RESET}")
 		print()
 
 	if selected_theme:
@@ -283,7 +283,7 @@ def dev_reload(target: Path):
 # Run
 if __name__ == "__main__":
 	if not adwaitadir.exists():
-		raise SystemExit(f"{TEXT_RED}{TEXT_CROSS} Web Theme directory {TEXT_BOLD}{ADWAITA_DIR}{TEXT_RESET}{TEXT_RED} does not exist. Make sure you're running the installer from its root directory{TEXT_RESET}")
+		raise SystemExit(f"{TEXT_RED}{TEXT_CROSS} Theme directory {TEXT_BOLD}{ADWAITA_DIR}{TEXT_RESET}{TEXT_RED} does not exist. Make sure you're running the installer from its root directory{TEXT_RESET}")
 	if not colorthemedir.exists():
 		raise SystemExit(f"{TEXT_RED}{TEXT_CROSS} Color Theme directory {TEXT_BOLD}{COLOR_THEME_DIR}{TEXT_RESET}{TEXT_RED} does not exist. Make sure you're running the installer from its root directory{TEXT_RESET}")
 
@@ -293,10 +293,10 @@ if __name__ == "__main__":
 	parser.add_argument("-d", "--dev", action = "store_true", help = "Dev Mode")
 	parser.add_argument("-fi", "--font-install", action = "store_true", help = "Install Fonts")
 	parser.add_argument("-l", "--list-options", action = "store_true", help = "List available themes & web extras and exit")
+	parser.add_argument("-e", "--extras", nargs = "+", action = "extend", help = "Enable one or multiple theme extras")
 	parser.add_argument("-t", "--target", nargs = "+", action = "extend", default = ["normal", "flatpak"], help = "Install targets: 'normal', 'flatpak', custom paths")
 	parser.add_argument("-u", "--uninstall", action = "store_true", help = "Uninstall theme")
 	parser.add_argument("-w", "--web-theme", choices = ["base", "full"], default = "full", help = "Deprecated, does nothing.") # Keeping for compatability
-	parser.add_argument("-we", "--web-extras", nargs = "+", action = "extend", help = "Enable one or multiple web theme extras")
 	args = parser.parse_args()
 
 	if WINDOWS_RUN:
@@ -304,7 +304,7 @@ if __name__ == "__main__":
 
 	if args.list_options:
 		list_options("color themes", find_color_themes(), ".css", colorthemedir, "color-theme")
-		list_options("web extras", find_web_extras(), ".css", webextrasdir, "web-extras")
+		list_options("extras", find_extras(), ".css", extrasdir, "extras")
 		exit(0)
 
 	if args.font_install:
@@ -332,7 +332,7 @@ if __name__ == "__main__":
 
 		print(f"{TEXT_BLUE}{TEXT_ARROW} Creating stage directory {TEXT_BOLD}{sourcedir}{TEXT_RESET}")
 
-		generate_libraryroot(sourcedir / LIBRARY_ROOT_CSS, args.web_extras, selected_theme, args.custom_css)
+		generate_libraryroot(sourcedir / LIBRARY_ROOT_CSS, args.extras, selected_theme, args.custom_css)
 
 		targets = set()
 
