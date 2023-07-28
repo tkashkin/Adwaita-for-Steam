@@ -292,11 +292,11 @@ if __name__ == "__main__":
 
 	parser = ArgumentParser(description = "Adwaita-for-Steam installer")
 	parser.add_argument("-c", "--color-theme", default = "adwaita", help = "Choose color theme")
-	parser.add_argument("-cu", "--custom-css", action = "store_true", help = "Enable Custom CSS")
+	parser.add_argument("--custom-css", action = "store_true", help = "Enable Custom CSS")
 	parser.add_argument("-d", "--dev", action = "store_true", help = "Dev Mode")
-	parser.add_argument("-fi", "--font-install", action = "store_true", help = "Install Fonts")
-	parser.add_argument("-l", "--list-options", action = "store_true", help = "List available themes & web extras and exit")
 	parser.add_argument("-e", "--extras", nargs = "+", action = "extend", help = "Enable one or multiple theme extras")
+	parser.add_argument("-f", "--font-install", action = "store_true", help = "Install Fonts")
+	parser.add_argument("-l", "--list-options", action = "store_true", help = "List available themes & extras and exit")
 	parser.add_argument("-t", "--target", nargs = "+", action = "extend", default = ["normal", "flatpak"], help = "Install targets: 'normal', 'flatpak', custom paths")
 	parser.add_argument("-u", "--uninstall", action = "store_true", help = "Uninstall theme")
 	parser.add_argument("-w", "--web-theme", choices = ["base", "full"], default = "full", help = "Deprecated, does nothing.") # Keeping for compatability
