@@ -1,9 +1,5 @@
-# Color Themes
+# Deprecated
 
-These files provide color themes for the installer. All themes are their dark variants.
+These files do not do anything. They are temporarily being kept for compatiblity with AdwSteamGtk.
 
-Themes can override any variable defined in [:root](/web/base/_root.css)
-
-Color format is `#RRGGBBAA`
-
-The `adwaita` theme is merely a reference file, it is not actually used by the installer.
+see [colorthemes](/adwaita/colorthemes)
