@@ -126,29 +126,15 @@ cd Adwaita-for-Steam
 ./install.py -l
 # Install with customizations (including fonts)
 ./install.py -fi -c nord -we login/hide_qr -we library/hide_whats_new
-# For those who prefer a less adwaita-like theme
-./install.py -we general/no_rounded_corners -we topbar/vanilla_bar
 ```
 
 <details><summary>Custom CSS</summary>
 
-If you wish to include your own custom CSS, `-we` supports passing arbitrary css files:
+If you wish to include your own custom CSS, see [/custom] and use the `-cu` flag.
 
-`./install.py -we ~/path/to/wherever/custom.css`
-
-This is capable of overriding any of the current [css variables](https://github.com/tkashkin/Adwaita-for-Steam/blob/master/web/base/_root.css):
-
-```css
-:root
-{
-	--bg: #FF0000;
-	--fg: #000000;
-}
+```bash
+./install.py -cu
 ```
-
-For more advanced edits, you should reference [Inspecting Steam](https://github.com/tkashkin/Adwaita-for-Steam/tree/master/web#inspecting-steam)
-
-**Warning:** It is entirely possible to cause UI breakages using this feature. Please disable any custom css before troubleshooting or submitting issues.
 
 </details>
 
