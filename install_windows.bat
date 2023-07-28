@@ -9,22 +9,22 @@ ECHO ----------------------------
 :: --- Do not edit these ---
 
 :: --- General ---
-SET NO_ROUNDED_CORNERS=-we general/no_rounded_corners
+SET NO_ROUNDED_CORNERS=-e general/no_rounded_corners
 
 :: --- Library ---
-SET HIDE_WHATS_NEW=-we library/hide_whats_new
-SET SIDEBAR_HOVER_ONLY=-we library/sidebar_hover
+SET HIDE_WHATS_NEW=-e library/hide_whats_new
+SET SIDEBAR_HOVER_ONLY=-e library/sidebar_hover
 
 :: --- Login ---
-SET LOGIN_HIDE_QR=-we login/hide_qr
-SET LOGIN_HOVER_ONLY_QR=-we login/hover_qr
+SET LOGIN_HIDE_QR=-e login/hide_qr
+SET LOGIN_HOVER_ONLY_QR=-e login/hover_qr
 
 :: --- Top Bar ---
-SET HIDE_BIG_PICTURE_BUTTON=-we topbar/hide_bp
-SET HIDE_PAGE_URL=-we topbar/hide_url
+SET HIDE_BIG_PICTURE_BUTTON=-e topbar/hide_bp
+SET HIDE_PAGE_URL=-e topbar/hide_url
 
 :: --- Window Controls ---
-SET WINDOW_CONTROLS=-we windowcontrols/right-all
+SET WINDOW_CONTROLS=-e windowcontrols/right-all
 
 GOTO START_SECTION
 
