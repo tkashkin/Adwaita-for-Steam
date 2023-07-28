@@ -4,7 +4,7 @@ Used to add your own custom css into the theme.
 
 **Warning:** It is entirely possible to cause UI breakages using this feature. Please disable any custom css before troubleshooting or submitting issues.
 
-Edit `custom.css` with your own changes and install with the `-cu` argument.
+Edit `custom.css` with your own changes and install with the `--custom-css` argument.
 
 This file should be edited while within the installer directory, NOT after you've installed it to Steam. The latter will be overwritten on subsequent installs.
 

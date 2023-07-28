@@ -112,12 +112,12 @@ cd Adwaita-for-Steam
 | Argument         | Short  | Required Values                  | Description                                              |
 | ---------------- | ------ | -------------------------------- | -------------------------------------------------------- |
 | --color-theme    | -c     | [Colortheme](colorthemes)        | Change color theme                                       |
-| --font-install   | -fi    |                                  | Installs static Cantarell fonts                          |
+| --custom-css     |        |                                  | Enable [custom css](/custom)                              |
+| --extras         | -e     | [Web Extra](web/extras)          | Enable one or multiple web theme extras                  |
+| --font-install   | -f     |                                  | Installs static Cantarell fonts                          |
 | --list-options   | -l     |                                  | List available patches, themes, and web extras           |
 | --target         | -t     | normal / flatpak / [custom dir]  | Choose target location for install (default: both)       |
 | --uninstall      | -u     |                                  | Uninstall theme                                          |
-| --web-theme      | -w     | full / base / none               | Choose web theme variant (default: full)                 |
-| --web-extras     | -we    | [Web Extra](web/extras)          | Enable one or multiple web theme extras                  |
 
 #### Example Usage
 
@@ -125,15 +125,15 @@ cd Adwaita-for-Steam
 # List options
 ./install.py -l
 # Install with customizations (including fonts)
-./install.py -fi -c nord -we login/hide_qr -we library/hide_whats_new
+./install.py -f -c nord -e login/hide_qr -e library/hide_whats_new
 ```
 
 <details><summary>Custom CSS</summary>
 
-If you wish to include your own custom CSS, see [custom](/custom) and use the `-cu` flag.
+If you wish to include your own custom CSS, see [custom](/custom) and use the `--custom-css` flag.
 
 ```bash
-./install.py -cu
+./install.py --custom-css
 ```
 
 </details>
