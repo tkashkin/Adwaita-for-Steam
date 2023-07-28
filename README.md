@@ -130,7 +130,7 @@ cd Adwaita-for-Steam
 
 <details><summary>Custom CSS</summary>
 
-If you wish to include your own custom CSS, see [/custom] and use the `-cu` flag.
+If you wish to include your own custom CSS, see [custom](/custom) and use the `-cu` flag.
 
 ```bash
 ./install.py -cu
