@@ -1,13 +1,7 @@
-# Web Themes
-These files provide overrides for web based elements in the steam client.
+# Theme
+These files provide overrides for elements in the steam client.
 
-Each theme is split into sections and combined by `install.py` to produce the final theme.
-
-`base` is a minimal theme providing only basic color changes.
-
-`full` themes more heavily and attempts to cover more areas of the client.
-
-`extras` are optional bits that may be added to the above themes.
+The theme is split into sections and imported by `steamui/libraryroot.custom.css` to produce the final theme.
 
 # Inspecting Steam
 

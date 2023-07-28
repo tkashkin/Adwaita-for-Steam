@@ -37,63 +37,63 @@ A skin to make Steam look more like a native GNOME app
 
 ### Adwaita
 
-![Adwaita](/colorthemes/adwaita/preview.png?raw=true)
+![Adwaita](/adwaita/colorthemes/adwaita/preview.png?raw=true)
 
 ### Breeze
 
-![Breeze](/colorthemes/breeze/preview.png?raw=true)
+![Breeze](/adwaita/colorthemes/breeze/preview.png?raw=true)
 
 ### Catppuccin-Frappe
 
-![Catppuccin-Frappe](/colorthemes/catppuccin-frappe/preview.png?raw=true)
+![Catppuccin-Frappe](/adwaita/colorthemes/catppuccin-frappe/preview.png?raw=true)
 
 ### Catppuccin-Macchiato
 
-![Catppuccin-Macchiato](/colorthemes/catppuccin-macchiato/preview.png?raw=true)
+![Catppuccin-Macchiato](/adwaita/colorthemes/catppuccin-macchiato/preview.png?raw=true)
 
 ### Catppuccin-Mocha
 
-![Catppuccin-Mocha](/colorthemes/catppuccin-mocha/preview.png?raw=true)
+![Catppuccin-Mocha](/adwaita/colorthemes/catppuccin-mocha/preview.png?raw=true)
 
 ### Dracula
 
-![Dracula](/colorthemes/dracula/preview.png?raw=true)
+![Dracula](/adwaita/colorthemes/dracula/preview.png?raw=true)
 
 ### Gruvbox
 
-![Gruvbox](/colorthemes/gruvbox/preview.png?raw=true)
+![Gruvbox](/adwaita/colorthemes/gruvbox/preview.png?raw=true)
 
 ### Kate
 
-![Kate](/colorthemes/kate/preview.png?raw=true)
+![Kate](/adwaita/colorthemes/kate/preview.png?raw=true)
 
 ### Metro
 
-![Metro](/colorthemes/metro/preview.png?raw=true)
+![Metro](/adwaita/colorthemes/metro/preview.png?raw=true)
 
 ### Nord
 
-![Nord](/colorthemes/nord/preview.png?raw=true)
+![Nord](/adwaita/colorthemes/nord/preview.png?raw=true)
 
 ### One Pro
 
-![One Pro](/colorthemes/one-pro/preview.png?raw=true)
+![One Pro](/adwaita/colorthemes/one-pro/preview.png?raw=true)
 
 ### Pop
 
-![Pop](/colorthemes/pop/preview.png?raw=true)
+![Pop](/adwaita/colorthemes/pop/preview.png?raw=true)
 
 ### Tokyo Night
 
-![Tokyo Night](/colorthemes/tokyo-night/preview.png?raw=true)
+![Tokyo Night](/adwaita/colorthemes/tokyo-night/preview.png?raw=true)
 
 ### Tomorrow Night
 
-![Tomorrow Night](/colorthemes/tomorrow-night/preview.png?raw=true)
+![Tomorrow Night](/adwaita/colorthemes/tomorrow-night/preview.png?raw=true)
 
 ### Yaru
 
-![Yaru](/colorthemes/yaru/preview.png?raw=true)
+![Yaru](/adwaita/colorthemes/yaru/preview.png?raw=true)
 
 </details>
 
