@@ -227,6 +227,7 @@ def patch_client_css(source: Path, target: Path, name: str):
 	print(f"{TEXT_BLUE}{TEXT_ARROW} Patching Steam Client {TEXT_BOLD}{name}{TEXT_RESET}{TEXT_BLUE} Files...{TEXT_RESET}")
 
 	if name == "Library":
+		target_adwaita = target / STEAM_ADWAITA_DIR
 		target_css = target / STEAM_LIBRARY_CSS
 		orig_css = target / STEAM_ORIG_LIBRARY
 		custom_library = target / STEAM_CUSTOM_LIBRARY
@@ -242,6 +243,8 @@ def patch_client_css(source: Path, target: Path, name: str):
 	if args.uninstall:
 		print(f"{TEXT_BLUE}{TEXT_ARROW} Uninstalling, resetting patched Steam {name} CSS...{TEXT_RESET}")
 		open(custom_library, 'w').close()
+		if target_adwaita.is_dir():
+			shutil.rmtree(target_adwaita)
 	else:
 		shutil.move(source_css, custom_library)
 
@@ -352,7 +355,9 @@ if __name__ == "__main__":
 				continue
 
 			patch_client_css(sourcedir, target, "Library")
-			copy_dir(sourcedir, target / STEAM_ADWAITA_DIR)
-			dev_reload(target)
+
+			if not args.uninstall:
+				copy_dir(sourcedir, target / STEAM_ADWAITA_DIR)
+				dev_reload(target)
 
 		print(f"{TEXT_GREEN}{TEXT_CHECK} Done!{TEXT_RESET}")
