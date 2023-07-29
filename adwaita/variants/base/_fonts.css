@@ -1,0 +1,12 @@
+@font-face {
+	font-family: "Adwaita";
+	src:
+		url("https://steamloopback.host/adwaita/fonts/cantarell/cantarell-vf.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "Adwaita";
+	font-weight: bold;
+	src:
+		url("https://steamloopback.host/adwaita/fonts/cantarell/cantarell-vf.otf") format("opentype");
+}

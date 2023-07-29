@@ -35,7 +35,7 @@
 	--error_fg: var(--fg);
 
 	/* Fonts */
-	--basefont: "Cantarell", "Noto Sans", "Motiva Sans", Arial, Helvetica, sans-serif;
+	--basefont: "Adwaita", "Cantarell", "Noto Sans", "Motiva Sans", Arial, Helvetica, sans-serif;
 	--basesize: 15px;
 	--baseweight: normal;
 
