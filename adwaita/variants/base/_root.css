@@ -4,34 +4,53 @@
 
 :root
 {
+	/* --------------------------------------------------------- */
+	/* Accent Color RGB Variables                                */
+	/* Edit this section for themes/custom css                   */
+	/* Do NOT use rgb() or #RRGGBB here, only numbers and commas */
+	/* --------------------------------------------------------- */
+	--accent_rgb: 120, 174, 237;
+	--accent_bg_rgb: 53, 132, 228;
+	--destructive_rgb: 255, 123, 99;
+	--destructive_bg_rgb: 192, 28, 40;
+	--success_rgb: 143, 240, 164;
+	--success_bg_rgb: 38, 162, 105;
+	--warning_rgb: 248, 228, 92;
+	--warning_bg_rgb: 205, 147, 9;
+	--warning_bg_rgb: 205, 147, 9;
+	--error_rgb: var(--destructive_rgb);
+	--error_bg: var(--destructive_bg_rgb);
+
+	/* --------------------------------------------------------- */
+
 	/* General */
 	--bg: #242424;
 	--fg: #ffffff;
 
-	--accent: #78aeed;
-	--accent_bg: #3584e4;
+	--accent: rgb(var(--accent_rgb));
+	--accent_bg: rgb(var(--accent_bg_rgb));
 	--accent_fg: var(--fg);
-	--accent_disabled: rgba(120, 174, 237, 0.5);
-	--accent_hover_bg: rgba(120, 174, 237, 0.07);
-	--accent_active_bg: rgba(120, 174, 237, 0.16);
+	--accent_disabled: rgba(var(--accent_rgb), 0.5);
+	--accent_hover_bg: rgba(var(--accent_rgb), 0.07);
+	--accent_active_bg: rgba(var(--accent_rgb), 0.16);
 
-	--destructive: #ff7b63;
-	--destructive_bg: #c01c28;
+	--destructive: rgb(var(--destructive_rgb));
+	--destructive_bg: rgb(var(--destructive_bg_rgb));
 	--destructive_fg: var(--fg);
-	--destructive_disabled: rgba(255, 123, 99, 0.5);
-	--destructive_hover_bg: rgba(255, 123, 99, 0.07);
-	--destructive_active_bg: rgba(255, 123, 99, 0.16);
+	--destructive_disabled: rgba(var(--destructive_rgb), 0.5);
+	--destructive_hover_bg: rgba(var(--destructive_rgb), 0.07);
+	--destructive_active_bg: rgba(var(--destructive_rgb), 0.16);
 
-	--success: #8ff0a4;
-	--success_bg: #26a269;
+	--success: rgb(var(--success_rgb));
+	--success_bg: rgb(var(--success_bg_rgb));
 	--success_fg: var(--fg);
 
-	--warning: #f8e45c;
-	--warning_bg: #cd9309;
+	--warning: rgb(var(--warning_rgb));
+	--warning_bg: rgb(var(--warning_bg_rgb));
 	--warning_fg: var(--fg);
 
-	--error: #ff7b63;
-	--error_bg: #c01c28;
+	--error: rgb(var(--error_rgb));
+	--error_bg: rgb(var(--error_bg_rgb));
 	--error_fg: var(--fg);
 
 	/* Widgets */
@@ -76,7 +95,7 @@
 	--card_radius: calc(var(--button_radius) + 6px);
 	--card_solid_bg: #3A3A3A;
 
-	--focusring: rgba(120, 174, 237, 0.5);
+	--focusring: rgba(var(--accent_rgb), 0.5);
 	--focusring_bs: inset 0px 0px 0px 2px var(--focusring);
 
 	--ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -146,8 +165,8 @@
 	--scrollbar_active: rgba(255, 255, 255, 0.6);
 
 	--profile_offline: rgba(255, 255, 255, 0.5);
-	--profile_online: rgba(120, 174, 237, 0.5);
-	--profile_ingame: rgba(143, 240, 164, 0.5);
+	--profile_online: rgba(var(--accent_rgb), 0.5);
+	--profile_ingame: rgba(var(--success_rgb), 0.5);
 
 	--banner_bg: #29415e;
 	--banner_fg: #ffffff;
