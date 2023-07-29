@@ -299,7 +299,6 @@ if __name__ == "__main__":
 	parser.add_argument("-l", "--list-options", action = "store_true", help = "List available themes & extras and exit")
 	parser.add_argument("-t", "--target", nargs = "+", action = "extend", default = ["normal", "flatpak"], help = "Install targets: 'normal', 'flatpak', custom paths")
 	parser.add_argument("-u", "--uninstall", action = "store_true", help = "Uninstall theme")
-	parser.add_argument("-w", "--web-theme", choices = ["base", "full"], default = "full", help = "Deprecated, does nothing.") # Keeping for compatability
 	args = parser.parse_args()
 
 	if WINDOWS_RUN:
