@@ -37,63 +37,63 @@ A skin to make Steam look more like a native GNOME app
 
 ### Adwaita
 
-![Adwaita](/colorthemes/adwaita/preview.png?raw=true)
+![Adwaita](/adwaita/colorthemes/adwaita/preview.png?raw=true)
 
 ### Breeze
 
-![Breeze](/colorthemes/breeze/preview.png?raw=true)
+![Breeze](/adwaita/colorthemes/breeze/preview.png?raw=true)
 
 ### Catppuccin-Frappe
 
-![Catppuccin-Frappe](/colorthemes/catppuccin-frappe/preview.png?raw=true)
+![Catppuccin-Frappe](/adwaita/colorthemes/catppuccin-frappe/preview.png?raw=true)
 
 ### Catppuccin-Macchiato
 
-![Catppuccin-Macchiato](/colorthemes/catppuccin-macchiato/preview.png?raw=true)
+![Catppuccin-Macchiato](/adwaita/colorthemes/catppuccin-macchiato/preview.png?raw=true)
 
 ### Catppuccin-Mocha
 
-![Catppuccin-Mocha](/colorthemes/catppuccin-mocha/preview.png?raw=true)
+![Catppuccin-Mocha](/adwaita/colorthemes/catppuccin-mocha/preview.png?raw=true)
 
 ### Dracula
 
-![Dracula](/colorthemes/dracula/preview.png?raw=true)
+![Dracula](/adwaita/colorthemes/dracula/preview.png?raw=true)
 
 ### Gruvbox
 
-![Gruvbox](/colorthemes/gruvbox/preview.png?raw=true)
+![Gruvbox](/adwaita/colorthemes/gruvbox/preview.png?raw=true)
 
 ### Kate
 
-![Kate](/colorthemes/kate/preview.png?raw=true)
+![Kate](/adwaita/colorthemes/kate/preview.png?raw=true)
 
 ### Metro
 
-![Metro](/colorthemes/metro/preview.png?raw=true)
+![Metro](/adwaita/colorthemes/metro/preview.png?raw=true)
 
 ### Nord
 
-![Nord](/colorthemes/nord/preview.png?raw=true)
+![Nord](/adwaita/colorthemes/nord/preview.png?raw=true)
 
 ### One Pro
 
-![One Pro](/colorthemes/one-pro/preview.png?raw=true)
+![One Pro](/adwaita/colorthemes/one-pro/preview.png?raw=true)
 
 ### Pop
 
-![Pop](/colorthemes/pop/preview.png?raw=true)
+![Pop](/adwaita/colorthemes/pop/preview.png?raw=true)
 
 ### Tokyo Night
 
-![Tokyo Night](/colorthemes/tokyo-night/preview.png?raw=true)
+![Tokyo Night](/adwaita/colorthemes/tokyo-night/preview.png?raw=true)
 
 ### Tomorrow Night
 
-![Tomorrow Night](/colorthemes/tomorrow-night/preview.png?raw=true)
+![Tomorrow Night](/adwaita/colorthemes/tomorrow-night/preview.png?raw=true)
 
 ### Yaru
 
-![Yaru](/colorthemes/yaru/preview.png?raw=true)
+![Yaru](/adwaita/colorthemes/yaru/preview.png?raw=true)
 
 </details>
 
@@ -112,12 +112,12 @@ cd Adwaita-for-Steam
 | Argument         | Short  | Required Values                  | Description                                              |
 | ---------------- | ------ | -------------------------------- | -------------------------------------------------------- |
 | --color-theme    | -c     | [Colortheme](colorthemes)        | Change color theme                                       |
-| --font-install   | -fi    |                                  | Installs static Cantarell fonts                          |
+| --custom-css     |        |                                  | Enable [custom css](/custom)                              |
+| --extras         | -e     | [Web Extra](web/extras)          | Enable one or multiple web theme extras                  |
+| --font-install   | -f     |                                  | Installs static Cantarell fonts                          |
 | --list-options   | -l     |                                  | List available patches, themes, and web extras           |
 | --target         | -t     | normal / flatpak / [custom dir]  | Choose target location for install (default: both)       |
 | --uninstall      | -u     |                                  | Uninstall theme                                          |
-| --web-theme      | -w     | full / base / none               | Choose web theme variant (default: full)                 |
-| --web-extras     | -we    | [Web Extra](web/extras)          | Enable one or multiple web theme extras                  |
 
 #### Example Usage
 
@@ -125,30 +125,16 @@ cd Adwaita-for-Steam
 # List options
 ./install.py -l
 # Install with customizations (including fonts)
-./install.py -fi -c nord -we login/hide_qr -we library/hide_whats_new
-# For those who prefer a less adwaita-like theme
-./install.py -we general/no_rounded_corners -we topbar/vanilla_bar
+./install.py -f -c nord -e login/hide_qr -e library/hide_whats_new
 ```
 
 <details><summary>Custom CSS</summary>
 
-If you wish to include your own custom CSS, `-we` supports passing arbitrary css files:
+If you wish to include your own custom CSS, see [custom](/custom) and use the `--custom-css` flag.
 
-`./install.py -we ~/path/to/wherever/custom.css`
-
-This is capable of overriding any of the current [css variables](https://github.com/tkashkin/Adwaita-for-Steam/blob/master/web/base/_root.css):
-
-```css
-:root
-{
-	--bg: #FF0000;
-	--fg: #000000;
-}
+```bash
+./install.py --custom-css
 ```
-
-For more advanced edits, you should reference [Inspecting Steam](https://github.com/tkashkin/Adwaita-for-Steam/tree/master/web#inspecting-steam)
-
-**Warning:** It is entirely possible to cause UI breakages using this feature. Please disable any custom css before troubleshooting or submitting issues.
 
 </details>
 
