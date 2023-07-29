@@ -24,8 +24,8 @@
 	/* --------------------------------------------------------- */
 
 	/* General */
-	--bg: #242424;
-	--fg: #ffffff;
+	--bg: rgb(36, 36, 36);
+	--fg: rgb(255, 255, 255);
 
 	--accent: rgb(var(--accent_rgb));
 	--accent_bg: rgb(var(--accent_bg_rgb));
@@ -93,7 +93,7 @@
 	--card_bg: rgba(255, 255, 255, 0.1);
 	--card_fg: var(--fg);
 	--card_radius: calc(var(--button_radius) + 6px);
-	--card_solid_bg: #3A3A3A;
+	--card_solid_bg: rgb(58, 58, 58);
 
 	--focusring: rgba(var(--accent_rgb), 0.5);
 	--focusring_bs: inset 0px 0px 0px 2px var(--focusring);
@@ -129,10 +129,10 @@
 	--window_radius: 12px;
 	--window_outline: rgba(255, 255, 255, 0.25);
 
-	--view_bg: #1e1e1e;
+	--view_bg: rgb(30, 30, 30);
 	--view_fg: var(--fg);
 
-	--headerbar_bg: #303030;
+	--headerbar_bg: rgb(48, 48, 48);
 	--headerbar_fg: var(--fg);
 	--headerbar_border: var(--fg);
 	--headerbar_backdrop: var(--bg);
@@ -145,7 +145,7 @@
 	--headerbar_button_bg_checked_hover: rgba(255, 255, 255, .13);
 	--headerbar_button_bg_checked_active: rgba(255, 255, 255, .19);
 
-	--popover_bg: #383838;
+	--popover_bg: rgb(56, 56, 56);
 	--popover_fg: var(--fg);
 	--popover_radius: var(--window_radius);
 
@@ -168,8 +168,8 @@
 	--profile_online: rgba(var(--accent_rgb), 0.5);
 	--profile_ingame: rgba(var(--success_rgb), 0.5);
 
-	--banner_bg: #29415e;
-	--banner_fg: #ffffff;
+	--banner_bg: rgb(41, 65, 94);
+	--banner_fg: rgb(255, 255, 255);
 
 	/* Window controls button margin */
 	--windowcontrols_margin_left: 0px;
