@@ -51,13 +51,13 @@
 }
 
 /* Account Button */
-#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="steamdesktop_TitleBarControls_"] div.Focusable:nth-child(3)
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="steamdesktop_TitleBarControls_"]
 {
-	order: -99 !important;
+	flex-direction: row-reverse !important;
 }
 
-#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="steamdesktop_TitleBarControls_"] div.Focusable:nth-child(3) div[class*="titlebarcontrols_AccountMenu_"]:hover,
-#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="steamdesktop_TitleBarControls_"] div.Focusable:nth-child(3) div[class*="titlebarcontrols_AccountMenu_"]:active
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="steamdesktop_TitleBarControls_"] div[class*="titlebarcontrols_AccountMenu_"]:hover,
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="steamdesktop_TitleBarControls_"] div[class*="titlebarcontrols_AccountMenu_"]:active
 {
 	background: none !important;
 }
