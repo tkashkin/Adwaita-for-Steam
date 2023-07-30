@@ -10,7 +10,6 @@ import os
 
 # Platform Specific
 if platform == "win32":
-	import winreg
 	WINDOWS_RUN = True
 
 	TEXT_BOLD = ""
@@ -42,15 +41,11 @@ else:
 ADWAITA_DIR = "adwaita"
 COLOR_THEME_DIR = f"{ADWAITA_DIR}/colorthemes"
 CUSTOM_DIR = "custom"
-FONTS_DIR = "fonts"
 EXTRAS_DIR = f"{ADWAITA_DIR}/extras"
 
 TARGET_NORMAL = "~/.steam/steam"
 TARGET_FLATPAK = "~/.var/app/com.valvesoftware.Steam/.steam/steam"
 TARGET_WINDOWS = "C:/Program Files (x86)/Steam"
-
-TARGET_FONTS = "~/.local/share/fonts"
-TARGET_FONTS_WIN = "AppData/Local/Microsoft/Windows/Fonts"
 
 STEAM_LOOPBACK = "https://steamloopback.host"
 STEAM_LOOPBACK_ADWAITA = f"{STEAM_LOOPBACK}/{ADWAITA_DIR}"
@@ -71,13 +66,13 @@ CUSTOM_CSS = "custom.css"
 adwaitadir = Path(ADWAITA_DIR)
 colorthemedir = Path(COLOR_THEME_DIR)
 customdir = Path(CUSTOM_DIR)
-fontdir = Path(FONTS_DIR)
 extrasdir = Path(EXTRAS_DIR)
 
 # CSS List for @import
 LIBRARY_FILES = [
 	# General
 	"variants/base/_root.css",
+	"variants/base/_fonts.css",
 	"variants/base/_localization.css",
 	"variants/base/scrollbars.css",
 	# Main window
@@ -145,40 +140,6 @@ def list_options(type: str, options: list[Path], suffix: str, sourcedir: Path, a
 		print(f"\nApply {type} using {TEXT_GREEN}'./install.py --{arg} NAME'{TEXT_RESET}\n")
 	else:
 		print(f"{TEXT_PURPLE}{TEXT_INFO} No {type} available\n{TEXT_RESET}")
-
-# Fonts
-def install_font(name: str):
-	if WINDOWS_RUN:
-		target = Path.home() / TARGET_FONTS_WIN
-		ext = "ttf"
-	else:
-		target = Path(TARGET_FONTS).expanduser().resolve()
-		ext = "otf"
-
-	font = fontdir / name / ext
-
-	if not font.is_dir():
-		print(f"{TEXT_PURPLE}{TEXT_INFO} Font: {TEXT_BOLD}{name}{TEXT_RESET}{TEXT_PURPLE} not found!{TEXT_RESET}")
-		return
-
-	print(f"\n{TEXT_BLUE}{TEXT_ARROW} Installing font {TEXT_BOLD}{name}{TEXT_RESET}{TEXT_BLUE}...{TEXT_RESET}")
-	files = font.glob(f"*.{ext}")
-	target.mkdir(exist_ok = True)
-	for f in files:
-		target_file = target / f.name
-
-		if target_file.is_file():
-			print(f"  {TEXT_BLUE}{TEXT_ARROW} Font {TEXT_BOLD}{f.name}{TEXT_RESET}{TEXT_BLUE} exists. Skipping...{TEXT_RESET}")
-			continue
-
-		shutil.copy(f, target)
-		if WINDOWS_RUN:
-			win_reg_font(f.name, target_file)
-
-def win_reg_font(name: str, target: Path):
-	key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, r"SOFTWARE\Microsoft\Windows NT\CurrentVersion\Fonts", 0, winreg.KEY_ALL_ACCESS)
-	winreg.SetValueEx(key, str(name), 0, winreg.REG_SZ, str(target))
-	winreg.CloseKey(key)
 
 # CSS Theme
 def find_extras() -> list[Path]:
@@ -295,7 +256,6 @@ if __name__ == "__main__":
 	parser.add_argument("--custom-css", action = "store_true", help = "Enable Custom CSS")
 	parser.add_argument("-d", "--dev", action = "store_true", help = "Dev Mode")
 	parser.add_argument("-e", "--extras", nargs = "+", action = "extend", help = "Enable one or multiple theme extras")
-	parser.add_argument("-f", "--font-install", action = "store_true", help = "Install Fonts")
 	parser.add_argument("-l", "--list-options", action = "store_true", help = "List available themes & extras and exit")
 	parser.add_argument("-t", "--target", nargs = "+", action = "extend", default = ["normal", "flatpak"], help = "Install targets: 'normal', 'flatpak', custom paths")
 	parser.add_argument("-u", "--uninstall", action = "store_true", help = "Uninstall theme")
@@ -308,9 +268,6 @@ if __name__ == "__main__":
 		list_options("color themes", find_color_themes(), ".css", colorthemedir, "color-theme")
 		list_options("extras", find_extras(), ".css", extrasdir, "extras")
 		exit(0)
-
-	if args.font_install:
-		install_font("Cantarell")
 
 	selected_theme = None
 	if args.color_theme:

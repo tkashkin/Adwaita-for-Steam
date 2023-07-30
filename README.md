@@ -28,7 +28,6 @@ A skin to make Steam look more like a native GNOME app
 ## Requirements
 
 * [Python 3](https://www.python.org/downloads/)
-* [Cantarell fonts](https://gitlab.gnome.org/GNOME/cantarell-fonts): An option to install these is included in the install script, but fonts packaged by your distro are preferred.
 * The skin is created and tested mostly on the Linux version of Steam. Steam's new UI has largely unified platform differences, so other platforms should work, but are not a priority.
 
 ## Previews
@@ -114,7 +113,6 @@ cd Adwaita-for-Steam
 | --color-theme    | -c     | [Colortheme](colorthemes)        | Change color theme                                       |
 | --custom-css     |        |                                  | Enable [custom css](/custom)                              |
 | --extras         | -e     | [Web Extra](web/extras)          | Enable one or multiple web theme extras                  |
-| --font-install   | -f     |                                  | Installs static Cantarell fonts                          |
 | --list-options   | -l     |                                  | List available patches, themes, and web extras           |
 | --target         | -t     | normal / flatpak / [custom dir]  | Choose target location for install (default: both)       |
 | --uninstall      | -u     |                                  | Uninstall theme                                          |
@@ -124,8 +122,8 @@ cd Adwaita-for-Steam
 ```bash
 # List options
 ./install.py -l
-# Install with customizations (including fonts)
-./install.py -f -c nord -e login/hide_qr -e library/hide_whats_new
+# Install with customizations
+./install.py -c nord -e login/hide_qr -e library/hide_whats_new
 ```
 
 <details><summary>Custom CSS</summary>
