@@ -14,7 +14,7 @@ A skin to make Steam look more like a native GNOME app
 * **Settings**: Mostly done.
 * **New Overlay**: Mostly done.
 * **New Big Picture**: Not done.
-* **Recoloring**: Colors can be changed via making a new theme. See [colorthemes](colorthemes) dir.
+* **Recoloring**: Colors can be changed via making a new theme. See [colorthemes](/adwaita/colorthemes) dir.
 * **Light Themes**: Not currently planned, though may now be more feasible with the new UI.
 
 ### Limitations
@@ -108,14 +108,14 @@ cd Adwaita-for-Steam
 
 #### Arguments
 
-| Argument         | Short  | Required Values                  | Description                                              |
-| ---------------- | ------ | -------------------------------- | -------------------------------------------------------- |
-| --color-theme    | -c     | [Colortheme](colorthemes)        | Change color theme                                       |
-| --custom-css     |        |                                  | Enable [custom css](/custom)                              |
-| --extras         | -e     | [Web Extra](web/extras)          | Enable one or multiple web theme extras                  |
-| --list-options   | -l     |                                  | List available patches, themes, and web extras           |
-| --target         | -t     | normal / flatpak / [custom dir]  | Choose target location for install (default: both)       |
-| --uninstall      | -u     |                                  | Uninstall theme                                          |
+| Argument         | Short  | Required Values                    | Description                                              |
+| ---------------- | ------ | ---------------------------------- | -------------------------------------------------------- |
+| --color-theme    | -c     | [Colortheme](/adwaita/colorthemes) | Change color theme                                       |
+| --custom-css     |        |                                    | Enable [custom css](/custom)                             |
+| --extras         | -e     | [Extra](adwaita/extras)            | Enable one or multiple theme extras                      |
+| --list-options   | -l     |                                    | List available themes and extras                         |
+| --target         | -t     | normal / flatpak / [custom dir]    | Choose target location for install (default: both)       |
+| --uninstall      | -u     |                                    | Uninstall theme                                          |
 
 #### Example Usage
 
