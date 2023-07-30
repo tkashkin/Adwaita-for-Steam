@@ -6,26 +6,33 @@
 {
 	/* --------------------------------------------------------- */
 	/* Accent Color RGB Variables                                */
-	/* Edit this section for themes/custom css                   */
+	/* Override these for themes/custom css                      */
 	/* Do NOT use rgb() or #RRGGBB here, only numbers and commas */
 	/* --------------------------------------------------------- */
+	--bg_rgb: 36, 36, 36;
+	--fg_rgb: 255, 255, 255;
+
 	--accent_rgb: 120, 174, 237;
 	--accent_bg_rgb: 53, 132, 228;
 	--destructive_rgb: 255, 123, 99;
 	--destructive_bg_rgb: 192, 28, 40;
+	--error_rgb: 255, 123, 99;
+	--error_bg: 192, 28, 40;
 	--success_rgb: 143, 240, 164;
 	--success_bg_rgb: 38, 162, 105;
 	--warning_rgb: 248, 228, 92;
 	--warning_bg_rgb: 205, 147, 9;
 	--warning_bg_rgb: 205, 147, 9;
-	--error_rgb: var(--destructive_rgb);
-	--error_bg: var(--destructive_bg_rgb);
+
+	--button_bg_rgb: 255, 255, 255;
+	--headerbar_button_bg_rgb: 255, 255, 255;
+	--scrollbar_rgb: 255, 255, 255;
 
 	/* --------------------------------------------------------- */
 
 	/* General */
-	--bg: rgb(36, 36, 36);
-	--fg: rgb(255, 255, 255);
+	--bg: rgb(var(--bg_rgb));
+	--fg: rgb(var(--fg_rgb));
 
 	--accent: rgb(var(--accent_rgb));
 	--accent_bg: rgb(var(--accent_bg_rgb));
@@ -54,8 +61,8 @@
 	--error_fg: var(--fg);
 
 	/* Widgets */
-	--button_bg: rgba(255, 255, 255, 0.1);
-	--button_fg: rgba(255, 255, 255, 1);
+	--button_bg: rgba(var(--button_bg_rgb), 0.1);
+	--button_fg: var(--fg);
 	--button_radius: 6px;
 	--button_padding: 5px 10px;
 	--button_min_height: 24px;
@@ -63,13 +70,13 @@
 	--button_pill_radius: 9999px;
 	--button_font_weight: var(--title_3_weight);
 	--button_font_size: var(--title_3_size);
-	--button_hover_bg: rgba(255, 255, 255, 0.15);
-	--button_active_bg: rgba(255, 255, 255, 0.3);
-	--button_disabled_bg: rgba(255, 255, 255, 0.05);
-	--button_disabled_fg: rgba(255, 255, 255, 0.5);
+	--button_hover_bg: rgba(var(--button_bg_rgb), 0.15);
+	--button_active_bg: rgba(var(--button_bg_rgb), 0.3);
+	--button_disabled_bg: rgba(var(--button_bg_rgb), 0.05);
+	--button_disabled_fg: rgba(var(--button_bg_rgb), 0.5);
 	--button_success_bg: linear-gradient(0deg, var(--success_bg), var(--success_bg));
 	--button_suggested_bg: linear-gradient(0deg, var(--accent_bg), var(--accent_bg));
-	--button_suggested_hover_bg: rgba(255, 255, 255, 0.1);
+	--button_suggested_hover_bg: rgba(var(--button_bg_rgb), 0.1);
 	--button_suggested_click_bg: rgba(0, 0, 0, 0.2);
 	--button_suggested_blend: overlay;
 	--button_suggested_fg: var(--accent_fg);
@@ -118,7 +125,7 @@
 
 	--icon_small_radius: var(--button_radius);
 
-	--dim_label_fg: rgba(255, 255, 255, 0.55);
+	--dim_label_fg: rgba(var(--fg_rgb), 0.55);
 
 	--menu_radius: 6px;
 	--menu_margin: 6px;
@@ -139,18 +146,18 @@
 	--headerbar_shade: rgba(0, 0, 0, 0.64);
 
 	--headerbar_button_fg: var(--headerbar_fg);
-	--headerbar_button_bg_hover: rgba(255, 255, 255, .07);
-	--headerbar_button_bg_active: rgba(255, 255, 255, .16);
-	--headerbar_button_bg_checked: rgba(255, 255, 255, .1);
-	--headerbar_button_bg_checked_hover: rgba(255, 255, 255, .13);
-	--headerbar_button_bg_checked_active: rgba(255, 255, 255, .19);
+	--headerbar_button_bg_hover: rgba(var(--headerbar_button_bg_rgb), .07);
+	--headerbar_button_bg_active: rgba(var(--headerbar_button_bg_rgb), .16);
+	--headerbar_button_bg_checked: rgba(var(--headerbar_button_bg_rgb), .1);
+	--headerbar_button_bg_checked_hover: rgba(var(--headerbar_button_bg_rgb), .13);
+	--headerbar_button_bg_checked_active: rgba(var(--headerbar_button_bg_rgb), .19);
 
 	--popover_bg: rgb(56, 56, 56);
 	--popover_fg: var(--fg);
 	--popover_radius: var(--window_radius);
 
 	--toast_bg: rgba(0, 0, 0, 0.7);
-	--toast_fg: rgba(255, 255, 255, 0.9);
+	--toast_fg: var(--fg);
 	--toast_margin: 12px;
 	--toast_margin_bottom: 24px;
 	--toast_border_radius: 150px;
@@ -160,16 +167,16 @@
 
 	--border: rgba(255, 255, 255, 0.15);
 
-	--scrollbar: rgba(255, 255, 255, 0.2);
-	--scrollbar_hover: rgba(255, 255, 255, 0.4);
-	--scrollbar_active: rgba(255, 255, 255, 0.6);
+	--scrollbar: rgba(var(--scrollbar_rgb), 0.2);
+	--scrollbar_hover: rgba(var(--scrollbar_rgb), 0.4);
+	--scrollbar_active: rgba(var(--scrollbar_rgb), 0.6);
 
 	--profile_offline: rgba(255, 255, 255, 0.5);
 	--profile_online: rgba(var(--accent_rgb), 0.5);
 	--profile_ingame: rgba(var(--success_rgb), 0.5);
 
-	--banner_bg: rgb(41, 65, 94);
-	--banner_fg: rgb(255, 255, 255);
+	--banner_bg: rgba(var(--accent_bg_rgb), 0.3);
+	--banner_fg: var(--fg);
 
 	/* Window controls button margin */
 	--windowcontrols_margin_left: 0px;
