@@ -184,30 +184,20 @@ def find_color_themes() -> list[Path]:
 	return list(sorted(colorthemedir.glob("**/*.css")))
 
 # Patching
-def patch_client_css(source: Path, target: Path, name: str):
+def patch_client_css(target: Path, name: str):
 	print(f"{TEXT_BLUE}{TEXT_ARROW} Patching Steam Client {TEXT_BOLD}{name}{TEXT_RESET}{TEXT_BLUE} Files...{TEXT_RESET}")
 
 	if name == "Library":
-		target_adwaita = target / STEAM_ADWAITA_DIR
 		target_css = target / STEAM_LIBRARY_CSS
 		orig_css = target / STEAM_ORIG_LIBRARY
 		custom_library = target / STEAM_CUSTOM_LIBRARY
 		custom_library_name = custom_library.name
-		source_css = source / LIBRARY_ROOT_CSS
 	else:
 		raise SystemExit(f"{TEXT_RED}{TEXT_CROSS} Invalid steam css patch selected: {name}{TEXT_RESET}")
 
 	if not target_css.exists():
 		print(f"{TEXT_PURPLE}{TEXT_INFO} File {TEXT_BOLD}{target_css}{TEXT_RESET}{TEXT_PURPLE} does not exist{TEXT_RESET}")
 		return
-
-	if args.uninstall:
-		print(f"{TEXT_BLUE}{TEXT_ARROW} Uninstalling, resetting patched Steam {name} CSS...{TEXT_RESET}")
-		open(custom_library, 'w').close()
-		if target_adwaita.is_dir():
-			shutil.rmtree(target_adwaita)
-	else:
-		shutil.move(source_css, custom_library)
 
 	# Skip if already patched
 	with target_css.open() as css_file:
@@ -227,6 +217,21 @@ def patch_client_css(source: Path, target: Path, name: str):
 	size_diff = orig_css.stat().st_size - target_css.stat().st_size
 	padding = " " * size_diff
 	target_css.open('a').write(padding)
+
+def uninstall_theme(target: Path):
+	adwaita = target / STEAM_ADWAITA_DIR
+	custom_library = target / STEAM_CUSTOM_LIBRARY
+	steamui = target / STEAM_UI_DIR
+
+	print(f"{TEXT_BLUE}{TEXT_ARROW} Uninstalling, resetting patched Steam CSS...{TEXT_RESET}")
+
+	if not steamui.is_dir():
+		print(f"{TEXT_PURPLE}{TEXT_INFO} steamui in {TEXT_BOLD}{target}{TEXT_RESET}{TEXT_PURPLE} not found, skipping...{TEXT_RESET}")
+		return
+
+	open(custom_library, 'w').close()
+	if adwaita.is_dir():
+		shutil.rmtree(adwaita)
 
 # It is possible to force the steam client to reload the theme by creating a uniquely named new file inside the steamui dir.
 # This only seems to work when Steam is run with the -dev arg, and reloading repeatedly can leak a lot of memory.
@@ -288,10 +293,11 @@ if __name__ == "__main__":
 		copy_dir(adwaitadir, tmp / ADWAITA_DIR)
 		copy_dir(customdir, tmp / ADWAITA_DIR / CUSTOM_DIR)
 		sourcedir = tmp / ADWAITA_DIR
+		libraryroot = tmp / LIBRARY_ROOT_CSS
 
 		print(f"{TEXT_BLUE}{TEXT_ARROW} Creating stage directory {TEXT_BOLD}{sourcedir}{TEXT_RESET}")
 
-		generate_libraryroot(sourcedir / LIBRARY_ROOT_CSS, args.extras, selected_theme, args.custom_css)
+		generate_libraryroot(libraryroot, args.extras, selected_theme, args.custom_css)
 
 		targets = set()
 
@@ -310,10 +316,13 @@ if __name__ == "__main__":
 				print(f"{TEXT_PURPLE}{TEXT_INFO} Directory {TEXT_BOLD}{target}{TEXT_RESET}{TEXT_PURPLE} does not exist{TEXT_RESET}")
 				continue
 
-			patch_client_css(sourcedir, target, "Library")
+			if args.uninstall:
+				uninstall_theme(target)
+				continue
 
-			if not args.uninstall:
-				copy_dir(sourcedir, target / STEAM_ADWAITA_DIR)
-				dev_reload(target)
+			patch_client_css(target, "Library")
+			copy_dir(sourcedir, target / STEAM_ADWAITA_DIR)
+			shutil.copy(libraryroot, target / STEAM_CUSTOM_LIBRARY)
+			dev_reload(target)
 
 		print(f"{TEXT_GREEN}{TEXT_CHECK} Done!{TEXT_RESET}")
