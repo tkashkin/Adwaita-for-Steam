@@ -51,13 +51,24 @@
 }
 
 /* Account Button */
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="steamdesktop_TitleBarControls_"]
+{
+	flex-direction: row-reverse !important;
+}
+
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="steamdesktop_TitleBarControls_"] div[class*="titlebarcontrols_AccountMenu_"]:hover,
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="steamdesktop_TitleBarControls_"] div[class*="titlebarcontrols_AccountMenu_"]:active
+{
+	background: none !important;
+}
+
 #SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_AccountMenu_"],
 #SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"],
 #SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"] img.avatar
 {
 	box-sizing: border-box !important;
-	width: 34px !important;
-	height: 34px !important;
+	width: 30px !important;
+	height: 30px !important;
 	padding: 0 !important;
 	border-radius: 50% !important;
 	overflow: hidden !important;
@@ -68,8 +79,8 @@
 
 #SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"] img.avatar
 {
-	width: 32px !important;
-	height: 32px !important;
+	width: 28px !important;
+	height: 28px !important;
 	padding: 0 !important;
 	margin: 0 !important;
 }
@@ -79,6 +90,7 @@
 	border-radius: 50% !important;
 	border: 2px var(--profile_offline) solid !important;
 	transition: border-color 0.25s;
+	margin: 0 auto !important;
 }
 
 #SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"].online
