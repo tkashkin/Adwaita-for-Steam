@@ -112,8 +112,8 @@ cd Adwaita-for-Steam
 | ---------------- | ------ | ---------------------------------- | -------------------------------------------------------- |
 | --color-theme    | -c     | [Colortheme](/adwaita/colorthemes) | Change color theme                                       |
 | --custom-css     |        |                                    | Enable [custom css](/custom)                             |
-| --extras         | -e     | [Web Extra](adwaita/extras)        | Enable one or multiple web theme extras                  |
-| --list-options   | -l     |                                    | List available patches, themes, and web extras           |
+| --extras         | -e     | [Extra](adwaita/extras)            | Enable one or multiple theme extras                      |
+| --list-options   | -l     |                                    | List available themes and extras                         |
 | --target         | -t     | normal / flatpak / [custom dir]    | Choose target location for install (default: both)       |
 | --uninstall      | -u     |                                    | Uninstall theme                                          |
 
