@@ -522,15 +522,15 @@ body.DesktopUI > div[class*="gamelistdropdown_DropDown_"],
 	color: var(--success) !important;
 }
 
-body.DesktopUI > div > div[class*="hoverposition_HoverPosition_"] div[class*="gamelistentry_HoverOverlay_"],
-body.DesktopUI > div > div[class*="hoverposition_HoverPosition_"] div[class*="gamelistentry_HoverOverlay_"][class*="gamelistentry_Selected_"],
-body.DesktopUI > div > div[class*="hoverposition_HoverPosition_"] div[class*="gamelistentry_Selected_"] [class*="gamelistentry_Container_"][class*="gamelistentry_HoverOverlay_"]
+body.DesktopUI > div:not([class]) > div[class*="hoverposition_HoverPositionOuter_"] div[class*="gamelistentry_HoverOverlay_"],
+body.DesktopUI > div:not([class]) > div[class*="hoverposition_HoverPositionOuter_"] div[class*="gamelistentry_HoverOverlay_"][class*="gamelistentry_Selected_"],
+body.DesktopUI > div:not([class]) > div[class*="hoverposition_HoverPositionOuter_"] div[class*="gamelistentry_Selected_"] [class*="gamelistentry_Container_"][class*="gamelistentry_HoverOverlay_"]
 {
 	background: var(--bg) !important;
 	border-radius: var(--menu_radius) !important;
 }
 
-body.DesktopUI > div > div[class*="hoverposition_HoverPosition_"] div[class*="gamelistentry_HoverOverlay_"] [class*="gamelistentry_GameListEntryContainer_"]
+body.DesktopUI > div:not([class]) > div[class*="hoverposition_HoverPositionOuter_"] div[class*="gamelistentry_HoverOverlay_"] [class*="gamelistentry_GameListEntryContainer_"]
 {
 	background: var(--button_hover_bg) !important;
 }
