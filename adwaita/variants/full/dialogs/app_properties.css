@@ -83,6 +83,9 @@
 .ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_WorkshopGrid_"]
 {
 	border-radius: var(--card_radius) !important;
+	border: none !important;
+	background: none !important;
+	box-shadow: none !important;
 }
 
 .ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_DlcGrid_"] div[class*="appproperties_DlcHeader_"],
