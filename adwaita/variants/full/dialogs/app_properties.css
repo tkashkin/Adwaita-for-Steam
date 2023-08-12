@@ -253,7 +253,7 @@
 
 .ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_FieldChildren_"] > .DialogDropDown
 {
-	margin-right: 18px !important;
+	margin: 0px 18px !important;
 }
 
 .ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_FieldLabel_"] + div[class*="gamepaddialog_FieldChildren_"] > .DialogDropDown
