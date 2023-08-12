@@ -6,18 +6,32 @@
 }
 
 /* Headings */
-.ModalDialogPopup div[class*="appproperties_Title_"]
+.ModalDialogPopup div[class*="appproperties_Title_"],
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_BetaLabel_"]
 {
 	font-family: var(--basefont) !important;
 	font-size: var(--header_size) !important;
 	font-weight: var(--header_weight) !important;
+	color: var(--fg) !important;
 }
 
-.ModalDialogPopup div[class*="appproperties_Detail_"]
+.ModalDialogPopup div[class*="appproperties_Detail_"],
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_BetaLabel_"] + div
 {
 	font-family: var(--basefont) !important;
 	font-size: var(--label_size) !important;
 	font-weight: var(--label_weight) !important;
+	color: var(--fg) !important;
+}
+
+/* Normal Text */
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] .DialogBody,
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_BuildInfo_"]
+{
+	font-family: var(--basefont) !important;
+	font-size: var(--basesize) !important;
+	font-weight: var(--baseweight) !important;
+	color: var(--fg) !important;
 }
 
 /* Top Border */
@@ -92,6 +106,9 @@
 .ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_WorkshopGrid_"] div[class*="appproperties_WorkshopHeader_"]
 {
 	background: var(--card_solid_bg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--header_weight) !important;
+	color: var(--fg) !important;
 }
 
 .ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_DlcGrid_"] div[class*="appproperties_NameText_"],
