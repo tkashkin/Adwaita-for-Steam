@@ -326,6 +326,8 @@
 	align-self: center !important;
 	min-height: var(--button_min_height) !important;
 	padding-left: 5px !important;
+	text-decoration: none !important;
+	white-space: nowrap !important;
 }
 
 .ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_FieldLabel_"] > div > div:nth-child(2) a
