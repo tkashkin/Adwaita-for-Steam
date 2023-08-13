@@ -6,18 +6,32 @@
 }
 
 /* Headings */
-.ModalDialogPopup div[class*="appproperties_Title_"]
+.ModalDialogPopup div[class*="appproperties_Title_"],
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_BetaLabel_"]
 {
 	font-family: var(--basefont) !important;
 	font-size: var(--header_size) !important;
 	font-weight: var(--header_weight) !important;
+	color: var(--fg) !important;
 }
 
-.ModalDialogPopup div[class*="appproperties_Detail_"]
+.ModalDialogPopup div[class*="appproperties_Detail_"],
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_BetaLabel_"] + div
 {
 	font-family: var(--basefont) !important;
 	font-size: var(--label_size) !important;
 	font-weight: var(--label_weight) !important;
+	color: var(--fg) !important;
+}
+
+/* Normal Text */
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] .DialogBody,
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_BuildInfo_"]
+{
+	font-family: var(--basefont) !important;
+	font-size: var(--basesize) !important;
+	font-weight: var(--baseweight) !important;
+	color: var(--fg) !important;
 }
 
 /* Top Border */
@@ -83,12 +97,18 @@
 .ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_WorkshopGrid_"]
 {
 	border-radius: var(--card_radius) !important;
+	border: none !important;
+	background: none !important;
+	box-shadow: none !important;
 }
 
 .ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_DlcGrid_"] div[class*="appproperties_DlcHeader_"],
 .ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_WorkshopGrid_"] div[class*="appproperties_WorkshopHeader_"]
 {
 	background: var(--card_solid_bg) !important;
+	font-family: var(--basefont) !important;
+	font-weight: var(--header_weight) !important;
+	color: var(--fg) !important;
 }
 
 .ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_DlcGrid_"] div[class*="appproperties_NameText_"],
@@ -253,7 +273,7 @@
 
 .ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_FieldChildren_"] > .DialogDropDown
 {
-	margin-right: 18px !important;
+	margin: 0px 18px !important;
 }
 
 .ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_FieldLabel_"] + div[class*="gamepaddialog_FieldChildren_"] > .DialogDropDown
@@ -326,6 +346,8 @@
 	align-self: center !important;
 	min-height: var(--button_min_height) !important;
 	padding-left: 5px !important;
+	text-decoration: none !important;
+	white-space: nowrap !important;
 }
 
 .ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_FieldLabel_"] > div > div:nth-child(2) a
