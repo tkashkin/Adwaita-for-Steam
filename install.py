@@ -106,6 +106,7 @@ LIBRARY_FILES = [
 	"variants/full/dialogs/steam_settings.css",
 	"variants/full/dialogs/system_information.css",
 	"variants/full/dialogs/uninstall.css",
+	"variants/full/dialogs/update_news.css",
 	"variants/full/dialogs/whats_new.css",
 	# In-Game Overlay
 	"variants/base/game_overlay.css",

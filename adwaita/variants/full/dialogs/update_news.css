@@ -1,0 +1,6 @@
+/* --- Update News Dialog --- */
+.ModalDialogPopup div[class*="marketingmessagesdialog_BrowserViewHost_"]
+{
+	margin-top: 48px !important;
+}
+
