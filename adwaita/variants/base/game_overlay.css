@@ -189,7 +189,9 @@ body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl div[class*="steamdesktopoverla
 }
 
 /* Focus Indicator */
-.ModalDialogPopup .PopupFullWindow div[class*="steamdesktopoverlay_FocusIndicator_"] {
+.ModalDialogPopup .PopupFullWindow div[class*="steamdesktopoverlay_FocusIndicator_"],
+.ModalDialogPopup .PopupFullWindow div[class*="steamdesktop_FocusBar_"]
+{
 	opacity: 0 !important;
 }
 
