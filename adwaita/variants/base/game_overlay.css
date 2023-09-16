@@ -208,6 +208,11 @@ body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl div[class*="steamdesktopoverla
 	color: var(--fg) !important;
 }
 
+.ModalDialogPopup div[class*="steamdesktopoverlay_OverlayPopup_"][class*="OverlayBrowser_"] div[class*="steamdesktopoverlay_WindowControls_"]
+{
+	min-height: 46px !important;
+}
+
 /* Icon Alignment Workaround */
 .ModalDialogPopup .PopupFullWindow div[class*="steamdesktopoverlay_PinWindowButton_"],
 .ModalDialogPopup .PopupFullWindow div[class*="steamdesktopoverlay_OpacityButton_"]
