@@ -69,28 +69,38 @@ body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl button[class*="steamdesktopove
 }
 
 /* Flexbox Positioning */
-body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl [class*="steamdesktopoverlay_TimeStats_"]
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl div[class*="steamdesktopoverlay_TimeStats_"]
 {
 	flex: 5 1 0 !important;
 	align-items: center !important;
 	justify-content: center !important;
+	order: 1 !important;
 }
 
-body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl [class*="steamdesktopoverlay_CurrentGameLogoContainer_"]
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl div[class*="steamdesktopoverlay_ShowGameLogo_"]
 {
-	order: -1 !important;
+	order: 0 !important;
 	flex: 1 1 300 !important;
 }
 
-body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl [class*="steamdesktopoverlay_CurrentGameLogoContainer_"] img
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl div[class*="steamdesktopoverlay_ShowGameLogo_"] img
 {
 	max-width: 300px !important;
-	margin-top: -20px !important;
 }
 
-body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl [class*="steamdesktopoverlay_BackToGame_"]
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl div[class*="steamdesktopoverlay_TopSectionRightSide_"]
+{
+	order: 2 !important;
+}
+
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl div[class*="steamdesktopoverlay_BackToGame_"]
 {
 	margin-top: 20px !important;
+}
+
+body.DesktopUI .steamdesktopoverlay_Wrapper_3b_pl div[class*="steamdesktopoverlay_BackToGame_"] div[class*="steamdesktopoverlay_TextContainer_"]
+{
+	max-width: 100% !important;
 }
 
 /* --- Bottom Section --- */
