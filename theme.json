@@ -6,7 +6,7 @@
     "description": "A skin to make Steam look more like a native GNOME app",
     "target": "Desktop",
     "tabs": {
-        "all": ["desktop", "desktopchat", "desktopcontextmenu", "desktopoverlay"]
+        "all": ["Steam|SteamLibraryWindow", "desktopchat", "desktopcontextmenu", "desktopoverlay"]
     },
     "inject": {
         "adwaita/variants/base/_root.css": ["all"],
