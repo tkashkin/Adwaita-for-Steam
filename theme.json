@@ -66,6 +66,8 @@
                 "pop": { "adwaita/colorthemes/pop/pop.css": ["all"] },
                 "tokyo-night": { "adwaita/colorthemes/tokyo-night/tokyo-night.css": ["all"] },
                 "tomorrow-night": { "adwaita/colorthemes/tomorrow-night/tomorrow-night.css": ["all"] },
+                "vapor": { "adwaita/colorthemes/vapor/vapor.css": ["all"] },
+                "vgui2": { "adwaita/colorthemes/vgui2/vgui2.css": ["all"] },
                 "yaru": { "adwaita/colorthemes/yaru/yaru.css": ["all"] }
             }
         },
