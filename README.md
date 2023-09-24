@@ -90,6 +90,14 @@ A skin to make Steam look more like a native GNOME app
 
 ![Tomorrow Night](/adwaita/colorthemes/tomorrow-night/preview.png?raw=true)
 
+### Vapor
+
+![Vapor](/adwaita/colorthemes/vapor/preview.png?raw=true)
+
+### VGUI2
+
+![VGUI2](/adwaita/colorthemes/vgui2/preview.png?raw=true)
+
 ### Yaru
 
 ![Yaru](/adwaita/colorthemes/yaru/preview.png?raw=true)
