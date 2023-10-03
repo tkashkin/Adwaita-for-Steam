@@ -60,9 +60,20 @@
 	right: 0px !important;
 }
 
-.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_FieldChildren_"] .DialogDropDown_CurrentDisplay
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_FieldChildrenWithIcon_"]
 {
-	padding-right: 26px !important;
+	padding-top: 0px !important;
+}
+
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_FieldChildren_"] .DialogDropDown_CurrentDisplay,
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_FieldChildrenWithIcon_"] .DialogDropDown_CurrentDisplay
+{
+	padding-right: 35px !important;
+}
+
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_FieldChildrenWithIcon_"] .DialogDropDown_CurrentDisplay
+{
+	padding-left: 15px !important;
 }
 
 /* Controller List */
@@ -219,6 +230,7 @@
 	font-family: var(--basefont) !important;
 	font-size: var(--label_size) !important;
 	font-weight: var(--label_weight) !important;
+	min-width: 100px !important;
 }
 
 .ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="appproperties_TopGapSmall_"]
@@ -282,6 +294,7 @@
 }
 
 .ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_FieldChildren_"] div[class*="dropdownlabel_DropDownLabelDescription_"],
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_FieldChildrenWithIcon_"] div[class*="dropdownlabel_DropDownLabelDescription_"],
 .ModalDialogPopup div[class*="appproperties_AppProperties_"] div[class*="gamepaddialog_WithChildrenBelow_"] > div[class*="gamepaddialog_FieldDescription_"]
 {
 	display: none !important;
