@@ -527,7 +527,7 @@
 .ModalDialogPopup div[class*="appproperties_AppProperties_"] div:not([class*="appproperties_Install_"]) > .DialogCheckbox svg path
 {
 	d: path("M 100, 100 m -75, 0 a 160,160 0 1,0 320,0 a 160,160 0 1,0 -320,0") !important;
-	fill: var(--fg) !important;
+	fill: var(--switch_bg) !important;
 	stroke: none !important;
 	stroke-dasharray: none !important;
 }
@@ -630,7 +630,7 @@
 
 .ModalDialogPopup div[class*="gamepaddialog_Toggle_"] div[class*="gamepaddialog_ToggleSwitch_"]
 {
-	background: var(--fg);
+	background: var(--switch_bg);
 	height: 22px;
 	margin-left: 3px;
 	margin-top: 2px;
