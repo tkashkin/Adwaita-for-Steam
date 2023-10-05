@@ -3,6 +3,26 @@
 	--string_nav_profile: "Profile";
 }
 
+:root:lang(fr)
+{
+	--string_nav_profile: "Profil";
+}
+
+:root:lang(es)
+{
+	--string_nav_profile: "Perfil";
+}
+
+:root:lang(it)
+{
+	--string_nav_profile: "Profilo";
+}
+
+:root:lang(pt)
+{
+	--string_nav_profile: "Perfil";
+}
+
 :root:lang(ru)
 {
 	--string_nav_profile: "Профиль";
