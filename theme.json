@@ -1,7 +1,7 @@
 {
     "name": "Adwaita For Steam",
     "author": "tkashkin",
-    "version": "v1.13",
+    "version": "v1.14",
     "manifest_version": 8,
     "description": "A skin to make Steam look more like a native GNOME app",
     "target": "Desktop",

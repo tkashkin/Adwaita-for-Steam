@@ -235,11 +235,29 @@
 	border-radius: 0 !important;
 }
 
-
 #SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="bottombar_DownloadStatusContent_"] > div[class*="bottombar_DetailedDownloadProgress_"] > div[class*="bottombar_ProgressBarWrapper_"] > div[class*="bottombar_ProgressBar_"]
 {
 	--color-progress-bar-background: transparent !important;
 	--color-progress-bar-foreground: var(--accent) !important;
+}
+
+/* Account alerts */
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_SupportAlertsButton_"]
+{
+	font-size: 0 !important;
+	line-height: 0 !important;
+}
+
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="titlebarcontrols_SupportAlertsButton_"]::before
+{
+	background-color: var(--warning);
+	content: "";
+	width: 16px;
+	height: 16px;
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	-webkit-mask-size: 16px;
+	-webkit-mask-image: var(--icon_warning);
 }
 
 /* Hidden buttons */
