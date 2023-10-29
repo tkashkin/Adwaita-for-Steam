@@ -130,6 +130,15 @@
                     "adwaita/extras/windowcontrols/right-all.css": ["all"]
                 }
             }
+        },
+        "Enable Custom CSS": {
+            "type": "dropdown",
+            "values": {
+                "No": {},
+                "Yes": {
+                    "custom/custom.css": ["all"]
+                }
+            }
         }
     }
 }
