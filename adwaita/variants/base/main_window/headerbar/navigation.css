@@ -128,11 +128,14 @@
 {
 	display: none !important;
 	background: none !important;
-	height: 0px !important;
+	height: 0 !important;
 }
 
-/* Navigation Icon Hackery */
-#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] > div:nth-child(n+3):nth-child(-n+7) > div::before
+/**
+ * Navigation Icon Hackery
+ * `~` selector is used instead of `:nth-child(n of <selector>)` because of outdated CEF
+ */
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] > div[class*="supernav_SuperNavMenu_"] > div::before
 {
 	background-color: var(--fg);
 	content: "";
@@ -141,47 +144,43 @@
 	-webkit-mask-repeat: no-repeat;
 	-webkit-mask-position: center;
 	-webkit-mask-size: 16px;
-}
-
-#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] > div:nth-child(3) > div::before
-{
 	-webkit-mask-image: var(--icon_nav_store);
 }
 
-#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] > div:nth-child(4) > div::before
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] > div[class*="supernav_SuperNavMenu_"] ~ div[class*="supernav_SuperNavMenu_"] > div::before
 {
 	-webkit-mask-image: var(--icon_nav_library);
 }
 
-#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] > div:nth-child(5) > div::before
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] > div[class*="supernav_SuperNavMenu_"] ~ div[class*="supernav_SuperNavMenu_"] ~ div[class*="supernav_SuperNavMenu_"] > div::before
 {
 	-webkit-mask-image: var(--icon_nav_community);
 }
 
-#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] > div:nth-child(6) > div::before
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] > div[class*="supernav_SuperNavMenu_"] ~ div[class*="supernav_SuperNavMenu_"] ~ div[class*="supernav_SuperNavMenu_"] ~ div[class*="supernav_SuperNavMenu_"] > div::before
 {
 	-webkit-mask-image: var(--icon_nav_profile);
 }
 
-#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] > div:nth-child(7) > div::before
-{
-	-webkit-mask-image: var(--icon_nav_console);
-}
-
 /* Profile button text */
-#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] > div:nth-child(6) > div > span
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] > div[class*="supernav_SuperNavMenu_"] ~ div[class*="supernav_SuperNavMenu_"] ~ div[class*="supernav_SuperNavMenu_"] ~ div[class*="supernav_SuperNavMenu_"] > div > span
 {
 	text-indent: -9999px !important;
 	line-height: 0 !important;
 }
 
 /* Profile button fake text */
-#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] > div:nth-child(6) > div > span::after
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] > div[class*="supernav_SuperNavMenu_"] ~ div[class*="supernav_SuperNavMenu_"] ~ div[class*="supernav_SuperNavMenu_"] ~ div[class*="supernav_SuperNavMenu_"] > div > span::after
 {
 	content: var(--string_nav_profile) !important;
 	text-indent: 0 !important;
 	display: block !important;
 	line-height: 24px !important;
+}
+
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] > div[class*="supernav_SuperNavMenu_"] ~ div[class*="supernav_SuperNavMenu_"] ~ div[class*="supernav_SuperNavMenu_"] ~ div[class*="supernav_SuperNavMenu_"] ~ div[class*="supernav_SuperNavMenu_"] > div::before
+{
+	-webkit-mask-image: var(--icon_nav_console);
 }
 
 /* Small window width - make buttons compact */
@@ -206,7 +205,7 @@
 	}
 
 	/* Profile button fake text */
-	#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] > div:nth-child(6) > div > span::after
+	#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] > div[class*="supernav_SuperNavMenu_"] ~ div[class*="supernav_SuperNavMenu_"] ~ div[class*="supernav_SuperNavMenu_"] ~ div[class*="supernav_SuperNavMenu_"] > div > span::after
 	{
 		line-height: 14px !important;
 	}
@@ -215,7 +214,7 @@
 /* Smaller window width - hide console button if it's visible */
 @media (max-width: 1200px)
 {
-	#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] > div:nth-child(7)
+	#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] > div[class*="supernav_SuperNavMenu_"] ~ div[class*="supernav_SuperNavMenu_"] ~ div[class*="supernav_SuperNavMenu_"] ~ div[class*="supernav_SuperNavMenu_"] ~ div[class*="supernav_SuperNavMenu_"]
 	{
 		display: none !important;
 	}

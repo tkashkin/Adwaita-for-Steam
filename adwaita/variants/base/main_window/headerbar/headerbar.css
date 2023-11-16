@@ -305,3 +305,11 @@ body.ContextMenuPopupBody.DesktopUI div[class*="steamtemplates_NewIndicator_"] s
 	opacity: 0 !important;
 }
 
+/* Headerbar - hide empty divs in menus */
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="supernav_SuperNav_"] div:not([class]),
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="steamdesktop_RootMenuBar_"] div:not([class]),
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="steamdesktop_RootMenuBar_"] div:not([class])
+{
+	display: none !important;
+}
+
