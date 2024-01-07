@@ -153,6 +153,24 @@ Use the [graphical installer](https://github.com/Foldex/AdwSteamGtk) by [@Foldex
 ### Windows Install
 
 - Download the [Latest Release](https://github.com/tkashkin/Adwaita-for-Steam/releases)
-- Ensure you have [Python](#requirements) installed
+- Ensure you have [Python 3](#requirements) installed
+- Move the contents of the zip file to a seperate folder
+- Kill all Steam processes (task manager or quit steam from taskbar)
 - Double click the `install_windows` bat script and follow the prompts
 
+### macOS install
+While macOS is not given special priorities to function, and thus contains bugs, it is still possible for it to function.    
+
+`"/Users/{user}/Library/Application Support/Steam/Steam.AppBundle/Steam/Contents/MacOS"` has to be supplied as a custom path, with `{user}` changed to your current user.    
+
+- Download the [Latest Release](https://github.com/tkashkin/Adwaita-for-Steam/releases)
+- Ensure you have [Python 3](#requirements) installed
+- Move the contents of the zip file to a seperate folder
+- Quit Steam
+- Install [with installer script](#with-installer-script) using the custom path flag `-t "/Users/{user}/Library/Application Support/Steam/Steam.AppBundle/Steam/Contents/MacOS"`, `{user}` changed to your current user.
+
+#### Example Command
+```bash
+# Use catppuccin-mocha theme, the window controls resembeling usual macOS design, "what's new" section hidden, and custom path specified
+./install.py -c catppuccin-mocha -e windowcontrols/dots -e library/hide_whats_new -t "/Users/nygosaki/Library/Application Support/Steam/Steam.AppBundle/Steam/Contents/MacOS"
+```
