@@ -158,7 +158,7 @@ Use the [graphical installer](https://github.com/Foldex/AdwSteamGtk) by [@Foldex
 - Kill all Steam processes (task manager or quit steam from taskbar)
 - Double click the `install_windows` bat script and follow the prompts
 
-### macOS install
+### MacOS Install
 While macOS is not given special priorities to function, and thus contains bugs, it is still possible for it to function.    
 
 `"/Users/{user}/Library/Application Support/Steam/Steam.AppBundle/Steam/Contents/MacOS"` has to be supplied as a custom path, with `{user}` changed to your current user.    
