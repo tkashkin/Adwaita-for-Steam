@@ -171,6 +171,6 @@ While macOS is not given special priorities to function, and thus contains bugs,
 
 #### Example Command
 ```bash
-# Use catppuccin-mocha theme, the window controls resembeling usual macOS design, "what's new" section hidden, and custom path specified
-./install.py -c catppuccin-mocha -e windowcontrols/dots -e library/hide_whats_new -t "/Users/nygosaki/Library/Application Support/Steam/Steam.AppBundle/Steam/Contents/MacOS"
+# Use catppuccin-mocha theme, the window controls resembeling usual macOS design, creates window controls for chat window, "what's new" section hidden, and custom path specified
+./install.py -c catppuccin-mocha -e windowcontrols/dots -e windowcontrols/left -e library/hide_whats_new -t "/Users/nygosaki/Library/Application Support/Steam/Steam.AppBundle/Steam/Contents/MacOS"
 ```
