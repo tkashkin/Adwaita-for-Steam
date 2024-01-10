@@ -70,50 +70,35 @@ extrasdir = Path(EXTRAS_DIR)
 
 # CSS List for @import
 LIBRARY_FILES = [
-	# General
-	"variants/base/_root.css",
-	"variants/base/_fonts.css",
-	"variants/base/_localization.css",
-	"variants/base/scrollbars.css",
-	# Main window
-	"variants/base/main_window/headerbar/headerbar.css",
-	"variants/base/main_window/headerbar/buttons.css",
-	"variants/base/main_window/headerbar/navigation.css",
-	"variants/base/main_window/headerbar/menu.css",
-	# Library
-	"variants/base/library.css",
-	"variants/full/library.css",
-	"variants/base/game_details.css",
-	"variants/full/game_details.css",
-	"variants/base/downloads.css",
-	"variants/full/downloads.css",
-	"variants/base/collections.css",
-	# Dialogs
-	"variants/base/dialogs/_dialogs.css",
-	"variants/base/dialogs/launch_options.css",
-	"variants/base/dialogs/login.css",
-	"variants/full/dialogs/_dialogs.css",
-	"variants/full/dialogs/about_steam.css",
-	"variants/full/dialogs/add_game.css",
-	"variants/full/dialogs/app_properties.css",
-	"variants/full/dialogs/content_management.css",
-	"variants/full/dialogs/install_game.css",
-	"variants/full/dialogs/paged_settings.css",
-	"variants/full/dialogs/product_activation.css",
-	"variants/full/dialogs/recent_players.css",
-	"variants/full/dialogs/screenshots.css",
-	"variants/full/dialogs/server_browser.css",
-	"variants/full/dialogs/steam_settings.css",
-	"variants/full/dialogs/system_information.css",
-	"variants/full/dialogs/uninstall.css",
-	"variants/full/dialogs/update_news.css",
-	"variants/full/dialogs/whats_new.css",
-	# In-Game Overlay
-	"variants/base/game_overlay.css",
-	# Notifications
-	"variants/base/notifications.css",
-	# Chat
-	"variants/full/chat.css",
+	"css/_root/colors.css",
+	"css/_root/icons.css",
+	"css/_root/localization.css",
+	"css/_root/opacity.css",
+	"css/_root/text.css",
+	"css/_root/variables.css",
+
+	"css/widgets/avatars.css",
+	"css/widgets/buttons.css",
+	"css/widgets/cards.css",
+	"css/widgets/checkboxes.css",
+	"css/widgets/entries.css",
+	"css/widgets/lists.css",
+	"css/widgets/popups.css",
+	"css/widgets/scrollbars.css",
+	"css/widgets/windows.css",
+
+	"css/main/headerbar/buttons.css",
+	"css/main/headerbar/headerbar.css",
+	"css/main/headerbar/menu.css",
+	"css/main/headerbar/navigation.css",
+
+	"css/main/library/details.css",
+	"css/main/library/gamelist.css",
+	"css/main/library/home.css",
+	"css/main/library/library.css",
+	"css/main/library/sidebar.css",
+
+	"css/dialogs/login.css",
 ]
 
 

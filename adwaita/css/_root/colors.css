@@ -1,0 +1,133 @@
+/**
+ * Default color variables.
+ *
+ * libadwaita reference:
+ * - https://gitlab.gnome.org/GNOME/libadwaita/-/blob/main/src/stylesheet/_defaults.scss
+ * - https://gitlab.gnome.org/GNOME/libadwaita/-/blob/main/src/stylesheet/_colors.scss
+ */
+
+:root {
+	/* The main accent color and the matching text value */
+	--adw-accent-bg: rgb(53, 132, 228);
+	--adw-accent-bg-rgb: 53, 132, 228;
+	--adw-accent-fg: rgb(255, 255, 255);
+	--adw-accent-fg-rgb: 255, 255, 255;
+	--adw-accent: rgb(120, 174, 237);
+	--adw-accent-rgb: 120, 174, 237;
+
+	/* destructive-action buttons */
+	--adw-destructive-bg: rgb(192, 28, 40);
+	--adw-destructive-bg-rgb: 192, 28, 40;
+	--adw-destructive-fg: rgb(255, 255, 255);
+	--adw-destructive-fg-rgb: 255, 255, 255;
+	--adw-destructive: rgb(255, 123, 99);
+	--adw-destructive-rgb: 255, 123, 99;
+
+	/* Levelbars, entries, labels and infobars. These don't need text colors */
+	--adw-success-bg: rgb(38, 162, 105);
+	--adw-success-bg-rgb: 38, 162, 105;
+	--adw-success-fg: rgb(255, 255, 255);
+	--adw-success-fg-rgb: 255, 255, 255;
+	--adw-success: rgb(143, 240, 164);
+	--adw-success-rgb: 143, 240, 164;
+
+	--adw-warning-bg: rgb(205, 147, 9);
+	--adw-warning-bg-rgb: 205, 147, 9;
+	--adw-warning-fg: rgba(0, 0, 0, 0.8);
+	--adw-warning-fg-rgb: 0, 0, 0;
+	--adw-warning-fg-a: 0.8;
+	--adw-warning: rgb(248, 228, 92);
+	--adw-warning-rgb: 248, 228, 92;
+
+	--adw-error-bg: rgb(192, 28, 40);
+	--adw-error-bg-rgb: 192, 28, 40;
+	--adw-error-fg: rgb(255, 255, 255);
+	--adw-error-fg-rgb: 255, 255, 255;
+	--adw-error: rgb(255, 123, 99);
+	--adw-error-rgb: 255, 123, 99;
+
+	/* Window */
+	--adw-window-bg: rgb(36, 36, 36);
+	--adw-window-bg-rgb: 36, 36, 36;
+	--adw-window-fg: rgb(255, 255, 255);
+	--adw-window-fg-rgb: 255, 255, 255;
+
+	/* Views - e.g. text view or tree view */
+	--adw-view-bg: rgb(30, 30, 30);
+	--adw-view-bg-rgb: 30, 30, 30;
+	--adw-view-fg: rgb(255, 255, 255);
+	--adw-view-fg-rgb: 255, 255, 255;
+
+	/* Header bar, search bar, tab bar */
+	--adw-headerbar-bg: rgb(48, 48, 48);
+	--adw-headerbar-bg-rgb: 48, 48, 48;
+	--adw-headerbar-fg: rgb(255, 255, 255);
+	--adw-headerbar-fg-rgb: 255, 255, 255;
+	--adw-headerbar-border: rgb(255, 255, 255);
+	--adw-headerbar-border-rgb: 255, 255, 255;
+	--adw-headerbar-backdrop: var(--adw-window-bg);
+	--adw-headerbar-backdrop-rgb: var(--adw-window-bg-rgb);
+	--adw-headerbar-shade: rgba(0, 0, 0, 0.36);
+	--adw-headerbar-shade-rgb: 0, 0, 0;
+	--adw-headerbar-shade-a: 0.36;
+	--adw-headerbar-darker-shade: rgba(0, 0, 0, 0.9);
+	--adw-headerbar-darker-shade-rgb: 0, 0, 0;
+	--adw-headerbar-darker-shade-a: 0.9;
+
+	/* Split pane views */
+	--adw-sidebar-bg: rgb(48, 48, 48);
+	--adw-sidebar-bg-rgb: 48, 48, 48;
+	--adw-sidebar-fg: rgb(255, 255, 255);
+	--adw-sidebar-fg-rgb: 255, 255, 255;
+	--adw-sidebar-backdrop: rgb(42, 42, 42);
+	--adw-sidebar-backdrop-rgb: 42, 42, 42;
+	--adw-sidebar-shade: rgba(0, 0, 0, 0.36);
+	--adw-sidebar-shade-rgb: 0, 0, 0;
+	--adw-sidebar-shade-a: 0.36;
+
+	--adw-secondary-sidebar-bg: rgb(42, 42, 42);
+	--adw-secondary-sidebar-bg-rgb: 42, 42, 42;
+	--adw-secondary-sidebar-fg: rgb(255, 255, 255);
+	--adw-secondary-sidebar-fg-rgb: 255, 255, 255;
+	--adw-secondary-sidebar-backdrop: rgb(39, 39, 39);
+	--adw-secondary-sidebar-backdrop-rgb: 39, 39, 39;
+	--adw-secondary-sidebar-shade: rgba(0, 0, 0, 0.36);
+	--adw-secondary-sidebar-shade-rgb: 0, 0, 0;
+	--adw-secondary-sidebar-shade-a: 0.36;
+
+	/* Cards, boxed lists */
+	--adw-card-bg: rgba(255, 255, 255, 0.08);
+	--adw-card-bg-rgb: 255, 255, 255;
+	--adw-card-bg-a: 0.08;
+	--adw-card-fg: rgb(255, 255, 255);
+	--adw-card-fg-rgb: 255, 255, 255;
+	--adw-card-shade: rgba(0, 0, 0, 0.36);
+	--adw-card-shade-rgb: 0, 0, 0;
+	--adw-card-shade-a: 0.36;
+
+	/* Dialogs */
+	--adw-dialog-bg: rgb(56, 56, 56);
+	--adw-dialog-bg-rgb: 56, 56, 56;
+	--adw-dialog-fg: rgb(255, 255, 255);
+	--adw-dialog-fg-rgb: 255, 255, 255;
+
+	/* Popovers */
+	--adw-popover-bg: rgb(56, 56, 56);
+	--adw-popover-bg-rgb: 56, 56, 56;
+	--adw-popover-fg: rgb(255, 255, 255);
+	--adw-popover-fg-rgb: 255, 255, 255;
+	--adw-popover-shade: rgba(0, 0, 0, 0.36);
+	--adw-popover-shade-rgb: 0, 0, 0;
+	--adw-popover-shade-a: 0.36;
+
+	/* Thumbnails */
+	--adw-thumbnail-bg: rgb(56, 56, 56);
+	--adw-thumbnail-bg-rgb: 56, 56, 56;
+	--adw-thumbnail-fg: rgb(255, 255, 255);
+	--adw-thumbnail-fg-rgb: 255, 255, 255;
+
+	/* Miscellaneous */
+	--adw-shade: rgba(0, 0, 0, 0.36);
+	--adw-shade-rgb: 0, 0, 0;
+	--adw-shade-a: 0.36;
+}

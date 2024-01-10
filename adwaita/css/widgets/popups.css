@@ -1,0 +1,229 @@
+:root
+{
+	--adw-menu-radius: 12px;
+	--adw-menu-padding: 6px;
+
+	--adw-menu-item-radius: 6px;
+	--adw-menu-item-padding: 0 12px;
+
+	--adw-popover-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.09), 0 2px 14px 3px rgba(0, 0, 0, 0.05);
+
+	--adw-tooltip-bg: rgba(0, 0, 0, 0.9);
+	--adw-tooltip-fg-rgb: 255, 255, 255;
+}
+
+/* Context menus and dropdowns */
+body.DesktopUI div[class*="contextmenu_contextMenu_"],
+body.DesktopUI div[class*="dropdown_DialogDropDownMenu_"]._DialogInputContainer,
+body.DesktopUI div[class*="contextmenu_ContextMenuFocusContainer_"],
+body.DesktopUI div[class*="libraryhomeshowcases_CollectionDropDownContainer_"] div[class*="dropdown_DialogDropDownMenu_"]._DialogInputContainer,
+body.DesktopUI div[class*="menu_MenuPopup_"]
+{
+	background: rgb(var(--adw-popover-bg-rgb)) !important;
+	border-radius: var(--adw-menu-radius) !important;
+	padding: var(--adw-menu-padding) !important;
+	margin: 0 !important;
+	box-sizing: border-box !important;
+	border: 1px rgba(var(--adw-popover-fg-rgb), var(--adw-window-outline-opacity)) solid !important;
+	box-shadow: var(--adw-popover-shadow) !important;
+}
+
+/* Nested context menu - placed immediately after parent menu */
+body.DesktopUI div[class*="contextmenu_contextMenu_"] + div[class*="contextmenu_contextMenu_"]
+{
+	margin-left: var(--adw-menu-padding) !important;
+	margin-top: calc(var(--adw-menu-padding) * -1) !important;
+}
+
+body.DesktopUI div[class*="contextmenu_contextMenu_"] div[class*="contextmenu_contextMenuItem_"],
+body.DesktopUI div[class*="dropdown_DialogDropDownMenu_"]._DialogInputContainer div[class*="dropdown_DialogDropDownMenu_Item_"],
+body.DesktopUI.ContextMenuPopupBody div[class*="menu_MenuItem_"]
+{
+	background: transparent !important;
+	color: rgb(var(--adw-popover-fg-rgb)) !important;
+	border: none !important;
+	border-radius: var(--adw-menu-item-radius) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-menu-size) !important;
+	font-weight: var(--adw-text-menu-weight) !important;
+	line-height: 32px !important;
+	height: 32px !important;
+	cursor: default !important;
+	padding: var(--adw-menu-item-padding) !important;
+	margin: 0 !important;
+}
+
+body.DesktopUI div[class*="dropdown_DialogDropDownMenu_"]._DialogInputContainer div[class*="dropdown_DialogDropDownMenu_Item_"] > div
+{
+	display: block !important;
+	overflow: hidden !important;
+	white-space: nowrap !important;
+	text-overflow: ellipsis !important;
+}
+
+body.DesktopUI div[class*="contextmenu_contextMenu_"] div[class*="contextmenu_contextMenuItem_"][class*="disabled"]
+{
+	filter: opacity(var(--adw-disabled-opacity));
+}
+
+body.DesktopUI div[class*="contextmenu_contextMenu_"] div[class*="contextmenu_contextMenuItem_"]:hover,
+body.DesktopUI div[class*="contextmenu_contextMenu_"] div[class*="contextmenu_contextMenuItem_"][class*="contextmenu_active_"],
+body.DesktopUI div[class*="contextmenu_contextMenu_"] div[class*="library_ContextMenuAction_"]:hover,
+body.DesktopUI div[class*="dropdown_DialogDropDownMenu_"]._DialogInputContainer div[class*="dropdown_DialogDropDownMenu_Item_"]:hover,
+body.DesktopUI div[class*="menu_MenuItem_"]:hover
+{
+	background: rgba(var(--adw-popover-fg-rgb), var(--adw-hover-opacity)) !important;
+}
+
+body.DesktopUI div[class*="contextmenu_contextMenu_"] div[class*="contextmenu_contextMenuItem_"]:active,
+body.DesktopUI div[class*="contextmenu_contextMenu_"] div[class*="library_ContextMenuAction_"]:active,
+body.DesktopUI div[class*="dropdown_DialogDropDownMenu_"]._DialogInputContainer div[class*="dropdown_DialogDropDownMenu_Item_"]:active,
+body.DesktopUI div[class*="menu_MenuItem_"]:active
+{
+	background: rgba(var(--adw-popover-fg-rgb), var(--adw-active-opacity)) !important;
+}
+
+body.DesktopUI div[class*="contextmenu_ContextMenuFocusContainer_"] > div[class*="dropdown_DialogDropDownMenu_"]._DialogInputContainer
+{
+	border: none !important;
+	border-radius: 0 !important;
+	box-shadow: none !important;
+	background: none !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+body.DesktopUI.ContextMenuPopupBody
+{
+	background: rgb(var(--adw-popover-bg-rgb)) !important;
+	border-radius: 0 !important;
+}
+
+body.DesktopUI.ContextMenuPopupBody div[class*="contextmenu_contextMenu_"],
+body.DesktopUI.ContextMenuPopupBody div[class*="menu_MenuPopup_"]
+{
+	border-radius: 0 !important;
+	background: transparent !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	box-shadow: none !important;
+}
+
+body.DesktopUI.ContextMenuPopupBody div[class*="menu_MenuPopup_"]
+{
+	border: none !important;
+	padding: var(--adw-menu-padding) !important;
+}
+
+/* Notifications */
+body.DesktopUI.ContextMenuPopupBody button[class*="titlebarcontrols_AllNotificationsButton_"],
+body.DesktopUI div[class*="standardtemplates_StandardTemplateDesktop_"],
+body.DesktopUI.ContextMenuPopupBody div[class*="standardtemplates_PinnedTemplateDesktop_"]
+{
+	background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-button-bg-opacity)) !important;
+	border-radius: var(--adw-button-radius) !important;
+	border: none !important;
+	color: rgb(var(--adw-headerbar-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-title3-size) !important;
+	font-weight: var(--adw-text-title3-weight) !important;
+	padding: 5px 10px !important;
+	transition: var(--adw-button-transition) !important;
+}
+
+body.DesktopUI.ContextMenuPopupBody div[class*="standardtemplates_PinnedBody_"]
+{
+	color: rgb(var(--adw-headerbar-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-title3-size) !important;
+	font-weight: var(--adw-text-title3-weight) !important;
+}
+
+body.DesktopUI.ContextMenuPopupBody div[class*="titlebarcontrols_EmptyNotificationsBody_"]
+{
+	color: var(--adw-entry-subtitle-fg) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-entry-subtitle-font-size) !important;
+	font-weight: var(--adw-entry-subtitle-font-weight) !important;
+}
+
+body.DesktopUI.ContextMenuPopupBody button[class*="titlebarcontrols_AllNotificationsButton_"]:hover
+{
+	background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-button-bg-opacity-hover)) !important;
+	border-radius: var(--adw-button-radius) !important;
+}
+
+body.DesktopUI.ContextMenuPopupBody button[class*="titlebarcontrols_AllNotificationsButton_"]:active
+{
+	background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-button-bg-opacity-active)) !important;
+	border-radius: var(--adw-button-radius) !important;
+}
+
+body.DesktopUI.ContextMenuPopupBody div[class*="steamtemplates_NewIndicator_"]
+{
+	filter: none !important;
+}
+
+body.DesktopUI.ContextMenuPopupBody div[class*="steamtemplates_NewIndicator_"] svg
+{
+	color: rgb(var(--adw-accent-rgb)) !important;
+}
+
+/* Menu separators */
+body.DesktopUI hr[class*="menu_Separator_"],
+body.DesktopUI [class*="contextmenu_ContextMenuSeparator_"],
+body.DesktopUI [class*="contextmenu_ContextMenuHRSeparator_"],
+body.DesktopUI [class*="gamelistdropdown_Rule_"]
+{
+	border: none !important;
+	height: 1px !important;
+	background-color: rgba(var(--adw-popover-fg-rgb), var(--adw-border-opacity)) !important;
+	margin: 4px 0 !important;
+}
+
+/* Menu arrows and other icons */
+body.DesktopUI div[class*="contextmenu_contextMenuItem_"] div[class*="contextmenu_Arrow_"]
+{
+	margin-right: -10px !important;
+}
+
+body.DesktopUI div[class*="contextmenu_contextMenuItem_"] .SVGIcon_Button,
+body.DesktopUI div[class*="contextmenu_contextMenuItem_"] .SVGIcon_Button path,
+body.DesktopUI div[class*="contextmenu_contextMenuItem_"] .SVGIcon_Button line
+{
+	fill: rgb(var(--adw-popover-fg-rgb)) !important;
+	color: rgb(var(--adw-popover-fg-rgb)) !important;
+	stroke: rgb(var(--adw-popover-fg-rgb)) !important;
+}
+
+/* Tooltips */
+body.DesktopUI div[class*="tooltip_TextToolTip_"],
+body.DesktopUI div[class*="tooltip_ToolTipCustom_"]
+{
+	background: var(--adw-tooltip-bg) !important;
+	color: rgb(var(--adw-tooltip-fg-rgb)) !important;
+	border-radius: 9px !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-base-size) !important;
+	font-weight: var(--adw-text-base-weight) !important;
+	padding: 6px 10px !important;
+	margin: 0 !important;
+	border: 1px rgba(var(--adw-tooltip-fg-rgb), var(--adw-border-opacity)) solid !important;
+	box-shadow: none !important;
+}
+
+body.DesktopUI div[class*="tooltip_ToolTipCustom_"] > div[class*="tooltip_ToolTipTitle_"]
+{
+	color: rgb(var(--adw-tooltip-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-base-size) !important;
+	font-weight: var(--adw-text-base-weight) !important;
+}
+
+body.DesktopUI div[class*="tooltip_ToolTipCustom_"] > div[class*="tooltip_ToolTipInsetContent_"]
+{
+	color: rgba(var(--adw-tooltip-fg-rgb), 0.7) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-base-size) !important;
+	font-weight: var(--adw-text-base-weight) !important;
+}

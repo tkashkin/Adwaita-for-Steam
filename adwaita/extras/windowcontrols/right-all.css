@@ -4,8 +4,10 @@
 
 :root
 {
-	--windowcontrols_margin_left: 0px;
-	--windowcontrols_margin_right: 114px;
+	--adw-windowcontrols-margin-left: 0px;
+	--adw-windowcontrols-margin-right: 114px;
+	--adw-windowcontrols-close-margin-left: 0px;
+	--adw-windowcontrols-close-margin-right: 40px;
 }
 
 .title-bar-actions .title-area-icon.minimizeButton,
@@ -15,7 +17,7 @@
 	display: block !important;
 }
 
-#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="steamdesktop_WindowControls_"]
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="steamdesktop_WindowControls_"]
 {
 	flex-basis: 114px !important;
 }

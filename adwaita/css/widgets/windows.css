@@ -1,0 +1,112 @@
+body.DesktopUI .title-area
+{
+	min-height: 46px;
+}
+
+body.DesktopUI .title-bar-actions
+{
+	height: 36px !important;
+	max-height: 36px !important;
+	margin-top: 5px !important;
+}
+
+body.DesktopUI .title-bar-actions.window-controls
+{
+	margin-right: 10px !important;
+}
+
+body.DesktopUI .title-bar-actions .title-area-icon
+{
+	width: 24px !important;
+	height: 24px !important;
+	padding: 4px !important;
+	box-sizing: border-box !important;
+	border-radius: 50% !important;
+	margin-left: 14px !important;
+	background-color: rgba(var(--adw-window-fg-rgb), var(--adw-button-bg-opacity)) !important;
+	transition: var(--adw-button-transition) !important;
+}
+
+body.DesktopUI .title-bar-actions .title-area-icon:hover
+{
+	background-color: rgba(var(--adw-window-fg-rgb), var(--adw-button-bg-opacity-hover)) !important;
+}
+
+body.DesktopUI .title-bar-actions .title-area-icon:active
+{
+	background-color: rgba(var(--adw-window-fg-rgb), var(--adw-button-bg-opacity-active)) !important;
+}
+
+body.DesktopUI .title-bar-actions .title-area-icon > div
+{
+	display: none !important;
+}
+
+body.DesktopUI .title-bar-actions .title-area-icon::before
+{
+	background-color: rgb(var(--adw-window-fg-rgb));
+	content: "";
+	display: block;
+	width: 16px;
+	height: 16px;
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	-webkit-mask-size: 16px;
+}
+
+body.DesktopUI .title-bar-actions .closeButton::before
+{
+	-webkit-mask-image: var(--adw-icon-window-close);
+}
+
+body.DesktopUI .title-bar-actions .maximizeButton::before
+{
+	-webkit-mask-image: var(--adw-icon-window-maximize);
+}
+
+body.DesktopUI .title-bar-actions .minimizeButton::before
+{
+	-webkit-mask-image: var(--adw-icon-window-minimize);
+}
+
+body.DesktopUI .title-bar-actions .restoreButton::before
+{
+	-webkit-mask-image: var(--adw-icon-window-restore);
+}
+
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="steamdesktop_WindowControls_"]
+{
+	flex-basis: 40px !important;
+}
+
+body.DesktopUI .title-bar-actions .title-area-icon.minimizeButton,
+body.DesktopUI .title-bar-actions .title-area-icon.maximizeButton,
+body.DesktopUI .title-bar-actions .title-area-icon.restoreButton
+{
+	display: none !important;
+}
+
+/* Blue Line on Dialog Window */
+body.DesktopUI .ModalPosition_TopBar
+{
+	display: none !important;
+}
+
+/* Web dialogs */
+body.DesktopUI.ModalDialogBody .PopupFullWindow .title-area
+{
+	min-height: 36px !important;
+}
+
+body.DesktopUI.ModalDialogBody .PopupFullWindow .title-area .title-bar-actions.window-controls
+{
+	margin-top: 0 !important;
+	margin-right: 7px !important;
+}
+
+body.DesktopUI.ModalDialogBody .PopupFullWindow .DialogContent
+{
+	background: rgb(var(--adw-headerbar-bg-rgb)) !important;
+	color: rgb(var(--adw-headerbar-fg-rgb)) !important;
+	padding: 36px 0 0 0 !important;
+}

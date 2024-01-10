@@ -1,0 +1,234 @@
+body.DesktopUI div[class*="gamelistsectionheader_Container_"],
+body.DesktopUI div[class*="gamelistentry_Container_"]
+{
+	height: 26px !important;
+	line-height: 26px !important;
+	margin-left: 6px !important;
+	background: none !important;
+	cursor: default !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-gamelist-size) !important;
+	font-weight: var(--adw-text-gamelist-weight) !important;
+	box-sizing: border-box !important;
+	border: none !important;
+	border-radius: var(--adw-button-radius) !important;
+}
+
+body.DesktopUI div[class*="gamelistentry_Container_"][class*="gamelistentry_Installed_"],
+body.DesktopUI div[class*="gamelistentry_Container_"] span[class*="gamelistentry_DownloadDash_"]
+{
+	color: rgb(var(--adw-sidebar-fg-rgb)) !important;
+}
+
+body.DesktopUI div[class*="gamelistentry_Container_"][class*="gamelistentry_Uninstalled_"]
+{
+	color: rgba(var(--adw-sidebar-fg-rgb), var(--adw-dim-label-opacity)) !important;
+}
+
+body.DesktopUI div[class*="gamelistentry_Container_"] div[class*="gamelistentry_Updating_"],
+body.DesktopUI div[class*="gamelistentry_Container_"] div[class*="gamelistentry_DownloadProgress_"],
+body.DesktopUI div[class*="gamelistentry_Container_"] div[class*="gamelistentry_Synchronizing_"],
+body.DesktopUI div[class*="gamelistentry_Container_"] div[class*="gamelistentry_CloudError_"],
+body.DesktopUI div[class*="gamelistentry_Container_"] div[class*="gamelistentry_CloudOutOfDate_"],
+body.DesktopUI div[class*="gamelistentry_Container_"] div[class*="gamelistentry_GameListEntryName_"]
+{
+	color: rgb(var(--adw-accent-rgb)) !important;
+}
+
+body.DesktopUI div[class*="gamelistentry_Container_"] div[class*="gamelistentry_Running_"]
+{
+	color: rgb(var(--adw-success-rgb)) !important;
+}
+
+body.DesktopUI div[class*="gamelistsectionheader_Container_"] span[class*="gamelistsectionheader_SectionName_"],
+body.DesktopUI div[class*="gamelistsectionheader_Container_"] div[class*="gamelistsectionheader_SectionCount_"]
+{
+	height: 26px !important;
+	line-height: 26px !important;
+	color: rgb(var(--adw-sidebar-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-gamelist-section-size) !important;
+	font-weight: var(--adw-text-gamelist-section-weight) !important;
+	letter-spacing: normal !important;
+	text-transform: none !important;
+}
+
+body.DesktopUI div[class*="gamelistsectionheader_Container_"] div[class*="gamelistsectionheader_SectionCount_"]
+{
+	color: rgba(var(--adw-sidebar-fg-rgb), var(--adw-dim-label-opacity)) !important;
+	font-weight: var(--adw-text-gamelist-weight) !important;
+}
+
+body.DesktopUI div[class*="gamelistentry_GameListEntryContainer_"],
+body.DesktopUI div[class*="gamelistsectionheader_Container_"]
+{
+	border: none !important;
+	padding: 0 6px 0 6px !important;
+	background: none !important;
+	box-shadow: none !important;
+}
+
+body.DesktopUI div[class*="gamelistsectionheader_Container_"] > div[class*="gamelistsectionheader_SectionHeaderContent_"]
+{
+	padding: 0 !important;
+}
+
+body.DesktopUI div[class*="gamelist_Container_"] .ReactVirtualized__Grid
+{
+	padding: 6px 6px 6px 0 !important;
+	overflow: overlay !important;
+}
+
+body.DesktopUI div[class*="gamelist_Container_"] .ReactVirtualized__Grid__innerScrollContainer > div
+{
+	max-width: 100% !important;
+}
+
+body.DesktopUI div[class*="gamelist_Container_"] .ReactVirtualized__Grid__innerScrollContainer > div:hover
+{
+	max-width: fit-content !important;
+}
+
+body.DesktopUI div[class*="gamelistsectionheader_Container_"] div[class*="collapseicon_Container_"],
+body.DesktopUI div[class*="gamelistentry_GameListEntryContainer_"] > div[class*="gamelistentry_GameIcon_"],
+body.DesktopUI div[class*="gamelistentry_GameListEntryContainer_"] > div[class*="gamelistentry_AppIconDownloading_"]
+{
+	padding: 0 !important;
+	margin: 3px 6px 3px 0 !important;
+	width: 20px !important;
+	height: 20px !important;
+	border-radius: var(--adw-gameicon-radius) !important;
+	overflow: hidden !important;
+}
+
+body.DesktopUI div[class*="gamelistentry_GameListEntryContainer_"] > div[class*="gamelistentry_AppIconDownloading_"]
+{
+	border-radius: 50% !important;
+}
+
+body.DesktopUI div[class*="gamelistentry_GameListEntryContainer_"] > div[class*="gamelistentry_AppIconDownloading_"] > div[class*="gamelistentry_GameIcon_"]
+{
+	margin: 0 !important;
+}
+
+body.DesktopUI div[class*="gamelistentry_GameListEntryContainer_"] > svg
+{
+	display: none !important;
+}
+
+body.DesktopUI div[class*="gamelistentry_GameListEntryContainer_"] > div[class*="gamelistentry_FriendIsPlaying_"]
+{
+	width: 12px !important;
+	height: 12px !important;
+	opacity: 0.5 !important;
+	position: absolute !important;
+	left: auto !important;
+	right: 12px !important;
+	top: 7px !important;
+}
+
+body.DesktopUI div[class*="gamelistentry_GameListEntryContainer_"] > div[class*="gamelistentry_FriendIsPlaying_"]:hover
+{
+	opacity: 1 !important;
+}
+
+body.DesktopUI div[class*="gamelistentry_Uninstalled_"] div[class*="gamelistentry_GameIcon_"]
+{
+	filter: var(--adw-gameicon-uninstalled-filter) !important;
+}
+
+body.DesktopUI div[class*="gamelistsectionheader_Container_"] div[class*="collapseicon_Container_"] > svg
+{
+	width: 20px !important;
+	height: 20px !important;
+	margin: 0 !important;
+}
+
+body.DesktopUI div[class*="gamelistentry_Container_"]:hover,
+body.DesktopUI div[class*="gamelistsectionheader_Container_"]:hover
+{
+	background: rgba(var(--adw-sidebar-fg-rgb), var(--adw-hover-opacity)) !important;
+	box-shadow: none !important;
+}
+
+body.DesktopUI div[class*="gamelistentry_Container_"]:active,
+body.DesktopUI div[class*="gamelistsectionheader_Container_"]:active
+{
+	background: rgba(var(--adw-sidebar-fg-rgb), var(--adw-active-opacity)) !important;
+	box-shadow: none !important;
+}
+
+body.DesktopUI div[class*="gamelistsectionheader_Container_"][class*="gamelistsectionheader_Selected_"],
+body.DesktopUI div[class*="gamelistentry_Container_"][class*="gamelistentry_Selected_"]
+{
+	background: rgba(var(--adw-sidebar-fg-rgb), var(--adw-selected-opacity)) !important;
+	box-shadow: none !important;
+}
+
+body.DesktopUI div[class*="gamelistsectionheader_Container_"][class*="gamelistsectionheader_Selected_"]:hover,
+body.DesktopUI div[class*="gamelistentry_Container_"][class*="gamelistentry_Selected_"]:hover
+{
+	background: rgba(var(--adw-sidebar-fg-rgb), var(--adw-selected-hover-opacity)) !important;
+	box-shadow: none !important;
+}
+
+body.DesktopUI div[class*="gamelistsectionheader_Container_"][class*="gamelistsectionheader_Selected_"]:active,
+body.DesktopUI div[class*="gamelistentry_Container_"][class*="gamelistentry_Selected_"]:active
+{
+	background: rgba(var(--adw-sidebar-fg-rgb), var(--adw-selected-active-opacity)) !important;
+	box-shadow: none !important;
+}
+
+body.DesktopUI div[class*="gamelistsectionheader_Container_"][class*="gamelistsectionheader_HasContextMenuOpen_"],
+body.DesktopUI div[class*="gamelistentry_Container_"][class*="gamelistentry_HasContextMenuOpen_"]
+{
+	background: rgba(var(--adw-sidebar-fg-rgb), var(--adw-selected-active-opacity)) !important;
+	box-shadow: var(--adw-focus-border-thin) !important;
+}
+
+body.DesktopUI div[class*="hoverposition_HoverPositionOuter_"] div[class*="gamelistentry_HoverOverlay_"]
+{
+	background-color: rgb(var(--adw-sidebar-bg-rgb)) !important;
+	background-image: linear-gradient(0deg, rgba(var(--adw-sidebar-fg-rgb), var(--adw-hover-opacity)), rgba(var(--adw-sidebar-fg-rgb), var(--adw-hover-opacity))) !important;
+	border-radius: var(--adw-button-radius) !important;
+}
+
+body.DesktopUI div[class*="gamelistentry_Container_"]:not([class*="gamelistentry_HoverOverlay_"]) > div[class*="gamelistentry_GameListEntryContainer_"]
+{
+	-webkit-mask-image: linear-gradient(to left, transparent, black 16px) !important;
+}
+
+body.DesktopUI div[class*="hoverposition_HoverPositionOuter_"] div[class*="gamelistentry_HoverOverlay_"][class*="gamelistentry_Selected_"]
+{
+	background-image: linear-gradient(0deg, rgba(var(--adw-sidebar-fg-rgb), var(--adw-selected-hover-opacity)), rgba(var(--adw-sidebar-fg-rgb), var(--adw-selected-hover-opacity))) !important;
+}
+
+/** Remove unneeded inner backgrounds */
+body.DesktopUI div[class*="gamelistentry_Container_"] *,
+body.DesktopUI div[class*="gamelistentry_Container_"] *:hover,
+body.DesktopUI div[class*="gamelistentry_Container_"] *:active
+{
+	background: none !important;
+}
+
+/* Drag & Drop */
+body.DesktopUI div[class*="gamelistentry_Container_"][class*="gamelistentry_DropTarget_"] {
+	background: rgba(var(--adw-sidebar-fg-rgb), var(--adw-hover-opacity)) !important;
+	border-left: 1px solid rgb(var(--adw-accent-bg-rgb)) !important;
+	border-right: 1px solid rgb(var(--adw-accent-bg-rgb)) !important;
+}
+
+body.DesktopUI div[class*="gamelistsectionheader_Container_"][class*="gamelistsectionheader_DropOption_"] {
+	background-color: rgba(var(--adw-sidebar-fg-rgb), var(--adw-hover-opacity)) !important;
+}
+
+body.DesktopUI div[class*="gamelistsectionheader_Container_"][class*="gamelistsectionheader_DropTarget_"] {
+	border-left: 1px solid rgb(var(--adw-accent-bg-rgb)) !important;
+	border-right: 1px solid rgb(var(--adw-accent-bg-rgb)) !important;
+	border-top: 1px solid rgb(var(--adw-accent-bg-rgb)) !important;
+}
+
+body.DesktopUI div[class*="gamelistentry_Container_"][class*="gamelistentry_DropTarget_"][class*="gamelistentry_LastInCollection_"],
+body.DesktopUI div[class*="gamelistsectionheader_Container_"][class*="gamelistsectionheader_DropTarget_"][class*="gamelistsectionheader_SingleLine_"] {
+	border-bottom: 1px solid rgb(var(--adw-accent-bg-rgb)) !important;
+}

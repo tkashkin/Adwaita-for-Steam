@@ -1,0 +1,154 @@
+body.DesktopUI div[class*="library_Container_"],
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_LibraryHome_"],
+body.DesktopUI div[class*="library_Container_"] div[class*="library_AppDetailsTransitionGroup_"]
+{
+	background: rgb(var(--adw-window-bg-rgb)) !important;
+	box-shadow: none !important;
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_Container_"]
+{
+	background: none !important;
+}
+
+/* What's New */
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"]
+{
+	background: rgb(var(--adw-view-bg-rgb)) !important;
+	border-bottom: 1px solid rgba(var(--adw-view-fg-rgb), var(--adw-thin-border-opacity)) !important;
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="libraryhomenewupdates_PartnerEventRowCapsule_TextTitle_"]
+{
+	color: rgb(var(--adw-view-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-weight: var(--adw-text-title3-weight) !important;
+	font-size: var(--adw-text-title3-size) !important;
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="libraryhomenewupdates_GameName_"]
+{
+	color: rgba(var(--adw-view-fg-rgb), var(--adw-dim-label-opacity)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-weight: var(--adw-text-title4-weight) !important;
+	font-size: var(--adw-text-title4-size) !important;
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="libraryhomenewupdates_GameIconAndName_"]
+{
+	background: rgba(var(--adw-view-fg-rgb), var(--adw-button-bg-opacity)) !important;
+	border: none !important;
+	border-radius: var(--adw-button-radius) !important;
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="libraryhomenewupdates_GameIconAndName_"]:hover
+{
+	background: rgba(var(--adw-view-fg-rgb), var(--adw-button-bg-opacity-hover)) !important;
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="libraryhomenewupdates_GameIconAndName_"]:active
+{
+	background: rgba(var(--adw-view-fg-rgb), var(--adw-button-bg-opacity-active)) !important;
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="libraryhomenewupdates_EventTime_"]
+{
+	color: rgba(var(--adw-view-fg-rgb), var(--adw-dim-label-opacity)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-weight: var(--adw-text-base-weight) !important;
+}
+
+/* Shelf scroll buttons */
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="pageablecontainer_PageClickContainer_"] > div,
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhomeshowcases_Showcase_"] div[class*="libraryhomeshowcases_PageButtons_"] > div
+{
+	position: absolute !important;
+	z-index: 1 !important;
+	top: calc(50% - 20px) !important;
+	box-sizing: border-box !important;
+	width: 40px !important;
+	height: 40px !important;
+	padding: 12px !important;
+	margin: 0 !important;
+	background: var(--adw-button-osd-bg) !important;
+	color: var(--adw-button-osd-fg) !important;
+	border-radius: 50% !important;
+	cursor: default !important;
+	opacity: 1 !important;
+	transition: var(--adw-button-transition), opacity 200ms !important;
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="pageablecontainer_PageClickContainer_"] > div:hover,
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhomeshowcases_Showcase_"] div[class*="libraryhomeshowcases_PageButtons_"] > div:hover
+{
+	background: var(--adw-button-osd-bg-hover) !important;
+	color: var(--adw-button-osd-fg-hover) !important;
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="pageablecontainer_PageClickContainer_"] > div:active,
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhomeshowcases_Showcase_"] div[class*="libraryhomeshowcases_PageButtons_"] > div:active
+{
+	background: var(--adw-button-osd-bg-active) !important;
+	color: var(--adw-button-osd-fg-active) !important;
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="pageablecontainer_PageClickContainer_"] > div > svg,
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhomeshowcases_Showcase_"] div[class*="libraryhomeshowcases_PageButtons_"] > div > svg
+{
+	display: none !important;
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="pageablecontainer_PageClickContainer_"] > div::before,
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhomeshowcases_Showcase_"] div[class*="libraryhomeshowcases_PageButtons_"] > div::before
+{
+	background-color: currentColor;
+	content: "";
+	display: block;
+	width: 16px;
+	height: 16px;
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	-webkit-mask-size: 16px;
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="pageablecontainer_PageClickContainer_"] > div[class*="pageablecontainer_PageLeft_"],
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhomeshowcases_Showcase_"] div[class*="libraryhomeshowcases_PageButtons_"] > div[class*="libraryhomeshowcases_PageLeft_"]
+{
+	left: 16px !important;
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="pageablecontainer_PageClickContainer_"] > div[class*="pageablecontainer_PageLeft_"]::before,
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhomeshowcases_Showcase_"] div[class*="libraryhomeshowcases_PageButtons_"] > div[class*="libraryhomeshowcases_PageLeft_"]::before
+{
+	-webkit-mask-image: var(--adw-icon-nav-back);
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="pageablecontainer_PageClickContainer_"] > div[class*="pageablecontainer_PageRight_"],
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhomeshowcases_Showcase_"] div[class*="libraryhomeshowcases_PageButtons_"] > div[class*="libraryhomeshowcases_PageRight_"]
+{
+	right: 16px !important;
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="pageablecontainer_PageClickContainer_"] > div[class*="pageablecontainer_PageRight_"]::before,
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhomeshowcases_Showcase_"] div[class*="libraryhomeshowcases_PageButtons_"] > div[class*="libraryhomeshowcases_PageRight_"]::before
+{
+	-webkit-mask-image: var(--adw-icon-nav-forward);
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="pageablecontainer_PageClickContainer_"] > div[class*="pageablecontainer_Disabled_"],
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhomeshowcases_Showcase_"] div[class*="libraryhomeshowcases_PageButtons_"] > div[class*="libraryhomeshowcases_Disabled_"]
+{
+	opacity: 0 !important;
+	pointer-events: none !important;
+}
+
+/* Position scroll buttons relative to the whole showcase */
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhomeshowcases_Showcase_"]
+{
+	position: relative !important;
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhomeshowcases_Showcase_"] div[class*="libraryhomeshowcases_ShowcaseHeader_"]
+{
+	position: initial !important;
+}

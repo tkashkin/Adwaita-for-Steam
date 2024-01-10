@@ -4,8 +4,10 @@
 
 :root
 {
-	--windowcontrols_margin_left: 40px;
-	--windowcontrols_margin_right: 0px;
+	--adw-windowcontrols-margin-left: 40px;
+	--adw-windowcontrols-margin-right: 0px;
+	--adw-windowcontrols-close-margin-left: 40px;
+	--adw-windowcontrols-close-margin-right: 0px;
 }
 
 .title-bar-actions.window-controls
@@ -14,7 +16,7 @@
 	order: -99 !important;
 }
 
-#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="steamdesktop_WindowControls_"]
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="steamdesktop_WindowControls_"]
 {
 	order: -1 !important;
 }
