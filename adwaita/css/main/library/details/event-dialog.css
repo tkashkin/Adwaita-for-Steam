@@ -1,0 +1,162 @@
+/* Pop Up Update */
+body.DesktopUI div[class*="apppartnereventspage_AppPartnerEventsBody_"] div[class*="apppartnereventspage_PartnerEvent_"]
+{
+	background: rgb(var(--adw-popover-bg-rgb)) !important;
+	border-radius: var(--adw-menu-radius) !important;
+	border: 1px rgba(var(--adw-popover-fg-rgb), var(--adw-window-outline-opacity)) solid !important;
+	box-shadow: var(--adw-popover-shadow) !important;
+}
+
+body.DesktopUI div[class*="apppartnereventspage_AppPartnerEventsBody_"] img[class*="partnereventdisplay_EventBackgroundBlur_"]
+{
+	display: none !important;
+}
+
+body.DesktopUI div[class*="apppartnereventspage_AppPartnerEventsBody_"] span[class*="apppartnereventspage_EventType_"],
+body.DesktopUI div[class*="apppartnereventspage_AppPartnerEventsBody_"] div[class*="discussionwidget_VoteCount_"],
+body.DesktopUI div[class*="apppartnereventspage_AppPartnerEventsBody_"] div[class*="discussionwidget_DiscussionCount_"]
+{
+	color: rgb(var(--adw-accent-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-weight: var(--adw-text-title4-weight) !important;
+}
+
+body.DesktopUI div[class*="apppartnereventspage_AppPartnerEventsBody_"] div[class*="partnereventdisplay_EventDetailTimeInfo_"] div[class*="localdateandtime_ShortDateAndTime_"],
+body.DesktopUI div[class*="apppartnereventspage_AppPartnerEventsBody_"] div[class*="partnereventdisplay_EventDetailTimeInfo_"] div[class*="localdateandtime_RightSideTitles_"]
+{
+	color: rgba(var(--adw-window-fg-rgb), var(--adw-dim-label-opacity)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-weight: var(--adw-text-base-weight) !important;
+}
+
+body.DesktopUI div[class*="apppartnereventspage_AppPartnerEventsBody_"] a[class*="partnereventdisplay_EventDetailTitle_"]
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-title1-size) !important;
+	font-weight: var(--adw-text-title1-weight) !important;
+}
+
+body.DesktopUI div[class*="apppartnereventspage_AppPartnerEventsBody_"] div[class*="partnereventdisplay_EventDetailsSubTitle_"]
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-title3-size) !important;
+	font-weight: var(--adw-text-title3-weight) !important;
+}
+
+body.DesktopUI div[class*="apppartnereventspage_AppPartnerEventsBody_"] div[class*="apppartnereventspage_CloseButton_"]
+{
+	background: var(--popover_bg) !important;
+	height: 24px !important;
+	width: 24px !important;
+}
+
+body.DesktopUI div[class*="apppartnereventspage_AppPartnerEventsBody_"] div[class*="apppartnereventspage_CloseButton_"] svg line
+{
+	stroke: var(--headerbar_fg) !important;
+	stroke-width: 32px !important;
+}
+
+body.DesktopUI div[class*="apppartnereventspage_AppPartnerEventsBody_"] div[class*="apppartnereventspage_ScrollButton_"]
+{
+	background: var(--popover_bg) !important;
+	height: 24px !important;
+	width: 40px !important;
+}
+
+body.DesktopUI div[class*="apppartnereventspage_AppPartnerEventsBody_"] div[class*="apppartnereventspage_ScrollButton_"] svg polygon
+{
+	fill: var(--headerbar_fg) !important;
+}
+
+body.DesktopUI div[class*="apppartnereventspage_AppPartnerEventsBody_"] div[class*="apppartnereventspage_ScrollButton_"][class*="apppartnereventspage_GameArt_"]
+{
+	height: 40px !important;
+	width: 40px !important;
+}
+
+body.DesktopUI div[class*="apppartnereventspage_AppPartnerEventsBody_"] div[class*="partnereventdisplay_EventDetailsBody_"]
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-weight: var(--adw-text-base-weight) !important;
+}
+
+body.DesktopUI div[class*="apppartnereventspage_AppPartnerEventsBody_"] div[class*="partnereventdisplay_EventDetailsBody_"] a:not(.LinkButton)
+{
+	color: rgb(var(--adw-accent-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-weight: var(--adw-text-title4-weight) !important;
+}
+
+body.DesktopUI div[class*="apppartnereventspage_AppPartnerEventsBody_"] div[class*="partnereventdisplay_EventDetailsBody_"] a:not(.LinkButton):hover
+{
+	text-decoration: underline !important;
+}
+
+body.DesktopUI div[class*="apppartnereventspage_AppPartnerEventsBody_"] div[class*="partnereventdisplay_EventDetailsBody_"] img,
+body.DesktopUI div[class*="apppartnereventspage_AppPartnerEventsBody_"] div[class*="youtubeembed_PreviewYouTubeVideo_"]
+{
+	border-radius: var(--adw-card-radius) !important;
+}
+
+body.DesktopUI div[class*="apppartnereventspage_AppPartnerEventsBody_"] div[class*="eventbbcodeparser_Header1_"]
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-title1-size) !important;
+	font-weight: var(--adw-text-title1-weight) !important;
+}
+
+body.DesktopUI div[class*="apppartnereventspage_AppPartnerEventsBody_"] div[class*="eventbbcodeparser_Header2_"]
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-title2-size) !important;
+	font-weight: var(--adw-text-title2-weight) !important;
+}
+
+body.DesktopUI div[class*="apppartnereventspage_AppPartnerEventsBody_"] div[class*="eventbbcodeparser_Header3_"]
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-title3-size) !important;
+	font-weight: var(--adw-text-title3-weight) !important;
+}
+
+body.DesktopUI div[class*="apppartnereventspage_AppPartnerEventsBody_"] div[class*="eventbbcodeparser_Header4_"]
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-title4-size) !important;
+	font-weight: var(--adw-text-title4-weight) !important;
+}
+
+body.DesktopUI div[class*="apppartnereventspage_AppPartnerEventsBody_"] svg[class*="discussionwidget_VoteUpStaticIcon_"],
+body.DesktopUI div[class*="apppartnereventspage_AppPartnerEventsBody_"] div[class*="discussionwidget_DiscussionCount_"] > svg
+{
+	fill: rgb(var(--adw-accent-rgb)) !important;
+}
+
+body.DesktopUI div[class*="apppartnereventspage_AppPartnerEventsBody_"] div[class*="partnereventshared_Button_"][class*="partnereventshared_Icon_"]
+{
+	background: var(--button_bg) !important;
+	border-radius: var(--adw-button-radius) !important;
+	box-shadow: none !important;
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-title3-size) !important;
+	font-weight: var(--adw-text-title3-weight) !important;
+	transition: var(--adw-button-transition) !important;
+}
+
+body.DesktopUI div[class*="apppartnereventspage_AppPartnerEventsBody_"] div[class*="partnereventshared_Button_"][class*="partnereventshared_Icon_"]:hover
+{
+	background: var(--button_hover_bg) !important;
+}
+
+body.DesktopUI div[class*="apppartnereventspage_AppPartnerEventsBody_"] div[class*="partnereventshared_Button_"][class*="partnereventshared_Icon_"]:active
+{
+	background: var(--button_active_bg) !important;
+}

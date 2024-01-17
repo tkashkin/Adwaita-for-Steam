@@ -14,8 +14,7 @@ body.DesktopUI div[class*="gamelistentry_Container_"]
 	border-radius: var(--adw-button-radius) !important;
 }
 
-body.DesktopUI div[class*="gamelistentry_Container_"][class*="gamelistentry_Installed_"],
-body.DesktopUI div[class*="gamelistentry_Container_"] span[class*="gamelistentry_DownloadDash_"]
+body.DesktopUI div[class*="gamelistentry_Container_"][class*="gamelistentry_Installed_"]
 {
 	color: rgb(var(--adw-sidebar-fg-rgb)) !important;
 }
@@ -25,19 +24,34 @@ body.DesktopUI div[class*="gamelistentry_Container_"][class*="gamelistentry_Unin
 	color: rgba(var(--adw-sidebar-fg-rgb), var(--adw-dim-label-opacity)) !important;
 }
 
-body.DesktopUI div[class*="gamelistentry_Container_"] div[class*="gamelistentry_Updating_"],
-body.DesktopUI div[class*="gamelistentry_Container_"] div[class*="gamelistentry_DownloadProgress_"],
-body.DesktopUI div[class*="gamelistentry_Container_"] div[class*="gamelistentry_Synchronizing_"],
-body.DesktopUI div[class*="gamelistentry_Container_"] div[class*="gamelistentry_CloudError_"],
-body.DesktopUI div[class*="gamelistentry_Container_"] div[class*="gamelistentry_CloudOutOfDate_"],
-body.DesktopUI div[class*="gamelistentry_Container_"] div[class*="gamelistentry_GameListEntryName_"]
+body.DesktopUI div[class*="gamelistentry_Container_"][class*="gamelistentry_Updating_"],
+body.DesktopUI div[class*="gamelistentry_Container_"][class*="gamelistentry_Synchronizing_"]
 {
 	color: rgb(var(--adw-accent-rgb)) !important;
 }
 
-body.DesktopUI div[class*="gamelistentry_Container_"] div[class*="gamelistentry_Running_"]
+body.DesktopUI div[class*="gamelistentry_Container_"][class*="gamelistentry_CloudError_"],
+body.DesktopUI div[class*="gamelistentry_Container_"][class*="gamelistentry_CloudOutOfDate_"]
+{
+	color: rgb(var(--adw-warning-rgb)) !important
+}
+
+body.DesktopUI div[class*="gamelistentry_Container_"][class*="gamelistentry_Running_"]
 {
 	color: rgb(var(--adw-success-rgb)) !important;
+}
+
+body.DesktopUI div[class*="gamelistentry_Container_"] div[class*="gamelistentry_GameListEntryName_"],
+body.DesktopUI div[class*="gamelistentry_Container_"] span[class*="gamelistentry_DownloadDash_"],
+body.DesktopUI div[class*="gamelistentry_Container_"] div[class*="gamelistentry_DownloadProgress_"]
+{
+	color: inherit !important;
+}
+
+body.DesktopUI div[class*="gamelistentry_Container_"] span[class*="gamelistentry_DownloadDash_"],
+body.DesktopUI div[class*="gamelistentry_Container_"] div[class*="gamelistentry_DownloadProgress_"]
+{
+	opacity: var(--adw-dim-label-opacity) !important;
 }
 
 body.DesktopUI div[class*="gamelistsectionheader_Container_"] span[class*="gamelistsectionheader_SectionName_"],
@@ -111,6 +125,19 @@ body.DesktopUI div[class*="gamelistentry_GameListEntryContainer_"] > div[class*=
 	margin: 0 !important;
 }
 
+body.DesktopUI div[class*="gamelistentry_GameListEntryContainer_"] > div[class*="gamelistentry_AppIconDownloading_"] > svg[class*="gamelistentry_DownloadProgressSVG_"]
+{
+	width: 20px !important;
+	height: 20px !important;
+	margin: 0 !important;
+}
+
+body.DesktopUI div[class*="gamelistentry_GameListEntryContainer_"] > div[class*="gamelistentry_AppIconDownloading_"] > svg[class*="gamelistentry_DownloadProgressSVG_"] > circle
+{
+	stroke: rgb(var(--adw-accent-rgb)) !important;
+	stroke-width: 40px !important;
+}
+
 body.DesktopUI div[class*="gamelistentry_GameListEntryContainer_"] > svg
 {
 	display: none !important;
@@ -118,13 +145,19 @@ body.DesktopUI div[class*="gamelistentry_GameListEntryContainer_"] > svg
 
 body.DesktopUI div[class*="gamelistentry_GameListEntryContainer_"] > div[class*="gamelistentry_FriendIsPlaying_"]
 {
-	width: 12px !important;
-	height: 12px !important;
-	opacity: 0.5 !important;
+	width: 16px !important;
+	height: 16px !important;
+	line-height: 16px !important;
 	position: absolute !important;
 	left: auto !important;
-	right: 12px !important;
-	top: 7px !important;
+	right: 10px !important;
+	top: 5px !important;
+	opacity: 0.5 !important;
+}
+
+body.DesktopUI div[class*="gamelistentry_GameListEntryContainer_"] > div[class*="gamelistentry_FriendIsPlaying_"] > svg *
+{
+	fill: rgb(var(--adw-success-rgb)) !important;
 }
 
 body.DesktopUI div[class*="gamelistentry_GameListEntryContainer_"] > div[class*="gamelistentry_FriendIsPlaying_"]:hover

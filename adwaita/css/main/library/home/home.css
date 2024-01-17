@@ -152,3 +152,9 @@ body.DesktopUI div[class*="library_Container_"] div[class*="libraryhomeshowcases
 {
 	position: initial !important;
 }
+
+/* Game card */
+body.DesktopUI div[class*="library_Container_"] div[class*="appportrait_LibraryItemBox_"]
+{
+
+}

@@ -443,6 +443,23 @@ body.DesktopUI div[class*="gamelistsearchbar_AdvancedSearchPane_"] div[class*="a
 	min-height: var(--adw-list-header-height) !important;
 }
 
+body.DesktopUI div[class*="appfilterpane_DropDownItems_"] div[class*="appfilterpane_CompatDropDownOption_"]
+{
+	height: 32px !important;
+}
+
+body.DesktopUI div[class*="appfilterpane_DropDownItems_"] div[class*="appfilterpane_CompatDropDownOption_"] > div[class*="appfilterpane_CompatLabel_"]
+{
+	flex-grow: 1 !important;
+	padding-right: 12px !important;
+	order: 0 !important;
+}
+
+body.DesktopUI div[class*="appfilterpane_DropDownItems_"] div[class*="appfilterpane_CompatDropDownOption_"] > svg
+{
+	order: 1 !important;
+}
+
 /* Small Mode tweaks */
 body.DesktopUI div[class*="steamdesktop_ContentFrame_"] > div[class*="gamelistbar_Container_"] > div[class*="gamelist_Container_"],
 body.DesktopUI div[class*="steamdesktop_ContentFrame_"] > div[class*="gamelistbar_Container_"] > div[class*="gamelist_NoSearchResultsContainer_"]

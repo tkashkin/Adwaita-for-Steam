@@ -14,12 +14,14 @@
 }
 
 body.DesktopUI div.DialogCheckbox_Container,
+html.client_chat_frame div.DialogCheckbox_Container,
 body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"]
 {
 	cursor: default !important;
 }
 
 body.DesktopUI div.DialogCheckbox_Container > div.DialogCheckbox,
+html.client_chat_frame div.DialogCheckbox_Container > div.DialogCheckbox,
 body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"] > div[class*="newlogindialog_Checkbox_"]
 {
 	width: 20px !important;
@@ -39,18 +41,21 @@ body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxFie
 }
 
 body.DesktopUI div.DialogCheckbox_Container > div.DialogCheckbox:focus,
+html.client_chat_frame div.DialogCheckbox_Container > div.DialogCheckbox:focus,
 body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"] > div[class*="newlogindialog_Checkbox_"]:focus
 {
 	outline: none !important;
 }
 
 body.DesktopUI div.DialogCheckbox_Container > div.DialogCheckbox:focus:focus-visible,
+html.client_chat_frame div.DialogCheckbox_Container > div.DialogCheckbox:focus:focus-visible,
 body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"] > div[class*="newlogindialog_Checkbox_"]:focus:focus-visible
 {
 	box-shadow: var(--adw-focus-border-outlined) !important;
 }
 
 body.DesktopUI div.DialogCheckbox_Container > div.DialogCheckbox:not(.Active),
+html.client_chat_frame div.DialogCheckbox_Container > div.DialogCheckbox:not(.Active),
 body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"] > div[class*="newlogindialog_Checkbox_"]:empty
 {
 	background: var(--adw-checkbox-unchecked-bg) !important;
@@ -59,24 +64,28 @@ body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxFie
 }
 
 body.DesktopUI div.DialogCheckbox_Container > div.DialogCheckbox:not(.Active):focus:focus-visible,
+html.client_chat_frame div.DialogCheckbox_Container > div.DialogCheckbox:not(.Active):focus:focus-visible,
 body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"] > div[class*="newlogindialog_Checkbox_"]:empty:focus:focus-visible
 {
 	box-shadow: var(--adw-checkbox-unchecked-shadow), var(--adw-focus-border) !important;
 }
 
 body.DesktopUI div.DialogCheckbox_Container:hover > div.DialogCheckbox,
+html.client_chat_frame div.DialogCheckbox_Container:hover > div.DialogCheckbox,
 body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"]:hover > div[class*="newlogindialog_Checkbox_"]
 {
 	background-color: var(--adw-checkbox-checked-overlay-hover) !important;
 }
 
 body.DesktopUI div.DialogCheckbox_Container:active > div.DialogCheckbox,
+html.client_chat_frame div.DialogCheckbox_Container:active > div.DialogCheckbox,
 body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"]:active > div[class*="newlogindialog_Checkbox_"]
 {
 	background-color: var(--adw-checkbox-checked-overlay-active) !important;
 }
 
 body.DesktopUI div.DialogCheckbox_Container:hover > div.DialogCheckbox:not(.Active),
+html.client_chat_frame div.DialogCheckbox_Container:hover > div.DialogCheckbox:not(.Active),
 body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"]:hover > div[class*="newlogindialog_Checkbox_"]:empty
 {
 	background-color: transparent !important;
@@ -84,12 +93,14 @@ body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxFie
 }
 
 body.DesktopUI div.DialogCheckbox_Container:hover > div.DialogCheckbox:not(.Active):focus:focus-visible,
+html.client_chat_frame div.DialogCheckbox_Container:hover > div.DialogCheckbox:not(.Active):focus:focus-visible,
 body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"]:hover > div[class*="newlogindialog_Checkbox_"]:empty:focus:focus-visible
 {
 	box-shadow: var(--adw-checkbox-unchecked-shadow-hover), var(--adw-focus-border) !important;
 }
 
 body.DesktopUI div.DialogCheckbox_Container:active > div.DialogCheckbox:not(.Active),
+html.client_chat_frame div.DialogCheckbox_Container:active > div.DialogCheckbox:not(.Active),
 body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"]:active > div[class*="newlogindialog_Checkbox_"]:empty
 {
 	background-color: var(--adw-checkbox-unchecked-overlay-active) !important;
@@ -97,18 +108,21 @@ body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxFie
 }
 
 body.DesktopUI div.DialogCheckbox_Container:active > div.DialogCheckbox:not(.Active):focus:focus-visible,
+html.client_chat_frame div.DialogCheckbox_Container:active > div.DialogCheckbox:not(.Active):focus:focus-visible,
 body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"]:active > div[class*="newlogindialog_Checkbox_"]:empty:focus:focus-visible
 {
 	box-shadow: var(--adw-focus-border) !important;
 }
 
 body.DesktopUI div.DialogCheckbox_Container > div.DialogCheckbox > svg,
+html.client_chat_frame div.DialogCheckbox_Container > div.DialogCheckbox > svg,
 body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"] > div[class*="newlogindialog_Checkbox_"] > div[class*="newlogindialog_Check_"] > svg
 {
 	display: none !important;
 }
 
 body.DesktopUI div.DialogCheckbox_Container > div.DialogCheckbox::before,
+html.client_chat_frame div.DialogCheckbox_Container > div.DialogCheckbox::before,
 body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"] > div[class*="newlogindialog_Checkbox_"] > div[class*="newlogindialog_Check_"]::before
 {
 	background-color: transparent;
@@ -123,12 +137,14 @@ body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxFie
 }
 
 body.DesktopUI div.DialogCheckbox_Container > div.DialogCheckbox.Active::before,
+html.client_chat_frame div.DialogCheckbox_Container > div.DialogCheckbox.Active::before,
 body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"] > div[class*="newlogindialog_Checkbox_"] > div[class*="newlogindialog_Check_"]:not(:empty)::before
 {
 	background-color: var(--adw-checkbox-checked-fg);
 }
 
 body.DesktopUI div.DialogCheckbox_Container > div.DialogToggle_Label
+html.client_chat_frame div.DialogCheckbox_Container > div.DialogToggle_Label
 {
 	color: rgb(var(--adw-window-fg-rgb)) !important;
 	font-family: var(--adw-text-font) !important;

@@ -92,11 +92,18 @@ LIBRARY_FILES = [
 	"css/main/headerbar/menu.css",
 	"css/main/headerbar/navigation.css",
 
-	"css/main/library/details.css",
-	"css/main/library/gamelist.css",
-	"css/main/library/home.css",
+	"css/main/library/details/activity.css",
+	"css/main/library/details/details.css",
+	"css/main/library/details/event-dialog.css",
+
+	"css/main/library/home/home.css",
+
+	"css/main/library/sidebar/gamelist.css",
+	"css/main/library/sidebar/sidebar.css",
+
 	"css/main/library/library.css",
-	"css/main/library/sidebar.css",
+
+	"css/chat/chat.css",
 
 	"css/dialogs/login.css",
 ]

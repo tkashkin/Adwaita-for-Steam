@@ -1,7 +1,9 @@
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"],
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"] img.avatar,
-body.DesktopUI div[class*="appactivityday_EventActorAvatar_"] div[class*="steamavatar_avatarHolder_"],
-body.DesktopUI div[class*="appactivityday_EventActorAvatar_"] div[class*="steamavatar_avatarHolder_"] img.avatar
+body.DesktopUI div[class*="library_Container_"] div[class*="steamavatar_avatarHolder_"],
+body.DesktopUI div[class*="library_Container_"] div[class*="steamavatar_avatarHolder_"] img.avatar,
+body.DesktopUI div[class*="gamelistentry_FriendStatusHover_"] div[class*="steamavatar_avatarHolder_"],
+body.DesktopUI div[class*="gamelistentry_FriendStatusHover_"] div[class*="steamavatar_avatarHolder_"] img.avatar
 {
 	box-sizing: border-box !important;
 	width: 32px !important;
@@ -17,7 +19,8 @@ body.DesktopUI div[class*="appactivityday_EventActorAvatar_"] div[class*="steama
 }
 
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"],
-body.DesktopUI div[class*="appactivityday_EventActorAvatar_"] div[class*="steamavatar_avatarHolder_"]
+body.DesktopUI div[class*="library_Container_"] div[class*="steamavatar_avatarHolder_"],
+body.DesktopUI div[class*="gamelistentry_FriendStatusHover_"] div[class*="steamavatar_avatarHolder_"]
 {
 	color: rgba(var(--adw-headerbar-fg-rgb), 0.5) !important;
 	box-shadow: inset 0 0 1px currentColor !important;
@@ -26,33 +29,43 @@ body.DesktopUI div[class*="appactivityday_EventActorAvatar_"] div[class*="steama
 }
 
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"] img.avatar,
-body.DesktopUI div[class*="appactivityday_EventActorAvatar_"] div[class*="steamavatar_avatarHolder_"] img.avatar
+body.DesktopUI div[class*="library_Container_"] div[class*="steamavatar_avatarHolder_"] img.avatar,
+body.DesktopUI div[class*="gamelistentry_FriendStatusHover_"] div[class*="steamavatar_avatarHolder_"] img.avatar
 {
 	width: 100% !important;
 	height: 100% !important;
 	z-index: -1 !important;
 }
 
+body.DesktopUI div[class*="gamelistentry_FriendStatusHover_"] div[class*="steamavatar_avatarHolder_"] img.avatar
+{
+	z-index: 0 !important;
+}
+
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"].online,
-body.DesktopUI div[class*="appactivityday_EventActorAvatar_"] div[class*="steamavatar_avatarHolder_"].online
+body.DesktopUI div[class*="library_Container_"] div[class*="steamavatar_avatarHolder_"].online,
+body.DesktopUI div[class*="gamelistentry_FriendStatusHover_"] div[class*="steamavatar_avatarHolder_"].online
 {
 	color: rgba(var(--adw-accent-rgb), 0.5) !important;
 }
 
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"].online.awayOrSnooze,
-body.DesktopUI div[class*="appactivityday_EventActorAvatar_"] div[class*="steamavatar_avatarHolder_"].online.awayOrSnooze
+body.DesktopUI div[class*="library_Container_"] div[class*="steamavatar_avatarHolder_"].online.awayOrSnooze,
+body.DesktopUI div[class*="gamelistentry_FriendStatusHover_"] div[class*="steamavatar_avatarHolder_"].online.awayOrSnooze
 {
 	border-style: dashed !important;
 }
 
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"].ingame,
-body.DesktopUI div[class*="appactivityday_EventActorAvatar_"] div[class*="steamavatar_avatarHolder_"].ingame
+body.DesktopUI div[class*="library_Container_"] div[class*="steamavatar_avatarHolder_"].ingame,
+body.DesktopUI div[class*="gamelistentry_FriendStatusHover_"] div[class*="steamavatar_avatarHolder_"].ingame
 {
 	color: rgba(var(--adw-success-rgb), 0.5) !important;
 }
 
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"] div.avatarStatus,
-body.DesktopUI div[class*="appactivityday_EventActorAvatar_"] div[class*="steamavatar_avatarHolder_"] div.avatarStatus
+body.DesktopUI div[class*="library_Container_"] div[class*="steamavatar_avatarHolder_"] div.avatarStatus,
+body.DesktopUI div[class*="gamelistentry_FriendStatusHover_"] div[class*="steamavatar_avatarHolder_"] div.avatarStatus
 {
 	display: none !important;
 }

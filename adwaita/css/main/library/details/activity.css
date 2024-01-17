@@ -1,0 +1,726 @@
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_AppActivityDay_"]
+{
+	padding: 0 !important;
+	border: none !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_AppActivityDay_"] > div[class*="appactivityday_AppActivityDate_"]
+{
+	color: rgb(var(--adw-popover-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	line-height: var(--adw-list-header-height) !important;
+	text-transform: none !important;
+	letter-spacing: normal !important;
+	font-size: var(--adw-list-header-size) !important;
+	font-weight: var(--adw-list-header-weight) !important;
+	min-height: var(--adw-list-header-height) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_AppActivityDay_"] > div[class*="appactivityday_AppActivityDate_"] > div[class*="appactivityday_Rule_"]
+{
+	display: none !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"]
+{
+	background: none !important;
+	box-shadow: none !important;
+	border: none !important;
+	cursor: default !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div.Panel > div[class*="appactivityday_Event_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel
+{
+	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-opacity)) !important;
+	border-radius: 0 !important;
+	box-shadow: var(--adw-card-shadow) !important;
+	border: none !important;
+	transition: var(--adw-button-transition) !important;
+	cursor: default !important;
+	margin-bottom: 1px !important;
+	position: relative !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div.Panel > div[class*="appactivityday_Event_"]:hover,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel:hover
+{
+	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-hover-opacity)) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div.Panel > div[class*="appactivityday_Event_"]:active,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel:active
+{
+	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-active-opacity)) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div.Panel:first-child > div[class*="appactivityday_Event_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel:first-child
+{
+	border-top-left-radius: var(--adw-card-radius) !important;
+	border-top-right-radius: var(--adw-card-radius) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div.Panel:last-child > div[class*="appactivityday_Event_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel:last-child
+{
+	border-bottom-left-radius: var(--adw-card-radius) !important;
+	border-bottom-right-radius: var(--adw-card-radius) !important;
+}
+
+body.DesktopUI [class*="appdetailshover_AppDetailsHover_"],
+body.DesktopUI [class*="appdetailshover_Background_"]
+{
+	border-radius: var(--adw-card-radius) !important;
+}
+
+/* Partner events */
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeUpdate_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventFeatured_"]
+{
+	box-shadow: none !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventTypeUpdate_"]
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	text-shadow: none !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] img[class*="appactivityday_Blur_"]
+{
+	display: none;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventMediumImage_Title_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeImage_Title_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventTextOnly_Title_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventType_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventType_"] > div,
+body.DesktopUI div[class*="appdetails_Container_"] span[class*="appactivityday_PartnerEventTextOnly_Summary_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventMediumImage_Summary_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeImage_Summary_"]
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-row-title-size) !important;
+	font-weight: var(--adw-text-row-title-weight) !important;
+	text-shadow: none !important;
+	text-transform: none !important;
+	line-height: normal !important;
+	letter-spacing: normal !important;
+	display: -webkit-box !important;
+	-webkit-box-orient: vertical !important;
+	overflow: hidden !important;
+	text-overflow: ellipsis !important;
+	-webkit-line-clamp: 1 !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventType_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventType_"] > div,
+body.DesktopUI div[class*="appdetails_Container_"] span[class*="appactivityday_PartnerEventTextOnly_Summary_"]
+{
+	color: rgba(var(--adw-window-fg-rgb), var(--adw-dim-label-opacity)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-row-subtitle-size) !important;
+	font-weight: var(--adw-text-row-subtitle-weight) !important;
+	display: inline-block !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventTextOnly_TextColumn_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventTextOnly_TextColumn_"] > div[class*="appactivityday_PartnerEventTextOnly_LimitedSummary_"]
+{
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventTextOnly_Icon_"]
+{
+	width: 32px !important;
+	height: 32px !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	flex-shrink: 0 !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventTextOnly_Icon_"] svg path
+{
+	fill: rgba(var(--adw-window-fg-rgb), var(--adw-dim-label-opacity)) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventTextOnly_Contents_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventMediumImage_Contents_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeImage_Contents_"]
+{
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventMediumImage_Contents_"] > div[class*="appactivityday_MediumImageContainer_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeImage_Contents_"] > div[class*="appactivityday_ImageContainer_"]
+{
+	-webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)) !important;
+	overflow: hidden !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div.Panel:first-child > div[class*="appactivityday_Event_"] div[class*="appactivityday_PartnerEventMediumImage_Contents_"] > div[class*="appactivityday_MediumImageContainer_"],
+body.DesktopUI div[class*="appdetails_Container_"] div.Panel:first-child > div[class*="appactivityday_Event_"] div[class*="appactivityday_PartnerEventLargeImage_Contents_"] > div[class*="appactivityday_ImageContainer_"]
+{
+	border-top-right-radius: var(--adw-card-radius) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div.Panel:last-child > div[class*="appactivityday_Event_"] div[class*="appactivityday_PartnerEventMediumImage_Contents_"] > div[class*="appactivityday_MediumImageContainer_"],
+body.DesktopUI div[class*="appdetails_Container_"] div.Panel:last-child > div[class*="appactivityday_Event_"] div[class*="appactivityday_PartnerEventLargeImage_Contents_"] > div[class*="appactivityday_ImageContainer_"]
+{
+	border-bottom-right-radius: var(--adw-card-radius) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventMediumImage_Contents_"] > div[class*="appactivityday_MediumImageContainer_"]::after,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeImage_Contents_"] > div[class*="appactivityday_ImageContainer_"]::after
+{
+	content: "";
+	display: block;
+	border-radius: inherit;
+	box-shadow: inset 0 0 0 1px rgba(var(--adw-card-fg-rgb), var(--adw-border-opacity));
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventMediumImage_Contents_"] > div[class*="appactivityday_MediumImageContainer_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeImage_Contents_"] > div[class*="appactivityday_ImageContainer_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventMediumImage_Contents_"] > div[class*="appactivityday_MediumImageContainer_"] > img,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeImage_Contents_"] > div[class*="appactivityday_ImageContainer_"] > img
+{
+	padding: 0 !important;
+	margin: 0 !important;
+	width: 250px !important;
+	min-width: 250px !important;
+	max-width: 250px !important;
+	height: auto !important;
+	min-height: initial !important;
+	max-height: initial !important;
+	flex: initial !important;
+	align-self: stretch !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventMediumImage_Contents_"] > div[class*="appactivityday_MediumImageContainer_"] > img,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeImage_Contents_"] > div[class*="appactivityday_ImageContainer_"] > img
+{
+	filter: opacity(0.7) saturate(0.7) !important;
+	transition: filter 200ms !important;
+	position: absolute !important;
+	right: 0 !important;
+	top: 50% !important;
+	transform: translateY(-50%) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventMediumImage_Container_"]:hover div[class*="appactivityday_PartnerEventMediumImage_Contents_"] > div[class*="appactivityday_MediumImageContainer_"] > img,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeImage_Container_"]:hover div[class*="appactivityday_PartnerEventLargeImage_Contents_"] > div[class*="appactivityday_ImageContainer_"] > img
+{
+	filter: opacity(1) saturate(1) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventTextOnly_Container_"]
+{
+	padding: 2px 12px !important;
+	min-height: var(--adw-row-height) !important;
+	gap: 12px !important;
+	align-items: center !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventMediumImage_Contents_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeImage_Contents_"]
+{
+	flex-direction: row-reverse !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventMediumImage_Contents_"]::after,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeImage_Contents_"]::after
+{
+	background-color: rgba(var(--adw-headerbar-fg-rgb), var(--adw-dim-label-opacity));
+	content: "";
+	display: block;
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	left: 12px;
+	align-self: center;
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	-webkit-mask-size: 32px;
+	-webkit-mask-image: var(--adw-icon-update);
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventFeatured_"] div[class*="appactivityday_PartnerEventMediumImage_Contents_"]::after,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventFeatured_"] div[class*="appactivityday_PartnerEventLargeImage_Contents_"]::after
+{
+	background-color: rgb(var(--adw-accent-rgb));
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] [class*="appactivityday_PartnerEventFeaturedHeader_"]
+{
+	position: absolute !important;
+	right: 0 !important;
+	z-index: 1 !important;
+	pointer-events: none !important;
+	padding: 6px 12px !important;
+	background: rgb(var(--adw-accent-bg-rgb)) !important;
+	color: rgb(var(--adw-accent-fg-rgb)) !important;
+	box-shadow: var(--adw-card-shadow) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-header-size) !important;
+	font-weight: var(--adw-text-header-weight) !important;
+	text-transform: none !important;
+	line-height: normal !important;
+	letter-spacing: normal !important;
+	border-top-right-radius: var(--adw-card-radius) !important;
+	border-bottom-left-radius: var(--adw-button-radius) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventMediumImage_TextColumn_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeImage_TextColumn_"]
+{
+	padding: 6px 0 6px 56px !important;
+	margin: 0 !important;
+	margin-right: -12px !important;
+	flex-grow: 1 !important;
+	height: fit-content !important;
+	max-height: 140px !important;
+	box-sizing: border-box !important;
+	align-self: center !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventMediumImage_Title_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeImage_Title_"]
+{
+	font-size: var(--adw-text-title1-size) !important;
+	font-weight: var(--adw-text-title1-weight) !important;
+	-webkit-line-clamp: 3 !important;
+	flex-shrink: 0 !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventMediumImage_Summary_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeImage_Summary_"]
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-weight: var(--adw-text-base-weight) !important;
+	padding: 6px 0 !important;
+	-webkit-line-clamp: 3 !important;
+	flex-shrink: 1 !important;
+}
+
+/* User events */
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel
+{
+	display: flex !important;
+	flex-direction: row !important;
+	min-height: var(--adw-row-height) !important;
+	box-sizing: border-box !important;
+	padding: 0 12px !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventHeadline_"]
+{
+	padding: 0 !important;
+	margin: 0 !important;
+	margin-right: 12px !important;
+	flex-shrink: 0 !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventHeadline_"] div[class*="appactivityday_EventActorAvatar_"]
+{
+	width: 32px !important;
+	height: 32px !important;
+	margin-right: 12px !important;
+	cursor: default !important;
+	z-index: 1 !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel span[class*="appactivityday_ActorName_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel span[class*="appactivityday_ActorName_"] span,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel span[class*="appactivityday_SpanEvent_"] span[class*="appactivityday_HeadlineGameName_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel span[class*="appactivityday_SpanEvent_"] a[class*="appactivityday_WishlistLink_"]
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-row-title-size) !important;
+	font-weight: var(--adw-text-link-weight) !important;
+	text-shadow: none !important;
+	text-transform: none !important;
+	line-height: normal !important;
+	letter-spacing: normal !important;
+	cursor: default !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel span[class*="appactivityday_ActorName_"].online,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel span[class*="appactivityday_ActorName_"].online span
+{
+	color: rgb(var(--adw-accent-rgb)) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel span[class*="appactivityday_ActorName_"].ingame,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel span[class*="appactivityday_ActorName_"].ingame span
+{
+	color: rgb(var(--adw-success-rgb)) !important;
+}
+
+/* User events - fill the whole row with the profile link to catch clicks */
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel span[class*="appactivityday_ActorName_"]::before
+{
+	content: "";
+	position: absolute;
+	z-index: 0;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+
+/* Position clickable elements above the profile link */
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel span[class*="appactivityday_SpanEvent_"] a[class*="appactivityday_WishlistLink_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] div[class*="appdetailsachievementssection_RemainderContainer_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_BadgeSection_"] img[class*="appactivityday_Badge_"]
+{
+	position: relative !important;
+	z-index: 2 !important;
+	cursor: default !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel span[class*="appactivityday_SpanEvent_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] div[class*="appdetailsachievementssection_RemainderText_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel span[class*="appactivityday_SpanEvent_"] a[class*="appactivityday_WishlistLink_"]
+{
+	background: none !important;
+	box-shadow: none !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	flex-grow: 1 !important;
+	height: fit-content !important;
+	align-items: center !important;
+	align-self: center !important;
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-row-title-size) !important;
+	font-weight: var(--adw-text-row-title-weight) !important;
+	text-shadow: none !important;
+	text-transform: none !important;
+	letter-spacing: normal !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel span[class*="appactivityday_SpanEvent_"] span[class*="appactivityday_HeadlineGameName_"] div[class*="appactivityday_GameIcon_"]
+{
+	border-radius: var(--adw-gameicon-radius) !important;
+	margin-top: -4px !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_TradingCardSection_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_BadgeSection_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"]
+{
+	padding: 0 !important;
+	margin: 0 !important;
+	display: flex !important;
+	flex-direction: row !important;
+	gap: 6px !important;
+	flex-wrap: nowrap !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] div[class*="appdetailsachievementssection_AchievementHoverContainer_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] div[class*="achievementiconbase_AchievementIconWrapper_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] div[class*="appdetailsachievementssection_RemainderContainer_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] div[class*="appdetailsachievementssection_Remainder_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] div[class*="appdetailsachievementssection_RemainderText_"]
+{
+	padding: 0 !important;
+	margin: 0 !important;
+	width: 40px !important;
+	height: 40px !important;
+	line-height: 40px !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] img[class*="achievementiconbase_Icon_"]
+{
+	border-radius: var(--adw-gameicon-radius) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] img[class*="achievementiconbase_Icon_"]:not([class*="achievementiconbase_IconGlow_"])
+{
+	box-shadow: none !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] div[class*="appdetailsachievementssection_TextSection_"]
+{
+	display: none !important;
+	margin-left: 6px !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] div[class*="appdetailsachievementssection_TextSection_"] > div[class*="appdetailsachievementssection_Name_"]
+{
+	color: rgb(var(--adw-accent-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-row-title-size) !important;
+	font-weight: var(--adw-text-row-title-weight) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] div[class*="appdetailsachievementssection_TextSection_"] > div[class*="appdetailsachievementssection_Desc_"]
+{
+	color: rgba(var(--adw-accent-fg-rgb), var(--adw-dim-label-opacity)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-row-subtitle-size) !important;
+	font-weight: var(--adw-text-row-subtitle-weight) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] > div[class*="appactivityday_PrimaryAchievement_"]:first-child:last-child
+{
+	flex-grow: 1 !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] > div[class*="appactivityday_PrimaryAchievement_"]:first-child:last-child div[class*="appdetailsachievementssection_TextSection_"]
+{
+	display: flex !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] div[class*="appdetailsachievementssection_Remainder_"] div[class*="appactivityday_AchievementRemainder_"]
+{
+	display: none !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] div[class*="appdetailsachievementssection_RemainderText_"]
+{
+	background: rgba(0, 0, 0, var(--adw-dimmer-opacity)) !important;
+	border-radius: var(--adw-gameicon-radius) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_TradingCardSection_"] div[class*="appdetailstradingcardssection_Card_"]
+{
+	margin: 0 !important;
+	min-width: 40px !important;
+	max-width: 40px !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_TradingCardSection_"] div[class*="appdetailstradingcardssection_Card_"]:hover
+{
+	transform: scale(3) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_BadgeSection_"] img[class*="appactivityday_Badge_"]
+{
+	padding: 0 !important;
+	margin: -8px 0 !important;
+	width: 56px !important;
+	height: 56px !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_BadgeSection_"] div[class*="appactivityday_BadgeName_"]
+{
+	color: rgb(var(--adw-accent-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-row-title-size) !important;
+	font-weight: var(--adw-text-row-title-weight) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_BadgeSection_"] div[class*="appactivityday_BadgeLevel_"]
+{
+	color: rgba(var(--adw-accent-fg-rgb), var(--adw-dim-label-opacity)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-row-subtitle-size) !important;
+	font-weight: var(--adw-text-row-subtitle-weight) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"]
+{
+	position: relative !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"] div[class*="pageablecontainer_PageClickContainer_"] > div
+{
+	position: absolute !important;
+	z-index: 1 !important;
+	top: calc(50% - 17px) !important;
+	box-sizing: border-box !important;
+	width: 34px !important;
+	height: 34px !important;
+	padding: 9px !important;
+	margin: 0 !important;
+	background: var(--adw-button-osd-bg) !important;
+	color: var(--adw-button-osd-fg) !important;
+	border-radius: 50% !important;
+	cursor: default !important;
+	opacity: 1 !important;
+	transition: var(--adw-button-transition), opacity 200ms !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"] div[class*="pageablecontainer_PageClickContainer_"] > div:hover
+{
+	background: var(--adw-button-osd-bg-hover) !important;
+	color: var(--adw-button-osd-fg-hover) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"] div[class*="pageablecontainer_PageClickContainer_"] > div:active
+{
+	background: var(--adw-button-osd-bg-active) !important;
+	color: var(--adw-button-osd-fg-active) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"] div[class*="pageablecontainer_PageClickContainer_"] > div > svg
+{
+	display: none !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"] div[class*="pageablecontainer_PageClickContainer_"] > div::before
+{
+	background-color: currentColor;
+	content: "";
+	display: block;
+	width: 16px;
+	height: 16px;
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	-webkit-mask-size: 16px;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"] div[class*="pageablecontainer_PageClickContainer_"] > div[class*="pageablecontainer_PageLeft_"]
+{
+	left: 6px !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"] div[class*="pageablecontainer_PageClickContainer_"] > div[class*="pageablecontainer_PageLeft_"]::before
+{
+	-webkit-mask-image: var(--adw-icon-nav-back);
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"] div[class*="pageablecontainer_PageClickContainer_"] > div[class*="pageablecontainer_PageRight_"]
+{
+	right: 6px !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"] div[class*="pageablecontainer_PageClickContainer_"] > div[class*="pageablecontainer_PageRight_"]::before
+{
+	-webkit-mask-image: var(--adw-icon-nav-forward);
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"] div[class*="pageablecontainer_PageClickContainer_"] > div[class*="pageablecontainer_Disabled_"]
+{
+	opacity: 0 !important;
+	pointer-events: none !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"]
+{
+	margin-right: -12px !important;
+	gap: 0 !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"] div[class*="pageablecontainer_PageableContainer_"]
+{
+	width: 100% !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"] div[class*="pageablecontainer_PageableContainer_"] > div > div.Panel
+{
+	position: relative !important;
+	height: var(--adw-row-height) !important;
+	overflow: hidden !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"] div[class*="appactivityday_GameCarousel_"]
+{
+	-webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 24px, rgba(0, 0, 0, 1) calc(100% - 24px), rgba(0, 0, 0, 0)) !important;
+	padding: 0 24px !important;
+	margin: 0 !important;
+	position: absolute !important;
+	top: -21px !important;
+	left: -50% !important;
+	width: 200% !important;
+	transform: scale(0.5) !important;
+	overflow-x: auto !important;
+	overflow-y: hidden !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"] div[class*="appactivityday_GameCarousel_"]::-webkit-scrollbar
+{
+	display: none !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"] div[class*="libraryassetimage_Container_"]
+{
+	border: 1px rgba(var(--adw-window-fg-rgb), var(--adw-border-opacity)) solid !important;
+	border-radius: calc(var(--adw-button-radius) * 2) !important;
+	overflow: hidden; !important;
+}
+
+/* Rating bar - hidden for now */
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="comment_thread_RatingBar_"]
+{
+	display: none !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div.Panel > div[class*="appactivityday_Event_"] > div[class*="comment_thread_RatingBar_"]
+{
+	position: absolute !important;
+	bottom: 0 !important;
+	right: 0 !important;
+	opacity: 1 !important;
+	width: fit-content !important;
+	padding: 6px !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div.Panel > div[class*="appactivityday_Event_"] > div[class*="comment_thread_RatingBar_"] > div[class*="comment_thread_CanClick_"]
+{
+	border-radius: var(--adw-button-radius) !important;
+	color: rgba(var(--adw-card-fg-rgb), var(--adw-dim-label-opacity)) !important;
+	background: transparent !important;
+	cursor: default !important;
+	padding: 2px 4px !important;
+	margin: 0 !important;
+	transition: var(--adw-button-transition) !important;
+	flex-direction: row-reverse !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div.Panel > div[class*="appactivityday_Event_"] > div[class*="comment_thread_RatingBar_"] > div[class*="comment_thread_CanClick_"] svg > *
+{
+	fill: rgba(var(--adw-card-fg-rgb), var(--adw-dim-label-opacity)) !important;
+	stroke: rgba(var(--adw-card-fg-rgb), var(--adw-dim-label-opacity)) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div.Panel > div[class*="appactivityday_Event_"] > div[class*="comment_thread_RatingBar_"] > div[class*="comment_thread_CanClick_"]:hover svg > *
+{
+	fill: rgb(var(--adw-card-fg-rgb)) !important;
+	stroke: rgb(var(--adw-card-fg-rgb)) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div.Panel > div[class*="appactivityday_Event_"] > div[class*="comment_thread_RatingBar_"] > div[class*="comment_thread_CanClick_"]:hover
+{
+	color: rgb(var(--adw-card-fg-rgb)) !important;
+	background: rgba(var(--adw-card-fg-rgb), var(--adw-hover-opacity)) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div.Panel > div[class*="appactivityday_Event_"] > div[class*="comment_thread_RatingBar_"] > div[class*="comment_thread_CanClick_"]:active
+{
+	background: rgba(var(--adw-card-fg-rgb), var(--adw-active-opacity)) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div.Panel > div[class*="appactivityday_Event_"] > div[class*="comment_thread_RatingBar_"] > div[class*="comment_thread_ButtonSpacer_"]
+{
+	width: 4px !important;
+}
+
+/* Fetch more */
+body.DesktopUI div[class*="appdetails_Container_"] button[class*="appdetailsactivitysection_FetchMoreContainer_"]::before,
+body.DesktopUI div[class*="appdetails_Container_"] button[class*="appdetailsactivitysection_FetchMoreContainer_"]:active
+{
+	box-shadow: none !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] button[class*="appdetailsactivitysection_FetchMoreContainer_"].Disabled
+{
+	background-color: rgba(var(--adw-window-fg-rgb), calc(var(--adw-button-bg-opacity) * var(--adw-disabled-opacity))) !important;
+	color: rgba(var(--adw-window-fg-rgb), var(--adw-disabled-opacity)) !important;
+}
