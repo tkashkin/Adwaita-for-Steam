@@ -62,52 +62,6 @@ body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="steamdesktop_Title
 	background: none !important;
 }
 
-/*body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AccountMenu_"],*/
-/*body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"],*/
-/*body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"] img.avatar*/
-/*{*/
-/*	box-sizing: border-box !important;*/
-/*	width: 30px !important;*/
-/*	height: 30px !important;*/
-/*	padding: 0 !important;*/
-/*	border-radius: 50% !important;*/
-/*	overflow: hidden !important;*/
-/*	transform: none !important;*/
-/*	box-shadow: none !important;*/
-/*	border: none !important;*/
-/*}*/
-
-/*body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"] img.avatar*/
-/*{*/
-/*	width: 28px !important;*/
-/*	height: 28px !important;*/
-/*	padding: 0 !important;*/
-/*	margin: 0 !important;*/
-/*}*/
-
-/*body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"]*/
-/*{*/
-/*	border-radius: 50% !important;*/
-/*	border: 2px rgba(var(--adw-headerbar-fg-rgb), 0.5) solid !important;*/
-/*	transition: border-color 0.25s;*/
-/*	margin: 0 auto !important;*/
-/*}*/
-
-/*body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"].online*/
-/*{*/
-/*	border-color: rgba(var(--adw-accent-rgb), 0.5) !important;*/
-/*}*/
-
-/*body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"].online.awayOrSnooze*/
-/*{*/
-/*	border-style: dashed !important;*/
-/*}*/
-
-/*body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"].ingame*/
-/*{*/
-/*	border-color: rgba(var(--adw-success-rgb), 0.5) !important;*/
-/*}*/
-
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"] div.avatarStatus,
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"] + div,
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AccountMenu_"] div[class*="titlebarcontrols_WalletBalance_"],
@@ -210,7 +164,7 @@ body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar
 	border-radius: var(--adw-button-radius) !important;
 }
 
-body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_DownloadStatusContent_"] > div[class*="bottombar_DetailedDownloadProgress_"] > div[class*="bottombar_Icon_"]
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_DownloadStatusContent_"] > div[class*="bottombar_DetailedDownloadProgress_"] div[class*="bottombar_Icon_"]
 {
 	display: block !important;
 	width: 32px !important;
@@ -220,12 +174,12 @@ body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar
 	box-shadow: none !important;
 }
 
-body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_DownloadStatusContent_"] > div[class*="bottombar_DetailedDownloadProgress_"] > div[class*="bottombar_Icon_"] img
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_DownloadStatusContent_"] > div[class*="bottombar_DetailedDownloadProgress_"] div[class*="bottombar_Icon_"] img
 {
 	border-radius: var(--adw-button-radius) !important;
 }
 
-body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_DownloadStatusContent_"] > div[class*="bottombar_DetailedDownloadProgress_"] > div[class*="bottombar_ProgressBarWrapper_"]
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_DownloadStatusContent_"] > div[class*="bottombar_DetailedDownloadProgress_"] div[class*="bottombar_ProgressBarWrapper_"]
 {
 	width: 32px !important;
 	height: 3px !important;
@@ -235,7 +189,7 @@ body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar
 	border-radius: 0 !important;
 }
 
-body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_DownloadStatusContent_"] > div[class*="bottombar_DetailedDownloadProgress_"] > div[class*="bottombar_ProgressBarWrapper_"] > div[class*="bottombar_ProgressBar_"]
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_DownloadStatusContent_"] > div[class*="bottombar_DetailedDownloadProgress_"] div[class*="bottombar_ProgressBarWrapper_"] > div[class*="bottombar_ProgressBar_"]
 {
 	--color-progress-bar-background: transparent !important;
 	--color-progress-bar-foreground: rgb(var(--adw-accent-rgb)) !important;
