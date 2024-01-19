@@ -79,27 +79,27 @@
 
 .ModalDialogPopup div[class*="pagedsettings_PagedSettingsDialog_PageListItem_"]:hover
 {
-	background-color: rgba(255, 255, 255, 0.07) !important;
+	background-color: var(--sidebar_bg_hover) !important;
 }
 
 .ModalDialogPopup div[class*="pagedsettings_PagedSettingsDialog_PageListItem_"]:active
 {
-	background-color: rgba(255, 255, 255, 0.16) !important;
+	background-color: var(--sidebar_bg_active) !important;
 }
 
 .ModalDialogPopup div[class*="pagedsettings_PagedSettingsDialog_PageListItem_"][class*="pagedsettings_Active_"]
 {
-	background-color: rgba(255, 255, 255, 0.1) !important;
+	background-color: var(--sidebar_bg_selected)!important;
 }
 
 .ModalDialogPopup div[class*="pagedsettings_PagedSettingsDialog_PageListItem_"][class*="pagedsettings_Active_"]:hover
 {
-	background-color: rgba(255, 255, 255, 0.13) !important;
+	background-color: var(--sidebar_bg_selected_hover) !important;
 }
 
 .ModalDialogPopup div[class*="pagedsettings_PagedSettingsDialog_PageListItem_"][class*="pagedsettings_Active_"]:active
 {
-	background-color: rgba(255, 255, 255, 0.19) !important;
+	background-color: var(--sidebar_bg_selected_active) !important;
 }
 
 .ModalDialogPopup div[class*="pagedsettings_PagedSettingsDialog_PageListItem_"] div[class*="pagedsettings_PageListItem_Icon_"]

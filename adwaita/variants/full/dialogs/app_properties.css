@@ -160,8 +160,9 @@
 .ModalDialogPopup div[class*="appproperties_AppProperties_"] .DialogCheckbox_Container
 {
 	align-items: center !important;
-	background: var(--entry_bg) !important;
-	border-radius: var(--entry_radius) !important;
+	background: var(--card_bg) !important;
+	border-radius: var(--card_radius) !important;
+	box-shadow: var(--card_bs) !important;
 	flex-direction: row-reverse !important;
 	min-height: var(--entry_min_height) !important;
 	padding: var(--entry_padding) !important;
@@ -214,6 +215,7 @@
 {
 	background: var(--card_bg) !important;
 	border-radius: var(--card_radius) !important;
+	box-shadow: var(--card_bs) !important;
 	padding: 0px !important;
 	margin-top: 1px !important;
 }
@@ -339,6 +341,12 @@
 	margin-left: 18px !important;
 	margin-right: 90px !important;
 	margin-top: -22px !important;
+}
+
+.ModalDialogPopup div[class*="appproperties_AppProperties_"] .DialogInputLabelGroup .DialogDropDown
+{
+	background: var(--card_bg) !important;
+	box-shadow: var(--card_bs) !important;
 }
 
 /* Beta Access Code */

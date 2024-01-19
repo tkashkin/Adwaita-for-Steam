@@ -55,6 +55,7 @@ body.DesktopUI .login_Login_VZ6x_.DesktopUI input[class*="newlogindialog_TextInp
 	background: var(--card_bg) !important;
 	border-radius: var(--card_radius) !important;
 	border: none !important;
+	box-shadow: var(--card_bs) !important;
 	color: var(--fg) !important;
 	min-height: var(--entry_min_height_labeled) !important;
 	padding: var(--entry_padding_labeled) !important;
