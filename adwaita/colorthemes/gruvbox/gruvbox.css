@@ -1,45 +1,48 @@
 :root {
-	--bg: #282828FF;
-	--fg: #EBDBB2FF;
-	--border: #FFFFFF26;
-	--window_bg: #282828FF;
-	--window_fg: #EBDBB2FF;
-	--headerbar_backdrop: #282828FF;
-	--headerbar_bg: #3C3836FF;
-	--headerbar_fg: #EBDBB2FF;
-	--headerbar_shade: #00000061;
-	--popover_bg: #3C3836FF;
-	--popover_fg: #EBDBB2FF;
-	--toast_bg: #000000B3;
-	--toast_fg: #EBDBB2FF;
-	--view_bg: #1D2021FF;
-	--view_fg: #EBDBB2FF;
-	--accent: #B8BB26FF;
-	--accent_bg: #98971AFF;
-	--accent_fg: #EBDBB2FF;
-	--accent_disabled: #B8BB2680;
-	--accent_hover_bg: #B8BB2612;
-	--accent_active_bg: #B8BB2629;
-	--destructive: #FB4934FF;
-	--destructive_bg: #CC241DFF;
-	--destructive_fg: #EBDBB2FF;
-	--destructive_disabled: #FB483480;
-	--destructive_hover_bg: #FB483412;
-	--destructive_active_bg: #FB483429;
-	--error: #FB4934FF;
-	--error_bg: #CC241DFF;
-	--error_fg: #EBDBB2FF;
-	--success: #8EC07CFF;
-	--success_bg: #689D6AFF;
-	--success_fg: #EBDBB2FF;
-	--warning: #FABD2FFF;
-	--warning_bg: #D79921FF;
-	--warning_fg: #EBDBB2FF;
-	--button_fg: #EBDBB2FF;
-	--dim_label_fg: #EBDBB28C;
-	--card_solid_bg: #3E3E3EFF;
-	--focusring: #B8BB2680;
-	--scrollbar: #665C5433;
-	--scrollbar_hover: #665C5466;
-	--scrollbar_active: #665C5499;
+	/* ----------------------- */
+	/* RGB Colors              */
+	/* Format: R, G, B         */
+	/* No Hex or rgb() allowed */
+	/* ----------------------- */
+	/* General */
+	--bg_rgb: 40, 40, 40;
+	--fg_rgb: 235, 219, 178;
+
+	/* Accent Colors */
+	--accent_rgb: 184, 187, 38;
+	--accent_bg_rgb: 152, 151, 26;
+	--destructive_rgb: 251, 73, 52;
+	--destructive_bg_rgb: 204, 36, 29;
+	--error_rgb: 251, 73, 52;
+	--error_bg_rgb: 204, 36, 29;
+	--success_rgb: 142, 192, 124;
+	--success_bg_rgb: 104, 157, 106;
+	--warning_rgb: 250, 189, 47;
+	--warning_bg_rgb: 215, 153, 33;
+
+	/* Scrollbars */
+	--scrollbar_rgb: 102, 92, 84;
+
+	/* ----------------------- */
+	/* Other Colors            */
+	/* ----------------------- */
+	/* Darker Backgrounds */
+	--view_bg: rgb(29, 32, 33);
+
+	/* Headerbar */
+	--headerbar_backdrop: rgb(40, 40, 40);
+	--headerbar_bg: rgb(60, 56, 54);
+
+	/* App properties DLC/Worshop Header */
+	--card_solid_bg: rgb(62, 62, 62);
+
+	/* Popup Elements */
+	--popover_bg: rgb(60, 56, 54);
+
+	/* Accent FG */
+	--accent_fg: rgb(235, 219, 178);
+	--destructive_fg: rgb(235, 219, 178);
+	--error_fg: rgb(235, 219, 178);
+	--success_fg: rgb(235, 219, 178);
+	--warning_fg: rgb(235, 219, 178);
 }

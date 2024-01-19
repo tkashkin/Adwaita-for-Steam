@@ -1,46 +1,74 @@
+	/* ------------------------------------------------------------- */
+	/* This file is for reference only                               */
+	/* It is not actually used by the installer                      */
+	/* It includes more verbose theming than you probable need       */
+	/* See one of the other themes for more a more compact theme     */
+	/* ------------------------------------------------------------- */
+
 :root {
-	--bg: #242424FF;
-	--fg: #FFFFFFFF;
-	--border: #FFFFFF26;
-	--window_bg: #242424FF;
-	--window_bg_transparent: #24242400;
-	--window_fg: #FFFFFFFF;
-	--headerbar_backdrop: #242424FF;
-	--headerbar_bg: #303030FF;
-	--headerbar_fg: #FFFFFFFF;
-	--headerbar_shade: #00000061;
-	--popover_bg: #383838FF;
-	--popover_fg: #FFFFFFFF;
-	--toast_bg: #000000B3;
-	--toast_fg: #FFFFFFFF;
-	--view_bg: #1E1E1EFF;
-	--view_fg: #FFFFFFFF;
-	--accent: #78AEEDFF;
-	--accent_bg: #3584E4FF;
-	--accent_fg: #FFFFFFFF;
-	--accent_disabled: #78AEED80;
-	--accent_hover_bg: #78AEED12;
-	--accent_active_bg: #78AEED29;
-	--destructive: #FF7B63FF;
-	--destructive_bg: #C01C28FF;
-	--destructive_fg: #FFFFFFFF;
-	--destructive_disabled: #FF7B6380;
-	--destructive_hover_bg: #FF7B6312;
-	--destructive_active_bg: #FF7B6329;
-	--error: #FF7B63FF;
-	--error_bg: #C01C28FF;
-	--error_fg: #FFFFFFFF;
-	--success: #8FF0A4FF;
-	--success_bg: #26A269FF;
-	--success_fg: #FFFFFFFF;
-	--warning: #F8E45CFF;
-	--warning_bg: #CD9309FF;
-	--warning_fg: #FFFFFFFF;
-	--button_fg: #FFFFFFFF;
-	--dim_label_fg: #FFFFFF8C;
-	--card_solid_bg: #3A3A3AFF;
-	--focusring: #78AEED80;
-	--scrollbar: #FFFFFF33;
-	--scrollbar_hover: #FFFFFF66;
-	--scrollbar_active: #FFFFFF99;
+	/* ----------------------- */
+	/* RGB Colors              */
+	/* Format: R, G, B         */
+	/* No Hex or rgb() allowed */
+	/* ----------------------- */
+	/* General */
+	--bg_rgb: 36, 36, 36;
+	--fg_rgb: 255, 255, 255;
+
+	/* Accent Colors */
+	--accent_rgb: 120, 174, 237;
+	--accent_bg_rgb: 53, 132, 228;
+	--destructive_rgb: 255, 123, 99;
+	--destructive_bg_rgb: 192, 28, 40;
+	--error_rgb: 255, 123, 99;
+	--error_bg: 192, 28, 40;
+	--success_rgb: 143, 240, 164;
+	--success_bg_rgb: 38, 162, 105;
+	--warning_rgb: 248, 228, 92;
+	--warning_bg_rgb: 205, 147, 9;
+	--warning_bg_rgb: 205, 147, 9;
+
+	/* Elements */
+	--button_bg_rgb: 255, 255, 255;
+	--headerbar_button_bg_rgb: 255, 255, 255;
+	--scrollbar_rgb: 255, 255, 255;
+
+	/* ----------------------- */
+	/* Other Colors            */
+	/* ----------------------- */
+	/* Accent FGs */
+	--accent_fg: rgb(255, 255, 255);
+	--destructive_fg: rgb(255, 255, 255);
+	--error_fg: rgb(255, 255, 255);
+	--success_fg: rgb(255, 255, 255);
+	--warning_fg: rgb(255, 255, 255);
+
+	/* Darker View */
+	--view_bg: rgb(30, 30, 30);
+	--view_fg: rgb(255, 255, 255);
+
+	/* Window */
+	--border: rgba(255, 255, 255, 0.15);
+	--window_bg: rgb(36, 36, 36);
+	--window_fg: rgb(255, 255, 255);
+
+	/* Headerbar */
+	--headerbar_backdrop: rgb(36, 36, 36);
+	--headerbar_bg: rgb(48, 48, 48);
+	--headerbar_fg: rgb(255, 255, 255);
+	--headerbar_shade: rgba(0, 0, 0, 0.64);
+
+	/* Buttons */
+	--button_fg: rgb(255, 255, 255);
+
+	/* Popup elements */
+	--popover_bg: rgb(56, 56, 56);
+	--popover_fg: rgb(255, 255, 255);
+
+	/* Floating Toasts */
+	--toast_bg: rgba(0, 0, 0, 0.7);
+	--toast_fg: rgba(255, 255, 255);
+
+	/* App properties DLC/Worshop Header */
+	--card_solid_bg: rgb(58, 58, 58);
 }

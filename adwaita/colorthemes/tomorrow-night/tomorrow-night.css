@@ -1,45 +1,46 @@
 :root {
-	--bg: #282A2EFF;
-	--fg: #C5C8C6FF;
-	--border: #373B41FF;
-	--window_bg: #282A2EFF;
-	--window_fg: #C5C8C6FF;
-	--headerbar_backdrop: #1D1F21FF;
-	--headerbar_bg: #282A2EFF;
-	--headerbar_fg: #C5C8C6FF;
-	--headerbar_shade: #00000061;
-	--popover_bg: #373B41FF;
-	--popover_fg: #C5C8C6FF;
-	--toast_bg: #373B41B3;
-	--toast_fg: #C5C8C6FF;
-	--view_bg: #1D1F21FF;
-	--view_fg: #C5C8C6FF;
-	--accent: #81A2BEFF;
-	--accent_bg: #81A2BEFF;
-	--accent_fg: #FFFFFFFF;
-	--accent_disabled: #81A2BE80;
-	--accent_hover_bg: #81A2BE12;
-	--accent_active_bg: #81A2BE29;
-	--destructive: #CC6666FF;
-	--destructive_bg: #CC6666FF;
-	--destructive_fg: #C5C8C6FF;
-	--destructive_disabled: #CC666680;
-	--destructive_hover_bg: #CC666612;
-	--destructive_active_bg: #CC666629;
-	--error: #CC6666FF;
-	--error_bg: #CC6666FF;
-	--error_fg: #C5C8C6FF;
-	--success: #52C196FF;
-	--success_bg: #52C196FF;
-	--success_fg: #FFFFFFFF;
-	--warning: #F0C674FF;
-	--warning_bg: #F0C674FF;
-	--warning_fg: #C5C8C6FF;
-	--button_fg: #C5C8C6FF;
-	--dim_label_fg: #C5C8C68C;
-	--card_solid_bg: #3E4043FF;
-	--focusring: #81A2BE80;
-	--scrollbar: #FFFFFF33;
-	--scrollbar_hover: #FFFFFF66;
-	--scrollbar_active: #FFFFFF99;
+	/* ----------------------- */
+	/* RGB Colors              */
+	/* Format: R, G, B         */
+	/* No Hex or rgb() allowed */
+	/* ----------------------- */
+	/* General */
+	--bg_rgb: 40, 42, 46;
+	--fg_rgb: 197, 200, 198;
+
+	/* Accent Colors */
+	--accent_rgb: 129, 162, 190;
+	--accent_bg_rgb: 129, 162, 190;
+	--destructive_rgb: 204, 102, 102;
+	--destructive_bg_rgb: 204, 102, 102;
+	--error_rgb: 204, 102, 102;
+	--error_bg_rgb: 204, 102, 102;
+	--success_rgb: 82, 193, 150;
+	--success_bg_rgb: 82, 193, 150;
+	--warning_rgb: 240, 198, 116;
+	--warning_bg_rgb: 240, 198, 116;
+
+	/* ----------------------- */
+	/* Other Colors            */
+	/* ----------------------- */
+	/* Darker Backgrounds */
+	--view_bg: rgb(29, 31, 33);
+
+	/* Headerbar */
+	--headerbar_backdrop: rgb(29, 31, 33);
+	--headerbar_bg: rgb(40, 42, 46);
+
+	/* App properties DLC/Worshop Header */
+	--card_solid_bg: rgb(62, 64, 67);
+
+	/* Popup Elements */
+	--popover_bg: rgb(55, 59, 65);
+	--toast_bg: rgba(55, 59, 65, 0.7);
+
+	/* Accent FG */
+	--accent_fg: rgb(255, 255, 255);
+	--success_fg: rgb(255, 255, 255);
+
+	/* Border */
+	--border: rgb(55, 59, 65);
 }
