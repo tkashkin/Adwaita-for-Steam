@@ -1,0 +1,141 @@
+/**
+ * Custom localized strings.
+ * Some of the strings are copied from `steamui/steamui_*-json.js`.
+ *
+ * Steam supported languages: https://partner.steamgames.com/doc/store/localization/languages
+ */
+
+:root
+{
+	--adw-string-nav-profile: "Profile";
+}
+
+:root:lang(bg)
+{
+	--adw-string-nav-profile: "Профил";
+}
+
+:root:lang(cs)
+{
+	--adw-string-nav-profile: "Profil";
+}
+
+:root:lang(da)
+{
+	--adw-string-nav-profile: "Profil";
+}
+
+:root:lang(de)
+{
+	--adw-string-nav-profile: "Profil";
+}
+
+:root:lang(el)
+{
+	--adw-string-nav-profile: "Προφίλ";
+}
+
+:root:lang(es), :root:lang(es-419)
+{
+	--adw-string-nav-profile: "Perfil";
+}
+
+:root:lang(fi)
+{
+	--adw-string-nav-profile: "Profiili";
+}
+
+:root:lang(fr)
+{
+	--adw-string-nav-profile: "Profil";
+}
+
+:root:lang(hu)
+{
+	--adw-string-nav-profile: "Profil";
+}
+
+:root:lang(id)
+{
+	--adw-string-nav-profile: "Profil";
+}
+
+:root:lang(it)
+{
+	--adw-string-nav-profile: "Profilo";
+}
+
+:root:lang(ja)
+{
+	--adw-string-nav-profile: "プロフィール";
+}
+
+:root:lang(ko)
+{
+	--adw-string-nav-profile: "프로필";
+}
+
+:root:lang(nl)
+{
+	--adw-string-nav-profile: "Profiel";
+}
+
+:root:lang(no)
+{
+	--adw-string-nav-profile: "Profil";
+}
+
+:root:lang(pl)
+{
+	--adw-string-nav-profile: "Profil";
+}
+
+:root:lang(pt), :root:lang(pt-BR)
+{
+	--adw-string-nav-profile: "Perfil";
+}
+
+:root:lang(ro)
+{
+	--adw-string-nav-profile: "Profil";
+}
+
+:root:lang(ru)
+{
+	--adw-string-nav-profile: "Профиль";
+}
+
+:root:lang(sv)
+{
+	--adw-string-nav-profile: "Profil";
+}
+
+:root:lang(th)
+{
+	--adw-string-nav-profile: "โปรไฟล์";
+}
+
+:root:lang(tr)
+{
+	--adw-string-nav-profile: "Profil";
+}
+
+:root:lang(uk)
+{
+	--adw-string-nav-profile: "Профіль";
+}
+
+:root:lang(vn)
+{
+	--adw-string-nav-profile: "Hồ sơ";
+}
+
+:root:lang(zh), :root:lang(zh-CN)
+{
+	--adw-string-nav-profile: "个人资料";
+}
+
+:root:lang(zh-TW)
+{
+	--adw-string-nav-profile: "個人檔案";
+}

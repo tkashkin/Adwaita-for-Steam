@@ -1,0 +1,637 @@
+/* --- New Login View --- */
+/* BG */
+body.DesktopUI div[class*="login_Login_"],
+body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_EmbeddedRoot_"],
+body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_StandardLayout_"][class*="newlogindialog_Embedded_"],
+body.DesktopUI > div[class*="index_PreloadThrobber_"],
+body.DesktopUI div[class*="steamdesktop_InitContainer_"]
+{
+	background: rgb(var(--adw-window-bg-rgb)) !important;
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	border: none !important;
+	box-shadow: none !important;
+	overflow: hidden !important;
+	user-select: none !important;
+	-webkit-app-region: drag !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="login_TitleContainer_"]
+{
+	height: 46px !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_EmbeddedRoot_"]
+{
+	padding: 0 24px 16px 24px !important;
+}
+
+/* Text */
+body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_Highlight_"]
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_FormError_"]
+{
+	color: rgb(var(--adw-error-rgb)) !important;
+}
+
+/* Labels */
+body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_FieldLabel_"]
+{
+	color: rgba(var(--adw-window-fg-rgb), var(--adw-dim-label-opacity)) !important;
+	left: 14px !important;
+	margin-bottom: -3px !important;
+	pointer-events: none !important;
+	position: relative !important;
+	top: 22px !important;
+	text-transform: none !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: 12px !important;
+	font-weight: 400 !important;
+}
+
+/* Entry */
+body.DesktopUI div[class*="login_Login_"] input[class*="newlogindialog_TextInput_"]
+{
+	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-opacity)) !important;
+	color: rgb(var(--adw-card-fg-rgb)) !important;
+	border-radius: var(--adw-card-radius) !important;
+	box-shadow: var(--adw-card-shadow) !important;
+	border: none !important;
+	min-height: var(--adw-row-height) !important;
+	box-sizing: border-box !important;
+	padding: var(--adw-entry-labeled-padding) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-entry-font-size) !important;
+	font-weight: var(--adw-entry-font-weight) !important;
+	transition: var(--adw-button-transition) !important;
+	-webkit-app-region: no-drag !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] input[class*="newlogindialog_TextInput_"]:not(:focus):hover
+{
+	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-hover-opacity)) !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] input[class*="newlogindialog_TextInput_"]:focus
+{
+	box-shadow: var(--adw-card-shadow), var(--adw-focus-border) !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] form[class*="newlogindialog_LoginForm_"]
+{
+	max-width: 480px !important;
+	margin: auto !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] form[class*="newlogindialog_LoginForm_"] input[class*="newlogindialog_TextInput_"][type="text"]
+{
+	border-bottom-left-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+	margin-bottom: -25px !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] form[class*="newlogindialog_LoginForm_"] input[class*="newlogindialog_TextInput_"][type="password"]
+{
+	border-top-right-radius: 0 !important;
+	border-top-left-radius: 0 !important;
+}
+
+/* Remember me checkbox */
+body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"]
+{
+	-webkit-app-region: no-drag !important;
+	width: fit-content !important;
+	margin: auto !important;
+	padding: 4px !important;
+	cursor: default !important;
+}
+
+/* Submit Button */
+body.DesktopUI div[class*="login_Login_"] button[class*="newlogindialog_SubmitButton_"]
+{
+	color: var(--adw-button-suggested-fg) !important;
+	background: var(--adw-button-suggested-bg) !important;
+	background-blend-mode: overlay !important;
+	border-radius: var(--adw-button-pill-radius) !important;
+	transition: var(--adw-button-transition) !important;
+	padding: 12px 24px !important;
+	width: auto !important;
+	min-width: 150px !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: 15px !important;
+	font-weight: 700 !important;
+	-webkit-app-region: no-drag !important;
+	box-shadow: none !important;
+	cursor: default !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] button[class*="newlogindialog_SubmitButton_"]:hover
+{
+	background-color: var(--adw-button-suggested-overlay-hover) !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] button[class*="newlogindialog_SubmitButton_"]:active
+{
+	background-color: var(--adw-button-suggested-overlay-active) !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] button[class*="newlogindialog_SubmitButton_"]:focus
+{
+	outline: none !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] button[class*="newlogindialog_SubmitButton_"]:focus:focus-visible
+{
+	box-shadow: var(--adw-focus-border-outlined) !important;
+}
+
+body.DesktopUI div[class*="login_Login_"]
+{
+	height: 100% !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_Login_"]
+{
+	display: flex !important;
+	height: 100% !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] form[class*="newlogindialog_LoginForm_"]
+{
+	align-items: stretch !important;
+	align-content: center !important;
+	align-self: center !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_EmbeddedRoot_"]
+{
+	column-gap: 16px !important;
+	row-gap: 0 !important;
+	flex-grow: 1 !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] svg[class*="newlogindialog_HeaderLogo_"],
+body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_LogoContainer_"]
+{
+	margin: auto !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_EmbeddedRootFooter_"]
+{
+	flex: 1 !important;
+	padding: 0 !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_QRSection_"] div[class*="newlogindialog_Highlight_"]
+{
+	display: none !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_QRSection_"] div[class*="qrlogin_Box_"]
+{
+	-webkit-app-region: no-drag !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_BackArrowContainer_"]
+{
+	position: absolute !important;
+	top: -40px !important;
+	left: calc(var(--adw-windowcontrols-close-margin-left) + 6px) !important;
+	-webkit-app-region: no-drag;
+	z-index: 9 !important;
+	cursor: default !important;
+	border-radius: var(--adw-button-radius) !important;
+	box-sizing: border-box !important;
+	width: 34px !important;
+	height: 34px !important;
+	padding: 9px !important;
+	transition: var(--adw-button-transition) !important;
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	background: transparent !important;
+	box-shadow: none !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_BackArrowContainer_"]:hover
+{
+	background: rgba(var(--adw-window-fg-rgb), var(--adw-hover-opacity)) !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_BackArrowContainer_"]:active
+{
+	background: rgba(var(--adw-window-fg-rgb), var(--adw-active-opacity)) !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_BackArrowContainer_"]:focus:focus-visible
+{
+	box-shadow: var(--adw-focus-border) !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_BackArrowContainer_"] > svg
+{
+	display: none !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_BackArrowContainer_"]::before
+{
+	background-color: rgb(var(--adw-window-fg-rgb));
+	content: "";
+	display: block;
+	width: 16px;
+	height: 16px;
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	-webkit-mask-size: 16px;
+	-webkit-mask-image: var(--adw-icon-nav-back);
+	box-shadow: none !important;
+}
+
+/* Steam Guard dialog */
+body.DesktopUI div[class*="login_Login_"] [class*="newlogindialog_Compact_"]
+{
+	width: 100% !important;
+	padding: 0 !important;
+	gap: 0 !important;
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: 15px !important;
+	line-height: normal !important;
+	font-weight: 400 !important;
+	letter-spacing: normal !important;
+	text-transform: none !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] [class*="newlogindialog_Compact_"] [class*="newlogindialog_PrimaryHeader_"],
+body.DesktopUI div[class*="login_Login_"] [class*="newlogindialog_Compact_"] [class*="newlogindialog_FailureTitle_"]
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: 20px !important;
+	line-height: normal !important;
+	font-weight: 800 !important;
+	letter-spacing: normal !important;
+	text-transform: none !important;
+	text-align: center;
+}
+
+body.DesktopUI div[class*="login_Login_"] [class*="newlogindialog_Compact_"] [class*="newlogindialog_SegmentedCharacterInput_"]
+{
+	border-radius: var(--adw-entry-radius) !important;
+	transition: var(--adw-button-transition) !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] [class*="newlogindialog_Compact_"] [class*="newlogindialog_SegmentedCharacterInput_"]:focus-within
+{
+	box-shadow: var(--adw-focus-border) !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] [class*="newlogindialog_Compact_"] [class*="newlogindialog_SegmentedCharacterInput_"] input
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] [class*="newlogindialog_Compact_"] [class*="newlogindialog_FormContainer_"]
+{
+	padding: 24px !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] [class*="newlogindialog_Compact_"] [class*="newlogindialog_FormContainer_"] [class*="newlogindialog_ConfirmationContainer_"],
+body.DesktopUI div[class*="login_Login_"] [class*="newlogindialog_Compact_"] [class*="newlogindialog_FormContainer_"] [class*="newlogindialog_ConfirmationEntryContainer_"]
+{
+	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-opacity)) !important;
+	color: rgb(var(--adw-card-fg-rgb)) !important;
+	border-radius: var(--adw-card-radius) !important;
+	box-shadow: var(--adw-card-shadow) !important;
+	border: none !important;
+	-webkit-app-region: no-drag !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"] div[class*="newlogindialog_CheckboxFieldLabel_"],
+body.DesktopUI div[class*="login_Login_"] [class*="newlogindialog_TextLink_"],
+body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_UseMobileAppForQR_"],
+body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_EmbeddedRootFooter_"]
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: 13px !important;
+	font-weight: 400 !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] [class*="newlogindialog_TextLink_"]
+{
+	font-weight: 700 !important;
+	text-decoration: none !important;
+	-webkit-app-region: no-drag !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] [class*="newlogindialog_TextLink_"]:hover
+{
+	text-decoration: underline !important;
+}
+
+/* Loading */
+body.DesktopUI div[class*="login_Login_"] div[class*="loadingthrobber_Spacer_"]:first-child
+{
+	flex-grow: 0.2 !important;
+}
+
+/* Account chooser */
+body.DesktopUI div[class*="login_Login_"] div[class*="login_UserChooser_"]
+{
+	-webkit-app-region: no-drag !important;
+	overflow-y: auto !important;
+	width: 100% !important;
+	height: calc(100% - 46px) !important;
+	padding: 0 !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="login_UserChooser_"] div[class*="login_AvatarContainer_"]
+{
+	margin: 24px auto !important;
+	width: 480px !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="login_UserChooser_"] div[class*="loginpanel_CachedUserList_"]
+{
+	display: block !important;
+	margin-bottom: 24px !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="login_UserChooser_"] div[class*="login_WhosPlaying_"]
+{
+	padding: 0 !important;
+	margin-bottom: 6px !important;
+	text-align: start !important;
+	font-family: var(--adw-text-font) !important;
+	line-height: var(--adw-list-header-height) !important;
+	letter-spacing: normal !important;
+	font-size: var(--adw-list-header-size) !important;
+	font-weight: var(--adw-list-header-weight) !important;
+	min-height: var(--adw-list-header-height) !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="login_UserChooser_"] div[class*="loginpanel_CachedUserList_"] > div
+{
+	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-opacity)) !important;
+	border-radius: 0 !important;
+	box-shadow: var(--adw-card-shadow) !important;
+	border: none !important;
+	height: var(--adw-row-height) !important;
+	box-sizing: border-box !important;
+	transition: var(--adw-button-transition) !important;
+	-webkit-app-region: no-drag !important;
+	position: relative !important;
+	margin: 0 0 1px 0 !important;
+	cursor: default !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="login_UserChooser_"] div[class*="loginpanel_CachedUserList_"] > div:hover
+{
+	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-hover-opacity)) !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="login_UserChooser_"] div[class*="loginpanel_CachedUserList_"] > div:active
+{
+	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-active-opacity)) !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="login_UserChooser_"] div[class*="loginpanel_CachedUserList_"] > div:first-child
+{
+	border-top-left-radius: var(--adw-card-radius) !important;
+	border-top-right-radius: var(--adw-card-radius) !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="login_UserChooser_"] div[class*="loginpanel_CachedUserList_"] > div:last-child
+{
+	border-bottom-left-radius: var(--adw-card-radius) !important;
+	border-bottom-right-radius: var(--adw-card-radius) !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="login_UserChooser_"] div[class*="loginpanel_CachedUserList_"] > div[class*="loginpanel_LoginCachedAvatar_"] > div[class*="loginpanel_LoginCachedAvatarImage_"],
+body.DesktopUI div[class*="login_Login_"] div[class*="login_UserChooser_"] div[class*="loginpanel_CachedUserList_"] > div[class*="loginpanel_NewLogin_"] > div[class*="loginpanel_NewLoginIcon_"]
+{
+	position: initial !important;
+	z-index: initial !important;
+	background: none !important;
+	border: none !important;
+	box-shadow: none !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	transform: none !important;
+	opacity: 1 !important;
+	max-width: initial !important;
+	max-height: initial !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="login_UserChooser_"] div[class*="loginpanel_CachedUserList_"] > div[class*="loginpanel_LoginCachedAvatar_"] > div[class*="loginpanel_LoginCachedAvatarImage_"] > img,
+body.DesktopUI div[class*="login_Login_"] div[class*="login_UserChooser_"] div[class*="loginpanel_CachedUserList_"] > div[class*="loginpanel_NewLogin_"] > div[class*="loginpanel_NewLoginIcon_"] > svg
+{
+	position: absolute !important;
+	width: 40px !important;
+	height: 40px !important;
+	border-radius: 50% !important;
+	left: 12px !important;
+	top: 7px !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="login_UserChooser_"] div[class*="loginpanel_CachedUserList_"] > div > div[class*="loginpanel_CachedName_"],
+body.DesktopUI div[class*="login_Login_"] div[class*="login_UserChooser_"] div[class*="loginpanel_CachedUserList_"] > div > div[class*="loginpanel_CachedAccountName_"]
+{
+	opacity: 1 !important;
+	position: absolute !important;
+	left: 64px !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	width: 360px !important;
+	font-family: var(--adw-text-font) !important;
+	line-height: normal !important;
+	letter-spacing: normal !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="login_UserChooser_"] div[class*="loginpanel_CachedUserList_"] > div > div[class*="loginpanel_CachedName_"]
+{
+	top: 9px !important;
+	bottom: auto !important;
+	color: rgb(var(--adw-card-fg-rgb)) !important;
+	font-size: var(--adw-text-row-title-size) !important;
+	font-weight: var(--adw-text-row-title-weight) !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="login_UserChooser_"] div[class*="loginpanel_CachedUserList_"] > div > div[class*="loginpanel_CachedAccountName_"]
+{
+	top: auto !important;
+	bottom: 9px !important;
+	color: rgba(var(--adw-card-fg-rgb), var(--adw-dim-label-opacity)) !important;
+	font-size: var(--adw-text-row-subtitle-size) !important;
+	font-weight: var(--adw-text-row-subtitle-weight) !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="login_UserChooser_"] div[class*="loginpanel_CachedUserList_"] > div[class*="loginpanel_LoginCachedAvatar_"] button[class*="loginpanel_MoreMenuButton_"]
+{
+	opacity: 1 !important;
+	position: absolute !important;
+	top: 8px !important;
+	right: 12px !important;
+	cursor: default !important;
+	border-radius: var(--adw-button-radius) !important;
+	box-sizing: border-box !important;
+	width: 34px !important;
+	height: 34px !important;
+	padding: 9px !important;
+	transition: var(--adw-button-transition) !important;
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	background: transparent !important;
+	box-shadow: none !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="login_UserChooser_"] div[class*="loginpanel_CachedUserList_"] > div[class*="loginpanel_LoginCachedAvatar_"] button[class*="loginpanel_MoreMenuButton_"]:hover
+{
+	background: rgba(var(--adw-window-fg-rgb), var(--adw-hover-opacity)) !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="login_UserChooser_"] div[class*="loginpanel_CachedUserList_"] > div[class*="loginpanel_LoginCachedAvatar_"] button[class*="loginpanel_MoreMenuButton_"]:active
+{
+	background: rgba(var(--adw-window-fg-rgb), var(--adw-active-opacity)) !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="login_UserChooser_"] div[class*="loginpanel_CachedUserList_"] > div[class*="loginpanel_LoginCachedAvatar_"] button[class*="loginpanel_MoreMenuButton_"]:focus:focus-visible
+{
+	box-shadow: var(--adw-focus-border) !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="login_UserChooser_"] div[class*="loginpanel_CachedUserList_"] > div[class*="loginpanel_LoginCachedAvatar_"] button[class*="loginpanel_MoreMenuButton_"] > div > svg
+{
+	display: none !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="login_UserChooser_"] div[class*="loginpanel_CachedUserList_"] > div[class*="loginpanel_LoginCachedAvatar_"] button[class*="loginpanel_MoreMenuButton_"] > div::before
+{
+	background-color: rgb(var(--adw-window-fg-rgb));
+	content: "";
+	display: block;
+	width: 16px;
+	height: 16px;
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	-webkit-mask-size: 16px;
+	-webkit-mask-image: var(--adw-icon-more);
+	box-shadow: none !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="login_UserChooser_"] div[class*="loginpanel_CachedUserList_"] > div[class*="loginpanel_LoginCachedAvatar_"] button[class*="loginpanel_MoreMenuButton_"]::before
+{
+	display: none !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="login_UserChooser_"] div[class*="loginpanel_CachedUserList_"] > div[class*="loginpanel_NewLogin_"] > div[class*="loginpanel_NewLoginIcon_"] > svg
+{
+	display: none !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="login_UserChooser_"] div[class*="loginpanel_CachedUserList_"] > div[class*="loginpanel_NewLogin_"] > div[class*="loginpanel_NewLoginIcon_"]::before
+{
+	background-color: rgb(var(--adw-window-fg-rgb));
+	content: "";
+	display: block;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	left: 24px;
+	top: 19px;
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	-webkit-mask-size: 16px;
+	-webkit-mask-image: var(--adw-icon-plus-large);
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="login_UserChooser_"] div[class*="loginpanel_CachedUserList_"] > div[class*="loginpanel_NewLogin_"] > div[class*="loginpanel_CachedName_"]
+{
+	top: 0 !important;
+	line-height: var(--adw-row-height) !important;
+}
+
+/* Account removal confirmation */
+body.DesktopUI div[class*="login_Login_"] div[class*="login_RemoveConfirmation_"]
+{
+	padding: 0 !important;
+	margin: 0 !important;
+	width: auto !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="login_RemoveConfirmation_"] > div[class*="login_Content_"]
+{
+	margin: 0 !important;
+	padding: 0 !important;
+	margin-bottom: 6px !important;
+}
+
+/* Swap buttons to make the Cancel button first */
+body.DesktopUI div[class*="login_Login_"] div[class*="login_RemoveConfirmation_"] > div[class*="login_Content_"] div[class*="login_Buttons_"]
+{
+	flex-direction: row-reverse !important;
+	overflow: hidden !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	gap: 0 !important;
+	background: none !important;
+	-webkit-app-region: no-drag !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="login_RemoveConfirmation_"] > div[class*="login_Content_"] div[class*="login_Buttons_"] > button::before
+{
+	display: none !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="login_RemoveConfirmation_"] > div[class*="login_Content_"] div[class*="login_Buttons_"] > button
+{
+	height: 42px !important;
+	line-height: 42px !important;
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: 15px !important;
+	font-weight: 700 !important;
+	letter-spacing: normal !important;
+	background: transparent !important;
+	box-shadow: none !important;
+	border-radius: 0 !important;
+	border-top: 1px rgba(var(--adw-window-fg-rgb), var(--adw-border-opacity)) solid !important;
+	border-left: 1px rgba(var(--adw-window-fg-rgb), var(--adw-border-opacity)) solid !important;
+	margin: 0 !important;
+	margin-left: -1px !important;
+	max-width: none !important;
+	padding: 0 !important;
+	flex: 1 1 0;
+	width: 0;
+	transition: var(--adw-button-transition) !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="login_RemoveConfirmation_"] > div[class*="login_Content_"] div[class*="login_Buttons_"] > button:hover
+{
+	background: rgba(var(--adw-window-fg-rgb), var(--adw-hover-opacity)) !important;
+	box-shadow: none !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="login_RemoveConfirmation_"] > div[class*="login_Content_"] div[class*="login_Buttons_"] > button:active
+{
+	background: rgba(var(--adw-window-fg-rgb), var(--adw-active-opacity)) !important;
+	box-shadow: none !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="login_RemoveConfirmation_"] > div[class*="login_Content_"] div[class*="login_Buttons_"] > button.Primary
+{
+	color: rgb(var(--adw-destructive-rgb)) !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="login_RemoveConfirmation_"] > div[class*="login_Content_"] div[class*="login_Buttons_"] > button.Primary:hover
+{
+	background: rgba(var(--adw-destructive-rgb), var(--adw-hover-opacity)) !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="login_RemoveConfirmation_"] > div[class*="login_Content_"] div[class*="login_Buttons_"] > button.Primary:active
+{
+	background: rgba(var(--adw-destructive-rgb), var(--adw-active-opacity)) !important;
+}

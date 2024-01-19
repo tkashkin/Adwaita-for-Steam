@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+echo "url('data:image/svg+xml;base64,"$(openssl base64 < $1 | tr -d '[:space:]')"');" | wl-copy
+
+echo "Icon CSS copied to clipboard"

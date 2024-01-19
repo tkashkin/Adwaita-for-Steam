@@ -1,0 +1,17 @@
+:root
+{
+	--adw-entry-height: 50px;
+	--adw-entry-padding: 2px 14px 2px 14px;
+	--adw-entry-radius: var(--adw-card-radius);
+	--adw-entry-font-size: var(--adw-text-label-size);
+	--adw-entry-font-weight: var(--adw-text-label-weight);
+
+	--adw-entry-labeled-height: 34px;
+	--adw-entry-labeled-padding: 18px 14px 2px 14px;
+
+	--adw-entry-small-height: calc(var(--adw-entry-height) - 20px);
+	--adw-entry-small-radius: calc(var(--adw-entry-radius) - 6px);
+
+	--adw-entry-subtitle-font-size: var(--adw-text-row-subtitle-size);
+	--adw-entry-subtitle-font-weight: var(--adw-text-row-subtitle-weight);
+}

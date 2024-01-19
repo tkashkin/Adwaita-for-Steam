@@ -1,0 +1,491 @@
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetails_Glassy_"]
+{
+	background: rgb(var(--adw-window-bg-rgb)) !important;
+	backdrop-filter: none !important;
+}
+
+/*  Disable Blurred Background */
+body.DesktopUI div[class*="appdetails_Container_"] img[class*="sharedappdetailsheader_ImgBlurBackdrop_"]
+{
+	backdrop-filter: none !important;
+	display: none !important;
+}
+
+/* `Scroll to Top` Button */
+body.DesktopUI div[class*="steamdesktop_ContentFrame_"] div[class*="smartscrollcontainer_ScrollToTopButton_"]
+{
+	display: none !important;
+}
+
+/* Play Button Color */
+body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_ButtonChild"]
+{
+	background: rgb(var(--adw-accent-bg-rgb)) !important;
+}
+
+body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_Green"] > div[class*="appactionbutton_ButtonChild"]
+{
+	background: rgb(var(--adw-success-bg-rgb)) !important;
+}
+
+/* Progress Bar Color */
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsplaysection_DetailsProgressBar_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsachievementssection_AchievementProgress_"]
+{
+	background: rgb(var(--adw-accent-bg-rgb)) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsachievementssection_AdditionalItem_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailscommunityfeed_LoadContentButton_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsactivitysection_ViewLastNews_"]
+{
+	border-radius: var(--adw-button-radius) !important;
+	background: rgba(var(--adw-window-fg-rgb), var(--adw-button-bg-opacity)) !important;
+	border: none !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] button[class*="appdetailsactivitysection_FetchMoreContainer_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailscommunityfeed_LoadContentButton_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsactivitysection_ViewLastNews_"]
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-title3-size) !important;
+	font-weight: var(--adw-text-title3-weight) !important;
+	line-height: 32px !important;
+}
+
+/* Play button, streaming device dropdown */
+body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer"]
+{
+	border-radius: var(--adw-button-radius) !important;
+	background-color: rgb(var(--adw-accent-bg-rgb)) !important;
+	color: rgb(var(--adw-accent-fg-rgb)) !important;
+}
+
+body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer"],
+body.DesktopUI div[class*="library_AppDetailsMain_"] [class*="appactionbutton_ShowingStreaming"]
+{
+	min-width: 140px !important;
+}
+
+body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer"][class*="appactionbutton_Green"]
+{
+	background-color: rgb(var(--adw-success-bg-rgb)) !important;
+}
+
+body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer"][class*="appactionbutton_Green"] div[class*="appactionbutton_ButtonText_"],
+body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer"][class*="appactionbutton_Green"] > div[class*="appactionbutton_ButtonChild"] svg
+{
+	color: rgb(var(--adw-success-fg-rgb)) !important;
+}
+
+body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer"][class*="appactionbutton_Disabled"]
+{
+	background-color: rgba(var(--adw-window-fg-rgb), var(--adw-disabled-opacity)) !important;
+}
+
+body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer"][class*="appactionbutton_Disabled"] div[class*="appactionbutton_ButtonText_"],
+body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer"][class*="appactionbutton_Disabled"] > div[class*="appactionbutton_ButtonChild"] svg
+{
+	color: rgba(var(--adw-window-fg-rgb), var(--adw-disabled-opacity)) !important;
+}
+
+body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer"] div[class*="appactionbutton_ButtonText"],
+body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer"] > div[class*="appactionbutton_ButtonChild"] svg
+{
+	color: rgb(var(--adw-accent-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: 18px !important;
+	line-height: 32px !important;
+	font-weight: 700 !important;
+	letter-spacing: normal !important;
+	text-transform: none !important;
+}
+
+body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer"] > div[class*="appactionbutton_ButtonChild"]:first-child > svg
+{
+	display: none !important;
+}
+
+body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer"] > div[class*="appactionbutton_ButtonChild"] > svg > path,
+body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer"] > div[class*="appactionbutton_ButtonChild"] > svg > polygon
+{
+	stroke: currentColor !important;
+	fill: currentColor !important;
+}
+
+body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer"] > div[class*="appactionbutton_ButtonChild"]
+{
+	margin: 0 !important;
+	border-radius: var(--adw-button-radius) !important;
+	background-color: transparent !important;
+	transition: var(--adw-button-transition) !important;
+	cursor: default !important;
+}
+
+body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer"] > div[class*="appactionbutton_ButtonChild"]:hover
+{
+	background-color: var(--adw-button-suggested-overlay-hover) !important;
+}
+
+body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer"] > div[class*="appactionbutton_ButtonChild"]:active
+{
+	background-color: var(--adw-button-suggested-overlay-active) !important;
+}
+
+body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer"] > div[class*="appactionbutton_ButtonChild"]:first-child:not(:last-child)
+{
+	border-top-right-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+}
+
+body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer"] > div[class*="appactionbutton_ButtonChild"]:last-child:not(:first-child)
+{
+	border-top-left-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
+	border-left: 1px rgba(var(--adw-accent-fg-rgb), var(--adw-dimmer-opacity)) solid !important;
+}
+
+/* Remove Unneeded Backgrounds */
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventMediumImage_Container_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeImage_Container_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsdlcsection_Gloss_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="writereview_RatingContainer_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsgameinfopanel_Container_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_LeftSideMajorUpdateBar_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeUpdate_"]
+{
+	background: none !important;
+	cursor: default !important;
+}
+
+/* Remove Image Borders */
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEvent_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeUpdate_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="spotlight_MajorEventContainer_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeUpdate_"]
+{
+	border-image-source: none !important;
+}
+
+/* Border Radius Fixes */
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsworkshopsection_WorkshopContainer_"]
+{
+	border-top-left-radius: 0 !important;
+	border-top-right-radius: 0 !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsworkshopsection_WorkshopHightlight_"]
+{
+	border-bottom-left-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsachievementssection_Icon_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsachievementssection_AdditionalItem_"]
+{
+	border-radius: var(--adw-button-radius) !important;
+}
+
+/* Post Game Summary */
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="spotlightgameplaysummary_SummaryCarouselContainer_"]
+{
+	background: var(--card_bg) !important;
+	border-radius: var(--adw-card-radius) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="spotlightgameplaysummary_SummaryCarouselContainer_"]::after
+{
+	box-shadow: none !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="pageablecontainer_PageableCloseButton_"] > svg line
+{
+	stroke: rgb(var(--adw-window-fg-rgb)) !important;
+}
+
+/* DLC Notification Banner */
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsspotlight_SpotlightDLC_"]
+{
+	box-shadow: none !important;
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-weight: var(--adw-text-base-weight) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsspotlight_SpotlightDLC_"] > svg
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsspotlight_HideButton_"] > svg line
+{
+	stroke: rgb(var(--adw-window-fg-rgb)) !important;
+}
+
+/* Available Content */
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivitydlc_CarouselHeader_"]
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-weight: var(--adw-text-title4-weight) !important;
+	font-size: var(--adw-text-title4-size) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivitydlc_CarouselBody_"]
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-weight: var(--adw-text-base-weight) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] a[class*="appactivitydlc_ViewAll_"]
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-title3-size) !important;
+	font-weight: var(--adw-text-title3-weight) !important;
+	margin-bottom: 10px;
+}
+
+/* Remove Glassy Background */
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsoverview_BackdropGlass_"]
+{
+	background: none !important;
+	border-top: 1px solid var(--border) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsplaysection_PlayBar_"],
+body.DesktopUI .appdetails_PlayBar_2L3s2 div[class*="appdetailsplaysection_Glassy_"][class*="appdetailsplaysection_PlayBar_"]
+{
+	backdrop-filter: none !important;
+	background: rgb(var(--adw-view-bg-rgb)) !important;
+	border-bottom: 1px solid var(--border) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsoverview_Container_"]
+{
+	background: rgb(var(--adw-window-bg-rgb)) !important;
+}
+
+/* Available DLC */
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivitydlc_Contents_"],
+body.DesktopUI div[class*="appdetails_Container_"] a[class*="appactivitydlc_CarouselItem_"] div[class*="appactivitydlc_CarouselImage_"]
+{
+	box-shadow: none !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] a[class*="appactivitydlc_ViewAll_"]
+{
+	border-radius: var(--adw-button-radius) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] a[class*="appactivitydlc_ViewAll_"]:hover
+{
+	background: var(--button_hover_bg) !important;
+	border-radius: var(--adw-button-radius) !important;
+}
+
+body.DesktopUI iframe[class*="appdetailsdlcsection_StoreHover_"]
+{
+	border-radius: var(--adw-card-radius) !important;
+}
+
+/* Write a Review */
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="writereview_Playtime_"],
+body.DesktopUI div[class*="appdetails_Container_"] button[class*="writereview_ReviewThumbButton_"]
+{
+	color: rgb(var(--adw-accent-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-title4-size) !important;
+	font-weight: var(--adw-text-title4-weight) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] svg[class*="writereview_ThumbIcon_"]
+{
+	fill: rgb(var(--adw-accent-rgb)) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] svg[class*="writereview_ThumbIcon_"][class*="writereview_Up_"]
+{
+	top: -1px !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] svg[class*="writereview_ThumbIcon_"][class*="writereview_Down_"]
+{
+	bottom: -1px !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="writereview_RatingContainer_"] div[class*="writereview_RecommendGame_"]
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-weight: var(--adw-text-base-weight) !important;
+}
+
+/* Gameplay Summary */
+body.DesktopUI div[class*="appdetails_Container_"] [class*="spotlightgameplaysummary_EventHeaderBlock_"],
+body.DesktopUI div[class*="appdetails_Container_"] [class*="spotlightgameplaysummary_GamePlaySummaryHeader_"]
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-title3-size) !important;
+	font-weight: var(--adw-text-title3-weight) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] [class*="spotlightgameplaysummary_EventDaySeparator_"]
+{
+	background-color: rgba(var(--adw-window-fg-rgb), var(--adw-dim-label-opacity)) !important;
+	opacity: 0.55 !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] [class*="appdetailsachievementssection_Stats_"]
+{
+	color: rgba(var(--adw-window-fg-rgb), var(--adw-dim-label-opacity)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-weight: var(--adw-text-base-weight) !important;
+}
+
+/* Activity Post */
+body.DesktopUI div[class*="appdetails_Container_"] textarea[class*="posttextentry_PostTextEntryArea_"],
+body.DesktopUI div[class*="appdetails_Container_"] textarea[class*="posttextentry_PostTextEntryArea_"]:focus,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="posttextentry_PostButton_"],
+body.DesktopUI div[class*="appdetails_Container_"] button[class*="posttextentry_EmoticonButton_"]
+{
+	background: var(--button_bg) !important;
+	border-radius: var(--adw-button-radius) !important;
+	box-shadow: none !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="posttextentry_PostButton_"]
+{
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-title3-size) !important;
+	font-weight: var(--adw-text-title3-weight) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] textarea[class*="posttextentry_PostTextEntryArea_"]::placeholder
+{
+	color: rgba(var(--adw-window-fg-rgb), var(--adw-dim-label-opacity)) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="posttextentry_PostButton_"]:hover,
+body.DesktopUI div[class*="appdetails_Container_"] button[class*="posttextentry_EmoticonButton_"]:hover
+{
+	background: var(--button_hover_bg) !important;
+	border-radius: var(--adw-button-radius) !important;
+}
+
+/* AppDetails Play Section */
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsplaysection_PlayBarLabel_"]
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-title3-size) !important;
+	font-weight: var(--adw-text-title3-weight) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsplaysection_PlayBarDetailLabel_"]
+{
+	color: rgba(var(--adw-window-fg-rgb), var(--adw-dim-label-opacity)) !important;
+	font-family: var(--adw-text-font) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsplaysection_PlayBarCloudStatusContainer_"] div[class*="appdetailsplaysection_GameStatIconForced_"]
+{
+	color: rgba(var(--adw-window-fg-rgb), var(--adw-dim-label-opacity)) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsplaysection_PlaytimeIcon_"] > svg > *,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsplaysection_GameStatIcon_"] > svg > *
+{
+	stroke: rgba(var(--adw-window-fg-rgb), var(--adw-dim-label-opacity)) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] span[class*="appdetailsplaysection_PlayBarGameName_"]
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-title2-size) !important;
+	font-weight: var(--adw-text-title2-weight) !important;
+}
+
+/* AppDetails Play Section Buttons */
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsplaysection_MenuButton_"]
+{
+	background: var(--button_bg) !important;
+	border-radius: var(--adw-button-radius) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsplaysection_MenuButton_"]:hover
+{
+	background: var(--button_hover_bg) !important;
+	border-radius: var(--adw-button-radius) !important;
+}
+
+/* App Details Link Buttons */
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsprimarylinkssection_LinksSectionBody_"]
+{
+	padding: 0 10px !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsprimarylinkssection_Link_"]
+{
+	border-radius: var(--adw-button-radius) !important;
+	padding: 5px 10px !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsprimarylinkssection_Link_"]:hover
+{
+	background: var(--button_hover_bg) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] span[class*="appdetailsprimarylinkssection_Text_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsprimarylinkssection_Link_"]:hover span[class*="appdetailsprimarylinkssection_Text_"]
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-title3-size) !important;
+	font-weight: var(--adw-text-title3-weight) !important;
+}
+
+/* Right Side Buttons */
+body.DesktopUI div[class*="appdetails_Container_"] button[class*="appdetailsbutton_AppDetailsButton_"]
+{
+	background: none !important;
+	border-radius: var(--adw-button-radius) !important;
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-title3-size) !important;
+	font-weight: var(--adw-text-title3-weight) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] button[class*="appdetailsbutton_AppDetailsButton_"]:hover
+{
+	background: var(--button_hover_bg) !important;
+	border-radius: var(--adw-button-radius) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsscreenshotssection_InstructionText_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsscreenshotssection_NoneTaken_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsreviewsection_PlayedForTime_"]
+{
+	color: rgba(var(--adw-window-fg-rgb), var(--adw-dim-label-opacity)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-weight: var(--adw-text-base-weight) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailssection_Body_"] span[style="color: white;"]
+{
+	color: rgb(var(--adw-accent-rgb)) !important;
+}
+
+/* Notes */
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsnotessection_NoteLink_"]
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font);
+	font-size: var(--adw-text-base-size);
+	font-weight: var(--adw-text-base-weight);
+}

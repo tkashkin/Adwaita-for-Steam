@@ -1,0 +1,4 @@
+body.DesktopUI div[class*="library_Container_"] div[class*="library_AppDetailsMain_"]
+{
+	border: none !important;
+}

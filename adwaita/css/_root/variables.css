@@ -1,0 +1,17 @@
+/* Other global variables */
+
+:root
+{
+	--adw-base-transition-curve: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+	/* Window controls button margin */
+	--adw-windowcontrols-margin-left: 0px;
+	--adw-windowcontrols-margin-right: 40px;
+
+	/* Window controls button margin for windows with close button only */
+	--adw-windowcontrols-close-margin-left: 0px;
+	--adw-windowcontrols-close-margin-right: 40px;
+
+	--adw-gameicon-radius: 4px;
+	--adw-gameicon-uninstalled-filter: grayscale(100%) opacity(50%);
+}
