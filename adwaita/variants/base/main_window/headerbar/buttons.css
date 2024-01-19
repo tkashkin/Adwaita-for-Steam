@@ -210,7 +210,7 @@
 	border-radius: var(--button_radius) !important;
 }
 
-#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="bottombar_DownloadStatusContent_"] > div[class*="bottombar_DetailedDownloadProgress_"] > div[class*="bottombar_Icon_"]
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="bottombar_DownloadStatusContent_"] > div[class*="bottombar_DetailedDownloadProgress_"] div[class*="bottombar_Icon_"]
 {
 	display: block !important;
 	width: 32px !important;
@@ -220,12 +220,12 @@
 	box-shadow: none !important;
 }
 
-#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="bottombar_DownloadStatusContent_"] > div[class*="bottombar_DetailedDownloadProgress_"] > div[class*="bottombar_Icon_"] img
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="bottombar_DownloadStatusContent_"] > div[class*="bottombar_DetailedDownloadProgress_"] div[class*="bottombar_Icon_"] img
 {
 	border-radius: var(--button_radius) !important;
 }
 
-#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="bottombar_DownloadStatusContent_"] > div[class*="bottombar_DetailedDownloadProgress_"] > div[class*="bottombar_ProgressBarWrapper_"]
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="bottombar_DownloadStatusContent_"] > div[class*="bottombar_DetailedDownloadProgress_"] div[class*="bottombar_ProgressBarWrapper_"]
 {
 	width: 32px !important;
 	height: 3px !important;
@@ -235,7 +235,7 @@
 	border-radius: 0 !important;
 }
 
-#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="bottombar_DownloadStatusContent_"] > div[class*="bottombar_DetailedDownloadProgress_"] > div[class*="bottombar_ProgressBarWrapper_"] > div[class*="bottombar_ProgressBar_"]
+#SteamDesktop .bottombar_BottomBarContainer_1_yS5 div[class*="bottombar_DownloadStatusContent_"] > div[class*="bottombar_DetailedDownloadProgress_"] div[class*="bottombar_ProgressBarWrapper_"] > div[class*="bottombar_ProgressBar_"]
 {
 	--color-progress-bar-background: transparent !important;
 	--color-progress-bar-foreground: var(--accent) !important;
