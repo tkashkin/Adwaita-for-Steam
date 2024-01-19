@@ -32,7 +32,8 @@ body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="rootmenu_RootMenuB
 
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="steamdesktop_RootMenuBar_"]:hover div[class*="rootmenu_RootMenuButton_"],
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="rootmenu_RootMenuButton_"]:first-child,
-body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="rootmenu_RootMenuButton_"][class*="menu_MenuOpen_"]
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="rootmenu_RootMenuButton_"][class*="menu_MenuOpen_"],
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="steamdesktop_RootMenuBar_"]:has(div[class*="menu_MenuOpen_"]) div[class*="rootmenu_RootMenuButton_"]
 {
 	display: block !important;
 }

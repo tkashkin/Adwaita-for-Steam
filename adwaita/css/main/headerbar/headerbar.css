@@ -1,6 +1,7 @@
 body.DesktopUI div[class*="steamdesktop_TopBar_"]
 {
 	height: 46px !important;
+	min-height: 46px !important;
 	background: rgb(var(--adw-headerbar-bg-rgb)) !important;
 	box-shadow: none !important;
 	order: 1 !important;
@@ -9,6 +10,7 @@ body.DesktopUI div[class*="steamdesktop_TopBar_"]
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="steamdesktop_TitleBar_"]
 {
 	height: 46px !important;
+	min-height: 46px !important;
 }
 
 body.DesktopUI div[class*="steamdesktop_Wrapper_"]
