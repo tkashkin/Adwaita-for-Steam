@@ -1,0 +1,19 @@
+/* ------------------------------------------ */
+/* --- Show Minimize and Maximize Button  --- */
+/* ------------------------------------------ */
+
+:root
+{
+	--windowcontrols_margin_left: 0px;
+	--windowcontrols_margin_right: 74px;
+}
+
+.title-bar-actions .title-area-icon.minimizeButton
+{
+	display: block !important;
+}
+
+#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="steamdesktop_WindowControls_"]
+{
+	flex-basis: 74px !important;
+}
