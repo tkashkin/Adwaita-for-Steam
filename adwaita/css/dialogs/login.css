@@ -436,6 +436,12 @@ body.DesktopUI div[class*="login_Login_"] div[class*="login_UserChooser_"] div[c
 	top: 7px !important;
 	padding: 0 !important;
 	margin: 0 !important;
+	box-sizing: border-box !important;
+}
+
+body.DesktopUI div[class*="login_Login_"] div[class*="login_UserChooser_"] div[class*="loginpanel_CachedUserList_"] > div[class*="loginpanel_LoginCachedAvatar_"] > div[class*="loginpanel_LoginCachedAvatarImage_"] > img
+{
+	border: 1px rgba(var(--adw-card-fg-rgb), var(--adw-border-opacity)) solid !important;
 }
 
 body.DesktopUI div[class*="login_Login_"] div[class*="login_UserChooser_"] div[class*="loginpanel_CachedUserList_"] > div > div[class*="loginpanel_CachedName_"],
@@ -604,8 +610,8 @@ body.DesktopUI div[class*="login_Login_"] div[class*="login_RemoveConfirmation_"
 	margin-left: -1px !important;
 	max-width: none !important;
 	padding: 0 !important;
-	flex: 1 1 0;
-	width: 0;
+	flex: 1 1 0 !important;
+	width: 0 !important;
 	transition: var(--adw-button-transition) !important;
 }
 

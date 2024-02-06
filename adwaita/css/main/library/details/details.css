@@ -489,3 +489,108 @@ body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsnotesse
 	font-size: var(--adw-text-base-size);
 	font-weight: var(--adw-text-base-weight);
 }
+
+/* Sidebar cards */
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsoverview_RightColumn_"] div[class*="appdetailssectionheader_SectionHeader_"]
+{
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsoverview_RightColumn_"] div[class*="appdetailssectionheader_SectionHeader_"] div[class*="appdetailssectionheader_LabelText_"]
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	line-height: var(--adw-list-header-height) !important;
+	text-transform: none !important;
+	letter-spacing: normal !important;
+	font-size: var(--adw-list-header-size) !important;
+	font-weight: var(--adw-list-header-weight) !important;
+	min-height: var(--adw-list-header-height) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsoverview_RightColumn_"] div[class*="appdetailssection_AppDetailsSectionContainer_"]
+{
+	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-opacity)) !important;
+	border-radius: var(--adw-card-radius) !important;
+	box-shadow: var(--adw-card-shadow) !important;
+	border: none !important;
+	transition: var(--adw-button-transition) !important;
+	cursor: default !important;
+	position: relative !important;
+	margin: 0 !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsoverview_RightColumn_"] div[class*="appdetailssection_AppDetailsSectionContainer_"] div[class*="appdetailssection_Highlight_"]
+{
+	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-opacity)) !important;
+	border-bottom: 1px rgb(var(--adw-window-bg-rgb)) solid !important;
+	border-radius: var(--adw-card-radius) var(--adw-card-radius) 0 0 !important;
+	box-shadow: none !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsoverview_RightColumn_"] div[class*="appdetailsachievementssection_AchievementHoverContainer_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsoverview_RightColumn_"] div[class*="achievementiconbase_AchievementIconWrapper_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsoverview_RightColumn_"] div[class*="appdetailsachievementssection_AdditionalItem_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsoverview_RightColumn_"] div[class*="appdetailsachievementssection_RemainderContainer_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsoverview_RightColumn_"] div[class*="appdetailsachievementssection_Remainder_"],
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsoverview_RightColumn_"] div[class*="appdetailsachievementssection_RemainderText_"]
+{
+	padding: 0 !important;
+	margin: 0 !important;
+	width: 40px !important;
+	height: 40px !important;
+	line-height: 40px !important;
+	background: none !important;
+	border-radius: var(--adw-gameicon-radius) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsoverview_RightColumn_"] img[class*="achievementiconbase_Icon_"]
+{
+	border-radius: var(--adw-gameicon-radius) !important;
+	box-sizing: border-box !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsoverview_RightColumn_"] img[class*="achievementiconbase_Icon_"]:not([class*="achievementiconbase_IconGlow_"])
+{
+	box-shadow: none !important;
+	border: 1px rgba(var(--adw-card-fg-rgb), var(--adw-thin-border-opacity)) solid !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsoverview_RightColumn_"] div[class*="appdetailsachievementssection_TextSection_"]
+{
+	margin-left: 6px !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsoverview_RightColumn_"] div[class*="appdetailsachievementssection_TextSection_"] > div[class*="appdetailsachievementssection_Name_"]
+{
+	color: rgb(var(--adw-accent-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-row-title-size) !important;
+	font-weight: var(--adw-text-row-title-weight) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsoverview_RightColumn_"] div[class*="appdetailsachievementssection_TextSection_"] > div[class*="appdetailsachievementssection_Desc_"]
+{
+	color: rgba(var(--adw-accent-fg-rgb), var(--adw-dim-label-opacity)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-row-subtitle-size) !important;
+	font-weight: var(--adw-text-row-subtitle-weight) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsoverview_RightColumn_"] div[class*="remainderlist_InnerContainer_"] div[class*="remainderlist_ItemWrapper_"]
+{
+	padding-right: 6px !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsoverview_RightColumn_"] div[class*="appdetailsachievementssection_RemainderText_"]
+{
+	color: rgb(var(--adw-accent-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-row-title-size) !important;
+	font-weight: var(--adw-text-row-title-weight) !important;
+	text-shadow: none !important;
+	letter-spacing: normal !important;
+	background: rgba(0, 0, 0, var(--adw-dimmer-opacity)) !important;
+	border-radius: var(--adw-gameicon-radius) !important;
+}

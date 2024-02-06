@@ -81,6 +81,7 @@ LIBRARY_FILES = [
 	"css/widgets/buttons.css",
 	"css/widgets/cards.css",
 	"css/widgets/checkboxes.css",
+	"css/widgets/dialogs.css",
 	"css/widgets/entries.css",
 	"css/widgets/lists.css",
 	"css/widgets/popups.css",
@@ -96,7 +97,9 @@ LIBRARY_FILES = [
 	"css/main/library/details/details.css",
 	"css/main/library/details/event-dialog.css",
 
+	"css/main/library/home/game-card.css",
 	"css/main/library/home/home.css",
+	"css/main/library/home/news.css",
 
 	"css/main/library/sidebar/gamelist.css",
 	"css/main/library/sidebar/sidebar.css",

@@ -101,29 +101,3 @@ html.client_chat_frame .title-bar-actions .title-area-icon.restoreButton
 {
 	display: none !important;
 }
-
-/* Blue Line on Dialog Window */
-body.DesktopUI .ModalPosition_TopBar,
-html.client_chat_frame .ModalPosition_TopBar
-{
-	display: none !important;
-}
-
-/* Web dialogs */
-body.DesktopUI.ModalDialogBody .PopupFullWindow .title-area
-{
-	min-height: 36px !important;
-}
-
-body.DesktopUI.ModalDialogBody .PopupFullWindow .title-area .title-bar-actions.window-controls
-{
-	margin-top: 0 !important;
-	margin-right: 7px !important;
-}
-
-body.DesktopUI.ModalDialogBody .PopupFullWindow .DialogContent
-{
-	background: rgb(var(--adw-headerbar-bg-rgb)) !important;
-	color: rgb(var(--adw-headerbar-fg-rgb)) !important;
-	padding: 36px 0 0 0 !important;
-}

@@ -6,7 +6,7 @@ body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Ap
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_AppActivityDay_"] > div[class*="appactivityday_AppActivityDate_"]
 {
-	color: rgb(var(--adw-popover-fg-rgb)) !important;
+	color: rgb(var(--adw-window-fg-rgb)) !important;
 	font-family: var(--adw-text-font) !important;
 	line-height: var(--adw-list-header-height) !important;
 	text-transform: none !important;
@@ -448,11 +448,13 @@ body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Ev
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] img[class*="achievementiconbase_Icon_"]
 {
 	border-radius: var(--adw-gameicon-radius) !important;
+	box-sizing: border-box !important;
 }
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] img[class*="achievementiconbase_Icon_"]:not([class*="achievementiconbase_IconGlow_"])
 {
 	box-shadow: none !important;
+	border: 1px rgba(var(--adw-card-fg-rgb), var(--adw-thin-border-opacity)) solid !important;
 }
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] div[class*="appdetailsachievementssection_TextSection_"]
@@ -494,6 +496,12 @@ body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Ev
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] div[class*="appdetailsachievementssection_RemainderText_"]
 {
+	color: rgb(var(--adw-accent-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-row-title-size) !important;
+	font-weight: var(--adw-text-row-title-weight) !important;
+	text-shadow: none !important;
+	letter-spacing: normal !important;
 	background: rgba(0, 0, 0, var(--adw-dimmer-opacity)) !important;
 	border-radius: var(--adw-gameicon-radius) !important;
 }

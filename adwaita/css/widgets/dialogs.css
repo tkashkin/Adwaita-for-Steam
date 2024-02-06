@@ -1,0 +1,222 @@
+body.DesktopUI .ModalPosition_TopBar,
+html.client_chat_frame .ModalPosition_TopBar
+{
+	display: none !important;
+}
+
+body.DesktopUI.ModalDialogBody .PopupFullWindow .title-area .title-bar-actions.window-controls
+{
+	margin-top: 0 !important;
+	margin-right: 6px !important;
+}
+
+body.DesktopUI.ModalDialogBody .PopupFullWindow .DialogContent
+{
+	background: rgb(var(--adw-popover-bg-rgb)) !important;
+	color: rgb(var(--adw-popover-fg-rgb)) !important;
+	padding: 0 !important;
+}
+
+body.DesktopUI .ModalPosition_Content,
+body.DesktopUI .ModalPosition_Content > .DialogContent
+{
+	/*border-radius: var(--adw-card-radius) !important;*/
+	/*overflow: hidden !important;*/
+}
+
+body.DesktopUI .ModalDialogPopup .DialogBody
+{
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-base-size) !important;
+	font-weight: var(--adw-text-base-weight) !important;
+}
+
+body.DesktopUI .ModalPosition_Content > .DialogContent
+{
+	background: rgb(var(--adw-popover-bg-rgb)) !important;
+	color: rgb(var(--adw-popover-fg-rgb)) !important;
+}
+
+/* Modal Overlays */
+body.DesktopUI.ModalDialogBody .DialogContent,
+body.DesktopUI.ModalDialogBody .GenericConfirmDialog
+{
+	padding: 0 !important;
+}
+
+body.DesktopUI.ModalDialogBody .DialogHeader,
+body.DesktopUI.ModalDialogBody .DialogBodyText,
+body.DesktopUI.ModalDialogBody .DialogBodyText[class*="cloudconflict_CloudConflictWarning_"],
+body.DesktopUI.ModalDialogBody [class*="cloudconflict_FooterNote_"],
+body.DesktopUI.ModalDialogBody [class*="cloudconflict_ChoiceNote_"],
+body.DesktopUI.ModalDialogBody div[class*="moveappsdialog_MoveAppsDialog_"] > .DialogBody,
+body.DesktopUI.ModalDialogBody div[class*="hardwaresurveydialog_DialogBodyText_"] > div:not([class])
+{
+	color: rgb(var(--adw-popover-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-base-size) !important;
+	line-height: normal !important;
+	font-weight: var(--adw-text-base-weight) !important;
+	letter-spacing: normal !important;
+	text-transform: none !important;
+	text-align: center !important;
+	margin: 0 !important;
+	padding: 0 24px !important;
+	box-sizing: border-box !important;
+	flex-grow: 1 !important;
+	display: flex !important;
+	flex-direction: column !important;
+	justify-content: center !important;
+	/*-webkit-app-region: drag !important;*/
+}
+
+body.DesktopUI.ModalDialogBody [class*="hardwaresurveydialog_Prompt_"]
+{
+	color: rgb(var(--adw-popover-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	line-height: normal !important;
+	letter-spacing: normal !important;
+	text-transform: none !important;
+	text-align: center !important;
+	font-size: var(--adw-text-title2-size) !important;
+	font-weight: var(--adw-text-title2-weight) !important;
+}
+
+body.DesktopUI.ModalDialogBody div[class*="hardwaresurveydialog_DialogBodyText_"]
+{
+	padding: 0 !important;
+}
+
+body.DesktopUI.ModalDialogBody div[class*="hardwaresurveydialog_DialogBodyText_"] > div:not([class])
+{
+	flex-grow: 0 !important;
+}
+
+body.DesktopUI.ModalDialogBody div[class*="hardwaresurveydialog_DialogBodyText_"] div[class*="hardwaresurveydialog_HardwareSurveySections_"]
+{
+	flex-grow: 1 !important;
+	padding: 0 24px 24px 24px !important;
+	margin: 16px 0 0 0 !important;
+	border: none !important;
+	border-top: 1px rgba(var(--adw-popover-fg-rgb), var(--adw-thin-border-opacity)) solid !important;
+	border-radius: 0 !important;
+	box-shadow: none !important;
+	background: rgb(var(--adw-view-bg-rgb)) !important;
+	color: rgb(var(--adw-view-fg-rgb)) !important;
+}
+
+body.DesktopUI.ModalDialogBody .DialogHeader
+{
+	font-size: var(--adw-text-title1-size) !important;
+	font-weight: var(--adw-text-title1-weight) !important;
+	padding: 24px 24px 16px 24px !important;
+	flex-grow: 0 !important;
+}
+
+body.DesktopUI.ModalDialogBody .DialogBody
+{
+	overflow: hidden !important;
+}
+
+body.DesktopUI.ModalDialogBody .ModalPosition_Content > .ModalPosition_Dismiss
+{
+	display: none !important;
+}
+
+body.DesktopUI.ModalDialogBody .DialogFooter
+{
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+body.DesktopUI.ModalDialogBody .DialogBodyText + .DialogFooter
+{
+	margin-top: 16px !important;
+}
+
+/* Swap buttons to make the Cancel button first */
+body.DesktopUI.ModalDialogBody .DialogFooter ._DialogColLayout
+{
+	flex-direction: row-reverse !important;
+	overflow: hidden !important;
+	width: 100% !important;
+	-webkit-app-region: no-drag !important;
+}
+
+body.DesktopUI.ModalDialogBody .DialogFooter .DialogTwoColLayout._DialogColLayout
+{
+	gap: 0 !important;
+}
+
+body.DesktopUI.ModalDialogBody .DialogFooter .DialogButton
+{
+	height: 42px !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-title3-size) !important;
+	line-height: normal !important;
+	font-weight: var(--adw-text-title3-weight) !important;
+	letter-spacing: normal !important;
+	background: transparent !important;
+	box-shadow: none !important;
+	border-radius: 0 !important;
+	border-top: 1px rgba(var(--adw-popover-fg-rgb), var(--adw-border-opacity)) solid !important;
+	border-left: 1px rgba(var(--adw-popover-fg-rgb), var(--adw-border-opacity)) solid !important;
+	margin: 0 !important;
+	max-width: none !important;
+	transition: var(--adw-button-transition) !important;
+	--color-rgb: var(--adw-popover-fg-rgb);
+	color: rgb(var(--color-rgb)) !important;
+	flex: 1 1 0 !important;
+	width: 0 !important;
+	cursor: default !important;
+}
+
+body.DesktopUI.ModalDialogBody .DialogFooter .DialogButton.Primary
+{
+	--color-rgb: var(--adw-accent-rgb) !important;
+}
+
+body.DesktopUI.ModalDialogBody .DialogFooter .DialogButton.Disabled
+{
+	opacity: 0.5 !important;
+	pointer-events: none !important;
+}
+
+body.DesktopUI.ModalDialogBody .DialogFooter .DialogButton:last-child
+{
+	border-left: none !important;
+}
+
+body.DesktopUI.ModalDialogBody .DialogFooter .DialogButton::before
+{
+	display: none !important;
+}
+
+body.DesktopUI.ModalDialogBody .DialogFooter .DialogButton:hover
+{
+	background: rgba(var(--color-rgb), var(--adw-hover-opacity)) !important;
+	box-shadow: none !important;
+}
+
+body.DesktopUI.ModalDialogBody .DialogFooter .DialogButton:active
+{
+	background: rgba(var(--color-rgb), var(--adw-active-opacity)) !important;
+	box-shadow: none !important;
+}
+
+/* Web dialogs */
+body.DesktopUI.ModalDialogBody .PopupFullWindow .title-area
+{
+	height: 36px !important;
+	min-height: 36px !important;
+}
+
+body.DesktopUI.ModalDialogBody .PopupFullWindow div[class*="htmlpopupdialog_HTMLPopupDialog_"].DialogContent
+{
+	background: rgb(var(--adw-headerbar-bg-rgb)) !important;
+}
+
+body.DesktopUI.ModalDialogBody .PopupFullWindow div[class*="htmlpopupdialog_HTMLPopupDialog_"].DialogContent div[class*="htmlpopupdialog_BrowserViewHost_"]
+{
+	margin-top: 36px !important;
+}
