@@ -1,9 +1,15 @@
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"],
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._3yD46y5pd3zOGR7CzKs0mC div._1YGAHSfGavQI6MODJq-pJB,
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"] img.avatar,
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._3yD46y5pd3zOGR7CzKs0mC div._1YGAHSfGavQI6MODJq-pJB img.avatar,
 body.DesktopUI div[class*="library_Container_"] div[class*="steamavatar_avatarHolder_"],
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._1YGAHSfGavQI6MODJq-pJB,
 body.DesktopUI div[class*="library_Container_"] div[class*="steamavatar_avatarHolder_"] img.avatar,
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._1YGAHSfGavQI6MODJq-pJB img.avatar,
 body.DesktopUI div[class*="gamelistentry_FriendStatusHover_"] div[class*="steamavatar_avatarHolder_"],
-body.DesktopUI div[class*="gamelistentry_FriendStatusHover_"] div[class*="steamavatar_avatarHolder_"] img.avatar
+body.DesktopUI div._2iiN7AYnLFTRFRiuipiYJz div._1YGAHSfGavQI6MODJq-pJB,
+body.DesktopUI div[class*="gamelistentry_FriendStatusHover_"] div[class*="steamavatar_avatarHolder_"] img.avatar,
+body.DesktopUI div._2iiN7AYnLFTRFRiuipiYJz div._1YGAHSfGavQI6MODJq-pJB img.avatar
 {
 	box-sizing: border-box !important;
 	width: 32px !important;
@@ -19,8 +25,11 @@ body.DesktopUI div[class*="gamelistentry_FriendStatusHover_"] div[class*="steama
 }
 
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"],
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._3yD46y5pd3zOGR7CzKs0mC div._1YGAHSfGavQI6MODJq-pJB,
 body.DesktopUI div[class*="library_Container_"] div[class*="steamavatar_avatarHolder_"],
-body.DesktopUI div[class*="gamelistentry_FriendStatusHover_"] div[class*="steamavatar_avatarHolder_"]
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._1YGAHSfGavQI6MODJq-pJB,
+body.DesktopUI div[class*="gamelistentry_FriendStatusHover_"] div[class*="steamavatar_avatarHolder_"],
+body.DesktopUI div._2iiN7AYnLFTRFRiuipiYJz div._1YGAHSfGavQI6MODJq-pJB
 {
 	color: rgba(var(--adw-headerbar-fg-rgb), 0.5) !important;
 	box-shadow: inset 0 0 1px currentColor !important;
@@ -29,43 +38,59 @@ body.DesktopUI div[class*="gamelistentry_FriendStatusHover_"] div[class*="steama
 }
 
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"] img.avatar,
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._3yD46y5pd3zOGR7CzKs0mC div._1YGAHSfGavQI6MODJq-pJB img.avatar,
 body.DesktopUI div[class*="library_Container_"] div[class*="steamavatar_avatarHolder_"] img.avatar,
-body.DesktopUI div[class*="gamelistentry_FriendStatusHover_"] div[class*="steamavatar_avatarHolder_"] img.avatar
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._1YGAHSfGavQI6MODJq-pJB img.avatar,
+body.DesktopUI div[class*="gamelistentry_FriendStatusHover_"] div[class*="steamavatar_avatarHolder_"] img.avatar,
+body.DesktopUI div._2iiN7AYnLFTRFRiuipiYJz div._1YGAHSfGavQI6MODJq-pJB img.avatar
 {
 	width: 100% !important;
 	height: 100% !important;
 	z-index: -1 !important;
 }
 
-body.DesktopUI div[class*="gamelistentry_FriendStatusHover_"] div[class*="steamavatar_avatarHolder_"] img.avatar
+body.DesktopUI div[class*="gamelistentry_FriendStatusHover_"] div[class*="steamavatar_avatarHolder_"] img.avatar,
+body.DesktopUI div._2iiN7AYnLFTRFRiuipiYJz div._1YGAHSfGavQI6MODJq-pJB img.avatar
 {
 	z-index: 0 !important;
 }
 
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"].online,
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._3yD46y5pd3zOGR7CzKs0mC div._1YGAHSfGavQI6MODJq-pJB.online,
 body.DesktopUI div[class*="library_Container_"] div[class*="steamavatar_avatarHolder_"].online,
-body.DesktopUI div[class*="gamelistentry_FriendStatusHover_"] div[class*="steamavatar_avatarHolder_"].online
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._1YGAHSfGavQI6MODJq-pJB.online,
+body.DesktopUI div[class*="gamelistentry_FriendStatusHover_"] div[class*="steamavatar_avatarHolder_"].online,
+body.DesktopUI div._2iiN7AYnLFTRFRiuipiYJz div._1YGAHSfGavQI6MODJq-pJB.online
 {
 	color: rgba(var(--adw-accent-rgb), 0.5) !important;
 }
 
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"].online.awayOrSnooze,
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._3yD46y5pd3zOGR7CzKs0mC div._1YGAHSfGavQI6MODJq-pJB.online.awayOrSnooze,
 body.DesktopUI div[class*="library_Container_"] div[class*="steamavatar_avatarHolder_"].online.awayOrSnooze,
-body.DesktopUI div[class*="gamelistentry_FriendStatusHover_"] div[class*="steamavatar_avatarHolder_"].online.awayOrSnooze
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._1YGAHSfGavQI6MODJq-pJB.online.awayOrSnooze,
+body.DesktopUI div[class*="gamelistentry_FriendStatusHover_"] div[class*="steamavatar_avatarHolder_"].online.awayOrSnooze,
+body.DesktopUI div._2iiN7AYnLFTRFRiuipiYJz div._1YGAHSfGavQI6MODJq-pJB.online.awayOrSnooze
 {
 	border-style: dashed !important;
 }
 
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"].ingame,
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._3yD46y5pd3zOGR7CzKs0mC div._1YGAHSfGavQI6MODJq-pJB.ingame,
 body.DesktopUI div[class*="library_Container_"] div[class*="steamavatar_avatarHolder_"].ingame,
-body.DesktopUI div[class*="gamelistentry_FriendStatusHover_"] div[class*="steamavatar_avatarHolder_"].ingame
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._1YGAHSfGavQI6MODJq-pJB.ingame,
+body.DesktopUI div[class*="gamelistentry_FriendStatusHover_"] div[class*="steamavatar_avatarHolder_"].ingame,
+body.DesktopUI div._2iiN7AYnLFTRFRiuipiYJz div._1YGAHSfGavQI6MODJq-pJB.ingame
 {
 	color: rgba(var(--adw-success-rgb), 0.5) !important;
 }
 
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"] div.avatarStatus,
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._3yD46y5pd3zOGR7CzKs0mC div._1YGAHSfGavQI6MODJq-pJB div.avatarStatus,
 body.DesktopUI div[class*="library_Container_"] div[class*="steamavatar_avatarHolder_"] div.avatarStatus,
-body.DesktopUI div[class*="gamelistentry_FriendStatusHover_"] div[class*="steamavatar_avatarHolder_"] div.avatarStatus
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._1YGAHSfGavQI6MODJq-pJB div.avatarStatus,
+body.DesktopUI div[class*="gamelistentry_FriendStatusHover_"] div[class*="steamavatar_avatarHolder_"] div.avatarStatus,
+body.DesktopUI div._2iiN7AYnLFTRFRiuipiYJz div._1YGAHSfGavQI6MODJq-pJB div.avatarStatus
 {
 	display: none !important;
 }

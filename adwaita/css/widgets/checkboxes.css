@@ -15,14 +15,16 @@
 
 body.DesktopUI div.DialogCheckbox_Container,
 html.client_chat_frame div.DialogCheckbox_Container,
-body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"]
+body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"],
+body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._2QWD5eymAFUZoQg29r-lQT
 {
 	cursor: default !important;
 }
 
 body.DesktopUI div.DialogCheckbox_Container > div.DialogCheckbox,
 html.client_chat_frame div.DialogCheckbox_Container > div.DialogCheckbox,
-body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"] > div[class*="newlogindialog_Checkbox_"]
+body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"] > div[class*="newlogindialog_Checkbox_"],
+body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._2QWD5eymAFUZoQg29r-lQT > div._3tTFgWQ_SQnO3XzGEZkjRm
 {
 	width: 20px !important;
 	min-width: 20px !important;
@@ -42,21 +44,24 @@ body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxFie
 
 body.DesktopUI div.DialogCheckbox_Container > div.DialogCheckbox:focus,
 html.client_chat_frame div.DialogCheckbox_Container > div.DialogCheckbox:focus,
-body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"] > div[class*="newlogindialog_Checkbox_"]:focus
+body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"] > div[class*="newlogindialog_Checkbox_"]:focus,
+body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._2QWD5eymAFUZoQg29r-lQT > div._3tTFgWQ_SQnO3XzGEZkjRm:focus
 {
 	outline: none !important;
 }
 
 body.DesktopUI div.DialogCheckbox_Container > div.DialogCheckbox:focus:focus-visible,
 html.client_chat_frame div.DialogCheckbox_Container > div.DialogCheckbox:focus:focus-visible,
-body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"] > div[class*="newlogindialog_Checkbox_"]:focus:focus-visible
+body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"] > div[class*="newlogindialog_Checkbox_"]:focus:focus-visible,
+body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._2QWD5eymAFUZoQg29r-lQT > div._3tTFgWQ_SQnO3XzGEZkjRm:focus:focus-visible
 {
 	box-shadow: var(--adw-focus-border-outlined) !important;
 }
 
 body.DesktopUI div.DialogCheckbox_Container > div.DialogCheckbox:not(.Active),
 html.client_chat_frame div.DialogCheckbox_Container > div.DialogCheckbox:not(.Active),
-body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"] > div[class*="newlogindialog_Checkbox_"]:empty
+body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"] > div[class*="newlogindialog_Checkbox_"]:empty,
+body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._2QWD5eymAFUZoQg29r-lQT > div._3tTFgWQ_SQnO3XzGEZkjRm:empty
 {
 	background: var(--adw-checkbox-unchecked-bg) !important;
 	border-radius: var(--adw-checkbox-radius) !important;
@@ -65,28 +70,32 @@ body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxFie
 
 body.DesktopUI div.DialogCheckbox_Container > div.DialogCheckbox:not(.Active):focus:focus-visible,
 html.client_chat_frame div.DialogCheckbox_Container > div.DialogCheckbox:not(.Active):focus:focus-visible,
-body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"] > div[class*="newlogindialog_Checkbox_"]:empty:focus:focus-visible
+body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"] > div[class*="newlogindialog_Checkbox_"]:empty:focus:focus-visible,
+body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._2QWD5eymAFUZoQg29r-lQT > div._3tTFgWQ_SQnO3XzGEZkjRm:empty:focus:focus-visible
 {
 	box-shadow: var(--adw-checkbox-unchecked-shadow), var(--adw-focus-border) !important;
 }
 
 body.DesktopUI div.DialogCheckbox_Container:hover > div.DialogCheckbox,
 html.client_chat_frame div.DialogCheckbox_Container:hover > div.DialogCheckbox,
-body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"]:hover > div[class*="newlogindialog_Checkbox_"]
+body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"]:hover > div[class*="newlogindialog_Checkbox_"],
+body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._2QWD5eymAFUZoQg29r-lQT:hover > div._3tTFgWQ_SQnO3XzGEZkjRm
 {
 	background-color: var(--adw-checkbox-checked-overlay-hover) !important;
 }
 
 body.DesktopUI div.DialogCheckbox_Container:active > div.DialogCheckbox,
 html.client_chat_frame div.DialogCheckbox_Container:active > div.DialogCheckbox,
-body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"]:active > div[class*="newlogindialog_Checkbox_"]
+body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"]:active > div[class*="newlogindialog_Checkbox_"],
+body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._2QWD5eymAFUZoQg29r-lQT:active > div._3tTFgWQ_SQnO3XzGEZkjRm
 {
 	background-color: var(--adw-checkbox-checked-overlay-active) !important;
 }
 
 body.DesktopUI div.DialogCheckbox_Container:hover > div.DialogCheckbox:not(.Active),
 html.client_chat_frame div.DialogCheckbox_Container:hover > div.DialogCheckbox:not(.Active),
-body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"]:hover > div[class*="newlogindialog_Checkbox_"]:empty
+body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"]:hover > div[class*="newlogindialog_Checkbox_"]:empty,
+body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._2QWD5eymAFUZoQg29r-lQT:hover > div._3tTFgWQ_SQnO3XzGEZkjRm:empty
 {
 	background-color: transparent !important;
 	box-shadow: var(--adw-checkbox-unchecked-shadow-hover) !important;
@@ -94,14 +103,16 @@ body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxFie
 
 body.DesktopUI div.DialogCheckbox_Container:hover > div.DialogCheckbox:not(.Active):focus:focus-visible,
 html.client_chat_frame div.DialogCheckbox_Container:hover > div.DialogCheckbox:not(.Active):focus:focus-visible,
-body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"]:hover > div[class*="newlogindialog_Checkbox_"]:empty:focus:focus-visible
+body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"]:hover > div[class*="newlogindialog_Checkbox_"]:empty:focus:focus-visible,
+body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._2QWD5eymAFUZoQg29r-lQT:hover > div._3tTFgWQ_SQnO3XzGEZkjRm:empty:focus:focus-visible
 {
 	box-shadow: var(--adw-checkbox-unchecked-shadow-hover), var(--adw-focus-border) !important;
 }
 
 body.DesktopUI div.DialogCheckbox_Container:active > div.DialogCheckbox:not(.Active),
 html.client_chat_frame div.DialogCheckbox_Container:active > div.DialogCheckbox:not(.Active),
-body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"]:active > div[class*="newlogindialog_Checkbox_"]:empty
+body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"]:active > div[class*="newlogindialog_Checkbox_"]:empty,
+body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._2QWD5eymAFUZoQg29r-lQT:active > div._3tTFgWQ_SQnO3XzGEZkjRm:empty
 {
 	background-color: var(--adw-checkbox-unchecked-overlay-active) !important;
 	box-shadow: none !important;
@@ -109,21 +120,24 @@ body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxFie
 
 body.DesktopUI div.DialogCheckbox_Container:active > div.DialogCheckbox:not(.Active):focus:focus-visible,
 html.client_chat_frame div.DialogCheckbox_Container:active > div.DialogCheckbox:not(.Active):focus:focus-visible,
-body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"]:active > div[class*="newlogindialog_Checkbox_"]:empty:focus:focus-visible
+body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"]:active > div[class*="newlogindialog_Checkbox_"]:empty:focus:focus-visible,
+body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._2QWD5eymAFUZoQg29r-lQT:active > div._3tTFgWQ_SQnO3XzGEZkjRm:empty:focus:focus-visible
 {
 	box-shadow: var(--adw-focus-border) !important;
 }
 
 body.DesktopUI div.DialogCheckbox_Container > div.DialogCheckbox > svg,
 html.client_chat_frame div.DialogCheckbox_Container > div.DialogCheckbox > svg,
-body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"] > div[class*="newlogindialog_Checkbox_"] > div[class*="newlogindialog_Check_"] > svg
+body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"] > div[class*="newlogindialog_Checkbox_"] > div[class*="newlogindialog_Check_"] > svg,
+body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._2QWD5eymAFUZoQg29r-lQT > div._3tTFgWQ_SQnO3XzGEZkjRm > div._6EoZEzpC472tnBWRFndg2 > svg
 {
 	display: none !important;
 }
 
 body.DesktopUI div.DialogCheckbox_Container > div.DialogCheckbox::before,
 html.client_chat_frame div.DialogCheckbox_Container > div.DialogCheckbox::before,
-body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"] > div[class*="newlogindialog_Checkbox_"] > div[class*="newlogindialog_Check_"]::before
+body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"] > div[class*="newlogindialog_Checkbox_"] > div[class*="newlogindialog_Check_"]::before,
+body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._2QWD5eymAFUZoQg29r-lQT > div._3tTFgWQ_SQnO3XzGEZkjRm > div._6EoZEzpC472tnBWRFndg2::before
 {
 	background-color: transparent;
 	content: "";
@@ -138,7 +152,8 @@ body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxFie
 
 body.DesktopUI div.DialogCheckbox_Container > div.DialogCheckbox.Active::before,
 html.client_chat_frame div.DialogCheckbox_Container > div.DialogCheckbox.Active::before,
-body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"] > div[class*="newlogindialog_Checkbox_"] > div[class*="newlogindialog_Check_"]:not(:empty)::before
+body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"] > div[class*="newlogindialog_Checkbox_"] > div[class*="newlogindialog_Check_"]:not(:empty)::before,
+body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._2QWD5eymAFUZoQg29r-lQT > div._3tTFgWQ_SQnO3XzGEZkjRm > div._6EoZEzpC472tnBWRFndg2:not(:empty)::before
 {
 	background-color: var(--adw-checkbox-checked-fg);
 }
