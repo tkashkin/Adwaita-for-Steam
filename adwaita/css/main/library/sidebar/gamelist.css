@@ -39,10 +39,14 @@ body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ._1yaIZGJb4PvyjF3_SSQxFx
 
 body.DesktopUI div[class*="gamelistentry_Container_"][class*="gamelistentry_CloudError_"],
 body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ.cMb2tLY-QjdRohM5U6Btp,
+body.DesktopUI div[class*="gamelistentry_Container_"] div[class*="gamelistentry_CloudError_"],
+body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ div.cMb2tLY-QjdRohM5U6Btp,
 body.DesktopUI div[class*="gamelistentry_Container_"][class*="gamelistentry_CloudOutOfDate_"],
-body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ._26PT_OTo7-JDunJWeZgjT8
+body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ._26PT_OTo7-JDunJWeZgjT8,
+body.DesktopUI div[class*="gamelistentry_Container_"] div[class*="gamelistentry_CloudOutOfDate_"],
+body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ div._26PT_OTo7-JDunJWeZgjT8
 {
-	color: rgb(var(--adw-warning-rgb)) !important
+	color: rgb(var(--adw-warning-rgb)) !important;
 }
 
 body.DesktopUI div[class*="gamelistentry_Container_"][class*="gamelistentry_Running_"],

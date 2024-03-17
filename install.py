@@ -93,6 +93,7 @@ LIBRARY_FILES = [
 	"css/main/headerbar/menu.css",
 	"css/main/headerbar/navigation.css",
 
+	"css/main/library/details/header.css",
 	"css/main/library/details/activity.css",
 	"css/main/library/details/details.css",
 	"css/main/library/details/event-dialog.css",

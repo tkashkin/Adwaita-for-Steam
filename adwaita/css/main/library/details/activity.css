@@ -1,3 +1,18 @@
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsspotlight_ReviewContainer_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3LE-6w1ItIAB4CKJFCa3Od
+{
+	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-opacity)) !important;
+	border-radius: var(--adw-card-radius) !important;
+	box-shadow: var(--adw-card-shadow) !important;
+	border: none !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsspotlight_ReviewContainer_"] div[class*="appdetailsspotlight_Inner_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3LE-6w1ItIAB4CKJFCa3Od div._2z8Na_s9JosX48wHF4HPiA
+{
+	width: auto !important;
+}
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_AppActivityDay_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.S2Fu9HxHCA5MaCLGrN2ib
 {
@@ -628,9 +643,9 @@ body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Ev
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3G7i5g23e7CREVJMvy-uuM img._1zopSLK5O_2X44s_Xy3IO-
 {
 	padding: 0 !important;
-	margin: -8px 0 !important;
-	width: 56px !important;
-	height: 56px !important;
+	margin: 0 !important;
+	width: 40px !important;
+	height: 40px !important;
 }
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_BadgeSection_"] div[class*="appactivityday_BadgeName_"],
