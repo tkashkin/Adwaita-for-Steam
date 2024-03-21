@@ -10,10 +10,16 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA img.ooM_c2DA3hF8Wg7zbpK5x
 	backdrop-filter: none !important;
 }
 
-body.DesktopUI div[class*="appdetails_Container_"] img[class*="sharedappdetailsheader_ImgBlurBackdrop_"],
-body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA img.ooM_c2DA3hF8Wg7zbpK5x
+body.DesktopUI div[class*="appdetails_Container_"] [class*="sharedappdetailsheader_ImgBlurBackdrop_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA .ooM_c2DA3hF8Wg7zbpK5x
 {
 	display: none !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetails_Glassy_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3FmxxjyWNHU1PrBGnBe6tm
+{
+	overflow-y: overlay !important;
 }
 
 /* `Scroll to Top` Button */
@@ -112,26 +118,6 @@ body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsachieve
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2aVnDeExEHiUFX0zwr_BTO
 {
 	border-radius: var(--adw-button-radius) !important;
-}
-
-/* Post Game Summary */
-body.DesktopUI div[class*="appdetails_Container_"] div[class*="spotlightgameplaysummary_SummaryCarouselContainer_"],
-body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.wgbDI6To-SKawn9wQwVaw
-{
-	background: var(--card_bg) !important;
-	border-radius: var(--adw-card-radius) !important;
-}
-
-body.DesktopUI div[class*="appdetails_Container_"] div[class*="spotlightgameplaysummary_SummaryCarouselContainer_"]::after,
-body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.wgbDI6To-SKawn9wQwVaw::after
-{
-	box-shadow: none !important;
-}
-
-body.DesktopUI div[class*="appdetails_Container_"] div[class*="pageablecontainer_PageableCloseButton_"] > svg line,
-body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2K2No5eH-XS6QwrXUtzo2x > svg line
-{
-	stroke: rgb(var(--adw-window-fg-rgb)) !important;
 }
 
 /* DLC Notification Banner */
@@ -261,16 +247,43 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2SAb6geDpe6toA1GaP0GjH div.My1be
 	font-weight: var(--adw-text-base-weight) !important;
 }
 
+/* Post Game Summary */
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="spotlightgameplaysummary_SummaryCarouselContainer_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.wgbDI6To-SKawn9wQwVaw
+{
+	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-opacity)) !important;
+	box-shadow: var(--adw-card-shadow) !important;
+	border-radius: var(--adw-card-radius) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="spotlightgameplaysummary_SummaryCarouselContainer_"]::after,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.wgbDI6To-SKawn9wQwVaw::after
+{
+	box-shadow: none !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="pageablecontainer_PageableCloseButton_"] > svg line,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2K2No5eH-XS6QwrXUtzo2x > svg line
+{
+	stroke: rgb(var(--adw-window-fg-rgb)) !important;
+}
+
 /* Gameplay Summary */
 body.DesktopUI div[class*="appdetails_Container_"] [class*="spotlightgameplaysummary_EventHeaderBlock_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA ._1jiiOndFINUereBkqdHFYm,
 body.DesktopUI div[class*="appdetails_Container_"] [class*="spotlightgameplaysummary_GamePlaySummaryHeader_"],
-body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA ._2_sR8WGLby5dt8XUSln6R7
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA ._2_sR8WGLby5dt8XUSln6R7,
+body.DesktopUI div[class*="appdetails_Container_"] [class*="appdetailssectionheader_LabelText_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA ._3i0kopAostOz2IDi9HqmeN
 {
 	color: rgb(var(--adw-window-fg-rgb)) !important;
 	font-family: var(--adw-text-font) !important;
-	font-size: var(--adw-text-title3-size) !important;
-	font-weight: var(--adw-text-title3-weight) !important;
+	line-height: var(--adw-list-header-height) !important;
+	text-transform: none !important;
+	letter-spacing: normal !important;
+	font-size: var(--adw-list-header-size) !important;
+	font-weight: var(--adw-list-header-weight) !important;
+	min-height: var(--adw-list-header-height) !important;
 }
 
 body.DesktopUI div[class*="appdetails_Container_"] [class*="spotlightgameplaysummary_EventDaySeparator_"],
@@ -289,18 +302,93 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA .VKo9pLPbwpF3xIzL8Wnou
 }
 
 /* Activity Post */
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="posttextentry_PostTextEntry_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3x31AgESSlUqX3D4MTHv2m
+{
+	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-opacity)) !important;
+	border-radius: var(--adw-card-radius) !important;
+	box-shadow: var(--adw-card-shadow) !important;
+	display: flex !important;
+	flex-direction: row !important;
+	gap: 0 !important;
+	align-items: center !important;
+	transition: var(--adw-button-transition) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="posttextentry_PostTextEntry_"]:not(:focus-within):hover,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3x31AgESSlUqX3D4MTHv2m:not(:focus-within):hover
+{
+	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-hover-opacity)) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="posttextentry_PostTextEntry_"]:focus-within,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3x31AgESSlUqX3D4MTHv2m:focus-within
+{
+	box-shadow: var(--adw-card-shadow), var(--adw-focus-border) !important;
+}
+
 body.DesktopUI div[class*="appdetails_Container_"] textarea[class*="posttextentry_PostTextEntryArea_"],
-body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA textarea._1JlC29Ic6L-QvL-39X_d-X,
-body.DesktopUI div[class*="appdetails_Container_"] textarea[class*="posttextentry_PostTextEntryArea_"]:focus,
-body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA textarea._1JlC29Ic6L-QvL-39X_d-X:focus,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA textarea._1JlC29Ic6L-QvL-39X_d-X
+{
+	background: none !important;
+	box-shadow: none !important;
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-entry-font-size) !important;
+	font-weight: var(--adw-entry-font-weight) !important;
+	font-style: normal !important;
+	text-transform: none !important;
+	letter-spacing: normal !important;
+	min-height: 40px !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] textarea[class*="posttextentry_PostTextEntryArea_"]::placeholder,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA textarea._1JlC29Ic6L-QvL-39X_d-X::placeholder
+{
+	color: rgba(var(--adw-window-fg-rgb), var(--adw-dim-label-opacity)) !important;
+	font-style: normal !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="posttextentry_PostTextEntry_"] div[class*="posttextentry_Controls_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3x31AgESSlUqX3D4MTHv2m div._37e7DrDNmf1FmsMGA5y0A0
+{
+	max-height: unset !important;
+	display: flex !important;
+	align-items: stretch !important;
+	justify-content: normal !important;
+	overflow: unset !important;
+	gap: 6px !important;
+	margin: 0 12px 0 0 !important;
+	padding: 0 !important;
+}
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="posttextentry_PostButton_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2JSyABqFEh-v_dwaTnBydR,
 body.DesktopUI div[class*="appdetails_Container_"] button[class*="posttextentry_EmoticonButton_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA button.bACIuqv-b_9TztCczFK19
 {
-	background: var(--button_bg) !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	height: 34px !important;
+	background: rgba(var(--adw-window-fg-rgb), var(--adw-button-bg-opacity)) !important;
 	border-radius: var(--adw-button-radius) !important;
 	box-shadow: none !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="posttextentry_PostButton_"]:hover,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2JSyABqFEh-v_dwaTnBydR:hover,
+body.DesktopUI div[class*="appdetails_Container_"] button[class*="posttextentry_EmoticonButton_"]:hover,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA button.bACIuqv-b_9TztCczFK19:hover
+{
+	background: rgba(var(--adw-window-fg-rgb), var(--adw-button-bg-opacity-hover)) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="posttextentry_PostButton_"]:active,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2JSyABqFEh-v_dwaTnBydR:active,
+body.DesktopUI div[class*="appdetails_Container_"] button[class*="posttextentry_EmoticonButton_"]:active,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA button.bACIuqv-b_9TztCczFK19:active
+{
+	background: rgba(var(--adw-window-fg-rgb), var(--adw-button-bg-opacity-active)) !important;
 }
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="posttextentry_PostButton_"],
@@ -309,21 +397,28 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2JSyABqFEh-v_dwaTnBydR
 	font-family: var(--adw-text-font) !important;
 	font-size: var(--adw-text-title3-size) !important;
 	font-weight: var(--adw-text-title3-weight) !important;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	width: auto !important;
+	padding: 0 12px !important;
 }
 
-body.DesktopUI div[class*="appdetails_Container_"] textarea[class*="posttextentry_PostTextEntryArea_"]::placeholder,
-body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA textarea._1JlC29Ic6L-QvL-39X_d-X::placeholder
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="posttextentry_PostButton_"]:not([class*="posttextentry_Enabled_"]),
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2JSyABqFEh-v_dwaTnBydR:not(.bGfjajFo4DI-ULSQxw1KY),
+body.DesktopUI div[class*="appdetails_Container_"] button[class*="posttextentry_EmoticonButton_"].disabled,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA button.bACIuqv-b_9TztCczFK19.disabled
 {
-	color: rgba(var(--adw-window-fg-rgb), var(--adw-dim-label-opacity)) !important;
+	opacity: 0.5 !important;
+	pointer-events: none !important;
 }
 
-body.DesktopUI div[class*="appdetails_Container_"] div[class*="posttextentry_PostButton_"]:hover,
-body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2JSyABqFEh-v_dwaTnBydR:hover,
-body.DesktopUI div[class*="appdetails_Container_"] button[class*="posttextentry_EmoticonButton_"]:hover,
-body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA button.bACIuqv-b_9TztCczFK19:hover
+body.DesktopUI div[class*="appdetails_Container_"] button[class*="posttextentry_EmoticonButton_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA button.bACIuqv-b_9TztCczFK19
 {
-	background: var(--button_hover_bg) !important;
-	border-radius: var(--adw-button-radius) !important;
+	width: 34px !important;
+	min-width: 34px !important;
+	max-width: 34px !important;
 }
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsscreenshotssection_InstructionText_"],

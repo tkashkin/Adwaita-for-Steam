@@ -5,7 +5,7 @@ body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ
 {
 	height: 26px !important;
 	line-height: 26px !important;
-	margin-left: 6px !important;
+	margin: 0 6px !important;
 	background: none !important;
 	cursor: default !important;
 	font-family: var(--adw-text-font) !important;
@@ -101,7 +101,7 @@ body.DesktopUI div[class*="gamelistsectionheader_Container_"],
 body.DesktopUI div._2sYIghGVXJr6tsQVvcryy8
 {
 	border: none !important;
-	padding: 0 6px 0 6px !important;
+	padding: 0 6px !important;
 	background: none !important;
 	box-shadow: none !important;
 }
@@ -115,7 +115,7 @@ body.DesktopUI div._2sYIghGVXJr6tsQVvcryy8 > div._3cV3O8FnPQqpJO5kIMUlLX
 body.DesktopUI div[class*="gamelist_Container_"] div.ReactVirtualized__Grid,
 body.DesktopUI div._1ijTaXJJA5YWl_fW2IxcaT div.ReactVirtualized__Grid
 {
-	padding: 6px 6px 6px 0 !important;
+	padding: 6px 0 !important;
 	overflow: overlay !important;
 }
 

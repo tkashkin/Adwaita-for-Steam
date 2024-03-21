@@ -41,7 +41,9 @@ body.DesktopUI div._2Nq6ov7A1hGcHXVOXNt_OE div._2zxzStp5qY5M1evOm8keES
 }
 
 body.DesktopUI div[class*="appdetailsplaysection_StickyHeader_"] div[class*="appdetailsplaysection_ActionSection_"],
-body.DesktopUI div._39RheXihcN6H2k2muQTjkI div._2zxzStp5qY5M1evOm8keES
+body.DesktopUI div._39RheXihcN6H2k2muQTjkI div._2zxzStp5qY5M1evOm8keES,
+body.DesktopUI div[class*="appdetailsplaysection_StickyHeader_"] div[class*="appdetailsplaysection_StatusAndStats_"],
+body.DesktopUI div._39RheXihcN6H2k2muQTjkI div._1YbtIWcfkQJOysLXQbwzRf
 {
 	height: 34px !important;
 }
@@ -204,13 +206,57 @@ body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2TYVGoD27ZMfjRirKQNLfk > button:
 }
 
 body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_GameStat_"],
-body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._1kiZKVbDe-9Ikootk57kpA
+body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._1kiZKVbDe-9Ikootk57kpA,
+body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_Downloading_"],
+body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2F4PcO4yl7Xl5emuGiF2La
 {
 	height: 40px !important;
 	border-radius: var(--adw-button-radius) !important;
 	padding: 4px !important;
-	gap: 4px !important;
+	column-gap: 4px !important;
+	row-gap: 2px !important;
 	margin: 0 !important;
+	position: relative !important;
+}
+
+body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_Downloading_"],
+body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2F4PcO4yl7Xl5emuGiF2La
+{
+	width: 180px !important;
+	margin-right: 6px !important;
+}
+
+body.DesktopUI div[class*="appdetailsplaysection_StickyHeader_"] div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_Downloading_"],
+body.DesktopUI div._39RheXihcN6H2k2muQTjkI div._3Y87YQY56ZCOqhgcZFaDc5 div._2F4PcO4yl7Xl5emuGiF2La
+{
+	height: 34px !important;
+	padding: 0 4px !important;
+	gap: 0 !important;
+}
+
+body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_Downloading_"] div[class*="appdetailsplaysection_DetailsProgressContainer_"],
+body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2F4PcO4yl7Xl5emuGiF2La div._25YVDTaClw6Y2COPsU0UaV
+{
+	border-radius: var(--adw-button-radius) !important;
+	overflow: hidden !important;
+	position: absolute !important;
+	z-index: 0 !important;
+	background: transparent !important;
+	top: 0 !important;
+	left: 0 !important;
+	right: 0 !important;
+	bottom: 0 !important;
+	height: auto !important;
+	width: auto !important;
+	border: 1px rgba(var(--adw-accent-bg-rgb), var(--adw-dimmer-opacity)) solid !important;
+	margin: 0 !important;
+}
+
+body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_Downloading_"] div[class*="appdetailsplaysection_DetailsProgressContainer_"] > div,
+body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2F4PcO4yl7Xl5emuGiF2La div._25YVDTaClw6Y2COPsU0UaV > div
+{
+	border-radius: 0 !important;
+	background: rgba(var(--adw-accent-bg-rgb), var(--adw-dimmer-opacity)) !important;
 }
 
 body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_GameStat_"] div[class*="appdetailsplaysection_GameStatRight_"],
@@ -223,7 +269,9 @@ body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._1kiZKVbDe-9Ikootk57kpA div._3m_z
 body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_PlayBarCloudStatusContainer_"] div[class*="appdetailsplaysection_CloudStatusSyncFail_"],
 body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2cRYms-zZc4misk9tj3bt8 div.q_Xpj_ztkqZCfOIksH3UR,
 body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_MiniAchievements_"],
-body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div.UAhWiMg9Q2VPsQQBj_ikT
+body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div.UAhWiMg9Q2VPsQQBj_ikT,
+body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_Downloading_"],
+body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2F4PcO4yl7Xl5emuGiF2La
 {
 	cursor: default !important;
 	border-radius: var(--adw-button-radius) !important;
@@ -232,7 +280,9 @@ body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div.UAhWiMg9Q2VPsQQBj_ikT
 body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_PlayBarCloudStatusContainer_"] div[class*="appdetailsplaysection_CloudStatusSyncFail_"]:hover,
 body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2cRYms-zZc4misk9tj3bt8 div.q_Xpj_ztkqZCfOIksH3UR:hover,
 body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_MiniAchievements_"]:hover,
-body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div.UAhWiMg9Q2VPsQQBj_ikT:hover
+body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div.UAhWiMg9Q2VPsQQBj_ikT:hover,
+body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_Downloading_"]:hover,
+body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2F4PcO4yl7Xl5emuGiF2La:hover
 {
 	background: rgba(var(--adw-window-fg-rgb), var(--adw-hover-opacity)) !important;
 }
@@ -240,7 +290,9 @@ body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div.UAhWiMg9Q2VPsQQBj_ikT:hover
 body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_PlayBarCloudStatusContainer_"] div[class*="appdetailsplaysection_CloudStatusSyncFail_"]:active,
 body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2cRYms-zZc4misk9tj3bt8 div.q_Xpj_ztkqZCfOIksH3UR:active,
 body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_MiniAchievements_"]:active,
-body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div.UAhWiMg9Q2VPsQQBj_ikT:active
+body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div.UAhWiMg9Q2VPsQQBj_ikT:active,
+body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_Downloading_"]:active,
+body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2F4PcO4yl7Xl5emuGiF2La:active
 {
 	background: rgba(var(--adw-window-fg-rgb), var(--adw-active-opacity)) !important;
 }

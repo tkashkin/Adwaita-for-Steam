@@ -179,6 +179,16 @@ body.DesktopUI.ContextMenuPopupBody div._3pofGqV0buiKAfMPEs3_82
 	padding: var(--adw-menu-padding) !important;
 }
 
+html.client_chat_frame > body.ContextMenuPopupBody div[class*="contextmenu_contextMenu_"][class*="gamelistdropdown_DropDown_"],
+html.client_chat_frame > body.ContextMenuPopupBody div.LQkrbbayZPY11qHm01t7F.EDl_mzaY3WxkgmYVD8W4d,
+html.client_chat_frame > body.ContextMenuPopupBody div[class*="contextmenu_contextMenu_"][class*="library_LibraryContextMenu_"],
+html.client_chat_frame > body.ContextMenuPopupBody div.LQkrbbayZPY11qHm01t7F._1UOkn2fGQ25jnyqcEJbnlo
+{
+	border: none !important;
+	padding: var(--adw-menu-padding) !important;
+	min-width: 100% !important;
+}
+
 /* Notifications */
 body.DesktopUI.ContextMenuPopupBody button[class*="titlebarcontrols_AllNotificationsButton_"],
 body.DesktopUI.ContextMenuPopupBody button._1oERP7bVictkby2hP4BBva,

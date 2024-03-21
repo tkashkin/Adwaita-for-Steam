@@ -110,6 +110,7 @@ LIBRARY_FILES = [
 	"css/chat/chat.css",
 
 	"css/dialogs/login.css",
+	"css/dialogs/pagedsettings.css"
 ]
 
 

@@ -22,6 +22,21 @@ body.DesktopUI div._1ENHEsrSLcTRtPQFl1F-wL
 	background: rgb(var(--adw-window-bg-rgb)) !important;
 }
 
+body.DesktopUI div[class*="steamdesktop_Wrapper_"]::after,
+body.DesktopUI div._1ENHEsrSLcTRtPQFl1F-wL::after
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	pointer-events: none;
+	box-sizing: border-box;
+	border: 1px rgba(var(--adw-window-fg-rgb), var(--adw-window-outline-opacity)) solid;
+	z-index: 999;
+}
+
 /* Focus Bar */
 body.DesktopUI div[class*="steamdesktop_Wrapper_"] > div[class*="steamdesktop_FocusBar_"],
 body.DesktopUI div._1ENHEsrSLcTRtPQFl1F-wL > div._3pXasCUulX4jjqO79s4q_F
@@ -49,11 +64,14 @@ body.DesktopUI div.RGNMWtyj73_-WdhflrmuY > div._2CmrnGY-Amtd83ScJkFvx2
 	box-shadow: inset 0 1px rgba(var(--adw-shade-rgb), calc(var(--adw-shade-a) * 0.75)) !important;
 }
 
-/* Can't draw shadow or anything else on top of the browser, draw a border instead */
+/* Can't draw shadow or anything else on top of the browser, draw a border instead. Offset browser by 1px on other sides to keep window outline visible */
 body.DesktopUI div[class*="steamdesktop_BrowserWrapper_"],
 body.DesktopUI div._1bGewp3tfzqAF6fVTFFUOz
 {
-	border-top: 1px rgba(var(--adw-headerbar-shade-rgb), var(--adw-headerbar-shade-a)) solid !important;
+	box-sizing: border-box !important;
+	border: 1px rgb(var(--adw-window-bg-rgb)) solid !important;
+	border-top: rgba(var(--adw-headerbar-shade-rgb), var(--adw-headerbar-shade-a)) !important;
+	background: rgb(var(--adw-window-bg-rgb)) !important;
 }
 
 /* URL Bar (refresh button only) */
