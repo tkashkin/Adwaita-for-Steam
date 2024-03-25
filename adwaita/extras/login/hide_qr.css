@@ -1,8 +1,6 @@
-/* ---------------------- */
-/* --- Hide QR Login  --- */
-/* ---------------------- */
-body.DesktopUI div[class*="login_Login_"] [class*="newlogindialog_QRSection_"]
+/* Hide QR Login */
+body.DesktopUI .login_Login_VZ6x_ .newlogindialog_QRSection_2ZDyS,
+body.DesktopUI .VZ6x_grhNkIYJG__jEEyp ._2ZDySoTopw8XofnCKLNxDL
 {
 	display: none !important;
 }
-

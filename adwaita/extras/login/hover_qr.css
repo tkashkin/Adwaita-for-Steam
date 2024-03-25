@@ -1,10 +1,9 @@
-/* ------------------------------- */
-/* --- Show QR Login on Hover  --- */
-/* ------------------------------- */
-body.DesktopUI div[class*="login_Login_"] [class*="qrlogin_Column_"]
+/* Show QR Login on Hover */
+body.DesktopUI .login_Login_VZ6x_ .qrlogin_Column_2UEUT,
+body.DesktopUI .VZ6x_grhNkIYJG__jEEyp ._2UEUT0mVy2VL0cqXLMSFJL
 {
-	box-shadow: 0px 0px 16px 8px black !important;
-	border-radius: var(--popover_radius) !important;
+	box-shadow: 0 0 16px 8px black !important;
+	border-radius: var(--adw-card-radius) !important;
 	left: 50% !important;
 	opacity: 0 !important;
 	position: absolute !important;
@@ -14,57 +13,76 @@ body.DesktopUI div[class*="login_Login_"] [class*="qrlogin_Column_"]
 	visibility: hidden !important;
 }
 
-body.DesktopUI div[class*="login_Login_"] [class*="qrlogin_LoginQR_"]
+body.DesktopUI .login_Login_VZ6x_ .qrlogin_LoginQR_1wtS3,
+body.DesktopUI .VZ6x_grhNkIYJG__jEEyp ._1wtS3kmYl9DHluAbwsr5t
 {
-	border-radius: var(--popover_radius) !important;
+	border-radius: var(--adw-card-radius) !important;
 	width: 250px !important;
 	height: 250px !important;
 }
 
-body.DesktopUI div[class*="login_Login_"] [class*="newlogindialog_QRSection_"]
+body.DesktopUI .login_Login_VZ6x_ .newlogindialog_QRSection_2ZDyS,
+body.DesktopUI .VZ6x_grhNkIYJG__jEEyp ._2ZDySoTopw8XofnCKLNxDL
 {
 	margin-left: 0 !important;
 }
 
-body.DesktopUI div[class*="login_Login_"] [class*="newlogindialog_QRCodeContainer_"] [class*="newlogindialog_FieldLabel_"]
+body.DesktopUI .login_Login_VZ6x_ .newlogindialog_QRCodeContainer_3YjUm,
+body.DesktopUI .VZ6x_grhNkIYJG__jEEyp ._3YjUmVPnH4QB_0Uthh9BmI
+{
+	display: flex !important;
+	justify-content: center !important;
+}
+
+body.DesktopUI .login_Login_VZ6x_ .newlogindialog_QRCodeContainer_3YjUm .newlogindialog_FieldLabel_3d8dp,
+body.DesktopUI .VZ6x_grhNkIYJG__jEEyp ._3YjUmVPnH4QB_0Uthh9BmI ._3d8dp-U0xTT5RTZmRsmQds
 {
 	display: none !important;
 }
 
-body.DesktopUI div[class*="login_Login_"] [class*="newlogindialog_QRCodeContainer_"] [class*="newlogindialog_UseMobileAppForQR_"]
+body.DesktopUI .login_Login_VZ6x_ .newlogindialog_QRCodeContainer_3YjUm .newlogindialog_UseMobileAppForQR_9xgsv,
+body.DesktopUI .VZ6x_grhNkIYJG__jEEyp ._3YjUmVPnH4QB_0Uthh9BmI ._9xgsv0cUCLmOES66ybPjM
 {
 	align-self: center !important;
 }
 
-body.DesktopUI div[class*="login_Login_"] [class*="newlogindialog_QRCodeContainer_"] [class*="newlogindialog_UseMobileAppForQR_"]::after
+body.DesktopUI .login_Login_VZ6x_ .newlogindialog_QRCodeContainer_3YjUm .newlogindialog_UseMobileAppForQR_9xgsv::after,
+body.DesktopUI .VZ6x_grhNkIYJG__jEEyp ._3YjUmVPnH4QB_0Uthh9BmI ._9xgsv0cUCLmOES66ybPjM::after
 {
 	content: ". Hover to view QR code" !important;
 	font-weight: 700 !important;
 }
 
-body.DesktopUI div[class*="login_Login_"] [class*="newlogindialog_QRCodeContainer_"] [class*="newlogindialog_UseMobileAppForQR_"] a
+body.DesktopUI .login_Login_VZ6x_ .newlogindialog_QRCodeContainer_3YjUm .newlogindialog_UseMobileAppForQR_9xgsv a,
+body.DesktopUI .VZ6x_grhNkIYJG__jEEyp ._3YjUmVPnH4QB_0Uthh9BmI ._9xgsv0cUCLmOES66ybPjM a
 {
 	visibility: visible !important;
 }
 
-body.DesktopUI div[class*="login_Login_"] [class*="newlogindialog_QRCodeContainer_"]:hover [class*="newlogindialog_QR_"] [class*="qrlogin_Column_"]
+body.DesktopUI .login_Login_VZ6x_ .newlogindialog_QRCodeContainer_3YjUm:hover .newlogindialog_QR_1d6FZ .qrlogin_Column_2UEUT,
+body.DesktopUI .VZ6x_grhNkIYJG__jEEyp ._3YjUmVPnH4QB_0Uthh9BmI:hover ._1d6FZEReqGY-LD8AuorTdZ ._2UEUT0mVy2VL0cqXLMSFJL
 {
 	visibility: visible !important;
 	opacity: 1 !important;
+	z-index: 10 !important;
 }
 
-body.DesktopUI div[class*="login_Login_"] [class*="newlogindialog_Login_"] [class*="newlogindialog_SideBySide_"]
+body.DesktopUI .login_Login_VZ6x_ .newlogindialog_Login_ZOBYq .newlogindialog_SideBySide_1Wl13,
+body.DesktopUI .VZ6x_grhNkIYJG__jEEyp .ZOBYq36SukEm_Fi_77g2q ._1Wl13domZv872ZcbC_PVbv
 {
 	flex-direction: column !important;
 }
 
-body.DesktopUI div[class*="login_Login_"] [class*="newlogindialog_LoginForm_"]
+body.DesktopUI .login_Login_VZ6x_ .newlogindialog_LoginForm_3Tsg9,
+body.DesktopUI .VZ6x_grhNkIYJG__jEEyp ._3Tsg92fl5YHs5NNgpidiWj
 {
 	width: 100% !important;
 }
 
-body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_UseMobileAppForQR_"],
-body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_QRCodeContainer_"] div[class*="newlogindialog_QR_"]
+body.DesktopUI .login_Login_VZ6x_ .newlogindialog_UseMobileAppForQR_9xgsv,
+body.DesktopUI .VZ6x_grhNkIYJG__jEEyp ._9xgsv0cUCLmOES66ybPjM,
+body.DesktopUI .login_Login_VZ6x_ .newlogindialog_QRCodeContainer_3YjUm .newlogindialog_QR_1d6FZ,
+body.DesktopUI .VZ6x_grhNkIYJG__jEEyp ._3YjUmVPnH4QB_0Uthh9BmI ._1d6FZEReqGY-LD8AuorTdZ
 {
 	-webkit-app-region: no-drag !important;
 }

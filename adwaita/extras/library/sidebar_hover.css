@@ -1,21 +1,55 @@
-/* -------------------------------------- */
-/* --- Show Library Sidebar on Hover  --- */
-/* -------------------------------------- */
-body.DesktopUI .library_Container_3xRRJ > div[class*="library_LeftListSizableContainer_"]:not(:hover)
+/* Show Library Sidebar on Hover */
+body.DesktopUI div.library_Container_3xRRJ > div.library_LeftListSizableContainer_9sPoV,
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 > div._9sPoVBFyE_vE87mnZJ5aB
 {
-	min-width: 6px !important;
+	min-width: 300px !important;
+	max-width: 300px !important;
+	position: absolute !important;
+	top: 46px !important;
+	bottom: 0 !important;
+	left: -276px !important;
 	opacity: 0 !important;
-	transition: width 200ms var(--adw-base-transition-curve) !important;
-	width: 6px !important;
+	transition: left 150ms var(--adw-base-transition-curve), opacity 150ms var(--adw-base-transition-curve) !important;
+	background: rgb(var(--adw-sidebar-bg-rgb)) !important;
+	z-index: 10 !important;
+	border-right: 1px rgba(var(--adw-sidebar-shade-rgb), var(--adw-sidebar-shade-a)) solid !important;
 }
 
-body.DesktopUI .library_Container_3xRRJ > div[class*="library_LeftListSizableContainer_"]:hover
+body.DesktopUI div.library_Container_3xRRJ > div.library_LeftListSizableContainer_9sPoV:hover,
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 > div._9sPoVBFyE_vE87mnZJ5aB:hover,
+body.DesktopUI div.library_Container_3xRRJ > div.library_LeftListSizableContainer_9sPoV:has(:focus-visible),
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 > div._9sPoVBFyE_vE87mnZJ5aB:has(:focus-visible)
 {
+	left: 0 !important;
 	opacity: 1 !important;
 }
 
-body.DesktopUI .library_Container_3xRRJ
+body.DesktopUI div.library_Container_3xRRJ > div.library_LeftListSizableContainer_9sPoV::after,
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 > div._9sPoVBFyE_vE87mnZJ5aB::after
 {
-	background: var(--bg) !important;
+	content: "";
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.25);
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.175), rgba(0, 0, 0, 0.035) 40px, rgba(0, 0, 0, 0) 56px), linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.035) 7px, rgba(0, 0, 0, 0) 24px);
+	top: 0;
+	left: 300px;
+	width: 100vw;
+	height: 100vw;
+	opacity: 0;
+	transition: opacity 150ms var(--adw-base-transition-curve);
+	pointer-events: none;
 }
 
+body.DesktopUI div.library_Container_3xRRJ > div.library_LeftListSizableContainer_9sPoV:hover::after,
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 > div._9sPoVBFyE_vE87mnZJ5aB:hover::after,
+body.DesktopUI div.library_Container_3xRRJ > div.library_LeftListSizableContainer_9sPoV:has(:focus-visible)::after,
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 > div._9sPoVBFyE_vE87mnZJ5aB:has(:focus-visible)::after
+{
+	opacity: 1;
+}
+
+body.DesktopUI div[class*="gamelistbar_GameListHomeAndSearch_"],
+body.DesktopUI div._2TKEazUUS3TlniZfpc8OOe
+{
+	top: -40px !important;
+}

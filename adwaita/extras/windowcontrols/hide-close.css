@@ -1,9 +1,7 @@
-/* --------------------------------- */
-/* --- Hide Window Close Button  --- */
-/* --------------------------------- */
-.title-bar-actions .title-area-icon.closeButton,
-#root [class*="login_CloseButton_"]
+/* Hide Window Close Button */
+body.DesktopUI .title-bar-actions .title-area-icon.closeButton,
+body.DesktopUI .login_CloseButton_1mcCj,
+body.DesktopUI ._1mcCj7vv9y3vsXrvF3Oadk
 {
 	display: none !important;
 }
-

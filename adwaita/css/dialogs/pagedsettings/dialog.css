@@ -160,6 +160,12 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.RTicBCbDcEGkjsbmWzA8C > div._3qEg
 	border: none !important;
 }
 
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageListColumn_"] > div[class*="pagedsettings_PagedSettingsDialog_Title_"],
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.RTicBCbDcEGkjsbmWzA8C > div._3qEgQJqeb0zyM12KXq64Or
+{
+	padding: 12px calc(var(--adw-windowcontrols-close-margin-left) + 6px) !important;
+}
+
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.DialogContent_InnerWidth > div.DialogBody,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogContent_InnerWidth > div.DialogBody
 {
