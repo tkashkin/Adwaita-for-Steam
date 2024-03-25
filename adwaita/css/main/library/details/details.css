@@ -340,6 +340,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA textarea._1JlC29Ic6L-QvL-39X_d-X
 	text-transform: none !important;
 	letter-spacing: normal !important;
 	min-height: 40px !important;
+	padding: 8px 12px !important;
 }
 
 body.DesktopUI div[class*="appdetails_Container_"] textarea[class*="posttextentry_PostTextEntryArea_"]::placeholder,
@@ -347,6 +348,14 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA textarea._1JlC29Ic6L-QvL-39X_d-X::pla
 {
 	color: rgba(var(--adw-window-fg-rgb), var(--adw-dim-label-opacity)) !important;
 	font-style: normal !important;
+	line-height: 40px !important;
+	transition: line-height 100ms !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] textarea[class*="posttextentry_PostTextEntryArea_"]:focus::placeholder,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA textarea._1JlC29Ic6L-QvL-39X_d-X:focus::placeholder
+{
+	line-height: 20px !important;
 }
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="posttextentry_PostTextEntry_"] div[class*="posttextentry_Controls_"],
@@ -373,6 +382,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA button.bACIuqv-b_9TztCczFK19
 	background: rgba(var(--adw-window-fg-rgb), var(--adw-button-bg-opacity)) !important;
 	border-radius: var(--adw-button-radius) !important;
 	box-shadow: none !important;
+	cursor: default !important;
 }
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="posttextentry_PostButton_"]:hover,

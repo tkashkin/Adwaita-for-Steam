@@ -342,3 +342,41 @@ html.client_chat_frame div._3Dt__IV9HmQY4KgsvaOz1i > div[class*="tooltip_ToolTip
 	font-size: var(--adw-text-base-size) !important;
 	font-weight: var(--adw-text-base-weight) !important;
 }
+
+/* Comboboxes with descriptions */
+body.DesktopUI div[class*="dropdown_DialogDropDownMenu_"]._DialogInputContainer div[class*="dropdown_DialogDropDownMenu_Item_"] div[class*="dropdownlabel_DropDownLabelContainer_"],
+body.DesktopUI div._1tiuYeMmTc9DMG4mhgaQ5w._DialogInputContainer div._1R-DVEa2yqX0no8BYLtn9N div._2wVxOfRdsjOPgSC1Gi13mP
+{
+	justify-content: normal !important;
+	display: block !important;
+	overflow: hidden !important;
+	white-space: nowrap !important;
+	text-overflow: ellipsis !important;
+}
+
+body.DesktopUI div[class*="dropdown_DialogDropDownMenu_"]._DialogInputContainer div[class*="dropdown_DialogDropDownMenu_Item_"] div[class*="dropdownlabel_DropDownLabelTextColumn_"],
+body.DesktopUI div._1tiuYeMmTc9DMG4mhgaQ5w._DialogInputContainer div._1R-DVEa2yqX0no8BYLtn9N div.P4jYQ15F_jKksIIFQNOQC
+{
+	min-width: auto !important;
+}
+
+body.DesktopUI div[class*="dropdown_DialogDropDownMenu_"]._DialogInputContainer div[class*="dropdown_DialogDropDownMenu_Item_"] div[class*="dropdownlabel_DropDownLabelTitle_"],
+body.DesktopUI div._1tiuYeMmTc9DMG4mhgaQ5w._DialogInputContainer div._1R-DVEa2yqX0no8BYLtn9N div.uDBZWGBy_BP0IFXToHYjk
+{
+	color: rgb(var(--adw-popover-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-menu-size) !important;
+	font-weight: var(--adw-text-menu-weight) !important;
+	min-height: 32px !important;
+	line-height: 32px !important;
+	display: block !important;
+	overflow: hidden !important;
+	white-space: nowrap !important;
+	text-overflow: ellipsis !important;
+}
+
+body.DesktopUI div[class*="dropdown_DialogDropDownMenu_"]._DialogInputContainer div[class*="dropdown_DialogDropDownMenu_Item_"] div[class*="dropdownlabel_DropDownLabelDescription_"],
+body.DesktopUI div._1tiuYeMmTc9DMG4mhgaQ5w._DialogInputContainer div._1R-DVEa2yqX0no8BYLtn9N div._1JPcbbojrgNM_FTODskCRa
+{
+	display: none !important;
+}

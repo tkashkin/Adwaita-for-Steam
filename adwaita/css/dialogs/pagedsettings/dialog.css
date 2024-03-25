@@ -4,6 +4,7 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s
 	background: rgb(var(--adw-window-bg-rgb)) !important;
 	color: rgb(var(--adw-window-fg-rgb)) !important;
 	padding: 0 !important;
+	user-select: none !important;
 }
 
 body.DesktopUI div[class*="pagedsettings_PagedSettingsDialog_"] div[class*="pagedsettings_PagedSettingsDialog_PageListColumn_"],
@@ -118,10 +119,17 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._1I3NifxqTHCkE-2DeritAs
 	margin: 0 !important;
 }
 
-body.DesktopUI div[class*="pagedsettings_PagedSettingsDialog_"] div.title-area,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.title-area
+/* Headerbar drag area */
+body.DesktopUI div[class*="pagedsettings_PagedSettingsDialog_"]::before,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s::before
 {
-	height: 46px !important;
+	content: "";
+	-webkit-app-region: drag;
+	position: absolute;
+	left: var(--adw-windowcontrols-close-margin-left);
+	right: var(--adw-windowcontrols-close-margin-right);
+	top: 0;
+	height: 46px;
 }
 
 body.DesktopUI div[class*="pagedsettings_PagedSettingsDialog_"] div.DialogHeader,
@@ -156,8 +164,16 @@ body.DesktopUI div[class*="pagedsettings_PagedSettingsDialog_"] div.DialogConten
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogContent_InnerWidth > div.DialogBody
 {
 	margin: 0 !important;
-	padding: 12px 16px !important;
+	padding: 12px 24px 24px 24px !important;
 	-webkit-mask-image: none !important;
+	display: flex !important;
+	align-items: center !important;
+}
+
+body.DesktopUI div[class*="pagedsettings_PagedSettingsDialog_"] div.DialogContent_InnerWidth > div.DialogBody > *,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogContent_InnerWidth > div.DialogBody > *
+{
+	width: 600px !important;
 }
 
 /* Scroll shadow: containers */

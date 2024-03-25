@@ -493,7 +493,6 @@ body.DesktopUI div._1ZS_xta5HMXzR8JgxDH6n7 div._2WgQEFvIzJw_SHNGbjtRFU
 body.DesktopUI div[class*="gamelistdropdown_Bar_"] div[class*="gamelistdropdown_MenuHeader_"],
 body.DesktopUI div._1ZS_xta5HMXzR8JgxDH6n7 div._2PF_m-I5yte3WnQhpcz8RC
 {
-	width: 34px !important;
 	height: 34px !important;
 	box-sizing: border-box !important;
 	margin: 0 !important;
@@ -507,6 +506,20 @@ body.DesktopUI div._1ZS_xta5HMXzR8JgxDH6n7 div._2PF_m-I5yte3WnQhpcz8RC
 	font-weight: var(--adw-text-menu-weight) !important;
 	text-transform: none !important;
 	letter-spacing: normal !important;
+	padding-right: 80px !important;
+}
+
+body.DesktopUI div[class*="gamelistdropdown_Bar_"] div[class*="gamelistdropdown_MenuHeader_"] > span,
+body.DesktopUI div._1ZS_xta5HMXzR8JgxDH6n7 div._2PF_m-I5yte3WnQhpcz8RC > span
+{
+	flex: none !important;
+	flex-shrink: 1 !important;
+}
+
+body.DesktopUI div[class*="gamelistdropdown_Bar_"] div[class*="gamelistdropdown_MenuHeader_"] > div,
+body.DesktopUI div._1ZS_xta5HMXzR8JgxDH6n7 div._2PF_m-I5yte3WnQhpcz8RC > div
+{
+	margin: 0 0 -8px 4px !important;
 }
 
 body.DesktopUI div[class*="gamelistdropdown_Bar_"] div[class*="gamelistdropdown_MenuHeader_"]:hover,
@@ -530,28 +543,32 @@ body.DesktopUI div._1ZS_xta5HMXzR8JgxDH6n7 div.uE7Pj4tb2n3_Bx4vjEX0a
 body.DesktopUI div[class*="gamelistdropdown_Bar_"] div[class*="gamelistdropdown_ViewFiltersBar_"],
 body.DesktopUI div._1ZS_xta5HMXzR8JgxDH6n7 div._36r2az6roul_Oej7D4BMI6
 {
-	margin: 0 0 0 3px !important;
+	margin: 0 !important;
+	position: absolute !important;
+	bottom: 13px !important;
+	right: 13px !important;
 }
 
 body.DesktopUI div[class*="gamelistdropdown_Bar_"] div[class*="gamelistdropdown_Filters_"],
 body.DesktopUI div._1ZS_xta5HMXzR8JgxDH6n7 div._1PgAonvorr0o_NMxNKiDFU
 {
 	margin: 0 !important;
-	gap: 3px !important;
+	gap: 5px !important;
 }
 
 body.DesktopUI div[class*="gamelistdropdown_Bar_"] div[class*="gamelistdropdown_Filters_"] > div[class*="gamelistdropdown_CheckboxWithImage_"],
 body.DesktopUI div._1ZS_xta5HMXzR8JgxDH6n7 div._1PgAonvorr0o_NMxNKiDFU > div._3mzKdQXht__YHo6PX1LmB6
 {
-	width: 34px !important;
-	height: 34px !important;
+	width: 20px !important;
+	height: 20px !important;
+	overflow: hidden !important;
 	box-sizing: border-box !important;
-	padding: 9px !important;
+	padding: 2px !important;
 	margin: 0 !important;
 	background: transparent !important;
 	border-radius: var(--adw-button-radius) !important;
 	cursor: default !important;
-	transition: var(--adw-button-transition) !important;
+	color: rgba(var(--adw-headerbar-fg-rgb), var(--adw-dim-label-opacity)) !important;
 }
 
 body.DesktopUI div[class*="gamelistdropdown_Bar_"] div[class*="gamelistdropdown_Filters_"] > div[class*="gamelistdropdown_CheckboxWithImage_"] > svg,
@@ -578,43 +595,27 @@ body.DesktopUI div._1ZS_xta5HMXzR8JgxDH6n7 div._1PgAonvorr0o_NMxNKiDFU > div._3m
 body.DesktopUI div[class*="gamelistdropdown_Bar_"] div[class*="gamelistdropdown_Filters_"] > div[class*="gamelistdropdown_CheckboxWithImage_"] > svg *,
 body.DesktopUI div._1ZS_xta5HMXzR8JgxDH6n7 div._1PgAonvorr0o_NMxNKiDFU > div._3mzKdQXht__YHo6PX1LmB6 > svg *
 {
-	stroke: rgb(var(--adw-headerbar-fg-rgb)) !important;
+	stroke: currentColor !important;
 }
 
 body.DesktopUI div[class*="gamelistdropdown_Bar_"] div[class*="gamelistdropdown_Filters_"] > div[class*="gamelistdropdown_CheckboxWithImage_"] > svg path,
 body.DesktopUI div._1ZS_xta5HMXzR8JgxDH6n7 div._1PgAonvorr0o_NMxNKiDFU > div._3mzKdQXht__YHo6PX1LmB6 > svg path
 {
-	fill: rgb(var(--adw-headerbar-fg-rgb)) !important;
+	fill: currentColor !important;
 }
 
 body.DesktopUI div[class*="gamelistdropdown_Bar_"] div[class*="gamelistdropdown_Filters_"] > div[class*="gamelistdropdown_CheckboxWithImage_"]:hover,
-body.DesktopUI div._1ZS_xta5HMXzR8JgxDH6n7 div._1PgAonvorr0o_NMxNKiDFU > div._3mzKdQXht__YHo6PX1LmB6:hover
-{
-	background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-hover-opacity)) !important;
-}
-
+body.DesktopUI div._1ZS_xta5HMXzR8JgxDH6n7 div._1PgAonvorr0o_NMxNKiDFU > div._3mzKdQXht__YHo6PX1LmB6:hover,
 body.DesktopUI div[class*="gamelistdropdown_Bar_"] div[class*="gamelistdropdown_Filters_"] > div[class*="gamelistdropdown_CheckboxWithImage_"]:active,
 body.DesktopUI div._1ZS_xta5HMXzR8JgxDH6n7 div._1PgAonvorr0o_NMxNKiDFU > div._3mzKdQXht__YHo6PX1LmB6:active
 {
-	background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-active-opacity)) !important;
+	color: rgb(var(--adw-headerbar-fg-rgb)) !important;
 }
 
 body.DesktopUI div[class*="gamelistdropdown_Bar_"] div[class*="gamelistdropdown_Filters_"] > div[class*="gamelistdropdown_CheckboxWithImage_"][class*="gamelistdropdown_Active_"],
 body.DesktopUI div._1ZS_xta5HMXzR8JgxDH6n7 div._1PgAonvorr0o_NMxNKiDFU > div._3mzKdQXht__YHo6PX1LmB6._1QFFkxM5hw-43miIiylbwq
 {
-	background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-selected-opacity)) !important;
-}
-
-body.DesktopUI div[class*="gamelistdropdown_Bar_"] div[class*="gamelistdropdown_Filters_"] > div[class*="gamelistdropdown_CheckboxWithImage_"][class*="gamelistdropdown_Active_"]:hover,
-body.DesktopUI div._1ZS_xta5HMXzR8JgxDH6n7 div._1PgAonvorr0o_NMxNKiDFU > div._3mzKdQXht__YHo6PX1LmB6._1QFFkxM5hw-43miIiylbwq:hover
-{
-	background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-selected-hover-opacity)) !important;
-}
-
-body.DesktopUI div[class*="gamelistdropdown_Bar_"] div[class*="gamelistdropdown_Filters_"] > div[class*="gamelistdropdown_CheckboxWithImage_"][class*="gamelistdropdown_Active_"]:active,
-body.DesktopUI div._1ZS_xta5HMXzR8JgxDH6n7 div._1PgAonvorr0o_NMxNKiDFU > div._3mzKdQXht__YHo6PX1LmB6._1QFFkxM5hw-43miIiylbwq:active
-{
-	background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-selected-active-opacity)) !important;
+	color: rgb(var(--adw-accent-rgb)) !important;
 }
 
 /* Sidebar separator */
