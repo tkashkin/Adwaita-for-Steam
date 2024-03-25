@@ -192,15 +192,38 @@ body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._1sMxtPKaL0DcIZgJCQRduV
 }
 
 body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="updatealert_Alert_"],
-body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._2iJsgdTIX9Tj23rWnB7Q-c
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._2iJsgdTIX9Tj23rWnB7Q-c,
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_SteamFamilyJoinClientBeta_"],
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._3GaHEQJW9B1Rlt0Ddz3E8D
 {
 	background-image: linear-gradient(0deg, rgba(var(--adw-accent-bg-rgb), 0.3), rgba(var(--adw-accent-bg-rgb), 0.3)) !important;
-	background-color: rgb(var(--adw-window-bg-rgb)) !important;
+	background-color: rgb(var(--adw-headerbar-bg-rgb)) !important;
 	color: rgb(var(--adw-headerbar-fg-rgb)) !important;
 	box-shadow: inset 0 1px rgba(var(--adw-headerbar-shade-rgb), var(--adw-headerbar-shade-a)) !important;
 	border-radius: 0 !important;
 	min-height: 46px !important;
 	padding: 0 10px !important;
+}
+
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="updatealert_Alert_"],
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._2iJsgdTIX9Tj23rWnB7Q-c,
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="updatealert_Alert_"] a,
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._2iJsgdTIX9Tj23rWnB7Q-c a,
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_SteamFamilyJoinClientBeta_"],
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._3GaHEQJW9B1Rlt0Ddz3E8D,
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_SteamFamilyJoinClientBeta_"] a,
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._3GaHEQJW9B1Rlt0Ddz3E8D a
+{
+	color: rgb(var(--adw-headerbar-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-title3-size) !important;
+	font-weight: var(--adw-text-title3-weight) !important;
+}
+
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_SteamFamilyJoinClientBeta_"],
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._3GaHEQJW9B1Rlt0Ddz3E8D
+{
+	justify-content: center !important;
 }
 
 body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="updatealert_Alert_"][class*="updatealert_Error_"],
