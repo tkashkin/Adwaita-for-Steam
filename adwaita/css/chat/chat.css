@@ -1,0 +1,7 @@
+html.client_chat_frame div[class*="contextmenu_contextMenuItem_"] div.persona_menu_descriptor,
+html.client_chat_frame div.pFo3kQOzrl9qVLPXXGIMp div.persona_menu_descriptor,
+html.client_chat_frame div[class*="contextmenu_contextMenuItem_"] div.persona_menu_dnd_descriptor,
+html.client_chat_frame div.pFo3kQOzrl9qVLPXXGIMp div.persona_menu_dnd_descriptor
+{
+	display: none !important;
+}

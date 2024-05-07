@@ -1,9 +1,6 @@
-/* ------------------------------ */
-/* --- Hide What's New Shelf  --- */
-/* ------------------------------ */
-#SteamDesktop .library_Container_3xRRJ div[class*="libraryhome_UpdatesContainer_"],
-#SteamDesktop .library_AppDetailsMain_2Nq6o div[class*="libraryhomeshowcases_AddShowcaseRow_"]
+/* Hide What's New Shelf */
+body.DesktopUI .library_Container_3xRRJ .libraryhome_UpdatesContainer_17uEB,
+body.DesktopUI ._3xRRJfD2xy95i9NhJxLTp0 ._17uEBe5Ri8TMsnfELvs8-N
 {
 	display: none !important;
 }
-

@@ -1,0 +1,382 @@
+:root
+{
+	--adw-menu-radius: 12px;
+	--adw-menu-padding: 6px;
+
+	--adw-menu-item-radius: 6px;
+	--adw-menu-item-padding: 0 12px;
+
+	--adw-popover-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.09), 0 2px 14px 3px rgba(0, 0, 0, 0.05);
+
+	--adw-tooltip-bg: rgba(0, 0, 0, 0.9);
+	--adw-tooltip-fg-rgb: 255, 255, 255;
+}
+
+/* Context menus and dropdowns */
+body.DesktopUI div[class*="contextmenu_contextMenu_"],
+body.DesktopUI div.LQkrbbayZPY11qHm01t7F,
+html.client_chat_frame div[class*="contextmenu_contextMenu_"],
+html.client_chat_frame div.LQkrbbayZPY11qHm01t7F,
+body.DesktopUI div[class*="dropdown_DialogDropDownMenu_"]._DialogInputContainer,
+body.DesktopUI div._1tiuYeMmTc9DMG4mhgaQ5w._DialogInputContainer,
+body.DesktopUI div[class*="contextmenu_ContextMenuFocusContainer_"],
+body.DesktopUI div._2qyBZV8YvxstXuSKiYDF19,
+body.DesktopUI div[class*="libraryhomeshowcases_CollectionDropDownContainer_"] div[class*="dropdown_DialogDropDownMenu_"]._DialogInputContainer,
+body.DesktopUI div._2Sj4-UDM-dHSxtxwQ_Pwwz div._1tiuYeMmTc9DMG4mhgaQ5w._DialogInputContainer,
+body.DesktopUI div[class*="menu_MenuPopup_"],
+body.DesktopUI div._3pofGqV0buiKAfMPEs3_82
+{
+	background: rgb(var(--adw-popover-bg-rgb)) !important;
+	border-radius: var(--adw-menu-radius) !important;
+	padding: var(--adw-menu-padding) !important;
+	margin: 0 !important;
+	box-sizing: border-box !important;
+	border: 1px rgba(var(--adw-popover-fg-rgb), var(--adw-window-outline-opacity)) solid !important;
+	box-shadow: var(--adw-popover-shadow) !important;
+}
+
+/* Nested context menu - placed immediately after parent menu */
+body.DesktopUI div[class*="contextmenu_contextMenu_"] + div[class*="contextmenu_contextMenu_"],
+body.DesktopUI div.LQkrbbayZPY11qHm01t7F + div.LQkrbbayZPY11qHm01t7F
+{
+	margin-left: var(--adw-menu-padding) !important;
+	margin-top: calc(var(--adw-menu-padding) * -1) !important;
+}
+
+body.DesktopUI div[class*="contextmenu_contextMenu_"] div[class*="contextmenu_contextMenuItem_"],
+body.DesktopUI div.LQkrbbayZPY11qHm01t7F div.pFo3kQOzrl9qVLPXXGIMp,
+html.client_chat_frame div[class*="contextmenu_contextMenu_"] div[class*="contextmenu_contextMenuItem_"],
+html.client_chat_frame div.LQkrbbayZPY11qHm01t7F div.pFo3kQOzrl9qVLPXXGIMp,
+body.DesktopUI div[class*="dropdown_DialogDropDownMenu_"]._DialogInputContainer div[class*="dropdown_DialogDropDownMenu_Item_"],
+body.DesktopUI div._1tiuYeMmTc9DMG4mhgaQ5w._DialogInputContainer div._1R-DVEa2yqX0no8BYLtn9N,
+body.DesktopUI.ContextMenuPopupBody div[class*="menu_MenuItem_"],
+body.DesktopUI.ContextMenuPopupBody div._2jXHP0742MyApMUVUM8IFn,
+body.DesktopUI div[class*="gamelistdropdown_DropDown_"] div[class*="gamelistdropdown_Checkbox_"],
+body.DesktopUI div.EDl_mzaY3WxkgmYVD8W4d div._2_iY4UJOlWDXNQ21c-a3hD
+{
+	background: transparent !important;
+	color: rgb(var(--adw-popover-fg-rgb)) !important;
+	border: none !important;
+	border-radius: var(--adw-menu-item-radius) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-menu-size) !important;
+	font-weight: var(--adw-text-menu-weight) !important;
+	min-height: 32px !important;
+	cursor: default !important;
+	padding: var(--adw-menu-item-padding) !important;
+	margin: 0 !important;
+	align-items: center !important;
+}
+
+body.DesktopUI div[class*="dropdown_DialogDropDownMenu_"]._DialogInputContainer div[class*="dropdown_DialogDropDownMenu_Item_"] > div,
+body.DesktopUI div._1tiuYeMmTc9DMG4mhgaQ5w._DialogInputContainer div._1R-DVEa2yqX0no8BYLtn9N > div
+{
+	display: block !important;
+	overflow: hidden !important;
+	white-space: nowrap !important;
+	text-overflow: ellipsis !important;
+}
+
+body.DesktopUI div[class*="contextmenu_contextMenu_"] div[class*="contextmenu_contextMenuItem_"]::first-line,
+body.DesktopUI div.LQkrbbayZPY11qHm01t7F div.pFo3kQOzrl9qVLPXXGIMp::first-line,
+html.DesktopUI div[class*="contextmenu_contextMenu_"] div[class*="contextmenu_contextMenuItem_"] .DialogCheckbox_Container,
+html.DesktopUI div.LQkrbbayZPY11qHm01t7F div.pFo3kQOzrl9qVLPXXGIMp .DialogCheckbox_Container,
+html.client_chat_frame div[class*="contextmenu_contextMenu_"] div[class*="contextmenu_contextMenuItem_"]::first-line,
+html.client_chat_frame div.LQkrbbayZPY11qHm01t7F div.pFo3kQOzrl9qVLPXXGIMp::first-line,
+html.client_chat_frame div[class*="contextmenu_contextMenu_"] div[class*="contextmenu_contextMenuItem_"] .DialogCheckbox_Container,
+html.client_chat_frame div.LQkrbbayZPY11qHm01t7F div.pFo3kQOzrl9qVLPXXGIMp .DialogCheckbox_Container,
+body.DesktopUI div[class*="dropdown_DialogDropDownMenu_"]._DialogInputContainer div[class*="dropdown_DialogDropDownMenu_Item_"]::first-line,
+body.DesktopUI div._1tiuYeMmTc9DMG4mhgaQ5w._DialogInputContainer div._1R-DVEa2yqX0no8BYLtn9N::first-line,
+body.DesktopUI.ContextMenuPopupBody div[class*="menu_MenuItem_"]::first-line,
+body.DesktopUI.ContextMenuPopupBody div._2jXHP0742MyApMUVUM8IFn::first-line
+{
+	line-height: 32px !important;
+}
+
+body.DesktopUI div[class*="contextmenu_contextMenu_"] div[class*="contextmenu_contextMenuItem_"][class*="disabled"],
+body.DesktopUI div.LQkrbbayZPY11qHm01t7F div.pFo3kQOzrl9qVLPXXGIMp[class*="disabled"],
+html.client_chat_frame div[class*="contextmenu_contextMenu_"] div[class*="contextmenu_contextMenuItem_"][class*="disabled"],
+html.client_chat_frame div.LQkrbbayZPY11qHm01t7F div.pFo3kQOzrl9qVLPXXGIMp[class*="disabled"],
+body.DesktopUI div[class*="gamelistdropdown_DropDown_"] div[class*="gamelistdropdown_Checkbox_"][class*="gamelistdropdown_Disabled_"],
+body.DesktopUI div.EDl_mzaY3WxkgmYVD8W4d div._2_iY4UJOlWDXNQ21c-a3hD._1MAuQug6YmX05JxGIy637e
+{
+	opacity: var(--adw-disabled-opacity) !important;
+	pointer-events: none !important;
+}
+
+body.DesktopUI div[class*="contextmenu_contextMenu_"] div[class*="contextmenu_contextMenuItem_"]:hover,
+body.DesktopUI div.LQkrbbayZPY11qHm01t7F div.pFo3kQOzrl9qVLPXXGIMp:hover,
+body.DesktopUI div[class*="contextmenu_contextMenu_"] div[class*="contextmenu_contextMenuItem_"][class*="contextmenu_active_"],
+body.DesktopUI div.LQkrbbayZPY11qHm01t7F div.pFo3kQOzrl9qVLPXXGIMp._1KPWUt7wYWSfD3V7sYpsyT,
+html.client_chat_frame div[class*="contextmenu_contextMenu_"] div[class*="contextmenu_contextMenuItem_"]:hover,
+html.client_chat_frame div.LQkrbbayZPY11qHm01t7F div.pFo3kQOzrl9qVLPXXGIMp:hover,
+html.client_chat_frame div[class*="contextmenu_contextMenu_"] div[class*="contextmenu_contextMenuItem_"][class*="contextmenu_active_"],
+html.client_chat_frame div.LQkrbbayZPY11qHm01t7F div.pFo3kQOzrl9qVLPXXGIMp._1KPWUt7wYWSfD3V7sYpsyT,
+body.DesktopUI div[class*="contextmenu_contextMenu_"] div[class*="library_ContextMenuAction_"]:hover,
+body.DesktopUI div.LQkrbbayZPY11qHm01t7F div.Z5iAXBkRFGnwpXsO8ANTl:hover,
+body.DesktopUI div[class*="dropdown_DialogDropDownMenu_"]._DialogInputContainer div[class*="dropdown_DialogDropDownMenu_Item_"]:hover,
+body.DesktopUI div._1tiuYeMmTc9DMG4mhgaQ5w._DialogInputContainer div._1R-DVEa2yqX0no8BYLtn9N:hover,
+body.DesktopUI div[class*="menu_MenuItem_"]:hover,
+body.DesktopUI div._2jXHP0742MyApMUVUM8IFn:hover,
+body.DesktopUI div[class*="gamelistdropdown_DropDown_"] div[class*="gamelistdropdown_Checkbox_"]:hover,
+body.DesktopUI div.EDl_mzaY3WxkgmYVD8W4d div._2_iY4UJOlWDXNQ21c-a3hD:hover
+{
+	background: rgba(var(--adw-popover-fg-rgb), var(--adw-hover-opacity)) !important;
+}
+
+body.DesktopUI div[class*="contextmenu_contextMenu_"] div[class*="contextmenu_contextMenuItem_"]:active,
+body.DesktopUI div.LQkrbbayZPY11qHm01t7F div.pFo3kQOzrl9qVLPXXGIMp:active,
+html.client_chat_frame div[class*="contextmenu_contextMenu_"] div[class*="contextmenu_contextMenuItem_"]:active,
+html.client_chat_frame div.LQkrbbayZPY11qHm01t7F div.pFo3kQOzrl9qVLPXXGIMp:active,
+body.DesktopUI div[class*="contextmenu_contextMenu_"] div[class*="library_ContextMenuAction_"]:active,
+body.DesktopUI div.LQkrbbayZPY11qHm01t7F div.Z5iAXBkRFGnwpXsO8ANTl:active,
+body.DesktopUI div[class*="dropdown_DialogDropDownMenu_"]._DialogInputContainer div[class*="dropdown_DialogDropDownMenu_Item_"]:active,
+body.DesktopUI div._1tiuYeMmTc9DMG4mhgaQ5w._DialogInputContainer div._1R-DVEa2yqX0no8BYLtn9N:active,
+body.DesktopUI div[class*="menu_MenuItem_"]:active,
+body.DesktopUI div._2jXHP0742MyApMUVUM8IFn:active,
+body.DesktopUI div[class*="gamelistdropdown_DropDown_"] div[class*="gamelistdropdown_Checkbox_"]:active,
+body.DesktopUI div.EDl_mzaY3WxkgmYVD8W4d div._2_iY4UJOlWDXNQ21c-a3hD:active
+{
+	background: rgba(var(--adw-popover-fg-rgb), var(--adw-active-opacity)) !important;
+}
+
+body.DesktopUI div[class*="contextmenu_ContextMenuFocusContainer_"] > div[class*="dropdown_DialogDropDownMenu_"]._DialogInputContainer,
+body.DesktopUI div._2qyBZV8YvxstXuSKiYDF19 > div._1tiuYeMmTc9DMG4mhgaQ5w._DialogInputContainer
+{
+	border: none !important;
+	border-radius: 0 !important;
+	box-shadow: none !important;
+	background: none !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+body.DesktopUI.ContextMenuPopupBody,
+html.client_chat_frame > body.ContextMenuPopupBody
+{
+	background: rgb(var(--adw-popover-bg-rgb)) !important;
+	border-radius: 0 !important;
+}
+
+body.DesktopUI.ContextMenuPopupBody div[class*="contextmenu_contextMenu_"],
+body.DesktopUI.ContextMenuPopupBody div.LQkrbbayZPY11qHm01t7F,
+html.client_chat_frame > body.ContextMenuPopupBody div[class*="contextmenu_contextMenu_"],
+html.client_chat_frame > body.ContextMenuPopupBody div.LQkrbbayZPY11qHm01t7F,
+body.DesktopUI.ContextMenuPopupBody div[class*="menu_MenuPopup_"],
+body.DesktopUI.ContextMenuPopupBody div._3pofGqV0buiKAfMPEs3_82
+{
+	border-radius: 0 !important;
+	background: transparent !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	box-shadow: none !important;
+}
+
+body.DesktopUI.ContextMenuPopupBody div[class*="menu_MenuPopup_"],
+body.DesktopUI.ContextMenuPopupBody div._3pofGqV0buiKAfMPEs3_82
+{
+	border: none !important;
+	padding: var(--adw-menu-padding) !important;
+}
+
+html.client_chat_frame > body.ContextMenuPopupBody div[class*="contextmenu_contextMenu_"][class*="gamelistdropdown_DropDown_"],
+html.client_chat_frame > body.ContextMenuPopupBody div.LQkrbbayZPY11qHm01t7F.EDl_mzaY3WxkgmYVD8W4d,
+html.client_chat_frame > body.ContextMenuPopupBody div[class*="contextmenu_contextMenu_"][class*="library_LibraryContextMenu_"],
+html.client_chat_frame > body.ContextMenuPopupBody div.LQkrbbayZPY11qHm01t7F._1UOkn2fGQ25jnyqcEJbnlo
+{
+	border: none !important;
+	padding: var(--adw-menu-padding) !important;
+	min-width: 100% !important;
+}
+
+/* Notifications */
+body.DesktopUI.ContextMenuPopupBody button[class*="titlebarcontrols_AllNotificationsButton_"],
+body.DesktopUI.ContextMenuPopupBody button._1oERP7bVictkby2hP4BBva,
+body.DesktopUI div[class*="standardtemplates_StandardTemplateDesktop_"],
+body.DesktopUI div._1tsEfG-JyQFR7Un1HPOt98,
+body.DesktopUI.ContextMenuPopupBody div[class*="standardtemplates_PinnedTemplateDesktop_"],
+body.DesktopUI.ContextMenuPopupBody div._2caCrhFIrYqRuguK-cB6be
+{
+	background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-button-bg-opacity)) !important;
+	border-radius: var(--adw-button-radius) !important;
+	border: none !important;
+	color: rgb(var(--adw-headerbar-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-title3-size) !important;
+	font-weight: var(--adw-text-title3-weight) !important;
+	padding: 5px 10px !important;
+	transition: var(--adw-button-transition) !important;
+}
+
+body.DesktopUI.ContextMenuPopupBody div[class*="standardtemplates_PinnedBody_"],
+body.DesktopUI.ContextMenuPopupBody div._1LjgvGFg61OD1ElWmS-dk4
+{
+	color: rgb(var(--adw-headerbar-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-title3-size) !important;
+	font-weight: var(--adw-text-title3-weight) !important;
+}
+
+body.DesktopUI.ContextMenuPopupBody div[class*="titlebarcontrols_EmptyNotificationsBody_"],
+body.DesktopUI.ContextMenuPopupBody div.cam5nVZiJHP17RZlbXzmE
+{
+	color: var(--adw-entry-subtitle-fg) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-entry-subtitle-font-size) !important;
+	font-weight: var(--adw-entry-subtitle-font-weight) !important;
+}
+
+body.DesktopUI.ContextMenuPopupBody button[class*="titlebarcontrols_AllNotificationsButton_"]:hover,
+body.DesktopUI.ContextMenuPopupBody button._1oERP7bVictkby2hP4BBva:hover
+{
+	background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-button-bg-opacity-hover)) !important;
+	border-radius: var(--adw-button-radius) !important;
+}
+
+body.DesktopUI.ContextMenuPopupBody button[class*="titlebarcontrols_AllNotificationsButton_"]:active,
+body.DesktopUI.ContextMenuPopupBody button._1oERP7bVictkby2hP4BBva:active
+{
+	background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-button-bg-opacity-active)) !important;
+	border-radius: var(--adw-button-radius) !important;
+}
+
+body.DesktopUI.ContextMenuPopupBody div[class*="steamtemplates_NewIndicator_"],
+body.DesktopUI.ContextMenuPopupBody div._1UBgeG0z1gyJuOXQde4Glw
+{
+	filter: none !important;
+}
+
+body.DesktopUI.ContextMenuPopupBody div[class*="steamtemplates_NewIndicator_"] svg,
+body.DesktopUI.ContextMenuPopupBody div._1UBgeG0z1gyJuOXQde4Glw svg
+{
+	color: rgb(var(--adw-accent-rgb)) !important;
+}
+
+/* Menu separators */
+body.DesktopUI hr[class*="menu_Separator_"],
+body.DesktopUI hr._21GPYlKBCLsHQpTsHw_RL_,
+body.DesktopUI [class*="contextmenu_ContextMenuSeparator_"],
+body.DesktopUI ._1F2EcTc-0vNkdiBz8ATakM,
+body.DesktopUI [class*="contextmenu_ContextMenuHRSeparator_"],
+body.DesktopUI ._3Ac-MSxrQqUlE1OuKnETqa,
+body.DesktopUI [class*="gamelistdropdown_Rule_"],
+body.DesktopUI ._2kvdTEDgtIT7T9wZIzanom,
+html.client_chat_frame hr[class*="menu_Separator_"],
+html.client_chat_frame hr._21GPYlKBCLsHQpTsHw_RL_,
+html.client_chat_frame [class*="contextmenu_ContextMenuSeparator_"],
+html.client_chat_frame ._1F2EcTc-0vNkdiBz8ATakM,
+html.client_chat_frame [class*="contextmenu_ContextMenuHRSeparator_"],
+html.client_chat_frame ._3Ac-MSxrQqUlE1OuKnETqa
+{
+	border: none !important;
+	height: 1px !important;
+	background-color: rgba(var(--adw-popover-fg-rgb), var(--adw-border-opacity)) !important;
+	margin: 4px 0 !important;
+}
+
+/* Menu arrows and other icons */
+body.DesktopUI div[class*="contextmenu_contextMenuItem_"] div[class*="contextmenu_Arrow_"],
+body.DesktopUI div.pFo3kQOzrl9qVLPXXGIMp div[class*="contextmenu_Arrow_"],
+html.client_chat_frame div[class*="contextmenu_contextMenuItem_"] div[class*="contextmenu_Arrow_"],
+html.client_chat_frame div.pFo3kQOzrl9qVLPXXGIMp div[class*="contextmenu_Arrow_"]
+{
+	margin-right: -10px !important;
+}
+
+body.DesktopUI div[class*="contextmenu_contextMenuItem_"] .SVGIcon_Button,
+body.DesktopUI div.pFo3kQOzrl9qVLPXXGIMp .SVGIcon_Button,
+body.DesktopUI div[class*="contextmenu_contextMenuItem_"] .SVGIcon_Button *,
+body.DesktopUI div.pFo3kQOzrl9qVLPXXGIMp .SVGIcon_Button *,
+html.client_chat_frame div[class*="contextmenu_contextMenuItem_"] .SVGIcon_Button,
+html.client_chat_frame div.pFo3kQOzrl9qVLPXXGIMp .SVGIcon_Button,
+html.client_chat_frame div[class*="contextmenu_contextMenuItem_"] .SVGIcon_Button *,
+html.client_chat_frame div.pFo3kQOzrl9qVLPXXGIMp .SVGIcon_Button *
+{
+	fill: rgb(var(--adw-popover-fg-rgb)) !important;
+	color: rgb(var(--adw-popover-fg-rgb)) !important;
+	stroke: rgb(var(--adw-popover-fg-rgb)) !important;
+}
+
+/* Tooltips */
+body.DesktopUI div[class*="tooltip_TextToolTip_"],
+body.DesktopUI div._29b2a87G5A5NZeYh5Kgvea,
+body.DesktopUI div[class*="tooltip_ToolTipCustom_"],
+body.DesktopUI div._3Dt__IV9HmQY4KgsvaOz1i,
+html.client_chat_frame div[class*="tooltip_TextToolTip_"],
+html.client_chat_frame div._29b2a87G5A5NZeYh5Kgvea,
+html.client_chat_frame div[class*="tooltip_ToolTipCustom_"],
+html.client_chat_frame div._3Dt__IV9HmQY4KgsvaOz1i,
+body.DesktopUI div[class*="gamelistentry_FriendStatusHover_"],
+body.DesktopUI div._2iiN7AYnLFTRFRiuipiYJz
+{
+	background: var(--adw-tooltip-bg) !important;
+	color: rgb(var(--adw-tooltip-fg-rgb)) !important;
+	border-radius: 9px !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-base-size) !important;
+	font-weight: var(--adw-text-base-weight) !important;
+	padding: 6px 10px !important;
+	margin: 0 !important;
+	border: 1px rgba(var(--adw-tooltip-fg-rgb), var(--adw-border-opacity)) solid !important;
+	box-shadow: none !important;
+}
+
+body.DesktopUI div[class*="tooltip_ToolTipCustom_"] > div[class*="tooltip_ToolTipTitle_"],
+body.DesktopUI div._3Dt__IV9HmQY4KgsvaOz1i > div[class*="tooltip_ToolTipTitle_"],
+html.client_chat_frame div[class*="tooltip_ToolTipCustom_"] > div[class*="tooltip_ToolTipTitle_"],
+html.client_chat_frame div._3Dt__IV9HmQY4KgsvaOz1i > div[class*="tooltip_ToolTipTitle_"]
+{
+	color: rgb(var(--adw-tooltip-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-base-size) !important;
+	font-weight: var(--adw-text-base-weight) !important;
+}
+
+body.DesktopUI div[class*="tooltip_ToolTipCustom_"] > div[class*="tooltip_ToolTipInsetContent_"],
+body.DesktopUI div._3Dt__IV9HmQY4KgsvaOz1i > div[class*="tooltip_ToolTipInsetContent_"],
+html.client_chat_frame div[class*="tooltip_ToolTipCustom_"] > div[class*="tooltip_ToolTipInsetContent_"],
+html.client_chat_frame div._3Dt__IV9HmQY4KgsvaOz1i > div[class*="tooltip_ToolTipInsetContent_"]
+{
+	color: rgba(var(--adw-tooltip-fg-rgb), 0.7) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-base-size) !important;
+	font-weight: var(--adw-text-base-weight) !important;
+}
+
+/* Comboboxes with descriptions */
+body.DesktopUI div[class*="dropdown_DialogDropDownMenu_"]._DialogInputContainer div[class*="dropdown_DialogDropDownMenu_Item_"] div[class*="dropdownlabel_DropDownLabelContainer_"],
+body.DesktopUI div._1tiuYeMmTc9DMG4mhgaQ5w._DialogInputContainer div._1R-DVEa2yqX0no8BYLtn9N div._2wVxOfRdsjOPgSC1Gi13mP
+{
+	justify-content: normal !important;
+	display: block !important;
+	overflow: hidden !important;
+	white-space: nowrap !important;
+	text-overflow: ellipsis !important;
+}
+
+body.DesktopUI div[class*="dropdown_DialogDropDownMenu_"]._DialogInputContainer div[class*="dropdown_DialogDropDownMenu_Item_"] div[class*="dropdownlabel_DropDownLabelTextColumn_"],
+body.DesktopUI div._1tiuYeMmTc9DMG4mhgaQ5w._DialogInputContainer div._1R-DVEa2yqX0no8BYLtn9N div.P4jYQ15F_jKksIIFQNOQC
+{
+	min-width: auto !important;
+}
+
+body.DesktopUI div[class*="dropdown_DialogDropDownMenu_"]._DialogInputContainer div[class*="dropdown_DialogDropDownMenu_Item_"] div[class*="dropdownlabel_DropDownLabelTitle_"],
+body.DesktopUI div._1tiuYeMmTc9DMG4mhgaQ5w._DialogInputContainer div._1R-DVEa2yqX0no8BYLtn9N div.uDBZWGBy_BP0IFXToHYjk
+{
+	color: rgb(var(--adw-popover-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-menu-size) !important;
+	font-weight: var(--adw-text-menu-weight) !important;
+	min-height: 32px !important;
+	line-height: 32px !important;
+	display: block !important;
+	overflow: hidden !important;
+	white-space: nowrap !important;
+	text-overflow: ellipsis !important;
+}
+
+body.DesktopUI div[class*="dropdown_DialogDropDownMenu_"]._DialogInputContainer div[class*="dropdown_DialogDropDownMenu_Item_"] div[class*="dropdownlabel_DropDownLabelDescription_"],
+body.DesktopUI div._1tiuYeMmTc9DMG4mhgaQ5w._DialogInputContainer div._1R-DVEa2yqX0no8BYLtn9N div._1JPcbbojrgNM_FTODskCRa
+{
+	display: none !important;
+}

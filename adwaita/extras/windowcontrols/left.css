@@ -1,65 +1,66 @@
-/* ------------------------------------- */
-/* --- Left Aligned Window Controls  --- */
-/* ------------------------------------- */
+/* Left Aligned Window Controls */
 
 :root
 {
-	--windowcontrols_margin_left: 40px;
-	--windowcontrols_margin_right: 0px;
+	--adw-windowcontrols-margin-left: 40px;
+	--adw-windowcontrols-margin-right: 0px;
+	--adw-windowcontrols-close-margin-left: 40px;
+	--adw-windowcontrols-close-margin-right: 0px;
 }
 
-.title-bar-actions.window-controls
+body.DesktopUI .title-bar-actions.window-controls,
+html.client_chat_frame .title-bar-actions.window-controls
 {
 	flex-direction: row !important;
 	order: -99 !important;
 }
 
-#SteamDesktop .steamdesktop_TopBar_3Z7VQ div[class*="steamdesktop_WindowControls_"]
+body.DesktopUI div.steamdesktop_TopBar_3Z7VQ div.steamdesktop_WindowControls_qP17e,
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div.qP17eBPXkfezFfexZ4hC3
 {
 	order: -1 !important;
 }
 
-/* App Properties Titles */
-.ModalDialogPopup div[class*="pagedsettings_PagedSettingsDialog_PageListColumn_"] > div[class*="pagedsettings_PagedSettingsDialog_Title_"]
-{
-	padding-left: 50px !important;
-	padding-right: 50px !important;
-}
-
 /* Friendslist */
-.currentUserContainer .AvatarAndUser
+html.client_chat_frame .currentUserContainer .AvatarAndUser
 {
-	padding-left: 50px !important;
+	padding-left: var(--adw-windowcontrols-close-margin-left) !important;
 }
 
-.multiChatDialog .title-bar-actions.window-controls {
+html.client_chat_frame .multiChatDialog .title-bar-actions.window-controls
+{
 	position: fixed !important;
 	left: 0px !important;
 	right: auto !important;
 }
 
 /* Overlay */
-.ModalDialogPopup:not([class*="steamdesktopoverlay_NoTitlebarSpacer_"]) div[class*="steamdesktopoverlay_OverlayPopup_"] div[class*="steamdesktopoverlay_WindowControls_"]
+.ModalDialogPopup:not(.steamdesktopoverlay_NoTitlebarSpacer_20pOd) div.steamdesktopoverlay_OverlayPopup_C9tvu div.steamdesktopoverlay_WindowControls_2O7tj,
+.ModalDialogPopup:not(._20pOdcUEtPsMIA8YXWGQim) div.C9tvuqqEXGcrkcAtHrQ_R div._2O7tjQ9VWj5nhZ0y-pdpX2
 {
 	height: 48px !important;
 }
 
-.ModalDialogPopup div[class*="steamdesktopoverlay_OverlayPopup_"] div[class*="steamdesktopoverlay_WindowControls_"] .title-bar-actions.window-controls
+.ModalDialogPopup div.steamdesktopoverlay_OverlayPopup_C9tvu div.steamdesktopoverlay_WindowControls_2O7tj .title-bar-actions.window-controls,
+.ModalDialogPopup div.C9tvuqqEXGcrkcAtHrQ_R div.steamdesktopoverlay_WindowControls_2O7tj .title-bar-actions.window-controls
 {
-	margin-right: 0px !important;
+	margin-right: 0 !important;
 }
 
-.ModalDialogPopup div[class*="steamdesktopoverlay_OverlayPopup_"] div[class*="steamdesktopoverlay_WindowControls_"] .title-bar-actions.extra-actions
+.ModalDialogPopup div.steamdesktopoverlay_OverlayPopup_C9tvu div.steamdesktopoverlay_WindowControls_2O7tj .title-bar-actions.extra-actions,
+.ModalDialogPopup div.C9tvuqqEXGcrkcAtHrQ_R div.steamdesktopoverlay_WindowControls_2O7tj .title-bar-actions.extra-actions
 {
 	margin-right: 12px !important;
 }
 
-.ModalDialogPopup:not([class*="steamdesktopoverlay_NoTitlebarSpacer_"]) div[class*="steamdesktopoverlay_OverlayPopup_"] div[class*="steamdesktopoverlay_WindowControls_"] .title-bar-actions.extra-actions
+.ModalDialogPopup:not(.steamdesktopoverlay_NoTitlebarSpacer_20pOd) div.steamdesktopoverlay_OverlayPopup_C9tvu div.steamdesktopoverlay_WindowControls_2O7tj .title-bar-actions.extra-actions
+.ModalDialogPopup:not(._20pOdcUEtPsMIA8YXWGQim) div.C9tvuqqEXGcrkcAtHrQ_R div._2O7tjQ9VWj5nhZ0y .title-bar-actions.extra-actions
 {
 	order: -98 !important;
 }
 
-.ModalDialogPopup[class*="steamdesktopoverlay_NoTitlebarSpacer_"] div[class*="pagedsettings_Hidden_"] + .DialogContentTransition div[class*="pagedsettings_HidePageListButton_"]
+.ModalDialogPopup.steamdesktopoverlay_NoTitlebarSpacer_20pOd div.pagedsettings_Hidden_1uk_4 + .DialogContentTransition div.pagedsettings_HidePageListButton_3i4Ep,
+.ModalDialogPopup._20pOdcUEtPsMIA8YXWGQim div._1uk_4ujCnZKFDlDXM_LWdF + .DialogContentTransition div._3i4EpiSDpxQHVFExxUa1Zp
 {
 	margin-left: 30px !important;
 }

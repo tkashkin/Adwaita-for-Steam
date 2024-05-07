@@ -1,0 +1,266 @@
+/* --- Right Side --- */
+/* Profile, Notifications, etc */
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="steamdesktop_TitleBarControls_"],
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._1-9sir4j_KQiMqdkZjQN0u
+{
+	margin: 0 !important;
+	z-index: 1 !important;
+	margin-right: 120px !important; /* Space for menu, downloads, chat buttons */
+}
+
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_Button_"],
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._2Szzh5sKyGgnLUR870zbDE,
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AccountMenu_"],
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._3yD46y5pd3zOGR7CzKs0mC,
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_FriendsButton_"],
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._1TdaAqMFadi0UTqilrkelR,
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_DownloadStatusContent_"],
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div.ip-YZhijAMZcuRoXBGiye
+{
+	-webkit-app-region: no-drag;
+	cursor: default !important;
+	box-sizing: border-box !important;
+	width: 34px !important;
+	height: 34px !important;
+	min-width: 34px !important;
+	min-height: 34px !important;
+	max-width: 34px !important;
+	max-height: 34px !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	margin-right: 6px !important;
+	background: transparent !important;
+	border-radius: var(--adw-button-radius) !important;
+	color: rgb(var(--adw-headerbar-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-title3-size) !important;
+	font-weight: var(--adw-text-title3-weight) !important;
+	line-height: 24px !important;
+	transition: var(--adw-button-transition) !important;
+}
+
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_Button_"]:hover,
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._2Szzh5sKyGgnLUR870zbDE:hover,
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AccountMenu_"]:hover,
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._3yD46y5pd3zOGR7CzKs0mC:hover,
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_FriendsButton_"]:hover,
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._1TdaAqMFadi0UTqilrkelR:hover,
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_DownloadStatusContent_"]:hover,
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div.ip-YZhijAMZcuRoXBGiye:hover
+{
+	background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-hover-opacity)) !important;
+}
+
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_Button_"]:active,
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._2Szzh5sKyGgnLUR870zbDE:active,
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AccountMenu_"]:active,
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._3yD46y5pd3zOGR7CzKs0mC:active,
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_FriendsButton_"]:active,
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._1TdaAqMFadi0UTqilrkelR:active,
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_DownloadStatusContent_"]:active,
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div.ip-YZhijAMZcuRoXBGiye:active
+{
+	background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-active-opacity)) !important;
+}
+
+/* Account Button */
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="steamdesktop_TitleBarControls_"],
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._1-9sir4j_KQiMqdkZjQN0u
+{
+	flex-direction: row-reverse !important;
+}
+
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="steamdesktop_TitleBarControls_"] div[class*="titlebarcontrols_AccountMenu_"]:hover,
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._1-9sir4j_KQiMqdkZjQN0u div._3yD46y5pd3zOGR7CzKs0mC:hover,
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="steamdesktop_TitleBarControls_"] div[class*="titlebarcontrols_AccountMenu_"]:active,
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._1-9sir4j_KQiMqdkZjQN0u div._3yD46y5pd3zOGR7CzKs0mC:active
+{
+	background: none !important;
+}
+
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"] div.avatarStatus,
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._3yD46y5pd3zOGR7CzKs0mC div._1YGAHSfGavQI6MODJq-pJB div._1yIzy56YfJIliF6ykwhP2r,
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"] + div,
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._3yD46y5pd3zOGR7CzKs0mC div._1YGAHSfGavQI6MODJq-pJB + div,
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AccountMenu_"] div[class*="titlebarcontrols_WalletBalance_"],
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._3yD46y5pd3zOGR7CzKs0mC div._2jphjrSifC6orDT4g_7Wd,
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AccountMenu_"] svg[class*="titlebarcontrols_Chevron_"],
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._3yD46y5pd3zOGR7CzKs0mC svg._3x51wbt5DYyWC8JKwQ51ir
+{
+	display: none !important;
+}
+
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_NotificationButtonContainer_"],
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._3mGEzzp18imtSzGPkduedi
+{
+	margin-right: 0 !important;
+}
+
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_NotificationsButton_"] svg,
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div.RtSv39ZoBOySnb8XQ5hJf svg
+{
+	color: rgb(var(--adw-headerbar-fg-rgb)) !important;
+}
+
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_NotificationsButton_"][class*="titlebarcontrols_HasNew_"],
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div.RtSv39ZoBOySnb8XQ5hJf._3L1c8C0o_xXzPy26aoLBFd
+{
+	color: rgb(var(--adw-accent-rgb)) !important;
+}
+
+/* Friends */
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_FriendsButton_"],
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._1TdaAqMFadi0UTqilrkelR
+{
+	-webkit-app-region: no-drag;
+	padding: 9px !important;
+	margin: 0 !important;
+	position: absolute !important;
+	right: calc(var(--adw-windowcontrols-margin-right) + 46px) !important;
+	top: 7px !important;
+}
+
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_FriendsButton_"] > div,
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._1TdaAqMFadi0UTqilrkelR > div
+{
+	display: none !important;
+}
+
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_FriendsButton_"]::before,
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._1TdaAqMFadi0UTqilrkelR::before
+{
+	background-color: rgb(var(--adw-headerbar-fg-rgb));
+	content: "";
+	width: 16px;
+	height: 16px;
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	-webkit-mask-size: 16px;
+	-webkit-mask-image: var(--adw-icon-chats);
+}
+
+/* Downloads */
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_DownloadStatus_"],
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._2EQ7ghgqIdjKv9jsQC0Zq9
+{
+	-webkit-app-region: no-drag;
+	display: block !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	position: absolute !important;
+	right: calc(var(--adw-windowcontrols-margin-right) + 86px) !important;
+	top: 7px !important;
+}
+
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_DownloadStatusContent_"],
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div.ip-YZhijAMZcuRoXBGiye
+{
+	position: relative !important;
+	display: block !important;
+	margin: 0 !important;
+	overflow: hidden !important;
+}
+
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_DownloadStatusContent_"] > div,
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div.ip-YZhijAMZcuRoXBGiye > div,
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_DownloadStatusContent_"] div[class*="bottombar_IconBevel_"],
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div.ip-YZhijAMZcuRoXBGiye div._21vPQjHoo0uwud5lfCD_x-,
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_DownloadStatusContent_"] div[class*="bottombar_StatusLine_"],
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div.ip-YZhijAMZcuRoXBGiye div._1xCcFYWIrJ7W8WRDmGvR3y
+{
+	display: none !important;
+}
+
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_DownloadStatusContent_"]::before,
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div.ip-YZhijAMZcuRoXBGiye::before
+{
+	background-color: rgb(var(--adw-headerbar-fg-rgb));
+	content: "";
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	top: 9px;
+	left: 9px;
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	-webkit-mask-size: 16px;
+	-webkit-mask-image: var(--adw-icon-downloads);
+}
+
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_DownloadStatusContent_"] > div[class*="bottombar_DetailedDownloadProgress_"],
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div.ip-YZhijAMZcuRoXBGiye > div._2VtAqT03BpBsVdmxwptn9D
+{
+	display: block !important;
+	box-shadow: none !important;
+	width: 34px !important;
+	height: 34px !important;
+	border-radius: var(--adw-button-radius) !important;
+}
+
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_DownloadStatusContent_"] > div[class*="bottombar_DetailedDownloadProgress_"] div[class*="bottombar_Icon_"],
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div.ip-YZhijAMZcuRoXBGiye > div._2VtAqT03BpBsVdmxwptn9D div._1KrJ3sFAqPBN9mfpaNTU5F
+{
+	display: block !important;
+	width: 32px !important;
+	height: 32px !important;
+	border: 1px transparent solid;
+	border-radius: var(--adw-button-radius) !important;
+	box-shadow: none !important;
+}
+
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_DownloadStatusContent_"] > div[class*="bottombar_DetailedDownloadProgress_"] div[class*="bottombar_Icon_"] img,
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div.ip-YZhijAMZcuRoXBGiye > div._2VtAqT03BpBsVdmxwptn9D div._1KrJ3sFAqPBN9mfpaNTU5F img
+{
+	border-radius: var(--adw-button-radius) !important;
+}
+
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_DownloadStatusContent_"] > div[class*="bottombar_DetailedDownloadProgress_"] div[class*="bottombar_ProgressBarWrapper_"],
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div.ip-YZhijAMZcuRoXBGiye > div._2VtAqT03BpBsVdmxwptn9D div._2_FomluqqgQ2Hx8ON3AVep
+{
+	width: 32px !important;
+	height: 3px !important;
+	position: absolute !important;
+	bottom: 1px !important;
+	left: 1px !important;
+	border-radius: 0 !important;
+}
+
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_DownloadStatusContent_"] > div[class*="bottombar_DetailedDownloadProgress_"] div[class*="bottombar_ProgressBarWrapper_"] > div[class*="bottombar_ProgressBar_"],
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div.ip-YZhijAMZcuRoXBGiye > div._2VtAqT03BpBsVdmxwptn9D div._2_FomluqqgQ2Hx8ON3AVep > div.wi0pDywRgOCxhG7OqQNaA
+{
+	--color-progress-bar-background: transparent !important;
+	--color-progress-bar-foreground: rgb(var(--adw-accent-rgb)) !important;
+}
+
+/* Account alerts */
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_SupportAlertsButton_"],
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._32TmRVFkc8HMIUZ-KnnKby
+{
+	font-size: 0 !important;
+	line-height: 0 !important;
+}
+
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_SupportAlertsButton_"]::before,
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._32TmRVFkc8HMIUZ-KnnKby::before
+{
+	background-color: rgb(var(--adw-warning-rgb));
+	content: "";
+	width: 16px;
+	height: 16px;
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	-webkit-mask-size: 16px;
+	-webkit-mask-image: var(--adw-icon-warning);
+}
+
+/* Hidden buttons */
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AnnouncementsButton"],
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._5wILZhsLODVwGfcJ0hKmJ,
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_GamepadUIToggle_"],
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._3LKQ3S_yqrebeNLF6aeiog,
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_VRToggle_"],
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._3lRfTo8Wo3phXfE1DvK6QW
+{
+	display: none !important;
+}
+

@@ -1,0 +1,70 @@
+body.DesktopUI div[class*="steamavatar_avatarHolder_"],
+body.DesktopUI div._1YGAHSfGavQI6MODJq-pJB,
+body.DesktopUI div[class*="steamavatar_avatarHolder_"] img.avatar,
+body.DesktopUI div._1YGAHSfGavQI6MODJq-pJB img.avatar
+{
+	box-sizing: border-box !important;
+	width: 32px !important;
+	height: 32px !important;
+	border-radius: 50% !important;
+	overflow: hidden !important;
+	transform: none !important;
+	box-shadow: none !important;
+	border: none !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	cursor: default !important;
+	position: relative !important;
+}
+
+body.DesktopUI div[class*="steamavatar_avatarHolder_"],
+body.DesktopUI div._1YGAHSfGavQI6MODJq-pJB
+{
+	color: rgba(var(--adw-headerbar-fg-rgb), 0.5) !important;
+	border: 1px currentColor solid !important;
+	transition: color 200ms !important;
+}
+
+body.DesktopUI div[class*="steamavatar_avatarHolder_"]::after,
+body.DesktopUI div._1YGAHSfGavQI6MODJq-pJB::after
+{
+	content: "";
+	position: absolute;
+	border-radius: 50%;
+	box-shadow: inset 0 0 1px currentColor;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+body.DesktopUI div[class*="steamavatar_avatarHolder_"] img.avatar,
+body.DesktopUI div._1YGAHSfGavQI6MODJq-pJB img.avatar
+{
+	width: 100% !important;
+	height: 100% !important;
+}
+
+body.DesktopUI div[class*="steamavatar_avatarHolder_"].online,
+body.DesktopUI div._1YGAHSfGavQI6MODJq-pJB.online
+{
+	color: rgba(var(--adw-accent-rgb), 0.5) !important;
+}
+
+body.DesktopUI div[class*="steamavatar_avatarHolder_"].online.awayOrSnooze,
+body.DesktopUI  div._1YGAHSfGavQI6MODJq-pJB.online.awayOrSnooze
+{
+	border-style: dashed !important;
+}
+
+body.DesktopUI div[class*="steamavatar_avatarHolder_"].ingame,
+body.DesktopUI div._1YGAHSfGavQI6MODJq-pJB.ingame
+{
+	color: rgba(var(--adw-success-rgb), 0.5) !important;
+}
+
+body.DesktopUI div[class*="steamavatar_avatarHolder_"] div.avatarStatus,
+body.DesktopUI div._1YGAHSfGavQI6MODJq-pJB div.avatarStatus
+{
+	display: none !important;
+}

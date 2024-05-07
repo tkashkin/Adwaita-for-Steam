@@ -1,0 +1,181 @@
+/* What's New */
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"],
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._17uEBe5Ri8TMsnfELvs8-N
+{
+	background: rgb(var(--adw-view-bg-rgb)) !important;
+	border-bottom: 1px solid rgba(var(--adw-view-fg-rgb), var(--adw-thin-border-opacity)) !important;
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="libraryhomenewupdates_SettingsButton_"],
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._17uEBe5Ri8TMsnfELvs8-N div._1eFe5VbyACJE4RVGpOWKMC
+{
+	position: absolute !important;
+	right: 16px !important;
+	cursor: default !important;
+	box-sizing: border-box !important;
+	width: 34px !important;
+	height: 34px !important;
+	padding: 9px !important;
+	margin: 0 !important;
+	background: transparent !important;
+	border-radius: var(--adw-button-radius) !important;
+	color: rgb(var(--adw-view-fg-rgb)) !important;
+	transition: var(--adw-button-transition) !important;
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="libraryhomenewupdates_SettingsButton_"]:hover,
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._17uEBe5Ri8TMsnfELvs8-N div._1eFe5VbyACJE4RVGpOWKMC:hover
+{
+	background: rgba(var(--adw-view-fg-rgb), var(--adw-hover-opacity)) !important;
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="libraryhomenewupdates_SettingsButton_"]:active,
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._17uEBe5Ri8TMsnfELvs8-N div._1eFe5VbyACJE4RVGpOWKMC:active
+{
+	background: rgba(var(--adw-view-fg-rgb), var(--adw-active-opacity)) !important;
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="libraryhomenewupdates_PartnerEventRowCapsule_"].Panel,
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._17uEBe5Ri8TMsnfELvs8-N div._3YO5BpDmZERh_G8kaWbaSJ.Panel
+{
+	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-opacity)) !important;
+	border-radius: var(--adw-card-radius) !important;
+	box-shadow: var(--adw-card-shadow) !important;
+	transition: var(--adw-button-transition), filter 200ms !important;
+	cursor: default !important;
+	position: relative !important;
+	overflow: visible !important;
+	margin-top: 18px !important;
+	display: flex !important;
+	flex-direction: column !important;
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="libraryhomenewupdates_PartnerEventRowCapsule_"].Panel:hover,
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._17uEBe5Ri8TMsnfELvs8-N div._3YO5BpDmZERh_G8kaWbaSJ.Panel:hover
+{
+	box-shadow: var(--adw-card-raised-shadow) !important;
+	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-hover-opacity)) !important;
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="libraryhomenewupdates_PartnerEventRowCapsule_"].Panel:active,
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._17uEBe5Ri8TMsnfELvs8-N div._3YO5BpDmZERh_G8kaWbaSJ.Panel:active
+{
+	box-shadow: var(--adw-card-shadow) !important;
+	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-active-opacity)) !important;
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="libraryhomenewupdates_PartnerEventRowCapsule_"].Panel::after,
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._17uEBe5Ri8TMsnfELvs8-N div._3YO5BpDmZERh_G8kaWbaSJ.Panel::after
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: var(--adw-card-radius);
+	box-shadow: inset 0 0 0 1px rgba(var(--adw-card-fg-rgb), var(--adw-border-opacity));
+	transition: box-shadow 200ms;
+	pointer-events: none !important;
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="libraryhomenewupdates_PartnerEventRowCapsule_"].Panel:hover::after,
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._17uEBe5Ri8TMsnfELvs8-N div._3YO5BpDmZERh_G8kaWbaSJ.Panel:hover::after
+{
+	box-shadow: inset 0 0 0 1px rgba(var(--adw-card-fg-rgb), calc(var(--adw-border-opacity) + var(--adw-hover-opacity)));
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="libraryhomenewupdates_PartnerEventRowCapsule_"].Panel:active::after,
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._17uEBe5Ri8TMsnfELvs8-N div._3YO5BpDmZERh_G8kaWbaSJ.Panel:active::after
+{
+	box-shadow: inset 0 0 0 1px rgba(var(--adw-card-fg-rgb), calc(var(--adw-border-opacity) + var(--adw-active-opacity)));
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="libraryhomenewupdates_PartnerEventRowCapsule_"].Panel div[class*="libraryhomenewupdates_EventSummaryContainer_"],
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._17uEBe5Ri8TMsnfELvs8-N div._3YO5BpDmZERh_G8kaWbaSJ.Panel div._3Rb_j3lgHaVVIud4Gla7_m,
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="libraryhomenewupdates_PartnerEventRowCapsule_"].Panel div[class*="libraryhomenewupdates_PartnerEventRowCapsule_MainImageContainer_"],
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._17uEBe5Ri8TMsnfELvs8-N div._3YO5BpDmZERh_G8kaWbaSJ.Panel div.SPz0ipLqfF1oAO7tdrkdY
+{
+	border-radius: var(--adw-card-radius) var(--adw-card-radius) 0 0 !important;
+	overflow: hidden !important;
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="libraryhomenewupdates_PartnerEventRowCapsule_"].Panel div[class*="libraryhomenewupdates_EventTime_"],
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._17uEBe5Ri8TMsnfELvs8-N div._3YO5BpDmZERh_G8kaWbaSJ.Panel div._2rlKqvybYupc-uk64cdQ8D
+{
+	position: absolute !important;
+	top: -22px !important;
+	color: rgba(var(--adw-view-fg-rgb), var(--adw-dim-label-opacity)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-subtitle-size) !important;
+	font-weight: var(--adw-text-subtitle-weight) !important;
+	pointer-events: none !important;
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="libraryhomenewupdates_PartnerEventRowCapsule_"].Panel div[class*="libraryhomenewupdates_PartnerEventRowCapsule_TextCtn_"],
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._17uEBe5Ri8TMsnfELvs8-N div._3YO5BpDmZERh_G8kaWbaSJ.Panel div.aqYQCF7Ny9x3EKcjCOTRY
+{
+	padding: 0 !important;
+	margin: 0 !important;
+	order: 1 !important;
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="libraryhomenewupdates_PartnerEventRowCapsule_"].Panel div[class*="libraryhomenewupdates_PartnerEventRowCapsule_TextTitle_"],
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._17uEBe5Ri8TMsnfELvs8-N div._3YO5BpDmZERh_G8kaWbaSJ.Panel div.DVBcpUzJ0x6kaRMfug0OJ
+{
+	color: rgb(var(--adw-view-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-weight: var(--adw-text-base-weight) !important;
+	font-size: var(--adw-text-title3-size) !important;
+	padding: 2px 12px 12px 12px !important;
+	display: block !important;
+	white-space: nowrap !important;
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="libraryhomenewupdates_PartnerEventRowCapsule_"].Panel div[class*="libraryhomenewupdates_GameIconAndName_"],
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._17uEBe5Ri8TMsnfELvs8-N div._3YO5BpDmZERh_G8kaWbaSJ.Panel div._3_xMyCJAh_Dv99KgZ54P3j
+{
+	padding: 4px 12px !important;
+	width: auto !important;
+	margin: 0 !important;
+	color: rgb(var(--adw-view-fg-rgb)) !important;
+	background: transparent !important;
+	transition: var(--adw-button-transition) !important;
+	cursor: default !important;
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="libraryhomenewupdates_PartnerEventRowCapsule_"].Panel div[class*="libraryhomenewupdates_GameIconAndName_"]:hover,
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._17uEBe5Ri8TMsnfELvs8-N div._3YO5BpDmZERh_G8kaWbaSJ.Panel div._3_xMyCJAh_Dv99KgZ54P3j:hover
+{
+	background: rgba(var(--adw-view-fg-rgb), var(--adw-hover-opacity)) !important;
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="libraryhomenewupdates_PartnerEventRowCapsule_"].Panel div[class*="libraryhomenewupdates_GameIconAndName_"]:active,
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._17uEBe5Ri8TMsnfELvs8-N div._3YO5BpDmZERh_G8kaWbaSJ.Panel div._3_xMyCJAh_Dv99KgZ54P3j:active
+{
+	background: rgba(var(--adw-view-fg-rgb), var(--adw-active-opacity)) !important;
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="libraryhomenewupdates_PartnerEventRowCapsule_"].Panel div[class*="libraryhomenewupdates_GameIconAndName_"] div[class*="libraryhomenewupdates_GameIcon_"],
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._17uEBe5Ri8TMsnfELvs8-N div._3YO5BpDmZERh_G8kaWbaSJ.Panel div._3_xMyCJAh_Dv99KgZ54P3j div._3tdftHFf8tvdJW34S-KwjR
+{
+	width: 20px !important;
+	height: 20px !important;
+	border-radius: var(--adw-gameicon-radius) !important;
+	overflow: hidden !important;
+	margin: 0 !important;
+	flex-shrink: 0 !important;
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="libraryhomenewupdates_PartnerEventRowCapsule_"].Panel div[class*="libraryhomenewupdates_GameIconAndName_"] div[class*="libraryhomenewupdates_GameName_"],
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._17uEBe5Ri8TMsnfELvs8-N div._3YO5BpDmZERh_G8kaWbaSJ.Panel div._3_xMyCJAh_Dv99KgZ54P3j div._28IqrZIgxpqkUQyhdaLDUN
+{
+	color: inherit !important;
+	padding: 0 6px !important;
+	margin: 0 !important;
+	font-family: var(--adw-text-font) !important;
+	font-weight: var(--adw-text-title4-weight) !important;
+	font-size: var(--adw-text-title4-size) !important;
+	line-height: 20px !important;
+	text-transform: none !important;
+	letter-spacing: normal !important;
+}

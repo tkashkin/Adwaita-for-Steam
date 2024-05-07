@@ -1,0 +1,397 @@
+/* Header */
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsplaysection_PlayBar_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3fLo166MlaNqP8r8tTyRz
+{
+	backdrop-filter: none !important;
+	background: none !important;
+	transition: none !important;
+}
+
+/* Sticky header */
+body.DesktopUI div[class*="appdetailsplaysection_StickyHeader_"] div[class*="appdetailsplaysection_Glassy_"],
+body.DesktopUI div._39RheXihcN6H2k2muQTjkI div._3DeO92O5aVkcdwEBCJDjWm
+{
+	backdrop-filter: none !important;
+	background: rgb(var(--adw-headerbar-bg-rgb)) !important;
+	transition: none !important;
+}
+
+body.DesktopUI div[class*="appdetailsplaysection_StickyHeaderShadow_"],
+body.DesktopUI div._2_86QNCjVvJTL3Qe6Xztx_
+{
+	background: linear-gradient(to bottom, rgba(var(--adw-shade-rgb), calc(var(--adw-shade-a) * 0.75)), transparent 4px) !important;
+	box-shadow: inset 0 1px rgba(var(--adw-shade-rgb), calc(var(--adw-shade-a) * 0.75)) !important;
+	height: 4px !important;
+	margin-bottom: -4px !important;
+	top: 0 !important;
+}
+
+body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"],
+body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5
+{
+	padding: 6px 20px !important;
+	padding-bottom: 7px !important;
+}
+
+/* Play button, streaming device dropdown */
+body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appdetailsplaysection_ActionSection_"],
+body.DesktopUI div._2Nq6ov7A1hGcHXVOXNt_OE div._2zxzStp5qY5M1evOm8keES
+{
+	height: 40px !important;
+}
+
+body.DesktopUI div[class*="appdetailsplaysection_StickyHeader_"] div[class*="appdetailsplaysection_ActionSection_"],
+body.DesktopUI div._39RheXihcN6H2k2muQTjkI div._2zxzStp5qY5M1evOm8keES,
+body.DesktopUI div[class*="appdetailsplaysection_StickyHeader_"] div[class*="appdetailsplaysection_StatusAndStats_"],
+body.DesktopUI div._39RheXihcN6H2k2muQTjkI div._1YbtIWcfkQJOysLXQbwzRf
+{
+	height: 34px !important;
+}
+
+body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer_"],
+body.DesktopUI div._2Nq6ov7A1hGcHXVOXNt_OE div._1FnJ6dPuknQFQ2RTpKTI16
+{
+	border-radius: var(--adw-button-radius) !important;
+	background: rgb(var(--adw-accent-bg-rgb)) !important;
+	color: rgb(var(--adw-accent-fg-rgb)) !important;
+}
+
+body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer_"],
+body.DesktopUI div._2Nq6ov7A1hGcHXVOXNt_OE div._1FnJ6dPuknQFQ2RTpKTI16,
+body.DesktopUI div[class*="library_AppDetailsMain_"] [class*="appactionbutton_ShowingStreaming_"],
+body.DesktopUI div._2Nq6ov7A1hGcHXVOXNt_OE div._1hhB2Wf7iExA15zh_lDQ_y
+{
+	min-width: 140px !important;
+}
+
+body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer_"][class*="appactionbutton_Green_"],
+body.DesktopUI div._2Nq6ov7A1hGcHXVOXNt_OE div._1FnJ6dPuknQFQ2RTpKTI16._3cI5TXsFX3bvpR-7EBOtxq
+{
+	background: rgb(var(--adw-success-bg-rgb)) !important;
+}
+
+body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer_"][class*="appactionbutton_Green_"] div[class*="appactionbutton_ButtonText_"],
+body.DesktopUI div._2Nq6ov7A1hGcHXVOXNt_OE div._1FnJ6dPuknQFQ2RTpKTI16._3cI5TXsFX3bvpR-7EBOtxq div._33cnXIqTRgRr49_FNXIHj6,
+body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer_"][class*="appactionbutton_Green_"] > div[class*="appactionbutton_ButtonChild_"] svg,
+body.DesktopUI div._2Nq6ov7A1hGcHXVOXNt_OE div._1FnJ6dPuknQFQ2RTpKTI16._3cI5TXsFX3bvpR-7EBOtxq > div._2AzIX5kl9k6JnxLfR5H4kX svg
+{
+	color: rgb(var(--adw-success-fg-rgb)) !important;
+}
+
+body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer_"][class*="appactionbutton_Disabled_"],
+body.DesktopUI div._2Nq6ov7A1hGcHXVOXNt_OE div._1FnJ6dPuknQFQ2RTpKTI16._1Pb6PMh_3L5p5NzuUz0Pp9
+{
+	background: rgba(var(--adw-window-fg-rgb), var(--adw-disabled-opacity)) !important;
+}
+
+body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer_"][class*="appactionbutton_Disabled"] div[class*="appactionbutton_ButtonText_"],
+body.DesktopUI div._2Nq6ov7A1hGcHXVOXNt_OE div._1FnJ6dPuknQFQ2RTpKTI16._1Pb6PMh_3L5p5NzuUz0Pp9 div._33cnXIqTRgRr49_FNXIHj6,
+body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer_"][class*="appactionbutton_Disabled_"] > div[class*="appactionbutton_ButtonChild_"] svg,
+body.DesktopUI div._2Nq6ov7A1hGcHXVOXNt_OE div._1FnJ6dPuknQFQ2RTpKTI16._1Pb6PMh_3L5p5NzuUz0Pp9 > div._2AzIX5kl9k6JnxLfR5H4kX svg
+{
+	color: rgba(var(--adw-window-fg-rgb), var(--adw-disabled-opacity)) !important;
+}
+
+body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer_"] div[class*="appactionbutton_ButtonText_"],
+body.DesktopUI div._2Nq6ov7A1hGcHXVOXNt_OE div._1FnJ6dPuknQFQ2RTpKTI16 div._33cnXIqTRgRr49_FNXIHj6,
+body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer_"] > div[class*="appactionbutton_ButtonChild_"] svg,
+body.DesktopUI div._2Nq6ov7A1hGcHXVOXNt_OE div._1FnJ6dPuknQFQ2RTpKTI16 > div._2AzIX5kl9k6JnxLfR5H4kX svg
+{
+	color: rgb(var(--adw-accent-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-title2-size) !important;
+	font-weight: var(--adw-text-title3-weight) !important;
+	line-height: 34px !important;
+	text-transform: none !important;
+	letter-spacing: normal !important;
+}
+
+body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer_"] > div[class*="appactionbutton_ButtonChild_"]:first-child > svg,
+body.DesktopUI div._2Nq6ov7A1hGcHXVOXNt_OE div._1FnJ6dPuknQFQ2RTpKTI16 > div._2AzIX5kl9k6JnxLfR5H4kX:first-child > svg
+{
+	display: none !important;
+}
+
+body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer_"] > div[class*="appactionbutton_ButtonChild_"] > svg > path,
+body.DesktopUI div._2Nq6ov7A1hGcHXVOXNt_OE div._1FnJ6dPuknQFQ2RTpKTI16 > div._2AzIX5kl9k6JnxLfR5H4kX > svg > path,
+body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer_"] > div[class*="appactionbutton_ButtonChild_"] > svg > polygon,
+body.DesktopUI div._2Nq6ov7A1hGcHXVOXNt_OE div._1FnJ6dPuknQFQ2RTpKTI16 > div._2AzIX5kl9k6JnxLfR5H4kX > svg > polygon
+{
+	stroke: currentColor !important;
+	fill: currentColor !important;
+}
+
+body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer_"] > div[class*="appactionbutton_ButtonChild_"],
+body.DesktopUI div._2Nq6ov7A1hGcHXVOXNt_OE div._1FnJ6dPuknQFQ2RTpKTI16 > div._2AzIX5kl9k6JnxLfR5H4kX
+{
+	margin: 0 !important;
+	border-radius: var(--adw-button-radius) !important;
+	background: transparent !important;
+	transition: var(--adw-button-transition) !important;
+	cursor: default !important;
+}
+
+body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer_"] > div[class*="appactionbutton_ButtonChild_"]:hover,
+body.DesktopUI div._2Nq6ov7A1hGcHXVOXNt_OE div._1FnJ6dPuknQFQ2RTpKTI16 > div._2AzIX5kl9k6JnxLfR5H4kX:hover
+{
+	background: var(--adw-button-suggested-overlay-hover) !important;
+}
+
+body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer_"] > div[class*="appactionbutton_ButtonChild_"]:active,
+body.DesktopUI div._2Nq6ov7A1hGcHXVOXNt_OE div._1FnJ6dPuknQFQ2RTpKTI16 > div._2AzIX5kl9k6JnxLfR5H4kX:active
+{
+	background: var(--adw-button-suggested-overlay-active) !important;
+}
+
+body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer_"] > div[class*="appactionbutton_ButtonChild_"]:first-child:not(:last-child),
+body.DesktopUI div._2Nq6ov7A1hGcHXVOXNt_OE div._1FnJ6dPuknQFQ2RTpKTI16 > div._2AzIX5kl9k6JnxLfR5H4kX:first-child:not(:last-child)
+{
+	border-top-right-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+}
+
+body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer_"] > div[class*="appactionbutton_ButtonChild_"]:last-child:not(:first-child),
+body.DesktopUI div._2Nq6ov7A1hGcHXVOXNt_OE div._1FnJ6dPuknQFQ2RTpKTI16 > div._2AzIX5kl9k6JnxLfR5H4kX:last-child:not(:first-child)
+{
+	border-top-left-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
+	border-left: 1px rgba(var(--adw-accent-fg-rgb), var(--adw-dimmer-opacity)) solid !important;
+}
+
+/* AppDetails Play Section */
+body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_StatusNameContainer_"],
+body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div.zjtAIAWI6HE0oCtJzw6Qt,
+body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_StatusNameContainer_"] div[class*="appdetailsplaysection_GameStatsSection_"],
+body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div.zjtAIAWI6HE0oCtJzw6Qt div._1mDAVT4sTzFRwJtlKCw2Ws
+{
+	height: 40px !important;
+	gap: 6px !important;
+}
+
+body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_PlayBarLabel_"],
+body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._34lrt5-Fc3usZU6trA1P0-
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-header-size) !important;
+	font-weight: var(--adw-text-header-weight) !important;
+	text-transform: none !important;
+	letter-spacing: normal !important;
+}
+
+body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_PlayBarDetailLabel_"],
+body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2TYVGoD27ZMfjRirKQNLfk,
+body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_PlayBarDetailLabel_"] > button,
+body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2TYVGoD27ZMfjRirKQNLfk > button
+{
+	color: rgba(var(--adw-window-fg-rgb), var(--adw-dim-label-opacity)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-subtitle-size) !important;
+	font-weight: var(--adw-text-subtitle-weight) !important;
+	text-transform: none !important;
+	letter-spacing: normal !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	cursor: default !important;
+	background: none !important;
+	border-radius: 0 !important;
+}
+
+body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_PlayBarDetailLabel_"] > button:hover,
+body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2TYVGoD27ZMfjRirKQNLfk > button:hover,
+body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_PlayBarDetailLabel_"] > button:active,
+body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2TYVGoD27ZMfjRirKQNLfk > button:active
+{
+	background: none !important;
+}
+
+body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_GameStat_"],
+body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._1kiZKVbDe-9Ikootk57kpA,
+body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_Downloading_"],
+body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2F4PcO4yl7Xl5emuGiF2La
+{
+	height: 40px !important;
+	border-radius: var(--adw-button-radius) !important;
+	padding: 4px !important;
+	column-gap: 4px !important;
+	row-gap: 2px !important;
+	margin: 0 !important;
+	position: relative !important;
+}
+
+body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_Downloading_"],
+body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2F4PcO4yl7Xl5emuGiF2La
+{
+	width: 180px !important;
+	margin-right: 6px !important;
+}
+
+body.DesktopUI div[class*="appdetailsplaysection_StickyHeader_"] div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_Downloading_"],
+body.DesktopUI div._39RheXihcN6H2k2muQTjkI div._3Y87YQY56ZCOqhgcZFaDc5 div._2F4PcO4yl7Xl5emuGiF2La
+{
+	height: 34px !important;
+	padding: 0 4px !important;
+	gap: 0 !important;
+}
+
+body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_Downloading_"] div[class*="appdetailsplaysection_DetailsProgressContainer_"],
+body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2F4PcO4yl7Xl5emuGiF2La div._25YVDTaClw6Y2COPsU0UaV
+{
+	border-radius: var(--adw-button-radius) !important;
+	overflow: hidden !important;
+	position: absolute !important;
+	z-index: 0 !important;
+	background: transparent !important;
+	top: 0 !important;
+	left: 0 !important;
+	right: 0 !important;
+	bottom: 0 !important;
+	height: auto !important;
+	width: auto !important;
+	border: 1px rgba(var(--adw-accent-bg-rgb), var(--adw-dimmer-opacity)) solid !important;
+	margin: 0 !important;
+}
+
+body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_Downloading_"] div[class*="appdetailsplaysection_DetailsProgressContainer_"] > div,
+body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2F4PcO4yl7Xl5emuGiF2La div._25YVDTaClw6Y2COPsU0UaV > div
+{
+	border-radius: 0 !important;
+	background: rgba(var(--adw-accent-bg-rgb), var(--adw-dimmer-opacity)) !important;
+}
+
+body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_GameStat_"] div[class*="appdetailsplaysection_GameStatRight_"],
+body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._1kiZKVbDe-9Ikootk57kpA div._3m_zjRTQBqcfzCjXLXUHcR
+{
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_PlayBarCloudStatusContainer_"] div[class*="appdetailsplaysection_CloudStatusSyncFail_"],
+body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2cRYms-zZc4misk9tj3bt8 div.q_Xpj_ztkqZCfOIksH3UR,
+body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_MiniAchievements_"],
+body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div.UAhWiMg9Q2VPsQQBj_ikT,
+body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_Downloading_"],
+body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2F4PcO4yl7Xl5emuGiF2La
+{
+	cursor: default !important;
+	border-radius: var(--adw-button-radius) !important;
+}
+
+body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_PlayBarCloudStatusContainer_"] div[class*="appdetailsplaysection_CloudStatusSyncFail_"]:hover,
+body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2cRYms-zZc4misk9tj3bt8 div.q_Xpj_ztkqZCfOIksH3UR:hover,
+body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_MiniAchievements_"]:hover,
+body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div.UAhWiMg9Q2VPsQQBj_ikT:hover,
+body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_Downloading_"]:hover,
+body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2F4PcO4yl7Xl5emuGiF2La:hover
+{
+	background: rgba(var(--adw-window-fg-rgb), var(--adw-hover-opacity)) !important;
+}
+
+body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_PlayBarCloudStatusContainer_"] div[class*="appdetailsplaysection_CloudStatusSyncFail_"]:active,
+body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2cRYms-zZc4misk9tj3bt8 div.q_Xpj_ztkqZCfOIksH3UR:active,
+body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_MiniAchievements_"]:active,
+body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div.UAhWiMg9Q2VPsQQBj_ikT:active,
+body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_Downloading_"]:active,
+body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2F4PcO4yl7Xl5emuGiF2La:active
+{
+	background: rgba(var(--adw-window-fg-rgb), var(--adw-active-opacity)) !important;
+}
+
+body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_PlayBarCloudStatusContainer_"] div[class*="appdetailsplaysection_GameStatIconForced_"],
+body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2cRYms-zZc4misk9tj3bt8 div._3bkqc-SsCg0b3FTEuewlK8,
+body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_PlaytimeIcon_"],
+body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._1GZdosVXnfrf69yU8DWASl,
+body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_GameStatIcon_"],
+body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._1tIg-QIrwMNtCm7NcYADyi
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	margin: 1px !important;
+}
+
+body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_PlaytimeIcon_"] > svg *,
+body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._1GZdosVXnfrf69yU8DWASl > svg *,
+body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_GameStatIcon_"]:not([class*="appdetailsplaysection_AchievementSVG_"]) > svg *,
+body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._1tIg-QIrwMNtCm7NcYADyi:not(.k-QNT9kzOEOvG0U_kGmwr) > svg *
+{
+	stroke: rgb(var(--adw-window-fg-rgb)) !important;
+}
+
+body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_CloudIconSVG_"],
+body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 svg.MbTRimZpGCATmn39ae8RT
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+}
+
+body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] svg[class*="appdetailsplaysection_PlayBarIconAndGame_"],
+body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2MBVRXpsw6DUjs7937DWZW
+{
+	height: 34px !important;
+	padding: 0 !important;
+	justify-content: center !important;
+}
+
+body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_PlayBarIconAndGame_"] div[class*="appdetailsplaysection_PlayBarGameIcon_"],
+body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2MBVRXpsw6DUjs7937DWZW div._1iNIp1p3ZhPoBwZbkmdb8o
+{
+	width: 20px !important;
+	height: 20px !important;
+	border: 1px rgba(var(--adw-window-fg-rgb), var(--adw-thin-border-opacity)) solid !important;
+	border-radius: var(--adw-gameicon-radius) !important;
+}
+
+body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_PlayBarIconAndGame_"] span[class*="appdetailsplaysection_PlayBarGameName_"],
+body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2MBVRXpsw6DUjs7937DWZW span._3rpUkswF6xc_ste4Ros_xM
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-title3-size) !important;
+	font-weight: var(--adw-text-title3-weight) !important;
+	text-transform: none !important;
+	letter-spacing: normal !important;
+}
+
+/* AppDetails Play Section Buttons */
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsplaysection_MenuButton_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3qDWQGB0rtwM3qpXTb11Q-
+{
+	background: rgba(var(--adw-window-fg-rgb), var(--adw-button-bg-opacity)) !important;
+	border-radius: var(--adw-button-radius) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsplaysection_MenuButton_"]:hover,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3qDWQGB0rtwM3qpXTb11Q-:hover
+{
+	background: rgba(var(--adw-window-fg-rgb), var(--adw-button-bg-opacity-hover)) !important;
+	border-radius: var(--adw-button-radius) !important;
+}
+
+/* App Details Link Buttons */
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsprimarylinkssection_LinksSectionBody_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._25f0fX6qbgdB7O_lMrbhCN
+{
+	padding: 0 10px !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsprimarylinkssection_Link_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._1b6LYWVijW-9E4YV0keDWZ
+{
+	border-radius: var(--adw-button-radius) !important;
+	padding: 5px 10px !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsprimarylinkssection_Link_"]:hover,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._1b6LYWVijW-9E4YV0keDWZ:hover
+{
+	background: rgba(var(--adw-window-fg-rgb), var(--adw-button-bg-opacity-hover)) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] span[class*="appdetailsprimarylinkssection_Text_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA span._2sNDjgK9EWiPLdNGkjun-w,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsprimarylinkssection_Link_"]:hover span[class*="appdetailsprimarylinkssection_Text_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._1b6LYWVijW-9E4YV0keDWZ:hover span._2sNDjgK9EWiPLdNGkjun-w
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-title3-size) !important;
+	font-weight: var(--adw-text-title3-weight) !important;
+}

@@ -1,0 +1,124 @@
+/* Menu Bar */
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="steamdesktop_RootMenuBar_"],
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._3s0lkohH8wU2do0K1il28Y
+{
+	-webkit-app-region: no-drag;
+	padding: 0 !important;
+	margin: 0 !important;
+	gap: 6px !important;
+	z-index: 10 !important;
+	flex-direction: row-reverse !important;
+	justify-content: end !important;
+	position: absolute !important;
+	right: calc(var(--adw-windowcontrols-margin-right) + 6px) !important;
+	top: 6px !important;
+	height: 34px !important;
+	border-radius: var(--adw-button-radius) !important;
+	background: rgb(var(--adw-headerbar-bg-rgb)) !important;
+}
+
+/* Menu item */
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="rootmenu_RootMenuButton_"],
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._2UyOBeiSdBayaFdRa39N2O
+{
+	-webkit-app-region: no-drag;
+	cursor: default !important;
+	border-radius: var(--adw-button-radius) !important;
+	width: 34px !important;
+	height: 34px !important;
+	padding: 9px !important;
+	transition: var(--adw-button-transition);
+	display: none !important;
+	color: rgb(var(--adw-headerbar-fg-rgb)) !important;
+}
+
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="steamdesktop_RootMenuBar_"]:hover div[class*="rootmenu_RootMenuButton_"],
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._3s0lkohH8wU2do0K1il28Y:hover div._2UyOBeiSdBayaFdRa39N2O,
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="rootmenu_RootMenuButton_"]:first-child,
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._2UyOBeiSdBayaFdRa39N2O:first-child,
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="rootmenu_RootMenuButton_"][class*="menu_MenuOpen_"],
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._2UyOBeiSdBayaFdRa39N2O._3rgV8pPmQvZC-01x9l-q-N
+{
+	display: block !important;
+}
+
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="steamdesktop_RootMenuBar_"]:has(div[class*="menu_MenuOpen_"]) div[class*="rootmenu_RootMenuButton_"],
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._3s0lkohH8wU2do0K1il28Y:has(div._3rgV8pPmQvZC-01x9l-q-N) div._2UyOBeiSdBayaFdRa39N2O
+{
+	display: block !important;
+}
+
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="rootmenu_RootMenuButton_"] > div,
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._2UyOBeiSdBayaFdRa39N2O > div
+{
+	display: none !important;
+}
+
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="rootmenu_RootMenuButton_"]:hover,
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._2UyOBeiSdBayaFdRa39N2O:hover
+{
+	background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-hover-opacity)) !important;
+}
+
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="rootmenu_RootMenuButton_"]:active,
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._2UyOBeiSdBayaFdRa39N2O:active
+{
+	background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-active-opacity)) !important;
+}
+
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="rootmenu_RootMenuButton_"][class*="menu_MenuOpen_"],
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._2UyOBeiSdBayaFdRa39N2O._3rgV8pPmQvZC-01x9l-q-N
+{
+	background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-selected-opacity)) !important;
+}
+
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="rootmenu_RootMenuButton_"][class*="menu_MenuOpen_"]:hover,
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._2UyOBeiSdBayaFdRa39N2O._3rgV8pPmQvZC-01x9l-q-N:hover
+{
+	background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-selected-hover-opacity)) !important;
+}
+
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="rootmenu_RootMenuButton_"][class*="menu_MenuOpen_"]:active,
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._2UyOBeiSdBayaFdRa39N2O._3rgV8pPmQvZC-01x9l-q-N:active
+{
+	background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-selected-active-opacity)) !important;
+}
+
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="rootmenu_RootMenuButton_"]::before,
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._2UyOBeiSdBayaFdRa39N2O::before
+{
+	background-color: rgb(var(--adw-headerbar-fg-rgb));
+	content: "";
+	display: block;
+	width: 16px;
+	height: 16px;
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	-webkit-mask-size: 16px;
+	-webkit-mask-image: var(--adw-icon-menu-main);
+}
+
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="rootmenu_RootMenuButton_"] ~ div[class*="rootmenu_RootMenuButton_"]::before,
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._2UyOBeiSdBayaFdRa39N2O ~ div._2UyOBeiSdBayaFdRa39N2O::before
+{
+	-webkit-mask-image: var(--adw-icon-menu-view);
+}
+
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="rootmenu_RootMenuButton_"] ~ div[class*="rootmenu_RootMenuButton_"] ~ div[class*="rootmenu_RootMenuButton_"]::before,
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._2UyOBeiSdBayaFdRa39N2O ~ div._2UyOBeiSdBayaFdRa39N2O ~ div._2UyOBeiSdBayaFdRa39N2O::before
+{
+	-webkit-mask-image: var(--adw-icon-menu-friends);
+}
+
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="rootmenu_RootMenuButton_"] ~ div[class*="rootmenu_RootMenuButton_"] ~ div[class*="rootmenu_RootMenuButton_"] ~ div[class*="rootmenu_RootMenuButton_"]::before,
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._2UyOBeiSdBayaFdRa39N2O ~ div._2UyOBeiSdBayaFdRa39N2O ~ div._2UyOBeiSdBayaFdRa39N2O ~ div._2UyOBeiSdBayaFdRa39N2O::before
+{
+	-webkit-mask-image: var(--adw-icon-menu-games);
+}
+
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="rootmenu_RootMenuButton_"] ~ div[class*="rootmenu_RootMenuButton_"] ~ div[class*="rootmenu_RootMenuButton_"] ~ div[class*="rootmenu_RootMenuButton_"] ~ div[class*="rootmenu_RootMenuButton_"]::before,
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._2UyOBeiSdBayaFdRa39N2O ~ div._2UyOBeiSdBayaFdRa39N2O ~ div._2UyOBeiSdBayaFdRa39N2O ~ div._2UyOBeiSdBayaFdRa39N2O ~ div._2UyOBeiSdBayaFdRa39N2O::before
+{
+	-webkit-mask-image: var(--adw-icon-menu-help);
+}
+

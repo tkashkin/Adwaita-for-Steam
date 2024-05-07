@@ -1,0 +1,33 @@
+body.DesktopUI *::-webkit-scrollbar
+{
+	width: 6px !important;
+	appearance: none !important;
+}
+
+body.DesktopUI *::-webkit-scrollbar-thumb
+{
+	background-color: rgba(var(--adw-window-fg-rgb), 0.1) !important;
+	border: 1px rgba(0, 0, 0, 0.1) solid !important;
+	background-clip: border-box !important;
+	border-radius: 3px !important;
+	min-height: 40px !important;
+	z-index: 12 !important;
+}
+
+body.DesktopUI *:hover::-webkit-scrollbar-thumb
+{
+	background-color: rgba(var(--adw-window-fg-rgb), 0.2) !important;
+	border: 1px rgba(0, 0, 0, 0.2) solid !important;
+}
+
+body.DesktopUI *::-webkit-scrollbar-thumb:hover
+{
+	background-color: rgba(var(--adw-window-fg-rgb), 0.4) !important;
+	border: 1px rgba(0, 0, 0, 0.4) solid !important;
+}
+
+body.DesktopUI *::-webkit-scrollbar-thumb:active
+{
+	background-color: rgba(var(--adw-window-fg-rgb), 0.6) !important;
+	border: 1px rgba(0, 0, 0, 0.6) solid !important;
+}

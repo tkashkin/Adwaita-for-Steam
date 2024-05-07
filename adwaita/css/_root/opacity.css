@@ -1,0 +1,26 @@
+/* Opacity levels */
+:root
+{
+	--adw-border-opacity: 0.15;
+	--adw-thin-border-opacity: 0.05;
+	--adw-focus-border-opacity: 0.5;
+
+	--adw-hover-opacity: 0.07;
+	--adw-active-opacity: 0.16;
+	--adw-selected-opacity: 0.1;
+	--adw-selected-hover-opacity: 0.13;
+	--adw-selected-active-opacity: 0.19;
+
+	--adw-view-hover-opacity: 0.04;
+	--adw-view-active-opacity: 0.08;
+	--adw-view-selected-opacity: 0.25;
+	--adw-view-selected-hover-opacity: 0.32;
+	--adw-view-selected-active-opacity: 0.39;
+
+	--adw-window-outline-opacity: 0.07;
+
+	--adw-dim-label-opacity: 0.55;
+	--adw-dimmer-opacity: 0.3;
+	--adw-disabled-opacity: 0.5;
+	--adw-strong-disabled-opacity: 0.3;
+}

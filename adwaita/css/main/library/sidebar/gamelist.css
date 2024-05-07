@@ -1,0 +1,383 @@
+body.DesktopUI div[class*="gamelistsectionheader_Container_"],
+body.DesktopUI div._2sYIghGVXJr6tsQVvcryy8,
+body.DesktopUI div[class*="gamelistentry_Container_"],
+body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ
+{
+	height: 26px !important;
+	line-height: 26px !important;
+	margin: 0 6px !important;
+	background: none !important;
+	cursor: default !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-gamelist-size) !important;
+	font-weight: var(--adw-text-gamelist-weight) !important;
+	box-sizing: border-box !important;
+	border: none !important;
+	border-radius: var(--adw-button-radius) !important;
+	position: relative !important;
+}
+
+body.DesktopUI div[class*="gamelistentry_Container_"][class*="gamelistentry_Installed_"],
+body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ._2ws8DONH9fxQjPXEmRpujE
+{
+	color: rgb(var(--adw-sidebar-fg-rgb)) !important;
+}
+
+body.DesktopUI div[class*="gamelistentry_Container_"][class*="gamelistentry_Uninstalled_"],
+body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ._5YTBr7WwIfzVU_3nUtAph
+{
+	color: rgba(var(--adw-sidebar-fg-rgb), var(--adw-dim-label-opacity)) !important;
+}
+
+body.DesktopUI div[class*="gamelistentry_Container_"][class*="gamelistentry_Updating_"],
+body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ._1LVQp3h_vGOZ8TuDUEge0k,
+body.DesktopUI div[class*="gamelistentry_Container_"][class*="gamelistentry_Synchronizing_"],
+body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ._1yaIZGJb4PvyjF3_SSQxFx
+{
+	color: rgb(var(--adw-accent-rgb)) !important;
+}
+
+body.DesktopUI div[class*="gamelistentry_Container_"][class*="gamelistentry_CloudError_"],
+body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ.cMb2tLY-QjdRohM5U6Btp,
+body.DesktopUI div[class*="gamelistentry_Container_"] div[class*="gamelistentry_CloudError_"],
+body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ div.cMb2tLY-QjdRohM5U6Btp,
+body.DesktopUI div[class*="gamelistentry_Container_"][class*="gamelistentry_CloudOutOfDate_"],
+body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ._26PT_OTo7-JDunJWeZgjT8,
+body.DesktopUI div[class*="gamelistentry_Container_"] div[class*="gamelistentry_CloudOutOfDate_"],
+body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ div._26PT_OTo7-JDunJWeZgjT8
+{
+	color: rgb(var(--adw-warning-rgb)) !important;
+}
+
+body.DesktopUI div[class*="gamelistentry_Container_"][class*="gamelistentry_Running_"],
+body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ._10GdoB3tQXXGFToQ3yY_SK
+{
+	color: rgb(var(--adw-success-rgb)) !important;
+}
+
+body.DesktopUI div[class*="gamelistentry_Container_"] div[class*="gamelistentry_GameListEntryName_"],
+body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ div._2SXJM0PeFEi3gbC7V3S5pE,
+body.DesktopUI div[class*="gamelistentry_Container_"] span[class*="gamelistentry_DownloadDash_"],
+body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ span._2RggXvVkWMDvvxFegjtKso,
+body.DesktopUI div[class*="gamelistentry_Container_"] div[class*="gamelistentry_DownloadProgress_"],
+body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ div._3uk3F1BmAJQR6rl1TPcaif
+{
+	color: inherit !important;
+}
+
+body.DesktopUI div[class*="gamelistentry_Container_"] span[class*="gamelistentry_DownloadDash_"],
+body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ span._2RggXvVkWMDvvxFegjtKso,
+body.DesktopUI div[class*="gamelistentry_Container_"] div[class*="gamelistentry_DownloadProgress_"],
+body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ div._3uk3F1BmAJQR6rl1TPcaif
+{
+	opacity: var(--adw-dim-label-opacity) !important;
+}
+
+body.DesktopUI div[class*="gamelistsectionheader_Container_"] span[class*="gamelistsectionheader_SectionName_"],
+body.DesktopUI div._2sYIghGVXJr6tsQVvcryy8 span._2mZ8LlvoUiyeEUtIWuTri,
+body.DesktopUI div[class*="gamelistsectionheader_Container_"] div[class*="gamelistsectionheader_SectionCount_"],
+body.DesktopUI div._2sYIghGVXJr6tsQVvcryy8 div._29uten9Yy8q-n7woDEOXVF
+{
+	height: 26px !important;
+	line-height: 26px !important;
+	color: rgb(var(--adw-sidebar-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-gamelist-section-size) !important;
+	font-weight: var(--adw-text-gamelist-section-weight) !important;
+	letter-spacing: normal !important;
+	text-transform: none !important;
+}
+
+body.DesktopUI div[class*="gamelistsectionheader_Container_"] div[class*="gamelistsectionheader_SectionCount_"],
+body.DesktopUI div._2sYIghGVXJr6tsQVvcryy8 div._29uten9Yy8q-n7woDEOXVF
+{
+	color: rgba(var(--adw-sidebar-fg-rgb), var(--adw-dim-label-opacity)) !important;
+	font-weight: var(--adw-text-gamelist-weight) !important;
+}
+
+body.DesktopUI div[class*="gamelistentry_GameListEntryContainer_"],
+body.DesktopUI div._1vO6BoiVslZgs1kqDGdUs8,
+body.DesktopUI div[class*="gamelistsectionheader_Container_"],
+body.DesktopUI div._2sYIghGVXJr6tsQVvcryy8
+{
+	border: none !important;
+	padding: 0 6px !important;
+	background: none !important;
+	box-shadow: none !important;
+}
+
+body.DesktopUI div[class*="gamelistsectionheader_Container_"] > div[class*="gamelistsectionheader_SectionHeaderContent_"],
+body.DesktopUI div._2sYIghGVXJr6tsQVvcryy8 > div._3cV3O8FnPQqpJO5kIMUlLX
+{
+	padding: 0 !important;
+}
+
+body.DesktopUI div[class*="gamelist_Container_"] div.ReactVirtualized__Grid,
+body.DesktopUI div._1ijTaXJJA5YWl_fW2IxcaT div.ReactVirtualized__Grid
+{
+	padding: 6px 0 !important;
+	overflow: overlay !important;
+}
+
+body.DesktopUI div[class*="gamelist_Container_"] div.ReactVirtualized__Grid__innerScrollContainer > div,
+body.DesktopUI div._1ijTaXJJA5YWl_fW2IxcaT div.ReactVirtualized__Grid__innerScrollContainer > div
+{
+	max-width: 100% !important;
+}
+
+body.DesktopUI div[class*="gamelist_Container_"] div.ReactVirtualized__Grid__innerScrollContainer > div:hover,
+body.DesktopUI div._1ijTaXJJA5YWl_fW2IxcaT div.ReactVirtualized__Grid__innerScrollContainer > div:hover
+{
+	max-width: fit-content !important;
+}
+
+body.DesktopUI div[class*="gamelistsectionheader_Container_"] div[class*="collapseicon_Container_"],
+body.DesktopUI div._2sYIghGVXJr6tsQVvcryy8 div._3SFRZYIb9Y2q7YsVtB3YKb,
+body.DesktopUI div[class*="gamelistentry_GameListEntryContainer_"] > div[class*="gamelistentry_GameIcon_"],
+body.DesktopUI div._1vO6BoiVslZgs1kqDGdUs8 > div.ga1hyw11cdBVodrCAidPF,
+body.DesktopUI div[class*="gamelistentry_GameListEntryContainer_"] > div[class*="gamelistentry_AppIconDownloading_"],
+body.DesktopUI div._1vO6BoiVslZgs1kqDGdUs8 > div._2kzMb_F7UTOEdecAFftN-l
+{
+	padding: 0 !important;
+	margin: 3px 6px 3px 0 !important;
+	width: 20px !important;
+	height: 20px !important;
+	border-radius: var(--adw-gameicon-radius) !important;
+	overflow: hidden !important;
+}
+
+body.DesktopUI div[class*="gamelistentry_GameListEntryContainer_"] > div[class*="gamelistentry_AppIconDownloading_"],
+body.DesktopUI div._1vO6BoiVslZgs1kqDGdUs8 > div._2kzMb_F7UTOEdecAFftN-l
+{
+	border-radius: 50% !important;
+}
+
+body.DesktopUI div[class*="gamelistentry_GameListEntryContainer_"] > div[class*="gamelistentry_AppIconDownloading_"] > div[class*="gamelistentry_GameIcon_"],
+body.DesktopUI div._1vO6BoiVslZgs1kqDGdUs8 > div._2kzMb_F7UTOEdecAFftN-l > div.ga1hyw11cdBVodrCAidPF
+{
+	margin: 0 !important;
+}
+
+body.DesktopUI div[class*="gamelistentry_GameListEntryContainer_"] > div[class*="gamelistentry_AppIconDownloading_"] > svg[class*="gamelistentry_DownloadProgressSVG_"],
+body.DesktopUI div._1vO6BoiVslZgs1kqDGdUs8 > div._2kzMb_F7UTOEdecAFftN-l > svg.f6-7-5CWFxNqF2BycKWlb
+{
+	width: 20px !important;
+	height: 20px !important;
+	margin: 0 !important;
+}
+
+body.DesktopUI div[class*="gamelistentry_GameListEntryContainer_"] > div[class*="gamelistentry_AppIconDownloading_"] > svg[class*="gamelistentry_DownloadProgressSVG_"] > circle,
+body.DesktopUI div._1vO6BoiVslZgs1kqDGdUs8 > div._2kzMb_F7UTOEdecAFftN-l > svg.f6-7-5CWFxNqF2BycKWlb > circle
+{
+	stroke: rgb(var(--adw-accent-rgb)) !important;
+	stroke-width: 40px !important;
+}
+
+body.DesktopUI div[class*="gamelistentry_GameListEntryContainer_"] > svg,
+body.DesktopUI div._1vO6BoiVslZgs1kqDGdUs8 > svg
+{
+	display: none !important;
+}
+
+body.DesktopUI div[class*="gamelistentry_GameListEntryContainer_"] > div[class*="gamelistentry_FriendIsPlaying_"],
+body.DesktopUI div._1vO6BoiVslZgs1kqDGdUs8 > div.cNZ3wORgnf1KSNhI2eE2M
+{
+	width: 16px !important;
+	height: 16px !important;
+	line-height: 16px !important;
+	position: absolute !important;
+	left: auto !important;
+	right: 10px !important;
+	top: 5px !important;
+	opacity: 0.5 !important;
+}
+
+body.DesktopUI div[class*="gamelistentry_GameListEntryContainer_"] > div[class*="gamelistentry_FriendIsPlaying_"] > svg *,
+body.DesktopUI div._1vO6BoiVslZgs1kqDGdUs8 > div.cNZ3wORgnf1KSNhI2eE2M > svg *
+{
+	fill: rgb(var(--adw-success-rgb)) !important;
+}
+
+body.DesktopUI div[class*="gamelistentry_GameListEntryContainer_"] > div[class*="gamelistentry_FriendIsPlaying_"]:hover,
+body.DesktopUI div._1vO6BoiVslZgs1kqDGdUs8 > div.cNZ3wORgnf1KSNhI2eE2M:hover
+{
+	opacity: 1 !important;
+}
+
+body.DesktopUI div[class*="gamelistentry_Uninstalled_"] div[class*="gamelistentry_GameIcon_"],
+body.DesktopUI div._5YTBr7WwIfzVU_3nUtAph div.ga1hyw11cdBVodrCAidPF
+{
+	filter: var(--adw-gameicon-uninstalled-filter) !important;
+}
+
+body.DesktopUI div[class*="gamelistsectionheader_Container_"] div[class*="collapseicon_Container_"] > svg,
+body.DesktopUI div._2sYIghGVXJr6tsQVvcryy8 div._3SFRZYIb9Y2q7YsVtB3YKb > svg
+{
+	width: 20px !important;
+	height: 20px !important;
+	margin: 0 !important;
+}
+
+body.DesktopUI div[class*="gamelistentry_Container_"]:hover,
+body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ:hover,
+body.DesktopUI div[class*="gamelistsectionheader_Container_"]:hover,
+body.DesktopUI div._2sYIghGVXJr6tsQVvcryy8:hover
+{
+	background: rgba(var(--adw-sidebar-fg-rgb), var(--adw-hover-opacity)) !important;
+	box-shadow: none !important;
+}
+
+body.DesktopUI div[class*="gamelistentry_Container_"]:active,
+body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ:active,
+body.DesktopUI div[class*="gamelistsectionheader_Container_"]:active,
+body.DesktopUI div._2sYIghGVXJr6tsQVvcryy8:active
+{
+	background: rgba(var(--adw-sidebar-fg-rgb), var(--adw-active-opacity)) !important;
+	box-shadow: none !important;
+}
+
+body.DesktopUI div[class*="gamelistsectionheader_Container_"][class*="gamelistsectionheader_Selected_"],
+body.DesktopUI div._2sYIghGVXJr6tsQVvcryy8.sXMOsx8OIRalBMxO9yFY5,
+body.DesktopUI div[class*="gamelistentry_Container_"][class*="gamelistentry_Selected_"],
+body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ._1UBpAXP408Ez_L_mXhW5Q9,
+body.DesktopUI div._1UBpAXP408Ez_L_mXhW5Q9 > div._2-O4ZG0KrnSrzISHBKctFQ
+{
+	background: rgba(var(--adw-sidebar-fg-rgb), var(--adw-selected-opacity)) !important;
+	box-shadow: none !important;
+}
+
+body.DesktopUI div[class*="gamelistsectionheader_Container_"][class*="gamelistsectionheader_Selected_"]:hover,
+body.DesktopUI div._2sYIghGVXJr6tsQVvcryy8.sXMOsx8OIRalBMxO9yFY5:hover,
+body.DesktopUI div[class*="gamelistentry_Container_"][class*="gamelistentry_Selected_"]:hover,
+body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ._1UBpAXP408Ez_L_mXhW5Q9:hover,
+body.DesktopUI div._1UBpAXP408Ez_L_mXhW5Q9 > div._2-O4ZG0KrnSrzISHBKctFQ:hover
+{
+	background: rgba(var(--adw-sidebar-fg-rgb), var(--adw-selected-hover-opacity)) !important;
+	box-shadow: none !important;
+}
+
+body.DesktopUI div[class*="gamelistsectionheader_Container_"][class*="gamelistsectionheader_Selected_"]:active,
+body.DesktopUI div._2sYIghGVXJr6tsQVvcryy8.sXMOsx8OIRalBMxO9yFY5:active,
+body.DesktopUI div[class*="gamelistentry_Container_"][class*="gamelistentry_Selected_"]:active,
+body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ._1UBpAXP408Ez_L_mXhW5Q9:active,
+body.DesktopUI div._1UBpAXP408Ez_L_mXhW5Q9 > div._2-O4ZG0KrnSrzISHBKctFQ:active
+{
+	background: rgba(var(--adw-sidebar-fg-rgb), var(--adw-selected-active-opacity)) !important;
+	box-shadow: none !important;
+}
+
+body.DesktopUI div[class*="gamelistsectionheader_Container_"][class*="gamelistsectionheader_HasContextMenuOpen_"],
+body.DesktopUI div._2sYIghGVXJr6tsQVvcryy8._1dcGFHhye9BeEOg7CkFNQG,
+body.DesktopUI div[class*="gamelistentry_Container_"][class*="gamelistentry_HasContextMenuOpen_"],
+body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ._3km84Vscc0uS91f0RN_30C
+{
+	background: rgba(var(--adw-sidebar-fg-rgb), var(--adw-selected-active-opacity)) !important;
+	box-shadow: var(--adw-focus-border-thin) !important;
+}
+
+body.DesktopUI div[class*="hoverposition_HoverPositionOuter_"] div[class*="gamelistentry_HoverOverlay_"],
+body.DesktopUI div.EUN4GPmCCaj1QX2Yy9CVb div._3cMVyOc-9F9Jvp3uKF7_xj
+{
+	background-color: rgb(var(--adw-sidebar-bg-rgb)) !important;
+	background-image: linear-gradient(0deg, rgba(var(--adw-sidebar-fg-rgb), var(--adw-hover-opacity)), rgba(var(--adw-sidebar-fg-rgb), var(--adw-hover-opacity))) !important;
+	border-radius: var(--adw-button-radius) !important;
+}
+
+body.DesktopUI div[class*="gamelistentry_Container_"]:not([class*="gamelistentry_HoverOverlay_"]) > div[class*="gamelistentry_GameListEntryContainer_"],
+body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ:not(._3cMVyOc-9F9Jvp3uKF7_xj) > div._1vO6BoiVslZgs1kqDGdUs8
+{
+	-webkit-mask-image: linear-gradient(to left, transparent, black 16px) !important;
+}
+
+body.DesktopUI div[class*="hoverposition_HoverPositionOuter_"] div[class*="gamelistentry_HoverOverlay_"][class*="gamelistentry_Selected_"],
+body.DesktopUI div.EUN4GPmCCaj1QX2Yy9CVb div._3cMVyOc-9F9Jvp3uKF7_xj._1UBpAXP408Ez_L_mXhW5Q9
+{
+	background-image: linear-gradient(0deg, rgba(var(--adw-sidebar-fg-rgb), var(--adw-selected-hover-opacity)), rgba(var(--adw-sidebar-fg-rgb), var(--adw-selected-hover-opacity))) !important;
+}
+
+/** Remove unneeded inner backgrounds */
+body.DesktopUI div[class*="gamelistentry_Container_"] *,
+body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ *,
+body.DesktopUI div[class*="gamelistentry_Container_"] *:hover,
+body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ *:hover,
+body.DesktopUI div[class*="gamelistentry_Container_"] *:active,
+body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ *:active
+{
+	background: none !important;
+}
+
+/* Drag & Drop */
+body.DesktopUI div[class*="gamelistsectionheader_Container_"][class*="gamelistsectionheader_DropOption_"]:not([class*="gamelistsectionheader_SingleLine_"]),
+body.DesktopUI div._2sYIghGVXJr6tsQVvcryy8._2iS5rrpqHApjSzVZBrJuab:not(._1u3dMjGnp9Hs5DrFMRFHtH)
+{
+	border-bottom-left-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+}
+
+body.DesktopUI div[class*="gamelistentry_Container_"][class*="gamelistentry_DropOption_"],
+body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ._3WdXWyhLHLmRV1y0koSG9I
+{
+	border-radius: 0 !important;
+}
+
+body.DesktopUI div[class*="gamelistentry_Container_"][class*="gamelistentry_DropOption_"][class*="gamelistentry_LastInCollection_"],
+body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ._3WdXWyhLHLmRV1y0koSG9I._1VBNpnuk5eWT3VSCWNH57k
+{
+	border-bottom-left-radius: var(--adw-button-radius) !important;
+	border-bottom-right-radius: var(--adw-button-radius) !important;
+}
+
+body.DesktopUI div[class*="gamelistsectionheader_Container_"][class*="gamelistsectionheader_DropOption_"]::before,
+body.DesktopUI div._2sYIghGVXJr6tsQVvcryy8._2iS5rrpqHApjSzVZBrJuab::before,
+body.DesktopUI div[class*="gamelistentry_Container_"][class*="gamelistentry_DropOption_"]::before,
+body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ._3WdXWyhLHLmRV1y0koSG9I::before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	border-radius: inherit;
+	border: 1px rgba(var(--adw-accent-rgb), var(--adw-focus-border-opacity)) dashed;
+}
+
+body.DesktopUI div[class*="gamelistsectionheader_Container_"][class*="gamelistsectionheader_DropOption_"]:not([class*="gamelistsectionheader_SingleLine_"])::before,
+body.DesktopUI div._2sYIghGVXJr6tsQVvcryy8._2iS5rrpqHApjSzVZBrJuab:not(._1u3dMjGnp9Hs5DrFMRFHtH)::before
+{
+	border-bottom-width: 0 !important;
+}
+
+body.DesktopUI div[class*="gamelistentry_Container_"][class*="gamelistentry_DropOption_"]::before,
+body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ._3WdXWyhLHLmRV1y0koSG9I::before
+{
+	border-top-width: 0 !important;
+	border-bottom-width: 0 !important;
+}
+
+body.DesktopUI div[class*="gamelistentry_Container_"][class*="gamelistentry_DropOption_"][class*="gamelistentry_LastInCollection_"]::before,
+body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ._3WdXWyhLHLmRV1y0koSG9I._1VBNpnuk5eWT3VSCWNH57k::before
+{
+	border-bottom-width: 1px !important;
+}
+
+body.DesktopUI div[class*="gamelistsectionheader_Container_"][class*="gamelistsectionheader_DropOption_"][class*="gamelistsectionheader_DropTarget_"],
+body.DesktopUI div._2sYIghGVXJr6tsQVvcryy8._2iS5rrpqHApjSzVZBrJuab._3zHMJ5G47DFRWd_Mld_lU2
+{
+	background: rgba(var(--adw-sidebar-fg-rgb), var(--adw-hover-opacity)) !important;
+}
+
+body.DesktopUI div[class*="gamelistentry_Container_"][class*="gamelistentry_DropOption_"][class*="gamelistentry_DropTarget_"],
+body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ._3WdXWyhLHLmRV1y0koSG9I._1m8McNxY74W6zXfUn8Bq81
+{
+	background: rgba(var(--adw-sidebar-fg-rgb), var(--adw-hover-opacity)) !important;
+}
+
+body.DesktopUI div[class*="gamelistsectionheader_Container_"][class*="gamelistsectionheader_DropOption_"][class*="gamelistsectionheader_DropTarget_"]::before,
+body.DesktopUI div._2sYIghGVXJr6tsQVvcryy8._2iS5rrpqHApjSzVZBrJuab._3zHMJ5G47DFRWd_Mld_lU2::before,
+body.DesktopUI div[class*="gamelistentry_Container_"][class*="gamelistentry_DropOption_"][class*="gamelistentry_DropTarget_"]::before,
+body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ._3WdXWyhLHLmRV1y0koSG9I._1m8McNxY74W6zXfUn8Bq81::before
+{
+	border-style: solid;
+}

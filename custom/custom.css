@@ -5,19 +5,7 @@
 /* --- EXAMPLE: Override Theme Colors --- */
 :root
 {
-	--accent: #81a2be;
-	--accent_bg: #81a2be;
-	--accent_disabled: #81a2be80;
-	--accent_hover_bg: #81a2be12;
-	--accent_active_bg: #81a2be29;
-	--focusring: #81a2be80;
+	--adw-accent-bg-rgb: 53, 132, 228;
+	--adw-accent-fg-rgb: 255, 255, 255;
+	--adw-accent-rgb: 120, 174, 237;
 }
-
-/* --- EXAMPLE: Hide Whats New --- */
-/* -- DELETE BOTH LINES TO ENABLE
-#SteamDesktop .library_Container_3xRRJ div[class*="libraryhome_UpdatesContainer_"]
-{
-	display: none !important;
-}
--- DELETE BOTH LINES TO ENABLE */
-

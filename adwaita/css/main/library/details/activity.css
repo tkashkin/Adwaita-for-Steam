@@ -1,0 +1,886 @@
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsspotlight_ReviewContainer_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3LE-6w1ItIAB4CKJFCa3Od
+{
+	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-opacity)) !important;
+	border-radius: var(--adw-card-radius) !important;
+	box-shadow: var(--adw-card-shadow) !important;
+	border: none !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsspotlight_ReviewContainer_"] div[class*="appdetailsspotlight_Inner_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3LE-6w1ItIAB4CKJFCa3Od div._2z8Na_s9JosX48wHF4HPiA
+{
+	width: auto !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_AppActivityDay_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.S2Fu9HxHCA5MaCLGrN2ib
+{
+	padding: 0 !important;
+	border: none !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_AppActivityDay_"] > div[class*="appactivityday_AppActivityDate_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.S2Fu9HxHCA5MaCLGrN2ib > div._19LfMT7PFWg2xHOqNjR99q
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	line-height: var(--adw-list-header-height) !important;
+	text-transform: none !important;
+	letter-spacing: normal !important;
+	font-size: var(--adw-list-header-size) !important;
+	font-weight: var(--adw-list-header-weight) !important;
+	min-height: var(--adw-list-header-height) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_AppActivityDay_"] > div[class*="appactivityday_AppActivityDate_"] > div[class*="appactivityday_Rule_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.S2Fu9HxHCA5MaCLGrN2ib > div._19LfMT7PFWg2xHOqNjR99q > div._3pcPRPvuGH7hEM33zLknZO
+{
+	display: none !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5
+{
+	background: none !important;
+	box-shadow: none !important;
+	border: none !important;
+	cursor: default !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div.Panel > div[class*="appactivityday_Event_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.Panel > div.UVeN0kaD3zv1feMj_mMw5,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel
+{
+	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-opacity)) !important;
+	border-radius: 0 !important;
+	box-shadow: var(--adw-card-shadow) !important;
+	border: none !important;
+	transition: var(--adw-button-transition) !important;
+	cursor: default !important;
+	margin-bottom: 1px !important;
+	position: relative !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div.Panel > div[class*="appactivityday_Event_"]:hover,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.Panel > div.UVeN0kaD3zv1feMj_mMw5:hover,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel:hover,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel:hover
+{
+	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-hover-opacity)) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div.Panel > div[class*="appactivityday_Event_"]:active,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.Panel > div.UVeN0kaD3zv1feMj_mMw5:active,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel:active,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel:active
+{
+	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-active-opacity)) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div.Panel:first-child > div[class*="appactivityday_Event_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.Panel:first-child > div.UVeN0kaD3zv1feMj_mMw5,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel:first-child,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel:first-child
+{
+	border-top-left-radius: var(--adw-card-radius) !important;
+	border-top-right-radius: var(--adw-card-radius) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div.Panel:last-child > div[class*="appactivityday_Event_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.Panel:last-child > div.UVeN0kaD3zv1feMj_mMw5,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel:last-child,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel:last-child
+{
+	border-bottom-left-radius: var(--adw-card-radius) !important;
+	border-bottom-right-radius: var(--adw-card-radius) !important;
+}
+
+body.DesktopUI div[class*="appdetailshover_AppDetailsHover_"],
+body.DesktopUI div._38FqIwZQKW6BlRyzN66pi6,
+body.DesktopUI div[class*="appdetailshover_Background_"],
+body.DesktopUI div.rYBZBWnNW6m-N9vX0Chce
+{
+	border-radius: var(--adw-card-radius) !important;
+}
+
+/* Partner events */
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeUpdate_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._39Zk32AvV5cr6g-83IVRVS,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventFeatured_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3xi-HLpFVHaakihoqhQ_6C
+{
+	box-shadow: none !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventTypeUpdate_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._29bW1yCn25VTm4bFameBaV
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	text-shadow: none !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] img[class*="appactivityday_Blur_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA img._3cX_vEKsN9S9EmR0O5w1Ol
+{
+	display: none;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventMediumImage_Title_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._1gljEIuhbsQpFCWuVhdKTJ,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeImage_Title_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3fsjzvni7TQ1NphLHM_5r3,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventTextOnly_Title_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._1Cva_kor3lWBIoeu9cQxJq,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventType_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._1ujzuoxGhLunHZQqHAqRgg,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventType_"] > div,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._1ujzuoxGhLunHZQqHAqRgg > div,
+body.DesktopUI div[class*="appdetails_Container_"] span[class*="appactivityday_PartnerEventTextOnly_Summary_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA span._3ZUP3RJr6PRn6IzODoxZDx,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventMediumImage_Summary_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.Ru7OBQzSxqIo3jIsbtV9g,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeImage_Summary_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3zwBRDW1egliiT4pKYIXap
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-row-title-size) !important;
+	font-weight: var(--adw-text-row-title-weight) !important;
+	text-shadow: none !important;
+	text-transform: none !important;
+	line-height: normal !important;
+	letter-spacing: normal !important;
+	display: -webkit-box !important;
+	-webkit-box-orient: vertical !important;
+	overflow: hidden !important;
+	text-overflow: ellipsis !important;
+	-webkit-line-clamp: 1 !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventType_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._1ujzuoxGhLunHZQqHAqRgg,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventType_"] > div,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._1ujzuoxGhLunHZQqHAqRgg > div,
+body.DesktopUI div[class*="appdetails_Container_"] span[class*="appactivityday_PartnerEventTextOnly_Summary_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA span._3ZUP3RJr6PRn6IzODoxZDx
+{
+	color: rgba(var(--adw-window-fg-rgb), var(--adw-dim-label-opacity)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-row-subtitle-size) !important;
+	font-weight: var(--adw-text-row-subtitle-weight) !important;
+	display: inline-block !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventTextOnly_TextColumn_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.FZghxGxorZuq0dz2iUEhC,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventTextOnly_TextColumn_"] > div[class*="appactivityday_PartnerEventTextOnly_LimitedSummary_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.FZghxGxorZuq0dz2iUEhC > div._2OrhETq9wuxc0cGgVsmjm8
+{
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventTextOnly_Icon_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._1-llQnFWxBo1kyWdkDFyXp
+{
+	width: 32px !important;
+	height: 32px !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	flex-shrink: 0 !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventTextOnly_Icon_"] svg path,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._1-llQnFWxBo1kyWdkDFyXp svg path
+{
+	fill: rgba(var(--adw-window-fg-rgb), var(--adw-dim-label-opacity)) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventMediumImage_Contents_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2gv3EsHSu5dMQyMqaz-W9t,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeImage_Contents_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2tDv0EeJIdDmZLyfUE63t1
+{
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventMediumImage_Contents_"] > div[class*="appactivityday_MediumImageContainer_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2gv3EsHSu5dMQyMqaz-W9t > div.ddB5GVHCwLezhshXUMCNL,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeImage_Contents_"] > div[class*="appactivityday_ImageContainer_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2tDv0EeJIdDmZLyfUE63t1 > div._1XpBItdUymdlwPZzvvOnyW
+{
+	-webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)) !important;
+	overflow: hidden !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div.Panel:first-child > div[class*="appactivityday_Event_"] div[class*="appactivityday_PartnerEventMediumImage_Contents_"] > div[class*="appactivityday_MediumImageContainer_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.Panel:first-child > div.UVeN0kaD3zv1feMj_mMw5 div._2gv3EsHSu5dMQyMqaz-W9t > div.ddB5GVHCwLezhshXUMCNL,
+body.DesktopUI div[class*="appdetails_Container_"] div.Panel:first-child > div[class*="appactivityday_Event_"] div[class*="appactivityday_PartnerEventLargeImage_Contents_"] > div[class*="appactivityday_ImageContainer_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.Panel:first-child > div.UVeN0kaD3zv1feMj_mMw5 div._2tDv0EeJIdDmZLyfUE63t1 > div._1XpBItdUymdlwPZzvvOnyW
+{
+	border-top-right-radius: var(--adw-card-radius) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div.Panel:last-child > div[class*="appactivityday_Event_"] div[class*="appactivityday_PartnerEventMediumImage_Contents_"] > div[class*="appactivityday_MediumImageContainer_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.Panel:last-child > div.UVeN0kaD3zv1feMj_mMw5 div._2gv3EsHSu5dMQyMqaz-W9t > div.ddB5GVHCwLezhshXUMCNL,
+body.DesktopUI div[class*="appdetails_Container_"] div.Panel:last-child > div[class*="appactivityday_Event_"] div[class*="appactivityday_PartnerEventLargeImage_Contents_"] > div[class*="appactivityday_ImageContainer_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.Panel:last-child > div.UVeN0kaD3zv1feMj_mMw5 div._2tDv0EeJIdDmZLyfUE63t1 > div._1XpBItdUymdlwPZzvvOnyW
+{
+	border-bottom-right-radius: var(--adw-card-radius) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventMediumImage_Contents_"] > div[class*="appactivityday_MediumImageContainer_"]::after,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2gv3EsHSu5dMQyMqaz-W9t > div.ddB5GVHCwLezhshXUMCNL::after,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeImage_Contents_"] > div[class*="appactivityday_ImageContainer_"]::after,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2tDv0EeJIdDmZLyfUE63t1 > div._1XpBItdUymdlwPZzvvOnyW::after
+{
+	content: "";
+	display: block;
+	border-radius: inherit;
+	box-shadow: inset 0 0 0 1px rgba(var(--adw-card-fg-rgb), var(--adw-border-opacity));
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventMediumImage_Contents_"] > div[class*="appactivityday_MediumImageContainer_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2gv3EsHSu5dMQyMqaz-W9t > div.ddB5GVHCwLezhshXUMCNL,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeImage_Contents_"] > div[class*="appactivityday_ImageContainer_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2tDv0EeJIdDmZLyfUE63t1 > div._1XpBItdUymdlwPZzvvOnyW,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventMediumImage_Contents_"] > div[class*="appactivityday_MediumImageContainer_"] > img,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2gv3EsHSu5dMQyMqaz-W9t > div.ddB5GVHCwLezhshXUMCNL > img,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeImage_Contents_"] > div[class*="appactivityday_ImageContainer_"] > img,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2tDv0EeJIdDmZLyfUE63t1 > div._1XpBItdUymdlwPZzvvOnyW > img
+{
+	padding: 0 !important;
+	margin: 0 !important;
+	width: 250px !important;
+	min-width: 250px !important;
+	max-width: 250px !important;
+	height: auto !important;
+	min-height: initial !important;
+	max-height: initial !important;
+	flex: initial !important;
+	align-self: stretch !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventMediumImage_Contents_"] > div[class*="appactivityday_MediumImageContainer_"] > img,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2gv3EsHSu5dMQyMqaz-W9t > div.ddB5GVHCwLezhshXUMCNL > img,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeImage_Contents_"] > div[class*="appactivityday_ImageContainer_"] > img,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2tDv0EeJIdDmZLyfUE63t1 > div._1XpBItdUymdlwPZzvvOnyW > img
+{
+	filter: opacity(0.7) saturate(0.7) !important;
+	transition: filter 200ms !important;
+	position: absolute !important;
+	right: 0 !important;
+	top: 50% !important;
+	transform: translateY(-50%) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventMediumImage_Container_"]:hover div[class*="appactivityday_PartnerEventMediumImage_Contents_"] > div[class*="appactivityday_MediumImageContainer_"] > img,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._1HZy7BvOZuPT8feUwadL4W:hover div._2gv3EsHSu5dMQyMqaz-W9t > div.ddB5GVHCwLezhshXUMCNL > img,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeImage_Container_"]:hover div[class*="appactivityday_PartnerEventLargeImage_Contents_"] > div[class*="appactivityday_ImageContainer_"] > img,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.LibriMVXcLl1HB60ZUp78:hover div._2tDv0EeJIdDmZLyfUE63t1 > div._1XpBItdUymdlwPZzvvOnyW > img
+{
+	filter: opacity(1) saturate(1) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventTextOnly_Container_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._1wJJQwnV-ssGrL0xveFujy
+{
+	padding: 2px 12px !important;
+	min-height: var(--adw-row-height) !important;
+	gap: 12px !important;
+	align-items: center !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventMediumImage_Contents_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2gv3EsHSu5dMQyMqaz-W9t,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeImage_Contents_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2tDv0EeJIdDmZLyfUE63t1
+{
+	flex-direction: row-reverse !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventMediumImage_Contents_"]::after,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2gv3EsHSu5dMQyMqaz-W9t::after,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeImage_Contents_"]::after,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2tDv0EeJIdDmZLyfUE63t1::after
+{
+	background-color: rgba(var(--adw-headerbar-fg-rgb), var(--adw-dim-label-opacity));
+	content: "";
+	display: block;
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	left: 12px;
+	align-self: center;
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	-webkit-mask-size: 32px;
+	-webkit-mask-image: var(--adw-icon-update);
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventFeatured_"] div[class*="appactivityday_PartnerEventMediumImage_Contents_"]::after,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3xi-HLpFVHaakihoqhQ_6C div._2gv3EsHSu5dMQyMqaz-W9t::after,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventFeatured_"] div[class*="appactivityday_PartnerEventLargeImage_Contents_"]::after,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3xi-HLpFVHaakihoqhQ_6C div._2tDv0EeJIdDmZLyfUE63t1::after
+{
+	background-color: rgb(var(--adw-accent-rgb));
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] [class*="appactivityday_PartnerEventFeaturedHeader_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA ._1WdC0YUP8FT0dYWZ-QIVZL
+{
+	position: absolute !important;
+	right: 0 !important;
+	z-index: 1 !important;
+	pointer-events: none !important;
+	padding: 6px 12px !important;
+	background: rgb(var(--adw-accent-bg-rgb)) !important;
+	color: rgb(var(--adw-accent-fg-rgb)) !important;
+	box-shadow: var(--adw-card-shadow) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-header-size) !important;
+	font-weight: var(--adw-text-header-weight) !important;
+	text-transform: none !important;
+	line-height: normal !important;
+	letter-spacing: normal !important;
+	border-top-right-radius: var(--adw-card-radius) !important;
+	border-bottom-left-radius: var(--adw-button-radius) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventMediumImage_TextColumn_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3dJ4Bq6Msivz5-UIHzSEQu,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeImage_TextColumn_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2HzKE96Sc4z6KHN68gr4DS
+{
+	padding: 6px 0 6px 56px !important;
+	margin: 0 !important;
+	margin-right: -12px !important;
+	flex-grow: 1 !important;
+	height: fit-content !important;
+	max-height: 140px !important;
+	box-sizing: border-box !important;
+	align-self: center !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventMediumImage_Title_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._1gljEIuhbsQpFCWuVhdKTJ,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeImage_Title_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3fsjzvni7TQ1NphLHM_5r3
+{
+	font-size: var(--adw-text-title1-size) !important;
+	font-weight: var(--adw-text-title1-weight) !important;
+	-webkit-line-clamp: 3 !important;
+	flex-shrink: 0 !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventMediumImage_Summary_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.Ru7OBQzSxqIo3jIsbtV9g,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeImage_Summary_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3zwBRDW1egliiT4pKYIXap
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-weight: var(--adw-text-base-weight) !important;
+	padding: 6px 0 !important;
+	-webkit-line-clamp: 3 !important;
+	flex-shrink: 1 !important;
+}
+
+/* User events */
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel
+{
+	display: flex !important;
+	flex-direction: row !important;
+	min-height: var(--adw-row-height) !important;
+	box-sizing: border-box !important;
+	padding: 0 12px !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventHeadline_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.QCKBqF2k_sRLcXJ5qQIEl
+{
+	padding: 0 !important;
+	margin: 0 !important;
+	margin-right: 12px !important;
+	flex-shrink: 0 !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventHeadline_"] div[class*="appactivityday_EventActorAvatar_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.QCKBqF2k_sRLcXJ5qQIEl div._1gVy5n_zNp3tXpwU2aV9k8
+{
+	width: 32px !important;
+	height: 32px !important;
+	margin-right: 12px !important;
+	cursor: default !important;
+	z-index: 1 !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel span[class*="appactivityday_ActorName_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel span._1t1iyV4uBG9M9tTM7rCFNu,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel span[class*="appactivityday_ActorName_"] span,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel span._1t1iyV4uBG9M9tTM7rCFNu span,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel span[class*="appactivityday_SpanEvent_"] span[class*="appactivityday_HeadlineGameName_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel span._3Nxqyyt2ilotu5ci553y82 span.Gy1Y7lb4Y47vK8odzSru2,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel span[class*="appactivityday_SpanEvent_"] a[class*="appactivityday_WishlistLink_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel span._3Nxqyyt2ilotu5ci553y82 a._3698jU4IwAALpt9QeZPqqd
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-row-title-size) !important;
+	font-weight: var(--adw-text-link-weight) !important;
+	text-shadow: none !important;
+	text-transform: none !important;
+	line-height: normal !important;
+	letter-spacing: normal !important;
+	cursor: default !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel span[class*="appactivityday_ActorName_"].online,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel span._1t1iyV4uBG9M9tTM7rCFNu.online,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel span[class*="appactivityday_ActorName_"].online span,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel span._1t1iyV4uBG9M9tTM7rCFNu.online span
+{
+	color: rgb(var(--adw-accent-rgb)) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel span[class*="appactivityday_ActorName_"].ingame,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel span._1t1iyV4uBG9M9tTM7rCFNu.ingame,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel span[class*="appactivityday_ActorName_"].ingame span,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel span._1t1iyV4uBG9M9tTM7rCFNu.ingame span
+{
+	color: rgb(var(--adw-success-rgb)) !important;
+}
+
+/* User events - fill the whole row with the profile link to catch clicks */
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel span[class*="appactivityday_ActorName_"]::before,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel span._1t1iyV4uBG9M9tTM7rCFNu::before
+{
+	content: "";
+	position: absolute;
+	z-index: 0;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+
+/* Position clickable elements above the profile link */
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel span[class*="appactivityday_SpanEvent_"] a[class*="appactivityday_WishlistLink_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel span._3Nxqyyt2ilotu5ci553y82 a._3698jU4IwAALpt9QeZPqqd,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] div[class*="appdetailsachievementssection_RemainderContainer_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div.yJLy7HDLJT44C1fcm6lPI div.lZ2c49vTWJ60klQOY9l2K,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_BadgeSection_"] img[class*="appactivityday_Badge_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3G7i5g23e7CREVJMvy-uuM img._1zopSLK5O_2X44s_Xy3IO-
+{
+	position: relative !important;
+	z-index: 2 !important;
+	cursor: default !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel span[class*="appactivityday_SpanEvent_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel span._3Nxqyyt2ilotu5ci553y82,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] div[class*="appdetailsachievementssection_RemainderText_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div.yJLy7HDLJT44C1fcm6lPI div._1-H7tKj_QcGHLUbx5wVsGg,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel span[class*="appactivityday_SpanEvent_"] a[class*="appactivityday_WishlistLink_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel span._3Nxqyyt2ilotu5ci553y82 a._3698jU4IwAALpt9QeZPqqd
+{
+	background: none !important;
+	box-shadow: none !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	flex-grow: 1 !important;
+	height: fit-content !important;
+	align-items: center !important;
+	align-self: center !important;
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-row-title-size) !important;
+	font-weight: var(--adw-text-row-title-weight) !important;
+	text-shadow: none !important;
+	text-transform: none !important;
+	letter-spacing: normal !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel span[class*="appactivityday_SpanEvent_"] span[class*="appactivityday_HeadlineGameName_"] div[class*="appactivityday_GameIcon_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel span._3Nxqyyt2ilotu5ci553y82 span.Gy1Y7lb4Y47vK8odzSru2 div._2B8T_uqbddQRWQ2z4FjgPW
+{
+	border-radius: var(--adw-gameicon-radius) !important;
+	margin-top: -4px !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div.yJLy7HDLJT44C1fcm6lPI,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_TradingCardSection_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._2IS7ZQo16varVLcyuFh4sY,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_BadgeSection_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3G7i5g23e7CREVJMvy-uuM,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6
+{
+	padding: 0 !important;
+	margin: 0 !important;
+	display: flex !important;
+	flex-direction: row !important;
+	gap: 6px !important;
+	flex-wrap: nowrap !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] div[class*="appdetailsachievementssection_AchievementHoverContainer_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div.yJLy7HDLJT44C1fcm6lPI div._2CK1m9x0gtA_oSAQa2FpS3,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] div[class*="achievementiconbase_AchievementIconWrapper_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div.yJLy7HDLJT44C1fcm6lPI div._373lENtPG9blrNsyXz0y_J,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] div[class*="appdetailsachievementssection_RemainderContainer_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div.yJLy7HDLJT44C1fcm6lPI div.lZ2c49vTWJ60klQOY9l2K,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] div[class*="appdetailsachievementssection_Remainder_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div.yJLy7HDLJT44C1fcm6lPI div._2gISWIeEzZ9PNuAzVuMaWd,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] div[class*="appdetailsachievementssection_RemainderText_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div.yJLy7HDLJT44C1fcm6lPI div._1-H7tKj_QcGHLUbx5wVsGg
+{
+	padding: 0 !important;
+	margin: 0 !important;
+	width: 40px !important;
+	height: 40px !important;
+	line-height: 40px !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] img[class*="achievementiconbase_Icon_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div.yJLy7HDLJT44C1fcm6lPI img._2bzHb-caO-Nm9nCFXRj7zq
+{
+	border-radius: var(--adw-gameicon-radius) !important;
+	box-sizing: border-box !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] img[class*="achievementiconbase_Icon_"]:not([class*="achievementiconbase_IconGlow_"]),
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div.yJLy7HDLJT44C1fcm6lPI img._2bzHb-caO-Nm9nCFXRj7zq:not(.tH67cztsTrD9IF2zpG8ep)
+{
+	box-shadow: none !important;
+	border: 1px rgba(var(--adw-card-fg-rgb), var(--adw-thin-border-opacity)) solid !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] div[class*="appdetailsachievementssection_TextSection_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div.yJLy7HDLJT44C1fcm6lPI div._1s_9cSxUjb4609MSH0EjWH
+{
+	display: none !important;
+	margin-left: 6px !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] div[class*="appdetailsachievementssection_TextSection_"] > div[class*="appdetailsachievementssection_Name_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div.yJLy7HDLJT44C1fcm6lPI div._1s_9cSxUjb4609MSH0EjWH > div._39Y01uSRcLiDg5DneTTR0m
+{
+	color: rgb(var(--adw-accent-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-row-title-size) !important;
+	font-weight: var(--adw-text-row-title-weight) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] div[class*="appdetailsachievementssection_TextSection_"] > div[class*="appdetailsachievementssection_Desc_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div.yJLy7HDLJT44C1fcm6lPI div._1s_9cSxUjb4609MSH0EjWH > div._2gLHbXukQBdrIKhqEYVvOe
+{
+	color: rgba(var(--adw-accent-fg-rgb), var(--adw-dim-label-opacity)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-row-subtitle-size) !important;
+	font-weight: var(--adw-text-row-subtitle-weight) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] > div[class*="appactivityday_PrimaryAchievement_"]:first-child:last-child,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div.yJLy7HDLJT44C1fcm6lPI > div._26QliGU0MSP6WN4r-RtI5q:first-child:last-child
+{
+	flex-grow: 1 !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] > div[class*="appactivityday_PrimaryAchievement_"]:first-child:last-child div[class*="appdetailsachievementssection_TextSection_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div.yJLy7HDLJT44C1fcm6lPI > div._26QliGU0MSP6WN4r-RtI5q:first-child:last-child div._1s_9cSxUjb4609MSH0EjWH
+{
+	display: flex !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] div[class*="appdetailsachievementssection_Remainder_"] div[class*="appactivityday_AchievementRemainder_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div.yJLy7HDLJT44C1fcm6lPI div._2gISWIeEzZ9PNuAzVuMaWd div.SfyYvxDpnz-oGXMDxtqEf
+{
+	display: none !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] div[class*="appdetailsachievementssection_RemainderText_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div.yJLy7HDLJT44C1fcm6lPI div._1-H7tKj_QcGHLUbx5wVsGg
+{
+	color: rgb(var(--adw-accent-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-row-title-size) !important;
+	font-weight: var(--adw-text-row-title-weight) !important;
+	text-shadow: none !important;
+	letter-spacing: normal !important;
+	background: rgba(0, 0, 0, var(--adw-dimmer-opacity)) !important;
+	border-radius: var(--adw-gameicon-radius) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_TradingCardSection_"] div[class*="appdetailstradingcardssection_Card_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._2IS7ZQo16varVLcyuFh4sY div._1WsOngnf2RD4f5N-38rPLZ
+{
+	margin: 0 !important;
+	min-width: 40px !important;
+	max-width: 40px !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_TradingCardSection_"] div[class*="appdetailstradingcardssection_Card_"]:hover,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._2IS7ZQo16varVLcyuFh4sY div._1WsOngnf2RD4f5N-38rPLZ:hover
+{
+	transform: scale(3) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_BadgeSection_"] img[class*="appactivityday_Badge_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3G7i5g23e7CREVJMvy-uuM img._1zopSLK5O_2X44s_Xy3IO-
+{
+	padding: 0 !important;
+	margin: 0 !important;
+	width: 40px !important;
+	height: 40px !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_BadgeSection_"] div[class*="appactivityday_BadgeName_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3G7i5g23e7CREVJMvy-uuM div.rmU5gSpGCyzzdzzL66_h
+{
+	color: rgb(var(--adw-accent-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-row-title-size) !important;
+	font-weight: var(--adw-text-row-title-weight) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_BadgeSection_"] div[class*="appactivityday_BadgeLevel_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3G7i5g23e7CREVJMvy-uuM div._1p820T7Fx7HLM4wdPqJd3Z
+{
+	color: rgba(var(--adw-accent-fg-rgb), var(--adw-dim-label-opacity)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-row-subtitle-size) !important;
+	font-weight: var(--adw-text-row-subtitle-weight) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6
+{
+	position: relative !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"] div[class*="pageablecontainer_PageClickContainer_"] > div,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div._3-h3X6yhzvZ_wk1lbCIWqb > div
+{
+	position: absolute !important;
+	z-index: 1 !important;
+	top: calc(50% - 17px) !important;
+	box-sizing: border-box !important;
+	width: 34px !important;
+	height: 34px !important;
+	padding: 9px !important;
+	margin: 0 !important;
+	background: var(--adw-button-osd-bg) !important;
+	color: var(--adw-button-osd-fg) !important;
+	border-radius: 50% !important;
+	cursor: default !important;
+	opacity: 1 !important;
+	transition: var(--adw-button-transition), opacity 200ms !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"] div[class*="pageablecontainer_PageClickContainer_"] > div:hover,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div._3-h3X6yhzvZ_wk1lbCIWqb > div:hover
+{
+	background: var(--adw-button-osd-bg-hover) !important;
+	color: var(--adw-button-osd-fg-hover) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"] div[class*="pageablecontainer_PageClickContainer_"] > div:active,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div._3-h3X6yhzvZ_wk1lbCIWqb > div:active
+{
+	background: var(--adw-button-osd-bg-active) !important;
+	color: var(--adw-button-osd-fg-active) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"] div[class*="pageablecontainer_PageClickContainer_"] > div > svg,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div._3-h3X6yhzvZ_wk1lbCIWqb > div > svg
+{
+	display: none !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"] div[class*="pageablecontainer_PageClickContainer_"] > div::before,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div._3-h3X6yhzvZ_wk1lbCIWqb > div::before
+{
+	background-color: currentColor;
+	content: "";
+	display: block;
+	width: 16px;
+	height: 16px;
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	-webkit-mask-size: 16px;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"] div[class*="pageablecontainer_PageClickContainer_"] > div[class*="pageablecontainer_PageLeft_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div._3-h3X6yhzvZ_wk1lbCIWqb > div._1TMDJB6ciSNtEh04B3SmF8
+{
+	left: 6px !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"] div[class*="pageablecontainer_PageClickContainer_"] > div[class*="pageablecontainer_PageLeft_"]::before,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div._3-h3X6yhzvZ_wk1lbCIWqb > div._1TMDJB6ciSNtEh04B3SmF8::before
+{
+	-webkit-mask-image: var(--adw-icon-nav-back);
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"] div[class*="pageablecontainer_PageClickContainer_"] > div[class*="pageablecontainer_PageRight_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div._3-h3X6yhzvZ_wk1lbCIWqb > div._2qGnLK2G3sqjtqVgYl6phc
+{
+	right: 6px !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"] div[class*="pageablecontainer_PageClickContainer_"] > div[class*="pageablecontainer_PageRight_"]::before,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div._3-h3X6yhzvZ_wk1lbCIWqb > div._2qGnLK2G3sqjtqVgYl6phc::before
+{
+	-webkit-mask-image: var(--adw-icon-nav-forward);
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"] div[class*="pageablecontainer_PageClickContainer_"] > div[class*="pageablecontainer_Disabled_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div._3-h3X6yhzvZ_wk1lbCIWqb > div._3llJG80O0k9arYB6_mqpPh
+{
+	opacity: 0 !important;
+	pointer-events: none !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6
+{
+	margin-right: -12px !important;
+	gap: 0 !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"] div[class*="pageablecontainer_PageableContainer_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div.tECphKl9rZXG_KesmwW5r
+{
+	width: 100% !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"] div[class*="pageablecontainer_PageableContainer_"] > div > div.Panel,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div.tECphKl9rZXG_KesmwW5r > div > div.Panel
+{
+	position: relative !important;
+	height: var(--adw-row-height) !important;
+	overflow: hidden !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"] div[class*="appactivityday_GameCarousel_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div.hKjQXkKi-TGfnss_IhwkK
+{
+	-webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 24px, rgba(0, 0, 0, 1) calc(100% - 24px), rgba(0, 0, 0, 0)) !important;
+	padding: 0 24px !important;
+	margin: 0 !important;
+	position: absolute !important;
+	top: -21px !important;
+	left: -50% !important;
+	width: 200% !important;
+	transform: scale(0.5) !important;
+	overflow-x: auto !important;
+	overflow-y: hidden !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"] div[class*="appactivityday_GameCarousel_"]::-webkit-scrollbar,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div.hKjQXkKi-TGfnss_IhwkK::-webkit-scrollbar
+{
+	display: none !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"] div[class*="libraryassetimage_Container_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div._1R9r2OBCxAmtuUVrgBEUBw
+{
+	border: 1px rgba(var(--adw-window-fg-rgb), var(--adw-border-opacity)) solid !important;
+	border-radius: calc(var(--adw-button-radius) * 2) !important;
+	overflow: hidden; !important;
+}
+
+/* Rating bar - hidden for now */
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="comment_thread_RatingBar_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._1yWgPveQ73QeYCdLcs6oFQ
+{
+	display: none !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div.Panel > div[class*="appactivityday_Event_"] > div[class*="comment_thread_RatingBar_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.Panel > div.UVeN0kaD3zv1feMj_mMw5 > div._1yWgPveQ73QeYCdLcs6oFQ
+{
+	position: absolute !important;
+	bottom: 0 !important;
+	right: 0 !important;
+	opacity: 1 !important;
+	width: fit-content !important;
+	padding: 6px !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div.Panel > div[class*="appactivityday_Event_"] > div[class*="comment_thread_RatingBar_"] > div[class*="comment_thread_CanClick_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.Panel > div.UVeN0kaD3zv1feMj_mMw5 > div._1yWgPveQ73QeYCdLcs6oFQ > div._3Mds9UG-5yRsWUclIV_Y9q
+{
+	border-radius: var(--adw-button-radius) !important;
+	color: rgba(var(--adw-card-fg-rgb), var(--adw-dim-label-opacity)) !important;
+	background: transparent !important;
+	cursor: default !important;
+	padding: 2px 4px !important;
+	margin: 0 !important;
+	transition: var(--adw-button-transition) !important;
+	flex-direction: row-reverse !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div.Panel > div[class*="appactivityday_Event_"] > div[class*="comment_thread_RatingBar_"] > div[class*="comment_thread_CanClick_"] svg > *,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.Panel > div.UVeN0kaD3zv1feMj_mMw5 > div._1yWgPveQ73QeYCdLcs6oFQ > div._3Mds9UG-5yRsWUclIV_Y9q svg > *
+{
+	fill: rgba(var(--adw-card-fg-rgb), var(--adw-dim-label-opacity)) !important;
+	stroke: rgba(var(--adw-card-fg-rgb), var(--adw-dim-label-opacity)) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div.Panel > div[class*="appactivityday_Event_"] > div[class*="comment_thread_RatingBar_"] > div[class*="comment_thread_CanClick_"]:hover svg > *,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.Panel > div.UVeN0kaD3zv1feMj_mMw5 > div._1yWgPveQ73QeYCdLcs6oFQ > div._3Mds9UG-5yRsWUclIV_Y9q:hover svg > *
+{
+	fill: rgb(var(--adw-card-fg-rgb)) !important;
+	stroke: rgb(var(--adw-card-fg-rgb)) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div.Panel > div[class*="appactivityday_Event_"] > div[class*="comment_thread_RatingBar_"] > div[class*="comment_thread_CanClick_"]:hover,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.Panel > div.UVeN0kaD3zv1feMj_mMw5 > div._1yWgPveQ73QeYCdLcs6oFQ > div._3Mds9UG-5yRsWUclIV_Y9q:hover
+{
+	color: rgb(var(--adw-card-fg-rgb)) !important;
+	background: rgba(var(--adw-card-fg-rgb), var(--adw-hover-opacity)) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div.Panel > div[class*="appactivityday_Event_"] > div[class*="comment_thread_RatingBar_"] > div[class*="comment_thread_CanClick_"]:active,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.Panel > div.UVeN0kaD3zv1feMj_mMw5 > div._1yWgPveQ73QeYCdLcs6oFQ > div._3Mds9UG-5yRsWUclIV_Y9q:active
+{
+	background: rgba(var(--adw-card-fg-rgb), var(--adw-active-opacity)) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div.Panel > div[class*="appactivityday_Event_"] > div[class*="comment_thread_RatingBar_"] > div[class*="comment_thread_ButtonSpacer_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.Panel > div.UVeN0kaD3zv1feMj_mMw5 > div._1yWgPveQ73QeYCdLcs6oFQ > div._21jcwMWGCL3FILnsOf5I8W
+{
+	width: 4px !important;
+}
+
+/* Fetch more */
+body.DesktopUI div[class*="appdetails_Container_"] button[class*="appdetailsactivitysection_FetchMoreContainer_"]::before,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA button._39ZurKJQex6v69aXzvc_nj::before,
+body.DesktopUI div[class*="appdetails_Container_"] button[class*="appdetailsactivitysection_FetchMoreContainer_"]:active,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA button._39ZurKJQex6v69aXzvc_nj:active
+{
+	box-shadow: none !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] button[class*="appdetailsactivitysection_FetchMoreContainer_"].Disabled,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA button._39ZurKJQex6v69aXzvc_nj.Disabled
+{
+	background-color: rgba(var(--adw-window-fg-rgb), calc(var(--adw-button-bg-opacity) * var(--adw-disabled-opacity))) !important;
+	color: rgba(var(--adw-window-fg-rgb), var(--adw-disabled-opacity)) !important;
+}

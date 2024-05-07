@@ -1,0 +1,251 @@
+/* Navigation */
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="steamdesktop_SuperNavBar_"],
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._3Z3ohQ8-1NKnCZkbS6fvy
+{
+	-webkit-app-region: inherit !important;
+	position: relative !important;
+	box-sizing: border-box !important;
+	top: -46px !important;
+	height: 46px !important;
+	min-height: 46px !important;
+	padding: 0 !important;
+}
+
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="supernav_SuperNav_"],
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._2D64jIEK7wpUR_NlObDW76
+{
+	display: flex !important;
+	align-content: center !important;
+	justify-content: center !important;
+	box-sizing: border-box !important;
+	height: 46px !important;
+	gap: 3px !important;
+}
+
+/* Navigation button wrapper */
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="supernav_SuperNavMenu_"],
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._7AlhCx3XGzBeIrQaCneUD
+{
+	box-sizing: border-box !important;
+	height: 34px !important;
+	padding: 0 !important;
+}
+
+/* Back and Forward buttons */
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="supernav_SuperNav_"] svg[class*="supernav_Arrow_"],
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._2D64jIEK7wpUR_NlObDW76 svg._25lBLzuVeYAUG279up4xP8
+{
+	position: absolute !important;
+	top: 6px !important;
+	left: calc(var(--adw-windowcontrols-margin-left) + 6px) !important;
+	-webkit-app-region: no-drag;
+	cursor: default !important;
+	border-radius: var(--adw-button-radius) !important;
+	box-sizing: border-box !important;
+	width: 34px !important;
+	height: 34px !important;
+	padding: 9px !important;
+	transition: var(--adw-button-transition);
+	color: rgb(var(--adw-headerbar-fg-rgb)) !important;
+}
+
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="supernav_SuperNav_"] svg[class*="supernav_Arrow_"]:nth-child(2),
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._2D64jIEK7wpUR_NlObDW76 svg._25lBLzuVeYAUG279up4xP8:nth-child(2)
+{
+	left: calc(var(--adw-windowcontrols-margin-left) + 46px) !important;
+}
+
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="supernav_SuperNav_"] svg[class*="supernav_Arrow_"] > path,
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._2D64jIEK7wpUR_NlObDW76 svg._25lBLzuVeYAUG279up4xP8 > path
+{
+	d: var(--adw-icon-nav-forward-path) !important;
+}
+
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="supernav_SuperNav_"] svg[class*="supernav_Arrow_"][class*="supernav_Disabled_"],
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._2D64jIEK7wpUR_NlObDW76 svg._25lBLzuVeYAUG279up4xP8._2cO0HdvLEGAdhosLekWsmo
+{
+	filter: opacity(0.5) !important;
+}
+
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="supernav_SuperNav_"] svg[class*="supernav_Arrow_"]:not([class*="supernav_Disabled_"]):hover,
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._2D64jIEK7wpUR_NlObDW76 svg._25lBLzuVeYAUG279up4xP8:not(._2cO0HdvLEGAdhosLekWsmo):hover
+{
+	background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-hover-opacity)) !important;
+}
+
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="supernav_SuperNav_"] svg[class*="supernav_Arrow_"]:not([class*="supernav_Disabled_"]):active,
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._2D64jIEK7wpUR_NlObDW76 svg._25lBLzuVeYAUG279up4xP8:not(._2cO0HdvLEGAdhosLekWsmo):active
+{
+	background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-active-opacity)) !important;
+}
+
+/* Navigation menu buttons */
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="supernav_MenuButton_"],
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._19axKcqYRuaJ8vdYKYmtTQ
+{
+	-webkit-app-region: no-drag !important;
+	cursor: default !important;
+	border-radius: var(--adw-button-radius) !important;
+	color: rgb(var(--adw-headerbar-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-title3-size) !important;
+	font-weight: var(--adw-text-title3-weight) !important;
+	line-height: 24px !important;
+	overflow: hidden !important;
+	text-overflow: ellipsis !important;
+	text-transform: none !important;
+	transition: var(--adw-button-transition) !important;
+	white-space: nowrap !important;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	box-sizing: border-box !important;
+	width: 120px !important;
+	height: 34px !important;
+	padding: 12px 2px !important;
+	gap: 6px !important;
+}
+
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="supernav_MenuButton_"]:hover,
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._19axKcqYRuaJ8vdYKYmtTQ:hover,
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="supernav_SuperNavMenu_"][class*="menu_MenuOpen_"] div[class*="supernav_MenuButton_"],
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._7AlhCx3XGzBeIrQaCneUD._3rgV8pPmQvZC-01x9l-q-N div._19axKcqYRuaJ8vdYKYmtTQ
+{
+	background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-hover-opacity)) !important;
+}
+
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="supernav_MenuButton_"]:active,
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._19axKcqYRuaJ8vdYKYmtTQ:active
+{
+	background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-active-opacity)) !important;
+}
+
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="supernav_SuperNavMenu_"][class*="supernav_Selected_"]:not([class*="supernav_Disabled_"]) div[class*="supernav_MenuButton_"],
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._7AlhCx3XGzBeIrQaCneUD._1gqEjB5QsKT_NftD1dEsdZ:not(._2cO0HdvLEGAdhosLekWsmo) div._19axKcqYRuaJ8vdYKYmtTQ
+{
+	background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-selected-opacity)) !important;
+	text-shadow: none !important;
+}
+
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="supernav_SuperNavMenu_"][class*="supernav_Selected_"]:not([class*="supernav_Disabled_"]) div[class*="supernav_MenuButton_"]:hover,
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._7AlhCx3XGzBeIrQaCneUD._1gqEjB5QsKT_NftD1dEsdZ:not(._2cO0HdvLEGAdhosLekWsmo) div._19axKcqYRuaJ8vdYKYmtTQ:hover,
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="supernav_SuperNavMenu_"][class*="supernav_Selected_"][class*="menu_MenuOpen_"]:not([class*="supernav_Disabled_"]) div[class*="supernav_MenuButton_"],
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._7AlhCx3XGzBeIrQaCneUD._1gqEjB5QsKT_NftD1dEsdZ._3rgV8pPmQvZC-01x9l-q-N:not(._2cO0HdvLEGAdhosLekWsmo) div._19axKcqYRuaJ8vdYKYmtTQ
+{
+	background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-selected-hover-opacity)) !important;
+}
+
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="supernav_SuperNavMenu_"][class*="supernav_Selected_"]:not([class*="supernav_Disabled_"]) div[class*="supernav_MenuButton_"]:active,
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._7AlhCx3XGzBeIrQaCneUD._1gqEjB5QsKT_NftD1dEsdZ:not(._2cO0HdvLEGAdhosLekWsmo) div._19axKcqYRuaJ8vdYKYmtTQ:active
+{
+	background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-selected-active-opacity)) !important;
+}
+
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="supernav_SuperNavMenu_"][class*="supernav_Selected_"]:not([class*="supernav_Disabled_"]) div[class*="supernav_MenuButton_"]::after,
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._7AlhCx3XGzBeIrQaCneUD._1gqEjB5QsKT_NftD1dEsdZ:not(._2cO0HdvLEGAdhosLekWsmo) div._19axKcqYRuaJ8vdYKYmtTQ::after
+{
+	display: none !important;
+	background: none !important;
+	height: 0 !important;
+}
+
+/**
+ * Navigation Icon Hackery
+ * `~` selector is used instead of `:nth-child(n of <selector>)` because of outdated CEF
+ */
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="supernav_SuperNav_"] > div[class*="supernav_SuperNavMenu_"] > div::before,
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._2D64jIEK7wpUR_NlObDW76 > div._7AlhCx3XGzBeIrQaCneUD > div::before
+{
+	background-color: rgb(var(--adw-headerbar-fg-rgb));
+	content: "";
+	width: 16px;
+	height: 16px;
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	-webkit-mask-size: 16px;
+	-webkit-mask-image: var(--adw-icon-nav-store);
+}
+
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="supernav_SuperNav_"] > div[class*="supernav_SuperNavMenu_"] ~ div[class*="supernav_SuperNavMenu_"] > div::before,
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._2D64jIEK7wpUR_NlObDW76 > div._7AlhCx3XGzBeIrQaCneUD ~ div._7AlhCx3XGzBeIrQaCneUD > div::before
+{
+	-webkit-mask-image: var(--adw-icon-nav-library);
+}
+
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="supernav_SuperNav_"] > div[class*="supernav_SuperNavMenu_"] ~ div[class*="supernav_SuperNavMenu_"] ~ div[class*="supernav_SuperNavMenu_"] > div::before,
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._2D64jIEK7wpUR_NlObDW76 > div._7AlhCx3XGzBeIrQaCneUD ~ div._7AlhCx3XGzBeIrQaCneUD ~ div._7AlhCx3XGzBeIrQaCneUD > div::before
+{
+	-webkit-mask-image: var(--adw-icon-nav-community);
+}
+
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="supernav_SuperNav_"] > div[class*="supernav_SuperNavMenu_"] ~ div[class*="supernav_SuperNavMenu_"] ~ div[class*="supernav_SuperNavMenu_"] ~ div[class*="supernav_SuperNavMenu_"] > div::before,
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._2D64jIEK7wpUR_NlObDW76 > div._7AlhCx3XGzBeIrQaCneUD ~ div._7AlhCx3XGzBeIrQaCneUD ~ div._7AlhCx3XGzBeIrQaCneUD ~ div._7AlhCx3XGzBeIrQaCneUD > div::before
+{
+	-webkit-mask-image: var(--adw-icon-nav-profile);
+}
+
+/* Profile button text */
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="supernav_SuperNav_"] > div[class*="supernav_SuperNavMenu_"] ~ div[class*="supernav_SuperNavMenu_"] ~ div[class*="supernav_SuperNavMenu_"] ~ div[class*="supernav_SuperNavMenu_"] > div > span,
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._2D64jIEK7wpUR_NlObDW76 > div._7AlhCx3XGzBeIrQaCneUD ~ div._7AlhCx3XGzBeIrQaCneUD ~ div._7AlhCx3XGzBeIrQaCneUD ~ div._7AlhCx3XGzBeIrQaCneUD > div > span
+{
+	text-indent: -9999px !important;
+	line-height: 0 !important;
+}
+
+/* Profile button fake text */
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="supernav_SuperNav_"] > div[class*="supernav_SuperNavMenu_"] ~ div[class*="supernav_SuperNavMenu_"] ~ div[class*="supernav_SuperNavMenu_"] ~ div[class*="supernav_SuperNavMenu_"] > div > span::after,
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._2D64jIEK7wpUR_NlObDW76 > div._7AlhCx3XGzBeIrQaCneUD ~ div._7AlhCx3XGzBeIrQaCneUD ~ div._7AlhCx3XGzBeIrQaCneUD ~ div._7AlhCx3XGzBeIrQaCneUD > div > span::after
+{
+	content: var(--adw-string-nav-profile) !important;
+	text-indent: 0 !important;
+	display: block !important;
+	line-height: 24px !important;
+}
+
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="supernav_SuperNav_"] > div[class*="supernav_SuperNavMenu_"] ~ div[class*="supernav_SuperNavMenu_"] ~ div[class*="supernav_SuperNavMenu_"] ~ div[class*="supernav_SuperNavMenu_"] ~ div[class*="supernav_SuperNavMenu_"] > div::before,
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._2D64jIEK7wpUR_NlObDW76 > div._7AlhCx3XGzBeIrQaCneUD ~ div._7AlhCx3XGzBeIrQaCneUD ~ div._7AlhCx3XGzBeIrQaCneUD ~ div._7AlhCx3XGzBeIrQaCneUD ~ div._7AlhCx3XGzBeIrQaCneUD > div::before
+{
+	-webkit-mask-image: var(--adw-icon-nav-console);
+}
+
+/* Small window width - make buttons compact */
+@media (max-width: 1400px)
+{
+	/* Compact navigation button wrapper */
+	body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="supernav_SuperNavMenu_"],
+	body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._7AlhCx3XGzBeIrQaCneUD
+	{
+		height: 40px !important;
+	}
+
+	/* Compact navigation buttons */
+	body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="supernav_MenuButton_"],
+	body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._19axKcqYRuaJ8vdYKYmtTQ
+	{
+		flex-direction: column !important;
+		width: 90px !important;
+		height: 40px !important;
+		padding: 2px 0 !important;
+		gap: 2px !important;
+		font-size: 11px !important;
+		line-height: 14px !important;
+	}
+
+	/* Profile button fake text */
+	body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="supernav_SuperNav_"] > div[class*="supernav_SuperNavMenu_"] ~ div[class*="supernav_SuperNavMenu_"] ~ div[class*="supernav_SuperNavMenu_"] ~ div[class*="supernav_SuperNavMenu_"] > div > span::after,
+	body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._2D64jIEK7wpUR_NlObDW76 > div._7AlhCx3XGzBeIrQaCneUD ~ div._7AlhCx3XGzBeIrQaCneUD ~ div._7AlhCx3XGzBeIrQaCneUD ~ div._7AlhCx3XGzBeIrQaCneUD > div > span::after
+	{
+		line-height: 14px !important;
+	}
+}
+
+/* Smaller window width - hide console button if it's visible */
+@media (max-width: 1200px)
+{
+	body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="supernav_SuperNav_"] > div[class*="supernav_SuperNavMenu_"] ~ div[class*="supernav_SuperNavMenu_"] ~ div[class*="supernav_SuperNavMenu_"] ~ div[class*="supernav_SuperNavMenu_"] ~ div[class*="supernav_SuperNavMenu_"],
+	body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._2D64jIEK7wpUR_NlObDW76 > div._7AlhCx3XGzBeIrQaCneUD ~ div._7AlhCx3XGzBeIrQaCneUD ~ div._7AlhCx3XGzBeIrQaCneUD ~ div._7AlhCx3XGzBeIrQaCneUD ~ div._7AlhCx3XGzBeIrQaCneUD
+	{
+		display: none !important;
+	}
+}
+

@@ -1,0 +1,318 @@
+body.DesktopUI div[class*="steamdesktop_TopBar_"],
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo
+{
+	height: 46px !important;
+	min-height: 46px !important;
+	background: rgb(var(--adw-headerbar-bg-rgb)) !important;
+	box-shadow: none !important;
+	order: 1 !important;
+}
+
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="steamdesktop_TitleBar_"],
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._39oUCO1OuizVPwcnnv88no
+{
+	height: 46px !important;
+	min-height: 46px !important;
+}
+
+body.DesktopUI div[class*="steamdesktop_Wrapper_"],
+body.DesktopUI div._1ENHEsrSLcTRtPQFl1F-wL
+{
+	border: none !important;
+	background: rgb(var(--adw-window-bg-rgb)) !important;
+}
+
+body.DesktopUI div[class*="steamdesktop_Wrapper_"]::after,
+body.DesktopUI div._1ENHEsrSLcTRtPQFl1F-wL::after
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	pointer-events: none;
+	box-sizing: border-box;
+	border: 1px rgba(var(--adw-window-fg-rgb), var(--adw-window-outline-opacity)) solid;
+	z-index: 999;
+}
+
+/* Focus Bar */
+body.DesktopUI div[class*="steamdesktop_Wrapper_"] > div[class*="steamdesktop_FocusBar_"],
+body.DesktopUI div._1ENHEsrSLcTRtPQFl1F-wL > div._3pXasCUulX4jjqO79s4q_F
+{
+	background: none !important;
+}
+
+body.DesktopUI div[class*="steamdesktop_DragArea_"],
+body.DesktopUI div._30vB9DdsPK7VrZAbb5Q1Av
+{
+	-webkit-app-region: initial !important;
+}
+
+/* URL Bar placeholder - draw headerbar shadow instead */
+body.DesktopUI div[class*="steamdesktop_LocalContentContainer_"] > div[class*="steamdesktop_URLBarReplacement_"],
+body.DesktopUI div.RGNMWtyj73_-WdhflrmuY > div._2CmrnGY-Amtd83ScJkFvx2
+{
+	display: block !important;
+	position: absolute !important;
+	width: 100% !important;
+	height: 4px !important;
+	z-index: 999 !important;
+	pointer-events: none !important;
+	background: linear-gradient(to bottom, rgba(var(--adw-shade-rgb), calc(var(--adw-shade-a) * 0.75)), transparent 4px) !important;
+	box-shadow: inset 0 1px rgba(var(--adw-shade-rgb), calc(var(--adw-shade-a) * 0.75)) !important;
+}
+
+/* Can't draw shadow or anything else on top of the browser, draw a border instead. Offset browser by 1px on other sides to keep window outline visible */
+body.DesktopUI div[class*="steamdesktop_BrowserWrapper_"],
+body.DesktopUI div._1bGewp3tfzqAF6fVTFFUOz
+{
+	box-sizing: border-box !important;
+	border: 1px rgb(var(--adw-window-bg-rgb)) solid !important;
+	border-top: 1px rgba(var(--adw-headerbar-shade-rgb), var(--adw-headerbar-shade-a)) solid !important;
+	background: rgb(var(--adw-window-bg-rgb)) !important;
+}
+
+/* URL Bar (refresh button only) */
+body.DesktopUI div[class*="steamdesktop_BrowserWrapper_"] div[class*="steamdesktop_URLBar_"],
+body.DesktopUI div._1bGewp3tfzqAF6fVTFFUOz div.UkR3sY319PuaUNuUWks2K
+{
+	background: transparent !important;
+	box-shadow: none !important;
+	border: none !important;
+	padding: 0 !important;
+	position: absolute !important;
+	top: 6px !important;
+	left: calc(var(--adw-windowcontrols-margin-left) + 86px) !important;
+	width: 34px !important;
+	height: 34px !important;
+}
+
+body.DesktopUI div[class*="steamdesktop_BrowserWrapper_"] div[class*="steamdesktop_URLBar_"] div[class*="steamdesktop_ReloadButton_"],
+body.DesktopUI div._1bGewp3tfzqAF6fVTFFUOz div.UkR3sY319PuaUNuUWks2K div._3KaB94Jl4r0hFkthDPJy09
+{
+	-webkit-app-region: no-drag;
+	cursor: default !important;
+	border-radius: var(--adw-button-radius) !important;
+	box-sizing: border-box !important;
+	width: 34px !important;
+	height: 34px !important;
+	padding: 9px !important;
+	transition: var(--adw-button-transition);
+}
+
+body.DesktopUI div[class*="steamdesktop_BrowserWrapper_"] div[class*="steamdesktop_URLBar_"] div[class*="steamdesktop_ReloadButton_"] > svg,
+body.DesktopUI div._1bGewp3tfzqAF6fVTFFUOz div.UkR3sY319PuaUNuUWks2K div._3KaB94Jl4r0hFkthDPJy09 > svg
+{
+	display: none !important;
+}
+
+body.DesktopUI div[class*="steamdesktop_BrowserWrapper_"] div[class*="steamdesktop_URLBar_"]::before,
+body.DesktopUI div._1bGewp3tfzqAF6fVTFFUOz div.UkR3sY319PuaUNuUWks2K::before,
+body.DesktopUI div[class*="steamdesktop_BrowserWrapper_"] div[class*="steamdesktop_URLBar_"] div[class*="steamdesktop_ReloadButton_"]::before,
+body.DesktopUI div._1bGewp3tfzqAF6fVTFFUOz div.UkR3sY319PuaUNuUWks2K div._3KaB94Jl4r0hFkthDPJy09::before
+{
+	background-color: rgb(var(--adw-headerbar-fg-rgb));
+	content: "";
+	display: block;
+	width: 16px;
+	height: 16px;
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	-webkit-mask-size: 16px;
+	-webkit-mask-image: var(--adw-icon-nav-refresh);
+}
+
+body.DesktopUI div[class*="steamdesktop_BrowserWrapper_"] div[class*="steamdesktop_URLBar_"]::before,
+body.DesktopUI div._1bGewp3tfzqAF6fVTFFUOz div.UkR3sY319PuaUNuUWks2K::before
+{
+	position: absolute;
+	filter: opacity(var(--adw-disabled-opacity));
+	padding: 9px;
+}
+
+body.DesktopUI div[class*="steamdesktop_BrowserWrapper_"] div[class*="steamdesktop_URLBar_"] div[class*="steamdesktop_ReloadButton_"]:hover,
+body.DesktopUI div._1bGewp3tfzqAF6fVTFFUOz div.UkR3sY319PuaUNuUWks2K div._3KaB94Jl4r0hFkthDPJy09:hover
+{
+	background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-hover-opacity)) !important;
+}
+
+body.DesktopUI div[class*="steamdesktop_BrowserWrapper_"] div[class*="steamdesktop_URLBar_"] div[class*="steamdesktop_ReloadButton_"]:active,
+body.DesktopUI div._1bGewp3tfzqAF6fVTFFUOz div.UkR3sY319PuaUNuUWks2K div._3KaB94Jl4r0hFkthDPJy09:active
+{
+	background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-active-opacity)) !important;
+}
+
+body.DesktopUI div[class*="steamdesktop_BrowserWrapper_"] div[class*="steamdesktop_URLBarText_"],
+body.DesktopUI div._1bGewp3tfzqAF6fVTFFUOz div._2m_orETo6AghzAnc0sISCt
+{
+	display: none !important;
+}
+
+/* Content frame */
+body.DesktopUI div[class*="steamdesktop_ContentFrame_"],
+body.DesktopUI div._1rDh5rXSFZJOqCa4UpnI4z
+{
+	position: initial !important;
+	order: 3 !important;
+}
+
+/* Remove bottom bar, keep some buttons and update banner */
+
+/* Entire Bottom Bar */
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"],
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx
+{
+	display: block !important;
+	background: rgb(var(--adw-headerbar-bg-rgb)) !important;
+	order: 2 !important;
+}
+
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_BottomBar_"],
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._3vCzSrrXZzZjVJFZNg9SGu
+{
+	height: 0 !important;
+	overflow: hidden !important;
+}
+
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_AddGameButton_"],
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._2foCkpRXhqq0UGVE50BWqj
+{
+	display: none !important;
+}
+
+/* Update Check */
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[style*="height:68px"],
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div[style*="height:68px"],
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="updatealert_ActionAlert_"],
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._1sMxtPKaL0DcIZgJCQRduV
+{
+	min-height: 46px !important;
+}
+
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="updatealert_Alert_"],
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._2iJsgdTIX9Tj23rWnB7Q-c,
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_SteamFamilyJoinClientBeta_"],
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._3GaHEQJW9B1Rlt0Ddz3E8D
+{
+	background-image: linear-gradient(0deg, rgba(var(--adw-accent-bg-rgb), 0.3), rgba(var(--adw-accent-bg-rgb), 0.3)) !important;
+	background-color: rgb(var(--adw-headerbar-bg-rgb)) !important;
+	color: rgb(var(--adw-headerbar-fg-rgb)) !important;
+	box-shadow: inset 0 1px rgba(var(--adw-headerbar-shade-rgb), var(--adw-headerbar-shade-a)) !important;
+	border-radius: 0 !important;
+	min-height: 46px !important;
+	padding: 0 10px !important;
+}
+
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="updatealert_Alert_"],
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._2iJsgdTIX9Tj23rWnB7Q-c,
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="updatealert_Alert_"] a,
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._2iJsgdTIX9Tj23rWnB7Q-c a,
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_SteamFamilyJoinClientBeta_"],
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._3GaHEQJW9B1Rlt0Ddz3E8D,
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_SteamFamilyJoinClientBeta_"] a,
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._3GaHEQJW9B1Rlt0Ddz3E8D a
+{
+	color: rgb(var(--adw-headerbar-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-title3-size) !important;
+	font-weight: var(--adw-text-title3-weight) !important;
+}
+
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_SteamFamilyJoinClientBeta_"],
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._3GaHEQJW9B1Rlt0Ddz3E8D
+{
+	justify-content: center !important;
+}
+
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="updatealert_Alert_"][class*="updatealert_Error_"],
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._2iJsgdTIX9Tj23rWnB7Q-c._2T8739wyg0K9mokTXWytuZ
+{
+	background-image: linear-gradient(0deg, rgba(var(--adw-error-bg-rgb), 0.3), rgba(var(--adw-error-bg-rgb), 0.3)) !important;
+}
+
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="updatealert_Alert_"][class*="updatealert_SmallMode_"],
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._2iJsgdTIX9Tj23rWnB7Q-c._25YQ-0tD-BPgk7Ca_hWbon
+{
+	padding: 0 10px !important;
+}
+
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="updatealert_Alert_"][class*="updatealert_SmallMode_"] > div[class*="updatealert_ActionAlert_"],
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._2iJsgdTIX9Tj23rWnB7Q-c._25YQ-0tD-BPgk7Ca_hWbon > div._1sMxtPKaL0DcIZgJCQRduV
+{
+	flex-direction: row !important;
+}
+
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="updatealert_Content_"],
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._2ZNEaet8lKMtw6CLs-UNXv
+{
+	padding: 8px 0 !important;
+}
+
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="updatealert_PrimaryMessage_"],
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._2EXJTyc69b45nXI4h3RknI
+{
+	color: rgb(var(--adw-headerbar-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-title3-size) !important;
+	font-weight: var(--adw-text-title3-weight) !important;
+}
+
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="updatealert_Spinner_"],
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div.TdcThDOY4vwkhb9IjZbAl
+{
+	width: 16px !important;
+	height: 16px !important;
+	min-width: 16px !important;
+	min-height: 16px !important;
+}
+
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="updatealert_Actions_"] > div[class*="updatealert_AlertButton_"],
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._14fYfDS-pwIUwGfqr48EM > div._2ohOQgahhMYnIEfAQmv9B8
+{
+	background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-button-bg-opacity)) !important;
+	border-radius: var(--adw-button-radius) !important;
+	color: rgb(var(--adw-headerbar-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-title3-size) !important;
+	font-weight: var(--adw-text-title3-weight) !important;
+	line-height: 24px !important;
+	height: 24px !important;
+	padding: 5px 10px !important;
+	transition: var(--adw-button-transition) !important;
+	cursor: default !important;
+}
+
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="updatealert_Actions_"] > div[class*="updatealert_AlertButton_"]:not([class*="updatealert_Disabled_"]):hover,
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._14fYfDS-pwIUwGfqr48EM > div._2ohOQgahhMYnIEfAQmv9B8:not(._TY57LlvVVnWqjaCz0EWr):hover
+{
+	background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-button-bg-opacity-hover)) !important;
+}
+
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="updatealert_Actions_"] > div[class*="updatealert_AlertButton_"]:not([class*="updatealert_Disabled_"]):active,
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._14fYfDS-pwIUwGfqr48EM > div._2ohOQgahhMYnIEfAQmv9B8:not(._TY57LlvVVnWqjaCz0EWr):active
+{
+	background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-button-bg-opacity-active)) !important;
+}
+
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="updatealert_Actions_"] > div[class*="updatealert_AlertButton_"][class*="updatealert_Disabled_"],
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._14fYfDS-pwIUwGfqr48EM > div._2ohOQgahhMYnIEfAQmv9B8._TY57LlvVVnWqjaCz0EWr
+{
+	color: rgba(var(--adw-headerbar-fg-rgb), var(--adw-disabled-opacity)) !important;
+}
+
+body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_BottomBar_"] div.window_resize_grip,
+body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._3vCzSrrXZzZjVJFZNg9SGu div.window_resize_grip
+{
+	opacity: 0 !important;
+}
+
+/* Headerbar - hide empty divs in menus */
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="supernav_SuperNav_"] div:not([class]),
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._2D64jIEK7wpUR_NlObDW76 div:not([class]),
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="steamdesktop_RootMenuBar_"] div:not([class]),
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._3s0lkohH8wU2do0K1il28Y div:not([class])
+{
+	display: none !important;
+}

@@ -1,0 +1,34 @@
+body.DesktopUI div#popup_target::after
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	pointer-events: none;
+	box-sizing: border-box;
+	border: 1px rgba(var(--adw-window-fg-rgb), var(--adw-window-outline-opacity)) solid;
+	z-index: 999;
+}
+
+body.DesktopUI .ModalPosition_TopBar,
+html.client_chat_frame .ModalPosition_TopBar
+{
+	display: none !important;
+}
+
+/* Web dialogs */
+body.DesktopUI.ModalDialogBody .PopupFullWindow .title-area
+{
+	height: 36px !important;
+	min-height: 36px !important;
+}
+
+body.DesktopUI.ModalDialogBody .PopupFullWindow div[class*="htmlpopupdialog_HTMLPopupDialog_"].DialogContent,
+body.DesktopUI.ModalDialogBody .PopupFullWindow div.oHNgIzAySfCEOayCBwsg5.DialogContent
+{
+	background: rgb(var(--adw-headerbar-bg-rgb)) !important;
+	padding: 1px !important;
+	padding-top: 36px !important;
+}

@@ -1,0 +1,238 @@
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s
+{
+	background: rgb(var(--adw-window-bg-rgb)) !important;
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	padding: 0 !important;
+	user-select: none !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageListColumn_"],
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.RTicBCbDcEGkjsbmWzA8C
+{
+	background: rgb(var(--adw-sidebar-bg-rgb)) !important;
+	color: rgb(var(--adw-sidebar-fg-rgb)) !important;
+	border-right: 1px rgba(var(--adw-sidebar-shade-rgb), var(--adw-sidebar-shade-a)) solid !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageList_"],
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._EebF_xe4DGRZ9a0XkyDj
+{
+	padding: 6px !important;
+	margin: 0 !important;
+	gap: 2px !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageListItem_"],
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.bkfjn0yka2uHNqEvWZaTJ
+{
+	height: 34px !important;
+	line-height: 34px !important;
+	padding: 0 8px !important;
+	max-width: none !important;
+	background: none !important;
+	cursor: default !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-base-size) !important;
+	font-weight: var(--adw-text-base-weight) !important;
+	box-sizing: border-box !important;
+	border: none !important;
+	border-radius: var(--adw-button-radius) !important;
+	color: rgb(var(--adw-sidebar-fg-rgb)) !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageListItem_"]:hover,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.bkfjn0yka2uHNqEvWZaTJ:hover
+{
+	background: rgba(var(--adw-sidebar-fg-rgb), var(--adw-hover-opacity)) !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageListItem_"]:active,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.bkfjn0yka2uHNqEvWZaTJ:active
+{
+	background: rgba(var(--adw-sidebar-fg-rgb), var(--adw-active-opacity)) !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageListItem_"][class*="pagedsettings_Active_"],
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.bkfjn0yka2uHNqEvWZaTJ.Myra7iGjzCdMPzitboVfh
+{
+	background: rgba(var(--adw-sidebar-fg-rgb), var(--adw-selected-opacity)) !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageListItem_"][class*="pagedsettings_Active_"]:hover,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.bkfjn0yka2uHNqEvWZaTJ.Myra7iGjzCdMPzitboVfh:hover
+{
+	background: rgba(var(--adw-sidebar-fg-rgb), var(--adw-selected-hover-opacity)) !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageListItem_"][class*="pagedsettings_Active_"]:active,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.bkfjn0yka2uHNqEvWZaTJ.Myra7iGjzCdMPzitboVfh:active
+{
+	background: rgba(var(--adw-sidebar-fg-rgb), var(--adw-selected-active-opacity)) !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageListItem_"][class*="pagedsettings_DisabledItem_"],
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.bkfjn0yka2uHNqEvWZaTJ._1RDp9x1K3WsjXf7hYWmmiX
+{
+	opacity: 0.5 !important;
+	pointer-events: none !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageListItem_"] div[class*="pagedsettings_PageListItem_Icon_"],
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.bkfjn0yka2uHNqEvWZaTJ div.U6HcKswXzjmWtFxbjxuz4
+{
+	width: 16px !important;
+	height: 16px !important;
+	margin-right: 6px !important;
+	color: inherit !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageListItem_"] div[class*="pagedsettings_PageListItem_Icon_"] > svg,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.bkfjn0yka2uHNqEvWZaTJ div.U6HcKswXzjmWtFxbjxuz4 > svg
+{
+	display: flex !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageListItem_"] div[class*="pagedsettings_PageListItem_Title_"],
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.bkfjn0yka2uHNqEvWZaTJ div._2X9_IsQsEJDpAd2JGrHdJI
+{
+	padding: 0 6px !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PageListSeparator_"],
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._1UEEmNDZ7Ta3enwTf5T0O0
+{
+	border: none !important;
+	height: 1px !important;
+	background-color: rgba(var(--adw-sidebar-fg-rgb), var(--adw-border-opacity)) !important;
+	margin: 2px 0 !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageContent_"],
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._1I3NifxqTHCkE-2DeritAs
+{
+	background: rgb(var(--adw-window-bg-rgb)) !important;
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+/* Headerbar drag area */
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_::before,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s::before
+{
+	content: "";
+	-webkit-app-region: drag;
+	position: absolute;
+	left: var(--adw-windowcontrols-close-margin-left);
+	right: var(--adw-windowcontrols-close-margin-right);
+	top: 0;
+	height: 46px;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.DialogHeader,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogHeader,
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageListColumn_"] > div[class*="pagedsettings_PagedSettingsDialog_Title_"],
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.RTicBCbDcEGkjsbmWzA8C > div._3qEgQJqeb0zyM12KXq64Or
+{
+	box-sizing: border-box !important;
+	height: 46px !important;
+	flex: none !important;
+	display: grid !important;
+	grid-template-columns: 1fr !important;
+	align-items: center !important;
+	padding: 12px !important;
+	margin: 0 !important;
+	background: none !important;
+	color: inherit !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-header-size) !important;
+	font-weight: var(--adw-text-header-weight) !important;
+	line-height: normal !important;
+	letter-spacing: normal !important;
+	text-align: center !important;
+	text-transform: none !important;
+	white-space: nowrap !important;
+	overflow: hidden !important;
+	text-overflow: ellipsis !important;
+	border: none !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageListColumn_"] > div[class*="pagedsettings_PagedSettingsDialog_Title_"],
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.RTicBCbDcEGkjsbmWzA8C > div._3qEgQJqeb0zyM12KXq64Or
+{
+	padding: 12px calc(var(--adw-windowcontrols-close-margin-left) + 6px) !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.DialogContent_InnerWidth > div.DialogBody,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogContent_InnerWidth > div.DialogBody
+{
+	margin: 0 !important;
+	padding: 12px 24px 24px 24px !important;
+	-webkit-mask-image: none !important;
+	display: flex !important;
+	align-items: center !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.DialogContent_InnerWidth > div.DialogBody > *,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogContent_InnerWidth > div.DialogBody > *
+{
+	width: 600px !important;
+}
+
+/* Scroll shadow: containers */
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.DialogContent_InnerWidth > div.DialogBody,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogContent_InnerWidth > div.DialogBody,
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageList_"],
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._EebF_xe4DGRZ9a0XkyDj
+{
+	scrollbar-gutter: stable !important;
+	position: relative !important;
+	overflow-x: hidden !important;
+	overflow-y: overlay !important;
+}
+
+/* Scroll shadow: background overlays */
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.DialogContent_InnerWidth > div.DialogBody::before,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogContent_InnerWidth > div.DialogBody::before,
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageList_"]::before,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._EebF_xe4DGRZ9a0XkyDj::before
+{
+	content: "";
+	display: block;
+	position: absolute;
+	height: 4px;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	pointer-events: none;
+	background: rgb(var(--adw-window-bg-rgb));
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageList_"]::before,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._EebF_xe4DGRZ9a0XkyDj::before
+{
+	background: rgb(var(--adw-sidebar-bg-rgb));
+}
+
+/* Scroll shadow: shadows */
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.DialogHeader::after,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogHeader::after,
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageListColumn_"] > div[class*="pagedsettings_PagedSettingsDialog_Title_"]::after,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.RTicBCbDcEGkjsbmWzA8C > div._3qEgQJqeb0zyM12KXq64Or::after
+{
+	content: "";
+	display: block;
+	position: absolute;
+	height: 4px;
+	top: 46px;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	pointer-events: none;
+	background-image: linear-gradient(to bottom, rgba(var(--adw-shade-rgb), calc(var(--adw-shade-a) * 0.75)), transparent 4px);
+	box-shadow: inset 0 1px rgba(var(--adw-shade-rgb), calc(var(--adw-shade-a) * 0.75));
+}

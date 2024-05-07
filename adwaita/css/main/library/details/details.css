@@ -1,0 +1,607 @@
+/*  Disable Blurred Background */
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetails_Glassy_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3FmxxjyWNHU1PrBGnBe6tm,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsoverview_BackdropGlass_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.Jbe--NUNw7sxbxGsMSjVa,
+body.DesktopUI div[class*="appdetails_Container_"] img[class*="sharedappdetailsheader_ImgBlurBackdrop_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA img.ooM_c2DA3hF8Wg7zbpK5x
+{
+	background: rgb(var(--adw-window-bg-rgb)) !important;
+	backdrop-filter: none !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] [class*="sharedappdetailsheader_ImgBlurBackdrop_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA .ooM_c2DA3hF8Wg7zbpK5x
+{
+	display: none !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetails_Glassy_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3FmxxjyWNHU1PrBGnBe6tm
+{
+	overflow-y: overlay !important;
+}
+
+/* `Scroll to Top` Button */
+body.DesktopUI div[class*="steamdesktop_ContentFrame_"] div[class*="smartscrollcontainer_ScrollToTopButton_"],
+body.DesktopUI div._1rDh5rXSFZJOqCa4UpnI4z div._1bCHNUX_0WHTI1fch_8K5R
+{
+	display: none !important;
+}
+
+/* Progress Bar Color */
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsplaysection_DetailsProgressBar_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._1FnTqlsi2_-TJf1d5apoS6,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsachievementssection_AchievementProgress_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3Rm36_oeAhvIg6ZYP9l1Jj
+{
+	background: rgb(var(--adw-accent-bg-rgb)) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsachievementssection_AdditionalItem_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2aVnDeExEHiUFX0zwr_BTO,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailscommunityfeed_LoadContentButton_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2RSxEUPGL8Bj016q0Sp3Hx,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsactivitysection_ViewLastNews_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._1EC1xjjUGqI7fqX6PVzJA3
+{
+	border-radius: var(--adw-button-radius) !important;
+	background: rgba(var(--adw-window-fg-rgb), var(--adw-button-bg-opacity)) !important;
+	border: none !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] button[class*="appdetailsactivitysection_FetchMoreContainer_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA button._39ZurKJQex6v69aXzvc_nj,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailscommunityfeed_LoadContentButton_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2RSxEUPGL8Bj016q0Sp3Hx,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsactivitysection_ViewLastNews_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._1EC1xjjUGqI7fqX6PVzJA3
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-title3-size) !important;
+	font-weight: var(--adw-text-title3-weight) !important;
+	line-height: 32px !important;
+}
+
+/* Remove Unneeded Backgrounds */
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventMediumImage_Container_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._1HZy7BvOZuPT8feUwadL4W,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeImage_Container_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.LibriMVXcLl1HB60ZUp78,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsdlcsection_Gloss_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.HAvWsE0-ycDj77SdyLXE-,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="writereview_RatingContainer_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2SAb6geDpe6toA1GaP0GjH,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsgameinfopanel_Container_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2jPMy2QZr8bWi6yrk5ZzHA,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_LeftSideMajorUpdateBar_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3oMUSjOFNB0E9LWcL2sE7,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeUpdate_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._39Zk32AvV5cr6g-83IVRVS
+{
+	background: none !important;
+	cursor: default !important;
+}
+
+/* Remove Image Borders */
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEvent_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._1AYE16384J_ecLpN0sEYc5,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeUpdate_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._39Zk32AvV5cr6g-83IVRVS,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="spotlight_MajorEventContainer_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3do5n9uOTTNJW89MCTMEyL,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeUpdate_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._39Zk32AvV5cr6g-83IVRVS
+{
+	border-image-source: none !important;
+}
+
+/* Border Radius Fixes */
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsworkshopsection_WorkshopContainer_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._176QJCynkEUSdR_-9btdAW
+{
+	border-top-left-radius: 0 !important;
+	border-top-right-radius: 0 !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsworkshopsection_WorkshopHightlight_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._1zmwcbn8AgDTiWuHGyMD2w
+{
+	border-bottom-left-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsachievementssection_Icon_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.zcasgBSVIteabq-j_3g1m,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsachievementssection_AdditionalItem_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2aVnDeExEHiUFX0zwr_BTO
+{
+	border-radius: var(--adw-button-radius) !important;
+}
+
+/* DLC Notification Banner */
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsspotlight_SpotlightDLC_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.ut0YcLYGAoSTz2Dnjw9U1
+{
+	box-shadow: none !important;
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-weight: var(--adw-text-base-weight) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsspotlight_SpotlightDLC_"] > svg,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.ut0YcLYGAoSTz2Dnjw9U1 > svg
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsspotlight_HideButton_"] > svg line,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.R2VdUtWzknAHBOsdRzG_d > svg line
+{
+	stroke: rgb(var(--adw-window-fg-rgb)) !important;
+}
+
+/* Available Content */
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivitydlc_CarouselHeader_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3hubFyqcbN0Tp93ajVPHLl
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-weight: var(--adw-text-title4-weight) !important;
+	font-size: var(--adw-text-title4-size) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivitydlc_CarouselBody_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._1M3piztNHu7tsD7h8OgpuI
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-weight: var(--adw-text-base-weight) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] a[class*="appactivitydlc_ViewAll_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA a._3m6qdpFN3Mop0iw9ZE3RRa
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-title3-size) !important;
+	font-weight: var(--adw-text-title3-weight) !important;
+	margin-bottom: 10px;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsoverview_Container_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div[class*="appdetailsoverview_Container_"]
+{
+	background: rgb(var(--adw-window-bg-rgb)) !important;
+}
+
+/* Available DLC */
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivitydlc_Contents_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2kqz-bSlDu-I49_cV_wicB,
+body.DesktopUI div[class*="appdetails_Container_"] a[class*="appactivitydlc_CarouselItem_"] div[class*="appactivitydlc_CarouselImage_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA a._78Pwybe-fHVYEkQFFlpA5 div._3gB_gMsbWHUGn5Rqwe6KeC
+{
+	box-shadow: none !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] a[class*="appactivitydlc_ViewAll_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA a._3m6qdpFN3Mop0iw9ZE3RRa
+{
+	border-radius: var(--adw-button-radius) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] a[class*="appactivitydlc_ViewAll_"]:hover,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA a._3m6qdpFN3Mop0iw9ZE3RRa:hover
+{
+	background: rgba(var(--adw-view-fg-rgb), var(--adw-hover-opacity)) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] a[class*="appactivitydlc_ViewAll_"]:active,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA a._3m6qdpFN3Mop0iw9ZE3RRa:active
+{
+	background: rgba(var(--adw-view-fg-rgb), var(--adw-active-opacity)) !important;
+}
+
+body.DesktopUI iframe[class*="appdetailsdlcsection_StoreHover_"],
+body.DesktopUI iframe.M1EYVG_HMAo8ap80JrIUh
+{
+	border-radius: var(--adw-card-radius) !important;
+}
+
+/* Write a Review */
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="writereview_Playtime_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.qX4kNo6O0M-mYntdErKSJ,
+body.DesktopUI div[class*="appdetails_Container_"] button[class*="writereview_ReviewThumbButton_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA button._1kCN0pAntrcGCSmcc-vYdk
+{
+	color: rgb(var(--adw-accent-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-title4-size) !important;
+	font-weight: var(--adw-text-title4-weight) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] svg[class*="writereview_ThumbIcon_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA svg._2Jkk-4RGWzhce22lSnA9Em
+{
+	fill: rgb(var(--adw-accent-rgb)) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] svg[class*="writereview_ThumbIcon_"][class*="writereview_Up_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA svg._2Jkk-4RGWzhce22lSnA9Em._2DXZFTajHVRmKt3QsZzKY3
+{
+	top: -1px !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] svg[class*="writereview_ThumbIcon_"][class*="writereview_Down_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA svg._2Jkk-4RGWzhce22lSnA9Em._32G01cdyGED_NiCadEgWAL
+{
+	bottom: -1px !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="writereview_RatingContainer_"] div[class*="writereview_RecommendGame_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2SAb6geDpe6toA1GaP0GjH div.My1beniJXh9pXud8rxYLK
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-weight: var(--adw-text-base-weight) !important;
+}
+
+/* Post Game Summary */
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="spotlightgameplaysummary_SummaryCarouselContainer_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.wgbDI6To-SKawn9wQwVaw
+{
+	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-opacity)) !important;
+	box-shadow: var(--adw-card-shadow) !important;
+	border-radius: var(--adw-card-radius) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="spotlightgameplaysummary_SummaryCarouselContainer_"]::after,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.wgbDI6To-SKawn9wQwVaw::after
+{
+	box-shadow: none !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="pageablecontainer_PageableCloseButton_"] > svg line,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2K2No5eH-XS6QwrXUtzo2x > svg line
+{
+	stroke: rgb(var(--adw-window-fg-rgb)) !important;
+}
+
+/* Gameplay Summary */
+body.DesktopUI div[class*="appdetails_Container_"] [class*="spotlightgameplaysummary_EventHeaderBlock_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA ._1jiiOndFINUereBkqdHFYm,
+body.DesktopUI div[class*="appdetails_Container_"] [class*="spotlightgameplaysummary_GamePlaySummaryHeader_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA ._2_sR8WGLby5dt8XUSln6R7,
+body.DesktopUI div[class*="appdetails_Container_"] [class*="appdetailssectionheader_LabelText_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA ._3i0kopAostOz2IDi9HqmeN
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	line-height: var(--adw-list-header-height) !important;
+	text-transform: none !important;
+	letter-spacing: normal !important;
+	font-size: var(--adw-list-header-size) !important;
+	font-weight: var(--adw-list-header-weight) !important;
+	min-height: var(--adw-list-header-height) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] [class*="spotlightgameplaysummary_EventDaySeparator_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA ._1AIgWpLviF3aBSaRbYIwWM
+{
+	background-color: rgba(var(--adw-window-fg-rgb), var(--adw-dim-label-opacity)) !important;
+	opacity: 0.55 !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] [class*="appdetailsachievementssection_Stats_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA .VKo9pLPbwpF3xIzL8Wnou
+{
+	color: rgba(var(--adw-window-fg-rgb), var(--adw-dim-label-opacity)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-weight: var(--adw-text-base-weight) !important;
+}
+
+/* Activity Post */
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="posttextentry_PostTextEntry_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3x31AgESSlUqX3D4MTHv2m
+{
+	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-opacity)) !important;
+	border-radius: var(--adw-card-radius) !important;
+	box-shadow: var(--adw-card-shadow) !important;
+	display: flex !important;
+	flex-direction: row !important;
+	gap: 0 !important;
+	align-items: center !important;
+	transition: var(--adw-button-transition) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="posttextentry_PostTextEntry_"]:not(:focus-within):hover,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3x31AgESSlUqX3D4MTHv2m:not(:focus-within):hover
+{
+	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-hover-opacity)) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="posttextentry_PostTextEntry_"]:focus-within,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3x31AgESSlUqX3D4MTHv2m:focus-within
+{
+	box-shadow: var(--adw-card-shadow), var(--adw-focus-border) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] textarea[class*="posttextentry_PostTextEntryArea_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA textarea._1JlC29Ic6L-QvL-39X_d-X
+{
+	background: none !important;
+	box-shadow: none !important;
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-entry-font-size) !important;
+	font-weight: var(--adw-entry-font-weight) !important;
+	font-style: normal !important;
+	text-transform: none !important;
+	letter-spacing: normal !important;
+	min-height: 40px !important;
+	padding: 8px 12px !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] textarea[class*="posttextentry_PostTextEntryArea_"]::placeholder,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA textarea._1JlC29Ic6L-QvL-39X_d-X::placeholder
+{
+	color: rgba(var(--adw-window-fg-rgb), var(--adw-dim-label-opacity)) !important;
+	font-style: normal !important;
+	line-height: 40px !important;
+	transition: line-height 100ms !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] textarea[class*="posttextentry_PostTextEntryArea_"]:focus::placeholder,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA textarea._1JlC29Ic6L-QvL-39X_d-X:focus::placeholder
+{
+	line-height: 20px !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="posttextentry_PostTextEntry_"] div[class*="posttextentry_Controls_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3x31AgESSlUqX3D4MTHv2m div._37e7DrDNmf1FmsMGA5y0A0
+{
+	max-height: unset !important;
+	display: flex !important;
+	align-items: stretch !important;
+	justify-content: normal !important;
+	overflow: unset !important;
+	gap: 6px !important;
+	margin: 0 12px 0 0 !important;
+	padding: 0 !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="posttextentry_PostButton_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2JSyABqFEh-v_dwaTnBydR,
+body.DesktopUI div[class*="appdetails_Container_"] button[class*="posttextentry_EmoticonButton_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA button.bACIuqv-b_9TztCczFK19
+{
+	padding: 0 !important;
+	margin: 0 !important;
+	height: 34px !important;
+	background: rgba(var(--adw-window-fg-rgb), var(--adw-button-bg-opacity)) !important;
+	border-radius: var(--adw-button-radius) !important;
+	box-shadow: none !important;
+	cursor: default !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="posttextentry_PostButton_"]:hover,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2JSyABqFEh-v_dwaTnBydR:hover,
+body.DesktopUI div[class*="appdetails_Container_"] button[class*="posttextentry_EmoticonButton_"]:hover,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA button.bACIuqv-b_9TztCczFK19:hover
+{
+	background: rgba(var(--adw-window-fg-rgb), var(--adw-button-bg-opacity-hover)) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="posttextentry_PostButton_"]:active,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2JSyABqFEh-v_dwaTnBydR:active,
+body.DesktopUI div[class*="appdetails_Container_"] button[class*="posttextentry_EmoticonButton_"]:active,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA button.bACIuqv-b_9TztCczFK19:active
+{
+	background: rgba(var(--adw-window-fg-rgb), var(--adw-button-bg-opacity-active)) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="posttextentry_PostButton_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2JSyABqFEh-v_dwaTnBydR
+{
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-title3-size) !important;
+	font-weight: var(--adw-text-title3-weight) !important;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	width: auto !important;
+	padding: 0 12px !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="posttextentry_PostButton_"]:not([class*="posttextentry_Enabled_"]),
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2JSyABqFEh-v_dwaTnBydR:not(.bGfjajFo4DI-ULSQxw1KY),
+body.DesktopUI div[class*="appdetails_Container_"] button[class*="posttextentry_EmoticonButton_"].disabled,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA button.bACIuqv-b_9TztCczFK19.disabled
+{
+	opacity: 0.5 !important;
+	pointer-events: none !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] button[class*="posttextentry_EmoticonButton_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA button.bACIuqv-b_9TztCczFK19
+{
+	width: 34px !important;
+	min-width: 34px !important;
+	max-width: 34px !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsscreenshotssection_InstructionText_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2QCkjbh7DpjfulLt-gMSxB,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsscreenshotssection_NoneTaken_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2_WwnsAHFIrNtqmPP5HSYz,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsreviewsection_PlayedForTime_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.BDa6lbTAdR4RwtqgRNUnO
+{
+	color: rgba(var(--adw-window-fg-rgb), var(--adw-dim-label-opacity)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-weight: var(--adw-text-base-weight) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailssection_Body_"] span[style="color: white;"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._5uvIN6jXDXzzck59F-nhv span[style="color: white;"]
+{
+	color: rgb(var(--adw-accent-rgb)) !important;
+}
+
+/* Notes */
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsnotessection_NoteLink_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2L6IIbLCMWUJcOhliUVqKb
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font);
+	font-size: var(--adw-text-base-size);
+	font-weight: var(--adw-text-base-weight);
+}
+
+/* Sidebar cards */
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsoverview_RightColumn_"] div[class*="appdetailssectionheader_SectionHeader_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2aor4XVOYzN1PBSREk0UbO div._1Q2q_tQ9_Eq8YdEHNAHS3F
+{
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsoverview_RightColumn_"] div[class*="appdetailssectionheader_SectionHeader_"] div[class*="appdetailssectionheader_LabelText_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2aor4XVOYzN1PBSREk0UbO div._1Q2q_tQ9_Eq8YdEHNAHS3F div._3i0kopAostOz2IDi9HqmeN
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	line-height: var(--adw-list-header-height) !important;
+	text-transform: none !important;
+	letter-spacing: normal !important;
+	font-size: var(--adw-list-header-size) !important;
+	font-weight: var(--adw-list-header-weight) !important;
+	min-height: var(--adw-list-header-height) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsoverview_RightColumn_"] div[class*="appdetailssection_AppDetailsSectionContainer_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2aor4XVOYzN1PBSREk0UbO div._31ptFGGMZrSQc5BCX1e5lm
+{
+	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-opacity)) !important;
+	border-radius: var(--adw-card-radius) !important;
+	box-shadow: var(--adw-card-shadow) !important;
+	border: none !important;
+	transition: var(--adw-button-transition) !important;
+	cursor: default !important;
+	position: relative !important;
+	margin: 0 !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsoverview_RightColumn_"] div[class*="appdetailssection_AppDetailsSectionContainer_"] div[class*="appdetailssection_Highlight_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2aor4XVOYzN1PBSREk0UbO div._31ptFGGMZrSQc5BCX1e5lm div._38t1mljBjmJfqjpVzMT1CG
+{
+	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-opacity)) !important;
+	border-bottom: 1px rgb(var(--adw-window-bg-rgb)) solid !important;
+	border-radius: var(--adw-card-radius) var(--adw-card-radius) 0 0 !important;
+	box-shadow: none !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsoverview_RightColumn_"] div[class*="appdetailsachievementssection_AchievementHoverContainer_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2aor4XVOYzN1PBSREk0UbO div._2CK1m9x0gtA_oSAQa2FpS3,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsoverview_RightColumn_"] div[class*="achievementiconbase_AchievementIconWrapper_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2aor4XVOYzN1PBSREk0UbO div._373lENtPG9blrNsyXz0y_J,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsoverview_RightColumn_"] div[class*="appdetailsachievementssection_AdditionalItem_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2aor4XVOYzN1PBSREk0UbO div._2aVnDeExEHiUFX0zwr_BTO,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsoverview_RightColumn_"] div[class*="appdetailsachievementssection_RemainderContainer_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2aor4XVOYzN1PBSREk0UbO div.lZ2c49vTWJ60klQOY9l2K,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsoverview_RightColumn_"] div[class*="appdetailsachievementssection_Remainder_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2aor4XVOYzN1PBSREk0UbO div._2gISWIeEzZ9PNuAzVuMaWd,
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsoverview_RightColumn_"] div[class*="appdetailsachievementssection_RemainderText_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2aor4XVOYzN1PBSREk0UbO div._1-H7tKj_QcGHLUbx5wVsGg
+{
+	padding: 0 !important;
+	margin: 0 !important;
+	width: 40px !important;
+	height: 40px !important;
+	line-height: 40px !important;
+	background: none !important;
+	border-radius: var(--adw-gameicon-radius) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsoverview_RightColumn_"] img[class*="achievementiconbase_Icon_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2aor4XVOYzN1PBSREk0UbO img._2bzHb-caO-Nm9nCFXRj7zq
+{
+	border-radius: var(--adw-gameicon-radius) !important;
+	box-sizing: border-box !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsoverview_RightColumn_"] img[class*="achievementiconbase_Icon_"]:not([class*="achievementiconbase_IconGlow_"]),
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2aor4XVOYzN1PBSREk0UbO img._2bzHb-caO-Nm9nCFXRj7zq:not(.tH67cztsTrD9IF2zpG8ep)
+{
+	box-shadow: none !important;
+	border: 1px rgba(var(--adw-card-fg-rgb), var(--adw-thin-border-opacity)) solid !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsoverview_RightColumn_"] div[class*="appdetailsachievementssection_TextSection_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2aor4XVOYzN1PBSREk0UbO div._1s_9cSxUjb4609MSH0EjWH
+{
+	margin-left: 6px !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsoverview_RightColumn_"] div[class*="appdetailsachievementssection_TextSection_"] > div[class*="appdetailsachievementssection_Name_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2aor4XVOYzN1PBSREk0UbO div._1s_9cSxUjb4609MSH0EjWH > div._39Y01uSRcLiDg5DneTTR0m
+{
+	color: rgb(var(--adw-accent-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-row-title-size) !important;
+	font-weight: var(--adw-text-row-title-weight) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsoverview_RightColumn_"] div[class*="appdetailsachievementssection_TextSection_"] > div[class*="appdetailsachievementssection_Desc_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2aor4XVOYzN1PBSREk0UbO div._1s_9cSxUjb4609MSH0EjWH > div._2gLHbXukQBdrIKhqEYVvOe
+{
+	color: rgba(var(--adw-accent-fg-rgb), var(--adw-dim-label-opacity)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-row-subtitle-size) !important;
+	font-weight: var(--adw-text-row-subtitle-weight) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsoverview_RightColumn_"] div[class*="remainderlist_InnerContainer_"] div[class*="remainderlist_ItemWrapper_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2aor4XVOYzN1PBSREk0UbO div._1IIKwlQaVZU6bIeEQJvmTK div._2H_ytAwp5tfeou0kdWjLl4
+{
+	padding-right: 6px !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsoverview_RightColumn_"] div[class*="appdetailsachievementssection_RemainderText_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2aor4XVOYzN1PBSREk0UbO div._1-H7tKj_QcGHLUbx5wVsGg
+{
+	color: rgb(var(--adw-accent-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-row-title-size) !important;
+	font-weight: var(--adw-text-row-title-weight) !important;
+	text-shadow: none !important;
+	letter-spacing: normal !important;
+	background: rgba(0, 0, 0, var(--adw-dimmer-opacity)) !important;
+	border-radius: var(--adw-gameicon-radius) !important;
+}
+
+
+/* Sidebar buttons */
+body.DesktopUI div[class*="appdetails_Container_"] button[class*="appdetailsbutton_AppDetailsButton_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA button._3Cdin80d-hVsakHUZboheb
+{
+	background: none !important;
+	border-radius: var(--adw-button-radius) !important;
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-title3-size) !important;
+	font-weight: var(--adw-text-title3-weight) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] button[class*="appdetailsbutton_AppDetailsButton_"]:hover,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA button._3Cdin80d-hVsakHUZboheb:hover
+{
+	background: rgba(var(--adw-window-fg-rgb), var(--adw-hover-opacity)) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] button[class*="appdetailsbutton_AppDetailsButton_"]:active,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA button._3Cdin80d-hVsakHUZboheb:active
+{
+	background: rgba(var(--adw-window-fg-rgb), var(--adw-active-opacity)) !important;
+}

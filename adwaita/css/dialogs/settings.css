@@ -1,0 +1,210 @@
+/* Account avatar */
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="accountsettings_AvatarAndLabel_"],
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2SLehb0Hvx-jWmuv0gPqB-
+{
+	display: flex !important;
+	align-items: center !important;
+	gap: 12px !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="accountsettings_AvatarAndLabel_"] div[class*="accountsettings_LabelHolder_"],
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2SLehb0Hvx-jWmuv0gPqB- div._2nksWzc3nto0qQdizUQHbE
+{
+	padding: 0 !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="personanameandstatus_playerName_"],
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.r62qzcdJQ0qezZglOtiUX
+{
+	color: rgb(var(--adw-card-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-row-title-size) !important;
+	font-weight: var(--adw-text-row-title-weight) !important;
+	line-height: normal !important;
+	letter-spacing: normal !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="personanameandstatus_gameName_"],
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2wpaptjZY-3Gn1HOPlL85O
+{
+	color: rgba(var(--adw-card-fg-rgb), var(--adw-dim-label-opacity)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-row-subtitle-size) !important;
+	font-weight: var(--adw-text-row-subtitle-weight) !important;
+	margin-top: 2px !important;
+	line-height: normal !important;
+	letter-spacing: normal !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.online div[class*="personanameandstatus_gameName_"],
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.online div._2wpaptjZY-3Gn1HOPlL85O
+{
+	color: rgb(var(--adw-accent-rgb)) !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.online.awayOrSnooze div[class*="personanameandstatus_gameName_"],
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.online.awayOrSnooze div._2wpaptjZY-3Gn1HOPlL85O
+{
+	color: rgba(var(--adw-accent-rgb), var(--adw-dim-label-opacity)) !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.ingame div[class*="personanameandstatus_gameName_"],
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.ingame div._2wpaptjZY-3Gn1HOPlL85O
+{
+	color: rgb(var(--adw-success-rgb)) !important;
+}
+
+/* Account buttons */
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="gamepaddialog_Field_"]:has(button[class*="settings_SettingsDialogFatButton_"]),
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI:has(button.UqEiVDhZ47cn3vWxM7cR0)
+{
+	background: none !important;
+	box-shadow: none !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	margin-bottom: 1px !important;
+	overflow: visible !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="gamepaddialog_Field_"]:has(button[class*="settings_SettingsDialogFatButton_"]) div[class*="gamepaddialog_FieldChildrenWithIcon_"],
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI:has(button.UqEiVDhZ47cn3vWxM7cR0) div._2ZQ9wHACVFqZcufK_WRGPM
+{
+	position: initial !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="gamepaddialog_Field_"]:has(button[class*="settings_SettingsDialogFatButton_"]) div[class*="gamepaddialog_ControlsListOuterPanel_"],
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI:has(button.UqEiVDhZ47cn3vWxM7cR0) div._2Mvpu0Kldp2FgzYp0Tx-OP
+{
+	padding: 0 !important;
+	margin: 0 !important;
+	display: flex !important;
+	flex-direction: column !important;
+	gap: 1px !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="gamepaddialog_Field_"]:has(button[class*="settings_SettingsDialogFatButton_"]) div[class*="gamepaddialog_ControlsListOuterPanel_"] div[class*="gamepaddialog_ControlsListChild_"],
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI:has(button.UqEiVDhZ47cn3vWxM7cR0) div._2Mvpu0Kldp2FgzYp0Tx-OP div.XvRsoF63hkSPNVBr2XPVI
+{
+	padding: 0 !important;
+	margin: 0 !important;
+	max-width: none !important;
+	overflow: visible !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="gamepaddialog_Field_"] button[class*="settings_SettingsDialogFatButton_"],
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEiVDhZ47cn3vWxM7cR0
+{
+	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-opacity)) !important;
+	color: rgb(var(--adw-card-fg-rgb)) !important;
+	border-radius: 0 !important;
+	box-shadow: var(--adw-card-shadow) !important;
+	border: none !important;
+	min-height: var(--adw-row-height) !important;
+	box-sizing: border-box !important;
+	margin: 0 !important;
+	padding: 2px 56px !important;
+	transition: var(--adw-button-transition) !important;
+	max-width: none !important;
+	position: relative !important;
+	display: flex !important;
+	flex-direction: column !important;
+	justify-content: center !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="gamepaddialog_Field_"] button[class*="settings_SettingsDialogFatButton_"]:hover,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEiVDhZ47cn3vWxM7cR0:hover
+{
+	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-hover-opacity)) !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="gamepaddialog_Field_"] button[class*="settings_SettingsDialogFatButton_"]:active,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEiVDhZ47cn3vWxM7cR0:active
+{
+	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-active-opacity)) !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="gamepaddialog_Field_"] button[class*="settings_SettingsDialogFatButton_"] > svg,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEiVDhZ47cn3vWxM7cR0 > svg,
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="gamepaddialog_Field_"] button[class*="settings_SettingsDialogFatButton_"]::after,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEiVDhZ47cn3vWxM7cR0::after
+{
+	position: absolute !important;
+	left: 16px !important;
+	width: 24px !important;
+	height: 100% !important;
+	margin: 0 !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="gamepaddialog_Field_"] button[class*="settings_SettingsDialogFatButton_"]::after,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEiVDhZ47cn3vWxM7cR0::after
+{
+	content: "";
+	left: auto !important;
+	right: 12px !important;
+	width: 16px !important;
+	background-color: rgb(var(--adw-card-fg-rgb)) !important;
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	-webkit-mask-size: 16px;
+	-webkit-mask-image: var(--adw-icon-nav-forward);
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="gamepaddialog_Field_"] button[class*="settings_SettingsDialogFatButton_"] div[class*="accountpanel_Label_"],
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEiVDhZ47cn3vWxM7cR0 div._3wadwgMy2-9k8uOKh3iSdT
+{
+	color: rgb(var(--adw-card-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-row-title-size) !important;
+	font-weight: var(--adw-text-row-title-weight) !important;
+	line-height: normal !important;
+	letter-spacing: normal !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="gamepaddialog_Field_"] button[class*="settings_SettingsDialogFatButton_"] div[class*="accountpanel_Details_"],
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEiVDhZ47cn3vWxM7cR0 div._3Wb9yDmYPUJksCr7HmaT9H
+{
+	color: rgba(var(--adw-card-fg-rgb), var(--adw-dim-label-opacity)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-row-subtitle-size) !important;
+	font-weight: var(--adw-text-row-subtitle-weight) !important;
+	margin-top: 2px !important;
+	line-height: normal !important;
+	letter-spacing: normal !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="gamepaddialog_Field_"] button[class*="settings_SettingsDialogFatButton_"] div[class*="accountpanel_Details_"] > span[class*="accountpanel_Highlight_"],
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEiVDhZ47cn3vWxM7cR0 div._3Wb9yDmYPUJksCr7HmaT9H > span._35ztZulp_gETT1gOElpfvK
+{
+	color: rgb(var(--adw-card-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-row-subtitle-size) !important;
+	font-weight: var(--adw-text-row-subtitle-weight) !important;
+	margin-left: 4px !important;
+}
+
+/* Notification settings: table header */
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="gamepaddialog_Field_"][class*="notificationssettings_ToggleHeader_"],
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI._33Q-MOeBz52WPV0tuTqKy
+{
+	min-height: auto !important;
+	height: 24px !important;
+	font-size: 12px !important;
+	font-weight: 700 !important;
+	color: rgba(var(--adw-card-fg-rgb), 0.4) !important;
+}
+
+/* Notification settings: revert switch area expansion */
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="gamepaddialog_Field_"] div[class*="notificationssettings_Toggles_"] div[class*="gamepaddialog_Toggle_"]::before,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI div._27r3CjIYhU20TsukVgm25C div._24G4gV0rYtRbebXM44GkKk::before
+{
+	content: none !important;
+}
+
+/* Hidden widgets */
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="gamepaddialog_Field_"] div[class*="friendssettings_FakeFriend_"],
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI div._3oeHwxQTKDkPcxDhz8jbhM,
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="gamepaddialog_Field_"] svg[class*="desktopsecuritysettings_SteamGuardIcon_"],
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI svg.eYz3vzuTb_a2I4dRJ-vf9
+{
+	display: none !important;
+}

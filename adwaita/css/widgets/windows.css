@@ -1,0 +1,107 @@
+body.DesktopUI .title-area,
+html.client_chat_frame .title-area
+{
+	min-height: 46px !important;
+	cursor: default !important;
+}
+
+body.DesktopUI .title-bar-actions,
+html.client_chat_frame .title-bar-actions
+{
+	height: 36px !important;
+	max-height: 36px !important;
+	margin-top: 5px !important;
+	cursor: default !important;
+}
+
+body.DesktopUI .title-bar-actions.window-controls,
+html.client_chat_frame .title-bar-actions.window-controls
+{
+	margin-right: 10px !important;
+}
+
+body.DesktopUI .title-bar-actions .title-area-icon,
+html.client_chat_frame .title-bar-actions .title-area-icon
+{
+	width: 24px !important;
+	height: 24px !important;
+	padding: 4px !important;
+	box-sizing: border-box !important;
+	border-radius: 50% !important;
+	margin-left: 14px !important;
+	background-color: rgba(var(--adw-window-fg-rgb), var(--adw-button-bg-opacity)) !important;
+	transition: var(--adw-button-transition) !important;
+}
+
+body.DesktopUI .title-bar-actions .title-area-icon:hover,
+html.client_chat_frame .title-bar-actions .title-area-icon:hover
+{
+	background-color: rgba(var(--adw-window-fg-rgb), var(--adw-button-bg-opacity-hover)) !important;
+}
+
+body.DesktopUI .title-bar-actions .title-area-icon:active,
+html.client_chat_frame .title-bar-actions .title-area-icon:active
+{
+	background-color: rgba(var(--adw-window-fg-rgb), var(--adw-button-bg-opacity-active)) !important;
+}
+
+body.DesktopUI .title-bar-actions .title-area-icon > div,
+html.client_chat_frame .title-bar-actions .title-area-icon > div
+{
+	display: none !important;
+}
+
+body.DesktopUI .title-bar-actions .title-area-icon::before,
+html.client_chat_frame .title-bar-actions .title-area-icon::before
+{
+	background-color: rgb(var(--adw-window-fg-rgb));
+	content: "";
+	display: block;
+	width: 16px;
+	height: 16px;
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	-webkit-mask-size: 16px;
+}
+
+body.DesktopUI .title-bar-actions .closeButton::before,
+html.client_chat_frame .title-bar-actions .closeButton::before
+{
+	-webkit-mask-image: var(--adw-icon-window-close);
+}
+
+body.DesktopUI .title-bar-actions .maximizeButton::before,
+html.client_chat_frame .title-bar-actions .maximizeButton::before
+{
+	-webkit-mask-image: var(--adw-icon-window-maximize);
+}
+
+body.DesktopUI .title-bar-actions .minimizeButton::before,
+html.client_chat_frame .title-bar-actions .minimizeButton::before
+{
+	-webkit-mask-image: var(--adw-icon-window-minimize);
+}
+
+body.DesktopUI .title-bar-actions .restoreButton::before,
+html.client_chat_frame .title-bar-actions .restoreButton::before
+{
+	-webkit-mask-image: var(--adw-icon-window-restore);
+}
+
+body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="steamdesktop_WindowControls_"],
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div.qP17eBPXkfezFfexZ4hC3,
+html.client_chat_frame div[class*="steamdesktop_TopBar_"] div[class*="steamdesktop_WindowControls_"],
+html.client_chat_frame div._3Z7VQ1IMk4E3HsHvrkLNgo div.qP17eBPXkfezFfexZ4hC3
+{
+	flex-basis: 40px !important;
+}
+
+body.DesktopUI .title-bar-actions .title-area-icon.minimizeButton,
+body.DesktopUI .title-bar-actions .title-area-icon.maximizeButton,
+body.DesktopUI .title-bar-actions .title-area-icon.restoreButton,
+html.client_chat_frame .title-bar-actions .title-area-icon.minimizeButton,
+html.client_chat_frame .title-bar-actions .title-area-icon.maximizeButton,
+html.client_chat_frame .title-bar-actions .title-area-icon.restoreButton
+{
+	display: none !important;
+}

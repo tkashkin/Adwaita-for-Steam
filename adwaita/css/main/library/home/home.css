@@ -1,0 +1,175 @@
+body.DesktopUI div[class*="library_Container_"],
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0,
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_LibraryHome_"],
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._3Sb2o_mQ30IDRh0C72QUUu,
+body.DesktopUI div[class*="library_Container_"] div[class*="library_AppDetailsTransitionGroup_"],
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._2Dd4T78PcCTUVgOtDGFY5j
+{
+	background: rgb(var(--adw-window-bg-rgb)) !important;
+	box-shadow: none !important;
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_Container_"],
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._2gSXCB6PbOlMxslr8hm6dm
+{
+	background: none !important;
+}
+
+/* Shelf title */
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="pageablecontainer_Name_"],
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._17uEBe5Ri8TMsnfELvs8-N div._1Y5_HA7TsAPMiqgp01e3Ci,
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhomeshowcases_Showcase_"] div[class*="libraryhomeshowcases_CollectionDropDown_"] div.DialogDropDown_CurrentDisplay,
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div.V7RuDNUxhxoBRaiGWbk3B div._1YdRdM9TZ_3Xolwv9aVEv- div.DialogDropDown_CurrentDisplay,
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhomeshowcases_Showcase_"] div[class*="libraryhomeshowcases_CollectionDropDown_"] div[class*="libraryhomeshowcases_CountDisplay_"],
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div.V7RuDNUxhxoBRaiGWbk3B div._1YdRdM9TZ_3Xolwv9aVEv- div._2qm05e8tWSAb-_fAHytQCP
+{
+	color: rgb(var(--adw-view-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-list-header-size) !important;
+	font-weight: var(--adw-list-header-weight) !important;
+	line-height: var(--adw-list-header-height) !important;
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhomeshowcases_Showcase_"] div[class*="libraryhomeshowcases_CollectionDropDown_"] div[class*="libraryhomeshowcases_CountDisplay_"],
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div.V7RuDNUxhxoBRaiGWbk3B div._1YdRdM9TZ_3Xolwv9aVEv- div._2qm05e8tWSAb-_fAHytQCP
+{
+	color: rgba(var(--adw-view-fg-rgb), var(--adw-dim-label-opacity)) !important;
+	font-weight: var(--adw-text-base-weight) !important;
+}
+
+/* Shelf scroll buttons */
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="pageablecontainer_PageClickContainer_"] > div,
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._17uEBe5Ri8TMsnfELvs8-N div._3-h3X6yhzvZ_wk1lbCIWqb > div,
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhomeshowcases_Showcase_"] div[class*="libraryhomeshowcases_PageButtons_"] > div,
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div.V7RuDNUxhxoBRaiGWbk3B div._29NTOneobxPjUfxHUk9N8Y > div
+{
+	position: absolute !important;
+	z-index: 10 !important;
+	top: calc(50% - 10px) !important;
+	box-sizing: border-box !important;
+	width: 40px !important;
+	height: 40px !important;
+	padding: 12px !important;
+	margin: 0 !important;
+	background: var(--adw-button-osd-bg) !important;
+	color: var(--adw-button-osd-fg) !important;
+	border-radius: 50% !important;
+	cursor: default !important;
+	opacity: 1 !important;
+	transition: var(--adw-button-transition), opacity 200ms !important;
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="pageablecontainer_PageClickContainer_"] > div:hover,
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._17uEBe5Ri8TMsnfELvs8-N div._3-h3X6yhzvZ_wk1lbCIWqb > div:hover,
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhomeshowcases_Showcase_"] div[class*="libraryhomeshowcases_PageButtons_"] > div:hover,
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div.V7RuDNUxhxoBRaiGWbk3B div._29NTOneobxPjUfxHUk9N8Y > div:hover
+{
+	background: var(--adw-button-osd-bg-hover) !important;
+	color: var(--adw-button-osd-fg-hover) !important;
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="pageablecontainer_PageClickContainer_"] > div:active,
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._17uEBe5Ri8TMsnfELvs8-N div._3-h3X6yhzvZ_wk1lbCIWqb > div:active,
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhomeshowcases_Showcase_"] div[class*="libraryhomeshowcases_PageButtons_"] > div:active,
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._17uEBe5Ri8TMsnfELvs8-N div._3-h3X6yhzvZ_wk1lbCIWqb > div:active
+{
+	background: var(--adw-button-osd-bg-active) !important;
+	color: var(--adw-button-osd-fg-active) !important;
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="pageablecontainer_PageClickContainer_"] > div > svg,
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._17uEBe5Ri8TMsnfELvs8-N div._3-h3X6yhzvZ_wk1lbCIWqb > div > svg,
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhomeshowcases_Showcase_"] div[class*="libraryhomeshowcases_PageButtons_"] > div > svg,
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div.V7RuDNUxhxoBRaiGWbk3B div._29NTOneobxPjUfxHUk9N8Y > div > svg
+{
+	display: none !important;
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="pageablecontainer_PageClickContainer_"] > div::before,
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._17uEBe5Ri8TMsnfELvs8-N div._3-h3X6yhzvZ_wk1lbCIWqb > div::before,
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhomeshowcases_Showcase_"] div[class*="libraryhomeshowcases_PageButtons_"] > div::before,
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div.V7RuDNUxhxoBRaiGWbk3B div._29NTOneobxPjUfxHUk9N8Y > div::before
+{
+	background-color: currentColor;
+	content: "";
+	display: block;
+	width: 16px;
+	height: 16px;
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	-webkit-mask-size: 16px;
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="pageablecontainer_PageClickContainer_"] > div[class*="pageablecontainer_PageLeft_"]::before,
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._17uEBe5Ri8TMsnfELvs8-N div._3-h3X6yhzvZ_wk1lbCIWqb > div._1TMDJB6ciSNtEh04B3SmF8::before,
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhomeshowcases_Showcase_"] div[class*="libraryhomeshowcases_PageButtons_"] > div[class*="libraryhomeshowcases_PageLeft_"]::before,
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div.V7RuDNUxhxoBRaiGWbk3B div._29NTOneobxPjUfxHUk9N8Y > div._3uMa3icVa3JTCGQKPeUikO::before
+{
+	-webkit-mask-image: var(--adw-icon-nav-back);
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="pageablecontainer_PageClickContainer_"] > div[class*="pageablecontainer_PageRight_"]::before,
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._17uEBe5Ri8TMsnfELvs8-N div._3-h3X6yhzvZ_wk1lbCIWqb > div._2qGnLK2G3sqjtqVgYl6phc::before,
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhomeshowcases_Showcase_"] div[class*="libraryhomeshowcases_PageButtons_"] > div[class*="libraryhomeshowcases_PageRight_"]::before,
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div.V7RuDNUxhxoBRaiGWbk3B div._29NTOneobxPjUfxHUk9N8Y > div._2kWWyBO7w_F76NB8sBw86c::before
+{
+	-webkit-mask-image: var(--adw-icon-nav-forward);
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="pageablecontainer_PageClickContainer_"] > div[class*="pageablecontainer_PageLeft_"],
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._17uEBe5Ri8TMsnfELvs8-N div._3-h3X6yhzvZ_wk1lbCIWqb > div._1TMDJB6ciSNtEh04B3SmF8
+{
+	left: 16px !important;
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="pageablecontainer_PageClickContainer_"] > div[class*="pageablecontainer_PageRight_"],
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._17uEBe5Ri8TMsnfELvs8-N div._3-h3X6yhzvZ_wk1lbCIWqb > div._2qGnLK2G3sqjtqVgYl6phc
+{
+	right: 16px !important;
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhomeshowcases_Showcase_"] div[class*="libraryhomeshowcases_PageButtons_"] > div[class*="libraryhomeshowcases_PageLeft_"],
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div.V7RuDNUxhxoBRaiGWbk3B div._29NTOneobxPjUfxHUk9N8Y > div._3uMa3icVa3JTCGQKPeUikO
+{
+	left: 0 !important;
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhomeshowcases_Showcase_"] div[class*="libraryhomeshowcases_PageButtons_"] > div[class*="libraryhomeshowcases_PageRight_"],
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div.V7RuDNUxhxoBRaiGWbk3B div._29NTOneobxPjUfxHUk9N8Y > div._2kWWyBO7w_F76NB8sBw86c
+{
+	right: 0 !important;
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="pageablecontainer_PageClickContainer_"] > div[class*="pageablecontainer_Disabled_"],
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._17uEBe5Ri8TMsnfELvs8-N div._3-h3X6yhzvZ_wk1lbCIWqb > div._3llJG80O0k9arYB6_mqpPh,
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhomeshowcases_Showcase_"] div[class*="libraryhomeshowcases_PageButtons_"] > div[class*="libraryhomeshowcases_Disabled_"],
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div.V7RuDNUxhxoBRaiGWbk3B div._29NTOneobxPjUfxHUk9N8Y > div._1MNhU5EYdeegJRmQ51prWb
+{
+	opacity: 0 !important;
+	pointer-events: none !important;
+}
+
+/* Position scroll buttons relative to the whole showcase */
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhomeshowcases_Showcase_"],
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div.V7RuDNUxhxoBRaiGWbk3B
+{
+	position: relative !important;
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhomeshowcases_Showcase_"] div[class*="libraryhomeshowcases_ShowcaseHeader_"],
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div.V7RuDNUxhxoBRaiGWbk3B div._23SnllqT_AqZ1C_QHcNQ4Z
+{
+	position: initial !important;
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="libraryhomeshowcases_Showcase_"] div[class*="libraryhomeshowcases_ShowcaseGrid_"],
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div.V7RuDNUxhxoBRaiGWbk3B div._3DJLGrqzoQ5vMDI_4VG502
+{
+	gap: 16px !important;
+}
+
+body.DesktopUI div[class*="library_Container_"] div[class*="boxcarousel_MaskRight_"],
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._1urF0O1V4DZOkjI28mDvRK
+{
+	-webkit-mask-image: none !important;
+}

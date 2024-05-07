@@ -1,0 +1,30 @@
+:root
+{
+	--adw-focus-border: inset 0 0 0 2px rgba(var(--adw-accent-rgb), var(--adw-focus-border-opacity));
+	--adw-focus-border-thin: inset 0 0 0 1px rgba(var(--adw-accent-rgb), var(--adw-focus-border-opacity));
+	--adw-focus-border-outlined: inset 0 0 0 2px rgba(var(--adw-accent-rgb), var(--adw-focus-border-opacity)), inset 0 0 0 3px rgb(var(--adw-window-bg-rgb));
+
+	--adw-button-transition: box-shadow 200ms var(--adw-base-transition-curve), background 200ms var(--adw-base-transition-curve), color 200ms var(--adw-base-transition-curve);
+
+	--adw-button-suggested-fg: rgb(var(--adw-accent-fg-rgb));
+	--adw-button-suggested-bg: linear-gradient(0deg, rgb(var(--adw-accent-bg-rgb)), rgb(var(--adw-accent-bg-rgb))) transparent;
+	--adw-button-suggested-overlay-hover: rgba(var(--adw-accent-fg-rgb), 0.1);
+	--adw-button-suggested-overlay-active: rgba(0, 0, 0, 0.2);
+
+	--adw-button-radius: 6px;
+	--adw-button-pill-radius: 9999px;
+
+	--adw-button-bg-opacity: 0.1;
+	--adw-button-bg-opacity-hover: 0.15;
+	--adw-button-bg-opacity-active: 0.3;
+	--adw-button-checked-bg-opacity: 0.3;
+	--adw-button-checked-bg-opacity-hover: 0.35;
+	--adw-button-checked-bg-opacity-active: 0.4;
+
+	--adw-button-osd-fg: rgba(255, 255, 255, 0.9);
+	--adw-button-osd-fg-hover: rgb(255, 255, 255);
+	--adw-button-osd-fg-active: rgb(255, 255, 255);
+	--adw-button-osd-bg: rgba(0, 0, 0, 0.8);
+	--adw-button-osd-bg-hover: rgba(38, 38, 38, 0.8);
+	--adw-button-osd-bg-active: rgba(64, 64, 64, 0.8);
+}
