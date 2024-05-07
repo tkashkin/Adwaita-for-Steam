@@ -178,6 +178,12 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI div._24G4gV
 	cursor: default !important;
 }
 
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="gamepaddialog_Field_"] div[class*="gamepaddialog_ToggleRail_"]::before,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI div._2JtC3JSLKaOtdpAVEACsG1::before
+{
+	background: rgb(var(--adw-accent-bg-rgb)) !important;
+}
+
 /* Switch row: expand switch interactive area to fill the row */
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="gamepaddialog_Field_"] div[class*="gamepaddialog_Toggle_"]::before,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI div._24G4gV0rYtRbebXM44GkKk::before

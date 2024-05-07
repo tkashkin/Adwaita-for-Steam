@@ -63,6 +63,7 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI:has(button.
 	padding: 0 !important;
 	margin: 0 !important;
 	margin-bottom: 1px !important;
+	overflow: visible !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="gamepaddialog_Field_"]:has(button[class*="settings_SettingsDialogFatButton_"]) div[class*="gamepaddialog_FieldChildrenWithIcon_"],
@@ -87,6 +88,7 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI:has(button.
 	padding: 0 !important;
 	margin: 0 !important;
 	max-width: none !important;
+	overflow: visible !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="gamepaddialog_Field_"] button[class*="settings_SettingsDialogFatButton_"],

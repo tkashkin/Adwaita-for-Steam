@@ -70,7 +70,7 @@ body.DesktopUI div._1bGewp3tfzqAF6fVTFFUOz
 {
 	box-sizing: border-box !important;
 	border: 1px rgb(var(--adw-window-bg-rgb)) solid !important;
-	border-top: rgba(var(--adw-headerbar-shade-rgb), var(--adw-headerbar-shade-a)) !important;
+	border-top: 1px rgba(var(--adw-headerbar-shade-rgb), var(--adw-headerbar-shade-a)) solid !important;
 	background: rgb(var(--adw-window-bg-rgb)) !important;
 }
 
