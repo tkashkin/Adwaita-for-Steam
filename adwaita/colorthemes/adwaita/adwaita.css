@@ -6,7 +6,8 @@
  * - https://gitlab.gnome.org/GNOME/libadwaita/-/blob/main/src/stylesheet/_colors.scss
  */
 
-:root {
+:root
+{
 	/* The main accent color and the matching text value */
 	--adw-accent-bg-rgb: 53, 132, 228;
 	--adw-accent-fg-rgb: 255, 255, 255;
