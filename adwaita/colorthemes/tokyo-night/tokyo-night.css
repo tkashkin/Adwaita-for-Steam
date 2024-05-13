@@ -1,45 +1,81 @@
-:root {
-	--bg: #1A1B26FF;
-	--fg: #C0CAF5FF;
-	--border: #FFFFFF26;
-	--window_bg: #1A1B26FF;
-	--window_fg: #C0CAF5FF;
-	--headerbar_backdrop: #1A1B26FF;
-	--headerbar_bg: #1A1B26FF;
-	--headerbar_fg: #C0CAF5FF;
-	--headerbar_shade: #00000061;
-	--popover_bg: #1A1B26FF;
-	--popover_fg: #C0CAF5FF;
-	--toast_bg: #000000DE;
-	--toast_fg: #C0CAF5FF;
-	--view_bg: #1A1B26FF;
-	--view_fg: #C0CAF5FF;
-	--accent: #A9B1D6FF;
-	--accent_bg: #A9B1D6FF;
-	--accent_fg: #000000DE;
-	--accent_disabled: #A9B1D680;
-	--accent_hover_bg: #A9B1D612;
-	--accent_active_bg: #A9B1D629;
-	--destructive: #F28B82FF;
-	--destructive_bg: #F28B82FF;
-	--destructive_fg: #000000DE;
-	--destructive_disabled: #F28B8280;
-	--destructive_hover_bg: #F28B8212;
-	--destructive_active_bg: #F28B8229;
-	--error: #F28B82FF;
-	--error_bg: #F28B82FF;
-	--error_fg: #000000DE;
-	--success: #81C995FF;
-	--success_bg: #81C995FF;
-	--success_fg: #000000DE;
-	--warning: #FDD633FF;
-	--warning_bg: #FDD633FF;
-	--warning_fg: #000000DE;
-	--button_fg: #C0CAF5FF;
-	--dim_label_fg: #C0CAF58C;
-	--card_solid_bg: #31323CFF;
-	--focusring: #A9B1D680;
-	--scrollbar: #FFFFFF33;
-	--scrollbar_hover: #FFFFFF66;
-	--scrollbar_active: #FFFFFF99;
+:root
+{
+	/* The main accent color and the matching text value */
+	--adw-accent-bg-rgb: 169, 177, 214;
+	--adw-accent-fg-rgb: 0, 0, 0;
+	--adw-accent-rgb: 169, 177, 214;
+
+	/* destructive-action buttons */
+	--adw-destructive-bg-rgb: 242, 139, 130;
+	--adw-destructive-fg-rgb: 0, 0, 0;
+	--adw-destructive-rgb: 242, 139, 130;
+
+	/* Levelbars, entries, labels and infobars. These don't need text colors */
+	--adw-success-bg-rgb: 129, 201, 149;
+	--adw-success-fg-rgb: 0, 0, 0;
+	--adw-success-rgb: 129, 201, 149;
+
+	--adw-warning-bg-rgb: 253, 214, 51;
+	--adw-warning-fg-rgb: 0, 0, 0;
+	--adw-warning-fg-a: 0.8;
+	--adw-warning-rgb: 253, 214, 51;
+
+	--adw-error-bg-rgb: 242, 139, 130;
+	--adw-error-fg-rgb: 0, 0, 0;
+	--adw-error-rgb: 242, 139, 130;
+
+	/* Window */
+	--adw-window-bg-rgb: 26, 27, 38;
+	--adw-window-fg-rgb: 192, 202, 245;
+
+	/* Views - e.g. text view or tree view */
+	--adw-view-bg-rgb: 26, 27, 38;
+	--adw-view-fg-rgb: 192, 202, 245;
+
+	/* Header bar, search bar, tab bar */
+	--adw-headerbar-bg-rgb: 26, 27, 38;
+	--adw-headerbar-fg-rgb: 192, 202, 245;
+	--adw-headerbar-border-rgb: 255, 255, 255;
+	--adw-headerbar-backdrop-rgb: 26, 27, 38;
+	--adw-headerbar-shade-rgb: 0, 0, 0;
+	--adw-headerbar-shade-a: 0.36;
+	--adw-headerbar-darker-shade-rgb: 0, 0, 0;
+	--adw-headerbar-darker-shade-a: 0.9;
+
+	/* Split pane views */
+	--adw-sidebar-bg-rgb: 26, 27, 38;
+	--adw-sidebar-fg-rgb: 192, 202, 245;
+	--adw-sidebar-backdrop-rgb: 26, 27, 38;
+	--adw-sidebar-shade-rgb: 0, 0, 0;
+	--adw-sidebar-shade-a: 0.36;
+
+	--adw-secondary-sidebar-bg-rgb: 26, 27, 38;
+	--adw-secondary-sidebar-fg-rgb: 192, 202, 245;
+	--adw-secondary-sidebar-backdrop-rgb: 26, 27, 38;
+	--adw-secondary-sidebar-shade-rgb: 0, 0, 0;
+	--adw-secondary-sidebar-shade-a: 0.36;
+
+	/* Cards, boxed lists */
+	--adw-card-bg-rgb: 255, 255, 255;
+	--adw-card-bg-a: 0.08;
+	--adw-card-fg-rgb: 255, 255, 255;
+	--adw-card-shade-rgb: 0, 0, 0;
+	--adw-card-shade-a: 0.36;
+
+	/* Dialogs */
+	--adw-dialog-bg-rgb: 26, 27, 38;
+	--adw-dialog-fg-rgb: 192, 202, 245;
+
+	/* Popovers */
+	--adw-popover-bg-rgb: 26, 27, 38;
+	--adw-popover-fg-rgb: 192, 202, 245;
+
+	/* Thumbnails */
+	--adw-thumbnail-bg-rgb: 26, 27, 38;
+	--adw-popover-fg-rgb: 192, 202, 245;
+
+	/* Miscellaneous */
+	--adw-shade-rgb: 0, 0, 0;
+	--adw-shade-a: 0.36;
+
 }

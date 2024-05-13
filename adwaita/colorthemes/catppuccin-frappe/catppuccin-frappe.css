@@ -1,4 +1,5 @@
-:root {
+:root
+{
 	/* The main accent color and the matching text value */
 	--adw-accent-bg-rgb: 180, 190, 254;
 	--adw-accent-fg-rgb: 35, 38, 52;
