@@ -263,12 +263,15 @@ if __name__ == "__main__":
 	parser.add_argument("-d", "--dev", action = "store_true", help = "Dev Mode")
 	parser.add_argument("-e", "--extras", nargs = "+", action = "extend", help = "Enable one or multiple theme extras")
 	parser.add_argument("-l", "--list-options", action = "store_true", help = "List available themes & extras and exit")
-	parser.add_argument("-t", "--target", nargs = "+", action = "extend", default = ["normal", "flatpak"], help = "Install targets: 'normal', 'flatpak', custom paths")
+	parser.add_argument("-t", "--target", nargs = "+", action = "extend", help = "Install targets: 'normal', 'flatpak', custom paths")
 	parser.add_argument("-u", "--uninstall", action = "store_true", help = "Uninstall theme")
 	args = parser.parse_args()
 
-	if WINDOWS_RUN:
-		args.target = ["windows"]
+	if args.target is None:
+		args.target = ["normal", "flatpak"]
+
+		if WINDOWS_RUN:
+			args.target = ["windows"]			
 
 	if args.list_options:
 		list_options("color themes", find_color_themes(), ".css", colorthemedir, "color-theme")
