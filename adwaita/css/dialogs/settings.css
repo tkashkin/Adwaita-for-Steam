@@ -55,7 +55,7 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.ingame div._2wpaptjZY-3Gn1HOPlL85
 }
 
 /* Account buttons */
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="gamepaddialog_Field_"]:has(button[class*="settings_SettingsDialogFatButton_"]),
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La:has(button[class*="settings_SettingsDialogFatButton_"]),
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI:has(button.UqEiVDhZ47cn3vWxM7cR0)
 {
 	background: none !important;
@@ -66,13 +66,13 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI:has(button.
 	overflow: visible !important;
 }
 
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="gamepaddialog_Field_"]:has(button[class*="settings_SettingsDialogFatButton_"]) div[class*="gamepaddialog_FieldChildrenWithIcon_"],
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La:has(button[class*="settings_SettingsDialogFatButton_"]) div[class*="gamepaddialog_FieldChildrenWithIcon_"],
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI:has(button.UqEiVDhZ47cn3vWxM7cR0) div._2ZQ9wHACVFqZcufK_WRGPM
 {
 	position: initial !important;
 }
 
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="gamepaddialog_Field_"]:has(button[class*="settings_SettingsDialogFatButton_"]) div[class*="gamepaddialog_ControlsListOuterPanel_"],
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La:has(button[class*="settings_SettingsDialogFatButton_"]) div[class*="gamepaddialog_ControlsListOuterPanel_"],
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI:has(button.UqEiVDhZ47cn3vWxM7cR0) div._2Mvpu0Kldp2FgzYp0Tx-OP
 {
 	padding: 0 !important;
@@ -82,7 +82,7 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI:has(button.
 	gap: 1px !important;
 }
 
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="gamepaddialog_Field_"]:has(button[class*="settings_SettingsDialogFatButton_"]) div[class*="gamepaddialog_ControlsListOuterPanel_"] div[class*="gamepaddialog_ControlsListChild_"],
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La:has(button[class*="settings_SettingsDialogFatButton_"]) div[class*="gamepaddialog_ControlsListOuterPanel_"] div[class*="gamepaddialog_ControlsListChild_"],
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI:has(button.UqEiVDhZ47cn3vWxM7cR0) div._2Mvpu0Kldp2FgzYp0Tx-OP div.XvRsoF63hkSPNVBr2XPVI
 {
 	padding: 0 !important;
@@ -91,7 +91,7 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI:has(button.
 	overflow: visible !important;
 }
 
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="gamepaddialog_Field_"] button[class*="settings_SettingsDialogFatButton_"],
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La button[class*="settings_SettingsDialogFatButton_"],
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEiVDhZ47cn3vWxM7cR0
 {
 	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-opacity)) !important;
@@ -111,21 +111,21 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEi
 	justify-content: center !important;
 }
 
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="gamepaddialog_Field_"] button[class*="settings_SettingsDialogFatButton_"]:hover,
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La button[class*="settings_SettingsDialogFatButton_"]:hover,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEiVDhZ47cn3vWxM7cR0:hover
 {
 	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-hover-opacity)) !important;
 }
 
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="gamepaddialog_Field_"] button[class*="settings_SettingsDialogFatButton_"]:active,
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La button[class*="settings_SettingsDialogFatButton_"]:active,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEiVDhZ47cn3vWxM7cR0:active
 {
 	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-active-opacity)) !important;
 }
 
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="gamepaddialog_Field_"] button[class*="settings_SettingsDialogFatButton_"] > svg,
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La button[class*="settings_SettingsDialogFatButton_"] > svg,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEiVDhZ47cn3vWxM7cR0 > svg,
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="gamepaddialog_Field_"] button[class*="settings_SettingsDialogFatButton_"]::after,
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La button[class*="settings_SettingsDialogFatButton_"]::after,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEiVDhZ47cn3vWxM7cR0::after
 {
 	position: absolute !important;
@@ -135,7 +135,7 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEi
 	margin: 0 !important;
 }
 
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="gamepaddialog_Field_"] button[class*="settings_SettingsDialogFatButton_"]::after,
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La button[class*="settings_SettingsDialogFatButton_"]::after,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEiVDhZ47cn3vWxM7cR0::after
 {
 	content: "";
@@ -149,7 +149,7 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEi
 	-webkit-mask-image: var(--adw-icon-nav-forward);
 }
 
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="gamepaddialog_Field_"] button[class*="settings_SettingsDialogFatButton_"] div[class*="accountpanel_Label_"],
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La button[class*="settings_SettingsDialogFatButton_"] div[class*="accountpanel_Label_"],
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEiVDhZ47cn3vWxM7cR0 div._3wadwgMy2-9k8uOKh3iSdT
 {
 	color: rgb(var(--adw-card-fg-rgb)) !important;
@@ -160,7 +160,7 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEi
 	letter-spacing: normal !important;
 }
 
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="gamepaddialog_Field_"] button[class*="settings_SettingsDialogFatButton_"] div[class*="accountpanel_Details_"],
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La button[class*="settings_SettingsDialogFatButton_"] div[class*="accountpanel_Details_"],
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEiVDhZ47cn3vWxM7cR0 div._3Wb9yDmYPUJksCr7HmaT9H
 {
 	color: rgba(var(--adw-card-fg-rgb), var(--adw-dim-label-opacity)) !important;
@@ -172,7 +172,7 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEi
 	letter-spacing: normal !important;
 }
 
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="gamepaddialog_Field_"] button[class*="settings_SettingsDialogFatButton_"] div[class*="accountpanel_Details_"] > span[class*="accountpanel_Highlight_"],
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La button[class*="settings_SettingsDialogFatButton_"] div[class*="accountpanel_Details_"] > span[class*="accountpanel_Highlight_"],
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEiVDhZ47cn3vWxM7cR0 div._3Wb9yDmYPUJksCr7HmaT9H > span._35ztZulp_gETT1gOElpfvK
 {
 	color: rgb(var(--adw-card-fg-rgb)) !important;
@@ -182,8 +182,146 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEi
 	margin-left: 4px !important;
 }
 
+/* Family */
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.familysettings_FamilyGroup_3RNLm,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1
+{
+	position: relative !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.familysettings_FamilyGroup_3RNLm div.familysettings_FamilyNameRow_3K8Af,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 div._3K8Afwm4bvd9vSIzAz9siX
+{
+	padding: 0 !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.familysettings_FamilyGroup_3RNLm div.familysettings_FamilyNameRow_3K8Af > span.familysettings_YourFamily_1RfVQ,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 div._3K8Afwm4bvd9vSIzAz9siX > span._1RfVQWVozb8NJ_wmCLAtxP,
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.familysettings_FamilyGroup_3RNLm div.familysettings_FamilyNameRow_3K8Af > div.familysettings_FamilyName_H4JE-,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 div._3K8Afwm4bvd9vSIzAz9siX > div.H4JE-8OU0E7AeMZY3bEeM,
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.familysettings_FamilyGroup_3RNLm button.familysettings_ManageFamilyButton_1foeE,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 button._1foeEGhPcfRZy7M3msTvNt
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	line-height: var(--adw-list-header-height) !important;
+	text-transform: none !important;
+	letter-spacing: normal !important;
+	font-size: var(--adw-list-header-size) !important;
+	font-weight: var(--adw-list-header-weight) !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.familysettings_FamilyGroup_3RNLm div.familysettings_FamilyNameRow_3K8Af > div.familysettings_FamilyName_H4JE-,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 div._3K8Afwm4bvd9vSIzAz9siX > div.H4JE-8OU0E7AeMZY3bEeM
+{
+	color: rgb(var(--adw-accent-rgb)) !important;
+	margin-left: 4px !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.familysettings_FamilyGroup_3RNLm button.familysettings_ManageFamilyButton_1foeE,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 button._1foeEGhPcfRZy7M3msTvNt
+{
+	position: absolute !important;
+	top: 0 !important;
+	right: 0 !important;
+	width: auto !important;
+	height: var(--adw-list-header-height) !important;
+	padding: 0 12px !important;
+	background: transparent !important;
+	box-shadow: none !important;
+	border-radius: var(--adw-button-radius) !important;
+	transition: var(--adw-button-transition) !important;
+	cursor: default !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.familysettings_FamilyGroup_3RNLm button.familysettings_ManageFamilyButton_1foeE:hover,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 button._1foeEGhPcfRZy7M3msTvNt:hover
+{
+	background: rgba(var(--adw-window-fg-rgb), var(--adw-hover-opacity)) !important;
+	box-shadow: none !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.familysettings_FamilyGroup_3RNLm button.familysettings_ManageFamilyButton_1foeE:active,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 button._1foeEGhPcfRZy7M3msTvNt:active
+{
+	background: rgba(var(--adw-window-fg-rgb), var(--adw-active-opacity)) !important;
+	box-shadow: none !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.familysettings_FamilyGroup_3RNLm button.familysettings_ManageFamilyButton_1foeE::before,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 button._1foeEGhPcfRZy7M3msTvNt::before
+{
+	content: none !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.familysettings_FamilyGroup_3RNLm div.familysharedcomponents_FamilyMemberRow_3QkkY,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 div._3QkkYqYUNkuL-1EOrIbEhB
+{
+	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-opacity)) !important;
+	color: rgb(var(--adw-card-fg-rgb)) !important;
+	border-radius: 0 !important;
+	box-shadow: var(--adw-card-shadow) !important;
+	border: none !important;
+	min-height: var(--adw-row-height) !important;
+	box-sizing: border-box !important;
+	padding: 4px 12px !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-row-title-size) !important;
+	font-weight: var(--adw-text-row-title-weight) !important;
+	text-transform: none !important;
+	line-height: normal !important;
+	letter-spacing: normal !important;
+	transition: var(--adw-button-transition) !important;
+	margin: 0 0 1px 0 !important;
+	justify-content: center !important;
+	position: relative !important;
+	overflow: hidden !important;
+	flex: none !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.familysettings_FamilyGroup_3RNLm div.familysharedcomponents_FamilyMemberRow_3QkkY:nth-child(2),
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 div._3QkkYqYUNkuL-1EOrIbEhB:nth-child(2)
+{
+	border-top-left-radius: var(--adw-card-radius) !important;
+	border-top-right-radius: var(--adw-card-radius) !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.familysettings_FamilyGroup_3RNLm div.familysharedcomponents_FamilyMemberRow_3QkkY:nth-last-child(2),
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 div._3QkkYqYUNkuL-1EOrIbEhB:nth-last-child(2)
+{
+	border-bottom-left-radius: var(--adw-card-radius) !important;
+	border-bottom-right-radius: var(--adw-card-radius) !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.familysettings_FamilyGroup_3RNLm div.familysharedcomponents_FamilyMemberRow_3QkkY:hover,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 div._3QkkYqYUNkuL-1EOrIbEhB:hover
+{
+	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-hover-opacity)) !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.familysettings_FamilyGroup_3RNLm div.familysharedcomponents_FamilyMemberRow_3QkkY:active,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 div._3QkkYqYUNkuL-1EOrIbEhB:active
+{
+	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-active-opacity)) !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.familysettings_FamilyGroup_3RNLm div.familysharedcomponents_FamilyMemberRow_3QkkY a.familysharedcomponents_ProfileLink_iKwt8,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 div._3QkkYqYUNkuL-1EOrIbEhB a.iKwt8JWlzzFgS6UsereGW
+{
+	flex-grow: 1 !important;
+	cursor: default !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.familysettings_FamilyGroup_3RNLm div.familysharedcomponents_FamilyMemberRow_3QkkY div.familysharedcomponents_RoleAndIcon_1VP1W,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 div._3QkkYqYUNkuL-1EOrIbEhB div._1VP1WperM9AtlP6cNIYFHK
+{
+	order: 1 !important;
+}
+
 /* Notification settings: table header */
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="gamepaddialog_Field_"][class*="notificationssettings_ToggleHeader_"],
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La[class*="notificationssettings_ToggleHeader_"],
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI._33Q-MOeBz52WPV0tuTqKy
 {
 	min-height: auto !important;
@@ -194,16 +332,480 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI._33Q-MOeBz5
 }
 
 /* Notification settings: revert switch area expansion */
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="gamepaddialog_Field_"] div[class*="notificationssettings_Toggles_"] div[class*="gamepaddialog_Toggle_"]::before,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI div._27r3CjIYhU20TsukVgm25C div._24G4gV0rYtRbebXM44GkKk::before
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La div[class*="notificationssettings_Toggles_"] div[class*="gamepaddialog_Toggle_"]::before,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI div._27r3CjIYhU20TsukVgm25C div._24G4gV0rYtRbebXM44GkKk::before,
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE div[class*="gamepaddialog_Toggle_"]::before,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 div._24G4gV0rYtRbebXM44GkKk::before
 {
 	content: none !important;
 }
 
+/* Notification settings: expandable rows */
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1
+{
+	border: none !important;
+	background: none !important;
+	padding: 0 !important;
+	margin: 0 0 1px 0 !important;
+	border-radius: 0 !important;
+	overflow: hidden; !important;
+	box-shadow: var(--adw-card-shadow) !important;
+	transition: height 200ms var(--adw-base-transition-curve) !important;
+	height: var(--adw-row-height) !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE.notificationssettings_NotificationGroupExpanded_21Uc0,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1._21Uc0N6TIRIw4LIZzQnsdE
+{
+	height: calc(var(--adw-row-height) * 3) !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE:first-child,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1:first-child,
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_Subheader_31RJy + div.notificationssettings_NotificationGroup_2KFeE,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._31RJyFXKo0KWIm1cS4INFH + div._2KFeE_s51aT07ohdMu_ZH1
+{
+	border-top-left-radius: var(--adw-card-radius) !important;
+	border-top-right-radius: var(--adw-card-radius) !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE:last-child,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1:last-child
+{
+	border-bottom-left-radius: var(--adw-card-radius) !important;
+	border-bottom-right-radius: var(--adw-card-radius) !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE > div.notificationssettings_NotificationSection_BRmrC,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 > div.BRmrC-jnwpXqye4oYB21C,
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE > div.notificationssettings_NotificationPrefDetails_1u5y7,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 > div._1u5y7VbwvOwncjMsMqnFUz,
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE > div.notificationssettings_NotificationPrefDetails_1u5y7 > div.DialogCheckbox_Container,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 > div._1u5y7VbwvOwncjMsMqnFUz > div.DialogCheckbox_Container
+{
+	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-opacity)) !important;
+	color: rgb(var(--adw-card-fg-rgb)) !important;
+	border-radius: 0 !important;
+	box-shadow: none !important;
+	border: none !important;
+	height: var(--adw-row-height) !important;
+	box-sizing: border-box !important;
+	padding: 4px 12px !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-row-title-size) !important;
+	font-weight: var(--adw-text-row-title-weight) !important;
+	text-transform: none !important;
+	line-height: normal !important;
+	letter-spacing: normal !important;
+	transition: var(--adw-button-transition) !important;
+	margin: 0 0 1px 0 !important;
+	justify-content: center !important;
+	position: relative !important;
+	overflow: hidden !important;
+	flex: none !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE > div.notificationssettings_NotificationSection_BRmrC:hover,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 > div.BRmrC-jnwpXqye4oYB21C:hover
+{
+	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-hover-opacity)) !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE > div.notificationssettings_NotificationSection_BRmrC:active,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 > div.BRmrC-jnwpXqye4oYB21C:active
+{
+	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-active-opacity)) !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE p.notificationssettings_NotificationDescription_1ifM6,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 p._1ifM6luJEQ5H2O1Y3S6F_R,
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE > div.notificationssettings_NotificationPrefDetails_1u5y7 > div.DialogCheckbox_Container div.DialogToggle_Label,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 > div._1u5y7VbwvOwncjMsMqnFUz > div.DialogCheckbox_Container div.DialogToggle_Label
+{
+	padding: 0 !important;
+	margin: 0 !important;
+	color: rgb(var(--adw-card-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-row-title-size) !important;
+	font-weight: var(--adw-text-row-title-weight) !important;
+	line-height: normal !important;
+	letter-spacing: normal !important;
+	display: flex !important;
+	align-self: center !important;
+	order: 1 !important;
+	flex-grow: 1 !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE div.gamepaddialog_Field_S-_La,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 div.S-_LaQG5eEOM2HWZ-geJI,
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE div.gamepaddialog_Field_S-_La:hover,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 div.S-_LaQG5eEOM2HWZ-geJI:hover,
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE div.gamepaddialog_Field_S-_La:active,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 div.S-_LaQG5eEOM2HWZ-geJI:active
+{
+	background: none !important;
+	box-shadow: none !important;
+	padding: 0 !important;
+	margin: 0 24px 0 0 !important;
+	min-height: auto !important;
+	order: 2 !important;
+	z-index: 1 !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE div.gamepaddialog_Field_S-_La div.gamepaddialog_FieldChildrenWithIcon_2ZQ9w,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 div.S-_LaQG5eEOM2HWZ-geJI div._2ZQ9wHACVFqZcufK_WRGPM
+{
+	right: 0 !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE button.notificationssettings_PrefDetailsToggle_3aB-C,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 button._3aB-C2eTsfVtvZR5sC9N_r
+{
+	position: absolute !important;
+	width: auto !important;
+	height: auto !important;
+	left: 0 !important;
+	right: 0 !important;
+	top: 0 !important;
+	bottom: 0 !important;
+	margin: 0 !important;
+	padding: 4px 12px !important;
+	cursor: default !important;
+	background: none !important;
+	box-shadow: none !important;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: end !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE button.notificationssettings_PrefDetailsToggle_3aB-C > svg,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 button._3aB-C2eTsfVtvZR5sC9N_r > svg
+{
+	display: none !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE button.notificationssettings_PrefDetailsToggle_3aB-C::before,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 button._3aB-C2eTsfVtvZR5sC9N_r::before
+{
+	content: none !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE button.notificationssettings_PrefDetailsToggle_3aB-C::after,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 button._3aB-C2eTsfVtvZR5sC9N_r::after
+{
+	content: "";
+	background-color: rgba(var(--adw-card-fg-rgb), 0.5);
+	display: block;
+	width: 16px;
+	height: 16px;
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	-webkit-mask-size: 16px;
+	-webkit-mask-image: var(--adw-icon-expander-arrow);
+	transform: rotate(180deg);
+	transition: background-color 200ms var(--adw-base-transition-curve), transform 200ms var(--adw-base-transition-curve);
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE.notificationssettings_NotificationGroupExpanded_21Uc0 button.notificationssettings_PrefDetailsToggle_3aB-C::after,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1._21Uc0N6TIRIw4LIZzQnsdE button._3aB-C2eTsfVtvZR5sC9N_r::after
+{
+	background-color: rgb(var(--adw-accent-rgb));
+	transform: rotate(0deg);
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE > div.notificationssettings_NotificationPrefDetails_1u5y7,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 > div._1u5y7VbwvOwncjMsMqnFUz
+{
+	background: none !important;
+	padding: 0 !important;
+	flex-direction: column !important;
+	height: calc(var(--adw-row-height) * 2) !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE > div.notificationssettings_NotificationPrefDetails_1u5y7 > div.DialogCheckbox_Container,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 > div._1u5y7VbwvOwncjMsMqnFUz > div.DialogCheckbox_Container
+{
+	background: rgba(var(--adw-card-bg-rgb), calc(var(--adw-card-opacity) * 0.5)) !important;
+	justify-content: start !important;
+	padding: 4px 12px 4px 56px !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE > div.notificationssettings_NotificationPrefDetails_1u5y7 > div.DialogCheckbox_Container:hover,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 > div._1u5y7VbwvOwncjMsMqnFUz > div.DialogCheckbox_Container:hover
+{
+	background: rgba(var(--adw-card-bg-rgb), calc(var(--adw-card-hover-opacity) - var(--adw-card-opacity) * 0.5)) !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE > div.notificationssettings_NotificationPrefDetails_1u5y7 > div.DialogCheckbox_Container:active,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 > div._1u5y7VbwvOwncjMsMqnFUz > div.DialogCheckbox_Container:active
+{
+	background: rgba(var(--adw-card-bg-rgb), calc(var(--adw-card-active-opacity) - var(--adw-card-opacity) * 0.5)) !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE > div.notificationssettings_NotificationPrefDetails_1u5y7 > div.DialogCheckbox_Container:has(.DialogCheckbox.Disabled),
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 > div._1u5y7VbwvOwncjMsMqnFUz > div.DialogCheckbox_Container:has(.DialogCheckbox.Disabled)
+{
+	opacity: var(--adw-disabled-opacity) !important;
+	pointer-events: none !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE > div.notificationssettings_NotificationPrefDetails_1u5y7 > div.DialogCheckbox_Container .DialogCheckbox,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 > div._1u5y7VbwvOwncjMsMqnFUz > div.DialogCheckbox_Container .DialogCheckbox
+{
+	position: absolute !important;
+	left: 17px !important;
+	top: 17px !important;
+	width: 20px !important;
+	height: 20px !important;
+}
+
+/* Library action buttons */
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.librarysettings_ActionSection_RoSh6,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.RoSh6WoygUX6LLAoB20f3
+{
+	flex-direction: column !important;
+	gap: 12px !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.librarysettings_ActionSection_RoSh6 button.settings_SettingsDialogButton_3epr8,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.RoSh6WoygUX6LLAoB20f3 button._3epr8QYWw_FqFgMx38YEEm
+{
+	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-opacity)) !important;
+	color: rgb(var(--adw-card-fg-rgb)) !important;
+	border-radius: var(--adw-card-radius) !important;
+	box-shadow: var(--adw-card-shadow) !important;
+	border: none !important;
+	height: 46px !important;
+	box-sizing: border-box !important;
+	padding: 4px 12px !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-title3-size) !important;
+	font-weight: var(--adw-text-title3-weight) !important;
+	text-transform: none !important;
+	line-height: normal !important;
+	letter-spacing: normal !important;
+	transition: var(--adw-button-transition) !important;
+	margin: 0 !important;
+	overflow: hidden !important;
+	width: auto !important;
+	cursor: default !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.librarysettings_ActionSection_RoSh6 button.settings_SettingsDialogButton_3epr8:hover,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.RoSh6WoygUX6LLAoB20f3 button._3epr8QYWw_FqFgMx38YEEm:hover
+{
+	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-hover-opacity)) !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.librarysettings_ActionSection_RoSh6 button.settings_SettingsDialogButton_3epr8:active,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.RoSh6WoygUX6LLAoB20f3 button._3epr8QYWw_FqFgMx38YEEm:active
+{
+	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-active-opacity)) !important;
+}
+
+/* Controller: tabs */
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepadtabbedpage_TabRow_19z_5,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._19z_50-qWZWxcgXfWNtSWb
+{
+	background: rgb(var(--adw-window-bg-rgb)) !important;
+	position: fixed !important;
+	top: 0 !important;
+	height: 46px !important;
+	box-sizing: border-box !important;
+	width: calc(600px - 2 * var(--adw-windowcontrols-close-margin-right)) !important;
+	margin-left: var(--adw-windowcontrols-close-margin-right) !important;
+	z-index: 2 !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepadtabbedpage_TabRow_19z_5 div.gamepadtabbedpage_FixCenterAlignScroll_1CJeU,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._19z_50-qWZWxcgXfWNtSWb div._1CJeU7emnRNSJ8Xk3Leavm
+{
+	column-gap: 3px !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepadtabbedpage_TabRow_19z_5 div.gamepadtabbedpage_Tab_3eEbS,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._19z_50-qWZWxcgXfWNtSWb div._3eEbSktrstBdLk0dVpnKVI
+{
+	background: none !important;
+	border-radius: var(--adw-button-radius) !important;
+	height: 34px !important;
+	box-sizing: border-box !important;
+	cursor: default !important;
+	padding: 2px 12px !important;
+	gap: 6px !important;
+	-webkit-app-region: no-drag !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepadtabbedpage_TabRow_19z_5 div.gamepadtabbedpage_Tab_3eEbS:hover,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._19z_50-qWZWxcgXfWNtSWb div._3eEbSktrstBdLk0dVpnKVI:hover
+{
+	background: rgba(var(--adw-window-fg-rgb), var(--adw-hover-opacity)) !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepadtabbedpage_TabRow_19z_5 div.gamepadtabbedpage_Tab_3eEbS:active,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._19z_50-qWZWxcgXfWNtSWb div._3eEbSktrstBdLk0dVpnKVI:active
+{
+	background: rgba(var(--adw-window-fg-rgb), var(--adw-active-opacity)) !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepadtabbedpage_TabRow_19z_5 div.gamepadtabbedpage_Tab_3eEbS.gamepadtabbedpage_Selected_3Gp1b,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._19z_50-qWZWxcgXfWNtSWb div._3eEbSktrstBdLk0dVpnKVI._3Gp1bACHx__POxmy6Gd3kG
+{
+	background: rgba(var(--adw-window-fg-rgb), var(--adw-selected-opacity)) !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepadtabbedpage_TabRow_19z_5 div.gamepadtabbedpage_Tab_3eEbS.gamepadtabbedpage_Selected_3Gp1b:hover,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._19z_50-qWZWxcgXfWNtSWb div._3eEbSktrstBdLk0dVpnKVI._3Gp1bACHx__POxmy6Gd3kG:hover
+{
+	background: rgba(var(--adw-window-fg-rgb), var(--adw-selected-hover-opacity)) !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepadtabbedpage_TabRow_19z_5 div.gamepadtabbedpage_Tab_3eEbS.gamepadtabbedpage_Selected_3Gp1b:active,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._19z_50-qWZWxcgXfWNtSWb div._3eEbSktrstBdLk0dVpnKVI._3Gp1bACHx__POxmy6Gd3kG:active
+{
+	background: rgba(var(--adw-window-fg-rgb), var(--adw-selected-active-opacity)) !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepadtabbedpage_TabRow_19z_5 div.gamepadtabbedpage_Tab_3eEbS span.gamepadtabbedpage_TabIcon_3Ebb3,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._19z_50-qWZWxcgXfWNtSWb div._3eEbSktrstBdLk0dVpnKVI span._3Ebb3ha_Q86-lxguhjfyE1
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	width: 16px !important;
+	height: 16px !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepadtabbedpage_TabRow_19z_5 div.gamepadtabbedpage_Tab_3eEbS span.gamepadtabbedpage_TabTitle_1nq0i,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._19z_50-qWZWxcgXfWNtSWb div._3eEbSktrstBdLk0dVpnKVI span._1nq0ibcuVEbRv0z_wk9pIQ
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-title3-size) !important;
+	font-weight: var(--adw-text-title3-weight) !important;
+	line-height: 24px !important;
+	text-transform: none !important;
+	letter-spacing: normal !important;
+}
+
+/* Controller: Nintendo Switch layout row */
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.controllersettings_NintendoSwitchLayoutToggle_3Q8Vc,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3Q8Vc4HcvrUZVLqnC1hTXT
+{
+	position: relative !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.controllersettings_NintendoSwitchLayoutToggle_3Q8Vc div.gamepaddialog_Field_S-_La,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3Q8Vc4HcvrUZVLqnC1hTXT div.S-_LaQG5eEOM2HWZ-geJI
+{
+	border-radius: 0 !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.controllersettings_NintendoSwitchLayoutToggle_3Q8Vc div.gamepaddialog_Field_S-_La div.gamepaddialog_FieldLabel_3b0U-,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3Q8Vc4HcvrUZVLqnC1hTXT div.S-_LaQG5eEOM2HWZ-geJI div._3b0U-QDD-uhFpw6xM716fw
+{
+	margin-top: -8px !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.controllersettings_NintendoSwitchLayoutToggle_3Q8Vc div.gamepaddialog_Field_S-_La div.gamepaddialog_FieldLabel_3b0U- > div.gamepaddialog_FieldIcon_1sC68,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3Q8Vc4HcvrUZVLqnC1hTXT div.S-_LaQG5eEOM2HWZ-geJI div._3b0U-QDD-uhFpw6xM716fw > div._1sC68UJqI3ry5Gnk5cnH9U
+{
+	margin-top: 8px !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.controllersettings_NintendoSwitchLayoutToggle_3Q8Vc span.controllersettings_NintendoSwitchLayoutToggleDesc_3J9Od,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3Q8Vc4HcvrUZVLqnC1hTXT span._3J9OdCswxSe0Vguxo8A17n
+{
+	position: absolute !important;
+	left: 56px !important;
+	top: 30px !important;
+	color: rgba(var(--adw-card-fg-rgb), var(--adw-dim-label-opacity)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-row-subtitle-size) !important;
+	font-weight: var(--adw-text-row-subtitle-weight) !important;
+	line-height: normal !important;
+	letter-spacing: normal !important;
+	pointer-events: none !important;
+}
+
+/* Controller: layout row buttons */
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.settings_BuiltInLayoutButtons_3KH4C,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3KH4CAWiBX2hESrbRk4DBn
+{
+	gap: 6px !important;
+	min-width: auto !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.settings_BuiltInLayoutButtons_3KH4C button.DialogButton,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton
+{
+	cursor: default !important;
+	border-radius: var(--adw-button-radius) !important;
+	box-sizing: border-box !important;
+	width: 34px !important;
+	height: 34px !important;
+	min-width: auto !important;
+	min-height: auto !important;
+	padding: 9px !important;
+	margin: 0 !important;
+	transition: var(--adw-button-transition) !important;
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	background: transparent !important;
+	box-shadow: none !important;
+	text-indent: -9999px !important;
+	font-size: 0 !important;
+	line-height: 0 !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.settings_BuiltInLayoutButtons_3KH4C button.DialogButton:hover,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton:hover
+{
+	background: rgba(var(--adw-window-fg-rgb), var(--adw-hover-opacity)) !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.settings_BuiltInLayoutButtons_3KH4C button.DialogButton:active,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton:active
+{
+	background: rgba(var(--adw-window-fg-rgb), var(--adw-active-opacity)) !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.settings_BuiltInLayoutButtons_3KH4C button.DialogButton > svg,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3KH4CAWiBX2hESrbRk4DBn button > svg
+{
+	display: none !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.settings_BuiltInLayoutButtons_3KH4C button.DialogButton::after,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton::after
+{
+	background-color: rgb(var(--adw-window-fg-rgb));
+	content: "";
+	display: block;
+	width: 16px;
+	height: 16px;
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	-webkit-mask-size: 16px;
+	box-shadow: none !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.settings_BuiltInLayoutButtons_3KH4C button.DialogButton.settings_SettingsDialogButton_3epr8::after,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton._3epr8QYWw_FqFgMx38YEEm::after
+{
+	-webkit-mask-image: var(--adw-icon-edit);
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.settings_BuiltInLayoutButtons_3KH4C button.DialogButton.settings_BuiltInLayoutButton_30Og7::after,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton._30Og77vH37EtqaKCCDIAP9::after
+{
+	-webkit-mask-image: var(--adw-icon-more);
+}
+
 /* Hidden widgets */
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="gamepaddialog_Field_"] div[class*="friendssettings_FakeFriend_"],
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La div[class*="friendssettings_FakeFriend_"],
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI div._3oeHwxQTKDkPcxDhz8jbhM,
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="gamepaddialog_Field_"] svg[class*="desktopsecuritysettings_SteamGuardIcon_"],
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La svg[class*="desktopsecuritysettings_SteamGuardIcon_"],
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI svg.eYz3vzuTb_a2I4dRJ-vf9
 {
 	display: none !important;

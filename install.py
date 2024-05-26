@@ -10,7 +10,7 @@ import os
 
 # Platform Specific
 if platform == "win32":
-	WINDOWS_RUN = True
+	is_windows = True
 
 	TEXT_BOLD = ""
 	TEXT_BLUE = ""
@@ -24,7 +24,7 @@ if platform == "win32":
 	TEXT_CROSS = ""
 	TEXT_INFO = ""
 else:
-	WINDOWS_RUN = False
+	is_windows = False
 
 	TEXT_BOLD = "\033[1m"
 	TEXT_BLUE = "\033[1;34m"
@@ -45,7 +45,7 @@ EXTRAS_DIR = f"{ADWAITA_DIR}/extras"
 
 TARGET_NORMAL = "~/.steam/steam"
 TARGET_FLATPAK = "~/.var/app/com.valvesoftware.Steam/.steam/steam"
-TARGET_WINDOWS = "C:/Program Files (x86)/Steam"
+TARGET_WINDOWS = "C:\\Program Files (x86)\\Steam"
 
 STEAM_LOOPBACK = "https://steamloopback.host"
 STEAM_LOOPBACK_ADWAITA = f"{STEAM_LOOPBACK}/{ADWAITA_DIR}"
@@ -61,7 +61,6 @@ STEAM_CUSTOM_LIBRARY = f"{STEAM_UI_DIR}/libraryroot.custom.css"
 
 LIBRARY_ROOT_CSS = "libraryroot.custom.css"
 CUSTOM_CSS = "custom.css"
-
 
 adwaitadir = Path(ADWAITA_DIR)
 colorthemedir = Path(COLOR_THEME_DIR)
@@ -113,7 +112,8 @@ LIBRARY_FILES = [
 	"css/dialogs/pagedsettings/rows.css",
 
 	"css/dialogs/login.css",
-	"css/dialogs/settings.css"
+	"css/dialogs/settings.css",
+	"css/dialogs/appproperties.css"
 ]
 
 
@@ -205,7 +205,7 @@ def patch_client_css(target: Path, name: str):
 		if css_file.readline().strip() == STEAM_PATCHED_HEADER:
 			return
 
-	orig_css = target_css.rename(target_css.with_suffix(".original.css"))
+	orig_css = target_css.replace(target_css.with_suffix(".original.css"))
 	name = target_css.stem
 	css_dir = "css"
 
@@ -270,7 +270,7 @@ if __name__ == "__main__":
 	if args.target is None:
 		args.target = ["normal", "flatpak"]
 
-		if WINDOWS_RUN:
+		if is_windows:
 			args.target = ["windows"]			
 
 	if args.list_options:
@@ -289,7 +289,6 @@ if __name__ == "__main__":
 			test = colorthemedir / t / t
 			if not test.with_suffix(".css").exists():
 				raise SystemExit(f"{TEXT_RED}{TEXT_CROSS} {TEXT_BOLD}{test}{TEXT_RESET}{TEXT_RED} theme not found.{TEXT_RESET}")
-
 
 	with TemporaryDirectory() as tmpdir:
 		tmp = Path(tmpdir)
@@ -311,7 +310,12 @@ if __name__ == "__main__":
 			elif t == "flatpak":
 				targets.add(Path(TARGET_FLATPAK).expanduser().resolve())
 			elif t == "windows":
-				targets.add(Path(TARGET_WINDOWS))
+				try:
+					import winreg
+					reg_path = winreg.QueryValueEx(winreg.OpenKey(winreg.HKEY_LOCAL_MACHINE, "SOFTWARE\\WOW6432Node\\Valve\\Steam"), "InstallPath")[0]
+					targets.add(Path(reg_path).resolve())
+				except:
+					targets.add(Path(TARGET_WINDOWS).resolve())
 			else:
 				targets.add(Path(t).expanduser().resolve())
 

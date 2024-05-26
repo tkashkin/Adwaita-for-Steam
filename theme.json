@@ -1,7 +1,7 @@
 {
     "name": "Adwaita for Steam",
     "author": "tk",
-    "version": "v2.1",
+    "version": "v2.2",
     "manifest_version": 8,
     "description": "A skin to make Steam look more like a native GNOME app",
     "target": "Desktop",
@@ -52,7 +52,8 @@
         "adwaita/css/dialogs/pagedsettings/rows.css": ["all"],
 
         "adwaita/css/dialogs/login.css": ["all"],
-        "adwaita/css/dialogs/settings.css": ["all"]
+        "adwaita/css/dialogs/settings.css": ["all"],
+        "adwaita/css/dialogs/appproperties.css": ["all"]
     },
     "patches": {
         "Color Theme": {

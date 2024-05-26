@@ -1,0 +1,40 @@
+/* Comboboxes on the Updates page */
+body.DesktopUI div.appproperties_AppProperties_1FyBL div.DialogBody > div:not([class]):first-child > div.gamepaddialog_Field_S-_La,
+body.DesktopUI div._1FyBL6obxHQ2Z2CsaV2Gbz div.DialogBody > div:not([class]):first-child > div.S-_LaQG5eEOM2HWZ-geJI
+{
+	border-bottom-left-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+}
+
+body.DesktopUI div.appproperties_AppProperties_1FyBL div.DialogBody > div:not([class]):first-child + div.gamepaddialog_Field_S-_La,
+body.DesktopUI div._1FyBL6obxHQ2Z2CsaV2Gbz div.DialogBody > div:not([class]):first-child + div.S-_LaQG5eEOM2HWZ-geJI
+{
+	height: 0 !important;
+    min-height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+	overflow: visible !important;
+	background: none !important;
+	box-shadow: none !important;
+}
+
+body.DesktopUI div.appproperties_AppProperties_1FyBL div.DialogBody > div:not([class]):first-child + div.gamepaddialog_Field_S-_La div.gamepaddialog_FieldLabel_3b0U-,
+body.DesktopUI div._1FyBL6obxHQ2Z2CsaV2Gbz div.DialogBody > div:not([class]):first-child + div.S-_LaQG5eEOM2HWZ-geJI div._3b0U-QDD-uhFpw6xM716fw
+{
+	position: absolute !important;
+	left: 12px !important;
+	top: 18px !important;
+}
+
+body.DesktopUI div.appproperties_AppProperties_1FyBL div.DialogBody > div:not([class]):first-child + div.gamepaddialog_Field_S-_La div.gamepaddialog_FieldDescription_2OJfk,
+body.DesktopUI div._1FyBL6obxHQ2Z2CsaV2Gbz div.DialogBody > div:not([class]):first-child + div.S-_LaQG5eEOM2HWZ-geJI div._2OJfkxlD3X9p8Ygu1vR7Lr
+{
+	display: none !important;
+}
+
+body.DesktopUI div.appproperties_AppProperties_1FyBL div.DialogBody > div:not([class]):first-child + div.gamepaddialog_Field_S-_La + div.gamepaddialog_Field_S-_La,
+body.DesktopUI div._1FyBL6obxHQ2Z2CsaV2Gbz div.DialogBody > div:not([class]):first-child + div.S-_LaQG5eEOM2HWZ-geJI + div.S-_LaQG5eEOM2HWZ-geJI
+{
+	border-bottom-left-radius: var(--adw-card-radius) !important;
+	border-bottom-right-radius: var(--adw-card-radius) !important;
+}
