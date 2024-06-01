@@ -1,6 +1,7 @@
 /* Row group header */
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.DialogSubHeader,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogSubHeader,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.SettingsDialogSubHeader,
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.DialogBodyText,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogBodyText,
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.DialogControlsSectionHeader,
@@ -33,12 +34,15 @@ body.DesktopUI div._1FyBL6obxHQ2Z2CsaV2Gbz div.HxqeaLbjhdRiSTK8ZFwxJ
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.DialogSubHeader:not(:first-child),
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogSubHeader:not(:first-child),
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.SettingsDialogSubHeader:not(:first-child),
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.DialogControlsSectionHeader:not(:first-child),
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogControlsSectionHeader:not(:first-child),
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.DialogControlsSection:not(:first-child),
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogControlsSection:not(:first-child),
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.DialogControlsSection + div.gamepaddialog_Field_S-_La,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogControlsSection + div.S-_LaQG5eEOM2HWZ-geJI
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogControlsSection + div.S-_LaQG5eEOM2HWZ-geJI,
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationListSection_kslgS + div.notificationssettings_NotificationListSection_kslgS,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.kslgScf2gDsE4jgFDZHEW + div.kslgScf2gDsE4jgFDZHEW
 {
 	margin-top: 16px !important;
 }
@@ -124,20 +128,31 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI div._2OJfkx
 	z-index: 1 !important;
 }
 
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La:has(div.gamepaddialog_FieldIcon_1sC68),
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI:has(div._1sC68UJqI3ry5Gnk5cnH9U)
+{
+	padding-left: 56px !important;
+}
+
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La div.gamepaddialog_FieldIcon_1sC68,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI div._1sC68UJqI3ry5Gnk5cnH9U
 {
-	width: 20px !important;
-	height: 20px !important;
 	box-sizing: border-box !important;
+	width: 20px !important;
+	height: 100% !important;
 	padding: 0 !important;
-	margin: 0 18px 0 6px !important;
+	margin: 0 !important;
+	position: absolute !important;
+	left: 17px !important;
+	top: 0 !important;
+	bottom: 0 !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La:first-child,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI:first-child,
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.DialogSubHeader + div.gamepaddialog_Field_S-_La,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogSubHeader + div.S-_LaQG5eEOM2HWZ-geJI,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.SettingsDialogSubHeader + div.S-_LaQG5eEOM2HWZ-geJI,
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.DialogBodyText + div.gamepaddialog_Field_S-_La,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogBodyText + div.S-_LaQG5eEOM2HWZ-geJI,
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.DialogControlsSectionHeader + div.gamepaddialog_Field_S-_La,
@@ -159,6 +174,7 @@ body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Fie
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI:last-child,
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La:has(+ div.DialogSubHeader),
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI:has(+ div.DialogSubHeader),
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI:has(+ div.SettingsDialogSubHeader),
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La:has(+ div.DialogBodyText),
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI:has(+ div.DialogBodyText),
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La:has(+ div.DialogControlsSectionHeader),
@@ -189,6 +205,7 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI div._2ZQ9wH
 	bottom: 0 !important;
 	right: 12px !important;
 	align-items: center !important;
+	padding: 0 !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La:has(div[class*="gamepaddialog_Toggle_"]):hover,
@@ -392,8 +409,10 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI::after
 /* Radio button group */
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.DialogBodyText:has(+ div[class*="radio_Group_"]),
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogBodyText:has(+ div._2qYC3gFAkLcB48i6dTz051),
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogBodyText:has(+ div.Panel > div._2qYC3gFAkLcB48i6dTz051),
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.DialogBodyText:has(+ div.DialogBodyText + div[class*="radio_Group_"]),
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogBodyText:has(+ div.DialogBodyText + div._2qYC3gFAkLcB48i6dTz051)
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogBodyText:has(+ div.DialogBodyText + div._2qYC3gFAkLcB48i6dTz051),
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogBodyText:has(+ div.DialogBodyText + div.Panel > div._2qYC3gFAkLcB48i6dTz051)
 {
 	color: rgb(var(--adw-window-fg-rgb)) !important;
 	line-height: var(--adw-list-header-height) !important;
@@ -404,7 +423,8 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogBodyText:has(+ div.DialogBo
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.DialogBodyText + div.DialogBodyText:has(+ div[class*="radio_Group_"]),
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogBodyText + div.DialogBodyText:has(+ div._2qYC3gFAkLcB48i6dTz051)
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogBodyText + div.DialogBodyText:has(+ div._2qYC3gFAkLcB48i6dTz051),
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogBodyText + div.DialogBodyText:has(+ div.Panel > div._2qYC3gFAkLcB48i6dTz051)
 {
 	color: rgba(var(--adw-card-fg-rgb), var(--adw-dim-label-opacity)) !important;
 	font-size: var(--adw-text-subtitle-size) !important;
@@ -449,6 +469,7 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2qYC3gFAkLcB48i6dTz051 div._3lwc
 	font-weight: var(--adw-text-row-title-weight) !important;
 	line-height: normal !important;
 	letter-spacing: normal !important;
+	text-shadow: none !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="radio_Group_"] div[class*="radio_Button_"] > span,
@@ -461,6 +482,7 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2qYC3gFAkLcB48i6dTz051 div._3lwc
 	margin-top: 2px !important;
 	line-height: normal !important;
 	letter-spacing: normal !important;
+	text-shadow: none !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="radio_Group_"] div[class*="radio_Button_"]:hover,
@@ -670,4 +692,51 @@ body.DesktopUI:has(div._3I6h_oySuLmmLY9TjIKT9s) div._2qyBZV8YvxstXuSKiYDF19 > di
 {
 	min-width: 288px !important;
 	box-sizing: border-box !important;
+}
+
+/* Slider row */
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La:has(div.SliderControl),
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI:has(div.SliderControl)
+{
+	padding-left: 12px !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La:has(div.SliderControl) div[class*="gamepaddialog_FieldLabel_"],
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI:has(div.SliderControl) div._3b0U-QDD-uhFpw6xM716fw
+{
+	margin-right: 332px !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La:has(div.SliderControl) div.gamepaddialog_FieldIcon_1sC68,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI:has(div.SliderControl) div._1sC68UJqI3ry5Gnk5cnH9U
+{
+	position: unset !important;
+	margin-right: 12px !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La:has(div.SliderControl) div.SliderControl,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI:has(div.SliderControl) div.SliderControl
+{
+	min-width: 288px !important;
+	box-sizing: border-box !important;
+	cursor: default !important;
+}
+
+/* Separators */
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_StandaloneFieldSeparator_23kNb,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._23kNbTg9_TY8TV_uLN8MJy
+{
+	display: none !important;
+}
+
+/* Nested expandable row group? */
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.Qow-7S60FHqxap-q62nV7
+{
+	margin: 0 !important;
+}
+
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.Qow-7S60FHqxap-q62nV7 > div.S-_LaQG5eEOM2HWZ-geJI:first-child
+{
+	border-top-left-radius: 0 !important;
+	border-top-right-radius: 0 !important;
 }

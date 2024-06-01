@@ -349,7 +349,7 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1
 	padding: 0 !important;
 	margin: 0 0 1px 0 !important;
 	border-radius: 0 !important;
-	overflow: hidden; !important;
+	overflow: hidden !important;
 	box-shadow: var(--adw-card-shadow) !important;
 	transition: height 200ms var(--adw-base-transition-curve) !important;
 	height: var(--adw-row-height) !important;
@@ -364,7 +364,8 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1._21Uc0N6T
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE:first-child,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1:first-child,
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_Subheader_31RJy + div.notificationssettings_NotificationGroup_2KFeE,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._31RJyFXKo0KWIm1cS4INFH + div._2KFeE_s51aT07ohdMu_ZH1
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._31RJyFXKo0KWIm1cS4INFH + div._2KFeE_s51aT07ohdMu_ZH1,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.SettingsDialogSubHeader + div._2KFeE_s51aT07ohdMu_ZH1
 {
 	border-top-left-radius: var(--adw-card-radius) !important;
 	border-top-right-radius: var(--adw-card-radius) !important;
@@ -622,6 +623,15 @@ body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepadtabbedpage
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._19z_50-qWZWxcgXfWNtSWb div._1CJeU7emnRNSJ8Xk3Leavm
 {
 	column-gap: 3px !important;
+	padding: 0 !important;
+	scroll-padding: 0 !important;
+	overflow-x: overlay !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepadtabbedpage_TabRow_19z_5 div.gamepadtabbedpage_FixCenterAlignScroll_1CJeU::-webkit-scrollbar,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._19z_50-qWZWxcgXfWNtSWb div._1CJeU7emnRNSJ8Xk3Leavm::-webkit-scrollbar
+{
+	display: none !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepadtabbedpage_TabRow_19z_5 div.gamepadtabbedpage_Tab_3eEbS,
@@ -690,32 +700,32 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._19z_50-qWZWxcgXfWNtSWb div._3eEb
 }
 
 /* Controller: Nintendo Switch layout row */
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.controllersettings_NintendoSwitchLayoutToggle_3Q8Vc,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3Q8Vc4HcvrUZVLqnC1hTXT
-{
-	position: relative !important;
-}
-
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.controllersettings_NintendoSwitchLayoutToggle_3Q8Vc div.gamepaddialog_Field_S-_La,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3Q8Vc4HcvrUZVLqnC1hTXT div.S-_LaQG5eEOM2HWZ-geJI
 {
 	border-radius: 0 !important;
 }
 
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.controllersettings_NintendoSwitchLayoutToggle_3Q8Vc div.gamepaddialog_Field_S-_La div.gamepaddialog_FieldLabel_3b0U-,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3Q8Vc4HcvrUZVLqnC1hTXT div.S-_LaQG5eEOM2HWZ-geJI div._3b0U-QDD-uhFpw6xM716fw
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.controllersettings_NintendoSwitchLayoutToggle_3Q8Vc:has(span.controllersettings_NintendoSwitchLayoutToggleDesc_3J9Od),
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3Q8Vc4HcvrUZVLqnC1hTXT:has(span._3J9OdCswxSe0Vguxo8A17n)
+{
+	position: relative !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.controllersettings_NintendoSwitchLayoutToggle_3Q8Vc:has(span.controllersettings_NintendoSwitchLayoutToggleDesc_3J9Od) div.gamepaddialog_Field_S-_La div.gamepaddialog_FieldLabel_3b0U-,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3Q8Vc4HcvrUZVLqnC1hTXT:has(span._3J9OdCswxSe0Vguxo8A17n) div.S-_LaQG5eEOM2HWZ-geJI div._3b0U-QDD-uhFpw6xM716fw
 {
 	margin-top: -8px !important;
 }
 
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.controllersettings_NintendoSwitchLayoutToggle_3Q8Vc div.gamepaddialog_Field_S-_La div.gamepaddialog_FieldLabel_3b0U- > div.gamepaddialog_FieldIcon_1sC68,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3Q8Vc4HcvrUZVLqnC1hTXT div.S-_LaQG5eEOM2HWZ-geJI div._3b0U-QDD-uhFpw6xM716fw > div._1sC68UJqI3ry5Gnk5cnH9U
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.controllersettings_NintendoSwitchLayoutToggle_3Q8Vc:has(span.controllersettings_NintendoSwitchLayoutToggleDesc_3J9Od) div.gamepaddialog_Field_S-_La div.gamepaddialog_FieldLabel_3b0U- > div.gamepaddialog_FieldIcon_1sC68,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3Q8Vc4HcvrUZVLqnC1hTXT:has(span._3J9OdCswxSe0Vguxo8A17n) div.S-_LaQG5eEOM2HWZ-geJI div._3b0U-QDD-uhFpw6xM716fw > div._1sC68UJqI3ry5Gnk5cnH9U
 {
 	margin-top: 8px !important;
 }
 
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.controllersettings_NintendoSwitchLayoutToggle_3Q8Vc span.controllersettings_NintendoSwitchLayoutToggleDesc_3J9Od,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3Q8Vc4HcvrUZVLqnC1hTXT span._3J9OdCswxSe0Vguxo8A17n
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.controllersettings_NintendoSwitchLayoutToggle_3Q8Vc:has(span.controllersettings_NintendoSwitchLayoutToggleDesc_3J9Od) span.controllersettings_NintendoSwitchLayoutToggleDesc_3J9Od,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3Q8Vc4HcvrUZVLqnC1hTXT:has(span._3J9OdCswxSe0Vguxo8A17n) span._3J9OdCswxSe0Vguxo8A17n
 {
 	position: absolute !important;
 	left: 56px !important;
@@ -800,6 +810,20 @@ body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.settings_BuiltInL
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton._30Og77vH37EtqaKCCDIAP9::after
 {
 	-webkit-mask-image: var(--adw-icon-more);
+}
+
+/* Voice: Microphone test */
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La:has(div.voicesettings_MicrophoneTest_2Dptk) div.voicesettings_MicrophoneTest_2Dptk div.progressbar_ProgressBar_1-nHj,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI:has(div._2Dptk9e7W_k4zYB5wfRTcp) div._2Dptk9e7W_k4zYB5wfRTcp div._1-nHjRywUoX7Mpyc6JOPaQ
+{
+	width: 100px !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La:has(div.voicesettings_MicrophoneTest_2Dptk) div.voicesettings_MicrophoneTest_2Dptk button,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI:has(div._2Dptk9e7W_k4zYB5wfRTcp) div._2Dptk9e7W_k4zYB5wfRTcp button
+{
+	overflow: revert !important;
+	max-width: revert !important;
 }
 
 /* Hidden widgets */

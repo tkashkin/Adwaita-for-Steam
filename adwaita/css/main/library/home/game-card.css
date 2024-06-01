@@ -279,6 +279,11 @@ body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div.WYgDg9NyCcMIVuMyZ_NBC div.tvCvyQr
 	fill: currentColor !important;
 }
 
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div.WYgDg9NyCcMIVuMyZ_NBC div.tvCvyQrDNndbXWp_b5__b > div._3BPFqWN5T-x8njyrRYM1CX > div._3zxPLsbnU5LuorR0_EPCEC
+{
+	display: none !important;
+}
+
 body.DesktopUI div[class*="library_Container_"] div[class*="appportrait_LibraryItemBox_"] div[class*="appportrait_LibraryBottomItems_"] > div[class*="appportrait_LibraryItemIcons_"] > div[class*="appportrait_SteamDeckCompatIcon_"],
 body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div.WYgDg9NyCcMIVuMyZ_NBC div.tvCvyQrDNndbXWp_b5__b > div._3BPFqWN5T-x8njyrRYM1CX > div._3kDT9HSaC2BYFyAndTzQY4
 {
@@ -430,6 +435,11 @@ body.DesktopUI div._2sGn0cBsD44TjnUIh-lx9d div._12UNIdjT-Kv1ib31jk6J37 div.My_Sv
 	font-weight: var(--adw-text-subtitle-weight) !important;
 }
 
+body.DesktopUI div._2sGn0cBsD44TjnUIh-lx9d div._12UNIdjT-Kv1ib31jk6J37 div.My_SveQxVY_oRxfkK5mqN div._3ry-JDFfnNe58WNZ7U6aVf
+{
+	padding: 0 !important;
+}
+
 body.DesktopUI div[class*="appportraithover_AppPortraitHover_"] div[class*="appportraithover_Content_"] div[class*="appportraithover_AppTitle_"],
 body.DesktopUI div._2sGn0cBsD44TjnUIh-lx9d div._12UNIdjT-Kv1ib31jk6J37 div._1Kdi2PBxcdQwDpa-48hrf2
 {
@@ -485,9 +495,10 @@ body.DesktopUI div._2sGn0cBsD44TjnUIh-lx9d div._12UNIdjT-Kv1ib31jk6J37 div.My_Sv
 }
 
 body.DesktopUI div[class*="appportraithover_AppPortraitHover_"] div[class*="appportraithover_Content_"] div[class*="appportraithover_AppStatus_"]:empty,
-body.DesktopUI div._2sGn0cBsD44TjnUIh-lx9d div._12UNIdjT-Kv1ib31jk6J37 div.My_SveQxVY_oRxfkK5mqN:empty
+body.DesktopUI div._2sGn0cBsD44TjnUIh-lx9d div._12UNIdjT-Kv1ib31jk6J37 div.My_SveQxVY_oRxfkK5mqN:empty,
+body.DesktopUI div._2sGn0cBsD44TjnUIh-lx9d div._12UNIdjT-Kv1ib31jk6J37 div.My_SveQxVY_oRxfkK5mqN:has(div._3ry-JDFfnNe58WNZ7U6aVf:first-child:last-child:empty)
 {
-	padding: 0 !important;
+	display: none !important;
 }
 
 body.DesktopUI div[class*="appportraithover_AppPortraitHover_"] div[class*="appportraithover_Content_"] div[class*="appportraithover_AppStatus_"] div[class*="appportraithover_GameUpdatedCircle_"],
