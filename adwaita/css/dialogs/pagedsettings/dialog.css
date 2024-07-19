@@ -1,5 +1,6 @@
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 {
 	background: rgb(var(--adw-window-bg-rgb)) !important;
 	color: rgb(var(--adw-window-fg-rgb)) !important;
@@ -8,7 +9,8 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageListColumn_"],
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.RTicBCbDcEGkjsbmWzA8C
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.RTicBCbDcEGkjsbmWzA8C,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._2kwFFHckg8jvnwJfg9-la8
 {
 	background: rgb(var(--adw-sidebar-bg-rgb)) !important;
 	color: rgb(var(--adw-sidebar-fg-rgb)) !important;
@@ -18,7 +20,8 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.RTicBCbDcEGkjsbmWzA8C
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageList_"],
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._EebF_xe4DGRZ9a0XkyDj
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._EebF_xe4DGRZ9a0XkyDj,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._18QCu-7MTzd51UpVbYysDy
 {
 	padding: 6px !important;
 	margin: 0 !important;
@@ -26,7 +29,8 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._EebF_xe4DGRZ9a0XkyDj
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageListItem_"],
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.bkfjn0yka2uHNqEvWZaTJ
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.bkfjn0yka2uHNqEvWZaTJ,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._1-vlriAtKYDViAEunue4VO
 {
 	height: 34px !important;
 	line-height: 34px !important;
@@ -44,31 +48,36 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.bkfjn0yka2uHNqEvWZaTJ
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageListItem_"]:hover,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.bkfjn0yka2uHNqEvWZaTJ:hover
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.bkfjn0yka2uHNqEvWZaTJ:hover,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._1-vlriAtKYDViAEunue4VO:hover
 {
 	background: rgba(var(--adw-sidebar-fg-rgb), var(--adw-hover-opacity)) !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageListItem_"]:active,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.bkfjn0yka2uHNqEvWZaTJ:active
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.bkfjn0yka2uHNqEvWZaTJ:active,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._1-vlriAtKYDViAEunue4VO:active
 {
 	background: rgba(var(--adw-sidebar-fg-rgb), var(--adw-active-opacity)) !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageListItem_"][class*="pagedsettings_Active_"],
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.bkfjn0yka2uHNqEvWZaTJ.Myra7iGjzCdMPzitboVfh
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.bkfjn0yka2uHNqEvWZaTJ.Myra7iGjzCdMPzitboVfh,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._1-vlriAtKYDViAEunue4VO._2DpXjzK3WWsOtUWUrcuOG7
 {
 	background: rgba(var(--adw-sidebar-fg-rgb), var(--adw-selected-opacity)) !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageListItem_"][class*="pagedsettings_Active_"]:hover,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.bkfjn0yka2uHNqEvWZaTJ.Myra7iGjzCdMPzitboVfh:hover
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.bkfjn0yka2uHNqEvWZaTJ.Myra7iGjzCdMPzitboVfh:hover,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._1-vlriAtKYDViAEunue4VO._2DpXjzK3WWsOtUWUrcuOG7:hover
 {
 	background: rgba(var(--adw-sidebar-fg-rgb), var(--adw-selected-hover-opacity)) !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageListItem_"][class*="pagedsettings_Active_"]:active,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.bkfjn0yka2uHNqEvWZaTJ.Myra7iGjzCdMPzitboVfh:active
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.bkfjn0yka2uHNqEvWZaTJ.Myra7iGjzCdMPzitboVfh:active,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._1-vlriAtKYDViAEunue4VO._2DpXjzK3WWsOtUWUrcuOG7:active
 {
 	background: rgba(var(--adw-sidebar-fg-rgb), var(--adw-selected-active-opacity)) !important;
 }
@@ -81,7 +90,8 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.bkfjn0yka2uHNqEvWZaTJ._1RDp9x1K3W
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageListItem_"] div[class*="pagedsettings_PageListItem_Icon_"],
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.bkfjn0yka2uHNqEvWZaTJ div.U6HcKswXzjmWtFxbjxuz4
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.bkfjn0yka2uHNqEvWZaTJ div.U6HcKswXzjmWtFxbjxuz4,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._1-vlriAtKYDViAEunue4VO div._1rD8X96FdnksZLvRRlEiCR
 {
 	width: 16px !important;
 	height: 16px !important;
@@ -90,19 +100,22 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.bkfjn0yka2uHNqEvWZaTJ div.U6HcKsw
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageListItem_"] div[class*="pagedsettings_PageListItem_Icon_"] > svg,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.bkfjn0yka2uHNqEvWZaTJ div.U6HcKswXzjmWtFxbjxuz4 > svg
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.bkfjn0yka2uHNqEvWZaTJ div.U6HcKswXzjmWtFxbjxuz4 > svg,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._1-vlriAtKYDViAEunue4VO div._1rD8X96FdnksZLvRRlEiCR > svg
 {
 	display: flex !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageListItem_"] div[class*="pagedsettings_PageListItem_Title_"],
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.bkfjn0yka2uHNqEvWZaTJ div._2X9_IsQsEJDpAd2JGrHdJI
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.bkfjn0yka2uHNqEvWZaTJ div._2X9_IsQsEJDpAd2JGrHdJI,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._1-vlriAtKYDViAEunue4VO div._2PPbMrzl8PKBwpkjYs9b0i
 {
 	padding: 0 6px !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PageListSeparator_"],
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._1UEEmNDZ7Ta3enwTf5T0O0
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._1UEEmNDZ7Ta3enwTf5T0O0,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._1Hye7o1wYIfc9TE9QKRW4T
 {
 	border: none !important;
 	height: 1px !important;
@@ -111,7 +124,8 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._1UEEmNDZ7Ta3enwTf5T0O0
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageContent_"],
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._1I3NifxqTHCkE-2DeritAs
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._1I3NifxqTHCkE-2DeritAs,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.CFTLX2wIKOK3hNV-fS7_V
 {
 	background: rgb(var(--adw-window-bg-rgb)) !important;
 	color: rgb(var(--adw-window-fg-rgb)) !important;
@@ -121,7 +135,8 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._1I3NifxqTHCkE-2DeritAs
 
 /* Headerbar drag area */
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_::before,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s::before
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s::before,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH::before
 {
 	content: "";
 	-webkit-app-region: drag;
@@ -134,8 +149,10 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s::before
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.DialogHeader,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogHeader,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.DialogHeader,
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageListColumn_"] > div[class*="pagedsettings_PagedSettingsDialog_Title_"],
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.RTicBCbDcEGkjsbmWzA8C > div._3qEgQJqeb0zyM12KXq64Or
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.RTicBCbDcEGkjsbmWzA8C > div._3qEgQJqeb0zyM12KXq64Or,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._2kwFFHckg8jvnwJfg9-la8 > div._2rjVTGz8aLvqOdz5v2gq5C
 {
 	box-sizing: border-box !important;
 	height: 46px !important;
@@ -161,13 +178,15 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.RTicBCbDcEGkjsbmWzA8C > div._3qEg
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageListColumn_"] > div[class*="pagedsettings_PagedSettingsDialog_Title_"],
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.RTicBCbDcEGkjsbmWzA8C > div._3qEgQJqeb0zyM12KXq64Or
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.RTicBCbDcEGkjsbmWzA8C > div._3qEgQJqeb0zyM12KXq64Or,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._2kwFFHckg8jvnwJfg9-la8 > div._2rjVTGz8aLvqOdz5v2gq5C
 {
 	padding: 12px calc(var(--adw-windowcontrols-close-margin-left) + 6px) !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.DialogContent_InnerWidth > div.DialogBody,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogContent_InnerWidth > div.DialogBody
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogContent_InnerWidth > div.DialogBody,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.DialogContent_InnerWidth > div.DialogBody
 {
 	margin: 0 !important;
 	padding: 12px 24px 24px 24px !important;
@@ -177,7 +196,8 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogContent_InnerWidth > div.Di
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.DialogContent_InnerWidth > div.DialogBody > *,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogContent_InnerWidth > div.DialogBody > *
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogContent_InnerWidth > div.DialogBody > *,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.DialogContent_InnerWidth > div.DialogBody > *
 {
 	width: 600px !important;
 }
@@ -185,8 +205,10 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogContent_InnerWidth > div.Di
 /* Scroll shadow: containers */
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.DialogContent_InnerWidth > div.DialogBody,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogContent_InnerWidth > div.DialogBody,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.DialogContent_InnerWidth > div.DialogBody,
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageList_"],
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._EebF_xe4DGRZ9a0XkyDj
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._EebF_xe4DGRZ9a0XkyDj,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._18QCu-7MTzd51UpVbYysDy
 {
 	scrollbar-gutter: stable !important;
 	position: relative !important;
@@ -197,8 +219,10 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._EebF_xe4DGRZ9a0XkyDj
 /* Scroll shadow: background overlays */
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.DialogContent_InnerWidth > div.DialogBody::before,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogContent_InnerWidth > div.DialogBody::before,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.DialogContent_InnerWidth > div.DialogBody::before,
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageList_"]::before,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._EebF_xe4DGRZ9a0XkyDj::before
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._EebF_xe4DGRZ9a0XkyDj::before,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._18QCu-7MTzd51UpVbYysDy::before
 {
 	content: "";
 	display: block;
@@ -213,7 +237,8 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._EebF_xe4DGRZ9a0XkyDj::before
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageList_"]::before,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._EebF_xe4DGRZ9a0XkyDj::before
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._EebF_xe4DGRZ9a0XkyDj::before,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._18QCu-7MTzd51UpVbYysDy::before
 {
 	background: rgb(var(--adw-sidebar-bg-rgb));
 }
@@ -221,8 +246,10 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._EebF_xe4DGRZ9a0XkyDj::before
 /* Scroll shadow: shadows */
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.DialogHeader::after,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogHeader::after,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.DialogHeader::after,
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageListColumn_"] > div[class*="pagedsettings_PagedSettingsDialog_Title_"]::after,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.RTicBCbDcEGkjsbmWzA8C > div._3qEgQJqeb0zyM12KXq64Or::after
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.RTicBCbDcEGkjsbmWzA8C > div._3qEgQJqeb0zyM12KXq64Or::after,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._2kwFFHckg8jvnwJfg9-la8 > div._2rjVTGz8aLvqOdz5v2gq5C::after
 {
 	content: "";
 	display: block;

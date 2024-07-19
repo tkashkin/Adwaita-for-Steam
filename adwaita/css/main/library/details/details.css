@@ -10,8 +10,9 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA img.ooM_c2DA3hF8Wg7zbpK5x
 	backdrop-filter: none !important;
 }
 
-body.DesktopUI div[class*="appdetails_Container_"] [class*="sharedappdetailsheader_ImgBlurBackdrop_"],
-body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA .ooM_c2DA3hF8Wg7zbpK5x
+body.DesktopUI div[class*="appdetails_Container_"] img[class*="sharedappdetailsheader_ImgBlurBackdrop_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA img.ooM_c2DA3hF8Wg7zbpK5x,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA img._3_IUVzR9tpG_JKEjhwXEAb
 {
 	display: none !important;
 }
@@ -24,7 +25,8 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3FmxxjyWNHU1PrBGnBe6tm
 
 /* `Scroll to Top` Button */
 body.DesktopUI div[class*="steamdesktop_ContentFrame_"] div[class*="smartscrollcontainer_ScrollToTopButton_"],
-body.DesktopUI div._1rDh5rXSFZJOqCa4UpnI4z div._1bCHNUX_0WHTI1fch_8K5R
+body.DesktopUI div._1rDh5rXSFZJOqCa4UpnI4z div._1bCHNUX_0WHTI1fch_8K5R,
+body.DesktopUI div._1rDh5rXSFZJOqCa4UpnI4z div._1J21tLst5SEhBPkVRT53UV
 {
 	display: none !important;
 }

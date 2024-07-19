@@ -1,7 +1,9 @@
 body.DesktopUI div[class*="steamavatar_avatarHolder_"],
 body.DesktopUI div._1YGAHSfGavQI6MODJq-pJB,
+body.DesktopUI div.nibodjvvrm86uCfnnAn4g,
 body.DesktopUI div[class*="steamavatar_avatarHolder_"] img.avatar,
-body.DesktopUI div._1YGAHSfGavQI6MODJq-pJB img.avatar
+body.DesktopUI div._1YGAHSfGavQI6MODJq-pJB img.avatar,
+body.DesktopUI div.nibodjvvrm86uCfnnAn4g img.avatar
 {
 	box-sizing: border-box !important;
 	width: 32px !important;
@@ -18,7 +20,8 @@ body.DesktopUI div._1YGAHSfGavQI6MODJq-pJB img.avatar
 }
 
 body.DesktopUI div[class*="steamavatar_avatarHolder_"],
-body.DesktopUI div._1YGAHSfGavQI6MODJq-pJB
+body.DesktopUI div._1YGAHSfGavQI6MODJq-pJB,
+body.DesktopUI div.nibodjvvrm86uCfnnAn4g
 {
 	color: rgba(var(--adw-headerbar-fg-rgb), 0.5) !important;
 	border: 1px currentColor solid !important;
@@ -26,7 +29,8 @@ body.DesktopUI div._1YGAHSfGavQI6MODJq-pJB
 }
 
 body.DesktopUI div[class*="steamavatar_avatarHolder_"]::after,
-body.DesktopUI div._1YGAHSfGavQI6MODJq-pJB::after
+body.DesktopUI div._1YGAHSfGavQI6MODJq-pJB::after,
+body.DesktopUI div.nibodjvvrm86uCfnnAn4g::after
 {
 	content: "";
 	position: absolute;
@@ -39,32 +43,37 @@ body.DesktopUI div._1YGAHSfGavQI6MODJq-pJB::after
 }
 
 body.DesktopUI div[class*="steamavatar_avatarHolder_"] img.avatar,
-body.DesktopUI div._1YGAHSfGavQI6MODJq-pJB img.avatar
+body.DesktopUI div._1YGAHSfGavQI6MODJq-pJB img.avatar,
+body.DesktopUI div.nibodjvvrm86uCfnnAn4g img.avatar
 {
 	width: 100% !important;
 	height: 100% !important;
 }
 
 body.DesktopUI div[class*="steamavatar_avatarHolder_"].online,
-body.DesktopUI div._1YGAHSfGavQI6MODJq-pJB.online
+body.DesktopUI div._1YGAHSfGavQI6MODJq-pJB.online,
+body.DesktopUI div.nibodjvvrm86uCfnnAn4g.online
 {
 	color: rgba(var(--adw-accent-rgb), 0.5) !important;
 }
 
 body.DesktopUI div[class*="steamavatar_avatarHolder_"].online.awayOrSnooze,
-body.DesktopUI  div._1YGAHSfGavQI6MODJq-pJB.online.awayOrSnooze
+body.DesktopUI  div._1YGAHSfGavQI6MODJq-pJB.online.awayOrSnooze,
+body.DesktopUI div.nibodjvvrm86uCfnnAn4g.online.awayOrSnooze
 {
 	border-style: dashed !important;
 }
 
 body.DesktopUI div[class*="steamavatar_avatarHolder_"].ingame,
-body.DesktopUI div._1YGAHSfGavQI6MODJq-pJB.ingame
+body.DesktopUI div._1YGAHSfGavQI6MODJq-pJB.ingame,
+body.DesktopUI div.nibodjvvrm86uCfnnAn4g.ingame
 {
 	color: rgba(var(--adw-success-rgb), 0.5) !important;
 }
 
 body.DesktopUI div[class*="steamavatar_avatarHolder_"] div.avatarStatus,
-body.DesktopUI div._1YGAHSfGavQI6MODJq-pJB div.avatarStatus
+body.DesktopUI div._1YGAHSfGavQI6MODJq-pJB div.avatarStatus,
+body.DesktopUI div.nibodjvvrm86uCfnnAn4g div.avatarStatus
 {
 	display: none !important;
 }

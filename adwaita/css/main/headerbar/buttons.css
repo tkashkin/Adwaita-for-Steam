@@ -80,8 +80,10 @@ body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._1-9sir4j_KQiMqdkZjQN0u div._3yD4
 
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"] div.avatarStatus,
 body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._3yD46y5pd3zOGR7CzKs0mC div._1YGAHSfGavQI6MODJq-pJB div._1yIzy56YfJIliF6ykwhP2r,
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._3yD46y5pd3zOGR7CzKs0mC div.nibodjvvrm86uCfnnAn4g div._1yIzy56YfJIliF6ykwhP2r,
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"] + div,
 body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._3yD46y5pd3zOGR7CzKs0mC div._1YGAHSfGavQI6MODJq-pJB + div,
+body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._3yD46y5pd3zOGR7CzKs0mC div.nibodjvvrm86uCfnnAn4g + div,
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AccountMenu_"] div[class*="titlebarcontrols_WalletBalance_"],
 body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._3yD46y5pd3zOGR7CzKs0mC div._2jphjrSifC6orDT4g_7Wd,
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AccountMenu_"] svg[class*="titlebarcontrols_Chevron_"],
