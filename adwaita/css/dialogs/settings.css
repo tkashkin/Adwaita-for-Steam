@@ -1,6 +1,7 @@
 /* Account avatar */
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="accountsettings_AvatarAndLabel_"],
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2SLehb0Hvx-jWmuv0gPqB-
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2SLehb0Hvx-jWmuv0gPqB-,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._2SLehb0Hvx-jWmuv0gPqB-
 {
 	display: flex !important;
 	align-items: center !important;
@@ -8,13 +9,15 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2SLehb0Hvx-jWmuv0gPqB-
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="accountsettings_AvatarAndLabel_"] div[class*="accountsettings_LabelHolder_"],
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2SLehb0Hvx-jWmuv0gPqB- div._2nksWzc3nto0qQdizUQHbE
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2SLehb0Hvx-jWmuv0gPqB- div._2nksWzc3nto0qQdizUQHbE,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._2SLehb0Hvx-jWmuv0gPqB- div._2nksWzc3nto0qQdizUQHbE
 {
 	padding: 0 !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="personanameandstatus_playerName_"],
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.r62qzcdJQ0qezZglOtiUX
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.r62qzcdJQ0qezZglOtiUX,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.nOdcT-MoOaXGePXLyPe0H
 {
 	color: rgb(var(--adw-card-fg-rgb)) !important;
 	font-family: var(--adw-text-font) !important;
@@ -25,7 +28,8 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.r62qzcdJQ0qezZglOtiUX
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="personanameandstatus_gameName_"],
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2wpaptjZY-3Gn1HOPlL85O
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2wpaptjZY-3Gn1HOPlL85O,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._1cB0qtF0paHWWyj1XNcnbG
 {
 	color: rgba(var(--adw-card-fg-rgb), var(--adw-dim-label-opacity)) !important;
 	font-family: var(--adw-text-font) !important;
@@ -37,26 +41,30 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2wpaptjZY-3Gn1HOPlL85O
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.online div[class*="personanameandstatus_gameName_"],
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.online div._2wpaptjZY-3Gn1HOPlL85O
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.online div._2wpaptjZY-3Gn1HOPlL85O,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.online div._1cB0qtF0paHWWyj1XNcnbG
 {
 	color: rgb(var(--adw-accent-rgb)) !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.online.awayOrSnooze div[class*="personanameandstatus_gameName_"],
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.online.awayOrSnooze div._2wpaptjZY-3Gn1HOPlL85O
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.online.awayOrSnooze div._2wpaptjZY-3Gn1HOPlL85O,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.online.awayOrSnooze div._1cB0qtF0paHWWyj1XNcnbG
 {
 	color: rgba(var(--adw-accent-rgb), var(--adw-dim-label-opacity)) !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.ingame div[class*="personanameandstatus_gameName_"],
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.ingame div._2wpaptjZY-3Gn1HOPlL85O
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.ingame div._2wpaptjZY-3Gn1HOPlL85O,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.ingame div._1cB0qtF0paHWWyj1XNcnbG
 {
 	color: rgb(var(--adw-success-rgb)) !important;
 }
 
 /* Account buttons */
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La:has(button[class*="settings_SettingsDialogFatButton_"]),
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI:has(button.UqEiVDhZ47cn3vWxM7cR0)
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI:has(button.UqEiVDhZ47cn3vWxM7cR0),
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt:has(button.UqEiVDhZ47cn3vWxM7cR0)
 {
 	background: none !important;
 	box-shadow: none !important;
@@ -67,13 +75,15 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI:has(button.
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La:has(button[class*="settings_SettingsDialogFatButton_"]) div[class*="gamepaddialog_FieldChildrenWithIcon_"],
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI:has(button.UqEiVDhZ47cn3vWxM7cR0) div._2ZQ9wHACVFqZcufK_WRGPM
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI:has(button.UqEiVDhZ47cn3vWxM7cR0) div._2ZQ9wHACVFqZcufK_WRGPM,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt:has(button.UqEiVDhZ47cn3vWxM7cR0) div._1aw7cA3mAZfWt8idAlVJWi
 {
 	position: initial !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La:has(button[class*="settings_SettingsDialogFatButton_"]) div[class*="gamepaddialog_ControlsListOuterPanel_"],
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI:has(button.UqEiVDhZ47cn3vWxM7cR0) div._2Mvpu0Kldp2FgzYp0Tx-OP
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI:has(button.UqEiVDhZ47cn3vWxM7cR0) div._2Mvpu0Kldp2FgzYp0Tx-OP,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt:has(button.UqEiVDhZ47cn3vWxM7cR0) div._2XSsNSGcWjGZ6z3fvqaRd5
 {
 	padding: 0 !important;
 	margin: 0 !important;
@@ -83,7 +93,8 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI:has(button.
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La:has(button[class*="settings_SettingsDialogFatButton_"]) div[class*="gamepaddialog_ControlsListOuterPanel_"] div[class*="gamepaddialog_ControlsListChild_"],
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI:has(button.UqEiVDhZ47cn3vWxM7cR0) div._2Mvpu0Kldp2FgzYp0Tx-OP div.XvRsoF63hkSPNVBr2XPVI
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI:has(button.UqEiVDhZ47cn3vWxM7cR0) div._2Mvpu0Kldp2FgzYp0Tx-OP div.XvRsoF63hkSPNVBr2XPVI,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt:has(button.UqEiVDhZ47cn3vWxM7cR0) div._2XSsNSGcWjGZ6z3fvqaRd5 div._2LQjjxR3ZOcEZU73abIsw-
 {
 	padding: 0 !important;
 	margin: 0 !important;
@@ -92,7 +103,8 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI:has(button.
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La button[class*="settings_SettingsDialogFatButton_"],
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEiVDhZ47cn3vWxM7cR0
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEiVDhZ47cn3vWxM7cR0,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt button.UqEiVDhZ47cn3vWxM7cR0
 {
 	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-opacity)) !important;
 	color: rgb(var(--adw-card-fg-rgb)) !important;
@@ -112,21 +124,26 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEi
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La button[class*="settings_SettingsDialogFatButton_"]:hover,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEiVDhZ47cn3vWxM7cR0:hover
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEiVDhZ47cn3vWxM7cR0:hover,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt button.UqEiVDhZ47cn3vWxM7cR0:hover
 {
 	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-hover-opacity)) !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La button[class*="settings_SettingsDialogFatButton_"]:active,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEiVDhZ47cn3vWxM7cR0:active
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEiVDhZ47cn3vWxM7cR0:active,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt button.UqEiVDhZ47cn3vWxM7cR0:active
 {
 	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-active-opacity)) !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La button[class*="settings_SettingsDialogFatButton_"] > svg,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEiVDhZ47cn3vWxM7cR0 > svg,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt button.UqEiVDhZ47cn3vWxM7cR0 > svg,
+
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La button[class*="settings_SettingsDialogFatButton_"]::after,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEiVDhZ47cn3vWxM7cR0::after
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEiVDhZ47cn3vWxM7cR0::after,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt button.UqEiVDhZ47cn3vWxM7cR0::after
 {
 	position: absolute !important;
 	left: 16px !important;
@@ -136,7 +153,8 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEi
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La button[class*="settings_SettingsDialogFatButton_"]::after,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEiVDhZ47cn3vWxM7cR0::after
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEiVDhZ47cn3vWxM7cR0::after,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt button.UqEiVDhZ47cn3vWxM7cR0::after
 {
 	content: "";
 	left: auto !important;
@@ -150,7 +168,8 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEi
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La button[class*="settings_SettingsDialogFatButton_"] div[class*="accountpanel_Label_"],
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEiVDhZ47cn3vWxM7cR0 div._3wadwgMy2-9k8uOKh3iSdT
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEiVDhZ47cn3vWxM7cR0 div._3wadwgMy2-9k8uOKh3iSdT,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt button.UqEiVDhZ47cn3vWxM7cR0 div._3wadwgMy2-9k8uOKh3iSdT
 {
 	color: rgb(var(--adw-card-fg-rgb)) !important;
 	font-family: var(--adw-text-font) !important;
@@ -161,7 +180,8 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEi
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La button[class*="settings_SettingsDialogFatButton_"] div[class*="accountpanel_Details_"],
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEiVDhZ47cn3vWxM7cR0 div._3Wb9yDmYPUJksCr7HmaT9H
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEiVDhZ47cn3vWxM7cR0 div._3Wb9yDmYPUJksCr7HmaT9H,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt button.UqEiVDhZ47cn3vWxM7cR0 div._3Wb9yDmYPUJksCr7HmaT9H
 {
 	color: rgba(var(--adw-card-fg-rgb), var(--adw-dim-label-opacity)) !important;
 	font-family: var(--adw-text-font) !important;
@@ -173,7 +193,8 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEi
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La button[class*="settings_SettingsDialogFatButton_"] div[class*="accountpanel_Details_"] > span[class*="accountpanel_Highlight_"],
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEiVDhZ47cn3vWxM7cR0 div._3Wb9yDmYPUJksCr7HmaT9H > span._35ztZulp_gETT1gOElpfvK
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEiVDhZ47cn3vWxM7cR0 div._3Wb9yDmYPUJksCr7HmaT9H > span._35ztZulp_gETT1gOElpfvK,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt button.UqEiVDhZ47cn3vWxM7cR0 div._3Wb9yDmYPUJksCr7HmaT9H > span._35ztZulp_gETT1gOElpfvK
 {
 	color: rgb(var(--adw-card-fg-rgb)) !important;
 	font-family: var(--adw-text-font) !important;
@@ -184,23 +205,30 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEi
 
 /* Family */
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.familysettings_FamilyGroup_3RNLm,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3RNLmzBdpcg55exL2SwhT1
 {
 	position: relative !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.familysettings_FamilyGroup_3RNLm div.familysettings_FamilyNameRow_3K8Af,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 div._3K8Afwm4bvd9vSIzAz9siX
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 div._3K8Afwm4bvd9vSIzAz9siX,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3RNLmzBdpcg55exL2SwhT1 div._3K8Afwm4bvd9vSIzAz9siX
 {
 	padding: 0 !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.familysettings_FamilyGroup_3RNLm div.familysettings_FamilyNameRow_3K8Af > span.familysettings_YourFamily_1RfVQ,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 div._3K8Afwm4bvd9vSIzAz9siX > span._1RfVQWVozb8NJ_wmCLAtxP,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3RNLmzBdpcg55exL2SwhT1 div._3K8Afwm4bvd9vSIzAz9siX > span._1RfVQWVozb8NJ_wmCLAtxP,
+
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.familysettings_FamilyGroup_3RNLm div.familysettings_FamilyNameRow_3K8Af > div.familysettings_FamilyName_H4JE-,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 div._3K8Afwm4bvd9vSIzAz9siX > div.H4JE-8OU0E7AeMZY3bEeM,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3RNLmzBdpcg55exL2SwhT1 div._3K8Afwm4bvd9vSIzAz9siX > div.H4JE-8OU0E7AeMZY3bEeM,
+
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.familysettings_FamilyGroup_3RNLm button.familysettings_ManageFamilyButton_1foeE,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 button._1foeEGhPcfRZy7M3msTvNt
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 button._1foeEGhPcfRZy7M3msTvNt,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3RNLmzBdpcg55exL2SwhT1 button._1foeEGhPcfRZy7M3msTvNt
 {
 	color: rgb(var(--adw-window-fg-rgb)) !important;
 	font-family: var(--adw-text-font) !important;
@@ -214,14 +242,16 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 button._1
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.familysettings_FamilyGroup_3RNLm div.familysettings_FamilyNameRow_3K8Af > div.familysettings_FamilyName_H4JE-,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 div._3K8Afwm4bvd9vSIzAz9siX > div.H4JE-8OU0E7AeMZY3bEeM
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 div._3K8Afwm4bvd9vSIzAz9siX > div.H4JE-8OU0E7AeMZY3bEeM,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3RNLmzBdpcg55exL2SwhT1 div._3K8Afwm4bvd9vSIzAz9siX > div.H4JE-8OU0E7AeMZY3bEeM
 {
 	color: rgb(var(--adw-accent-rgb)) !important;
 	margin-left: 4px !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.familysettings_FamilyGroup_3RNLm button.familysettings_ManageFamilyButton_1foeE,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 button._1foeEGhPcfRZy7M3msTvNt
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 button._1foeEGhPcfRZy7M3msTvNt,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3RNLmzBdpcg55exL2SwhT1 button._1foeEGhPcfRZy7M3msTvNt
 {
 	position: absolute !important;
 	top: 0 !important;
@@ -237,27 +267,31 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 button._1
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.familysettings_FamilyGroup_3RNLm button.familysettings_ManageFamilyButton_1foeE:hover,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 button._1foeEGhPcfRZy7M3msTvNt:hover
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 button._1foeEGhPcfRZy7M3msTvNt:hover,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3RNLmzBdpcg55exL2SwhT1 button._1foeEGhPcfRZy7M3msTvNt:hover
 {
 	background: rgba(var(--adw-window-fg-rgb), var(--adw-hover-opacity)) !important;
 	box-shadow: none !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.familysettings_FamilyGroup_3RNLm button.familysettings_ManageFamilyButton_1foeE:active,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 button._1foeEGhPcfRZy7M3msTvNt:active
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 button._1foeEGhPcfRZy7M3msTvNt:active,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3RNLmzBdpcg55exL2SwhT1 button._1foeEGhPcfRZy7M3msTvNt:active
 {
 	background: rgba(var(--adw-window-fg-rgb), var(--adw-active-opacity)) !important;
 	box-shadow: none !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.familysettings_FamilyGroup_3RNLm button.familysettings_ManageFamilyButton_1foeE::before,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 button._1foeEGhPcfRZy7M3msTvNt::before
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 button._1foeEGhPcfRZy7M3msTvNt::before,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3RNLmzBdpcg55exL2SwhT1 button._1foeEGhPcfRZy7M3msTvNt::before
 {
 	content: none !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.familysettings_FamilyGroup_3RNLm div.familysharedcomponents_FamilyMemberRow_3QkkY,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 div._3QkkYqYUNkuL-1EOrIbEhB
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 div._3QkkYqYUNkuL-1EOrIbEhB,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3RNLmzBdpcg55exL2SwhT1 div._2LyGIHuQ8SFKb5T262YUvg
 {
 	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-opacity)) !important;
 	color: rgb(var(--adw-card-fg-rgb)) !important;
@@ -282,47 +316,54 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 div._3Qkk
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.familysettings_FamilyGroup_3RNLm div.familysharedcomponents_FamilyMemberRow_3QkkY:nth-child(2),
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 div._3QkkYqYUNkuL-1EOrIbEhB:nth-child(2)
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 div._3QkkYqYUNkuL-1EOrIbEhB:nth-child(2),
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3RNLmzBdpcg55exL2SwhT1 div._2LyGIHuQ8SFKb5T262YUvg:nth-child(2)
 {
 	border-top-left-radius: var(--adw-card-radius) !important;
 	border-top-right-radius: var(--adw-card-radius) !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.familysettings_FamilyGroup_3RNLm div.familysharedcomponents_FamilyMemberRow_3QkkY:nth-last-child(2),
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 div._3QkkYqYUNkuL-1EOrIbEhB:nth-last-child(2)
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 div._3QkkYqYUNkuL-1EOrIbEhB:nth-last-child(2),
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3RNLmzBdpcg55exL2SwhT1 div._2LyGIHuQ8SFKb5T262YUvg:nth-last-child(2)
 {
 	border-bottom-left-radius: var(--adw-card-radius) !important;
 	border-bottom-right-radius: var(--adw-card-radius) !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.familysettings_FamilyGroup_3RNLm div.familysharedcomponents_FamilyMemberRow_3QkkY:hover,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 div._3QkkYqYUNkuL-1EOrIbEhB:hover
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 div._3QkkYqYUNkuL-1EOrIbEhB:hover,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3RNLmzBdpcg55exL2SwhT1 div._2LyGIHuQ8SFKb5T262YUvg:hover
 {
 	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-hover-opacity)) !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.familysettings_FamilyGroup_3RNLm div.familysharedcomponents_FamilyMemberRow_3QkkY:active,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 div._3QkkYqYUNkuL-1EOrIbEhB:active
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 div._3QkkYqYUNkuL-1EOrIbEhB:active,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3RNLmzBdpcg55exL2SwhT1 div._2LyGIHuQ8SFKb5T262YUvg:active
 {
 	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-active-opacity)) !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.familysettings_FamilyGroup_3RNLm div.familysharedcomponents_FamilyMemberRow_3QkkY a.familysharedcomponents_ProfileLink_iKwt8,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 div._3QkkYqYUNkuL-1EOrIbEhB a.iKwt8JWlzzFgS6UsereGW
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 div._3QkkYqYUNkuL-1EOrIbEhB a.iKwt8JWlzzFgS6UsereGW,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3RNLmzBdpcg55exL2SwhT1 div._2LyGIHuQ8SFKb5T262YUvg a._2oSTSohQ1CZIgVn7E6_0Ft
 {
 	flex-grow: 1 !important;
 	cursor: default !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.familysettings_FamilyGroup_3RNLm div.familysharedcomponents_FamilyMemberRow_3QkkY div.familysharedcomponents_RoleAndIcon_1VP1W,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 div._3QkkYqYUNkuL-1EOrIbEhB div._1VP1WperM9AtlP6cNIYFHK
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3RNLmzBdpcg55exL2SwhT1 div._3QkkYqYUNkuL-1EOrIbEhB div._1VP1WperM9AtlP6cNIYFHK,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3RNLmzBdpcg55exL2SwhT1 div._2LyGIHuQ8SFKb5T262YUvg div._3VzCnvA_1SxskuCqmZkkHA
 {
 	order: 1 !important;
 }
 
 /* Notification settings: table header */
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La[class*="notificationssettings_ToggleHeader_"],
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI._33Q-MOeBz52WPV0tuTqKy
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI._33Q-MOeBz52WPV0tuTqKy,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt._33Q-MOeBz52WPV0tuTqKy
 {
 	min-height: auto !important;
 	height: 24px !important;
@@ -334,15 +375,19 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI._33Q-MOeBz5
 /* Notification settings: revert switch area expansion */
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La div[class*="notificationssettings_Toggles_"] div[class*="gamepaddialog_Toggle_"]::before,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI div._27r3CjIYhU20TsukVgm25C div._24G4gV0rYtRbebXM44GkKk::before,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt div._27r3CjIYhU20TsukVgm25C div._9Ql-oVe_j8E-vsDdyVdWo::before,
+
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE div[class*="gamepaddialog_Toggle_"]::before,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 div._24G4gV0rYtRbebXM44GkKk::before
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 div._24G4gV0rYtRbebXM44GkKk::before,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._2KFeE_s51aT07ohdMu_ZH1 div._9Ql-oVe_j8E-vsDdyVdWo::before
 {
 	content: none !important;
 }
 
 /* Notification settings: expandable rows */
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._2KFeE_s51aT07ohdMu_ZH1
 {
 	border: none !important;
 	background: none !important;
@@ -356,23 +401,31 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE.notificationssettings_NotificationGroupExpanded_21Uc0,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1._21Uc0N6TIRIw4LIZzQnsdE
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1._21Uc0N6TIRIw4LIZzQnsdE,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._2KFeE_s51aT07ohdMu_ZH1._21Uc0N6TIRIw4LIZzQnsdE
 {
 	height: calc(var(--adw-row-height) * 3) !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE:first-child,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1:first-child,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._2KFeE_s51aT07ohdMu_ZH1:first-child,
+
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_Subheader_31RJy + div.notificationssettings_NotificationGroup_2KFeE,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._31RJyFXKo0KWIm1cS4INFH + div._2KFeE_s51aT07ohdMu_ZH1,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.SettingsDialogSubHeader + div._2KFeE_s51aT07ohdMu_ZH1
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._31RJyFXKo0KWIm1cS4INFH + div._2KFeE_s51aT07ohdMu_ZH1,
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.SettingsDialogSubHeader + div.notificationssettings_NotificationGroup_2KFeE,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.SettingsDialogSubHeader + div._2KFeE_s51aT07ohdMu_ZH1,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.SettingsDialogSubHeader + div._2KFeE_s51aT07ohdMu_ZH1
 {
 	border-top-left-radius: var(--adw-card-radius) !important;
 	border-top-right-radius: var(--adw-card-radius) !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE:last-child,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1:last-child
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1:last-child,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._2KFeE_s51aT07ohdMu_ZH1:last-child
 {
 	border-bottom-left-radius: var(--adw-card-radius) !important;
 	border-bottom-right-radius: var(--adw-card-radius) !important;
@@ -380,10 +433,15 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1:last-chil
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE > div.notificationssettings_NotificationSection_BRmrC,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 > div.BRmrC-jnwpXqye4oYB21C,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._2KFeE_s51aT07ohdMu_ZH1 > div.BRmrC-jnwpXqye4oYB21C,
+
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE > div.notificationssettings_NotificationPrefDetails_1u5y7,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 > div._1u5y7VbwvOwncjMsMqnFUz,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._2KFeE_s51aT07ohdMu_ZH1 > div._1u5y7VbwvOwncjMsMqnFUz,
+
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE > div.notificationssettings_NotificationPrefDetails_1u5y7 > div.DialogCheckbox_Container,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 > div._1u5y7VbwvOwncjMsMqnFUz > div.DialogCheckbox_Container
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 > div._1u5y7VbwvOwncjMsMqnFUz > div.DialogCheckbox_Container,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._2KFeE_s51aT07ohdMu_ZH1 > div._1u5y7VbwvOwncjMsMqnFUz > div.DialogCheckbox_Container
 {
 	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-opacity)) !important;
 	color: rgb(var(--adw-card-fg-rgb)) !important;
@@ -408,21 +466,26 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 > div._1u
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE > div.notificationssettings_NotificationSection_BRmrC:hover,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 > div.BRmrC-jnwpXqye4oYB21C:hover
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 > div.BRmrC-jnwpXqye4oYB21C:hover,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._2KFeE_s51aT07ohdMu_ZH1 > div.BRmrC-jnwpXqye4oYB21C:hover
 {
 	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-hover-opacity)) !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE > div.notificationssettings_NotificationSection_BRmrC:active,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 > div.BRmrC-jnwpXqye4oYB21C:active
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 > div.BRmrC-jnwpXqye4oYB21C:active,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._2KFeE_s51aT07ohdMu_ZH1 > div.BRmrC-jnwpXqye4oYB21C:active
 {
 	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-active-opacity)) !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE p.notificationssettings_NotificationDescription_1ifM6,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 p._1ifM6luJEQ5H2O1Y3S6F_R,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._2KFeE_s51aT07ohdMu_ZH1 p._1ifM6luJEQ5H2O1Y3S6F_R,
+
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE > div.notificationssettings_NotificationPrefDetails_1u5y7 > div.DialogCheckbox_Container div.DialogToggle_Label,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 > div._1u5y7VbwvOwncjMsMqnFUz > div.DialogCheckbox_Container div.DialogToggle_Label
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 > div._1u5y7VbwvOwncjMsMqnFUz > div.DialogCheckbox_Container div.DialogToggle_Label,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._2KFeE_s51aT07ohdMu_ZH1 > div._1u5y7VbwvOwncjMsMqnFUz > div.DialogCheckbox_Container div.DialogToggle_Label
 {
 	padding: 0 !important;
 	margin: 0 !important;
@@ -440,10 +503,15 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 > div._1u
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE div.gamepaddialog_Field_S-_La,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 div.S-_LaQG5eEOM2HWZ-geJI,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._2KFeE_s51aT07ohdMu_ZH1 div.eKmEXJCm_lgme24Fp_HWt,
+
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE div.gamepaddialog_Field_S-_La:hover,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 div.S-_LaQG5eEOM2HWZ-geJI:hover,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._2KFeE_s51aT07ohdMu_ZH1 div.eKmEXJCm_lgme24Fp_HWt:hover,
+
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE div.gamepaddialog_Field_S-_La:active,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 div.S-_LaQG5eEOM2HWZ-geJI:active
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 div.S-_LaQG5eEOM2HWZ-geJI:active,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._2KFeE_s51aT07ohdMu_ZH1 div.eKmEXJCm_lgme24Fp_HWt:active
 {
 	background: none !important;
 	box-shadow: none !important;
@@ -455,13 +523,15 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 div.S-_La
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE div.gamepaddialog_Field_S-_La div.gamepaddialog_FieldChildrenWithIcon_2ZQ9w,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 div.S-_LaQG5eEOM2HWZ-geJI div._2ZQ9wHACVFqZcufK_WRGPM
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 div.S-_LaQG5eEOM2HWZ-geJI div._2ZQ9wHACVFqZcufK_WRGPM,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._2KFeE_s51aT07ohdMu_ZH1 div.eKmEXJCm_lgme24Fp_HWt div._1aw7cA3mAZfWt8idAlVJWi
 {
 	right: 0 !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE button.notificationssettings_PrefDetailsToggle_3aB-C,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 button._3aB-C2eTsfVtvZR5sC9N_r
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 button._3aB-C2eTsfVtvZR5sC9N_r,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._2KFeE_s51aT07ohdMu_ZH1 button._3aB-C2eTsfVtvZR5sC9N_r
 {
 	position: absolute !important;
 	width: auto !important;
@@ -481,19 +551,22 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 button._3
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE button.notificationssettings_PrefDetailsToggle_3aB-C > svg,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 button._3aB-C2eTsfVtvZR5sC9N_r > svg
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 button._3aB-C2eTsfVtvZR5sC9N_r > svg,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._2KFeE_s51aT07ohdMu_ZH1 button._3aB-C2eTsfVtvZR5sC9N_r > svg
 {
 	display: none !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE button.notificationssettings_PrefDetailsToggle_3aB-C::before,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 button._3aB-C2eTsfVtvZR5sC9N_r::before
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 button._3aB-C2eTsfVtvZR5sC9N_r::before,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._2KFeE_s51aT07ohdMu_ZH1 button._3aB-C2eTsfVtvZR5sC9N_r::before
 {
 	content: none !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE button.notificationssettings_PrefDetailsToggle_3aB-C::after,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 button._3aB-C2eTsfVtvZR5sC9N_r::after
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 button._3aB-C2eTsfVtvZR5sC9N_r::after,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._2KFeE_s51aT07ohdMu_ZH1 button._3aB-C2eTsfVtvZR5sC9N_r::after
 {
 	content: "";
 	background-color: rgba(var(--adw-card-fg-rgb), 0.5);
@@ -509,14 +582,16 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 button._3
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE.notificationssettings_NotificationGroupExpanded_21Uc0 button.notificationssettings_PrefDetailsToggle_3aB-C::after,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1._21Uc0N6TIRIw4LIZzQnsdE button._3aB-C2eTsfVtvZR5sC9N_r::after
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1._21Uc0N6TIRIw4LIZzQnsdE button._3aB-C2eTsfVtvZR5sC9N_r::after,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._2KFeE_s51aT07ohdMu_ZH1._21Uc0N6TIRIw4LIZzQnsdE button._3aB-C2eTsfVtvZR5sC9N_r::after
 {
 	background-color: rgb(var(--adw-accent-rgb));
 	transform: rotate(0deg);
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE > div.notificationssettings_NotificationPrefDetails_1u5y7,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 > div._1u5y7VbwvOwncjMsMqnFUz
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 > div._1u5y7VbwvOwncjMsMqnFUz,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._2KFeE_s51aT07ohdMu_ZH1 > div._1u5y7VbwvOwncjMsMqnFUz
 {
 	background: none !important;
 	padding: 0 !important;
@@ -525,7 +600,8 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 > div._1u
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE > div.notificationssettings_NotificationPrefDetails_1u5y7 > div.DialogCheckbox_Container,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 > div._1u5y7VbwvOwncjMsMqnFUz > div.DialogCheckbox_Container
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 > div._1u5y7VbwvOwncjMsMqnFUz > div.DialogCheckbox_Container,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._2KFeE_s51aT07ohdMu_ZH1 > div._1u5y7VbwvOwncjMsMqnFUz > div.DialogCheckbox_Container
 {
 	background: rgba(var(--adw-card-bg-rgb), calc(var(--adw-card-opacity) * 0.5)) !important;
 	justify-content: start !important;
@@ -533,26 +609,30 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 > div._1u
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE > div.notificationssettings_NotificationPrefDetails_1u5y7 > div.DialogCheckbox_Container:hover,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 > div._1u5y7VbwvOwncjMsMqnFUz > div.DialogCheckbox_Container:hover
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 > div._1u5y7VbwvOwncjMsMqnFUz > div.DialogCheckbox_Container:hover,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._2KFeE_s51aT07ohdMu_ZH1 > div._1u5y7VbwvOwncjMsMqnFUz > div.DialogCheckbox_Container:hover
 {
 	background: rgba(var(--adw-card-bg-rgb), calc(var(--adw-card-hover-opacity) - var(--adw-card-opacity) * 0.5)) !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE > div.notificationssettings_NotificationPrefDetails_1u5y7 > div.DialogCheckbox_Container:active,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 > div._1u5y7VbwvOwncjMsMqnFUz > div.DialogCheckbox_Container:active
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 > div._1u5y7VbwvOwncjMsMqnFUz > div.DialogCheckbox_Container:active,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._2KFeE_s51aT07ohdMu_ZH1 > div._1u5y7VbwvOwncjMsMqnFUz > div.DialogCheckbox_Container:active
 {
 	background: rgba(var(--adw-card-bg-rgb), calc(var(--adw-card-active-opacity) - var(--adw-card-opacity) * 0.5)) !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE > div.notificationssettings_NotificationPrefDetails_1u5y7 > div.DialogCheckbox_Container:has(.DialogCheckbox.Disabled),
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 > div._1u5y7VbwvOwncjMsMqnFUz > div.DialogCheckbox_Container:has(.DialogCheckbox.Disabled)
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 > div._1u5y7VbwvOwncjMsMqnFUz > div.DialogCheckbox_Container:has(.DialogCheckbox.Disabled),
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._2KFeE_s51aT07ohdMu_ZH1 > div._1u5y7VbwvOwncjMsMqnFUz > div.DialogCheckbox_Container:has(.DialogCheckbox.Disabled)
 {
 	opacity: var(--adw-disabled-opacity) !important;
 	pointer-events: none !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.notificationssettings_NotificationGroup_2KFeE > div.notificationssettings_NotificationPrefDetails_1u5y7 > div.DialogCheckbox_Container .DialogCheckbox,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 > div._1u5y7VbwvOwncjMsMqnFUz > div.DialogCheckbox_Container .DialogCheckbox
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 > div._1u5y7VbwvOwncjMsMqnFUz > div.DialogCheckbox_Container .DialogCheckbox,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._2KFeE_s51aT07ohdMu_ZH1 > div._1u5y7VbwvOwncjMsMqnFUz > div.DialogCheckbox_Container .DialogCheckbox
 {
 	position: absolute !important;
 	left: 17px !important;
@@ -563,14 +643,16 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2KFeE_s51aT07ohdMu_ZH1 > div._1u
 
 /* Library action buttons */
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.librarysettings_ActionSection_RoSh6,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.RoSh6WoygUX6LLAoB20f3
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.RoSh6WoygUX6LLAoB20f3,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.RoSh6WoygUX6LLAoB20f3
 {
 	flex-direction: column !important;
 	gap: 12px !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.librarysettings_ActionSection_RoSh6 button.settings_SettingsDialogButton_3epr8,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.RoSh6WoygUX6LLAoB20f3 button._3epr8QYWw_FqFgMx38YEEm
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.RoSh6WoygUX6LLAoB20f3 button._3epr8QYWw_FqFgMx38YEEm,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.RoSh6WoygUX6LLAoB20f3 button._3epr8QYWw_FqFgMx38YEEm
 {
 	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-opacity)) !important;
 	color: rgb(var(--adw-card-fg-rgb)) !important;
@@ -594,20 +676,23 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.RoSh6WoygUX6LLAoB20f3 button._3ep
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.librarysettings_ActionSection_RoSh6 button.settings_SettingsDialogButton_3epr8:hover,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.RoSh6WoygUX6LLAoB20f3 button._3epr8QYWw_FqFgMx38YEEm:hover
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.RoSh6WoygUX6LLAoB20f3 button._3epr8QYWw_FqFgMx38YEEm:hover,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.RoSh6WoygUX6LLAoB20f3 button._3epr8QYWw_FqFgMx38YEEm:hover
 {
 	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-hover-opacity)) !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.librarysettings_ActionSection_RoSh6 button.settings_SettingsDialogButton_3epr8:active,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.RoSh6WoygUX6LLAoB20f3 button._3epr8QYWw_FqFgMx38YEEm:active
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.RoSh6WoygUX6LLAoB20f3 button._3epr8QYWw_FqFgMx38YEEm:active,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.RoSh6WoygUX6LLAoB20f3 button._3epr8QYWw_FqFgMx38YEEm:active
 {
 	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-active-opacity)) !important;
 }
 
 /* Controller: tabs */
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepadtabbedpage_TabRow_19z_5,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._19z_50-qWZWxcgXfWNtSWb
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._19z_50-qWZWxcgXfWNtSWb,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._19z_50-qWZWxcgXfWNtSWb
 {
 	background: rgb(var(--adw-window-bg-rgb)) !important;
 	position: fixed !important;
@@ -620,7 +705,8 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._19z_50-qWZWxcgXfWNtSWb
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepadtabbedpage_TabRow_19z_5 div.gamepadtabbedpage_FixCenterAlignScroll_1CJeU,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._19z_50-qWZWxcgXfWNtSWb div._1CJeU7emnRNSJ8Xk3Leavm
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._19z_50-qWZWxcgXfWNtSWb div._1CJeU7emnRNSJ8Xk3Leavm,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._19z_50-qWZWxcgXfWNtSWb div._1CJeU7emnRNSJ8Xk3Leavm
 {
 	column-gap: 3px !important;
 	padding: 0 !important;
@@ -629,13 +715,15 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._19z_50-qWZWxcgXfWNtSWb div._1CJe
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepadtabbedpage_TabRow_19z_5 div.gamepadtabbedpage_FixCenterAlignScroll_1CJeU::-webkit-scrollbar,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._19z_50-qWZWxcgXfWNtSWb div._1CJeU7emnRNSJ8Xk3Leavm::-webkit-scrollbar
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._19z_50-qWZWxcgXfWNtSWb div._1CJeU7emnRNSJ8Xk3Leavm::-webkit-scrollbar,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._19z_50-qWZWxcgXfWNtSWb div._1CJeU7emnRNSJ8Xk3Leavm::-webkit-scrollbar
 {
 	display: none !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepadtabbedpage_TabRow_19z_5 div.gamepadtabbedpage_Tab_3eEbS,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._19z_50-qWZWxcgXfWNtSWb div._3eEbSktrstBdLk0dVpnKVI
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._19z_50-qWZWxcgXfWNtSWb div._3eEbSktrstBdLk0dVpnKVI,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._19z_50-qWZWxcgXfWNtSWb div._3eEbSktrstBdLk0dVpnKVI
 {
 	background: none !important;
 	border-radius: var(--adw-button-radius) !important;
@@ -648,37 +736,43 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._19z_50-qWZWxcgXfWNtSWb div._3eEb
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepadtabbedpage_TabRow_19z_5 div.gamepadtabbedpage_Tab_3eEbS:hover,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._19z_50-qWZWxcgXfWNtSWb div._3eEbSktrstBdLk0dVpnKVI:hover
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._19z_50-qWZWxcgXfWNtSWb div._3eEbSktrstBdLk0dVpnKVI:hover,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._19z_50-qWZWxcgXfWNtSWb div._3eEbSktrstBdLk0dVpnKVI:hover
 {
 	background: rgba(var(--adw-window-fg-rgb), var(--adw-hover-opacity)) !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepadtabbedpage_TabRow_19z_5 div.gamepadtabbedpage_Tab_3eEbS:active,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._19z_50-qWZWxcgXfWNtSWb div._3eEbSktrstBdLk0dVpnKVI:active
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._19z_50-qWZWxcgXfWNtSWb div._3eEbSktrstBdLk0dVpnKVI:active,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._19z_50-qWZWxcgXfWNtSWb div._3eEbSktrstBdLk0dVpnKVI:active
 {
 	background: rgba(var(--adw-window-fg-rgb), var(--adw-active-opacity)) !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepadtabbedpage_TabRow_19z_5 div.gamepadtabbedpage_Tab_3eEbS.gamepadtabbedpage_Selected_3Gp1b,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._19z_50-qWZWxcgXfWNtSWb div._3eEbSktrstBdLk0dVpnKVI._3Gp1bACHx__POxmy6Gd3kG
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._19z_50-qWZWxcgXfWNtSWb div._3eEbSktrstBdLk0dVpnKVI._3Gp1bACHx__POxmy6Gd3kG,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._19z_50-qWZWxcgXfWNtSWb div._3eEbSktrstBdLk0dVpnKVI._3Gp1bACHx__POxmy6Gd3kG
 {
 	background: rgba(var(--adw-window-fg-rgb), var(--adw-selected-opacity)) !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepadtabbedpage_TabRow_19z_5 div.gamepadtabbedpage_Tab_3eEbS.gamepadtabbedpage_Selected_3Gp1b:hover,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._19z_50-qWZWxcgXfWNtSWb div._3eEbSktrstBdLk0dVpnKVI._3Gp1bACHx__POxmy6Gd3kG:hover
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._19z_50-qWZWxcgXfWNtSWb div._3eEbSktrstBdLk0dVpnKVI._3Gp1bACHx__POxmy6Gd3kG:hover,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._19z_50-qWZWxcgXfWNtSWb div._3eEbSktrstBdLk0dVpnKVI._3Gp1bACHx__POxmy6Gd3kG:hover
 {
 	background: rgba(var(--adw-window-fg-rgb), var(--adw-selected-hover-opacity)) !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepadtabbedpage_TabRow_19z_5 div.gamepadtabbedpage_Tab_3eEbS.gamepadtabbedpage_Selected_3Gp1b:active,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._19z_50-qWZWxcgXfWNtSWb div._3eEbSktrstBdLk0dVpnKVI._3Gp1bACHx__POxmy6Gd3kG:active
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._19z_50-qWZWxcgXfWNtSWb div._3eEbSktrstBdLk0dVpnKVI._3Gp1bACHx__POxmy6Gd3kG:active,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._19z_50-qWZWxcgXfWNtSWb div._3eEbSktrstBdLk0dVpnKVI._3Gp1bACHx__POxmy6Gd3kG:active
 {
 	background: rgba(var(--adw-window-fg-rgb), var(--adw-selected-active-opacity)) !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepadtabbedpage_TabRow_19z_5 div.gamepadtabbedpage_Tab_3eEbS span.gamepadtabbedpage_TabIcon_3Ebb3,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._19z_50-qWZWxcgXfWNtSWb div._3eEbSktrstBdLk0dVpnKVI span._3Ebb3ha_Q86-lxguhjfyE1
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._19z_50-qWZWxcgXfWNtSWb div._3eEbSktrstBdLk0dVpnKVI span._3Ebb3ha_Q86-lxguhjfyE1,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._19z_50-qWZWxcgXfWNtSWb div._3eEbSktrstBdLk0dVpnKVI span._3Ebb3ha_Q86-lxguhjfyE1
 {
 	color: rgb(var(--adw-window-fg-rgb)) !important;
 	width: 16px !important;
@@ -688,7 +782,8 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._19z_50-qWZWxcgXfWNtSWb div._3eEb
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepadtabbedpage_TabRow_19z_5 div.gamepadtabbedpage_Tab_3eEbS span.gamepadtabbedpage_TabTitle_1nq0i,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._19z_50-qWZWxcgXfWNtSWb div._3eEbSktrstBdLk0dVpnKVI span._1nq0ibcuVEbRv0z_wk9pIQ
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._19z_50-qWZWxcgXfWNtSWb div._3eEbSktrstBdLk0dVpnKVI span._1nq0ibcuVEbRv0z_wk9pIQ,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._19z_50-qWZWxcgXfWNtSWb div._3eEbSktrstBdLk0dVpnKVI span._1nq0ibcuVEbRv0z_wk9pIQ
 {
 	color: rgb(var(--adw-window-fg-rgb)) !important;
 	font-family: var(--adw-text-font) !important;
@@ -701,31 +796,36 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._19z_50-qWZWxcgXfWNtSWb div._3eEb
 
 /* Controller: Nintendo Switch layout row */
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.controllersettings_NintendoSwitchLayoutToggle_3Q8Vc div.gamepaddialog_Field_S-_La,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3Q8Vc4HcvrUZVLqnC1hTXT div.S-_LaQG5eEOM2HWZ-geJI
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3Q8Vc4HcvrUZVLqnC1hTXT div.S-_LaQG5eEOM2HWZ-geJI,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3Q8Vc4HcvrUZVLqnC1hTXT div.eKmEXJCm_lgme24Fp_HWt
 {
 	border-radius: 0 !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.controllersettings_NintendoSwitchLayoutToggle_3Q8Vc:has(span.controllersettings_NintendoSwitchLayoutToggleDesc_3J9Od),
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3Q8Vc4HcvrUZVLqnC1hTXT:has(span._3J9OdCswxSe0Vguxo8A17n)
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3Q8Vc4HcvrUZVLqnC1hTXT:has(span._3J9OdCswxSe0Vguxo8A17n),
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3Q8Vc4HcvrUZVLqnC1hTXT:has(span._3J9OdCswxSe0Vguxo8A17n)
 {
 	position: relative !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.controllersettings_NintendoSwitchLayoutToggle_3Q8Vc:has(span.controllersettings_NintendoSwitchLayoutToggleDesc_3J9Od) div.gamepaddialog_Field_S-_La div.gamepaddialog_FieldLabel_3b0U-,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3Q8Vc4HcvrUZVLqnC1hTXT:has(span._3J9OdCswxSe0Vguxo8A17n) div.S-_LaQG5eEOM2HWZ-geJI div._3b0U-QDD-uhFpw6xM716fw
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3Q8Vc4HcvrUZVLqnC1hTXT:has(span._3J9OdCswxSe0Vguxo8A17n) div.S-_LaQG5eEOM2HWZ-geJI div._3b0U-QDD-uhFpw6xM716fw,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3Q8Vc4HcvrUZVLqnC1hTXT:has(span._3J9OdCswxSe0Vguxo8A17n) div.eKmEXJCm_lgme24Fp_HWt div._3jMlJm4PQCA8SfNlUR99Fo
 {
 	margin-top: -8px !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.controllersettings_NintendoSwitchLayoutToggle_3Q8Vc:has(span.controllersettings_NintendoSwitchLayoutToggleDesc_3J9Od) div.gamepaddialog_Field_S-_La div.gamepaddialog_FieldLabel_3b0U- > div.gamepaddialog_FieldIcon_1sC68,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3Q8Vc4HcvrUZVLqnC1hTXT:has(span._3J9OdCswxSe0Vguxo8A17n) div.S-_LaQG5eEOM2HWZ-geJI div._3b0U-QDD-uhFpw6xM716fw > div._1sC68UJqI3ry5Gnk5cnH9U
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3Q8Vc4HcvrUZVLqnC1hTXT:has(span._3J9OdCswxSe0Vguxo8A17n) div.S-_LaQG5eEOM2HWZ-geJI div._3b0U-QDD-uhFpw6xM716fw > div._1sC68UJqI3ry5Gnk5cnH9U,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3Q8Vc4HcvrUZVLqnC1hTXT:has(span._3J9OdCswxSe0Vguxo8A17n) div.eKmEXJCm_lgme24Fp_HWt div._3jMlJm4PQCA8SfNlUR99Fo > div._2DM37juowId1V_DScp3l4
 {
 	margin-top: 8px !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.controllersettings_NintendoSwitchLayoutToggle_3Q8Vc:has(span.controllersettings_NintendoSwitchLayoutToggleDesc_3J9Od) span.controllersettings_NintendoSwitchLayoutToggleDesc_3J9Od,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3Q8Vc4HcvrUZVLqnC1hTXT:has(span._3J9OdCswxSe0Vguxo8A17n) span._3J9OdCswxSe0Vguxo8A17n
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3Q8Vc4HcvrUZVLqnC1hTXT:has(span._3J9OdCswxSe0Vguxo8A17n) span._3J9OdCswxSe0Vguxo8A17n,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3Q8Vc4HcvrUZVLqnC1hTXT:has(span._3J9OdCswxSe0Vguxo8A17n) span._3J9OdCswxSe0Vguxo8A17n
 {
 	position: absolute !important;
 	left: 56px !important;
@@ -741,14 +841,16 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3Q8Vc4HcvrUZVLqnC1hTXT:has(span.
 
 /* Controller: layout row buttons */
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.settings_BuiltInLayoutButtons_3KH4C,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3KH4CAWiBX2hESrbRk4DBn
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3KH4CAWiBX2hESrbRk4DBn,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3KH4CAWiBX2hESrbRk4DBn
 {
 	gap: 6px !important;
 	min-width: auto !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.settings_BuiltInLayoutButtons_3KH4C button.DialogButton,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton
 {
 	cursor: default !important;
 	border-radius: var(--adw-button-radius) !important;
@@ -769,25 +871,29 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3KH4CAWiBX2hESrbRk4DBn button.Di
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.settings_BuiltInLayoutButtons_3KH4C button.DialogButton:hover,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton:hover
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton:hover,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton:hover
 {
 	background: rgba(var(--adw-window-fg-rgb), var(--adw-hover-opacity)) !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.settings_BuiltInLayoutButtons_3KH4C button.DialogButton:active,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton:active
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton:active,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton:active
 {
 	background: rgba(var(--adw-window-fg-rgb), var(--adw-active-opacity)) !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.settings_BuiltInLayoutButtons_3KH4C button.DialogButton > svg,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3KH4CAWiBX2hESrbRk4DBn button > svg
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3KH4CAWiBX2hESrbRk4DBn button > svg,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3KH4CAWiBX2hESrbRk4DBn button > svg
 {
 	display: none !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.settings_BuiltInLayoutButtons_3KH4C button.DialogButton::after,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton::after
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton::after,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton::after
 {
 	background-color: rgb(var(--adw-window-fg-rgb));
 	content: "";
@@ -801,26 +907,30 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3KH4CAWiBX2hESrbRk4DBn button.Di
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.settings_BuiltInLayoutButtons_3KH4C button.DialogButton.settings_SettingsDialogButton_3epr8::after,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton._3epr8QYWw_FqFgMx38YEEm::after
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton._3epr8QYWw_FqFgMx38YEEm::after,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton._3epr8QYWw_FqFgMx38YEEm::after
 {
 	-webkit-mask-image: var(--adw-icon-edit);
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.settings_BuiltInLayoutButtons_3KH4C button.DialogButton.settings_BuiltInLayoutButton_30Og7::after,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton._30Og77vH37EtqaKCCDIAP9::after
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton._30Og77vH37EtqaKCCDIAP9::after,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton._30Og77vH37EtqaKCCDIAP9::after
 {
 	-webkit-mask-image: var(--adw-icon-more);
 }
 
 /* Voice: Microphone test */
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La:has(div.voicesettings_MicrophoneTest_2Dptk) div.voicesettings_MicrophoneTest_2Dptk div.progressbar_ProgressBar_1-nHj,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI:has(div._2Dptk9e7W_k4zYB5wfRTcp) div._2Dptk9e7W_k4zYB5wfRTcp div._1-nHjRywUoX7Mpyc6JOPaQ
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI:has(div._2Dptk9e7W_k4zYB5wfRTcp) div._2Dptk9e7W_k4zYB5wfRTcp div._1-nHjRywUoX7Mpyc6JOPaQ,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt:has(div._2Dptk9e7W_k4zYB5wfRTcp) div._2Dptk9e7W_k4zYB5wfRTcp div._1-nHjRywUoX7Mpyc6JOPaQ
 {
 	width: 100px !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La:has(div.voicesettings_MicrophoneTest_2Dptk) div.voicesettings_MicrophoneTest_2Dptk button,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI:has(div._2Dptk9e7W_k4zYB5wfRTcp) div._2Dptk9e7W_k4zYB5wfRTcp button
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI:has(div._2Dptk9e7W_k4zYB5wfRTcp) div._2Dptk9e7W_k4zYB5wfRTcp button,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt:has(div._2Dptk9e7W_k4zYB5wfRTcp) div._2Dptk9e7W_k4zYB5wfRTcp button
 {
 	overflow: revert !important;
 	max-width: revert !important;
@@ -829,8 +939,11 @@ body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI:has(div._2D
 /* Hidden widgets */
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La div[class*="friendssettings_FakeFriend_"],
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI div._3oeHwxQTKDkPcxDhz8jbhM,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt div._3oeHwxQTKDkPcxDhz8jbhM,
+
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La svg[class*="desktopsecuritysettings_SteamGuardIcon_"],
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI svg.eYz3vzuTb_a2I4dRJ-vf9
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI svg.eYz3vzuTb_a2I4dRJ-vf9,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt svg.eYz3vzuTb_a2I4dRJ-vf9
 {
 	display: none !important;
 }

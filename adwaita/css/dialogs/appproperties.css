@@ -1,13 +1,15 @@
 /* Comboboxes on the Updates page */
 body.DesktopUI div.appproperties_AppProperties_1FyBL div.DialogBody > div:not([class]):first-child > div.gamepaddialog_Field_S-_La,
-body.DesktopUI div._1FyBL6obxHQ2Z2CsaV2Gbz div.DialogBody > div:not([class]):first-child > div.S-_LaQG5eEOM2HWZ-geJI
+body.DesktopUI div._1FyBL6obxHQ2Z2CsaV2Gbz div.DialogBody > div:not([class]):first-child > div.S-_LaQG5eEOM2HWZ-geJI,
+body.DesktopUI div._1FyBL6obxHQ2Z2CsaV2Gbz div.DialogBody > div:not([class]):first-child > div.eKmEXJCm_lgme24Fp_HWt
 {
 	border-bottom-left-radius: 0 !important;
 	border-bottom-right-radius: 0 !important;
 }
 
 body.DesktopUI div.appproperties_AppProperties_1FyBL div.DialogBody > div:not([class]):first-child + div.gamepaddialog_Field_S-_La,
-body.DesktopUI div._1FyBL6obxHQ2Z2CsaV2Gbz div.DialogBody > div:not([class]):first-child + div.S-_LaQG5eEOM2HWZ-geJI
+body.DesktopUI div._1FyBL6obxHQ2Z2CsaV2Gbz div.DialogBody > div:not([class]):first-child + div.S-_LaQG5eEOM2HWZ-geJI,
+body.DesktopUI div._1FyBL6obxHQ2Z2CsaV2Gbz div.DialogBody > div:not([class]):first-child + div.eKmEXJCm_lgme24Fp_HWt
 {
 	height: 0 !important;
     min-height: 0 !important;
@@ -19,7 +21,8 @@ body.DesktopUI div._1FyBL6obxHQ2Z2CsaV2Gbz div.DialogBody > div:not([class]):fir
 }
 
 body.DesktopUI div.appproperties_AppProperties_1FyBL div.DialogBody > div:not([class]):first-child + div.gamepaddialog_Field_S-_La div.gamepaddialog_FieldLabel_3b0U-,
-body.DesktopUI div._1FyBL6obxHQ2Z2CsaV2Gbz div.DialogBody > div:not([class]):first-child + div.S-_LaQG5eEOM2HWZ-geJI div._3b0U-QDD-uhFpw6xM716fw
+body.DesktopUI div._1FyBL6obxHQ2Z2CsaV2Gbz div.DialogBody > div:not([class]):first-child + div.S-_LaQG5eEOM2HWZ-geJI div._3b0U-QDD-uhFpw6xM716fw,
+body.DesktopUI div._1FyBL6obxHQ2Z2CsaV2Gbz div.DialogBody > div:not([class]):first-child + div.eKmEXJCm_lgme24Fp_HWt div._3jMlJm4PQCA8SfNlUR99Fo
 {
 	position: absolute !important;
 	left: 12px !important;
@@ -27,13 +30,15 @@ body.DesktopUI div._1FyBL6obxHQ2Z2CsaV2Gbz div.DialogBody > div:not([class]):fir
 }
 
 body.DesktopUI div.appproperties_AppProperties_1FyBL div.DialogBody > div:not([class]):first-child + div.gamepaddialog_Field_S-_La div.gamepaddialog_FieldDescription_2OJfk,
-body.DesktopUI div._1FyBL6obxHQ2Z2CsaV2Gbz div.DialogBody > div:not([class]):first-child + div.S-_LaQG5eEOM2HWZ-geJI div._2OJfkxlD3X9p8Ygu1vR7Lr
+body.DesktopUI div._1FyBL6obxHQ2Z2CsaV2Gbz div.DialogBody > div:not([class]):first-child + div.S-_LaQG5eEOM2HWZ-geJI div._2OJfkxlD3X9p8Ygu1vR7Lr,
+body.DesktopUI div._1FyBL6obxHQ2Z2CsaV2Gbz div.DialogBody > div:not([class]):first-child + div.eKmEXJCm_lgme24Fp_HWt div._1W1to_azoBRG95oNAFpf9Q
 {
 	display: none !important;
 }
 
 body.DesktopUI div.appproperties_AppProperties_1FyBL div.DialogBody > div:not([class]):first-child + div.gamepaddialog_Field_S-_La + div.gamepaddialog_Field_S-_La,
-body.DesktopUI div._1FyBL6obxHQ2Z2CsaV2Gbz div.DialogBody > div:not([class]):first-child + div.S-_LaQG5eEOM2HWZ-geJI + div.S-_LaQG5eEOM2HWZ-geJI
+body.DesktopUI div._1FyBL6obxHQ2Z2CsaV2Gbz div.DialogBody > div:not([class]):first-child + div.S-_LaQG5eEOM2HWZ-geJI + div.S-_LaQG5eEOM2HWZ-geJI,
+body.DesktopUI div._1FyBL6obxHQ2Z2CsaV2Gbz div.DialogBody > div:not([class]):first-child + div.eKmEXJCm_lgme24Fp_HWt + div.eKmEXJCm_lgme24Fp_HWt
 {
 	border-bottom-left-radius: var(--adw-card-radius) !important;
 	border-bottom-right-radius: var(--adw-card-radius) !important;
