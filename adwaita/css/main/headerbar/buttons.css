@@ -10,10 +10,13 @@ body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._1-9sir4j_KQiMqdkZjQN0u
 
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_Button_"],
 body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._2Szzh5sKyGgnLUR870zbDE,
+
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AccountMenu_"],
 body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._3yD46y5pd3zOGR7CzKs0mC,
+
 body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_FriendsButton_"],
 body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._1TdaAqMFadi0UTqilrkelR,
+
 body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_DownloadStatusContent_"],
 body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div.ip-YZhijAMZcuRoXBGiye
 {
@@ -41,10 +44,13 @@ body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div.ip-YZhijAMZcuRoXBGiye
 
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_Button_"]:hover,
 body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._2Szzh5sKyGgnLUR870zbDE:hover,
+
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AccountMenu_"]:hover,
 body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._3yD46y5pd3zOGR7CzKs0mC:hover,
+
 body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_FriendsButton_"]:hover,
 body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._1TdaAqMFadi0UTqilrkelR:hover,
+
 body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_DownloadStatusContent_"]:hover,
 body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div.ip-YZhijAMZcuRoXBGiye:hover
 {
@@ -53,10 +59,13 @@ body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div.ip-YZhijAMZcuRoXBGiye:hover
 
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_Button_"]:active,
 body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._2Szzh5sKyGgnLUR870zbDE:active,
+
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AccountMenu_"]:active,
 body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._3yD46y5pd3zOGR7CzKs0mC:active,
+
 body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_FriendsButton_"]:active,
 body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._1TdaAqMFadi0UTqilrkelR:active,
+
 body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_DownloadStatusContent_"]:active,
 body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div.ip-YZhijAMZcuRoXBGiye:active
 {
@@ -72,6 +81,7 @@ body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._1-9sir4j_KQiMqdkZjQN0u
 
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="steamdesktop_TitleBarControls_"] div[class*="titlebarcontrols_AccountMenu_"]:hover,
 body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._1-9sir4j_KQiMqdkZjQN0u div._3yD46y5pd3zOGR7CzKs0mC:hover,
+
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="steamdesktop_TitleBarControls_"] div[class*="titlebarcontrols_AccountMenu_"]:active,
 body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._1-9sir4j_KQiMqdkZjQN0u div._3yD46y5pd3zOGR7CzKs0mC:active
 {
@@ -81,11 +91,14 @@ body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._1-9sir4j_KQiMqdkZjQN0u div._3yD4
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"] div.avatarStatus,
 body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._3yD46y5pd3zOGR7CzKs0mC div._1YGAHSfGavQI6MODJq-pJB div._1yIzy56YfJIliF6ykwhP2r,
 body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._3yD46y5pd3zOGR7CzKs0mC div.nibodjvvrm86uCfnnAn4g div._1yIzy56YfJIliF6ykwhP2r,
+
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AccountMenu_"] div[class*="steamavatar_avatarHolder_"] + div,
 body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._3yD46y5pd3zOGR7CzKs0mC div._1YGAHSfGavQI6MODJq-pJB + div,
 body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._3yD46y5pd3zOGR7CzKs0mC div.nibodjvvrm86uCfnnAn4g + div,
+
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AccountMenu_"] div[class*="titlebarcontrols_WalletBalance_"],
 body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._3yD46y5pd3zOGR7CzKs0mC div._2jphjrSifC6orDT4g_7Wd,
+
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AccountMenu_"] svg[class*="titlebarcontrols_Chevron_"],
 body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._3yD46y5pd3zOGR7CzKs0mC svg._3x51wbt5DYyWC8JKwQ51ir
 {
@@ -165,8 +178,10 @@ body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div.ip-YZhijAMZcuRoXBGiye
 
 body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_DownloadStatusContent_"] > div,
 body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div.ip-YZhijAMZcuRoXBGiye > div,
+
 body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_DownloadStatusContent_"] div[class*="bottombar_IconBevel_"],
 body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div.ip-YZhijAMZcuRoXBGiye div._21vPQjHoo0uwud5lfCD_x-,
+
 body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_DownloadStatusContent_"] div[class*="bottombar_StatusLine_"],
 body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div.ip-YZhijAMZcuRoXBGiye div._1xCcFYWIrJ7W8WRDmGvR3y
 {
@@ -258,8 +273,10 @@ body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._32TmRVFkc8HMIUZ-KnnKby::before
 /* Hidden buttons */
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_AnnouncementsButton"],
 body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._5wILZhsLODVwGfcJ0hKmJ,
+
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_GamepadUIToggle_"],
 body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._3LKQ3S_yqrebeNLF6aeiog,
+
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="titlebarcontrols_VRToggle_"],
 body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._3lRfTo8Wo3phXfE1DvK6QW
 {

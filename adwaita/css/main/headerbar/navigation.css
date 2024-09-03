@@ -108,6 +108,7 @@ body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._19axKcqYRuaJ8vdYKYmtTQ
 
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="supernav_MenuButton_"]:hover,
 body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._19axKcqYRuaJ8vdYKYmtTQ:hover,
+
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="supernav_SuperNavMenu_"][class*="menu_MenuOpen_"] div[class*="supernav_MenuButton_"],
 body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._7AlhCx3XGzBeIrQaCneUD._3rgV8pPmQvZC-01x9l-q-N div._19axKcqYRuaJ8vdYKYmtTQ
 {
@@ -129,6 +130,7 @@ body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._7AlhCx3XGzBeIrQaCneUD._1gqEjB5Qs
 
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="supernav_SuperNavMenu_"][class*="supernav_Selected_"]:not([class*="supernav_Disabled_"]) div[class*="supernav_MenuButton_"]:hover,
 body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._7AlhCx3XGzBeIrQaCneUD._1gqEjB5QsKT_NftD1dEsdZ:not(._2cO0HdvLEGAdhosLekWsmo) div._19axKcqYRuaJ8vdYKYmtTQ:hover,
+
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="supernav_SuperNavMenu_"][class*="supernav_Selected_"][class*="menu_MenuOpen_"]:not([class*="supernav_Disabled_"]) div[class*="supernav_MenuButton_"],
 body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._7AlhCx3XGzBeIrQaCneUD._1gqEjB5QsKT_NftD1dEsdZ._3rgV8pPmQvZC-01x9l-q-N:not(._2cO0HdvLEGAdhosLekWsmo) div._19axKcqYRuaJ8vdYKYmtTQ
 {

@@ -18,7 +18,7 @@ html.client_chat_frame .title-bar-actions.window-controls
 body.DesktopUI div.steamdesktop_TopBar_3Z7VQ div.steamdesktop_WindowControls_qP17e,
 body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div.qP17eBPXkfezFfexZ4hC3
 {
-	flex-basis: 114px !important;
+	flex-basis: var(--adw-windowcontrols-margin-left) !important;
 	margin-left: 10px !important;
 	order: -1 !important;
 }

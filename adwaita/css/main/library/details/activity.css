@@ -52,6 +52,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5
 
 body.DesktopUI div[class*="appdetails_Container_"] div.Panel > div[class*="appactivityday_Event_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.Panel > div.UVeN0kaD3zv1feMj_mMw5,
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel,
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel
 {
@@ -67,6 +68,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel
 
 body.DesktopUI div[class*="appdetails_Container_"] div.Panel > div[class*="appactivityday_Event_"]:hover,
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.Panel > div.UVeN0kaD3zv1feMj_mMw5:hover,
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel:hover,
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel:hover
 {
@@ -75,6 +77,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel:hover
 
 body.DesktopUI div[class*="appdetails_Container_"] div.Panel > div[class*="appactivityday_Event_"]:active,
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.Panel > div.UVeN0kaD3zv1feMj_mMw5:active,
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel:active,
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel:active
 {
@@ -83,6 +86,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel:activ
 
 body.DesktopUI div[class*="appdetails_Container_"] div.Panel:first-child > div[class*="appactivityday_Event_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.Panel:first-child > div.UVeN0kaD3zv1feMj_mMw5,
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel:first-child,
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel:first-child
 {
@@ -92,6 +96,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel:first
 
 body.DesktopUI div[class*="appdetails_Container_"] div.Panel:last-child > div[class*="appactivityday_Event_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.Panel:last-child > div.UVeN0kaD3zv1feMj_mMw5,
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel:last-child,
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel:last-child
 {
@@ -110,6 +115,7 @@ body.DesktopUI div.rYBZBWnNW6m-N9vX0Chce
 /* Partner events */
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeUpdate_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._39Zk32AvV5cr6g-83IVRVS,
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventFeatured_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3xi-HLpFVHaakihoqhQ_6C
 {
@@ -131,18 +137,25 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA img._3cX_vEKsN9S9EmR0O5w1Ol
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventMediumImage_Title_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._1gljEIuhbsQpFCWuVhdKTJ,
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeImage_Title_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3fsjzvni7TQ1NphLHM_5r3,
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventTextOnly_Title_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._1Cva_kor3lWBIoeu9cQxJq,
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventType_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._1ujzuoxGhLunHZQqHAqRgg,
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventType_"] > div,
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._1ujzuoxGhLunHZQqHAqRgg > div,
+
 body.DesktopUI div[class*="appdetails_Container_"] span[class*="appactivityday_PartnerEventTextOnly_Summary_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA span._3ZUP3RJr6PRn6IzODoxZDx,
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventMediumImage_Summary_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.Ru7OBQzSxqIo3jIsbtV9g,
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeImage_Summary_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3zwBRDW1egliiT4pKYIXap
 {
@@ -163,8 +176,10 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3zwBRDW1egliiT4pKYIXap
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventType_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._1ujzuoxGhLunHZQqHAqRgg,
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventType_"] > div,
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._1ujzuoxGhLunHZQqHAqRgg > div,
+
 body.DesktopUI div[class*="appdetails_Container_"] span[class*="appactivityday_PartnerEventTextOnly_Summary_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA span._3ZUP3RJr6PRn6IzODoxZDx
 {
@@ -177,6 +192,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA span._3ZUP3RJr6PRn6IzODoxZDx
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventTextOnly_TextColumn_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.FZghxGxorZuq0dz2iUEhC,
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventTextOnly_TextColumn_"] > div[class*="appactivityday_PartnerEventTextOnly_LimitedSummary_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.FZghxGxorZuq0dz2iUEhC > div._2OrhETq9wuxc0cGgVsmjm8
 {
@@ -202,6 +218,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._1-llQnFWxBo1kyWdkDFyXp svg path
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventMediumImage_Contents_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2gv3EsHSu5dMQyMqaz-W9t,
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeImage_Contents_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2tDv0EeJIdDmZLyfUE63t1
 {
@@ -211,6 +228,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2tDv0EeJIdDmZLyfUE63t1
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventMediumImage_Contents_"] > div[class*="appactivityday_MediumImageContainer_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2gv3EsHSu5dMQyMqaz-W9t > div.ddB5GVHCwLezhshXUMCNL,
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeImage_Contents_"] > div[class*="appactivityday_ImageContainer_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2tDv0EeJIdDmZLyfUE63t1 > div._1XpBItdUymdlwPZzvvOnyW
 {
@@ -220,6 +238,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2tDv0EeJIdDmZLyfUE63t1 > div._1X
 
 body.DesktopUI div[class*="appdetails_Container_"] div.Panel:first-child > div[class*="appactivityday_Event_"] div[class*="appactivityday_PartnerEventMediumImage_Contents_"] > div[class*="appactivityday_MediumImageContainer_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.Panel:first-child > div.UVeN0kaD3zv1feMj_mMw5 div._2gv3EsHSu5dMQyMqaz-W9t > div.ddB5GVHCwLezhshXUMCNL,
+
 body.DesktopUI div[class*="appdetails_Container_"] div.Panel:first-child > div[class*="appactivityday_Event_"] div[class*="appactivityday_PartnerEventLargeImage_Contents_"] > div[class*="appactivityday_ImageContainer_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.Panel:first-child > div.UVeN0kaD3zv1feMj_mMw5 div._2tDv0EeJIdDmZLyfUE63t1 > div._1XpBItdUymdlwPZzvvOnyW
 {
@@ -228,6 +247,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.Panel:first-child > div.UVeN0kaD3
 
 body.DesktopUI div[class*="appdetails_Container_"] div.Panel:last-child > div[class*="appactivityday_Event_"] div[class*="appactivityday_PartnerEventMediumImage_Contents_"] > div[class*="appactivityday_MediumImageContainer_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.Panel:last-child > div.UVeN0kaD3zv1feMj_mMw5 div._2gv3EsHSu5dMQyMqaz-W9t > div.ddB5GVHCwLezhshXUMCNL,
+
 body.DesktopUI div[class*="appdetails_Container_"] div.Panel:last-child > div[class*="appactivityday_Event_"] div[class*="appactivityday_PartnerEventLargeImage_Contents_"] > div[class*="appactivityday_ImageContainer_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.Panel:last-child > div.UVeN0kaD3zv1feMj_mMw5 div._2tDv0EeJIdDmZLyfUE63t1 > div._1XpBItdUymdlwPZzvvOnyW
 {
@@ -236,6 +256,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.Panel:last-child > div.UVeN0kaD3z
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventMediumImage_Contents_"] > div[class*="appactivityday_MediumImageContainer_"]::after,
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2gv3EsHSu5dMQyMqaz-W9t > div.ddB5GVHCwLezhshXUMCNL::after,
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeImage_Contents_"] > div[class*="appactivityday_ImageContainer_"]::after,
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2tDv0EeJIdDmZLyfUE63t1 > div._1XpBItdUymdlwPZzvvOnyW::after
 {
@@ -251,10 +272,13 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2tDv0EeJIdDmZLyfUE63t1 > div._1X
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventMediumImage_Contents_"] > div[class*="appactivityday_MediumImageContainer_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2gv3EsHSu5dMQyMqaz-W9t > div.ddB5GVHCwLezhshXUMCNL,
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeImage_Contents_"] > div[class*="appactivityday_ImageContainer_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2tDv0EeJIdDmZLyfUE63t1 > div._1XpBItdUymdlwPZzvvOnyW,
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventMediumImage_Contents_"] > div[class*="appactivityday_MediumImageContainer_"] > img,
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2gv3EsHSu5dMQyMqaz-W9t > div.ddB5GVHCwLezhshXUMCNL > img,
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeImage_Contents_"] > div[class*="appactivityday_ImageContainer_"] > img,
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2tDv0EeJIdDmZLyfUE63t1 > div._1XpBItdUymdlwPZzvvOnyW > img
 {
@@ -272,6 +296,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2tDv0EeJIdDmZLyfUE63t1 > div._1X
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventMediumImage_Contents_"] > div[class*="appactivityday_MediumImageContainer_"] > img,
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2gv3EsHSu5dMQyMqaz-W9t > div.ddB5GVHCwLezhshXUMCNL > img,
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeImage_Contents_"] > div[class*="appactivityday_ImageContainer_"] > img,
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2tDv0EeJIdDmZLyfUE63t1 > div._1XpBItdUymdlwPZzvvOnyW > img
 {
@@ -285,6 +310,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2tDv0EeJIdDmZLyfUE63t1 > div._1X
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventMediumImage_Container_"]:hover div[class*="appactivityday_PartnerEventMediumImage_Contents_"] > div[class*="appactivityday_MediumImageContainer_"] > img,
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._1HZy7BvOZuPT8feUwadL4W:hover div._2gv3EsHSu5dMQyMqaz-W9t > div.ddB5GVHCwLezhshXUMCNL > img,
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeImage_Container_"]:hover div[class*="appactivityday_PartnerEventLargeImage_Contents_"] > div[class*="appactivityday_ImageContainer_"] > img,
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.LibriMVXcLl1HB60ZUp78:hover div._2tDv0EeJIdDmZLyfUE63t1 > div._1XpBItdUymdlwPZzvvOnyW > img
 {
@@ -302,6 +328,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._1wJJQwnV-ssGrL0xveFujy
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventMediumImage_Contents_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2gv3EsHSu5dMQyMqaz-W9t,
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeImage_Contents_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2tDv0EeJIdDmZLyfUE63t1
 {
@@ -310,6 +337,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2tDv0EeJIdDmZLyfUE63t1
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventMediumImage_Contents_"]::after,
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2gv3EsHSu5dMQyMqaz-W9t::after,
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeImage_Contents_"]::after,
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2tDv0EeJIdDmZLyfUE63t1::after
 {
@@ -329,6 +357,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2tDv0EeJIdDmZLyfUE63t1::after
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventFeatured_"] div[class*="appactivityday_PartnerEventMediumImage_Contents_"]::after,
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3xi-HLpFVHaakihoqhQ_6C div._2gv3EsHSu5dMQyMqaz-W9t::after,
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventFeatured_"] div[class*="appactivityday_PartnerEventLargeImage_Contents_"]::after,
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3xi-HLpFVHaakihoqhQ_6C div._2tDv0EeJIdDmZLyfUE63t1::after
 {
@@ -358,6 +387,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA ._1WdC0YUP8FT0dYWZ-QIVZL
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventMediumImage_TextColumn_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3dJ4Bq6Msivz5-UIHzSEQu,
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeImage_TextColumn_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2HzKE96Sc4z6KHN68gr4DS
 {
@@ -373,6 +403,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2HzKE96Sc4z6KHN68gr4DS
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventMediumImage_Title_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._1gljEIuhbsQpFCWuVhdKTJ,
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeImage_Title_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3fsjzvni7TQ1NphLHM_5r3
 {
@@ -384,6 +415,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3fsjzvni7TQ1NphLHM_5r3
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventMediumImage_Summary_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.Ru7OBQzSxqIo3jIsbtV9g,
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventLargeImage_Summary_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3zwBRDW1egliiT4pKYIXap
 {
@@ -427,10 +459,13 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.Q
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel span[class*="appactivityday_ActorName_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel span._1t1iyV4uBG9M9tTM7rCFNu,
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel span[class*="appactivityday_ActorName_"] span,
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel span._1t1iyV4uBG9M9tTM7rCFNu span,
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel span[class*="appactivityday_SpanEvent_"] span[class*="appactivityday_HeadlineGameName_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel span._3Nxqyyt2ilotu5ci553y82 span.Gy1Y7lb4Y47vK8odzSru2,
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel span[class*="appactivityday_SpanEvent_"] a[class*="appactivityday_WishlistLink_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel span._3Nxqyyt2ilotu5ci553y82 a._3698jU4IwAALpt9QeZPqqd
 {
@@ -447,6 +482,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel span.
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel span[class*="appactivityday_ActorName_"].online,
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel span._1t1iyV4uBG9M9tTM7rCFNu.online,
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel span[class*="appactivityday_ActorName_"].online span,
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel span._1t1iyV4uBG9M9tTM7rCFNu.online span
 {
@@ -455,6 +491,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel span.
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel span[class*="appactivityday_ActorName_"].ingame,
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel span._1t1iyV4uBG9M9tTM7rCFNu.ingame,
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel span[class*="appactivityday_ActorName_"].ingame span,
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel span._1t1iyV4uBG9M9tTM7rCFNu.ingame span
 {
@@ -477,8 +514,10 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel span.
 /* Position clickable elements above the profile link */
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel span[class*="appactivityday_SpanEvent_"] a[class*="appactivityday_WishlistLink_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel span._3Nxqyyt2ilotu5ci553y82 a._3698jU4IwAALpt9QeZPqqd,
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] div[class*="appdetailsachievementssection_RemainderContainer_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div.yJLy7HDLJT44C1fcm6lPI div.lZ2c49vTWJ60klQOY9l2K,
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_BadgeSection_"] img[class*="appactivityday_Badge_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3G7i5g23e7CREVJMvy-uuM img._1zopSLK5O_2X44s_Xy3IO-
 {
@@ -489,10 +528,13 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.N
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT,
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel span[class*="appactivityday_SpanEvent_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel span._3Nxqyyt2ilotu5ci553y82,
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] div[class*="appdetailsachievementssection_RemainderText_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div.yJLy7HDLJT44C1fcm6lPI div._1-H7tKj_QcGHLUbx5wVsGg,
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel span[class*="appactivityday_SpanEvent_"] a[class*="appactivityday_WishlistLink_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel span._3Nxqyyt2ilotu5ci553y82 a._3698jU4IwAALpt9QeZPqqd
 {
@@ -522,10 +564,13 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel span.
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div.yJLy7HDLJT44C1fcm6lPI,
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_TradingCardSection_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._2IS7ZQo16varVLcyuFh4sY,
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_BadgeSection_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3G7i5g23e7CREVJMvy-uuM,
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6
 {
@@ -539,12 +584,21 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.N
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] div[class*="appdetailsachievementssection_AchievementHoverContainer_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div.yJLy7HDLJT44C1fcm6lPI div._2CK1m9x0gtA_oSAQa2FpS3,
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] div[class*="achievementiconbase_AchievementIconWrapper_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div.yJLy7HDLJT44C1fcm6lPI div._373lENtPG9blrNsyXz0y_J,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div.yJLy7HDLJT44C1fcm6lPI div._1fEbX-PfpZ2FhkhttWcm-V,
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] div[class*="achievementiconbase_HiddenLabel_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div.yJLy7HDLJT44C1fcm6lPI div._2yMyP8POdcTHs9u9CEQIKY,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div.yJLy7HDLJT44C1fcm6lPI div._1ABm6sfuqiZZDSL9z8mW1a,
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] div[class*="appdetailsachievementssection_RemainderContainer_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div.yJLy7HDLJT44C1fcm6lPI div.lZ2c49vTWJ60klQOY9l2K,
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] div[class*="appdetailsachievementssection_Remainder_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div.yJLy7HDLJT44C1fcm6lPI div._2gISWIeEzZ9PNuAzVuMaWd,
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] div[class*="appdetailsachievementssection_RemainderText_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div.yJLy7HDLJT44C1fcm6lPI div._1-H7tKj_QcGHLUbx5wVsGg
 {
@@ -556,14 +610,17 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.N
 }
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] img[class*="achievementiconbase_Icon_"],
-body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div.yJLy7HDLJT44C1fcm6lPI img._2bzHb-caO-Nm9nCFXRj7zq
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div.yJLy7HDLJT44C1fcm6lPI img._2bzHb-caO-Nm9nCFXRj7zq,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div.yJLy7HDLJT44C1fcm6lPI img._2V2sHETNfa62yMoDwSF3_t
 {
 	border-radius: var(--adw-gameicon-radius) !important;
 	box-sizing: border-box !important;
+	cursor: default !important;
 }
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] img[class*="achievementiconbase_Icon_"]:not([class*="achievementiconbase_IconGlow_"]),
-body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div.yJLy7HDLJT44C1fcm6lPI img._2bzHb-caO-Nm9nCFXRj7zq:not(.tH67cztsTrD9IF2zpG8ep)
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div.yJLy7HDLJT44C1fcm6lPI img._2bzHb-caO-Nm9nCFXRj7zq:not(.tH67cztsTrD9IF2zpG8ep),
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div.yJLy7HDLJT44C1fcm6lPI img._2V2sHETNfa62yMoDwSF3_t:not(._3s4Rq3jnntBVP7HbJj1RMQ)
 {
 	box-shadow: none !important;
 	border: 1px rgba(var(--adw-card-fg-rgb), var(--adw-thin-border-opacity)) solid !important;
@@ -583,6 +640,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.N
 	font-family: var(--adw-text-font) !important;
 	font-size: var(--adw-text-row-title-size) !important;
 	font-weight: var(--adw-text-row-title-weight) !important;
+    overflow: visible !important;
 }
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] div[class*="appdetailsachievementssection_TextSection_"] > div[class*="appdetailsachievementssection_Desc_"],
@@ -592,6 +650,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.N
 	font-family: var(--adw-text-font) !important;
 	font-size: var(--adw-text-row-subtitle-size) !important;
 	font-weight: var(--adw-text-row-subtitle-weight) !important;
+    overflow: visible !important;
 }
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] > div[class*="appactivityday_PrimaryAchievement_"]:first-child:last-child,
@@ -613,7 +672,11 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.N
 }
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] div[class*="appdetailsachievementssection_RemainderText_"],
-body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div.yJLy7HDLJT44C1fcm6lPI div._1-H7tKj_QcGHLUbx5wVsGg
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div.yJLy7HDLJT44C1fcm6lPI div._1-H7tKj_QcGHLUbx5wVsGg,
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] div[class*="achievementiconbase_HiddenLabel_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div.yJLy7HDLJT44C1fcm6lPI div._2yMyP8POdcTHs9u9CEQIKY,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div.yJLy7HDLJT44C1fcm6lPI div._1ABm6sfuqiZZDSL9z8mW1a
 {
 	color: rgb(var(--adw-accent-fg-rgb)) !important;
 	font-family: var(--adw-text-font) !important;
@@ -625,18 +688,41 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.N
 	border-radius: var(--adw-gameicon-radius) !important;
 }
 
-body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_TradingCardSection_"] div[class*="appdetailstradingcardssection_Card_"],
-body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._2IS7ZQo16varVLcyuFh4sY div._1WsOngnf2RD4f5N-38rPLZ
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] div[class*="achievementiconbase_HiddenLabel_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div.yJLy7HDLJT44C1fcm6lPI div._2yMyP8POdcTHs9u9CEQIKY,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div.yJLy7HDLJT44C1fcm6lPI div._1ABm6sfuqiZZDSL9z8mW1a
 {
+	font-size: 24px !important;
+	font-weight: 700 !important;
+	box-shadow: none !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_TradingCardSection_"] div[class*="appdetailstradingcardssection_CardWrapper_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._2IS7ZQo16varVLcyuFh4sY div._20mFRtBlmlH4r-Nhl4P2kO
+{
+	padding: 0 !important;
 	margin: 0 !important;
 	min-width: 40px !important;
 	max-width: 40px !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_TradingCardSection_"] div[class*="appdetailstradingcardssection_Card_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._2IS7ZQo16varVLcyuFh4sY div._1WsOngnf2RD4f5N-38rPLZ
+{
+	padding: 0 !important;
+	margin: 0 !important;
 }
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_TradingCardSection_"] div[class*="appdetailstradingcardssection_Card_"]:hover,
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._2IS7ZQo16varVLcyuFh4sY div._1WsOngnf2RD4f5N-38rPLZ:hover
 {
 	transform: scale(3) !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_TradingCardSection_"] div[class*="appdetailstradingcardssection_Card_"] div[class*="appdetailstradingcardssection_CardContainer_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._2IS7ZQo16varVLcyuFh4sY div._1WsOngnf2RD4f5N-38rPLZ div._2DUDvAhXoEOSsd8GTIsKLY
+{
+	border: none !important;
 }
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_BadgeSection_"] img[class*="appactivityday_Badge_"],
@@ -655,6 +741,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.N
 	font-family: var(--adw-text-font) !important;
 	font-size: var(--adw-text-row-title-size) !important;
 	font-weight: var(--adw-text-row-title-weight) !important;
+    overflow: visible !important;
 }
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_BadgeSection_"] div[class*="appactivityday_BadgeLevel_"],
@@ -664,6 +751,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.N
 	font-family: var(--adw-text-font) !important;
 	font-size: var(--adw-text-row-subtitle-size) !important;
 	font-weight: var(--adw-text-row-subtitle-weight) !important;
+    overflow: visible !important;
 }
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"],
@@ -673,7 +761,8 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.N
 }
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"] div[class*="pageablecontainer_PageClickContainer_"] > div,
-body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div._3-h3X6yhzvZ_wk1lbCIWqb > div
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div._3-h3X6yhzvZ_wk1lbCIWqb > div,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div.bsNegRKT1Hbv4tqHrOk9- > div
 {
 	position: absolute !important;
 	z-index: 1 !important;
@@ -692,27 +781,31 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.N
 }
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"] div[class*="pageablecontainer_PageClickContainer_"] > div:hover,
-body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div._3-h3X6yhzvZ_wk1lbCIWqb > div:hover
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div._3-h3X6yhzvZ_wk1lbCIWqb > div:hover,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div.bsNegRKT1Hbv4tqHrOk9- > div:hover
 {
 	background: var(--adw-button-osd-bg-hover) !important;
 	color: var(--adw-button-osd-fg-hover) !important;
 }
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"] div[class*="pageablecontainer_PageClickContainer_"] > div:active,
-body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div._3-h3X6yhzvZ_wk1lbCIWqb > div:active
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div._3-h3X6yhzvZ_wk1lbCIWqb > div:active,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div.bsNegRKT1Hbv4tqHrOk9- > div:active
 {
 	background: var(--adw-button-osd-bg-active) !important;
 	color: var(--adw-button-osd-fg-active) !important;
 }
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"] div[class*="pageablecontainer_PageClickContainer_"] > div > svg,
-body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div._3-h3X6yhzvZ_wk1lbCIWqb > div > svg
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div._3-h3X6yhzvZ_wk1lbCIWqb > div > svg,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div.bsNegRKT1Hbv4tqHrOk9- > div > svg
 {
 	display: none !important;
 }
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"] div[class*="pageablecontainer_PageClickContainer_"] > div::before,
-body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div._3-h3X6yhzvZ_wk1lbCIWqb > div::before
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div._3-h3X6yhzvZ_wk1lbCIWqb > div::before,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div.bsNegRKT1Hbv4tqHrOk9- > div::before
 {
 	background-color: currentColor;
 	content: "";
@@ -725,31 +818,36 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.N
 }
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"] div[class*="pageablecontainer_PageClickContainer_"] > div[class*="pageablecontainer_PageLeft_"],
-body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div._3-h3X6yhzvZ_wk1lbCIWqb > div._1TMDJB6ciSNtEh04B3SmF8
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div._3-h3X6yhzvZ_wk1lbCIWqb > div._1TMDJB6ciSNtEh04B3SmF8,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div.bsNegRKT1Hbv4tqHrOk9- > div._14b-hQsLwSwYcELtknxCUX
 {
 	left: 6px !important;
 }
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"] div[class*="pageablecontainer_PageClickContainer_"] > div[class*="pageablecontainer_PageLeft_"]::before,
-body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div._3-h3X6yhzvZ_wk1lbCIWqb > div._1TMDJB6ciSNtEh04B3SmF8::before
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div._3-h3X6yhzvZ_wk1lbCIWqb > div._1TMDJB6ciSNtEh04B3SmF8::before,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div.bsNegRKT1Hbv4tqHrOk9- > div._14b-hQsLwSwYcELtknxCUX::before
 {
 	-webkit-mask-image: var(--adw-icon-nav-back);
 }
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"] div[class*="pageablecontainer_PageClickContainer_"] > div[class*="pageablecontainer_PageRight_"],
-body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div._3-h3X6yhzvZ_wk1lbCIWqb > div._2qGnLK2G3sqjtqVgYl6phc
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div._3-h3X6yhzvZ_wk1lbCIWqb > div._2qGnLK2G3sqjtqVgYl6phc,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div.bsNegRKT1Hbv4tqHrOk9- > div._3IIEUTw03Vm3Mk54jlnUaT
 {
 	right: 6px !important;
 }
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"] div[class*="pageablecontainer_PageClickContainer_"] > div[class*="pageablecontainer_PageRight_"]::before,
-body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div._3-h3X6yhzvZ_wk1lbCIWqb > div._2qGnLK2G3sqjtqVgYl6phc::before
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div._3-h3X6yhzvZ_wk1lbCIWqb > div._2qGnLK2G3sqjtqVgYl6phc::before,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div.bsNegRKT1Hbv4tqHrOk9- > div._3IIEUTw03Vm3Mk54jlnUaT::before
 {
 	-webkit-mask-image: var(--adw-icon-nav-forward);
 }
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"] div[class*="pageablecontainer_PageClickContainer_"] > div[class*="pageablecontainer_Disabled_"],
-body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div._3-h3X6yhzvZ_wk1lbCIWqb > div._3llJG80O0k9arYB6_mqpPh
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div._3-h3X6yhzvZ_wk1lbCIWqb > div._3llJG80O0k9arYB6_mqpPh,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div.bsNegRKT1Hbv4tqHrOk9- > div._16nHYucq6xgfe67DrVWLCI
 {
 	opacity: 0 !important;
 	pointer-events: none !important;
@@ -763,13 +861,15 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.N
 }
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"] div[class*="pageablecontainer_PageableContainer_"],
-body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div.tECphKl9rZXG_KesmwW5r
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div.tECphKl9rZXG_KesmwW5r,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div.SMWMsB-gz3WbYRK2HOm7i
 {
 	width: 100% !important;
 }
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_GameCarouselWrapper_"] div[class*="pageablecontainer_PageableContainer_"] > div > div.Panel,
-body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div.tECphKl9rZXG_KesmwW5r > div > div.Panel
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div.tECphKl9rZXG_KesmwW5r > div > div.Panel,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3jFOApJSzNL-_p65_jlmX6 div.SMWMsB-gz3WbYRK2HOm7i > div > div.Panel
 {
 	position: relative !important;
 	height: var(--adw-row-height) !important;
@@ -803,6 +903,74 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.N
 	border: 1px rgba(var(--adw-window-fg-rgb), var(--adw-border-opacity)) solid !important;
 	border-radius: calc(var(--adw-button-radius) * 2) !important;
 	overflow: hidden; !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel[class*="appactivityday_RecommendedGame_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel._1i3JyGyUjB6J9JB2N3MrR6
+{
+
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel[class*="appactivityday_RecommendedGame_"] div[class*="appactivityday_ActivityRecommendedGame_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel._1i3JyGyUjB6J9JB2N3MrR6 div._1-t-GR4QDBrChoQQWjxcjn
+{
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel[class*="appactivityday_RecommendedGame_"] div[class*="appactivityday_ReviewIcon_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel._1i3JyGyUjB6J9JB2N3MrR6 div.gWDyh18yme_n7VmrYhmid
+{
+	padding: 0 !important;
+	margin: 0 !important;
+	width: 40px !important;
+	height: 40px !important;
+	line-height: 40px !important;
+	box-shadow: inset 0 0 0 1px rgba(var(--adw-card-fg-rgb), var(--adw-thin-border-opacity)) !important;
+	border-radius: var(--adw-gameicon-radius) !important;
+	overflow: hidden !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel[class*="appactivityday_RecommendedGame_"] div[class*="appactivityday_ReviewMetadata_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel._1i3JyGyUjB6J9JB2N3MrR6 div._2ByGWwAeLjYzi1tvvrLIJq
+{
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel[class*="appactivityday_RecommendedGame_"] div[class*="appactivityday_ReviewDescription_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel._1i3JyGyUjB6J9JB2N3MrR6 div._2txLP3SViQYE1uWpaFAiHD
+{
+	margin-left: 6px !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel[class*="appactivityday_RecommendedGame_"] div[class*="appactivityday_ReviewDescription_"] > div[class*="appactivityday_ReviewDescriptionRecommended_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel._1i3JyGyUjB6J9JB2N3MrR6 div._2txLP3SViQYE1uWpaFAiHD > div._1zQfKpvh8tPQjRgzaTklOy
+{
+	padding: 0 !important;
+	color: rgb(var(--adw-accent-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-row-title-size) !important;
+	font-weight: var(--adw-text-row-title-weight) !important;
+    overflow: visible !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel[class*="appactivityday_RecommendedGame_"] div[class*="appactivityday_ReviewDescription_"] > div[class*="appactivityday_PlayedForTime_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel._1i3JyGyUjB6J9JB2N3MrR6 div._2txLP3SViQYE1uWpaFAiHD > div._2r-N9f1W6yltOqoSt80m8_
+{
+	padding: 0 !important;
+	color: rgba(var(--adw-accent-fg-rgb), var(--adw-dim-label-opacity)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-size: var(--adw-text-row-subtitle-size) !important;
+	font-weight: var(--adw-text-row-subtitle-weight) !important;
+    overflow: visible !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel[class*="appactivityday_RecommendedGame_"] div[class*="overflowbox_OverflowBox_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel._1i3JyGyUjB6J9JB2N3MrR6 div.rgZGVELljAfKG-m7vbaUE,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel._1i3JyGyUjB6J9JB2N3MrR6 div._17qc0iT2Uzbk8umX0qMOMJ
+{
+	display: none !important;
 }
 
 /* Rating bar - hidden for now */
@@ -872,6 +1040,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.Panel > div.UVeN0kaD3zv1feMj_mMw5
 /* Fetch more */
 body.DesktopUI div[class*="appdetails_Container_"] button[class*="appdetailsactivitysection_FetchMoreContainer_"]::before,
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA button._39ZurKJQex6v69aXzvc_nj::before,
+
 body.DesktopUI div[class*="appdetails_Container_"] button[class*="appdetailsactivitysection_FetchMoreContainer_"]:active,
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA button._39ZurKJQex6v69aXzvc_nj:active
 {

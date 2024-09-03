@@ -1,5 +1,6 @@
 body.DesktopUI div[class*="gamelistsectionheader_Container_"],
 body.DesktopUI div._2sYIghGVXJr6tsQVvcryy8,
+
 body.DesktopUI div[class*="gamelistentry_Container_"],
 body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ
 {
@@ -39,10 +40,13 @@ body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ._1yaIZGJb4PvyjF3_SSQxFx
 
 body.DesktopUI div[class*="gamelistentry_Container_"][class*="gamelistentry_CloudError_"],
 body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ.cMb2tLY-QjdRohM5U6Btp,
+
 body.DesktopUI div[class*="gamelistentry_Container_"] div[class*="gamelistentry_CloudError_"],
 body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ div.cMb2tLY-QjdRohM5U6Btp,
+
 body.DesktopUI div[class*="gamelistentry_Container_"][class*="gamelistentry_CloudOutOfDate_"],
 body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ._26PT_OTo7-JDunJWeZgjT8,
+
 body.DesktopUI div[class*="gamelistentry_Container_"] div[class*="gamelistentry_CloudOutOfDate_"],
 body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ div._26PT_OTo7-JDunJWeZgjT8
 {
@@ -57,8 +61,10 @@ body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ._10GdoB3tQXXGFToQ3yY_SK
 
 body.DesktopUI div[class*="gamelistentry_Container_"] div[class*="gamelistentry_GameListEntryName_"],
 body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ div._2SXJM0PeFEi3gbC7V3S5pE,
+
 body.DesktopUI div[class*="gamelistentry_Container_"] span[class*="gamelistentry_DownloadDash_"],
 body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ span._2RggXvVkWMDvvxFegjtKso,
+
 body.DesktopUI div[class*="gamelistentry_Container_"] div[class*="gamelistentry_DownloadProgress_"],
 body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ div._3uk3F1BmAJQR6rl1TPcaif
 {
@@ -67,6 +73,7 @@ body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ div._3uk3F1BmAJQR6rl1TPcaif
 
 body.DesktopUI div[class*="gamelistentry_Container_"] span[class*="gamelistentry_DownloadDash_"],
 body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ span._2RggXvVkWMDvvxFegjtKso,
+
 body.DesktopUI div[class*="gamelistentry_Container_"] div[class*="gamelistentry_DownloadProgress_"],
 body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ div._3uk3F1BmAJQR6rl1TPcaif
 {
@@ -75,6 +82,7 @@ body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ div._3uk3F1BmAJQR6rl1TPcaif
 
 body.DesktopUI div[class*="gamelistsectionheader_Container_"] span[class*="gamelistsectionheader_SectionName_"],
 body.DesktopUI div._2sYIghGVXJr6tsQVvcryy8 span._2mZ8LlvoUiyeEUtIWuTri,
+
 body.DesktopUI div[class*="gamelistsectionheader_Container_"] div[class*="gamelistsectionheader_SectionCount_"],
 body.DesktopUI div._2sYIghGVXJr6tsQVvcryy8 div._29uten9Yy8q-n7woDEOXVF
 {
@@ -97,6 +105,7 @@ body.DesktopUI div._2sYIghGVXJr6tsQVvcryy8 div._29uten9Yy8q-n7woDEOXVF
 
 body.DesktopUI div[class*="gamelistentry_GameListEntryContainer_"],
 body.DesktopUI div._1vO6BoiVslZgs1kqDGdUs8,
+
 body.DesktopUI div[class*="gamelistsectionheader_Container_"],
 body.DesktopUI div._2sYIghGVXJr6tsQVvcryy8
 {
@@ -133,8 +142,10 @@ body.DesktopUI div._1ijTaXJJA5YWl_fW2IxcaT div.ReactVirtualized__Grid__innerScro
 
 body.DesktopUI div[class*="gamelistsectionheader_Container_"] div[class*="collapseicon_Container_"],
 body.DesktopUI div._2sYIghGVXJr6tsQVvcryy8 div._3SFRZYIb9Y2q7YsVtB3YKb,
+
 body.DesktopUI div[class*="gamelistentry_GameListEntryContainer_"] > div[class*="gamelistentry_GameIcon_"],
 body.DesktopUI div._1vO6BoiVslZgs1kqDGdUs8 > div.ga1hyw11cdBVodrCAidPF,
+
 body.DesktopUI div[class*="gamelistentry_GameListEntryContainer_"] > div[class*="gamelistentry_AppIconDownloading_"],
 body.DesktopUI div._1vO6BoiVslZgs1kqDGdUs8 > div._2kzMb_F7UTOEdecAFftN-l
 {
@@ -220,6 +231,7 @@ body.DesktopUI div._2sYIghGVXJr6tsQVvcryy8 div._3SFRZYIb9Y2q7YsVtB3YKb > svg
 
 body.DesktopUI div[class*="gamelistentry_Container_"]:hover,
 body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ:hover,
+
 body.DesktopUI div[class*="gamelistsectionheader_Container_"]:hover,
 body.DesktopUI div._2sYIghGVXJr6tsQVvcryy8:hover
 {
@@ -229,6 +241,7 @@ body.DesktopUI div._2sYIghGVXJr6tsQVvcryy8:hover
 
 body.DesktopUI div[class*="gamelistentry_Container_"]:active,
 body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ:active,
+
 body.DesktopUI div[class*="gamelistsectionheader_Container_"]:active,
 body.DesktopUI div._2sYIghGVXJr6tsQVvcryy8:active
 {
@@ -238,8 +251,11 @@ body.DesktopUI div._2sYIghGVXJr6tsQVvcryy8:active
 
 body.DesktopUI div[class*="gamelistsectionheader_Container_"][class*="gamelistsectionheader_Selected_"],
 body.DesktopUI div._2sYIghGVXJr6tsQVvcryy8.sXMOsx8OIRalBMxO9yFY5,
+
 body.DesktopUI div[class*="gamelistentry_Container_"][class*="gamelistentry_Selected_"],
 body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ._1UBpAXP408Ez_L_mXhW5Q9,
+
+body.DesktopUI div[class*="gamelistentry_Selected_"] > div[class*="gamelistentry_Container_"],
 body.DesktopUI div._1UBpAXP408Ez_L_mXhW5Q9 > div._2-O4ZG0KrnSrzISHBKctFQ
 {
 	background: rgba(var(--adw-sidebar-fg-rgb), var(--adw-selected-opacity)) !important;
@@ -248,8 +264,11 @@ body.DesktopUI div._1UBpAXP408Ez_L_mXhW5Q9 > div._2-O4ZG0KrnSrzISHBKctFQ
 
 body.DesktopUI div[class*="gamelistsectionheader_Container_"][class*="gamelistsectionheader_Selected_"]:hover,
 body.DesktopUI div._2sYIghGVXJr6tsQVvcryy8.sXMOsx8OIRalBMxO9yFY5:hover,
+
 body.DesktopUI div[class*="gamelistentry_Container_"][class*="gamelistentry_Selected_"]:hover,
 body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ._1UBpAXP408Ez_L_mXhW5Q9:hover,
+
+body.DesktopUI div[class*="gamelistentry_Selected_"] > div[class*="gamelistentry_Container_"]:hover,
 body.DesktopUI div._1UBpAXP408Ez_L_mXhW5Q9 > div._2-O4ZG0KrnSrzISHBKctFQ:hover
 {
 	background: rgba(var(--adw-sidebar-fg-rgb), var(--adw-selected-hover-opacity)) !important;
@@ -258,8 +277,11 @@ body.DesktopUI div._1UBpAXP408Ez_L_mXhW5Q9 > div._2-O4ZG0KrnSrzISHBKctFQ:hover
 
 body.DesktopUI div[class*="gamelistsectionheader_Container_"][class*="gamelistsectionheader_Selected_"]:active,
 body.DesktopUI div._2sYIghGVXJr6tsQVvcryy8.sXMOsx8OIRalBMxO9yFY5:active,
+
 body.DesktopUI div[class*="gamelistentry_Container_"][class*="gamelistentry_Selected_"]:active,
 body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ._1UBpAXP408Ez_L_mXhW5Q9:active,
+
+body.DesktopUI div[class*="gamelistentry_Selected_"] > div[class*="gamelistentry_Container_"]:active,
 body.DesktopUI div._1UBpAXP408Ez_L_mXhW5Q9 > div._2-O4ZG0KrnSrzISHBKctFQ:active
 {
 	background: rgba(var(--adw-sidebar-fg-rgb), var(--adw-selected-active-opacity)) !important;
@@ -268,6 +290,7 @@ body.DesktopUI div._1UBpAXP408Ez_L_mXhW5Q9 > div._2-O4ZG0KrnSrzISHBKctFQ:active
 
 body.DesktopUI div[class*="gamelistsectionheader_Container_"][class*="gamelistsectionheader_HasContextMenuOpen_"],
 body.DesktopUI div._2sYIghGVXJr6tsQVvcryy8._1dcGFHhye9BeEOg7CkFNQG,
+
 body.DesktopUI div[class*="gamelistentry_Container_"][class*="gamelistentry_HasContextMenuOpen_"],
 body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ._3km84Vscc0uS91f0RN_30C
 {
@@ -276,7 +299,8 @@ body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ._3km84Vscc0uS91f0RN_30C
 }
 
 body.DesktopUI div[class*="hoverposition_HoverPositionOuter_"] div[class*="gamelistentry_HoverOverlay_"],
-body.DesktopUI div.EUN4GPmCCaj1QX2Yy9CVb div._3cMVyOc-9F9Jvp3uKF7_xj
+body.DesktopUI div.EUN4GPmCCaj1QX2Yy9CVb div._3cMVyOc-9F9Jvp3uKF7_xj,
+body.DesktopUI div._2_lmTz0tA4NOSle5WaO1PZ div._3cMVyOc-9F9Jvp3uKF7_xj
 {
 	background-color: rgb(var(--adw-sidebar-bg-rgb)) !important;
 	background-image: linear-gradient(0deg, rgba(var(--adw-sidebar-fg-rgb), var(--adw-hover-opacity)), rgba(var(--adw-sidebar-fg-rgb), var(--adw-hover-opacity))) !important;
@@ -290,7 +314,8 @@ body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ:not(._3cMVyOc-9F9Jvp3uKF7_xj) > div._
 }
 
 body.DesktopUI div[class*="hoverposition_HoverPositionOuter_"] div[class*="gamelistentry_HoverOverlay_"][class*="gamelistentry_Selected_"],
-body.DesktopUI div.EUN4GPmCCaj1QX2Yy9CVb div._3cMVyOc-9F9Jvp3uKF7_xj._1UBpAXP408Ez_L_mXhW5Q9
+body.DesktopUI div.EUN4GPmCCaj1QX2Yy9CVb div._3cMVyOc-9F9Jvp3uKF7_xj._1UBpAXP408Ez_L_mXhW5Q9,
+body.DesktopUI div._3cMVyOc-9F9Jvp3uKF7_xj div._3cMVyOc-9F9Jvp3uKF7_xj._1UBpAXP408Ez_L_mXhW5Q9
 {
 	background-image: linear-gradient(0deg, rgba(var(--adw-sidebar-fg-rgb), var(--adw-selected-hover-opacity)), rgba(var(--adw-sidebar-fg-rgb), var(--adw-selected-hover-opacity))) !important;
 }
@@ -298,8 +323,10 @@ body.DesktopUI div.EUN4GPmCCaj1QX2Yy9CVb div._3cMVyOc-9F9Jvp3uKF7_xj._1UBpAXP408
 /** Remove unneeded inner backgrounds */
 body.DesktopUI div[class*="gamelistentry_Container_"] *,
 body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ *,
+
 body.DesktopUI div[class*="gamelistentry_Container_"] *:hover,
 body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ *:hover,
+
 body.DesktopUI div[class*="gamelistentry_Container_"] *:active,
 body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ *:active
 {
@@ -329,6 +356,7 @@ body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ._3WdXWyhLHLmRV1y0koSG9I._1VBNpnuk5eWT
 
 body.DesktopUI div[class*="gamelistsectionheader_Container_"][class*="gamelistsectionheader_DropOption_"]::before,
 body.DesktopUI div._2sYIghGVXJr6tsQVvcryy8._2iS5rrpqHApjSzVZBrJuab::before,
+
 body.DesktopUI div[class*="gamelistentry_Container_"][class*="gamelistentry_DropOption_"]::before,
 body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ._3WdXWyhLHLmRV1y0koSG9I::before
 {

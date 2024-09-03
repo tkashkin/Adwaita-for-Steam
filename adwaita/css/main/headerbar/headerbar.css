@@ -110,6 +110,7 @@ body.DesktopUI div._1bGewp3tfzqAF6fVTFFUOz div.UkR3sY319PuaUNuUWks2K div._3KaB94
 
 body.DesktopUI div[class*="steamdesktop_BrowserWrapper_"] div[class*="steamdesktop_URLBar_"]::before,
 body.DesktopUI div._1bGewp3tfzqAF6fVTFFUOz div.UkR3sY319PuaUNuUWks2K::before,
+
 body.DesktopUI div[class*="steamdesktop_BrowserWrapper_"] div[class*="steamdesktop_URLBar_"] div[class*="steamdesktop_ReloadButton_"]::before,
 body.DesktopUI div._1bGewp3tfzqAF6fVTFFUOz div.UkR3sY319PuaUNuUWks2K div._3KaB94Jl4r0hFkthDPJy09::before
 {
@@ -185,6 +186,7 @@ body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._2foCkpRXhqq0UGVE50BWqj
 /* Update Check */
 body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[style*="height:68px"],
 body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div[style*="height:68px"],
+
 body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="updatealert_ActionAlert_"],
 body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._1sMxtPKaL0DcIZgJCQRduV
 {
@@ -193,6 +195,7 @@ body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._1sMxtPKaL0DcIZgJCQRduV
 
 body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="updatealert_Alert_"],
 body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._2iJsgdTIX9Tj23rWnB7Q-c,
+
 body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_SteamFamilyJoinClientBeta_"],
 body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._3GaHEQJW9B1Rlt0Ddz3E8D
 {
@@ -207,10 +210,13 @@ body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._3GaHEQJW9B1Rlt0Ddz3E8D
 
 body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="updatealert_Alert_"],
 body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._2iJsgdTIX9Tj23rWnB7Q-c,
+
 body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="updatealert_Alert_"] a,
 body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._2iJsgdTIX9Tj23rWnB7Q-c a,
+
 body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_SteamFamilyJoinClientBeta_"],
 body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._3GaHEQJW9B1Rlt0Ddz3E8D,
+
 body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_SteamFamilyJoinClientBeta_"] a,
 body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._3GaHEQJW9B1Rlt0Ddz3E8D a
 {
@@ -311,6 +317,7 @@ body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._3vCzSrrXZzZjVJFZNg9SGu div.window
 /* Headerbar - hide empty divs in menus */
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="supernav_SuperNav_"] div:not([class]),
 body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._2D64jIEK7wpUR_NlObDW76 div:not([class]),
+
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="steamdesktop_RootMenuBar_"] div:not([class]),
 body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._3s0lkohH8wU2do0K1il28Y div:not([class])
 {
