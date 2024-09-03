@@ -90,6 +90,7 @@ html.client_chat_frame .title-bar-actions .restoreButton::before
 
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="steamdesktop_WindowControls_"],
 body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div.qP17eBPXkfezFfexZ4hC3,
+
 html.client_chat_frame div[class*="steamdesktop_TopBar_"] div[class*="steamdesktop_WindowControls_"],
 html.client_chat_frame div._3Z7VQ1IMk4E3HsHvrkLNgo div.qP17eBPXkfezFfexZ4hC3
 {

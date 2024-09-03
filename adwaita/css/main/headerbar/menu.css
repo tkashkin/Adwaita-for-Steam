@@ -34,8 +34,10 @@ body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._2UyOBeiSdBayaFdRa39N2O
 
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="steamdesktop_RootMenuBar_"]:hover div[class*="rootmenu_RootMenuButton_"],
 body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._3s0lkohH8wU2do0K1il28Y:hover div._2UyOBeiSdBayaFdRa39N2O,
+
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="rootmenu_RootMenuButton_"]:first-child,
 body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._2UyOBeiSdBayaFdRa39N2O:first-child,
+
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="rootmenu_RootMenuButton_"][class*="menu_MenuOpen_"],
 body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._2UyOBeiSdBayaFdRa39N2O._3rgV8pPmQvZC-01x9l-q-N
 {

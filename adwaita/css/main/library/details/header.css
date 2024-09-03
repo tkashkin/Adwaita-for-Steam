@@ -26,6 +26,12 @@ body.DesktopUI div._2_86QNCjVvJTL3Qe6Xztx_
 	top: 0 !important;
 }
 
+body.DesktopUI div[class*="appdetails_PlayBar_"],
+body.DesktopUI div._2L3s2nzh7yCnNESfI5_dN1
+{
+	width: 100% !important;
+}
+
 body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"],
 body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5
 {

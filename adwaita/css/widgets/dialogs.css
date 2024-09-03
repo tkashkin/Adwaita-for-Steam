@@ -13,6 +13,7 @@ body.DesktopUI div#popup_target::after
 }
 
 body.DesktopUI .ModalPosition_TopBar,
+
 html.client_chat_frame .ModalPosition_TopBar
 {
 	display: none !important;
@@ -26,6 +27,7 @@ body.DesktopUI.ModalDialogBody .PopupFullWindow .title-area
 }
 
 body.DesktopUI.ModalDialogBody .PopupFullWindow div[class*="htmlpopupdialog_HTMLPopupDialog_"].DialogContent,
+
 body.DesktopUI.ModalDialogBody .PopupFullWindow div.oHNgIzAySfCEOayCBwsg5.DialogContent
 {
 	background: rgb(var(--adw-headerbar-bg-rgb)) !important;
