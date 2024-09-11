@@ -142,8 +142,8 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH::before
 	content: "";
 	-webkit-app-region: drag;
 	position: absolute;
-	left: var(--adw-windowcontrols-close-margin-left);
-	right: var(--adw-windowcontrols-close-margin-right);
+	left: var(--adw-windowcontrols-margin-left);
+	right: var(--adw-windowcontrols-margin-right);
 	top: 0;
 	height: 46px;
 }
@@ -182,7 +182,7 @@ body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsett
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.RTicBCbDcEGkjsbmWzA8C > div._3qEgQJqeb0zyM12KXq64Or,
 body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._2kwFFHckg8jvnwJfg9-la8 > div._2rjVTGz8aLvqOdz5v2gq5C
 {
-	padding: 12px calc(var(--adw-windowcontrols-close-margin-left) + 6px) !important;
+	padding: 12px calc(var(--adw-windowcontrols-margin-left) + 6px) !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.DialogContent_InnerWidth > div.DialogBody,

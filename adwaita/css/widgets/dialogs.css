@@ -1,4 +1,5 @@
-body.DesktopUI div#popup_target::after
+body.DesktopUI div#popup_target::after,
+html.client_chat_frame div#popup_target::after
 {
 	content: "";
 	position: absolute;
@@ -13,10 +14,19 @@ body.DesktopUI div#popup_target::after
 }
 
 body.DesktopUI .ModalPosition_TopBar,
-
-html.client_chat_frame .ModalPosition_TopBar
+body.DesktopUI .singleWindowFocusBar,
+body.DesktopUI .title-area .title-area-highlight,
+html.client_chat_frame .ModalPosition_TopBar,
+html.client_chat_frame .singleWindowFocusBar,
+html.client_chat_frame .title-area .title-area-highlight
 {
 	display: none !important;
+}
+
+body.DesktopUI div.window_resize_grip,
+html.client_chat_frame div.window_resize_grip
+{
+	opacity: 0 !important;
 }
 
 /* Web dialogs */
@@ -27,7 +37,6 @@ body.DesktopUI.ModalDialogBody .PopupFullWindow .title-area
 }
 
 body.DesktopUI.ModalDialogBody .PopupFullWindow div[class*="htmlpopupdialog_HTMLPopupDialog_"].DialogContent,
-
 body.DesktopUI.ModalDialogBody .PopupFullWindow div.oHNgIzAySfCEOayCBwsg5.DialogContent
 {
 	background: rgb(var(--adw-headerbar-bg-rgb)) !important;

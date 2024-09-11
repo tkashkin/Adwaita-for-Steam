@@ -23,56 +23,12 @@ body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div.qP17eBPXkfezFfexZ4hC3
 	order: -1 !important;
 }
 
-/* Friendslist */
-html.client_chat_frame .currentUserContainer .AvatarAndUser
-{
-	padding-left: var(--adw-windowcontrols-close-margin-left) !important;
-}
-
-html.client_chat_frame .multiChatDialog .title-bar-actions.window-controls
-{
-	position: fixed !important;
-	left: 0 !important;
-	right: auto !important;
-}
-
-/* Overlay */
-.ModalDialogPopup:not(.steamdesktopoverlay_NoTitlebarSpacer_20pOd) div.steamdesktopoverlay_OverlayPopup_C9tvu div.steamdesktopoverlay_WindowControls_2O7tj,
-.ModalDialogPopup:not(._20pOdcUEtPsMIA8YXWGQim) div.C9tvuqqEXGcrkcAtHrQ_R div._2O7tjQ9VWj5nhZ0y-pdpX2
-{
-	height: 48px !important;
-}
-
-.ModalDialogPopup div.steamdesktopoverlay_OverlayPopup_C9tvu div.steamdesktopoverlay_WindowControls_2O7tj .title-bar-actions.window-controls,
-.ModalDialogPopup div.C9tvuqqEXGcrkcAtHrQ_R div.steamdesktopoverlay_WindowControls_2O7tj .title-bar-actions.window-controls
-{
-	margin-right: 0 !important;
-}
-
-.ModalDialogPopup div.steamdesktopoverlay_OverlayPopup_C9tvu div.steamdesktopoverlay_WindowControls_2O7tj .title-bar-actions.extra-actions,
-.ModalDialogPopup div.C9tvuqqEXGcrkcAtHrQ_R div.steamdesktopoverlay_WindowControls_2O7tj .title-bar-actions.extra-actions
-{
-	margin-right: 12px !important;
-}
-
-.ModalDialogPopup:not(.steamdesktopoverlay_NoTitlebarSpacer_20pOd) div.steamdesktopoverlay_OverlayPopup_C9tvu div.steamdesktopoverlay_WindowControls_2O7tj .title-bar-actions.extra-actions
-.ModalDialogPopup:not(._20pOdcUEtPsMIA8YXWGQim) div.C9tvuqqEXGcrkcAtHrQ_R div._2O7tjQ9VWj5nhZ0y .title-bar-actions.extra-actions
-{
-	order: -98 !important;
-}
-
-.ModalDialogPopup.steamdesktopoverlay_NoTitlebarSpacer_20pOd div.pagedsettings_Hidden_1uk_4 + .DialogContentTransition div.pagedsettings_HidePageListButton_3i4Ep,
-.ModalDialogPopup._20pOdcUEtPsMIA8YXWGQim div._1uk_4ujCnZKFDlDXM_LWdF + .DialogContentTransition div._3i4EpiSDpxQHVFExxUa1Zp
-{
-	margin-left: 30px !important;
-}
-
-body.DesktopUI div.steamdesktop_TopBar_3Z7VQ div.steamdesktop_WindowControls_qP17e .title-area-icon.minimizeButton,
-body.DesktopUI div.steamdesktop_TopBar_3Z7VQ div.steamdesktop_WindowControls_qP17e .title-area-icon.maximizeButton,
-body.DesktopUI div.steamdesktop_TopBar_3Z7VQ div.steamdesktop_WindowControls_qP17e .title-area-icon.restoreButton,
-body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div.qP17eBPXkfezFfexZ4hC3 .title-area-icon.minimizeButton,
-body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div.qP17eBPXkfezFfexZ4hC3 .title-area-icon.maximizeButton,
-body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div.qP17eBPXkfezFfexZ4hC3 .title-area-icon.restoreButton
+body.DesktopUI .title-bar-actions .title-area-icon.minimizeButton,
+body.DesktopUI .title-bar-actions .title-area-icon.maximizeButton,
+body.DesktopUI .title-bar-actions .title-area-icon.restoreButton,
+html.client_chat_frame .title-bar-actions .title-area-icon.minimizeButton,
+html.client_chat_frame .title-bar-actions .title-area-icon.maximizeButton,
+html.client_chat_frame .title-bar-actions .title-area-icon.restoreButton
 {
 	display: block !important;
 }
