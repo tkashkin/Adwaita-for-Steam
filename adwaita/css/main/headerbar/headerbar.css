@@ -308,12 +308,6 @@ body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._14fYfDS-pwIUwGfqr48EM > div._2ohO
 	color: rgba(var(--adw-headerbar-fg-rgb), var(--adw-disabled-opacity)) !important;
 }
 
-body.DesktopUI div[class*="bottombar_BottomBarContainer_"] div[class*="bottombar_BottomBar_"] div.window_resize_grip,
-body.DesktopUI div._1_yS5UP7el0aN4vntx3dx div._3vCzSrrXZzZjVJFZNg9SGu div.window_resize_grip
-{
-	opacity: 0 !important;
-}
-
 /* Headerbar - hide empty divs in menus */
 body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="supernav_SuperNav_"] div:not([class]),
 body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._2D64jIEK7wpUR_NlObDW76 div:not([class]),

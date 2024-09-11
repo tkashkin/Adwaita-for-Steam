@@ -699,8 +699,8 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._19z_50-qWZWxcgXfWNtSWb
 	top: 0 !important;
 	height: 46px !important;
 	box-sizing: border-box !important;
-	width: calc(600px - 2 * var(--adw-windowcontrols-close-margin-right)) !important;
-	margin-left: var(--adw-windowcontrols-close-margin-right) !important;
+	width: calc(600px - 2 * var(--adw-windowcontrols-margin-right)) !important;
+	margin-left: var(--adw-windowcontrols-margin-right) !important;
 	z-index: 2 !important;
 }
 
