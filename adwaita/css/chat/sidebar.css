@@ -1,0 +1,825 @@
+html.client_chat_frame
+{
+	div.friendlist,
+	div.friendlist > *,
+	div.friendListHeaderContainer,
+	div.friendlistListContainer,
+	div._18bmBH7zyngCgHtgY3IEL_
+	{
+		background: var(--adw-local-sidebar-bg) !important;
+		transition: none !important;
+		opacity: 1 !important;
+		visibility: visible !important;
+	}
+
+	div.friendListHeaderContainer
+	{
+		display: flex !important;
+		flex-direction: column !important;
+		min-height: fit-content !important;
+		box-shadow: none !important;
+	}
+
+	div.socialTabSearchContainer
+	{
+		order: -1 !important;
+
+		div.socialListTab
+		{
+			padding: 0 !important;
+			margin: 0 !important;
+			height: 46px !important;
+			transition: height 200ms var(--adw-base-transition-curve) !important;
+			background: none !important;
+			color: inherit !important;
+			display: flex !important;
+			flex-direction: column !important;
+			place-items: normal !important;
+
+			div.tabSearchTransitionGroup
+			{
+				transition: height 200ms var(--adw-base-transition-curve);
+				opacity: 1 !important;
+				height: 0 !important;
+				z-index: -1 !important;
+				pointer-events: none !important;
+				overflow: hidden !important;
+				position: relative !important;
+
+				div.tabSearchTransition
+				{
+					opacity: 1 !important;
+					position: absolute !important;
+					bottom: 0 !important;
+					width: 100% !important;
+				}
+			}
+
+			div.tabLabel
+			{
+				box-sizing: border-box !important;
+				height: 46px !important;
+				flex: none !important;
+				display: grid !important;
+				grid-template-columns: 1fr !important;
+				align-items: center !important;
+				padding: 12px !important;
+				margin: 0 !important;
+				background: inherit !important;
+				color: inherit !important;
+				font-family: var(--adw-text-font) !important;
+				font-size: var(--adw-text-header-size) !important;
+				font-weight: var(--adw-text-header-weight) !important;
+				line-height: normal !important;
+				letter-spacing: normal !important;
+				text-align: center !important;
+				text-transform: none !important;
+				white-space: nowrap !important;
+				overflow: hidden !important;
+				text-overflow: ellipsis !important;
+				border: none !important;
+				width: auto !important;
+				opacity: 1 !important;
+			}
+
+			div.friendsTabButtonsContainer
+			{
+				padding: 0 !important;
+				margin: 0 !important;
+				height: 0 !important;
+				transition: height var(--adw-base-transition-curve) !important;
+				background: none !important;
+				opacity: 1 !important;
+			}
+
+			div.TabSearchButton
+			{
+				padding: 0 !important;
+				margin: 0 !important;
+				width: 0 !important;
+				height: 0 !important;
+				background: none !important;
+				opacity: 1 !important;
+			}
+
+			&.TabSearchActive
+			{
+				height: 86px !important;
+
+				div.tabSearchTransitionGroup
+				{
+					height: 34px !important;
+					z-index: 1 !important;
+					pointer-events: all !important;
+				}
+
+				div.friendsTabButtonsContainer
+				{
+					height: 34px !important;
+				}
+			}
+
+			form.socialInputContainer
+			{
+				transform: none !important;
+				padding: 0 !important;
+				margin: 0 6px !important;
+				max-height: fit-content !important;
+				position: relative !important;
+				opacity: 1 !important;
+
+				div.inputContainer
+				{
+					margin: 0 !important;
+					padding: 0 !important;
+					min-height: 34px !important;
+					border-radius: var(--adw-button-radius) !important;
+					background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-button-bg-opacity)) !important;
+					box-shadow: none !important;
+					transition: var(--adw-button-transition) !important;
+
+					&:focus-within
+					{
+						box-shadow: var(--adw-focus-border) !important;
+					}
+
+					input, input::placeholder
+					{
+						background: transparent !important;
+						color: rgb(var(--adw-headerbar-fg-rgb)) !important;
+						font-size: var(--adw-text-base-size) !important;
+						font-weight: var(--adw-text-base-weight) !important;
+						font-family: var(--adw-text-font) !important;
+						font-style: normal !important;
+						letter-spacing: normal !important;
+						margin: 0 !important;
+						padding: 0 34px 0 34px !important;
+						box-shadow: none !important;
+						border: none !important;
+						height: 34px !important;
+						line-height: 34px !important;
+						overflow: hidden !important;
+					}
+
+					input::placeholder
+					{
+						color: rgba(var(--adw-headerbar-fg-rgb), 0.5) !important;
+						padding: 0 !important;
+					}
+
+					&::before
+					{
+						content: "";
+						background-color: rgba(var(--adw-headerbar-fg-rgb), var(--adw-dim-label-opacity));
+						pointer-events: none;
+						display: block;
+						width: 16px;
+						height: 16px;
+						position: absolute;
+						top: 9px;
+						left: 9px;
+						-webkit-mask-repeat: no-repeat;
+						-webkit-mask-position: center;
+						-webkit-mask-size: 16px;
+						-webkit-mask-image: var(--adw-icon-search);
+					}
+
+					div.friendSearchClear
+					{
+						cursor: default !important;
+						width: 16px !important;
+						height: 16px !important;
+						right: 9px !important;
+						top: 9px !important;
+						transition: none !important;
+
+						svg
+						{
+							display: none !important;
+						}
+
+						&::before
+						{
+							background-color: rgba(var(--adw-headerbar-fg-rgb), var(--adw-dim-label-opacity));
+							content: "";
+							display: block;
+							width: 16px;
+							height: 16px;
+							-webkit-mask-repeat: no-repeat;
+							-webkit-mask-position: center;
+							-webkit-mask-size: 16px;
+							-webkit-mask-image: var(--adw-icon-entry-clear);
+						}
+
+						&:hover::before
+						{
+							background-color: rgb(var(--adw-headerbar-fg-rgb));
+						}
+					}
+				}
+			}
+		}
+
+		div.searchIconButton, div.friendListButton
+		{
+			-webkit-app-region: no-drag;
+			cursor: default !important;
+			box-sizing: border-box !important;
+			width: 34px !important;
+			height: 34px !important;
+			min-width: 34px !important;
+			min-height: 34px !important;
+			max-width: 34px !important;
+			max-height: 34px !important;
+			padding: 0 !important;
+			margin: 0 !important;
+			background: transparent !important;
+			border-radius: var(--adw-button-radius) !important;
+			color: rgb(var(--adw-headerbar-fg-rgb)) !important;
+			font-family: var(--adw-text-font) !important;
+			font-size: var(--adw-text-title3-size) !important;
+			font-weight: var(--adw-text-title3-weight) !important;
+			line-height: 24px !important;
+			transition: var(--adw-button-transition) !important;
+			display: flex !important;
+
+			&:hover
+			{
+				background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-hover-opacity)) !important;
+			}
+
+			&:active
+			{
+				background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-active-opacity)) !important;
+			}
+
+			svg
+			{
+				display: none !important;
+			}
+
+			&::before
+			{
+				background-color: rgb(var(--adw-headerbar-fg-rgb));
+				content: "";
+				display: block;
+				width: 16px;
+				height: 16px;
+				margin: 9px;
+				-webkit-mask-repeat: no-repeat;
+				-webkit-mask-position: center;
+				-webkit-mask-size: 16px;
+			}
+		}
+
+		div.searchIconButton
+		{
+			position: absolute !important;
+			top: 6px !important;
+			left: calc(var(--adw-windowcontrols-margin-left) + 6px) !important;
+			opacity: 1 !important;
+
+			&::before
+			{
+				-webkit-mask-image: var(--adw-icon-search);
+			}
+		}
+
+		div.friendListButton
+		{
+			position: absolute !important;
+			top: 6px !important;
+			right: calc(var(--adw-windowcontrols-margin-right) + 6px) !important;
+			background: none !important;
+
+			&::before
+			{
+				-webkit-mask-image: var(--adw-icon-contact-new);
+			}
+		}
+
+		div.friendsTabButtonsContainer > a
+		{
+			margin: 0 !important;
+			padding: 0 !important;
+			width: 0 !important;
+			height: 0 !important;
+		}
+
+		div.TabSearchActive div.searchIconButton
+		{
+			background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-selected-opacity)) !important;
+
+			&:hover
+			{
+				background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-selected-hover-opacity)) !important;
+			}
+
+			&:active
+			{
+				background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-selected-active-opacity)) !important;
+			}
+		}
+	}
+
+	div.currentUserContainer
+	{
+		&, div.AvatarAndUser
+		{
+			padding: 0 !important;
+			margin: 0 !important;
+			border: 0 !important;
+			width: 0 !important;
+			height: 0 !important;
+		}
+
+		div.AvatarAndUser
+		{
+			div.currentUserAvatar
+			{
+				-webkit-app-region: no-drag;
+				cursor: default !important;
+				box-sizing: border-box !important;
+				width: 34px !important;
+				height: 34px !important;
+				padding: 0 !important;
+				margin: 0 !important;
+				background: transparent !important;
+				border-radius: var(--adw-button-radius) !important;
+				transition: var(--adw-button-transition) !important;
+				transform: none !important;
+
+				position: absolute !important;
+				top: 6px !important;
+				left: calc(var(--adw-windowcontrols-margin-left) + 46px) !important;
+
+				&:hover
+				{
+					background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-hover-opacity)) !important;
+				}
+
+				&:active
+				{
+					background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-active-opacity)) !important;
+				}
+
+				div.nibodjvvrm86uCfnnAn4g
+				{
+					width: 28px !important;
+					height: 28px !important;
+					margin: 3px !important;
+				}
+			}
+
+			div.labelHolder
+			{
+				display: none !important;
+			}
+		}
+	}
+
+	div.quickAccessFriends
+	{
+		margin: 0 !important;
+		padding: 0 6px 6px 6px !important;
+		width: auto !important;
+		min-height: fit-content !important;
+
+		display: grid !important;
+		grid-template-columns: repeat(auto-fill, 36px) !important;
+		grid-gap: 3px !important;
+		justify-content: space-between !important;
+
+		div.favoriteElement
+		{
+			cursor: default !important;
+			width: 36px !important;
+			height: 36px !important;
+			transition: width 200ms, height 200ms !important;
+			flex-shrink: 0 !important;
+
+			div.quickAccessFriend, div.nibodjvvrm86uCfnnAn4g, div.ChatRoomGroupAvatar
+			{
+				padding: 0 !important;
+				margin: 0 !important;
+				width: 100% !important;
+				height: 100% !important;
+				transition: width 200ms, height 200ms !important;
+				cursor: default !important;
+			}
+
+			div.ChatRoomGroupAvatar
+			{
+				border: none !important;
+				transform: none !important;
+
+				div.ChatRoomGroupAvatar_initials
+				{
+					padding: 0 !important;
+					margin: 0 !important;
+					box-shadow: inset 0 0 0 1px rgba(var(--adw-user-offline-rgb), 0.5) !important;
+				}
+			}
+
+			div.playerNameQuickAccessContainer, div.clanName
+			{
+				display: none !important;
+			}
+		}
+
+		&.emptyQuickAccess
+		{
+			margin: 0 !important;
+			padding: 0 !important;
+		}
+
+		&.compactQuickAccess
+		{
+			display: flex !important;
+			gap: 3px !important;
+			flex-wrap: nowrap !important;
+			justify-content: flex-start !important;
+			overflow-x: auto !important;
+			overflow-y: hidden !important;
+
+			div.favoriteElement
+			{
+				width: 28px !important;
+				height: 28px !important;
+			}
+		}
+
+		div.dropTargetBox
+		{
+			margin: 0 4px 4px 4px !important;
+		}
+
+		div.quickAccessFriendsMessage
+		{
+			position: absolute !important;
+			top: 0 !important;
+			left: 0 !important;
+			right: 0 !important;
+			bottom: 0 !important;
+			padding: 4px !important;
+			margin: 0 !important;
+			align-self: center !important;
+			font-size: 12px !important;
+			line-height: 14px !important;
+		}
+	}
+
+	div.FriendsListContent
+	{
+		div._1qeW35auMlJ5pJVNtBC-bF
+		{
+			display: none !important;
+		}
+	}
+
+	div._18bmBH7zyngCgHtgY3IEL_
+	{
+		margin-top: 46px !important;
+
+		div._3t-tVOpu2n074cjZsygYfm
+		{
+			justify-content: center !important;
+		}
+	}
+
+	&:has(div._18bmBH7zyngCgHtgY3IEL_) div.currentUserContainer
+	{
+		display: none !important;
+	}
+
+	div.friendlistListContainer, div.chatRoomListContainer
+	{
+		div.listContentContainer
+		{
+			display: flex !important;
+            flex-direction: column !important;
+			padding: 6px 0 !important;
+			overflow: visible !important;
+			overflow-x: clip !important;
+			min-height: calc(100% - 20px) !important;
+
+			div.friendGroup
+			{
+				border: none !important;
+				margin: 0 !important;
+				padding: 0 !important;
+
+				div.dropTargetBox
+				{
+					margin: 0 4px 0 4px !important;
+				}
+			}
+
+			div.groupHeaderContainer, div.friendCategoryContainer, div.ChatRoomListGroupItem
+			{
+				padding: 0 6px !important;
+				margin: 0 6px 2px 6px !important;
+				background: none !important;
+				cursor: default !important;
+				font-family: var(--adw-text-font) !important;
+				font-size: var(--adw-text-gamelist-size) !important;
+				font-weight: var(--adw-text-gamelist-weight) !important;
+				box-sizing: border-box !important;
+				border: none !important;
+				border-radius: var(--adw-button-radius) !important;
+				position: relative !important;
+
+				&:hover
+				{
+					background: rgba(var(--adw-sidebar-fg-rgb), var(--adw-hover-opacity)) !important;
+				}
+
+				&:active
+				{
+					background: rgba(var(--adw-sidebar-fg-rgb), var(--adw-active-opacity)) !important;
+				}
+			}
+
+			div.groupHeaderContainer
+			{
+				div.groupName, span.groupCount
+				{
+					height: 26px !important;
+					line-height: 26px !important;
+					color: rgb(var(--adw-sidebar-fg-rgb)) !important;
+					font-family: var(--adw-text-font) !important;
+					font-size: var(--adw-text-gamelist-section-size) !important;
+					font-weight: var(--adw-text-gamelist-section-weight) !important;
+					letter-spacing: normal !important;
+					text-transform: none !important;
+					padding: 0 !important;
+					margin: 0 !important;
+                    align-items: center !important;
+					cursor: default !important;
+				}
+
+				span.groupCount
+				{
+					color: rgba(var(--adw-sidebar-fg-rgb), var(--adw-dim-label-opacity)) !important;
+					font-weight: var(--adw-text-gamelist-weight) !important;
+					transform: none !important;
+					margin-left: 4px !important;
+					opacity: 1 !important;
+				}
+
+				div.ExpandPlusMinus
+				{
+					width: 20px !important;
+					height: 20px !important;
+					padding: 0 !important;
+					margin: 3px 6px 3px 0 !important;
+					opacity: 0.5 !important;
+					color: inherit !important;
+					cursor: default !important;
+
+					svg
+					{
+						width: 20px !important;
+						height: 20px !important;
+						padding: 0 !important;
+						margin: 0 !important;
+						color: inherit !important;
+
+						line
+						{
+							stroke: currentColor !important;
+							shape-rendering: crispEdges !important;
+							stroke-width: 20px !important;
+						}
+					}
+				}
+
+				div.SortByRecent
+				{
+					width: 20px !important;
+					height: 20px !important;
+					padding: 0 !important;
+					margin: 0 !important;
+					opacity: 0.5 !important;
+					color: inherit !important;
+					cursor: default !important;
+				}
+
+				&:hover div.ExpandPlusMinus, div.SortByRecent:hover
+				{
+					opacity: 1 !important;
+				}
+			}
+
+			div.friendCategoryContainer
+			{
+				div.friend
+				{
+					background: none !important;
+					padding: 0 !important;
+					margin: 0 !important;
+					height: 40px !important;
+
+					div.nibodjvvrm86uCfnnAn4g
+					{
+						width: 36px !important;
+						height: 36px !important;
+						margin: 2px 0 !important;
+						transition: width 200ms, height 200ms !important;
+					}
+
+					div.labelHolder
+					{
+						margin: 0 0 0 6px !important;
+						height: fit-content !important;
+						color: rgb(var(--adw-sidebar-fg-rgb)) !important;
+						align-items: center !important;
+
+						&.online
+						{
+							color: rgb(var(--adw-user-online-rgb)) !important;
+						}
+
+						&.ingame
+						{
+							color: rgb(var(--adw-user-ingame-rgb)) !important;
+						}
+
+						&.offline, &.awayOrSnooze
+						{
+							opacity: 0.5 !important;
+						}
+
+						div, span
+						{
+							font-family: var(--adw-text-font) !important;
+							font-size: 14px !important;
+							font-weight: 400 !important;
+							line-height: 18px !important;
+							color: rgb(var(--adw-sidebar-fg-rgb)) !important;
+							padding: 0 !important;
+							margin: 0 !important;
+						}
+
+						div._3sxE7F1LV2IcSX68YsH9dI
+						{
+							&, div
+							{
+								color: inherit !important;
+								font-size: 10px !important;
+								line-height: 12px !important;
+							}
+						}
+
+						div.ContextMenuButton, div._1DsumfIa3MlkzUV9EXY5W9
+						{
+							display: none !important;
+						}
+
+						div.nOdcT-MoOaXGePXLyPe0H
+						{
+							padding-right: 6px !important;
+						}
+
+						div.KxAI_M9gWx3OnKSshHOs6
+						{
+							width: 16px !important;
+							height: 16px !important;
+							margin: 0 !important;
+							padding: 0 !important;
+						}
+
+						svg
+						{
+							color: inherit !important;
+							path
+							{
+								fill: currentColor !important;
+							}
+						}
+					}
+
+					div.CompactFriendsList &
+					{
+						height: 26px !important;
+
+						div.nibodjvvrm86uCfnnAn4g
+						{
+							width: 20px !important;
+							height: 20px !important;
+							margin: 3px 0 !important;
+						}
+
+						div.labelHolder div._4ZTzGZ5TTgFyfw1DcXLXS, div.labelHolder div.nOdcT-MoOaXGePXLyPe0H, div.labelHolder span
+						{
+							height: 26px !important;
+							line-height: 26px !important;
+						}
+
+						div._3sxE7F1LV2IcSX68YsH9dI
+						{
+							display: none !important;
+						}
+					}
+				}
+			}
+
+			&::before, &::after
+			{
+				content: "";
+				display: block;
+				position: absolute;
+				height: 4px;
+				left: 0;
+				right: 0;
+				z-index: 1;
+				pointer-events: none;
+				background: var(--adw-local-sidebar-bg);
+			}
+			&::before
+			{
+				top: -4px;
+			}
+			&::after
+			{
+				bottom: -4px;
+			}
+		}
+
+		div.friendSearchNoResultsContainer
+		{
+			display: flex !important;
+            flex-direction: column !important;
+			flex-grow: 1 !important;
+			justify-content: center !important;
+			align-items: center !important;
+			margin: 0 !important;
+			padding: 6px !important;
+			text-align: center !important;
+
+			&::before
+			{
+				background-color: rgba(var(--adw-headerbar-fg-rgb), var(--adw-dim-label-opacity));
+				content: "";
+				display: block;
+				margin: 8px auto;
+				width: 64px;
+				height: 64px;
+				-webkit-mask-repeat: no-repeat;
+				-webkit-mask-position: center;
+				-webkit-mask-size: 64px;
+				-webkit-mask-image: var(--adw-icon-search);
+			}
+
+			div:first-child
+			{
+				display: none !important;
+			}
+
+			div.searchSteamSuggestion
+			{
+				color: rgb(var(--adw-popover-fg-rgb)) !important;
+				font-family: var(--adw-text-font) !important;
+				text-transform: none !important;
+				letter-spacing: normal !important;
+				font-size: var(--adw-text-title1-size) !important;
+				font-weight: var(--adw-text-title1-weight) !important;
+				margin: 0 8px 0 0 !important;
+			}
+
+			a
+			{
+				color: rgba(var(--adw-popover-fg-rgb), var(--adw-dim-label-opacity)) !important;
+				font-family: var(--adw-text-font) !important;
+				text-transform: none !important;
+				letter-spacing: normal !important;
+				font-size: var(--adw-text-base-size) !important;
+				font-weight: 700 !important;
+			}
+		}
+
+		&::before, &::after
+		{
+			content: "";
+			display: block;
+			position: sticky;
+			height: 4px;
+			left: 0;
+			right: 0;
+			z-index: 0;
+			pointer-events: none;
+		}
+		&::before
+		{
+			top: 0;
+			background-image: linear-gradient(to bottom, rgba(var(--adw-shade-rgb), calc(var(--adw-shade-a) * 0.75)), transparent 4px);
+			box-shadow: inset 0 1px rgba(var(--adw-shade-rgb), calc(var(--adw-shade-a) * 0.75));
+		}
+		&::after
+		{
+			bottom: 0;
+			background-image: linear-gradient(to top, rgba(var(--adw-shade-rgb), calc(var(--adw-shade-a) * 0.75)), transparent 4px);
+			box-shadow: inset 0 -1px rgba(var(--adw-shade-rgb), calc(var(--adw-shade-a) * 0.75));
+		}
+	}
+}

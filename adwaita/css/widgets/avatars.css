@@ -1,80 +1,86 @@
-body.DesktopUI div[class*="steamavatar_avatarHolder_"],
-body.DesktopUI div._1YGAHSfGavQI6MODJq-pJB,
-body.DesktopUI div.nibodjvvrm86uCfnnAn4g,
 
-body.DesktopUI div[class*="steamavatar_avatarHolder_"] img.avatar,
-body.DesktopUI div._1YGAHSfGavQI6MODJq-pJB img.avatar,
-body.DesktopUI div.nibodjvvrm86uCfnnAn4g img.avatar
-{
-	box-sizing: border-box !important;
-	width: 32px !important;
-	height: 32px !important;
-	border-radius: 50% !important;
-	overflow: hidden !important;
-	transform: none !important;
-	box-shadow: none !important;
-	border: none !important;
-	padding: 0 !important;
-	margin: 0 !important;
-	cursor: default !important;
-	position: relative !important;
-}
 
-body.DesktopUI div[class*="steamavatar_avatarHolder_"],
-body.DesktopUI div._1YGAHSfGavQI6MODJq-pJB,
-body.DesktopUI div.nibodjvvrm86uCfnnAn4g
+body.DesktopUI,
+html.client_chat_frame
 {
-	color: rgba(var(--adw-headerbar-fg-rgb), 0.5) !important;
-	border: 1px currentColor solid !important;
-	transition: color 200ms !important;
-}
+	div.nibodjvvrm86uCfnnAn4g
+	{
+		color: rgb(var(--adw-user-offline-rgb)) !important;
+		border: 1px currentColor solid !important;
+		transition: color 200ms var(--adw-base-transition-curve) !important;
 
-body.DesktopUI div[class*="steamavatar_avatarHolder_"]::after,
-body.DesktopUI div._1YGAHSfGavQI6MODJq-pJB::after,
-body.DesktopUI div.nibodjvvrm86uCfnnAn4g::after
-{
-	content: "";
-	position: absolute;
-	border-radius: 50%;
-	box-shadow: inset 0 0 1px currentColor;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-}
+		&, img.avatar
+		{
+			box-sizing: border-box !important;
+			width: 32px !important;
+			height: 32px !important;
+			border-radius: 50% !important;
+			transform: none !important;
+			box-shadow: none !important;
+			padding: 0 !important;
+			margin: 0 !important;
+			cursor: default !important;
+			position: relative !important;
+		}
 
-body.DesktopUI div[class*="steamavatar_avatarHolder_"] img.avatar,
-body.DesktopUI div._1YGAHSfGavQI6MODJq-pJB img.avatar,
-body.DesktopUI div.nibodjvvrm86uCfnnAn4g img.avatar
-{
-	width: 100% !important;
-	height: 100% !important;
-}
+		& > img.avatar
+		{
+			width: 100% !important;
+			height: 100% !important;
+			overflow: hidden !important;
+			border: none !important;
+		}
 
-body.DesktopUI div[class*="steamavatar_avatarHolder_"].online,
-body.DesktopUI div._1YGAHSfGavQI6MODJq-pJB.online,
-body.DesktopUI div.nibodjvvrm86uCfnnAn4g.online
-{
-	color: rgba(var(--adw-accent-rgb), 0.5) !important;
-}
+		&::before
+		{
+			content: "";
+			position: absolute;
+			border-radius: 50%;
+			box-shadow: inset 0 0 1px currentColor;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			z-index: 1;
+		}
 
-body.DesktopUI div[class*="steamavatar_avatarHolder_"].online.awayOrSnooze,
-body.DesktopUI  div._1YGAHSfGavQI6MODJq-pJB.online.awayOrSnooze,
-body.DesktopUI div.nibodjvvrm86uCfnnAn4g.online.awayOrSnooze
-{
-	border-style: dashed !important;
-}
+		&::after
+		{
+			content: "";
+			position: absolute;
+			border-radius: 50%;
+			background-color: currentColor;
+			bottom: 0;
+			right: 0;
+			width: 8px;
+			height: 8px;
+			z-index: 2;
+			box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.5) inset, 0 0 0 1px rgba(0, 0, 0, 0.5);
+		}
 
-body.DesktopUI div[class*="steamavatar_avatarHolder_"].ingame,
-body.DesktopUI div._1YGAHSfGavQI6MODJq-pJB.ingame,
-body.DesktopUI div.nibodjvvrm86uCfnnAn4g.ingame
-{
-	color: rgba(var(--adw-success-rgb), 0.5) !important;
-}
+		&.online
+		{
+			color: rgb(var(--adw-user-online-rgb)) !important;
+		}
 
-body.DesktopUI div[class*="steamavatar_avatarHolder_"] div.avatarStatus,
-body.DesktopUI div._1YGAHSfGavQI6MODJq-pJB div.avatarStatus,
-body.DesktopUI div.nibodjvvrm86uCfnnAn4g div.avatarStatus
-{
-	display: none !important;
+		&.awayOrSnooze
+		{
+			border-style: dashed !important;
+		}
+
+		&.ingame
+		{
+			color: rgb(var(--adw-user-ingame-rgb)) !important;
+		}
+
+		&.offline::after
+		{
+			display: none !important;
+		}
+
+		div.avatarStatus, div.avatarFrame, div.SnoozeContainer
+		{
+			display: none !important;
+		}
+	}
 }

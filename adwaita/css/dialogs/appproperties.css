@@ -12,9 +12,9 @@ body.DesktopUI div._1FyBL6obxHQ2Z2CsaV2Gbz div.DialogBody > div:not([class]):fir
 body.DesktopUI div._1FyBL6obxHQ2Z2CsaV2Gbz div.DialogBody > div:not([class]):first-child + div.eKmEXJCm_lgme24Fp_HWt
 {
 	height: 0 !important;
-    min-height: 0 !important;
-    padding: 0 !important;
-    margin: 0 !important;
+	min-height: 0 !important;
+	padding: 0 !important;
+	margin: 0 !important;
 	overflow: visible !important;
 	background: none !important;
 	box-shadow: none !important;

@@ -1,9 +1,159 @@
-html.client_chat_frame div[class*="contextmenu_contextMenuItem_"] div.persona_menu_descriptor,
-html.client_chat_frame div.pFo3kQOzrl9qVLPXXGIMp div.persona_menu_descriptor,
-html.client_chat_frame div._1n7Wloe5jZ6fSuvV18NNWI div.persona_menu_descriptor,
-html.client_chat_frame div[class*="contextmenu_contextMenuItem_"] div.persona_menu_dnd_descriptor,
-html.client_chat_frame div.pFo3kQOzrl9qVLPXXGIMp div.persona_menu_dnd_descriptor,
-html.client_chat_frame div._1n7Wloe5jZ6fSuvV18NNWI div.persona_menu_dnd_descriptor
+html.client_chat_frame
 {
-	display: none !important;
+	body
+	{
+		background: rgb(var(--adw-window-bg-rgb)) !important;
+		color: rgb(var(--adw-window-fg-rgb)) !important;
+		--adw-local-sidebar-bg: rgb(var(--adw-window-bg-rgb));
+	}
+
+	.title-area
+	{
+		height: 46px !important;
+	}
+
+	div.chat_main.singlewindow
+	{
+		div.friendsListContainer
+		{
+			--adw-windowcontrols-margin-right: 0px;
+			--adw-local-sidebar-bg: rgb(var(--adw-sidebar-bg-rgb));
+
+			background: rgb(var(--adw-sidebar-bg-rgb)) !important;
+			color: rgb(var(--adw-sidebar-fg-rgb)) !important;
+			opacity: 1 !important;
+			min-width: 250px !important;
+			margin-left: 0 !important;
+			margin-right: 0 !important;
+
+			div.chat_main:not(.resizingSingleWindow) &
+			{
+				transition: width 200ms var(--adw-base-transition-curve), margin 200ms var(--adw-base-transition-curve), opacity 200ms var(--adw-base-transition-curve) !important;
+			}
+
+			&.collapsed
+			{
+				width: 250px !important;
+				margin-left: -250px !important;
+				margin-right: -1px !important;
+				opacity: 0 !important;
+				visibility: hidden !important;
+
+				div.friendListCollapse
+				{
+					display: none !important;
+				}
+			}
+		}
+
+		&:not(:has(div.friendsListContainer.collapsed)) div.multiChatDialog
+		{
+			--adw-windowcontrols-margin-left: 0px;
+		}
+
+		div.singleWindowDivider
+		{
+			display: block !important;
+			border: none !important;
+			background: none !important;
+			box-shadow: inset 1px 0 rgba(var(--adw-sidebar-shade-rgb), var(--adw-sidebar-shade-a)) !important;
+			width: 4px !important;
+			min-width: 4px !important;
+			margin-right: -3px !important;
+		}
+	}
+
+	div.friendListCollapse
+	{
+		position: absolute !important;
+		top: 6px !important;
+		right: -40px !important;
+		width: 34px !important;
+		height: 34px !important;
+	}
+
+	div.friendCollapseButton, div.chatTabOpenFriendsList
+	{
+		-webkit-app-region: no-drag;
+		cursor: default !important;
+		box-sizing: border-box !important;
+		width: 34px !important;
+		height: 34px !important;
+		padding: 0 !important;
+		margin: 0 !important;
+		text-indent: -9999px !important;
+		line-height: 0 !important;
+		background: transparent !important;
+		border-radius: var(--adw-button-radius) !important;
+		color: rgb(var(--adw-headerbar-fg-rgb)) !important;
+		transition: var(--adw-button-transition) !important;
+		box-shadow: none !important;
+
+		&:hover
+		{
+			background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-hover-opacity)) !important;
+		}
+
+		&:active
+		{
+			background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-active-opacity)) !important;
+		}
+
+		&.friendCollapseButton
+		{
+			background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-selected-opacity)) !important;
+
+			&:hover
+			{
+				background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-selected-hover-opacity)) !important;
+			}
+
+			&:active
+			{
+				background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-selected-active-opacity)) !important;
+			}
+		}
+
+		&.chatTabOpenFriendsList
+		{
+			position: absolute !important;
+			top: 6px !important;
+			left: 6px !important;
+		}
+
+		svg
+		{
+			display: none !important;
+		}
+
+		&::before
+		{
+			background-color: rgb(var(--adw-headerbar-fg-rgb));
+			content: "";
+			display: block;
+			width: 16px;
+			height: 16px;
+			margin: 9px;
+			-webkit-mask-repeat: no-repeat;
+			-webkit-mask-position: center;
+			-webkit-mask-size: 16px;
+			-webkit-mask-image: var(--adw-icon-sidebar);
+		}
+	}
+
+	svg.statusHeaderGlow,
+	div.friendListFooter
+	{
+		display: none !important;
+	}
+
+	div[class*="contextmenu_contextMenuItem_"] div.persona_menu_descriptor,
+	div.pFo3kQOzrl9qVLPXXGIMp div.persona_menu_descriptor,
+	div._1n7Wloe5jZ6fSuvV18NNWI div.persona_menu_descriptor,
+	div[class*="contextmenu_contextMenuItem_"] div.persona_menu_dnd_descriptor,
+	div.pFo3kQOzrl9qVLPXXGIMp div.persona_menu_dnd_descriptor,
+	div._1n7Wloe5jZ6fSuvV18NNWI div.persona_menu_dnd_descriptor
+	{
+		display: none !important;
+	}
 }

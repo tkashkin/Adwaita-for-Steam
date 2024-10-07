@@ -86,4 +86,9 @@
 	/* Miscellaneous */
 	--adw-shade-rgb: 0, 0, 0;
 	--adw-shade-a: 0.36;
+
+	/* Skin-specific */
+	--adw-user-offline-rgb: 128, 128, 128;
+	--adw-user-online-rgb: 120, 174, 237;
+	--adw-user-ingame-rgb: 143, 240, 164;
 }

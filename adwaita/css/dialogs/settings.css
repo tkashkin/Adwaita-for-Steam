@@ -31,7 +31,7 @@ body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="personana
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._2wpaptjZY-3Gn1HOPlL85O,
 body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._1cB0qtF0paHWWyj1XNcnbG
 {
-	color: rgba(var(--adw-card-fg-rgb), var(--adw-dim-label-opacity)) !important;
+	color: rgb(var(--adw-user-offline-rgb)) !important;
 	font-family: var(--adw-text-font) !important;
 	font-size: var(--adw-text-row-subtitle-size) !important;
 	font-weight: var(--adw-text-row-subtitle-weight) !important;
@@ -44,21 +44,21 @@ body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.online div[class*
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.online div._2wpaptjZY-3Gn1HOPlL85O,
 body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.online div._1cB0qtF0paHWWyj1XNcnbG
 {
-	color: rgb(var(--adw-accent-rgb)) !important;
+	color: rgb(var(--adw-user-online-rgb)) !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.online.awayOrSnooze div[class*="personanameandstatus_gameName_"],
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.online.awayOrSnooze div._2wpaptjZY-3Gn1HOPlL85O,
 body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.online.awayOrSnooze div._1cB0qtF0paHWWyj1XNcnbG
 {
-	color: rgba(var(--adw-accent-rgb), var(--adw-dim-label-opacity)) !important;
+	color: rgba(var(--adw-user-online-rgb), var(--adw-dim-label-opacity)) !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.ingame div[class*="personanameandstatus_gameName_"],
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.ingame div._2wpaptjZY-3Gn1HOPlL85O,
 body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.ingame div._1cB0qtF0paHWWyj1XNcnbG
 {
-	color: rgb(var(--adw-success-rgb)) !important;
+	color: rgb(var(--adw-user-ingame-rgb)) !important;
 }
 
 /* Account buttons */

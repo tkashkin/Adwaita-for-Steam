@@ -1,7 +1,7 @@
 {
     "name": "Adwaita for Steam",
     "author": "tk",
-    "version": "v2.6",
+    "version": "v2.7",
     "manifest_version": 8,
     "description": "A skin to make Steam look more like a native GNOME app",
     "target": "Desktop",
@@ -47,6 +47,8 @@
         "adwaita/css/main/library/library.css": ["all"],
 
         "adwaita/css/chat/chat.css": ["all"],
+        "adwaita/css/chat/messages.css": ["all"],
+        "adwaita/css/chat/sidebar.css": ["all"],
 
         "adwaita/css/dialogs/pagedsettings/dialog.css": ["all"],
         "adwaita/css/dialogs/pagedsettings/rows.css": ["all"],
@@ -66,6 +68,7 @@
                 "catppuccin-macchiato": { "adwaita/colorthemes/catppuccin-macchiato/catppuccin-macchiato.css": ["all"] },
                 "catppuccin-mocha": { "adwaita/colorthemes/catppuccin-mocha/catppuccin-mocha.css": ["all"] },
                 "dracula": { "adwaita/colorthemes/dracula/dracula.css": ["all"] },
+                "everforest": { "adwaita/colorthemes/everforest/everforest.css": ["all"] },
                 "gruvbox": { "adwaita/colorthemes/gruvbox/gruvbox.css": ["all"] },
                 "kate": { "adwaita/colorthemes/kate/kate.css": ["all"] },
                 "metro": { "adwaita/colorthemes/metro/metro.css": ["all"] },
@@ -122,9 +125,6 @@
             "type": "dropdown",
             "values": {
                 "Default": {},
-                "Dots": {
-                    "adwaita/extras/windowcontrols/dots.css": ["all"]
-                },
                 "Hide Close": {
                     "adwaita/extras/windowcontrols/hide-close.css": ["all"]
                 },
