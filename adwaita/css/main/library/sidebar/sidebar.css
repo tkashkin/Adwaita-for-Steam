@@ -27,7 +27,7 @@ body.DesktopUI div._1rDh5rXSFZJOqCa4UpnI4z > div._3x1HklzyDs4TEjACrRO2tB > div._
 	position: absolute;
 	height: 4px;
 	left: 0;
-	right: 0;
+	right: calc(var(--adw-scrollbar-size) * -1);
 	z-index: 0;
 	pointer-events: none;
 }

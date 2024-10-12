@@ -2,37 +2,28 @@
 
 A skin to make Steam look more like a native GNOME app
 
-<p align="center"><img src="screenshot.png?raw=true"/></p>
-
-## Current state and plans
-
-* **Main Window**: Done.
-* **Login**: Done
-* **Library**: Done
-* **Small Mode**: Done.
-* **Chat**: Done
-* **Settings**: Mostly done.
-* **New Overlay**: Mostly done.
-* **New Big Picture**: Not done.
-* **Recoloring**: Colors can be changed via making a new theme. See [colorthemes](/adwaita/colorthemes) dir.
-* **Light Themes**: Not currently planned, though may now be more feasible with the new UI.
+<p align="center">
+	<img alt="Store" src="/screenshots/store.png?raw=true" width="45%">
+	&nbsp; &nbsp; &nbsp; &nbsp;
+	<img alt="Library" src="/screenshots/library.png?raw=true" width="45%">
+</p>
 
 ### Limitations
 
 * **Steam updates may reset theme**: While the installer will patch steam files in order to theme the interface, these files may be reset by steam updates. If this happens, you will need to reinstall to repatch them.
-* **Rounded corners**: Not all elements can be rounded, use [Rounded Window Corners extension](https://github.com/yilozt/rounded-window-corners) or [mutter-rounded](https://github.com/yilozt/mutter-rounded) on GNOME.
-* **Steam website pages (Store/Community/Profiles/Etc)**: No longer themable with our current method.
+* **Rounded corners**: Not all elements can be rounded, use [Rounded Window Corners Reborn extension](https://github.com/flexagoon/rounded-window-corners) on GNOME.
+* **Steam website pages (Store/Community/Profiles/etc)**: No longer themable with our current method.
 * **Position of notifications**: Doesn't seem to be possible to change.
-* **Height of sidebar items**: Doesn't seem to be possible to increase.
+* **Height of game list entries**: Doesn't seem to be possible to increase.
 
 ## Requirements
 
 * [Python 3](https://www.python.org/downloads/)
 * The skin is created and tested mostly on the Linux version of Steam. Steam's new UI has largely unified platform differences, so other platforms should work, but are not a priority.
 
-## Previews
+## Color themes
 
-<details><summary>Previews</summary>
+<details><summary>Color theme previews</summary>
 
 ### Adwaita
 
@@ -41,6 +32,10 @@ A skin to make Steam look more like a native GNOME app
 ### Breeze
 
 ![Breeze](/adwaita/colorthemes/breeze/preview.png?raw=true)
+
+### Canta
+
+![Canta](/adwaita/colorthemes/canta/preview.png?raw=true)
 
 ### Catppuccin-Frappe
 
@@ -57,6 +52,10 @@ A skin to make Steam look more like a native GNOME app
 ### Dracula
 
 ![Dracula](/adwaita/colorthemes/dracula/preview.png?raw=true)
+
+### Everforest
+
+![Everforest](/adwaita/colorthemes/everforest/preview.png?raw=true)
 
 ### Gruvbox
 
@@ -116,14 +115,14 @@ cd Adwaita-for-Steam
 
 #### Arguments
 
-| Argument         | Short  | Required Values                    | Description                                              |
-| ---------------- | ------ | ---------------------------------- | -------------------------------------------------------- |
-| --color-theme    | -c     | [Colortheme](/adwaita/colorthemes) | Change color theme                                       |
-| --custom-css     |        |                                    | Enable [custom css](/custom)                             |
-| --extras         | -e     | [Extra](adwaita/extras)            | Enable one or multiple theme extras                      |
-| --list-options   | -l     |                                    | List available themes and extras                         |
-| --target         | -t     | normal / flatpak / [custom dir]    | Choose target location for install (default: both)       |
-| --uninstall      | -u     |                                    | Uninstall theme                                          |
+| Argument       | Short | Required Values                    | Description                                        |
+|----------------|-------|------------------------------------|----------------------------------------------------|
+| --color-theme  | -c    | [Colortheme](/adwaita/colorthemes) | Change color theme                                 |
+| --custom-css   |       |                                    | Enable [custom css](/custom)                       |
+| --extras       | -e    | [Extra](adwaita/extras)            | Enable one or multiple theme extras                |
+| --list-options | -l    |                                    | List available themes and extras                   |
+| --target       | -t    | normal / flatpak / [custom dir]    | Choose target location for install (default: both) |
+| --uninstall    | -u    |                                    | Uninstall theme                                    |
 
 #### Example Usage
 

@@ -4,6 +4,7 @@ html.client_chat_frame
 	div.friendlist > *,
 	div.friendListHeaderContainer,
 	div.friendlistListContainer,
+	div.chatRoomListContainer,
 	div._18bmBH7zyngCgHtgY3IEL_
 	{
 		background: var(--adw-local-sidebar-bg) !important;
@@ -18,340 +19,229 @@ html.client_chat_frame
 		flex-direction: column !important;
 		min-height: fit-content !important;
 		box-shadow: none !important;
-	}
 
-	div.socialTabSearchContainer
-	{
-		order: -1 !important;
-
-		div.socialListTab
+		div.socialTabSearchContainer
 		{
-			padding: 0 !important;
-			margin: 0 !important;
-			height: 46px !important;
-			transition: height 200ms var(--adw-base-transition-curve) !important;
-			background: none !important;
-			color: inherit !important;
-			display: flex !important;
-			flex-direction: column !important;
-			place-items: normal !important;
+			order: -1 !important;
 
-			div.tabSearchTransitionGroup
+			div.socialListTab
 			{
-				transition: height 200ms var(--adw-base-transition-curve);
-				opacity: 1 !important;
-				height: 0 !important;
-				z-index: -1 !important;
-				pointer-events: none !important;
-				overflow: hidden !important;
-				position: relative !important;
-
-				div.tabSearchTransition
-				{
-					opacity: 1 !important;
-					position: absolute !important;
-					bottom: 0 !important;
-					width: 100% !important;
-				}
-			}
-
-			div.tabLabel
-			{
-				box-sizing: border-box !important;
+				padding: 0 !important;
+				margin: 0 !important;
 				height: 46px !important;
-				flex: none !important;
-				display: grid !important;
-				grid-template-columns: 1fr !important;
-				align-items: center !important;
-				padding: 12px !important;
-				margin: 0 !important;
-				background: inherit !important;
+				transition: height 200ms var(--adw-base-transition-curve) !important;
+				background: none !important;
 				color: inherit !important;
-				font-family: var(--adw-text-font) !important;
-				font-size: var(--adw-text-header-size) !important;
-				font-weight: var(--adw-text-header-weight) !important;
-				line-height: normal !important;
-				letter-spacing: normal !important;
-				text-align: center !important;
-				text-transform: none !important;
-				white-space: nowrap !important;
-				overflow: hidden !important;
-				text-overflow: ellipsis !important;
-				border: none !important;
-				width: auto !important;
-				opacity: 1 !important;
-			}
-
-			div.friendsTabButtonsContainer
-			{
-				padding: 0 !important;
-				margin: 0 !important;
-				height: 0 !important;
-				transition: height var(--adw-base-transition-curve) !important;
-				background: none !important;
-				opacity: 1 !important;
-			}
-
-			div.TabSearchButton
-			{
-				padding: 0 !important;
-				margin: 0 !important;
-				width: 0 !important;
-				height: 0 !important;
-				background: none !important;
-				opacity: 1 !important;
-			}
-
-			&.TabSearchActive
-			{
-				height: 86px !important;
+				display: flex !important;
+				flex-direction: column !important;
+				place-items: normal !important;
 
 				div.tabSearchTransitionGroup
 				{
-					height: 34px !important;
-					z-index: 1 !important;
-					pointer-events: all !important;
+					transition: height 200ms var(--adw-base-transition-curve);
+					opacity: 1 !important;
+					height: 0 !important;
+					z-index: -1 !important;
+					pointer-events: none !important;
+					overflow: hidden !important;
+					position: relative !important;
+
+					div.tabSearchTransition
+					{
+						opacity: 1 !important;
+						position: absolute !important;
+						bottom: 0 !important;
+						width: 100% !important;
+					}
+				}
+
+				div.tabLabel
+				{
+					box-sizing: border-box !important;
+					height: 46px !important;
+					flex: none !important;
+					display: grid !important;
+					grid-template-columns: 1fr !important;
+					align-items: center !important;
+					padding: 12px !important;
+					margin: 0 !important;
+					background: inherit !important;
+					color: inherit !important;
+					font-family: var(--adw-text-font) !important;
+					font-size: var(--adw-text-header-size) !important;
+					font-weight: var(--adw-text-header-weight) !important;
+					line-height: normal !important;
+					letter-spacing: normal !important;
+					text-align: center !important;
+					text-transform: none !important;
+					white-space: nowrap !important;
+					overflow: hidden !important;
+					text-overflow: ellipsis !important;
+					border: none !important;
+					width: auto !important;
+					opacity: 1 !important;
 				}
 
 				div.friendsTabButtonsContainer
 				{
-					height: 34px !important;
-				}
-			}
-
-			form.socialInputContainer
-			{
-				transform: none !important;
-				padding: 0 !important;
-				margin: 0 6px !important;
-				max-height: fit-content !important;
-				position: relative !important;
-				opacity: 1 !important;
-
-				div.inputContainer
-				{
-					margin: 0 !important;
 					padding: 0 !important;
-					min-height: 34px !important;
-					border-radius: var(--adw-button-radius) !important;
-					background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-button-bg-opacity)) !important;
-					box-shadow: none !important;
-					transition: var(--adw-button-transition) !important;
+					margin: 0 !important;
+					height: 0 !important;
+					transition: height var(--adw-base-transition-curve) !important;
+					background: none !important;
+					opacity: 1 !important;
+				}
 
-					&:focus-within
-					{
-						box-shadow: var(--adw-focus-border) !important;
-					}
+				div.TabSearchButton
+				{
+					padding: 0 !important;
+					margin: 0 !important;
+					width: 0 !important;
+					height: 0 !important;
+					background: none !important;
+					opacity: 1 !important;
+				}
 
-					input, input::placeholder
+				&.TabSearchActive
+				{
+					height: 86px !important;
+
+					div.tabSearchTransitionGroup
 					{
-						background: transparent !important;
-						color: rgb(var(--adw-headerbar-fg-rgb)) !important;
-						font-size: var(--adw-text-base-size) !important;
-						font-weight: var(--adw-text-base-weight) !important;
-						font-family: var(--adw-text-font) !important;
-						font-style: normal !important;
-						letter-spacing: normal !important;
-						margin: 0 !important;
-						padding: 0 34px 0 34px !important;
-						box-shadow: none !important;
-						border: none !important;
 						height: 34px !important;
-						line-height: 34px !important;
-						overflow: hidden !important;
+						z-index: 1 !important;
+						pointer-events: all !important;
 					}
 
-					input::placeholder
+					div.friendsTabButtonsContainer
 					{
-						color: rgba(var(--adw-headerbar-fg-rgb), 0.5) !important;
+						height: 34px !important;
+					}
+				}
+
+				form.socialInputContainer
+				{
+					transform: none !important;
+					padding: 0 !important;
+					margin: 0 6px !important;
+					max-height: fit-content !important;
+					position: relative !important;
+					opacity: 1 !important;
+
+					div.inputContainer
+					{
+						margin: 0 !important;
 						padding: 0 !important;
-					}
+						min-height: 34px !important;
+						border-radius: var(--adw-button-radius) !important;
+						background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-button-bg-opacity)) !important;
+						box-shadow: none !important;
+						transition: var(--adw-button-transition) !important;
 
-					&::before
-					{
-						content: "";
-						background-color: rgba(var(--adw-headerbar-fg-rgb), var(--adw-dim-label-opacity));
-						pointer-events: none;
-						display: block;
-						width: 16px;
-						height: 16px;
-						position: absolute;
-						top: 9px;
-						left: 9px;
-						-webkit-mask-repeat: no-repeat;
-						-webkit-mask-position: center;
-						-webkit-mask-size: 16px;
-						-webkit-mask-image: var(--adw-icon-search);
-					}
-
-					div.friendSearchClear
-					{
-						cursor: default !important;
-						width: 16px !important;
-						height: 16px !important;
-						right: 9px !important;
-						top: 9px !important;
-						transition: none !important;
-
-						svg
+						&:focus-within
 						{
-							display: none !important;
+							box-shadow: var(--adw-focus-border) !important;
+						}
+
+						input, input::placeholder
+						{
+							background: transparent !important;
+							color: rgb(var(--adw-headerbar-fg-rgb)) !important;
+							font-size: var(--adw-text-base-size) !important;
+							font-weight: var(--adw-text-base-weight) !important;
+							font-family: var(--adw-text-font) !important;
+							font-style: normal !important;
+							letter-spacing: normal !important;
+							margin: 0 !important;
+							padding: 0 34px 0 34px !important;
+							box-shadow: none !important;
+							border: none !important;
+							height: 34px !important;
+							line-height: 34px !important;
+							overflow: hidden !important;
+						}
+
+						input::placeholder
+						{
+							color: rgba(var(--adw-headerbar-fg-rgb), 0.5) !important;
+							padding: 0 !important;
 						}
 
 						&::before
 						{
-							background-color: rgba(var(--adw-headerbar-fg-rgb), var(--adw-dim-label-opacity));
 							content: "";
+							background-color: rgba(var(--adw-headerbar-fg-rgb), var(--adw-dim-label-opacity));
+							pointer-events: none;
 							display: block;
 							width: 16px;
 							height: 16px;
+							position: absolute;
+							top: 9px;
+							left: 9px;
 							-webkit-mask-repeat: no-repeat;
 							-webkit-mask-position: center;
 							-webkit-mask-size: 16px;
-							-webkit-mask-image: var(--adw-icon-entry-clear);
+							-webkit-mask-image: var(--adw-icon-search);
 						}
 
-						&:hover::before
+						div.friendSearchClear
 						{
-							background-color: rgb(var(--adw-headerbar-fg-rgb));
+							cursor: default !important;
+							width: 16px !important;
+							height: 16px !important;
+							right: 9px !important;
+							top: 9px !important;
+							transition: none !important;
+
+							svg
+							{
+								display: none !important;
+							}
+
+							&::before
+							{
+								background-color: rgba(var(--adw-headerbar-fg-rgb), var(--adw-dim-label-opacity));
+								content: "";
+								display: block;
+								width: 16px;
+								height: 16px;
+								-webkit-mask-repeat: no-repeat;
+								-webkit-mask-position: center;
+								-webkit-mask-size: 16px;
+								-webkit-mask-image: var(--adw-icon-entry-clear);
+							}
+
+							&:hover::before
+							{
+								background-color: rgb(var(--adw-headerbar-fg-rgb));
+							}
 						}
 					}
 				}
 			}
-		}
 
-		div.searchIconButton, div.friendListButton
-		{
-			-webkit-app-region: no-drag;
-			cursor: default !important;
-			box-sizing: border-box !important;
-			width: 34px !important;
-			height: 34px !important;
-			min-width: 34px !important;
-			min-height: 34px !important;
-			max-width: 34px !important;
-			max-height: 34px !important;
-			padding: 0 !important;
-			margin: 0 !important;
-			background: transparent !important;
-			border-radius: var(--adw-button-radius) !important;
-			color: rgb(var(--adw-headerbar-fg-rgb)) !important;
-			font-family: var(--adw-text-font) !important;
-			font-size: var(--adw-text-title3-size) !important;
-			font-weight: var(--adw-text-title3-weight) !important;
-			line-height: 24px !important;
-			transition: var(--adw-button-transition) !important;
-			display: flex !important;
-
-			&:hover
-			{
-				background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-hover-opacity)) !important;
-			}
-
-			&:active
-			{
-				background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-active-opacity)) !important;
-			}
-
-			svg
-			{
-				display: none !important;
-			}
-
-			&::before
-			{
-				background-color: rgb(var(--adw-headerbar-fg-rgb));
-				content: "";
-				display: block;
-				width: 16px;
-				height: 16px;
-				margin: 9px;
-				-webkit-mask-repeat: no-repeat;
-				-webkit-mask-position: center;
-				-webkit-mask-size: 16px;
-			}
-		}
-
-		div.searchIconButton
-		{
-			position: absolute !important;
-			top: 6px !important;
-			left: calc(var(--adw-windowcontrols-margin-left) + 6px) !important;
-			opacity: 1 !important;
-
-			&::before
-			{
-				-webkit-mask-image: var(--adw-icon-search);
-			}
-		}
-
-		div.friendListButton
-		{
-			position: absolute !important;
-			top: 6px !important;
-			right: calc(var(--adw-windowcontrols-margin-right) + 6px) !important;
-			background: none !important;
-
-			&::before
-			{
-				-webkit-mask-image: var(--adw-icon-contact-new);
-			}
-		}
-
-		div.friendsTabButtonsContainer > a
-		{
-			margin: 0 !important;
-			padding: 0 !important;
-			width: 0 !important;
-			height: 0 !important;
-		}
-
-		div.TabSearchActive div.searchIconButton
-		{
-			background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-selected-opacity)) !important;
-
-			&:hover
-			{
-				background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-selected-hover-opacity)) !important;
-			}
-
-			&:active
-			{
-				background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-selected-active-opacity)) !important;
-			}
-		}
-	}
-
-	div.currentUserContainer
-	{
-		&, div.AvatarAndUser
-		{
-			padding: 0 !important;
-			margin: 0 !important;
-			border: 0 !important;
-			width: 0 !important;
-			height: 0 !important;
-		}
-
-		div.AvatarAndUser
-		{
-			div.currentUserAvatar
+			div.searchIconButton, div.friendListButton
 			{
 				-webkit-app-region: no-drag;
 				cursor: default !important;
 				box-sizing: border-box !important;
 				width: 34px !important;
 				height: 34px !important;
+				min-width: 34px !important;
+				min-height: 34px !important;
+				max-width: 34px !important;
+				max-height: 34px !important;
 				padding: 0 !important;
 				margin: 0 !important;
 				background: transparent !important;
 				border-radius: var(--adw-button-radius) !important;
+				color: rgb(var(--adw-headerbar-fg-rgb)) !important;
+				font-family: var(--adw-text-font) !important;
+				font-size: var(--adw-text-title3-size) !important;
+				font-weight: var(--adw-text-title3-weight) !important;
+				line-height: 24px !important;
 				transition: var(--adw-button-transition) !important;
-				transform: none !important;
-
-				position: absolute !important;
-				top: 6px !important;
-				left: calc(var(--adw-windowcontrols-margin-left) + 46px) !important;
+				display: flex !important;
 
 				&:hover
 				{
@@ -363,109 +253,355 @@ html.client_chat_frame
 					background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-active-opacity)) !important;
 				}
 
-				div.nibodjvvrm86uCfnnAn4g
+				svg
 				{
-					width: 28px !important;
-					height: 28px !important;
-					margin: 3px !important;
+					display: none !important;
+				}
+
+				&::before
+				{
+					background-color: rgb(var(--adw-headerbar-fg-rgb));
+					content: "";
+					display: block;
+					width: 16px;
+					height: 16px;
+					margin: 9px;
+					-webkit-mask-repeat: no-repeat;
+					-webkit-mask-position: center;
+					-webkit-mask-size: 16px;
 				}
 			}
 
-			div.labelHolder
+			div.searchIconButton
 			{
-				display: none !important;
+				position: absolute !important;
+				top: 6px !important;
+				left: calc(var(--adw-windowcontrols-margin-left) + 6px) !important;
+				opacity: 1 !important;
+
+				&::before
+				{
+					-webkit-mask-image: var(--adw-icon-search);
+				}
+			}
+
+			div.friendListButton
+			{
+				position: absolute !important;
+				top: 6px !important;
+				right: calc(var(--adw-windowcontrols-margin-right) + 6px) !important;
+				background: none !important;
+
+				&::before
+				{
+					-webkit-mask-image: var(--adw-icon-contact-new);
+				}
+			}
+
+			div.friendsTabButtonsContainer > a
+			{
+				margin: 0 !important;
+				padding: 0 !important;
+				width: 0 !important;
+				height: 0 !important;
+			}
+
+			div.TabSearchActive div.searchIconButton
+			{
+				background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-selected-opacity)) !important;
+
+				&:hover
+				{
+					background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-selected-hover-opacity)) !important;
+				}
+
+				&:active
+				{
+					background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-selected-active-opacity)) !important;
+				}
 			}
 		}
-	}
 
-	div.quickAccessFriends
-	{
-		margin: 0 !important;
-		padding: 0 6px 6px 6px !important;
-		width: auto !important;
-		min-height: fit-content !important;
-
-		display: grid !important;
-		grid-template-columns: repeat(auto-fill, 36px) !important;
-		grid-gap: 3px !important;
-		justify-content: space-between !important;
-
-		div.favoriteElement
+		div.currentUserContainer
 		{
-			cursor: default !important;
-			width: 36px !important;
-			height: 36px !important;
-			transition: width 200ms, height 200ms !important;
-			flex-shrink: 0 !important;
-
-			div.quickAccessFriend, div.nibodjvvrm86uCfnnAn4g, div.ChatRoomGroupAvatar
+			&, div.AvatarAndUser
 			{
 				padding: 0 !important;
 				margin: 0 !important;
-				width: 100% !important;
-				height: 100% !important;
-				transition: width 200ms, height 200ms !important;
-				cursor: default !important;
+				border: 0 !important;
+				width: 0 !important;
+				height: 0 !important;
 			}
 
-			div.ChatRoomGroupAvatar
+			div.AvatarAndUser
 			{
-				border: none !important;
-				transform: none !important;
-
-				div.ChatRoomGroupAvatar_initials
+				div.currentUserAvatar
 				{
+					-webkit-app-region: no-drag;
+					cursor: default !important;
+					box-sizing: border-box !important;
+					width: 34px !important;
+					height: 34px !important;
 					padding: 0 !important;
 					margin: 0 !important;
-					box-shadow: inset 0 0 0 1px rgba(var(--adw-user-offline-rgb), 0.5) !important;
+					background: transparent !important;
+					border-radius: var(--adw-button-radius) !important;
+					transition: var(--adw-button-transition) !important;
+					transform: none !important;
+
+					position: absolute !important;
+					top: 6px !important;
+					left: calc(var(--adw-windowcontrols-margin-left) + 46px) !important;
+
+					&:hover
+					{
+						background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-hover-opacity)) !important;
+					}
+
+					&:active
+					{
+						background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-active-opacity)) !important;
+					}
+
+					div.nibodjvvrm86uCfnnAn4g
+					{
+						width: 28px !important;
+						height: 28px !important;
+						margin: 3px !important;
+					}
+				}
+
+				div.labelHolder
+				{
+					display: none !important;
+				}
+			}
+		}
+
+		div.activeVoiceControls
+		{
+			height: 40px !important;
+			padding: 0 !important;
+			margin: 0 !important;
+			border: none !important;
+			background: none !important;
+
+			div.buttonsContainer
+			{
+				height: 34px !important;
+				padding: 0 4px !important;
+				margin: 0 6px 6px 6px !important;
+				background: rgb(var(--adw-accent-bg-rgb)) !important;
+				border-radius: var(--adw-button-radius) !important;
+				display: flex !important;
+				justify-items: center !important;
+
+				div.activeVoiceFlexBox
+				{
+					flex-grow: 1 !important;
+					justify-items: center !important;
+
+					div.activeVoiceLabels
+					{
+						display: flex !important;
+						flex-direction: row !important;
+						gap: 8px !important;
+						align-items: center;
+						flex-grow: 1 !important;
+						padding: 0 0 0 6px !important;
+						margin: 0 !important;
+
+						div.activeVoiceHeader
+						{
+							display: none !important;
+						}
+
+						div.activeVoiceName
+						{
+							color: rgb(var(--adw-accent-fg-rgb)) !important;
+							font-family: var(--adw-text-font) !important;
+							text-transform: none !important;
+							letter-spacing: normal !important;
+							line-height: normal !important;
+							font-size: var(--adw-text-base-size) !important;
+							font-weight: var(--adw-text-base-weight) !important;
+							cursor: default !important;
+						}
+
+						&::before
+						{
+							background-color: rgb(var(--adw-accent-fg-rgb));
+							content: "";
+							display: block;
+							width: 16px;
+							height: 16px;
+							-webkit-mask-repeat: no-repeat;
+							-webkit-mask-position: center;
+							-webkit-mask-size: 16px;
+							-webkit-mask-image: var(--adw-icon-call-ongoing);
+						}
+					}
+
+					div.activeVoiceButtons
+					{
+						min-width: fit-content !important;
+						flex-grow: 0 !important;
+						gap: 3px !important;
+
+						button
+						{
+							width: 24px !important;
+							height: 24px !important;
+							min-width: 24px !important;
+							min-height: 24px !important;
+							padding: 4px !important;
+							box-sizing: border-box !important;
+							border-radius: 50% !important;
+							margin: 0 !important;
+							cursor: default !important;
+
+							div, svg
+							{
+								padding: 0 !important;
+								margin: 0 !important;
+								width: 16px !important;
+								height: 16px !important;
+
+								*
+								{
+									fill: rgb(var(--adw-accent-fg-rgb)) !important;
+								}
+							}
+
+							&, &:focus
+							{
+								background: none !important;
+							}
+
+							&:hover
+							{
+								background: rgba(var(--adw-accent-fg-rgb), var(--adw-hover-opacity)) !important;
+							}
+
+							&:active
+							{
+								background: rgba(var(--adw-accent-fg-rgb), var(--adw-active-opacity)) !important;
+							}
+
+							&:focus-visible
+							{
+								box-shadow: var(--adw-focus-border-thin) !important;
+							}
+						}
+
+						div.activeVoiceButtonsSpacer, div.activeVoiceButtonsSpacerAfter
+						{
+							display: none !important;
+						}
+					}
+				}
+
+				div.connectionStatusLabels
+				{
+					margin: 0 !important;
 				}
 			}
 
-			div.playerNameQuickAccessContainer, div.clanName
+			&::before
 			{
-				display: none !important;
+				content: none !important;
 			}
 		}
 
-		&.emptyQuickAccess
+		div.quickAccessFriends
 		{
 			margin: 0 !important;
-			padding: 0 !important;
-		}
+			padding: 2px 6px 6px 6px !important;
+			width: auto !important;
+			min-height: fit-content !important;
 
-		&.compactQuickAccess
-		{
-			display: flex !important;
-			gap: 3px !important;
-			flex-wrap: nowrap !important;
-			justify-content: flex-start !important;
-			overflow-x: auto !important;
-			overflow-y: hidden !important;
+			display: grid !important;
+			grid-template-columns: repeat(auto-fill, 36px) !important;
+			grid-gap: 3px !important;
+			justify-content: space-between !important;
 
 			div.favoriteElement
 			{
-				width: 28px !important;
-				height: 28px !important;
+				cursor: default !important;
+				width: 36px !important;
+				height: 36px !important;
+				transition: width 200ms, height 200ms !important;
+				flex-shrink: 0 !important;
+
+				div.quickAccessFriend, div.nibodjvvrm86uCfnnAn4g, div.ChatRoomGroupAvatar
+				{
+					padding: 0 !important;
+					margin: 0 !important;
+					width: 100% !important;
+					height: 100% !important;
+					transition: width 200ms, height 200ms !important;
+					cursor: default !important;
+				}
+
+				div.ChatRoomGroupAvatar
+				{
+					border: none !important;
+					transform: none !important;
+
+					div.ChatRoomGroupAvatar_initials
+					{
+						padding: 0 !important;
+						margin: 0 !important;
+						box-shadow: inset 0 0 0 1px rgba(var(--adw-user-offline-rgb), 0.5) !important;
+					}
+				}
+
+				div.playerNameQuickAccessContainer, div.clanName
+				{
+					display: none !important;
+				}
 			}
-		}
 
-		div.dropTargetBox
-		{
-			margin: 0 4px 4px 4px !important;
-		}
+			&.emptyQuickAccess
+			{
+				margin: 0 !important;
+				padding: 0 !important;
+			}
 
-		div.quickAccessFriendsMessage
-		{
-			position: absolute !important;
-			top: 0 !important;
-			left: 0 !important;
-			right: 0 !important;
-			bottom: 0 !important;
-			padding: 4px !important;
-			margin: 0 !important;
-			align-self: center !important;
-			font-size: 12px !important;
-			line-height: 14px !important;
+			&.compactQuickAccess
+			{
+				display: flex !important;
+				gap: 3px !important;
+				flex-wrap: nowrap !important;
+				justify-content: flex-start !important;
+				overflow-x: auto !important;
+				overflow-y: hidden !important;
+
+				div.favoriteElement
+				{
+					width: 28px !important;
+					height: 28px !important;
+				}
+			}
+
+			div.dropTargetBox
+			{
+				margin: 0 4px 4px 4px !important;
+			}
+
+			div.quickAccessFriendsMessage
+			{
+				position: absolute !important;
+				top: 0 !important;
+				left: 0 !important;
+				right: 0 !important;
+				bottom: 0 !important;
+				padding: 4px !important;
+				margin: 0 !important;
+				align-self: center !important;
+				font-size: 12px !important;
+				line-height: 14px !important;
+			}
 		}
 	}
 
@@ -494,11 +630,13 @@ html.client_chat_frame
 
 	div.friendlistListContainer, div.chatRoomListContainer
 	{
+		scrollbar-gutter: stable !important;
+
 		div.listContentContainer
 		{
 			display: flex !important;
             flex-direction: column !important;
-			padding: 6px 0 !important;
+			padding: 0 !important;
 			overflow: visible !important;
 			overflow-x: clip !important;
 			min-height: calc(100% - 20px) !important;
@@ -518,7 +656,7 @@ html.client_chat_frame
 			div.groupHeaderContainer, div.friendCategoryContainer, div.ChatRoomListGroupItem
 			{
 				padding: 0 6px !important;
-				margin: 0 6px 2px 6px !important;
+				margin: 0 calc(6px - var(--adw-scrollbar-size)) 2px 6px !important;
 				background: none !important;
 				cursor: default !important;
 				font-family: var(--adw-text-font) !important;
@@ -663,11 +801,33 @@ html.client_chat_frame
 
 						div._3sxE7F1LV2IcSX68YsH9dI
 						{
-							&, div
+							display: flex !important;
+							flex-direction: row !important;
+							gap: 4px !important;
+							color: inherit !important;
+							font-size: 10px !important;
+							line-height: 12px !important;
+							mask: linear-gradient(to right, black calc(100% - 8px), rgba(0, 0, 0, 0.15) 100%) !important;
+
+							div
 							{
 								color: inherit !important;
 								font-size: 10px !important;
 								line-height: 12px !important;
+								mask: none !important;
+								flex-shrink: 0 !important;
+								align-items: center;
+
+								&:not(:first-child)::before
+								{
+									content: "";
+									width: 4px;
+									height: 4px;
+									margin-right: 4px;
+									margin-top: 2px;
+									border-radius: 50%;
+									background: currentColor;
+								}
 							}
 						}
 
@@ -731,7 +891,7 @@ html.client_chat_frame
 				position: absolute;
 				height: 4px;
 				left: 0;
-				right: 0;
+				right: calc(var(--adw-scrollbar-size) * -1);
 				z-index: 1;
 				pointer-events: none;
 				background: var(--adw-local-sidebar-bg);
@@ -778,7 +938,7 @@ html.client_chat_frame
 
 			div.searchSteamSuggestion
 			{
-				color: rgb(var(--adw-popover-fg-rgb)) !important;
+				color: rgb(var(--adw-headerbar-fg-rgb)) !important;
 				font-family: var(--adw-text-font) !important;
 				text-transform: none !important;
 				letter-spacing: normal !important;
@@ -789,7 +949,7 @@ html.client_chat_frame
 
 			a
 			{
-				color: rgba(var(--adw-popover-fg-rgb), var(--adw-dim-label-opacity)) !important;
+				color: rgba(var(--adw-headerbar-fg-rgb), var(--adw-dim-label-opacity)) !important;
 				font-family: var(--adw-text-font) !important;
 				text-transform: none !important;
 				letter-spacing: normal !important;
@@ -805,7 +965,7 @@ html.client_chat_frame
 			position: sticky;
 			height: 4px;
 			left: 0;
-			right: 0;
+			right: calc(var(--adw-scrollbar-size) * -1);
 			z-index: 0;
 			pointer-events: none;
 		}
@@ -820,6 +980,19 @@ html.client_chat_frame
 			bottom: 0;
 			background-image: linear-gradient(to top, rgba(var(--adw-shade-rgb), calc(var(--adw-shade-a) * 0.75)), transparent 4px);
 			box-shadow: inset 0 -1px rgba(var(--adw-shade-rgb), calc(var(--adw-shade-a) * 0.75));
+		}
+	}
+
+	div.chatRoomListContainer
+	{
+		div.ChatRoomList
+		{
+			padding: 0 !important;
+		}
+
+		&::before, &::after
+		{
+			content: none !important;
 		}
 	}
 }

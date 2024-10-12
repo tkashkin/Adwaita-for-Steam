@@ -1,3 +1,8 @@
+:root
+{
+	--adw-scrollbar-size: 2px;
+}
+
 body.DesktopUI,
 html.client_chat_frame
 {
@@ -5,6 +10,21 @@ html.client_chat_frame
 	{
 		appearance: none !important;
 		background: transparent !important;
-		display: none !important;
+		width: var(--adw-scrollbar-size) !important;
+		height: var(--adw-scrollbar-size) !important;
+	}
+
+	::-webkit-scrollbar-thumb
+	{
+		--adw-scrollbar-opacity: 0.1;
+		background: rgba(var(--adw-window-fg-rgb), var(--adw-scrollbar-opacity)) !important;
+		border: none !important;
+		border-radius: 0 !important;
+		z-index: 20 !important;
+	}
+
+	:hover::-webkit-scrollbar-thumb
+	{
+		--adw-scrollbar-opacity: 0.2;
 	}
 }

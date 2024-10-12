@@ -711,7 +711,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._19z_50-qWZWxcgXfWNtSWb div._1CJe
 	column-gap: 3px !important;
 	padding: 0 !important;
 	scroll-padding: 0 !important;
-	overflow-x: overlay !important;
+	overflow-x: auto !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepadtabbedpage_TabRow_19z_5 div.gamepadtabbedpage_FixCenterAlignScroll_1CJeU::-webkit-scrollbar,

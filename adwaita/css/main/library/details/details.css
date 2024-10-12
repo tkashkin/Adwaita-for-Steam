@@ -19,7 +19,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA img._3_IUVzR9tpG_JKEjhwXEAb
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetails_Glassy_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3FmxxjyWNHU1PrBGnBe6tm
 {
-	overflow-y: overlay !important;
+	overflow-y: auto !important;
 }
 
 /* `Scroll to Top` Button */

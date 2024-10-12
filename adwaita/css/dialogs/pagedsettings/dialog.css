@@ -23,7 +23,7 @@ body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsett
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._EebF_xe4DGRZ9a0XkyDj,
 body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._18QCu-7MTzd51UpVbYysDy
 {
-	padding: 6px !important;
+	padding: 6px calc(6px - var(--adw-scrollbar-size)) 6px 6px !important;
 	margin: 0 !important;
 	gap: 2px !important;
 }
@@ -214,7 +214,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._18QCu-7MTzd51UpVbYysDy
 	scrollbar-gutter: stable !important;
 	position: relative !important;
 	overflow-x: hidden !important;
-	overflow-y: overlay !important;
+	overflow-y: auto !important;
 }
 
 /* Scroll shadow: background overlays */
@@ -258,7 +258,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._2kwFFHckg8jvnwJfg9-la8 > div._2r
 	height: 4px;
 	top: 46px;
 	left: 0;
-	right: 0;
+	right: calc(var(--adw-scrollbar-size) * -1);
 	z-index: 1;
 	pointer-events: none;
 	background-image: linear-gradient(to bottom, rgba(var(--adw-shade-rgb), calc(var(--adw-shade-a) * 0.75)), transparent 4px);

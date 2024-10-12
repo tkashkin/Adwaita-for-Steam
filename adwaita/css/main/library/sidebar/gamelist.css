@@ -6,7 +6,7 @@ body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ
 {
 	height: 26px !important;
 	line-height: 26px !important;
-	margin: 0 6px !important;
+	margin: 0 calc(6px - var(--adw-scrollbar-size)) 0 6px !important;
 	background: none !important;
 	cursor: default !important;
 	font-family: var(--adw-text-font) !important;

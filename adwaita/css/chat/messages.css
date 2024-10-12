@@ -59,6 +59,7 @@ html.client_chat_frame
 							width: 0 !important;
 							flex-grow: 1 !important;
 							height: 34px !important;
+							padding: 0 !important;
 							margin: 0 !important;
 							background: transparent !important;
 							border-radius: var(--adw-button-radius) !important;
@@ -126,7 +127,7 @@ html.client_chat_frame
 								opacity: 0 !important;
 								min-width: 0 !important;
 								max-width: 0 !important;
-								margin-left: -27px !important;
+								margin-left: -5px !important;
 								transform: none !important;
 							}
 
@@ -150,7 +151,7 @@ html.client_chat_frame
 								opacity: 0 !important;
 								min-width: 0 !important;
 								max-width: 0 !important;
-								margin-left: -27px !important;
+								margin-left: -5px !important;
 								transform: none !important;
 							}
 
@@ -159,11 +160,18 @@ html.client_chat_frame
 								display: flex !important;
 								flex-grow: 1 !important;
 								justify-content: center !important;
-								-webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) calc(100% - 8px), rgba(0, 0, 0, 0)) !important;
+								-webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) calc(100% - 20px), rgba(0, 0, 0, 0)) !important;
+								padding: 0 6px !important;
+								transition: padding 250ms var(--adw-base-transition-curve) !important;
 
 								div._2XZq-_f6npaQdAgeRzKIkz:hover &, div._2XZq-_f6npaQdAgeRzKIkz.Yd-DsWkYiFiYwpci--Yk_ &
 								{
-									-webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) calc(100% - 24px), rgba(0, 0, 0, 0) calc(100% - 16px), rgba(0, 0, 0, 0)) !important;
+									-webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) calc(100% - 36px), rgba(0, 0, 0, 0) calc(100% - 28px), rgba(0, 0, 0, 0)) !important;
+								}
+
+								div._2XZq-_f6npaQdAgeRzKIkz._3oBG-wxQS7a_pEKk1hBUPx &
+								{
+									padding: 0 28px !important;
 								}
 
 								div.friend
@@ -183,6 +191,11 @@ html.client_chat_frame
 								div.labelHolder
 								{
 									height: fit-content !important;
+
+									div._3sxE7F1LV2IcSX68YsH9dI
+									{
+										display: none !important;
+									}
 								}
 
 								div.nOdcT-MoOaXGePXLyPe0H, div._1HNpQBKKKQ1tG2OZH3CSsh
@@ -199,10 +212,10 @@ html.client_chat_frame
 								}
 							}
 
-							div._1JXI4j2_xSpVK1YjyEuebr
+							div._1JXI4j2_xSpVK1YjyEuebr, div.c9l09VKqQIXJvsl0gqItO
 							{
 								position: absolute !important;
-								right: 4px !important;
+								top: 5px !important;
 								width: 24px !important;
 								height: 24px !important;
 								padding: 4px !important;
@@ -211,6 +224,11 @@ html.client_chat_frame
 								margin: 0 !important;
 								opacity: 0 !important;
 								cursor: default !important;
+							}
+
+							div._1JXI4j2_xSpVK1YjyEuebr
+							{
+								right: 4px !important;
 
 								&:hover
 								{
@@ -245,6 +263,24 @@ html.client_chat_frame
 									-webkit-mask-image: var(--adw-icon-window-close);
 								}
 							}
+
+							div.c9l09VKqQIXJvsl0gqItO
+							{
+								left: 4px !important;
+								opacity: 1 !important;
+								background: none !important;
+
+								svg
+								{
+									padding: 0 !important;
+									margin: 0 !important;
+
+									*
+									{
+										fill: rgb(var(--adw-headerbar-fg-rgb)) !important;
+									}
+								}
+							}
 						}
 					}
 				}
@@ -269,6 +305,13 @@ html.client_chat_frame
 			{
 				background: rgb(var(--adw-window-bg-rgb)) !important;
 				min-height: 0 !important;
+			}
+
+			div.OneOnOneVoiceRoomControls
+			{
+				background: rgb(var(--adw-window-bg-rgb)) !important;
+				box-shadow: none !important;
+				height: 46px !important;
 			}
 
 			div.chatRoomGroupNavColumn, div.MemberListColumn
@@ -345,7 +388,7 @@ html.client_chat_frame
 						position: sticky;
 						height: 4px;
 						left: 0;
-						right: 0;
+						right: calc(var(--adw-scrollbar-size) * -1);
 						z-index: 100;
 						pointer-events: none;
 					}
