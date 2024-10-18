@@ -273,7 +273,7 @@ if __name__ == "__main__":
 		args.target = ["normal", "flatpak"]
 
 		if is_windows:
-			args.target = ["windows"]			
+			args.target = ["windows"]
 
 	if args.list_options:
 		list_options("color themes", find_color_themes(), ".css", colorthemedir, "color-theme")

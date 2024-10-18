@@ -220,7 +220,7 @@ html.client_chat_frame
 				}
 			}
 
-			div.searchIconButton, div.friendListButton
+			div.searchIconButton, div.friendListButton, div.friendRequestButton
 			{
 				-webkit-app-region: no-drag;
 				cursor: default !important;
@@ -298,6 +298,36 @@ html.client_chat_frame
 				}
 			}
 
+			div.friendRequestButton
+			{
+				position: absolute !important;
+				top: 6px !important;
+				right: calc(var(--adw-windowcontrols-margin-right) + 46px) !important;
+				background: none !important;
+
+				&::before
+				{
+					-webkit-mask-image: var(--adw-icon-nav-profile);
+				}
+
+				div.requestsNumber
+				{
+					top: initial !important;
+					bottom: 4px !important;
+					right: 4px !important;
+					background: rgb(var(--adw-accent-bg-rgb)) !important;
+					color: rgb(var(--adw-accent-fg-rgb)) !important;
+					transform: none !important;
+					font-family: var(--adw-text-font) !important;
+					font-size: 10px !important;
+					line-height: 10px !important;
+					font-weight: 800 !important;
+					min-width: 10px !important;
+					letter-spacing: normal;
+					padding: 1px !important;
+				}
+			}
+
 			div.friendsTabButtonsContainer > a
 			{
 				margin: 0 !important;
@@ -306,7 +336,7 @@ html.client_chat_frame
 				height: 0 !important;
 			}
 
-			div.TabSearchActive div.searchIconButton
+			div.TabSearchActive div.searchIconButton, div.friendlist:has(div.cancelAddFriends) & div.friendRequestButton
 			{
 				background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-selected-opacity)) !important;
 
@@ -646,6 +676,7 @@ html.client_chat_frame
 				border: none !important;
 				margin: 0 !important;
 				padding: 0 !important;
+				position: relative !important;
 
 				div.dropTargetBox
 				{
@@ -653,7 +684,7 @@ html.client_chat_frame
 				}
 			}
 
-			div.groupHeaderContainer, div.friendCategoryContainer, div.ChatRoomListGroupItem
+			div.groupName, div.friendCategoryContainer, div.gameGroup div.friendsContainer div.friend, div.ChatRoomListGroupItem, div.friendInviteContainer
 			{
 				padding: 0 6px !important;
 				margin: 0 calc(6px - var(--adw-scrollbar-size)) 2px 6px !important;
@@ -678,208 +709,256 @@ html.client_chat_frame
 				}
 			}
 
-			div.groupHeaderContainer
+			div.groupName, span.groupCount
 			{
-				div.groupName, span.groupCount
-				{
-					height: 26px !important;
-					line-height: 26px !important;
-					color: rgb(var(--adw-sidebar-fg-rgb)) !important;
-					font-family: var(--adw-text-font) !important;
-					font-size: var(--adw-text-gamelist-section-size) !important;
-					font-weight: var(--adw-text-gamelist-section-weight) !important;
-					letter-spacing: normal !important;
-					text-transform: none !important;
-					padding: 0 !important;
-					margin: 0 !important;
-                    align-items: center !important;
-					cursor: default !important;
-				}
+				height: 26px !important;
+				line-height: 26px !important;
+				color: rgb(var(--adw-sidebar-fg-rgb)) !important;
+				font-family: var(--adw-text-font) !important;
+				font-size: var(--adw-text-gamelist-section-size) !important;
+				font-weight: var(--adw-text-gamelist-section-weight) !important;
+				letter-spacing: normal !important;
+				text-transform: none !important;
+				align-items: center !important;
+				cursor: default !important;
+			}
 
-				span.groupCount
-				{
-					color: rgba(var(--adw-sidebar-fg-rgb), var(--adw-dim-label-opacity)) !important;
-					font-weight: var(--adw-text-gamelist-weight) !important;
-					transform: none !important;
-					margin-left: 4px !important;
-					opacity: 1 !important;
-				}
+			span.groupCount
+			{
+				padding: 0 !important;
+				margin: 0 !important;
+				color: rgba(var(--adw-sidebar-fg-rgb), var(--adw-dim-label-opacity)) !important;
+				font-weight: var(--adw-text-gamelist-weight) !important;
+				transform: none !important;
+				margin-left: 4px !important;
+				opacity: 1 !important;
+			}
 
-				div.ExpandPlusMinus
+			div.ExpandPlusMinus
+			{
+				width: 20px !important;
+				height: 20px !important;
+				padding: 0 !important;
+				margin: 3px 6px 3px 0 !important;
+				opacity: 0.5 !important;
+				color: inherit !important;
+				cursor: default !important;
+				z-index: 1 !important;
+
+				svg
 				{
 					width: 20px !important;
 					height: 20px !important;
 					padding: 0 !important;
-					margin: 3px 6px 3px 0 !important;
-					opacity: 0.5 !important;
+					margin: 0 !important;
 					color: inherit !important;
-					cursor: default !important;
 
-					svg
+					line
 					{
-						width: 20px !important;
-						height: 20px !important;
-						padding: 0 !important;
-						margin: 0 !important;
-						color: inherit !important;
-
-						line
-						{
-							stroke: currentColor !important;
-							shape-rendering: crispEdges !important;
-							stroke-width: 20px !important;
-						}
+						stroke: currentColor !important;
+						shape-rendering: crispEdges !important;
+						stroke-width: 20px !important;
 					}
-				}
-
-				div.SortByRecent
-				{
-					width: 20px !important;
-					height: 20px !important;
-					padding: 0 !important;
-					margin: 0 !important;
-					opacity: 0.5 !important;
-					color: inherit !important;
-					cursor: default !important;
-				}
-
-				&:hover div.ExpandPlusMinus, div.SortByRecent:hover
-				{
-					opacity: 1 !important;
 				}
 			}
 
-			div.friendCategoryContainer
+			div.gameGroupContainer
 			{
-				div.friend
+				width: fit-content !important;
+				height: fit-content !important;
+				margin: 0 !important;
+				padding: 0 !important;
+
+				img.groupIcon
 				{
-					background: none !important;
+					width: 20px !important;
+					height: 20px !important;
 					padding: 0 !important;
 					margin: 0 !important;
-					height: 40px !important;
+					position: absolute !important;
+					right: 5px !important;
+					top: 2px !important;
+					border-radius: var(--adw-gameicon-radius) !important;
+					border: 1px rgba(var(--adw-user-ingame-rgb), var(--adw-thin-border-opacity)) solid !important;
+					overflow: hidden !important;
+					box-shadow: none !important;
+					transform: none !important;
+				}
+			}
 
-					div.nibodjvvrm86uCfnnAn4g
+			div.SortByRecent
+			{
+				width: 20px !important;
+				height: 20px !important;
+				padding: 0 !important;
+				margin: 0 !important;
+				position: absolute !important;
+				right: calc(12px - var(--adw-scrollbar-size)) !important;
+				top: 3px !important;
+				opacity: 0.5 !important;
+				color: inherit !important;
+				cursor: default !important;
+			}
+
+			&:hover div.ExpandPlusMinus, div.SortByRecent:hover
+			{
+				opacity: 1 !important;
+			}
+
+			div.friend
+			{
+				background: none !important;
+				padding: 0 !important;
+				margin: 0 !important;
+				height: 40px !important;
+
+				div.nibodjvvrm86uCfnnAn4g
+				{
+					width: 36px !important;
+					height: 36px !important;
+					margin: 2px 0 !important;
+					transition: width 200ms, height 200ms !important;
+				}
+
+				div.labelHolder
+				{
+					margin: 0 0 0 6px !important;
+					height: fit-content !important;
+					color: rgb(var(--adw-sidebar-fg-rgb)) !important;
+					align-items: center !important;
+
+					&.online
 					{
-						width: 36px !important;
-						height: 36px !important;
-						margin: 2px 0 !important;
-						transition: width 200ms, height 200ms !important;
+						color: rgb(var(--adw-user-online-rgb)) !important;
 					}
 
-					div.labelHolder
+					&.ingame
 					{
-						margin: 0 0 0 6px !important;
-						height: fit-content !important;
+						color: rgb(var(--adw-user-ingame-rgb)) !important;
+					}
+
+					&.offline, &.awayOrSnooze
+					{
+						opacity: 0.5 !important;
+					}
+
+					div, span
+					{
+						font-family: var(--adw-text-font) !important;
+						font-size: 14px !important;
+						font-weight: 400 !important;
+						line-height: 18px !important;
 						color: rgb(var(--adw-sidebar-fg-rgb)) !important;
-						align-items: center !important;
+						padding: 0 !important;
+						margin: 0 !important;
+					}
 
-						&.online
-						{
-							color: rgb(var(--adw-user-online-rgb)) !important;
-						}
+					div._3sxE7F1LV2IcSX68YsH9dI
+					{
+						display: flex !important;
+						flex-direction: row !important;
+						gap: 4px !important;
+						color: inherit !important;
+						font-size: 10px !important;
+						line-height: 12px !important;
+						mask: linear-gradient(to right, black calc(100% - 8px), rgba(0, 0, 0, 0.15) 100%) !important;
 
-						&.ingame
+						div
 						{
-							color: rgb(var(--adw-user-ingame-rgb)) !important;
-						}
-
-						&.offline, &.awayOrSnooze
-						{
-							opacity: 0.5 !important;
-						}
-
-						div, span
-						{
-							font-family: var(--adw-text-font) !important;
-							font-size: 14px !important;
-							font-weight: 400 !important;
-							line-height: 18px !important;
-							color: rgb(var(--adw-sidebar-fg-rgb)) !important;
-							padding: 0 !important;
-							margin: 0 !important;
-						}
-
-						div._3sxE7F1LV2IcSX68YsH9dI
-						{
-							display: flex !important;
-							flex-direction: row !important;
-							gap: 4px !important;
 							color: inherit !important;
 							font-size: 10px !important;
 							line-height: 12px !important;
-							mask: linear-gradient(to right, black calc(100% - 8px), rgba(0, 0, 0, 0.15) 100%) !important;
+							mask: none !important;
+							flex-shrink: 0 !important;
+							align-items: center;
 
-							div
+							&:not(:first-child)::before
 							{
-								color: inherit !important;
-								font-size: 10px !important;
-								line-height: 12px !important;
-								mask: none !important;
-								flex-shrink: 0 !important;
-								align-items: center;
-
-								&:not(:first-child)::before
-								{
-									content: "";
-									width: 4px;
-									height: 4px;
-									margin-right: 4px;
-									margin-top: 2px;
-									border-radius: 50%;
-									background: currentColor;
-								}
-							}
-						}
-
-						div.ContextMenuButton, div._1DsumfIa3MlkzUV9EXY5W9
-						{
-							display: none !important;
-						}
-
-						div.nOdcT-MoOaXGePXLyPe0H
-						{
-							padding-right: 6px !important;
-						}
-
-						div.KxAI_M9gWx3OnKSshHOs6
-						{
-							width: 16px !important;
-							height: 16px !important;
-							margin: 0 !important;
-							padding: 0 !important;
-						}
-
-						svg
-						{
-							color: inherit !important;
-							path
-							{
-								fill: currentColor !important;
+								content: "";
+								width: 4px;
+								height: 4px;
+								margin-right: 4px;
+								margin-top: 2px;
+								border-radius: 50%;
+								background: currentColor;
+								opacity: 0.5;
 							}
 						}
 					}
 
-					div.CompactFriendsList &
+					div.ContextMenuButton, div._1DsumfIa3MlkzUV9EXY5W9
+					{
+						display: none !important;
+					}
+
+					div.nOdcT-MoOaXGePXLyPe0H
+					{
+						padding-right: 6px !important;
+					}
+
+					div.KxAI_M9gWx3OnKSshHOs6
+					{
+						width: 16px !important;
+						height: 16px !important;
+						margin: 0 !important;
+						padding: 0 !important;
+					}
+
+					svg
+					{
+						color: inherit !important;
+						path
+						{
+							fill: currentColor !important;
+						}
+					}
+				}
+
+				div.CompactFriendsList &
+				{
+					height: 26px !important;
+
+					div.nibodjvvrm86uCfnnAn4g
+					{
+						width: 20px !important;
+						height: 20px !important;
+						margin: 3px 0 !important;
+					}
+
+					div.labelHolder div._4ZTzGZ5TTgFyfw1DcXLXS, div.labelHolder div.nOdcT-MoOaXGePXLyPe0H, div.labelHolder span
 					{
 						height: 26px !important;
+						line-height: 26px !important;
+					}
 
-						div.nibodjvvrm86uCfnnAn4g
-						{
-							width: 20px !important;
-							height: 20px !important;
-							margin: 3px 0 !important;
-						}
+					div._3sxE7F1LV2IcSX68YsH9dI
+					{
+						display: none !important;
+					}
+				}
+			}
 
-						div.labelHolder div._4ZTzGZ5TTgFyfw1DcXLXS, div.labelHolder div.nOdcT-MoOaXGePXLyPe0H, div.labelHolder span
-						{
-							height: 26px !important;
-							line-height: 26px !important;
-						}
+			hr
+			{
+				display: none !important;
+			}
 
-						div._3sxE7F1LV2IcSX68YsH9dI
-						{
-							display: none !important;
-						}
+			div.friendInviteButtons
+			{
+				padding: 0 !important;
+				margin: 0 !important;
+				cursor: default !important;
+
+				div.friendInviteButton
+				{
+					color: rgba(var(--adw-sidebar-fg-rgb), 0.5) !important;
+					border-color: currentColor;
+					cursor: default !important;
+
+					svg, svg *
+					{
+						color: inherit !important;
+						stroke: currentColor !important;
 					}
 				}
 			}
@@ -994,5 +1073,10 @@ html.client_chat_frame
 		{
 			content: none !important;
 		}
+	}
+
+	div.cancelAddFriends
+	{
+		display: none !important;
 	}
 }

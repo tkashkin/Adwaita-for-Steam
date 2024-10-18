@@ -58,6 +58,25 @@ html.client_chat_frame
 			box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.5) inset, 0 0 0 1px rgba(0, 0, 0, 0.5);
 		}
 
+		div.FavoriteFriend_GameIcon
+		{
+			padding: 0 !important;
+			width: 20px !important;
+			height: 20px !important;
+			border-radius: var(--adw-gameicon-radius) !important;
+			border: 1px rgba(var(--adw-user-ingame-rgb), var(--adw-thin-border-opacity)) solid !important;
+			overflow: hidden !important;
+			box-shadow: none !important;
+			transform: none !important;
+			z-index: 3 !important;
+
+			img
+			{
+				box-shadow: none !important;
+				transform: none !important;
+			}
+		}
+
 		&.online
 		{
 			color: rgb(var(--adw-user-online-rgb)) !important;
