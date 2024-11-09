@@ -104,6 +104,8 @@ LIBRARY_FILES = [
 	"css/main/library/sidebar/gamelist.css",
 	"css/main/library/sidebar/sidebar.css",
 
+	"css/main/library/collections/collections.css",
+
 	"css/main/library/library.css",
 
 	"css/chat/chat.css",
