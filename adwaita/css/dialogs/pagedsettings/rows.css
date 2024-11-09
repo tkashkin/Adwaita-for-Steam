@@ -10,10 +10,15 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.SettingsDialogSubHeader,
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.DialogBodyText,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogBodyText,
 body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.DialogBodyText,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._1RCWDLVLFja1TdD1P53BMq,
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.DialogControlsSectionHeader,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogControlsSectionHeader,
 body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.DialogControlsSectionHeader,
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.DialogBody > div:first-child:not([class]),
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogBody > div:first-child:not([class]),
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.DialogBody > div:first-child:not([class]),
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.familysettings_FamilyNameRow_3K8Af,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3K8Afwm4bvd9vSIzAz9siX,
@@ -212,6 +217,14 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt._3tB2lyT2Pf
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.DialogControlsSection + div.gamepaddialog_Field_S-_La,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogControlsSection + div.S-_LaQG5eEOM2HWZ-geJI,
 body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.DialogControlsSection + div.eKmEXJCm_lgme24Fp_HWt,
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.DialogBody > div:first-child:not([class]) + div.gamepaddialog_Field_S-_La,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogBody > div:first-child:not([class]) + div.S-_LaQG5eEOM2HWZ-geJI,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.DialogBody > div:first-child:not([class]) + div.eKmEXJCm_lgme24Fp_HWt,
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.SettingsDialogSubHeader + div:not([class]) + div.gamepaddialog_Field_S-_La,
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.SettingsDialogSubHeader + div:not([class]) + div.S-_LaQG5eEOM2HWZ-geJI,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.SettingsDialogSubHeader + div:not([class]) + div.eKmEXJCm_lgme24Fp_HWt,
 
 body.DesktopUI div.appproperties_AppProperties_1FyBL div.appproperties_Title_3zuIC + div.gamepaddialog_Field_S-_La,
 body.DesktopUI div._1FyBL6obxHQ2Z2CsaV2Gbz div._3zuICQ63IRympzZ6qgs-5O + div.S-_LaQG5eEOM2HWZ-geJI,
@@ -500,7 +513,11 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt._3tB2lyT2Pf
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La[class*="gamepaddialog_WithDescription_"]:not(:has(div[class*="gamepaddialog_FieldLabel_"])) div[class*="gamepaddialog_FieldDescription_"],
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI._3bMISJvxiSHPx1ol-0Aswn:not(:has(div._3b0U-QDD-uhFpw6xM716fw)) div._2OJfkxlD3X9p8Ygu1vR7Lr,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt._3tB2lyT2Pfvfv-jyuVgUOg:not(:has(div._3jMlJm4PQCA8SfNlUR99Fo)) div._1W1to_azoBRG95oNAFpf9Q
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt._3tB2lyT2Pfvfv-jyuVgUOg:not(:has(div._3jMlJm4PQCA8SfNlUR99Fo)) div._1W1to_azoBRG95oNAFpf9Q,
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.SettingsDialogSubHeader + div:not([class]),
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.SettingsDialogSubHeader + div:not([class]),
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.SettingsDialogSubHeader + div:not([class])
 {
 	color: rgba(var(--adw-card-fg-rgb), var(--adw-dim-label-opacity)) !important;
 	font-size: var(--adw-text-subtitle-size) !important;
@@ -508,6 +525,13 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt._3tB2lyT2Pf
 	min-height: auto !important;
 	line-height: normal !important;
 	margin: 0 !important;
+}
+
+body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.SettingsDialogSubHeader + div:not([class]),
+body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.SettingsDialogSubHeader + div:not([class]),
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.SettingsDialogSubHeader + div:not([class])
+{
+	margin: -8px 0 8px 0 !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La::after,

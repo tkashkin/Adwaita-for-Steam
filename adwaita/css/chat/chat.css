@@ -118,7 +118,7 @@ html.client_chat_frame
 		{
 			position: absolute !important;
 			top: 6px !important;
-			left: 6px !important;
+			left: calc(var(--adw-windowcontrols-margin-left) + 6px) !important;
 		}
 
 		svg

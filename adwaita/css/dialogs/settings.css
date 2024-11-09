@@ -64,7 +64,8 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.ingame div._1cB0qtF0paHWWyj1XNcnb
 /* Account buttons */
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La:has(button[class*="settings_SettingsDialogFatButton_"]),
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI:has(button.UqEiVDhZ47cn3vWxM7cR0),
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt:has(button.UqEiVDhZ47cn3vWxM7cR0)
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt:has(button.UqEiVDhZ47cn3vWxM7cR0),
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt:has(button.JA6JIY08WWMEfWP-sZkZ2)
 {
 	background: none !important;
 	box-shadow: none !important;
@@ -76,14 +77,16 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt:has(button.
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La:has(button[class*="settings_SettingsDialogFatButton_"]) div[class*="gamepaddialog_FieldChildrenWithIcon_"],
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI:has(button.UqEiVDhZ47cn3vWxM7cR0) div._2ZQ9wHACVFqZcufK_WRGPM,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt:has(button.UqEiVDhZ47cn3vWxM7cR0) div._1aw7cA3mAZfWt8idAlVJWi
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt:has(button.UqEiVDhZ47cn3vWxM7cR0) div._1aw7cA3mAZfWt8idAlVJWi,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt:has(button.JA6JIY08WWMEfWP-sZkZ2) div._1aw7cA3mAZfWt8idAlVJWi
 {
 	position: initial !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La:has(button[class*="settings_SettingsDialogFatButton_"]) div[class*="gamepaddialog_ControlsListOuterPanel_"],
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI:has(button.UqEiVDhZ47cn3vWxM7cR0) div._2Mvpu0Kldp2FgzYp0Tx-OP,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt:has(button.UqEiVDhZ47cn3vWxM7cR0) div._2XSsNSGcWjGZ6z3fvqaRd5
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt:has(button.UqEiVDhZ47cn3vWxM7cR0) div._2XSsNSGcWjGZ6z3fvqaRd5,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt:has(button.JA6JIY08WWMEfWP-sZkZ2) div._2XSsNSGcWjGZ6z3fvqaRd5
 {
 	padding: 0 !important;
 	margin: 0 !important;
@@ -94,7 +97,8 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt:has(button.
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La:has(button[class*="settings_SettingsDialogFatButton_"]) div[class*="gamepaddialog_ControlsListOuterPanel_"] div[class*="gamepaddialog_ControlsListChild_"],
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI:has(button.UqEiVDhZ47cn3vWxM7cR0) div._2Mvpu0Kldp2FgzYp0Tx-OP div.XvRsoF63hkSPNVBr2XPVI,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt:has(button.UqEiVDhZ47cn3vWxM7cR0) div._2XSsNSGcWjGZ6z3fvqaRd5 div._2LQjjxR3ZOcEZU73abIsw-
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt:has(button.UqEiVDhZ47cn3vWxM7cR0) div._2XSsNSGcWjGZ6z3fvqaRd5 div._2LQjjxR3ZOcEZU73abIsw-,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt:has(button.JA6JIY08WWMEfWP-sZkZ2) div._2XSsNSGcWjGZ6z3fvqaRd5 div._2LQjjxR3ZOcEZU73abIsw-
 {
 	padding: 0 !important;
 	margin: 0 !important;
@@ -104,7 +108,8 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt:has(button.
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La button[class*="settings_SettingsDialogFatButton_"],
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEiVDhZ47cn3vWxM7cR0,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt button.UqEiVDhZ47cn3vWxM7cR0
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt button.UqEiVDhZ47cn3vWxM7cR0,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt button.JA6JIY08WWMEfWP-sZkZ2
 {
 	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-opacity)) !important;
 	color: rgb(var(--adw-card-fg-rgb)) !important;
@@ -125,14 +130,16 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt button.UqEi
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La button[class*="settings_SettingsDialogFatButton_"]:hover,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEiVDhZ47cn3vWxM7cR0:hover,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt button.UqEiVDhZ47cn3vWxM7cR0:hover
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt button.UqEiVDhZ47cn3vWxM7cR0:hover,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt button.JA6JIY08WWMEfWP-sZkZ2:hover
 {
 	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-hover-opacity)) !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La button[class*="settings_SettingsDialogFatButton_"]:active,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEiVDhZ47cn3vWxM7cR0:active,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt button.UqEiVDhZ47cn3vWxM7cR0:active
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt button.UqEiVDhZ47cn3vWxM7cR0:active,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt button.JA6JIY08WWMEfWP-sZkZ2:active
 {
 	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-active-opacity)) !important;
 }
@@ -140,10 +147,12 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt button.UqEi
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La button[class*="settings_SettingsDialogFatButton_"] > svg,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEiVDhZ47cn3vWxM7cR0 > svg,
 body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt button.UqEiVDhZ47cn3vWxM7cR0 > svg,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt button.JA6JIY08WWMEfWP-sZkZ2 > svg,
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La button[class*="settings_SettingsDialogFatButton_"]::after,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEiVDhZ47cn3vWxM7cR0::after,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt button.UqEiVDhZ47cn3vWxM7cR0::after
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt button.UqEiVDhZ47cn3vWxM7cR0::after,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt button.JA6JIY08WWMEfWP-sZkZ2::after
 {
 	position: absolute !important;
 	left: 16px !important;
@@ -154,7 +163,8 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt button.UqEi
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La button[class*="settings_SettingsDialogFatButton_"]::after,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEiVDhZ47cn3vWxM7cR0::after,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt button.UqEiVDhZ47cn3vWxM7cR0::after
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt button.UqEiVDhZ47cn3vWxM7cR0::after,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt button.JA6JIY08WWMEfWP-sZkZ2::after
 {
 	content: "";
 	left: auto !important;
@@ -169,7 +179,8 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt button.UqEi
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La button[class*="settings_SettingsDialogFatButton_"] div[class*="accountpanel_Label_"],
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEiVDhZ47cn3vWxM7cR0 div._3wadwgMy2-9k8uOKh3iSdT,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt button.UqEiVDhZ47cn3vWxM7cR0 div._3wadwgMy2-9k8uOKh3iSdT
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt button.UqEiVDhZ47cn3vWxM7cR0 div._3wadwgMy2-9k8uOKh3iSdT,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt button.JA6JIY08WWMEfWP-sZkZ2 div._3wadwgMy2-9k8uOKh3iSdT
 {
 	color: rgb(var(--adw-card-fg-rgb)) !important;
 	font-family: var(--adw-text-font) !important;
@@ -181,7 +192,8 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt button.UqEi
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La button[class*="settings_SettingsDialogFatButton_"] div[class*="accountpanel_Details_"],
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEiVDhZ47cn3vWxM7cR0 div._3Wb9yDmYPUJksCr7HmaT9H,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt button.UqEiVDhZ47cn3vWxM7cR0 div._3Wb9yDmYPUJksCr7HmaT9H
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt button.UqEiVDhZ47cn3vWxM7cR0 div._3Wb9yDmYPUJksCr7HmaT9H,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt button.JA6JIY08WWMEfWP-sZkZ2 div._3Wb9yDmYPUJksCr7HmaT9H
 {
 	color: rgba(var(--adw-card-fg-rgb), var(--adw-dim-label-opacity)) !important;
 	font-family: var(--adw-text-font) !important;
@@ -194,7 +206,8 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt button.UqEi
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.gamepaddialog_Field_S-_La button[class*="settings_SettingsDialogFatButton_"] div[class*="accountpanel_Details_"] > span[class*="accountpanel_Highlight_"],
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.S-_LaQG5eEOM2HWZ-geJI button.UqEiVDhZ47cn3vWxM7cR0 div._3Wb9yDmYPUJksCr7HmaT9H > span._35ztZulp_gETT1gOElpfvK,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt button.UqEiVDhZ47cn3vWxM7cR0 div._3Wb9yDmYPUJksCr7HmaT9H > span._35ztZulp_gETT1gOElpfvK
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt button.UqEiVDhZ47cn3vWxM7cR0 div._3Wb9yDmYPUJksCr7HmaT9H > span._35ztZulp_gETT1gOElpfvK,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.eKmEXJCm_lgme24Fp_HWt button.JA6JIY08WWMEfWP-sZkZ2 div._3Wb9yDmYPUJksCr7HmaT9H > span._35ztZulp_gETT1gOElpfvK
 {
 	color: rgb(var(--adw-card-fg-rgb)) !important;
 	font-family: var(--adw-text-font) !important;
@@ -842,7 +855,8 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3Q8Vc4HcvrUZVLqnC1hTXT:has(span.
 /* Controller: layout row buttons */
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.settings_BuiltInLayoutButtons_3KH4C,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3KH4CAWiBX2hESrbRk4DBn,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3KH4CAWiBX2hESrbRk4DBn
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3KH4CAWiBX2hESrbRk4DBn,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3FYSCKU0zMm_zbWS56SCVu
 {
 	gap: 6px !important;
 	min-width: auto !important;
@@ -850,7 +864,8 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3KH4CAWiBX2hESrbRk4DBn
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.settings_BuiltInLayoutButtons_3KH4C button.DialogButton,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3FYSCKU0zMm_zbWS56SCVu button.DialogButton
 {
 	cursor: default !important;
 	border-radius: var(--adw-button-radius) !important;
@@ -872,28 +887,32 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3KH4CAWiBX2hESrbRk4DBn button.Di
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.settings_BuiltInLayoutButtons_3KH4C button.DialogButton:hover,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton:hover,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton:hover
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton:hover,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3FYSCKU0zMm_zbWS56SCVu button.DialogButton:hover
 {
 	background: rgba(var(--adw-window-fg-rgb), var(--adw-hover-opacity)) !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.settings_BuiltInLayoutButtons_3KH4C button.DialogButton:active,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton:active,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton:active
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton:active,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3FYSCKU0zMm_zbWS56SCVu button.DialogButton:active
 {
 	background: rgba(var(--adw-window-fg-rgb), var(--adw-active-opacity)) !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.settings_BuiltInLayoutButtons_3KH4C button.DialogButton > svg,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3KH4CAWiBX2hESrbRk4DBn button > svg,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3KH4CAWiBX2hESrbRk4DBn button > svg
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3KH4CAWiBX2hESrbRk4DBn button > svg,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3FYSCKU0zMm_zbWS56SCVu button > svg
 {
 	display: none !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.settings_BuiltInLayoutButtons_3KH4C button.DialogButton::after,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton::after,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton::after
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton::after,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3FYSCKU0zMm_zbWS56SCVu button.DialogButton::after
 {
 	background-color: rgb(var(--adw-window-fg-rgb));
 	content: "";
@@ -908,14 +927,16 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3KH4CAWiBX2hESrbRk4DBn button.Di
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.settings_BuiltInLayoutButtons_3KH4C button.DialogButton.settings_SettingsDialogButton_3epr8::after,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton._3epr8QYWw_FqFgMx38YEEm::after,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton._3epr8QYWw_FqFgMx38YEEm::after
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton._3epr8QYWw_FqFgMx38YEEm::after,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3FYSCKU0zMm_zbWS56SCVu button.DialogButton._3epr8QYWw_FqFgMx38YEEm::after
 {
 	-webkit-mask-image: var(--adw-icon-edit);
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.settings_BuiltInLayoutButtons_3KH4C button.DialogButton.settings_BuiltInLayoutButton_30Og7::after,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton._30Og77vH37EtqaKCCDIAP9::after,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton._30Og77vH37EtqaKCCDIAP9::after
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton._30Og77vH37EtqaKCCDIAP9::after,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3FYSCKU0zMm_zbWS56SCVu button.DialogButton._1S-PihOJGJBAP5oCKeB7jy::after
 {
 	-webkit-mask-image: var(--adw-icon-more);
 }
