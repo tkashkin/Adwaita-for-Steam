@@ -106,6 +106,8 @@ LIBRARY_FILES = [
 
 	"css/main/library/collections/collections.css",
 
+	"css/main/library/downloads/downloads.css",
+
 	"css/main/library/library.css",
 
 	"css/chat/chat.css",
