@@ -636,7 +636,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.N
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] div[class*="appdetailsachievementssection_TextSection_"] > div[class*="appdetailsachievementssection_Name_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div.yJLy7HDLJT44C1fcm6lPI div._1s_9cSxUjb4609MSH0EjWH > div._39Y01uSRcLiDg5DneTTR0m
 {
-	color: rgb(var(--adw-accent-fg-rgb)) !important;
+	color: rgb(var(--adw-window-fg-rgb)) !important;
 	font-family: var(--adw-text-font) !important;
 	font-size: var(--adw-text-row-title-size) !important;
 	font-weight: var(--adw-text-row-title-weight) !important;
@@ -646,7 +646,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.N
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_ActivityAchievementUnlocked_"] div[class*="appdetailsachievementssection_TextSection_"] > div[class*="appdetailsachievementssection_Desc_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div.yJLy7HDLJT44C1fcm6lPI div._1s_9cSxUjb4609MSH0EjWH > div._2gLHbXukQBdrIKhqEYVvOe
 {
-	color: rgba(var(--adw-accent-fg-rgb), var(--adw-dim-label-opacity)) !important;
+	color: rgba(var(--adw-window-fg-rgb), var(--adw-dim-label-opacity)) !important;
 	font-family: var(--adw-text-font) !important;
 	font-size: var(--adw-text-row-subtitle-size) !important;
 	font-weight: var(--adw-text-row-subtitle-weight) !important;
@@ -678,7 +678,7 @@ body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Ev
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div.yJLy7HDLJT44C1fcm6lPI div._2yMyP8POdcTHs9u9CEQIKY,
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div.yJLy7HDLJT44C1fcm6lPI div._1ABm6sfuqiZZDSL9z8mW1a
 {
-	color: rgb(var(--adw-accent-fg-rgb)) !important;
+	color: rgb(var(--adw-window-fg-rgb)) !important;
 	font-family: var(--adw-text-font) !important;
 	font-size: var(--adw-text-row-title-size) !important;
 	font-weight: var(--adw-text-row-title-weight) !important;
@@ -737,7 +737,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.N
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_BadgeSection_"] div[class*="appactivityday_BadgeName_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3G7i5g23e7CREVJMvy-uuM div.rmU5gSpGCyzzdzzL66_h
 {
-	color: rgb(var(--adw-accent-fg-rgb)) !important;
+	color: rgb(var(--adw-window-fg-rgb)) !important;
 	font-family: var(--adw-text-font) !important;
 	font-size: var(--adw-text-row-title-size) !important;
 	font-weight: var(--adw-text-row-title-weight) !important;
@@ -747,7 +747,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.N
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Event_"].Panel div[class*="appactivityday_EventBody_"] div[class*="appactivityday_BadgeSection_"] div[class*="appactivityday_BadgeLevel_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel div.NEMXhMlqXOCJwfgWlHXhT div._3G7i5g23e7CREVJMvy-uuM div._1p820T7Fx7HLM4wdPqJd3Z
 {
-	color: rgba(var(--adw-accent-fg-rgb), var(--adw-dim-label-opacity)) !important;
+	color: rgba(var(--adw-window-fg-rgb), var(--adw-dim-label-opacity)) !important;
 	font-family: var(--adw-text-font) !important;
 	font-size: var(--adw-text-row-subtitle-size) !important;
 	font-weight: var(--adw-text-row-subtitle-weight) !important;
@@ -948,7 +948,7 @@ body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Ev
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel._1i3JyGyUjB6J9JB2N3MrR6 div._2txLP3SViQYE1uWpaFAiHD > div._1zQfKpvh8tPQjRgzaTklOy
 {
 	padding: 0 !important;
-	color: rgb(var(--adw-accent-fg-rgb)) !important;
+	color: rgb(var(--adw-window-fg-rgb)) !important;
 	font-family: var(--adw-text-font) !important;
 	font-size: var(--adw-text-row-title-size) !important;
 	font-weight: var(--adw-text-row-title-weight) !important;
@@ -959,7 +959,7 @@ body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_Ev
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.UVeN0kaD3zv1feMj_mMw5.Panel._1i3JyGyUjB6J9JB2N3MrR6 div._2txLP3SViQYE1uWpaFAiHD > div._2r-N9f1W6yltOqoSt80m8_
 {
 	padding: 0 !important;
-	color: rgba(var(--adw-accent-fg-rgb), var(--adw-dim-label-opacity)) !important;
+	color: rgba(var(--adw-window-fg-rgb), var(--adw-dim-label-opacity)) !important;
 	font-family: var(--adw-text-font) !important;
 	font-size: var(--adw-text-row-subtitle-size) !important;
 	font-weight: var(--adw-text-row-subtitle-weight) !important;

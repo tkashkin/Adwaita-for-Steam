@@ -617,7 +617,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2aor4XVOYzN1PBSREk0UbO div._1s_9
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsoverview_RightColumn_"] div[class*="appdetailsachievementssection_TextSection_"] > div[class*="appdetailsachievementssection_Name_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2aor4XVOYzN1PBSREk0UbO div._1s_9cSxUjb4609MSH0EjWH > div._39Y01uSRcLiDg5DneTTR0m
 {
-	color: rgb(var(--adw-accent-fg-rgb)) !important;
+	color: rgb(var(--adw-window-fg-rgb)) !important;
 	font-family: var(--adw-text-font) !important;
 	font-size: var(--adw-text-row-title-size) !important;
 	font-weight: var(--adw-text-row-title-weight) !important;
@@ -626,7 +626,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2aor4XVOYzN1PBSREk0UbO div._1s_9
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsoverview_RightColumn_"] div[class*="appdetailsachievementssection_TextSection_"] > div[class*="appdetailsachievementssection_Desc_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2aor4XVOYzN1PBSREk0UbO div._1s_9cSxUjb4609MSH0EjWH > div._2gLHbXukQBdrIKhqEYVvOe
 {
-	color: rgba(var(--adw-accent-fg-rgb), var(--adw-dim-label-opacity)) !important;
+	color: rgba(var(--adw-window-fg-rgb), var(--adw-dim-label-opacity)) !important;
 	font-family: var(--adw-text-font) !important;
 	font-size: var(--adw-text-row-subtitle-size) !important;
 	font-weight: var(--adw-text-row-subtitle-weight) !important;
@@ -641,7 +641,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2aor4XVOYzN1PBSREk0UbO div._1IIK
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsoverview_RightColumn_"] div[class*="appdetailsachievementssection_RemainderText_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2aor4XVOYzN1PBSREk0UbO div._1-H7tKj_QcGHLUbx5wVsGg
 {
-	color: rgb(var(--adw-accent-fg-rgb)) !important;
+	color: rgb(var(--adw-window-fg-rgb)) !important;
 	font-family: var(--adw-text-font) !important;
 	font-size: var(--adw-text-row-title-size) !important;
 	font-weight: var(--adw-text-row-title-weight) !important;
