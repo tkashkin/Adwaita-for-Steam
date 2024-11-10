@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import subprocess
 from argparse import ArgumentParser
 from pathlib import Path
 from sys import platform
@@ -46,6 +47,7 @@ EXTRAS_DIR = f"{ADWAITA_DIR}/extras"
 TARGET_NORMAL = "~/.steam/steam"
 TARGET_FLATPAK = "~/.var/app/com.valvesoftware.Steam/.steam/steam"
 TARGET_WINDOWS = "C:\\Program Files (x86)\\Steam"
+TARGET_MACOS = "~/Library/Application Support/Steam/Steam.AppBundle/Steam/Contents/MacOS"
 
 STEAM_LOOPBACK = "https://steamloopback.host"
 STEAM_LOOPBACK_ADWAITA = f"{STEAM_LOOPBACK}/{ADWAITA_DIR}"
@@ -85,7 +87,7 @@ LIBRARY_FILES = [
 	"css/widgets/lists.css",
 	"css/widgets/popups.css",
 	"css/widgets/scrollbars.css",
-	"css/widgets/windows.css",
+	"css/widgets/windowcontrols.css",
 
 	"css/main/headerbar/buttons.css",
 	"css/main/headerbar/headerbar.css",
@@ -118,6 +120,20 @@ LIBRARY_FILES = [
 	"css/dialogs/appproperties.css"
 ]
 
+WINDOWCONTROLS_PRESETS = {
+	"gnome": ":close",
+	"adwaita": ":close",
+	"pantheon": "close:maximize",
+	"elementary": "close:maximize",
+	"windows": ":minimize,maximize,close",
+	"macos": "close,minimize,maximize:"
+}
+
+WINDOWCONTROLS_SELECTORS = {
+	"minimize": "&.minimizeButton",
+	"maximize": "&.maximizeButton, &.restoreButton",
+	"close": "&.closeButton"
+}
 
 # Utils
 def copy_dir(source: Path, target: Path):
@@ -151,16 +167,68 @@ def find_extras() -> list[Path]:
 def format_import(prefix: str, string: str) -> str:
 	return f"@import url(\"{prefix}/{string}\");\n"
 
-def generate_libraryroot(target: Path, selected_extras: list[Path], selected_theme: str, custom_css: bool):
+def generate_windowcontrols(layout: str) -> str:
+	(buttons_left, buttons_right) = [[b for b in s.split(',') if b in WINDOWCONTROLS_SELECTORS] for s in layout.split(':')]
+	windowcontrols = f""":root
+{{
+	--adw-windowcontrols-left-has-buttons: { 0 if len(buttons_left) == 0 else 1 };
+	--adw-windowcontrols-left-buttons: { len(buttons_left) };
+	--adw-windowcontrols-right-has-buttons: { 0 if len(buttons_right) == 0 else 1 };
+	--adw-windowcontrols-right-buttons: { len(buttons_right) };
+	--adw-windowcontrols-close-margin-left: calc({ 1 if "close" in buttons_left else 0 } * (var(--adw-windowcontrols-buttons-margin-outer) + var(--adw-windowcontrols-button-width) + var(--adw-windowcontrols-buttons-margin-inner)));
+	--adw-windowcontrols-close-margin-right: calc({ 1 if "close" in buttons_right else 0 } * (var(--adw-windowcontrols-buttons-margin-outer) + var(--adw-windowcontrols-button-width) + var(--adw-windowcontrols-buttons-margin-inner)));
+}}
+
+body.DesktopUI,
+html.client_chat_frame
+{{
+	.title-bar-actions .title-area-icon
+	{{
+		visibility: hidden !important;
+"""
+
+	for i, b in enumerate(buttons_left):
+		windowcontrols += f"""
+		{ WINDOWCONTROLS_SELECTORS[b] }
+		{{
+			visibility: visible !important;
+			left: calc(var(--adw-windowcontrols-buttons-margin-outer) + {i} * var(--adw-windowcontrols-button-width) + {i} * var(--adw-windowcontrols-button-gap)) !important;
+
+			html.client_chat_frame div.chat_main.singlewindow:not(:has(div.friendsListContainer.collapsed)) div.multiChatDialog &
+			{{
+				visibility: hidden !important;
+			}}
+		}}
+"""
+
+	for i, b in enumerate(reversed(buttons_right)):
+		windowcontrols += f"""
+		{ WINDOWCONTROLS_SELECTORS[b] }
+		{{
+			visibility: visible !important;
+			right: calc(var(--adw-windowcontrols-buttons-margin-outer) + {i} * var(--adw-windowcontrols-button-width) + {i} * var(--adw-windowcontrols-button-gap)) !important;
+
+			html.client_chat_frame div.chat_main.singlewindow div.friendsListContainer:not(.collapsed) &
+			{{
+				visibility: hidden !important;
+			}}
+		}}
+"""
+	windowcontrols += f"""
+	}}
+}}"""
+	return windowcontrols
+
+def generate_libraryroot(target: Path, extras: list[Path], color_theme: str, windowcontrols_theme: str, windowcontrols_layout: str, custom_css: bool):
 	content = "/* Main Files */\n"
 	for f in LIBRARY_FILES:
 		content += format_import(STEAM_LOOPBACK_ADWAITA, f)
 
-	if selected_extras:
+	if extras:
 		print()
 		content += "\n/* Extras */\n"
 
-		for extra in selected_extras:
+		for extra in extras:
 			we = extra.removesuffix(".css")
 			test = extrasdir / we
 			if test.with_suffix(".css").exists():
@@ -170,13 +238,25 @@ def generate_libraryroot(target: Path, selected_extras: list[Path], selected_the
 				print(f"{TEXT_PURPLE}{TEXT_INFO} Extra: {TEXT_BOLD}{we}{TEXT_RESET}{TEXT_PURPLE} not found!{TEXT_RESET}")
 		print()
 
-	if selected_theme:
-		print(f"{TEXT_BLUE}{TEXT_ARROW} Applying color theme {TEXT_BOLD}{selected_theme}{TEXT_RESET}{TEXT_BLUE}...{TEXT_RESET}\n")
-		content += "\n/* ColorTheme */\n"
-		content += format_import(STEAM_LOOPBACK_ADWAITA, f"colorthemes/{selected_theme}/{selected_theme}.css")
+	if color_theme:
+		print(f"{TEXT_BLUE}{TEXT_ARROW} Applying color theme {TEXT_BOLD}{color_theme}{TEXT_RESET}{TEXT_BLUE}...{TEXT_RESET}")
+		content += "\n/* Color theme */\n"
+		content += format_import(STEAM_LOOPBACK_ADWAITA, f"colorthemes/{color_theme}/{color_theme}.css")
+
+	if windowcontrols_theme:
+		print(f"{TEXT_BLUE}{TEXT_ARROW} Applying window controls theme {TEXT_BOLD}{windowcontrols_theme}{TEXT_RESET}{TEXT_BLUE}...{TEXT_RESET}")
+		content += "\n/* Window controls theme */\n"
+		content += format_import(STEAM_LOOPBACK_ADWAITA, f"windowcontrols/{windowcontrols_theme}.css")
+
+	if windowcontrols_layout:
+		if ':' not in windowcontrols_layout:
+			windowcontrols_layout = ':' + windowcontrols_layout
+		print(f"{TEXT_BLUE}{TEXT_ARROW} Applying window controls layout {TEXT_BOLD}{windowcontrols_layout}{TEXT_RESET}{TEXT_BLUE}...{TEXT_RESET}")
+		content += f"\n/* Window controls layout - {windowcontrols_layout} */\n"
+		content += generate_windowcontrols(windowcontrols_layout)
 
 	if custom_css:
-		print(f"{TEXT_BLUE}{TEXT_ARROW} Applying custom css...{TEXT_RESET}\n")
+		print(f"{TEXT_BLUE}{TEXT_ARROW} Applying custom css...{TEXT_RESET}")
 		content += "\n/* Custom CSS */\n"
 		content += format_import(STEAM_LOOPBACK_ADWAITA, f"custom/{CUSTOM_CSS}")
 
@@ -260,7 +340,9 @@ if __name__ == "__main__":
 		raise SystemExit(f"{TEXT_RED}{TEXT_CROSS} Color Theme directory {TEXT_BOLD}{COLOR_THEME_DIR}{TEXT_RESET}{TEXT_RED} does not exist. Make sure you're running the installer from its root directory{TEXT_RESET}")
 
 	parser = ArgumentParser(description = "Adwaita-for-Steam installer")
-	parser.add_argument("-c", "--color-theme", default = "adwaita", help = "Choose color theme")
+	parser.add_argument("-c", "--color-theme", default = "adwaita", type = str.lower, help = "Choose color theme")
+	parser.add_argument("--windowcontrols-theme", default = "auto", choices = ["auto", "adwaita", "windows", "macos"], type = str.lower, help = "Window button theme")
+	parser.add_argument("--windowcontrols-layout", default = "auto", type = str.lower, help = "Window button positions: 'auto', 'gnome'|'adwaita', 'pantheon'|'elementary', 'windows', 'macos', or GNOME button layout string")
 	parser.add_argument("--custom-css", action = "store_true", help = "Enable Custom CSS")
 	parser.add_argument("-d", "--dev", action = "store_true", help = "Dev Mode")
 	parser.add_argument("-e", "--extras", nargs = "+", action = "extend", help = "Enable one or multiple theme extras")
@@ -270,27 +352,52 @@ if __name__ == "__main__":
 	args = parser.parse_args()
 
 	if args.target is None:
-		args.target = ["normal", "flatpak"]
-
-		if is_windows:
+		if platform == "linux":
+			args.target = ["normal", "flatpak"]
+		elif platform == "win32":
 			args.target = ["windows"]
+		elif platform == "darwin":
+			args.target = ["macos"]
 
 	if args.list_options:
 		list_options("color themes", find_color_themes(), ".css", colorthemedir, "color-theme")
 		list_options("extras", find_extras(), ".css", extrasdir, "extras")
 		exit(0)
 
-	selected_theme = None
 	if args.color_theme:
-
 		if args.color_theme == "adwaita":
-			selected_theme = None
+			args.color_theme = None
 		else:
-			t = args.color_theme.removesuffix(".css")
-			selected_theme = t
-			test = colorthemedir / t / t
+			args.color_theme = args.color_theme.removesuffix(".css")
+			test = colorthemedir / args.color_theme / args.color_theme
 			if not test.with_suffix(".css").exists():
 				raise SystemExit(f"{TEXT_RED}{TEXT_CROSS} {TEXT_BOLD}{test}{TEXT_RESET}{TEXT_RED} theme not found.{TEXT_RESET}")
+
+	if args.windowcontrols_theme == "auto":
+		if platform == "linux":
+			args.windowcontrols_theme = "adwaita"
+		elif platform == "win32":
+			args.windowcontrols_theme = "windows"
+		elif platform == "darwin":
+			args.windowcontrols_theme = "macos"
+
+	if args.windowcontrols_layout == "auto":
+		if platform == "linux":
+			try:
+				args.windowcontrols_layout = subprocess.run(
+					args = ["gsettings", "get", "org.gnome.desktop.wm.preferences", "button-layout"],
+					check = True,
+					capture_output = True,
+					text = True
+				).stdout.strip().strip("'")
+			except:
+				args.windowcontrols_layout = WINDOWCONTROLS_PRESETS["gnome"]
+		elif platform == "win32":
+			args.windowcontrols_layout = WINDOWCONTROLS_PRESETS["windows"]
+		elif platform == "darwin":
+			args.windowcontrols_layout = WINDOWCONTROLS_PRESETS["macos"]
+	elif args.windowcontrols_layout in WINDOWCONTROLS_PRESETS:
+		args.windowcontrols_layout = WINDOWCONTROLS_PRESETS[args.windowcontrols_layout]
 
 	with TemporaryDirectory() as tmpdir:
 		tmp = Path(tmpdir)
@@ -302,7 +409,7 @@ if __name__ == "__main__":
 
 		print(f"{TEXT_BLUE}{TEXT_ARROW} Creating stage directory {TEXT_BOLD}{sourcedir}{TEXT_RESET}")
 
-		generate_libraryroot(libraryroot, args.extras, selected_theme, args.custom_css)
+		generate_libraryroot(libraryroot, args.extras, args.color_theme, args.windowcontrols_theme, args.windowcontrols_layout, args.custom_css)
 
 		targets = set()
 
@@ -318,6 +425,8 @@ if __name__ == "__main__":
 					targets.add(Path(reg_path).resolve())
 				except:
 					targets.add(Path(TARGET_WINDOWS).resolve())
+			elif t == "macos":
+				targets.add(Path(TARGET_MACOS).expanduser().resolve())
 			else:
 				targets.add(Path(t).expanduser().resolve())
 

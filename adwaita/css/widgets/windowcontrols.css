@@ -1,0 +1,79 @@
+:root
+{
+	--adw-windowcontrols-left-has-buttons: 0;
+	--adw-windowcontrols-left-buttons: 0;
+	--adw-windowcontrols-right-has-buttons: 1;
+	--adw-windowcontrols-right-buttons: 3;
+
+	--adw-windowcontrols-button-width: 24px;
+	--adw-windowcontrols-button-height: 24px;
+	--adw-windowcontrols-button-gap: 0px;
+	--adw-windowcontrols-buttons-margin-outer: 0px;
+	--adw-windowcontrols-buttons-margin-inner: 0px;
+
+	--adw-windowcontrols-margin-left: calc(var(--adw-windowcontrols-left-has-buttons) * (
+		var(--adw-windowcontrols-buttons-margin-outer) + var(--adw-windowcontrols-buttons-margin-inner) +
+		var(--adw-windowcontrols-left-buttons) * var(--adw-windowcontrols-button-width) +
+		(var(--adw-windowcontrols-left-buttons) - 1) * var(--adw-windowcontrols-button-gap)
+	));
+	--adw-windowcontrols-margin-right: calc(var(--adw-windowcontrols-right-has-buttons) * (
+		var(--adw-windowcontrols-buttons-margin-outer) + var(--adw-windowcontrols-buttons-margin-inner) +
+		var(--adw-windowcontrols-right-buttons) * var(--adw-windowcontrols-button-width) +
+		(var(--adw-windowcontrols-right-buttons) - 1) * var(--adw-windowcontrols-button-gap)
+	));
+}
+
+body.DesktopUI,
+html.client_chat_frame
+{
+	.title-area
+	{
+		height: 46px !important;
+		min-height: 46px !important;
+		bottom: unset !important;
+		cursor: default !important;
+		user-select: none !important;
+
+		.title-bar-actions
+		{
+			display: flex !important;
+			margin: 0 !important;
+			gap: var(--adw-windowcontrols-button-gap) !important;
+			padding: 0 !important;
+			height: 100% !important;
+			max-height: unset !important;
+			align-items: center !important;
+			user-select: none !important;
+
+			.title-area-icon
+			{
+				position: absolute !important;
+				top: calc((100% - var(--adw-windowcontrols-button-height)) / 2) !important;
+				bottom: calc((100% - var(--adw-windowcontrols-button-height)) / 2) !important;
+				width: var(--adw-windowcontrols-button-width) !important;
+				height: var(--adw-windowcontrols-button-height) !important;
+				padding: 0 !important;
+				margin: 0 !important;
+				box-sizing: border-box !important;
+				transition: var(--adw-button-transition) !important;
+				cursor: default !important;
+				z-index: 10 !important;
+				display: flex !important;
+				align-items: center !important;
+				align-content: center !important;
+			}
+		}
+	}
+
+	div._3Z7VQ1IMk4E3HsHvrkLNgo div.qP17eBPXkfezFfexZ4hC3
+	{
+		flex-basis: var(--adw-windowcontrols-margin-right) !important;
+		position: unset !important;
+
+		.title-area
+		{
+			-webkit-app-region: unset !important;
+			pointer-events: none !important;
+		}
+	}
+}

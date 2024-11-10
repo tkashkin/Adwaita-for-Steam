@@ -1,34 +1,21 @@
+:root
+{
+	--adw-windowcontrols-button-width: 24px;
+	--adw-windowcontrols-button-height: 24px;
+	--adw-windowcontrols-button-gap: 13px;
+	--adw-windowcontrols-buttons-margin-outer: 12px;
+	--adw-windowcontrols-buttons-margin-inner: 6px;
+}
+
 body.DesktopUI,
 html.client_chat_frame
 {
-	.title-area
-	{
-		min-height: 46px !important;
-		cursor: default !important;
-	}
-
 	.title-bar-actions
 	{
-		height: 36px !important;
-		max-height: 36px !important;
-		margin-top: 5px !important;
-		cursor: default !important;
-
-		&.window-controls
-		{
-			margin-right: 10px !important;
-		}
-
 		.title-area-icon
 		{
-			width: 24px !important;
-			height: 24px !important;
-			padding: 4px !important;
-			box-sizing: border-box !important;
 			border-radius: 50% !important;
-			margin-left: 14px !important;
 			background-color: rgba(var(--adw-window-fg-rgb), var(--adw-button-bg-opacity)) !important;
-			transition: var(--adw-button-transition) !important;
 
 			&:hover
 			{
@@ -77,17 +64,5 @@ html.client_chat_frame
 				-webkit-mask-image: var(--adw-icon-window-restore);
 			}
 		}
-	}
-
-	div._3Z7VQ1IMk4E3HsHvrkLNgo div.qP17eBPXkfezFfexZ4hC3
-	{
-		flex-basis: var(--adw-windowcontrols-margin-right) !important;
-	}
-
-	.title-bar-actions .title-area-icon.minimizeButton,
-	.title-bar-actions .title-area-icon.maximizeButton,
-	.title-bar-actions .title-area-icon.restoreButton
-	{
-		display: none !important;
 	}
 }

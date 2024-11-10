@@ -14,7 +14,7 @@ html.client_chat_frame
 
 			div.chatTabSetContainer
 			{
-				padding: 6px calc(var(--adw-windowcontrols-margin-right) + 6px) 6px calc(var(--adw-windowcontrols-margin-left) + 46px) !important;
+				padding: 6px var(--adw-windowcontrols-margin-right) 6px calc(var(--adw-windowcontrols-margin-left) + 40px) !important;
 				margin: 0 !important;
 				height: 34px !important;
 
@@ -279,6 +279,28 @@ html.client_chat_frame
 									{
 										fill: rgb(var(--adw-headerbar-fg-rgb)) !important;
 									}
+								}
+							}
+
+							div._2ve8VIOIUS5rjAzmJvjVS-
+							{
+								position: absolute !important;
+								left: 0 !important;
+								right: 0 !important;
+								width: auto !important;
+								height: 2px !important;
+								top: unset !important;
+								bottom: 0 !important;
+								pointer-events: none !important;
+								background: none !important;
+
+								div.jMumuBBbjOf_v5JU9RpmZ
+								{
+									position: unset !important;
+									width: 100px !important;
+									height: 2px !important;
+									margin: auto !important;
+									background: rgb(var(--adw-accent-rgb)) !important;
 								}
 							}
 						}

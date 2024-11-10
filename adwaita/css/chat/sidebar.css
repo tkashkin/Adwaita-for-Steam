@@ -63,9 +63,16 @@ html.client_chat_frame
 					display: grid !important;
 					grid-template-columns: 1fr !important;
 					align-items: center !important;
-					padding: 12px !important;
+					padding: 12px calc(var(--adw-windowcontrols-margin-right) + 80px) 12px calc(var(--adw-windowcontrols-margin-left) + 80px) !important;
 					margin: 0 !important;
 					background: inherit !important;
+					-webkit-mask-image: linear-gradient(to right,
+						rgba(0, 0, 0, 0) calc(var(--adw-windowcontrols-margin-left) + 80px),
+						rgba(0, 0, 0, 1) calc(var(--adw-windowcontrols-margin-left) + 86px),
+						rgba(0, 0, 0, 1) calc(100% - var(--adw-windowcontrols-margin-right) - 86px),
+						rgba(0, 0, 0, 0) calc(100% - var(--adw-windowcontrols-margin-right) - 80px),
+						rgba(0, 0, 0, 0)
+					) !important;
 					color: inherit !important;
 					font-family: var(--adw-text-font) !important;
 					font-size: var(--adw-text-header-size) !important;
@@ -316,14 +323,15 @@ html.client_chat_frame
 					bottom: 4px !important;
 					right: 4px !important;
 					background: rgb(var(--adw-accent-bg-rgb)) !important;
+					border-radius: var(--adw-button-pill-radius) !important;
 					color: rgb(var(--adw-accent-fg-rgb)) !important;
 					transform: none !important;
 					font-family: var(--adw-text-font) !important;
 					font-size: 10px !important;
 					line-height: 10px !important;
-					font-weight: 800 !important;
+					font-weight: 500 !important;
 					min-width: 10px !important;
-					letter-spacing: normal;
+					letter-spacing: normal !important;
 					padding: 1px !important;
 				}
 			}
@@ -586,7 +594,9 @@ html.client_chat_frame
 					}
 				}
 
-				div.playerNameQuickAccessContainer, div.clanName
+				div.playerNameQuickAccessContainer,
+				div.clanName,
+				div.ChatUnreadMessageIndicator
 				{
 					display: none !important;
 				}
@@ -665,7 +675,7 @@ html.client_chat_frame
 		div.listContentContainer
 		{
 			display: flex !important;
-            flex-direction: column !important;
+			flex-direction: column !important;
 			padding: 0 !important;
 			overflow: visible !important;
 			overflow-x: clip !important;
@@ -684,7 +694,12 @@ html.client_chat_frame
 				}
 			}
 
-			div.groupName, div.friendCategoryContainer, div.gameGroup div.friendsContainer div.friend, div.ChatRoomListGroupItem, div.friendInviteContainer
+			div.groupName,
+			div.friendCategoryContainer,
+			div.gameGroup div.friendsContainer div.friend,
+			div.ChatRoomListGroupItem,
+			div.friendInviteContainer,
+			div.unreadFriend
 			{
 				padding: 0 6px !important;
 				margin: 0 calc(6px - var(--adw-scrollbar-size)) 2px 6px !important;
@@ -768,22 +783,6 @@ html.client_chat_frame
 				height: fit-content !important;
 				margin: 0 !important;
 				padding: 0 !important;
-
-				img.groupIcon
-				{
-					width: 20px !important;
-					height: 20px !important;
-					padding: 0 !important;
-					margin: 0 !important;
-					position: absolute !important;
-					right: 5px !important;
-					top: 2px !important;
-					border-radius: var(--adw-gameicon-radius) !important;
-					border: 1px rgba(var(--adw-user-ingame-rgb), var(--adw-thin-border-opacity)) solid !important;
-					overflow: hidden !important;
-					box-shadow: none !important;
-					transform: none !important;
-				}
 			}
 
 			div.SortByRecent
@@ -800,6 +799,42 @@ html.client_chat_frame
 				cursor: default !important;
 			}
 
+			img.groupIcon, img.gameIcon
+			{
+				width: 20px !important;
+				height: 20px !important;
+				padding: 0 !important;
+				margin: 0 !important;
+				position: absolute !important;
+				right: 5px !important;
+				top: 2px !important;
+				border-radius: var(--adw-gameicon-radius) !important;
+				border: 1px rgba(var(--adw-user-ingame-rgb), var(--adw-thin-border-opacity)) solid !important;
+				overflow: hidden !important;
+				box-shadow: none !important;
+				transform: none !important;
+			}
+
+			div.FriendMessageCount
+			{
+				position: unset !important;
+				right: 0 !important;
+				margin: 0 !important;
+				background: rgb(var(--adw-accent-bg-rgb)) !important;
+				border-radius: var(--adw-button-pill-radius) !important;
+				color: rgb(var(--adw-accent-fg-rgb)) !important;
+				box-shadow: none !important;
+				transform: none !important;
+				font-family: var(--adw-text-font) !important;
+				font-size: 14px !important;
+				line-height: 14px !important;
+				font-weight: 500 !important;
+				min-width: 14px !important;
+				height: 14px !important;
+				letter-spacing: normal !important;
+				padding: 2px !important;
+			}
+
 			&:hover div.ExpandPlusMinus, div.SortByRecent:hover
 			{
 				opacity: 1 !important;
@@ -811,6 +846,7 @@ html.client_chat_frame
 				padding: 0 !important;
 				margin: 0 !important;
 				height: 40px !important;
+				align-items: center !important;
 
 				div.nibodjvvrm86uCfnnAn4g
 				{
@@ -1075,7 +1111,7 @@ html.client_chat_frame
 		}
 	}
 
-	div.cancelAddFriends
+	div.cancelAddFriends, div.unreadMessageViolator
 	{
 		display: none !important;
 	}
