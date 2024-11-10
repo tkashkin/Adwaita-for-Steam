@@ -252,17 +252,17 @@ def generate_libraryroot(target: Path, extras: list[Path], color_theme: str, win
 		content += "\n/* Window controls theme */\n"
 		content += format_import(STEAM_LOOPBACK_ADWAITA, f"windowcontrols/{windowcontrols_theme}.css")
 
+	if custom_css:
+		print(f"{TEXT_BLUE}{TEXT_ARROW} Applying custom css...{TEXT_RESET}")
+		content += "\n/* Custom CSS */\n"
+		content += format_import(STEAM_LOOPBACK_ADWAITA, f"custom/{CUSTOM_CSS}")
+
 	if windowcontrols_layout:
 		if ':' not in windowcontrols_layout:
 			windowcontrols_layout = ':' + windowcontrols_layout
 		print(f"{TEXT_BLUE}{TEXT_ARROW} Applying window controls layout {TEXT_BOLD}{windowcontrols_layout}{TEXT_RESET}{TEXT_BLUE}...{TEXT_RESET}")
 		content += f"\n/* Window controls layout - {windowcontrols_layout} */\n"
 		content += generate_windowcontrols(windowcontrols_layout)
-
-	if custom_css:
-		print(f"{TEXT_BLUE}{TEXT_ARROW} Applying custom css...{TEXT_RESET}")
-		content += "\n/* Custom CSS */\n"
-		content += format_import(STEAM_LOOPBACK_ADWAITA, f"custom/{CUSTOM_CSS}")
 
 	target.open('w').write(content)
 
