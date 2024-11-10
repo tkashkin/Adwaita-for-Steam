@@ -1,0 +1,79 @@
+/* Header Background */
+body.DesktopUI div._3KDkLoCR8OM8xfdQysKn9t
+{
+	background: rgb(var(--adw-view-bg-rgb)) !important;
+}
+
+/* Header Gradient */
+body.DesktopUI div._3mZ2rKd2RECK4q4ufmsDYX.pHDI1ddoKXceD5KL7W-4z
+{
+	background: none !important;
+}
+
+/* Header Bottom Bar */
+body.DesktopUI div.SEmVpmXrYVl3OxL1sDFTg
+{
+	background: none !important;
+}
+
+/* Body Background */
+body.DesktopUI div._1bq4x9pa4-9RLY-dXWUZTp
+{
+	background: rgb(var(--adw-window-bg-rgb)) !important;
+}
+
+/* Cards */
+body.DesktopUI div._1VNuYHM6BPBOJspC6zPf5r:hover
+{
+	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-hover-opacity)) !important;
+	border-radius: var(--adw-card-radius) !important;
+}
+
+/* Active Download Cards */
+body.DesktopUI div._1VNuYHM6BPBOJspC6zPf5r.IbePLaw-vSvhG1GTenYFg {
+	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-opacity)) !important;
+}
+
+body.DesktopUI div.IbePLaw-vSvhG1GTenYFg .OINnOU8K5HzPe2nzczpZi,
+body.DesktopUI div.IbePLaw-vSvhG1GTenYFg .OINnOU8K5HzPe2nzczpZi:hover {
+	border: none !important;
+}
+
+/* Buttons */
+body.DesktopUI button._3oavRVhIS9tC3vBsFT4Ggi.DialogButton:enabled,
+body.DesktopUI button._3Tfp8-wTAttW3WVa_X9JVC.DialogButton:enabled,
+body.DesktopUI button._1GdR5LbENV7LOGROJBxohI.DialogButton:enabled
+{
+	background: rgba(var(--adw-window-fg-rgb), var(--adw-button-bg-opacity)) !important;
+	border-radius: var(--adw-button-radius) !important;
+}
+
+body.DesktopUI button._3oavRVhIS9tC3vBsFT4Ggi.DialogButton:active,
+body.DesktopUI button._3Tfp8-wTAttW3WVa_X9JVC.DialogButton:active,
+body.DesktopUI button._1GdR5LbENV7LOGROJBxohI.DialogButton:active
+{
+	background: rgba(var(--adw-window-fg-rgb), var(--adw-button-bg-opacity-active)) !important;
+	border-radius: var(--adw-button-radius) !important;
+}
+
+body.DesktopUI button._3oavRVhIS9tC3vBsFT4Ggi.DialogButton:hover,
+body.DesktopUI button._3Tfp8-wTAttW3WVa_X9JVC.DialogButton:hover,
+body.DesktopUI button._1GdR5LbENV7LOGROJBxohI.DialogButton:hover
+{
+	background: rgba(var(--adw-window-fg-rgb), var(--adw-button-bg-opacity-hover)) !important;
+	border-radius: var(--adw-button-radius) !important;
+}
+
+body.DesktopUI button._3oavRVhIS9tC3vBsFT4Ggi.DialogButton::before,
+body.DesktopUI button._3Tfp8-wTAttW3WVa_X9JVC.DialogButton::before,
+body.DesktopUI button._1GdR5LbENV7LOGROJBxohI.DialogButton:before
+{
+	box-shadow: none !important;
+}
+
+body.DesktopUI button._3oavRVhIS9tC3vBsFT4Ggi.DialogButton:hover::before,
+body.DesktopUI button._3Tfp8-wTAttW3WVa_X9JVC.DialogButton:hover::before,
+body.DesktopUI button._1GdR5LbENV7LOGROJBxohI.DialogButton:hover::before
+{
+	box-shadow: none !important;
+}

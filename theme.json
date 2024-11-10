@@ -43,6 +43,10 @@
         "adwaita/css/main/library/sidebar/gamelist.css": ["all"],
         "adwaita/css/main/library/sidebar/sidebar.css": ["all"],
 
+        "adwaita/css/main/library/collections/collections.css": ["all"],
+
+        "adwaita/css/main/library/downloads/downloads.css": ["all"],
+
         "adwaita/css/main/library/library.css": ["all"],
 
         "adwaita/css/widgets/avatars.css": ["all"],
