@@ -276,6 +276,24 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA button._1kCN0pAntrcGCSmcc-vYdk
 	font-weight: var(--adw-text-title4-weight) !important;
 }
 
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA button._1kCN0pAntrcGCSmcc-vYdk
+{
+	background: rgba(var(--adw-window-fg-rgb), var(--adw-button-bg-opacity)) !important;
+	border-radius: var(--adw-button-radius) !important;
+}
+
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA button._1kCN0pAntrcGCSmcc-vYdk:active
+{
+	background: rgba(var(--adw-window-fg-rgb), var(--adw-button-bg-opacity-active)) !important;
+	border-radius: var(--adw-button-radius) !important;
+}
+
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA button._1kCN0pAntrcGCSmcc-vYdk:hover
+{
+	background: rgba(var(--adw-window-fg-rgb), var(--adw-button-bg-opacity-hover)) !important;
+	border-radius: var(--adw-button-radius) !important;
+}
+
 body.DesktopUI div[class*="appdetails_Container_"] svg[class*="writereview_ThumbIcon_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA svg._2Jkk-4RGWzhce22lSnA9Em
 {
