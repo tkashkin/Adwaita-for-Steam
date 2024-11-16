@@ -302,7 +302,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2SAb6geDpe6toA1GaP0GjH div.My1be
 
 /* Post Game Summary */
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="spotlightgameplaysummary_SummaryCarouselContainer_"],
-body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.wgbDI6To-SKawn9wQwVaw
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2MKO5j24KqDdD-92hH5FXi
 {
 	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-opacity)) !important;
 	box-shadow: var(--adw-card-shadow) !important;
@@ -310,7 +310,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.wgbDI6To-SKawn9wQwVaw
 }
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="spotlightgameplaysummary_SummaryCarouselContainer_"]::after,
-body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.wgbDI6To-SKawn9wQwVaw::after
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2MKO5j24KqDdD-92hH5FXi::after
 {
 	box-shadow: none !important;
 }
@@ -326,7 +326,7 @@ body.DesktopUI div[class*="appdetails_Container_"] [class*="spotlightgameplaysum
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA ._1jiiOndFINUereBkqdHFYm,
 
 body.DesktopUI div[class*="appdetails_Container_"] [class*="spotlightgameplaysummary_GamePlaySummaryHeader_"],
-body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA ._2_sR8WGLby5dt8XUSln6R7,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA .P_gQ8X-yCsgXeXpP68KS0,
 
 body.DesktopUI div[class*="appdetails_Container_"] [class*="appdetailssectionheader_LabelText_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA ._3i0kopAostOz2IDi9HqmeN
@@ -349,11 +349,26 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA ._1AIgWpLviF3aBSaRbYIwWM
 }
 
 body.DesktopUI div[class*="appdetails_Container_"] [class*="appdetailsachievementssection_Stats_"],
-body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA .VKo9pLPbwpF3xIzL8Wnou
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div.VKo9pLPbwpF3xIzL8Wnou,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2gLHbXukQBdrIKhqEYVvOe
 {
 	color: rgba(var(--adw-window-fg-rgb), var(--adw-dim-label-opacity)) !important;
 	font-family: var(--adw-text-font) !important;
 	font-weight: var(--adw-text-base-weight) !important;
+}
+
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._39Y01uSRcLiDg5DneTTR0m
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-weight: var(--adw-text-base-weight) !important;
+}
+
+body.DesktopUI div._3ugJ_KPVlOd9oeYm-fYC_w
+{
+	color: rgb(var(--adw-window-fg-rgb)) !important;
+	font-family: var(--adw-text-font) !important;
+	font-weight: var(--adw-text-header-weight) !important;
 }
 
 /* Activity Post */
