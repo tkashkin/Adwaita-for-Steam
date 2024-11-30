@@ -1,0 +1,79 @@
+:root {
+	/* The main accent color and the matching text value */
+	--adw-accent-bg-rgb: 156, 207, 216;
+	--adw-accent-fg-rgb: 25, 23, 36;
+	--adw-accent-rgb: 156, 207, 216;
+
+	/* destructive-action buttons */
+	--adw-destructive-bg-rgb: 235, 111, 146;
+	--adw-destructive-fg-rgb: 224, 222, 244;
+	--adw-destructive-rgb: 240, 141, 169;
+
+	/* Levelbars, entries, labels and infobars. These don't need text colors */
+	--adw-success-bg-rgb: 49, 116, 143;
+	--adw-success-fg-rgb: 156, 207, 216;
+	--adw-success-rgb: 156, 216, 208;
+
+	--adw-warning-bg-rgb: 246, 193, 119;
+	--adw-warning-fg-rgb: 25, 23, 36;
+	--adw-warning-fg-a: 0.8;
+	--adw-warning-rgb: 235, 188, 186;
+
+	--adw-error-bg-rgb: 235, 111, 146;
+	--adw-error-fg-rgb: 224, 222, 244;
+	--adw-error-rgb: 240, 141, 169;
+
+	/* Window */
+	--adw-window-bg-rgb: 25, 23, 36;
+	--adw-window-fg-rgb: 224, 222, 244;
+
+	/* Views - e.g. text view or tree view */
+	--adw-view-bg-rgb: 31, 29, 46;
+	--adw-view-fg-rgb: 224, 222, 244;
+
+	/* Header bar, search bar, tab bar */
+	--adw-headerbar-bg-rgb: 25, 23, 36;
+	--adw-headerbar-fg-rgb: 224, 222, 244;
+	--adw-headerbar-border-rgb: 38, 35, 58;
+	--adw-headerbar-backdrop-rgb: 31, 29, 46;
+	--adw-headerbar-shade-rgb: 0, 0, 0;
+	--adw-headerbar-shade-a: 0.36;
+	--adw-headerbar-darker-shade-rgb: 0, 0, 0;
+	--adw-headerbar-darker-shade-a: 0.9;
+
+	/* Split pane views */
+	--adw-sidebar-bg-rgb: 25, 23, 36;
+	--adw-sidebar-fg-rgb: 224, 222, 244;
+	--adw-sidebar-backdrop-rgb: 38, 35, 58;
+	--adw-sidebar-shade-rgb: 0, 0, 0;
+	--adw-sidebar-shade-a: 0.36;
+
+	--adw-secondary-sidebar-bg-rgb: 25, 23, 36;
+	--adw-secondary-sidebar-fg-rgb: 224, 222, 244;
+	--adw-secondary-sidebar-backdrop-rgb: 38, 35, 58;
+	--adw-secondary-sidebar-shade-rgb: 0, 0, 0;
+	--adw-secondary-sidebar-shade-a: 0.36;
+
+	/* Cards, boxed lists */
+	--adw-card-bg-rgb: 255, 255, 255;
+	--adw-card-bg-a: 0.08;
+	--adw-card-fg-rgb: 255, 255, 255;
+	--adw-card-shade-rgb: 0, 0, 0;
+	--adw-card-shade-a: 0.36;
+
+	/* Dialogs */
+	--adw-dialog-bg-rgb: 31, 29, 46;
+	--adw-dialog-fg-rgb: 224, 222, 244;
+
+	/* Popovers */
+	--adw-popover-bg-rgb: 31, 29, 46;
+	--adw-popover-fg-rgb: 224, 222, 244;
+
+	/* Thumbnails */
+	--adw-thumbnail-bg-rgb: 31, 29, 46;
+	--adw-popover-fg-rgb: 224, 222, 244;
+
+	/* Miscellaneous */
+	--adw-shade-rgb: 0, 0, 0;
+	--adw-shade-a: 0.36;
+}
