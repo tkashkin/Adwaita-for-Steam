@@ -236,33 +236,36 @@ def generate_libraryroot(target: Path, extras: list[Path], color_theme: str, win
 			we = extra.removesuffix(".css")
 			test = extrasdir / we
 			if test.with_suffix(".css").exists():
-				print(f"{TEXT_BLUE}{TEXT_ARROW} Applying extra {TEXT_BOLD}{we}{TEXT_RESET}{TEXT_BLUE}...{TEXT_RESET}")
+				print(f"{TEXT_BLUE}{TEXT_ARROW} Applying extra {TEXT_BOLD}{we}{TEXT_RESET}")
 				content += format_import(STEAM_LOOPBACK_ADWAITA, f"extras/{we}.css")
 			else:
 				print(f"{TEXT_PURPLE}{TEXT_INFO} Extra: {TEXT_BOLD}{we}{TEXT_RESET}{TEXT_PURPLE} not found!{TEXT_RESET}")
 		print()
 
 	if color_theme:
-		print(f"{TEXT_BLUE}{TEXT_ARROW} Applying color theme {TEXT_BOLD}{color_theme}{TEXT_RESET}{TEXT_BLUE}...{TEXT_RESET}")
+		print(f"{TEXT_BLUE}{TEXT_ARROW} Applying color theme {TEXT_BOLD}{color_theme}{TEXT_RESET}")
 		content += "\n/* Color theme */\n"
 		content += format_import(STEAM_LOOPBACK_ADWAITA, f"colorthemes/{color_theme}/{color_theme}.css")
 
 	if windowcontrols_theme:
-		print(f"{TEXT_BLUE}{TEXT_ARROW} Applying window controls theme {TEXT_BOLD}{windowcontrols_theme}{TEXT_RESET}{TEXT_BLUE}...{TEXT_RESET}")
+		print(f"{TEXT_BLUE}{TEXT_ARROW} Applying window controls theme {TEXT_BOLD}{windowcontrols_theme}{TEXT_RESET}")
 		content += "\n/* Window controls theme */\n"
 		content += format_import(STEAM_LOOPBACK_ADWAITA, f"windowcontrols/{windowcontrols_theme}.css")
 
 	if custom_css:
-		print(f"{TEXT_BLUE}{TEXT_ARROW} Applying custom css...{TEXT_RESET}")
+		print(f"{TEXT_BLUE}{TEXT_ARROW} Applying custom css{TEXT_RESET}")
 		content += "\n/* Custom CSS */\n"
 		content += format_import(STEAM_LOOPBACK_ADWAITA, f"custom/{CUSTOM_CSS}")
 
-	if windowcontrols_layout:
-		if ':' not in windowcontrols_layout:
-			windowcontrols_layout = ':' + windowcontrols_layout
-		print(f"{TEXT_BLUE}{TEXT_ARROW} Applying window controls layout {TEXT_BOLD}{windowcontrols_layout}{TEXT_RESET}{TEXT_BLUE}...{TEXT_RESET}")
-		content += f"\n/* Window controls layout - {windowcontrols_layout} */\n"
-		content += generate_windowcontrols(windowcontrols_layout)
+	if not windowcontrols_layout:
+		windowcontrols_layout = ":"
+
+	if ":" not in windowcontrols_layout:
+		windowcontrols_layout = ":" + windowcontrols_layout
+
+	print(f"{TEXT_BLUE}{TEXT_ARROW} Applying window controls layout {TEXT_BOLD}{windowcontrols_layout}{TEXT_RESET}")
+	content += f"\n/* Window controls layout - {windowcontrols_layout} */\n"
+	content += generate_windowcontrols(windowcontrols_layout)
 
 	target.open('w').write(content)
 
@@ -272,7 +275,7 @@ def find_color_themes() -> list[Path]:
 
 # Patching
 def patch_client_css(target: Path, name: str):
-	print(f"{TEXT_BLUE}{TEXT_ARROW} Patching Steam Client {TEXT_BOLD}{name}{TEXT_RESET}{TEXT_BLUE} Files...{TEXT_RESET}")
+	print(f"{TEXT_BLUE}{TEXT_ARROW} Patching Steam Client {TEXT_BOLD}{name}{TEXT_RESET}{TEXT_BLUE} Files{TEXT_RESET}")
 
 	if name == "Library":
 		target_css = target / STEAM_LIBRARY_CSS
@@ -310,10 +313,10 @@ def uninstall_theme(target: Path):
 	custom_library = target / STEAM_CUSTOM_LIBRARY
 	steamui = target / STEAM_UI_DIR
 
-	print(f"{TEXT_BLUE}{TEXT_ARROW} Uninstalling, resetting patched Steam CSS...{TEXT_RESET}")
+	print(f"{TEXT_BLUE}{TEXT_ARROW} Uninstalling, resetting patched Steam CSS{TEXT_RESET}")
 
 	if not steamui.is_dir():
-		print(f"{TEXT_PURPLE}{TEXT_INFO} steamui in {TEXT_BOLD}{target}{TEXT_RESET}{TEXT_PURPLE} not found, skipping...{TEXT_RESET}")
+		print(f"{TEXT_PURPLE}{TEXT_INFO} steamui in {TEXT_BOLD}{target}{TEXT_RESET}{TEXT_PURPLE} not found, skipping{TEXT_RESET}")
 		return
 
 	open(custom_library, 'w').close()
