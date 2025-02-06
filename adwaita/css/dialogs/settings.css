@@ -865,7 +865,8 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3FYSCKU0zMm_zbWS56SCVu
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.settings_BuiltInLayoutButtons_3KH4C button.DialogButton,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton,
 body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3FYSCKU0zMm_zbWS56SCVu button.DialogButton
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3FYSCKU0zMm_zbWS56SCVu button.DialogButton,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._1aw7cA3mAZfWt8idAlVJWi button.millenniumIconButton
 {
 	cursor: default !important;
 	border-radius: var(--adw-button-radius) !important;
@@ -888,7 +889,8 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3FYSCKU0zMm_zbWS56SCVu button.Di
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.settings_BuiltInLayoutButtons_3KH4C button.DialogButton:hover,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton:hover,
 body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton:hover,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3FYSCKU0zMm_zbWS56SCVu button.DialogButton:hover
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3FYSCKU0zMm_zbWS56SCVu button.DialogButton:hover,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._1aw7cA3mAZfWt8idAlVJWi button.millenniumIconButton:hover
 {
 	background: rgba(var(--adw-window-fg-rgb), var(--adw-hover-opacity)) !important;
 }
@@ -896,7 +898,8 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3FYSCKU0zMm_zbWS56SCVu button.Di
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.settings_BuiltInLayoutButtons_3KH4C button.DialogButton:active,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton:active,
 body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3KH4CAWiBX2hESrbRk4DBn button.DialogButton:active,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3FYSCKU0zMm_zbWS56SCVu button.DialogButton:active
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3FYSCKU0zMm_zbWS56SCVu button.DialogButton:active,
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._1aw7cA3mAZfWt8idAlVJWi button.millenniumIconButton:active
 {
 	background: rgba(var(--adw-window-fg-rgb), var(--adw-active-opacity)) !important;
 }
@@ -907,6 +910,18 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3KH4CAWiBX2hESrbRk4DBn button > 
 body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._3FYSCKU0zMm_zbWS56SCVu button > svg
 {
 	display: none !important;
+}
+
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._1aw7cA3mAZfWt8idAlVJWi button.millenniumIconButton
+{
+	overflow: unset !important;
+}
+
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._1aw7cA3mAZfWt8idAlVJWi button.millenniumIconButton > svg
+{
+	display: block !important;
+	width: 16px !important;
+	height: 16px !important;
 }
 
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.settings_BuiltInLayoutButtons_3KH4C button.DialogButton::after,

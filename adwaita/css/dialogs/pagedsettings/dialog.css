@@ -28,6 +28,13 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._18QCu-7MTzd51UpVbYysDy
 	gap: 2px !important;
 }
 
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._18QCu-7MTzd51UpVbYysDy div.millennium-tabs-list
+{
+	display: flex !important;
+    flex-direction: column !important;
+	gap: 2px !important;
+}
+
 body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageListItem_"],
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.bkfjn0yka2uHNqEvWZaTJ,
 body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._1-vlriAtKYDViAEunue4VO

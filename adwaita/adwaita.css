@@ -1,0 +1,50 @@
+@import url("css/_root/colors.css");
+@import url("css/_root/icons.css");
+@import url("css/_root/localization.css");
+@import url("css/_root/opacity.css");
+@import url("css/_root/text.css");
+@import url("css/_root/variables.css");
+
+@import url("css/widgets/avatars.css");
+@import url("css/widgets/buttons.css");
+@import url("css/widgets/cards.css");
+@import url("css/widgets/checkboxes.css");
+@import url("css/widgets/dialogs.css");
+@import url("css/widgets/entries.css");
+@import url("css/widgets/lists.css");
+@import url("css/widgets/popups.css");
+@import url("css/widgets/scrollbars.css");
+@import url("css/widgets/windowcontrols.css");
+
+@import url("css/main/headerbar/buttons.css");
+@import url("css/main/headerbar/headerbar.css");
+@import url("css/main/headerbar/menu.css");
+@import url("css/main/headerbar/navigation.css");
+
+@import url("css/main/library/details/header.css");
+@import url("css/main/library/details/activity.css");
+@import url("css/main/library/details/details.css");
+@import url("css/main/library/details/event-dialog.css");
+
+@import url("css/main/library/home/game-card.css");
+@import url("css/main/library/home/home.css");
+@import url("css/main/library/home/news.css");
+
+@import url("css/main/library/sidebar/gamelist.css");
+@import url("css/main/library/sidebar/sidebar.css");
+
+@import url("css/main/library/collections/collections.css");
+
+@import url("css/main/library/downloads/downloads.css");
+
+@import url("css/main/library/library.css");
+
+@import url("css/chat/chat.css");
+@import url("css/chat/sidebar.css");
+@import url("css/chat/messages.css");
+
+@import url("css/dialogs/pagedsettings/dialog.css");
+@import url("css/dialogs/pagedsettings/rows.css");
+@import url("css/dialogs/login.css");
+@import url("css/dialogs/settings.css");
+@import url("css/dialogs/appproperties.css");

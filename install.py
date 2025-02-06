@@ -71,57 +71,7 @@ extrasdir = Path(EXTRAS_DIR)
 
 # CSS List for @import
 LIBRARY_FILES = [
-	"css/_root/colors.css",
-	"css/_root/icons.css",
-	"css/_root/localization.css",
-	"css/_root/opacity.css",
-	"css/_root/text.css",
-	"css/_root/variables.css",
-
-	"css/widgets/avatars.css",
-	"css/widgets/buttons.css",
-	"css/widgets/cards.css",
-	"css/widgets/checkboxes.css",
-	"css/widgets/dialogs.css",
-	"css/widgets/entries.css",
-	"css/widgets/lists.css",
-	"css/widgets/popups.css",
-	"css/widgets/scrollbars.css",
-	"css/widgets/windowcontrols.css",
-
-	"css/main/headerbar/buttons.css",
-	"css/main/headerbar/headerbar.css",
-	"css/main/headerbar/menu.css",
-	"css/main/headerbar/navigation.css",
-
-	"css/main/library/details/header.css",
-	"css/main/library/details/activity.css",
-	"css/main/library/details/details.css",
-	"css/main/library/details/event-dialog.css",
-
-	"css/main/library/home/game-card.css",
-	"css/main/library/home/home.css",
-	"css/main/library/home/news.css",
-
-	"css/main/library/sidebar/gamelist.css",
-	"css/main/library/sidebar/sidebar.css",
-
-	"css/main/library/collections/collections.css",
-
-	"css/main/library/downloads/downloads.css",
-
-	"css/main/library/library.css",
-
-	"css/chat/chat.css",
-	"css/chat/sidebar.css",
-	"css/chat/messages.css",
-
-	"css/dialogs/pagedsettings/dialog.css",
-	"css/dialogs/pagedsettings/rows.css",
-
-	"css/dialogs/login.css",
-	"css/dialogs/settings.css",
-	"css/dialogs/appproperties.css"
+	"adwaita.css"
 ]
 
 WINDOWCONTROLS_PRESETS = {
@@ -358,6 +308,11 @@ if __name__ == "__main__":
 	parser.add_argument("-u", "--uninstall", action = "store_true", help = "Uninstall theme")
 	args = parser.parse_args()
 
+	if args.list_options:
+		list_options("color themes", find_color_themes(), ".css", colorthemedir, "color-theme")
+		list_options("extras", find_extras(), ".css", extrasdir, "extras")
+		exit(0)
+
 	if args.target is None:
 		if platform == "linux":
 			args.target = ["normal", "flatpak"]
@@ -366,9 +321,27 @@ if __name__ == "__main__":
 		elif platform == "darwin":
 			args.target = ["macos"]
 
-	if args.list_options:
-		list_options("color themes", find_color_themes(), ".css", colorthemedir, "color-theme")
-		list_options("extras", find_extras(), ".css", extrasdir, "extras")
+	targets = set()
+	for t in args.target:
+		if t == "normal":
+			targets.add(Path(TARGET_NORMAL).expanduser().resolve())
+		elif t == "flatpak":
+			targets.add(Path(TARGET_FLATPAK).expanduser().resolve())
+		elif t == "windows":
+			try:
+				import winreg
+				reg_path = winreg.QueryValueEx(winreg.OpenKey(winreg.HKEY_LOCAL_MACHINE, "SOFTWARE\\WOW6432Node\\Valve\\Steam"), "InstallPath")[0]
+				targets.add(Path(reg_path).resolve())
+			except:
+				targets.add(Path(TARGET_WINDOWS).resolve())
+		elif t == "macos":
+			targets.add(Path(TARGET_MACOS).expanduser().resolve())
+		else:
+			targets.add(Path(t).expanduser().resolve())
+
+	if args.uninstall:
+		for target in targets:
+			uninstall_theme(target)
 		exit(0)
 
 	if args.color_theme:
@@ -418,32 +391,9 @@ if __name__ == "__main__":
 
 		generate_libraryroot(libraryroot, args.extras, args.color_theme, args.windowcontrols_theme, args.windowcontrols_layout, args.custom_css)
 
-		targets = set()
-
-		for t in args.target:
-			if t == "normal":
-				targets.add(Path(TARGET_NORMAL).expanduser().resolve())
-			elif t == "flatpak":
-				targets.add(Path(TARGET_FLATPAK).expanduser().resolve())
-			elif t == "windows":
-				try:
-					import winreg
-					reg_path = winreg.QueryValueEx(winreg.OpenKey(winreg.HKEY_LOCAL_MACHINE, "SOFTWARE\\WOW6432Node\\Valve\\Steam"), "InstallPath")[0]
-					targets.add(Path(reg_path).resolve())
-				except:
-					targets.add(Path(TARGET_WINDOWS).resolve())
-			elif t == "macos":
-				targets.add(Path(TARGET_MACOS).expanduser().resolve())
-			else:
-				targets.add(Path(t).expanduser().resolve())
-
 		for target in targets:
 			if not target.is_dir():
 				print(f"{TEXT_PURPLE}{TEXT_INFO} Directory {TEXT_BOLD}{target}{TEXT_RESET}{TEXT_PURPLE} does not exist{TEXT_RESET}")
-				continue
-
-			if args.uninstall:
-				uninstall_theme(target)
 				continue
 
 			patch_client_css(target, "Library")

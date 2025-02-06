@@ -27,17 +27,17 @@ body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 > div._9sPoVBFyE_vE87mnZJ5aB:has(:foc
 body.DesktopUI div.library_Container_3xRRJ > div.library_LeftListSizableContainer_9sPoV::after,
 body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 > div._9sPoVBFyE_vE87mnZJ5aB::after
 {
-	content: "";
-	position: absolute;
-	background-color: rgba(0, 0, 0, 0.25);
-	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.175), rgba(0, 0, 0, 0.035) 40px, rgba(0, 0, 0, 0) 56px), linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.035) 7px, rgba(0, 0, 0, 0) 24px);
-	top: 0;
-	left: 300px;
-	width: 100vw;
-	height: 100vw;
-	opacity: 0;
-	transition: opacity 150ms var(--adw-base-transition-curve);
-	pointer-events: none;
+	content: "" !important;
+	position: absolute !important;
+	background-color: rgba(0, 0, 0, 0.25) !important;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.175), rgba(0, 0, 0, 0.035) 40px, rgba(0, 0, 0, 0) 56px), linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.035) 7px, rgba(0, 0, 0, 0) 24px) !important;
+	top: 0 !important;
+	left: 300px !important;
+	width: 100vw !important;
+	height: 100vw !important;
+	opacity: 0 !important;
+	transition: opacity 150ms var(--adw-base-transition-curve) !important;
+	pointer-events: none !important;
 }
 
 body.DesktopUI div.library_Container_3xRRJ > div.library_LeftListSizableContainer_9sPoV:hover::after,
@@ -45,7 +45,7 @@ body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 > div._9sPoVBFyE_vE87mnZJ5aB:hover::a
 body.DesktopUI div.library_Container_3xRRJ > div.library_LeftListSizableContainer_9sPoV:has(:focus-visible)::after,
 body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 > div._9sPoVBFyE_vE87mnZJ5aB:has(:focus-visible)::after
 {
-	opacity: 1;
+	opacity: 1 !important;
 }
 
 body.DesktopUI div[class*="gamelistbar_GameListHomeAndSearch_"],
