@@ -11,7 +11,7 @@
     },
 
     "inject": {
-        "adwaita/millennium.css": ["all"]
+        "millennium/millennium.css": ["all"]
     },
 
     "patches": {
@@ -42,9 +42,18 @@
         "Window Controls Theme": {
             "type":  "dropdown",
             "values": {
-                "adwaita": { "adwaita/windowcontrols/adwaita.css": ["all"] },
-                "macos": { "adwaita/windowcontrols/macos.css": ["all"] },
-                "windows": { "adwaita/windowcontrols/windows.css": ["all"] }
+                "Adwaita": { "adwaita/windowcontrols/adwaita.css": ["all"] },
+                "macOS": { "adwaita/windowcontrols/macos.css": ["all"] },
+                "Windows": { "adwaita/windowcontrols/windows.css": ["all"] }
+            }
+        },
+        "Window Controls Layout": {
+            "type":  "dropdown",
+            "values": {
+                "Adwaita": { "millennium/windowcontrols/adwaita.css": ["all"] },
+                "Pantheon": { "millennium/windowcontrols/pantheon.css": ["all"] },
+                "macOS": { "millennium/windowcontrols/macos.css": ["all"] },
+                "Windows": { "millennium/windowcontrols/windows.css": ["all"] }
             }
         },
         "Rounded Corners": {

@@ -18,7 +18,7 @@
 	"Patches": [
 		{
 			"MatchRegexString": ".*",
-			"TargetCss": "adwaita/millennium.css"
+			"TargetCss": "millennium/millennium.css"
 		}
 	],
 
@@ -57,6 +57,16 @@
 				"Adwaita": { "TargetCss": { "affects": [".*"], "src": "adwaita/windowcontrols/adwaita.css" } },
 				"macOS": { "TargetCss": { "affects": [".*"], "src": "adwaita/windowcontrols/macos.css" } },
 				"Windows": { "TargetCss": { "affects": [".*"], "src": "adwaita/windowcontrols/windows.css" } }
+			}
+		},
+		"Window controls layout": {
+			"description": "Window control buttons layout",
+			"default": "Adwaita",
+			"values": {
+				"Adwaita": { "TargetCss": { "affects": [".*"], "src": "millennium/windowcontrols/adwaita.css" } },
+				"Pantheon": { "TargetCss": { "affects": [".*"], "src": "millennium/windowcontrols/pantheon.css" } },
+				"macOS": { "TargetCss": { "affects": [".*"], "src": "millennium/windowcontrols/macos.css" } },
+				"Windows": { "TargetCss": { "affects": [".*"], "src": "millennium/windowcontrols/windows.css" } }
 			}
 		},
 		"Remove rounded corners": {
