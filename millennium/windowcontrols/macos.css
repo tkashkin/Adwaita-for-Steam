@@ -1,0 +1,53 @@
+/* Window controls layout - close,minimize,maximize: */
+:root
+{
+	--adw-windowcontrols-left-has-buttons: 1 !important;
+	--adw-windowcontrols-left-buttons: 3 !important;
+	--adw-windowcontrols-right-has-buttons: 0 !important;
+	--adw-windowcontrols-right-buttons: 0 !important;
+	--adw-windowcontrols-close-margin-left: calc(1 * (var(--adw-windowcontrols-buttons-margin-outer) + var(--adw-windowcontrols-button-width) + var(--adw-windowcontrols-buttons-margin-inner))) !important;
+	--adw-windowcontrols-close-margin-right: calc(0 * (var(--adw-windowcontrols-buttons-margin-outer) + var(--adw-windowcontrols-button-width) + var(--adw-windowcontrols-buttons-margin-inner))) !important;
+}
+
+body.DesktopUI,
+html.client_chat_frame
+{
+	.title-bar-actions .title-area-icon
+	{
+		visibility: hidden !important;
+
+		&.closeButton
+		{
+			visibility: visible !important;
+			left: calc(var(--adw-windowcontrols-buttons-margin-outer) + 0 * var(--adw-windowcontrols-button-width) + 0 * var(--adw-windowcontrols-button-gap)) !important;
+
+			html.client_chat_frame div.chat_main.singlewindow:not(:has(div.friendsListContainer.collapsed)) div.multiChatDialog &
+			{
+				visibility: hidden !important;
+			}
+		}
+
+		&.minimizeButton
+		{
+			visibility: visible !important;
+			left: calc(var(--adw-windowcontrols-buttons-margin-outer) + 1 * var(--adw-windowcontrols-button-width) + 1 * var(--adw-windowcontrols-button-gap)) !important;
+
+			html.client_chat_frame div.chat_main.singlewindow:not(:has(div.friendsListContainer.collapsed)) div.multiChatDialog &
+			{
+				visibility: hidden !important;
+			}
+		}
+
+		&.maximizeButton, &.restoreButton
+		{
+			visibility: visible !important;
+			left: calc(var(--adw-windowcontrols-buttons-margin-outer) + 2 * var(--adw-windowcontrols-button-width) + 2 * var(--adw-windowcontrols-button-gap)) !important;
+
+			html.client_chat_frame div.chat_main.singlewindow:not(:has(div.friendsListContainer.collapsed)) div.multiChatDialog &
+			{
+				visibility: hidden !important;
+			}
+		}
+
+	}
+}

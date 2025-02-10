@@ -1,10 +1,10 @@
 :root
 {
-	--adw-windowcontrols-button-width: 24px;
-	--adw-windowcontrols-button-height: 24px;
-	--adw-windowcontrols-button-gap: 13px;
-	--adw-windowcontrols-buttons-margin-outer: 12px;
-	--adw-windowcontrols-buttons-margin-inner: 6px;
+	--adw-windowcontrols-button-width: 24px !important;
+	--adw-windowcontrols-button-height: 24px !important;
+	--adw-windowcontrols-button-gap: 13px !important;
+	--adw-windowcontrols-buttons-margin-outer: 12px !important;
+	--adw-windowcontrols-buttons-margin-inner: 6px !important;
 }
 
 body.DesktopUI,

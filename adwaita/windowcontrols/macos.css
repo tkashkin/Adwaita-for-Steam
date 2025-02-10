@@ -1,10 +1,10 @@
 :root
 {
-	--adw-windowcontrols-button-width: 12px;
-	--adw-windowcontrols-button-height: 12px;
-	--adw-windowcontrols-button-gap: 8px;
-	--adw-windowcontrols-buttons-margin-outer: 16px;
-	--adw-windowcontrols-buttons-margin-inner: 16px;
+	--adw-windowcontrols-button-width: 12px !important;
+	--adw-windowcontrols-button-height: 12px !important;
+	--adw-windowcontrols-button-gap: 8px !important;
+	--adw-windowcontrols-buttons-margin-outer: 16px !important;
+	--adw-windowcontrols-buttons-margin-inner: 16px !important;
 
 	/* Actual macOS icons extracted from /System/Library/CoreServices/SystemAppearance.bundle/Contents/Resources/Aqua.car - PNG only */
 	--adw-icon-macos-window-close: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAACtUlEQVRYCe2Wz2pUMRTGz51OO3ZTRIUq2BH8g9BV6UK0RfAtXPgGLly4cyVduXPRhW/gwrcQpCouSlcF8Q84I6igIt3UmU4nft+ZJGSS3M7cVu2iDdx7c3NzfudLbpJzRI7LUZ+BosoEfF5evL7bN7cKMdeMyDxs56x9G6BNI8WbiVrx/Pza+utxuWMJaC0v3pS+uWPE3D51+szJE9PTUp+aEpmcHPjZ2ZFetyu/t7fl54/vvwopnkmteNpcW38xSshIAa2lhbvGyL3Zs+euNmZmRCZqIhh+tpC225fO1pZ8+/rlbVHIavPlxpNsX9u4p4BPNxYeoN/D5sVLDWlgxOoYt70ECJCkdrrS+vihg9rKhVcbj6y/5FEqwI78cfPylYbU6zCMHGNahgqG64tWcev1pPX+XQef7pfNBOYzLfznnHYdeeycjmPnRITtqg032JJBlq6j1JVkBXDB8Z/rtLuRhw4yIN/k+jkR+HXKAtP3CSqJAG41rnZdcIQoKLCoUrX2ZJFJdmyeCOA+51bT1e68c1RVi7eBLXYOmWTHGK6uocJDhvtcfe/D7xCML5ZBJtnx92QG0H9eDxnX04/ENVR4BrZkkh1bJwLQYc6fcHHvg7wPTk13dHtSToD/+D8qOQFtwdn+18uA2Y65iQCcX5sMLL6EJ5xvHLMS2JJJdmyZCGBIZVTT81yP1Nik4jsZuMgkO7ZOBDCeM6Qyqg1U8LEPJd4GtmCRSfZIAUwmGM8ZUg88C3b0ZJGZS1SSGVCFSCYYzxlSVYWCcPOjiscRvLOPXmxDHQxlgRn08tWsAGYyYKxqPEdI9SJo5hx4hK2E7RRM5wzHyAnIKsuOsgJobuP3CuO5cFc4BwonH5XwohG/uTbYqC0SkrJcwJnwWVoONSVzqg41KXUi+PwXaXnIP64fzRn4A/jlMu8LgoxJAAAAAElFTkSuQmCC');

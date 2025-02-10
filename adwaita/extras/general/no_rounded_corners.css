@@ -1,12 +1,12 @@
 /* Remove Rounded Corners */
 :root
 {
-	--adw-button-radius: 0;
-	--adw-button-pill-radius: 0;
-	--adw-card-radius: 0;
-	--adw-entry-radius: 0;
-	--adw-entry-small-radius: 0;
-	--adw-gameicon-radius: 0;
-	--adw-menu-radius: 0;
-	--adw-menu-item-radius: 0;
+	--adw-button-radius: 0 !important;
+	--adw-button-pill-radius: 0 !important;
+	--adw-card-radius: 0 !important;
+	--adw-entry-radius: 0 !important;
+	--adw-entry-small-radius: 0 !important;
+	--adw-gameicon-radius: 0 !important;
+	--adw-menu-radius: 0 !important;
+	--adw-menu-item-radius: 0 !important;
 }

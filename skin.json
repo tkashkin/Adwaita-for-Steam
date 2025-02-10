@@ -1,0 +1,106 @@
+{
+	"name": "Adwaita",
+	"author": "tkashkin",
+	"description": "A skin to make Steam look more like a native GNOME app",
+	"version": "3.2",
+
+	"github": {
+		"owner": "tkashkin",
+		"repo_name": "Adwaita-for-Steam"
+	},
+
+	"header_image": "https://raw.githubusercontent.com/tkashkin/Adwaita-for-Steam/master/screenshots/library.png",
+	"splash_image": "https://raw.githubusercontent.com/tkashkin/Adwaita-for-Steam/master/screenshots/library.png",
+
+	"tags": ["Adwaita", "GNOME", "GTK"],
+
+	"UseDefaultPatches": false,
+	"Patches": [
+		{
+			"MatchRegexString": ".*",
+			"TargetCss": "millennium/millennium.css"
+		}
+	],
+
+	"RootColors": "adwaita/css/_root/colors.css",
+
+	"Conditions": {
+		"Color theme": {
+			"description": "Predefined color themes. Use Default to customize colors in Millennium",
+			"default": "Default",
+			"values": {
+				"Default": {},
+				"breeze": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/breeze/breeze.css" } },
+				"canta": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/canta/canta.css" } },
+				"catppuccin-frappe": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/catppuccin-frappe/catppuccin-frappe.css" } },
+				"catppuccin-macchiato": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/catppuccin-macchiato/catppuccin-macchiato.css" } },
+				"catppuccin-mocha": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/catppuccin-mocha/catppuccin-mocha.css" } },
+				"dracula": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/dracula/dracula.css" } },
+				"everforest": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/everforest/everforest.css" } },
+				"gruvbox": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/gruvbox/gruvbox.css" } },
+				"kate": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/kate/kate.css" } },
+				"metro": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/metro/metro.css" } },
+				"nord": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/nord/nord.css" } },
+				"one-pro": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/one-pro/one-pro.css" } },
+				"pop": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/pop/pop.css" } },
+				"tokyo-night": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/tokyo-night/tokyo-night.css" } },
+				"tomorrow-night": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/tomorrow-night/tomorrow-night.css" } },
+				"vapor": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/vapor/vapor.css" } },
+				"vgui2": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/vgui2/vgui2.css" } },
+				"yaru": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/yaru/yaru.css" } }
+			}
+		},
+		"Window controls theme": {
+			"description": "Window control buttons style",
+			"default": "Adwaita",
+			"values": {
+				"Adwaita": { "TargetCss": { "affects": [".*"], "src": "adwaita/windowcontrols/adwaita.css" } },
+				"macOS": { "TargetCss": { "affects": [".*"], "src": "adwaita/windowcontrols/macos.css" } },
+				"Windows": { "TargetCss": { "affects": [".*"], "src": "adwaita/windowcontrols/windows.css" } }
+			}
+		},
+		"Window controls layout": {
+			"description": "Window control buttons layout",
+			"default": "Adwaita",
+			"values": {
+				"Adwaita": { "TargetCss": { "affects": [".*"], "src": "millennium/windowcontrols/adwaita.css" } },
+				"Pantheon": { "TargetCss": { "affects": [".*"], "src": "millennium/windowcontrols/pantheon.css" } },
+				"macOS": { "TargetCss": { "affects": [".*"], "src": "millennium/windowcontrols/macos.css" } },
+				"Windows": { "TargetCss": { "affects": [".*"], "src": "millennium/windowcontrols/windows.css" } }
+			}
+		},
+		"Remove rounded corners": {
+			"description": "Removes rounded corners on most styled elements. Does not affect window corners",
+			"default": "no",
+			"values": {
+				"no": {},
+				"yes": { "TargetCss": { "affects": [".*"], "src": "adwaita/extras/general/no_rounded_corners.css" } }
+			}
+		},
+		"Hide What's New shelf": {
+			"description": "Hides What's New shelf from the Library",
+			"default": "no",
+			"values": {
+				"no": {},
+				"yes": { "TargetCss": { "affects": [".*"], "src": "adwaita/extras/library/hide_whats_new.css" } }
+			}
+		},
+		"Show Library sidebar on hover": {
+			"description": "Shows Library sidebar only when mouse is near the left side of the window",
+			"default": "no",
+			"values": {
+				"no": {},
+				"yes": { "TargetCss": { "affects": [".*"], "src": "adwaita/extras/library/sidebar_hover.css" } }
+			}
+		},
+		"Login QR code": {
+			"description": "Changes visibility of QR code in the Login window",
+			"default": "Show",
+			"values": {
+				"Show": {},
+				"Show on Hover": { "TargetCss": { "affects": [".*"], "src": "adwaita/extras/login/hover_qr.css" } },
+				"Hide": { "TargetCss": { "affects": [".*"], "src": "adwaita/extras/login/hide_qr.css" } }
+			}
+		}
+	}
+}
