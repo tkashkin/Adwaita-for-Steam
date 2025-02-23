@@ -13,6 +13,12 @@ html.client_chat_frame div#popup_target::after
 	z-index: 999;
 }
 
+body.DesktopUI div#popup_target:has(div._1ENHEsrSLcTRtPQFl1F-wL.Maximized)::after,
+html.client_chat_frame div#popup_target:has(div._1ENHEsrSLcTRtPQFl1F-wL.Maximized)::after
+{
+	border: 1px transparent solid;
+}
+
 body.DesktopUI .ModalPosition_TopBar,
 body.DesktopUI .singleWindowFocusBar,
 body.DesktopUI .title-area .title-area-highlight,

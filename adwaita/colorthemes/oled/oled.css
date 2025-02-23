@@ -1,0 +1,32 @@
+:root {
+	/* Window */
+	--adw-window-bg-rgb: 0, 0, 0 !important;
+
+	/* Views - e.g. text view or tree view */
+	--adw-view-bg-rgb: 0, 0, 0 !important;
+
+	/* Header bar, search bar, tab bar */
+	--adw-headerbar-bg-rgb: 0, 0, 0 !important;
+	--adw-headerbar-shade-rgb: 0, 0, 0 !important;
+	--adw-headerbar-darker-shade-rgb: 0, 0, 0 !important;
+
+	/* Split pane views */
+	--adw-sidebar-bg-rgb: 0, 0, 0 !important;
+	--adw-sidebar-backdrop-rgb: 0, 0, 0 !important;
+	--adw-sidebar-shade-rgb: 0, 0, 0 !important;
+
+	--adw-secondary-sidebar-bg-rgb: 0, 0, 0 !important;
+
+	/* Dialogs */
+	--adw-dialog-bg-rgb: 0, 0, 0 !important;
+
+	/* Popovers */
+	--adw-popover-bg-rgb: 0, 0, 0 !important;
+	--adw-popover-shade-rgb: 0, 0, 0 !important;
+
+	/* Thumbnails */
+	--adw-thumbnail-bg-rgb: 0, 0, 0 !important;
+
+	/* Miscellaneous */
+	--adw-shade-rgb: 0, 0, 0 !important;
+}

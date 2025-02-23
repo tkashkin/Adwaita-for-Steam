@@ -37,6 +37,12 @@ body.DesktopUI div._1ENHEsrSLcTRtPQFl1F-wL::after
 	z-index: 999;
 }
 
+body.DesktopUI div[class*="steamdesktop_Wrapper_"].Maximized::after,
+body.DesktopUI div._1ENHEsrSLcTRtPQFl1F-wL.Maximized::after
+{
+	border: 1px transparent solid;
+}
+
 /* Focus Bar */
 body.DesktopUI div[class*="steamdesktop_Wrapper_"] > div[class*="steamdesktop_FocusBar_"],
 body.DesktopUI div._1ENHEsrSLcTRtPQFl1F-wL > div._3pXasCUulX4jjqO79s4q_F
