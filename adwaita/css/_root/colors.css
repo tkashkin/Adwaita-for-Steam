@@ -32,60 +32,60 @@
 	--adw-error-rgb: 255, 123, 99;
 
 	/* Window */
-	--adw-window-bg-rgb: 36, 36, 36;
+	--adw-window-bg-rgb: 34, 34, 38;
 	--adw-window-fg-rgb: 255, 255, 255;
 
 	/* Views - e.g. text view or tree view */
-	--adw-view-bg-rgb: 30, 30, 30;
+	--adw-view-bg-rgb: 29, 29, 32;
 	--adw-view-fg-rgb: 255, 255, 255;
 
 	/* Header bar, search bar, tab bar */
-	--adw-headerbar-bg-rgb: 48, 48, 48;
+	--adw-headerbar-bg-rgb: 46, 46, 50;
 	--adw-headerbar-fg-rgb: 255, 255, 255;
 	--adw-headerbar-border-rgb: 255, 255, 255;
 	--adw-headerbar-backdrop-rgb: var(--adw-window-bg-rgb);
-	--adw-headerbar-shade-rgb: 0, 0, 0;
+	--adw-headerbar-shade-rgb: 0, 0, 6;
 	--adw-headerbar-shade-a: 0.36;
-	--adw-headerbar-darker-shade-rgb: 0, 0, 0;
+	--adw-headerbar-darker-shade-rgb: 0, 0, 12;
 	--adw-headerbar-darker-shade-a: 0.9;
 
 	/* Split pane views */
-	--adw-sidebar-bg-rgb: 48, 48, 48;
+	--adw-sidebar-bg-rgb: 46, 46, 50;
 	--adw-sidebar-fg-rgb: 255, 255, 255;
-	--adw-sidebar-backdrop-rgb: 42, 42, 42;
-	--adw-sidebar-shade-rgb: 0, 0, 0;
-	--adw-sidebar-shade-a: 0.36;
+	--adw-sidebar-backdrop-rgb: 40, 40, 44;
+	--adw-sidebar-shade-rgb: 0, 0, 6;
+	--adw-sidebar-shade-a: 0.25;
 
-	--adw-secondary-sidebar-bg-rgb: 42, 42, 42;
+	--adw-secondary-sidebar-bg-rgb: 40, 40, 44;
 	--adw-secondary-sidebar-fg-rgb: 255, 255, 255;
-	--adw-secondary-sidebar-backdrop-rgb: 39, 39, 39;
-	--adw-secondary-sidebar-shade-rgb: 0, 0, 0;
-	--adw-secondary-sidebar-shade-a: 0.36;
+	--adw-secondary-sidebar-backdrop-rgb: 37, 37, 41;
+	--adw-secondary-sidebar-shade-rgb: 0, 0, 6;
+	--adw-secondary-sidebar-shade-a: 0.25;
 
 	/* Cards, boxed lists */
 	--adw-card-bg-rgb: 255, 255, 255;
 	--adw-card-bg-a: 0.08;
 	--adw-card-fg-rgb: 255, 255, 255;
-	--adw-card-shade-rgb: 0, 0, 0;
+	--adw-card-shade-rgb: 0, 0, 6;
 	--adw-card-shade-a: 0.36;
 
 	/* Dialogs */
-	--adw-dialog-bg-rgb: 56, 56, 56;
+	--adw-dialog-bg-rgb: 54, 54, 58;
 	--adw-dialog-fg-rgb: 255, 255, 255;
 
 	/* Popovers */
-	--adw-popover-bg-rgb: 56, 56, 56;
+	--adw-popover-bg-rgb: 54, 54, 58;
 	--adw-popover-fg-rgb: 255, 255, 255;
-	--adw-popover-shade-rgb: 0, 0, 0;
-	--adw-popover-shade-a: 0.36;
+	--adw-popover-shade-rgb: 0, 0, 6;
+	--adw-popover-shade-a: 0.25;
 
 	/* Thumbnails */
-	--adw-thumbnail-bg-rgb: 56, 56, 56;
+	--adw-thumbnail-bg-rgb: 57, 57, 61;
 	--adw-thumbnail-fg-rgb: 255, 255, 255;
 
 	/* Miscellaneous */
-	--adw-shade-rgb: 0, 0, 0;
-	--adw-shade-a: 0.36;
+	--adw-shade-rgb: 0, 0, 6;
+	--adw-shade-a: 0.25;
 
 	/* Skin-specific */
 	--adw-user-offline-rgb: 128, 128, 128;
