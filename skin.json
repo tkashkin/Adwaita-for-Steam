@@ -2,7 +2,7 @@
 	"name": "Adwaita",
 	"author": "tkashkin",
 	"description": "A skin to make Steam look more like a native GNOME app",
-	"version": "3.2",
+	"version": "3.3",
 
 	"github": {
 		"owner": "tkashkin",
@@ -30,6 +30,7 @@
 			"default": "Default",
 			"values": {
 				"Default": {},
+				"adwaita-gray": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/adwaita-gray/adwaita-gray.css" } },
 				"breeze": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/breeze/breeze.css" } },
 				"canta": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/canta/canta.css" } },
 				"catppuccin-frappe": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/catppuccin-frappe/catppuccin-frappe.css" } },

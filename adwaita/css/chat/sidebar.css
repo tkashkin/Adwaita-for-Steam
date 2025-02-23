@@ -126,6 +126,11 @@ html.client_chat_frame
 					}
 				}
 
+				div.socialSearchContainer
+				{
+					background: none !important;
+				}
+
 				form.socialInputContainer
 				{
 					transform: none !important;

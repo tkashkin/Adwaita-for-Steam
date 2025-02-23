@@ -11,7 +11,7 @@
 	--adw-button-suggested-overlay-hover: rgba(var(--adw-accent-fg-rgb), 0.1);
 	--adw-button-suggested-overlay-active: rgba(0, 0, 0, 0.2);
 
-	--adw-button-radius: 6px;
+	--adw-button-radius: 9px;
 	--adw-button-pill-radius: 9999px;
 
 	--adw-button-bg-opacity: 0.1;
