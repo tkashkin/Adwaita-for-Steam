@@ -173,7 +173,7 @@ html.client_chat_frame
 }}"""
 	return windowcontrols
 
-def generate_libraryroot(target: Path, extras: list[Path], color_theme: str, windowcontrols_theme: str, windowcontrols_layout: str, custom_css: bool):
+def generate_libraryroot(target: Path, extras: list[Path], color_theme: str, font: str, windowcontrols_theme: str, windowcontrols_layout: str, custom_css: bool):
 	content = "/* Main Files */\n"
 	for f in LIBRARY_FILES:
 		content += format_import(STEAM_LOOPBACK_ADWAITA, f)
@@ -196,6 +196,11 @@ def generate_libraryroot(target: Path, extras: list[Path], color_theme: str, win
 		print(f"{TEXT_BLUE}{TEXT_ARROW} Applying color theme {TEXT_BOLD}{color_theme}{TEXT_RESET}")
 		content += "\n/* Color theme */\n"
 		content += format_import(STEAM_LOOPBACK_ADWAITA, f"colorthemes/{color_theme}/{color_theme}.css")
+
+	if font:
+		print(f"{TEXT_BLUE}{TEXT_ARROW} Applying font {TEXT_BOLD}{font}{TEXT_RESET}")
+		content += "\n/* Font */\n"
+		content += format_import(STEAM_LOOPBACK_ADWAITA, f"fonts/{font}/{font}.css")
 
 	if windowcontrols_theme:
 		print(f"{TEXT_BLUE}{TEXT_ARROW} Applying window controls theme {TEXT_BOLD}{windowcontrols_theme}{TEXT_RESET}")
@@ -298,6 +303,7 @@ if __name__ == "__main__":
 
 	parser = ArgumentParser(description = "Adwaita-for-Steam installer")
 	parser.add_argument("-c", "--color-theme", default = "adwaita", type = str.lower, help = "Choose color theme")
+	parser.add_argument("-f", "--font", default = "adwaita", choices = ["adwaita", "cantarell"], type = str.lower, help = "Font")
 	parser.add_argument("--windowcontrols-theme", default = "auto", choices = ["auto", "adwaita", "windows", "macos"], type = str.lower, help = "Window button theme")
 	parser.add_argument("--windowcontrols-layout", default = "auto", type = str.lower, help = "Window button positions: 'auto', 'gnome'|'adwaita', 'pantheon'|'elementary', 'windows', 'macos', or GNOME button layout string")
 	parser.add_argument("--custom-css", action = "store_true", help = "Enable Custom CSS")
@@ -389,7 +395,7 @@ if __name__ == "__main__":
 
 		print(f"{TEXT_BLUE}{TEXT_ARROW} Creating stage directory {TEXT_BOLD}{sourcedir}{TEXT_RESET}")
 
-		generate_libraryroot(libraryroot, args.extras, args.color_theme, args.windowcontrols_theme, args.windowcontrols_layout, args.custom_css)
+		generate_libraryroot(libraryroot, args.extras, args.color_theme, args.font, args.windowcontrols_theme, args.windowcontrols_layout, args.custom_css)
 
 		for target in targets:
 			if not target.is_dir():

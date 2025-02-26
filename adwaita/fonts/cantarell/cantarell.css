@@ -1,0 +1,14 @@
+@font-face
+{
+	font-family: "Cantarell-VF";
+	font-style: normal;
+	font-weight: 100 900;
+	src: url("cantarell-vf.otf") format("opentype");
+	font-display: swap;
+}
+
+:root
+{
+	--adw-text-font-primary: "Cantarell-VF", "Cantarell" !important;
+	--adw-text-font-monospace-primary: "Source Code Pro" !important;
+}
