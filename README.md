@@ -82,6 +82,7 @@ cd Adwaita-for-Steam
 | --help                  | -h    |                                                       | Show help message                                  |
 | --list-options          | -l    |                                                       | List available themes and extras                   |
 | --color-theme           | -c    | [Colortheme](/adwaita/colorthemes)                    | Change color theme                                 |
+| --font                  | -f    | adwaita / cantarell                                   | Change font family                                 |
 | --windowcontrols-theme  |       | auto / adwaita / windows / macos                      | Change window control buttons style                |
 | --windowcontrols-layout |       | auto / gnome / pantheon / windows / macos / \[custom] | Change window control buttons position and order   |
 | --custom-css            |       |                                                       | Enable [custom css](/custom)                       |
