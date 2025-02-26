@@ -1,0 +1,59 @@
+@font-face
+{
+	font-family: "Adwaita Sans";
+	font-style: normal;
+	font-weight: 100 900;
+	src: url("sans/AdwaitaSans-Regular.ttf") format("truetype");
+	font-display: swap;
+}
+
+@font-face
+{
+	font-family: "Adwaita Sans";
+	font-style: italic;
+	font-weight: 100 900;
+	src: url("sans/AdwaitaSans-Italic.ttf") format("truetype");
+	font-display: swap;
+}
+
+@font-face
+{
+	font-family: "Adwaita Mono";
+	font-style: normal;
+	font-weight: 400;
+	src: url("mono/AdwaitaMono-Regular.ttf") format("truetype");
+	font-display: swap;
+}
+
+@font-face
+{
+	font-family: "Adwaita Mono";
+	font-style: italic;
+	font-weight: 400;
+	src: url("mono/AdwaitaMono-Italic.ttf") format("truetype");
+	font-display: swap;
+}
+
+@font-face
+{
+	font-family: "Adwaita Mono";
+	font-style: normal;
+	font-weight: 700;
+	src: url("mono/AdwaitaMono-Bold.ttf") format("truetype");
+	font-display: swap;
+}
+
+@font-face
+{
+	font-family: "Adwaita Mono";
+	font-style: italic;
+	font-weight: 700;
+	src: url("mono/AdwaitaMono-BoldItalic.ttf") format("truetype");
+	font-display: swap;
+}
+
+:root
+{
+	--adw-text-font-primary: "Adwaita Sans" !important;
+	--adw-text-font-monospace-primary: "Adwaita Mono" !important;
+}
