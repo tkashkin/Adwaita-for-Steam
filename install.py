@@ -245,7 +245,7 @@ def patch_client_css(target: Path, name: str):
 		return
 
 	# Skip if already patched
-	with target_css.open() as css_file:
+	with target_css.open(encoding="utf-8") as css_file:
 		if css_file.readline().strip() == STEAM_PATCHED_HEADER:
 			return
 
