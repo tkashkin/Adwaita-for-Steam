@@ -122,7 +122,7 @@ def format_import(prefix: str, string: str) -> str:
 	return f"@import url(\"{prefix}/{string}\");\n"
 
 def generate_windowcontrols(layout: str) -> str:
-	(buttons_left, buttons_right) = [[b for b in s.split(',') if b in WINDOWCONTROLS_SELECTORS] for s in layout.split(':')]
+	(buttons_left, buttons_right) = [[b for b in s.split(",") if b in WINDOWCONTROLS_SELECTORS] for s in layout.split(":")]
 	windowcontrols = f""":root
 {{
 	--adw-windowcontrols-left-has-buttons: { 0 if len(buttons_left) == 0 else 1 };
@@ -222,7 +222,7 @@ def generate_libraryroot(target: Path, extras: list[Path], color_theme: str, fon
 	content += f"\n/* Window controls layout - {windowcontrols_layout} */\n"
 	content += generate_windowcontrols(windowcontrols_layout)
 
-	target.open('w').write(content)
+	target.open("w", encoding = "utf-8").write(content)
 
 # Color Themes
 def find_color_themes() -> list[Path]:
@@ -245,7 +245,7 @@ def patch_client_css(target: Path, name: str):
 		return
 
 	# Skip if already patched
-	with target_css.open(encoding="utf-8") as css_file:
+	with target_css.open(encoding = "utf-8") as css_file:
 		if css_file.readline().strip() == STEAM_PATCHED_HEADER:
 			return
 
@@ -253,15 +253,15 @@ def patch_client_css(target: Path, name: str):
 	name = target_css.stem
 	css_dir = "css"
 
-	content = f'{STEAM_PATCHED_HEADER}\n'
+	content = f"{STEAM_PATCHED_HEADER}\n"
 	content += format_import(STEAM_LOOPBACK, f"{css_dir}/{name}.original.css")
 	content += format_import(STEAM_LOOPBACK, f"{custom_library_name}")
 
-	target_css.open('w').write(content)
+	target_css.open("w", encoding = "utf-8").write(content)
 
 	size_diff = orig_css.stat().st_size - target_css.stat().st_size
 	padding = " " * size_diff
-	target_css.open('a').write(padding)
+	target_css.open("a", encoding = "utf-8").write(padding)
 
 def uninstall_theme(target: Path):
 	adwaita = target / STEAM_ADWAITA_DIR
@@ -274,7 +274,7 @@ def uninstall_theme(target: Path):
 		print(f"{TEXT_PURPLE}{TEXT_INFO} steamui in {TEXT_BOLD}{target}{TEXT_RESET}{TEXT_PURPLE} not found, skipping{TEXT_RESET}")
 		return
 
-	open(custom_library, 'w').close()
+	open(custom_library, "w", encoding = "utf-8").close()
 	if adwaita.is_dir():
 		shutil.rmtree(adwaita)
 
