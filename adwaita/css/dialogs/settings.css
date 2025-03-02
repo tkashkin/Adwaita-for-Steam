@@ -378,7 +378,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 			background: rgba(var(--adw-card-bg-rgb), var(--adw-card-active-opacity)) !important;
 		}
 
-		div._2KFeE_s51aT07ohdMu_ZH1 p._1ifM6luJEQ5H2O1Y3S6F_R,
+		p._1ifM6luJEQ5H2O1Y3S6F_R,
 		div._1u5y7VbwvOwncjMsMqnFUz > div.DialogCheckbox_Container div.DialogToggle_Label
 		{
 			padding: 0 !important;
@@ -608,6 +608,174 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 		}
 	}
 
+	/* Storage */
+	div._3wk64QNnKSFPWsjvok-t02
+	{
+		/* Library dropdown */
+		div._18pPl6a2EhE7NRoba3yw7L
+		{
+			background: rgb(var(--adw-window-bg-rgb)) !important;
+			position: fixed !important;
+			top: 0 !important;
+			height: 46px !important;
+			box-sizing: border-box !important;
+			width: calc(600px - 2 * (var(--adw-windowcontrols-margin-right) + 40px)) !important;
+			margin: 0 !important;
+			padding: 0 !important;
+			justify-content: center !important;
+			z-index: 2 !important;
+
+			button.iFalJAi3VT9vGdVVOLNgA
+			{
+				cursor: default !important;
+				border-radius: var(--adw-button-radius) !important;
+				box-sizing: border-box !important;
+				width: fit-content !important;
+				height: 34px !important;
+				padding: 9px !important;
+				margin: 0 !important;
+				transition: var(--adw-button-transition) !important;
+				color: rgb(var(--adw-window-fg-rgb)) !important;
+				background: transparent !important;
+				box-shadow: none !important;
+				gap: 4px !important;
+				flex-grow: 0 !important;
+				align-items: center !important;
+				justify-content: center !important;
+				-webkit-app-region: no-drag !important;
+
+				&:hover
+				{
+					background: rgba(var(--adw-window-fg-rgb), var(--adw-hover-opacity)) !important;
+				}
+
+				&:active
+				{
+					background: rgba(var(--adw-window-fg-rgb), var(--adw-active-opacity)) !important;
+				}
+
+				.DialogDropDown_CurrentDisplay div._3YelWui4gQvucX_bHwvl15
+				{
+					/* Title */
+					div._1rihlgVMF4Q_fFZDnXeVt5
+					{
+						cursor: default !important;
+						color: rgb(var(--adw-window-fg-rgb)) !important;
+						font-family: var(--adw-text-font) !important;
+						font-size: var(--adw-text-header-size) !important;
+						font-weight: var(--adw-text-header-weight) !important;
+						line-height: normal !important;
+						letter-spacing: normal !important;
+						overflow: hidden !important;
+						text-overflow: ellipsis !important;
+						white-space: nowrap !important;
+						display: flex !important;
+						gap: 4px !important;
+
+						/* Default library icon */
+						div.tool-tip-source
+						{
+							order: -1 !important;
+
+							svg
+							{
+								margin: 2px 0 0 0 !important;
+								width: 16px !important;
+								height: 16px !important;
+							}
+						}
+					}
+
+					/* Icon and disk space */
+					& > svg,
+					div._5bG9Iwr014pu3H1SPRwYh
+					{
+						display: none !important;
+					}
+				}
+
+				.DialogDropDown_Arrow
+				{
+					width: 16px !important;
+					height: 16px !important;
+					margin-top: 2px !important;
+
+					svg
+					{
+						display: none !important;
+					}
+
+					&::before
+					{
+						content: "";
+						background-color: rgb(var(--adw-card-fg-rgb));
+						display: block;
+						width: 16px;
+						height: 16px;
+						-webkit-mask-repeat: no-repeat;
+						-webkit-mask-position: center;
+						-webkit-mask-size: 16px;
+						-webkit-mask-image: var(--adw-icon-combobox-arrow);
+					}
+				}
+			}
+		}
+
+		/* Menu */
+		div._1WKUOT3FdB9-48MMP0Tz9l
+		{
+			position: fixed !important;
+	        right: calc(var(--adw-windowcontrols-margin-right) + 6px) !important;
+	        top: 6px !important;
+			cursor: default !important;
+			border-radius: var(--adw-button-radius) !important;
+			box-sizing: border-box !important;
+			width: 34px !important;
+			height: 34px !important;
+			min-width: auto !important;
+			min-height: auto !important;
+			padding: 9px !important;
+			margin: 0 !important;
+			transition: var(--adw-button-transition) !important;
+			color: rgb(var(--adw-window-fg-rgb)) !important;
+			background: transparent !important;
+			box-shadow: none !important;
+			text-indent: -9999px !important;
+			font-size: 0 !important;
+			line-height: 0 !important;
+			z-index: 3 !important;
+			-webkit-app-region: no-drag !important;
+
+			&:hover
+			{
+				background: rgba(var(--adw-window-fg-rgb), var(--adw-hover-opacity)) !important;
+			}
+
+			&:active
+			{
+				background: rgba(var(--adw-window-fg-rgb), var(--adw-active-opacity)) !important;
+			}
+
+			svg
+			{
+				display: none !important;
+			}
+
+			&::after
+			{
+				background-color: rgb(var(--adw-window-fg-rgb));
+				content: "";
+				display: block;
+				width: 16px;
+				height: 16px;
+				-webkit-mask-image: var(--adw-icon-more);
+				-webkit-mask-repeat: no-repeat;
+				-webkit-mask-position: center;
+				-webkit-mask-size: 16px;
+			}
+		}
+	}
+
 	/* Controller: tabs */
 	div._19z_50-qWZWxcgXfWNtSWb
 	{
@@ -802,6 +970,20 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 		}
 	}
 
+	/* Game Recording: Title */
+	div._3cowYQH1B8oj2_ls7YZ1aW
+	{
+		display: block !important;
+		padding: 0 !important;
+		margin: 0 !important;
+
+		span._2e63TrPvMKVUujM8SUB8X2,
+		span._2FSTgdJFSAvY-XzLYUOxnB
+		{
+			display: none !important;
+		}
+	}
+
 	/* Voice: Microphone test */
 	div.eKmEXJCm_lgme24Fp_HWt:has(div._2Dptk9e7W_k4zYB5wfRTcp) div._2Dptk9e7W_k4zYB5wfRTcp
 	{
@@ -814,6 +996,99 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 		{
 			overflow: revert !important;
 			max-width: revert !important;
+		}
+	}
+
+	/* Voice: Advanced */
+	div._2aT8z7eJsccEAqH0KJyXL7
+	{
+		padding: 0 !important;
+		margin-top: 16px !important;
+	}
+
+	/* Remote Play: Advanced */
+	div._1TZo2lWeWvdqFB-yUpltXG
+	{
+		div.eKmEXJCm_lgme24Fp_HWt
+		{
+			background: rgba(var(--adw-card-bg-rgb), calc(var(--adw-card-opacity) * 0.5)) !important;
+
+			&:hover
+			{
+				background: rgba(var(--adw-card-bg-rgb), calc(var(--adw-card-hover-opacity) - var(--adw-card-opacity) * 0.5)) !important;
+			}
+
+			&:active
+			{
+				background: rgba(var(--adw-card-bg-rgb), calc(var(--adw-card-active-opacity) - var(--adw-card-opacity) * 0.5)) !important;
+			}
+
+			&:first-child
+			{
+				border-top-left-radius: 0 !important;
+				border-top-right-radius: 0 !important;
+			}
+		}
+
+		div:has(+ &) div.eKmEXJCm_lgme24Fp_HWt
+		{
+			border-bottom-left-radius: 0 !important;
+			border-bottom-right-radius: 0 !important;
+		}
+	}
+
+	/* Remote Play: FAQ extra margin */
+	div.DialogBody > div.DialogControlsSection + div:not([class]):last-child:has(> div.eKmEXJCm_lgme24Fp_HWt:only-child)
+	{
+		margin-top: 16px !important;
+	}
+
+	/* Broadcast: Configure microphone */
+	a._3yThygN5Ps_AkPwAlNxpvA
+	{
+		cursor: default !important;
+		border-radius: var(--adw-button-radius) !important;
+		box-sizing: border-box !important;
+		width: 34px !important;
+		height: 34px !important;
+		min-width: auto !important;
+		min-height: auto !important;
+		padding: 9px !important;
+		margin: 0 !important;
+		transition: var(--adw-button-transition) !important;
+		color: rgb(var(--adw-window-fg-rgb)) !important;
+		background: transparent !important;
+		box-shadow: none !important;
+		text-indent: -9999px !important;
+		font-size: 0 !important;
+		line-height: 0 !important;
+		z-index: 1 !important;
+		flex-grow: 0 !important;
+		position: absolute !important;
+        right: 64px !important;
+        top: 10px !important;
+
+		&:hover
+		{
+			background: rgba(var(--adw-window-fg-rgb), var(--adw-hover-opacity)) !important;
+		}
+
+		&:active
+		{
+			background: rgba(var(--adw-window-fg-rgb), var(--adw-active-opacity)) !important;
+		}
+
+		&::after
+		{
+			background-color: rgb(var(--adw-window-fg-rgb));
+			content: "";
+			display: block;
+			width: 16px;
+			height: 16px;
+			-webkit-mask-image: var(--adw-icon-settings);
+			-webkit-mask-repeat: no-repeat;
+			-webkit-mask-position: center;
+			-webkit-mask-size: 16px;
 		}
 	}
 
