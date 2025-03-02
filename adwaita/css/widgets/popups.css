@@ -79,7 +79,8 @@ html.client_chat_frame
 				background: rgba(var(--adw-popover-fg-rgb), var(--adw-active-opacity)) !important;
 			}
 
-			div.cbinvNOoQE045ZV5gCk_N
+			div.cbinvNOoQE045ZV5gCk_N,
+			span._3EvKu7VyTGMoDtbyugKQ5H
 			{
 				display: none !important;
 			}
