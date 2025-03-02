@@ -1,273 +1,291 @@
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_,
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
+body.DesktopUI div._2sssIwe0duyIrFvat2oXzH,
+html.client_chat_frame div._2VY6HOZXxO2AsBaLssl0Uy
 {
 	background: rgb(var(--adw-window-bg-rgb)) !important;
 	color: rgb(var(--adw-window-fg-rgb)) !important;
 	padding: 0 !important;
 	user-select: none !important;
-}
 
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageListColumn_"],
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.RTicBCbDcEGkjsbmWzA8C,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._2kwFFHckg8jvnwJfg9-la8
-{
-	background: rgb(var(--adw-sidebar-bg-rgb)) !important;
-	color: rgb(var(--adw-sidebar-fg-rgb)) !important;
-	border-right: 1px rgba(var(--adw-sidebar-shade-rgb), var(--adw-sidebar-shade-a)) solid !important;
-	padding: 0 !important;
-	margin: 0 !important;
-}
+	/* Sidebar */
+	div.RTicBCbDcEGkjsbmWzA8C,
+	div._2kwFFHckg8jvnwJfg9-la8,
+	div.xSTLmzylFJdIfak7ZdhuA
+	{
+		background: rgb(var(--adw-sidebar-bg-rgb)) !important;
+		color: rgb(var(--adw-sidebar-fg-rgb)) !important;
+		border-right: 1px rgba(var(--adw-sidebar-shade-rgb), var(--adw-sidebar-shade-a)) solid !important;
+		padding: 0 !important;
+		margin: 0 !important;
+	}
 
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageList_"],
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._EebF_xe4DGRZ9a0XkyDj,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._18QCu-7MTzd51UpVbYysDy
-{
-	padding: 6px calc(6px - var(--adw-scrollbar-size)) 6px 6px !important;
-	margin: 0 !important;
-	gap: 2px !important;
-}
+	/* Sidebar items container */
+	div._EebF_xe4DGRZ9a0XkyDj,
+	div._18QCu-7MTzd51UpVbYysDy,
+	div.MWzjHR-uqa-svGrdXYfUl
+	{
+		padding: 6px calc(6px - var(--adw-scrollbar-size)) 6px 6px !important;
+		margin: 0 !important;
+		gap: 2px !important;
 
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._18QCu-7MTzd51UpVbYysDy div.millennium-tabs-list
-{
-	display: flex !important;
-    flex-direction: column !important;
-	gap: 2px !important;
-}
+		div.millennium-tabs-list
+		{
+			display: flex !important;
+			flex-direction: column !important;
+			gap: 2px !important;
+		}
 
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageListItem_"],
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.bkfjn0yka2uHNqEvWZaTJ,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._1-vlriAtKYDViAEunue4VO
-{
-	height: 34px !important;
-	line-height: 34px !important;
-	padding: 0 8px !important;
-	max-width: none !important;
-	background: none !important;
-	cursor: default !important;
-	font-family: var(--adw-text-font) !important;
-	font-size: var(--adw-text-base-size) !important;
-	font-weight: var(--adw-text-base-weight) !important;
-	box-sizing: border-box !important;
-	border: none !important;
-	border-radius: var(--adw-button-radius) !important;
-	color: rgb(var(--adw-sidebar-fg-rgb)) !important;
-}
+		&::before
+		{
+			background: rgb(var(--adw-sidebar-bg-rgb)) !important;
+		}
+	}
 
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageListItem_"]:hover,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.bkfjn0yka2uHNqEvWZaTJ:hover,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._1-vlriAtKYDViAEunue4VO:hover
-{
-	background: rgba(var(--adw-sidebar-fg-rgb), var(--adw-hover-opacity)) !important;
-}
+	/* Sidebar item */
+	div.bkfjn0yka2uHNqEvWZaTJ,
+	div._1-vlriAtKYDViAEunue4VO,
+	div._2YV0m3IRCNOoUV9YhJNFnV,
+	div._1NqKTWvxtFgflRlqLTtv7e
+	{
+		height: 34px !important;
+		line-height: 34px !important;
+		padding: 0 8px !important;
+		margin: 0 !important;
+		max-width: none !important;
+		background: none !important;
+		cursor: default !important;
+		font-family: var(--adw-text-font) !important;
+		font-size: var(--adw-text-base-size) !important;
+		font-weight: var(--adw-text-base-weight) !important;
+		letter-spacing: normal !important;
+		text-transform: none !important;
+		box-sizing: border-box !important;
+		border: none !important;
+		border-radius: var(--adw-button-radius) !important;
+		color: rgb(var(--adw-sidebar-fg-rgb)) !important;
 
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageListItem_"]:active,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.bkfjn0yka2uHNqEvWZaTJ:active,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._1-vlriAtKYDViAEunue4VO:active
-{
-	background: rgba(var(--adw-sidebar-fg-rgb), var(--adw-active-opacity)) !important;
-}
+		&:hover
+		{
+			background: rgba(var(--adw-sidebar-fg-rgb), var(--adw-hover-opacity)) !important;
+		}
 
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageListItem_"][class*="pagedsettings_Active_"],
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.bkfjn0yka2uHNqEvWZaTJ.Myra7iGjzCdMPzitboVfh,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._1-vlriAtKYDViAEunue4VO._2DpXjzK3WWsOtUWUrcuOG7
-{
-	background: rgba(var(--adw-sidebar-fg-rgb), var(--adw-selected-opacity)) !important;
-}
+		&:active
+		{
+			background: rgba(var(--adw-sidebar-fg-rgb), var(--adw-active-opacity)) !important;
+		}
 
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageListItem_"][class*="pagedsettings_Active_"]:hover,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.bkfjn0yka2uHNqEvWZaTJ.Myra7iGjzCdMPzitboVfh:hover,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._1-vlriAtKYDViAEunue4VO._2DpXjzK3WWsOtUWUrcuOG7:hover
-{
-	background: rgba(var(--adw-sidebar-fg-rgb), var(--adw-selected-hover-opacity)) !important;
-}
+		/* Selected */
+		&.Myra7iGjzCdMPzitboVfh,
+		&._2DpXjzK3WWsOtUWUrcuOG7,
+		&._1DfstUr4tIt3Jdt7Mrxfxo
+		{
+			background: rgba(var(--adw-sidebar-fg-rgb), var(--adw-selected-opacity)) !important;
 
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageListItem_"][class*="pagedsettings_Active_"]:active,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.bkfjn0yka2uHNqEvWZaTJ.Myra7iGjzCdMPzitboVfh:active,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._1-vlriAtKYDViAEunue4VO._2DpXjzK3WWsOtUWUrcuOG7:active
-{
-	background: rgba(var(--adw-sidebar-fg-rgb), var(--adw-selected-active-opacity)) !important;
-}
+			&:hover
+			{
+				background: rgba(var(--adw-sidebar-fg-rgb), var(--adw-selected-hover-opacity)) !important;
+			}
 
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageListItem_"][class*="pagedsettings_DisabledItem_"],
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.bkfjn0yka2uHNqEvWZaTJ._1RDp9x1K3WsjXf7hYWmmiX,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.vlriAtKYDViAEunue4VO.oUzYn48NLkHPRjiT8W86M
-{
-	opacity: 0.5 !important;
-	pointer-events: none !important;
-}
+			&:active
+			{
+				background: rgba(var(--adw-sidebar-fg-rgb), var(--adw-selected-active-opacity)) !important;
+			}
+		}
 
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageListItem_"] div[class*="pagedsettings_PageListItem_Icon_"],
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.bkfjn0yka2uHNqEvWZaTJ div.U6HcKswXzjmWtFxbjxuz4,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._1-vlriAtKYDViAEunue4VO div._1rD8X96FdnksZLvRRlEiCR
-{
-	width: 16px !important;
-	height: 16px !important;
-	margin-right: 6px !important;
-	color: inherit !important;
-}
+		/* Disabled */
+		&._1RDp9x1K3WsjXf7hYWmmiX,
+		&.oUzYn48NLkHPRjiT8W86M
+		{
+			opacity: 0.5 !important;
+			pointer-events: none !important;
+		}
 
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageListItem_"] div[class*="pagedsettings_PageListItem_Icon_"] > svg,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.bkfjn0yka2uHNqEvWZaTJ div.U6HcKswXzjmWtFxbjxuz4 > svg,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._1-vlriAtKYDViAEunue4VO div._1rD8X96FdnksZLvRRlEiCR > svg
-{
-	display: flex !important;
-}
+		/* Icon */
+		div.U6HcKswXzjmWtFxbjxuz4,
+		div._1rD8X96FdnksZLvRRlEiCR
+		{
+			width: 16px !important;
+			height: 16px !important;
+			margin-right: 6px !important;
+			color: inherit !important;
 
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageListItem_"] div[class*="pagedsettings_PageListItem_Title_"],
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.bkfjn0yka2uHNqEvWZaTJ div._2X9_IsQsEJDpAd2JGrHdJI,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._1-vlriAtKYDViAEunue4VO div._2PPbMrzl8PKBwpkjYs9b0i
-{
-	padding: 0 6px !important;
-}
+			svg
+			{
+				display: flex !important;
+			}
+		}
 
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PageListSeparator_"],
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._1UEEmNDZ7Ta3enwTf5T0O0,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._1Hye7o1wYIfc9TE9QKRW4T
-{
-	border: none !important;
-	height: 1px !important;
-	background-color: rgba(var(--adw-sidebar-fg-rgb), var(--adw-border-opacity)) !important;
-	margin: 2px 0 !important;
-}
+		/* Title */
+		div._2X9_IsQsEJDpAd2JGrHdJI,
+		div._2PPbMrzl8PKBwpkjYs9b0i
+		{
+			padding: 0 6px !important;
+		}
+	}
 
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageContent_"],
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._1I3NifxqTHCkE-2DeritAs,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.CFTLX2wIKOK3hNV-fS7_V
-{
-	background: rgb(var(--adw-window-bg-rgb)) !important;
-	color: rgb(var(--adw-window-fg-rgb)) !important;
-	padding: 0 !important;
-	margin: 0 !important;
-}
+	/* Chat group settings leave button */
+	div._1NqKTWvxtFgflRlqLTtv7e
+	{
+		margin: 6px !important;
+	}
 
-/* Headerbar drag area */
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_::before,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s::before,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH::before
-{
-	content: "";
-	-webkit-app-region: drag;
-	position: absolute;
-	left: var(--adw-windowcontrols-margin-left);
-	right: var(--adw-windowcontrols-margin-right);
-	top: 0;
-	height: 46px;
-}
+	div._1UEEmNDZ7Ta3enwTf5T0O0,
+	div._1Hye7o1wYIfc9TE9QKRW4T
+	{
+		border: none !important;
+		height: 1px !important;
+		background-color: rgba(var(--adw-sidebar-fg-rgb), var(--adw-border-opacity)) !important;
+		margin: 2px 0 !important;
+	}
 
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.DialogHeader,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogHeader,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.DialogHeader,
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageListColumn_"] > div[class*="pagedsettings_PagedSettingsDialog_Title_"],
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.RTicBCbDcEGkjsbmWzA8C > div._3qEgQJqeb0zyM12KXq64Or,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._2kwFFHckg8jvnwJfg9-la8 > div._2rjVTGz8aLvqOdz5v2gq5C
-{
-	box-sizing: border-box !important;
-	height: 46px !important;
-	flex: none !important;
-	display: grid !important;
-	grid-template-columns: 1fr !important;
-	align-items: center !important;
-	padding: 12px !important;
-	margin: 0 !important;
-	background: none !important;
-	color: inherit !important;
-	font-family: var(--adw-text-font) !important;
-	font-size: var(--adw-text-header-size) !important;
-	font-weight: var(--adw-text-header-weight) !important;
-	line-height: normal !important;
-	letter-spacing: normal !important;
-	text-align: center !important;
-	text-transform: none !important;
-	white-space: nowrap !important;
-	overflow: hidden !important;
-	text-overflow: ellipsis !important;
-	border: none !important;
-}
+	div._1I3NifxqTHCkE-2DeritAs,
+	div.CFTLX2wIKOK3hNV-fS7_V,
+	div._3mf9BBKxhIVdrt6nIWBt4x,
+	div._3t8HxXdv4QoWO7f3awdiCQ
+	{
+		background: rgb(var(--adw-window-bg-rgb)) !important;
+		color: rgb(var(--adw-window-fg-rgb)) !important;
+		padding: 0 !important;
+		margin: 0 !important;
+		overflow: hidden !important;
+	}
 
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageListColumn_"] > div[class*="pagedsettings_PagedSettingsDialog_Title_"],
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.RTicBCbDcEGkjsbmWzA8C > div._3qEgQJqeb0zyM12KXq64Or,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._2kwFFHckg8jvnwJfg9-la8 > div._2rjVTGz8aLvqOdz5v2gq5C
-{
-	padding: 12px calc(var(--adw-windowcontrols-margin-left) + 6px) !important;
-}
+	/* Headerbar drag area */
+	&::before
+	{
+		content: "";
+		-webkit-app-region: drag;
+		position: absolute;
+		left: var(--adw-windowcontrols-margin-left);
+		right: var(--adw-windowcontrols-margin-right);
+		top: 0;
+		height: 46px;
+	}
 
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.DialogContent_InnerWidth > div.DialogBody,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogContent_InnerWidth > div.DialogBody,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.DialogContent_InnerWidth > div.DialogBody
-{
-	margin: 0 !important;
-	padding: 12px 24px 24px 24px !important;
-	-webkit-mask-image: none !important;
-	display: flex !important;
-	align-items: center !important;
-}
+	div.DialogHeader,
+	div.RTicBCbDcEGkjsbmWzA8C > div._3qEgQJqeb0zyM12KXq64Or,
+	div._2kwFFHckg8jvnwJfg9-la8 > div._2rjVTGz8aLvqOdz5v2gq5C,
+	div.xSTLmzylFJdIfak7ZdhuA > span.uyoPtKbi4K01XGuYF5-C_,
+	div._3t8HxXdv4QoWO7f3awdiCQ > div.e600t61ObcLA11pIZAVb9
+	{
+		box-sizing: border-box !important;
+		height: 46px !important;
+		flex: none !important;
+		display: grid !important;
+		grid-template-columns: 1fr !important;
+		align-items: center !important;
+		padding: 12px !important;
+		margin: 0 !important;
+		background: none !important;
+		color: inherit !important;
+		font-family: var(--adw-text-font) !important;
+		font-size: var(--adw-text-header-size) !important;
+		font-weight: var(--adw-text-header-weight) !important;
+		line-height: normal !important;
+		letter-spacing: normal !important;
+		text-align: center !important;
+		text-transform: none !important;
+		white-space: nowrap !important;
+		overflow: hidden !important;
+		text-overflow: ellipsis !important;
+		border: none !important;
 
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.DialogContent_InnerWidth > div.DialogBody > *,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogContent_InnerWidth > div.DialogBody > *,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.DialogContent_InnerWidth > div.DialogBody > *
-{
-	width: 600px !important;
-}
+		/* Scroll shadow: shadows */
+		&::after
+		{
+			content: "";
+			display: block;
+			position: absolute;
+			height: 4px;
+			top: 46px;
+			left: 0;
+			right: calc(var(--adw-scrollbar-size) * -1);
+			z-index: 1;
+			pointer-events: none;
+			background-image: linear-gradient(to bottom, rgba(var(--adw-shade-rgb), calc(var(--adw-shade-a) * 0.75)), transparent 4px);
+			box-shadow: inset 0 1px rgba(var(--adw-shade-rgb), calc(var(--adw-shade-a) * 0.75));
+		}
+	}
 
-/* Scroll shadow: containers */
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.DialogContent_InnerWidth > div.DialogBody,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogContent_InnerWidth > div.DialogBody,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.DialogContent_InnerWidth > div.DialogBody,
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageList_"],
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._EebF_xe4DGRZ9a0XkyDj,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._18QCu-7MTzd51UpVbYysDy
-{
-	scrollbar-gutter: stable !important;
-	position: relative !important;
-	overflow-x: hidden !important;
-	overflow-y: auto !important;
-}
+	div.RTicBCbDcEGkjsbmWzA8C > div._3qEgQJqeb0zyM12KXq64Or,
+	div._2kwFFHckg8jvnwJfg9-la8 > div._2rjVTGz8aLvqOdz5v2gq5C,
+	div.xSTLmzylFJdIfak7ZdhuA > span.uyoPtKbi4K01XGuYF5-C_
+	{
+		padding: 12px calc(var(--adw-windowcontrols-margin-left) + 6px) !important;
+	}
 
-/* Scroll shadow: background overlays */
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.DialogContent_InnerWidth > div.DialogBody::before,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogContent_InnerWidth > div.DialogBody::before,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.DialogContent_InnerWidth > div.DialogBody::before,
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageList_"]::before,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._EebF_xe4DGRZ9a0XkyDj::before,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._18QCu-7MTzd51UpVbYysDy::before
-{
-	content: "";
-	display: block;
-	position: absolute;
-	height: 4px;
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 2;
-	pointer-events: none;
-	background: rgb(var(--adw-window-bg-rgb));
-}
+	div.DialogContent_InnerWidth > div.DialogBody
+	{
+		display: flex !important;
+		align-items: center !important;
 
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageList_"]::before,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div._EebF_xe4DGRZ9a0XkyDj::before,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._18QCu-7MTzd51UpVbYysDy::before
-{
-	background: rgb(var(--adw-sidebar-bg-rgb));
-}
+		& > *
+		{
+			width: 600px !important;
+		}
+	}
 
-/* Scroll shadow: shadows */
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div.DialogHeader::after,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.DialogHeader::after,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div.DialogHeader::after,
-body.DesktopUI div.pagedsettings_PagedSettingsDialog_3I6h_ div[class*="pagedsettings_PagedSettingsDialog_PageListColumn_"] > div[class*="pagedsettings_PagedSettingsDialog_Title_"]::after,
-body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s div.RTicBCbDcEGkjsbmWzA8C > div._3qEgQJqeb0zyM12KXq64Or::after,
-body.DesktopUI div._2sssIwe0duyIrFvat2oXzH div._2kwFFHckg8jvnwJfg9-la8 > div._2rjVTGz8aLvqOdz5v2gq5C::after
-{
-	content: "";
-	display: block;
-	position: absolute;
-	height: 4px;
-	top: 46px;
-	left: 0;
-	right: calc(var(--adw-scrollbar-size) * -1);
-	z-index: 1;
-	pointer-events: none;
-	background-image: linear-gradient(to bottom, rgba(var(--adw-shade-rgb), calc(var(--adw-shade-a) * 0.75)), transparent 4px);
-	box-shadow: inset 0 1px rgba(var(--adw-shade-rgb), calc(var(--adw-shade-a) * 0.75));
+	div.DialogContent_InnerWidth > div.DialogBody,
+	div._3t8HxXdv4QoWO7f3awdiCQ > div.e600t61ObcLA11pIZAVb9 + *:not(div._1cjXkI2JrN71BK7A2YXaYa),
+	div._3t8HxXdv4QoWO7f3awdiCQ > div.e600t61ObcLA11pIZAVb9 + div._1cjXkI2JrN71BK7A2YXaYa + *,
+	div._3t8HxXdv4QoWO7f3awdiCQ ._1PFRw63SmEC5gmtojKrml1
+	{
+		margin: 0 !important;
+		padding: 12px 24px 24px 24px !important;
+		-webkit-mask-image: none !important;
+	}
+
+	/* Chat: no permissions warning */
+	div._3t8HxXdv4QoWO7f3awdiCQ > div.e600t61ObcLA11pIZAVb9 + div._1cjXkI2JrN71BK7A2YXaYa
+	{
+		background-image: linear-gradient(0deg, rgba(var(--adw-accent-bg-rgb), 0.3), rgba(var(--adw-accent-bg-rgb), 0.3)) !important;
+		background-color: rgb(var(--adw-headerbar-bg-rgb)) !important;
+		box-shadow: inset 0 1px rgba(var(--adw-headerbar-shade-rgb), var(--adw-headerbar-shade-a)) !important;
+		border-radius: 0 !important;
+		min-height: 46px !important;
+        line-height: 46px !important;
+		padding: 0 10px !important;
+		color: rgb(var(--adw-headerbar-fg-rgb)) !important;
+		font-family: var(--adw-text-font) !important;
+		font-size: var(--adw-text-title3-size) !important;
+		font-weight: var(--adw-text-title3-weight) !important;
+		letter-spacing: normal !important;
+		text-transform: none !important;
+		justify-content: center !important;
+
+		svg
+		{
+			display: none !important;
+		}
+	}
+
+	/* Scroll shadow: containers */
+	div.DialogContent_InnerWidth > div.DialogBody,
+	div._EebF_xe4DGRZ9a0XkyDj,
+	div._18QCu-7MTzd51UpVbYysDy,
+	div.MWzjHR-uqa-svGrdXYfUl,
+	div._3t8HxXdv4QoWO7f3awdiCQ > div.e600t61ObcLA11pIZAVb9 + *:not(div._1cjXkI2JrN71BK7A2YXaYa),
+	div._3t8HxXdv4QoWO7f3awdiCQ > div.e600t61ObcLA11pIZAVb9 + div._1cjXkI2JrN71BK7A2YXaYa + *,
+	div._3t8HxXdv4QoWO7f3awdiCQ ._1PFRw63SmEC5gmtojKrml1
+	{
+		scrollbar-gutter: stable !important;
+		position: relative !important;
+		overflow-x: hidden !important;
+		overflow-y: auto !important;
+
+		/* Scroll shadow: background overlays */
+		&::before
+		{
+			content: "";
+			display: block;
+			position: absolute;
+			height: 4px;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 2;
+			pointer-events: none;
+			background: rgb(var(--adw-window-bg-rgb));
+		}
+	}
 }

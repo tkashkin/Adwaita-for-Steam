@@ -1,45 +1,188 @@
-/* Comboboxes on the Updates page */
-body.DesktopUI div.appproperties_AppProperties_1FyBL div.DialogBody > div:not([class]):first-child > div.gamepaddialog_Field_S-_La,
-body.DesktopUI div._1FyBL6obxHQ2Z2CsaV2Gbz div.DialogBody > div:not([class]):first-child > div.S-_LaQG5eEOM2HWZ-geJI,
-body.DesktopUI div._1FyBL6obxHQ2Z2CsaV2Gbz div.DialogBody > div:not([class]):first-child > div.eKmEXJCm_lgme24Fp_HWt
+div._1FyBL6obxHQ2Z2CsaV2Gbz
 {
-	border-bottom-left-radius: 0 !important;
-	border-bottom-right-radius: 0 !important;
-}
+	div.DialogControlsSection
+	{
+		display: flex !important;
+		flex-direction: column !important;
+		position: relative !important;
 
-body.DesktopUI div.appproperties_AppProperties_1FyBL div.DialogBody > div:not([class]):first-child + div.gamepaddialog_Field_S-_La,
-body.DesktopUI div._1FyBL6obxHQ2Z2CsaV2Gbz div.DialogBody > div:not([class]):first-child + div.S-_LaQG5eEOM2HWZ-geJI,
-body.DesktopUI div._1FyBL6obxHQ2Z2CsaV2Gbz div.DialogBody > div:not([class]):first-child + div.eKmEXJCm_lgme24Fp_HWt
-{
-	height: 0 !important;
-	min-height: 0 !important;
-	padding: 0 !important;
-	margin: 0 !important;
-	overflow: visible !important;
-	background: none !important;
-	box-shadow: none !important;
-}
+		&:empty
+		{
+			display: none !important;
+		}
 
-body.DesktopUI div.appproperties_AppProperties_1FyBL div.DialogBody > div:not([class]):first-child + div.gamepaddialog_Field_S-_La div.gamepaddialog_FieldLabel_3b0U-,
-body.DesktopUI div._1FyBL6obxHQ2Z2CsaV2Gbz div.DialogBody > div:not([class]):first-child + div.S-_LaQG5eEOM2HWZ-geJI div._3b0U-QDD-uhFpw6xM716fw,
-body.DesktopUI div._1FyBL6obxHQ2Z2CsaV2Gbz div.DialogBody > div:not([class]):first-child + div.eKmEXJCm_lgme24Fp_HWt div._3jMlJm4PQCA8SfNlUR99Fo
-{
-	position: absolute !important;
-	left: 12px !important;
-	top: 18px !important;
-}
+		div._3zuICQ63IRympzZ6qgs-5O + div.DialogControlsSection:has(+ div.HxqeaLbjhdRiSTK8ZFwxJ)
+		{
+			order: 1 !important;
+		}
 
-body.DesktopUI div.appproperties_AppProperties_1FyBL div.DialogBody > div:not([class]):first-child + div.gamepaddialog_Field_S-_La div.gamepaddialog_FieldDescription_2OJfk,
-body.DesktopUI div._1FyBL6obxHQ2Z2CsaV2Gbz div.DialogBody > div:not([class]):first-child + div.S-_LaQG5eEOM2HWZ-geJI div._2OJfkxlD3X9p8Ygu1vR7Lr,
-body.DesktopUI div._1FyBL6obxHQ2Z2CsaV2Gbz div.DialogBody > div:not([class]):first-child + div.eKmEXJCm_lgme24Fp_HWt div._1W1to_azoBRG95oNAFpf9Q
-{
-	display: none !important;
-}
+		/* Steam Cloud usage */
+		div._2Dfy8vuNMdABIKGO2KHbVF
+		{
+			position: absolute !important;
+			right: 0 !important;
+			top: 0 !important;
+			margin: 0 !important;
 
-body.DesktopUI div.appproperties_AppProperties_1FyBL div.DialogBody > div:not([class]):first-child + div.gamepaddialog_Field_S-_La + div.gamepaddialog_Field_S-_La,
-body.DesktopUI div._1FyBL6obxHQ2Z2CsaV2Gbz div.DialogBody > div:not([class]):first-child + div.S-_LaQG5eEOM2HWZ-geJI + div.S-_LaQG5eEOM2HWZ-geJI,
-body.DesktopUI div._1FyBL6obxHQ2Z2CsaV2Gbz div.DialogBody > div:not([class]):first-child + div.eKmEXJCm_lgme24Fp_HWt + div.eKmEXJCm_lgme24Fp_HWt
-{
-	border-bottom-left-radius: var(--adw-card-radius) !important;
-	border-bottom-right-radius: var(--adw-card-radius) !important;
+			&, span
+			{
+				color: rgb(var(--adw-window-fg-rgb)) !important;
+				font-family: var(--adw-text-font) !important;
+				line-height: var(--adw-list-header-height) !important;
+				text-transform: none !important;
+				letter-spacing: normal !important;
+				font-size: var(--adw-list-header-size) !important;
+				font-weight: var(--adw-list-header-weight) !important;
+				min-height: var(--adw-list-header-height) !important;
+			}
+
+			span:not(._1KmR8MOpvgQ9OO2AmwOCca)
+			{
+				color: rgb(var(--adw-accent-rgb)) !important;
+			}
+		}
+	}
+
+	div._1y1wmpgy_HhnryUAHjEOSG,
+	div.r3hOLjghfVd2FkvKjlsrO
+	{
+		padding: 0 !important;
+		margin: 0 !important;
+		border: none !important;
+	}
+
+	div.DialogInput_Wrapper
+	{
+		position: relative !important;
+
+		input.DialogInput
+		{
+			background: rgba(var(--adw-card-bg-rgb), var(--adw-card-opacity)) !important;
+			color: rgb(var(--adw-card-fg-rgb)) !important;
+			border-radius: var(--adw-card-radius) !important;
+			box-shadow: var(--adw-card-shadow) !important;
+			border: none !important;
+			min-height: var(--adw-row-height) !important;
+			box-sizing: border-box !important;
+			padding: 4px 12px !important;
+			font-family: var(--adw-text-font-monospace) !important;
+			font-size: var(--adw-text-row-title-size) !important;
+			font-weight: var(--adw-text-row-title-weight) !important;
+			text-transform: none !important;
+			line-height: normal !important;
+			letter-spacing: normal !important;
+			transition: var(--adw-button-transition) !important;
+
+			&::selection
+			{
+				color: rgb(var(--adw-accent-fg-rgb)) !important;
+				background: rgb(var(--adw-accent-bg-rgb)) !important;
+				text-shadow: none !important;
+			}
+
+			/* Focused */
+			&:focus-within
+			{
+				box-shadow: var(--adw-card-shadow), var(--adw-focus-border) !important;
+			}
+
+			&:not(:focus-within):hover
+			{
+				background: rgba(var(--adw-card-bg-rgb), var(--adw-card-hover-opacity)) !important;
+			}
+
+			&:not(:focus-within):active
+			{
+				background: rgba(var(--adw-card-bg-rgb), var(--adw-card-active-opacity)) !important;
+			}
+		}
+
+		&:not(:focus-within)
+		{
+			input.DialogInput
+			{
+				padding-right: 44px !important;
+			}
+
+			&::after
+			{
+				background-color: rgb(var(--adw-window-fg-rgb));
+				content: "";
+				display: block;
+				width: 16px;
+				position: absolute;
+				right: 21px;
+				top: 0;
+				bottom: 0;
+				-webkit-mask-repeat: no-repeat;
+				-webkit-mask-position: center;
+				-webkit-mask-size: 16px;
+				-webkit-mask-image: var(--adw-icon-edit);
+				pointer-events: none !important;
+			}
+		}
+	}
+
+	/* Installed files header */
+	div.vgVsCDEci0IK6JY9IrT9w
+	{
+		/* Header */
+		div._3sCkhDJ57IT9iI8VuF4bSe,
+		div._1KmR8MOpvgQ9OO2AmwOCca
+		{
+			color: rgb(var(--adw-window-fg-rgb)) !important;
+			font-family: var(--adw-text-font) !important;
+			line-height: var(--adw-list-header-height) !important;
+			text-transform: none !important;
+			letter-spacing: normal !important;
+			font-size: var(--adw-list-header-size) !important;
+			font-weight: var(--adw-list-header-weight) !important;
+			min-height: var(--adw-list-header-height) !important;
+			margin: 0 0 6px 0 !important;
+		}
+
+		/* Size */
+		div._1KmR8MOpvgQ9OO2AmwOCca
+		{
+			color: rgb(var(--adw-accent-rgb)) !important;
+			margin-left: 4px !important;
+		}
+
+		/* Browse button */
+		button.DialogButton
+		{
+			color: rgb(var(--adw-window-fg-rgb)) !important;
+			font-family: var(--adw-text-font) !important;
+			line-height: var(--adw-list-header-height) !important;
+			text-transform: none !important;
+			letter-spacing: normal !important;
+			font-size: var(--adw-list-header-size) !important;
+			font-weight: var(--adw-list-header-weight) !important;
+			height: var(--adw-list-header-height) !important;
+			padding: 0 12px !important;
+			margin: 0 !important;
+			background: transparent !important;
+			box-shadow: none !important;
+			border-radius: var(--adw-button-radius) !important;
+			transition: var(--adw-button-transition) !important;
+			cursor: default !important;
+
+			&:hover
+			{
+				background: rgba(var(--adw-window-fg-rgb), var(--adw-hover-opacity)) !important;
+				box-shadow: none !important;
+			}
+
+			&:active
+			{
+				background: rgba(var(--adw-window-fg-rgb), var(--adw-active-opacity)) !important;
+				box-shadow: none !important;
+			}
+
+			&::before
+			{
+				content: none !important;
+			}
+		}
+	}
 }
