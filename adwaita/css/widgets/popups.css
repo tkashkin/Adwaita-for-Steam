@@ -55,7 +55,7 @@ html.client_chat_frame
 
 			& > div
 			{
-				display: inline-block !important;
+				display: inline-flex !important;
 				overflow: hidden !important;
 				white-space: nowrap !important;
 				text-overflow: ellipsis !important;
