@@ -854,8 +854,215 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 
 					div.ReactVirtualized__Grid__innerScrollContainer
 					{
-						width: 600px !important;
+						width: 614px !important;
 						margin: auto !important;
+
+						/* List item */
+						div._2RCSUgg2X_uF_C0e1lrcqc
+						{
+							padding: 0 6px !important;
+							margin: 0 !important;
+							border-radius: var(--adw-button-radius) !important;
+							background: transparent !important;
+							border: 1px rgb(var(--adw-window-bg-rgb)) solid !important;
+							gap: 12px !important;
+
+							&:hover
+							{
+								background: rgba(var(--adw-window-fg-rgb), var(--adw-hover-opacity)) !important;
+
+								div.DialogCheckbox
+								{
+									box-shadow: var(--adw-checkbox-unchecked-shadow-hover) !important;
+								}
+							}
+
+							&:active
+							{
+								background: rgba(var(--adw-window-fg-rgb), var(--adw-active-opacity)) !important;
+
+								div.DialogCheckbox
+								{
+									background-color: var(--adw-checkbox-unchecked-overlay-active) !important;
+									box-shadow: none !important;
+								}
+							}
+
+							&:has(.DialogCheckbox.Active)
+							{
+								background: rgba(var(--adw-window-fg-rgb), var(--adw-selected-opacity)) !important;
+
+								div.DialogCheckbox
+								{
+									background: var(--adw-checkbox-checked-bg) !important;
+									box-shadow: none !important;
+
+									&::before
+									{
+										background-color: var(--adw-checkbox-checked-fg) !important;
+									}
+								}
+
+								&:hover
+								{
+									background: rgba(var(--adw-window-fg-rgb), var(--adw-selected-hover-opacity)) !important;
+
+									div.DialogCheckbox
+									{
+										background-color: var(--adw-checkbox-checked-overlay-hover) !important;
+									}
+								}
+
+								&:active
+								{
+									background: rgba(var(--adw-window-fg-rgb), var(--adw-selected-active-opacity)) !important;
+
+									div.DialogCheckbox
+									{
+										background-color: var(--adw-checkbox-checked-overlay-active) !important;
+									}
+								}
+							}
+
+							/* Image */
+							div._1O1Jq87hokErcc093uvh6L
+							{
+								&, *
+								{
+									padding: 0 !important;
+									margin: 0 !important;
+									width: 92px !important;
+									height: 42px !important;
+									border-radius: 6px !important;
+									overflow: clip !important;
+									transform: none !important;
+									cursor: default !important;
+								}
+							}
+
+							/* Content */
+							div._1rWv0q-vW1VYM8U9rZwMr7
+							{
+								padding: 0 !important;
+								margin: 0 !important;
+
+								div.d9dlNsZ74TUTz3j0b1Syi
+								{
+									padding: 0 !important;
+									margin: 0 !important;
+									gap: 4px !important;
+
+									/* Title */
+									.YxhO6W2VNKG69k4WqIrip
+									{
+										color: rgb(var(--adw-card-fg-rgb)) !important;
+										font-family: var(--adw-text-font) !important;
+										font-size: var(--adw-text-row-title-size) !important;
+										font-weight: var(--adw-text-row-title-weight) !important;
+										line-height: normal !important;
+										letter-spacing: normal !important;
+										text-transform: none !important;
+									}
+
+									/* Subtitle */
+									div._g4ceYb5tVuSmXg0aNEdR
+									{
+										gap: 2px !important;
+
+										div._1L9a0QuKYIDA8pw0ztz0tr
+										{
+											color: rgba(var(--adw-card-fg-rgb), var(--adw-dim-label-opacity)) !important;
+											font-family: var(--adw-text-font) !important;
+											font-size: var(--adw-text-row-subtitle-size) !important;
+											font-weight: var(--adw-text-row-subtitle-weight) !important;
+											line-height: normal !important;
+											letter-spacing: normal !important;
+											text-transform: none !important;
+											cursor: default !important;
+
+											& > *
+											{
+												color: inherit !important;
+											}
+
+											&._3VH5fiCX_yRu0oV5Adyqfq:hover
+											{
+												color: rgb(var(--adw-accent-rgb)) !important;
+											}
+										}
+									}
+								}
+
+								div._3vHX3wZSMEfQYNhAjbu0RB
+								{
+									gap: 12px !important;
+									padding: 6px !important;
+
+									/* Size */
+									div.mohK9opGjpCsWNdUuJuFE
+									{
+										padding: 0 !important;
+										margin: 0 !important;
+										color: rgb(var(--adw-card-fg-rgb)) !important;
+										font-family: var(--adw-text-font) !important;
+										font-size: var(--adw-text-row-title-size) !important;
+										font-weight: var(--adw-text-row-title-weight) !important;
+										line-height: normal !important;
+										letter-spacing: normal !important;
+										text-transform: none !important;
+										font-feature-settings: "tnum" !important;
+										cursor: default !important;
+
+										&:hover
+										{
+											color: rgb(var(--adw-accent-rgb)) !important;
+										}
+									}
+
+									/* Checkbox */
+									div._2qURXDJ4ZtfSVOesDk7A73
+									{
+										padding: 0 !important;
+										margin: 0 !important;
+
+										div.DialogCheckbox
+										{
+											width: 20px !important;
+											min-width: 20px !important;
+											max-width: 20px !important;
+											height: 20px !important;
+											min-height: 20px !important;
+											max-height: 20px !important;
+											box-sizing: border-box !important;
+											padding: 2px !important;
+											background: var(--adw-checkbox-unchecked-bg);
+											background-blend-mode: overlay !important;
+											border-radius: var(--adw-checkbox-radius) !important;
+											box-shadow: var(--adw-checkbox-unchecked-shadow);
+											cursor: default !important;
+
+											svg
+											{
+												display: none !important;
+											}
+
+											&::before
+											{
+												background-color: transparent;
+												content: "";
+												display: block;
+												width: 16px;
+												height: 16px;
+												-webkit-mask-repeat: no-repeat;
+												-webkit-mask-position: center;
+												-webkit-mask-size: 16px;
+												-webkit-mask-image: var(--adw-icon-checkbox-check);
+											}
+										}
+									}
+								}
+							}
+						}
 					}
 				}
 			}
