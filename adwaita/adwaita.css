@@ -39,12 +39,20 @@
 
 @import url("css/main/library/library.css");
 
+@import url("css/main/console.css");
+
 @import url("css/chat/chat.css");
 @import url("css/chat/sidebar.css");
 @import url("css/chat/messages.css");
 
 @import url("css/dialogs/pagedsettings/dialog.css");
 @import url("css/dialogs/pagedsettings/rows.css");
+@import url("css/dialogs/about.css");
+@import url("css/dialogs/appproperties.css");
 @import url("css/dialogs/login.css");
 @import url("css/dialogs/settings.css");
-@import url("css/dialogs/appproperties.css");
+
+:root
+{
+	--adw-version: "3.8";
+}

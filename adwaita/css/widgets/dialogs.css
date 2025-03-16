@@ -36,7 +36,7 @@ html.client_chat_frame div.window_resize_grip
 }
 
 /* Web dialogs */
-body.DesktopUI.ModalDialogBody .PopupFullWindow:not(:has(._2sssIwe0duyIrFvat2oXzH)) .title-area
+body.DesktopUI.ModalDialogBody .PopupFullWindow:not(:has(._2sssIwe0duyIrFvat2oXzH)):not(:has(.FFIKUQ7BGKw6vO1voazlr)) .title-area
 {
 	height: 36px !important;
 	min-height: 36px !important;

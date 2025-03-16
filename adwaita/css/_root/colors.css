@@ -79,6 +79,11 @@
 	--adw-popover-shade-rgb: 0, 0, 6;
 	--adw-popover-shade-a: 0.25;
 
+	/* Banners */
+	--adw-banner-bg-rgb: 125, 125, 131;
+	--adw-banner-bg-a: 0.3;
+	--adw-banner-fg-rgb: 255, 255, 255;
+
 	/* Thumbnails */
 	--adw-thumbnail-bg-rgb: 57, 57, 61;
 	--adw-thumbnail-fg-rgb: 255, 255, 255;

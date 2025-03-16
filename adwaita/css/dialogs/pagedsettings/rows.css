@@ -26,7 +26,8 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 	/* Row group subtitle */
 	div.DialogBodyText,
 	div.HxqeaLbjhdRiSTK8ZFwxJ,
-	div._3w92Ej5Kq7nbt5WACQ6jwI
+	div._3w92Ej5Kq7nbt5WACQ6jwI,
+	div.SettingsDialogSubHeader + div:not([class]):has(+ div.eKmEXJCm_lgme24Fp_HWt)
 	{
 		margin: -8px 0 8px 0 !important;
 		color: rgba(var(--adw-window-fg-rgb), var(--adw-dim-label-opacity)) !important;
@@ -223,7 +224,8 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 		div._3zuICQ63IRympzZ6qgs-5O + &,
 		div._1HL6KuwUJaZQ7x2rmAxxSz + &,
 		div.HxqeaLbjhdRiSTK8ZFwxJ + &,
-		div.eKmEXJCm_lgme24Fp_HWt._3tB2lyT2Pfvfv-jyuVgUOg:not(:has(div._3jMlJm4PQCA8SfNlUR99Fo)) + &
+		div.eKmEXJCm_lgme24Fp_HWt._3tB2lyT2Pfvfv-jyuVgUOg:not(:has(div._3jMlJm4PQCA8SfNlUR99Fo)) + &,
+		div.SettingsDialogSubHeader + div:not([class]) + &
 		{
 			border-top-left-radius: var(--adw-card-radius) !important;
 			border-top-right-radius: var(--adw-card-radius) !important;

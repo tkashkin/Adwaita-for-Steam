@@ -1,0 +1,107 @@
+/* About Steam dialog */
+body.DesktopUI div.FFIKUQ7BGKw6vO1voazlr
+{
+	background: none !important;
+	overflow-x: hidden !important;
+	overflow-y: auto !important;
+	padding: 16px 16px 8px 16px !important;
+	-webkit-app-region: drag !important;
+
+	div.DialogContent_InnerWidth
+	{
+		overflow: visible !important;
+
+		div.DialogHeader
+		{
+			padding: 0 !important;
+			margin: 0 !important;
+			flex-direction: column !important;
+			text-indent: -9999px !important;
+			font-size: 0 !important;
+			line-height: 0 !important;
+
+			svg
+			{
+				width: 64px !important;
+				height: 64px !important;
+				padding: 0 !important;
+				margin: 0 !important;
+				order: -1 !important;
+			}
+
+			&::before,
+			&::after
+			{
+				content: "Steam";
+				color: rgb(var(--adw-window-fg-rgb)) !important;
+				font-family: var(--adw-text-font) !important;
+				text-indent: 0 !important;
+				text-transform: none !important;
+				letter-spacing: normal !important;
+				line-height: normal !important;
+				font-size: var(--adw-text-largetitle-size) !important;
+				font-weight: var(--adw-text-largetitle-weight) !important;
+			}
+
+			&::after
+			{
+				content: "Valve Corporation";
+				font-size: var(--adw-text-base-size) !important;
+				font-weight: var(--adw-text-base-weight) !important;
+			}
+		}
+
+		div.DialogBodyText
+		{
+			background: rgba(var(--adw-card-bg-rgb), var(--adw-card-opacity)) !important;
+			color: rgba(var(--adw-card-fg-rgb), var(--adw-dim-label-opacity)) !important;
+			border-radius: var(--adw-card-radius) !important;
+			box-shadow: var(--adw-card-shadow) !important;
+			box-sizing: border-box !important;
+			padding: 4px 12px !important;
+			margin: 40px 0 0 0 !important;
+			font-family: var(--adw-text-font) !important;
+			font-size: var(--adw-text-row-title-size) !important;
+			font-weight: var(--adw-text-row-title-weight) !important;
+			text-transform: none !important;
+			line-height: normal !important;
+			letter-spacing: normal !important;
+			position: relative !important;
+			-webkit-app-region: no-drag !important;
+
+			span
+			{
+				color: rgb(var(--adw-card-fg-rgb)) !important;
+			}
+
+			&::selection, *::selection
+			{
+				color: rgb(var(--adw-accent-fg-rgb)) !important;
+				background: rgb(var(--adw-accent-bg-rgb)) !important;
+				text-shadow: none !important;
+			}
+
+			&::before
+			{
+				content: "Adwaita for Steam " var(--adw-version);
+				position: absolute;
+				top: -32px;
+				left: 0;
+				right: 0;
+				justify-self: center;
+				padding: 4px 12px;
+				color: rgb(var(--adw-accent-rgb));
+				background: rgba(var(--adw-accent-rgb), var(--adw-button-bg-opacity));
+				font-family: var(--adw-text-font);
+				font-size: var(--adw-text-header-size);
+				font-weight: var(--adw-text-header-weight);
+				border-radius: var(--adw-button-pill-radius);
+			}
+		}
+
+		div.DialogFooter
+		{
+			display: none !important;
+		}
+	}
+}

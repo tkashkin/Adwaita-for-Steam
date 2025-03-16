@@ -238,14 +238,14 @@ html.client_chat_frame div._2VY6HOZXxO2AsBaLssl0Uy
 	/* Chat: no permissions warning */
 	div._3t8HxXdv4QoWO7f3awdiCQ > div.e600t61ObcLA11pIZAVb9 + div._1cjXkI2JrN71BK7A2YXaYa
 	{
-		background-image: linear-gradient(0deg, rgba(var(--adw-accent-bg-rgb), 0.3), rgba(var(--adw-accent-bg-rgb), 0.3)) !important;
+		background-image: linear-gradient(0deg, rgba(var(--adw-banner-bg-rgb), var(--adw-banner-bg-a)), rgba(var(--adw-banner-bg-rgb), var(--adw-banner-bg-a))) !important;
 		background-color: rgb(var(--adw-headerbar-bg-rgb)) !important;
 		box-shadow: inset 0 1px rgba(var(--adw-headerbar-shade-rgb), var(--adw-headerbar-shade-a)) !important;
 		border-radius: 0 !important;
 		min-height: 46px !important;
         line-height: 46px !important;
 		padding: 0 10px !important;
-		color: rgb(var(--adw-headerbar-fg-rgb)) !important;
+		color: rgb(var(--adw-banner-fg-rgb)) !important;
 		font-family: var(--adw-text-font) !important;
 		font-size: var(--adw-text-title3-size) !important;
 		font-weight: var(--adw-text-title3-weight) !important;
