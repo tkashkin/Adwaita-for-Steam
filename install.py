@@ -45,6 +45,7 @@ CUSTOM_DIR = "custom"
 EXTRAS_DIR = f"{ADWAITA_DIR}/extras"
 
 TARGET_NORMAL = "~/.steam/steam"
+TARGET_SNAP = "~/snap/steam/common/.steam/steam"
 TARGET_FLATPAK = "~/.var/app/com.valvesoftware.Steam/.steam/steam"
 TARGET_WINDOWS = "C:\\Program Files (x86)\\Steam"
 TARGET_MACOS = "~/Library/Application Support/Steam/Steam.AppBundle/Steam/Contents/MacOS"
@@ -331,6 +332,8 @@ if __name__ == "__main__":
 	for t in args.target:
 		if t == "normal":
 			targets.add(Path(TARGET_NORMAL).expanduser().resolve())
+		elif t == "snap":
+			targets.add(Path(TARGET_SNAP).expanduser().resolve())
 		elif t == "flatpak":
 			targets.add(Path(TARGET_FLATPAK).expanduser().resolve())
 		elif t == "windows":

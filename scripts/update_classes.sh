@@ -35,9 +35,11 @@ EXTRAS_DIR="extras"
 FULL_DIR="full"
 
 STEAM="$HOME/.steam/steam"
+STEAM_SNAP="$HOME/snap/steam/common/.steam/steam"
 STEAM_FLATPAK="$HOME/.var/app/com.valvesoftware.Steam/.steam/steam"
 
 STEAM_CSS="$STEAM/steamui/css"
+STEAM_CSS_SNAP="$STEAM_SNAP/steamui/css"
 STEAM_CSS_FLATPAK="$STEAM_FLATPAK/steamui/css"
 
 # COLORS
@@ -139,6 +141,8 @@ function dep_check {
 
 if [[ -d "$STEAM_CSS_FLATPAK" ]]; then
 	CSS_DIR="$STEAM_CSS_FLATPAK"
+elif [[ -d "$STEAM_CSS_SNAP" ]]; then
+	CSS_DIR="$STEAM_CSS_SNAP"
 elif [[ -d "$STEAM_CSS" ]]; then
 	CSS_DIR="$STEAM_CSS"
 else
