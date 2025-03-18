@@ -525,6 +525,12 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA button.bACIuqv-b_9TztCczFK19
 	max-width: 34px !important;
 }
 
+body.DesktopUI div[class*="appdetails_Container_"] button[class*="posttextentry_EmoticonButton_"] div.tool-tip-source,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA button.bACIuqv-b_9TztCczFK19 div.tool-tip-source
+{
+	display: contents !important;
+}
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsscreenshotssection_InstructionText_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2QCkjbh7DpjfulLt-gMSxB,
 
