@@ -372,6 +372,11 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3qDWQGB0rtwM3qpXTb11Q-:hover
 }
 
 /* App Details Link Buttons */
+body.DesktopUI div._3-V8vjmrwuJM6Ws3tsjFJj > div
+{
+	border: none !important;
+}
+
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsprimarylinkssection_LinksSectionBody_"],
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._25f0fX6qbgdB7O_lMrbhCN
 {
