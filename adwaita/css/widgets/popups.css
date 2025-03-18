@@ -211,6 +211,12 @@ html.client_chat_frame > body.ContextMenuPopupBody ._30wJO3MC4x-I1OWpy1TAeE._1UO
 	min-width: 100% !important;
 }
 
+/* Remove "Play on: a mobile device" description */
+body.DesktopUI div._3BuInduVWVTbAXRVAeMjD-
+{
+	display: none !important;
+}
+
 /* Notifications */
 body.DesktopUI.ContextMenuPopupBody button[class*="titlebarcontrols_AllNotificationsButton_"],
 body.DesktopUI.ContextMenuPopupBody button._1oERP7bVictkby2hP4BBva,

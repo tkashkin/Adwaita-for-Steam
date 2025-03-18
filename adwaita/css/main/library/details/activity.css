@@ -187,7 +187,12 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA span._3ZUP3RJr6PRn6IzODoxZDx
 	font-family: var(--adw-text-font) !important;
 	font-size: var(--adw-text-row-subtitle-size) !important;
 	font-weight: var(--adw-text-row-subtitle-weight) !important;
-	display: inline-block !important;
+}
+
+div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventType_"],
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._1ujzuoxGhLunHZQqHAqRgg {
+	margin: 0 !important;
+	flex-shrink: 0 !important;
 }
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appactivityday_PartnerEventTextOnly_TextColumn_"],

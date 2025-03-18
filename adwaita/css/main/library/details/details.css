@@ -505,6 +505,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2JSyABqFEh-v_dwaTnBydR
 	justify-content: center !important;
 	width: auto !important;
 	padding: 0 12px !important;
+	white-space: nowrap !important;
 }
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="posttextentry_PostButton_"]:not([class*="posttextentry_Enabled_"]),
@@ -523,6 +524,12 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA button.bACIuqv-b_9TztCczFK19
 	width: 34px !important;
 	min-width: 34px !important;
 	max-width: 34px !important;
+}
+
+body.DesktopUI div[class*="appdetails_Container_"] button[class*="posttextentry_EmoticonButton_"] div.tool-tip-source,
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA button.bACIuqv-b_9TztCczFK19 div.tool-tip-source
+{
+	display: contents !important;
 }
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsscreenshotssection_InstructionText_"],

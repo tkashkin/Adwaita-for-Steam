@@ -1,9 +1,3 @@
-body.DesktopUI div[class*="library_LeftListSizableContainer_"],
-body.DesktopUI div._9sPoVBFyE_vE87mnZJ5aB
-{
-	position: initial !important;
-}
-
 body.DesktopUI div[class*="gamelistbar_Container_"],
 body.DesktopUI div._3x1HklzyDs4TEjACrRO2tB
 {
@@ -100,7 +94,7 @@ body.DesktopUI div._1ijTaXJJA5YWl_fW2IxcaT div.ReactVirtualized__Grid__innerScro
 body.DesktopUI div[class*="gamelistbar_GameListHomeAndSearch_"],
 body.DesktopUI div._2TKEazUUS3TlniZfpc8OOe
 {
-	position: absolute !important;
+	position: fixed !important;
 	top: 6px !important;
 	left: calc(var(--adw-windowcontrols-margin-left) + 86px) !important;
 	background: transparent !important;
@@ -179,6 +173,7 @@ body.DesktopUI div._2TKEazUUS3TlniZfpc8OOe a
 	padding: 9px !important;
 	margin: 0 !important;
 	transition: var(--adw-button-transition);
+	border: none !important
 }
 
 body.DesktopUI div[class*="gamelistbar_GameListHomeAndSearch_"] a > *,
