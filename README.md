@@ -77,18 +77,18 @@ cd Adwaita-for-Steam
 
 #### Arguments
 
-| Argument                | Short | Required Values                                       | Description                                        |
-|-------------------------|-------|-------------------------------------------------------|----------------------------------------------------|
-| --help                  | -h    |                                                       | Show help message                                  |
-| --list-options          | -l    |                                                       | List available themes and extras                   |
-| --color-theme           | -c    | [Colortheme](/adwaita/colorthemes)                    | Change color theme                                 |
-| --font                  | -f    | adwaita / cantarell                                   | Change font family                                 |
-| --windowcontrols-theme  |       | auto / adwaita / windows / macos                      | Change window control buttons style                |
-| --windowcontrols-layout |       | auto / gnome / pantheon / windows / macos / \[custom] | Change window control buttons position and order   |
-| --custom-css            |       |                                                       | Enable [custom css](/custom)                       |
-| --extras                | -e    | [Extra](adwaita/extras)                               | Enable one or multiple theme extras                |
-| --target                | -t    | normal / flatpak / \[custom dir]                      | Choose target location for install (default: both) |
-| --uninstall             | -u    |                                                       | Uninstall theme                                    |
+| Argument                | Short | Required Values                                          | Description                                      |
+|-------------------------|-------|----------------------------------------------------------|--------------------------------------------------|
+| --help                  | -h    |                                                          | Show help message                                |
+| --list-options          | -l    |                                                          | List available themes and extras                 |
+| --color-theme           | -c    | [Colortheme](/adwaita/colorthemes)                       | Change color theme                               |
+| --font                  | -f    | adwaita / cantarell                                      | Change font family                               |
+| --windowcontrols-theme  |       | auto / adwaita / windows / macos                         | Change window control buttons style              |
+| --windowcontrols-layout |       | auto / gnome / pantheon / windows / macos / \[custom]    | Change window control buttons position and order |
+| --custom-css            |       |                                                          | Enable [custom css](/custom)                     |
+| --extras                | -e    | [Extra](adwaita/extras)                                  | Enable one or multiple theme extras              |
+| --target                | -t    | linux / windows / macos / flatpak / snap / \[custom dir] | Choose target location for install               |
+| --uninstall             | -u    |                                                          | Uninstall theme                                  |
 
 #### Example Usage
 

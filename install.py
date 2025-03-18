@@ -9,10 +9,7 @@ import shutil
 import time
 import os
 
-# Platform Specific
 if platform == "win32":
-	is_windows = True
-
 	TEXT_BOLD = ""
 	TEXT_BLUE = ""
 	TEXT_GREEN = ""
@@ -25,8 +22,6 @@ if platform == "win32":
 	TEXT_CROSS = ""
 	TEXT_INFO = ""
 else:
-	is_windows = False
-
 	TEXT_BOLD = "\033[1m"
 	TEXT_BLUE = "\033[1;34m"
 	TEXT_GREEN = "\033[1;32m"
@@ -44,9 +39,9 @@ COLOR_THEME_DIR = f"{ADWAITA_DIR}/colorthemes"
 CUSTOM_DIR = "custom"
 EXTRAS_DIR = f"{ADWAITA_DIR}/extras"
 
-TARGET_NORMAL = "~/.steam/steam"
-TARGET_SNAP = "~/snap/steam/common/.steam/steam"
-TARGET_FLATPAK = "~/.var/app/com.valvesoftware.Steam/.steam/steam"
+TARGET_LINUX = "~/.steam/steam"
+TARGET_LINUX_FLATPAK = "~/.var/app/com.valvesoftware.Steam/.steam/steam"
+TARGET_LINUX_SNAP = "~/snap/steam/common/.steam/steam"
 TARGET_WINDOWS = "C:\\Program Files (x86)\\Steam"
 TARGET_MACOS = "~/Library/Application Support/Steam/Steam.AppBundle/Steam/Contents/MacOS"
 
@@ -311,7 +306,7 @@ if __name__ == "__main__":
 	parser.add_argument("-d", "--dev", action = "store_true", help = "Dev Mode")
 	parser.add_argument("-e", "--extras", nargs = "+", action = "extend", help = "Enable one or multiple theme extras")
 	parser.add_argument("-l", "--list-options", action = "store_true", help = "List available themes & extras and exit")
-	parser.add_argument("-t", "--target", nargs = "+", action = "extend", help = "Install targets: 'normal', 'flatpak', custom paths")
+	parser.add_argument("-t", "--target", nargs = "+", action = "extend", help = "Install targets: 'linux', 'windows', 'macos', 'flatpak', 'snap', custom paths")
 	parser.add_argument("-u", "--uninstall", action = "store_true", help = "Uninstall theme")
 	args = parser.parse_args()
 
@@ -322,7 +317,7 @@ if __name__ == "__main__":
 
 	if args.target is None:
 		if platform == "linux":
-			args.target = ["normal", "flatpak"]
+			args.target = ["linux", "flatpak", "snap"]
 		elif platform == "win32":
 			args.target = ["windows"]
 		elif platform == "darwin":
@@ -330,12 +325,12 @@ if __name__ == "__main__":
 
 	targets = set()
 	for t in args.target:
-		if t == "normal":
-			targets.add(Path(TARGET_NORMAL).expanduser().resolve())
-		elif t == "snap":
-			targets.add(Path(TARGET_SNAP).expanduser().resolve())
+		if t == "linux" or t == "normal":
+			targets.add(Path(TARGET_LINUX).expanduser().resolve())
 		elif t == "flatpak":
-			targets.add(Path(TARGET_FLATPAK).expanduser().resolve())
+			targets.add(Path(TARGET_LINUX_FLATPAK).expanduser().resolve())
+		elif t == "snap":
+			targets.add(Path(TARGET_LINUX_SNAP).expanduser().resolve())
 		elif t == "windows":
 			try:
 				import winreg
