@@ -173,6 +173,7 @@ body.DesktopUI div._2TKEazUUS3TlniZfpc8OOe a
 	padding: 9px !important;
 	margin: 0 !important;
 	transition: var(--adw-button-transition);
+	border: none !important
 }
 
 body.DesktopUI div[class*="gamelistbar_GameListHomeAndSearch_"] a > *,
