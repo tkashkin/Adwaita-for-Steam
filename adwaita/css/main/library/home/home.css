@@ -183,6 +183,11 @@ body.DesktopUI div[class*="library_Container_"] div[class*="libraryhomeshowcases
 body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div.V7RuDNUxhxoBRaiGWbk3B div._23SnllqT_AqZ1C_QHcNQ4Z
 {
 	position: initial !important;
+	border: none !important;
+}
+
+body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div.V7RuDNUxhxoBRaiGWbk3B div._23SnllqT_AqZ1C_QHcNQ4Z ._1OGfHXv6ksR1Ub-OuLN2NB {
+	top: calc(var(--adw-list-header-height) / 2 - 10px + 6px) !important;
 }
 
 body.DesktopUI div[class*="library_Container_"] div[class*="libraryhomeshowcases_Showcase_"] div[class*="libraryhomeshowcases_ShowcaseGrid_"],
