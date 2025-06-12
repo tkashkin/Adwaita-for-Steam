@@ -11,9 +11,11 @@ div._3Z7VQ1IMk4E3HsHvrkLNgo div._3s0lkohH8wU2do0K1il28Y
 	position: absolute !important;
 	right: calc(var(--adw-windowcontrols-margin-right) + 6px) !important;
 	top: 6px !important;
+	width: 38px !important;
 	height: 38px !important;
 	border-radius: var(--adw-button-radius) !important;
-	background: transparent !important;
+	background: rgb(var(--adw-headerbar-bg-rgb)) !important;
+	transition: width 200ms var(--adw-base-transition-curve), background 200ms var(--adw-base-transition-curve) !important;
 
 	/* Menu button */
 	div._2UyOBeiSdBayaFdRa39N2O
@@ -25,8 +27,12 @@ div._3Z7VQ1IMk4E3HsHvrkLNgo div._3s0lkohH8wU2do0K1il28Y
 		height: 34px !important;
 		padding: 9px !important;
 		transition: var(--adw-button-transition);
-		display: none !important;
 		color: rgb(var(--adw-headerbar-fg-rgb)) !important;
+
+		/* Keep all menu buttons visible and in the same place to prevent Steam from recalculating menu positions */
+		position: absolute !important;
+		top: 2px !important;
+		right: 2px !important;
 
 		&:hover
 		{
@@ -72,38 +78,46 @@ div._3Z7VQ1IMk4E3HsHvrkLNgo div._3s0lkohH8wU2do0K1il28Y
 			-webkit-mask-image: var(--adw-icon-menu-main);
 		}
 
-		&:nth-of-type(2)::before
+		&:nth-of-type(2)
 		{
-			-webkit-mask-image: var(--adw-icon-menu-view);
+			right: 42px !important;
+			&::before
+			{
+				-webkit-mask-image: var(--adw-icon-menu-view);
+			}
 		}
 
-		&:nth-of-type(3)::before
+		&:nth-of-type(3)
 		{
-			-webkit-mask-image: var(--adw-icon-menu-friends);
+			right: 82px !important;
+			&::before
+			{
+				-webkit-mask-image: var(--adw-icon-menu-friends);
+			}
 		}
 
-		&:nth-of-type(4)::before
+		&:nth-of-type(4)
 		{
-			-webkit-mask-image: var(--adw-icon-menu-games);
+			right: 122px !important;
+			&::before
+			{
+				-webkit-mask-image: var(--adw-icon-menu-games);
+			}
 		}
 
-		&:nth-of-type(5)::before
+		&:nth-of-type(5)
 		{
-			-webkit-mask-image: var(--adw-icon-menu-help);
+			right: 162px !important;
+			&::before
+			{
+				-webkit-mask-image: var(--adw-icon-menu-help);
+			}
 		}
 	}
 
-	&:hover,
 	&:has(div._3rgV8pPmQvZC-01x9l-q-N)
 	{
+		width: 198px !important;
 		background: rgb(var(--adw-secondary-sidebar-bg-rgb)) !important;
-	}
-
-	/* Show all menu buttons on hover or when a menu is open */
-	&:hover div._2UyOBeiSdBayaFdRa39N2O,
-	&:has(div._3rgV8pPmQvZC-01x9l-q-N) div._2UyOBeiSdBayaFdRa39N2O,
-	div._2UyOBeiSdBayaFdRa39N2O:first-child
-	{
-		display: block !important;
 	}
 }
