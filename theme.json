@@ -2,7 +2,7 @@
     "name": "Adwaita",
     "author": "tkashkin",
     "description": "A skin to make Steam look more like a native GNOME app",
-    "version": "3.10",
+    "version": "3.11",
 
     "manifest_version": 8,
     "target": "Desktop",
@@ -102,6 +102,15 @@
                 },
                 "Hide": {
                     "adwaita/extras/login/hide_qr.css": ["all"]
+                }
+            }
+        },
+        "Show URL": {
+            "type": "checkbox",
+            "values": {
+                "No": {},
+                "Yes": {
+                    "adwaita/extras/store/show_url.css": ["all"]
                 }
             }
         },

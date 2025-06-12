@@ -225,7 +225,8 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 		div._1HL6KuwUJaZQ7x2rmAxxSz + &,
 		div.HxqeaLbjhdRiSTK8ZFwxJ + &,
 		div.eKmEXJCm_lgme24Fp_HWt._3tB2lyT2Pfvfv-jyuVgUOg:not(:has(div._3jMlJm4PQCA8SfNlUR99Fo)) + &,
-		div.SettingsDialogSubHeader + div:not([class]) + &
+		div.SettingsDialogSubHeader + div:not([class]) + &,
+		style:first-child + & /* Millennium settings */
 		{
 			border-top-left-radius: var(--adw-card-radius) !important;
 			border-top-right-radius: var(--adw-card-radius) !important;
@@ -239,7 +240,8 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 		&:has(+ div.DialogControlsSectionHeader),
 		&:has(+ div.DialogControlsSection),
 		&:has(+ div._1vcky98a3hG0ulFCdee4kd),
-		&:has(+ div._2Dfy8vuNMdABIKGO2KHbVF)
+		&:has(+ div._2Dfy8vuNMdABIKGO2KHbVF),
+		&:has(+ div.millenniumPluginField) /* Millennium settings */
 		{
 			border-bottom-left-radius: var(--adw-card-radius) !important;
 			border-bottom-right-radius: var(--adw-card-radius) !important;

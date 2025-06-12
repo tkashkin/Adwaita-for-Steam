@@ -214,6 +214,11 @@ html.client_chat_frame div._2VY6HOZXxO2AsBaLssl0Uy
 		padding: 12px calc(var(--adw-windowcontrols-margin-left) + 6px) !important;
 	}
 
+	div.DialogContent_InnerWidth
+	{
+		max-width: none !important;
+	}
+
 	div.DialogContent_InnerWidth > div.DialogBody
 	{
 		display: flex !important;
