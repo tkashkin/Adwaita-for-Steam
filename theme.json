@@ -2,7 +2,7 @@
     "name": "Adwaita",
     "author": "tkashkin",
     "description": "A skin to make Steam look more like a native GNOME app",
-    "version": "3.11",
+    "version": "3.12",
 
     "manifest_version": 8,
     "target": "Desktop",

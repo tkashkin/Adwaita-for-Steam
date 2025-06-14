@@ -54,7 +54,7 @@ body.DesktopUI div.FFIKUQ7BGKw6vO1voazlr
 		div.DialogBodyText
 		{
 			background: rgba(var(--adw-card-bg-rgb), var(--adw-card-opacity)) !important;
-			color: rgba(var(--adw-card-fg-rgb), var(--adw-dim-label-opacity)) !important;
+			color: rgb(var(--adw-card-fg-rgb)) !important;
 			border-radius: var(--adw-card-radius) !important;
 			box-shadow: var(--adw-card-shadow) !important;
 			box-sizing: border-box !important;
@@ -71,7 +71,7 @@ body.DesktopUI div.FFIKUQ7BGKw6vO1voazlr
 
 			span
 			{
-				color: rgb(var(--adw-card-fg-rgb)) !important;
+				color: rgba(var(--adw-card-fg-rgb), var(--adw-dim-label-opacity)) !important;
 			}
 
 			&::selection, *::selection
