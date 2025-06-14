@@ -312,7 +312,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 				cursor: default !important;
 				max-width: 250px;
 				text-overflow: ellipsis !important;
-				overflow: hidden !important;
+				overflow: hidden;
 				white-space: nowrap !important;
 
 				&::before
