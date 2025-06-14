@@ -300,7 +300,7 @@ if __name__ == "__main__":
 	parser = ArgumentParser(description = "Adwaita-for-Steam installer")
 	parser.add_argument("-c", "--color-theme", default = "adwaita", type = str.lower, help = "Choose color theme")
 	parser.add_argument("-f", "--font", default = "adwaita", choices = ["adwaita", "cantarell"], type = str.lower, help = "Font")
-	parser.add_argument("--windowcontrols-theme", default = "auto", choices = ["auto", "adwaita", "windows", "macos"], type = str.lower, help = "Window button theme")
+	parser.add_argument("--windowcontrols-theme", default = "auto", choices = ["auto", "adwaita", "breeze", "windows", "macos"], type = str.lower, help = "Window button theme")
 	parser.add_argument("--windowcontrols-layout", default = "auto", type = str.lower, help = "Window button positions: 'auto', 'gnome'|'adwaita', 'pantheon'|'elementary', 'windows', 'macos', or GNOME button layout string")
 	parser.add_argument("--custom-css", action = "store_true", help = "Enable Custom CSS")
 	parser.add_argument("-d", "--dev", action = "store_true", help = "Dev Mode")
