@@ -1,51 +1,235 @@
-body.DesktopUI div#popup_target::after,
-html.client_chat_frame div#popup_target::after
+:root
 {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	pointer-events: none;
-	box-sizing: border-box;
-	border: 1px rgba(var(--adw-window-fg-rgb), var(--adw-window-outline-opacity)) solid;
-	z-index: 999;
+	--adw-dialog-radius: 15px;
+	--adw-alert-dialog-radius: 18px;
+	--adw-alert-dialog-button-radius: 12px;
+	--adw-dialog-shadow: 0 0 14px 2px rgba(0, 0, 6, 0.03), 0 0 5px 2px rgba(0, 0, 6, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.05);
 }
 
-body.DesktopUI div#popup_target:has(div._1ENHEsrSLcTRtPQFl1F-wL.Maximized)::after,
-html.client_chat_frame div#popup_target:has(div._1ENHEsrSLcTRtPQFl1F-wL.Maximized)::after
+body.DesktopUI,
+html.client_chat_frame
 {
-	border: 1px transparent solid;
-}
+	.ModalOverlayBackground
+	{
+		background: rgba(var(--adw-shade-rgb), calc(var(--adw-shade-a) * 2)) !important;
+	}
 
-body.DesktopUI .ModalPosition_TopBar,
-body.DesktopUI .singleWindowFocusBar,
-body.DesktopUI .title-area .title-area-highlight,
-html.client_chat_frame .ModalPosition_TopBar,
-html.client_chat_frame .singleWindowFocusBar,
-html.client_chat_frame .title-area .title-area-highlight
-{
-	display: none !important;
-}
+	.ModalPosition_Content
+	{
+		background: rgb(var(--adw-dialog-bg-rgb)) !important;
+		border-radius: var(--adw-dialog-radius) !important;
+		box-shadow: var(--adw-dialog-shadow) !important;
 
-body.DesktopUI div.window_resize_grip,
-html.client_chat_frame div.window_resize_grip
-{
-	opacity: 0 !important;
-}
+		& > .DialogContent
+		{
+			background: none !important;
+			border: none !important;
+		}
 
-/* Web dialogs */
-body.DesktopUI.ModalDialogBody .PopupFullWindow:not(:has(._2sssIwe0duyIrFvat2oXzH)):not(:has(.FFIKUQ7BGKw6vO1voazlr)) .title-area
-{
-	height: 36px !important;
-	min-height: 36px !important;
-}
+		& > .ModalPosition_Dismiss
+		{
+			display: none !important;
+		}
 
-body.DesktopUI.ModalDialogBody .PopupFullWindow div[class*="htmlpopupdialog_HTMLPopupDialog_"].DialogContent,
-body.DesktopUI.ModalDialogBody .PopupFullWindow div.oHNgIzAySfCEOayCBwsg5.DialogContent
-{
-	background: rgb(var(--adw-headerbar-bg-rgb)) !important;
-	padding: 1px !important;
-	padding-top: 36px !important;
+		&:has(> .GenericConfirmDialog:not(._2TAQYpbxatDYN3Ex76KX5u):not(.q5OA-x6LcVkvtLCGp-8JC)),
+		&:has(.CreateChatChannelDialog)
+		{
+			border-radius: var(--adw-alert-dialog-radius) !important;
+		}
+
+		.GenericConfirmDialog:not(._2TAQYpbxatDYN3Ex76KX5u):not(.q5OA-x6LcVkvtLCGp-8JC),
+		.CreateChatChannelDialog
+		{
+			padding: 24px !important;
+			width: 400px !important;
+			box-sizing: border-box !important;
+			-webkit-app-region: drag !important;
+
+			.DialogHeader,
+			._3vc5HYX7AEVTqXRYl2gm8
+			{
+				display: block !important;
+				padding: 0 !important;
+				margin: 8px 0 0 0 !important;
+				color: rgb(var(--adw-dialog-fg-rgb)) !important;
+				font-family: var(--adw-text-font) !important;
+				font-size: var(--adw-text-title1-size) !important;
+				font-weight: var(--adw-text-title1-weight) !important;
+				line-height: normal !important;
+				letter-spacing: normal !important;
+				text-align: center !important;
+				text-transform: none !important;
+				-webkit-app-region: drag !important;
+
+				svg
+				{
+					display: none !important;
+				}
+			}
+
+			.DialogBody,
+			.DialogBodyText,
+			.lwZMnZmiLvD1VehXW1dVf,
+			._2Nmi6ONpGvLOgRE87Ky2MA
+			{
+				padding: 0 !important;
+				margin: 8px 0 0 0 !important;
+				color: rgb(var(--adw-dialog-fg-rgb)) !important;
+				font-family: var(--adw-text-font) !important;
+				font-size: var(--adw-text-base-size) !important;
+				font-weight: var(--adw-text-base-weight) !important;
+				line-height: normal !important;
+				letter-spacing: normal !important;
+				text-align: center !important;
+				text-transform: none !important;
+				-webkit-app-region: drag !important;
+
+				.DialogBody &
+				{
+					margin-top: 0 !important;
+				}
+			}
+
+			.DialogFooter
+			{
+				margin: 16px 0 0 0 !important;
+
+				&,
+				._DialogColLayout
+				{
+					padding: 0 !important;
+					justify-content: center !important;
+					flex-direction: column !important;
+					gap: 8px !important;
+					width: 100% !important;
+					-webkit-app-region: drag !important;
+				}
+
+				button.DialogButton
+				{
+					cursor: default !important;
+					min-height: 24px !important;
+					max-width: none !important;
+					padding: 6px 12px !important;
+					box-sizing: border-box !important;
+					border-radius: var(--adw-alert-dialog-button-radius) !important;
+					box-shadow: none !important;
+					transition: var(--adw-button-transition) !important;
+					font-family: var(--adw-text-font) !important;
+					font-size: 15px !important;
+					font-weight: 700 !important;
+					color: rgb(var(--adw-dialog-fg-rgb)) !important;
+					background: rgba(var(--adw-dialog-fg-rgb), var(--adw-button-bg-opacity)) !important;
+					-webkit-app-region: no-drag !important;
+
+					&:hover
+					{
+						background: rgba(var(--adw-dialog-fg-rgb), var(--adw-button-bg-opacity-hover)) !important;
+					}
+
+					&:active
+					{
+						background: rgba(var(--adw-dialog-fg-rgb), var(--adw-button-bg-opacity-active)) !important;
+					}
+
+					&.Primary
+					{
+						color: var(--adw-button-suggested-fg) !important;
+						background: var(--adw-button-suggested-bg) !important;
+						background-blend-mode: overlay !important;
+
+						&:hover
+						{
+							background-color: var(--adw-button-suggested-overlay-hover) !important;
+						}
+
+						&:active
+						{
+							background-color: var(--adw-button-suggested-overlay-active) !important;
+						}
+					}
+
+					&::before
+					{
+						content: none !important;
+					}
+				}
+			}
+
+			/* Remove fixed inner width */
+			.DialogContent_InnerWidth > form > div
+			{
+				min-width: auto !important;
+			}
+
+			/* Destructive buttons */
+			div._7au1m_-ZIF7Hx_rCvrDfI /* Uninstall */
+			{
+				button.DialogButton.Primary
+				{
+					color: rgb(var(--adw-destructive-rgb)) !important;
+					background: rgba(var(--adw-destructive-rgb), var(--adw-button-bg-opacity)) !important;
+					background-blend-mode: normal !important;
+
+					&:hover
+					{
+						background: rgba(var(--adw-destructive-rgb), var(--adw-button-bg-opacity-hover)) !important;
+					}
+
+					&:active
+					{
+						background: rgba(var(--adw-destructive-rgb), var(--adw-button-bg-opacity-active)) !important;
+					}
+				}
+			}
+		}
+	}
+
+	/* Outline */
+	#popup_target::after,
+	.ModalPosition_Content::after
+	{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		pointer-events: none;
+		box-sizing: border-box;
+		border: 1px rgba(var(--adw-window-fg-rgb), var(--adw-window-outline-opacity)) solid;
+		border-radius: inherit;
+		z-index: 999;
+	}
+
+	div#popup_target:has(div._1ENHEsrSLcTRtPQFl1F-wL.Maximized)::after
+	{
+		border: 1px transparent solid;
+	}
+
+	.ModalPosition_TopBar,
+	.singleWindowFocusBar,
+	.title-area .title-area-highlight
+	{
+		display: none !important;
+	}
+
+	div.window_resize_grip
+	{
+		opacity: 0 !important;
+	}
+
+	/* Web dialogs */
+	&.ModalDialogBody .PopupFullWindow:not(:has(._2sssIwe0duyIrFvat2oXzH)):not(:has(.FFIKUQ7BGKw6vO1voazlr)) .title-area
+	{
+		height: 36px !important;
+		min-height: 36px !important;
+	}
+
+	&.ModalDialogBody .PopupFullWindow div.oHNgIzAySfCEOayCBwsg5.DialogContent
+	{
+		background: rgb(var(--adw-headerbar-bg-rgb)) !important;
+		padding: 1px !important;
+		padding-top: 36px !important;
+	}
 }
