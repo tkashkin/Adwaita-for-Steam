@@ -430,6 +430,12 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 			margin-top: -4px !important;
 		}
 
+		/* ActivityAchievementUnlocked - prevent overflow */
+		&:has(div.yJLy7HDLJT44C1fcm6lPI)
+		{
+			overflow: hidden !important;
+		}
+
 		/* Event body */
 		div.NEMXhMlqXOCJwfgWlHXhT
 		{
