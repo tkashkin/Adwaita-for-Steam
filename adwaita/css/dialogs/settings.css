@@ -557,6 +557,8 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 	/* Downloads: updates */
 	div.DialogControlsSection:has(div._1m4hl8tdIUyt1rAnE4y5ZQ)
 	{
+		position: relative !important;
+
 		div._3w92Ej5Kq7nbt5WACQ6jwI
 		{
 			color: rgba(var(--adw-card-fg-rgb), var(--adw-dim-label-opacity)) !important;
@@ -569,6 +571,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 			box-sizing: border-box !important;
 			align-content: center !important;
 			margin-right: 260px !important;
+			margin-top: 0 !important;
 			margin-bottom: calc(var(--adw-row-height) * -1) !important;
 			height: var(--adw-row-height) !important;
 
@@ -601,9 +604,133 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 			flex-direction: column !important;
 			justify-content: stretch !important;
 			align-items: stretch !important;
+
+			/* New dropdown with accessibility properties */
+			&[role="group"][aria-labelledby]
+			{
+				padding: 0 !important;
+
+				div.Panel
+				{
+					display: flex !important;
+
+					button[role="combobox"]
+					{
+						background: rgba(var(--adw-card-bg-rgb), var(--adw-card-opacity)) !important;
+						color: rgb(var(--adw-card-fg-rgb)) !important;
+						border-radius: var(--adw-card-radius) !important;
+						box-shadow: var(--adw-card-shadow) !important;
+						border: none !important;
+						min-height: var(--adw-row-height) !important;
+						box-sizing: border-box !important;
+						padding: 4px 12px !important;
+						margin: 0 0 1px 0 !important;
+						transition: var(--adw-button-transition) !important;
+						cursor: default !important;
+						place-content: end !important;
+						gap: 4px !important;
+
+						&:hover
+						{
+							background: rgba(var(--adw-card-bg-rgb), var(--adw-card-hover-opacity)) !important;
+						}
+
+						&:active
+						{
+							background: rgba(var(--adw-card-bg-rgb), var(--adw-card-active-opacity)) !important;
+						}
+
+						&::after
+						{
+							content: none !important;
+						}
+
+						.DialogDropDown_CurrentDisplay
+						{
+							color: rgb(var(--adw-card-fg-rgb)) !important;
+							font-family: var(--adw-text-font) !important;
+							font-size: var(--adw-text-row-title-size) !important;
+							font-weight: var(--adw-text-row-title-weight) !important;
+							line-height: 2em !important;
+							letter-spacing: normal !important;
+							overflow: hidden !important;
+							text-overflow: ellipsis !important;
+							white-space: nowrap !important;
+							max-width: 220px !important;
+							text-align: end !important;
+						}
+
+						.DialogDropDown_Arrow
+						{
+							width: 16px !important;
+							height: 16px !important;
+							margin-top: 2px !important;
+
+							svg
+							{
+								display: none !important;
+							}
+
+							&::before
+							{
+								content: "";
+								background-color: rgb(var(--adw-card-fg-rgb));
+								display: block;
+								width: 16px;
+								height: 16px;
+								-webkit-mask-repeat: no-repeat;
+								-webkit-mask-position: center;
+								-webkit-mask-size: 16px;
+								-webkit-mask-image: var(--adw-icon-combobox-arrow);
+							}
+						}
+					}
+				}
+
+				button.DialogButton
+				{
+					position: absolute !important;
+					right: 0 !important;
+					top: 0 !important;
+					color: rgb(var(--adw-window-fg-rgb)) !important;
+					font-family: var(--adw-text-font) !important;
+					line-height: var(--adw-list-header-height) !important;
+					text-transform: none !important;
+					letter-spacing: normal !important;
+					font-size: var(--adw-list-header-size) !important;
+					font-weight: var(--adw-list-header-weight) !important;
+					width: fit-content !important;
+					height: var(--adw-list-header-height) !important;
+					padding: 0 12px !important;
+					margin: 0 !important;
+					background: transparent !important;
+					box-shadow: none !important;
+					border-radius: var(--adw-button-radius) !important;
+					transition: var(--adw-button-transition) !important;
+					cursor: default !important;
+
+					&:hover
+					{
+						background: rgba(var(--adw-window-fg-rgb), var(--adw-hover-opacity)) !important;
+						box-shadow: none !important;
+					}
+
+					&:active
+					{
+						background: rgba(var(--adw-window-fg-rgb), var(--adw-active-opacity)) !important;
+						box-shadow: none !important;
+					}
+
+					&::before
+					{
+						content: none !important;
+					}
+				}
+			}
 		}
 
-		&:has(div._1m4hl8tdIUyt1rAnE4y5ZQ + div._1vcky98a3hG0ulFCdee4kd + div.eKmEXJCm_lgme24Fp_HWt) div._1m4hl8tdIUyt1rAnE4y5ZQ > div.eKmEXJCm_lgme24Fp_HWt:last-child
+		&:has(div._1m4hl8tdIUyt1rAnE4y5ZQ + div._1vcky98a3hG0ulFCdee4kd + div.eKmEXJCm_lgme24Fp_HWt) div._1m4hl8tdIUyt1rAnE4y5ZQ > div.eKmEXJCm_lgme24Fp_HWt:last-child,
+		&:has(div[role="group"][aria-labelledby] + div._1vcky98a3hG0ulFCdee4kd + div.eKmEXJCm_lgme24Fp_HWt) button[role="combobox"]
 		{
 			border-bottom-left-radius: 0 !important;
 			border-bottom-right-radius: 0 !important;

@@ -35,6 +35,21 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 		font-weight: var(--adw-text-subtitle-weight) !important;
 		min-height: auto !important;
 		line-height: normal !important;
+
+		a
+		{
+			cursor: default !important;
+			text-decoration: none !important;
+			color: rgb(var(--adw-accent-rgb)) !important;
+			position: relative !important;
+			z-index: 1 !important;
+
+			&:hover
+			{
+				text-decoration: underline !important;
+				color: rgb(var(--adw-window-fg-rgb)) !important;
+			}
+		}
 	}
 
 	div.DialogSubHeader:not(:first-child),
@@ -224,7 +239,8 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 		div._3zuICQ63IRympzZ6qgs-5O + &,
 		div._1HL6KuwUJaZQ7x2rmAxxSz + &,
 		div.HxqeaLbjhdRiSTK8ZFwxJ + &,
-		div.eKmEXJCm_lgme24Fp_HWt._3tB2lyT2Pfvfv-jyuVgUOg:not(:has(div._3jMlJm4PQCA8SfNlUR99Fo)) + &,
+		div._3w92Ej5Kq7nbt5WACQ6jwI + &,
+		div.eKmEXJCm_lgme24Fp_HWt._3tB2lyT2Pfvfv-jyuVgUOg:not(:has(div._3jMlJm4PQCA8SfNlUR99Fo:not(:empty))) + &,
 		div.SettingsDialogSubHeader + div:not([class]) + &,
 		style:first-child + & /* Millennium settings */
 		{
@@ -499,7 +515,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 		}
 
 		/* Description-only row: style as group subtitle */
-		&._3tB2lyT2Pfvfv-jyuVgUOg:not(:has(div._3jMlJm4PQCA8SfNlUR99Fo))
+		&._3tB2lyT2Pfvfv-jyuVgUOg:not(:has(div._3jMlJm4PQCA8SfNlUR99Fo:not(:empty)))
 		{
 			background: none !important;
 			box-shadow: none !important;
