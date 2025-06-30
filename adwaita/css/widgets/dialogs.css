@@ -186,8 +186,7 @@ html.client_chat_frame
 	}
 
 	/* Outline */
-	#popup_target::after,
-	.ModalPosition_Content::after
+	#popup_target::after
 	{
 		content: "";
 		position: absolute;
@@ -197,8 +196,8 @@ html.client_chat_frame
 		bottom: 0;
 		pointer-events: none;
 		box-sizing: border-box;
-		border: 1px rgba(var(--adw-window-fg-rgb), var(--adw-window-outline-opacity)) solid;
-		border-radius: inherit;
+		border: 1px rgba(255, 255, 255, 0.07) solid;
+		border-radius: var(--adw-dialog-radius);
 		z-index: 999;
 	}
 
