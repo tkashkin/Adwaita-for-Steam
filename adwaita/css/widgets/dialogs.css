@@ -34,7 +34,7 @@ html.client_chat_frame
 		&:has(> .GenericConfirmDialog:not(._2TAQYpbxatDYN3Ex76KX5u):not(.q5OA-x6LcVkvtLCGp-8JC)),
 		&:has(.CreateChatChannelDialog)
 		{
-			border-radius: var(--adw-alert-dialog-radius) !important;
+			--adw-dialog-radius: var(--adw-alert-dialog-radius) !important;
 		}
 
 		.GenericConfirmDialog:not(._2TAQYpbxatDYN3Ex76KX5u):not(.q5OA-x6LcVkvtLCGp-8JC),
@@ -186,7 +186,8 @@ html.client_chat_frame
 	}
 
 	/* Outline */
-	#popup_target::after
+	#popup_target::after,
+	.ModalPosition_Content::after
 	{
 		content: "";
 		position: absolute;
@@ -204,6 +205,10 @@ html.client_chat_frame
 	div#popup_target:has(div._1ENHEsrSLcTRtPQFl1F-wL.Maximized)::after
 	{
 		border: 1px transparent solid;
+	}
+
+	.ContextMenuPopupBody #popup_target {
+		--adw-dialog-radius: 0px;
 	}
 
 	.ModalPosition_TopBar,
