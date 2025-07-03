@@ -49,7 +49,7 @@ html.client_chat_frame
 			letter-spacing: normal !important;
 			text-transform: none !important;
 			height: 32px !important;
-			cursor: default !important;
+			cursor: var(--cursor-pointer) !important;
 			padding: var(--adw-menu-item-padding) !important;
 			margin: 0 !important;
 			display: flex !important;
@@ -101,7 +101,7 @@ html.client_chat_frame
 				line-height: normal !important;
 				letter-spacing: normal !important;
 				text-transform: none !important;
-				cursor: default !important;
+				cursor: var(--cursor-pointer) !important;
 
 				& > svg
 				{

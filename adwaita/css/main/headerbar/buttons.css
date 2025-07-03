@@ -11,7 +11,7 @@ body.DesktopUI
 	div._2Szzh5sKyGgnLUR870zbDE, div._3yD46y5pd3zOGR7CzKs0mC, div._1TdaAqMFadi0UTqilrkelR, div.ip-YZhijAMZcuRoXBGiye
 	{
 		-webkit-app-region: no-drag;
-		cursor: default !important;
+		cursor: var(--cursor-pointer) !important;
 		box-sizing: border-box !important;
 		width: 34px !important;
 		height: 34px !important;

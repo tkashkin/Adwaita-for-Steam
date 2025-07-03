@@ -31,7 +31,7 @@ html.client_chat_frame
 		height: 46px !important;
 		min-height: 46px !important;
 		bottom: unset !important;
-		cursor: default !important;
+		cursor: var(--cursor-pointer) !important;
 		user-select: none !important;
 
 		.title-bar-actions
@@ -56,7 +56,7 @@ html.client_chat_frame
 				margin: 0 !important;
 				box-sizing: border-box !important;
 				transition: var(--adw-button-transition) !important;
-				cursor: default !important;
+				cursor: var(--cursor-pointer) !important;
 				z-index: 10 !important;
 				display: flex !important;
 				align-items: center !important;

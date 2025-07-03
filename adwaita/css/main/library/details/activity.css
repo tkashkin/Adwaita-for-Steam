@@ -41,7 +41,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 		background: none !important;
 		box-shadow: none !important;
 		border: none !important;
-		cursor: default !important;
+		cursor: var(--cursor-pointer) !important;
 		padding: 0 !important;
 		margin: 0 !important;
 	}
@@ -54,7 +54,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 		box-shadow: var(--adw-card-shadow) !important;
 		border: none !important;
 		transition: var(--adw-button-transition) !important;
-		cursor: default !important;
+		cursor: var(--cursor-pointer) !important;
 		margin-bottom: 1px !important;
 		position: relative !important;
 
@@ -356,7 +356,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 				width: 32px !important;
 				height: 32px !important;
 				margin-right: 12px !important;
-				cursor: default !important;
+				cursor: var(--cursor-pointer) !important;
 				z-index: 1 !important;
 			}
 		}
@@ -374,7 +374,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 			text-transform: none !important;
 			line-height: normal !important;
 			letter-spacing: normal !important;
-			cursor: default !important;
+			cursor: var(--cursor-pointer) !important;
 
 			&.online,
 			&.online span
@@ -408,7 +408,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 		{
 			position: relative !important;
 			z-index: 2 !important;
-			cursor: default !important;
+			cursor: var(--cursor-pointer) !important;
 		}
 
 		div.NEMXhMlqXOCJwfgWlHXhT,
@@ -485,7 +485,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 				{
 					border-radius: var(--adw-gameicon-radius) !important;
 					box-sizing: border-box !important;
-					cursor: default !important;
+					cursor: var(--cursor-pointer) !important;
 				}
 
 				img._2bzHb-caO-Nm9nCFXRj7zq:not(.tH67cztsTrD9IF2zpG8ep),
@@ -571,7 +571,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 				{
 					padding: 0 !important;
 					margin: 0 !important;
-					cursor: default !important;
+					cursor: var(--cursor-pointer) !important;
 
 					&:hover
 					{
@@ -641,7 +641,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 					background: var(--adw-button-osd-bg) !important;
 					color: var(--adw-button-osd-fg) !important;
 					border-radius: 50% !important;
-					cursor: default !important;
+					cursor: var(--cursor-pointer) !important;
 					opacity: 1 !important;
 					transition: var(--adw-button-transition), opacity 200ms !important;
 

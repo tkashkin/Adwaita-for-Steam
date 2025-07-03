@@ -61,7 +61,7 @@ body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div.V7RuDNUxhxoBRaiGWbk3B div._29NTOn
 	background: var(--adw-button-osd-bg) !important;
 	color: var(--adw-button-osd-fg) !important;
 	border-radius: 50% !important;
-	cursor: default !important;
+	cursor: var(--cursor-pointer) !important;
 	opacity: 1 !important;
 	transition: var(--adw-button-transition), opacity 200ms !important;
 }

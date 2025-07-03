@@ -87,7 +87,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 
 		button.JA6JIY08WWMEfWP-sZkZ2
 		{
-			cursor: default !important;
+			cursor: var(--cursor-pointer) !important;
 			background: rgba(var(--adw-card-bg-rgb), var(--adw-card-opacity)) !important;
 			color: rgb(var(--adw-card-fg-rgb)) !important;
 			border-radius: 0 !important;
@@ -220,7 +220,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 			box-shadow: none !important;
 			border-radius: var(--adw-button-radius) !important;
 			transition: var(--adw-button-transition) !important;
-			cursor: default !important;
+			cursor: var(--cursor-pointer) !important;
 
 			&:hover
 			{
@@ -289,7 +289,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 			a._2oSTSohQ1CZIgVn7E6_0Ft
 			{
 				flex-grow: 1 !important;
-				cursor: default !important;
+				cursor: var(--cursor-pointer) !important;
 			}
 
 			div._3VzCnvA_1SxskuCqmZkkHA
@@ -399,7 +399,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 		{
 			order: 2 !important;
 			margin-right: 28px !important;
-			cursor: default !important;
+			cursor: var(--cursor-pointer) !important;
 		}
 
 		div.eKmEXJCm_lgme24Fp_HWt
@@ -434,7 +434,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 			bottom: 0 !important;
 			margin: 0 !important;
 			padding: 4px 12px !important;
-			cursor: default !important;
+			cursor: var(--cursor-pointer) !important;
 			background: none !important;
 			box-shadow: none !important;
 			display: flex !important;
@@ -540,7 +540,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 			margin: 0 !important;
 			overflow: hidden !important;
 			width: auto !important;
-			cursor: default !important;
+			cursor: var(--cursor-pointer) !important;
 
 			&:hover
 			{
@@ -584,7 +584,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 
 			a
 			{
-				cursor: default !important;
+				cursor: var(--cursor-pointer) !important;
 				text-decoration: none !important;
 				color: rgb(var(--adw-accent-rgb)) !important;
 				position: relative !important;
@@ -626,7 +626,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 						padding: 4px 12px !important;
 						margin: 0 0 1px 0 !important;
 						transition: var(--adw-button-transition) !important;
-						cursor: default !important;
+						cursor: var(--cursor-pointer) !important;
 						place-content: end !important;
 						gap: 4px !important;
 
@@ -707,7 +707,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 					box-shadow: none !important;
 					border-radius: var(--adw-button-radius) !important;
 					transition: var(--adw-button-transition) !important;
-					cursor: default !important;
+					cursor: var(--cursor-pointer) !important;
 
 					&:hover
 					{
@@ -763,7 +763,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 
 			button.iFalJAi3VT9vGdVVOLNgA
 			{
-				cursor: default !important;
+				cursor: var(--cursor-pointer) !important;
 				border-radius: var(--adw-button-radius) !important;
 				box-sizing: border-box !important;
 				width: fit-content !important;
@@ -795,7 +795,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 					/* Title */
 					div._1rihlgVMF4Q_fFZDnXeVt5
 					{
-						cursor: default !important;
+						cursor: var(--cursor-pointer) !important;
 						color: rgb(var(--adw-window-fg-rgb)) !important;
 						font-family: var(--adw-text-font) !important;
 						font-size: var(--adw-text-header-size) !important;
@@ -851,7 +851,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 			position: fixed !important;
 	        right: calc(var(--adw-windowcontrols-margin-right) + 6px) !important;
 	        top: 6px !important;
-			cursor: default !important;
+			cursor: var(--cursor-pointer) !important;
 			border-radius: var(--adw-button-radius) !important;
 			box-sizing: border-box !important;
 			width: 34px !important;
@@ -1070,7 +1070,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 									border-radius: 6px !important;
 									overflow: clip !important;
 									transform: none !important;
-									cursor: default !important;
+									cursor: var(--cursor-pointer) !important;
 								}
 							}
 
@@ -1112,7 +1112,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 											line-height: normal !important;
 											letter-spacing: normal !important;
 											text-transform: none !important;
-											cursor: default !important;
+											cursor: var(--cursor-pointer) !important;
 
 											& > *
 											{
@@ -1145,7 +1145,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 										letter-spacing: normal !important;
 										text-transform: none !important;
 										font-feature-settings: "tnum" !important;
-										cursor: default !important;
+										cursor: var(--cursor-pointer) !important;
 
 										&:hover
 										{
@@ -1173,7 +1173,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 											background-blend-mode: overlay !important;
 											border-radius: var(--adw-checkbox-radius) !important;
 											box-shadow: var(--adw-checkbox-unchecked-shadow);
-											cursor: default !important;
+											cursor: var(--cursor-pointer) !important;
 
 											svg
 											{
@@ -1260,7 +1260,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 						margin: 0 !important;
 						box-sizing: border-box !important;
 						transition: var(--adw-button-transition) !important;
-						cursor: default !important;
+						cursor: var(--cursor-pointer) !important;
 						min-width: 80px !important;
 						max-width: 140px !important;
 						text-overflow: ellipsis !important;
@@ -1350,7 +1350,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 				border-radius: var(--adw-button-radius) !important;
 				height: 34px !important;
 				box-sizing: border-box !important;
-				cursor: default !important;
+				cursor: var(--cursor-pointer) !important;
 				padding: 2px 12px !important;
 				gap: 6px !important;
 				-webkit-app-region: no-drag !important;
@@ -1422,7 +1422,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 		button.DialogButton,
 		button.millenniumIconButton
 		{
-			cursor: default !important;
+			cursor: var(--cursor-pointer) !important;
 			border-radius: var(--adw-button-radius) !important;
 			box-sizing: border-box !important;
 			width: 34px !important;
@@ -1589,7 +1589,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 	/* Broadcast: Configure microphone */
 	a._3yThygN5Ps_AkPwAlNxpvA
 	{
-		cursor: default !important;
+		cursor: var(--cursor-pointer) !important;
 		border-radius: var(--adw-button-radius) !important;
 		box-sizing: border-box !important;
 		width: 34px !important;

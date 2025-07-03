@@ -107,7 +107,7 @@ html.client_chat_frame
 
 				button.DialogButton
 				{
-					cursor: default !important;
+					cursor: var(--cursor-pointer) !important;
 					min-height: 24px !important;
 					max-width: none !important;
 					padding: 6px 12px !important;

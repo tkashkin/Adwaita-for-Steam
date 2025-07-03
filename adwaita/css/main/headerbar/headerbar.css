@@ -96,7 +96,7 @@ body.DesktopUI
 			div._3KaB94Jl4r0hFkthDPJy09
 			{
 				-webkit-app-region: no-drag;
-				cursor: default !important;
+				cursor: var(--cursor-pointer) !important;
 				border-radius: var(--adw-button-radius) !important;
 				box-sizing: border-box !important;
 				width: 34px !important;
@@ -199,7 +199,7 @@ body.DesktopUI
 			/* Text */
 			&, a, div._2EXJTyc69b45nXI4h3RknI, div.SwtQX-CurM3HPVJ9DPI1V
 			{
-				cursor: default !important;
+				cursor: var(--cursor-pointer) !important;
 				color: rgb(var(--adw-banner-fg-rgb)) !important;
 				font-family: var(--adw-text-font) !important;
 				font-size: var(--adw-text-title3-size) !important;
@@ -237,7 +237,7 @@ body.DesktopUI
 					height: 24px !important;
 					padding: 5px 10px !important;
 					transition: var(--adw-button-transition) !important;
-					cursor: default !important;
+					cursor: var(--cursor-pointer) !important;
 
 					/* Disabled */
 					&._TY57LlvVVnWqjaCz0EWr

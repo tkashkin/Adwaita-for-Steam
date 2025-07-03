@@ -164,7 +164,7 @@ body.DesktopUI div._2TKEazUUS3TlniZfpc8OOe a
 {
 	-webkit-app-region: no-drag !important;
 	-webkit-user-drag: none !important;
-	cursor: default !important;
+	cursor: var(--cursor-pointer) !important;
 	background: transparent !important;
 	border-radius: var(--adw-button-radius) !important;
 	box-sizing: border-box !important;
@@ -300,7 +300,7 @@ body.DesktopUI div._20QAC4WMXm8qFE8waUT5oo div._12vo5L1hsNGdao6_ssuirS > .Dialog
 body.DesktopUI div[class*="gamelistsearchbar_Container_"] div[class*="gamelistsearchbar_SearchInput_"] > div[class*="gamelistsearchbar_SearchFilterInput_"] > div[class*="gamelistsearchbar_SearchFilterInputClear_"],
 body.DesktopUI div._20QAC4WMXm8qFE8waUT5oo div._12vo5L1hsNGdao6_ssuirS > div._172OFJhtx4Jt2ydY6-9IUm > div._38tIMc-4Ug-Akpa1pYlN0R
 {
-	cursor: default !important;
+	cursor: var(--cursor-pointer) !important;
 	right: 9px !important;
 	top: 9px !important;
 }
@@ -358,7 +358,7 @@ body.DesktopUI div._20QAC4WMXm8qFE8waUT5oo div.vCCmYvn9yQ_V8CpKupllU div._1TxHdz
 	height: 16px !important;
 	min-width: 16px !important;
 	min-height: 16px !important;
-	cursor: default !important;
+	cursor: var(--cursor-pointer) !important;
 }
 
 body.DesktopUI div[class*="gamelistsearchbar_Container_"] div[class*="gamelistsearchbar_AdvancedSearchContainer_"] div[class*="gamelistsearchbar_AdvancedSearchButton_"] svg,
@@ -444,7 +444,7 @@ body.DesktopUI div._20QAC4WMXm8qFE8waUT5oo div._12vo5L1hsNGdao6_ssuirS > div._17
 	height: 24px !important;
 	border-radius: 50% !important;
 	background: transparent !important;
-	cursor: default !important;
+	cursor: var(--cursor-pointer) !important;
 }
 
 body.DesktopUI div[class*="gamelistsearchbar_Container_"] div[class*="gamelistsearchbar_SearchInput_"] > div[class*="gamelistsearchbar_SearchFilterInput_"] > div[class*="gamelistsearchbar_FilterTag_"] > div:not([class]) > svg:hover,
@@ -504,7 +504,7 @@ body.DesktopUI div._1ZS_xta5HMXzR8JgxDH6n7 div._2PF_m-I5yte3WnQhpcz8RC
 	box-sizing: border-box !important;
 	margin: 0 !important;
 	border-radius: var(--adw-button-radius) !important;
-	cursor: default !important;
+	cursor: var(--cursor-pointer) !important;
 	transition: var(--adw-button-transition) !important;
 	color: rgb(var(--adw-headerbar-fg-rgb)) !important;
 	background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-button-bg-opacity)) !important;
@@ -574,7 +574,7 @@ body.DesktopUI div._1ZS_xta5HMXzR8JgxDH6n7 div._1PgAonvorr0o_NMxNKiDFU > div._3m
 	margin: 0 !important;
 	background: transparent !important;
 	border-radius: var(--adw-button-radius) !important;
-	cursor: default !important;
+	cursor: var(--cursor-pointer) !important;
 	color: rgba(var(--adw-headerbar-fg-rgb), var(--adw-dim-label-opacity)) !important;
 }
 
