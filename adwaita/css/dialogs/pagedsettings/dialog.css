@@ -53,7 +53,7 @@ html.client_chat_frame div._2VY6HOZXxO2AsBaLssl0Uy
 		margin: 0 !important;
 		max-width: none !important;
 		background: none !important;
-		cursor: var(--cursor-pointer) !important;
+		cursor: var(--adw-cursor-pointer) !important;
 		font-family: var(--adw-text-font) !important;
 		font-size: var(--adw-text-base-size) !important;
 		font-weight: var(--adw-text-base-weight) !important;

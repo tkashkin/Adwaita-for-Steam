@@ -39,7 +39,7 @@ body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._2D64jIEK7wpUR_NlObDW76 svg._25lB
 	top: 6px !important;
 	left: calc(var(--adw-windowcontrols-margin-left) + 6px) !important;
 	-webkit-app-region: no-drag;
-	cursor: var(--cursor-pointer) !important;
+	cursor: var(--adw-cursor-pointer) !important;
 	border-radius: var(--adw-button-radius) !important;
 	box-sizing: border-box !important;
 	width: 34px !important;
@@ -84,7 +84,7 @@ body.DesktopUI div[class*="steamdesktop_TopBar_"] div[class*="supernav_MenuButto
 body.DesktopUI div._3Z7VQ1IMk4E3HsHvrkLNgo div._19axKcqYRuaJ8vdYKYmtTQ
 {
 	-webkit-app-region: no-drag !important;
-	cursor: var(--cursor-pointer) !important;
+	cursor: var(--adw-cursor-pointer) !important;
 	border-radius: var(--adw-button-radius) !important;
 	color: rgb(var(--adw-headerbar-fg-rgb)) !important;
 	font-family: var(--adw-text-font) !important;

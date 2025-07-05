@@ -53,7 +53,7 @@ html.client_chat_frame
 
 						div._2XZq-_f6npaQdAgeRzKIkz
 						{
-							cursor: var(--cursor-pointer) !important;
+							cursor: var(--adw-cursor-pointer) !important;
 							box-sizing: border-box !important;
 							min-width: 150px !important;
 							width: 0 !important;
@@ -223,7 +223,7 @@ html.client_chat_frame
 								border-radius: 50% !important;
 								margin: 0 !important;
 								opacity: 0 !important;
-								cursor: var(--cursor-pointer) !important;
+								cursor: var(--adw-cursor-pointer) !important;
 							}
 
 							div._1JXI4j2_xSpVK1YjyEuebr

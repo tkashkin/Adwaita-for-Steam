@@ -75,7 +75,7 @@ html.client_chat_frame
 	div.friendCollapseButton, div.chatTabOpenFriendsList
 	{
 		-webkit-app-region: no-drag;
-		cursor: var(--cursor-pointer) !important;
+		cursor: var(--adw-cursor-pointer) !important;
 		box-sizing: border-box !important;
 		width: 34px !important;
 		height: 34px !important;

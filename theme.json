@@ -115,6 +115,15 @@
                 }
             }
         },
+        "Keep pointer cursor for clickable elements": {
+            "type": "checkbox",
+            "values": {
+                "No": {},
+                "Yes": {
+                    "adwaita/extras/general/cursor_pointer.css": ["all"]
+                }
+            }
+        },
         "Enable Custom CSS": {
             "type": "checkbox",
             "values": {

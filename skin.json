@@ -89,14 +89,6 @@
 				"yes": { "TargetCss": { "affects": [".*"], "src": "adwaita/extras/general/no_rounded_corners.css" } }
 			}
 		},
-		"Preserve cursor-pointer": {
-			"description": "Keeps the pointer cursor (hand) on interactable elements instead of removing it.",
-			"default": "no",
-			"values": {
-				"no": { "TargetCss": { "affects": [".*"], "src": "adwaita/extras/cursors/cursor_default.css" } },
-				"yes": { "TargetCss": { "affects": [".*"], "src": "adwaita/extras/cursors/cursor_pointer.css" } }
-			}
-		},
 		"Hide What's New shelf": {
 			"description": "Hides What's New shelf from the Library",
 			"default": "no",
@@ -128,6 +120,14 @@
 			"values": {
 				"no": {},
 				"yes": { "TargetCss": { "affects": [".*"], "src": "adwaita/extras/store/show_url.css" } }
+			}
+		},
+		"Keep pointer cursor for clickable elements": {
+			"description": "Keeps the pointer cursor (hand) for clickable elements instead of removing it",
+			"default": "no",
+			"values": {
+				"no": {},
+				"yes": { "TargetCss": { "affects": [".*"], "src": "adwaita/extras/general/cursor_pointer.css" } }
 			}
 		}
 	}

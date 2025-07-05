@@ -8,7 +8,7 @@ body.DesktopUI div._2-O4ZG0KrnSrzISHBKctFQ
 	line-height: 26px !important;
 	margin: 0 calc(6px - var(--adw-scrollbar-size)) 0 6px !important;
 	background: none !important;
-	cursor: var(--cursor-pointer) !important;
+	cursor: var(--adw-cursor-pointer) !important;
 	font-family: var(--adw-text-font) !important;
 	font-size: var(--adw-text-gamelist-size) !important;
 	font-weight: var(--adw-text-gamelist-weight) !important;

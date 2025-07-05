@@ -21,7 +21,7 @@ body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxFie
 body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._2QWD5eymAFUZoQg29r-lQT,
 body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._1Qku5jMXBi5-wawzqY1kzG
 {
-	cursor: var(--cursor-pointer) !important;
+	cursor: var(--adw-cursor-pointer) !important;
 }
 
 body.DesktopUI div.DialogCheckbox_Container > div.DialogCheckbox,
@@ -45,7 +45,7 @@ body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._1Qku5jMXBi5-wawzqY1kzG > div.LBS7I
 	border-radius: var(--adw-checkbox-radius) !important;
 	box-shadow: none !important;
 	-webkit-app-region: no-drag !important;
-	cursor: var(--cursor-pointer) !important;
+	cursor: var(--adw-cursor-pointer) !important;
 }
 
 body.DesktopUI div.DialogCheckbox_Container > div.DialogCheckbox:focus,

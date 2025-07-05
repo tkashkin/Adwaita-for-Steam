@@ -38,7 +38,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 
 		a
 		{
-			cursor: var(--cursor-pointer) !important;
+			cursor: var(--adw-cursor-pointer) !important;
 			text-decoration: none !important;
 			color: rgb(var(--adw-accent-rgb)) !important;
 			position: relative !important;
@@ -146,7 +146,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 
 			&, div, a
 			{
-				cursor: var(--cursor-pointer) !important;
+				cursor: var(--adw-cursor-pointer) !important;
 				text-decoration: none !important;
 				color: rgba(var(--adw-card-fg-rgb), var(--adw-dim-label-opacity)) !important;
 				font-family: var(--adw-text-font) !important;
@@ -170,7 +170,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 
 			a
 			{
-				cursor: var(--cursor-pointer) !important;
+				cursor: var(--adw-cursor-pointer) !important;
 				text-decoration: none !important;
 				color: rgb(var(--adw-accent-rgb)) !important;
 				position: relative !important;
@@ -290,7 +290,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 			/* Switch */
 			div._9Ql-oVe_j8E-vsDdyVdWo
 			{
-				cursor: var(--cursor-pointer) !important;
+				cursor: var(--adw-cursor-pointer) !important;
 				padding: 0 !important;
 				margin: 0 !important;
 
@@ -325,7 +325,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 				height: 24px;
 				padding: 5px 12px;
 				transition: var(--adw-button-transition) !important;
-				cursor: var(--cursor-pointer) !important;
+				cursor: var(--adw-cursor-pointer) !important;
 				max-width: 250px;
 				text-overflow: ellipsis !important;
 				overflow: hidden;
@@ -360,7 +360,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 				gap: 4px !important;
 				align-items: center !important;
 				justify-content: end !important;
-				cursor: var(--cursor-pointer) !important;
+				cursor: var(--adw-cursor-pointer) !important;
 
 				.DialogDropDown_CurrentDisplay
 				{
@@ -510,7 +510,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 			{
 				min-width: 288px !important;
 				box-sizing: border-box !important;
-				cursor: var(--cursor-pointer) !important;
+				cursor: var(--adw-cursor-pointer) !important;
 			}
 		}
 
@@ -605,7 +605,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 			flex-direction: column !important;
 			justify-content: center !important;
 			align-items: start !important;
-			cursor: var(--cursor-pointer) !important;
+			cursor: var(--adw-cursor-pointer) !important;
 
 			/* Title */
 			&,
