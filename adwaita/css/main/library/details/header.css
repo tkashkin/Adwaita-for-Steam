@@ -134,7 +134,7 @@ body.DesktopUI div._2Nq6ov7A1hGcHXVOXNt_OE div._1FnJ6dPuknQFQ2RTpKTI16 > div._2A
 	border-radius: var(--adw-button-radius) !important;
 	background: transparent !important;
 	transition: var(--adw-button-transition) !important;
-	cursor: default !important;
+	cursor: var(--adw-cursor-pointer) !important;
 }
 
 body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer_"] > div[class*="appactionbutton_ButtonChild_"]:hover,
@@ -198,7 +198,7 @@ body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2TYVGoD27ZMfjRirKQNLfk > button
 	letter-spacing: normal !important;
 	padding: 0 !important;
 	margin: 0 !important;
-	cursor: default !important;
+	cursor: var(--adw-cursor-pointer) !important;
 	background: none !important;
 	border-radius: 0 !important;
 }
@@ -279,7 +279,7 @@ body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div.UAhWiMg9Q2VPsQQBj_ikT,
 body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_Downloading_"],
 body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2F4PcO4yl7Xl5emuGiF2La
 {
-	cursor: default !important;
+	cursor: var(--adw-cursor-pointer) !important;
 	border-radius: var(--adw-button-radius) !important;
 }
 

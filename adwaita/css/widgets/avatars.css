@@ -19,7 +19,7 @@ html.client_chat_frame
 				box-shadow: none !important;
 				padding: 0 !important;
 				margin: 0 !important;
-				cursor: default !important;
+				cursor: var(--adw-cursor-pointer) !important;
 				position: relative !important;
 			}
 

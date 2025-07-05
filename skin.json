@@ -121,6 +121,14 @@
 				"no": {},
 				"yes": { "TargetCss": { "affects": [".*"], "src": "adwaita/extras/store/show_url.css" } }
 			}
+		},
+		"Keep pointer cursor for clickable elements": {
+			"description": "Keeps the pointer cursor (hand) for clickable elements instead of removing it",
+			"default": "no",
+			"values": {
+				"no": {},
+				"yes": { "TargetCss": { "affects": [".*"], "src": "adwaita/extras/general/cursor_pointer.css" } }
+			}
 		}
 	}
 }

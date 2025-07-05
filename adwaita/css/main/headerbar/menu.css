@@ -21,7 +21,7 @@ div._3Z7VQ1IMk4E3HsHvrkLNgo div._3s0lkohH8wU2do0K1il28Y
 	div._2UyOBeiSdBayaFdRa39N2O
 	{
 		-webkit-app-region: no-drag !important;
-		cursor: default !important;
+		cursor: var(--adw-cursor-pointer) !important;
 		border-radius: var(--adw-button-radius) !important;
 		width: 34px !important;
 		height: 34px !important;

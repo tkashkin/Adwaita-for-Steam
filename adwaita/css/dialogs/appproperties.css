@@ -97,7 +97,7 @@ div._1FyBL6obxHQ2Z2CsaV2Gbz
 
 			a
 			{
-				cursor: default !important;
+				cursor: var(--adw-cursor-pointer) !important;
 				border-radius: var(--adw-button-radius) !important;
 				box-sizing: border-box !important;
 				width: fit-content !important;
@@ -212,7 +212,7 @@ div._1FyBL6obxHQ2Z2CsaV2Gbz
 			transition: var(--adw-button-transition) !important;
 			margin: 0 0 1px 0 !important;
 			position: relative !important;
-			cursor: default !important;
+			cursor: var(--adw-cursor-pointer) !important;
 			align-items: center !important;
 
 			&:hover
@@ -403,7 +403,7 @@ div._1FyBL6obxHQ2Z2CsaV2Gbz
 			box-shadow: none !important;
 			border-radius: var(--adw-button-radius) !important;
 			transition: var(--adw-button-transition) !important;
-			cursor: default !important;
+			cursor: var(--adw-cursor-pointer) !important;
 
 			&:hover
 			{
@@ -477,7 +477,7 @@ div._1FyBL6obxHQ2Z2CsaV2Gbz
 				text-indent: -9999px !important;
 				font-size: 0 !important;
 				line-height: 0 !important;
-				cursor: default !important;
+				cursor: var(--adw-cursor-pointer) !important;
 
 				&::before
 				{
@@ -547,7 +547,7 @@ div._1FyBL6obxHQ2Z2CsaV2Gbz
 
 				span
 				{
-					cursor: default !important;
+					cursor: var(--adw-cursor-pointer) !important;
 					text-decoration: none !important;
 					color: rgb(var(--adw-accent-rgb)) !important;
 					position: relative !important;
@@ -725,7 +725,7 @@ div._1FyBL6obxHQ2Z2CsaV2Gbz
 							background-blend-mode: overlay !important;
 							border-radius: var(--adw-checkbox-radius) !important;
 							box-shadow: none !important;
-							cursor: default !important;
+							cursor: var(--adw-cursor-pointer) !important;
 
 							svg
 							{
@@ -770,7 +770,7 @@ div._1FyBL6obxHQ2Z2CsaV2Gbz
 
 						a._3FcoB9iwXEhr45sPG6g16h
 						{
-							cursor: default !important;
+							cursor: var(--adw-cursor-pointer) !important;
 							text-decoration: none !important;
 
 							/* Image */
@@ -785,7 +785,7 @@ div._1FyBL6obxHQ2Z2CsaV2Gbz
 									border-radius: 6px !important;
 									overflow: clip !important;
 									transform: none !important;
-									cursor: default !important;
+									cursor: var(--adw-cursor-pointer) !important;
 								}
 							}
 

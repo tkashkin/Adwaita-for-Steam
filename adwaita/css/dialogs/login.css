@@ -140,7 +140,7 @@ body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._1Qku5jMXBi5-wawzqY1kzG
 	width: fit-content !important;
 	margin: auto !important;
 	padding: 4px !important;
-	cursor: default !important;
+	cursor: var(--adw-cursor-pointer) !important;
 }
 
 /* Submit Button */
@@ -161,7 +161,7 @@ body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp button.DjSvCZoKKfoNSmarsEcTS
 	font-weight: 700 !important;
 	-webkit-app-region: no-drag !important;
 	box-shadow: none !important;
-	cursor: default !important;
+	cursor: var(--adw-cursor-pointer) !important;
 }
 
 body.DesktopUI div[class*="login_Login_"] button[class*="newlogindialog_SubmitButton_"]:hover,
@@ -257,7 +257,7 @@ body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._2Jkgs1ZwjavbwnJy76UgUm
 	left: calc(var(--adw-windowcontrols-close-margin-left) + 6px) !important;
 	-webkit-app-region: no-drag;
 	z-index: 9 !important;
-	cursor: default !important;
+	cursor: var(--adw-cursor-pointer) !important;
 	border-radius: var(--adw-button-radius) !important;
 	box-sizing: border-box !important;
 	width: 34px !important;
@@ -491,7 +491,7 @@ body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._27A5ub1QLLIMmgywKVMg4z div._3SxgWh
 	-webkit-app-region: no-drag !important;
 	position: relative !important;
 	margin: 0 0 1px 0 !important;
-	cursor: default !important;
+	cursor: var(--adw-cursor-pointer) !important;
 }
 
 body.DesktopUI div[class*="login_Login_"] div[class*="login_UserChooser_"] div[class*="loginpanel_CachedUserList_"] > div:hover,
@@ -606,7 +606,7 @@ body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._27A5ub1QLLIMmgywKVMg4z div._3SxgWh
 	position: absolute !important;
 	top: 8px !important;
 	right: 12px !important;
-	cursor: default !important;
+	cursor: var(--adw-cursor-pointer) !important;
 	border-radius: var(--adw-button-radius) !important;
 	box-sizing: border-box !important;
 	width: 34px !important;

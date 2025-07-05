@@ -2,7 +2,7 @@
 body.DesktopUI div._1bGewp3tfzqAF6fVTFFUOz > div.UkR3sY319PuaUNuUWks2K > div._2m_orETo6AghzAnc0sISCt
 {
 	display: flex !important;
-	cursor: default !important;
+	cursor: var(--adw-cursor-pointer) !important;
 	-webkit-app-region: no-drag !important;
 	position: absolute !important;
 	left: 40px !important;

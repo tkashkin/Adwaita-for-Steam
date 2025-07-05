@@ -74,7 +74,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._1EC1xjjUGqI7fqX6PVzJA3
 	font-size: var(--adw-text-title3-size) !important;
 	font-weight: var(--adw-text-title3-weight) !important;
 	box-shadow: none !important;
-	cursor: default !important;
+	cursor: var(--adw-cursor-pointer) !important;
 	align-self: center !important;
     justify-self: center !important;
     user-select: none !important;
@@ -130,7 +130,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._39Zk32AvV5cr6g-83IVRVS,
 body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2lNdDLgjQdeBXmMlPO8lvq /* Community Content */
 {
 	background: none !important;
-	cursor: default !important;
+	cursor: var(--adw-cursor-pointer) !important;
 }
 
 /* Remove Image Borders */
@@ -473,7 +473,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA button.bACIuqv-b_9TztCczFK19
 	background: rgba(var(--adw-window-fg-rgb), var(--adw-button-bg-opacity)) !important;
 	border-radius: var(--adw-button-radius) !important;
 	box-shadow: none !important;
-	cursor: default !important;
+	cursor: var(--adw-cursor-pointer) !important;
 }
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="posttextentry_PostButton_"]:hover,
@@ -591,7 +591,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2aor4XVOYzN1PBSREk0UbO div._31pt
 	box-shadow: var(--adw-card-shadow) !important;
 	border: none !important;
 	transition: var(--adw-button-transition) !important;
-	cursor: default !important;
+	cursor: var(--adw-cursor-pointer) !important;
 	position: relative !important;
 	margin: 0 !important;
 }
@@ -639,7 +639,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2aor4XVOYzN1PBSREk0UbO img._2V2s
 {
 	border-radius: var(--adw-gameicon-radius) !important;
 	box-sizing: border-box !important;
-	cursor: default !important;
+	cursor: var(--adw-cursor-pointer) !important;
 }
 
 body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsoverview_RightColumn_"] img[class*="achievementiconbase_Icon_"]:not([class*="achievementiconbase_IconGlow_"]),
