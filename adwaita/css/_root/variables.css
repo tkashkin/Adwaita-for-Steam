@@ -7,4 +7,6 @@
 	--adw-gameicon-uninstalled-filter: grayscale(100%) opacity(50%);
 
 	--adw-cursor-pointer: default;
+
+	--adw-window-outline: rgba(255, 255, 255, var(--adw-window-outline-opacity));
 }

@@ -14,7 +14,7 @@ html.client_chat_frame
 		background: rgba(var(--adw-shade-rgb), calc(var(--adw-shade-a) * 2)) !important;
 	}
 
-	.ModalPosition_Content
+	.FullModalOverlay .ModalPosition_Content
 	{
 		background: rgb(var(--adw-dialog-bg-rgb)) !important;
 		border-radius: var(--adw-dialog-radius) !important;
@@ -187,7 +187,7 @@ html.client_chat_frame
 
 	/* Outline */
 	#popup_target::after,
-	.ModalPosition_Content::after
+	.FullModalOverlay .ModalPosition_Content::after
 	{
 		content: "";
 		position: absolute;
@@ -197,7 +197,7 @@ html.client_chat_frame
 		bottom: 0;
 		pointer-events: none;
 		box-sizing: border-box;
-		border: 1px rgba(var(--adw-window-fg-rgb), var(--adw-window-outline-opacity)) solid;
+		border: 1px var(--adw-window-outline) solid;
 		border-radius: inherit;
 		z-index: 999;
 	}

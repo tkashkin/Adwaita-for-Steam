@@ -647,7 +647,7 @@ body.DesktopUI div.Woh0kBQCmatzC1daBX9i6
 	margin: 0 !important;
 	left: 36px !important;
 	top: -10px !important;
-	border: 1px rgba(var(--adw-popover-fg-rgb), var(--adw-window-outline-opacity)) solid !important;
+	border: 1px var(--adw-window-outline) solid !important;
 	box-shadow: var(--adw-popover-shadow) !important;
 	transition: none !important;
 }

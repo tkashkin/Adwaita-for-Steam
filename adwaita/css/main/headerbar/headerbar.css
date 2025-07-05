@@ -22,25 +22,6 @@ body.DesktopUI
 		border: none !important;
 		background: rgb(var(--adw-window-bg-rgb)) !important;
 
-		&::after
-		{
-			content: "";
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			pointer-events: none;
-			box-sizing: border-box;
-			border: 1px rgba(var(--adw-window-fg-rgb), var(--adw-window-outline-opacity)) solid;
-			z-index: 999;
-		}
-
-		&.Maximized::after
-		{
-			border: 1px transparent solid;
-		}
-
 		/* Focus Bar */
 		& > div._3pXasCUulX4jjqO79s4q_F
 		{
