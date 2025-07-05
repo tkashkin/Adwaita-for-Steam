@@ -4,7 +4,7 @@ body.DesktopUI div._1nzwrXRkY7v4cVHMaShUc1 div.lwprNSgEnKfVSHIzsgbFi
 {
 	background: rgb(var(--adw-popover-bg-rgb)) !important;
 	border-radius: var(--adw-menu-radius) !important;
-	border: 1px rgba(var(--adw-popover-fg-rgb), var(--adw-window-outline-opacity)) solid !important;
+	border: 1px var(--adw-window-outline) solid !important;
 	box-shadow: var(--adw-popover-shadow) !important;
 }
 
