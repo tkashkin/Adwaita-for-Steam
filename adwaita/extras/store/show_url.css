@@ -13,12 +13,12 @@ body.DesktopUI div._1bGewp3tfzqAF6fVTFFUOz > div.UkR3sY319PuaUNuUWks2K > div._2m
 
 	&:hover
 	{
-		background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-hover-opacity)) !important;
+		background: color-mix(in srgb, currentColor var(--adw-hover-opacity), transparent) !important;
 	}
 
 	&:active
 	{
-		background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-active-opacity)) !important;
+		background: color-mix(in srgb, currentColor var(--adw-active-opacity), transparent) !important;
 	}
 
 	div._3izqEKa-zuPIrUDSm1bRvf
@@ -28,7 +28,7 @@ body.DesktopUI div._1bGewp3tfzqAF6fVTFFUOz > div.UkR3sY319PuaUNuUWks2K > div._2m
 
 	div.MZPxEZcxAGtPDf1NYtouS
 	{
-		color: rgba(var(--adw-headerbar-fg-rgb), var(--adw-dim-label-opacity)) !important;
+		color: color-mix(in srgb, currentColor var(--adw-dim-label-opacity), transparent) !important;
 		font-family: var(--adw-text-font) !important;
 		font-size: var(--adw-text-subtitle-size) !important;
 		font-weight: var(--adw-text-subtitle-weight) !important;

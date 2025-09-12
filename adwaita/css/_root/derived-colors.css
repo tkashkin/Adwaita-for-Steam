@@ -1,0 +1,21 @@
+:root
+{
+	--adw-accent: oklab(from var(--adw-accent-bg) var(--adw-standalone-color-oklab));
+	--adw-destructive: oklab(from var(--adw-destructive-bg) var(--adw-standalone-color-oklab));
+	--adw-success: oklab(from var(--adw-success-bg) var(--adw-standalone-color-oklab));
+	--adw-warning: oklab(from var(--adw-warning-bg) var(--adw-standalone-color-oklab));
+	--adw-error: oklab(from var(--adw-error-bg) var(--adw-standalone-color-oklab));
+
+	--adw-window-outline: rgba(255, 255, 255, var(--adw-window-outline-opacity));
+
+	--adw-sidebar-border: var(--adw-sidebar-shade);
+
+	--adw-undershoot: color-mix(in srgb, var(--adw-shade) 75%, transparent);
+	--adw-undershoot-border: color-mix(in srgb, var(--adw-shade) 75%, transparent);
+
+	@media(prefers-contrast: more)
+	{
+		--adw-sidebar-border: color-mix(in srgb, currentColor var(--adw-border-opacity), transparent);
+		--adw-undershoot-border: color-mix(in srgb, currentColor var(--adw-border-opacity), transparent);
+	}
+}

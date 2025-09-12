@@ -16,7 +16,7 @@ html.client_chat_frame
 
 	.FullModalOverlay .ModalPosition_Content
 	{
-		background: rgb(var(--adw-dialog-bg-rgb)) !important;
+		background: var(--adw-dialog-bg) !important;
 		border-radius: var(--adw-dialog-radius) !important;
 		box-shadow: var(--adw-dialog-shadow) !important;
 
@@ -51,7 +51,7 @@ html.client_chat_frame
 				display: block !important;
 				padding: 0 !important;
 				margin: 8px 0 0 0 !important;
-				color: rgb(var(--adw-dialog-fg-rgb)) !important;
+				color: var(--adw-dialog-fg) !important;
 				font-family: var(--adw-text-font) !important;
 				font-size: var(--adw-text-title1-size) !important;
 				font-weight: var(--adw-text-title1-weight) !important;
@@ -74,7 +74,7 @@ html.client_chat_frame
 			{
 				padding: 0 !important;
 				margin: 8px 0 0 0 !important;
-				color: rgb(var(--adw-dialog-fg-rgb)) !important;
+				color: var(--adw-dialog-fg) !important;
 				font-family: var(--adw-text-font) !important;
 				font-size: var(--adw-text-base-size) !important;
 				font-weight: var(--adw-text-base-weight) !important;
@@ -118,18 +118,18 @@ html.client_chat_frame
 					font-family: var(--adw-text-font) !important;
 					font-size: 15px !important;
 					font-weight: 700 !important;
-					color: rgb(var(--adw-dialog-fg-rgb)) !important;
-					background: rgba(var(--adw-dialog-fg-rgb), var(--adw-button-bg-opacity)) !important;
+					color: var(--adw-dialog-fg) !important;
+					background: color-mix(in srgb, currentColor var(--adw-button-bg-opacity), transparent) !important;
 					-webkit-app-region: no-drag !important;
 
 					&:hover
 					{
-						background: rgba(var(--adw-dialog-fg-rgb), var(--adw-button-bg-opacity-hover)) !important;
+						background: color-mix(in srgb, currentColor var(--adw-button-bg-opacity-hover), transparent) !important;
 					}
 
 					&:active
 					{
-						background: rgba(var(--adw-dialog-fg-rgb), var(--adw-button-bg-opacity-active)) !important;
+						background: color-mix(in srgb, currentColor var(--adw-button-bg-opacity-active), transparent) !important;
 					}
 
 					&.Primary
@@ -167,18 +167,18 @@ html.client_chat_frame
 			{
 				button.DialogButton.Primary
 				{
-					color: rgb(var(--adw-destructive-rgb)) !important;
-					background: rgba(var(--adw-destructive-rgb), var(--adw-button-bg-opacity)) !important;
+					color: var(--adw-destructive) !important;
+					background: color-mix(in srgb, currentColor var(--adw-button-bg-opacity), transparent) !important;
 					background-blend-mode: normal !important;
 
 					&:hover
 					{
-						background: rgba(var(--adw-destructive-rgb), var(--adw-button-bg-opacity-hover)) !important;
+						background: color-mix(in srgb, currentColor var(--adw-button-bg-opacity-hover), transparent) !important;
 					}
 
 					&:active
 					{
-						background: rgba(var(--adw-destructive-rgb), var(--adw-button-bg-opacity-active)) !important;
+						background: color-mix(in srgb, currentColor var(--adw-button-bg-opacity-active), transparent) !important;
 					}
 				}
 			}
@@ -228,7 +228,7 @@ html.client_chat_frame
 
 	&.ModalDialogBody .PopupFullWindow div.oHNgIzAySfCEOayCBwsg5.DialogContent
 	{
-		background: rgb(var(--adw-headerbar-bg-rgb)) !important;
+		background: var(--adw-headerbar-bg) !important;
 		padding: 1px !important;
 		padding-top: 36px !important;
 	}

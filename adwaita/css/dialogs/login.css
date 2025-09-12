@@ -15,8 +15,8 @@ body.DesktopUI > div._2dqG948uNVB7jwgT1g6O-a,
 body.DesktopUI div[class*="steamdesktop_InitContainer_"],
 body.DesktopUI div._2YwTwqFtU04JgwfzXSAcSV
 {
-	background: rgb(var(--adw-window-bg-rgb)) !important;
-	color: rgb(var(--adw-window-fg-rgb)) !important;
+	background: var(--adw-window-bg) !important;
+	color: var(--adw-window-fg) !important;
 	border: none !important;
 	box-shadow: none !important;
 	overflow: hidden !important;
@@ -45,14 +45,14 @@ body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_Highlight_"
 body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div.XyqzE5F-3yIBYBLe1vbKM,
 body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._12zBmIktqPpcwJXItTb8f9
 {
-	color: rgb(var(--adw-window-fg-rgb)) !important;
+	color: var(--adw-window-fg) !important;
 }
 
 body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_FormError_"],
 body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._1Mcy9wnDnt1Q72FijsNtHC,
 body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._1W_6HXiG4JJ0By1qN_0fGZ
 {
-	color: rgb(var(--adw-error-rgb)) !important;
+	color: var(--adw-error) !important;
 }
 
 /* Labels */
@@ -60,7 +60,7 @@ body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_FieldLabel_
 body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._3d8dp-U0xTT5RTZmRsmQds,
 body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div.XrYgea66b38RASmbI3PJo
 {
-	color: rgba(var(--adw-window-fg-rgb), var(--adw-dim-label-opacity)) !important;
+	color: color-mix(in srgb, currentColor var(--adw-dim-label-opacity), transparent) !important;
 	left: 14px !important;
 	margin-bottom: -3px !important;
 	pointer-events: none !important;
@@ -77,8 +77,8 @@ body.DesktopUI div[class*="login_Login_"] input[class*="newlogindialog_TextInput
 body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp input._2eKVn6g5Yysx9JmutQe7WV,
 body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp input._2GBWeup5cttgbTw8FM3tfx
 {
-	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-opacity)) !important;
-	color: rgb(var(--adw-card-fg-rgb)) !important;
+	background: var(--adw-card-bg) !important;
+	color: var(--adw-card-fg) !important;
 	border-radius: var(--adw-card-radius) !important;
 	box-shadow: var(--adw-card-shadow) !important;
 	border: none !important;
@@ -96,7 +96,7 @@ body.DesktopUI div[class*="login_Login_"] input[class*="newlogindialog_TextInput
 body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp input._2eKVn6g5Yysx9JmutQe7WV:not(:focus):hover,
 body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp input._2GBWeup5cttgbTw8FM3tfx:not(:focus):hover
 {
-	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-hover-opacity)) !important;
+	background: color-mix(in srgb, currentColor var(--adw-card-hover-opacity), transparent) !important;
 }
 
 body.DesktopUI div[class*="login_Login_"] input[class*="newlogindialog_TextInput_"]:focus,
@@ -264,7 +264,7 @@ body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._2Jkgs1ZwjavbwnJy76UgUm
 	height: 34px !important;
 	padding: 9px !important;
 	transition: var(--adw-button-transition) !important;
-	color: rgb(var(--adw-window-fg-rgb)) !important;
+	color: var(--adw-window-fg) !important;
 	background: transparent !important;
 	box-shadow: none !important;
 }
@@ -273,14 +273,14 @@ body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_BackArrowCo
 body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._1N7RYKKGGdyi-pkvX7zILY:hover,
 body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._2Jkgs1ZwjavbwnJy76UgUm:hover
 {
-	background: rgba(var(--adw-window-fg-rgb), var(--adw-hover-opacity)) !important;
+	background: color-mix(in srgb, currentColor var(--adw-hover-opacity), transparent) !important;
 }
 
 body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_BackArrowContainer_"]:active,
 body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._1N7RYKKGGdyi-pkvX7zILY:active,
 body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._2Jkgs1ZwjavbwnJy76UgUm:active
 {
-	background: rgba(var(--adw-window-fg-rgb), var(--adw-active-opacity)) !important;
+	background: color-mix(in srgb, currentColor var(--adw-active-opacity), transparent) !important;
 }
 
 body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_BackArrowContainer_"]:focus:focus-visible,
@@ -301,7 +301,7 @@ body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_BackArrowCo
 body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._1N7RYKKGGdyi-pkvX7zILY::before,
 body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._2Jkgs1ZwjavbwnJy76UgUm::before
 {
-	background-color: rgb(var(--adw-window-fg-rgb));
+	background-color: var(--adw-window-fg);
 	content: "";
 	display: block;
 	width: 16px;
@@ -321,7 +321,7 @@ body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp ._3FB9Kwzf1SnNWl8p2Mypu7
 	width: 100% !important;
 	padding: 0 !important;
 	gap: 0 !important;
-	color: rgb(var(--adw-window-fg-rgb)) !important;
+	color: var(--adw-window-fg) !important;
 	font-family: var(--adw-text-font) !important;
 	font-size: 15px !important;
 	line-height: normal !important;
@@ -338,7 +338,7 @@ body.DesktopUI div[class*="login_Login_"] [class*="newlogindialog_Compact_"] [cl
 body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp ._9CHmBvJ2I0Q9yYPvJgSg0 .A3Y-u39xir9DKtvLEOcnd,
 body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp ._3FB9Kwzf1SnNWl8p2Mypu7 ._1A8Mk6QeC0d7bvHDJIoW7o
 {
-	color: rgb(var(--adw-window-fg-rgb)) !important;
+	color: var(--adw-window-fg) !important;
 	font-family: var(--adw-text-font) !important;
 	font-size: 20px !important;
 	line-height: normal !important;
@@ -367,7 +367,7 @@ body.DesktopUI div[class*="login_Login_"] [class*="newlogindialog_Compact_"] [cl
 body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp ._9CHmBvJ2I0Q9yYPvJgSg0 [class*="newlogindialog_SegmentedCharacterInput_"] input,
 body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp ._3FB9Kwzf1SnNWl8p2Mypu7 [class*="newlogindialog_SegmentedCharacterInput_"] input
 {
-	color: rgb(var(--adw-window-fg-rgb)) !important;
+	color: var(--adw-window-fg) !important;
 	font-family: var(--adw-text-font) !important;
 }
 
@@ -386,8 +386,8 @@ body.DesktopUI div[class*="login_Login_"] [class*="newlogindialog_Compact_"] [cl
 body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp ._9CHmBvJ2I0Q9yYPvJgSg0 ._3jLIHRG2NdD0C8kOi-cxzl ._2AnqSZicq50gXaJuQx-SdC,
 body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp ._3FB9Kwzf1SnNWl8p2Mypu7 ._3XCnc4SuTz8V8-jXVwkt_s ._3huyZ7Eoy2bX4PbCnH3p5w
 {
-	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-opacity)) !important;
-	color: rgb(var(--adw-card-fg-rgb)) !important;
+	background: var(--adw-card-bg) !important;
+	color: var(--adw-card-fg) !important;
 	border-radius: var(--adw-card-radius) !important;
 	box-shadow: var(--adw-card-shadow) !important;
 	border: none !important;
@@ -410,7 +410,7 @@ body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_EmbeddedRoo
 body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._1HRJ157otTLkZsVkJ39yUj,
 body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._27aItUQsVlk-hSm7K9UCJt
 {
-	color: rgb(var(--adw-window-fg-rgb)) !important;
+	color: var(--adw-window-fg) !important;
 	font-family: var(--adw-text-font) !important;
 	font-size: 13px !important;
 	font-weight: 400 !important;
@@ -481,7 +481,7 @@ body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._27A5ub1QLLIMmgywKVMg4z div._2OLQBE
 body.DesktopUI div[class*="login_Login_"] div[class*="login_UserChooser_"] div[class*="loginpanel_CachedUserList_"] > div,
 body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._27A5ub1QLLIMmgywKVMg4z div._3SxgWhoEWiasRtCutBmix- > div
 {
-	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-opacity)) !important;
+	background: var(--adw-card-bg) !important;
 	border-radius: 0 !important;
 	box-shadow: var(--adw-card-shadow) !important;
 	border: none !important;
@@ -497,13 +497,13 @@ body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._27A5ub1QLLIMmgywKVMg4z div._3SxgWh
 body.DesktopUI div[class*="login_Login_"] div[class*="login_UserChooser_"] div[class*="loginpanel_CachedUserList_"] > div:hover,
 body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._27A5ub1QLLIMmgywKVMg4z div._3SxgWhoEWiasRtCutBmix- > div:hover
 {
-	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-hover-opacity)) !important;
+	background: color-mix(in srgb, currentColor var(--adw-card-hover-opacity), transparent) !important;
 }
 
 body.DesktopUI div[class*="login_Login_"] div[class*="login_UserChooser_"] div[class*="loginpanel_CachedUserList_"] > div:active,
 body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._27A5ub1QLLIMmgywKVMg4z div._3SxgWhoEWiasRtCutBmix- > div:active
 {
-	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-active-opacity)) !important;
+	background: color-mix(in srgb, currentColor var(--adw-card-active-opacity), transparent) !important;
 }
 
 body.DesktopUI div[class*="login_Login_"] div[class*="login_UserChooser_"] div[class*="loginpanel_CachedUserList_"] > div:first-child,
@@ -559,7 +559,7 @@ body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._27A5ub1QLLIMmgywKVMg4z div._3SxgWh
 body.DesktopUI div[class*="login_Login_"] div[class*="login_UserChooser_"] div[class*="loginpanel_CachedUserList_"] > div[class*="loginpanel_LoginCachedAvatar_"] > div[class*="loginpanel_LoginCachedAvatarImage_"] > img,
 body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._27A5ub1QLLIMmgywKVMg4z div._3SxgWhoEWiasRtCutBmix- > div.l_0WJ2pzm_5Zp7gfT_UZz > div._3nhzM2H8Opkomzs5OG5oux > img
 {
-	border: 1px rgba(var(--adw-card-fg-rgb), var(--adw-border-opacity)) solid !important;
+	border: 1px color-mix(in srgb, currentColor var(--adw-border-opacity), transparent) solid !important;
 }
 
 body.DesktopUI div[class*="login_Login_"] div[class*="login_UserChooser_"] div[class*="loginpanel_CachedUserList_"] > div > div[class*="loginpanel_CachedName_"],
@@ -584,7 +584,7 @@ body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._27A5ub1QLLIMmgywKVMg4z div._3SxgWh
 {
 	top: 9px !important;
 	bottom: auto !important;
-	color: rgb(var(--adw-card-fg-rgb)) !important;
+	color: var(--adw-card-fg) !important;
 	font-size: var(--adw-text-row-title-size) !important;
 	font-weight: var(--adw-text-row-title-weight) !important;
 }
@@ -594,7 +594,7 @@ body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._27A5ub1QLLIMmgywKVMg4z div._3SxgWh
 {
 	top: auto !important;
 	bottom: 9px !important;
-	color: rgba(var(--adw-card-fg-rgb), var(--adw-dim-label-opacity)) !important;
+	color: color-mix(in srgb, currentColor var(--adw-dim-label-opacity), transparent) !important;
 	font-size: var(--adw-text-row-subtitle-size) !important;
 	font-weight: var(--adw-text-row-subtitle-weight) !important;
 }
@@ -613,7 +613,7 @@ body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._27A5ub1QLLIMmgywKVMg4z div._3SxgWh
 	height: 34px !important;
 	padding: 9px !important;
 	transition: var(--adw-button-transition) !important;
-	color: rgb(var(--adw-window-fg-rgb)) !important;
+	color: var(--adw-window-fg) !important;
 	background: transparent !important;
 	box-shadow: none !important;
 }
@@ -621,13 +621,13 @@ body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._27A5ub1QLLIMmgywKVMg4z div._3SxgWh
 body.DesktopUI div[class*="login_Login_"] div[class*="login_UserChooser_"] div[class*="loginpanel_CachedUserList_"] > div[class*="loginpanel_LoginCachedAvatar_"] button[class*="loginpanel_MoreMenuButton_"]:hover,
 body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._27A5ub1QLLIMmgywKVMg4z div._3SxgWhoEWiasRtCutBmix- > div.l_0WJ2pzm_5Zp7gfT_UZz button._2Won3URVLVnF6h_AN8traN:hover
 {
-	background: rgba(var(--adw-window-fg-rgb), var(--adw-hover-opacity)) !important;
+	background: color-mix(in srgb, currentColor var(--adw-hover-opacity), transparent) !important;
 }
 
 body.DesktopUI div[class*="login_Login_"] div[class*="login_UserChooser_"] div[class*="loginpanel_CachedUserList_"] > div[class*="loginpanel_LoginCachedAvatar_"] button[class*="loginpanel_MoreMenuButton_"]:active,
 body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._27A5ub1QLLIMmgywKVMg4z div._3SxgWhoEWiasRtCutBmix- > div.l_0WJ2pzm_5Zp7gfT_UZz button._2Won3URVLVnF6h_AN8traN:active
 {
-	background: rgba(var(--adw-window-fg-rgb), var(--adw-active-opacity)) !important;
+	background: color-mix(in srgb, currentColor var(--adw-active-opacity), transparent) !important;
 }
 
 body.DesktopUI div[class*="login_Login_"] div[class*="login_UserChooser_"] div[class*="loginpanel_CachedUserList_"] > div[class*="loginpanel_LoginCachedAvatar_"] button[class*="loginpanel_MoreMenuButton_"]:focus:focus-visible,
@@ -645,7 +645,7 @@ body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._27A5ub1QLLIMmgywKVMg4z div._3SxgWh
 body.DesktopUI div[class*="login_Login_"] div[class*="login_UserChooser_"] div[class*="loginpanel_CachedUserList_"] > div[class*="loginpanel_LoginCachedAvatar_"] button[class*="loginpanel_MoreMenuButton_"] > div::before,
 body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._27A5ub1QLLIMmgywKVMg4z div._3SxgWhoEWiasRtCutBmix- > div.l_0WJ2pzm_5Zp7gfT_UZz button._2Won3URVLVnF6h_AN8traN > div::before
 {
-	background-color: rgb(var(--adw-window-fg-rgb));
+	background-color: var(--adw-window-fg);
 	content: "";
 	display: block;
 	width: 16px;
@@ -672,7 +672,7 @@ body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._27A5ub1QLLIMmgywKVMg4z div._3SxgWh
 body.DesktopUI div[class*="login_Login_"] div[class*="login_UserChooser_"] div[class*="loginpanel_CachedUserList_"] > div[class*="loginpanel_NewLogin_"] > div[class*="loginpanel_NewLoginIcon_"]::before,
 body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._27A5ub1QLLIMmgywKVMg4z div._3SxgWhoEWiasRtCutBmix- > div._1mt2mPMVEDfpOhhWePy9hc > div.IfVUbt19eXIqaAuGh2i63::before
 {
-	background-color: rgb(var(--adw-window-fg-rgb));
+	background-color: var(--adw-window-fg);
 	content: "";
 	display: block;
 	width: 16px;
@@ -734,7 +734,7 @@ body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._2AWTxE1bvCb0Zj6Q6hSfH4 > div._29VQ
 {
 	height: 42px !important;
 	line-height: 42px !important;
-	color: rgb(var(--adw-window-fg-rgb)) !important;
+	color: var(--adw-window-fg) !important;
 	font-family: var(--adw-text-font) !important;
 	font-size: 15px !important;
 	font-weight: 700 !important;
@@ -742,8 +742,8 @@ body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._2AWTxE1bvCb0Zj6Q6hSfH4 > div._29VQ
 	background: transparent !important;
 	box-shadow: none !important;
 	border-radius: 0 !important;
-	border-top: 1px rgba(var(--adw-window-fg-rgb), var(--adw-border-opacity)) solid !important;
-	border-left: 1px rgba(var(--adw-window-fg-rgb), var(--adw-border-opacity)) solid !important;
+	border-top: 1px color-mix(in srgb, currentColor var(--adw-border-opacity), transparent) solid !important;
+	border-left: 1px color-mix(in srgb, currentColor var(--adw-border-opacity), transparent) solid !important;
 	margin: 0 !important;
 	margin-left: -1px !important;
 	max-width: none !important;
@@ -756,31 +756,31 @@ body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._2AWTxE1bvCb0Zj6Q6hSfH4 > div._29VQ
 body.DesktopUI div[class*="login_Login_"] div[class*="login_RemoveConfirmation_"] > div[class*="login_Content_"] div[class*="login_Buttons_"] > button:hover,
 body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._2AWTxE1bvCb0Zj6Q6hSfH4 > div._29VQq5eE-j95L-SafIOc1T div.iKfqy6qMkwEhm789UB67o > button:hover
 {
-	background: rgba(var(--adw-window-fg-rgb), var(--adw-hover-opacity)) !important;
+	background: color-mix(in srgb, currentColor var(--adw-hover-opacity), transparent) !important;
 	box-shadow: none !important;
 }
 
 body.DesktopUI div[class*="login_Login_"] div[class*="login_RemoveConfirmation_"] > div[class*="login_Content_"] div[class*="login_Buttons_"] > button:active,
 body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._2AWTxE1bvCb0Zj6Q6hSfH4 > div._29VQq5eE-j95L-SafIOc1T div.iKfqy6qMkwEhm789UB67o > button:active
 {
-	background: rgba(var(--adw-window-fg-rgb), var(--adw-active-opacity)) !important;
+	background: color-mix(in srgb, currentColor var(--adw-active-opacity), transparent) !important;
 	box-shadow: none !important;
 }
 
 body.DesktopUI div[class*="login_Login_"] div[class*="login_RemoveConfirmation_"] > div[class*="login_Content_"] div[class*="login_Buttons_"] > button.Primary,
 body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._2AWTxE1bvCb0Zj6Q6hSfH4 > div._29VQq5eE-j95L-SafIOc1T div.iKfqy6qMkwEhm789UB67o > button.Primary
 {
-	color: rgb(var(--adw-destructive-rgb)) !important;
+	color: var(--adw-destructive) !important;
 }
 
 body.DesktopUI div[class*="login_Login_"] div[class*="login_RemoveConfirmation_"] > div[class*="login_Content_"] div[class*="login_Buttons_"] > button.Primary:hover,
 body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._2AWTxE1bvCb0Zj6Q6hSfH4 > div._29VQq5eE-j95L-SafIOc1T div.iKfqy6qMkwEhm789UB67o > button.Primary:hover
 {
-	background: rgba(var(--adw-destructive-rgb), var(--adw-hover-opacity)) !important;
+	background: color-mix(in srgb, currentColor var(--adw-hover-opacity), transparent) !important;
 }
 
 body.DesktopUI div[class*="login_Login_"] div[class*="login_RemoveConfirmation_"] > div[class*="login_Content_"] div[class*="login_Buttons_"] > button.Primary:active,
 body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._2AWTxE1bvCb0Zj6Q6hSfH4 > div._29VQq5eE-j95L-SafIOc1T div.iKfqy6qMkwEhm789UB67o > button.Primary:active
 {
-	background: rgba(var(--adw-destructive-rgb), var(--adw-active-opacity)) !important;
+	background: color-mix(in srgb, currentColor var(--adw-active-opacity), transparent) !important;
 }

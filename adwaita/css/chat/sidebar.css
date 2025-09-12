@@ -146,7 +146,7 @@ html.client_chat_frame
 						padding: 0 !important;
 						min-height: 34px !important;
 						border-radius: var(--adw-button-radius) !important;
-						background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-button-bg-opacity)) !important;
+						background: color-mix(in srgb, currentColor var(--adw-button-bg-opacity), transparent) !important;
 						box-shadow: none !important;
 						transition: var(--adw-button-transition) !important;
 
@@ -158,7 +158,7 @@ html.client_chat_frame
 						input, input::placeholder
 						{
 							background: transparent !important;
-							color: rgb(var(--adw-headerbar-fg-rgb)) !important;
+							color: var(--adw-headerbar-fg) !important;
 							font-size: var(--adw-text-base-size) !important;
 							font-weight: var(--adw-text-base-weight) !important;
 							font-family: var(--adw-text-font) !important;
@@ -175,14 +175,14 @@ html.client_chat_frame
 
 						input::placeholder
 						{
-							color: rgba(var(--adw-headerbar-fg-rgb), 0.5) !important;
+							color: color-mix(in srgb, currentColor 50%, transparent) !important;
 							padding: 0 !important;
 						}
 
 						&::before
 						{
 							content: "";
-							background-color: rgba(var(--adw-headerbar-fg-rgb), var(--adw-dim-label-opacity));
+							background-color: color-mix(in srgb, currentColor var(--adw-dim-label-opacity), transparent);
 							pointer-events: none;
 							display: block;
 							width: 16px;
@@ -212,7 +212,7 @@ html.client_chat_frame
 
 							&::before
 							{
-								background-color: rgba(var(--adw-headerbar-fg-rgb), var(--adw-dim-label-opacity));
+								background-color: color-mix(in srgb, currentColor var(--adw-dim-label-opacity), transparent);
 								content: "";
 								display: block;
 								width: 16px;
@@ -225,7 +225,7 @@ html.client_chat_frame
 
 							&:hover::before
 							{
-								background-color: rgb(var(--adw-headerbar-fg-rgb));
+								background-color: var(--adw-headerbar-fg);
 							}
 						}
 					}
@@ -247,7 +247,7 @@ html.client_chat_frame
 				margin: 0 !important;
 				background: transparent !important;
 				border-radius: var(--adw-button-radius) !important;
-				color: rgb(var(--adw-headerbar-fg-rgb)) !important;
+				color: var(--adw-headerbar-fg) !important;
 				font-family: var(--adw-text-font) !important;
 				font-size: var(--adw-text-title3-size) !important;
 				font-weight: var(--adw-text-title3-weight) !important;
@@ -257,12 +257,12 @@ html.client_chat_frame
 
 				&:hover
 				{
-					background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-hover-opacity)) !important;
+					background: color-mix(in srgb, currentColor var(--adw-hover-opacity), transparent) !important;
 				}
 
 				&:active
 				{
-					background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-active-opacity)) !important;
+					background: color-mix(in srgb, currentColor var(--adw-active-opacity), transparent) !important;
 				}
 
 				svg
@@ -272,7 +272,7 @@ html.client_chat_frame
 
 				&::before
 				{
-					background-color: rgb(var(--adw-headerbar-fg-rgb));
+					background-color: var(--adw-headerbar-fg);
 					content: "";
 					display: block;
 					width: 16px;
@@ -327,9 +327,9 @@ html.client_chat_frame
 					top: initial !important;
 					bottom: 4px !important;
 					right: 4px !important;
-					background: rgb(var(--adw-accent-bg-rgb)) !important;
+					background: var(--adw-accent-bg) !important;
 					border-radius: var(--adw-button-pill-radius) !important;
-					color: rgb(var(--adw-accent-fg-rgb)) !important;
+					color: var(--adw-accent-fg) !important;
 					transform: none !important;
 					font-family: var(--adw-text-font) !important;
 					font-size: 10px !important;
@@ -351,16 +351,16 @@ html.client_chat_frame
 
 			div.TabSearchActive div.searchIconButton, div.friendlist:has(div.cancelAddFriends) & div.friendRequestButton
 			{
-				background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-selected-opacity)) !important;
+				background: color-mix(in srgb, currentColor var(--adw-selected-opacity), transparent) !important;
 
 				&:hover
 				{
-					background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-selected-hover-opacity)) !important;
+					background: color-mix(in srgb, currentColor var(--adw-selected-hover-opacity), transparent) !important;
 				}
 
 				&:active
 				{
-					background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-selected-active-opacity)) !important;
+					background: color-mix(in srgb, currentColor var(--adw-selected-active-opacity), transparent) !important;
 				}
 			}
 		}
@@ -398,12 +398,12 @@ html.client_chat_frame
 
 					&:hover
 					{
-						background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-hover-opacity)) !important;
+						background: color-mix(in srgb, currentColor var(--adw-hover-opacity), transparent) !important;
 					}
 
 					&:active
 					{
-						background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-active-opacity)) !important;
+						background: color-mix(in srgb, currentColor var(--adw-active-opacity), transparent) !important;
 					}
 
 					div.nibodjvvrm86uCfnnAn4g
@@ -434,7 +434,7 @@ html.client_chat_frame
 				height: 34px !important;
 				padding: 0 4px !important;
 				margin: 0 6px 6px 6px !important;
-				background: rgb(var(--adw-accent-bg-rgb)) !important;
+				background: var(--adw-accent-bg) !important;
 				border-radius: var(--adw-button-radius) !important;
 				display: flex !important;
 				justify-items: center !important;
@@ -461,7 +461,7 @@ html.client_chat_frame
 
 						div.activeVoiceName
 						{
-							color: rgb(var(--adw-accent-fg-rgb)) !important;
+							color: var(--adw-accent-fg) !important;
 							font-family: var(--adw-text-font) !important;
 							text-transform: none !important;
 							letter-spacing: normal !important;
@@ -473,7 +473,7 @@ html.client_chat_frame
 
 						&::before
 						{
-							background-color: rgb(var(--adw-accent-fg-rgb));
+							background-color: var(--adw-accent-fg);
 							content: "";
 							display: block;
 							width: 16px;
@@ -512,7 +512,7 @@ html.client_chat_frame
 
 								*
 								{
-									fill: rgb(var(--adw-accent-fg-rgb)) !important;
+									fill: var(--adw-accent-fg) !important;
 								}
 							}
 
@@ -523,12 +523,12 @@ html.client_chat_frame
 
 							&:hover
 							{
-								background: rgba(var(--adw-accent-fg-rgb), var(--adw-hover-opacity)) !important;
+								background: color-mix(in srgb, currentColor var(--adw-hover-opacity), transparent) !important;
 							}
 
 							&:active
 							{
-								background: rgba(var(--adw-accent-fg-rgb), var(--adw-active-opacity)) !important;
+								background: color-mix(in srgb, currentColor var(--adw-active-opacity), transparent) !important;
 							}
 
 							&:focus-visible
@@ -720,12 +720,12 @@ html.client_chat_frame
 
 				&:hover
 				{
-					background: rgba(var(--adw-sidebar-fg-rgb), var(--adw-hover-opacity)) !important;
+					background: color-mix(in srgb, currentColor var(--adw-hover-opacity), transparent) !important;
 				}
 
 				&:active
 				{
-					background: rgba(var(--adw-sidebar-fg-rgb), var(--adw-active-opacity)) !important;
+					background: color-mix(in srgb, currentColor var(--adw-active-opacity), transparent) !important;
 				}
 			}
 
@@ -733,7 +733,7 @@ html.client_chat_frame
 			{
 				height: 26px !important;
 				line-height: 26px !important;
-				color: rgb(var(--adw-sidebar-fg-rgb)) !important;
+				color: var(--adw-sidebar-fg) !important;
 				font-family: var(--adw-text-font) !important;
 				font-size: var(--adw-text-gamelist-section-size) !important;
 				font-weight: var(--adw-text-gamelist-section-weight) !important;
@@ -747,7 +747,7 @@ html.client_chat_frame
 			{
 				padding: 0 !important;
 				margin: 0 !important;
-				color: rgba(var(--adw-sidebar-fg-rgb), var(--adw-dim-label-opacity)) !important;
+				color: color-mix(in srgb, currentColor var(--adw-dim-label-opacity), transparent) !important;
 				font-weight: var(--adw-text-gamelist-weight) !important;
 				transform: none !important;
 				margin-left: 4px !important;
@@ -814,7 +814,7 @@ html.client_chat_frame
 				right: 5px !important;
 				top: 2px !important;
 				border-radius: var(--adw-gameicon-radius) !important;
-				border: 1px rgba(var(--adw-user-ingame-rgb), var(--adw-thin-border-opacity)) solid !important;
+				border: 1px color-mix(in srgb, currentColor var(--adw-thin-border-opacity), transparent) solid !important;
 				overflow: hidden !important;
 				box-shadow: none !important;
 				transform: none !important;
@@ -825,9 +825,9 @@ html.client_chat_frame
 				position: unset !important;
 				right: 0 !important;
 				margin: 0 !important;
-				background: rgb(var(--adw-accent-bg-rgb)) !important;
+				background: var(--adw-accent-bg) !important;
 				border-radius: var(--adw-button-pill-radius) !important;
-				color: rgb(var(--adw-accent-fg-rgb)) !important;
+				color: var(--adw-accent-fg) !important;
 				box-shadow: none !important;
 				transform: none !important;
 				font-family: var(--adw-text-font) !important;
@@ -865,17 +865,17 @@ html.client_chat_frame
 				{
 					margin: 0 0 0 6px !important;
 					height: fit-content !important;
-					color: rgb(var(--adw-sidebar-fg-rgb)) !important;
+					color: var(--adw-sidebar-fg) !important;
 					align-items: center !important;
 
 					&.online
 					{
-						color: rgb(var(--adw-user-online-rgb)) !important;
+						color: var(--adw-user-online) !important;
 					}
 
 					&.ingame
 					{
-						color: rgb(var(--adw-user-ingame-rgb)) !important;
+						color: var(--adw-user-ingame) !important;
 					}
 
 					&.offline, &.awayOrSnooze
@@ -889,7 +889,7 @@ html.client_chat_frame
 						font-size: 14px !important;
 						font-weight: 400 !important;
 						line-height: 18px !important;
-						color: rgb(var(--adw-sidebar-fg-rgb)) !important;
+						color: var(--adw-sidebar-fg) !important;
 						padding: 0 !important;
 						margin: 0 !important;
 					}
@@ -1039,7 +1039,7 @@ html.client_chat_frame
 
 			&::before
 			{
-				background-color: rgba(var(--adw-headerbar-fg-rgb), var(--adw-dim-label-opacity));
+				background-color: color-mix(in srgb, currentColor var(--adw-dim-label-opacity), transparent);
 				content: "";
 				display: block;
 				margin: 8px auto;
@@ -1058,7 +1058,7 @@ html.client_chat_frame
 
 			div.searchSteamSuggestion
 			{
-				color: rgb(var(--adw-headerbar-fg-rgb)) !important;
+				color: var(--adw-headerbar-fg) !important;
 				font-family: var(--adw-text-font) !important;
 				text-transform: none !important;
 				letter-spacing: normal !important;
@@ -1069,7 +1069,7 @@ html.client_chat_frame
 
 			a
 			{
-				color: rgba(var(--adw-headerbar-fg-rgb), var(--adw-dim-label-opacity)) !important;
+				color: color-mix(in srgb, currentColor var(--adw-dim-label-opacity), transparent) !important;
 				font-family: var(--adw-text-font) !important;
 				text-transform: none !important;
 				letter-spacing: normal !important;
@@ -1092,14 +1092,14 @@ html.client_chat_frame
 		&::before
 		{
 			top: 0;
-			background-image: linear-gradient(to bottom, rgba(var(--adw-shade-rgb), calc(var(--adw-shade-a) * 0.75)), transparent 4px);
-			box-shadow: inset 0 1px rgba(var(--adw-shade-rgb), calc(var(--adw-shade-a) * 0.75));
+			background-image: linear-gradient(to bottom, var(--adw-undershoot), transparent 4px);
+			box-shadow: inset 0 1px var(--adw-undershoot-border);
 		}
 		&::after
 		{
 			bottom: 0;
-			background-image: linear-gradient(to top, rgba(var(--adw-shade-rgb), calc(var(--adw-shade-a) * 0.75)), transparent 4px);
-			box-shadow: inset 0 -1px rgba(var(--adw-shade-rgb), calc(var(--adw-shade-a) * 0.75));
+			background-image: linear-gradient(to top, var(--adw-undershoot), transparent 4px);
+			box-shadow: inset 0 -1px var(--adw-undershoot-border);
 		}
 	}
 

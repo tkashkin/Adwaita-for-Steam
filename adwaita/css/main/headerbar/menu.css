@@ -14,7 +14,7 @@ div._3Z7VQ1IMk4E3HsHvrkLNgo div._3s0lkohH8wU2do0K1il28Y
 	width: 38px !important;
 	height: 38px !important;
 	border-radius: var(--adw-button-radius) !important;
-	background: rgb(var(--adw-headerbar-bg-rgb)) !important;
+	background: var(--adw-headerbar-bg) !important;
 	transition: width 200ms var(--adw-base-transition-curve), background 200ms var(--adw-base-transition-curve) !important;
 
 	/* Menu button */
@@ -27,7 +27,7 @@ div._3Z7VQ1IMk4E3HsHvrkLNgo div._3s0lkohH8wU2do0K1il28Y
 		height: 34px !important;
 		padding: 9px !important;
 		transition: var(--adw-button-transition);
-		color: rgb(var(--adw-headerbar-fg-rgb)) !important;
+		color: var(--adw-headerbar-fg) !important;
 
 		/* Keep all menu buttons visible and in the same place to prevent Steam from recalculating menu positions */
 		position: absolute !important;
@@ -36,27 +36,30 @@ div._3Z7VQ1IMk4E3HsHvrkLNgo div._3s0lkohH8wU2do0K1il28Y
 
 		&:hover
 		{
-			background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-hover-opacity)) !important;
+			background: color-mix(in srgb, currentColor var(--adw-hover-opacity), transparent) !important;
+			box-shadow: var(--adw-button-hc-outline) !important;
 		}
 
 		&:active
 		{
-			background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-active-opacity)) !important;
+			background: color-mix(in srgb, currentColor var(--adw-active-opacity), transparent) !important;
+			box-shadow: var(--adw-button-hc-outline) !important;
 		}
 
 		/* Menu open */
 		&._3rgV8pPmQvZC-01x9l-q-N
 		{
-			background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-selected-opacity)) !important;
+			background: color-mix(in srgb, currentColor var(--adw-selected-opacity), transparent) !important;
+			box-shadow: var(--adw-button-hc-outline) !important;
 
 			&:hover
 			{
-				background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-selected-hover-opacity)) !important;
+				background: color-mix(in srgb, currentColor var(--adw-selected-hover-opacity), transparent) !important;
 			}
 
 			&:active
 			{
-				background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-selected-active-opacity)) !important;
+				background: color-mix(in srgb, currentColor var(--adw-selected-active-opacity), transparent) !important;
 			}
 		}
 
@@ -67,7 +70,7 @@ div._3Z7VQ1IMk4E3HsHvrkLNgo div._3s0lkohH8wU2do0K1il28Y
 
 		&::before
 		{
-			background-color: rgb(var(--adw-headerbar-fg-rgb));
+			background-color: var(--adw-headerbar-fg);
 			content: "";
 			display: block;
 			width: 16px;
@@ -118,6 +121,6 @@ div._3Z7VQ1IMk4E3HsHvrkLNgo div._3s0lkohH8wU2do0K1il28Y
 	&:has(div._3rgV8pPmQvZC-01x9l-q-N)
 	{
 		width: 198px !important;
-		background: rgb(var(--adw-secondary-sidebar-bg-rgb)) !important;
+		background: var(--adw-secondary-sidebar-bg) !important;
 	}
 }

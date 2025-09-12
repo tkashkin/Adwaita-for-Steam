@@ -2,9 +2,9 @@ html.client_chat_frame
 {
 	body
 	{
-		background: rgb(var(--adw-window-bg-rgb)) !important;
-		color: rgb(var(--adw-window-fg-rgb)) !important;
-		--adw-local-sidebar-bg: rgb(var(--adw-window-bg-rgb));
+		background: var(--adw-window-bg) !important;
+		color: var(--adw-window-fg) !important;
+		--adw-local-sidebar-bg: var(--adw-window-bg);
 	}
 
 	.title-area
@@ -17,10 +17,10 @@ html.client_chat_frame
 		div.friendsListContainer
 		{
 			--adw-windowcontrols-margin-right: 0px;
-			--adw-local-sidebar-bg: rgb(var(--adw-sidebar-bg-rgb));
+			--adw-local-sidebar-bg: var(--adw-sidebar-bg);
 
-			background: rgb(var(--adw-sidebar-bg-rgb)) !important;
-			color: rgb(var(--adw-sidebar-fg-rgb)) !important;
+			background: var(--adw-local-sidebar-bg) !important;
+			color: var(--adw-sidebar-fg) !important;
 			opacity: 1 !important;
 			min-width: 250px !important;
 			margin-left: 0 !important;
@@ -56,7 +56,7 @@ html.client_chat_frame
 			display: block !important;
 			border: none !important;
 			background: none !important;
-			box-shadow: inset 1px 0 rgba(var(--adw-sidebar-shade-rgb), var(--adw-sidebar-shade-a)) !important;
+			box-shadow: inset 1px 0 var(--adw-sidebar-border) !important;
 			width: 4px !important;
 			min-width: 4px !important;
 			margin-right: -3px !important;
@@ -85,32 +85,32 @@ html.client_chat_frame
 		line-height: 0 !important;
 		background: transparent !important;
 		border-radius: var(--adw-button-radius) !important;
-		color: rgb(var(--adw-headerbar-fg-rgb)) !important;
+		color: var(--adw-headerbar-fg) !important;
 		transition: var(--adw-button-transition) !important;
 		box-shadow: none !important;
 
 		&:hover
 		{
-			background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-hover-opacity)) !important;
+			background: color-mix(in srgb, currentColor var(--adw-hover-opacity), transparent) !important;
 		}
 
 		&:active
 		{
-			background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-active-opacity)) !important;
+			background: color-mix(in srgb, currentColor var(--adw-active-opacity), transparent) !important;
 		}
 
 		&.friendCollapseButton
 		{
-			background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-selected-opacity)) !important;
+			background: color-mix(in srgb, currentColor var(--adw-selected-opacity), transparent) !important;
 
 			&:hover
 			{
-				background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-selected-hover-opacity)) !important;
+				background: color-mix(in srgb, currentColor var(--adw-selected-hover-opacity), transparent) !important;
 			}
 
 			&:active
 			{
-				background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-selected-active-opacity)) !important;
+				background: color-mix(in srgb, currentColor var(--adw-selected-active-opacity), transparent) !important;
 			}
 		}
 
@@ -128,7 +128,7 @@ html.client_chat_frame
 
 		&::before
 		{
-			background-color: rgb(var(--adw-headerbar-fg-rgb));
+			background-color: var(--adw-headerbar-fg);
 			content: "";
 			display: block;
 			width: 16px;

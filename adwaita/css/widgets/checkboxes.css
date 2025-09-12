@@ -207,7 +207,7 @@ body.DesktopUI div.DialogCheckbox_Container > div.DialogToggle_Label,
 
 html.client_chat_frame div.DialogCheckbox_Container > div.DialogToggle_Label
 {
-	color: rgb(var(--adw-window-fg-rgb)) !important;
+	color: var(--adw-window-fg) !important;
 	font-family: var(--adw-text-font) !important;
 	font-size: 13px !important;
 	font-weight: 400 !important;

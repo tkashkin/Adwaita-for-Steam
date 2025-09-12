@@ -2,7 +2,7 @@
 body.DesktopUI div[class*="apppartnereventspage_AppPartnerEventsBody_"] div[class*="apppartnereventspage_PartnerEvent_"],
 body.DesktopUI div._1nzwrXRkY7v4cVHMaShUc1 div.lwprNSgEnKfVSHIzsgbFi
 {
-	background: rgb(var(--adw-popover-bg-rgb)) !important;
+	background: var(--adw-popover-bg) !important;
 	border-radius: var(--adw-menu-radius) !important;
 	border: 1px var(--adw-window-outline) solid !important;
 	box-shadow: var(--adw-popover-shadow) !important;
@@ -21,7 +21,7 @@ body.DesktopUI div._1nzwrXRkY7v4cVHMaShUc1 div._2dVe4z8QrljeVvM0UzTTJ2,
 body.DesktopUI div[class*="apppartnereventspage_AppPartnerEventsBody_"] div[class*="discussionwidget_DiscussionCount_"],
 body.DesktopUI div._1nzwrXRkY7v4cVHMaShUc1 div._1GFRKatJ8pNhUDi-MwuD9D
 {
-	color: rgb(var(--adw-accent-rgb)) !important;
+	color: var(--adw-accent) !important;
 	font-family: var(--adw-text-font) !important;
 	font-weight: var(--adw-text-title4-weight) !important;
 }
@@ -31,7 +31,7 @@ body.DesktopUI div._1nzwrXRkY7v4cVHMaShUc1 div._3Z41scsgrV6EdJXVhl8W7C div._4K3B
 body.DesktopUI div[class*="apppartnereventspage_AppPartnerEventsBody_"] div[class*="partnereventdisplay_EventDetailTimeInfo_"] div[class*="localdateandtime_RightSideTitles_"],
 body.DesktopUI div._1nzwrXRkY7v4cVHMaShUc1 div._3Z41scsgrV6EdJXVhl8W7C div._3sPONDb9e2ctNJ23X97Rxx
 {
-	color: rgba(var(--adw-window-fg-rgb), var(--adw-dim-label-opacity)) !important;
+	color: color-mix(in srgb, currentColor var(--adw-dim-label-opacity), transparent) !important;
 	font-family: var(--adw-text-font) !important;
 	font-weight: var(--adw-text-base-weight) !important;
 }
@@ -39,7 +39,7 @@ body.DesktopUI div._1nzwrXRkY7v4cVHMaShUc1 div._3Z41scsgrV6EdJXVhl8W7C div._3sPO
 body.DesktopUI div[class*="apppartnereventspage_AppPartnerEventsBody_"] a[class*="partnereventdisplay_EventDetailTitle_"],
 body.DesktopUI div._1nzwrXRkY7v4cVHMaShUc1 a._2_4FSGPXLE1aq-PPHE-EJE
 {
-	color: rgb(var(--adw-window-fg-rgb)) !important;
+	color: var(--adw-window-fg) !important;
 	font-family: var(--adw-text-font) !important;
 	font-size: var(--adw-text-title1-size) !important;
 	font-weight: var(--adw-text-title1-weight) !important;
@@ -48,7 +48,7 @@ body.DesktopUI div._1nzwrXRkY7v4cVHMaShUc1 a._2_4FSGPXLE1aq-PPHE-EJE
 body.DesktopUI div[class*="apppartnereventspage_AppPartnerEventsBody_"] div[class*="partnereventdisplay_EventDetailsSubTitle_"],
 body.DesktopUI div._1nzwrXRkY7v4cVHMaShUc1 div._6k4NEtv7cc7Vrny4-o2D2
 {
-	color: rgb(var(--adw-window-fg-rgb)) !important;
+	color: var(--adw-window-fg) !important;
 	font-family: var(--adw-text-font) !important;
 	font-size: var(--adw-text-title3-size) !important;
 	font-weight: var(--adw-text-title3-weight) !important;
@@ -93,7 +93,7 @@ body.DesktopUI div._1nzwrXRkY7v4cVHMaShUc1 div._357GuN2jOraoBsztl6eEpW._2u-98K9o
 body.DesktopUI div[class*="apppartnereventspage_AppPartnerEventsBody_"] div[class*="partnereventdisplay_EventDetailsBody_"],
 body.DesktopUI div._1nzwrXRkY7v4cVHMaShUc1 div._3v0cwU9svPlYyRjL6HO1ZC
 {
-	color: rgb(var(--adw-window-fg-rgb)) !important;
+	color: var(--adw-window-fg) !important;
 	font-family: var(--adw-text-font) !important;
 	font-weight: var(--adw-text-base-weight) !important;
 }
@@ -101,7 +101,7 @@ body.DesktopUI div._1nzwrXRkY7v4cVHMaShUc1 div._3v0cwU9svPlYyRjL6HO1ZC
 body.DesktopUI div[class*="apppartnereventspage_AppPartnerEventsBody_"] div[class*="partnereventdisplay_EventDetailsBody_"] a:not(.LinkButton),
 body.DesktopUI div._1nzwrXRkY7v4cVHMaShUc1 div._3v0cwU9svPlYyRjL6HO1ZC a:not(.LinkButton)
 {
-	color: rgb(var(--adw-accent-rgb)) !important;
+	color: var(--adw-accent) !important;
 	font-family: var(--adw-text-font) !important;
 	font-weight: var(--adw-text-title4-weight) !important;
 }
@@ -123,7 +123,7 @@ body.DesktopUI div._1nzwrXRkY7v4cVHMaShUc1 div._2ydks0zXuSegy8SWijqkmu
 body.DesktopUI div[class*="apppartnereventspage_AppPartnerEventsBody_"] div[class*="eventbbcodeparser_Header1_"],
 body.DesktopUI div._1nzwrXRkY7v4cVHMaShUc1 div._15FlIKB5sgBYLNjlnRazPY
 {
-	color: rgb(var(--adw-window-fg-rgb)) !important;
+	color: var(--adw-window-fg) !important;
 	font-family: var(--adw-text-font) !important;
 	font-size: var(--adw-text-title1-size) !important;
 	font-weight: var(--adw-text-title1-weight) !important;
@@ -132,7 +132,7 @@ body.DesktopUI div._1nzwrXRkY7v4cVHMaShUc1 div._15FlIKB5sgBYLNjlnRazPY
 body.DesktopUI div[class*="apppartnereventspage_AppPartnerEventsBody_"] div[class*="eventbbcodeparser_Header2_"],
 body.DesktopUI div._1nzwrXRkY7v4cVHMaShUc1 div._1SWg2pG7YTaeugpLj3fW6k
 {
-	color: rgb(var(--adw-window-fg-rgb)) !important;
+	color: var(--adw-window-fg) !important;
 	font-family: var(--adw-text-font) !important;
 	font-size: var(--adw-text-title2-size) !important;
 	font-weight: var(--adw-text-title2-weight) !important;
@@ -141,7 +141,7 @@ body.DesktopUI div._1nzwrXRkY7v4cVHMaShUc1 div._1SWg2pG7YTaeugpLj3fW6k
 body.DesktopUI div[class*="apppartnereventspage_AppPartnerEventsBody_"] div[class*="eventbbcodeparser_Header3_"],
 body.DesktopUI div._1nzwrXRkY7v4cVHMaShUc1 div.AX80F1i_ZmgUMWmsPWvNo
 {
-	color: rgb(var(--adw-window-fg-rgb)) !important;
+	color: var(--adw-window-fg) !important;
 	font-family: var(--adw-text-font) !important;
 	font-size: var(--adw-text-title3-size) !important;
 	font-weight: var(--adw-text-title3-weight) !important;
@@ -152,7 +152,7 @@ body.DesktopUI div._1nzwrXRkY7v4cVHMaShUc1 svg._1g-EnGAwBxXdVKtEBcdIK_,
 body.DesktopUI div[class*="apppartnereventspage_AppPartnerEventsBody_"] div[class*="discussionwidget_DiscussionCount_"] > svg,
 body.DesktopUI div._1nzwrXRkY7v4cVHMaShUc1 div._1GFRKatJ8pNhUDi-MwuD9D > svg
 {
-	fill: rgb(var(--adw-accent-rgb)) !important;
+	fill: var(--adw-accent) !important;
 }
 
 body.DesktopUI div[class*="apppartnereventspage_AppPartnerEventsBody_"] div[class*="partnereventshared_Button_"][class*="partnereventshared_Icon_"],
@@ -161,7 +161,7 @@ body.DesktopUI div._1nzwrXRkY7v4cVHMaShUc1 div._3P0Tm2XKLVG_I9wjP3H-Zs._3p1Hj4Mx
 	background: var(--button_bg) !important;
 	border-radius: var(--adw-button-radius) !important;
 	box-shadow: none !important;
-	color: rgb(var(--adw-window-fg-rgb)) !important;
+	color: var(--adw-window-fg) !important;
 	font-family: var(--adw-text-font) !important;
 	font-size: var(--adw-text-title3-size) !important;
 	font-weight: var(--adw-text-title3-weight) !important;

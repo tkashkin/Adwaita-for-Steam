@@ -1,4 +1,6 @@
-@import url("css/_root/colors.css");
+@import url("css/_colors/auto.css");
+
+@import url("css/_root/derived-colors.css");
 @import url("css/_root/icons.css");
 @import url("css/_root/localization.css");
 @import url("css/_root/opacity.css");
@@ -54,5 +56,5 @@
 
 :root
 {
-	--adw-version: "3.17";
+	--adw-version: "4.0";
 }

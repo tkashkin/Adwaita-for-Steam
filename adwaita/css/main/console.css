@@ -1,10 +1,10 @@
 body.DesktopUI div._1fuML-ekRbTEzgzC597yGP
 {
-	background: rgb(var(--adw-view-bg-rgb)) !important;
+	background: var(--adw-view-bg) !important;
 
 	&, pre, input._85zZFeTLvuYj4UEcaKwPL
 	{
-		color: rgb(var(--adw-view-fg-rgb)) !important;
+		color: var(--adw-view-fg) !important;
 		font-family: var(--adw-text-font-monospace) !important;
 		font-size: var(--adw-text-base-size) !important;
 		font-weight: var(--adw-text-base-weight) !important;
@@ -15,13 +15,13 @@ body.DesktopUI div._1fuML-ekRbTEzgzC597yGP
 	/* Timestamp */
 	pre.XaJOkIpwk-she1NM8AzPk
 	{
-		color: rgba(var(--adw-view-fg-rgb), var(--adw-dim-label-opacity)) !important;
+		color: color-mix(in srgb, currentColor var(--adw-dim-label-opacity), transparent) !important;
 	}
 
 	*::selection
 	{
-		color: rgb(var(--adw-accent-fg-rgb)) !important;
-		background: rgb(var(--adw-accent-bg-rgb)) !important;
+		color: var(--adw-accent-fg) !important;
+		background: var(--adw-accent-bg) !important;
 		text-shadow: none !important;
 	}
 
@@ -36,7 +36,7 @@ body.DesktopUI div._1fuML-ekRbTEzgzC597yGP
 			padding: 0 12px !important;
 			margin: 0 !important;
 			border-radius: var(--adw-button-radius) !important;
-			background: rgba(var(--adw-view-fg-rgb), var(--adw-button-bg-opacity)) !important;
+			background: color-mix(in srgb, currentColor var(--adw-button-bg-opacity), transparent) !important;
 			box-shadow: none !important;
 			height: 34px !important;
 			line-height: 34px !important;

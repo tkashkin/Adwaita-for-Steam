@@ -16,8 +16,8 @@ html.client_chat_frame
 
 	::-webkit-scrollbar-thumb
 	{
-		--adw-scrollbar-opacity: 0.1;
-		background: rgba(var(--adw-window-fg-rgb), var(--adw-scrollbar-opacity)) !important;
+		--adw-scrollbar-opacity: 10%;
+		background: color-mix(in srgb, currentColor var(--adw-scrollbar-opacity), transparent) !important;
 		border: none !important;
 		border-radius: 0 !important;
 		z-index: 20 !important;
@@ -25,6 +25,6 @@ html.client_chat_frame
 
 	:hover::-webkit-scrollbar-thumb
 	{
-		--adw-scrollbar-opacity: 0.2;
+		--adw-scrollbar-opacity: 20%;
 	}
 }

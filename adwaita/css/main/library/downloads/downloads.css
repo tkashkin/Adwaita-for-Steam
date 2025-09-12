@@ -1,7 +1,7 @@
 /* Header Background */
 body.DesktopUI div._3KDkLoCR8OM8xfdQysKn9t
 {
-	background: rgb(var(--adw-view-bg-rgb)) !important;
+	background: var(--adw-view-bg) !important;
 }
 
 /* Header Gradient */
@@ -19,19 +19,19 @@ body.DesktopUI div.SEmVpmXrYVl3OxL1sDFTg
 /* Body Background */
 body.DesktopUI div._1bq4x9pa4-9RLY-dXWUZTp
 {
-	background: rgb(var(--adw-window-bg-rgb)) !important;
+	background: var(--adw-window-bg) !important;
 }
 
 /* Cards */
 body.DesktopUI div._1VNuYHM6BPBOJspC6zPf5r:hover
 {
-	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-hover-opacity)) !important;
+	background: color-mix(in srgb, currentColor var(--adw-card-hover-opacity), transparent) !important;
 	border-radius: var(--adw-card-radius) !important;
 }
 
 /* Active Download Cards */
 body.DesktopUI div._1VNuYHM6BPBOJspC6zPf5r.IbePLaw-vSvhG1GTenYFg {
-	background: rgba(var(--adw-card-bg-rgb), var(--adw-card-opacity)) !important;
+	background: var(--adw-card-bg) !important;
 }
 
 body.DesktopUI div.IbePLaw-vSvhG1GTenYFg .OINnOU8K5HzPe2nzczpZi,
@@ -44,7 +44,7 @@ body.DesktopUI button._3oavRVhIS9tC3vBsFT4Ggi.DialogButton:enabled,
 body.DesktopUI button._3Tfp8-wTAttW3WVa_X9JVC.DialogButton:enabled,
 body.DesktopUI button._1GdR5LbENV7LOGROJBxohI.DialogButton:enabled
 {
-	background: rgba(var(--adw-window-fg-rgb), var(--adw-button-bg-opacity)) !important;
+	background: color-mix(in srgb, currentColor var(--adw-button-bg-opacity), transparent) !important;
 	border-radius: var(--adw-button-radius) !important;
 }
 
@@ -52,7 +52,7 @@ body.DesktopUI button._3oavRVhIS9tC3vBsFT4Ggi.DialogButton:active,
 body.DesktopUI button._3Tfp8-wTAttW3WVa_X9JVC.DialogButton:active,
 body.DesktopUI button._1GdR5LbENV7LOGROJBxohI.DialogButton:active
 {
-	background: rgba(var(--adw-window-fg-rgb), var(--adw-button-bg-opacity-active)) !important;
+	background: color-mix(in srgb, currentColor var(--adw-button-bg-opacity-active), transparent) !important;
 	border-radius: var(--adw-button-radius) !important;
 }
 
@@ -60,7 +60,7 @@ body.DesktopUI button._3oavRVhIS9tC3vBsFT4Ggi.DialogButton:hover,
 body.DesktopUI button._3Tfp8-wTAttW3WVa_X9JVC.DialogButton:hover,
 body.DesktopUI button._1GdR5LbENV7LOGROJBxohI.DialogButton:hover
 {
-	background: rgba(var(--adw-window-fg-rgb), var(--adw-button-bg-opacity-hover)) !important;
+	background: color-mix(in srgb, currentColor var(--adw-button-bg-opacity-hover), transparent) !important;
 	border-radius: var(--adw-button-radius) !important;
 }
 

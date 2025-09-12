@@ -10,9 +10,9 @@ body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 > div._9sPoVBFyE_vE87mnZJ5aB
 	left: -276px !important;
 	opacity: 0 !important;
 	transition: left 150ms var(--adw-base-transition-curve), opacity 150ms var(--adw-base-transition-curve) !important;
-	background: rgb(var(--adw-sidebar-bg-rgb)) !important;
+	background: var(--adw-sidebar-bg) !important;
 	z-index: 10 !important;
-	border-right: 1px rgba(var(--adw-sidebar-shade-rgb), var(--adw-sidebar-shade-a)) solid !important;
+	border-right: 1px var(--adw-sidebar-border) solid !important;
 }
 
 body.DesktopUI div.library_Container_3xRRJ > div.library_LeftListSizableContainer_9sPoV:hover,

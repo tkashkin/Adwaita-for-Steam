@@ -24,12 +24,12 @@ html.client_chat_frame
 
 			&:hover
 			{
-				background-color: rgba(var(--adw-window-fg-rgb), var(--adw-hover-opacity)) !important;
+				background-color: color-mix(in srgb, currentColor var(--adw-hover-opacity), transparent) !important;
 			}
 
 			&:active
 			{
-				background-color: rgba(var(--adw-window-fg-rgb), var(--adw-active-opacity)) !important;
+				background-color: color-mix(in srgb, currentColor var(--adw-active-opacity), transparent) !important;
 			}
 
 			&.closeButton
@@ -52,7 +52,7 @@ html.client_chat_frame
 
 			&::before
 			{
-				background-color: rgb(var(--adw-window-fg-rgb));
+				background-color: var(--adw-window-fg);
 				content: "";
 				display: block;
 				width: 16px;

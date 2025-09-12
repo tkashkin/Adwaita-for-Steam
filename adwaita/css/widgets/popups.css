@@ -9,7 +9,7 @@
 	--adw-popover-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.09), 0 2px 14px 3px rgba(0, 0, 0, 0.05);
 
 	--adw-tooltip-bg: rgba(0, 0, 0, 0.9);
-	--adw-tooltip-fg-rgb: 255, 255, 255;
+	--adw-tooltip-fg: #ffffff;
 }
 
 body.DesktopUI,
@@ -24,7 +24,7 @@ html.client_chat_frame
 	.EDl_mzaY3WxkgmYVD8W4d,
 	.DialogMenuPosition
 	{
-		background: rgb(var(--adw-popover-bg-rgb)) !important;
+		background: var(--adw-popover-bg) !important;
 		border-radius: var(--adw-menu-radius) !important;
 		padding: var(--adw-menu-padding) !important;
 		margin: 0 !important;
@@ -39,7 +39,7 @@ html.client_chat_frame
 		._2_iY4UJOlWDXNQ21c-a3hD:not(hr)
 		{
 			background: transparent !important;
-			color: rgb(var(--adw-popover-fg-rgb)) !important;
+			color: var(--adw-popover-fg) !important;
 			border: none !important;
 			border-radius: var(--adw-menu-item-radius) !important;
 			font-family: var(--adw-text-font) !important;
@@ -74,12 +74,14 @@ html.client_chat_frame
 
 			&:hover
 			{
-				background: rgba(var(--adw-popover-fg-rgb), var(--adw-hover-opacity)) !important;
+				background: color-mix(in srgb, currentColor var(--adw-hover-opacity), transparent) !important;
+				box-shadow: var(--adw-button-hc-outline) !important;
 			}
 
 			&:active
 			{
-				background: rgba(var(--adw-popover-fg-rgb), var(--adw-active-opacity)) !important;
+				background: color-mix(in srgb, currentColor var(--adw-active-opacity), transparent) !important;
+				box-shadow: var(--adw-button-hc-outline) !important;
 			}
 
 			div.cbinvNOoQE045ZV5gCk_N,
@@ -94,7 +96,7 @@ html.client_chat_frame
 			div._1rihlgVMF4Q_fFZDnXeVt5,
 			div._5bG9Iwr014pu3H1SPRwYh
 			{
-				color: rgb(var(--adw-popover-fg-rgb)) !important;
+				color: var(--adw-popover-fg) !important;
 				font-family: var(--adw-text-font) !important;
 				font-size: var(--adw-text-menu-size) !important;
 				font-weight: var(--adw-text-menu-weight) !important;
@@ -111,7 +113,7 @@ html.client_chat_frame
 
 			div._5bG9Iwr014pu3H1SPRwYh
 			{
-				color: rgba(var(--adw-popover-fg-rgb), var(--adw-dim-label-opacity)) !important;
+				color: color-mix(in srgb, var(--adw-popover-fg) var(--adw-dim-label-opacity), transparent) !important;
 				margin-left: 4px !important;
 			}
 		}
@@ -125,7 +127,7 @@ html.client_chat_frame
 		{
 			border: none !important;
 			height: 1px !important;
-			background-color: rgba(var(--adw-popover-fg-rgb), var(--adw-border-opacity)) !important;
+			background-color: color-mix(in srgb, var(--adw-popover-fg) var(--adw-border-opacity), transparent) !important;
 			margin: 4px 0 !important;
 			pointer-events: none !important;
 
@@ -166,7 +168,7 @@ html.client_chat_frame
 
 	&.ContextMenuPopupBody
 	{
-		background: rgb(var(--adw-popover-bg-rgb)) !important;
+		background: var(--adw-popover-bg) !important;
 		border-radius: 0 !important;
 
 		.PP7LM0Ow1K5qkR8WElLpt,
@@ -225,10 +227,10 @@ body.DesktopUI ._1tsEfG-JyQFR7Un1HPOt98,
 body.DesktopUI.ContextMenuPopupBody div[class*="standardtemplates_PinnedTemplateDesktop_"],
 body.DesktopUI.ContextMenuPopupBody ._2caCrhFIrYqRuguK-cB6be
 {
-	background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-button-bg-opacity)) !important;
+	background: color-mix(in srgb, currentColor var(--adw-button-bg-opacity), transparent) !important;
 	border-radius: var(--adw-button-radius) !important;
 	border: none !important;
-	color: rgb(var(--adw-headerbar-fg-rgb)) !important;
+	color: var(--adw-headerbar-fg) !important;
 	font-family: var(--adw-text-font) !important;
 	font-size: var(--adw-text-title3-size) !important;
 	font-weight: var(--adw-text-title3-weight) !important;
@@ -239,7 +241,7 @@ body.DesktopUI.ContextMenuPopupBody ._2caCrhFIrYqRuguK-cB6be
 body.DesktopUI.ContextMenuPopupBody div[class*="standardtemplates_PinnedBody_"],
 body.DesktopUI.ContextMenuPopupBody ._1LjgvGFg61OD1ElWmS-dk4
 {
-	color: rgb(var(--adw-headerbar-fg-rgb)) !important;
+	color: var(--adw-headerbar-fg) !important;
 	font-family: var(--adw-text-font) !important;
 	font-size: var(--adw-text-title3-size) !important;
 	font-weight: var(--adw-text-title3-weight) !important;
@@ -257,14 +259,14 @@ body.DesktopUI.ContextMenuPopupBody .cam5nVZiJHP17RZlbXzmE
 body.DesktopUI.ContextMenuPopupBody button[class*="titlebarcontrols_AllNotificationsButton_"]:hover,
 body.DesktopUI.ContextMenuPopupBody button._1oERP7bVictkby2hP4BBva:hover
 {
-	background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-button-bg-opacity-hover)) !important;
+	background: color-mix(in srgb, currentColor var(--adw-button-bg-opacity-hover), transparent) !important;
 	border-radius: var(--adw-button-radius) !important;
 }
 
 body.DesktopUI.ContextMenuPopupBody button[class*="titlebarcontrols_AllNotificationsButton_"]:active,
 body.DesktopUI.ContextMenuPopupBody button._1oERP7bVictkby2hP4BBva:active
 {
-	background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-button-bg-opacity-active)) !important;
+	background: color-mix(in srgb, currentColor var(--adw-button-bg-opacity-active), transparent) !important;
 	border-radius: var(--adw-button-radius) !important;
 }
 
@@ -277,7 +279,7 @@ body.DesktopUI.ContextMenuPopupBody ._1UBgeG0z1gyJuOXQde4Glw
 body.DesktopUI.ContextMenuPopupBody div[class*="steamtemplates_NewIndicator_"] svg,
 body.DesktopUI.ContextMenuPopupBody ._1UBgeG0z1gyJuOXQde4Glw svg
 {
-	color: rgb(var(--adw-accent-rgb)) !important;
+	color: var(--adw-accent) !important;
 }
 
 /* Menu arrows and other icons */
@@ -308,9 +310,9 @@ html.client_chat_frame div[class*="contextmenu_contextMenuItem_"] .SVGIcon_Butto
 html.client_chat_frame .pFo3kQOzrl9qVLPXXGIMp .SVGIcon_Button *,
 html.client_chat_frame ._1n7Wloe5jZ6fSuvV18NNWI .SVGIcon_Button *
 {
-	fill: rgb(var(--adw-popover-fg-rgb)) !important;
-	color: rgb(var(--adw-popover-fg-rgb)) !important;
-	stroke: rgb(var(--adw-popover-fg-rgb)) !important;
+	fill: var(--adw-popover-fg) !important;
+	color: var(--adw-popover-fg) !important;
+	stroke: var(--adw-popover-fg) !important;
 }
 
 /* Tooltips */
@@ -334,14 +336,14 @@ html.client_chat_frame ._3Dt__IV9HmQY4KgsvaOz1i,
 html.client_chat_frame ._3XGRklQrZMakU2xaYB0cLD
 {
 	background: var(--adw-tooltip-bg) !important;
-	color: rgb(var(--adw-tooltip-fg-rgb)) !important;
+	color: var(--adw-tooltip-fg) !important;
 	border-radius: 9px !important;
 	font-family: var(--adw-text-font) !important;
 	font-size: var(--adw-text-base-size) !important;
 	font-weight: var(--adw-text-base-weight) !important;
 	padding: 6px 10px !important;
 	margin: 0 !important;
-	border: 1px rgba(var(--adw-tooltip-fg-rgb), var(--adw-border-opacity)) solid !important;
+	border: 1px color-mix(in srgb, currentColor var(--adw-border-opacity), transparent) solid !important;
 	box-shadow: none !important;
 }
 
@@ -353,7 +355,7 @@ html.client_chat_frame div[class*="tooltip_ToolTipCustom_"] > div[class*="toolti
 html.client_chat_frame ._3Dt__IV9HmQY4KgsvaOz1i > ._3YNfm7dGrnyUD_jVsU9L7,
 html.client_chat_frame ._3XGRklQrZMakU2xaYB0cLD > ._3YNfm7dGrnyUD_jVsU9L7
 {
-	color: rgb(var(--adw-tooltip-fg-rgb)) !important;
+	color: var(--adw-tooltip-fg) !important;
 	font-family: var(--adw-text-font) !important;
 	font-size: var(--adw-text-base-size) !important;
 	font-weight: var(--adw-text-base-weight) !important;
@@ -367,7 +369,8 @@ html.client_chat_frame div[class*="tooltip_ToolTipCustom_"] > div[class*="toolti
 html.client_chat_frame ._3Dt__IV9HmQY4KgsvaOz1i > ._1nxOnnCuHV-WYfXeUtBTKf,
 html.client_chat_frame ._3XGRklQrZMakU2xaYB0cLD > .i4LuYcvtfPgYKx3qqvKUq
 {
-	color: rgba(var(--adw-tooltip-fg-rgb), 0.7) !important;
+	color: var(--adw-tooltip-fg) !important;
+	opacity: var(--adw-dim-label-opacity) !important;
 	font-family: var(--adw-text-font) !important;
 	font-size: var(--adw-text-base-size) !important;
 	font-weight: var(--adw-text-base-weight) !important;
@@ -396,7 +399,7 @@ body.DesktopUI div[class*="dropdown_DialogDropDownMenu_"]._DialogInputContainer 
 body.DesktopUI ._1tiuYeMmTc9DMG4mhgaQ5w._DialogInputContainer ._1R-DVEa2yqX0no8BYLtn9N .uDBZWGBy_BP0IFXToHYjk,
 body.DesktopUI ._30wJO3MC4x-I1OWpy1TAeE._DialogInputContainer ._2oAiZidGyUxL-hfupFDQ2m ._3g-QHB82IGz91Hsk1Hw4lh
 {
-	color: rgb(var(--adw-popover-fg-rgb)) !important;
+	color: var(--adw-popover-fg) !important;
 	font-family: var(--adw-text-font) !important;
 	font-size: var(--adw-text-menu-size) !important;
 	font-weight: var(--adw-text-menu-weight) !important;
