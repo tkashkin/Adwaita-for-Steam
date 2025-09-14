@@ -1092,13 +1092,13 @@ html.client_chat_frame
 		&::before
 		{
 			top: 0;
-			background-image: linear-gradient(to bottom, var(--adw-undershoot), transparent 4px);
+			background-image: linear-gradient(to bottom, var(--adw-undershoot));
 			box-shadow: inset 0 1px var(--adw-undershoot-border);
 		}
 		&::after
 		{
 			bottom: 0;
-			background-image: linear-gradient(to top, var(--adw-undershoot), transparent 4px);
+			background-image: linear-gradient(to top, var(--adw-undershoot));
 			box-shadow: inset 0 -1px var(--adw-undershoot-border);
 		}
 	}

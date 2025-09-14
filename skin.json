@@ -22,7 +22,7 @@
 		}
 	],
 
-	"RootColors": "adwaita/css/_root/colors.css",
+	"RootColors": "adwaita/css/_colors/dark.css",
 
 	"Conditions": {
 		"Color theme": {

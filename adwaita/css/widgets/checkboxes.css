@@ -22,6 +22,7 @@ html.client_chat_frame
 	{
 		-webkit-app-region: no-drag !important;
 		cursor: var(--adw-cursor-pointer) !important;
+		color: inherit !important;
 
 		--adw-checkbox-overlay: transparent;
 
@@ -36,6 +37,7 @@ html.client_chat_frame
 			max-height: 20px !important;
 			box-sizing: border-box !important;
 			padding: 2px !important;
+			color: inherit !important;
 			border-radius: var(--adw-checkbox-radius) !important;
 			-webkit-app-region: no-drag !important;
 			cursor: var(--adw-cursor-pointer) !important;

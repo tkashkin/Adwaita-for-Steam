@@ -6,10 +6,16 @@
 	--adw-menu-item-radius: 9px;
 	--adw-menu-item-padding: 0 12px;
 
+	--adw-popover-border: rgba(0, 0, 0, 0.14);
 	--adw-popover-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.09), 0 2px 14px 3px rgba(0, 0, 0, 0.05);
 
 	--adw-tooltip-bg: rgba(0, 0, 6, 0.8);
 	--adw-tooltip-fg: #ffffff;
+
+	@media(prefers-contrast: more)
+	{
+		--adw-popover-border: color-mix(in srgb, currentColor var(--adw-border-opacity), transparent);
+	}
 }
 
 body.DesktopUI,
@@ -25,11 +31,12 @@ html.client_chat_frame
 	.DialogMenuPosition
 	{
 		background: var(--adw-popover-bg) !important;
+		color: var(--adw-popover-fg) !important;
 		border-radius: var(--adw-menu-radius) !important;
 		padding: var(--adw-menu-padding) !important;
 		margin: 0 !important;
 		box-sizing: border-box !important;
-		border: 1px var(--adw-window-outline) solid !important;
+		border: 1px var(--adw-popover-border) solid !important;
 		box-shadow: var(--adw-popover-shadow) !important;
 
 		/* Menu item */

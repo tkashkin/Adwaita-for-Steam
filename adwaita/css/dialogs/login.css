@@ -1,8 +1,6 @@
-body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp
+body.DesktopUI
 {
-	height: 100% !important;
-
-	&,
+	div.VZ6x_grhNkIYJG__jEEyp,
 	div._2v9dClMg2Lmn8UVv6GUeJt,
 	div._2EuR68sQbA8eP01DlIfu6O._2R_n2M6thAvA4On2yeR_Jd,
 	div._2dqG948uNVB7jwgT1g6O-a,
@@ -16,6 +14,12 @@ body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp
 		user-select: none !important;
 		-webkit-app-region: drag !important;
 	}
+}
+
+/* Login dialog */
+body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp
+{
+	height: 100% !important;
 
 	/* Headerbar */
 	div._37ANMR1DAeBJYXulW34A2S

@@ -224,18 +224,23 @@ body.DesktopUI
 			}
 		}
 
-		/* gamelistentry_Uninstalled gamelistentry_GameIcon */
+		/* .gamelistentry_Uninstalled .gamelistentry_GameIcon */
 		&._5YTBr7WwIfzVU_3nUtAph div.ga1hyw11cdBVodrCAidPF
 		{
 			filter: var(--adw-gameicon-uninstalled-filter) !important;
 		}
 
-		/* collapseicon_Container */
+		/* .collapseicon_Container */
 		div._3SFRZYIb9Y2q7YsVtB3YKb > svg
 		{
 			width: 20px !important;
 			height: 20px !important;
 			margin: 0 !important;
+
+			line
+			{
+				stroke: currentColor !important;
+			}
 		}
 	}
 

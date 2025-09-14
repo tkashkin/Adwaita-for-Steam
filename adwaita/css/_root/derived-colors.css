@@ -10,8 +10,10 @@
 
 	--adw-sidebar-border: var(--adw-sidebar-shade);
 
-	--adw-undershoot: color-mix(in srgb, var(--adw-shade) 75%, transparent);
+	--adw-undershoot: color-mix(in srgb, var(--adw-shade) 75%, transparent), transparent 4px;
 	--adw-undershoot-border: color-mix(in srgb, var(--adw-shade) 75%, transparent);
+
+	--adw-webpage-bg: #222226;
 
 	@media(prefers-contrast: more)
 	{
