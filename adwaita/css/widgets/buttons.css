@@ -3,9 +3,9 @@
 	--adw-button-transition: background-color 200ms var(--adw-base-transition-curve), color 200ms var(--adw-base-transition-curve), --adw-hover-overlay 200ms var(--adw-base-transition-curve);
 
 	--adw-button-suggested-fg: var(--adw-accent-fg);
-	--adw-button-suggested-bg: linear-gradient(0deg, var(--adw-accent-bg), var(--adw-accent-bg)) transparent;
-	--adw-button-suggested-overlay-hover: color-mix(in srgb, var(--adw-accent-fg) 10%, transparent);
-	--adw-button-suggested-overlay-active: rgba(0, 0, 0, 0.2);
+	--adw-button-suggested-bg: linear-gradient(var(--adw-accent-bg), var(--adw-accent-bg)) transparent;
+	--adw-button-suggested-overlay-hover: color-mix(in srgb, currentColor 10%, transparent);
+	--adw-button-suggested-overlay-active: rgba(0, 0, 6, 20%);
 
 	--adw-button-radius: 9px;
 	--adw-button-pill-radius: 9999px;

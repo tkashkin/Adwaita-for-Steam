@@ -9,6 +9,7 @@
 
 :root
 {
+	color-scheme: dark;
 	--adw-standalone-color-oklab: max(l, 0.85) a b;
 
 	/**

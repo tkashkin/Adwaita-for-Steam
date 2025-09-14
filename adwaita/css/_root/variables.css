@@ -8,6 +8,8 @@
 
 	--adw-cursor-pointer: default;
 
+	--adw-focus-transition: outline-color 200ms var(--adw-base-transition-curve), outline-width 200ms var(--adw-base-transition-curve), outline-offset 200ms var(--adw-base-transition-curve);
+	
 	--adw-focus-border: inset 0 0 0 2px color-mix(in srgb, var(--adw-accent) var(--adw-focus-border-opacity), transparent);
 	--adw-focus-border-thin: inset 0 0 0 1px color-mix(in srgb, var(--adw-accent) var(--adw-focus-border-opacity), transparent);
 	--adw-focus-border-outlined: inset 0 0 0 2px color-mix(in srgb, var(--adw-accent) var(--adw-focus-border-opacity), transparent), inset 0 0 0 3px var(--adw-window-bg);

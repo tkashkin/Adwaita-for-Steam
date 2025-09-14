@@ -179,7 +179,7 @@ html.client_chat_frame div._2VY6HOZXxO2AsBaLssl0Uy
 		padding: 12px !important;
 		margin: 0 !important;
 		background: none !important;
-		color: inherit !important;
+		color: var(--adw-window-fg) !important;
 		font-family: var(--adw-text-font) !important;
 		font-size: var(--adw-text-header-size) !important;
 		font-weight: var(--adw-text-header-weight) !important;
@@ -219,6 +219,7 @@ html.client_chat_frame div._2VY6HOZXxO2AsBaLssl0Uy
 	div.DialogContent_InnerWidth
 	{
 		max-width: none !important;
+		color: var(--adw-window-fg) !important;
 	}
 
 	div.DialogContent_InnerWidth > div.DialogBody
@@ -240,6 +241,7 @@ html.client_chat_frame div._2VY6HOZXxO2AsBaLssl0Uy
 		margin: 0 !important;
 		padding: 12px 24px 24px 24px;
 		-webkit-mask-image: none !important;
+		color: var(--adw-window-fg) !important;
 	}
 
 	/* Chat: no permissions warning */

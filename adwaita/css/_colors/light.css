@@ -9,6 +9,7 @@
 
 :root
 {
+	color-scheme: light;
 	--adw-standalone-color-oklab: min(l, 0.5) a b;
 
 	/**

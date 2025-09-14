@@ -453,6 +453,18 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 		/* Input */
 		&:has(.DialogInput)
 		{
+			outline: 0 solid transparent !important;
+			outline-offset: 5px !important;
+			transition: var(--adw-button-transition), var(--adw-focus-transition) !important;
+
+			&:focus-within
+			{
+				outline-color: color-mix(in srgb, var(--adw-accent) var(--adw-focus-border-opacity), transparent) !important;
+				outline-width: 2px !important;
+				outline-offset: -1px !important;
+				z-index: 1 !important;
+			}
+
 			/* Title */
 			._3jMlJm4PQCA8SfNlUR99Fo
 			{
@@ -498,11 +510,6 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 					background: var(--adw-accent-bg) !important;
 					text-shadow: none !important;
 				}
-			}
-
-			&:focus-within
-			{
-				box-shadow: var(--adw-card-shadow), var(--adw-card-outline), var(--adw-focus-border) !important;
 			}
 
 			&:not(:focus-within)
@@ -557,15 +564,22 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 		&._1Ld_tWSqKSgYUpn7T4FNst
 		{
 			padding-right: 44px !important;
+			
+			outline: 0 solid transparent !important;
+			outline-offset: 5px !important;
+			transition: var(--adw-button-transition), var(--adw-focus-transition) !important;
+
+			&:has(._1HPWwrauzbr2d3YL2thk98)
+			{
+				outline-color: color-mix(in srgb, var(--adw-accent) var(--adw-focus-border-opacity), transparent) !important;
+				outline-width: 2px !important;
+				outline-offset: -1px !important;
+				z-index: 1 !important;
+			}
 
 			._1aw7cA3mAZfWt8idAlVJWi
 			{
 				position: unset !important;
-			}
-
-			&:has(._1HPWwrauzbr2d3YL2thk98)
-			{
-				box-shadow: var(--adw-card-shadow), var(--adw-card-outline), var(--adw-focus-border) !important;
 			}
 
 			/* Shortcut */
@@ -774,6 +788,8 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 			align-items: start !important;
 			cursor: var(--adw-cursor-pointer) !important;
 
+			--adw-checkbox-overlay: transparent;
+
 			/* Title */
 			&,
 			div._1RUoX0kTOBfqpwCaBZGDLJ
@@ -813,10 +829,11 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 				height: 20px;
 				box-sizing: border-box;
 				padding: 2px;
-				background: var(--adw-checkbox-unchecked-bg);
-				box-shadow: var(--adw-checkbox-unchecked-shadow);
-				background-blend-mode: overlay;
 				border-radius: 50%;
+				background-color: transparent;
+				background-image: linear-gradient(var(--adw-checkbox-overlay), var(--adw-checkbox-overlay));
+				background-blend-mode: overlay;
+				box-shadow: inset 0 0 0 2px color-mix(in srgb, currentColor var(--adw-checkbox-outline-opacity), transparent);
 			}
 
 			/* Icon */
@@ -838,23 +855,14 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 			&:hover
 			{
 				--adw-hover-overlay: var(--adw-view-hover-opacity);
-
-				&::before
-				{
-					background-color: transparent;
-					box-shadow: var(--adw-checkbox-unchecked-shadow-hover);
-				}
+				--adw-checkbox-outline-opacity: var(--adw-checkbox-outline-opacity-hover);
 			}
 
 			&:active
 			{
 				--adw-hover-overlay: var(--adw-view-active-opacity);
-
-				&::before
-				{
-					background-color: var(--adw-checkbox-unchecked-overlay-active);
-					box-shadow: none;
-				}
+				--adw-checkbox-outline-opacity: 0%;
+				--adw-checkbox-overlay: color-mix(in srgb, currentColor var(--adw-checkbox-outline-opacity-active), transparent);
 			}
 
 			/* Active */
@@ -864,24 +872,24 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 			{
 				&::before
 				{
-					background: var(--adw-checkbox-checked-bg);
+					background-color: var(--adw-accent-bg);
+					color: var(--adw-accent-fg);
 					box-shadow: none;
 				}
 
 				&::after
 				{
-					background-color: var(--adw-checkbox-checked-fg);
+					background-color: var(--adw-accent-fg);
 				}
-
-				&:hover::before
+	
+				&:hover
 				{
-					background-color: var(--adw-checkbox-checked-overlay-hover);
-					box-shadow: none;
+					--adw-checkbox-overlay: color-mix(in srgb, currentColor 10%, transparent);
 				}
-
-				&:active::before
+	
+				&:active
 				{
-					background-color: var(--adw-checkbox-checked-overlay-active);
+					--adw-checkbox-overlay: rgba(0, 0, 6, 0.2);
 				}
 			}
 

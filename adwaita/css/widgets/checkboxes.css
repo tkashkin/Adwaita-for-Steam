@@ -2,213 +2,125 @@
 {
 	--adw-checkbox-radius: 6px;
 
-	--adw-checkbox-unchecked-bg: transparent;
-	--adw-checkbox-unchecked-shadow: inset 0px 0px 0px 2px rgba(255, 255, 255, 0.15);
-	--adw-checkbox-unchecked-shadow-hover: inset 0px 0px 0px 2px rgba(255, 255, 255, 0.3);
-	--adw-checkbox-unchecked-overlay-active: rgba(255, 255, 255, 0.3);
+	--adw-checkbox-outline-opacity: 15%;
+	--adw-checkbox-outline-opacity-hover: 20%;
+	--adw-checkbox-outline-opacity-active: 25%;
 
-	--adw-checkbox-checked-fg: var(--adw-button-suggested-fg);
-	--adw-checkbox-checked-bg: var(--adw-button-suggested-bg);
-	--adw-checkbox-checked-overlay-hover: var(--adw-button-suggested-overlay-hover);
-	--adw-checkbox-checked-overlay-active: var(--adw-button-suggested-overlay-active);
+	@media(prefers-contrast: more)
+	{
+		--adw-checkbox-outline-opacity: var(--adw-border-opacity);
+		--adw-checkbox-outline-opacity-hover: 60%;
+		--adw-checkbox-outline-opacity-active: 60%;
+	}
 }
 
-body.DesktopUI div.DialogCheckbox_Container,
-
-html.client_chat_frame div.DialogCheckbox_Container,
-
-body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"],
-body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._2QWD5eymAFUZoQg29r-lQT,
-body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._1Qku5jMXBi5-wawzqY1kzG
+body.DesktopUI,
+html.client_chat_frame
 {
-	cursor: var(--adw-cursor-pointer) !important;
-}
+	div.DialogCheckbox_Container,
+	div._1Qku5jMXBi5-wawzqY1kzG
+	{
+		-webkit-app-region: no-drag !important;
+		cursor: var(--adw-cursor-pointer) !important;
 
-body.DesktopUI div.DialogCheckbox_Container > div.DialogCheckbox,
+		--adw-checkbox-overlay: transparent;
 
-html.client_chat_frame div.DialogCheckbox_Container > div.DialogCheckbox,
+		div.DialogCheckbox,
+		div.LBS7IDpob52Sb4ZoKobh0
+		{
+			width: 20px !important;
+			min-width: 20px !important;
+			max-width: 20px !important;
+			height: 20px !important;
+			min-height: 20px !important;
+			max-height: 20px !important;
+			box-sizing: border-box !important;
+			padding: 2px !important;
+			border-radius: var(--adw-checkbox-radius) !important;
+			-webkit-app-region: no-drag !important;
+			cursor: var(--adw-cursor-pointer) !important;
 
-body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"] > div[class*="newlogindialog_Checkbox_"],
-body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._2QWD5eymAFUZoQg29r-lQT > div._3tTFgWQ_SQnO3XzGEZkjRm,
-body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._1Qku5jMXBi5-wawzqY1kzG > div.LBS7IDpob52Sb4ZoKobh0
-{
-	width: 20px !important;
-	min-width: 20px !important;
-	max-width: 20px !important;
-	height: 20px !important;
-	min-height: 20px !important;
-	max-height: 20px !important;
-	box-sizing: border-box !important;
-	padding: 2px !important;
-	background: var(--adw-checkbox-checked-bg) !important;
-	background-blend-mode: overlay !important;
-	border-radius: var(--adw-checkbox-radius) !important;
-	box-shadow: none !important;
-	-webkit-app-region: no-drag !important;
-	cursor: var(--adw-cursor-pointer) !important;
-}
+			background-color: transparent !important;
+			background-image: linear-gradient(var(--adw-checkbox-overlay), var(--adw-checkbox-overlay)) !important;
+			background-blend-mode: overlay !important;
+			box-shadow: inset 0 0 0 2px color-mix(in srgb, currentColor var(--adw-checkbox-outline-opacity), transparent) !important;
 
-body.DesktopUI div.DialogCheckbox_Container > div.DialogCheckbox:focus,
+			outline: 0 solid transparent !important;
+			outline-offset: 5px !important;
+			transition: var(--adw-focus-transition) !important;
 
-html.client_chat_frame div.DialogCheckbox_Container > div.DialogCheckbox:focus,
+			&:focus-visible
+			{
+				outline-color: color-mix(in srgb, var(--adw-accent) var(--adw-focus-border-opacity), transparent) !important;
+				outline-width: 2px !important;
+				outline-offset: 1px !important;
+			}
 
-body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"] > div[class*="newlogindialog_Checkbox_"]:focus,
-body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._2QWD5eymAFUZoQg29r-lQT > div._3tTFgWQ_SQnO3XzGEZkjRm:focus,
-body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._1Qku5jMXBi5-wawzqY1kzG > div.LBS7IDpob52Sb4ZoKobh0:focus
-{
-	outline: none !important;
-}
+			div._28MB9LhS2kVTalIp0NHDv4,
+			svg
+			{
+				display: none !important;
+			}
 
-body.DesktopUI div.DialogCheckbox_Container > div.DialogCheckbox:focus:focus-visible,
+			&::before
+			{
+				background-color: transparent;
+				content: "";
+				display: block;
+				width: 16px;
+				height: 16px;
+				-webkit-mask-repeat: no-repeat;
+				-webkit-mask-position: center;
+				-webkit-mask-size: 16px;
+				-webkit-mask-image: var(--adw-icon-checkbox-check);
+			}
+		}
 
-html.client_chat_frame div.DialogCheckbox_Container > div.DialogCheckbox:focus:focus-visible,
+		&:hover
+		{
+			--adw-checkbox-outline-opacity: var(--adw-checkbox-outline-opacity-hover);
+		}
 
-body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"] > div[class*="newlogindialog_Checkbox_"]:focus:focus-visible,
-body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._2QWD5eymAFUZoQg29r-lQT > div._3tTFgWQ_SQnO3XzGEZkjRm:focus:focus-visible,
-body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._1Qku5jMXBi5-wawzqY1kzG > div.LBS7IDpob52Sb4ZoKobh0:focus:focus-visible
-{
-	box-shadow: var(--adw-focus-border-outlined) !important;
-}
+		&:active
+		{
+			--adw-checkbox-outline-opacity: 0%;
+			--adw-checkbox-overlay: color-mix(in srgb, currentColor var(--adw-checkbox-outline-opacity-active), transparent);
+		}
 
-body.DesktopUI div.DialogCheckbox_Container > div.DialogCheckbox:not(.Active),
+		/* Checked */
+		&:has(.Active),
+		&:has(._28MB9LhS2kVTalIp0NHDv4)
+		{
+			div.DialogCheckbox,
+			div.LBS7IDpob52Sb4ZoKobh0
+			{
+				background-color: var(--adw-accent-bg) !important;
+				color: var(--adw-accent-fg) !important;
+				box-shadow: none !important;
 
-html.client_chat_frame div.DialogCheckbox_Container > div.DialogCheckbox:not(.Active),
+				&::before
+				{
+					background-color: currentColor;
+				}
+			}
 
-body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"] > div[class*="newlogindialog_Checkbox_"]:empty,
-body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._2QWD5eymAFUZoQg29r-lQT > div._3tTFgWQ_SQnO3XzGEZkjRm:empty,
-body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._1Qku5jMXBi5-wawzqY1kzG > div.LBS7IDpob52Sb4ZoKobh0:empty
-{
-	background: var(--adw-checkbox-unchecked-bg) !important;
-	border-radius: var(--adw-checkbox-radius) !important;
-	box-shadow: var(--adw-checkbox-unchecked-shadow) !important;
-}
+			&:hover
+			{
+				--adw-checkbox-overlay: color-mix(in srgb, currentColor 10%, transparent);
+			}
 
-body.DesktopUI div.DialogCheckbox_Container > div.DialogCheckbox:not(.Active):focus:focus-visible,
+			&:active
+			{
+				--adw-checkbox-overlay: rgba(0, 0, 6, 0.2);
+			}
+		}
+	}
 
-html.client_chat_frame div.DialogCheckbox_Container > div.DialogCheckbox:not(.Active):focus:focus-visible,
-
-body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"] > div[class*="newlogindialog_Checkbox_"]:empty:focus:focus-visible,
-body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._2QWD5eymAFUZoQg29r-lQT > div._3tTFgWQ_SQnO3XzGEZkjRm:empty:focus:focus-visible,
-body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._1Qku5jMXBi5-wawzqY1kzG > div.LBS7IDpob52Sb4ZoKobh0:empty:focus:focus-visible
-{
-	box-shadow: var(--adw-checkbox-unchecked-shadow), var(--adw-focus-border) !important;
-}
-
-body.DesktopUI div.DialogCheckbox_Container:hover > div.DialogCheckbox,
-
-html.client_chat_frame div.DialogCheckbox_Container:hover > div.DialogCheckbox,
-
-body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"]:hover > div[class*="newlogindialog_Checkbox_"],
-body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._2QWD5eymAFUZoQg29r-lQT:hover > div._3tTFgWQ_SQnO3XzGEZkjRm,
-body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._1Qku5jMXBi5-wawzqY1kzG:hover > div.LBS7IDpob52Sb4ZoKobh0
-{
-	background-color: var(--adw-checkbox-checked-overlay-hover) !important;
-}
-
-body.DesktopUI div.DialogCheckbox_Container:active > div.DialogCheckbox,
-
-html.client_chat_frame div.DialogCheckbox_Container:active > div.DialogCheckbox,
-
-body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"]:active > div[class*="newlogindialog_Checkbox_"],
-body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._2QWD5eymAFUZoQg29r-lQT:active > div._3tTFgWQ_SQnO3XzGEZkjRm,
-body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._1Qku5jMXBi5-wawzqY1kzG:active > div.LBS7IDpob52Sb4ZoKobh0
-{
-	background-color: var(--adw-checkbox-checked-overlay-active) !important;
-}
-
-body.DesktopUI div.DialogCheckbox_Container:hover > div.DialogCheckbox:not(.Active),
-
-html.client_chat_frame div.DialogCheckbox_Container:hover > div.DialogCheckbox:not(.Active),
-
-body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"]:hover > div[class*="newlogindialog_Checkbox_"]:empty,
-body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._2QWD5eymAFUZoQg29r-lQT:hover > div._3tTFgWQ_SQnO3XzGEZkjRm:empty,
-body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._1Qku5jMXBi5-wawzqY1kzG:hover > div.LBS7IDpob52Sb4ZoKobh0:empty
-{
-	background-color: transparent !important;
-	box-shadow: var(--adw-checkbox-unchecked-shadow-hover) !important;
-}
-
-body.DesktopUI div.DialogCheckbox_Container:hover > div.DialogCheckbox:not(.Active):focus:focus-visible,
-
-html.client_chat_frame div.DialogCheckbox_Container:hover > div.DialogCheckbox:not(.Active):focus:focus-visible,
-
-body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"]:hover > div[class*="newlogindialog_Checkbox_"]:empty:focus:focus-visible,
-body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._2QWD5eymAFUZoQg29r-lQT:hover > div._3tTFgWQ_SQnO3XzGEZkjRm:empty:focus:focus-visible,
-body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._1Qku5jMXBi5-wawzqY1kzG:hover > div.LBS7IDpob52Sb4ZoKobh0:empty:focus:focus-visible
-{
-	box-shadow: var(--adw-checkbox-unchecked-shadow-hover), var(--adw-focus-border) !important;
-}
-
-body.DesktopUI div.DialogCheckbox_Container:active > div.DialogCheckbox:not(.Active),
-
-html.client_chat_frame div.DialogCheckbox_Container:active > div.DialogCheckbox:not(.Active),
-
-body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"]:active > div[class*="newlogindialog_Checkbox_"]:empty,
-body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._2QWD5eymAFUZoQg29r-lQT:active > div._3tTFgWQ_SQnO3XzGEZkjRm:empty,
-body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._1Qku5jMXBi5-wawzqY1kzG:active > div.LBS7IDpob52Sb4ZoKobh0:empty
-{
-	background-color: var(--adw-checkbox-unchecked-overlay-active) !important;
-	box-shadow: none !important;
-}
-
-body.DesktopUI div.DialogCheckbox_Container:active > div.DialogCheckbox:not(.Active):focus:focus-visible,
-
-html.client_chat_frame div.DialogCheckbox_Container:active > div.DialogCheckbox:not(.Active):focus:focus-visible,
-
-body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"]:active > div[class*="newlogindialog_Checkbox_"]:empty:focus:focus-visible,
-body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._2QWD5eymAFUZoQg29r-lQT:active > div._3tTFgWQ_SQnO3XzGEZkjRm:empty:focus:focus-visible,
-body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._1Qku5jMXBi5-wawzqY1kzG:active > div.LBS7IDpob52Sb4ZoKobh0:empty:focus:focus-visible
-{
-	box-shadow: var(--adw-focus-border) !important;
-}
-
-body.DesktopUI div.DialogCheckbox_Container > div.DialogCheckbox > svg,
-
-html.client_chat_frame div.DialogCheckbox_Container > div.DialogCheckbox > svg,
-
-body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"] > div[class*="newlogindialog_Checkbox_"] > div[class*="newlogindialog_Check_"] > svg,
-body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._2QWD5eymAFUZoQg29r-lQT > div._3tTFgWQ_SQnO3XzGEZkjRm > div._6EoZEzpC472tnBWRFndg2 > svg,
-body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._1Qku5jMXBi5-wawzqY1kzG > div.LBS7IDpob52Sb4ZoKobh0 > div._28MB9LhS2kVTalIp0NHDv4 > svg
-{
-	display: none !important;
-}
-
-body.DesktopUI div.DialogCheckbox_Container > div.DialogCheckbox::before,
-
-html.client_chat_frame div.DialogCheckbox_Container > div.DialogCheckbox::before,
-
-body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"] > div[class*="newlogindialog_Checkbox_"] > div[class*="newlogindialog_Check_"]::before,
-body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._2QWD5eymAFUZoQg29r-lQT > div._3tTFgWQ_SQnO3XzGEZkjRm > div._6EoZEzpC472tnBWRFndg2::before,
-body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._1Qku5jMXBi5-wawzqY1kzG > div.LBS7IDpob52Sb4ZoKobh0 > div._28MB9LhS2kVTalIp0NHDv4::before
-{
-	background-color: transparent;
-	content: "";
-	display: block;
-	width: 16px;
-	height: 16px;
-	-webkit-mask-repeat: no-repeat;
-	-webkit-mask-position: center;
-	-webkit-mask-size: 16px;
-	-webkit-mask-image: var(--adw-icon-checkbox-check);
-}
-
-body.DesktopUI div.DialogCheckbox_Container > div.DialogCheckbox.Active::before,
-
-html.client_chat_frame div.DialogCheckbox_Container > div.DialogCheckbox.Active::before,
-
-body.DesktopUI div[class*="login_Login_"] div[class*="newlogindialog_CheckboxField_"] > div[class*="newlogindialog_Checkbox_"] > div[class*="newlogindialog_Check_"]:not(:empty)::before,
-body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._2QWD5eymAFUZoQg29r-lQT > div._3tTFgWQ_SQnO3XzGEZkjRm > div._6EoZEzpC472tnBWRFndg2:not(:empty)::before,
-body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp div._1Qku5jMXBi5-wawzqY1kzG > div.LBS7IDpob52Sb4ZoKobh0 > div._28MB9LhS2kVTalIp0NHDv4:not(:empty)::before
-{
-	background-color: var(--adw-checkbox-checked-fg);
-}
-
-body.DesktopUI div.DialogCheckbox_Container > div.DialogToggle_Label,
-
-html.client_chat_frame div.DialogCheckbox_Container > div.DialogToggle_Label
-{
-	color: var(--adw-window-fg) !important;
-	font-family: var(--adw-text-font) !important;
-	font-size: 13px !important;
-	font-weight: 400 !important;
+	div.DialogToggle_Label
+	{
+		color: var(--adw-window-fg) !important;
+		font-family: var(--adw-text-font) !important;
+		font-size: 13px !important;
+		font-weight: 400 !important;
+	}
 }
