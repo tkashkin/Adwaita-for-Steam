@@ -50,7 +50,7 @@ class AdwInstaller:
         (self._css, self._options) = args.parse()
         if self._options["general"].debug: # type: ignore
             logger.setLevel(logging.DEBUG)
-        debug(f"Options:\r\n{pformat(self._options)}")
+        debug(f"Options:\n{pformat(self._options)}")
     
     def _process(self):
         general: AdwGeneral = self._options["general"] # type: ignore

@@ -20,7 +20,7 @@ class AdwCSSImport:
         if self.media_queries:
             options += " " + " ".join([f"({q})" for q in self.media_queries])
         comment = f" /* {self.comment} */" if self.comment else ""
-        return f"@import url(\"{self.file}\"){options};{comment}"
+        return f"@import url(\"{self.file.as_posix()}\"){options};{comment}"
 
 @dataclass
 class AdwCSSBlock:
@@ -37,17 +37,17 @@ class AdwCSSBlock:
         indent_str = ADW_CSS_INDENT * indent
 
         if self.comment:
-            css += f"{indent_str}/* {self.comment} */\r\n{indent_str}"
+            css += f"{indent_str}/* {self.comment} */\n{indent_str}"
 
-        css += f",\r\n{indent_str}".join(self.selectors) + f"\r\n{indent_str}{{"
+        css += f",\n{indent_str}".join(self.selectors) + f"\n{indent_str}{{"
 
         if self.rules:
-            css += f"\r\n{indent_str}{ADW_CSS_INDENT}" + f"\r\n{indent_str}{ADW_CSS_INDENT}".join(self.rules) + "\r\n"
+            css += f"\n{indent_str}{ADW_CSS_INDENT}" + f"\n{indent_str}{ADW_CSS_INDENT}".join(self.rules) + "\n"
 
         if self.nested_blocks:
-            css += f"\r\n" + "\r\n\r\n".join([b.to_css(indent + 1) for b in self.nested_blocks])
+            css += f"\n" + "\n\n".join([b.to_css(indent + 1) for b in self.nested_blocks])
 
-        return indent_str + css.strip() + f"\r\n{indent_str}}}"
+        return indent_str + css.strip() + f"\n{indent_str}}}"
 
 @dataclass
 class AdwCSSConfig:
@@ -63,24 +63,24 @@ class AdwCSSBuilder:
     def append(self, config: AdwCSSConfig):
         self._configs.append(config)
     
-    def build(self, content_size: int | None = None) -> str:
+    def build(self) -> str:
         imports = ""
         blocks = ""
 
         for c in self._configs:
             if c.imports:
-                imports += "\r\n" + "\r\n".join([i.to_css() for i in c.imports])
+                imports += "\n" + "\n".join([i.to_css() for i in c.imports])
             if c.blocks:
-                blocks += "\r\n" + "\r\n\r\n".join([b.to_css() for b in c.blocks]) + "\r\n"
+                blocks += "\n" + "\n\n".join([b.to_css() for b in c.blocks]) + "\n"
 
-        header = f"{ADW_PATCH_HEADER}\r\n{ADW_PATCH_VERSION_HEADER}\r\n"
-        content = header + imports + "\r\n" + blocks
-
-        if content_size and len(content) < content_size:
-            content += " " * (content_size - len(content))
-
-        return content
+        header = f"{ADW_PATCH_HEADER}\n{ADW_PATCH_VERSION_HEADER}\n"
+        return header + imports + "\n" + blocks
     
     def patch(self, target: Path, original: Path):
-        content = self.build(content_size=original.stat().st_size)
-        target.write_text(content, encoding="utf-8")
+        content = self.build()
+        original_size = original.stat().st_size
+        with target.open("w", encoding="utf-8") as f:
+            f.write(content)
+            target_size = f.tell()
+            if target_size < original_size:
+                f.write(" " * (original_size - target_size))

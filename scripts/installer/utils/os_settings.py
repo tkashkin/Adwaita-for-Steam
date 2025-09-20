@@ -36,7 +36,7 @@ match sys.platform:
     case "win32" | "cygwin":
         import winreg
 
-        def win32_get_reg_value(key: winreg.PyHKEY, subkey: str, name: str) -> str | None:
+        def win32_get_reg_value(key: int, subkey: str, name: str) -> str | None:
             try:
                 import winreg
                 return winreg.QueryValueEx(winreg.OpenKey(key, subkey), name)[0]
