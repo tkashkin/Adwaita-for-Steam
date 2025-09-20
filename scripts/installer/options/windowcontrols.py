@@ -47,22 +47,22 @@ class AdwWindowControlsTheme(StrEnum):
                         match linux_get_current_desktop():
                             case "kde":
                                 return cls.BREEZE
-                            
+
                             case _:
                                 return cls.ADWAITA
-                    
+
                     case "win32" | "cygwin":
                         return cls.WINDOWS
-                    
+
                     case "darwin":
                         return cls.MACOS
-                    
+
                     case _:
                         return cls.ADWAITA
 
             case t:
                 return cls(t)
-    
+
     def __repr__(self) -> str:
         return self.value
 
@@ -74,8 +74,8 @@ class AdwWindowControlsLayout:
     def __init__(self, preset: str):
         self.preset = preset.lower()
         self.layout = AdwWindowControlsLayout._resolve_layout(self.preset)
-    
-    def to_css(self) -> AdwCSSBlock:
+
+    def to_css(self) -> list[AdwCSSBlock]:
         (buttons_left, buttons_right) = [[b for b in s.split(",") if b in ADW_WINDOWCONTROLS_SELECTORS] for s in self.layout.split(":")]
 
         vars = [
@@ -83,34 +83,35 @@ class AdwWindowControlsLayout:
             f"--adw-windowcontrols-left-buttons: { len(buttons_left) };",
             f"--adw-windowcontrols-right-has-buttons: { 0 if len(buttons_right) == 0 else 1 };",
             f"--adw-windowcontrols-right-buttons: { len(buttons_right) };",
-            f"--adw-windowcontrols-close-margin: var(--adw-windowcontrols-buttons-margin-outer) + var(--adw-windowcontrols-button-width) + var(--adw-windowcontrols-buttons-margin-inner);",
+            f"--adw-windowcontrols-close-margin: (var(--adw-windowcontrols-buttons-margin-outer)) + (var(--adw-windowcontrols-button-width)) + (var(--adw-windowcontrols-buttons-margin-inner));",
             f"--adw-windowcontrols-close-margin-left: calc({ 1 if "close" in buttons_left else 0 } * (var(--adw-windowcontrols-close-margin)));",
             f"--adw-windowcontrols-close-margin-right: calc({ 1 if "close" in buttons_right else 0 } * (var(--adw-windowcontrols-close-margin)));"
         ]
 
-        (buttons_left, buttons_right) = (list(enumerate(buttons_left)), list(enumerate(buttons_right)))
+        (buttons_left, buttons_right) = (list(enumerate(buttons_left)), list(enumerate(reversed(buttons_right))))
         buttons_left = map(AdwWindowControlsLayout._button_to_css("left"), buttons_left)
         buttons_right = map(AdwWindowControlsLayout._button_to_css("right"), buttons_right)
 
-        return AdwCSSBlock(
-            selectors=[":root"],
-            rules=vars,
-            nested_blocks=[
-                AdwCSSBlock(
-                    selectors=["body.DesktopUI", "html.client_chat_frame"],
-                    rules=[],
-                    nested_blocks=[
-                        AdwCSSBlock(
-                            selectors=[".title-bar-actions .title-area-icon"],
-                            rules=["visibility: hidden !important;"],
-                            nested_blocks=[*buttons_left, *buttons_right]
-                        )
-                    ]
-                )
-            ],
-            comment=f"Window controls layout: {self.preset} - {self.layout}"
-        )
-    
+        return [
+        	AdwCSSBlock(
+        		selectors=[":root"],
+        		rules=vars,
+            	comment=f"Window controls layout variables: {self.preset} - {self.layout}"
+        	),
+        	AdwCSSBlock(
+				selectors=["body.DesktopUI", "html.client_chat_frame"],
+				rules=[],
+				nested_blocks=[
+					AdwCSSBlock(
+						selectors=[".title-bar-actions .title-area-icon"],
+						rules=["visibility: hidden !important;"],
+						nested_blocks=[*buttons_left, *buttons_right]
+					)
+				],
+            	comment=f"Window controls layout styles: {self.preset} - {self.layout}"
+			)
+        ]
+
     @staticmethod
     def _resolve_layout(preset: str) -> str:
         if preset == "auto":
@@ -119,31 +120,31 @@ class AdwWindowControlsLayout:
                     match linux_get_current_desktop():
                         case "gnome":
                             return linux_get_setting("org.gnome.desktop.wm.preferences", "button-layout") or ADW_WINDOWCONTROLS_PRESETS["gnome"]
-                        
+
                         case desktop:
                             return ADW_WINDOWCONTROLS_PRESETS.get(desktop) or ADW_WINDOWCONTROLS_PRESETS["gnome"]
-                
+
                 case "win32" | "cygwin":
                     return ADW_WINDOWCONTROLS_PRESETS["windows"]
-                
+
                 case "darwin":
                     return ADW_WINDOWCONTROLS_PRESETS["macos"]
-                
+
         elif preset in ADW_WINDOWCONTROLS_PRESETS:
             return ADW_WINDOWCONTROLS_PRESETS[preset]
-        
+
         if not preset: preset = ":"
         if ":" not in preset: preset = ":" + preset
-        
+
         return preset
-    
+
     @staticmethod
     def _button_to_css(side: str) -> Callable[[tuple[int, str]], AdwCSSBlock]:
         return lambda b: AdwCSSBlock(
             selectors=ADW_WINDOWCONTROLS_SELECTORS[b[1]],
             rules=[
                 "visibility: visible !important;",
-                f"{side}: calc(var(--adw-windowcontrols-buttons-margin-outer) + {b[0]} * (var(--adw-windowcontrols-button-width)) + {b[0]} * (var(--adw-windowcontrols-button-gap))) !important;"
+                f"{side}: calc((var(--adw-windowcontrols-buttons-margin-outer)) + ({b[0]} * (var(--adw-windowcontrols-button-width))) + ({b[0]} * (var(--adw-windowcontrols-button-gap)))) !important;"
             ],
             nested_blocks=[
                 AdwCSSBlock(
@@ -152,7 +153,6 @@ class AdwWindowControlsLayout:
                 )
             ]
         )
-        
 
 @dataclass
 class AdwWindowControls(AdwParsedOptionGroup):
@@ -167,7 +167,7 @@ class AdwWindowControls(AdwParsedOptionGroup):
                     comment=f"Window controls theme: {self.theme}"
                 )
             ],
-            blocks=[self.layout.to_css()]
+            blocks=self.layout.to_css()
         )
 
 class AdwWindowControlsOptions(AdwOptionGroup):
@@ -190,7 +190,7 @@ class AdwWindowControlsOptions(AdwOptionGroup):
             default="auto",
             type=AdwWindowControlsLayout
         )
-    
+
     def parse(self, args: Namespace) -> AdwWindowControls:
         return AdwWindowControls(
             theme=args.windowcontrols_theme,

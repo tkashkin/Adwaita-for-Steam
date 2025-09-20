@@ -1,3 +1,4 @@
 config_USER.json
 .idea/
 .fleet/
+.DS_Store

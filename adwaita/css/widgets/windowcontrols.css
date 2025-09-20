@@ -14,12 +14,12 @@
 	--adw-windowcontrols-margin-left: calc((var(--adw-windowcontrols-left-has-buttons)) * (
 		(var(--adw-windowcontrols-buttons-margin-outer)) + (var(--adw-windowcontrols-buttons-margin-inner)) +
 		(var(--adw-windowcontrols-left-buttons)) * (var(--adw-windowcontrols-button-width)) +
-		(var(--adw-windowcontrols-left-buttons) - 1) * (var(--adw-windowcontrols-button-gap))
+		((var(--adw-windowcontrols-left-buttons)) - 1) * (var(--adw-windowcontrols-button-gap))
 	));
 	--adw-windowcontrols-margin-right: calc((var(--adw-windowcontrols-right-has-buttons)) * (
 		(var(--adw-windowcontrols-buttons-margin-outer)) + (var(--adw-windowcontrols-buttons-margin-inner)) +
 		(var(--adw-windowcontrols-right-buttons)) * (var(--adw-windowcontrols-button-width)) +
-		(var(--adw-windowcontrols-right-buttons) - 1) * (var(--adw-windowcontrols-button-gap))
+		((var(--adw-windowcontrols-right-buttons)) - 1) * (var(--adw-windowcontrols-button-gap))
 	));
 }
 
