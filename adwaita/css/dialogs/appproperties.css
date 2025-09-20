@@ -65,22 +65,21 @@ div._1FyBL6obxHQ2Z2CsaV2Gbz
 
 		div.r3hOLjghfVd2FkvKjlsrO:has(> div:not([class]):not(:empty))
 		{
+			background: color-mix(in srgb, var(--adw-banner) 30%, var(--adw-window-bg)) !important;
+			color: var(--adw-window-fg) !important;
+			box-shadow: inset 0 1px var(--adw-headerbar-shade) !important;
 			position: absolute !important;
 			top: 0 !important;
 			left: 0 !important;
 			right: 0 !important;
 			width: auto !important;
 			display: flex !important;
-			background-image: linear-gradient(0deg, var(--adw-banner-bg), var(--adw-banner-bg)) !important;
-			background-color: var(--adw-headerbar-bg) !important;
-			box-shadow: inset 0 1px var(--adw-headerbar-shade) !important;
 			border: none !important;
 			border-radius: 0 !important;
 			min-height: 46px !important;
 			line-height: 46px !important;
 			padding: 0 10px !important;
 			margin: 0 !important;
-			color: var(--adw-banner-fg) !important;
 			font-family: var(--adw-text-font) !important;
 			font-size: var(--adw-text-title3-size) !important;
 			font-weight: var(--adw-text-title3-weight) !important;
@@ -652,7 +651,7 @@ div._1FyBL6obxHQ2Z2CsaV2Gbz
 				height: 16px !important;
 				color: rgba(var(--adw-card-fg-rgb), 0.5) !important;
 				transform: rotate(180deg) !important;
-				transition: color 200ms var(--adw-base-transition-curve), transform 200ms var(--adw-base-transition-curve) !important;
+				transition: color var(--adw-transition), transform var(--adw-transition) !important;
 
 				path
 				{

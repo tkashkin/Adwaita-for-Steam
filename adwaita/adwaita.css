@@ -1,10 +1,12 @@
-@import url("css/_colors/auto.css");
+@import url("css/_colors/default.css");
+@import url("css/_colors/derived.css");
+@import url("css/_colors/palette.css");
 
-@import url("css/_root/derived-colors.css");
 @import url("css/_root/icons.css");
 @import url("css/_root/localization.css");
 @import url("css/_root/opacity.css");
 @import url("css/_root/text.css");
+@import url("css/_root/transitions.css");
 @import url("css/_root/variables.css");
 
 @import url("css/widgets/avatars.css");

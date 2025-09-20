@@ -24,7 +24,7 @@
 	--adw-disabled-opacity: 50%;
 	--adw-strong-disabled-opacity: 30%;
 
-	@media(prefers-contrast: more)
+	@media (prefers-contrast: more)
 	{
 		--adw-border-opacity: 50%;
 		--adw-thin-border-opacity: 25%;

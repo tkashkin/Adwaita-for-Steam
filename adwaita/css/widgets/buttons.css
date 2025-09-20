@@ -1,7 +1,5 @@
 :root
 {
-	--adw-button-transition: background-color 200ms var(--adw-base-transition-curve), color 200ms var(--adw-base-transition-curve), --adw-hover-overlay 200ms var(--adw-base-transition-curve);
-
 	--adw-button-suggested-fg: var(--adw-accent-fg);
 	--adw-button-suggested-bg: linear-gradient(var(--adw-accent-bg), var(--adw-accent-bg)) transparent;
 	--adw-button-suggested-overlay-hover: color-mix(in srgb, currentColor 10%, transparent);
@@ -26,15 +24,8 @@
 
 	--adw-button-hc-outline: inset 0 0 0 1px transparent;
 
-	@media(prefers-contrast: more)
+	@media (prefers-contrast: more)
 	{
 		--adw-button-hc-outline: inset 0 0 0 1px color-mix(in srgb, currentColor var(--adw-border-opacity), transparent);
 	}
-}
-
-@property --adw-hover-overlay
-{
-	syntax: "<percentage>";
-	inherits: false;
-	initial-value: 0%;
 }

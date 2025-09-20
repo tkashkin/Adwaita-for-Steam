@@ -28,7 +28,7 @@ html.client_chat_frame
 
 			div.chat_main:not(.resizingSingleWindow) &
 			{
-				transition: width 200ms var(--adw-base-transition-curve), margin 200ms var(--adw-base-transition-curve), opacity 200ms var(--adw-base-transition-curve) !important;
+				transition: width var(--adw-transition), margin var(--adw-transition), opacity var(--adw-transition) !important;
 			}
 
 			&.collapsed

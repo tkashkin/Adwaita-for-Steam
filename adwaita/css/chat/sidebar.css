@@ -29,7 +29,7 @@ html.client_chat_frame
 				padding: 0 !important;
 				margin: 0 !important;
 				height: 46px !important;
-				transition: height 200ms var(--adw-base-transition-curve) !important;
+				transition: height var(--adw-transition) !important;
 				background: none !important;
 				color: inherit !important;
 				display: flex !important;
@@ -38,7 +38,7 @@ html.client_chat_frame
 
 				div.tabSearchTransitionGroup
 				{
-					transition: height 200ms var(--adw-base-transition-curve);
+					transition: height var(--adw-transition);
 					opacity: 1 !important;
 					height: 0 !important;
 					z-index: -1 !important;
@@ -94,7 +94,7 @@ html.client_chat_frame
 					padding: 0 !important;
 					margin: 0 !important;
 					height: 0 !important;
-					transition: height var(--adw-base-transition-curve) !important;
+					transition: height var(--adw-transition-curve) !important;
 					background: none !important;
 					opacity: 1 !important;
 				}
@@ -573,7 +573,7 @@ html.client_chat_frame
 				cursor: var(--adw-cursor-pointer) !important;
 				width: 36px !important;
 				height: 36px !important;
-				transition: width 200ms, height 200ms !important;
+				transition: width var(--adw-transition-duration), height var(--adw-transition-duration) !important;
 				flex-shrink: 0 !important;
 
 				div.quickAccessFriend, div.nibodjvvrm86uCfnnAn4g, div.ChatRoomGroupAvatar
@@ -582,7 +582,7 @@ html.client_chat_frame
 					margin: 0 !important;
 					width: 100% !important;
 					height: 100% !important;
-					transition: width 200ms, height 200ms !important;
+					transition: width var(--adw-transition-duration), height var(--adw-transition-duration) !important;
 					cursor: var(--adw-cursor-pointer) !important;
 				}
 
@@ -858,7 +858,7 @@ html.client_chat_frame
 					width: 36px !important;
 					height: 36px !important;
 					margin: 2px 0 !important;
-					transition: width 200ms, height 200ms !important;
+					transition: width var(--adw-transition-duration), height var(--adw-transition-duration) !important;
 				}
 
 				div.labelHolder

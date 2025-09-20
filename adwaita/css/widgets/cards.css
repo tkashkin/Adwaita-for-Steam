@@ -8,7 +8,7 @@
 	--adw-card-outline: inset 0 -1px var(--adw-card-outline-color);
 	--adw-card-outline-last: inset 0 0 transparent;
 
-	@media(prefers-contrast: more)
+	@media (prefers-contrast: more)
 	{
 		--adw-card-outline-color: color-mix(in srgb, currentColor var(--adw-border-opacity), transparent);
 		--adw-card-outline: inset -1px 0 var(--adw-card-outline-color), inset 1px 0 var(--adw-card-outline-color), inset 0 1px var(--adw-card-outline-color);

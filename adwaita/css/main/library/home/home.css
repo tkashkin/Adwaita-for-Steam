@@ -56,7 +56,7 @@ body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0
 			border-radius: 50% !important;
 			cursor: var(--adw-cursor-pointer) !important;
 			opacity: 1 !important;
-			transition: var(--adw-button-transition), opacity 200ms !important;
+			transition: var(--adw-button-transition), opacity var(--adw-transition-duration) !important;
 
 			&:hover
 			{

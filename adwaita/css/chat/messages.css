@@ -77,7 +77,7 @@ html.client_chat_frame
 								bottom: 4px !important;
 								width: 1px !important;
 								opacity: 1 !important;
-								transition: opacity 200ms var(--adw-base-transition-curve) !important;
+								transition: opacity var(--adw-transition) !important;
 							}
 
 							&::before, &:last-of-type::after
@@ -122,7 +122,7 @@ html.client_chat_frame
 
 							&._3oMENEr8B3XRqYBUZN0wxj
 							{
-								transition: all 200ms var(--adw-base-transition-curve) !important;
+								transition: all var(--adw-transition) !important;
 								transition-property: opacity, min-width, max-width, margin-left !important;
 								opacity: 0 !important;
 								min-width: 0 !important;
@@ -139,7 +139,7 @@ html.client_chat_frame
 							}
 
 							&._3U5nKyNTQNOpbQ6ZYdTpNN {
-								transition: all 200ms var(--adw-base-transition-curve) !important;
+								transition: all var(--adw-transition) !important;
 								transition-property: opacity, min-width, max-width, margin-left !important;
 								opacity: 1 !important;
 								max-width: calc(100%) !important;
@@ -162,7 +162,7 @@ html.client_chat_frame
 								justify-content: center !important;
 								-webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) calc(100% - 20px), rgba(0, 0, 0, 0)) !important;
 								padding: 0 6px !important;
-								transition: padding 250ms var(--adw-base-transition-curve) !important;
+								transition: padding var(--adw-transition) !important;
 
 								div._2XZq-_f6npaQdAgeRzKIkz:hover &, div._2XZq-_f6npaQdAgeRzKIkz.Yd-DsWkYiFiYwpci--Yk_ &
 								{

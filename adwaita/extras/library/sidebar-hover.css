@@ -9,7 +9,7 @@ body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 > div._9sPoVBFyE_vE87mnZJ5aB
 	bottom: 0 !important;
 	left: -276px !important;
 	opacity: 0 !important;
-	transition: left 150ms var(--adw-base-transition-curve), opacity 150ms var(--adw-base-transition-curve) !important;
+	transition: left var(--adw-transition), opacity var(--adw-transition) !important;
 	background: var(--adw-sidebar-bg) !important;
 	z-index: 10 !important;
 	border-right: 1px var(--adw-sidebar-border) solid !important;
@@ -36,7 +36,7 @@ body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 > div._9sPoVBFyE_vE87mnZJ5aB::after
 	width: 100vw !important;
 	height: 100vw !important;
 	opacity: 0 !important;
-	transition: opacity 150ms var(--adw-base-transition-curve) !important;
+	transition: opacity var(--adw-transition) !important;
 	pointer-events: none !important;
 }
 

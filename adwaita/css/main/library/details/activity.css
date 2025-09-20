@@ -234,7 +234,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 		& > img
 		{
 			filter: opacity(0.7) saturate(0.7) !important;
-			transition: filter 200ms !important;
+			transition: filter var(--adw-transition-duration) !important;
 			position: absolute !important;
 			right: 0 !important;
 			top: 50% !important;
@@ -643,7 +643,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 					border-radius: 50% !important;
 					cursor: var(--adw-cursor-pointer) !important;
 					opacity: 1 !important;
-					transition: var(--adw-button-transition), opacity 200ms !important;
+					transition: var(--adw-button-transition), opacity var(--adw-transition-duration) !important;
 
 					&:hover
 					{

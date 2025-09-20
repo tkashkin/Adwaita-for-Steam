@@ -12,7 +12,7 @@
 	--adw-tooltip-bg: rgba(0, 0, 6, 0.8);
 	--adw-tooltip-fg: #ffffff;
 
-	@media(prefers-contrast: more)
+	@media (prefers-contrast: more)
 	{
 		--adw-popover-border: color-mix(in srgb, currentColor var(--adw-border-opacity), transparent);
 	}

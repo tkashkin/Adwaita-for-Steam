@@ -55,15 +55,18 @@ body.DesktopUI
 	 */
 	div._1bGewp3tfzqAF6fVTFFUOz
 	{
+		color-scheme: dark !important;
+		background: var(--adw-window-bg) !important;
 		box-sizing: border-box !important;
-		background: var(--adw-webpage-bg) !important;
 		padding: 1px !important;
 		box-shadow: inset 0 1px var(--adw-undershoot-border);
 
 		/* URL Bar (refresh button only) */
 		div.UkR3sY319PuaUNuUWks2K
 		{
+			color-scheme: var(--adw-color-scheme, light dark) !important;
 			background: transparent !important;
+			color: var(--adw-headerbar-fg) !important;
 			box-shadow: none !important;
 			border: none !important;
 			padding: 0 !important;
@@ -78,6 +81,7 @@ body.DesktopUI
 			{
 				-webkit-app-region: no-drag;
 				cursor: var(--adw-cursor-pointer) !important;
+				color: currentColor !important;
 				border-radius: var(--adw-button-radius) !important;
 				box-sizing: border-box !important;
 				width: 34px !important;
@@ -106,7 +110,7 @@ body.DesktopUI
 			&::before,
 			div._3KaB94Jl4r0hFkthDPJy09::before
 			{
-				background-color: var(--adw-headerbar-fg);
+				background-color: currentColor;
 				content: "";
 				display: block;
 				width: 16px;
@@ -172,8 +176,8 @@ body.DesktopUI
 		div._2iJsgdTIX9Tj23rWnB7Q-c,
 		div._3GaHEQJW9B1Rlt0Ddz3E8D
 		{
-			background-image: linear-gradient(0deg, var(--adw-banner-bg), var(--adw-banner-bg)) !important;
-			background-color: var(--adw-headerbar-bg) !important;
+			background: color-mix(in srgb, var(--adw-banner) 30%, var(--adw-window-bg)) !important;
+			color: var(--adw-window-fg) !important;
 			box-shadow: inset 0 1px var(--adw-headerbar-shade) !important;
 			border-radius: 0 !important;
 			min-height: 46px !important;
@@ -183,7 +187,7 @@ body.DesktopUI
 			&, a, div._2EXJTyc69b45nXI4h3RknI, div.SwtQX-CurM3HPVJ9DPI1V
 			{
 				cursor: var(--adw-cursor-pointer) !important;
-				color: var(--adw-banner-fg) !important;
+				color: var(--adw-window-fg) !important;
 				font-family: var(--adw-text-font) !important;
 				font-size: var(--adw-text-title3-size) !important;
 				font-weight: var(--adw-text-title3-weight) !important;
@@ -212,7 +216,7 @@ body.DesktopUI
 				{
 					background: color-mix(in srgb, currentColor var(--adw-button-bg-opacity), transparent) !important;
 					border-radius: var(--adw-button-radius) !important;
-					color: var(--adw-banner-fg) !important;
+					color: var(--adw-window-fg) !important;
 					font-family: var(--adw-text-font) !important;
 					font-size: var(--adw-text-title3-size) !important;
 					font-weight: var(--adw-text-title3-weight) !important;
@@ -244,7 +248,7 @@ body.DesktopUI
 			/* Update error */
 			&._2T8739wyg0K9mokTXWytuZ
 			{
-				background-image: linear-gradient(0deg, color-mix(in srgb, currentColor var(--adw-banner-bg-a)), transparent) !important;
+				
 			}
 
 			/* Small mode */

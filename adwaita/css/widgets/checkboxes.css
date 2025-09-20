@@ -6,7 +6,7 @@
 	--adw-checkbox-outline-opacity-hover: 20%;
 	--adw-checkbox-outline-opacity-active: 25%;
 
-	@media(prefers-contrast: more)
+	@media (prefers-contrast: more)
 	{
 		--adw-checkbox-outline-opacity: var(--adw-border-opacity);
 		--adw-checkbox-outline-opacity-hover: 60%;

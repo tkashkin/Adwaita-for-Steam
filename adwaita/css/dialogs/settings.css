@@ -324,7 +324,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 		border-radius: 0 !important;
 		overflow: hidden !important;
 		box-shadow: var(--adw-card-shadow), var(--adw-card-outline) !important;
-		transition: height 200ms var(--adw-base-transition-curve) !important;
+		transition: height var(--adw-transition) !important;
 		height: var(--adw-row-height) !important;
 
 		/* Expanded */
@@ -472,7 +472,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 				-webkit-mask-size: 16px;
 				-webkit-mask-image: var(--adw-icon-expander-arrow);
 				transform: rotate(180deg);
-				transition: background-color 200ms var(--adw-base-transition-curve), transform 200ms var(--adw-base-transition-curve);
+				transition: background-color var(--adw-transition), transform var(--adw-transition);
 			}
 
 			._21Uc0N6TIRIw4LIZzQnsdE &::after
@@ -1229,7 +1229,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 				padding: 6px !important;
 				box-sizing: border-box !important;
 				margin: 0 0 -46px 1px !important;
-				transition: margin-bottom 200ms var(--adw-base-transition-curve) !important;
+				transition: margin-bottom var(--adw-transition) !important;
 				background: var(--adw-secondary-sidebar-bg) !important;
 				justify-content: center !important;
 

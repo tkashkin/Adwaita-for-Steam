@@ -34,17 +34,17 @@ body.DesktopUI div._1bGewp3tfzqAF6fVTFFUOz > div.UkR3sY319PuaUNuUWks2K > div._2m
 		font-weight: var(--adw-text-subtitle-weight) !important;
 	}
 
-	@media(max-width: 1500px)
+	@media (max-width: 1500px)
 	{
 		max-width: 250px !important;
 	}
 
-	@media(max-width: 1400px)
+	@media (max-width: 1400px)
 	{
 		max-width: 200px !important;
 	}
 
-	@media(max-width: 1200px)
+	@media (max-width: 1200px)
 	{
 		max-width: 150px !important;
 	}

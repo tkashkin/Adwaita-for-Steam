@@ -1,0 +1,56 @@
+:root
+{
+	color-scheme: var(--adw-color-scheme, light dark);
+
+	@media (prefers-color-scheme: light)
+	{
+		--adw-color-scheme: light;
+	}
+
+	--adw-standalone-color-oklab-dark: max(l, 0.85) a b;
+	--adw-standalone-color-oklab-light: min(l, 0.5) a b;
+	
+	/* Can't directly use light-dark() colors in oklab() for some reason, they need to be declared separately */
+	--adw-accent-bg: light-dark(var(--adw-accent-bg-light), var(--adw-accent-bg-dark));
+	--adw-accent: light-dark(
+		oklab(from var(--adw-accent-bg-light) var(--adw-standalone-color-oklab-light)),
+		oklab(from var(--adw-accent-bg-dark) var(--adw-standalone-color-oklab-dark))
+	);
+	
+	--adw-destructive-bg: light-dark(var(--adw-destructive-bg-light), var(--adw-destructive-bg-dark));
+	--adw-destructive: light-dark(
+		oklab(from var(--adw-destructive-bg-light) var(--adw-standalone-color-oklab-light)),
+		oklab(from var(--adw-destructive-bg-dark) var(--adw-standalone-color-oklab-dark))
+	);
+	
+	--adw-success-bg: light-dark(var(--adw-success-bg-light), var(--adw-success-bg-dark));
+	--adw-success: light-dark(
+		oklab(from var(--adw-success-bg-light) var(--adw-standalone-color-oklab-light)),
+		oklab(from var(--adw-success-bg-dark) var(--adw-standalone-color-oklab-dark))
+	);
+	
+	--adw-warning-bg: light-dark(var(--adw-warning-bg-light), var(--adw-warning-bg-dark));
+	--adw-warning: light-dark(
+		oklab(from var(--adw-warning-bg-light) var(--adw-standalone-color-oklab-light)),
+		oklab(from var(--adw-warning-bg-dark) var(--adw-standalone-color-oklab-dark))
+	);
+	
+	--adw-error-bg: light-dark(var(--adw-error-bg-light), var(--adw-error-bg-dark));
+	--adw-error: light-dark(
+		oklab(from var(--adw-error-bg-light) var(--adw-standalone-color-oklab-light)),
+		oklab(from var(--adw-error-bg-dark) var(--adw-standalone-color-oklab-dark))
+	);
+
+	--adw-window-outline: rgba(255, 255, 255, var(--adw-window-outline-opacity));
+
+	--adw-sidebar-border: var(--adw-sidebar-shade);
+
+	--adw-undershoot: color-mix(in srgb, var(--adw-shade) 75%, transparent), transparent 4px;
+	--adw-undershoot-border: color-mix(in srgb, var(--adw-shade) 75%, transparent);
+
+	@media (prefers-contrast: more)
+	{
+		--adw-sidebar-border: color-mix(in srgb, currentColor var(--adw-border-opacity), transparent);
+		--adw-undershoot-border: color-mix(in srgb, currentColor var(--adw-border-opacity), transparent);
+	}
+}

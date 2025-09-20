@@ -10,7 +10,7 @@ body.DesktopUI .VZ6x_grhNkIYJG__jEEyp
 		position: absolute !important;
 		top: 50% !important;
 		transform: translate(-50%, -50%) !important;
-		transition: visibility 200ms linear, opacity 200ms linear !important;
+		transition: visibility var(--adw-transition-duration) linear, opacity var(--adw-transition-duration) linear !important;
 		visibility: hidden !important;
 	}
 

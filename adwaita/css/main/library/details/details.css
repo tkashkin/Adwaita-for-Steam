@@ -439,7 +439,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA textarea._1JlC29Ic6L-QvL-39X_d-X::pla
 	color: color-mix(in srgb, currentColor var(--adw-dim-label-opacity), transparent) !important;
 	font-style: normal !important;
 	line-height: 40px !important;
-	transition: line-height 100ms !important;
+	transition: line-height var(--adw-transition) !important;
 }
 
 body.DesktopUI div[class*="appdetails_Container_"] textarea[class*="posttextentry_PostTextEntryArea_"]:focus::placeholder,

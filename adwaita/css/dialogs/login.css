@@ -176,7 +176,7 @@ body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp
 				letter-spacing: normal !important;
 				text-transform: none !important;
 				pointer-events: none !important;
-				transition: padding-top 200ms var(--adw-base-transition-curve), font-size 200ms var(--adw-base-transition-curve), font-weight 200ms var(--adw-base-transition-curve) !important;
+				transition: padding-top var(--adw-transition), font-size var(--adw-transition), font-weight var(--adw-transition) !important;
 			}
 
 			&:focus-within,

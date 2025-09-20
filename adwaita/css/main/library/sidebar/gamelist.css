@@ -13,6 +13,7 @@ body.DesktopUI
 		border-radius: var(--adw-button-radius) !important;
 		position: relative !important;
 		color: var(--adw-sidebar-fg) !important;
+		box-shadow: none !important;
 
 		--text-color: var(--adw-sidebar-fg) !important;
 
@@ -99,7 +100,8 @@ body.DesktopUI
 
 		/* Selected */
 		&.sXMOsx8OIRalBMxO9yFY5,
-		&._1UBpAXP408Ez_L_mXhW5Q9
+		&._1UBpAXP408Ez_L_mXhW5Q9,
+		div._1UBpAXP408Ez_L_mXhW5Q9 > &
 		{
 			background: color-mix(in srgb, var(--adw-sidebar-fg) var(--adw-selected-opacity), transparent) !important;
 			box-shadow: var(--adw-button-hc-outline) !important;
@@ -115,6 +117,20 @@ body.DesktopUI
 				background: color-mix(in srgb, var(--adw-sidebar-fg) var(--adw-selected-active-opacity), transparent) !important;
 				box-shadow: var(--adw-button-hc-outline) !important;
 			}
+		}
+
+		/* Previous selected */
+		div.Panel:has(div._1UBpAXP408Ez_L_mXhW5Q9 > &) + div.Panel > div._1UBpAXP408Ez_L_mXhW5Q9 > &
+		{
+			border-top-left-radius: 0 !important;
+			border-top-right-radius: 0 !important;
+		}
+
+		/* Next selected */
+		div.Panel:has(+ div.Panel > div._1UBpAXP408Ez_L_mXhW5Q9 > &) > div._1UBpAXP408Ez_L_mXhW5Q9 > &
+		{
+			border-bottom-left-radius: 0 !important;
+			border-bottom-right-radius: 0 !important;
 		}
 
 		/* Context menu open */

@@ -99,6 +99,7 @@ body.DesktopUI
 				-webkit-user-drag: none !important;
 				cursor: var(--adw-cursor-pointer) !important;
 				background: transparent !important;
+				color: var(--adw-headerbar-fg) !important;
 				border-radius: var(--adw-button-radius) !important;
 				box-sizing: border-box !important;
 				width: 34px !important;
@@ -115,7 +116,7 @@ body.DesktopUI
 
 				&::before
 				{
-					background-color: var(--adw-sidebar-fg);
+					background-color: currentColor;
 					content: "";
 					display: block;
 					width: 16px;
@@ -155,7 +156,7 @@ body.DesktopUI
 			color: inherit !important;
 			margin: 6px !important;
 			min-height: 34px !important;
-			padding: 0 24px 0 34px !important;
+			padding: 0 !important;
 			border-radius: var(--adw-button-radius) !important;
 			background: color-mix(in srgb, currentColor var(--adw-button-bg-opacity), transparent) !important;
 			box-shadow: var(--adw-button-hc-outline) !important;
@@ -187,6 +188,7 @@ body.DesktopUI
 				-webkit-mask-position: center;
 				-webkit-mask-size: 16px;
 				-webkit-mask-image: var(--adw-icon-search);
+				pointer-events: none;
 			}
 
 			/* Search field */
@@ -195,42 +197,53 @@ body.DesktopUI
 				.DialogInput_Wrapper
 				{
 					padding: 0 !important;
+					z-index: auto !important;
 				}
 
-				input
+				input,
+				input::placeholder,
+				div._2zPn_rFC5ZJw3NvUu3Jt5Y
 				{
 					background: transparent !important;
 					color: var(--adw-sidebar-fg) !important;
 					font-size: var(--adw-text-base-size) !important;
 					font-weight: var(--adw-text-base-weight) !important;
 					font-family: var(--adw-text-font) !important;
+					font-style: normal !important;
 					margin: 0 !important;
-					padding: 0 34px 0 0 !important;
+					padding: 0 54px 0 31px !important;
 					box-shadow: none !important;
 					border: none !important;
 					height: 34px !important;
 					line-height: 34px !important;
 					overflow: hidden !important;
+
+					&::selection
+					{
+						color: var(--adw-accent-fg) !important;
+						background: var(--adw-accent-bg) !important;
+						text-shadow: none !important;
+					}
 				}
 
 				input::placeholder,
 				div._2zPn_rFC5ZJw3NvUu3Jt5Y
 				{
 					color: color-mix(in srgb, var(--adw-sidebar-fg) var(--adw-dim-label-opacity), transparent) !important;
-					font-size: var(--adw-text-base-size) !important;
-					font-weight: var(--adw-text-base-weight) !important;
-					font-family: var(--adw-text-font) !important;
-					font-style: normal !important;
-					margin: 0 !important;
 					padding: 0 !important;
-					line-height: 34px !important;
+				}
+
+				div._2zPn_rFC5ZJw3NvUu3Jt5Y
+				{
+					height: 28px !important;
+					line-height: 28.5px !important;
 				}
 
 				.DialogInput_ClearAction,
 				div._38tIMc-4Ug-Akpa1pYlN0R
 				{
 					cursor: var(--adw-cursor-pointer) !important;
-					right: 9px !important;
+					right: 34px !important;
 					top: 9px !important;
 
 					svg
@@ -260,13 +273,7 @@ body.DesktopUI
 				/* Filters */
 				div._172OFJhtx4Jt2ydY6-9IUm
 				{
-					padding: 3px 34px 3px 0 !important;
-					margin-left: -2px !important;
-
-					div._2zPn_rFC5ZJw3NvUu3Jt5Y
-					{
-						margin: -3px 0 -3px 2px !important;
-					}
+					padding: 3px 54px 3px 31px !important;
 
 					/* Filter chip */
 					div._3gzh_NvTKey56JeHY7Q1WW

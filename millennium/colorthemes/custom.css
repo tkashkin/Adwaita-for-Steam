@@ -1,5 +1,5 @@
 /**
- * Default color variables (Light).
+ * Default color variables (Dark).
  *
  * libadwaita reference:
  * - https://gnome.pages.gitlab.gnome.org/libadwaita/doc/main/css-variables.html
@@ -9,9 +9,6 @@
 
 :root
 {
-	color-scheme: light;
-	--adw-standalone-color-oklab: min(l, 0.5) a b;
-
 	/**
 	 * @name Accent background
 	 * @description The accent color is used to indicate that a widget is important, interactive, or currently active
@@ -27,7 +24,7 @@
 	 * @name Destructive background
 	 * @description The destructive color indicates a dangerous action, such as deleting a file
 	 */
-	--adw-destructive-bg: #e01b24;
+	--adw-destructive-bg: #c01c28;
 	/**
 	 * @name Destructive foreground
 	 * @description Text and icon color to be used with destructive background
@@ -38,7 +35,7 @@
 	 * @name Success background
 	 * @description Background color for success messages
 	 */
-	--adw-success-bg: #2ec27e;
+	--adw-success-bg: #26a269;
 	/**
 	 * @name Success foreground
 	 * @description Text and icon color to be used with success background
@@ -49,7 +46,7 @@
 	 * @name Warning background
 	 * @description Background color for warnings
 	 */
-	--adw-warning-bg: #e5a50a;
+	--adw-warning-bg: #cd9309;
 	/**
 	 * @name Warning foreground
 	 * @description Text and icon color to be used with warning background
@@ -60,61 +57,56 @@
 	 * @name Error background
 	 * @description Background color for errors
 	 */
-	--adw-error-bg: #e01b24;
+	--adw-error-bg: #c01c28;
 	/**
 	 * @name Error foreground
 	 * @description Text and icon color to be used with error background
 	 */
 	--adw-error-fg: #ffffff;
 
-	--adw-window-bg: #fafafb;
-	--adw-window-fg: rgba(0, 0, 6, 0.8);
+	--adw-window-bg: #222226;
+	--adw-window-fg: #ffffff;
 
-	--adw-view-bg: #ffffff;
-	--adw-view-fg: rgba(0, 0, 6, 0.8);
+	--adw-view-bg: #1d1d20;
+	--adw-view-fg: #ffffff;
 
-	--adw-headerbar-bg: #ffffff;
-	--adw-headerbar-fg: rgba(0, 0, 6, 0.8);
-	--adw-headerbar-backdrop: #fafafb;
-	--adw-headerbar-border: rgba(0, 0, 6, 0.8);
-	--adw-headerbar-shade: rgba(0, 0, 6, 0.12);
-	--adw-headerbar-darker-shade: rgba(0, 0, 6, 0.12);
+	--adw-headerbar-bg: #2e2e32;
+	--adw-headerbar-fg: #ffffff;
+	--adw-headerbar-backdrop: #222226;
+	--adw-headerbar-border: #ffffff;
+	--adw-headerbar-shade: rgba(0, 0, 6, 0.36);
+	--adw-headerbar-darker-shade: rgba(0, 0, 12, 0.9);
 
-	--adw-sidebar-bg: #ebebed;
-	--adw-sidebar-fg: rgba(0, 0, 6, 0.8);
-	--adw-sidebar-backdrop: #f2f2f4;
-	--adw-sidebar-border: rgba(0, 0, 6, 0.07);
-	--adw-sidebar-shade: rgba(0, 0, 6, 0.07);
+	--adw-sidebar-bg: #2e2e32;
+	--adw-sidebar-fg: #ffffff;
+	--adw-sidebar-backdrop: #28282c;
+	--adw-sidebar-border: rgba(0, 0, 6, 0.36);
+	--adw-sidebar-shade: rgba(0, 0, 6, 0.25);
 
-	--adw-secondary-sidebar-bg: #f3f3f5;
-	--adw-secondary-sidebar-fg: rgba(0, 0, 6, 0.8);
-	--adw-secondary-sidebar-backdrop: #f6f6fa;
-	--adw-secondary-sidebar-border: rgba(0, 0, 6, 0.07);
-	--adw-secondary-sidebar-shade: rgba(0, 0, 6, 0.07);
+	--adw-secondary-sidebar-bg: #28282c;
+	--adw-secondary-sidebar-fg: #ffffff;
+	--adw-secondary-sidebar-backdrop: #252529;
+	--adw-secondary-sidebar-border: rgba(0, 0, 6, 0.36);
+	--adw-secondary-sidebar-shade: rgba(0, 0, 6, 0.25);
 
-	--adw-card-bg: #ffffff;
-	--adw-card-fg: rgba(0, 0, 6, 0.8);
-	--adw-card-shade: rgba(0, 0, 6, 0.07);
+	--adw-card-bg: rgba(255, 255, 255, 0.08);
+	--adw-card-fg: #ffffff;
+	--adw-card-shade: rgba(0, 0, 6, 0.36);
 
-	--adw-dialog-bg: #fafafb;
-	--adw-dialog-fg: rgba(0, 0, 6, 0.8);
+	--adw-dialog-bg: #36363a;
+	--adw-dialog-fg: #ffffff;
 
-	--adw-popover-bg: #ffffff;
-	--adw-popover-fg: rgba(0, 0, 6, 0.8);
-	--adw-popover-shade: rgba(0, 0, 6, 0.07);
+	--adw-popover-bg: #36363a;
+	--adw-popover-fg: #ffffff;
+	--adw-popover-shade: rgba(0, 0, 6, 0.25);
 
-	--adw-thumbnail-bg: #ffffff;
-	--adw-thumbnail-fg: rgba(0, 0, 6, 0.8);
+	--adw-thumbnail-bg: #39393d;
+	--adw-thumbnail-fg: #ffffff;
 
-	--adw-shade: rgba(0, 0, 6, 0.07);
+	--adw-shade: rgba(0, 0, 6, 0.25);
 	
 	/* Skin-specific */
 	--adw-user-offline: #808080;
 	--adw-user-online: #78aeed;
 	--adw-user-ingame: #8ff0a4;
-
-	/* Banners */
-	--adw-banner-bg-rgb: 125, 125, 131;
-	--adw-banner-bg-a: 0.3;
-	--adw-banner-fg-rgb: 255, 255, 255;
 }

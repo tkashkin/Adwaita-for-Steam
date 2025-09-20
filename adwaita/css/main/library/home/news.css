@@ -54,7 +54,7 @@ body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._17uEBe5Ri8TMsnfELvs8-N
 		color: var(--adw-card-fg) !important;
 		border-radius: var(--adw-card-radius) !important;
 		box-shadow: var(--adw-card-shadow) !important;
-		transition: var(--adw-button-transition), filter 200ms !important;
+		transition: var(--adw-button-transition), filter var(--adw-transition-duration) !important;
 		cursor: var(--adw-cursor-pointer) !important;
 		position: relative !important;
 		overflow: visible !important;

@@ -15,7 +15,7 @@ div._3Z7VQ1IMk4E3HsHvrkLNgo div._3s0lkohH8wU2do0K1il28Y
 	height: 38px !important;
 	border-radius: var(--adw-button-radius) !important;
 	background: var(--adw-headerbar-bg) !important;
-	transition: width 200ms var(--adw-base-transition-curve), background 200ms var(--adw-base-transition-curve) !important;
+	transition: width var(--adw-transition), background var(--adw-transition) !important;
 
 	/* Menu button */
 	div._2UyOBeiSdBayaFdRa39N2O

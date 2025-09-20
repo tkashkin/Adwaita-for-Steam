@@ -7,7 +7,7 @@ html.client_chat_frame
 		{
 			color: var(--adw-user-offline) !important;
 			border: 1px currentColor solid !important;
-			transition: color 200ms var(--adw-base-transition-curve) !important;
+			transition: color var(--adw-transition) !important;
 
 			&, img.avatar
 			{
