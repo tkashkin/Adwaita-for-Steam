@@ -18,12 +18,12 @@ match sys.platform:
             "flatpak": Path("~/.var/app/com.valvesoftware.Steam/.steam/steam"),
             "snap": Path("~/snap/steam/common/.steam/steam")
         }
-    
+
     case "win32" | "cygwin":
         ADW_INSTALL_TARGETS: dict[str, Path] = {
             "default": Path("C:\\Program Files (x86)\\Steam")
         }
-    
+
     case "darwin":
         ADW_INSTALL_TARGETS: dict[str, Path] = {
             "default": Path("~/Library/Application Support/Steam/Steam.AppBundle/Steam/Contents/MacOS")
@@ -32,7 +32,7 @@ match sys.platform:
 class AdwInstallAction(StrEnum):
     INSTALL = "install"
     UNINSTALL = "uninstall"
-    
+
     def __repr__(self) -> str:
         return self.value
 
@@ -51,7 +51,7 @@ class AdwInstallTarget:
     skin_config_css: Path = field(repr=False)
     skin_custom_css: Path = field(repr=False)
     skin_old_libraryroot_css: Path = field(repr=False)
-    
+
     def __init__(self, root: Path):
         self.root = root.expanduser().resolve()
         self.steamui_dir = self.root / "steamui"
@@ -117,14 +117,14 @@ class AdwGeneralOptions(AdwOptionGroup):
             action="version",
             version=f"Adwaita-for-Steam {ADW_VERSION}"
         )
-    
+
     def parse(self, args: Namespace) -> AdwGeneral:
         return AdwGeneral(
             action=AdwInstallAction.UNINSTALL if args.uninstall else AdwInstallAction.INSTALL,
             targets=self._resolve_targets(args.target),
             debug=args.debug
         )
-    
+
     def _resolve_targets(self, targets: list[str] | None) -> list[AdwInstallTarget]:
         resolved_targets: list[AdwInstallTarget] = []
 
@@ -142,14 +142,14 @@ class AdwGeneralOptions(AdwOptionGroup):
         match target:
             case "default":
                 return AdwInstallTarget(self._get_default_target_path())
-            
+
             case t if t in ADW_INSTALL_TARGETS:
                 return AdwInstallTarget(ADW_INSTALL_TARGETS[t])
-            
+
             case t:
                 path = Path(t)
                 return AdwInstallTarget(path) if path.is_dir() else None
-    
+
     def _get_default_target_path(self) -> Path:
         path = ADW_INSTALL_TARGETS["default"]
         match sys.platform:

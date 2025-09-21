@@ -19,7 +19,7 @@ class AdwOptionGroup(ABC):
     @abstractmethod
     def add_options(self, args: _ArgumentGroup):
         raise NotImplementedError
-    
+
     @abstractmethod
     def parse(self, args: Namespace) -> AdwParsedOptionGroup:
         raise NotImplementedError
@@ -37,7 +37,7 @@ class AdwArgsParser:
         self._groups = {}
         for key, group in groups.items():
             self.append(key, group)
-    
+
     def append(self, key: str, group: AdwOptionGroup):
         group.add_options(
             self._parser.add_argument_group(
@@ -46,7 +46,7 @@ class AdwArgsParser:
             )
         )
         self._groups[key] = group
-    
+
     def parse(self) -> tuple[list[AdwCSSConfig], dict[str, AdwParsedOptionGroup]]:
         args = self._parser.parse_args()
         css = []

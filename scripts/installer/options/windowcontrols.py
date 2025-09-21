@@ -47,19 +47,14 @@ class AdwWindowControlsTheme(StrEnum):
                         match linux_get_current_desktop():
                             case "kde":
                                 return cls.BREEZE
-
                             case _:
                                 return cls.ADWAITA
-
                     case "win32" | "cygwin":
                         return cls.WINDOWS
-
                     case "darwin":
                         return cls.MACOS
-
                     case _:
                         return cls.ADWAITA
-
             case t:
                 return cls(t)
 
@@ -120,16 +115,12 @@ class AdwWindowControlsLayout:
                     match linux_get_current_desktop():
                         case "gnome":
                             return linux_get_setting("org.gnome.desktop.wm.preferences", "button-layout") or ADW_WINDOWCONTROLS_PRESETS["gnome"]
-
                         case desktop:
                             return ADW_WINDOWCONTROLS_PRESETS.get(desktop) or ADW_WINDOWCONTROLS_PRESETS["gnome"]
-
                 case "win32" | "cygwin":
                     return ADW_WINDOWCONTROLS_PRESETS["windows"]
-
                 case "darwin":
                     return ADW_WINDOWCONTROLS_PRESETS["macos"]
-
         elif preset in ADW_WINDOWCONTROLS_PRESETS:
             return ADW_WINDOWCONTROLS_PRESETS[preset]
 

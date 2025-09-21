@@ -24,17 +24,27 @@
 	--adw-disabled-opacity: 50%;
 	--adw-strong-disabled-opacity: 30%;
 
+	--adw-trough-opacity: 15%;
+	--adw-trough-hover-opacity: 20%;
+	--adw-trough-active-opacity: 25%;
+	--adw-slider-border-opacity: 10%;
+
 	@media (prefers-contrast: more)
 	{
 		--adw-border-opacity: 50%;
 		--adw-thin-border-opacity: 25%;
 		--adw-focus-border-opacity: 80%;
 
+		--adw-window-outline-opacity: 30%;
+
 		--adw-dim-label-opacity: 90%;
 		--adw-dimmer-opacity: 80%;
 		--adw-disabled-opacity: 40%;
 		--adw-strong-disabled-opacity: 30%;
 
-		--adw-window-outline-opacity: 30%;
+		--adw-trough-opacity: 30%;
+		--adw-trough-hover-opacity: 40%;
+		--adw-trough-active-opacity: 50%;
+		--adw-slider-border-opacity: 35%;
 	}
 }

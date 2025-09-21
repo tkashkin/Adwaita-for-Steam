@@ -28,7 +28,7 @@ class AdwCSSBlock:
     rules: list[str]
     nested_blocks: list[Self] | None = None
     comment: str | None = None
-    
+
     def to_css(self, indent: int = 0) -> str:
         if not self.selectors:
             raise ValueError("[AdwCSSBlock] CSS blocks must have at least one selector")
@@ -59,10 +59,10 @@ class AdwCSSBuilder:
 
     def __init__(self, configs: list[AdwCSSConfig]):
         self._configs = configs
-    
+
     def append(self, config: AdwCSSConfig):
         self._configs.append(config)
-    
+
     def build(self) -> str:
         imports = ""
         blocks = ""
@@ -75,7 +75,7 @@ class AdwCSSBuilder:
 
         header = f"{ADW_PATCH_HEADER}\n{ADW_PATCH_VERSION_HEADER}\n"
         return header + imports + "\n" + blocks
-    
+
     def patch(self, target: Path, original: Path):
         content = self.build()
         original_size = original.stat().st_size

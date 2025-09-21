@@ -125,4 +125,105 @@ html.client_chat_frame
 		font-size: 13px !important;
 		font-weight: 400 !important;
 	}
+
+	/* Switch */
+	div._9Ql-oVe_j8E-vsDdyVdWo
+	{
+		box-sizing: border-box !important;
+		width: 46px !important;
+		height: 26px !important;
+		border-radius: var(--adw-button-pill-radius) !important;
+		padding: 3px !important;
+		margin: 0 !important;
+		transition: var(--adw-button-transition) !important;
+		background: color-mix(in srgb, currentColor var(--adw-trough-opacity), transparent);
+		box-shadow: none !important;
+		cursor: var(--adw-cursor-pointer) !important;
+
+		/* Track background */
+		div._2bl0iQ9xigbq4Zd1NI6NZl
+		{
+			display: none !important;
+
+			&::before
+			{
+				content: none !important;
+			}
+		}
+
+		/* Slider */
+		div._1PQppcgkuXQAiFPar9AGi-
+		{
+			box-sizing: border-box !important;
+			width: 20px !important;
+			height: 20px !important;
+			border-radius: 50% !important;
+			left: auto !important;
+			top: auto !important;
+			bottom: auto !important;
+			transform: none !important;
+			transition: var(--adw-button-transition), transform var(--adw-transition) !important;
+			background: color-mix(in srgb, white 80%, var(--adw-view-bg)) !important;
+			box-shadow: 0 2px 4px rgba(0, 0, 6, 0.2) !important;
+
+			/* Disabled */
+			div.aIeh3X5T2M074RLW1qn6_ &
+			{
+				box-shadow: 0 2px 4px transparent !important;
+			}
+		}
+
+		&:hover
+		{
+			background: color-mix(in srgb, currentColor var(--adw-trough-hover-opacity), transparent);
+
+			div._1PQppcgkuXQAiFPar9AGi-
+			{
+				background: white !important;
+			}
+		}
+
+		&:active
+		{
+			background: color-mix(in srgb, currentColor var(--adw-trough-active-opacity), transparent);
+
+			div._1PQppcgkuXQAiFPar9AGi-
+			{
+				background: white !important;
+			}
+		}
+
+		/* Checked */
+		&.yLrDAetGoWx0GYqA6ShfS
+		{
+			color: var(--adw-accent-fg) !important;
+			background: var(--adw-accent-bg) !important;
+
+			&:hover
+			{
+				background-image: linear-gradient(0deg, color-mix(in srgb, currentColor 10%, transparent), color-mix(in srgb, currentColor 10%, transparent)) !important;
+			}
+
+			&:active
+			{
+				background-image: linear-gradient(0deg, rgba(0, 0, 6, 0.2), rgba(0, 0, 6, 0.2)) !important;
+			}
+
+			div._1PQppcgkuXQAiFPar9AGi-
+			{
+				transform: translateX(20px) !important;
+			}
+		}
+
+		/* Expand interactive area to fill the row */
+		&::before
+		{
+			content: "";
+			position: absolute;
+			top: -50px;
+			left: -600px;
+			right: -50px;
+			bottom: -50px;
+		}
+	}
 }

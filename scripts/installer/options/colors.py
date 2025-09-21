@@ -30,7 +30,7 @@ class AdwColorScheme(StrEnum):
     AUTO = "auto"
     DARK = "dark"
     LIGHT = "light"
-    
+
     def __repr__(self) -> str:
         return self.value
 
@@ -38,32 +38,28 @@ class AdwColorScheme(StrEnum):
 class AdwAccentColor:
     color: str
     css_color: str
-    
+
     def __init__(self, color: str):
         self.color = color
         self.css_color = AdwAccentColor._color_to_css(self.color)
-    
+
     def to_css(self) -> str:
         return f"--adw-system-accent: {self.css_color};"
-    
+
     @staticmethod
     def _color_to_css(color: str) -> str:
         match color.lower():
             case c if c in ADW_NAMED_ACCENT_COLORS:
                 return f"var(--adw-accent-{c})"
-            
             case "auto":
                 return AdwAccentColor._color_to_css(AdwAccentColor._get_system_accent_color())
-            
             case c if c.startswith("#") and len(c) in [4, 7]:
                 return c
-            
             case c if c.startswith("rgb(") and c.endswith(")"):
                 return c
-            
             case c:
                 raise ValueError(f"[AdwAccentColor._color_to_css] Invalid color: {c}")
-    
+
     @staticmethod
     def _get_system_accent_color() -> str:
         try:
@@ -76,7 +72,7 @@ class AdwAccentColor:
                     if fdo_accent_color and len(fdo_accent_color) == 3:
                         return "#" + "".join(format(round(float(c) * 255), "02x") for c in fdo_accent_color)
                     return ADW_NAMED_ACCENT_COLORS[0]
-                
+
                 case "win32" | "cygwin":
                     import winreg
                     accent_palette = win32_get_reg_value(winreg.HKEY_CURRENT_USER, "Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Accent", "AccentPalette")
@@ -86,14 +82,13 @@ class AdwAccentColor:
                     if len(accent_palette) < 15:
                         return ADW_WINDOWS_DEFAULT_ACCENT_COLOR
                     return "#" + accent_palette[12] + accent_palette[13] + accent_palette[14]
-                
+
                 case "darwin":
                     accent_color = darwin_get_setting("AppleAccentColor")
                     return ADW_MACOS_ACCENT_COLORS[int(accent_color) if accent_color else None]
-                
+
                 case p:
                     raise ValueError(f"[AdwAccentColor._get_system_accent_color] Unsupported platform: {p}")
-                
         except:
             return ADW_NAMED_ACCENT_COLORS[0]
 
@@ -115,13 +110,13 @@ class AdwColors(AdwParsedOptionGroup):
                     comment=f"Color theme: {self.color_theme}"
                 )
             )
-        
+
         if self.accent_color:
             vars.append(self.accent_color.to_css())
-        
+
         if self.color_scheme != AdwColorScheme.AUTO:
             vars.append(f"--adw-color-scheme: {self.color_scheme};")
-        
+
         if vars:
             blocks.append(
                 AdwCSSBlock(
@@ -140,10 +135,10 @@ class AdwColorOptions(AdwOptionGroup):
     title = "colors"
 
     _color_themes: list[str]
-    
+
     def __init__(self):
         self._color_themes = AdwColorOptions._find_color_themes()
-    
+
     def add_options(self, args: _ArgumentGroup):
         args.add_argument(
             "-c",
@@ -169,14 +164,14 @@ class AdwColorOptions(AdwOptionGroup):
             choices=AdwColorScheme,
             type=AdwColorScheme
         )
-    
+
     def parse(self, args: Namespace) -> AdwColors:
         return AdwColors(
             color_theme=args.color_theme,
             accent_color=args.accent_color,
             color_scheme=args.color_scheme
         )
-    
+
     @staticmethod
     def _find_color_themes() -> list[str]:
         return sorted([t.parts[2] for t in ADW_COLORTHEMES_DIR.glob("*/*.css")])

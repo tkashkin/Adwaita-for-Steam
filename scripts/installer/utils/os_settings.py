@@ -18,7 +18,7 @@ match sys.platform:
                 return str(settings.ReadOne(path, key))
             except:
                 return None
-        
+
         def linux_get_setting_gsettings(path: str, key: str) -> str | None:
             try:
                 return subprocess.run(
@@ -32,7 +32,7 @@ match sys.platform:
         
         def linux_get_setting(path: str, key: str) -> str | None:
             return linux_get_setting_portal(path, key) or linux_get_setting_gsettings(path, key)
-    
+
     case "win32" | "cygwin":
         import winreg
 
@@ -42,7 +42,7 @@ match sys.platform:
                 return winreg.QueryValueEx(winreg.OpenKey(key, subkey), name)[0]
             except:
                 return None
-    
+
     case "darwin":
         def darwin_get_setting(key: str, domain: str = "-g") -> str | None:
             try:

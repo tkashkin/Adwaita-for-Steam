@@ -62,6 +62,12 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 		display: flex !important;
 		align-items: stretch !important;
 
+		&,
+		&:has(:focus-visible)
+		{
+			outline: none !important;
+		}
+
 		div._1aw7cA3mAZfWt8idAlVJWi
 		{
 			position: initial !important;
@@ -104,6 +110,9 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 			display: flex !important;
 			flex-direction: column !important;
 			justify-content: center !important;
+			outline: 0 solid transparent !important;
+			outline-offset: 5px !important;
+			transition: var(--adw-button-transition), var(--adw-focus-transition) !important;
 
 			&:hover
 			{
@@ -113,6 +122,14 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 			&:active
 			{
 				--adw-hover-overlay: var(--adw-view-active-opacity);
+			}
+
+			&:focus-visible
+			{
+				outline-color: color-mix(in srgb, var(--adw-accent) var(--adw-focus-border-opacity), transparent) !important;
+				outline-width: 2px !important;
+				outline-offset: -1px !important;
+				z-index: 1 !important;
 			}
 
 			&::before
@@ -223,6 +240,9 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 			border-radius: var(--adw-button-radius) !important;
 			transition: var(--adw-button-transition) !important;
 			cursor: var(--adw-cursor-pointer) !important;
+			outline: 0 solid transparent !important;
+			outline-offset: 5px !important;
+			transition: var(--adw-button-transition), var(--adw-focus-transition) !important;
 
 			&:hover
 			{
@@ -234,6 +254,14 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 			{
 				background: color-mix(in srgb, currentColor var(--adw-active-opacity), transparent) !important;
 				box-shadow: var(--adw-button-hc-outline) !important;
+			}
+
+			&:focus-visible
+			{
+				outline-color: color-mix(in srgb, var(--adw-accent) var(--adw-focus-border-opacity), transparent) !important;
+				outline-width: 2px !important;
+				outline-offset: -1px !important;
+				z-index: 1 !important;
 			}
 
 			&::before
@@ -267,6 +295,9 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 			position: relative !important;
 			overflow: hidden !important;
 			flex: none !important;
+			outline: 0 solid transparent !important;
+			outline-offset: 5px !important;
+			transition: var(--adw-button-transition), var(--adw-focus-transition) !important;
 
 			&:nth-child(2)
 			{
@@ -289,6 +320,14 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 			&:active
 			{
 				--adw-hover-overlay: var(--adw-view-active-opacity);
+			}
+
+			&:focus-visible
+			{
+				outline-color: color-mix(in srgb, var(--adw-accent) var(--adw-focus-border-opacity), transparent) !important;
+				outline-width: 2px !important;
+				outline-offset: -1px !important;
+				z-index: 1 !important;
 			}
 
 			a._2oSTSohQ1CZIgVn7E6_0Ft
@@ -326,11 +365,22 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 		box-shadow: var(--adw-card-shadow), var(--adw-card-outline) !important;
 		transition: height var(--adw-transition) !important;
 		height: var(--adw-row-height) !important;
+		outline: 0 solid transparent !important;
+		outline-offset: 5px !important;
+		transition: var(--adw-button-transition), var(--adw-focus-transition) !important;
 
 		/* Expanded */
 		&._21Uc0N6TIRIw4LIZzQnsdE
 		{
 			height: calc(var(--adw-row-height) * 3) !important;
+		}
+
+		&:has(:focus-visible)
+		{
+			outline-color: color-mix(in srgb, var(--adw-accent) var(--adw-focus-border-opacity), transparent) !important;
+			outline-width: 2px !important;
+			outline-offset: -1px !important;
+			z-index: 1 !important;
 		}
 
 		&:first-of-type,
@@ -554,6 +604,9 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 			overflow: hidden !important;
 			width: auto !important;
 			cursor: var(--adw-cursor-pointer) !important;
+			outline: 0 solid transparent !important;
+			outline-offset: 5px !important;
+			transition: var(--adw-button-transition), var(--adw-focus-transition) !important;
 
 			&:hover
 			{
@@ -563,6 +616,14 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 			&:active
 			{
 				--adw-hover-overlay: var(--adw-view-active-opacity);
+			}
+
+			&:focus-visible
+			{
+				outline-color: color-mix(in srgb, var(--adw-accent) var(--adw-focus-border-opacity), transparent) !important;
+				outline-width: 2px !important;
+				outline-offset: -1px !important;
+				z-index: 1 !important;
 			}
 		}
 	}

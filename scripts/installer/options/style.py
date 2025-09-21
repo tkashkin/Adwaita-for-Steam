@@ -61,11 +61,11 @@ class AdwStyleOptions(AdwOptionGroup):
 
     _extras: list[str]
     _fonts: list[str]
-    
+
     def __init__(self):
         self._extras = AdwStyleOptions._find_extras()
         self._fonts = AdwStyleOptions._find_fonts()
-    
+
     def add_options(self, args: _ArgumentGroup):
         args.add_argument(
             "-e",
@@ -88,18 +88,18 @@ class AdwStyleOptions(AdwOptionGroup):
             help="enable custom CSS",
             action="store_true"
         )
-    
+
     def parse(self, args: Namespace) -> AdwStyle:
         return AdwStyle(
             extras=args.extras,
             font=args.font,
             custom_css=args.custom_css
         )
-    
+
     @staticmethod
     def _find_extras() -> list[str]:
         return sorted(["/".join(e.parts[2:]).removesuffix(".css") for e in ADW_EXTRAS_DIR.glob("*/*.css")])
-    
+
     @staticmethod
     def _find_fonts() -> list[str]:
         return sorted([t.parts[2] for t in ADW_FONTS_DIR.glob("*/*.css")])

@@ -76,7 +76,6 @@ class AdwInstaller:
                     success(f"Uninstalled from {changes} {"directory" if changes == 1 else "directories"} successfully")
         else:
             info(f"No changes made")
-
     
     def _install(self, target: AdwInstallTarget) -> bool:
         try:
@@ -100,7 +99,7 @@ class AdwInstaller:
         except Exception as err:
             error(f"Failed to install to \"{target.root}\": {err}")
             return False
-
+    
     def _uninstall(self, target: AdwInstallTarget) -> bool:
         try:
             step(f"Uninstalling from \"{target.root}\"")
