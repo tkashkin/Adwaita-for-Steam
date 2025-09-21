@@ -114,7 +114,8 @@ class AdwWindowControlsLayout:
                 case "linux":
                     match linux_get_current_desktop():
                         case "gnome":
-                            return linux_get_setting("org.gnome.desktop.wm.preferences", "button-layout") or ADW_WINDOWCONTROLS_PRESETS["gnome"]
+                            system_layout = linux_get_setting("org.gnome.desktop.wm.preferences", "button-layout")
+                            return str(system_layout) if system_layout else ADW_WINDOWCONTROLS_PRESETS["gnome"]
                         case desktop:
                             return ADW_WINDOWCONTROLS_PRESETS.get(desktop) or ADW_WINDOWCONTROLS_PRESETS["gnome"]
                 case "win32" | "cygwin":

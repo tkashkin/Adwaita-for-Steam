@@ -67,7 +67,7 @@ class AdwAccentColor:
                 case "linux":
                     if linux_get_current_desktop() == "gnome":
                         gnome_accent_color = linux_get_setting("org.gnome.desktop.interface", "accent-color")
-                        if gnome_accent_color: return gnome_accent_color
+                        if gnome_accent_color: return str(gnome_accent_color)
                     fdo_accent_color = linux_get_setting("org.freedesktop.appearance", "accent-color")
                     if fdo_accent_color and len(fdo_accent_color) == 3:
                         return "#" + "".join(format(round(float(c) * 255), "02x") for c in fdo_accent_color)

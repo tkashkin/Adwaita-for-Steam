@@ -3,19 +3,20 @@
 import subprocess
 import sys
 import os
+from typing import Any
 
 match sys.platform:
     case "linux":
         def linux_get_current_desktop() -> str:
             return os.getenv("XDG_CURRENT_DESKTOP", "unknown").lower()
 
-        def linux_get_setting_portal(path: str, key: str) -> str | None:
+        def linux_get_setting_portal(path: str, key: str) -> Any | None:
             try:
                 import dbus
                 bus = dbus.SessionBus()
                 desktop = bus.get_object("org.freedesktop.portal.Desktop", "/org/freedesktop/portal/desktop")
                 settings = dbus.Interface(desktop, "org.freedesktop.portal.Settings")
-                return str(settings.ReadOne(path, key))
+                return settings.ReadOne(path, key)
             except:
                 return None
 
@@ -30,7 +31,7 @@ match sys.platform:
             except:
                 return None
         
-        def linux_get_setting(path: str, key: str) -> str | None:
+        def linux_get_setting(path: str, key: str) -> Any | None:
             return linux_get_setting_portal(path, key) or linux_get_setting_gsettings(path, key)
 
     case "win32" | "cygwin":
