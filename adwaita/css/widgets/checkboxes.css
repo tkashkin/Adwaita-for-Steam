@@ -18,7 +18,8 @@ body.DesktopUI,
 html.client_chat_frame
 {
 	div.DialogCheckbox_Container,
-	div._1Qku5jMXBi5-wawzqY1kzG
+	div._1Qku5jMXBi5-wawzqY1kzG,
+	div._2ULTJEgaq0SZefVsQLCQ6B
 	{
 		-webkit-app-region: no-drag !important;
 		cursor: var(--adw-cursor-pointer) !important;
@@ -38,6 +39,7 @@ html.client_chat_frame
 			box-sizing: border-box !important;
 			padding: 2px !important;
 			color: inherit !important;
+			border: none !important;
 			border-radius: var(--adw-checkbox-radius) !important;
 			-webkit-app-region: no-drag !important;
 			cursor: var(--adw-cursor-pointer) !important;
@@ -221,7 +223,7 @@ html.client_chat_frame
 			content: "";
 			position: absolute;
 			top: -50px;
-			left: -600px;
+			left: calc(var(--adw-pagedsettings-width) * -1);
 			right: -50px;
 			bottom: -50px;
 		}

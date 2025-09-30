@@ -834,7 +834,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 			top: 0 !important;
 			height: 46px !important;
 			box-sizing: border-box !important;
-			width: calc(600px - 2 * (var(--adw-windowcontrols-margin-right) + 40px)) !important;
+			width: calc(var(--adw-pagedsettings-width) - 2 * (var(--adw-windowcontrols-margin-right) + 40px)) !important;
 			margin: 0 !important;
 			padding: 0 !important;
 			justify-content: center !important;
@@ -990,7 +990,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 			div._3rGEUoEnGkGWALEBzbvfef
 			{
 				padding: 0 !important;
-				width: 600px !important;
+				width: var(--adw-pagedsettings-width) !important;
 				height: 90px !important;
 
 				/* Library path */
@@ -1406,7 +1406,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 		top: 0 !important;
 		height: 46px !important;
 		box-sizing: border-box !important;
-		width: calc(600px - 2 * var(--adw-windowcontrols-margin-right)) !important;
+		width: calc(var(--adw-pagedsettings-width) - 2 * var(--adw-windowcontrols-margin-right)) !important;
 		margin-left: var(--adw-windowcontrols-margin-right) !important;
 		z-index: 2 !important;
 

@@ -1,3 +1,8 @@
+:root
+{
+	--adw-pagedsettings-width: 600px;
+}
+
 body.DesktopUI div._3I6h_oySuLmmLY9TjIKT9s,
 body.DesktopUI div._2sssIwe0duyIrFvat2oXzH,
 html.client_chat_frame div._2VY6HOZXxO2AsBaLssl0Uy
@@ -229,7 +234,7 @@ html.client_chat_frame div._2VY6HOZXxO2AsBaLssl0Uy
 
 		& > *
 		{
-			width: 600px;
+			width: var(--adw-pagedsettings-width);
 		}
 	}
 

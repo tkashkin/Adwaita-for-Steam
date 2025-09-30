@@ -20,7 +20,6 @@ html.client_chat_frame
 		background: color-mix(in srgb, currentColor var(--adw-scrollbar-opacity), transparent) !important;
 		border: none !important;
 		border-radius: 0 !important;
-		z-index: 20 !important;
 	}
 
 	:hover::-webkit-scrollbar-thumb

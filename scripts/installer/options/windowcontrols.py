@@ -78,9 +78,9 @@ class AdwWindowControlsLayout:
             f"--adw-windowcontrols-left-buttons: { len(buttons_left) };",
             f"--adw-windowcontrols-right-has-buttons: { 0 if len(buttons_right) == 0 else 1 };",
             f"--adw-windowcontrols-right-buttons: { len(buttons_right) };",
-            f"--adw-windowcontrols-close-margin: (var(--adw-windowcontrols-buttons-margin-outer)) + (var(--adw-windowcontrols-button-width)) + (var(--adw-windowcontrols-buttons-margin-inner));",
-            f"--adw-windowcontrols-close-margin-left: calc({ 1 if "close" in buttons_left else 0 } * (var(--adw-windowcontrols-close-margin)));",
-            f"--adw-windowcontrols-close-margin-right: calc({ 1 if "close" in buttons_right else 0 } * (var(--adw-windowcontrols-close-margin)));"
+            f"--adw-windowcontrols-close-margin: calc(var(--adw-windowcontrols-buttons-margin-outer) + var(--adw-windowcontrols-button-width) + var(--adw-windowcontrols-buttons-margin-inner));",
+            f"--adw-windowcontrols-close-margin-left: calc({ 1 if "close" in buttons_left else 0 } * var(--adw-windowcontrols-close-margin));",
+            f"--adw-windowcontrols-close-margin-right: calc({ 1 if "close" in buttons_right else 0 } * var(--adw-windowcontrols-close-margin));"
         ]
 
         (buttons_left, buttons_right) = (list(enumerate(buttons_left)), list(enumerate(reversed(buttons_right))))
@@ -136,7 +136,7 @@ class AdwWindowControlsLayout:
             selectors=ADW_WINDOWCONTROLS_SELECTORS[b[1]],
             rules=[
                 "visibility: visible !important;",
-                f"{side}: calc((var(--adw-windowcontrols-buttons-margin-outer)) + ({b[0]} * (var(--adw-windowcontrols-button-width))) + ({b[0]} * (var(--adw-windowcontrols-button-gap)))) !important;"
+                f"{side}: calc(var(--adw-windowcontrols-buttons-margin-outer) + ({b[0]} * var(--adw-windowcontrols-button-width)) + ({b[0]} * var(--adw-windowcontrols-button-gap))) !important;"
             ],
             nested_blocks=[
                 AdwCSSBlock(

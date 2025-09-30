@@ -278,10 +278,20 @@ body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0
 		}
 
 		/* Games grid shelf */
-		div._3DJLGrqzoQ5vMDI_4VG502
+		div.DGRkX_HYUzbFaqRysWQVi
 		{
 			padding: 8px 16px !important;
-			gap: 16px !important;
+			margin: 0 !important;
+			overflow: hidden !important;
+
+			div._3DJLGrqzoQ5vMDI_4VG502
+			{
+				box-sizing: border-box !important;
+				width: auto !important;
+				padding: 0 !important;
+				margin: 0 !important;
+				gap: 16px !important;
+			}
 		}
 	}
 

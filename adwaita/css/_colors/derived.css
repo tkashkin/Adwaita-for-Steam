@@ -50,7 +50,7 @@
 
 	@media (prefers-contrast: more)
 	{
-		--adw-sidebar-border: color-mix(in srgb, currentColor var(--adw-border-opacity), transparent);
+		--adw-sidebar-border: color-mix(in srgb, var(--adw-sidebar-fg) var(--adw-border-opacity), transparent);
 		--adw-undershoot-border: color-mix(in srgb, currentColor var(--adw-border-opacity), transparent);
 	}
 }

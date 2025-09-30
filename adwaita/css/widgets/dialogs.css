@@ -219,6 +219,11 @@ html.client_chat_frame
 		opacity: 0 !important;
 	}
 
+	&.ModalDialogBody
+	{
+		background: var(--adw-dialog-bg) !important;
+	}
+
 	/* Web dialogs */
 	&.ModalDialogBody .PopupFullWindow:not(:has(._2sssIwe0duyIrFvat2oXzH)):not(:has(.FFIKUQ7BGKw6vO1voazlr)) .title-area
 	{
@@ -231,5 +236,16 @@ html.client_chat_frame
 		background: var(--adw-headerbar-bg) !important;
 		padding: 1px !important;
 		padding-top: 36px !important;
+	}
+
+	/* Shutdown dialog */
+	div._3StXNL1HvLIJMUxfaFLdX-
+	{
+		&,
+		div._2Se5JD_UkWeIyaZiXXmxDD,
+		div.DialogContent
+		{
+			background: var(--adw-dialog-bg) !important;
+		}
 	}
 }
