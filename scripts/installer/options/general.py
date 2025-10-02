@@ -79,6 +79,7 @@ class AdwGeneral(AdwParsedOptionGroup):
     action: AdwInstallAction
     targets: list[AdwInstallTarget]
     debug: bool
+    list_options: bool
 
     def to_css(self) -> None:
         return None
@@ -89,7 +90,7 @@ class AdwGeneralOptions(AdwOptionGroup):
             "-t",
             "--target",
             help="install to one or more Steam installation paths",
-            metavar="{" + ",".join(ADW_INSTALL_TARGETS.keys()) + ",CUSTOM_PATH}",
+            metavar="{" + ",".join(ADW_INSTALL_TARGETS.keys()) + ",PATH}",
             nargs="+",
             action="extend"
         )
@@ -103,6 +104,12 @@ class AdwGeneralOptions(AdwOptionGroup):
             "-d",
             "--debug",
             help="show more debug output",
+            action="store_true"
+        )
+        args.add_argument(
+            "-l",
+            "--list-options",
+            help="list available color themes and extras and exit",
             action="store_true"
         )
         args.add_argument(
@@ -122,8 +129,12 @@ class AdwGeneralOptions(AdwOptionGroup):
         return AdwGeneral(
             action=AdwInstallAction.UNINSTALL if args.uninstall else AdwInstallAction.INSTALL,
             targets=self._resolve_targets(args.target),
-            debug=args.debug
+            debug=args.debug,
+            list_options=args.list_options
         )
+    
+    def list_options(self):
+        pass
 
     def _resolve_targets(self, targets: list[str] | None) -> list[AdwInstallTarget]:
         resolved_targets: list[AdwInstallTarget] = []

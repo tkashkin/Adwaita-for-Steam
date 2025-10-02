@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 
 from abc import ABC, abstractmethod
+import argparse
 from argparse import ArgumentParser, _ArgumentGroup, Namespace, RawTextHelpFormatter
 from dataclasses import dataclass
+
+from ..consts import ADW_VERSION
 
 from .css import AdwCSSConfig
 
@@ -24,15 +27,20 @@ class AdwOptionGroup(ABC):
     def parse(self, args: Namespace) -> AdwParsedOptionGroup:
         raise NotImplementedError
 
+    @abstractmethod
+    def list_options(self):
+        raise NotImplementedError
+
 class AdwArgsParser:
     _parser: ArgumentParser
     _groups: dict[str, AdwOptionGroup]
 
     def __init__(self, **groups: AdwOptionGroup):
         self._parser = ArgumentParser(
-            description="Adwaita-for-Steam installer",
+            description=f"Adwaita-for-Steam {ADW_VERSION} installer",
             formatter_class=RawTextHelpFormatter,
-            add_help=False
+            add_help=False,
+            usage=argparse.SUPPRESS
         )
         self._groups = {}
         for key, group in groups.items():
@@ -57,3 +65,7 @@ class AdwArgsParser:
             if cfg: css.append(cfg)
             options[key] = parsed
         return (css, options)
+    
+    def list_options(self):
+        for group in self._groups.values():
+            group.list_options()

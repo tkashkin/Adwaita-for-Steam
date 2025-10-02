@@ -144,6 +144,7 @@ class AdwColorOptions(AdwOptionGroup):
             "-c",
             "--color-theme",
             help="use one of the available color themes",
+            metavar="THEME",
             default="adwaita",
             choices=self._color_themes,
             type=str.lower
@@ -151,15 +152,15 @@ class AdwColorOptions(AdwOptionGroup):
         args.add_argument(
             "-a",
             "--accent-color",
-            help="set accent color\n'auto' will be replaced by your system accent color if possible\nCUSTOM_COLOR can be formatted as '#RGB', '#RRGGBB', or 'rgb(r, g, b)'",
-            metavar="{auto," + ",".join(ADW_NAMED_ACCENT_COLORS) + ",CUSTOM_COLOR}",
+            help="set accent color\n'auto' will use your system accent color if possible\ncustom colors must be formatted as '#RGB', '#RRGGBB', or 'rgb(r, g, b)'",
+            metavar="{auto," + ",".join(ADW_NAMED_ACCENT_COLORS) + ",ACCENT_COLOR}",
             default="auto",
             type=AdwAccentColor
         )
         args.add_argument(
             "-s",
             "--color-scheme",
-            help="set color scheme\n'auto' will use your system settings for dark and light appearance if supported",
+            help="set color scheme\n'auto' will use your system settings for dark or light appearance if supported",
             default="auto",
             choices=AdwColorScheme,
             type=AdwColorScheme
@@ -171,6 +172,10 @@ class AdwColorOptions(AdwOptionGroup):
             accent_color=args.accent_color,
             color_scheme=args.color_scheme
         )
+
+    def list_options(self):
+        print("\nAvailable color themes:\n\n* " + "\n* ".join(self._color_themes))
+        print("\nApply a color theme using ./install.py --color-theme THEME")
 
     @staticmethod
     def _find_color_themes() -> list[str]:

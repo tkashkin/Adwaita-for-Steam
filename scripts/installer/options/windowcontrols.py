@@ -167,18 +167,16 @@ class AdwWindowControlsOptions(AdwOptionGroup):
 
     def add_options(self, args: _ArgumentGroup):
         args.add_argument(
-            "-wt",
             "--windowcontrols-theme",
-            help="set window controls theme\n'auto' will be replaced by your system theme if possible",
+            help="set window controls theme",
             default="auto",
             choices=AdwWindowControlsTheme,
             type=AdwWindowControlsTheme.resolve
         )
         args.add_argument(
-            "-wl",
             "--windowcontrols-layout",
-            help="set window controls layout\n'auto' will be replaced by your system layout if possible\nCUSTOM_LAYOUT can be an arbitrary GNOME button layout string",
-            metavar="{auto," + ",".join(ADW_WINDOWCONTROLS_PRESETS.keys()) + ",CUSTOM_LAYOUT}",
+            help="set window controls layout\ncustom layout must be a GNOME-compatible button layout string like 'close,minimize:maximize'",
+            metavar="{auto," + ",".join(ADW_WINDOWCONTROLS_PRESETS.keys()) + ",LAYOUT}",
             default="auto",
             type=AdwWindowControlsLayout
         )
@@ -188,3 +186,9 @@ class AdwWindowControlsOptions(AdwOptionGroup):
             theme=args.windowcontrols_theme,
             layout=args.windowcontrols_layout
         )
+    
+    def list_options(self):
+        print("\nAvailable window controls themes:\n\n* " + "\n* ".join(AdwWindowControlsTheme))
+        print("\nApply a window controls theme using ./install.py --windowcontrols-theme THEME")
+        print("\nAvailable window controls layout presets:\n\n* " + "\n* ".join(ADW_WINDOWCONTROLS_PRESETS.keys()))
+        print("\nApply a window controls layout using ./install.py --windowcontrols-layout LAYOUT")

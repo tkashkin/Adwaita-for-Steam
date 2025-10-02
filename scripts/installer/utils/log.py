@@ -36,7 +36,7 @@ class AdwLogFormatter(logging.Formatter):
 logger = logging.getLogger("installer")
 logger.setLevel(logging.INFO)
 
-if sys.stderr.isatty():
+if sys.stdout.isatty():
     handler = logging.StreamHandler()
     handler.setLevel(logging.DEBUG)
     handler.setFormatter(AdwLogFormatter())

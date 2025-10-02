@@ -48,9 +48,15 @@ class AdwInstaller:
             windowcontrols=AdwWindowControlsOptions()
         )
         (self._css, self._options) = args.parse()
-        if self._options["general"].debug: # type: ignore
+        general: AdwGeneral = self._options["general"] # type: ignore
+
+        if general.debug:
             logger.setLevel(logging.DEBUG)
-        debug(f"Options:\n{pformat(self._options)}")
+            debug(f"Options:\n{pformat(self._options)}")
+
+        if general.list_options:
+            args.list_options()
+            exit(0)
     
     def _process(self):
         general: AdwGeneral = self._options["general"] # type: ignore

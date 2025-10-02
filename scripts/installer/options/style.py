@@ -69,8 +69,11 @@ class AdwStyleOptions(AdwOptionGroup):
     def add_options(self, args: _ArgumentGroup):
         args.add_argument(
             "-e",
+            "--extra",
             "--extras",
+            dest="extras",
             help="enable one or multiple theme extras",
+            metavar="EXTRA",
             nargs="+",
             action="extend",
             default=[],
@@ -95,6 +98,10 @@ class AdwStyleOptions(AdwOptionGroup):
             font=args.font,
             custom_css=args.custom_css
         )
+
+    def list_options(self):
+        print("Available extras:\n\n* " + "\n* ".join(self._extras))
+        print("\nApply extras using ./install.py --extras EXTRA1 EXTRA2...")
 
     @staticmethod
     def _find_extras() -> list[str]:
