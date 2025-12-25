@@ -11,7 +11,7 @@ html.client_chat_frame
 {
 	.ModalOverlayBackground
 	{
-		background: rgba(var(--adw-shade-rgb), calc(var(--adw-shade-a) * 2)) !important;
+		background: var(--adw-shade) !important;
 	}
 
 	.FullModalOverlay .ModalPosition_Content

@@ -3,6 +3,7 @@ body.DesktopUI
 	/* Main window headerbar */
 	div._3Z7VQ1IMk4E3HsHvrkLNgo
 	{
+		-webkit-app-region: drag !important;
 		height: 46px !important;
 		min-height: 46px !important;
 		background: var(--adw-headerbar-bg) !important;
@@ -11,6 +12,7 @@ body.DesktopUI
 
 		div._39oUCO1OuizVPwcnnv88no
 		{
+			-webkit-app-region: unset !important;
 			height: 46px !important;
 			min-height: 46px !important;
 		}
@@ -32,7 +34,7 @@ body.DesktopUI
 	/* .steamdesktop_DragArea_ */
 	div._30vB9DdsPK7VrZAbb5Q1Av
 	{
-		-webkit-app-region: initial !important;
+		-webkit-app-region: unset !important;
 	}
 
 	/* URL Bar placeholder - draw headerbar shadow instead */
@@ -80,7 +82,7 @@ body.DesktopUI
 			/* Refresh button */
 			div._3KaB94Jl4r0hFkthDPJy09
 			{
-				-webkit-app-region: no-drag;
+				-webkit-app-region: no-drag !important;
 				cursor: var(--adw-cursor-pointer) !important;
 				color: currentColor !important;
 				border-radius: var(--adw-button-radius) !important;
@@ -88,7 +90,8 @@ body.DesktopUI
 				width: 34px !important;
 				height: 34px !important;
 				padding: 9px !important;
-				transition: var(--adw-button-transition);
+				/* transition: var(--adw-button-transition) !important; */
+				transition: none !important;
 
 				svg
 				{
@@ -140,6 +143,7 @@ body.DesktopUI
 	/* Content frame */
 	div._1rDh5rXSFZJOqCa4UpnI4z
 	{
+		-webkit-app-region: no-drag !important;
 		position: initial !important;
 		order: 3 !important;
 	}

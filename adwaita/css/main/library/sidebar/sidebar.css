@@ -106,7 +106,8 @@ body.DesktopUI
 				height: 34px !important;
 				padding: 9px !important;
 				margin: 0 !important;
-				transition: var(--adw-button-transition);
+				/* transition: var(--adw-button-transition) !important; */
+				transition: none !important;
 				border: none !important;
 
 				& > *

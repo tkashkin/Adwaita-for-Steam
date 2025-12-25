@@ -16,6 +16,7 @@ body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0
 	div.V7RuDNUxhxoBRaiGWbk3B /* Shelves */
 	{
 		color: var(--adw-window-fg) !important;
+		contain: layout style paint !important;
 
 		/* Title */
 		div._1Y5_HA7TsAPMiqgp01e3Ci,
@@ -130,7 +131,8 @@ body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0
 		position: relative !important;
 		border: none !important;
 		border-radius: 0 !important;
-		padding: 0 !important;
+		padding: 8px !important;
+		margin: 0 !important;
 
 		/* Header */
 		div._23SnllqT_AqZ1C_QHcNQ4Z
@@ -138,7 +140,7 @@ body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0
 			position: initial !important;
 			border: none !important;
 			border-radius: 0 !important;
-			padding: 0 16px 0 8px !important;
+			padding: 0 8px 0 0px !important;
 			margin: 0 !important;
 
 			button.DialogDropDown
@@ -273,25 +275,25 @@ body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0
 		/* Content */
 		div._1VMQWnw-9FBp-MVXUbWfS_
 		{
-			padding: 0 16px !important;
+			padding: 0 8px !important;
 			margin: 0 !important;
 		}
 
 		/* Games grid shelf */
 		div.DGRkX_HYUzbFaqRysWQVi
 		{
-			padding: 8px 16px !important;
+			padding: 0 !important;
 			margin: 0 !important;
 			overflow: hidden !important;
 
-			div._3DJLGrqzoQ5vMDI_4VG502
+			/* div._3DJLGrqzoQ5vMDI_4VG502
 			{
 				box-sizing: border-box !important;
 				width: auto !important;
 				padding: 0 !important;
 				margin: 0 !important;
 				gap: 16px !important;
-			}
+			} */
 		}
 	}
 

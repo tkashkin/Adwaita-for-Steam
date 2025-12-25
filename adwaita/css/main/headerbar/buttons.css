@@ -10,7 +10,7 @@ body.DesktopUI
 
 	div._2Szzh5sKyGgnLUR870zbDE, div._3yD46y5pd3zOGR7CzKs0mC, div._1TdaAqMFadi0UTqilrkelR, div.ip-YZhijAMZcuRoXBGiye
 	{
-		-webkit-app-region: no-drag;
+		-webkit-app-region: no-drag !important;
 		cursor: var(--adw-cursor-pointer) !important;
 		box-sizing: border-box !important;
 		width: 34px !important;
@@ -29,7 +29,8 @@ body.DesktopUI
 		font-size: var(--adw-text-title3-size) !important;
 		font-weight: var(--adw-text-title3-weight) !important;
 		line-height: 24px !important;
-		transition: var(--adw-button-transition) !important;
+		/* transition: var(--adw-button-transition) !important; */
+		transition: none !important;
 
 		&:hover
 		{
@@ -101,7 +102,6 @@ body.DesktopUI
 	/* Friends, Downloads */
 	div._1TdaAqMFadi0UTqilrkelR, div._2EQ7ghgqIdjKv9jsQC0Zq9 div.ip-YZhijAMZcuRoXBGiye
 	{
-		-webkit-app-region: no-drag;
 		padding: 9px !important;
 		margin: 0 !important;
 

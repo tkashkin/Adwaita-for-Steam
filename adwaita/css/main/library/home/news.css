@@ -58,7 +58,7 @@ body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._17uEBe5Ri8TMsnfELvs8-N
 		cursor: var(--adw-cursor-pointer) !important;
 		position: relative !important;
 		overflow: visible !important;
-		margin-top: 18px !important;
+		margin-top: 20px !important;
 		display: flex !important;
 		flex-direction: column !important;
 
@@ -99,7 +99,7 @@ body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._17uEBe5Ri8TMsnfELvs8-N
 		div._2rlKqvybYupc-uk64cdQ8D
 		{
 			position: absolute !important;
-			top: -22px !important;
+			top: -20px !important;
 			color: color-mix(in srgb, currentColor var(--adw-dim-label-opacity), transparent) !important;
 			font-family: var(--adw-text-font) !important;
 			font-size: var(--adw-text-subtitle-size) !important;

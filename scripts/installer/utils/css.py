@@ -73,7 +73,7 @@ class AdwCSSBuilder:
             if c.blocks:
                 blocks += "\n" + "\n\n".join([b.to_css() for b in c.blocks]) + "\n"
 
-        header = f"{ADW_PATCH_HEADER}\n{ADW_PATCH_VERSION_HEADER}\n"
+        header = f"{ADW_PATCH_HEADER}\n{ADW_PATCH_VERSION_HEADER}\n{ADW_PATCH_INSTALLATION_DATE_HEADER}\n"
         return header + imports + "\n" + blocks
 
     def patch(self, target: Path, original: Path):

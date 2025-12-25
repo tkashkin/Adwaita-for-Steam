@@ -886,6 +886,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 						overflow: hidden !important;
 						text-overflow: ellipsis !important;
 						white-space: nowrap !important;
+						text-decoration: none !important;
 					}
 
 					/* Icon and disk space */
@@ -991,6 +992,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 			{
 				padding: 0 !important;
 				width: var(--adw-pagedsettings-width) !important;
+				align-items: start !important;
 				height: 90px !important;
 
 				/* Library path */
@@ -1062,8 +1064,6 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 
 					scrollbar-gutter: stable !important;
 					position: relative !important;
-					overflow-x: hidden !important;
-					overflow-y: auto !important;
 
 					div.ReactVirtualized__Grid__innerScrollContainer
 					{
@@ -1083,57 +1083,25 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 							&:hover
 							{
 								background: color-mix(in srgb, currentColor var(--adw-hover-opacity), transparent) !important;
-
-								div.DialogCheckbox
-								{
-									box-shadow: var(--adw-checkbox-unchecked-shadow-hover) !important;
-								}
 							}
 
 							&:active
 							{
 								background: color-mix(in srgb, currentColor var(--adw-active-opacity), transparent) !important;
-
-								div.DialogCheckbox
-								{
-									background-color: var(--adw-checkbox-unchecked-overlay-active) !important;
-									box-shadow: none !important;
-								}
 							}
 
 							&:has(.DialogCheckbox.Active)
 							{
 								background: color-mix(in srgb, currentColor var(--adw-selected-opacity), transparent) !important;
 
-								div.DialogCheckbox
-								{
-									background: var(--adw-checkbox-checked-bg) !important;
-									box-shadow: none !important;
-
-									&::before
-									{
-										background-color: var(--adw-checkbox-checked-fg) !important;
-									}
-								}
-
 								&:hover
 								{
 									background: color-mix(in srgb, currentColor var(--adw-selected-hover-opacity), transparent) !important;
-
-									div.DialogCheckbox
-									{
-										background-color: var(--adw-checkbox-checked-overlay-hover) !important;
-									}
 								}
 
 								&:active
 								{
 									background: color-mix(in srgb, currentColor var(--adw-selected-active-opacity), transparent) !important;
-
-									div.DialogCheckbox
-									{
-										background-color: var(--adw-checkbox-checked-overlay-active) !important;
-									}
 								}
 							}
 
@@ -1237,41 +1205,15 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 									{
 										padding: 0 !important;
 										margin: 0 !important;
+									}
 
-										div.DialogCheckbox
-										{
-											width: 20px !important;
-											min-width: 20px !important;
-											max-width: 20px !important;
-											height: 20px !important;
-											min-height: 20px !important;
-											max-height: 20px !important;
-											box-sizing: border-box !important;
-											padding: 2px !important;
-											background: var(--adw-checkbox-unchecked-bg);
-											background-blend-mode: overlay !important;
-											border-radius: var(--adw-checkbox-radius) !important;
-											box-shadow: var(--adw-checkbox-unchecked-shadow);
-											cursor: var(--adw-cursor-pointer) !important;
-
-											svg
-											{
-												display: none !important;
-											}
-
-											&::before
-											{
-												background-color: transparent;
-												content: "";
-												display: block;
-												width: 16px;
-												height: 16px;
-												-webkit-mask-repeat: no-repeat;
-												-webkit-mask-position: center;
-												-webkit-mask-size: 16px;
-												-webkit-mask-image: var(--adw-icon-checkbox-check);
-											}
-										}
+									/* Checkbox placeholder */
+									div._34-qDDFJ8Vyt9R3f20ZHuB
+									{
+										padding: 0 !important;
+										margin: 0 !important;
+										width: 20px !important;
+										height: 0 !important;
 									}
 								}
 							}
