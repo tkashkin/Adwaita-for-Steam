@@ -240,6 +240,37 @@ body.DesktopUI
 			}
 		}
 
+		/* Tool icon container */
+		& > div._2-J2nMJ1zmDok8-jqXlf1e
+		{
+			width: 0 !important;
+			height: 0 !important;
+			margin: 0 !important;
+			padding: 0 !important;
+			
+			/* Tool icon */
+			div._3XmPzyQFrH_CwSk4SxurMz
+			{
+				width: 16px !important;
+				height: 16px !important;
+				line-height: 16px !important;
+				position: absolute !important;
+				left: auto !important;
+				right: 6px !important;
+				top: 5px !important;
+
+				& > svg *
+				{
+					fill: color-mix(in srgb, var(--adw-sidebar-fg) var(--adw-dim-label-opacity), transparent) !important;
+				}
+			}
+		}
+
+		&:has(div._3XmPzyQFrH_CwSk4SxurMz)
+		{
+			padding-right: 24px !important;
+		}
+
 		/* .gamelistentry_Uninstalled .gamelistentry_GameIcon */
 		&._5YTBr7WwIfzVU_3nUtAph div.ga1hyw11cdBVodrCAidPF
 		{
@@ -280,9 +311,11 @@ body.DesktopUI
 	}
 
 	/* div.gamelistentry_Container:not(.gamelistentry_HoverOverlay) > div.gamelistentry_GameListEntryContainer */
-	div._2-O4ZG0KrnSrzISHBKctFQ:not(._3cMVyOc-9F9Jvp3uKF7_xj) > div._1vO6BoiVslZgs1kqDGdUs8
+	div._2-O4ZG0KrnSrzISHBKctFQ:not(._3cMVyOc-9F9Jvp3uKF7_xj) > div._1vO6BoiVslZgs1kqDGdUs8 > span
 	{
 		-webkit-mask-image: linear-gradient(to left, transparent, black 16px) !important;
+		width: -webkit-fill-available !important;
+		overflow: hidden !important;
 	}
 
 	/** Remove unneeded inner backgrounds */
