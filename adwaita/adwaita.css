@@ -25,9 +25,10 @@
 @import url("css/main/headerbar/menu.css");
 @import url("css/main/headerbar/navigation.css");
 
-@import url("css/main/library/details/header.css");
-@import url("css/main/library/details/activity.css");
 @import url("css/main/library/details/details.css");
+@import url("css/main/library/details/header.css");
+@import url("css/main/library/details/sidebar.css");
+@import url("css/main/library/details/activity.css");
 @import url("css/main/library/details/event-dialog.css");
 
 @import url("css/main/library/home/game-card.css");

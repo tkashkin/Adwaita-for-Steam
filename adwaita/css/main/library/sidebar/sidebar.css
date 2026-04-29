@@ -512,6 +512,8 @@ body.DesktopUI
 			transition: var(--adw-button-transition) !important;
 			color: var(--adw-sidebar-fg) !important;
 			background: color-mix(in srgb, var(--adw-sidebar-fg) var(--adw-button-bg-opacity), transparent) !important;
+			border: none !important;
+			box-shadow: var(--adw-button-hc-outline) !important;
 			font-family: var(--adw-text-font) !important;
 			font-size: var(--adw-text-menu-size) !important;
 			font-weight: var(--adw-text-menu-weight) !important;
@@ -631,9 +633,16 @@ body.DesktopUI
 	/* Filters popover container */
 	div._1dgAMymUAUYzUcZjUjOFm7
 	{
+		/* Overlay */
+		div._1kYo6lsIPsf-T5NiVRHiDO
+		{
+			z-index: 100 !important;
+		}
+
 		/* Filters popover */
 		div.Woh0kBQCmatzC1daBX9i6
 		{
+			z-index: 101 !important;
 			background: var(--adw-popover-bg) !important;
 			color: var(--adw-popover-fg) !important;
 			border: 1px var(--adw-popover-border) solid !important;

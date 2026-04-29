@@ -22,6 +22,7 @@ body.DesktopUI div.FFIKUQ7BGKw6vO1voazlr
 
 			svg
 			{
+				color: var(--adw-window-fg) !important;
 				width: 64px !important;
 				height: 64px !important;
 				padding: 0 !important;

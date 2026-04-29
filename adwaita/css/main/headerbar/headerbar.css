@@ -220,6 +220,7 @@ body.DesktopUI
 				div._2ohOQgahhMYnIEfAQmv9B8
 				{
 					background: color-mix(in srgb, currentColor var(--adw-button-bg-opacity), transparent) !important;
+					box-shadow: var(--adw-button-hc-outline) !important;
 					border-radius: var(--adw-button-radius) !important;
 					color: var(--adw-window-fg) !important;
 					font-family: var(--adw-text-font) !important;

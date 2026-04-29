@@ -5,7 +5,7 @@ body.DesktopUI
 	{
 		height: 26px !important;
 		line-height: 26px !important;
-		margin: 0 calc(6px - var(--adw-scrollbar-size)) 0 6px !important;
+		margin: 0 calc(6px - var(--adw-local-scrollbar-size)) 0 6px !important;
 		background: none !important;
 		cursor: var(--adw-cursor-pointer) !important;
 		box-sizing: border-box !important;
@@ -148,6 +148,8 @@ body.DesktopUI
 		div.ReactVirtualized__Grid
 		{
 			padding: 6px 0 !important;
+			animation: --adw-local-scrollbar-size forwards !important;
+			animation-timeline: scroll(y self) !important;
 
 			div.ReactVirtualized__Grid__innerScrollContainer > div
 			{

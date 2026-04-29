@@ -1,418 +1,1131 @@
-/* Header */
-body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsplaysection_PlayBar_"],
-body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3fLo166MlaNqP8r8tTyRz
+:root
 {
-	backdrop-filter: none !important;
-	background: none !important;
-	transition: none !important;
+	--adw-library-details-header-height: 240px;
+	--adw-library-details-header-play-button-width: 170px;
+	--adw-library-details-deck-compat-width: 170px;
 }
 
-/* Sticky header */
-body.DesktopUI div[class*="appdetailsplaysection_StickyHeader_"] div[class*="appdetailsplaysection_Glassy_"],
-body.DesktopUI div._39RheXihcN6H2k2muQTjkI div._3DeO92O5aVkcdwEBCJDjWm
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 {
-	backdrop-filter: none !important;
-	background: var(--adw-headerbar-bg) !important;
-	transition: none !important;
+	/* Content */
+	div._1_cYNJSvS6IXs9vLTEYjy5
+	{
+		/* Inline play bar */
+		div._1U7LKpx70kEsz3jJwAFOi-
+		{
+			margin-top: calc((var(--adw-library-details-header-height) + var(--adw-library-details-hero-image-height)) * -1) !important;
+			margin-bottom: var(--adw-library-details-hero-image-height) !important;
+			width: auto !important;
+			height: var(--adw-library-details-header-height) !important;
+			background: none !important;
+			overflow: visible !important;
+
+			div._3fLo166MlaNqP8r8tTyRz
+			{
+				max-width: var(--adw-library-details-max-width) !important;
+				margin: auto !important;
+				padding: 16px !important;
+				background: none !important;
+
+				div._3Y87YQY56ZCOqhgcZFaDc5
+				{
+					anchor-name: --adw-library-details-header !important;
+					position: relative !important;
+					margin: 0 !important;
+					padding: 0 !important;
+					width: 100% !important;
+					height: 100% !important;
+					box-sizing: border-box !important;
+					overflow: visible !important;
+
+					/* Play/Install button */
+					div._1FnJ6dPuknQFQ2RTpKTI16
+					{
+						anchor-name: --adw-library-details-header-play-button !important;
+						position: absolute !important;
+						top: 58px !important;
+						right: 52px !important;
+						padding: 0 !important;
+						margin: 0 !important;
+						min-width: var(--adw-library-details-header-play-button-width) !important;
+						height: 44px !important;
+						border-radius: var(--adw-button-pill-radius) !important;
+						background: var(--adw-accent-bg) !important;
+						color: var(--adw-accent-fg) !important;
+						box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--adw-window-fg) var(--adw-border-opacity), transparent) !important;
+
+						/* Space for links menu */
+						div._1_cYNJSvS6IXs9vLTEYjy5:has(div._1bIMOmWaxKrMdVMWU21ku) &
+						{
+							right: 104px !important;
+						}
+
+						/* Play */
+						&._3cI5TXsFX3bvpR-7EBOtxq
+						{
+							background: var(--adw-success-bg) !important;
+							color: var(--adw-success-fg) !important;
+						}
+
+						&._1Pb6PMh_3L5p5NzuUz0Pp9
+						{
+							background: color-mix(in srgb, currentColor var(--adw-disabled-opacity), transparent) !important;
+							color: color-mix(in srgb, currentColor var(--adw-disabled-opacity), transparent) !important;
+						}
+
+						/* Text */
+						div._33cnXIqTRgRr49_FNXIHj6
+						{
+							color: currentColor !important;
+							font-family: var(--adw-text-font) !important;
+							font-size: var(--adw-text-title2-size) !important;
+							font-weight: var(--adw-text-title3-weight) !important;
+							line-height: 34px !important;
+							text-transform: none !important;
+							letter-spacing: normal !important;
+							padding: 0 16px !important;
+
+							div._3Y87YQY56ZCOqhgcZFaDc5:has(div._1dg8hJMsAYISbeQUxcCJcv) &
+							{
+								transform: translateY(-8px) !important;
+							}
+						}
+
+						div._2AzIX5kl9k6JnxLfR5H4kX
+						{
+							padding: 0 !important;
+							margin: 0 !important;
+							border-radius: inherit !important;
+							background: transparent !important;
+							transition: var(--adw-button-transition) !important;
+							cursor: var(--adw-cursor-pointer) !important;
+							display: flex !important;
+							align-items: center !important;
+							justify-content: center !important;
+							z-index: 2 !important;
+
+							&:hover
+							{
+								background: var(--adw-button-suggested-overlay-hover) !important;
+							}
+
+							&:active
+							{
+								background: var(--adw-button-suggested-overlay-active) !important;
+							}
+
+							&:first-child:not(:last-child)
+							{
+								border-top-right-radius: 0 !important;
+								border-bottom-right-radius: 0 !important;
+								padding-left: 8px !important;
+							}
+
+							&:last-child:not(:first-child)
+							{
+								border-top-left-radius: 0 !important;
+								border-bottom-left-radius: 0 !important;
+								border-left: 1px color-mix(in srgb, currentColor var(--adw-dimmer-opacity), transparent) solid !important;
+							}
+
+							svg
+							{
+								width: 16px !important;
+								height: 16px !important;
+								margin-right: 4px !important;
+
+								path, polygon
+								{
+									stroke: currentColor !important;
+									fill: currentColor !important;
+								}
+							}
+
+							&:first-child > svg
+							{
+								display: none !important;
+							}
+
+							&._2q-gZ3XJzlvSGHSF-GvSmi
+							{
+								width: 32px !important;
+							}
+						}
+					}
+
+					/* Manage button */
+					div._3oddBTkj_FjknCgBnPqcmQ
+					{
+						position: absolute !important;
+						top: 58px !important;
+						right: 0 !important;
+						padding: 0 !important;
+						margin: 0 !important;
+						z-index: 1 !important;
+
+						/* Space for links menu */
+						div._1_cYNJSvS6IXs9vLTEYjy5:has(div._1bIMOmWaxKrMdVMWU21ku) &
+						{
+							right: 52px !important;
+						}
+
+						div._3qDWQGB0rtwM3qpXTb11Q-
+						{
+							width: 44px !important;
+							height: 44px !important;
+							padding: 0 !important;
+							margin: 0 !important;
+							box-sizing: border-box !important;
+							border-radius: 50% !important;
+							border: none !important;
+							background: color-mix(in srgb, var(--adw-window-fg) var(--adw-button-bg-opacity), transparent) !important;
+							color: var(--adw-window-fg) !important;
+							box-shadow: var(--adw-button-hc-outline) !important;
+							transition: var(--adw-button-transition) !important;
+							cursor: var(--adw-cursor-pointer) !important;
+
+							&:hover
+							{
+								background: color-mix(in srgb, var(--adw-window-fg) var(--adw-button-bg-opacity-hover), transparent) !important;
+							}
+
+							&:active
+							{
+								background: color-mix(in srgb, var(--adw-window-fg) var(--adw-button-bg-opacity-active), transparent) !important;
+							}
+
+							svg
+							{
+								display: none !important;
+							}
+
+							&::before
+							{
+								content: "" !important;
+								background-color: currentColor !important;
+								display: block !important;
+								width: 16px !important;
+								height: 16px !important;
+								mask: var(--adw-icon-settings) center / 16px no-repeat !important;
+							}
+						}
+					}
+
+					div._9EHg918wH6CQCQlD5PWOO
+					{
+						position: unset !important;
+						width: 0 !important;
+						height: 0 !important;
+						overflow: hidden !important;
+
+						div._1YbtIWcfkQJOysLXQbwzRf
+						{
+							position: unset !important;
+							
+							div.zjtAIAWI6HE0oCtJzw6Qt
+							{
+								position: unset !important;
+							}
+							
+							/* Update progress */
+							div._1dg8hJMsAYISbeQUxcCJcv
+							{
+								position: absolute !important;
+								position-anchor: --adw-library-details-header-play-button !important;
+								position-visibility: anchors-visible !important;
+								left: anchor(left) !important;
+								right: anchor(right) !important;
+								top: anchor(top) !important;
+								bottom: anchor(bottom) !important;
+								width: auto !important;
+								height: auto !important;
+								box-sizing: border-box !important;
+								margin: 0 !important;
+								z-index: 1 !important;
+								pointer-events: none !important;
+								background: none !important;
+								border-radius: var(--adw-button-pill-radius) !important;
+								overflow: hidden !important;
+								display: flex !important;
+								flex-direction: column-reverse !important;
+								justify-content: center !important;
+								gap: 0 !important;
+								padding: 22px 8px 4px 8px !important;
+								
+								div._3Y87YQY56ZCOqhgcZFaDc5:has(div._1FnJ6dPuknQFQ2RTpKTI16 > div._2q-gZ3XJzlvSGHSF-GvSmi) &
+								{
+									padding: 22px 40px 4px 16px !important;
+								}
+
+								div._34lrt5-Fc3usZU6trA1P0-,
+								div._2TYVGoD27ZMfjRirKQNLfk
+								{
+									width: auto !important;
+									height: auto !important;
+									margin: 0 !important;
+									padding: 0 !important;
+									background: none !important;
+									color: color-mix(in srgb, var(--adw-accent-fg) var(--adw-dim-label-opacity), transparent) !important;
+									font-family: var(--adw-text-font) !important;
+									font-size: var(--adw-text-subtitle-size) !important;
+									font-weight: var(--adw-text-subtitle-weight) !important;
+									line-height: normal !important;
+									text-transform: none !important;
+									letter-spacing: normal !important;
+									font-variant-numeric: tabular-nums !important;
+									text-align: center !important;
+									white-space: nowrap !important;
+									flex-shrink: 0 !important;
+									overflow: hidden !important;
+
+									&._34lrt5-Fc3usZU6trA1P0-
+									{
+										flex-shrink: 1 !important;
+									}
+
+									div._25YVDTaClw6Y2COPsU0UaV
+									{
+										position: absolute !important;
+										left: 0 !important;
+										right: 0 !important;
+										top: 0 !important;
+										bottom: 0 !important;
+										width: auto !important;
+										height: auto !important;
+										margin: 0 !important;
+										padding: 0 !important;
+										z-index: -1 !important;
+										background: none !important;
+							
+										div._1FnTqlsi2_-TJf1d5apoS6
+										{
+											background: rgba(0, 0, 0, 0.2) !important;
+											border-radius: 0 !important;
+										}
+									}
+								}
+								
+								/* Prerelease */
+								&:has(div._1YqJbKvmcYmfIDhCmNIQ5q)
+								{
+									overflow: visible !important;
+
+									div._1YqJbKvmcYmfIDhCmNIQ5q
+									{
+										position: absolute !important;
+										position-anchor: --adw-library-details-header !important;
+										position-visibility: anchors-visible !important;
+										top: 48px !important;
+										left: 72px !important;
+										padding: 0 !important;
+										margin: 0 !important;
+										height: 64px !important;
+										color: color-mix(in srgb, var(--adw-window-fg) var(--adw-dim-label-opacity), transparent) !important;
+										font-family: var(--adw-text-font) !important;
+										font-size: var(--adw-text-largetitle-size) !important;
+										font-weight: var(--adw-text-largetitle-weight) !important;
+										text-transform: none !important;
+										line-height: normal !important;
+										letter-spacing: normal !important;
+										align-content: center !important;
+									}
+								}
+							}
+						}
+					}
+
+					/* Icon and title */
+					div._2MBVRXpsw6DUjs7937DWZW
+					{
+						position: absolute !important;
+						top: 48px !important;
+						left: 0 !important;
+						right: anchor(--adw-library-details-header-play-button left) !important;
+						margin-right: 16px !important;
+						width: auto !important;
+						opacity: 1 !important;
+						padding: 0 !important;
+						height: 64px !important;
+
+						/* Icon */
+						div._1R9r2OBCxAmtuUVrgBEUBw
+						{
+							anchor-name: --adw-library-details-game-icon !important;
+							margin-right: 16px !important;
+							width: 64px !important;
+							height: 64px !important;
+							background: var(--adw-card-bg) !important;
+							box-shadow: var(--adw-card-shadow), var(--adw-card-outline-last) !important;
+							border-radius: var(--adw-gameicon-radius) !important;
+							overflow: hidden !important;
+							border: none !important;
+
+							img
+							{
+								image-rendering: pixelated !important;
+							}
+
+							&::after
+							{
+								content: "";
+								position: absolute;
+								top: 0;
+								bottom: 0;
+								left: 0;
+								right: 0;
+								box-sizing: border-box;
+								border-radius: var(--adw-gameicon-radius) !important;
+								box-shadow: inset 0 0 0 1px color-mix(in srgb, currentColor var(--adw-border-opacity), transparent);
+								pointer-events: none !important;
+							}
+						}
+
+						/* Title */
+						span._3rpUkswF6xc_ste4Ros_xM
+						{
+							color: var(--adw-window-fg) !important;
+							font-family: var(--adw-text-font) !important;
+							font-size: var(--adw-text-largetitle-size) !important;
+							font-weight: var(--adw-text-largetitle-weight) !important;
+							text-transform: none !important;
+							line-height: normal !important;
+							letter-spacing: normal !important;
+							white-space: normal !important;
+							display: -webkit-box !important;
+							-webkit-box-orient: vertical !important;
+							-webkit-line-clamp: 2 !important;
+							overflow: hidden !important;
+							text-overflow: ellipsis !important;
+						}
+					}
+
+					/* Play bar info */
+					div._1mDAVT4sTzFRwJtlKCw2Ws
+					{
+						position: absolute !important;
+						left: -16px !important;
+						right: -16px !important;
+						bottom: -16px !important;
+						padding: 0 16px 24px 16px !important;
+						margin: 0 !important;
+						width: auto !important;
+						mask-image:
+							linear-gradient(to left, transparent, black 8px),
+							linear-gradient(to right, transparent, black 8px) !important;
+						mask-composite: intersect !important;
+						flex-wrap: nowrap !important;
+						justify-content: space-between !important;
+						gap: 16px !important;
+						transform: none !important;
+						transition: none !important;
+						overflow-x: auto !important;
+						overflow-y: hidden !important;
+						scrollbar-width: none !important;
+
+						& > *
+						{
+							flex-shrink: 0 !important;
+						}
+
+						/* Info button spacer for Steam Deck compatibility */
+						div._1_cYNJSvS6IXs9vLTEYjy5:has(div.IIJeieZ-ZPRfIULY7uSDG) &
+						{
+							mask-image:
+								linear-gradient(to left, transparent, transparent calc(16px + var(--adw-library-details-deck-compat-width)), black calc(24px + var(--adw-library-details-deck-compat-width))),
+								linear-gradient(to right, transparent, black 8px) !important;
+
+							&::after
+							{
+								content: "" !important;
+								display: block !important;
+								min-width: var(--adw-library-details-deck-compat-width) !important;
+								flex-shrink: 0 !important;
+							}
+						}
+					}
+
+					/* Family share banner */
+					div.z8GYwNt_nbBZrf7OVjs-s
+					{
+						position: absolute !important;
+						left: 0 !important;
+						right: 0 !important;
+						top: -16px !important;
+						width: auto !important;
+						height: auto !important;
+						margin: 0 !important;
+						padding: 0 !important;
+						background: none !important;
+						color: var(--adw-window-fg) !important;
+						box-shadow: none !important;
+						border-radius: 0 !important;
+						height: 46px !important;
+						font-family: var(--adw-text-font) !important;
+						font-size: var(--adw-text-title3-size) !important;
+						font-weight: var(--adw-text-title3-weight) !important;
+
+						a
+						{
+							position: absolute !important;
+							right: 0 !important;
+							top: 5px !important;
+							background: color-mix(in srgb, currentColor var(--adw-button-bg-opacity), transparent) !important;
+							box-shadow: var(--adw-button-hc-outline) !important;
+							border-radius: var(--adw-button-radius) !important;
+							color: var(--adw-window-fg) !important;
+							font-family: var(--adw-text-font) !important;
+							font-size: var(--adw-text-title3-size) !important;
+							font-weight: var(--adw-text-title3-weight) !important;
+							line-height: 24px !important;
+							height: 24px !important;
+							padding: 5px 10px !important;
+							transition: var(--adw-button-transition) !important;
+							cursor: var(--adw-cursor-pointer) !important;
+							user-select: none !important;
+
+							/* Disabled */
+							&._TY57LlvVVnWqjaCz0EWr
+							{
+								opacity: var(--adw-disabled-opacity) !important;
+								pointer-events: none !important;
+							}
+
+							&:hover
+							{
+								background: color-mix(in srgb, currentColor var(--adw-button-bg-opacity-hover), transparent) !important;
+							}
+
+							&:active
+							{
+								background: color-mix(in srgb, currentColor var(--adw-button-bg-opacity-active), transparent) !important;
+							}
+						}
+
+						/* Profile link */
+						div._1GCZAht_W2I3Elndk5cU0-
+						{
+							background: none !important;
+							border-radius: var(--adw-button-radius) !important;
+							color: var(--adw-window-fg) !important;
+							cursor: var(--adw-cursor-pointer) !important;
+							display: flex !important;
+							align-items: center !important;
+							padding: 0 4px !important;
+							margin: 0 !important;
+							gap: 8px !important;
+
+							&:hover
+							{
+								background: color-mix(in srgb, currentColor var(--adw-hover-opacity), transparent) !important;
+							}
+
+							&:active
+							{
+								background: color-mix(in srgb, currentColor var(--adw-active-opacity), transparent) !important;
+							}
+
+							div.Panel
+							{
+								width: auto !important;
+								height: auto !important;
+							}
+
+							div._21_CDFn4v_FolhtQzF6WRD
+							{
+								padding: 0 !important;
+								margin: 0 !important;
+								width: auto !important;
+								height: auto !important;
+								gap: 0 !important;
+
+								/* User name */
+								div.nOdcT-MoOaXGePXLyPe0H
+								{
+									padding: 0 !important;
+									margin: 0 !important;
+									color: var(--adw-window-fg) !important;
+									font-family: var(--adw-text-font) !important;
+									font-size: var(--adw-text-row-title-size) !important;
+									font-weight: var(--adw-text-row-title-weight) !important;
+									line-height: normal !important;
+									letter-spacing: normal !important;
+								}
+	
+								/* User status */
+								div._1cB0qtF0paHWWyj1XNcnbG
+								{
+									padding: 0 !important;
+									margin: 0 !important;
+									color: var(--adw-user-offline) !important;
+									font-family: var(--adw-text-font) !important;
+									font-size: var(--adw-text-row-subtitle-size) !important;
+									font-weight: var(--adw-text-row-subtitle-weight) !important;
+									line-height: normal !important;
+									letter-spacing: normal !important;
+								}
+	
+								&.online div._1cB0qtF0paHWWyj1XNcnbG
+								{
+									color: var(--adw-user-online) !important;
+								}
+
+								&.online.awayOrSnooze div._1cB0qtF0paHWWyj1XNcnbG
+								{
+									color: color-mix(in srgb, currentColor var(--adw-dim-label-opacity), transparent) !important;
+								}
+
+								&.ingame div._1cB0qtF0paHWWyj1XNcnbG
+								{
+									color: var(--adw-user-ingame) !important;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			/* Family share banner - extend background */
+			&:has(div.z8GYwNt_nbBZrf7OVjs-s)::before
+			{
+				content: "" !important;
+				display: block;
+				height: 46px;
+				margin-bottom: -46px;
+				background: color-mix(in srgb, var(--adw-banner) 30%, var(--adw-window-bg));
+				box-shadow: inset 0 1px var(--adw-headerbar-shade) !important;
+			}
+		}
+
+		/* Game info */
+		div._25oBZpa3dUcMw8QAsa2u67
+		{
+			position: unset !important;
+			width: 100% !important;
+			height: 0 !important;
+			box-sizing: border-box !important;
+			max-width: var(--adw-library-details-max-width) !important;
+			margin: auto !important;
+			margin-top: calc((var(--adw-library-details-header-height) + var(--adw-library-details-hero-image-height)) * -1) !important;
+			margin-bottom: calc(var(--adw-library-details-header-height) + var(--adw-library-details-hero-image-height)) !important;
+			padding: 0 !important;
+			background: none !important;
+			overflow: visible !important;
+
+			div._2jPMy2QZr8bWi6yrk5ZzHA
+			{
+				background: none !important;
+				transform: none !important;
+				opacity: 1 !important;
+
+				div._37mmOlZM_8n5yJAG5CHiW7
+				{
+					padding: 0 !important;
+					margin: 0 !important;
+
+					/* Grid image */
+					div._1Id6ZFEUVa5PKEMIvSg4nE
+					{
+						position: absolute !important;
+						left: 16px !important;
+						top: 64px !important;
+						width: 64px !important;
+						height: 64px !important;
+						translate: 0 0 !important;
+						transform: none !important;
+						overflow: hidden !important;
+						border: none !important;
+						border-radius: var(--adw-gameicon-radius) !important;
+						box-shadow: var(--adw-card-shadow), var(--adw-card-outline-last) !important;
+						will-change: transform !important;
+						contain: strict !important;
+						transition: width var(--adw-transition),
+							height var(--adw-transition),
+							translate var(--adw-transition),
+							box-shadow var(--adw-transition),
+							border-radius var(--adw-transition) !important;
+
+						div._1R9r2OBCxAmtuUVrgBEUBw
+						{
+							background: var(--adw-card-bg) !important;
+							border-radius: var(--adw-gameicon-radius) !important;
+							overflow: hidden !important;
+							border: none !important;
+							box-shadow: none !important;
+							translate: 0 -16px !important;
+							transition: translate var(--adw-transition) !important;
+						}
+
+						&:hover
+						{
+							height: 96px !important;
+							translate: 0 -16px !important;
+
+							div._1R9r2OBCxAmtuUVrgBEUBw
+							{
+								translate: 0 0 !important;
+							}
+						}
+
+						/* Zoomed in */
+						&.YR4JAs0b6FIwpXGQ4p2eg
+						{
+							width: 200px !important;
+							height: 300px !important;
+							translate: -8px -32px !important;
+							border-radius: var(--adw-card-radius) !important;
+							box-shadow: var(--adw-card-raised-shadow), var(--adw-card-outline-last) !important;
+
+							div._1R9r2OBCxAmtuUVrgBEUBw
+							{
+								translate: 0 0 !important;
+							}
+						}
+
+						/* Zoom */
+						div._2mMT5wI35EZKZ_XeO7BfPu
+						{
+							position: absolute !important;
+							top: 0 !important;
+							left: 0 !important;
+							width: 100% !important;
+							height: 100% !important;
+							box-sizing: border-box !important;
+							background: none !important;
+							cursor: var(--adw-cursor-pointer) !important;
+
+							svg
+							{
+								display: none !important;
+							}
+						}
+
+						&::after
+						{
+							content: "";
+							position: absolute;
+							top: 0;
+							bottom: 0;
+							left: 0;
+							right: 0;
+							box-sizing: border-box;
+							border-radius: inherit;
+							box-shadow: inset 0 0 0 1px color-mix(in srgb, currentColor var(--adw-border-opacity), transparent);
+							pointer-events: none !important;
+						}
+					}
+
+					/* Developer, publisher, features */
+					div._1uS70KI6ZbUE94jUB27ioB
+					{
+						display: none !important;
+					}
+				}
+			}
+
+			div._1FXWy2UilVZIppT-PetDWw
+			{
+				display: none !important;
+			}
+		}
+
+		/* Info buttons */
+		div._1kiZKVbDe-9Ikootk57kpA,
+		div.IIJeieZ-ZPRfIULY7uSDG
+		{
+			background: none !important;
+			border-radius: 0 !important;
+			z-index: 1 !important;
+			position: relative !important;
+
+			&,
+			& > div.tool-tip-source
+			{
+				overflow: hidden !important;
+			}
+
+			&,
+			div._3m_zjRTQBqcfzCjXLXUHcR
+			{
+				padding: 0 !important;
+				margin: 0 !important;
+				display: flex !important;
+				flex-direction: column-reverse !important;
+				align-content: center !important;
+				align-items: center !important;
+				gap: 6px !important;
+			}
+
+			/* Label */
+			div._34lrt5-Fc3usZU6trA1P0-,
+			div.jNWVH1yVzGrjKgpUtMMk1
+			{
+				color: var(--adw-window-fg) !important;
+				font-family: var(--adw-text-font) !important;
+				font-size: var(--adw-text-title4-size) !important;
+				font-weight: 500 !important;
+				text-transform: none !important;
+				line-height: normal !important;
+				letter-spacing: normal !important;
+			}
+
+			/* Value */
+			div._2TYVGoD27ZMfjRirKQNLfk,
+			div.PnNktyJLdtwSqvb3qGU12
+			{
+				color: var(--adw-window-fg) !important;
+				height: 34px !important;
+				padding: 4px 12px !important;
+				box-sizing: border-box !important;
+				border-radius: var(--adw-button-pill-radius) !important;
+				background: color-mix(in srgb, var(--adw-window-fg) var(--adw-button-bg-opacity), transparent) !important;
+				box-shadow: var(--adw-button-hc-outline) !important;
+				font-family: var(--adw-text-font) !important;
+				font-size: var(--adw-text-title3-size) !important;
+				font-weight: var(--adw-text-title3-weight) !important;
+				text-transform: none !important;
+				line-height: normal !important;
+				letter-spacing: normal !important;
+				display: flex !important;
+				align-items: center !important;
+				gap: 6px !important;
+				transition: var(--adw-button-transition) !important;
+				max-width: 150px !important;
+				overflow: hidden !important;
+				text-overflow: ellipsis !important;
+				white-space: nowrap !important;
+
+				svg
+				{
+					width: 18px !important;
+					height: 18px !important;
+					margin-left: -4px !important;
+				}
+
+				/* Game version */
+				div._3ooxUb30k7736aTVnO179S
+				{
+					color: inherit !important;
+					cursor: default !important;
+					font-size: inherit !important;
+					font-weight: inherit !important;
+					overflow: hidden !important;
+					text-overflow: ellipsis !important;
+					white-space: nowrap !important;
+					
+					&::after
+					{
+						content: "";
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+					}
+				}
+			}
+
+			/* Value container */
+			div._16quGbk-i_9yE-tFyyOK8G
+			{
+				position: relative !important;
+
+				/* Progress bar */
+				div._25YVDTaClw6Y2COPsU0UaV
+				{
+					position: absolute !important;
+					top: 0 !important;
+					left: 0 !important;
+					width: 100% !important;
+					height: 100% !important;
+					padding: 0 !important;
+					margin: 0 !important;
+					background: none !important;
+					border-radius: var(--adw-button-pill-radius) !important;
+					overflow: hidden !important;
+					z-index: -1 !important;
+
+					div._1FnTqlsi2_-TJf1d5apoS6
+					{
+						background: color-mix(in srgb, var(--adw-accent-bg) 50%, transparent) !important;
+						border-radius: 0 !important;
+					}
+				}
+			}
+
+			/* Icon */
+			div._1tIg-QIrwMNtCm7NcYADyi,
+			div._3bkqc-SsCg0b3FTEuewlK8
+			{
+				display: none !important;
+			}
+
+			/* Cloud status - not current */
+			&._1nxYsdQLxAV_i8JIm-f64w:not(._2sKVnd_AUg44QSdoAp8Lne)
+			{
+				display: none !important;
+			}
+
+			/* Details button */
+			div._3sfpA6uM8IJuAnrtDiJLZI
+			{
+				position: absolute !important;
+				top: 0 !important;
+				bottom: 0 !important;
+				left: 0 !important;
+				right: 0 !important;
+				padding: 0 !important;
+				margin: 0 !important;
+				background: none !important;
+				color: transparent !important;
+				font-size: 0 !important;
+				text-indent: -9999px !important;
+				cursor: var(--adw-cursor-pointer) !important;
+			}
+
+			&.IIJeieZ-ZPRfIULY7uSDG, /* Steam Deck compatibility */
+			&:has(div._3ooxUb30k7736aTVnO179S) /* Game version */
+			{
+				cursor: var(--adw-cursor-pointer) !important;
+
+				&:hover:not(:has(a._3sfpA6uM8IJuAnrtDiJLZI:hover))
+				{
+					div._2TYVGoD27ZMfjRirKQNLfk,
+					div.PnNktyJLdtwSqvb3qGU12
+					{
+						background: color-mix(in srgb, var(--adw-window-fg) var(--adw-button-bg-opacity-hover), transparent) !important;
+					}
+				}
+
+				&:active:not(:has(a._3sfpA6uM8IJuAnrtDiJLZI:active))
+				{
+					div._2TYVGoD27ZMfjRirKQNLfk,
+					div.PnNktyJLdtwSqvb3qGU12
+					{
+						background: color-mix(in srgb, var(--adw-window-fg) var(--adw-button-bg-opacity-active), transparent) !important;
+					}
+				}
+			}
+
+			/* Achievements - suppress clicks to not scroll the entire window */
+			&.UAhWiMg9Q2VPsQQBj_ikT
+			{
+				cursor: default !important;
+				pointer-events: none !important;
+			}
+		}
+
+		/* Steam Deck compatibility */
+		div.IIJeieZ-ZPRfIULY7uSDG
+		{
+			anchor-name: --adw-library-details-deck-compat !important;
+			position: absolute !important;
+			position-anchor: --adw-library-details-header !important;
+			position-visibility: anchors-visible !important;
+			right: anchor(right) !important;
+			bottom: anchor(bottom) !important;
+			width: var(--adw-library-details-deck-compat-width) !important;
+			margin-bottom: 8px !important;
+
+			/* Developer comments */
+			&:has(a._3sfpA6uM8IJuAnrtDiJLZI)
+			{
+				div.PnNktyJLdtwSqvb3qGU12
+				{
+					anchor-name: --adw-library-details-deck-compat-value !important;
+					margin-right: 38px !important;
+				}
+
+				a._3sfpA6uM8IJuAnrtDiJLZI
+				{
+					position: absolute !important;
+					position-anchor: --adw-library-details-deck-compat-value !important;
+					position-visibility: anchors-visible !important;
+					left: calc(anchor(right) + 4px) !important;
+					top: anchor(top) !important;
+					width: 34px !important;
+					height: 34px !important;
+					padding: 0 !important;
+					margin: 0 !important;
+					box-sizing: border-box !important;
+					border-radius: 50% !important;
+					border: none !important;
+					background: color-mix(in srgb, var(--adw-window-fg) var(--adw-button-bg-opacity), transparent) !important;
+					color: var(--adw-window-fg) !important;
+					box-shadow: var(--adw-button-hc-outline) !important;
+					transition: var(--adw-button-transition) !important;
+					cursor: var(--adw-cursor-pointer) !important;
+					z-index: 1 !important;
+
+					&:hover
+					{
+						background: color-mix(in srgb, var(--adw-window-fg) var(--adw-button-bg-opacity-hover), transparent) !important;
+					}
+
+					&:active
+					{
+						background: color-mix(in srgb, var(--adw-window-fg) var(--adw-button-bg-opacity-active), transparent) !important;
+					}
+
+					div._1zjwW1q8ccnB76k2rPv9oM
+					{
+						display: none !important;
+					}
+
+					&::before
+					{
+						content: "" !important;
+						background-color: currentColor !important;
+						display: block !important;
+						width: 16px !important;
+						height: 16px !important;
+						margin: 9px !important;
+						mask: var(--adw-icon-note2) center / 16px no-repeat !important;
+					}
+				}
+			}
+		}
+
+		/* Steam Play "tooltip" */
+		div._2UN73dmbVcWzIR2ZCr8KID
+		{
+			max-width: 300px !important;
+			background: var(--adw-tooltip-bg) !important;
+			color: var(--adw-tooltip-fg) !important;
+			border-radius: 9px !important;
+			font-family: var(--adw-text-font) !important;
+			font-size: var(--adw-text-base-size) !important;
+			font-weight: var(--adw-text-base-weight) !important;
+			text-wrap: wrap !important;
+			padding: 6px 10px !important;
+			margin: 0 !important;
+			border: 1px color-mix(in srgb, currentColor var(--adw-border-opacity), transparent) solid !important;
+			box-shadow: none !important;
+
+			position: absolute !important;
+			position-anchor: --adw-library-details-deck-compat !important;
+			position-visibility: anchors-visible !important;
+			right: anchor(right) !important;
+			top: anchor(bottom) !important;
+			margin-top: 8px !important;
+
+			opacity: 0 !important;
+			pointer-events: none !important;
+			transition: opacity 150ms !important;
+		}
+
+		div:has(> .IIJeieZ-ZPRfIULY7uSDG):hover + div > ._2UN73dmbVcWzIR2ZCr8KID,
+		div:has(> .IIJeieZ-ZPRfIULY7uSDG):hover + ._2UN73dmbVcWzIR2ZCr8KID,
+		div._2UN73dmbVcWzIR2ZCr8KID:hover
+		{
+			opacity: 1 !important;
+			pointer-events: auto !important;
+		}
+	}
+
+	/* Links */
+	div._3-V8vjmrwuJM6Ws3tsjFJj
+	{
+		position: unset !important;
+		width: 100% !important;
+		height: 0 !important;
+		box-sizing: border-box !important;
+		max-width: var(--adw-library-details-max-width) !important;
+		margin: auto !important;
+		margin-top: calc((var(--adw-library-details-header-height) + var(--adw-library-details-hero-image-height)) * -1) !important;
+		margin-bottom: calc(var(--adw-library-details-header-height) + var(--adw-library-details-hero-image-height)) !important;
+		padding: 0 !important;
+		background: none !important;
+		overflow: visible !important;
+
+		div._31ptFGGMZrSQc5BCX1e5lm
+		{
+			position: relative !important;
+			padding: 0 !important;
+			margin: 16px !important;
+			background: none !important;
+			border: none !important;
+			height: 0 !important;
+
+			div._25f0fX6qbgdB7O_lMrbhCN
+			{
+				width: 1px !important;
+				height: 0 !important;
+				padding: 0 !important;
+				margin: 0 !important;
+
+				div.DgVQapkBmhAW6oPY5rPZo
+				{
+					padding: 0 !important;
+					margin: 0 !important;
+					width: 1px !important;
+					opacity: 0 !important;
+					pointer-events: none !important;
+					z-index: -100 !important;
+
+					div._7k4qmaN8SUMvv6u-L81uk
+					{
+						padding: 0 !important;
+						margin: 0 !important;
+					}
+				}
+			}
+
+			div._1bIMOmWaxKrMdVMWU21ku
+			{
+				position: absolute !important;
+				top: 58px !important;
+				right: 0 !important;
+				width: 44px !important;
+				height: 44px !important;
+				padding: 0 !important;
+				margin: 0 !important;
+				z-index: 1 !important;
+				box-sizing: border-box !important;
+				justify-content: center !important;
+				border-radius: 50% !important;
+				border: none !important;
+				background: color-mix(in srgb, var(--adw-window-fg) var(--adw-button-bg-opacity), transparent) !important;
+				color: var(--adw-window-fg) !important;
+				box-shadow: var(--adw-button-hc-outline) !important;
+				transition: var(--adw-button-transition) !important;
+				cursor: var(--adw-cursor-pointer) !important;
+
+				&:hover
+				{
+					background: color-mix(in srgb, var(--adw-window-fg) var(--adw-button-bg-opacity-hover), transparent) !important;
+				}
+
+				&:active
+				{
+					background: color-mix(in srgb, var(--adw-window-fg) var(--adw-button-bg-opacity-active), transparent) !important;
+				}
+				
+				svg
+				{
+					display: none !important;
+				}
+
+				&::before
+				{
+					content: "" !important;
+					background-color: currentColor !important;
+					display: block !important;
+					width: 16px !important;
+					height: 16px !important;
+					mask: var(--adw-icon-external-link) center / 16px no-repeat !important;
+				}
+			}
+		}
+	}
 }
 
-body.DesktopUI div[class*="appdetailsplaysection_StickyHeaderShadow_"],
-body.DesktopUI div._2_86QNCjVvJTL3Qe6Xztx_
+body.DesktopUI div._2Nq6ov7A1hGcHXVOXNt_OE
 {
-	height: 4px !important;
-	margin-bottom: -4px !important;
-	top: 0 !important;
-	background-image: linear-gradient(to bottom, var(--adw-undershoot));
-	box-shadow: inset 0 1px var(--adw-undershoot-border);
-}
-
-body.DesktopUI div[class*="appdetails_PlayBar_"],
-body.DesktopUI div._2L3s2nzh7yCnNESfI5_dN1
-{
-	width: 100% !important;
-}
-
-body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"],
-body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5
-{
-	padding: 6px 20px !important;
-	padding-bottom: 7px !important;
-}
-
-/* Play button, streaming device dropdown */
-body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appdetailsplaysection_ActionSection_"],
-body.DesktopUI div._2Nq6ov7A1hGcHXVOXNt_OE div._2zxzStp5qY5M1evOm8keES
-{
-	height: 40px !important;
-}
-
-body.DesktopUI div[class*="appdetailsplaysection_StickyHeader_"] div[class*="appdetailsplaysection_ActionSection_"],
-body.DesktopUI div._39RheXihcN6H2k2muQTjkI div._2zxzStp5qY5M1evOm8keES,
-body.DesktopUI div[class*="appdetailsplaysection_StickyHeader_"] div[class*="appdetailsplaysection_StatusAndStats_"],
-body.DesktopUI div._39RheXihcN6H2k2muQTjkI div._1YbtIWcfkQJOysLXQbwzRf
-{
-	height: 34px !important;
-}
-
-body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer_"],
-body.DesktopUI div._2Nq6ov7A1hGcHXVOXNt_OE div._1FnJ6dPuknQFQ2RTpKTI16
-{
-	border-radius: var(--adw-button-radius) !important;
-	background: var(--adw-accent-bg) !important;
-	color: var(--adw-accent-fg) !important;
-}
-
-body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer_"],
-body.DesktopUI div._2Nq6ov7A1hGcHXVOXNt_OE div._1FnJ6dPuknQFQ2RTpKTI16,
-body.DesktopUI div[class*="library_AppDetailsMain_"] [class*="appactionbutton_ShowingStreaming_"],
-body.DesktopUI div._2Nq6ov7A1hGcHXVOXNt_OE div._1hhB2Wf7iExA15zh_lDQ_y
-{
-	min-width: 140px !important;
-}
-
-body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer_"][class*="appactionbutton_Green_"],
-body.DesktopUI div._2Nq6ov7A1hGcHXVOXNt_OE div._1FnJ6dPuknQFQ2RTpKTI16._3cI5TXsFX3bvpR-7EBOtxq
-{
-	background: var(--adw-success-bg) !important;
-}
-
-body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer_"][class*="appactionbutton_Green_"] div[class*="appactionbutton_ButtonText_"],
-body.DesktopUI div._2Nq6ov7A1hGcHXVOXNt_OE div._1FnJ6dPuknQFQ2RTpKTI16._3cI5TXsFX3bvpR-7EBOtxq div._33cnXIqTRgRr49_FNXIHj6,
-body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer_"][class*="appactionbutton_Green_"] > div[class*="appactionbutton_ButtonChild_"] svg,
-body.DesktopUI div._2Nq6ov7A1hGcHXVOXNt_OE div._1FnJ6dPuknQFQ2RTpKTI16._3cI5TXsFX3bvpR-7EBOtxq > div._2AzIX5kl9k6JnxLfR5H4kX svg
-{
-	color: var(--adw-success-fg) !important;
-}
-
-body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer_"][class*="appactionbutton_Disabled_"],
-body.DesktopUI div._2Nq6ov7A1hGcHXVOXNt_OE div._1FnJ6dPuknQFQ2RTpKTI16._1Pb6PMh_3L5p5NzuUz0Pp9
-{
-	background: color-mix(in srgb, currentColor var(--adw-disabled-opacity), transparent) !important;
-}
-
-body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer_"][class*="appactionbutton_Disabled"] div[class*="appactionbutton_ButtonText_"],
-body.DesktopUI div._2Nq6ov7A1hGcHXVOXNt_OE div._1FnJ6dPuknQFQ2RTpKTI16._1Pb6PMh_3L5p5NzuUz0Pp9 div._33cnXIqTRgRr49_FNXIHj6,
-body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer_"][class*="appactionbutton_Disabled_"] > div[class*="appactionbutton_ButtonChild_"] svg,
-body.DesktopUI div._2Nq6ov7A1hGcHXVOXNt_OE div._1FnJ6dPuknQFQ2RTpKTI16._1Pb6PMh_3L5p5NzuUz0Pp9 > div._2AzIX5kl9k6JnxLfR5H4kX svg
-{
-	color: color-mix(in srgb, currentColor var(--adw-disabled-opacity), transparent) !important;
-}
-
-body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer_"] div[class*="appactionbutton_ButtonText_"],
-body.DesktopUI div._2Nq6ov7A1hGcHXVOXNt_OE div._1FnJ6dPuknQFQ2RTpKTI16 div._33cnXIqTRgRr49_FNXIHj6,
-body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer_"] > div[class*="appactionbutton_ButtonChild_"] svg,
-body.DesktopUI div._2Nq6ov7A1hGcHXVOXNt_OE div._1FnJ6dPuknQFQ2RTpKTI16 > div._2AzIX5kl9k6JnxLfR5H4kX svg
-{
-	color: var(--adw-accent-fg) !important;
-	font-family: var(--adw-text-font) !important;
-	font-size: var(--adw-text-title2-size) !important;
-	font-weight: var(--adw-text-title3-weight) !important;
-	line-height: 34px !important;
-	text-transform: none !important;
-	letter-spacing: normal !important;
-}
-
-body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer_"] > div[class*="appactionbutton_ButtonChild_"]:first-child > svg,
-body.DesktopUI div._2Nq6ov7A1hGcHXVOXNt_OE div._1FnJ6dPuknQFQ2RTpKTI16 > div._2AzIX5kl9k6JnxLfR5H4kX:first-child > svg
-{
-	display: none !important;
-}
-
-body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer_"] > div[class*="appactionbutton_ButtonChild_"] > svg > path,
-body.DesktopUI div._2Nq6ov7A1hGcHXVOXNt_OE div._1FnJ6dPuknQFQ2RTpKTI16 > div._2AzIX5kl9k6JnxLfR5H4kX > svg > path,
-body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer_"] > div[class*="appactionbutton_ButtonChild_"] > svg > polygon,
-body.DesktopUI div._2Nq6ov7A1hGcHXVOXNt_OE div._1FnJ6dPuknQFQ2RTpKTI16 > div._2AzIX5kl9k6JnxLfR5H4kX > svg > polygon
-{
-	stroke: currentColor !important;
-	fill: currentColor !important;
-}
-
-body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer_"] > div[class*="appactionbutton_ButtonChild_"],
-body.DesktopUI div._2Nq6ov7A1hGcHXVOXNt_OE div._1FnJ6dPuknQFQ2RTpKTI16 > div._2AzIX5kl9k6JnxLfR5H4kX
-{
-	margin: 0 !important;
-	border-radius: var(--adw-button-radius) !important;
-	background: transparent !important;
-	transition: var(--adw-button-transition) !important;
-	cursor: var(--adw-cursor-pointer) !important;
-}
-
-body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer_"] > div[class*="appactionbutton_ButtonChild_"]:hover,
-body.DesktopUI div._2Nq6ov7A1hGcHXVOXNt_OE div._1FnJ6dPuknQFQ2RTpKTI16 > div._2AzIX5kl9k6JnxLfR5H4kX:hover
-{
-	background: var(--adw-button-suggested-overlay-hover) !important;
-}
-
-body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer_"] > div[class*="appactionbutton_ButtonChild_"]:active,
-body.DesktopUI div._2Nq6ov7A1hGcHXVOXNt_OE div._1FnJ6dPuknQFQ2RTpKTI16 > div._2AzIX5kl9k6JnxLfR5H4kX:active
-{
-	background: var(--adw-button-suggested-overlay-active) !important;
-}
-
-body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer_"] > div[class*="appactionbutton_ButtonChild_"]:first-child:not(:last-child),
-body.DesktopUI div._2Nq6ov7A1hGcHXVOXNt_OE div._1FnJ6dPuknQFQ2RTpKTI16 > div._2AzIX5kl9k6JnxLfR5H4kX:first-child:not(:last-child)
-{
-	border-top-right-radius: 0 !important;
-	border-bottom-right-radius: 0 !important;
-}
-
-body.DesktopUI div[class*="library_AppDetailsMain_"] div[class*="appactionbutton_PlayButtonContainer_"] > div[class*="appactionbutton_ButtonChild_"]:last-child:not(:first-child),
-body.DesktopUI div._2Nq6ov7A1hGcHXVOXNt_OE div._1FnJ6dPuknQFQ2RTpKTI16 > div._2AzIX5kl9k6JnxLfR5H4kX:last-child:not(:first-child)
-{
-	border-top-left-radius: 0 !important;
-	border-bottom-left-radius: 0 !important;
-	border-left: 1px color-mix(in srgb, currentColor var(--adw-dimmer-opacity), transparent) solid !important;
-}
-
-/* AppDetails Play Section */
-body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_StatusNameContainer_"],
-body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div.zjtAIAWI6HE0oCtJzw6Qt,
-body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_StatusNameContainer_"] div[class*="appdetailsplaysection_GameStatsSection_"],
-body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div.zjtAIAWI6HE0oCtJzw6Qt div._1mDAVT4sTzFRwJtlKCw2Ws
-{
-	height: 40px !important;
-	gap: 6px !important;
-}
-
-body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_PlayBarLabel_"],
-body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._34lrt5-Fc3usZU6trA1P0-
-{
-	color: var(--adw-window-fg) !important;
-	font-family: var(--adw-text-font) !important;
-	font-size: var(--adw-text-header-size) !important;
-	font-weight: var(--adw-text-header-weight) !important;
-	text-transform: none !important;
-	letter-spacing: normal !important;
-}
-
-body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_PlayBarDetailLabel_"],
-body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2TYVGoD27ZMfjRirKQNLfk,
-body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_PlayBarDetailLabel_"] > button,
-body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2TYVGoD27ZMfjRirKQNLfk > button
-{
-	color: color-mix(in srgb, currentColor var(--adw-dim-label-opacity), transparent) !important;
-	font-family: var(--adw-text-font) !important;
-	font-size: var(--adw-text-subtitle-size) !important;
-	font-weight: var(--adw-text-subtitle-weight) !important;
-	text-transform: none !important;
-	letter-spacing: normal !important;
-	padding: 0 !important;
-	margin: 0 !important;
-	cursor: var(--adw-cursor-pointer) !important;
-	background: none !important;
-	border-radius: 0 !important;
-}
-
-body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_PlayBarDetailLabel_"] > button:hover,
-body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2TYVGoD27ZMfjRirKQNLfk > button:hover,
-body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_PlayBarDetailLabel_"] > button:active,
-body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2TYVGoD27ZMfjRirKQNLfk > button:active
-{
-	background: none !important;
-}
-
-body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_GameStat_"],
-body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._1kiZKVbDe-9Ikootk57kpA,
-body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_Downloading_"],
-body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2F4PcO4yl7Xl5emuGiF2La
-{
-	height: 40px !important;
-	border-radius: var(--adw-button-radius) !important;
-	padding: 4px !important;
-	column-gap: 4px !important;
-	row-gap: 2px !important;
-	margin: 0 !important;
-	position: relative !important;
-}
-
-body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_Downloading_"],
-body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2F4PcO4yl7Xl5emuGiF2La
-{
-	width: 180px !important;
-	margin-right: 6px !important;
-}
-
-body.DesktopUI div[class*="appdetailsplaysection_StickyHeader_"] div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_Downloading_"],
-body.DesktopUI div._39RheXihcN6H2k2muQTjkI div._3Y87YQY56ZCOqhgcZFaDc5 div._2F4PcO4yl7Xl5emuGiF2La
-{
-	height: 34px !important;
-	padding: 0 4px !important;
-	gap: 0 !important;
-}
-
-body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_Downloading_"] div[class*="appdetailsplaysection_DetailsProgressContainer_"],
-body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2F4PcO4yl7Xl5emuGiF2La div._25YVDTaClw6Y2COPsU0UaV
-{
-	border-radius: var(--adw-button-radius) !important;
-	overflow: hidden !important;
-	position: absolute !important;
-	z-index: 0 !important;
-	background: transparent !important;
-	top: 0 !important;
-	left: 0 !important;
-	right: 0 !important;
-	bottom: 0 !important;
-	height: auto !important;
-	width: auto !important;
-	border: 1px color-mix(in srgb, currentColor var(--adw-dimmer-opacity), transparent) solid !important;
-	margin: 0 !important;
-}
-
-body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_Downloading_"] div[class*="appdetailsplaysection_DetailsProgressContainer_"] > div,
-body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2F4PcO4yl7Xl5emuGiF2La div._25YVDTaClw6Y2COPsU0UaV > div
-{
-	border-radius: 0 !important;
-	background: color-mix(in srgb, currentColor var(--adw-dimmer-opacity), transparent) !important;
-}
-
-body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_GameStat_"] div[class*="appdetailsplaysection_GameStatRight_"],
-body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._1kiZKVbDe-9Ikootk57kpA div._3m_zjRTQBqcfzCjXLXUHcR
-{
-	padding: 0 !important;
-	margin: 0 !important;
-}
-
-body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_PlayBarCloudStatusContainer_"] div[class*="appdetailsplaysection_CloudStatusSyncFail_"],
-body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2cRYms-zZc4misk9tj3bt8 div.q_Xpj_ztkqZCfOIksH3UR,
-body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_MiniAchievements_"],
-body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div.UAhWiMg9Q2VPsQQBj_ikT,
-body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_Downloading_"],
-body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2F4PcO4yl7Xl5emuGiF2La
-{
-	cursor: var(--adw-cursor-pointer) !important;
-	border-radius: var(--adw-button-radius) !important;
-}
-
-body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_PlayBarCloudStatusContainer_"] div[class*="appdetailsplaysection_CloudStatusSyncFail_"]:hover,
-body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2cRYms-zZc4misk9tj3bt8 div.q_Xpj_ztkqZCfOIksH3UR:hover,
-body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_MiniAchievements_"]:hover,
-body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div.UAhWiMg9Q2VPsQQBj_ikT:hover,
-body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_Downloading_"]:hover,
-body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2F4PcO4yl7Xl5emuGiF2La:hover
-{
-	background: color-mix(in srgb, currentColor var(--adw-hover-opacity), transparent) !important;
-}
-
-body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_PlayBarCloudStatusContainer_"] div[class*="appdetailsplaysection_CloudStatusSyncFail_"]:active,
-body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2cRYms-zZc4misk9tj3bt8 div.q_Xpj_ztkqZCfOIksH3UR:active,
-body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_MiniAchievements_"]:active,
-body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div.UAhWiMg9Q2VPsQQBj_ikT:active,
-body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_Downloading_"]:active,
-body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2F4PcO4yl7Xl5emuGiF2La:active
-{
-	background: color-mix(in srgb, currentColor var(--adw-active-opacity), transparent) !important;
-}
-
-body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_PlayBarCloudStatusContainer_"] div[class*="appdetailsplaysection_GameStatIconForced_"],
-body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2cRYms-zZc4misk9tj3bt8 div._3bkqc-SsCg0b3FTEuewlK8,
-body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_PlaytimeIcon_"],
-body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._1GZdosVXnfrf69yU8DWASl,
-body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_GameStatIcon_"],
-body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._1tIg-QIrwMNtCm7NcYADyi
-{
-	color: var(--adw-window-fg) !important;
-	margin: 1px !important;
-}
-
-body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_PlaytimeIcon_"] > svg *,
-body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._1GZdosVXnfrf69yU8DWASl > svg *,
-body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_GameStatIcon_"]:not([class*="appdetailsplaysection_AchievementSVG_"]) > svg *,
-body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._1tIg-QIrwMNtCm7NcYADyi:not(.k-QNT9kzOEOvG0U_kGmwr) > svg *
-{
-	stroke: var(--adw-window-fg) !important;
-}
-
-body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_CloudIconSVG_"],
-body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 svg.MbTRimZpGCATmn39ae8RT
-{
-	color: var(--adw-window-fg) !important;
-}
-
-body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] svg[class*="appdetailsplaysection_PlayBarIconAndGame_"],
-body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2MBVRXpsw6DUjs7937DWZW
-{
-	height: 34px !important;
-	padding: 0 !important;
-	justify-content: center !important;
-}
-
-body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_PlayBarIconAndGame_"] div[class*="appdetailsplaysection_PlayBarGameIcon_"],
-body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2MBVRXpsw6DUjs7937DWZW div._1iNIp1p3ZhPoBwZbkmdb8o
-{
-	width: 20px !important;
-	height: 20px !important;
-	border: 1px color-mix(in srgb, currentColor var(--adw-thin-border-opacity), transparent) solid !important;
-	border-radius: var(--adw-gameicon-radius) !important;
-}
-
-body.DesktopUI div[class*="appdetailsplaysection_InnerContainer_"] div[class*="appdetailsplaysection_PlayBarIconAndGame_"] span[class*="appdetailsplaysection_PlayBarGameName_"],
-body.DesktopUI div._3Y87YQY56ZCOqhgcZFaDc5 div._2MBVRXpsw6DUjs7937DWZW span._3rpUkswF6xc_ste4Ros_xM
-{
-	color: var(--adw-window-fg) !important;
-	font-family: var(--adw-text-font) !important;
-	font-size: var(--adw-text-title3-size) !important;
-	font-weight: var(--adw-text-title3-weight) !important;
-	text-transform: none !important;
-	letter-spacing: normal !important;
-}
-
-/* AppDetails Play Section Buttons */
-body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsplaysection_MenuButton_"],
-body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3qDWQGB0rtwM3qpXTb11Q-
-{
-	background: color-mix(in srgb, currentColor var(--adw-button-bg-opacity), transparent) !important;
-	border-radius: var(--adw-button-radius) !important;
-}
-
-body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsplaysection_MenuButton_"]:hover,
-body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3qDWQGB0rtwM3qpXTb11Q-:hover
-{
-	background: color-mix(in srgb, currentColor var(--adw-button-bg-opacity-hover), transparent) !important;
-	border-radius: var(--adw-button-radius) !important;
-}
-
-body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3qDWQGB0rtwM3qpXTb11Q- div.zvLq1GUCH3yLuqv_TXBJ1
-{
-	margin-top: 0 !important;
-}
-
-body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._3qDWQGB0rtwM3qpXTb11Q- div.zvLq1GUCH3yLuqv_TXBJ1 svg.SVGIcon_Information
-{
-	margin-left: 0 !important;
-}
-
-/* App Details Link Buttons */
-body.DesktopUI div._3-V8vjmrwuJM6Ws3tsjFJj > div
-{
-	border: none !important;
-}
-
-body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsprimarylinkssection_LinksSectionBody_"],
-body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._25f0fX6qbgdB7O_lMrbhCN
-{
-	padding: 0 10px !important;
-}
-
-body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsprimarylinkssection_Link_"],
-body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._1b6LYWVijW-9E4YV0keDWZ
-{
-	border-radius: var(--adw-button-radius) !important;
-	padding: 5px 10px !important;
-}
-
-body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsprimarylinkssection_Link_"]:hover,
-body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._1b6LYWVijW-9E4YV0keDWZ:hover
-{
-	background: color-mix(in srgb, currentColor var(--adw-button-bg-opacity-hover), transparent) !important;
-}
-
-body.DesktopUI div[class*="appdetails_Container_"] span[class*="appdetailsprimarylinkssection_Text_"],
-body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA span._2sNDjgK9EWiPLdNGkjun-w,
-body.DesktopUI div[class*="appdetails_Container_"] div[class*="appdetailsprimarylinkssection_Link_"]:hover span[class*="appdetailsprimarylinkssection_Text_"],
-body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._1b6LYWVijW-9E4YV0keDWZ:hover span._2sNDjgK9EWiPLdNGkjun-w
-{
-	color: var(--adw-window-fg) !important;
-	font-family: var(--adw-text-font) !important;
-	font-size: var(--adw-text-title3-size) !important;
-	font-weight: var(--adw-text-title3-weight) !important;
+	/* Sticky header */
+	div._2L3s2nzh7yCnNESfI5_dN1:not(.jnXtv79jL6SXXwlJYPtQz),
+	div._39RheXihcN6H2k2muQTjkI,
+	div._2_86QNCjVvJTL3Qe6Xztx_
+	{
+		display: none !important;
+	}
 }

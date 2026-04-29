@@ -41,7 +41,7 @@ html.client_chat_frame
 		.CreateChatChannelDialog
 		{
 			padding: 24px !important;
-			width: 400px !important;
+			min-width: 400px !important;
 			box-sizing: border-box !important;
 			-webkit-app-region: drag !important;
 

@@ -29,7 +29,7 @@ html.client_chat_frame div._2VY6HOZXxO2AsBaLssl0Uy
 	div._18QCu-7MTzd51UpVbYysDy,
 	div.MWzjHR-uqa-svGrdXYfUl
 	{
-		padding: 6px calc(6px - var(--adw-scrollbar-size)) 6px 6px !important;
+		padding: 6px !important;
 		margin: 0 !important;
 		gap: 2px !important;
 
@@ -206,8 +206,7 @@ html.client_chat_frame div._2VY6HOZXxO2AsBaLssl0Uy
 			height: 4px;
 			top: 46px;
 			left: 0;
-			right: calc(var(--adw-scrollbar-size) * -1);
-			z-index: 1;
+			right: 0;
 			pointer-events: none;
 			background-image: linear-gradient(to bottom, var(--adw-undershoot));
 			box-shadow: inset 0 1px var(--adw-undershoot-border);
@@ -244,7 +243,7 @@ html.client_chat_frame div._2VY6HOZXxO2AsBaLssl0Uy
 	div._3t8HxXdv4QoWO7f3awdiCQ ._1PFRw63SmEC5gmtojKrml1
 	{
 		margin: 0 !important;
-		padding: 12px 24px 24px 24px;
+		padding: 12px 6px 24px 6px;
 		-webkit-mask-image: none !important;
 		color: var(--adw-window-fg) !important;
 	}
@@ -281,7 +280,12 @@ html.client_chat_frame div._2VY6HOZXxO2AsBaLssl0Uy
 	div._3t8HxXdv4QoWO7f3awdiCQ > div.e600t61ObcLA11pIZAVb9 + div._1cjXkI2JrN71BK7A2YXaYa + *,
 	div._3t8HxXdv4QoWO7f3awdiCQ ._1PFRw63SmEC5gmtojKrml1
 	{
-		scrollbar-gutter: stable !important;
+		scrollbar-gutter: auto !important;
+		padding-left: 6px !important;
+		padding-right: calc(6px - var(--adw-local-scrollbar-size)) !important;
+		animation: --adw-local-scrollbar-size forwards !important;
+		animation-timeline: scroll(y self) !important;
+
 		position: relative !important;
 		overflow-x: hidden !important;
 		overflow-y: auto !important;

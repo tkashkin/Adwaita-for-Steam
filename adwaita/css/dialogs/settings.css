@@ -392,7 +392,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 		height: var(--adw-row-height) !important;
 		outline: 0 solid transparent !important;
 		outline-offset: 5px !important;
-		transition: var(--adw-button-transition), var(--adw-focus-transition) !important;
+		transition: var(--adw-button-transition), var(--adw-focus-transition), height var(--adw-transition) !important;
 
 		/* Expanded */
 		&._21Uc0N6TIRIw4LIZzQnsdE
@@ -615,6 +615,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 			border-radius: var(--adw-card-radius) !important;
 			box-shadow: var(--adw-card-shadow), var(--adw-card-outline-last) !important;
 			border: none !important;
+			width: auto !important;
 			height: 46px !important;
 			box-sizing: border-box !important;
 			padding: 4px 12px !important;
@@ -624,10 +625,8 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 			text-transform: none !important;
 			line-height: normal !important;
 			letter-spacing: normal !important;
-			transition: var(--adw-button-transition) !important;
 			margin: 0 !important;
 			overflow: hidden !important;
-			width: auto !important;
 			cursor: var(--adw-cursor-pointer) !important;
 			outline: 0 solid transparent !important;
 			outline-offset: 5px !important;
@@ -847,7 +846,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 	}
 
 	/* Storage */
-	div._3wk64QNnKSFPWsjvok-t02
+	div.DialogBody._3wk64QNnKSFPWsjvok-t02._1-m8ph2visGravOi6gQn3V
 	{
 		padding: 0 !important;
 
