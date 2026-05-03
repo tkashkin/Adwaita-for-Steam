@@ -305,4 +305,85 @@ html.client_chat_frame div._2VY6HOZXxO2AsBaLssl0Uy
 			background: var(--adw-window-bg);
 		}
 	}
+
+	/* Nested navigation */
+	div.DialogContent_InnerWidth:has(> div.DialogBody > div.Panel div.DialogHeader)
+	{
+		padding-top: 0 !important;
+		margin-top: 46px !important;
+		position: unset !important;
+
+		div.DialogBody
+		{
+			position: unset !important;
+
+			&::before
+			{
+				top: 46px !important;
+			}
+		}
+
+		div.DialogHeader
+		{
+			position: absolute !important;
+			top: 0 !important;
+			left: 0 !important;
+			right: 0 !important;
+			-webkit-app-region: drag !important;
+
+			/* Back button */
+			button._3XdPuZMoLA5gthq09dqcSe
+			{
+				position: absolute !important;
+				left: 6px !important;
+				top: 6px !important;
+				-webkit-app-region: no-drag !important;
+				cursor: var(--adw-cursor-pointer) !important;
+				border-radius: var(--adw-button-radius) !important;
+				box-sizing: border-box !important;
+				width: 34px !important;
+				height: 34px !important;
+				margin: 0 !important;
+				transition: var(--adw-button-transition) !important;
+				color: var(--adw-window-fg) !important;
+				background: none !important;
+				box-shadow: none !important;
+				
+				&:hover
+				{
+					background: color-mix(in srgb, currentColor var(--adw-hover-opacity), transparent) !important;
+					box-shadow: var(--adw-button-hc-outline) !important;
+				}
+			
+				&:active
+				{
+					background: color-mix(in srgb, currentColor var(--adw-active-opacity), transparent) !important;
+					box-shadow: var(--adw-button-hc-outline) !important;
+				}
+			
+				&:focus:focus-visible
+				{
+					box-shadow: var(--adw-button-hc-outline), var(--adw-focus-border) !important;
+				}
+
+				div
+				{
+					display: none !important;
+				}
+			
+				&::before
+				{
+					background-color: currentColor;
+					content: "";
+					display: block;
+					width: 16px;
+					height: 16px;
+					margin: 9px;
+					mask: var(--adw-icon-nav-back) center / 16px no-repeat;
+					box-shadow: none !important;
+					opacity: 1 !important;
+				}
+			}
+		}
+	}
 }

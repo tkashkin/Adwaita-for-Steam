@@ -1454,7 +1454,9 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 	/* Controller: Nintendo Switch layout row */
 	div._3Q8Vc4HcvrUZVLqnC1hTXT div.eKmEXJCm_lgme24Fp_HWt
 	{
-		border-radius: 0 !important;
+		border-bottom-left-radius: 0 !important;
+		border-bottom-right-radius: 0 !important;
+		box-shadow: var(--adw-card-shadow), var(--adw-card-outline) !important;
 	}
 
 	/* Controller: layout row buttons; Millennium: theme settings buttons */

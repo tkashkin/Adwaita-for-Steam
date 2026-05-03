@@ -214,6 +214,11 @@ html.client_chat_frame
 		display: none !important;
 	}
 
+	.title-area
+	{
+		pointer-events: none !important;
+	}
+
 	div.window_resize_grip
 	{
 		opacity: 0 !important;

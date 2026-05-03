@@ -52,10 +52,10 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 		}
 	}
 
-	div.DialogSubHeader:not(:first-child),
-	div.SettingsDialogSubHeader:not(:first-child),
-	div.DialogControlsSectionHeader:not(:first-child),
-	div.DialogControlsSection:not(:first-child),
+	div.DialogSubHeader:not(:first-child):not(.DialogHeader + .DialogSubHeader),
+	div.SettingsDialogSubHeader:not(:first-child):not(.DialogHeader + .SettingsDialogSubHeader),
+	div.DialogControlsSectionHeader:not(:first-child):not(.DialogHeader + .DialogControlsSectionHeader),
+	div.DialogControlsSection:not(:first-child):not(.DialogHeader + .DialogControlsSection),
 	div.DialogControlsSection + div.eKmEXJCm_lgme24Fp_HWt,
 	div.kslgScf2gDsE4jgFDZHEW + div.kslgScf2gDsE4jgFDZHEW
 	{
@@ -191,11 +191,13 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 		}
 
 		/* Icon */
-		&:has(div._2DM37juowId1V_DScp3l4)
+		&:has(._2DM37juowId1V_DScp3l4),
+		&:has(._30lE6NZfqKKk3ozfL--IYQ)
 		{
 			padding-left: 56px !important;
 
-			div._2DM37juowId1V_DScp3l4
+			._2DM37juowId1V_DScp3l4,
+			._30lE6NZfqKKk3ozfL--IYQ
 			{
 				box-sizing: border-box !important;
 				width: 20px !important;
@@ -235,6 +237,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 
 		/* First row in a group */
 		&:first-child,
+		div.DialogHeader + &,
 		div.DialogSubHeader + &,
 		div.SettingsDialogSubHeader + &,
 		div.DialogBodyText + &,
