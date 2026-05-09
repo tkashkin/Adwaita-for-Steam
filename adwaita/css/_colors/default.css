@@ -64,6 +64,6 @@
 	--adw-banner: #7d7d83;
 	
 	--adw-user-offline: var(--adw-dark-1);
-	--adw-user-online: var(--adw-blue-1);
-	--adw-user-ingame: var(--adw-green-1);
+	--adw-user-online: light-dark(var(--adw-blue-3), var(--adw-blue-1));
+	--adw-user-ingame: light-dark(var(--adw-green-3), var(--adw-green-1));
 }

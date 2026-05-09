@@ -32,7 +32,6 @@ html.client_chat_frame ::-webkit-scrollbar-thumb
 	height: var(--adw-scrollbar-size) !important;
 	min-height: 40px !important;
 	min-width: 40px !important;
-
 	border: none !important;
 	border-radius: 0 !important;
 	background: color-mix(in srgb, currentColor 10%, var(--adw-scrollbar-bg)) !important;

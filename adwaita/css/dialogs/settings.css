@@ -382,10 +382,11 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 	div._2KFeE_s51aT07ohdMu_ZH1
 	{
 		border: none !important;
-		background: none !important;
+		background-color: var(--adw-card-bg) !important;
 		padding: 0 !important;
 		margin: 0 !important;
 		border-radius: 0 !important;
+		border: none !important;
 		overflow: hidden !important;
 		box-shadow: var(--adw-card-shadow), var(--adw-card-outline) !important;
 		transition: height var(--adw-transition) !important;
@@ -422,6 +423,11 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 			border-bottom-left-radius: var(--adw-card-radius) !important;
 			border-bottom-right-radius: var(--adw-card-radius) !important;
 			box-shadow: var(--adw-card-shadow), var(--adw-card-outline-last) !important;
+
+			div._1u5y7VbwvOwncjMsMqnFUz > div.DialogCheckbox_Container:last-of-type
+			{
+				box-shadow: var(--adw-card-outline-last) !important;
+			}
 		}
 
 		div.BRmrC-jnwpXqye4oYB21C,
@@ -429,7 +435,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 		div._1u5y7VbwvOwncjMsMqnFUz > div.DialogCheckbox_Container
 		{
 			color: var(--adw-card-fg) !important;
-			background-color: var(--adw-card-bg) !important;
+			background-color: transparent !important;
 			--adw-hover-overlay: 0%;
 			background-image: linear-gradient(0deg, color-mix(in srgb, currentColor var(--adw-hover-overlay), transparent), color-mix(in srgb, currentColor var(--adw-hover-overlay), transparent)) !important;
 			border-radius: 0 !important;
@@ -524,6 +530,8 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 			display: flex !important;
 			align-items: center !important;
 			justify-content: end !important;
+			border: none !important;
+			scale: 1 !important;
 
 			svg
 			{

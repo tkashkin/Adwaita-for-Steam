@@ -38,7 +38,6 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 		margin-top: var(--adw-library-details-header-height) !important;
 		background: var(--adw-view-bg) !important;
 		color: var(--adw-view-fg) !important;
-		outline: 1px color-mix(in srgb, currentColor var(--adw-thin-border-opacity), transparent) solid !important;
 
 		div.NZMJ6g2iVnFsOOp-lDmIP
 		{
@@ -95,6 +94,20 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 		._3_IUVzR9tpG_JKEjhwXEAb
 		{
 			display: none !important;
+		}
+
+		&::after
+		{
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 1;
+			border-radius: inherit;
+			box-shadow: inset 0 1px 0 0 color-mix(in srgb, currentColor var(--adw-border-opacity), transparent), inset 0 -1px 0 0 color-mix(in srgb, currentColor var(--adw-border-opacity), transparent);
+			pointer-events: none;
 		}
 	}
 

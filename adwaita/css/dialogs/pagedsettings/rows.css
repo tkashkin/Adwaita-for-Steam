@@ -208,6 +208,11 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 				left: 17px !important;
 				top: 0 !important;
 				bottom: 0 !important;
+
+				svg path
+				{
+					fill: currentColor !important;
+				}
 			}
 		}
 
@@ -303,6 +308,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 			{
 				background: color-mix(in srgb, currentColor var(--adw-button-bg-opacity), transparent);
 				box-shadow: var(--adw-button-hc-outline);
+				border: none !important;
 				border-radius: var(--adw-button-radius) !important;
 				color: var(--adw-card-fg) !important;
 				font-family: var(--adw-text-font) !important;
@@ -312,6 +318,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 				height: 24px;
 				padding: 5px 12px;
 				transition: var(--adw-button-transition) !important;
+				scale: 1 !important;
 				cursor: var(--adw-cursor-pointer) !important;
 				max-width: 250px;
 				text-overflow: ellipsis !important;

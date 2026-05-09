@@ -473,6 +473,7 @@ body.DesktopUI div._1FyBL6obxHQ2Z2CsaV2Gbz
 			/* Table header */
 			div.X3pN_ESh0aoxmm2nK65Hu
 			{
+				color: var(--adw-card-fg) !important;
 				background-color: var(--adw-card-bg) !important;
 				border-radius: var(--adw-card-radius) var(--adw-card-radius) 0 0 !important;
 				box-shadow: var(--adw-card-shadow), var(--adw-card-outline) !important;
@@ -529,6 +530,7 @@ body.DesktopUI div._1FyBL6obxHQ2Z2CsaV2Gbz
 						padding: 0 !important;
 						margin: 0 !important;
                         justify-content: center !important;
+						color: var(--adw-card-fg) !important;
 
 						&._2d_FE9TOpHt1FsYhLEpjCp
 						{
@@ -539,7 +541,6 @@ body.DesktopUI div._1FyBL6obxHQ2Z2CsaV2Gbz
 						div.a19KifKnB2YZP_hYoFsar,
 						div._3FgV6oQH8JCN-J9BPCCs14
 						{
-							color: var(--adw-card-fg) !important;
 							font-family: var(--adw-text-font) !important;
 							font-size: var(--adw-text-row-title-size) !important;
 							font-weight: var(--adw-text-row-title-weight) !important;
