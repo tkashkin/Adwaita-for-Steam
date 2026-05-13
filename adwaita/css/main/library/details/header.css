@@ -67,10 +67,14 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 							color: var(--adw-success-fg) !important;
 						}
 
+						/* Disabled */
 						&._1Pb6PMh_3L5p5NzuUz0Pp9
 						{
-							background: color-mix(in srgb, currentColor var(--adw-disabled-opacity), transparent) !important;
-							color: color-mix(in srgb, currentColor var(--adw-disabled-opacity), transparent) !important;
+							background: color-mix(in srgb, var(--adw-window-fg) var(--adw-button-bg-opacity), transparent) !important;
+							color: var(--adw-window-fg) !important;
+							opacity: var(--adw-disabled-opacity) !important;
+							box-shadow: none !important;
+							pointer-events: none !important;
 						}
 
 						/* Text */
@@ -258,7 +262,8 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 								}
 
 								div._34lrt5-Fc3usZU6trA1P0-,
-								div._2TYVGoD27ZMfjRirKQNLfk
+								div._2TYVGoD27ZMfjRirKQNLfk,
+								div._1YqJbKvmcYmfIDhCmNIQ5q
 								{
 									width: auto !important;
 									height: auto !important;
@@ -306,7 +311,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 								}
 								
 								/* Prerelease */
-								&:has(div._1YqJbKvmcYmfIDhCmNIQ5q)
+								div._3Y87YQY56ZCOqhgcZFaDc5:not(:has(span._3rpUkswF6xc_ste4Ros_xM)) &:has(div._1YqJbKvmcYmfIDhCmNIQ5q)
 								{
 									overflow: visible !important;
 

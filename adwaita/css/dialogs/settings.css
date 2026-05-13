@@ -52,7 +52,8 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 	}
 
 	/* Account buttons - remove row styling, style inner buttons as rows */
-	div.eKmEXJCm_lgme24Fp_HWt:has(button.JA6JIY08WWMEfWP-sZkZ2)
+	div.eKmEXJCm_lgme24Fp_HWt:has(button.JA6JIY08WWMEfWP-sZkZ2),
+	div.onPxgvGKxGbKdE7dDWrMx
 	{
 		background: none !important;
 		box-shadow: none !important;
@@ -73,7 +74,8 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 			position: initial !important;
 		}
 
-		div._2XSsNSGcWjGZ6z3fvqaRd5
+		div._2XSsNSGcWjGZ6z3fvqaRd5,
+		&.onPxgvGKxGbKdE7dDWrMx
 		{
 			padding: 0 !important;
 			margin: 0 !important;
