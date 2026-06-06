@@ -3,11 +3,24 @@
 from pathlib import Path
 from dataclasses import dataclass
 from enum import StrEnum
-from typing import Self
+from typing import Self, Set
+import re
 
 from ..consts import *
+from .log import *
+
+ADW_PATCH_FILES = {
+    "base": Path("library.css"),       # Login/Splash, some dialogs, also Big Picture
+    "main": Path("gamerecording.css"), # Most of the main desktop windows
+    "notes": Path("gamenotes.css")     # Notes
+}
 
 ADW_CSS_INDENT = " " * 4
+
+ADW_CSS_RE_IMPORT = re.compile(r"^\s*@import\s+url\((?P<quote>[\"'])(?P<path>.+?)(?P=quote)\)\s*;\s*(?:/\*.*\*/\s*)?$")
+ADW_CSS_RE_COMMENT = re.compile(r"/\*.*?\*/", re.S)
+ADW_CSS_RE_BLOCK = re.compile(r"\s*([{};,])\s*")
+ADW_CSS_RE_MULTISPACE = re.compile(r"\s+")
 
 @dataclass
 class AdwCSSImport:
@@ -63,7 +76,34 @@ class AdwCSSBuilder:
     def append(self, config: AdwCSSConfig):
         self._configs.append(config)
 
-    def build(self) -> str:
+    def patch(self, target: AdwInstallTarget, optimize: bool):
+        config_bytes = self._build_config().encode(encoding="utf-8")
+        target.skin_config_css.write_bytes(config_bytes)
+        
+        for patch, file in ADW_PATCH_FILES.items():
+            patch_bytes = self._build_patch(patch, optimize)
+
+            if optimize:
+                self._bundle_css(target.skin_dir / f"{patch}.css")
+
+            original = target.css_dir / file.with_suffix(".original.css")
+            patched = target.css_dir / file
+
+            with patched.open(encoding="utf-8") as p:
+                already_patched = p.readline(len(ADW_PATCH_HEADER)).strip() == ADW_PATCH_HEADER
+            
+            if not already_patched:
+                patched.replace(original)
+            
+            original_size = original.stat().st_size
+            patched_size = len(patch_bytes)
+            if patched_size > original_size:
+                critical(f"Patch size ({patched_size} bytes) exceeds the original file size ({original_size} bytes), original file: \"{original}\"")
+            else:
+                patch_bytes = patch_bytes + b" " * max(0, original_size - patched_size)
+                patched.write_bytes(patch_bytes)
+
+    def _build_config(self) -> str:
         imports = ""
         blocks = ""
 
@@ -73,14 +113,47 @@ class AdwCSSBuilder:
             if c.blocks:
                 blocks += "\n" + "\n\n".join([b.to_css() for b in c.blocks]) + "\n"
 
-        header = f"{ADW_PATCH_HEADER}\n{ADW_PATCH_VERSION_HEADER}\n{ADW_PATCH_INSTALLATION_DATE_HEADER}\n"
-        return header + imports + "\n" + blocks
+        return imports + "\n" + blocks
+    
+    def _build_patch(self, patch: str, optimize: bool) -> bytes:
+        original = ADW_PATCH_FILES[patch].with_suffix(".original.css").name
+        entrypoint = f"{patch}.min.css" if optimize else f"{patch}.css"
+        content = [
+            ADW_PATCH_HEADER,
+            ADW_PATCH_VERSION_HEADER,
+            ADW_PATCH_INSTALLATION_DATE_HEADER,
+            f"@import url(\"{original}\");",
+            f"@import url(\"../{ADW_ROOT}/{entrypoint}\");"
+        ]
+        if patch == "base":
+            content.append(f"@import url(\"../{ADW_ROOT}/config.css\");")
+        return ("\n".join(content) + "\n").encode(encoding="utf-8")
+    
+    def _bundle_css(self, file: Path) -> Path:
+        bundle = file.with_suffix(".min.css")
+        css = self._inline_css_imports(file)
+        css = self._minify_css(css)
+        bundle.write_text(css, encoding="utf-8")
+        return bundle
 
-    def patch(self, target: Path, original: Path):
-        content = self.build()
-        original_size = original.stat().st_size
-        with target.open("w", encoding="utf-8") as f:
-            f.write(content)
-            target_size = f.tell()
-            if target_size < original_size:
-                f.write(" " * (original_size - target_size))
+    def _inline_css_imports(self, file: Path, seen: Set[Path] | None = None) -> str:
+        seen = seen or set()
+        file = file.resolve()
+        if file in seen: return ""
+        seen.add(file)
+
+        result = []
+        for line in file.read_text(encoding="utf-8").splitlines():
+            match = ADW_CSS_RE_IMPORT.match(line)
+            if match:
+                result.append(self._inline_css_imports(file.parent / match.group("path"), seen))
+            else:
+                result.append(line)
+        
+        return "\n".join(result)
+    
+    def _minify_css(self, css: str) -> str:
+        css = ADW_CSS_RE_COMMENT.sub("", css)
+        css = ADW_CSS_RE_BLOCK.sub(r"\1", css)
+        css = ADW_CSS_RE_MULTISPACE.sub(" ", css)
+        return css.strip()

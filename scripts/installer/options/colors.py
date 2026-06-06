@@ -106,7 +106,7 @@ class AdwColors(AdwParsedOptionGroup):
         if self.color_theme != "adwaita":
             imports.append(
                 AdwCSSImport(
-                    file=Path("..") / ADW_ROOT / ADW_COLORTHEMES / self.color_theme / f"{self.color_theme}.css",
+                    file=ADW_COLORTHEMES / self.color_theme / f"{self.color_theme}.css",
                     comment=f"Color theme: {self.color_theme}"
                 )
             )

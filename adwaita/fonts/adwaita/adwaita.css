@@ -54,6 +54,6 @@
 
 :root
 {
-	--adw-text-font-primary: "Adwaita Sans", "adw-adwaita-sans" !important;
-	--adw-text-font-monospace-primary: "Adwaita Mono", "adw-adwaita-mono" !important;
+	--adw-text-font-primary: "Adwaita Sans", "adw-adwaita-sans";
+	--adw-text-font-monospace-primary: "Adwaita Mono", "adw-adwaita-mono";
 }

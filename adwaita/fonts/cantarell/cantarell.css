@@ -9,6 +9,6 @@
 
 :root
 {
-	--adw-text-font-primary: "Cantarell-VF", "Cantarell", "adw-cantarell-vf" !important;
-	--adw-text-font-monospace-primary: "Source Code Pro" !important;
+	--adw-text-font-primary: "Cantarell-VF", "Cantarell", "adw-cantarell-vf";
+	--adw-text-font-monospace-primary: "Source Code Pro";
 }

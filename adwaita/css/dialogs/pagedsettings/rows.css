@@ -191,8 +191,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 		}
 
 		/* Icon */
-		&:has(._2DM37juowId1V_DScp3l4),
-		&:has(._30lE6NZfqKKk3ozfL--IYQ)
+		&:has(._2DM37juowId1V_DScp3l4, ._30lE6NZfqKKk3ozfL--IYQ)
 		{
 			padding-left: 56px !important;
 
@@ -264,14 +263,16 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 
 		/* Last row in a group */
 		&:last-child,
-		&:has(+ div.DialogSubHeader),
-		&:has(+ div.SettingsDialogSubHeader),
-		&:has(+ div.DialogBodyText),
-		&:has(+ div.DialogControlsSectionHeader),
-		&:has(+ div.DialogControlsSection),
-		&:has(+ div._1vcky98a3hG0ulFCdee4kd),
-		&:has(+ div._2Dfy8vuNMdABIKGO2KHbVF),
-		&:has(+ div.millenniumPluginField) /* Millennium settings */
+		&:has(
+			+ div.DialogSubHeader,
+			+ div.SettingsDialogSubHeader,
+			+ div.DialogBodyText,
+			+ div.DialogControlsSectionHeader,
+			+ div.DialogControlsSection,
+			+ div._1vcky98a3hG0ulFCdee4kd,
+			+ div._2Dfy8vuNMdABIKGO2KHbVF,
+			+ div.millenniumPluginField
+		)
 		{
 			border-bottom-left-radius: var(--adw-card-radius) !important;
 			border-bottom-right-radius: var(--adw-card-radius) !important;
@@ -279,9 +280,8 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 		}
 
 		/* Interactive */
-		&:has(div._9Ql-oVe_j8E-vsDdyVdWo),
+		&:has(div._9Ql-oVe_j8E-vsDdyVdWo, .DialogDropDown),
 		&:has(.DialogInput):not(:focus-within),
-		&:has(.DialogDropDown),
 		&._1Ld_tWSqKSgYUpn7T4FNst
 		{
 			&:hover
@@ -429,8 +429,7 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 		}
 
 		/* Property */
-		&:has(._2kbiwbjuXdmtPSK_YaZCMU),
-		&:has(._30qj_go1hm7_x09KzHFVna)
+		&:has(._2kbiwbjuXdmtPSK_YaZCMU, ._30qj_go1hm7_x09KzHFVna)
 		{
 			/* Title */
 			div._3jMlJm4PQCA8SfNlUR99Fo
@@ -811,14 +810,16 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 	}
 
 	/* Radio group: title */
-	div.DialogBodyText:has(+ div._2qYC3gFAkLcB48i6dTz051),
-	div.DialogBodyText:has(+ div._1ml4SNc3LIyBDHIf8ekVSw),
-	div.DialogBodyText:has(+ div.Panel > div._2qYC3gFAkLcB48i6dTz051),
-	div.DialogBodyText:has(+ div.Panel > div._1ml4SNc3LIyBDHIf8ekVSw),
-	div.DialogBodyText:has(+ div.DialogBodyText + div._2qYC3gFAkLcB48i6dTz051),
-	div.DialogBodyText:has(+ div.DialogBodyText + div._1ml4SNc3LIyBDHIf8ekVSw),
-	div.DialogBodyText:has(+ div.DialogBodyText + div.Panel > div._2qYC3gFAkLcB48i6dTz051),
-	div.DialogBodyText:has(+ div.DialogBodyText + div.Panel > div._1ml4SNc3LIyBDHIf8ekVSw)
+	div.DialogBodyText:has(
+		+ div._2qYC3gFAkLcB48i6dTz051,
+		+ div._1ml4SNc3LIyBDHIf8ekVSw,
+		+ div.Panel > div._2qYC3gFAkLcB48i6dTz051,
+		+ div.Panel > div._1ml4SNc3LIyBDHIf8ekVSw,
+		+ div.DialogBodyText + div._2qYC3gFAkLcB48i6dTz051,
+		+ div.DialogBodyText + div._1ml4SNc3LIyBDHIf8ekVSw,
+		+ div.DialogBodyText + div.Panel > div._2qYC3gFAkLcB48i6dTz051,
+		+ div.DialogBodyText + div.Panel > div._1ml4SNc3LIyBDHIf8ekVSw
+	)
 	{
 		color: currentColor !important;
 		line-height: var(--adw-list-header-height) !important;
@@ -829,10 +830,12 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 	}
 
 	/* Radio group: subtitle */
-	div.DialogBodyText + div.DialogBodyText:has(+ div._2qYC3gFAkLcB48i6dTz051),
-	div.DialogBodyText + div.DialogBodyText:has(+ div._1ml4SNc3LIyBDHIf8ekVSw),
-	div.DialogBodyText + div.DialogBodyText:has(+ div.Panel > div._2qYC3gFAkLcB48i6dTz051),
-	div.DialogBodyText + div.DialogBodyText:has(+ div.Panel > div._1ml4SNc3LIyBDHIf8ekVSw)
+	div.DialogBodyText + div.DialogBodyText:has(
+		+ div._2qYC3gFAkLcB48i6dTz051,
+		+ div._1ml4SNc3LIyBDHIf8ekVSw,
+		+ div.Panel > div._2qYC3gFAkLcB48i6dTz051,
+		+ div.Panel > div._1ml4SNc3LIyBDHIf8ekVSw
+	)
 	{
 		color: color-mix(in srgb, currentColor var(--adw-dim-label-opacity), transparent) !important;
 		font-size: var(--adw-text-subtitle-size) !important;

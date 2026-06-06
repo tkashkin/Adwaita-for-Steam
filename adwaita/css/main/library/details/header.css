@@ -806,16 +806,27 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 					margin-left: -4px !important;
 				}
 
-				/* Game version */
-				div._3ooxUb30k7736aTVnO179S
+				div._3ooxUb30k7736aTVnO179S, /* Game version */
+				button._1qG6xUlNu-qvdhpSxwed5 /* Cloud sync retry */
 				{
 					color: inherit !important;
 					cursor: default !important;
+					font-family: inherit !important;
 					font-size: inherit !important;
 					font-weight: inherit !important;
 					overflow: hidden !important;
 					text-overflow: ellipsis !important;
 					white-space: nowrap !important;
+					background: none !important;
+					padding: 0 !important;
+					margin: 0 !important;
+					box-shadow: none !important;
+					display: contents !important;
+
+					&::before
+					{
+						content: none !important;
+					}
 					
 					&::after
 					{
@@ -888,7 +899,8 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 			}
 
 			&.IIJeieZ-ZPRfIULY7uSDG, /* Steam Deck compatibility */
-			&:has(div._3ooxUb30k7736aTVnO179S) /* Game version */
+			&:has(div._3ooxUb30k7736aTVnO179S), /* Game version */
+			&:has(button._1qG6xUlNu-qvdhpSxwed5) /* Cloud sync error */
 			{
 				cursor: var(--adw-cursor-pointer) !important;
 

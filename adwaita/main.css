@@ -1,25 +1,3 @@
-@import url("css/_colors/default.css");
-@import url("css/_colors/derived.css");
-@import url("css/_colors/palette.css");
-
-@import url("css/_root/icons.css");
-@import url("css/_root/localization.css");
-@import url("css/_root/opacity.css");
-@import url("css/_root/text.css");
-@import url("css/_root/transitions.css");
-@import url("css/_root/variables.css");
-
-@import url("css/widgets/avatars.css");
-@import url("css/widgets/buttons.css");
-@import url("css/widgets/cards.css");
-@import url("css/widgets/checkboxes.css");
-@import url("css/widgets/dialogs.css");
-@import url("css/widgets/entries.css");
-@import url("css/widgets/lists.css");
-@import url("css/widgets/popups.css");
-@import url("css/widgets/scrollbars.css");
-@import url("css/widgets/windowcontrols.css");
-
 @import url("css/main/headerbar/buttons.css");
 @import url("css/main/headerbar/headerbar.css");
 @import url("css/main/headerbar/menu.css");
@@ -54,10 +32,4 @@
 @import url("css/dialogs/pagedsettings/rows.css");
 @import url("css/dialogs/about.css");
 @import url("css/dialogs/appproperties.css");
-@import url("css/dialogs/login.css");
 @import url("css/dialogs/settings.css");
-
-:root
-{
-	--adw-version: "4.0";
-}

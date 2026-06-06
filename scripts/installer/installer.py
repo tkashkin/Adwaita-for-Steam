@@ -67,7 +67,7 @@ class AdwInstaller:
             target.update()
             match general.action:
                 case AdwInstallAction.INSTALL:
-                    if self._install(target):
+                    if self._install(target, general.optimize):
                         changes += 1
 
                 case AdwInstallAction.UNINSTALL:
@@ -83,23 +83,17 @@ class AdwInstaller:
         else:
             info(f"No changes made")
     
-    def _install(self, target: AdwInstallTarget) -> bool:
+    def _install(self, target: AdwInstallTarget, optimize: bool) -> bool:
         try:
             step(f"Installing to \"{target.root}\"")
             if not target.is_valid:
                 warning(f"Directory \"{target.root}\" does not exist or is not a valid Steam directory, skipping")
                 return False
-            if target.is_old_version_installed:
-                warning("Previous version of the skin is installed, upgrading")
-                target.skin_old_libraryroot_css.unlink(missing_ok=True)
-            if not target.is_installed and not target.is_old_version_installed:
-                info("Saving original styles")
-                target.patch_css.replace(target.patch_css_original)
             info("Copying skin directory")
             copy_dir(ADW_ROOT, target.skin_dir)
             copy_file(ADW_CUSTOM / "custom.css", target.skin_custom_css)
             info("Patching and configuring skin")
-            AdwCSSBuilder(self._css).patch(target.patch_css, target.patch_css_original)
+            AdwCSSBuilder(self._css).patch(target, optimize)
             success(f"Installed to \"{target.root}\" successfully")
             return True
         except Exception as err:
@@ -112,13 +106,11 @@ class AdwInstaller:
             if not target.is_installed:
                 warning(f"Not installed to \"{target.root}\", skipping")
                 return False
+            info("Restoring original styles")
+            for file in ADW_PATCH_FILES.values():
+                (target.css_dir / file.with_suffix(".original.css")).replace(target.css_dir / file)
             info("Removing skin directory")
             shutil.rmtree(target.skin_dir)
-            info("Restoring original styles")
-            target.patch_css_original.replace(target.patch_css)
-            if target.is_old_version_installed:
-                warning("Previous version of the skin was installed, cleaning up")
-                target.skin_old_libraryroot_css.unlink(missing_ok=True)
             success(f"Uninstalled from \"{target.root}\" successfully")
             return True
         except Exception as err:

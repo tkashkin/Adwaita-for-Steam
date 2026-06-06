@@ -1,7 +1,7 @@
 body.DesktopUI
 {
 	div.VZ6x_grhNkIYJG__jEEyp,
-	div._2v9dClMg2Lmn8UVv6GUeJt,
+	._2v9dClMg2Lmn8UVv6GUeJt,
 	div._2EuR68sQbA8eP01DlIfu6O._2R_n2M6thAvA4On2yeR_Jd,
 	div._2dqG948uNVB7jwgT1g6O-a,
 	div._2YwTwqFtU04JgwfzXSAcSV
@@ -84,12 +84,13 @@ body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp
 	}
 
 	/* Root */
-	div._2v9dClMg2Lmn8UVv6GUeJt
+	._2v9dClMg2Lmn8UVv6GUeJt
 	{
 		padding: 0 24px 16px 24px !important;
 		column-gap: 16px !important;
 		row-gap: 0 !important;
 		flex-grow: 1 !important;
+		background: none !important;
 	}
 
 	/* Highlight */
@@ -164,7 +165,7 @@ body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp
 			}
 
 			/* Label */
-			div.XrYgea66b38RASmbI3PJo
+			.XrYgea66b38RASmbI3PJo
 			{
 				padding: 18px 12px 0 12px !important;
 				margin: 0 !important;
@@ -182,7 +183,7 @@ body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp
 			&:focus-within,
 			&:has(input[value]:not([value=""]))
 			{
-				div.XrYgea66b38RASmbI3PJo
+				.XrYgea66b38RASmbI3PJo
 				{
 					padding-top: 6px !important;
 					font-size: var(--adw-text-row-subtitle-size) !important;
@@ -259,7 +260,7 @@ body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp
 			cursor: var(--adw-cursor-pointer) !important;
 
 			/* Label */
-			div._10bGilozn2bfCfiPfANMhC
+			._10bGilozn2bfCfiPfANMhC
 			{
 				color: inherit !important;
 				font-family: var(--adw-text-font) !important;
@@ -338,7 +339,7 @@ body.DesktopUI div.VZ6x_grhNkIYJG__jEEyp
 	/* QR code */
 	div._3wSeH3OorL-tMzwXL55smN
 	{
-		div._12zBmIktqPpcwJXItTb8f9
+		._12zBmIktqPpcwJXItTb8f9
 		{
 			display: none !important;
 		}

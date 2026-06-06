@@ -155,7 +155,7 @@ class AdwWindowControls(AdwParsedOptionGroup):
         return AdwCSSConfig(
             imports=[
                 AdwCSSImport(
-                    file=Path("..") / ADW_ROOT / ADW_WINDOWCONTROLS / f"{self.theme}.css",
+                    file=ADW_WINDOWCONTROLS / f"{self.theme}.css",
                     comment=f"Window controls theme: {self.theme}"
                 )
             ],

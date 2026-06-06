@@ -41,43 +41,31 @@ class AdwInstallTarget:
     root: Path
     is_valid: bool
     is_installed: bool
-    is_old_version_installed: bool
 
     steamui_dir: Path = field(repr=False)
     css_dir: Path = field(repr=False)
-    patch_css: Path = field(repr=False)
-    patch_css_original: Path = field(repr=False)
     skin_dir: Path = field(repr=False)
     skin_config_css: Path = field(repr=False)
     skin_custom_css: Path = field(repr=False)
-    skin_old_libraryroot_css: Path = field(repr=False)
 
     def __init__(self, root: Path):
         self.root = root.expanduser().resolve()
         self.steamui_dir = self.root / "steamui"
         self.css_dir = self.steamui_dir / "css"
-        self.patch_css = self.css_dir / "library.css"
-        self.patch_css_original = self.css_dir / "library.original.css"
         self.skin_dir = self.steamui_dir / ADW_ROOT
+        self.skin_config_css = self.skin_dir / "config.css"
         self.skin_custom_css = self.skin_dir / "custom.css"
-        self.skin_old_libraryroot_css = self.steamui_dir / "libraryroot.custom.css"
         self.update()
 
     def update(self):
-        self.is_valid = self.css_dir.is_dir() and self.patch_css.is_file()
-        if self.is_valid and self.patch_css_original.is_file():
-            with self.patch_css.open(encoding="utf-8") as patch_css:
-                header = patch_css.readline(max(len(ADW_PATCH_HEADER), len(ADW_PATCH_OLD_HEADER))).strip()
-                self.is_installed = header in [ADW_PATCH_HEADER, ADW_PATCH_OLD_HEADER]
-                self.is_old_version_installed = header == ADW_PATCH_OLD_HEADER or self.skin_old_libraryroot_css.is_file()
-        else:
-            self.is_installed = False
-            self.is_old_version_installed = False
+        self.is_valid = self.css_dir.is_dir()
+        self.is_installed = self.is_valid and self.skin_dir.is_dir()
 
 @dataclass
 class AdwGeneral(AdwParsedOptionGroup):
     action: AdwInstallAction
     targets: list[AdwInstallTarget]
+    optimize: bool
     debug: bool
     list_options: bool
 
@@ -93,6 +81,12 @@ class AdwGeneralOptions(AdwOptionGroup):
             metavar="{" + ",".join(ADW_INSTALL_TARGETS.keys()) + ",PATH}",
             nargs="+",
             action="extend"
+        )
+        args.add_argument(
+            "--no-optimize",
+            dest="optimize",
+            help="skip CSS bundling and minification",
+            action="store_false"
         )
         args.add_argument(
             "-u",
@@ -129,6 +123,7 @@ class AdwGeneralOptions(AdwOptionGroup):
         return AdwGeneral(
             action=AdwInstallAction.UNINSTALL if args.uninstall else AdwInstallAction.INSTALL,
             targets=self._resolve_targets(args.target),
+            optimize=args.optimize,
             debug=args.debug,
             list_options=args.list_options
         )

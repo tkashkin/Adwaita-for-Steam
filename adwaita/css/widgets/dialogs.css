@@ -14,6 +14,14 @@ html.client_chat_frame
 		background: var(--adw-shade) !important;
 	}
 
+	.FullModalOverlay > dialog
+	{
+		border: none !important;
+		outline: none !important;
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+
 	.FullModalOverlay .ModalPosition_Content
 	{
 		background: var(--adw-dialog-bg) !important;

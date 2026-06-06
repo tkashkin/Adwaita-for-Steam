@@ -17,28 +17,19 @@ class AdwStyle(AdwParsedOptionGroup):
     custom_css: bool
 
     def to_css(self) -> AdwCSSConfig:
-        imports = [
-            AdwCSSImport(
-                file=Path("library.original.css"),
-                comment="Base Steam styles"
-            ),
-            AdwCSSImport(
-                file=Path("..") / ADW_ROOT / "adwaita.css",
-                comment="Main theme styles"
-            )
-        ]
+        imports = []
 
         for extra in self.extras:
             imports.append(
                 AdwCSSImport(
-                    file=Path("..") / ADW_ROOT / ADW_EXTRAS / f"{extra}.css",
+                    file=ADW_EXTRAS / f"{extra}.css",
                     comment=f"Extra: {extra}"
                 )
             )
 
         imports.append(
             AdwCSSImport(
-                file=Path("..") / ADW_ROOT / ADW_FONTS / self.font / f"{self.font}.css",
+                file=ADW_FONTS / self.font / f"{self.font}.css",
                 comment=f"Font: {self.font}"
             )
         )
@@ -46,7 +37,7 @@ class AdwStyle(AdwParsedOptionGroup):
         if self.custom_css:
             imports.append(
                 AdwCSSImport(
-                    file=Path("..") / ADW_ROOT / "custom.css",
+                    file=Path("custom.css"),
                     comment="Custom CSS"
                 )
             )
