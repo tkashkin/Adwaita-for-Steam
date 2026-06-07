@@ -20,7 +20,8 @@ html.client_chat_frame
 	div.DialogCheckbox_Container,
 	div._1Qku5jMXBi5-wawzqY1kzG,
 	div._2ULTJEgaq0SZefVsQLCQ6B,
-	div._2qURXDJ4ZtfSVOesDk7A73
+	div._2qURXDJ4ZtfSVOesDk7A73,
+	div.bTuHD5QOYlrI7ljo-zst7
 	{
 		-webkit-app-region: no-drag !important;
 		cursor: var(--adw-cursor-pointer) !important;
@@ -49,6 +50,8 @@ html.client_chat_frame
 			background-image: linear-gradient(var(--adw-checkbox-overlay), var(--adw-checkbox-overlay)) !important;
 			background-blend-mode: overlay !important;
 			box-shadow: inset 0 0 0 2px color-mix(in srgb, currentColor var(--adw-checkbox-outline-opacity), transparent) !important;
+			opacity: 1 !important;
+			filter: none !important;
 
 			outline: 0 solid transparent !important;
 			outline-offset: 5px !important;
@@ -118,6 +121,13 @@ html.client_chat_frame
 			{
 				--adw-checkbox-overlay: rgba(0, 0, 6, 0.2);
 			}
+		}
+
+		/* Disabled */
+		&:has(.Disabled)
+		{
+			opacity: var(--adw-disabled-opacity) !important;
+			--adw-checkbox-overlay: transparent !important;
 		}
 	}
 

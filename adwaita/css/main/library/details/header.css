@@ -401,6 +401,8 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 							-webkit-line-clamp: 2 !important;
 							overflow: hidden !important;
 							text-overflow: ellipsis !important;
+							padding-right: 16px !important;
+							mask-image: linear-gradient(to left, transparent, black 16px) !important;
 						}
 					}
 

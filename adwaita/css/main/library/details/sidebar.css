@@ -471,6 +471,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2aor4XVOYzN1PBSREk0UbO
 			/* Image */
 			div._3ikOg0yRAOzUTlfwD9zrH-
 			{
+				position: relative !important;
 				width: 64px !important;
 				height: 64px !important;
 				border-radius: var(--adw-gameicon-radius) !important;
@@ -481,6 +482,8 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2aor4XVOYzN1PBSREk0UbO
 				{
 					border-radius: inherit !important;
 					box-shadow: none !important;
+					width: 64px !important;
+					height: 64px !important;
 				}
 
 				&:not(:has(img._3s4Rq3jnntBVP7HbJj1RMQ))::after
