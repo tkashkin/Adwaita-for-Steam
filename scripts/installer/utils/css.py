@@ -1,13 +1,17 @@
 #!/usr/bin/env python3
 
+from __future__ import annotations
 from pathlib import Path
 from dataclasses import dataclass
 from enum import StrEnum
-from typing import Self, Set
+from typing import Self, Set, TYPE_CHECKING
 import re
 
 from ..consts import *
 from .log import *
+
+if TYPE_CHECKING:
+    from ..options.general import AdwInstallTarget
 
 ADW_PATCH_FILES = {
     "base": Path("library.css"),       # Login/Splash, some dialogs, also Big Picture
