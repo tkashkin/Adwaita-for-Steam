@@ -1,82 +1,61 @@
 :root
 {
-	/* The main accent color and the matching text value */
-	--adw-accent-bg-rgb: 0, 206, 153 !important;
-	--adw-accent-fg-rgb: 255, 255, 255 !important;
-	--adw-accent-rgb: 120, 174, 237 !important;
+	--adw-accent-bg-light: var(--adw-system-accent, #00ce99);
+	--adw-accent-bg-dark: var(--adw-system-accent, #00ce99);
 
-	/* destructive-action buttons */
-	--adw-destructive-bg-rgb: 192, 28, 40 !important;
-	--adw-destructive-fg-rgb: 255, 255, 255 !important;
-	--adw-destructive-rgb: 255, 123, 99 !important;
+	--adw-destructive-bg-light: #c01c28;
+	--adw-destructive-bg-dark: #c01c28;
+	--adw-destructive-fg: #ffffff;
 
-	/* Levelbars, entries, labels and infobars. These don't need text colors */
-	--adw-success-bg-rgb: 38, 162, 105 !important;
-	--adw-success-fg-rgb: 255, 255, 255 !important;
-	--adw-success-rgb: 143, 240, 164 !important;
+	--adw-success-bg-light: #26a269;
+	--adw-success-bg-dark: #26a269;
+	--adw-success-fg: #ffffff;
 
-	--adw-warning-bg-rgb: 205, 147, 9 !important;
-	--adw-warning-fg-rgb: 0, 0, 0 !important;
-	--adw-warning-fg-a: 0.8 !important;
-	--adw-warning-rgb: 248, 228, 92 !important;
+	--adw-warning-bg-light: #cd9309;
+	--adw-warning-bg-dark: #cd9309;
+	--adw-warning-fg: rgba(0, 0, 0, 0.8);
 
-	--adw-error-bg-rgb: 192, 28, 40 !important;
-	--adw-error-fg-rgb: 255, 255, 255 !important;
-	--adw-error-rgb: 255, 123, 99 !important;
+	--adw-error-bg-light: #c01c28;
+	--adw-error-bg-dark: #c01c28;
+	--adw-error-fg: #ffffff;
 
-	/* Window */
-	--adw-window-bg-rgb: 52, 57, 56 !important;
-	--adw-window-fg-rgb: 255, 255, 255 !important;
+	--adw-window-bg: light-dark(#fafafa, #343738);
+	--adw-window-fg: light-dark(rgba(0, 0, 0, 0.8), #ffffff);
 
-	/* Views - e.g. text view or tree view */
-	--adw-view-bg-rgb: 60, 66, 65 !important;
-	--adw-view-fg-rgb: 255, 255, 255 !important;
+	--adw-view-bg: light-dark(#ffffff, #3c4241);
+	--adw-view-fg: light-dark(rgba(0, 0, 0, 0.8), #ffffff);
 
-	/* Header bar, search bar, tab bar */
-	--adw-headerbar-bg-rgb: 59, 67, 66 !important;
-	--adw-headerbar-fg-rgb: 255, 255, 255 !important;
-	--adw-headerbar-border-rgb: 255, 255, 255 !important;
-	--adw-headerbar-backdrop-rgb: 59, 67, 66 !important;
-	--adw-headerbar-shade-rgb: 0, 0, 0 !important;
-	--adw-headerbar-shade-a: 0.36 !important;
-	--adw-headerbar-darker-shade-rgb: 0, 0, 0 !important;
-	--adw-headerbar-darker-shade-a: 0.9 !important;
+	--adw-headerbar-bg: light-dark(#f2f2f2, #3b4342);
+	--adw-headerbar-fg: light-dark(rgba(0, 0, 0, 0.8), #ffffff);
+	--adw-headerbar-backdrop: light-dark(#fafafa, #3b4342);
+	--adw-headerbar-shade: light-dark(rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.36));
+	--adw-headerbar-darker-shade: light-dark(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.9));
 
-	/* Split pane views */
-	--adw-sidebar-bg-rgb: 59, 67, 66 !important;
-	--adw-sidebar-fg-rgb: 255, 255, 255 !important;
-	--adw-sidebar-backdrop-rgb: 59, 67, 66 !important;
-	--adw-sidebar-shade-rgb: 0, 0, 0 !important;
-	--adw-sidebar-shade-a: 0.36 !important;
+	--adw-sidebar-bg: light-dark(#f0f0f0, #3b4342);
+	--adw-sidebar-fg: light-dark(rgba(0, 0, 0, 0.8), #ffffff);
+	--adw-sidebar-backdrop: light-dark(#f7f7f7, #3b4342);
+	--adw-sidebar-shade: light-dark(rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.36));
 
-	--adw-secondary-sidebar-bg-rgb: 59, 67, 66 !important;
-	--adw-secondary-sidebar-fg-rgb: 255, 255, 255 !important;
-	--adw-secondary-sidebar-backdrop-rgb: 59, 67, 66 !important;
-	--adw-secondary-sidebar-shade-rgb: 0, 0, 0 !important;
-	--adw-secondary-sidebar-shade-a: 0.36 !important;
+	--adw-secondary-sidebar-bg: light-dark(#f7f7f7, #3b4342);
+	--adw-secondary-sidebar-fg: light-dark(rgba(0, 0, 0, 0.8), #ffffff);
+	--adw-secondary-sidebar-backdrop: light-dark(#fbfbfb, #3b4342);
+	--adw-secondary-sidebar-shade: light-dark(rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.36));
 
-	/* Cards, boxed lists */
-	--adw-card-bg-rgb: 255, 255, 255 !important;
-	--adw-card-bg-a: 0.08 !important;
-	--adw-card-fg-rgb: 255, 255, 255 !important;
-	--adw-card-shade-rgb: 0, 0, 0 !important;
-	--adw-card-shade-a: 0.36 !important;
+	--adw-card-bg: light-dark(#ffffff, rgba(255, 255, 255, 0.08));
+	--adw-card-fg: light-dark(rgba(0, 0, 0, 0.8), #ffffff);
+	--adw-card-shade: light-dark(rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.36));
 
-	/* Dialogs */
-	--adw-dialog-bg-rgb: 56, 56, 56 !important;
-	--adw-dialog-fg-rgb: 255, 255, 255 !important;
+	--adw-dialog-bg: light-dark(#fafafa, #383838);
+	--adw-dialog-fg: light-dark(rgba(0, 0, 0, 0.8), #ffffff);
 
-	/* Popovers */
-	--adw-popover-bg-rgb: 63, 69, 68 !important;
-	--adw-popover-fg-rgb: 255, 255, 255 !important;
-	--adw-popover-shade-rgb: 0, 0, 0 !important;
-	--adw-popover-shade-a: 0.36 !important;
+	--adw-popover-bg: light-dark(#ffffff, #3f4544);
+	--adw-popover-fg: light-dark(rgba(0, 0, 0, 0.8), #ffffff);
+	--adw-popover-shade: light-dark(rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.36));
 
-	/* Thumbnails */
-	--adw-thumbnail-bg-rgb: 56, 56, 56 !important;
-	--adw-thumbnail-fg-rgb: 255, 255, 255 !important;
+	--adw-thumbnail-bg: light-dark(#ffffff, #383838);
+	--adw-thumbnail-fg: light-dark(rgba(0, 0, 0, 0.8), #ffffff);
 
-	/* Miscellaneous */
-	--adw-shade-rgb: 0, 0, 0 !important;
-	--adw-shade-a: 0.36 !important;
+	--adw-shade: light-dark(rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.36));
+
+	--adw-banner: #7d7d83;
 }

@@ -100,6 +100,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 							padding: 0 !important;
 							margin: 0 !important;
 							border-radius: inherit !important;
+							color: inherit !important;
 							background: transparent !important;
 							transition: var(--adw-button-transition) !important;
 							cursor: var(--adw-cursor-pointer) !important;
@@ -134,6 +135,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 
 							svg
 							{
+								color: inherit !important;
 								width: 16px !important;
 								height: 16px !important;
 								margin-right: 4px !important;

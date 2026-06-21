@@ -1,57 +1,75 @@
 :root
 {
-	/* The main accent color and the matching text value */
-	--adw-accent-bg-rgb: 233, 84, 32 !important;
-	--adw-accent-fg-rgb: 255, 255, 255 !important;
-	--adw-accent-rgb: 233, 84, 32 !important;
+	--adw-accent-bg-light: var(--adw-system-accent, #e95420);
+	--adw-accent-bg-dark: var(--adw-system-accent, #e95420);
 
-	/* destructive-action buttons */
-	--adw-destructive-bg-rgb: 199, 22, 43 !important;
-	--adw-destructive-fg-rgb: 255, 255, 255 !important;
-	--adw-destructive-rgb: 199, 22, 43 !important;
+	--adw-destructive-bg-light: #c7162b;
+	--adw-destructive-bg-dark: #c7162b;
+	--adw-destructive-fg: #ffffff;
 
-	/* Levelbars, entries, labels and infobars. These don't need text colors */
-	--adw-success-bg-rgb: 33, 158, 52 !important;
-	--adw-success-fg-rgb: 255, 255, 255 !important;
-	--adw-success-rgb: 33, 158, 52 !important;
+	--adw-success-bg-light: #0e8420;
+	--adw-success-bg-dark: #0e8420;
+	--adw-success-fg: #ffffff;
 
-	--adw-warning-bg-rgb: 249, 155, 17 !important;
-	--adw-warning-fg-rgb: 255, 255, 255 !important;
-	--adw-warning-fg-a: 0.8 !important;
-	--adw-warning-rgb: 249, 155, 17 !important;
+	--adw-warning-bg-light: #f99b11;
+	--adw-warning-bg-dark: #f99b11;
+	--adw-warning-fg: rgba(0, 0, 0, 0.8);
 
-	--adw-error-bg-rgb: 199, 22, 43 !important;
-	--adw-error-fg-rgb: 255, 255, 255 !important;
-	--adw-error-rgb: 199, 22, 43 !important;
+	--adw-error-bg-light: #c7162b;
+	--adw-error-bg-dark: #c7162b;
+	--adw-error-fg: #ffffff;
 
-	/* Window */
-	--adw-window-bg-rgb: 44, 44, 44 !important;
-	--adw-window-fg-rgb: 247, 247, 247 !important;
+	--adw-window-bg: light-dark(#fafafa, #2c2c2c);
+	--adw-window-fg: light-dark(#3d3d3d, #f7f7f7);
 
-	/* Views - e.g. text view or tree view */
-	--adw-view-bg-rgb: 30, 30, 30 !important;
-	--adw-view-fg-rgb: 255, 255, 255 !important;
+	--adw-view-bg: light-dark(#ffffff, #1e1e1e);
+	--adw-view-fg: light-dark(#3d3d3d, #ffffff);
 
-	/* Header bar, search bar, tab bar */
-	--adw-headerbar-bg-rgb: 48, 48, 48 !important;
-	--adw-headerbar-fg-rgb: 255, 255, 255 !important;
-	--adw-headerbar-border-rgb: 255, 255, 255 !important;
-	--adw-headerbar-backdrop-rgb: var(--adw-window-bg-rgb) !important;
-	--adw-headerbar-shade-rgb: 0, 0, 0 !important;
-	--adw-headerbar-shade-a: 0.36 !important;
-	--adw-headerbar-darker-shade-rgb: 0, 0, 0 !important;
-	--adw-headerbar-darker-shade-a: 0.9 !important;
+	--adw-headerbar-bg: light-dark(#f2f2f2, #303030);
+	--adw-headerbar-fg: light-dark(#3d3d3d, #ffffff);
+	--adw-headerbar-backdrop: light-dark(#fafafa, #2c2c2c);
+	--adw-headerbar-border: light-dark(rgba(61, 61, 61, 0.12), rgba(255, 255, 255, 0.12));
+	--adw-headerbar-shade: light-dark(rgba(61, 61, 61, 0.07), rgba(0, 0, 0, 0.36));
+	--adw-headerbar-darker-shade: light-dark(rgba(61, 61, 61, 0.12), rgba(0, 0, 0, 0.9));
 
-	/* Popovers */
-	--adw-popover-bg-rgb: 29, 29, 29 !important;
-	--adw-popover-fg-rgb: 255, 255, 255 !important;
+	--adw-sidebar-bg: light-dark(#ebebeb, #303030);
+	--adw-sidebar-fg: light-dark(#3d3d3d, #ffffff);
+	--adw-sidebar-backdrop: light-dark(#f2f2f4, #2c2c2c);
+	--adw-sidebar-shade: light-dark(rgba(61, 61, 61, 0.07), rgba(0, 0, 0, 0.36));
 
-	/* Cards, boxed lists */
-	--adw-card-bg-rgb: 255, 255, 255 !important;
-	--adw-card-bg-a: 0.08 !important;
-	--adw-card-fg-rgb: 255, 255, 255 !important;
-	--adw-card-shade-rgb: 0, 0, 0 !important;
-	--adw-card-shade-a: 0.36 !important;
+	--adw-secondary-sidebar-bg: light-dark(#f3f3f5, #2c2c2c);
+	--adw-secondary-sidebar-fg: light-dark(#3d3d3d, #ffffff);
+	--adw-secondary-sidebar-backdrop: light-dark(#f6f6fa, #262626);
+	--adw-secondary-sidebar-border: light-dark(rgba(61, 61, 61, 0.07), rgba(255, 255, 255, 0.12));
+	--adw-secondary-sidebar-shade: light-dark(rgba(61, 61, 61, 0.07), rgba(0, 0, 0, 0.36));
+
+	--adw-card-bg: light-dark(#ffffff, rgba(255, 255, 255, 0.08));
+	--adw-card-fg: light-dark(#3d3d3d, #ffffff);
+	--adw-card-shade: light-dark(rgba(61, 61, 61, 0.07), rgba(0, 0, 0, 0.36));
+
+	--adw-dialog-bg: light-dark(#fafafa, #303030);
+	--adw-dialog-fg: light-dark(#3d3d3d, #ffffff);
+
+	--adw-popover-bg: light-dark(#ffffff, #303030);
+	--adw-popover-fg: light-dark(#3d3d3d, #ffffff);
+	--adw-popover-shade: light-dark(rgba(61, 61, 61, 0.07), rgba(0, 0, 0, 0.36));
+
+	--adw-thumbnail-bg: light-dark(#ffffff, #303030);
+	--adw-thumbnail-fg: light-dark(#3d3d3d, #ffffff);
+
+	--adw-shade: light-dark(rgba(61, 61, 61, 0.07), rgba(0, 0, 0, 0.36));
+
+	--adw-banner: #aea79f;
+
+	--adw-accent-blue: #0073e5;
+	--adw-accent-teal: #308280;
+	--adw-accent-green: #4b8501;
+	--adw-accent-yellow: #c88800;
+	--adw-accent-orange: #e95420;
+	--adw-accent-red: #da3450;
+	--adw-accent-pink: #b34cb3;
+	--adw-accent-purple: #7764d8;
+	--adw-accent-slate: #666666;
 
 	/* Icons */
 	--adw-icon-nav-community: url('data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjE2IiB3aWR0aD0iMTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggc3R5bGU9Im9wYWNpdHk6MTt2ZWN0b3ItZWZmZWN0Om5vbmU7ZmlsbDojZmZmO2ZpbGwtb3BhY2l0eToxO3N0cm9rZTpub25lO3N0cm9rZS13aWR0aDoxLjg4OTc2MzgzO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDo0O3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtzdHJva2UtZGFzaG9mZnNldDowO3N0cm9rZS1vcGFjaXR5OjEiIGQ9Ik04IDEyYy0yLjIxNiAwLTQgMS43ODQtNCA0aDFjMC0xLjY2MiAxLjMzOC0zIDMtM2g0YzEuNjYyIDAgMyAxLjMzOCAzIDNoMWMwLTIuMjE2LTEuNzg0LTQtNC00eiIvPjxwYXRoIHN0eWxlPSJjb2xvcjojMDAwO2ZvbnQtc3R5bGU6bm9ybWFsO2ZvbnQtdmFyaWFudDpub3JtYWw7Zm9udC13ZWlnaHQ6NDAwO2ZvbnQtc3RyZXRjaDpub3JtYWw7Zm9udC1zaXplOm1lZGl1bTtsaW5lLWhlaWdodDoxMjUlO2ZvbnQtZmFtaWx5OlVidW50dTstaW5rc2NhcGUtZm9udC1zcGVjaWZpY2F0aW9uOidVYnVudHUsIE5vcm1hbCc7Zm9udC12YXJpYW50LWxpZ2F0dXJlczpub3JtYWw7Zm9udC12YXJpYW50LXBvc2l0aW9uOm5vcm1hbDtmb250LXZhcmlhbnQtY2Fwczpub3JtYWw7Zm9udC12YXJpYW50LW51bWVyaWM6bm9ybWFsO2ZvbnQtdmFyaWFudC1hbHRlcm5hdGVzOm5vcm1hbDtmb250LWZlYXR1cmUtc2V0dGluZ3M6bm9ybWFsO3RleHQtaW5kZW50OjA7dGV4dC1hbGlnbjpzdGFydDt0ZXh0LWRlY29yYXRpb246bm9uZTt0ZXh0LWRlY29yYXRpb24tbGluZTpub25lO3RleHQtZGVjb3JhdGlvbi1zdHlsZTpzb2xpZDt0ZXh0LWRlY29yYXRpb24tY29sb3I6IzAwMDtsZXR0ZXItc3BhY2luZzowO3dvcmQtc3BhY2luZzowO3RleHQtdHJhbnNmb3JtOm5vbmU7d3JpdGluZy1tb2RlOmxyLXRiO2RpcmVjdGlvbjpsdHI7dGV4dC1vcmllbnRhdGlvbjptaXhlZDtkb21pbmFudC1iYXNlbGluZTphdXRvO2Jhc2VsaW5lLXNoaWZ0OmJhc2VsaW5lO3RleHQtYW5jaG9yOnN0YXJ0O3doaXRlLXNwYWNlOm5vcm1hbDtzaGFwZS1wYWRkaW5nOjA7Y2xpcC1ydWxlOm5vbnplcm87ZGlzcGxheTppbmxpbmU7b3ZlcmZsb3c6dmlzaWJsZTt2aXNpYmlsaXR5OnZpc2libGU7b3BhY2l0eToxO2lzb2xhdGlvbjphdXRvO21peC1ibGVuZC1tb2RlOm5vcm1hbDtjb2xvci1pbnRlcnBvbGF0aW9uOnNSR0I7Y29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzOmxpbmVhclJHQjtzb2xpZC1jb2xvcjojMDAwO3NvbGlkLW9wYWNpdHk6MTtmaWxsOiNmZmY7ZmlsbC1vcGFjaXR5OjE7ZmlsbC1ydWxlOm5vbnplcm87c3Ryb2tlOm5vbmU7c3Ryb2tlLXdpZHRoOjI7c3Ryb2tlLWxpbmVjYXA6YnV0dDtzdHJva2UtbGluZWpvaW46bWl0ZXI7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLWRhc2hvZmZzZXQ6MDtzdHJva2Utb3BhY2l0eToxO2NvbG9yLXJlbmRlcmluZzphdXRvO2ltYWdlLXJlbmRlcmluZzphdXRvO3NoYXBlLXJlbmRlcmluZzphdXRvO3RleHQtcmVuZGVyaW5nOmF1dG87ZW5hYmxlLWJhY2tncm91bmQ6YWNjdW11bGF0ZSIgZD0iTTEwIDQuMDAyYy0uNDYgMC0uODk3LjA4NS0xLjI5OS4yNThhMi45OCAyLjk4IDAgMCAwLTEuMDQ3LjcxN2wtLjAwNC4wMDQtLjAwMi4wMDJhMy4zMjggMy4zMjggMCAwIDAtLjY2NCAxLjExOSA0LjAxMiA0LjAxMiAwIDAgMC0uMjM0IDEuNGMwIC41MDkuMDc1Ljk4MS4yMzQgMS40MS4xNTYuNDIyLjM3OC43OTUuNjY0IDEuMTA4bC4wMDIuMDAyLjAwNC4wMDJjLjI5NC4zMTEuNjQ2LjU1NyAxLjA0My43MjhsLjAwMi4wMDIuMDA0LjAwMmMuNDAxLjE2NS44MzkuMjQ2IDEuMjk3LjI0Ni40NTkgMCAuODk0LS4wODEgMS4yOTUtLjI0NnYtLjAwMmEzLjAxNiAzLjAxNiAwIDAgMCAxLjAzMy0uNzMgMy4yNSAzLjI1IDAgMCAwIC42OC0xLjExYy4xNi0uNDI5LjIzNC0uOTAzLjIzNC0xLjQxMmguMDA4YzAtLjUwMS0uMDc2LS45NjgtLjIzNC0xLjM5NmEzLjIzNCAzLjIzNCAwIDAgMC0uNjc4LTEuMTIzIDIuODk2IDIuODk2IDAgMCAwLTEuMDM5LS43MkEzLjI0MiAzLjI0MiAwIDAgMCAxMCA0LjAwMnptLS4xMTMgMS4wNGMuNTQyLS4wNDMgMS4xMS4xMDUgMS41MTcuNDc2Ljc2OC42MjYuOTM2IDEuNzE2Ljc0OCAyLjY0Mi0uMTI4LjgzOS0uNzg3IDEuNjAxLTEuNjMyIDEuNzY0LS44MjMuMTg4LTEuNzY3LS4wNjQtMi4yNjItLjc4LS41My0uNjkxLS41NS0xLjYyMS0uMzk5LTIuNDQzLjIxMS0uOTIgMS4wNTctMS42OTggMi4wMjgtMS42NnoiLz48cGF0aCBzdHlsZT0iZGlzcGxheTppbmxpbmU7b3BhY2l0eTouNTt2ZWN0b3ItZWZmZWN0Om5vbmU7ZmlsbDojZmZmO2ZpbGwtb3BhY2l0eToxO3N0cm9rZTpub25lO3N0cm9rZS13aWR0aDoxLjg4OTc2MzgzO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDo0O3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtzdHJva2UtZGFzaG9mZnNldDowO3N0cm9rZS1vcGFjaXR5OjEiIGQ9Ik02IDEuMDAyYy0uNDYgMC0uODk3LjA4NS0xLjI5OS4yNThhMi45OCAyLjk4IDAgMCAwLTEuMDQ3LjcxN2wtLjAwNC4wMDQtLjAwMi4wMDJhMy4zMjggMy4zMjggMCAwIDAtLjY2NCAxLjExOSA0LjAxMiA0LjAxMiAwIDAgMC0uMjM0IDEuNGMwIC41MDkuMDc1Ljk4MS4yMzQgMS40MS4xNTYuNDIyLjM3OC43OTUuNjY0IDEuMTA4bC4wMDIuMDAyLjAwNC4wMDJjLjI5NC4zMTEuNjQ2LjU1NyAxLjA0My43MjhsLjAwMi4wMDIuMDA0LjAwMmMuMzM0LjEzNy42OTcuMjA0IDEuMDczLjIyN2E0LjQ4OCA0LjQ4OCAwIDAgMSAuMDEtMS4wMThjLS42LS4wNS0xLjE3Ny0uMzEzLTEuNTI4LS44Mi0uNTMtLjY5Mi0uNTUtMS42MjItLjM5OC0yLjQ0My4yMS0uOTIgMS4wNTYtMS42OTggMi4wMjctMS42Ni41NDItLjA0MyAxLjExLjEwNSAxLjUxNy40NzYuMzIuMjYxLjUzMS42MDUuNjYuOTgyLjMwNC0uMTY1LjYyNC0uMjkyLjk1Ni0uMzc3bC0uMDA0LS4wMTdhMy4yMzQgMy4yMzQgMCAwIDAtLjY3OC0xLjEyMyAyLjg5NiAyLjg5NiAwIDAgMC0xLjA0LS43MkEzLjI0MiAzLjI0MiAwIDAgMCA2IDEuMDAyek00IDljLTIuMjE2IDAtNCAxLjc4NC00IDR2MWgxdi0xYzAtMS42NjIgMS4zMzgtMyAzLTNoMi40N2E0LjYxIDQuNjEgMCAwIDEtLjQ3Mi0xeiIvPjwvc3ZnPg==') !important;

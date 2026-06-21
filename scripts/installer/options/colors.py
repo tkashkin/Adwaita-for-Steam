@@ -37,22 +37,24 @@ class AdwColorScheme(StrEnum):
 @dataclass
 class AdwAccentColor:
     color: str
-    css_color: str
+    css_color: str | None
 
     def __init__(self, color: str):
         self.color = color
         self.css_color = AdwAccentColor._color_to_css(self.color)
 
-    def to_css(self) -> str:
-        return f"--adw-system-accent: {self.css_color};"
+    def to_css(self) -> str | None:
+        return f"--adw-system-accent: {self.css_color};" if self.css_color else None
 
     @staticmethod
-    def _color_to_css(color: str) -> str:
+    def _color_to_css(color: str) -> str | None:
         match color.lower():
-            case c if c in ADW_NAMED_ACCENT_COLORS:
-                return f"var(--adw-accent-{c})"
             case "auto":
                 return AdwAccentColor._color_to_css(AdwAccentColor._get_system_accent_color())
+            case "theme":
+                return None
+            case c if c in ADW_NAMED_ACCENT_COLORS:
+                return f"var(--adw-accent-{c})"
             case c if c.startswith("#") and len(c) in [4, 7]:
                 return c
             case c if c.startswith("rgb(") and c.endswith(")"):
@@ -112,7 +114,9 @@ class AdwColors(AdwParsedOptionGroup):
             )
 
         if self.accent_color:
-            vars.append(self.accent_color.to_css())
+            accent_color_var = self.accent_color.to_css()
+            if accent_color_var:
+                vars.append(accent_color_var)
 
         if self.color_scheme != AdwColorScheme.AUTO:
             vars.append(f"--adw-color-scheme: {self.color_scheme};")
@@ -152,8 +156,8 @@ class AdwColorOptions(AdwOptionGroup):
         args.add_argument(
             "-a",
             "--accent-color",
-            help="set accent color\n'auto' will use your system accent color if possible\ncustom colors must be formatted as '#RGB', '#RRGGBB', or 'rgb(r, g, b)'",
-            metavar="{auto," + ",".join(ADW_NAMED_ACCENT_COLORS) + ",ACCENT_COLOR}",
+            help="set accent color\n'auto' will use your system accent color if possible\n'theme' will use the default accent color from the color theme\ncustom colors must be formatted as '#RGB', '#RRGGBB', or 'rgb(r, g, b)'",
+            metavar="{auto,theme," + ",".join(ADW_NAMED_ACCENT_COLORS) + ",ACCENT_COLOR}",
             default="auto",
             type=AdwAccentColor
         )

@@ -1,80 +1,64 @@
 :root
 {
-	/* The main accent color and the matching text value */
-	--adw-accent-bg-rgb: 0, 115, 198 !important;
-	--adw-accent-fg-rgb: 255, 255, 255 !important;
-	--adw-accent-rgb: 0, 115, 198 !important;
+	--adw-color-scheme: dark;
 
-	/* destructive-action buttons */
-	--adw-destructive-bg-rgb: 232, 18, 36 !important;
-	--adw-destructive-fg-rgb: 255, 255, 255 !important;
-	--adw-destructive-rgb: 241, 112, 121 !important;
+	--adw-accent-bg-light: var(--adw-system-accent, #0073c6);
+	--adw-accent-bg-dark: var(--adw-system-accent, #0073c6);
 
-	/* Levelbars, entries, labels and infobars. These don't need text colors */
-	--adw-success-bg-rgb: 130, 186, 0 !important;
-	--adw-success-fg-rgb: 255, 255, 255 !important;
-	--adw-success-rgb: 130, 186, 0 !important;
+	--adw-destructive-bg-light: #e81224;
+	--adw-destructive-bg-dark: #e81224;
+	--adw-destructive-fg: #ffffff;
 
-	--adw-warning-bg-rgb: 255, 246, 63 !important;
-	--adw-warning-fg-rgb: 255, 255, 255 !important;
-	--adw-warning-fg-a: 0.8 !important;
-	--adw-warning-rgb: 255, 255, 99 !important;
+	--adw-success-bg-light: #82ba00;
+	--adw-success-bg-dark: #82ba00;
+	--adw-success-fg: #ffffff;
 
-	--adw-error-bg-rgb: 232, 18, 36 !important;
-	--adw-error-fg-rgb: 255, 255, 255 !important;
-	--adw-error-rgb: 241, 112, 121 !important;
+	--adw-warning-bg-light: #fff63f;
+	--adw-warning-bg-dark: #fff63f;
+	--adw-warning-fg: rgba(0, 0, 0, 0.8);
 
-	/* Window */
-	--adw-window-bg-rgb: 26, 26, 26 !important;
-	--adw-window-fg-rgb: 255, 255, 255 !important;
+	--adw-error-bg-light: #e81224;
+	--adw-error-bg-dark: #e81224;
+	--adw-error-fg: #ffffff;
 
-	/* Views - e.g. text view or tree view */
-	--adw-view-bg-rgb: 30, 30, 30 !important;
-	--adw-view-fg-rgb: 255, 255, 255 !important;
+	--adw-window-bg: #1a1a1a;
+	--adw-window-fg: #ffffff;
 
-	/* Header bar, search bar, tab bar */
-	--adw-headerbar-bg-rgb: 20, 20, 20 !important;
-	--adw-headerbar-fg-rgb: 255, 255, 255 !important;
-	--adw-headerbar-border-rgb: 255, 255, 255 !important;
-	--adw-headerbar-backdrop-rgb: 26, 26, 26 !important;
-	--adw-headerbar-shade-rgb: 0, 0, 0 !important;
-	--adw-headerbar-shade-a: 0.36 !important;
-	--adw-headerbar-darker-shade-rgb: 0, 0, 0 !important;
-	--adw-headerbar-darker-shade-a: 0.9 !important;
+	--adw-view-bg: #1e1e1e;
+	--adw-view-fg: #ffffff;
 
-	/* Split pane views */
-	--adw-sidebar-bg-rgb: 20, 20, 20 !important;
-	--adw-sidebar-fg-rgb: 255, 255, 255 !important;
-	--adw-sidebar-backdrop-rgb: 26, 26, 26 !important;
-	--adw-sidebar-shade-rgb: 0, 0, 0 !important;
-	--adw-sidebar-shade-a: 0.36 !important;
+	--adw-headerbar-bg: #141414;
+	--adw-headerbar-fg: #ffffff;
+	--adw-headerbar-backdrop: #1a1a1a;
+	--adw-headerbar-border: rgba(255, 255, 255, 1);
+	--adw-headerbar-shade: rgba(0, 0, 0, 0.36);
+	--adw-headerbar-darker-shade: rgba(0, 0, 0, 0.9);
 
-	--adw-secondary-sidebar-bg-rgb: 20, 20, 20 !important;
-	--adw-secondary-sidebar-fg-rgb: 255, 255, 255 !important;
-	--adw-secondary-sidebar-backdrop-rgb: 26, 26, 26 !important;
-	--adw-secondary-sidebar-shade-rgb: 0, 0, 0 !important;
-	--adw-secondary-sidebar-shade-a: 0.36 !important;
+	--adw-sidebar-bg: #141414;
+	--adw-sidebar-fg: #ffffff;
+	--adw-sidebar-backdrop: #1a1a1a;
+	--adw-sidebar-shade: rgba(0, 0, 0, 0.36);
 
-	/* Cards, boxed lists */
-	--adw-card-bg-rgb: 255, 255, 255 !important;
-	--adw-card-bg-a: 0.08 !important;
-	--adw-card-fg-rgb: 255, 255, 255 !important;
-	--adw-card-shade-rgb: 0, 0, 0 !important;
-	--adw-card-shade-a: 0.36 !important;
+	--adw-secondary-sidebar-bg: #141414;
+	--adw-secondary-sidebar-fg: #ffffff;
+	--adw-secondary-sidebar-backdrop: #1a1a1a;
+	--adw-secondary-sidebar-shade: rgba(0, 0, 0, 0.36);
 
-	/* Dialogs */
-	--adw-dialog-bg-rgb: 38, 38, 38 !important;
-	--adw-dialog-fg-rgb: 255, 255, 255 !important;
+	--adw-card-bg: rgba(255, 255, 255, 0.08);
+	--adw-card-fg: #ffffff;
+	--adw-card-shade: rgba(0, 0, 0, 0.36);
 
-	/* Popovers */
-	--adw-popover-bg-rgb: 38, 38, 38 !important;
-	--adw-popover-fg-rgb: 255, 255, 255 !important;
+	--adw-dialog-bg: #262626;
+	--adw-dialog-fg: #ffffff;
 
-	/* Thumbnails */
-	--adw-thumbnail-bg-rgb: 38, 38, 38 !important;
-	--adw-popover-fg-rgb: 255, 255, 255 !important;
+	--adw-popover-bg: #262626;
+	--adw-popover-fg: #ffffff;
+	--adw-popover-shade: rgba(0, 0, 0, 0.36);
 
-	/* Miscellaneous */
-	--adw-shade-rgb: 0, 0, 0 !important;
-	--adw-shade-a: 0.36 !important;
+	--adw-thumbnail-bg: #262626;
+	--adw-thumbnail-fg: #ffffff;
+
+	--adw-shade: rgba(0, 0, 0, 0.36);
+
+	--adw-banner: #7d7d83;
 }

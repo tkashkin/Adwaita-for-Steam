@@ -9,9 +9,14 @@
 
 	--adw-standalone-color-oklab-dark: max(l, 0.85) a b;
 	--adw-standalone-color-oklab-light: min(l, 0.5) a b;
+	--adw-contrasting-color-oklab: clamp(0, round((1.72 - l) / 2), 1) 0 0;
 	
 	/* Can't directly use light-dark() colors in oklab() for some reason, they need to be declared separately */
 	--adw-accent-bg: light-dark(var(--adw-accent-bg-light), var(--adw-accent-bg-dark));
+	--adw-accent-fg: light-dark(
+		oklab(from var(--adw-accent-bg-light) var(--adw-contrasting-color-oklab)),
+		oklab(from var(--adw-accent-bg-dark) var(--adw-contrasting-color-oklab))
+	);
 	--adw-accent: light-dark(
 		oklab(from var(--adw-accent-bg-light) var(--adw-standalone-color-oklab-light)),
 		oklab(from var(--adw-accent-bg-dark) var(--adw-standalone-color-oklab-dark))
@@ -44,6 +49,7 @@
 	--adw-window-outline: rgba(255, 255, 255, var(--adw-window-outline-opacity));
 
 	--adw-sidebar-border: var(--adw-sidebar-shade);
+	--adw-secondary-sidebar-border: var(--adw-secondary-sidebar-shade);
 
 	--adw-undershoot: color-mix(in srgb, var(--adw-shade) 75%, transparent), transparent 4px;
 	--adw-undershoot-border: color-mix(in srgb, var(--adw-shade) 75%, transparent);
@@ -51,6 +57,7 @@
 	@media (prefers-contrast: more)
 	{
 		--adw-sidebar-border: color-mix(in srgb, var(--adw-sidebar-fg) var(--adw-border-opacity), transparent);
+		--adw-secondary-sidebar-border: color-mix(in srgb, var(--adw-secondary-sidebar-fg) var(--adw-border-opacity), transparent);
 		--adw-undershoot-border: color-mix(in srgb, currentColor var(--adw-border-opacity), transparent);
 	}
 }

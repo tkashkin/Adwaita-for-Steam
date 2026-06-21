@@ -1,0 +1,79 @@
+:root
+{
+	--adw-color-scheme: light;
+
+	--adw-accent-bg-light: var(--adw-system-accent, #7287fd);
+	--adw-accent-bg-dark: var(--adw-system-accent, #7287fd);
+
+	--adw-destructive-bg-light: #d20f39;
+	--adw-destructive-bg-dark: #d20f39;
+	--adw-destructive-fg: #ffffff;
+
+	--adw-success-bg-light: #40a02b;
+	--adw-success-bg-dark: #40a02b;
+	--adw-success-fg: #ffffff;
+
+	--adw-warning-bg-light: #df8e1d;
+	--adw-warning-bg-dark: #df8e1d;
+	--adw-warning-fg: rgba(0, 0, 0, 0.8);
+
+	--adw-error-bg-light: #d20f39;
+	--adw-error-bg-dark: #d20f39;
+	--adw-error-fg: #ffffff;
+
+	--adw-window-bg: #eff1f5;
+	--adw-window-fg: #4c4f69;
+
+	--adw-view-bg: #eff1f5;
+	--adw-view-fg: #4c4f69;
+
+	--adw-headerbar-bg: #dce0e8;
+	--adw-headerbar-fg: #4c4f69;
+	--adw-headerbar-backdrop: #e6e9ef;
+	--adw-headerbar-border: #4c4f69;
+	--adw-headerbar-shade: rgba(0, 0, 0, 0.12);
+	--adw-headerbar-darker-shade: rgba(0, 0, 0, 0.12);
+
+	--adw-sidebar-bg: #e6e9ef;
+	--adw-sidebar-fg: #4c4f69;
+	--adw-sidebar-backdrop: #eff1f5;
+	--adw-sidebar-shade: rgba(0, 0, 0, 0.07);
+
+	--adw-secondary-sidebar-bg: #eff1f5;
+	--adw-secondary-sidebar-fg: #4c4f69;
+	--adw-secondary-sidebar-backdrop: #e6e9ef;
+	--adw-secondary-sidebar-border: rgba(0, 0, 0, 0.07);
+	--adw-secondary-sidebar-shade: rgba(0, 0, 0, 0.07);
+
+	--adw-card-bg: #ffffff;
+	--adw-card-fg: #4c4f69;
+	--adw-card-shade: rgba(0, 0, 0, 0.07);
+
+	--adw-dialog-bg: #eff1f5;
+	--adw-dialog-fg: #4c4f69;
+
+	--adw-popover-bg: #e6e9ef;
+	--adw-popover-fg: #4c4f69;
+	--adw-popover-shade: rgba(0, 0, 0, 0.07);
+
+	--adw-thumbnail-bg: #ccd0da;
+	--adw-thumbnail-fg: #4c4f69;
+
+	--adw-shade: rgba(0, 0, 0, 0.07);
+
+	--adw-banner: #9ca0b0;
+
+	--adw-user-offline: #9ca0b0;
+	--adw-user-online: #1e66f5;
+	--adw-user-ingame: #40a02b;
+
+	--adw-accent-blue: #1e66f5;
+	--adw-accent-teal: #179299;
+	--adw-accent-green: #40a02b;
+	--adw-accent-yellow: #df8e1d;
+	--adw-accent-orange: #fe640b;
+	--adw-accent-red: #d20f39;
+	--adw-accent-pink: #ea76cb;
+	--adw-accent-purple: #8839ef;
+	--adw-accent-slate: #8c8fa1;
+}
