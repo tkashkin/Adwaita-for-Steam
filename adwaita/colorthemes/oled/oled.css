@@ -1,20 +1,20 @@
 :root
 {
-	--adw-window-bg: light-dark(#ffffff, #000000);
-	--adw-window-fg: light-dark(rgba(0, 0, 0, 0.8), #ffffff);
+	--adw-window-bg: light-dark(#ffffff, #000000) !important;
+	--adw-window-fg: light-dark(rgba(0, 0, 0, 0.8), #ffffff) !important;
 
-	--adw-view-bg: light-dark(#ffffff, #000000);
-	--adw-view-fg: light-dark(rgba(0, 0, 0, 0.8), #ffffff);
+	--adw-view-bg: light-dark(#ffffff, #000000) !important;
+	--adw-view-fg: light-dark(rgba(0, 0, 0, 0.8), #ffffff) !important;
 
-	--adw-headerbar-bg: light-dark(#ffffff, #000000);
-	--adw-headerbar-fg: light-dark(rgba(0, 0, 0, 0.8), #ffffff);
-	--adw-headerbar-backdrop: light-dark(#ffffff, #000000);
+	--adw-headerbar-bg: light-dark(#ffffff, #000000) !important;
+	--adw-headerbar-fg: light-dark(rgba(0, 0, 0, 0.8), #ffffff) !important;
+	--adw-headerbar-backdrop: light-dark(#ffffff, #000000) !important;
 
-	--adw-sidebar-bg: light-dark(#ffffff, #000000);
-	--adw-sidebar-fg: light-dark(rgba(0, 0, 0, 0.8), #ffffff);
-	--adw-sidebar-backdrop: light-dark(#ffffff, #000000);
+	--adw-sidebar-bg: light-dark(#ffffff, #000000) !important;
+	--adw-sidebar-fg: light-dark(rgba(0, 0, 0, 0.8), #ffffff) !important;
+	--adw-sidebar-backdrop: light-dark(#ffffff, #000000) !important;
 
-	--adw-secondary-sidebar-bg: light-dark(#ffffff, #000000);
-	--adw-secondary-sidebar-fg: light-dark(rgba(0, 0, 0, 0.8), #ffffff);
-	--adw-secondary-sidebar-backdrop: light-dark(#ffffff, #000000);
+	--adw-secondary-sidebar-bg: light-dark(#ffffff, #000000) !important;
+	--adw-secondary-sidebar-fg: light-dark(rgba(0, 0, 0, 0.8), #ffffff) !important;
+	--adw-secondary-sidebar-backdrop: light-dark(#ffffff, #000000) !important;
 }

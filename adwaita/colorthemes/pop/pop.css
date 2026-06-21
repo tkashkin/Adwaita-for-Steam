@@ -1,71 +1,71 @@
 :root
 {
-	--adw-accent-bg-light: var(--adw-system-accent, #005259);
-	--adw-accent-bg-dark: var(--adw-system-accent, #63d0df);
+	--adw-accent-bg-light: var(--adw-system-accent, #005259) !important;
+	--adw-accent-bg-dark: var(--adw-system-accent, #63d0df) !important;
 
-	--adw-destructive-bg-light: #890418;
-	--adw-destructive-bg-dark: #ffa09a;
-	--adw-destructive-fg: light-dark(#ffffff, rgba(0, 0, 0, 0.8));
+	--adw-destructive-bg-light: #890418 !important;
+	--adw-destructive-bg-dark: #ffa09a !important;
+	--adw-destructive-fg: light-dark(#ffffff, rgba(0, 0, 0, 0.8)) !important;
 
-	--adw-success-bg-light: #00572c;
-	--adw-success-bg-dark: #5edb8c;
-	--adw-success-fg: light-dark(#ffffff, rgba(0, 0, 0, 0.8));
+	--adw-success-bg-light: #00572c !important;
+	--adw-success-bg-dark: #5edb8c !important;
+	--adw-success-fg: light-dark(#ffffff, rgba(0, 0, 0, 0.8)) !important;
 
-	--adw-warning-bg-light: #792c00;
-	--adw-warning-bg-dark: #ffa37d;
-	--adw-warning-fg: rgba(0, 0, 0, 0.8);
+	--adw-warning-bg-light: #792c00 !important;
+	--adw-warning-bg-dark: #ffa37d !important;
+	--adw-warning-fg: rgba(0, 0, 0, 0.8) !important;
 
-	--adw-error-bg-light: #890418;
-	--adw-error-bg-dark: #ffa09a;
-	--adw-error-fg: light-dark(#ffffff, rgba(0, 0, 0, 0.8));
+	--adw-error-bg-light: #890418 !important;
+	--adw-error-bg-dark: #ffa09a !important;
+	--adw-error-fg: light-dark(#ffffff, rgba(0, 0, 0, 0.8)) !important;
 
-	--adw-window-bg: light-dark(#dedede, #161616);
-	--adw-window-fg: light-dark(#161616, #ffffff);
+	--adw-window-bg: light-dark(#dedede, #161616) !important;
+	--adw-window-fg: light-dark(#161616, #ffffff) !important;
 
-	--adw-view-bg: light-dark(#ffffff, #030303);
-	--adw-view-fg: light-dark(#161616, #ffffff);
+	--adw-view-bg: light-dark(#ffffff, #030303) !important;
+	--adw-view-fg: light-dark(#161616, #ffffff) !important;
 
-	--adw-headerbar-bg: light-dark(#e4e4e4, #262626);
-	--adw-headerbar-fg: light-dark(#161616, #ffffff);
-	--adw-headerbar-backdrop: light-dark(#dedede, #161616);
-	--adw-headerbar-shade: light-dark(rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.36));
-	--adw-headerbar-darker-shade: light-dark(rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.9));
+	--adw-headerbar-bg: light-dark(#e4e4e4, #262626) !important;
+	--adw-headerbar-fg: light-dark(#161616, #ffffff) !important;
+	--adw-headerbar-backdrop: light-dark(#dedede, #161616) !important;
+	--adw-headerbar-shade: light-dark(rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.36)) !important;
+	--adw-headerbar-darker-shade: light-dark(rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.9)) !important;
 
-	--adw-sidebar-bg: light-dark(#e4e4e4, #262626);
-	--adw-sidebar-fg: light-dark(#161616, #ffffff);
-	--adw-sidebar-backdrop: light-dark(#dedede, #161616);
-	--adw-sidebar-shade: light-dark(rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.25));
+	--adw-sidebar-bg: light-dark(#e4e4e4, #262626) !important;
+	--adw-sidebar-fg: light-dark(#161616, #ffffff) !important;
+	--adw-sidebar-backdrop: light-dark(#dedede, #161616) !important;
+	--adw-sidebar-shade: light-dark(rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.25)) !important;
 
-	--adw-secondary-sidebar-bg: light-dark(#d7d7d7, #1b1b1b);
-	--adw-secondary-sidebar-fg: light-dark(#161616, #ffffff);
-	--adw-secondary-sidebar-backdrop: light-dark(#e4e4e4, #262626);
-	--adw-secondary-sidebar-shade: light-dark(rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.25));
+	--adw-secondary-sidebar-bg: light-dark(#d7d7d7, #1b1b1b) !important;
+	--adw-secondary-sidebar-fg: light-dark(#161616, #ffffff) !important;
+	--adw-secondary-sidebar-backdrop: light-dark(#e4e4e4, #262626) !important;
+	--adw-secondary-sidebar-shade: light-dark(rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.25)) !important;
 
-	--adw-card-bg: light-dark(#ffffff, rgba(255, 255, 255, 0.08));
-	--adw-card-fg: light-dark(#161616, #ffffff);
-	--adw-card-shade: light-dark(rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.36));
+	--adw-card-bg: light-dark(#ffffff, rgba(255, 255, 255, 0.08)) !important;
+	--adw-card-fg: light-dark(#161616, #ffffff) !important;
+	--adw-card-shade: light-dark(rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.36)) !important;
 
-	--adw-dialog-bg: light-dark(#ffffff, #262626);
-	--adw-dialog-fg: light-dark(#161616, #ffffff);
+	--adw-dialog-bg: light-dark(#ffffff, #262626) !important;
+	--adw-dialog-fg: light-dark(#161616, #ffffff) !important;
 
-	--adw-popover-bg: light-dark(#ffffff, #262626);
-	--adw-popover-fg: light-dark(#161616, #ffffff);
-	--adw-popover-shade: light-dark(rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.25));
+	--adw-popover-bg: light-dark(#ffffff, #262626) !important;
+	--adw-popover-fg: light-dark(#161616, #ffffff) !important;
+	--adw-popover-shade: light-dark(rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.25)) !important;
 
-	--adw-thumbnail-bg: light-dark(#ffffff, #262626);
-	--adw-thumbnail-fg: light-dark(#161616, #ffffff);
+	--adw-thumbnail-bg: light-dark(#ffffff, #262626) !important;
+	--adw-thumbnail-fg: light-dark(#161616, #ffffff) !important;
 
-	--adw-shade: light-dark(rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.25));
+	--adw-shade: light-dark(rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.25)) !important;
 
-	--adw-banner: light-dark(#808080, #808080);
+	--adw-banner: light-dark(#808080, #808080) !important;
 
-	--adw-accent-blue: light-dark(#005259, #63d0df);
-	--adw-accent-teal: light-dark(#005259, #63d0df);
-	--adw-accent-green: light-dark(#185529, #92cf9c);
-	--adw-accent-yellow: light-dark(#534800, #f7e061);
-	--adw-accent-orange: light-dark(#624000, #ffad00);
-	--adw-accent-red: light-dark(#78292e, #fda19f);
-	--adw-accent-pink: light-dark(#860439, #ff9cb1);
-	--adw-accent-purple: light-dark(#68217c, #e79cff);
-	--adw-accent-slate: light-dark(#554741, #cabab4);
+	--adw-accent-blue: light-dark(#005259, #63d0df) !important;
+	--adw-accent-teal: light-dark(#005259, #63d0df) !important;
+	--adw-accent-green: light-dark(#185529, #92cf9c) !important;
+	--adw-accent-yellow: light-dark(#534800, #f7e061) !important;
+	--adw-accent-orange: light-dark(#624000, #ffad00) !important;
+	--adw-accent-red: light-dark(#78292e, #fda19f) !important;
+	--adw-accent-pink: light-dark(#860439, #ff9cb1) !important;
+	--adw-accent-purple: light-dark(#68217c, #e79cff) !important;
+	--adw-accent-slate: light-dark(#554741, #cabab4) !important;
 }

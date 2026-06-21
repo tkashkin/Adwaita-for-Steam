@@ -1,63 +1,63 @@
 :root
 {
-	--adw-color-scheme: dark;
+	--adw-color-scheme: dark !important;
 
-	--adw-accent-bg-light: var(--adw-system-accent, #2d5c76);
-	--adw-accent-bg-dark: var(--adw-system-accent, #2d5c76);
+	--adw-accent-bg-light: var(--adw-system-accent, #2d5c76) !important;
+	--adw-accent-bg-dark: var(--adw-system-accent, #2d5c76) !important;
 
-	--adw-destructive-bg-light: #c01c28;
-	--adw-destructive-bg-dark: #c01c28;
-	--adw-destructive-fg: #ffffff;
+	--adw-destructive-bg-light: #c01c28 !important;
+	--adw-destructive-bg-dark: #c01c28 !important;
+	--adw-destructive-fg: #ffffff !important;
 
-	--adw-success-bg-light: #26a269;
-	--adw-success-bg-dark: #26a269;
-	--adw-success-fg: #ffffff;
+	--adw-success-bg-light: #26a269 !important;
+	--adw-success-bg-dark: #26a269 !important;
+	--adw-success-fg: #ffffff !important;
 
-	--adw-warning-bg-light: #cd9309;
-	--adw-warning-bg-dark: #cd9309;
-	--adw-warning-fg: rgba(0, 0, 0, 0.8);
+	--adw-warning-bg-light: #cd9309 !important;
+	--adw-warning-bg-dark: #cd9309 !important;
+	--adw-warning-fg: rgba(0, 0, 0, 0.8) !important;
 
-	--adw-error-bg-light: #c01c28;
-	--adw-error-bg-dark: #c01c28;
-	--adw-error-fg: #ffffff;
+	--adw-error-bg-light: #c01c28 !important;
+	--adw-error-bg-dark: #c01c28 !important;
+	--adw-error-fg: #ffffff !important;
 
-	--adw-window-bg: #232629;
-	--adw-window-fg: #cfcfc2;
+	--adw-window-bg: #232629 !important;
+	--adw-window-fg: #cfcfc2 !important;
 
-	--adw-view-bg: #232629;
-	--adw-view-fg: #cfcfc2;
+	--adw-view-bg: #232629 !important;
+	--adw-view-fg: #cfcfc2 !important;
 
-	--adw-headerbar-bg: #323436;
-	--adw-headerbar-fg: #cfcfc2;
-	--adw-headerbar-backdrop: #232629;
-	--adw-headerbar-shade: rgba(0, 0, 0, 0.36);
-	--adw-headerbar-darker-shade: rgba(0, 0, 0, 0.9);
+	--adw-headerbar-bg: #323436 !important;
+	--adw-headerbar-fg: #cfcfc2 !important;
+	--adw-headerbar-backdrop: #232629 !important;
+	--adw-headerbar-shade: rgba(0, 0, 0, 0.36) !important;
+	--adw-headerbar-darker-shade: rgba(0, 0, 0, 0.9) !important;
 
-	--adw-sidebar-bg: #323436;
-	--adw-sidebar-fg: #cfcfc2;
-	--adw-sidebar-backdrop: #232629;
-	--adw-sidebar-shade: rgba(0, 0, 0, 0.36);
+	--adw-sidebar-bg: #323436 !important;
+	--adw-sidebar-fg: #cfcfc2 !important;
+	--adw-sidebar-backdrop: #232629 !important;
+	--adw-sidebar-shade: rgba(0, 0, 0, 0.36) !important;
 
-	--adw-secondary-sidebar-bg: #323436;
-	--adw-secondary-sidebar-fg: #cfcfc2;
-	--adw-secondary-sidebar-backdrop: #232629;
-	--adw-secondary-sidebar-shade: rgba(0, 0, 0, 0.36);
+	--adw-secondary-sidebar-bg: #323436 !important;
+	--adw-secondary-sidebar-fg: #cfcfc2 !important;
+	--adw-secondary-sidebar-backdrop: #232629 !important;
+	--adw-secondary-sidebar-shade: rgba(0, 0, 0, 0.36) !important;
 
-	--adw-card-bg: rgba(255, 255, 255, 0.08);
-	--adw-card-fg: #ffffff;
-	--adw-card-shade: rgba(0, 0, 0, 0.36);
+	--adw-card-bg: rgba(255, 255, 255, 0.08) !important;
+	--adw-card-fg: #ffffff !important;
+	--adw-card-shade: rgba(0, 0, 0, 0.36) !important;
 
-	--adw-dialog-bg: #323538;
-	--adw-dialog-fg: #cfcfc2;
+	--adw-dialog-bg: #323538 !important;
+	--adw-dialog-fg: #cfcfc2 !important;
 
-	--adw-popover-bg: #323538;
-	--adw-popover-fg: #cfcfc2;
-	--adw-popover-shade: rgba(0, 0, 0, 0.36);
+	--adw-popover-bg: #323538 !important;
+	--adw-popover-fg: #cfcfc2 !important;
+	--adw-popover-shade: rgba(0, 0, 0, 0.36) !important;
 
-	--adw-thumbnail-bg: #323538;
-	--adw-thumbnail-fg: #cfcfc2;
+	--adw-thumbnail-bg: #323538 !important;
+	--adw-thumbnail-fg: #cfcfc2 !important;
 
-	--adw-shade: rgba(0, 0, 0, 0.36);
+	--adw-shade: rgba(0, 0, 0, 0.36) !important;
 
-	--adw-banner: #7d7d83;
+	--adw-banner: #7d7d83 !important;
 }

@@ -1,79 +1,79 @@
 :root
 {
-	--adw-color-scheme: dark;
+	--adw-color-scheme: dark !important;
 
-	--adw-accent-bg-light: var(--adw-system-accent, #b4befe);
-	--adw-accent-bg-dark: var(--adw-system-accent, #b4befe);
+	--adw-accent-bg-light: var(--adw-system-accent, #b4befe) !important;
+	--adw-accent-bg-dark: var(--adw-system-accent, #b4befe) !important;
 
-	--adw-destructive-bg-light: #f38ba8;
-	--adw-destructive-bg-dark: #f38ba8;
-	--adw-destructive-fg: #11111b;
+	--adw-destructive-bg-light: #f38ba8 !important;
+	--adw-destructive-bg-dark: #f38ba8 !important;
+	--adw-destructive-fg: #11111b !important;
 
-	--adw-success-bg-light: #a6e3a1;
-	--adw-success-bg-dark: #a6e3a1;
-	--adw-success-fg: #11111b;
+	--adw-success-bg-light: #a6e3a1 !important;
+	--adw-success-bg-dark: #a6e3a1 !important;
+	--adw-success-fg: #11111b !important;
 
-	--adw-warning-bg-light: #f9e2af;
-	--adw-warning-bg-dark: #f9e2af;
-	--adw-warning-fg: rgba(0, 0, 0, 0.8);
+	--adw-warning-bg-light: #f9e2af !important;
+	--adw-warning-bg-dark: #f9e2af !important;
+	--adw-warning-fg: rgba(0, 0, 0, 0.8) !important;
 
-	--adw-error-bg-light: #f38ba8;
-	--adw-error-bg-dark: #f38ba8;
-	--adw-error-fg: #11111b;
+	--adw-error-bg-light: #f38ba8 !important;
+	--adw-error-bg-dark: #f38ba8 !important;
+	--adw-error-fg: #11111b !important;
 
-	--adw-window-bg: #1e1e2e;
-	--adw-window-fg: #cdd6f4;
+	--adw-window-bg: #1e1e2e !important;
+	--adw-window-fg: #cdd6f4 !important;
 
-	--adw-view-bg: #181825;
-	--adw-view-fg: #cdd6f4;
+	--adw-view-bg: #181825 !important;
+	--adw-view-fg: #cdd6f4 !important;
 
-	--adw-headerbar-bg: #11111b;
-	--adw-headerbar-fg: #cdd6f4;
-	--adw-headerbar-backdrop: #1e1e2e;
-	--adw-headerbar-border: #cdd6f4;
-	--adw-headerbar-shade: rgba(0, 0, 0, 0.36);
-	--adw-headerbar-darker-shade: rgba(0, 0, 0, 0.9);
+	--adw-headerbar-bg: #11111b !important;
+	--adw-headerbar-fg: #cdd6f4 !important;
+	--adw-headerbar-backdrop: #1e1e2e !important;
+	--adw-headerbar-border: #cdd6f4 !important;
+	--adw-headerbar-shade: rgba(0, 0, 0, 0.36) !important;
+	--adw-headerbar-darker-shade: rgba(0, 0, 0, 0.9) !important;
 
-	--adw-sidebar-bg: #11111b;
-	--adw-sidebar-fg: #cdd6f4;
-	--adw-sidebar-backdrop: #1e1e2e;
-	--adw-sidebar-shade: rgba(0, 0, 0, 0.36);
+	--adw-sidebar-bg: #11111b !important;
+	--adw-sidebar-fg: #cdd6f4 !important;
+	--adw-sidebar-backdrop: #1e1e2e !important;
+	--adw-sidebar-shade: rgba(0, 0, 0, 0.36) !important;
 
-	--adw-secondary-sidebar-bg: #181825;
-	--adw-secondary-sidebar-fg: #cdd6f4;
-	--adw-secondary-sidebar-backdrop: #1e1e2e;
-	--adw-secondary-sidebar-border: rgba(0, 0, 0, 0.36);
-	--adw-secondary-sidebar-shade: rgba(0, 0, 0, 0.36);
+	--adw-secondary-sidebar-bg: #181825 !important;
+	--adw-secondary-sidebar-fg: #cdd6f4 !important;
+	--adw-secondary-sidebar-backdrop: #1e1e2e !important;
+	--adw-secondary-sidebar-border: rgba(0, 0, 0, 0.36) !important;
+	--adw-secondary-sidebar-shade: rgba(0, 0, 0, 0.36) !important;
 
-	--adw-card-bg: rgba(255, 255, 255, 0.08);
-	--adw-card-fg: #cdd6f4;
-	--adw-card-shade: rgba(0, 0, 0, 0.36);
+	--adw-card-bg: rgba(255, 255, 255, 0.08) !important;
+	--adw-card-fg: #cdd6f4 !important;
+	--adw-card-shade: rgba(0, 0, 0, 0.36) !important;
 
-	--adw-dialog-bg: #1e1e2e;
-	--adw-dialog-fg: #cdd6f4;
+	--adw-dialog-bg: #1e1e2e !important;
+	--adw-dialog-fg: #cdd6f4 !important;
 
-	--adw-popover-bg: #313244;
-	--adw-popover-fg: #cdd6f4;
-	--adw-popover-shade: rgba(0, 0, 0, 0.36);
+	--adw-popover-bg: #313244 !important;
+	--adw-popover-fg: #cdd6f4 !important;
+	--adw-popover-shade: rgba(0, 0, 0, 0.36) !important;
 
-	--adw-thumbnail-bg: #313244;
-	--adw-thumbnail-fg: #cdd6f4;
+	--adw-thumbnail-bg: #313244 !important;
+	--adw-thumbnail-fg: #cdd6f4 !important;
 
-	--adw-shade: rgba(0, 0, 0, 0.36);
+	--adw-shade: rgba(0, 0, 0, 0.36) !important;
 
-	--adw-banner: #6c7086;
+	--adw-banner: #6c7086 !important;
 
-	--adw-user-offline: #6c7086;
-	--adw-user-online: #89b4fa;
-	--adw-user-ingame: #a6e3a1;
+	--adw-user-offline: #6c7086 !important;
+	--adw-user-online: #89b4fa !important;
+	--adw-user-ingame: #a6e3a1 !important;
 
-	--adw-accent-blue: #89b4fa;
-	--adw-accent-teal: #94e2d5;
-	--adw-accent-green: #a6e3a1;
-	--adw-accent-yellow: #f9e2af;
-	--adw-accent-orange: #fab387;
-	--adw-accent-red: #f38ba8;
-	--adw-accent-pink: #f5c2e7;
-	--adw-accent-purple: #cba6f7;
-	--adw-accent-slate: #7f849c;
+	--adw-accent-blue: #89b4fa !important;
+	--adw-accent-teal: #94e2d5 !important;
+	--adw-accent-green: #a6e3a1 !important;
+	--adw-accent-yellow: #f9e2af !important;
+	--adw-accent-orange: #fab387 !important;
+	--adw-accent-red: #f38ba8 !important;
+	--adw-accent-pink: #f5c2e7 !important;
+	--adw-accent-purple: #cba6f7 !important;
+	--adw-accent-slate: #7f849c !important;
 }
