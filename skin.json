@@ -17,12 +17,28 @@
 	"UseDefaultPatches": false,
 	"Patches": [
 		{
-			"MatchRegexString": ".*",
+			"MatchRegexString": "^Steam$",
+			"TargetCss": "injectors/millennium/full.css"
+		},
+		{
+			"MatchRegexString": ".friendsui-container",
+			"TargetCss": "injectors/millennium/full.css"
+		},
+		{
+			"MatchRegexString": "Supernav$",
 			"TargetCss": "adwaita/base.css"
 		},
 		{
-			"MatchRegexString": "^(?!Steam Big Picture Mode).*$",
-			"TargetCss": "adwaita/main.css"
+			"MatchRegexString": "Menu$",
+			"TargetCss": "adwaita/base.css"
+		},
+		{
+			"MatchRegexString": ".ModalDialogPopup",
+			"TargetCss": "injectors/millennium/full.css"
+		},
+		{
+			"MatchRegexString": ".FullModalOverlay",
+			"TargetCss": "injectors/millennium/full.css"
 		}
 	],
 
@@ -34,7 +50,7 @@
 			"default": "Adwaita",
 			"values": {
 				"Adwaita": {},
-				"Adwaita - gray, pre-GNOME 48": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/adwaita-gray/adwaita-gray.css" } },
+				"Adwaita Gray (pre-GNOME 48)": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/adwaita-gray/adwaita-gray.css" } },
 				"Breeze": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/breeze/breeze.css" } },
 				"Canta": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/canta/canta.css" } },
 				"Catppuccin Frappé": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/catppuccin-frappe/catppuccin-frappe.css" } },
@@ -48,25 +64,25 @@
 				"Metro": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/metro/metro.css" } },
 				"Nord": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/nord/nord.css" } },
 				"OLED": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/oled/oled.css" } },
-				"One-pro": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/one-pro/one-pro.css" } },
+				"One Dark": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/one-dark/one-dark.css" } },
 				"Pop": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/pop/pop.css" } },
-				"Rose-pine": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/rose-pine/rose-pine.css" } },
-				"Tokyo-night": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/tokyo-night/tokyo-night.css" } },
-				"Tomorrow-night": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/tomorrow-night/tomorrow-night.css" } },
+				"Rosé Pine": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/rose-pine/rose-pine.css" } },
+				"Tokyo Night": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/tokyo-night/tokyo-night.css" } },
+				"Tomorrow Night": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/tomorrow-night/tomorrow-night.css" } },
 				"Vapor": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/vapor/vapor.css" } },
 				"VGUI2": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/vgui2/vgui2.css" } },
 				"Yaru": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/yaru/yaru.css" } }
 			}
 		},
 		"Color scheme": {
-			"description": "Light or dark color scheme. Some color themes don't support different color schemes",
+			"description": "Some color themes may not support different color schemes",
 			"tab": "Appearance",
 			"section": "Colors",
 			"default": "System",
 			"values": {
 				"System": {},
-				"Light": { "TargetCss": { "affects": [".*"], "src": "millennium/colorscheme/light.css" } },
-				"Dark": { "TargetCss": { "affects": [".*"], "src": "millennium/colorscheme/dark.css" } }
+				"Light": { "TargetCss": { "affects": [".*"], "src": "injectors/common/colorscheme/light.css" } },
+				"Dark": { "TargetCss": { "affects": [".*"], "src": "injectors/common/colorscheme/dark.css" } }
 			}
 		},
 		"Accent color": {
@@ -75,16 +91,17 @@
 			"section": "Colors",
 			"default": "System",
 			"values": {
-				"System": { "TargetCss": { "affects": [".*"], "src": "millennium/accent/system.css" } },
-				"Blue": { "TargetCss": { "affects": [".*"], "src": "millennium/accent/blue.css" } },
-				"Teal": { "TargetCss": { "affects": [".*"], "src": "millennium/accent/teal.css" } },
-				"Green": { "TargetCss": { "affects": [".*"], "src": "millennium/accent/green.css" } },
-				"Yellow": { "TargetCss": { "affects": [".*"], "src": "millennium/accent/yellow.css" } },
-				"Orange": { "TargetCss": { "affects": [".*"], "src": "millennium/accent/orange.css" } },
-				"Red": { "TargetCss": { "affects": [".*"], "src": "millennium/accent/red.css" } },
-				"Pink": { "TargetCss": { "affects": [".*"], "src": "millennium/accent/pink.css" } },
-				"Purple": { "TargetCss": { "affects": [".*"], "src": "millennium/accent/purple.css" } },
-				"Slate": { "TargetCss": { "affects": [".*"], "src": "millennium/accent/slate.css" } }
+				"Theme default": {},
+				"System": { "TargetCss": { "affects": [".*"], "src": "injectors/common/accent/system.css" } },
+				"Blue": { "TargetCss": { "affects": [".*"], "src": "injectors/common/accent/blue.css" } },
+				"Teal": { "TargetCss": { "affects": [".*"], "src": "injectors/common/accent/teal.css" } },
+				"Green": { "TargetCss": { "affects": [".*"], "src": "injectors/common/accent/green.css" } },
+				"Yellow": { "TargetCss": { "affects": [".*"], "src": "injectors/common/accent/yellow.css" } },
+				"Orange": { "TargetCss": { "affects": [".*"], "src": "injectors/common/accent/orange.css" } },
+				"Red": { "TargetCss": { "affects": [".*"], "src": "injectors/common/accent/red.css" } },
+				"Pink": { "TargetCss": { "affects": [".*"], "src": "injectors/common/accent/pink.css" } },
+				"Purple": { "TargetCss": { "affects": [".*"], "src": "injectors/common/accent/purple.css" } },
+				"Slate": { "TargetCss": { "affects": [".*"], "src": "injectors/common/accent/slate.css" } }
 			}
 		},
 		"Font": {
@@ -93,9 +110,9 @@
 			"section": "Fonts",
 			"default": "Adwaita",
 			"values": {
-				"System": { "TargetCss": { "affects": [".*"], "src": "adwaita/fonts/system/system.css" } },
 				"Adwaita": { "TargetCss": { "affects": [".*"], "src": "adwaita/fonts/adwaita/adwaita.css" } },
-				"Cantarell": { "TargetCss": { "affects": [".*"], "src": "adwaita/fonts/cantarell/cantarell.css" } }
+				"Cantarell": { "TargetCss": { "affects": [".*"], "src": "adwaita/fonts/cantarell/cantarell.css" } },
+				"System": { "TargetCss": { "affects": [".*"], "src": "adwaita/fonts/system/system.css" } }
 			}
 		},
 		"Window controls theme": {
@@ -116,66 +133,72 @@
 			"section": "Window controls",
 			"default": "Adwaita",
 			"values": {
-				"Adwaita": { "TargetCss": { "affects": [".*"], "src": "millennium/windowcontrols/adwaita.css" } },
-				"Pantheon": { "TargetCss": { "affects": [".*"], "src": "millennium/windowcontrols/pantheon.css" } },
-				"macOS": { "TargetCss": { "affects": [".*"], "src": "millennium/windowcontrols/macos.css" } },
-				"Windows": { "TargetCss": { "affects": [".*"], "src": "millennium/windowcontrols/windows.css" } }
+				"Adwaita": { "TargetCss": { "affects": [".*"], "src": "injectors/common/windowcontrols/adwaita.css" } },
+				"Pantheon": { "TargetCss": { "affects": [".*"], "src": "injectors/common/windowcontrols/pantheon.css" } },
+				"macOS": { "TargetCss": { "affects": [".*"], "src": "injectors/common/windowcontrols/macos.css" } },
+				"Windows": { "TargetCss": { "affects": [".*"], "src": "injectors/common/windowcontrols/windows.css" } }
 			}
 		},
 		
-		"Remove rounded corners": {
-			"description": "Removes rounded corners on most styled elements. Does not affect window corners",
+		"Rounded corners": {
+			"description": "Affects most styled elements. Does not affect window corners",
 			"tab": "Extras",
-			"default": "no",
+			"section": "General",
+			"default": "yes",
 			"values": {
-				"no": {},
-				"yes": { "TargetCss": { "affects": [".*"], "src": "adwaita/extras/general/no_rounded_corners.css" } }
+				"no": { "TargetCss": { "affects": [".*"], "src": "adwaita/extras/general/no-rounded-corners.css" } },
+				"yes": {}
 			}
 		},
-		"Hide What's New shelf": {
-			"description": "Hides What's New shelf from the Library",
+		"Pointer cursor": {
+			"description": "Keeps the pointer cursor (hand) for clickable elements",
 			"tab": "Extras",
+			"section": "General",
 			"default": "no",
 			"values": {
 				"no": {},
-				"yes": { "TargetCss": { "affects": [".*"], "src": "adwaita/extras/library/hide_whats_new.css" } }
+				"yes": { "TargetCss": { "affects": [".*"], "src": "adwaita/extras/general/cursor-pointer.css" } }
 			}
 		},
-		"Show Library sidebar on hover": {
-			"description": "Shows Library sidebar only when mouse is near the left side of the window",
+		"What's New shelf": {
+			"description": "Shows What's New shelf in Library",
 			"tab": "Extras",
+			"section": "Library",
+			"default": "yes",
+			"values": {
+				"no": { "TargetCss": { "affects": [".*"], "src": "adwaita/extras/library/hide-whats-new.css" } },
+				"yes": {}
+			}
+		},
+		"Hide games list": {
+			"description": "Shows games list only when mouse is near the left side of the window",
+			"tab": "Extras",
+			"section": "Library",
 			"default": "no",
 			"values": {
 				"no": {},
-				"yes": { "TargetCss": { "affects": [".*"], "src": "adwaita/extras/library/sidebar_hover.css" } }
+				"yes": { "TargetCss": { "affects": [".*"], "src": "adwaita/extras/library/sidebar-hover.css" } }
 			}
 		},
 		"Login QR code": {
 			"description": "Changes visibility of QR code in the Login window",
 			"tab": "Extras",
+			"section": "Login",
 			"default": "Show",
 			"values": {
 				"Show": {},
-				"Show on Hover": { "TargetCss": { "affects": [".*"], "src": "adwaita/extras/login/hover_qr.css" } },
-				"Hide": { "TargetCss": { "affects": [".*"], "src": "adwaita/extras/login/hide_qr.css" } }
+				"Show on Hover": { "TargetCss": { "affects": [".*"], "src": "adwaita/extras/login/hover-qr.css" } },
+				"Hide": { "TargetCss": { "affects": [".*"], "src": "adwaita/extras/login/hide-qr.css" } }
 			}
 		},
 		"Show URL": {
 			"description": "Shows URL on Store and Community pages in the main window",
 			"tab": "Extras",
+			"section": "Store",
 			"default": "no",
 			"values": {
 				"no": {},
-				"yes": { "TargetCss": { "affects": [".*"], "src": "adwaita/extras/store/show_url.css" } }
-			}
-		},
-		"Keep pointer cursor for clickable elements": {
-			"description": "Keeps the pointer cursor (hand) for clickable elements instead of removing it",
-			"tab": "Extras",
-			"default": "no",
-			"values": {
-				"no": {},
-				"yes": { "TargetCss": { "affects": [".*"], "src": "adwaita/extras/general/cursor_pointer.css" } }
+				"yes": { "TargetCss": { "affects": [".*"], "src": "adwaita/extras/store/show-url.css" } }
 			}
 		}
 	}

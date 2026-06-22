@@ -84,6 +84,7 @@ class AdwInstaller:
             info(f"No changes made")
     
     def _install(self, target: AdwInstallTarget, optimize: bool) -> bool:
+        style: AdwStyle = self._options["style"] # type: ignore
         try:
             step(f"Installing to \"{target.root}\"")
             if not target.is_valid:
@@ -91,7 +92,8 @@ class AdwInstaller:
                 return False
             info("Copying skin directory")
             copy_dir(ADW_ROOT, target.skin_dir)
-            copy_file(ADW_CUSTOM / "custom.css", target.skin_custom_css)
+            if style.custom_css and style.custom_css.is_file():
+                copy_file(style.custom_css, target.skin_custom_css)
             info("Patching and configuring skin")
             AdwCSSBuilder(self._css).patch(target, optimize)
             success(f"Installed to \"{target.root}\" successfully")

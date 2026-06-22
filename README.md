@@ -48,7 +48,7 @@ A skin to make Steam look more like a native GNOME app
 	</tr>
 	<tr>
 		<td><img alt="oled" src="/adwaita/colorthemes/oled/preview.png?raw=true"><br/>oled</td>
-		<td><img alt="one-pro" src="/adwaita/colorthemes/one-pro/preview.png?raw=true"><br/>one-pro</td>
+		<td><img alt="one-dark" src="/adwaita/colorthemes/one-dark/preview.png?raw=true"><br/>one-pro</td>
 		<td><img alt="pop" src="/adwaita/colorthemes/pop/preview.png?raw=true"><br/>pop</td>
 	</tr>
 	<tr>

@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+from pathlib import Path
 from argparse import _ArgumentGroup, Namespace
 from dataclasses import dataclass
 
@@ -14,7 +15,7 @@ from ..utils.os_settings import *
 class AdwStyle(AdwParsedOptionGroup):
     extras: list[str]
     font: str
-    custom_css: bool
+    custom_css: Path | None
 
     def to_css(self) -> AdwCSSConfig:
         imports = []
@@ -34,7 +35,7 @@ class AdwStyle(AdwParsedOptionGroup):
             )
         )
 
-        if self.custom_css:
+        if self.custom_css and self.custom_css.is_file():
             imports.append(
                 AdwCSSImport(
                     file=Path("custom.css"),
@@ -80,7 +81,7 @@ class AdwStyleOptions(AdwOptionGroup):
         args.add_argument(
             "--custom-css",
             help="enable custom CSS",
-            action="store_true"
+            type=Path
         )
 
     def parse(self, args: Namespace) -> AdwStyle:
