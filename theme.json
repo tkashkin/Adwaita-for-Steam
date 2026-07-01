@@ -7,7 +7,7 @@
 	"manifest_version": 8,
 	"target": "Desktop",
 	"tabs": {
-		"desktop": ["Steam|SteamLibraryWindow", "desktopchat", "desktopoverlay"],
+		"desktop": ["Steam|SteamLibraryWindow", "desktopchat", "desktopoverlay", "~&browser=-1&useragent=Valve%20Steam%20Client~"],
 		"menu": ["desktopcontextmenu"]
 	},
 

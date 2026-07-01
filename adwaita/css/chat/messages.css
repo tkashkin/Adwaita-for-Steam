@@ -449,7 +449,7 @@ html.client_chat_frame
 		div.emptyChatDialogs
 		{
 			display: flex !important;
-            flex-direction: column !important;
+			flex-direction: column !important;
 			flex-grow: 1 !important;
 			justify-content: center !important;
 			align-items: center !important;
@@ -457,7 +457,7 @@ html.client_chat_frame
 			padding: 24px !important;
 			text-align: center !important;
 
-			color: var(--adw-popover-fg) !important;
+			color: var(--adw-window-fg) !important;
 			font-family: var(--adw-text-font) !important;
 			text-transform: none !important;
 			letter-spacing: normal !important;

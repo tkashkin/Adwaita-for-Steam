@@ -285,15 +285,6 @@ body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0
 			padding: 0 !important;
 			margin: 0 !important;
 			overflow: hidden !important;
-
-			/* div._3DJLGrqzoQ5vMDI_4VG502
-			{
-				box-sizing: border-box !important;
-				width: auto !important;
-				padding: 0 !important;
-				margin: 0 !important;
-				gap: 16px !important;
-			} */
 		}
 	}
 
@@ -309,6 +300,11 @@ body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0
 			--negative-margin: 16px !important;
 			padding-bottom: 16px !important;
 			-webkit-mask-image: none !important;
+
+			&::-webkit-scrollbar
+			{
+				display: none !important;
+			}
 		}
 	}
 }

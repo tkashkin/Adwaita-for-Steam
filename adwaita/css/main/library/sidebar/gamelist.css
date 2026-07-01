@@ -242,7 +242,7 @@ body.DesktopUI
 			}
 		}
 
-		/* Tool icon container */
+		/* Icon container */
 		& > div._2-J2nMJ1zmDok8-jqXlf1e
 		{
 			width: 0 !important;
@@ -265,6 +265,12 @@ body.DesktopUI
 				{
 					fill: color-mix(in srgb, var(--adw-sidebar-fg) var(--adw-dim-label-opacity), transparent) !important;
 				}
+			}
+
+			/* Cloud error icon */
+			& > svg
+			{
+				display: none !important;
 			}
 		}
 

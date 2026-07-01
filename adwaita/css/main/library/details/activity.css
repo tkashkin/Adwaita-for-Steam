@@ -4,14 +4,21 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 	div.OhSdLYuggDtBcWjYP0j_9
 	{
 		/* Section */
-		div.vzLedtsu3TtTlKLEKzIhH
+		div.vzLedtsu3TtTlKLEKzIhH,
+		div._1sZgBDTw5NH-yuVDZK1SUU
 		{
 			/* Content wrapper */
-			div._3yTl3RiWfo-Itg-xp967wP
+			div._3yTl3RiWfo-Itg-xp967wP,
+			div._2r4TK4BAuU-J4FuF_O7v_5
 			{
 				max-width: var(--adw-library-details-max-width) !important;
-				margin: auto !important;
-				padding: 16px !important;
+				margin-left: auto !important;
+				margin-right: auto !important;
+
+				&._3yTl3RiWfo-Itg-xp967wP
+				{
+					padding: 16px !important;
+				}
 
 				/* Header */
 				h2._1Q2q_tQ9_Eq8YdEHNAHS3F

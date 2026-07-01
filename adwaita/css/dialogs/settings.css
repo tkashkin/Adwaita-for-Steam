@@ -217,7 +217,6 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 			letter-spacing: normal !important;
 			font-size: var(--adw-list-header-size) !important;
 			font-weight: var(--adw-list-header-weight) !important;
-			padding: 0 !important;
 			margin: 0 !important;
 			position: absolute !important;
 			top: 0 !important;
@@ -228,7 +227,6 @@ body.DesktopUI div._2sssIwe0duyIrFvat2oXzH
 			background: transparent !important;
 			box-shadow: none !important;
 			border-radius: var(--adw-button-radius) !important;
-			transition: var(--adw-button-transition) !important;
 			cursor: var(--adw-cursor-pointer) !important;
 			outline: 0 solid transparent !important;
 			outline-offset: 5px !important;

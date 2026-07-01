@@ -541,7 +541,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2aor4XVOYzN1PBSREk0UbO
 	}
 
 	/* Achievements */
-	div._31ptFGGMZrSQc5BCX1e5lm:has(img._2V2sHETNfa62yMoDwSF3_t)
+	div._31ptFGGMZrSQc5BCX1e5lm:has(img._2V2sHETNfa62yMoDwSF3_t, div._1ABm6sfuqiZZDSL9z8mW1a)
 	{
 		margin-top: -6px !important;
 
@@ -931,7 +931,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2aor4XVOYzN1PBSREk0UbO
 				{
 					width: 100% !important;
 					min-width: auto !important;
-					max-width: auto !important;
+					max-width: none !important;
 
 					div._2DUDvAhXoEOSsd8GTIsKLY
 					{

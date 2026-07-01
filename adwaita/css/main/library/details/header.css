@@ -237,7 +237,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 							div._1dg8hJMsAYISbeQUxcCJcv
 							{
 								position: absolute !important;
-								position-anchor: --adw-library-details-header-play-button !important;
+								position-anchor: --adw-library-details-header !important;
 								position-visibility: anchors-visible !important;
 								left: anchor(left) !important;
 								right: anchor(right) !important;
@@ -246,6 +246,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 								width: auto !important;
 								height: auto !important;
 								box-sizing: border-box !important;
+								padding: 0 !important;
 								margin: 0 !important;
 								z-index: 1 !important;
 								pointer-events: none !important;
@@ -256,11 +257,21 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 								flex-direction: column-reverse !important;
 								justify-content: center !important;
 								gap: 0 !important;
-								padding: 22px 8px 4px 8px !important;
-								
-								div._3Y87YQY56ZCOqhgcZFaDc5:has(div._1FnJ6dPuknQFQ2RTpKTI16 > div._2q-gZ3XJzlvSGHSF-GvSmi) &
+
+								div._3Y87YQY56ZCOqhgcZFaDc5:has(div._1FnJ6dPuknQFQ2RTpKTI16) &
 								{
-									padding: 22px 40px 4px 16px !important;
+									padding: 22px 8px 4px 8px !important;
+									position-anchor: --adw-library-details-header-play-button !important;
+									position-visibility: anchors-visible !important;
+									left: anchor(left) !important;
+									right: anchor(right) !important;
+									top: anchor(top) !important;
+									bottom: anchor(bottom) !important;
+
+									div._3Y87YQY56ZCOqhgcZFaDc5:has(div._1FnJ6dPuknQFQ2RTpKTI16 > div._2q-gZ3XJzlvSGHSF-GvSmi) &
+									{
+										padding: 22px 40px 4px 16px !important;
+									}
 								}
 
 								div._34lrt5-Fc3usZU6trA1P0-,
@@ -321,16 +332,16 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 									{
 										position: absolute !important;
 										position-anchor: --adw-library-details-header !important;
-										position-visibility: anchors-visible !important;
-										top: 48px !important;
-										left: 72px !important;
+										top: 58px !important;
+										right: 52px !important;
 										padding: 0 !important;
 										margin: 0 !important;
-										height: 64px !important;
+										min-width: var(--adw-library-details-header-play-button-width) !important;
+										height: 44px !important;
 										color: color-mix(in srgb, var(--adw-window-fg) var(--adw-dim-label-opacity), transparent) !important;
 										font-family: var(--adw-text-font) !important;
-										font-size: var(--adw-text-largetitle-size) !important;
-										font-weight: var(--adw-text-largetitle-weight) !important;
+										font-size: var(--adw-text-header-size) !important;
+										font-weight: var(--adw-text-header-weight) !important;
 										text-transform: none !important;
 										line-height: normal !important;
 										letter-spacing: normal !important;
@@ -405,6 +416,12 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 							text-overflow: ellipsis !important;
 							padding-right: 16px !important;
 							mask-image: linear-gradient(to left, transparent, black 16px) !important;
+							
+							/* Hide this title if title from info box exists */
+							div._1_cYNJSvS6IXs9vLTEYjy5:has(div._3GkV1NVDKuXYTLyRt2Uirz > div.Panel > h1) &
+							{
+								display: none !important;
+							}
 						}
 					}
 
@@ -436,7 +453,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 							flex-shrink: 0 !important;
 						}
 
-						/* Info button spacer for Steam Deck compatibility */
+						/* Info button spacer for SteamOS/Deck compatibility */
 						div._1_cYNJSvS6IXs9vLTEYjy5:has(div.IIJeieZ-ZPRfIULY7uSDG) &
 						{
 							mask-image:
@@ -630,6 +647,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 				{
 					padding: 0 !important;
 					margin: 0 !important;
+					display: flex !important;
 
 					/* Grid image */
 					div._1Id6ZFEUVa5PKEMIvSg4nE
@@ -647,6 +665,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 						box-shadow: var(--adw-card-shadow), var(--adw-card-outline-last) !important;
 						will-change: transform !important;
 						contain: strict !important;
+						z-index: 2 !important;
 						transition: width var(--adw-transition),
 							height var(--adw-transition),
 							translate var(--adw-transition),
@@ -724,9 +743,52 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 					}
 
 					/* Developer, publisher, features */
-					div._1uS70KI6ZbUE94jUB27ioB
+					p,
+					div._3cntzF30xAuwn1ARWJjvCb,
+					div.nkIX48cHLbjc0eaP5CNmM
 					{
 						display: none !important;
+					}
+
+					div._1uS70KI6ZbUE94jUB27ioB
+					{
+						padding: 0 !important;
+						margin: 0 !important;
+						width: 0 !important;
+						height: 0 !important;
+					}
+
+					/* Title */
+					div._3GkV1NVDKuXYTLyRt2Uirz > div.Panel
+					{
+						position: absolute !important;
+						display: flex !important;
+						align-items: center !important;
+						top: 64px !important;
+						left: 96px !important;
+						right: calc(var(--adw-library-details-header-play-button-width) + 120px) !important;
+						padding: 0 !important;
+						margin: 0 16px 0 0 !important;
+						height: 64px !important;
+
+						h1
+						{
+							color: var(--adw-window-fg) !important;
+							font-family: var(--adw-text-font) !important;
+							font-size: var(--adw-text-largetitle-size) !important;
+							font-weight: var(--adw-text-largetitle-weight) !important;
+							text-transform: none !important;
+							line-height: normal !important;
+							letter-spacing: normal !important;
+							white-space: normal !important;
+							display: -webkit-box !important;
+							-webkit-box-orient: vertical !important;
+							-webkit-line-clamp: 2 !important;
+							overflow: hidden !important;
+							text-overflow: ellipsis !important;
+							padding-right: 16px !important;
+							mask-image: linear-gradient(to left, transparent, black 16px) !important;
+						}
 					}
 				}
 			}
@@ -902,7 +964,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 				cursor: var(--adw-cursor-pointer) !important;
 			}
 
-			&.IIJeieZ-ZPRfIULY7uSDG, /* Steam Deck compatibility */
+			&.IIJeieZ-ZPRfIULY7uSDG, /* SteamOS/Deck compatibility */
 			&:has(div._3ooxUb30k7736aTVnO179S), /* Game version */
 			&:has(button._1qG6xUlNu-qvdhpSxwed5) /* Cloud sync error */
 			{
@@ -935,7 +997,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 			}
 		}
 
-		/* Steam Deck compatibility */
+		/* SteamOS/Deck compatibility */
 		div.IIJeieZ-ZPRfIULY7uSDG
 		{
 			anchor-name: --adw-library-details-deck-compat !important;
@@ -1136,6 +1198,20 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 					mask: var(--adw-icon-external-link) center / 16px no-repeat !important;
 				}
 			}
+		}
+	}
+
+	/* Offline mode, non-Steam games, preorders - empty play bar */
+	&:not(:has(div._1mDAVT4sTzFRwJtlKCw2Ws)),
+	&:has(div._1mDAVT4sTzFRwJtlKCw2Ws:empty),
+	&:has(div._2zxzStp5qY5M1evOm8keES:empty)
+	{
+		--adw-library-details-header-height: 192px !important;
+
+		/* SteamOS/Deck compatibility */
+		div.IIJeieZ-ZPRfIULY7uSDG
+		{
+			display: none !important;
 		}
 	}
 }
