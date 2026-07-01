@@ -90,6 +90,10 @@ class AdwInstaller:
             if not target.is_valid:
                 warning(f"Directory \"{target.root}\" does not exist or is not a valid Steam directory, skipping")
                 return False
+            if target.is_v3_installed:
+                warning("Previous version of the skin is installed, cleaning up")
+                target.skin_v3_libraryroot_css.unlink(missing_ok=True)
+                (target.css_dir / "library.original.css").replace(target.css_dir / "library.css")
             info("Copying skin directory")
             copy_dir(ADW_ROOT, target.skin_dir)
             if style.custom_css and style.custom_css.is_file():
@@ -108,6 +112,9 @@ class AdwInstaller:
             if not target.is_installed:
                 warning(f"Not installed to \"{target.root}\", skipping")
                 return False
+            if target.is_v3_installed:
+                warning("Previous version of the skin was installed, cleaning up")
+                target.skin_v3_libraryroot_css.unlink(missing_ok=True)
             info("Restoring original styles")
             for file in ADW_PATCH_FILES.values():
                 (target.css_dir / file.with_suffix(".original.css")).replace(target.css_dir / file)

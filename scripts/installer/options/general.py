@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+from pprint import pp, pformat
 from argparse import _ArgumentGroup, Namespace
 from dataclasses import dataclass, field
 from enum import StrEnum
@@ -41,12 +42,14 @@ class AdwInstallTarget:
     root: Path
     is_valid: bool
     is_installed: bool
+    is_v3_installed: bool
 
     steamui_dir: Path = field(repr=False)
     css_dir: Path = field(repr=False)
     skin_dir: Path = field(repr=False)
     skin_config_css: Path = field(repr=False)
     skin_custom_css: Path = field(repr=False)
+    skin_v3_libraryroot_css: Path = field(repr=False)
 
     def __init__(self, root: Path):
         self.root = root.expanduser().resolve()
@@ -55,11 +58,21 @@ class AdwInstallTarget:
         self.skin_dir = self.steamui_dir / ADW_ROOT
         self.skin_config_css = self.skin_dir / "config.css"
         self.skin_custom_css = self.skin_dir / "custom.css"
+        self.skin_v3_libraryroot_css = self.steamui_dir / "libraryroot.custom.css"
         self.update()
 
     def update(self):
-        self.is_valid = self.css_dir.is_dir()
-        self.is_installed = self.is_valid and self.skin_dir.is_dir()
+        patch_files = list(map(lambda f: self.css_dir / f, ADW_PATCH_FILES.values()))
+        self.is_valid = self.css_dir.is_dir() and all(map(lambda f: f.is_file(), patch_files))
+        self.is_installed = False
+        self.is_v3_installed = self.skin_v3_libraryroot_css.is_file()
+        if self.is_valid and self.skin_dir.is_dir():
+            for file in patch_files:
+                with file.open(encoding="utf-8") as patch_css:
+                    header = patch_css.readline(max(len(ADW_PATCH_HEADER), len(ADW_PATCH_HEADER_V3))).strip()
+                    self.is_installed = self.is_installed or header in [ADW_PATCH_HEADER, ADW_PATCH_HEADER_V3]
+                    self.is_v3_installed = self.is_v3_installed or header == ADW_PATCH_HEADER_V3
+                    if self.is_installed and self.is_v3_installed: break
 
 @dataclass
 class AdwGeneral(AdwParsedOptionGroup):

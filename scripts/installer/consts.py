@@ -18,6 +18,7 @@ ADW_WINDOWCONTROLS_DIR = ADW_ROOT / ADW_WINDOWCONTROLS
 
 ADW_VERSION = (ADW_ROOT / "VERSION").read_text()
 
+ADW_PATCH_HEADER_V3 = "/*patched*/"
 ADW_PATCH_HEADER = "/* Adwaita-for-Steam */"
 ADW_PATCH_VERSION_HEADER = f"/* Version: {ADW_VERSION} */"
 ADW_PATCH_INSTALLATION_DATE_HEADER = f"/* Installed at: {datetime.now():%Y-%m-%d %H:%M:%S} */"
