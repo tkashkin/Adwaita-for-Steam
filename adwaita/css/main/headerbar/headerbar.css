@@ -3,14 +3,16 @@ body.DesktopUI
 	/* Main window headerbar */
 	div._3Z7VQ1IMk4E3HsHvrkLNgo
 	{
+		-webkit-app-region: drag !important;
 		height: 46px !important;
 		min-height: 46px !important;
-		background: rgb(var(--adw-headerbar-bg-rgb)) !important;
+		background: var(--adw-headerbar-bg) !important;
 		box-shadow: none !important;
 		order: 1 !important;
 
 		div._39oUCO1OuizVPwcnnv88no
 		{
+			-webkit-app-region: unset !important;
 			height: 46px !important;
 			min-height: 46px !important;
 		}
@@ -20,7 +22,7 @@ body.DesktopUI
 	div._1ENHEsrSLcTRtPQFl1F-wL
 	{
 		border: none !important;
-		background: rgb(var(--adw-window-bg-rgb)) !important;
+		background: var(--adw-window-bg) !important;
 
 		/* Focus Bar */
 		& > div._3pXasCUulX4jjqO79s4q_F
@@ -32,7 +34,7 @@ body.DesktopUI
 	/* .steamdesktop_DragArea_ */
 	div._30vB9DdsPK7VrZAbb5Q1Av
 	{
-		-webkit-app-region: initial !important;
+		-webkit-app-region: unset !important;
 	}
 
 	/* URL Bar placeholder - draw headerbar shadow instead */
@@ -44,8 +46,9 @@ body.DesktopUI
 		height: 4px !important;
 		z-index: 999 !important;
 		pointer-events: none !important;
-		background: linear-gradient(to bottom, rgba(var(--adw-shade-rgb), calc(var(--adw-shade-a) * 0.75)), transparent 4px) !important;
-		box-shadow: inset 0 1px rgba(var(--adw-shade-rgb), calc(var(--adw-shade-a) * 0.75)) !important;
+		color: var(--adw-headerbar-fg) !important;
+		background: linear-gradient(to bottom, var(--adw-undershoot)) !important;
+		box-shadow: inset 0 1px var(--adw-undershoot-border);
 	}
 
 	/**
@@ -55,15 +58,18 @@ body.DesktopUI
 	 */
 	div._1bGewp3tfzqAF6fVTFFUOz
 	{
+		color-scheme: dark !important;
+		background: var(--adw-window-bg) !important;
 		box-sizing: border-box !important;
-		border: 1px rgb(var(--adw-window-bg-rgb)) solid !important;
-		border-top: 1px rgba(var(--adw-headerbar-shade-rgb), var(--adw-headerbar-shade-a)) solid !important;
-		background: rgb(var(--adw-window-bg-rgb)) !important;
+		padding: 1px !important;
+		box-shadow: inset 0 1px var(--adw-undershoot-border);
 
 		/* URL Bar (refresh button only) */
 		div.UkR3sY319PuaUNuUWks2K
 		{
+			color-scheme: var(--adw-color-scheme, light dark) !important;
 			background: transparent !important;
+			color: var(--adw-headerbar-fg) !important;
 			box-shadow: none !important;
 			border: none !important;
 			padding: 0 !important;
@@ -76,14 +82,16 @@ body.DesktopUI
 			/* Refresh button */
 			div._3KaB94Jl4r0hFkthDPJy09
 			{
-				-webkit-app-region: no-drag;
+				-webkit-app-region: no-drag !important;
 				cursor: var(--adw-cursor-pointer) !important;
+				color: currentColor !important;
 				border-radius: var(--adw-button-radius) !important;
 				box-sizing: border-box !important;
 				width: 34px !important;
 				height: 34px !important;
 				padding: 9px !important;
-				transition: var(--adw-button-transition);
+				/* transition: var(--adw-button-transition) !important; */
+				transition: none !important;
 
 				svg
 				{
@@ -92,19 +100,21 @@ body.DesktopUI
 
 				&:hover
 				{
-					background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-hover-opacity)) !important;
+					background: color-mix(in srgb, currentColor var(--adw-hover-opacity), transparent) !important;
+					box-shadow: var(--adw-button-hc-outline) !important;
 				}
 
 				&:active
 				{
-					background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-active-opacity)) !important;
+					background: color-mix(in srgb, currentColor var(--adw-active-opacity), transparent) !important;
+					box-shadow: var(--adw-button-hc-outline) !important;
 				}
 			}
 
 			&::before,
 			div._3KaB94Jl4r0hFkthDPJy09::before
 			{
-				background-color: rgb(var(--adw-headerbar-fg-rgb));
+				background-color: currentColor;
 				content: "";
 				display: block;
 				width: 16px;
@@ -133,6 +143,7 @@ body.DesktopUI
 	/* Content frame */
 	div._1rDh5rXSFZJOqCa4UpnI4z
 	{
+		-webkit-app-region: no-drag !important;
 		position: initial !important;
 		order: 3 !important;
 	}
@@ -143,7 +154,7 @@ body.DesktopUI
 	div._1_yS5UP7el0aN4vntx3dx
 	{
 		display: block !important;
-		background: rgb(var(--adw-headerbar-bg-rgb)) !important;
+		background: var(--adw-headerbar-bg) !important;
 		order: 2 !important;
 
 		/* Bottom bar */
@@ -170,9 +181,9 @@ body.DesktopUI
 		div._2iJsgdTIX9Tj23rWnB7Q-c,
 		div._3GaHEQJW9B1Rlt0Ddz3E8D
 		{
-			background-image: linear-gradient(0deg, rgba(var(--adw-banner-bg-rgb), var(--adw-banner-bg-a)), rgba(var(--adw-banner-bg-rgb), var(--adw-banner-bg-a))) !important;
-			background-color: rgb(var(--adw-headerbar-bg-rgb)) !important;
-			box-shadow: inset 0 1px rgba(var(--adw-headerbar-shade-rgb), var(--adw-headerbar-shade-a)) !important;
+			background: color-mix(in srgb, var(--adw-banner) 30%, var(--adw-window-bg)) !important;
+			color: var(--adw-window-fg) !important;
+			box-shadow: inset 0 1px var(--adw-headerbar-shade) !important;
 			border-radius: 0 !important;
 			min-height: 46px !important;
 			padding: 0 10px !important;
@@ -181,7 +192,7 @@ body.DesktopUI
 			&, a, div._2EXJTyc69b45nXI4h3RknI, div.SwtQX-CurM3HPVJ9DPI1V
 			{
 				cursor: var(--adw-cursor-pointer) !important;
-				color: rgb(var(--adw-banner-fg-rgb)) !important;
+				color: var(--adw-window-fg) !important;
 				font-family: var(--adw-text-font) !important;
 				font-size: var(--adw-text-title3-size) !important;
 				font-weight: var(--adw-text-title3-weight) !important;
@@ -208,9 +219,10 @@ body.DesktopUI
 				/* Button */
 				div._2ohOQgahhMYnIEfAQmv9B8
 				{
-					background: rgba(var(--adw-banner-fg-rgb), var(--adw-button-bg-opacity)) !important;
+					background: color-mix(in srgb, currentColor var(--adw-button-bg-opacity), transparent) !important;
+					box-shadow: var(--adw-button-hc-outline) !important;
 					border-radius: var(--adw-button-radius) !important;
-					color: rgb(var(--adw-banner-fg-rgb)) !important;
+					color: var(--adw-window-fg) !important;
 					font-family: var(--adw-text-font) !important;
 					font-size: var(--adw-text-title3-size) !important;
 					font-weight: var(--adw-text-title3-weight) !important;
@@ -229,12 +241,12 @@ body.DesktopUI
 
 					&:hover
 					{
-						background: rgba(var(--adw-banner-fg-rgb), var(--adw-button-bg-opacity-hover)) !important;
+						background: color-mix(in srgb, currentColor var(--adw-button-bg-opacity-hover), transparent) !important;
 					}
 
 					&:active
 					{
-						background: rgba(var(--adw-banner-fg-rgb), var(--adw-button-bg-opacity-active)) !important;
+						background: color-mix(in srgb, currentColor var(--adw-button-bg-opacity-active), transparent) !important;
 					}
 				}
 			}
@@ -242,7 +254,7 @@ body.DesktopUI
 			/* Update error */
 			&._2T8739wyg0K9mokTXWytuZ
 			{
-				background-image: linear-gradient(0deg, rgba(var(--adw-error-bg-rgb), var(--adw-banner-bg-a)), rgba(var(--adw-error-bg-rgb), var(--adw-banner-bg-a))) !important;
+				
 			}
 
 			/* Small mode */

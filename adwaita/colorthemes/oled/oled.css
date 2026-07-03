@@ -1,32 +1,20 @@
-:root {
-	/* Window */
-	--adw-window-bg-rgb: 0, 0, 0 !important;
+:root
+{
+	--adw-window-bg: light-dark(#ffffff, #000000) !important;
+	--adw-window-fg: light-dark(rgba(0, 0, 0, 0.8), #ffffff) !important;
 
-	/* Views - e.g. text view or tree view */
-	--adw-view-bg-rgb: 0, 0, 0 !important;
+	--adw-view-bg: light-dark(#ffffff, #000000) !important;
+	--adw-view-fg: light-dark(rgba(0, 0, 0, 0.8), #ffffff) !important;
 
-	/* Header bar, search bar, tab bar */
-	--adw-headerbar-bg-rgb: 0, 0, 0 !important;
-	--adw-headerbar-shade-rgb: 0, 0, 0 !important;
-	--adw-headerbar-darker-shade-rgb: 0, 0, 0 !important;
+	--adw-headerbar-bg: light-dark(#ffffff, #000000) !important;
+	--adw-headerbar-fg: light-dark(rgba(0, 0, 0, 0.8), #ffffff) !important;
+	--adw-headerbar-backdrop: light-dark(#ffffff, #000000) !important;
 
-	/* Split pane views */
-	--adw-sidebar-bg-rgb: 0, 0, 0 !important;
-	--adw-sidebar-backdrop-rgb: 0, 0, 0 !important;
-	--adw-sidebar-shade-rgb: 0, 0, 0 !important;
+	--adw-sidebar-bg: light-dark(#ffffff, #000000) !important;
+	--adw-sidebar-fg: light-dark(rgba(0, 0, 0, 0.8), #ffffff) !important;
+	--adw-sidebar-backdrop: light-dark(#ffffff, #000000) !important;
 
-	--adw-secondary-sidebar-bg-rgb: 0, 0, 0 !important;
-
-	/* Dialogs */
-	--adw-dialog-bg-rgb: 0, 0, 0 !important;
-
-	/* Popovers */
-	--adw-popover-bg-rgb: 0, 0, 0 !important;
-	--adw-popover-shade-rgb: 0, 0, 0 !important;
-
-	/* Thumbnails */
-	--adw-thumbnail-bg-rgb: 0, 0, 0 !important;
-
-	/* Miscellaneous */
-	--adw-shade-rgb: 0, 0, 0 !important;
+	--adw-secondary-sidebar-bg: light-dark(#ffffff, #000000) !important;
+	--adw-secondary-sidebar-fg: light-dark(rgba(0, 0, 0, 0.8), #ffffff) !important;
+	--adw-secondary-sidebar-backdrop: light-dark(#ffffff, #000000) !important;
 }

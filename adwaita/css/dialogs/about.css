@@ -22,6 +22,7 @@ body.DesktopUI div.FFIKUQ7BGKw6vO1voazlr
 
 			svg
 			{
+				color: var(--adw-window-fg) !important;
 				width: 64px !important;
 				height: 64px !important;
 				padding: 0 !important;
@@ -33,7 +34,7 @@ body.DesktopUI div.FFIKUQ7BGKw6vO1voazlr
 			&::after
 			{
 				content: "Steam";
-				color: rgb(var(--adw-window-fg-rgb)) !important;
+				color: var(--adw-window-fg) !important;
 				font-family: var(--adw-text-font) !important;
 				text-indent: 0 !important;
 				text-transform: none !important;
@@ -53,8 +54,8 @@ body.DesktopUI div.FFIKUQ7BGKw6vO1voazlr
 
 		div.DialogBodyText
 		{
-			background: rgba(var(--adw-card-bg-rgb), var(--adw-card-opacity)) !important;
-			color: rgb(var(--adw-card-fg-rgb)) !important;
+			background: var(--adw-card-bg) !important;
+			color: var(--adw-card-fg) !important;
 			border-radius: var(--adw-card-radius) !important;
 			box-shadow: var(--adw-card-shadow) !important;
 			box-sizing: border-box !important;
@@ -71,13 +72,13 @@ body.DesktopUI div.FFIKUQ7BGKw6vO1voazlr
 
 			span
 			{
-				color: rgba(var(--adw-card-fg-rgb), var(--adw-dim-label-opacity)) !important;
+				color: color-mix(in srgb, currentColor var(--adw-dim-label-opacity), transparent) !important;
 			}
 
 			&::selection, *::selection
 			{
-				color: rgb(var(--adw-accent-fg-rgb)) !important;
-				background: rgb(var(--adw-accent-bg-rgb)) !important;
+				color: var(--adw-accent-fg) !important;
+				background: var(--adw-accent-bg) !important;
 				text-shadow: none !important;
 			}
 
@@ -90,8 +91,8 @@ body.DesktopUI div.FFIKUQ7BGKw6vO1voazlr
 				right: 0;
 				justify-self: center;
 				padding: 4px 12px;
-				color: rgb(var(--adw-accent-rgb));
-				background: rgba(var(--adw-accent-rgb), var(--adw-button-bg-opacity));
+				color: var(--adw-accent);
+				background: color-mix(in srgb, currentColor var(--adw-button-bg-opacity), transparent);
 				font-family: var(--adw-text-font);
 				font-size: var(--adw-text-header-size);
 				font-weight: var(--adw-text-header-weight);

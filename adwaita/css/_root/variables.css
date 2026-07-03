@@ -1,12 +1,19 @@
 /* Other global variables */
 :root
 {
-	--adw-base-transition-curve: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-
 	--adw-gameicon-radius: 4px;
 	--adw-gameicon-uninstalled-filter: grayscale(100%) opacity(50%);
 
 	--adw-cursor-pointer: default;
+	
+	--adw-focus-border: inset 0 0 0 2px color-mix(in srgb, var(--adw-accent) var(--adw-focus-border-opacity), transparent);
+	--adw-focus-border-thin: inset 0 0 0 1px color-mix(in srgb, var(--adw-accent) var(--adw-focus-border-opacity), transparent);
+	--adw-focus-border-outlined: inset 0 0 0 2px color-mix(in srgb, var(--adw-accent) var(--adw-focus-border-opacity), transparent), inset 0 0 0 3px var(--adw-window-bg);
+}
 
-	--adw-window-outline: rgba(255, 255, 255, var(--adw-window-outline-opacity));
+@property --adw-hover-overlay
+{
+	syntax: "<percentage>";
+	inherits: false;
+	initial-value: 0%;
 }

@@ -1,0 +1,14 @@
+:root
+{
+	--adw-transition-curve: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --adw-transition-duration: 200ms;
+    --adw-transition: var(--adw-transition-duration) var(--adw-transition-curve);
+
+	--adw-focus-transition: outline-color var(--adw-transition), outline-width var(--adw-transition), outline-offset var(--adw-transition);
+    --adw-button-transition: background-color var(--adw-transition), color var(--adw-transition), --adw-hover-overlay var(--adw-transition);
+
+    @media (prefers-reduced-motion: reduce)
+    {
+        --adw-transition: none;
+    }
+}

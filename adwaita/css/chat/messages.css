@@ -63,7 +63,7 @@ html.client_chat_frame
 							margin: 0 !important;
 							background: transparent !important;
 							border-radius: var(--adw-button-radius) !important;
-							color: rgb(var(--adw-headerbar-fg-rgb)) !important;
+							color: var(--adw-headerbar-fg) !important;
 							transition: var(--adw-button-transition) !important;
 							box-shadow: none !important;
 
@@ -77,7 +77,7 @@ html.client_chat_frame
 								bottom: 4px !important;
 								width: 1px !important;
 								opacity: 1 !important;
-								transition: opacity 200ms var(--adw-base-transition-curve) !important;
+								transition: opacity var(--adw-transition) !important;
 							}
 
 							&::before, &:last-of-type::after
@@ -87,7 +87,7 @@ html.client_chat_frame
 
 							&:hover
 							{
-								background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-hover-opacity)) !important;
+								background: color-mix(in srgb, currentColor var(--adw-hover-opacity), transparent) !important;
 
 								&::after, div._2XZq-_f6npaQdAgeRzKIkz:has(+ &)::after
 								{
@@ -97,21 +97,21 @@ html.client_chat_frame
 
 							&:active
 							{
-								background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-active-opacity)) !important;
+								background: color-mix(in srgb, currentColor var(--adw-active-opacity), transparent) !important;
 							}
 
 							&.Yd-DsWkYiFiYwpci--Yk_
 							{
-								background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-selected-opacity)) !important;
+								background: color-mix(in srgb, currentColor var(--adw-selected-opacity), transparent) !important;
 
 								&:hover
 								{
-									background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-selected-hover-opacity)) !important;
+									background: color-mix(in srgb, currentColor var(--adw-selected-hover-opacity), transparent) !important;
 								}
 
 								&:active
 								{
-									background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-selected-active-opacity)) !important;
+									background: color-mix(in srgb, currentColor var(--adw-selected-active-opacity), transparent) !important;
 								}
 
 								&::after, div._2XZq-_f6npaQdAgeRzKIkz:has(+ &)::after
@@ -122,7 +122,7 @@ html.client_chat_frame
 
 							&._3oMENEr8B3XRqYBUZN0wxj
 							{
-								transition: all 200ms var(--adw-base-transition-curve) !important;
+								transition: all var(--adw-transition) !important;
 								transition-property: opacity, min-width, max-width, margin-left !important;
 								opacity: 0 !important;
 								min-width: 0 !important;
@@ -139,7 +139,7 @@ html.client_chat_frame
 							}
 
 							&._3U5nKyNTQNOpbQ6ZYdTpNN {
-								transition: all 200ms var(--adw-base-transition-curve) !important;
+								transition: all var(--adw-transition) !important;
 								transition-property: opacity, min-width, max-width, margin-left !important;
 								opacity: 1 !important;
 								max-width: calc(100%) !important;
@@ -162,7 +162,7 @@ html.client_chat_frame
 								justify-content: center !important;
 								-webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) calc(100% - 20px), rgba(0, 0, 0, 0)) !important;
 								padding: 0 6px !important;
-								transition: padding 250ms var(--adw-base-transition-curve) !important;
+								transition: padding var(--adw-transition) !important;
 
 								div._2XZq-_f6npaQdAgeRzKIkz:hover &, div._2XZq-_f6npaQdAgeRzKIkz.Yd-DsWkYiFiYwpci--Yk_ &
 								{
@@ -200,7 +200,7 @@ html.client_chat_frame
 
 								div.nOdcT-MoOaXGePXLyPe0H, div._1HNpQBKKKQ1tG2OZH3CSsh
 								{
-									color: rgb(var(--adw-headerbar-fg-rgb)) !important;
+									color: var(--adw-headerbar-fg) !important;
 									font-family: var(--adw-text-font) !important;
 									font-size: var(--adw-text-header-size) !important;
 									font-weight: var(--adw-text-base-weight) !important;
@@ -232,12 +232,12 @@ html.client_chat_frame
 
 								&:hover
 								{
-									background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-hover-opacity)) !important;
+									background: color-mix(in srgb, currentColor var(--adw-hover-opacity), transparent) !important;
 								}
 
 								&:active
 								{
-									background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-active-opacity)) !important;
+									background: color-mix(in srgb, currentColor var(--adw-active-opacity), transparent) !important;
 								}
 
 								div._2XZq-_f6npaQdAgeRzKIkz.Yd-DsWkYiFiYwpci--Yk_ &, div._2XZq-_f6npaQdAgeRzKIkz:hover &
@@ -252,7 +252,7 @@ html.client_chat_frame
 
 								&::before
 								{
-									background-color: rgb(var(--adw-headerbar-fg-rgb));
+									background-color: var(--adw-headerbar-fg);
 									content: "";
 									display: block;
 									width: 16px;
@@ -277,7 +277,7 @@ html.client_chat_frame
 
 									*
 									{
-										fill: rgb(var(--adw-headerbar-fg-rgb)) !important;
+										fill: var(--adw-headerbar-fg) !important;
 									}
 								}
 							}
@@ -300,7 +300,7 @@ html.client_chat_frame
 									width: 100px !important;
 									height: 2px !important;
 									margin: auto !important;
-									background: rgb(var(--adw-accent-rgb)) !important;
+									background: var(--adw-accent) !important;
 								}
 							}
 						}
@@ -317,28 +317,28 @@ html.client_chat_frame
 
 	div.chatDialogs
 	{
-		background: rgb(var(--adw-window-bg-rgb)) !important;
+		background: var(--adw-window-bg) !important;
 
 		div.chatWindow
 		{
-			background: rgb(var(--adw-window-bg-rgb)) !important;
+			background: var(--adw-window-bg) !important;
 
 			div.chatHeader
 			{
-				background: rgb(var(--adw-window-bg-rgb)) !important;
+				background: var(--adw-window-bg) !important;
 				min-height: 0 !important;
 			}
 
 			div.OneOnOneVoiceRoomControls
 			{
-				background: rgb(var(--adw-window-bg-rgb)) !important;
+				background: var(--adw-window-bg) !important;
 				box-shadow: none !important;
 				height: 46px !important;
 			}
 
 			div.chatRoomGroupNavColumn, div.MemberListColumn
 			{
-				background: rgb(var(--adw-secondary-sidebar-bg-rgb)) !important;
+				background: var(--adw-secondary-sidebar-bg) !important;
 			}
 
 			div.chatBody
@@ -377,7 +377,7 @@ html.client_chat_frame
 
 							&:hover
 							{
-								background: rgba(var(--adw-window-fg-rgb), var(--adw-hover-opacity)) !important;
+								background: color-mix(in srgb, currentColor var(--adw-hover-opacity), transparent) !important;
 							}
 						}
 
@@ -391,7 +391,7 @@ html.client_chat_frame
 							right: 0;
 							z-index: 101;
 							pointer-events: none;
-							background: rgb(var(--adw-window-bg-rgb));
+							background: var(--adw-window-bg);
 						}
 						&::before
 						{
@@ -417,14 +417,14 @@ html.client_chat_frame
 					&::before
 					{
 						top: 0;
-						background-image: linear-gradient(to bottom, rgba(var(--adw-shade-rgb), calc(var(--adw-shade-a) * 0.75)), transparent 4px);
-						box-shadow: inset 0 1px rgba(var(--adw-shade-rgb), calc(var(--adw-shade-a) * 0.75));
+						background-image: linear-gradient(to bottom, var(--adw-undershoot));
+						box-shadow: inset 0 1px var(--adw-undershoot-border);
 					}
 					&::after
 					{
 						bottom: 0;
-						background-image: linear-gradient(to top, rgba(var(--adw-shade-rgb), calc(var(--adw-shade-a) * 0.75)), transparent 4px);
-						box-shadow: inset 0 -1px rgba(var(--adw-shade-rgb), calc(var(--adw-shade-a) * 0.75));
+						background-image: linear-gradient(to top, var(--adw-undershoot));
+						box-shadow: inset 0 -1px var(--adw-undershoot-border);
 					}
 				}
 
@@ -449,7 +449,7 @@ html.client_chat_frame
 		div.emptyChatDialogs
 		{
 			display: flex !important;
-            flex-direction: column !important;
+			flex-direction: column !important;
 			flex-grow: 1 !important;
 			justify-content: center !important;
 			align-items: center !important;
@@ -457,7 +457,7 @@ html.client_chat_frame
 			padding: 24px !important;
 			text-align: center !important;
 
-			color: rgb(var(--adw-popover-fg-rgb)) !important;
+			color: var(--adw-window-fg) !important;
 			font-family: var(--adw-text-font) !important;
 			text-transform: none !important;
 			letter-spacing: normal !important;
@@ -467,7 +467,7 @@ html.client_chat_frame
 
 			&::before
 			{
-				background-color: rgba(var(--adw-headerbar-fg-rgb), var(--adw-dim-label-opacity));
+				background-color: color-mix(in srgb, currentColor var(--adw-dim-label-opacity), transparent);
 				content: "";
 				display: block;
 				margin: 8px auto;

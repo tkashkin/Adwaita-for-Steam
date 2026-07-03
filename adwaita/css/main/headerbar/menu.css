@@ -13,21 +13,23 @@ div._3Z7VQ1IMk4E3HsHvrkLNgo div._3s0lkohH8wU2do0K1il28Y
 	top: 6px !important;
 	width: 38px !important;
 	height: 38px !important;
-	border-radius: var(--adw-button-radius) !important;
-	background: rgb(var(--adw-headerbar-bg-rgb)) !important;
-	transition: width 200ms var(--adw-base-transition-curve), background 200ms var(--adw-base-transition-curve) !important;
+	border-radius: calc(var(--adw-button-radius) + 2px) !important;
+	background: var(--adw-headerbar-bg) !important;
+	/* transition: width var(--adw-transition), background var(--adw-transition) !important; */
+	transition: none !important;
 
 	/* Menu button */
 	div._2UyOBeiSdBayaFdRa39N2O
 	{
-		-webkit-app-region: no-drag !important;
+		-webkit-app-region: unset !important;
 		cursor: var(--adw-cursor-pointer) !important;
 		border-radius: var(--adw-button-radius) !important;
 		width: 34px !important;
 		height: 34px !important;
 		padding: 9px !important;
-		transition: var(--adw-button-transition);
-		color: rgb(var(--adw-headerbar-fg-rgb)) !important;
+		/* transition: var(--adw-button-transition) !important; */
+		transition: none !important;
+		color: var(--adw-headerbar-fg) !important;
 
 		/* Keep all menu buttons visible and in the same place to prevent Steam from recalculating menu positions */
 		position: absolute !important;
@@ -36,27 +38,30 @@ div._3Z7VQ1IMk4E3HsHvrkLNgo div._3s0lkohH8wU2do0K1il28Y
 
 		&:hover
 		{
-			background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-hover-opacity)) !important;
+			background: color-mix(in srgb, currentColor var(--adw-hover-opacity), transparent) !important;
+			box-shadow: var(--adw-button-hc-outline) !important;
 		}
 
 		&:active
 		{
-			background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-active-opacity)) !important;
+			background: color-mix(in srgb, currentColor var(--adw-active-opacity), transparent) !important;
+			box-shadow: var(--adw-button-hc-outline) !important;
 		}
 
 		/* Menu open */
 		&._3rgV8pPmQvZC-01x9l-q-N
 		{
-			background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-selected-opacity)) !important;
+			background: color-mix(in srgb, currentColor var(--adw-selected-opacity), transparent) !important;
+			box-shadow: var(--adw-button-hc-outline) !important;
 
 			&:hover
 			{
-				background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-selected-hover-opacity)) !important;
+				background: color-mix(in srgb, currentColor var(--adw-selected-hover-opacity), transparent) !important;
 			}
 
 			&:active
 			{
-				background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-selected-active-opacity)) !important;
+				background: color-mix(in srgb, currentColor var(--adw-selected-active-opacity), transparent) !important;
 			}
 		}
 
@@ -67,7 +72,7 @@ div._3Z7VQ1IMk4E3HsHvrkLNgo div._3s0lkohH8wU2do0K1il28Y
 
 		&::before
 		{
-			background-color: rgb(var(--adw-headerbar-fg-rgb));
+			background-color: var(--adw-headerbar-fg);
 			content: "";
 			display: block;
 			width: 16px;
@@ -118,6 +123,7 @@ div._3Z7VQ1IMk4E3HsHvrkLNgo div._3s0lkohH8wU2do0K1il28Y
 	&:has(div._3rgV8pPmQvZC-01x9l-q-N)
 	{
 		width: 198px !important;
-		background: rgb(var(--adw-secondary-sidebar-bg-rgb)) !important;
+		background: var(--adw-secondary-sidebar-bg) !important;
+		box-shadow: inset 0 0 0 1px color-mix(in srgb, currentColor var(--adw-border-opacity), transparent) !important;
 	}
 }

@@ -15,16 +15,18 @@ html.client_chat_frame
 		.title-area-icon
 		{
 			border-radius: 50% !important;
-			background-color: rgba(var(--adw-window-fg-rgb), var(--adw-button-bg-opacity)) !important;
+			color: var(--adw-headerbar-fg) !important;
+			background-color: color-mix(in srgb, currentColor var(--adw-button-bg-opacity), transparent) !important;
+			box-shadow: var(--adw-button-hc-outline) !important;
 
 			&:hover
 			{
-				background-color: rgba(var(--adw-window-fg-rgb), var(--adw-button-bg-opacity-hover)) !important;
+				background-color: color-mix(in srgb, currentColor var(--adw-button-bg-opacity-hover), transparent) !important;
 			}
 
 			&:active
 			{
-				background-color: rgba(var(--adw-window-fg-rgb), var(--adw-button-bg-opacity-active)) !important;
+				background-color: color-mix(in srgb, currentColor var(--adw-button-bg-opacity-active), transparent) !important;
 			}
 
 			> div
@@ -34,7 +36,7 @@ html.client_chat_frame
 
 			&::before
 			{
-				background-color: rgb(var(--adw-window-fg-rgb));
+				background-color: currentColor;
 				content: "";
 				display: block;
 				width: 16px;

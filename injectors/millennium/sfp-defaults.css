@@ -1,0 +1,96 @@
+:root:not([data-millennium-plugin])
+{
+	/* Window controls layout - :close */
+	--adw-windowcontrols-left-has-buttons: 0 !important;
+	--adw-windowcontrols-left-buttons: 0 !important;
+	--adw-windowcontrols-right-has-buttons: 1 !important;
+	--adw-windowcontrols-right-buttons: 1 !important;
+	--adw-windowcontrols-close-margin-left: calc(0 * (var(--adw-windowcontrols-buttons-margin-outer) + var(--adw-windowcontrols-button-width) + var(--adw-windowcontrols-buttons-margin-inner))) !important;
+	--adw-windowcontrols-close-margin-right: calc(1 * (var(--adw-windowcontrols-buttons-margin-outer) + var(--adw-windowcontrols-button-width) + var(--adw-windowcontrols-buttons-margin-inner))) !important;
+	
+	/* Window controls style - adwaita */
+	--adw-windowcontrols-button-width: 24px !important;
+	--adw-windowcontrols-button-height: 24px !important;
+	--adw-windowcontrols-button-gap: 13px !important;
+	--adw-windowcontrols-buttons-margin-outer: 12px !important;
+	--adw-windowcontrols-buttons-margin-inner: 6px !important;
+
+	body.DesktopUI,
+	&.client_chat_frame
+	{
+		.title-bar-actions .title-area-icon
+		{
+			visibility: hidden !important;
+
+			&.closeButton
+			{
+				visibility: visible !important;
+				right: calc(var(--adw-windowcontrols-buttons-margin-outer) + 0 * var(--adw-windowcontrols-button-width) + 0 * var(--adw-windowcontrols-button-gap)) !important;
+
+				html.client_chat_frame div.chat_main.singlewindow div.friendsListContainer:not(.collapsed) &
+				{
+					visibility: hidden !important;
+				}
+			}
+
+		}
+	}
+	
+	.title-bar-actions
+	{
+		.title-area-icon
+		{
+			border-radius: 50% !important;
+			color: var(--adw-headerbar-fg) !important;
+			background-color: color-mix(in srgb, currentColor var(--adw-button-bg-opacity), transparent) !important;
+			box-shadow: var(--adw-button-hc-outline) !important;
+
+			&:hover
+			{
+				background-color: color-mix(in srgb, currentColor var(--adw-button-bg-opacity-hover), transparent) !important;
+			}
+
+			&:active
+			{
+				background-color: color-mix(in srgb, currentColor var(--adw-button-bg-opacity-active), transparent) !important;
+			}
+
+			> div
+			{
+				display: none !important;
+			}
+
+			&::before
+			{
+				background-color: currentColor;
+				content: "";
+				display: block;
+				width: 16px;
+				height: 16px;
+				-webkit-mask-repeat: no-repeat;
+				-webkit-mask-position: center;
+				-webkit-mask-size: 16px;
+			}
+
+			&.closeButton::before
+			{
+				-webkit-mask-image: var(--adw-icon-window-close);
+			}
+
+			&.maximizeButton::before
+			{
+				-webkit-mask-image: var(--adw-icon-window-maximize);
+			}
+
+			&.minimizeButton::before
+			{
+				-webkit-mask-image: var(--adw-icon-window-minimize);
+			}
+
+			&.restoreButton::before
+			{
+				-webkit-mask-image: var(--adw-icon-window-restore);
+			}
+		}
+	}
+}

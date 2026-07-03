@@ -1,0 +1,6 @@
+@import "../../adwaita/base.css";
+@import "../../adwaita/main.css";
+@import "../../adwaita/notes.css";
+
+/* SFP does not support configurable options, set Adwaita window controls as defaults */
+@import "sfp-defaults.css";

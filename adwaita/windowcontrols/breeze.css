@@ -27,7 +27,7 @@ html.client_chat_frame
 			{
 				&:hover
 				{
-					background-color: rgb(var(--adw-error-rgb)) !important;
+					background-color: var(--adw-error) !important;
 				}
 
 				&:active
@@ -43,7 +43,7 @@ html.client_chat_frame
 
 			&::before
 			{
-				background-color: rgb(var(--adw-headerbar-fg-rgb));
+				background-color: var(--adw-headerbar-fg);
 				content: "";
 				display: block;
 				width: 16px;
@@ -55,11 +55,11 @@ html.client_chat_frame
 
 			&:hover
 			{
-				background-color: rgb(var(--adw-headerbar-fg-rgb)) !important;
+				background-color: var(--adw-headerbar-fg) !important;
 
 				&::before
 				{
-					background-color: rgb(var(--adw-headerbar-bg-rgb)) !important;
+					background-color: var(--adw-headerbar-bg) !important;
 				}
 			}
 
@@ -69,7 +69,7 @@ html.client_chat_frame
 
 				&::before
 				{
-					background-color: rgb(var(--adw-headerbar-bg-rgb)) !important;
+					background-color: var(--adw-headerbar-bg) !important;
 				}
 			}
 

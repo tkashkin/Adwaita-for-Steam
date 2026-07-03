@@ -1,137 +1,152 @@
 {
-    "name": "Adwaita",
-    "author": "tkashkin",
-    "description": "A skin to make Steam look more like a native GNOME app",
-    "version": "3.17",
+	"name": "Adwaita",
+	"author": "tkashkin",
+	"description": "A skin to make Steam look more like a native GNOME app",
+	"version": "4.0",
 
-    "manifest_version": 8,
-    "target": "Desktop",
-    "tabs": {
-        "all": ["Steam|SteamLibraryWindow", "desktopchat", "desktopcontextmenu", "desktopoverlay"]
-    },
+	"manifest_version": 9,
+	"target": "Desktop",
+	"tabs": {
+		"desktop": ["Steam|SteamLibraryWindow", "desktopchat", "desktopoverlay", "~&browser=-1&useragent=Valve%20Steam%20Client~"],
+		"menu": ["desktopcontextmenu"]
+	},
 
-    "inject": {
-        "millennium/millennium.css": ["all"]
-    },
+	"inject": {
+		"injectors/cssloader/base.css": ["desktop", "menu"],
+		"injectors/cssloader/main.css": ["desktop"]
+	},
 
-    "patches": {
-        "Color Theme": {
-            "type":  "dropdown",
-            "values": {
-                "adwaita": {},
-                "adwaita-gray": { "adwaita/colorthemes/adwaita-gray/adwaita-gray.css": ["all"] },
-                "breeze": { "adwaita/colorthemes/breeze/breeze.css": ["all"] },
-                "canta": { "adwaita/colorthemes/canta/canta.css": ["all"] },
-                "catppuccin-frappe": { "adwaita/colorthemes/catppuccin-frappe/catppuccin-frappe.css": ["all"] },
-                "catppuccin-macchiato": { "adwaita/colorthemes/catppuccin-macchiato/catppuccin-macchiato.css": ["all"] },
-                "catppuccin-mocha": { "adwaita/colorthemes/catppuccin-mocha/catppuccin-mocha.css": ["all"] },
-                "dracula": { "adwaita/colorthemes/dracula/dracula.css": ["all"] },
-                "everforest": { "adwaita/colorthemes/everforest/everforest.css": ["all"] },
-                "gruvbox": { "adwaita/colorthemes/gruvbox/gruvbox.css": ["all"] },
-                "kate": { "adwaita/colorthemes/kate/kate.css": ["all"] },
-                "metro": { "adwaita/colorthemes/metro/metro.css": ["all"] },
-                "nord": { "adwaita/colorthemes/nord/nord.css": ["all"] },
-                "oled": { "adwaita/colorthemes/oled/oled.css": ["all"] },
-                "one-pro": { "adwaita/colorthemes/one-pro/one-pro.css": ["all"] },
-                "pop": { "adwaita/colorthemes/pop/pop.css": ["all"] },
-                "rose-pine": { "adwaita/colorthemes/rose-pine/rose-pine.css": ["all"] },
-                "tokyo-night": { "adwaita/colorthemes/tokyo-night/tokyo-night.css": ["all"] },
-                "tomorrow-night": { "adwaita/colorthemes/tomorrow-night/tomorrow-night.css": ["all"] },
-                "vapor": { "adwaita/colorthemes/vapor/vapor.css": ["all"] },
-                "vgui2": { "adwaita/colorthemes/vgui2/vgui2.css": ["all"] },
-                "yaru": { "adwaita/colorthemes/yaru/yaru.css": ["all"] }
-            }
-        },
-        "Font": {
-            "type":  "dropdown",
-            "values": {
-                "Adwaita": { "adwaita/fonts/adwaita/adwaita.css": ["all"] },
-                "Cantarell": { "adwaita/fonts/cantarell/cantarell.css": ["all"] }
-            }
-        },
-        "Window Controls Theme": {
-            "type":  "dropdown",
-            "values": {
-                "Adwaita (GNOME)": { "adwaita/windowcontrols/adwaita.css": ["all"] },
-                "Breeze (KDE)": { "adwaita/windowcontrols/breeze.css": ["all"] },
-                "macOS": { "adwaita/windowcontrols/macos.css": ["all"] },
-                "Windows": { "adwaita/windowcontrols/windows.css": ["all"] }
-            }
-        },
-        "Window Controls Layout": {
-            "type":  "dropdown",
-            "values": {
-                "Adwaita": { "millennium/windowcontrols/adwaita.css": ["all"] },
-                "Pantheon": { "millennium/windowcontrols/pantheon.css": ["all"] },
-                "macOS": { "millennium/windowcontrols/macos.css": ["all"] },
-                "Windows": { "millennium/windowcontrols/windows.css": ["all"] }
-            }
-        },
-        "Rounded Corners": {
-            "type": "checkbox",
-            "values": {
-                "Yes": {},
-                "No": {
-                    "adwaita/extras/general/no_rounded_corners.css": ["all"]
-                }
-            }
-        },
-        "Show What's New": {
-            "type": "checkbox",
-            "values": {
-                "Yes": {},
-                "No": {
-                    "adwaita/extras/library/hide_whats_new.css": ["all"]
-                }
-            }
-        },
-        "Show Library Sidebar On Hover": {
-            "type": "checkbox",
-            "values": {
-                "No": {},
-                "Yes": {
-                    "adwaita/extras/library/sidebar_hover.css": ["all"]
-                }
-            }
-        },
-        "Login QR": {
-            "type": "dropdown",
-            "values": {
-                "Show": {},
-                "Show on Hover": {
-                    "adwaita/extras/login/hover_qr.css": ["all"]
-                },
-                "Hide": {
-                    "adwaita/extras/login/hide_qr.css": ["all"]
-                }
-            }
-        },
-        "Show URL": {
-            "type": "checkbox",
-            "values": {
-                "No": {},
-                "Yes": {
-                    "adwaita/extras/store/show_url.css": ["all"]
-                }
-            }
-        },
-        "Keep pointer cursor for clickable elements": {
-            "type": "checkbox",
-            "values": {
-                "No": {},
-                "Yes": {
-                    "adwaita/extras/general/cursor_pointer.css": ["all"]
-                }
-            }
-        },
-        "Enable Custom CSS": {
-            "type": "checkbox",
-            "values": {
-                "No": {},
-                "Yes": {
-                    "custom/custom.css": ["all"]
-                }
-            }
-        }
-    }
+	"patches": {
+		"Color theme": {
+			"type": "dropdown",
+			"values": {
+				"Adwaita": {},
+				"Adwaita Gray (pre-GNOME 48)": { "adwaita/colorthemes/adwaita-gray/adwaita-gray.css": ["desktop", "menu"] },
+				"Breeze": { "adwaita/colorthemes/breeze/breeze.css": ["desktop", "menu"] },
+				"Canta": { "adwaita/colorthemes/canta/canta.css": ["desktop", "menu"] },
+				"Catppuccin Frappé": { "adwaita/colorthemes/catppuccin-frappe/catppuccin-frappe.css": ["desktop", "menu"] },
+				"Catppuccin Macchiato": { "adwaita/colorthemes/catppuccin-macchiato/catppuccin-macchiato.css": ["desktop", "menu"] },
+				"Catppuccin Mocha": { "adwaita/colorthemes/catppuccin-mocha/catppuccin-mocha.css": ["desktop", "menu"] },
+				"Catppuccin Latte": { "adwaita/colorthemes/catppuccin-latte/catppuccin-latte.css": ["desktop", "menu"] },
+				"Dracula": { "adwaita/colorthemes/dracula/dracula.css": ["desktop", "menu"] },
+				"Everforest": { "adwaita/colorthemes/everforest/everforest.css": ["desktop", "menu"] },
+				"Gruvbox": { "adwaita/colorthemes/gruvbox/gruvbox.css": ["desktop", "menu"] },
+				"Kate": { "adwaita/colorthemes/kate/kate.css": ["desktop", "menu"] },
+				"Metro": { "adwaita/colorthemes/metro/metro.css": ["desktop", "menu"] },
+				"Nord": { "adwaita/colorthemes/nord/nord.css": ["desktop", "menu"] },
+				"OLED": { "adwaita/colorthemes/oled/oled.css": ["desktop", "menu"] },
+				"One Dark": { "adwaita/colorthemes/one-dark/one-dark.css": ["desktop", "menu"] },
+				"Pop": { "adwaita/colorthemes/pop/pop.css": ["desktop", "menu"] },
+				"Rosé Pine": { "adwaita/colorthemes/rose-pine/rose-pine.css": ["desktop", "menu"] },
+				"Tokyo Night": { "adwaita/colorthemes/tokyo-night/tokyo-night.css": ["desktop", "menu"] },
+				"Tomorrow Night": { "adwaita/colorthemes/tomorrow-night/tomorrow-night.css": ["desktop", "menu"] },
+				"Vapor": { "adwaita/colorthemes/vapor/vapor.css": ["desktop", "menu"] },
+				"VGUI2": { "adwaita/colorthemes/vgui2/vgui2.css": ["desktop", "menu"] },
+				"Yaru": { "adwaita/colorthemes/yaru/yaru.css": ["desktop", "menu"] }
+			}
+		},
+		"Color scheme": {
+			"type": "dropdown",
+			"values": {
+				"System": {},
+				"Light": { "injectors/common/colorscheme/light.css": ["desktop", "menu"] },
+				"Dark": { "injectors/common/colorscheme/dark.css": ["desktop", "menu"] }
+			}
+		},
+		"Accent color": {
+			"type": "dropdown",
+			"values": {
+				"Theme default": {},
+				"Custom": {},
+				"Blue": { "injectors/common/accent/blue.css": ["desktop", "menu"] },
+				"Teal": { "injectors/common/accent/teal.css": ["desktop", "menu"] },
+				"Green": { "injectors/common/accent/green.css": ["desktop", "menu"] },
+				"Yellow": { "injectors/common/accent/yellow.css": ["desktop", "menu"] },
+				"Orange": { "injectors/common/accent/orange.css": ["desktop", "menu"] },
+				"Red": { "injectors/common/accent/red.css": ["desktop", "menu"] },
+				"Pink": { "injectors/common/accent/pink.css": ["desktop", "menu"] },
+				"Purple": { "injectors/common/accent/purple.css": ["desktop", "menu"] },
+				"Slate": { "injectors/common/accent/slate.css": ["desktop", "menu"] }
+			},
+			"components": [
+				{
+					"name": "Custom accent color",
+					"type": "color-picker",
+					"on": "Custom",
+					"default": "#3584e4",
+					"css_variable": "adw-system-accent",
+					"tabs": ["desktop", "menu"]
+				}
+			]
+		},
+		"Font": {
+			"type": "dropdown",
+			"values": {
+				"Adwaita": { "injectors/cssloader/fonts/adwaita.css": ["desktop", "menu"] },
+				"Cantarell": { "injectors/cssloader/fonts/cantarell.css": ["desktop", "menu"] },
+				"System": { "adwaita/fonts/system/system.css": ["desktop", "menu"] }
+			}
+		},
+		"Window controls theme": {
+			"type": "dropdown",
+			"values": {
+				"Adwaita (GNOME)": { "adwaita/windowcontrols/adwaita.css": ["desktop"] },
+				"Breeze (KDE)": { "adwaita/windowcontrols/breeze.css": ["desktop"] },
+				"macOS": { "adwaita/windowcontrols/macos.css": ["desktop"] },
+				"Windows": { "adwaita/windowcontrols/windows.css": ["desktop"] }
+			}
+		},
+		"Window controls layout": {
+			"type": "dropdown",
+			"values": {
+				"Adwaita": { "injectors/common/windowcontrols/adwaita.css": ["desktop"] },
+				"Pantheon": { "injectors/common/windowcontrols/pantheon.css": ["desktop"] },
+				"macOS": { "injectors/common/windowcontrols/macos.css": ["desktop"] },
+				"Windows": { "injectors/common/windowcontrols/windows.css": ["desktop"] }
+			}
+		},
+		"Rounded corners - Does not affect window corners": {
+			"type": "checkbox",
+			"values": {
+				"Yes": {},
+				"No": { "adwaita/extras/general/no-rounded-corners.css": ["desktop", "menu"] }
+			}
+		},
+		"Pointer cursor for clickable elements": {
+			"type": "checkbox",
+			"values": {
+				"No": {},
+				"Yes": { "adwaita/extras/general/cursor-pointer.css": ["desktop", "menu"] }
+			}
+		},
+		"Show What's New shelf in Library": {
+			"type": "checkbox",
+			"values": {
+				"Yes": {},
+				"No": { "adwaita/extras/library/hide-whats-new.css": ["desktop"] }
+			}
+		},
+		"Show Library Sidebar on hover": {
+			"type": "checkbox",
+			"values": {
+				"No": {},
+				"Yes": { "adwaita/extras/library/sidebar-hover.css": ["desktop"] }
+			}
+		},
+		"Login QR code": {
+			"type": "dropdown",
+			"values": {
+				"Show": {},
+				"Show on Hover": { "adwaita/extras/login/hover-qr.css": ["desktop"] },
+				"Hide": { "adwaita/extras/login/hide-qr.css": ["desktop"] }
+			}
+		},
+		"Show URL on Store and Community pages": {
+			"type": "checkbox",
+			"values": {
+				"No": {},
+				"Yes": { "adwaita/extras/store/show-url.css": ["desktop"] }
+			}
+		}
+	}
 }
