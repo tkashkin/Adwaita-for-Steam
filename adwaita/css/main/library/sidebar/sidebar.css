@@ -627,6 +627,7 @@ body.DesktopUI
 		box-shadow: inset 1px 0 var(--adw-sidebar-border) !important;
 		width: 4px !important;
 		min-width: 4px !important;
+		margin-left: -1px !important;
 		margin-right: -3px !important;
 	}
 

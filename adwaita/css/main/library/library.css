@@ -9,7 +9,8 @@ body.DesktopUI div._2Dd4T78PcCTUVgOtDGFY5j
 
 	div._2dnxv1f3olKbOSmfSFezvJ, /* Offline mode warning */
 	div._1TGl52GwsFQg3CXUYvThP-  /* Non-Steam game */,
-	div._2-kDc3UDR-GN6V1lBpSupb  /* No activity */
+	div._2-kDc3UDR-GN6V1lBpSupb  /* No activity */,
+	div._13HxuJ0oTs2vPOIhoZ48Wm  /* No community content */
 	{
 		border: none !important;
 		display: flex !important;
@@ -53,6 +54,12 @@ body.DesktopUI div._2Dd4T78PcCTUVgOtDGFY5j
 		{
 			content: "";
 			mask-image: var(--adw-icon-news);
+		}
+
+		&._13HxuJ0oTs2vPOIhoZ48Wm::before
+		{
+			content: "";
+			mask-image: var(--adw-icon-note2);
 		}
 
 		button
