@@ -9,8 +9,8 @@
 		"repo_name": "Adwaita-for-Steam"
 	},
 
-	"header_image": "https://raw.githubusercontent.com/tkashkin/Adwaita-for-Steam/master/screenshots/library.png",
-	"splash_image": "https://raw.githubusercontent.com/tkashkin/Adwaita-for-Steam/master/screenshots/library.png",
+	"header_image": "https://raw.githubusercontent.com/tkashkin/Adwaita-for-Steam/master/screenshots/dark.png",
+	"splash_image": "https://raw.githubusercontent.com/tkashkin/Adwaita-for-Steam/master/screenshots/dark.png",
 
 	"tags": ["Adwaita", "GNOME", "GTK"],
 
