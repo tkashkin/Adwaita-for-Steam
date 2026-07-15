@@ -2,7 +2,7 @@
 	"name": "Adwaita",
 	"author": "tkashkin",
 	"description": "A skin to make Steam look more like a native GNOME app",
-	"version": "4.0",
+	"version": "4.1",
 
 	"github": {
 		"owner": "tkashkin",
@@ -139,7 +139,7 @@
 				"Windows": { "TargetCss": { "affects": [".*"], "src": "injectors/common/windowcontrols/windows.css" } }
 			}
 		},
-		
+
 		"Rounded corners": {
 			"description": "Affects most styled elements. Does not affect window corners",
 			"tab": "Extras",

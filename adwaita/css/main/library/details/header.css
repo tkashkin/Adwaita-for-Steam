@@ -227,12 +227,12 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 						div._1YbtIWcfkQJOysLXQbwzRf
 						{
 							position: unset !important;
-							
+
 							div.zjtAIAWI6HE0oCtJzw6Qt
 							{
 								position: unset !important;
 							}
-							
+
 							/* Update progress */
 							div._1dg8hJMsAYISbeQUxcCJcv
 							{
@@ -314,7 +314,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 										padding: 0 !important;
 										z-index: -1 !important;
 										background: none !important;
-							
+
 										div._1FnTqlsi2_-TJf1d5apoS6
 										{
 											background: rgba(0, 0, 0, 0.2) !important;
@@ -322,7 +322,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 										}
 									}
 								}
-								
+
 								/* Prerelease */
 								div._3Y87YQY56ZCOqhgcZFaDc5:not(:has(span._3rpUkswF6xc_ste4Ros_xM)) &:has(div._1YqJbKvmcYmfIDhCmNIQ5q)
 								{
@@ -416,7 +416,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 							text-overflow: ellipsis !important;
 							padding-right: 16px !important;
 							mask-image: linear-gradient(to left, transparent, black 16px) !important;
-							
+
 							/* Hide this title if title from info box exists */
 							div._1_cYNJSvS6IXs9vLTEYjy5:has(div._3GkV1NVDKuXYTLyRt2Uirz > div.Panel > h1) &
 							{
@@ -576,7 +576,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 									line-height: normal !important;
 									letter-spacing: normal !important;
 								}
-	
+
 								/* User status */
 								div._1cB0qtF0paHWWyj1XNcnbG
 								{
@@ -589,7 +589,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 									line-height: normal !important;
 									letter-spacing: normal !important;
 								}
-	
+
 								&.online div._1cB0qtF0paHWWyj1XNcnbG
 								{
 									color: var(--adw-user-online) !important;
@@ -860,7 +860,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 				align-items: center !important;
 				gap: 6px !important;
 				transition: var(--adw-button-transition) !important;
-				max-width: 150px !important;
+				max-width: 250px !important;
 				overflow: hidden !important;
 				text-overflow: ellipsis !important;
 				white-space: nowrap !important;
@@ -893,7 +893,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 					{
 						content: none !important;
 					}
-					
+
 					&::after
 					{
 						content: "";
@@ -1182,7 +1182,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 				{
 					background: color-mix(in srgb, var(--adw-window-fg) var(--adw-button-bg-opacity-active), transparent) !important;
 				}
-				
+
 				svg
 				{
 					display: none !important;

@@ -333,7 +333,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2aor4XVOYzN1PBSREk0UbO
 							{
 								--adw-hover-overlay: var(--adw-view-hover-opacity);
 							}
-				
+
 							&:active
 							{
 								--adw-hover-overlay: var(--adw-view-active-opacity);
@@ -359,7 +359,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2aor4XVOYzN1PBSREk0UbO
 									line-height: normal !important;
 									letter-spacing: normal !important;
 								}
-	
+
 								/* User status */
 								div._1cB0qtF0paHWWyj1XNcnbG,
 								div._1xGH4bGLz6sI7erzB8VWff
@@ -507,7 +507,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2aor4XVOYzN1PBSREk0UbO
 				padding: 0 !important;
 				margin: 0 !important;
 				gap: 2px !important;
-				
+
 				div.QDrH3LZtEjz3M1fiLS_f_,   /* Title */
 				div._3NeZL0dgMqGQ3V7NZz6EpF, /* Subtitle */
 				div._3Yvj5yqGgGYMcXE-Fr_Pqf  /* Details */
@@ -706,7 +706,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2aor4XVOYzN1PBSREk0UbO
 			cursor: var(--adw-cursor-pointer) !important;
 			overflow: hidden !important;
 		}
-		
+
 		/* Achievement text */
 		div._1s_9cSxUjb4609MSH0EjWH
 		{
@@ -942,7 +942,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2aor4XVOYzN1PBSREk0UbO
 						box-sizing: border-box !important;
 						cursor: var(--adw-cursor-pointer) !important;
 						box-shadow: none !important;
-	
+
 						&::after
 						{
 							content: "";
@@ -1125,7 +1125,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2aor4XVOYzN1PBSREk0UbO
 					padding: 0 !important;
 					margin: 0 !important;
 					gap: 2px !important;
-					
+
 					div._1jkfJdGTyndLlXdB9WkfL3, /* Heading */
 					div._1KR5XpPLCIid-SJBY4jFIp, /* Title */
 					div._3SzXrXnWa-W29h_4yF8Jwv  /* Description */
@@ -1190,12 +1190,12 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2aor4XVOYzN1PBSREk0UbO
 						box-shadow: var(--adw-button-hc-outline) !important;
 						z-index: 2 !important;
 						cursor: var(--adw-cursor-pointer) !important;
-			
+
 						&:hover
 						{
 							background: color-mix(in srgb, currentColor var(--adw-hover-opacity), transparent) !important;
 						}
-			
+
 						&:active
 						{
 							background: color-mix(in srgb, currentColor var(--adw-active-opacity), transparent) !important;
