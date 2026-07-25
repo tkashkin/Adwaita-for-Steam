@@ -47,9 +47,6 @@ html.client_chat_frame
 
 			.title-area-icon
 			{
-				position: absolute !important;
-				top: calc((100% - (var(--adw-windowcontrols-button-height))) / 2) !important;
-				bottom: calc((100% - (var(--adw-windowcontrols-button-height))) / 2) !important;
 				width: var(--adw-windowcontrols-button-width) !important;
 				height: var(--adw-windowcontrols-button-height) !important;
 				padding: 0 !important;
@@ -61,6 +58,23 @@ html.client_chat_frame
 				display: flex !important;
 				align-items: center !important;
 				align-content: center !important;
+			}
+
+			&.window-controls
+			{
+				.title-area-icon
+				{
+					position: absolute !important;
+					top: calc((100% - (var(--adw-windowcontrols-button-height))) / 2) !important;
+					bottom: calc((100% - (var(--adw-windowcontrols-button-height))) / 2) !important;
+				}
+			}
+
+			&.extra-actions
+			{
+				position: absolute !important;
+				top: 0 !important;
+				right: calc(var(--adw-windowcontrols-margin-right) + var(--adw-windowcontrols-buttons-margin-inner)) !important;
 			}
 		}
 	}

@@ -98,7 +98,7 @@ class AdwWindowControlsLayout:
 				rules=[],
 				nested_blocks=[
 					AdwCSSBlock(
-						selectors=[".title-bar-actions .title-area-icon"],
+						selectors=[".title-bar-actions.window-controls .title-area-icon"],
 						rules=["visibility: hidden !important;"],
 						nested_blocks=[*buttons_left, *buttons_right]
 					)
@@ -186,7 +186,7 @@ class AdwWindowControlsOptions(AdwOptionGroup):
             theme=args.windowcontrols_theme,
             layout=args.windowcontrols_layout
         )
-    
+
     def list_options(self):
         print("\nAvailable window controls themes:\n\n* " + "\n* ".join(AdwWindowControlsTheme))
         print("\nApply a window controls theme using ./install.py --windowcontrols-theme THEME")

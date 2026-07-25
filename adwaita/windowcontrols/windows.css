@@ -45,41 +45,44 @@ html.client_chat_frame
 				}
 			}
 
-			> div
+			.title-bar-actions.window-controls > &
 			{
-				display: none !important;
-			}
+				> div
+				{
+					display: none !important;
+				}
 
-			&::before
-			{
-				background-color: var(--adw-window-fg);
-				content: "";
-				display: block;
-				width: 16px;
-				height: 16px;
-				-webkit-mask-repeat: no-repeat;
-				-webkit-mask-position: center;
-				-webkit-mask-size: 16px;
-			}
+				&::before
+				{
+					background-color: var(--adw-window-fg);
+					content: "";
+					display: block;
+					width: 16px;
+					height: 16px;
+					-webkit-mask-repeat: no-repeat;
+					-webkit-mask-position: center;
+					-webkit-mask-size: 16px;
+				}
 
-			&.closeButton::before
-			{
-				-webkit-mask-image: var(--adw-icon-windows-chrome-close);
-			}
+				&.closeButton::before
+				{
+					-webkit-mask-image: var(--adw-icon-windows-chrome-close);
+				}
 
-			&.maximizeButton::before
-			{
-				-webkit-mask-image: var(--adw-icon-windows-chrome-maximize);
-			}
+				&.maximizeButton::before
+				{
+					-webkit-mask-image: var(--adw-icon-windows-chrome-maximize);
+				}
 
-			&.minimizeButton::before
-			{
-				-webkit-mask-image: var(--adw-icon-windows-chrome-minimize);
-			}
+				&.minimizeButton::before
+				{
+					-webkit-mask-image: var(--adw-icon-windows-chrome-minimize);
+				}
 
-			&.restoreButton::before
-			{
-				-webkit-mask-image: var(--adw-icon-windows-chrome-restore);
+				&.restoreButton::before
+				{
+					-webkit-mask-image: var(--adw-icon-windows-chrome-restore);
+				}
 			}
 		}
 	}

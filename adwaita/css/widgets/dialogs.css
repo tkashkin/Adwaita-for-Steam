@@ -44,150 +44,150 @@ html.client_chat_frame
 		{
 			border-radius: var(--adw-alert-dialog-radius) !important;
 		}
+	}
 
-		.GenericConfirmDialog:not(._2TAQYpbxatDYN3Ex76KX5u):not(.q5OA-x6LcVkvtLCGp-8JC),
-		.CreateChatChannelDialog
+	.GenericConfirmDialog:not(._2TAQYpbxatDYN3Ex76KX5u):not(.q5OA-x6LcVkvtLCGp-8JC),
+	.CreateChatChannelDialog
+	{
+		padding: 24px !important;
+		min-width: 400px !important;
+		box-sizing: border-box !important;
+		-webkit-app-region: drag !important;
+
+		.DialogHeader,
+		._3vc5HYX7AEVTqXRYl2gm8
 		{
-			padding: 24px !important;
-			min-width: 400px !important;
-			box-sizing: border-box !important;
+			display: block !important;
+			padding: 0 !important;
+			margin: 8px 0 0 0 !important;
+			color: var(--adw-dialog-fg) !important;
+			font-family: var(--adw-text-font) !important;
+			font-size: var(--adw-text-title1-size) !important;
+			font-weight: var(--adw-text-title1-weight) !important;
+			line-height: normal !important;
+			letter-spacing: normal !important;
+			text-align: center !important;
+			text-transform: none !important;
 			-webkit-app-region: drag !important;
 
-			.DialogHeader,
-			._3vc5HYX7AEVTqXRYl2gm8
+			svg
 			{
-				display: block !important;
-				padding: 0 !important;
-				margin: 8px 0 0 0 !important;
-				color: var(--adw-dialog-fg) !important;
-				font-family: var(--adw-text-font) !important;
-				font-size: var(--adw-text-title1-size) !important;
-				font-weight: var(--adw-text-title1-weight) !important;
-				line-height: normal !important;
-				letter-spacing: normal !important;
-				text-align: center !important;
-				text-transform: none !important;
-				-webkit-app-region: drag !important;
+				display: none !important;
+			}
+		}
 
-				svg
-				{
-					display: none !important;
-				}
+		.DialogBody,
+		.DialogBodyText,
+		.lwZMnZmiLvD1VehXW1dVf,
+		._2Nmi6ONpGvLOgRE87Ky2MA
+		{
+			padding: 0 !important;
+			margin: 8px 0 0 0 !important;
+			color: var(--adw-dialog-fg) !important;
+			font-family: var(--adw-text-font) !important;
+			font-size: var(--adw-text-base-size) !important;
+			font-weight: var(--adw-text-base-weight) !important;
+			line-height: normal !important;
+			letter-spacing: normal !important;
+			text-align: center !important;
+			text-transform: none !important;
+			-webkit-app-region: drag !important;
+
+			.DialogBody &
+			{
+				margin-top: 0 !important;
+			}
+		}
+
+		.DialogFooter
+		{
+			margin: 16px 0 0 0 !important;
+
+			&,
+			._DialogColLayout
+			{
+				padding: 0 !important;
+				justify-content: center !important;
+				flex-direction: column !important;
+				gap: 8px !important;
+				width: 100% !important;
+				-webkit-app-region: drag !important;
 			}
 
-			.DialogBody,
-			.DialogBodyText,
-			.lwZMnZmiLvD1VehXW1dVf,
-			._2Nmi6ONpGvLOgRE87Ky2MA
+			button.DialogButton
 			{
-				padding: 0 !important;
-				margin: 8px 0 0 0 !important;
-				color: var(--adw-dialog-fg) !important;
+				cursor: var(--adw-cursor-pointer) !important;
+				min-height: 24px !important;
+				max-width: none !important;
+				padding: 6px 12px !important;
+				box-sizing: border-box !important;
+				border-radius: var(--adw-alert-dialog-button-radius) !important;
+				box-shadow: none !important;
+				transition: var(--adw-button-transition) !important;
 				font-family: var(--adw-text-font) !important;
-				font-size: var(--adw-text-base-size) !important;
-				font-weight: var(--adw-text-base-weight) !important;
-				line-height: normal !important;
-				letter-spacing: normal !important;
-				text-align: center !important;
-				text-transform: none !important;
-				-webkit-app-region: drag !important;
+				font-size: 15px !important;
+				font-weight: 700 !important;
+				color: var(--adw-dialog-fg) !important;
+				background: color-mix(in srgb, currentColor var(--adw-button-bg-opacity), transparent) !important;
+				-webkit-app-region: no-drag !important;
 
-				.DialogBody &
+				&:hover
 				{
-					margin-top: 0 !important;
-				}
-			}
-
-			.DialogFooter
-			{
-				margin: 16px 0 0 0 !important;
-
-				&,
-				._DialogColLayout
-				{
-					padding: 0 !important;
-					justify-content: center !important;
-					flex-direction: column !important;
-					gap: 8px !important;
-					width: 100% !important;
-					-webkit-app-region: drag !important;
+					background: color-mix(in srgb, currentColor var(--adw-button-bg-opacity-hover), transparent) !important;
 				}
 
-				button.DialogButton
+				&:active
 				{
-					cursor: var(--adw-cursor-pointer) !important;
-					min-height: 24px !important;
-					max-width: none !important;
-					padding: 6px 12px !important;
-					box-sizing: border-box !important;
-					border-radius: var(--adw-alert-dialog-button-radius) !important;
-					box-shadow: none !important;
-					transition: var(--adw-button-transition) !important;
-					font-family: var(--adw-text-font) !important;
-					font-size: 15px !important;
-					font-weight: 700 !important;
-					color: var(--adw-dialog-fg) !important;
-					background: color-mix(in srgb, currentColor var(--adw-button-bg-opacity), transparent) !important;
-					-webkit-app-region: no-drag !important;
+					background: color-mix(in srgb, currentColor var(--adw-button-bg-opacity-active), transparent) !important;
+				}
+
+				&.Primary
+				{
+					color: var(--adw-button-suggested-fg) !important;
+					background: var(--adw-button-suggested-bg) !important;
+					background-blend-mode: overlay !important;
 
 					&:hover
 					{
-						background: color-mix(in srgb, currentColor var(--adw-button-bg-opacity-hover), transparent) !important;
+						background-color: var(--adw-button-suggested-overlay-hover) !important;
 					}
 
 					&:active
 					{
-						background: color-mix(in srgb, currentColor var(--adw-button-bg-opacity-active), transparent) !important;
-					}
-
-					&.Primary
-					{
-						color: var(--adw-button-suggested-fg) !important;
-						background: var(--adw-button-suggested-bg) !important;
-						background-blend-mode: overlay !important;
-
-						&:hover
-						{
-							background-color: var(--adw-button-suggested-overlay-hover) !important;
-						}
-
-						&:active
-						{
-							background-color: var(--adw-button-suggested-overlay-active) !important;
-						}
-					}
-
-					&::before
-					{
-						content: none !important;
+						background-color: var(--adw-button-suggested-overlay-active) !important;
 					}
 				}
-			}
 
-			/* Remove fixed inner width */
-			.DialogContent_InnerWidth > form > div
-			{
-				min-width: auto !important;
-			}
-
-			/* Destructive buttons */
-			div._7au1m_-ZIF7Hx_rCvrDfI /* Uninstall */
-			{
-				button.DialogButton.Primary
+				&::before
 				{
-					color: var(--adw-destructive) !important;
-					background: color-mix(in srgb, currentColor var(--adw-button-bg-opacity), transparent) !important;
-					background-blend-mode: normal !important;
+					content: none !important;
+				}
+			}
+		}
 
-					&:hover
-					{
-						background: color-mix(in srgb, currentColor var(--adw-button-bg-opacity-hover), transparent) !important;
-					}
+		/* Remove fixed inner width */
+		.DialogContent_InnerWidth > form > div
+		{
+			min-width: auto !important;
+		}
 
-					&:active
-					{
-						background: color-mix(in srgb, currentColor var(--adw-button-bg-opacity-active), transparent) !important;
-					}
+		/* Destructive buttons */
+		div._7au1m_-ZIF7Hx_rCvrDfI /* Uninstall */
+		{
+			button.DialogButton.Primary
+			{
+				color: var(--adw-destructive) !important;
+				background: color-mix(in srgb, currentColor var(--adw-button-bg-opacity), transparent) !important;
+				background-blend-mode: normal !important;
+
+				&:hover
+				{
+					background: color-mix(in srgb, currentColor var(--adw-button-bg-opacity-hover), transparent) !important;
+				}
+
+				&:active
+				{
+					background: color-mix(in srgb, currentColor var(--adw-button-bg-opacity-active), transparent) !important;
 				}
 			}
 		}
@@ -244,11 +244,18 @@ html.client_chat_frame
 		min-height: 36px !important;
 	}
 
-	&.ModalDialogBody .PopupFullWindow div.oHNgIzAySfCEOayCBwsg5.DialogContent
+	&.ModalDialogBody .PopupFullWindow div.DialogContent.oHNgIzAySfCEOayCBwsg5,
+	&.ModalDialogBody .PopupFullWindow div.DialogContent._31Kkeb6BIUOVu8QL-dgtY-
 	{
 		background: var(--adw-headerbar-bg) !important;
 		padding: 1px !important;
 		padding-top: 36px !important;
+	}
+
+	/* News dialog footer */
+	div._1dkScx4uNaRq0A1SAI6ai4
+	{
+		display: none !important;
 	}
 
 	/* Shutdown dialog */

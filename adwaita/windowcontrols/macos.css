@@ -24,7 +24,7 @@
 body.DesktopUI,
 html.client_chat_frame
 {
-	.title-bar-actions
+	.title-bar-actions.window-controls
 	{
 		.title-area-icon
 		{
