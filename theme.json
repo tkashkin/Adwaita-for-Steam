@@ -133,6 +133,13 @@
 				"Yes": { "adwaita/extras/library/sidebar-hover.css": ["desktop"] }
 			}
 		},
+		"Square icons in game details": {
+			"type": "checkbox",
+			"values": {
+				"Yes": {},
+				"No": { "adwaita/extras/library/uncrop-covers-in-details.css": ["desktop"] }
+			}
+		},
 		"Login QR code": {
 			"type": "dropdown",
 			"values": {
