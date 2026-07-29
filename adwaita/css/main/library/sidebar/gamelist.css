@@ -18,7 +18,7 @@ body.DesktopUI
 		--text-color: var(--adw-sidebar-fg) !important;
 
 		&,
-		div:not(._2FxbHJzYoH024ko7zqcJOf),
+		div:not(._2FxbHJzYoH024ko7zqcJOf, ._2iiN7AYnLFTRFRiuipiYJz),
 		span
 		{
 			color: var(--text-color) !important;
@@ -220,7 +220,7 @@ body.DesktopUI
 		}
 
 		/* gamelistentry_FriendIsPlaying */
-		& > div.cNZ3wORgnf1KSNhI2eE2M
+		div.cNZ3wORgnf1KSNhI2eE2M
 		{
 			width: 16px !important;
 			height: 16px !important;
@@ -230,6 +230,7 @@ body.DesktopUI
 			right: 10px !important;
 			top: 5px !important;
 			opacity: 0.5 !important;
+			z-index: 1 !important;
 
 			& > svg *
 			{
@@ -239,6 +240,48 @@ body.DesktopUI
 			&:hover
 			{
 				opacity: 1 !important;
+			}
+
+			/* Tooltip */
+			div._2iiN7AYnLFTRFRiuipiYJz
+			{
+				div._3RQJ0dX8rpaAMAnYEj3qf_
+				{
+					margin: 0 0 0 8px !important;
+					padding: 0 !important;
+					gap: 2px !important;
+
+					div.nOdcT-MoOaXGePXLyPe0H
+					{
+						color: var(--adw-tooltip-fg) !important;
+						font-family: var(--adw-text-font) !important;
+						font-size: var(--adw-text-base-size) !important;
+						font-weight: var(--adw-text-base-weight) !important;
+						line-height: normal !important;
+						letter-spacing: normal !important;
+						text-transform: none !important;
+						text-shadow: none !important;
+						text-wrap: wrap !important;
+					}
+
+					div._2Ri005Wg_uXDTa71kdRbcN
+					{
+						color: color-mix(in srgb, var(--adw-tooltip-fg) var(--adw-dim-label-opacity), transparent) !important;
+						font-family: var(--adw-text-font) !important;
+						font-size: 10px !important;
+						line-height: 12px !important;
+						line-height: normal !important;
+						letter-spacing: normal !important;
+						text-transform: none !important;
+						text-shadow: none !important;
+						text-wrap: wrap !important;
+					}
+
+					div._1DsumfIa3MlkzUV9EXY5W9
+					{
+						display: none !important;
+					}
+				}
 			}
 		}
 
@@ -274,7 +317,7 @@ body.DesktopUI
 			}
 		}
 
-		&:has(div._3XmPzyQFrH_CwSk4SxurMz)
+		&:has(div.cNZ3wORgnf1KSNhI2eE2M, div._3XmPzyQFrH_CwSk4SxurMz)
 		{
 			padding-right: 24px !important;
 		}
@@ -327,7 +370,7 @@ body.DesktopUI
 	}
 
 	/** Remove unneeded inner backgrounds */
-	div._2-O4ZG0KrnSrzISHBKctFQ *:not(._2FxbHJzYoH024ko7zqcJOf)
+	div._2-O4ZG0KrnSrzISHBKctFQ *:not(._2FxbHJzYoH024ko7zqcJOf, ._2iiN7AYnLFTRFRiuipiYJz)
 	{
 		&, &:hover, &:active
 		{
