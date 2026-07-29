@@ -1,0 +1,19 @@
+/* Don't crop game covers on game details pages */
+
+body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
+div._1_cYNJSvS6IXs9vLTEYjy5 /* Content */
+div._25oBZpa3dUcMw8QAsa2u67 /* Game info */
+div._2jPMy2QZr8bWi6yrk5ZzHA
+div._37mmOlZM_8n5yJAG5CHiW7
+div._1Id6ZFEUVa5PKEMIvSg4nE /* Grid image */
+{
+	/* Identical to the &:hover block in library/details/header.css */
+
+	height: 96px !important;
+	translate: 0 -16px !important;
+
+	div._1R9r2OBCxAmtuUVrgBEUBw
+	{
+		translate: 0 0 !important;
+	}
+}

@@ -180,6 +180,16 @@
 				"yes": { "TargetCss": { "affects": [".*"], "src": "adwaita/extras/library/sidebar-hover.css" } }
 			}
 		},
+		"Square icons in game details": {
+			"description": "Crops game covers on game detail pages to be square",
+			"tab": "Extras",
+			"section": "Library",
+			"default": "yes",
+			"values": {
+				"no": { "TargetCss": { "affects": [".*"], "src": "adwaita/extras/library/uncrop-covers-in-details.css" } },
+				"yes": {}
+			}
+		},
 		"Login QR code": {
 			"description": "Changes visibility of QR code in the Login window",
 			"tab": "Extras",
