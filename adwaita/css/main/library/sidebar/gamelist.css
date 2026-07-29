@@ -18,7 +18,7 @@ body.DesktopUI
 		--text-color: var(--adw-sidebar-fg) !important;
 
 		&,
-		div,
+		div:not(._2FxbHJzYoH024ko7zqcJOf),
 		span
 		{
 			color: var(--text-color) !important;
@@ -249,7 +249,7 @@ body.DesktopUI
 			height: 0 !important;
 			margin: 0 !important;
 			padding: 0 !important;
-			
+
 			/* Tool icon */
 			div._3XmPzyQFrH_CwSk4SxurMz
 			{
@@ -327,11 +327,12 @@ body.DesktopUI
 	}
 
 	/** Remove unneeded inner backgrounds */
-	div._2-O4ZG0KrnSrzISHBKctFQ *,
-	div._2-O4ZG0KrnSrzISHBKctFQ *:hover,
-	div._2-O4ZG0KrnSrzISHBKctFQ *:active
+	div._2-O4ZG0KrnSrzISHBKctFQ *:not(._2FxbHJzYoH024ko7zqcJOf)
 	{
-		background: none !important;
+		&, &:hover, &:active
+		{
+			background: none !important;
+		}
 	}
 
 	/* Drag & Drop */
@@ -371,13 +372,13 @@ body.DesktopUI
 				border-top-width: 0 !important;
 				border-bottom-width: 0 !important;
 			}
-	
+
 			/* gamelistentry_LastInCollection */
 			&._1VBNpnuk5eWT3VSCWNH57k
 			{
 				border-bottom-left-radius: var(--adw-button-radius) !important;
 				border-bottom-right-radius: var(--adw-button-radius) !important;
-			
+
 				&::before
 				{
 					border-bottom-width: 1px !important;

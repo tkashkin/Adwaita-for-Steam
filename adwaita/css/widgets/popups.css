@@ -204,7 +204,7 @@ html.client_chat_frame
 		}
 	}
 
-	
+
 	&.ContextMenuPopupBody
 	{
 		/* MenuPopup */
@@ -221,7 +221,7 @@ html.client_chat_frame
 			min-width: 100% !important;
 		}
 
-		
+
 		/* Notifications */
 		._1oERP7bVictkby2hP4BBva,
 		._1tsEfG-JyQFR7Un1HPOt98,
@@ -273,7 +273,7 @@ html.client_chat_frame
 		._1UBgeG0z1gyJuOXQde4Glw
 		{
 			filter: none !important;
-			
+
 			svg
 			{
 				color: var(--adw-accent) !important;
@@ -317,31 +317,27 @@ html.client_chat_frame
 		font-weight: var(--adw-text-base-weight) !important;
 		padding: 6px 10px !important;
 		margin: 0 !important;
-		border: 1px color-mix(in srgb, currentColor var(--adw-border-opacity), transparent) solid !important;
+		border: 1px color-mix(in srgb, var(--adw-tooltip-fg) var(--adw-border-opacity), transparent) solid !important;
 		box-shadow: none !important;
 
-		/* Title */
-		._3YNfm7dGrnyUD_jVsU9L7
-		{
-			color: var(--adw-tooltip-fg) !important;
-			font-family: var(--adw-text-font) !important;
-			font-size: var(--adw-text-base-size) !important;
-			font-weight: var(--adw-text-base-weight) !important;
-		}
-
-		/* Description */
+		&,
+		._3YNfm7dGrnyUD_jVsU9L7,
 		.i4LuYcvtfPgYKx3qqvKUq
 		{
 			color: var(--adw-tooltip-fg) !important;
-			opacity: var(--adw-dim-label-opacity) !important;
 			font-family: var(--adw-text-font) !important;
 			font-size: var(--adw-text-base-size) !important;
 			font-weight: var(--adw-text-base-weight) !important;
+			line-height: normal !important;
+			letter-spacing: normal !important;
+			text-transform: none !important;
+			text-shadow: none !important;
+			text-wrap: wrap !important;
 		}
 	}
 
 	/* Combobox items */
-	._30wJO3MC4x-I1OWpy1TAeE._DialogInputContainer ._2oAiZidGyUxL-hfupFDQ2m 
+	._30wJO3MC4x-I1OWpy1TAeE._DialogInputContainer ._2oAiZidGyUxL-hfupFDQ2m
 	{
 		/* dropdownlabel_DropDownLabelContainer */
 		.uujQHHS-7y4IW6qfxHpe2
@@ -356,7 +352,7 @@ html.client_chat_frame
 			._3WTX45MQeZkasb71AEqo7P
 			{
 				min-width: auto !important;
-	
+
 				/* dropdownlabel_DropDownLabelTitle */
 				._3g-QHB82IGz91Hsk1Hw4lh
 				{

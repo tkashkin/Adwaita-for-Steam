@@ -323,31 +323,31 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 		/* Post-game summary */
 		div._1OMmVJHDgNwOt0Wqn0hrf9
 		{
-			padding: 0 16px;
+			padding: 0 16px !important;
 
 			/* Header */
 			div.P_gQ8X-yCsgXeXpP68KS0
 			{
-				margin: 0 0 6px 0;
-				color: var(--adw-window-fg);
-				font-family: var(--adw-text-font);
-				line-height: var(--adw-list-header-height);
-				text-transform: none;
-				letter-spacing: normal;
-				font-size: var(--adw-list-header-size);
-				font-weight: var(--adw-list-header-weight);
-				min-height: var(--adw-list-header-height);
+				margin: 0 0 6px 0 !important;
+				color: var(--adw-window-fg) !important;
+				font-family: var(--adw-text-font) !important;
+				line-height: var(--adw-list-header-height) !important;
+				text-transform: none !important;
+				letter-spacing: normal !important;
+				font-size: var(--adw-list-header-size) !important;
+				font-weight: var(--adw-list-header-weight) !important;
+				min-height: var(--adw-list-header-height) !important;
 			}
 
 			/* List */
 			div._2MKO5j24KqDdD-92hH5FXi
 			{
-				position: relative;
-				background: var(--adw-card-bg);
-				color: var(--adw-card-fg);
-				border-radius: var(--adw-card-radius);
-				box-shadow: var(--adw-card-shadow);
-				border: none;
+				position: relative !important;
+				background: var(--adw-card-bg) !important;
+				color: var(--adw-card-fg) !important;
+				border-radius: var(--adw-card-radius) !important;
+				box-shadow: var(--adw-card-shadow) !important;
+				border: none !important;
 
 				&::after
 				{
@@ -369,34 +369,34 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 
 					div._1iO7MC6rgUjbDf49AE6hCm:first-child
 					{
-						margin-left: 12px;
+						margin-left: 12px !important;
 					}
 
 					/* Date */
 					div._3ugJ_KPVlOd9oeYm-fYC_w
 					{
 						padding: 6px 0 0 0 !important;
-						height: 20px;
-						color: color-mix(in srgb, var(--adw-card-fg) var(--adw-dim-label-opacity), transparent);
-						font-size: var(--adw-text-subtitle-size);
-						font-weight: var(--adw-text-subtitle-weight);
-						min-height: auto;
-						line-height: normal;
+						height: 20px !important;
+						color: color-mix(in srgb, var(--adw-card-fg) var(--adw-dim-label-opacity), transparent) !important;
+						font-size: var(--adw-text-subtitle-size) !important;
+						font-weight: var(--adw-text-subtitle-weight) !important;
+						min-height: auto !important;
+						line-height: normal !important;
 					}
 
 					/* Achievements */
 					div._1r3z58m4uvAtp2Nfee0kDg
 					{
-						height: 126px;
-						margin: 0;
-						gap: 0;
+						height: 126px !important;
+						margin: 0 !important;
+						gap: 0 !important;
 
 						/* Achievement */
 						div._2rFZPzLu-BjxsrVUj5lhNI
 						{
-							color: var(--adw-card-fg);
-							padding: 0;
-							margin: 0;
+							color: var(--adw-card-fg) !important;
+							padding: 0 !important;
+							margin: 0 !important;
 							cursor: var(--adw-cursor-pointer);
 
 							img._2V2sHETNfa62yMoDwSF3_t
@@ -412,6 +412,11 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 								border: 1px color-mix(in srgb, currentColor var(--adw-thin-border-opacity), transparent) solid !important;
 							}
 
+							div.zcasgBSVIteabq-j_3g1m
+							{
+								margin: 0 !important;
+							}
+
 							div._1s_9cSxUjb4609MSH0EjWH
 							{
 								margin-left: 6px !important;
@@ -422,7 +427,6 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 									font-family: var(--adw-text-font) !important;
 									font-size: var(--adw-text-row-title-size) !important;
 									font-weight: var(--adw-text-row-title-weight) !important;
-									overflow: visible !important;
 								}
 
 								div._2gLHbXukQBdrIKhqEYVvOe,
@@ -432,7 +436,11 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
 									font-family: var(--adw-text-font) !important;
 									font-size: var(--adw-text-row-subtitle-size) !important;
 									font-weight: var(--adw-text-row-subtitle-weight) !important;
-									overflow: visible !important;
+								}
+
+								div.VKo9pLPbwpF3xIzL8Wnou
+								{
+									color: color-mix(in srgb, currentColor var(--adw-dimmer-opacity), transparent) !important;
 								}
 							}
 						}
