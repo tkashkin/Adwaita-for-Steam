@@ -1,0 +1,107 @@
+/**
+ * GTK theme variables for the "Touka" color scheme.
+ *
+ * libadwaita reference:
+ * - https://gitlab.gnome.org/GNOME/libadwaita/-/blob/main/src/stylesheet/_defaults.scss
+ * - https://gitlab.gnome.org/GNOME/libadwaita/-/blob/main/src/stylesheet/_colors.scss
+ */
+
+:root
+{
+	/* Touka scheme:
+	 *   base00: #121214 -> 18, 18, 20
+	 *   base01: #212126 -> 33, 33, 38
+	 *   base02: #2a2a30 -> 42, 42, 48
+	 *   base05: #e9ecf2 -> 233, 236, 242
+	 *   base08: #f25c5c -> 242, 92, 92   (Red)
+	 *   base09: #ff9c6a -> 255, 156, 106 (Orange)
+	 *   base0B: #55b682 -> 85, 182, 130  (Green)
+	 *   base0C: #7aaaff -> 122, 170, 255 (Blue)
+	 *   base04: #676778 -> 103, 103, 120 (Gray)
+	 */
+
+	/* The main accent color and the matching text value */
+	--adw-accent-bg-rgb: 122, 170, 255 !important;
+	--adw-accent-fg-rgb: 18, 18, 20 !important;
+	--adw-accent-rgb: 122, 170, 255 !important;
+
+	/* destructive-action buttons */
+	--adw-destructive-bg-rgb: 242, 92, 92 !important;
+	--adw-destructive-fg-rgb: 18, 18, 20 !important;
+	--adw-destructive-rgb: 242, 92, 92 !important;
+
+	/* Levelbars, entries, labels and infobars. These don't need text colors */
+	--adw-success-bg-rgb: 85, 182, 130 !important;
+	--adw-success-fg-rgb: 18, 18, 20 !important;
+	--adw-success-rgb: 85, 182, 130 !important;
+
+	--adw-warning-bg-rgb: 255, 156, 106 !important;
+	--adw-warning-fg-rgb: 18, 18, 20 !important;
+	--adw-warning-fg-a: 0.8 !important;
+	--adw-warning-rgb: 255, 156, 106 !important;
+
+	--adw-error-bg-rgb: 242, 92, 92 !important;
+	--adw-error-fg-rgb: 18, 18, 20 !important;
+	--adw-error-rgb: 242, 92, 92 !important;
+
+	/* Window */
+	--adw-window-bg-rgb: 18, 18, 20 !important;
+	--adw-window-fg-rgb: 233, 236, 242 !important;
+
+	/* Views - e.g. text view or tree view */
+	--adw-view-bg-rgb: 18, 18, 20 !important;
+	--adw-view-fg-rgb: 233, 236, 242 !important;
+
+	/* Header bar, search bar, tab bar */
+	--adw-headerbar-bg-rgb: 33, 33, 38 !important;
+	--adw-headerbar-fg-rgb: 233, 236, 242 !important;
+	--adw-headerbar-border-rgb: 55, 55, 64 !important;
+	--adw-headerbar-backdrop-rgb: var(--adw-window-bg-rgb) !important;
+	--adw-headerbar-shade-rgb: 0, 0, 0 !important;
+	--adw-headerbar-shade-a: 0.36 !important;
+	--adw-headerbar-darker-shade-rgb: 0, 0, 0 !important;
+	--adw-headerbar-darker-shade-a: 0.9 !important;
+
+	/* Split pane views */
+	--adw-sidebar-bg-rgb: 33, 33, 38 !important;
+	--adw-sidebar-fg-rgb: 233, 236, 242 !important;
+	--adw-sidebar-backdrop-rgb: 18, 18, 20 !important;
+	--adw-sidebar-shade-rgb: 0, 0, 0 !important;
+	--adw-sidebar-shade-a: 0.25 !important;
+
+	--adw-secondary-sidebar-bg-rgb: 18, 18, 20 !important;
+	--adw-secondary-sidebar-fg-rgb: 233, 236, 242 !important;
+	--adw-secondary-sidebar-backdrop-rgb: 18, 18, 20 !important;
+	--adw-secondary-sidebar-shade-rgb: 0, 0, 0 !important;
+	--adw-secondary-sidebar-shade-a: 0.25 !important;
+
+	/* Cards, boxed lists */
+	--adw-card-bg-rgb: 233, 236, 242 !important;
+	--adw-card-bg-a: 0.05 !important;
+	--adw-card-fg-rgb: 233, 236, 242 !important;
+	--adw-card-shade-rgb: 0, 0, 0 !important;
+	--adw-card-shade-a: 0.36 !important;
+
+	/* Dialogs */
+	--adw-dialog-bg-rgb: 42, 42, 48 !important;
+	--adw-dialog-fg-rgb: 233, 236, 242 !important;
+
+	/* Popovers */
+	--adw-popover-bg-rgb: 42, 42, 48 !important;
+	--adw-popover-fg-rgb: 233, 236, 242 !important;
+	--adw-popover-shade-rgb: 0, 0, 0 !important;
+	--adw-popover-shade-a: 0.25 !important;
+
+	/* Thumbnails */
+	--adw-thumbnail-bg-rgb: 42, 42, 48 !important;
+	--adw-thumbnail-fg-rgb: 233, 236, 242 !important;
+
+	/* Miscellaneous */
+	--adw-shade-rgb: 0, 0, 0 !important;
+	--adw-shade-a: 0.25 !important;
+
+	/* Skin-specific */
+	--adw-user-offline-rgb: 103, 103, 120 !important;
+	--adw-user-online-rgb: 122, 170, 255 !important;
+	--adw-user-ingame-rgb: 85, 182, 130 !important;
+}
