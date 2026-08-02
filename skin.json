@@ -2,7 +2,7 @@
 	"name": "Adwaita",
 	"author": "tkashkin",
 	"description": "A skin to make Steam look more like a native GNOME app",
-	"version": "4.4",
+	"version": "4.5",
 
 	"github": {
 		"owner": "tkashkin",
@@ -168,16 +168,6 @@
 			"values": {
 				"no": { "TargetCss": { "affects": [".*"], "src": "adwaita/extras/library/hide-whats-new.css" } },
 				"yes": {}
-			}
-		},
-		"Hide games list": {
-			"description": "Shows games list only when mouse is near the left side of the window",
-			"tab": "Extras",
-			"section": "Library",
-			"default": "no",
-			"values": {
-				"no": {},
-				"yes": { "TargetCss": { "affects": [".*"], "src": "adwaita/extras/library/sidebar-hover.css" } }
 			}
 		},
 		"Square icons in game details": {

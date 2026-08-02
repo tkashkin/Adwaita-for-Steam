@@ -369,7 +369,7 @@ body.DesktopUI
 		overflow: hidden !important;
 	}
 
-	/** Remove unneeded inner backgrounds */
+	/* Remove unneeded inner backgrounds */
 	div._2-O4ZG0KrnSrzISHBKctFQ *:not(._2FxbHJzYoH024ko7zqcJOf, ._2iiN7AYnLFTRFRiuipiYJz)
 	{
 		&, &:hover, &:active
