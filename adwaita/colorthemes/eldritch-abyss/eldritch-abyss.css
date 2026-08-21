@@ -1,0 +1,79 @@
+:root
+{
+	--adw-color-scheme: dark !important;
+
+	--adw-accent-bg-light: var(--adw-system-accent, #506299) !important;
+	--adw-accent-bg-dark: var(--adw-system-accent, #506299) !important;
+
+	--adw-destructive-bg-light: #cc5860 !important;
+	--adw-destructive-bg-dark: #cc5860 !important;
+	--adw-destructive-fg: #171928 !important;
+
+	--adw-success-bg-light: #2dcc82 !important;
+	--adw-success-bg-dark: #2dcc82 !important;
+	--adw-success-fg: #171928 !important;
+
+	--adw-warning-bg-light: #ccd663 !important;
+	--adw-warning-bg-dark: #ccd663 !important;
+	--adw-warning-fg: #171928 !important;
+
+	--adw-error-bg-light: #cc5860 !important;
+	--adw-error-bg-dark: #cc5860 !important;
+	--adw-error-fg: #171928 !important;
+
+	--adw-window-bg: #171928 !important;
+	--adw-window-fg: #d8e6e6 !important;
+
+	--adw-view-bg: #171928 !important;
+	--adw-view-fg: #d8e6e6 !important;
+
+	--adw-headerbar-bg: #252738 !important;
+	--adw-headerbar-fg: #d8e6e6 !important;
+	--adw-headerbar-backdrop: #1f2130 !important;
+	--adw-headerbar-border: #252738 !important;
+	--adw-headerbar-shade: rgba(0, 0, 0, 0.4) !important;
+	--adw-headerbar-darker-shade: rgba(0, 0, 0, 0.9) !important;
+
+	--adw-sidebar-bg: #252738 !important;
+	--adw-sidebar-fg: #d8e6e6 !important;
+	--adw-sidebar-backdrop: #1f2130 !important;
+	--adw-sidebar-shade: rgba(0, 0, 0, 0.4) !important;
+
+	--adw-secondary-sidebar-bg: #353746 !important;
+	--adw-secondary-sidebar-fg: #d8e6e6 !important;
+	--adw-secondary-sidebar-backdrop: #2c2e3d !important;
+	--adw-secondary-sidebar-border: rgba(0, 0, 0, 0.4) !important;
+	--adw-secondary-sidebar-shade: rgba(0, 0, 0, 0.4) !important;
+
+	--adw-card-bg: #252738 !important;
+	--adw-card-fg: #d8e6e6 !important;
+	--adw-card-shade: rgba(0, 0, 0, 0.4) !important;
+
+	--adw-dialog-bg: #353746 !important;
+	--adw-dialog-fg: #d8e6e6 !important;
+
+	--adw-popover-bg: #353746 !important;
+	--adw-popover-fg: #d8e6e6 !important;
+	--adw-popover-shade: rgba(0, 0, 0, 0.4) !important;
+
+	--adw-thumbnail-bg: #474852 !important;
+	--adw-thumbnail-fg: #d8e6e6 !important;
+
+	--adw-shade: rgba(0, 0, 0, 0.4) !important;
+
+	--adw-banner: #5f6374 !important;
+
+	--adw-user-offline: #5f6374 !important;
+	--adw-user-online: #0396b3 !important;
+	--adw-user-ingame: #2dcc82 !important;
+
+	--adw-accent-blue: #0396b3 !important;
+	--adw-accent-teal: #4daabe !important;
+	--adw-accent-green: #2dcc82 !important;
+	--adw-accent-yellow: #ccd663 !important;
+	--adw-accent-orange: #d4a666 !important;
+	--adw-accent-red: #cc5860 !important;
+	--adw-accent-pink: #d154a1 !important;
+	--adw-accent-purple: #8b75d9 !important;
+	--adw-accent-slate: #5f6374 !important;
+}

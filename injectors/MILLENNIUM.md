@@ -32,26 +32,32 @@ A skin to make Steam look more like a native GNOME app
 	</tr>
 	<tr>
 		<td><img alt="dracula" src="/adwaita/colorthemes/dracula/preview.png"><br/>dracula</td>
+		<td><img alt="eldritch" src="/adwaita/colorthemes/eldritch/preview.png"><br/>eldritch</td>
+		<td><img alt="eldritch-abyss" src="/adwaita/colorthemes/eldritch-abyss/preview.png"><br/>eldritch-abyss</td>
+		<td><img alt="eldritch-dusk" src="/adwaita/colorthemes/eldritch-dusk/preview.png"><br/>eldritch-dusk</td>
+	</tr>
+	<tr>
 		<td><img alt="everforest" src="/adwaita/colorthemes/everforest/preview.png"><br/>everforest</td>
 		<td><img alt="gruvbox" src="/adwaita/colorthemes/gruvbox/preview.png"><br/>gruvbox</td>
 		<td><img alt="kate" src="/adwaita/colorthemes/kate/preview.png"><br/>kate</td>
+		<td><img alt="metro" src="/adwaita/colorthemes/metro/preview.png"><br/>metro</td>
 	</tr>
 	<tr>
-		<td><img alt="metro" src="/adwaita/colorthemes/metro/preview.png"><br/>metro</td>
 		<td><img alt="nord" src="/adwaita/colorthemes/nord/preview.png"><br/>nord</td>
 		<td><img alt="oled" src="/adwaita/colorthemes/oled/preview.png"><br/>oled</td>
 		<td><img alt="one-dark" src="/adwaita/colorthemes/one-dark/preview.png"><br/>one-dark</td>
+		<td><img alt="pop" src="/adwaita/colorthemes/pop/preview.png"><br/>pop</td>
 	</tr>
 	<tr>
-		<td><img alt="pop" src="/adwaita/colorthemes/pop/preview.png"><br/>pop</td>
 		<td><img alt="rose-pine" src="/adwaita/colorthemes/rose-pine/preview.png"><br/>rose-pine</td>
 		<td><img alt="tokyo-night" src="/adwaita/colorthemes/tokyo-night/preview.png"><br/>tokyo-night</td>
 		<td><img alt="tomorrow-night" src="/adwaita/colorthemes/tomorrow-night/preview.png"><br/>tomorrow-night</td>
+		<td><img alt="vapor" src="/adwaita/colorthemes/vapor/preview.png"><br/>vapor</td>
 	</tr>
 	<tr>
-		<td><img alt="vapor" src="/adwaita/colorthemes/vapor/preview.png"><br/>vapor</td>
 		<td><img alt="vgui2" src="/adwaita/colorthemes/vgui2/preview.png"><br/>vgui2</td>
 		<td><img alt="yaru" src="/adwaita/colorthemes/yaru/preview.png"><br/>yaru</td>
+		<td></td>
 		<td></td>
 	</tr>
 </table>
