@@ -103,9 +103,10 @@ class AdwInstaller:
             info("Patching and configuring skin")
             AdwCSSBuilder(self._css).patch(target, optimize)
             if patch_js:
-                # TODO: remove if disabled and already patched
                 info("Patching library.js")
-                AdwJSPatcher().patch(target)
+                AdwJSPatcher().patch(target, self._options)
+            else:
+                AdwJSPatcher().remove_patch(target)
             success(f"Installed to \"{target.root}\" successfully")
             return True
         except Exception as err:
@@ -124,6 +125,8 @@ class AdwInstaller:
             info("Restoring original styles")
             for file in ADW_PATCH_FILES.values():
                 (target.css_dir / file.with_suffix(".original.css")).replace(target.css_dir / file)
+            info("Removing JS patch")
+            AdwJSPatcher().remove_patch(target)
             info("Removing skin directory")
             shutil.rmtree(target.skin_dir)
             success(f"Uninstalled from \"{target.root}\" successfully")

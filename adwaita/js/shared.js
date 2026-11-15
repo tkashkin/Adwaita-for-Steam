@@ -19,5 +19,15 @@ function injectScript(doc, src) {
     doc.head.append(Object.assign(doc.createElement("script"), { type: "module", src }));
 }
 
-g_PopupManager.GetPopups().forEach(inject);
-g_PopupManager.AddPopupCreatedCallback(inject);
+function waitForKey(object, key, callback, interval = 100) {
+    if (object.hasOwnProperty(key)) {
+        callback(object[key]);
+    } else {
+        setTimeout(() => waitForKey(object, key, callback), interval);
+    }
+}
+
+waitForKey(globalThis, "g_PopupManager", popupManager => {
+    popupManager.GetPopups().forEach(inject);
+    popupManager.AddPopupCreatedCallback(inject);
+});

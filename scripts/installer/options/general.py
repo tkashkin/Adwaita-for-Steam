@@ -9,6 +9,7 @@ from ..consts import *
 
 from ..utils.args import *
 from ..utils.css import *
+from ..utils.js import *
 from ..utils.log import *
 from ..utils.os_settings import *
 
@@ -48,6 +49,7 @@ class AdwInstallTarget:
     css_dir: Path = field(repr=False)
     skin_dir: Path = field(repr=False)
     skin_config_css: Path = field(repr=False)
+    skin_config_js: Path = field(repr=False)
     skin_custom_css: Path = field(repr=False)
     skin_v3_libraryroot_css: Path = field(repr=False)
 
@@ -57,6 +59,7 @@ class AdwInstallTarget:
         self.css_dir = self.steamui_dir / "css"
         self.skin_dir = self.steamui_dir / ADW_ROOT
         self.skin_config_css = self.skin_dir / "config.css"
+        self.skin_config_js = self.skin_dir / "config.js"
         self.skin_custom_css = self.skin_dir / "custom.css"
         self.skin_v3_libraryroot_css = self.steamui_dir / "libraryroot.custom.css"
         self.update()
@@ -80,6 +83,7 @@ class AdwGeneral(AdwParsedOptionGroup):
     targets: list[AdwInstallTarget]
     optimize: bool
     patch_js: bool
+    js_features: list[str]
     debug: bool
     list_options: bool
 
@@ -107,6 +111,17 @@ class AdwGeneralOptions(AdwOptionGroup):
             dest="patch_js",
             help="disable JavaScript patches",
             action="store_false"
+        )
+        args.add_argument(
+            "--feature",
+            "--features",
+            dest="js_features",
+            help="enable one or multiple JS features",
+            metavar="FEATURE",
+            nargs="+",
+            action="extend",
+            default=ADW_JS_FEATURES,
+            choices=ADW_JS_FEATURES
         )
         args.add_argument(
             "-u",
@@ -145,6 +160,7 @@ class AdwGeneralOptions(AdwOptionGroup):
             targets=self._resolve_targets(args.target),
             optimize=args.optimize,
             patch_js=args.patch_js,
+            js_features=args.js_features,
             debug=args.debug,
             list_options=args.list_options
         )

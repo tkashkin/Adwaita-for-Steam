@@ -122,6 +122,8 @@ class AdwWindowControlsLayout:
                     return ADW_WINDOWCONTROLS_PRESETS["windows"]
                 case "darwin":
                     return ADW_WINDOWCONTROLS_PRESETS["macos"]
+                case _:
+                    return ADW_WINDOWCONTROLS_PRESETS["gnome"]
         elif preset in ADW_WINDOWCONTROLS_PRESETS:
             return ADW_WINDOWCONTROLS_PRESETS[preset]
 

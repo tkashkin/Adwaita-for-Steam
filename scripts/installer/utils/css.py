@@ -3,8 +3,7 @@
 from __future__ import annotations
 from pathlib import Path
 from dataclasses import dataclass
-from enum import StrEnum
-from typing import Self, Set, TYPE_CHECKING
+from typing import Self, TYPE_CHECKING
 import re
 
 from ..consts import *
@@ -22,7 +21,7 @@ ADW_PATCH_FILES = {
 ADW_CSS_INDENT = " " * 4
 
 ADW_CSS_RE_IMPORT = re.compile(r"^\s*@import\s+url\((?P<quote>[\"'])(?P<path>.+?)(?P=quote)\)\s*;\s*(?:/\*.*\*/\s*)?$")
-ADW_CSS_RE_COMMENT = re.compile(r"/\*.*?\*/", re.S)
+ADW_CSS_RE_COMMENT = re.compile(r"/\*.*?\*/", re.DOTALL)
 ADW_CSS_RE_BLOCK = re.compile(r"\s*([{};,])\s*")
 ADW_CSS_RE_MULTISPACE = re.compile(r"\s+")
 
@@ -139,7 +138,7 @@ class AdwCSSBuilder:
         bundle.write_text(css, encoding="utf-8")
         return bundle
 
-    def _inline_css_imports(self, file: Path, seen: Set[Path] | None = None) -> str:
+    def _inline_css_imports(self, file: Path, seen: set[Path] | None = None) -> str:
         seen = seen or set()
         file = file.resolve()
         if file in seen: return ""
