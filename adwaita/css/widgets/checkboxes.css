@@ -1,243 +1,141 @@
 :root
 {
-	--adw-checkbox-radius: 6px;
+    --adw-checkbox-radius: 6px;
 
-	--adw-checkbox-outline-opacity: 15%;
-	--adw-checkbox-outline-opacity-hover: 20%;
-	--adw-checkbox-outline-opacity-active: 25%;
+    --adw-checkbox-outline-opacity: 15%;
+    --adw-checkbox-outline-opacity-hover: 20%;
+    --adw-checkbox-outline-opacity-active: 25%;
 
-	@media (prefers-contrast: more)
-	{
-		--adw-checkbox-outline-opacity: var(--adw-border-opacity);
-		--adw-checkbox-outline-opacity-hover: 60%;
-		--adw-checkbox-outline-opacity-active: 60%;
-	}
+    @media (prefers-contrast: more)
+    {
+        --adw-checkbox-outline-opacity: var(--adw-border-opacity);
+        --adw-checkbox-outline-opacity-hover: 60%;
+        --adw-checkbox-outline-opacity-active: 60%;
+    }
 }
 
 body.DesktopUI,
 html.client_chat_frame
 {
-	div.DialogCheckbox_Container,
-	div._1Qku5jMXBi5-wawzqY1kzG,
-	div._2ULTJEgaq0SZefVsQLCQ6B,
-	div._2qURXDJ4ZtfSVOesDk7A73,
-	div.bTuHD5QOYlrI7ljo-zst7
-	{
-		-webkit-app-region: no-drag !important;
-		cursor: var(--adw-cursor-pointer) !important;
-		color: inherit !important;
+    div.DialogCheckbox_Container,
+    div._1Qku5jMXBi5-wawzqY1kzG,
+    div._2ULTJEgaq0SZefVsQLCQ6B,
+    div._2qURXDJ4ZtfSVOesDk7A73,
+    div.bTuHD5QOYlrI7ljo-zst7
+    {
+        -webkit-app-region: no-drag !important;
+        cursor: var(--adw-cursor-pointer) !important;
+        color: inherit !important;
 
-		--adw-checkbox-overlay: transparent;
+        --adw-checkbox-overlay: transparent;
 
-		div.DialogCheckbox,
-		div.LBS7IDpob52Sb4ZoKobh0
-		{
-			width: 20px !important;
-			min-width: 20px !important;
-			max-width: 20px !important;
-			height: 20px !important;
-			min-height: 20px !important;
-			max-height: 20px !important;
-			box-sizing: border-box !important;
-			padding: 2px !important;
-			color: inherit !important;
-			border: none !important;
-			border-radius: var(--adw-checkbox-radius) !important;
-			-webkit-app-region: no-drag !important;
-			cursor: var(--adw-cursor-pointer) !important;
+        div.DialogCheckbox,
+        div.LBS7IDpob52Sb4ZoKobh0
+        {
+            width: 20px !important;
+            min-width: 20px !important;
+            max-width: 20px !important;
+            height: 20px !important;
+            min-height: 20px !important;
+            max-height: 20px !important;
+            box-sizing: border-box !important;
+            padding: 2px !important;
+            color: inherit !important;
+            border: none !important;
+            border-radius: var(--adw-checkbox-radius) !important;
+            -webkit-app-region: no-drag !important;
+            cursor: var(--adw-cursor-pointer) !important;
 
-			background-color: transparent !important;
-			background-image: linear-gradient(var(--adw-checkbox-overlay), var(--adw-checkbox-overlay)) !important;
-			background-blend-mode: overlay !important;
-			box-shadow: inset 0 0 0 2px color-mix(in srgb, currentColor var(--adw-checkbox-outline-opacity), transparent) !important;
-			opacity: 1 !important;
-			filter: none !important;
+            background-color: transparent !important;
+            background-image: linear-gradient(var(--adw-checkbox-overlay), var(--adw-checkbox-overlay)) !important;
+            background-blend-mode: overlay !important;
+            box-shadow: inset 0 0 0 2px color-mix(in srgb, currentColor var(--adw-checkbox-outline-opacity), transparent) !important;
+            opacity: 1 !important;
+            filter: none !important;
 
-			outline: 0 solid transparent !important;
-			outline-offset: 5px !important;
-			transition: var(--adw-focus-transition) !important;
+            outline: 0 solid transparent !important;
+            outline-offset: 5px !important;
+            transition: var(--adw-focus-transition) !important;
 
-			&:focus-visible
-			{
-				outline-color: color-mix(in srgb, var(--adw-accent) var(--adw-focus-border-opacity), transparent) !important;
-				outline-width: 2px !important;
-				outline-offset: 1px !important;
-			}
+            &:focus-visible
+            {
+                outline-color: color-mix(in srgb, var(--adw-accent) var(--adw-focus-border-opacity), transparent) !important;
+                outline-width: 2px !important;
+                outline-offset: 1px !important;
+            }
 
-			div._28MB9LhS2kVTalIp0NHDv4,
-			svg
-			{
-				display: none !important;
-			}
+            div._28MB9LhS2kVTalIp0NHDv4,
+            svg
+            {
+                display: none !important;
+            }
 
-			&::before
-			{
-				background-color: transparent;
-				content: "";
-				display: block;
-				width: 16px;
-				height: 16px;
-				-webkit-mask-repeat: no-repeat;
-				-webkit-mask-position: center;
-				-webkit-mask-size: 16px;
-				-webkit-mask-image: var(--adw-icon-checkbox-check);
-			}
-		}
+            &::before
+            {
+                background-color: transparent;
+                content: "";
+                display: block;
+                width: 16px;
+                height: 16px;
+                -webkit-mask-repeat: no-repeat;
+                -webkit-mask-position: center;
+                -webkit-mask-size: 16px;
+                -webkit-mask-image: var(--adw-icon-checkbox-check);
+            }
+        }
 
-		&:hover
-		{
-			--adw-checkbox-outline-opacity: var(--adw-checkbox-outline-opacity-hover);
-		}
+        &:hover
+        {
+            --adw-checkbox-outline-opacity: var(--adw-checkbox-outline-opacity-hover);
+        }
 
-		&:active
-		{
-			--adw-checkbox-outline-opacity: 0%;
-			--adw-checkbox-overlay: color-mix(in srgb, currentColor var(--adw-checkbox-outline-opacity-active), transparent);
-		}
+        &:active
+        {
+            --adw-checkbox-outline-opacity: 0%;
+            --adw-checkbox-overlay: color-mix(in srgb, currentColor var(--adw-checkbox-outline-opacity-active), transparent);
+        }
 
-		/* Checked */
-		&:has(.Active),
-		&:has(._28MB9LhS2kVTalIp0NHDv4)
-		{
-			div.DialogCheckbox,
-			div.LBS7IDpob52Sb4ZoKobh0
-			{
-				background-color: var(--adw-accent-bg) !important;
-				color: var(--adw-accent-fg) !important;
-				box-shadow: none !important;
+        /* Checked */
+        &:has(.Active),
+        &:has(._28MB9LhS2kVTalIp0NHDv4)
+        {
+            div.DialogCheckbox,
+            div.LBS7IDpob52Sb4ZoKobh0
+            {
+                background-color: var(--adw-accent-bg) !important;
+                color: var(--adw-accent-fg) !important;
+                box-shadow: none !important;
 
-				&::before
-				{
-					background-color: currentColor;
-				}
-			}
+                &::before
+                {
+                    background-color: currentColor;
+                }
+            }
 
-			&:hover
-			{
-				--adw-checkbox-overlay: color-mix(in srgb, currentColor 10%, transparent);
-			}
+            &:hover
+            {
+                --adw-checkbox-overlay: color-mix(in srgb, currentColor 10%, transparent);
+            }
 
-			&:active
-			{
-				--adw-checkbox-overlay: rgba(0, 0, 6, 0.2);
-			}
-		}
+            &:active
+            {
+                --adw-checkbox-overlay: rgba(0, 0, 6, 0.2);
+            }
+        }
 
-		/* Disabled */
-		&:has(.Disabled)
-		{
-			opacity: var(--adw-disabled-opacity) !important;
-			--adw-checkbox-overlay: transparent !important;
-		}
-	}
+        /* Disabled */
+        &:has(.Disabled)
+        {
+            opacity: var(--adw-disabled-opacity) !important;
+            --adw-checkbox-overlay: transparent !important;
+        }
+    }
 
-	div.DialogToggle_Label
-	{
-		color: var(--adw-window-fg) !important;
-		font-family: var(--adw-text-font) !important;
-		font-size: 13px !important;
-		font-weight: 400 !important;
-	}
-
-	/* Switch */
-	div._9Ql-oVe_j8E-vsDdyVdWo
-	{
-		box-sizing: border-box !important;
-		width: 46px !important;
-		height: 26px !important;
-		border-radius: var(--adw-button-pill-radius) !important;
-		padding: 3px !important;
-		margin: 0 !important;
-		transition: var(--adw-button-transition) !important;
-		background: color-mix(in srgb, currentColor var(--adw-trough-opacity), transparent);
-		box-shadow: none !important;
-		cursor: var(--adw-cursor-pointer) !important;
-
-		/* Track background */
-		div._2bl0iQ9xigbq4Zd1NI6NZl
-		{
-			display: none !important;
-
-			&::before
-			{
-				content: none !important;
-			}
-		}
-
-		/* Slider */
-		div._1PQppcgkuXQAiFPar9AGi-
-		{
-			box-sizing: border-box !important;
-			width: 20px !important;
-			height: 20px !important;
-			border-radius: 50% !important;
-			left: auto !important;
-			top: auto !important;
-			bottom: auto !important;
-			transform: none !important;
-			transition: var(--adw-button-transition), transform var(--adw-transition) !important;
-			background: color-mix(in srgb, white 80%, var(--adw-view-bg)) !important;
-			box-shadow: 0 2px 4px rgba(0, 0, 6, 0.2) !important;
-
-			/* Disabled */
-			div.aIeh3X5T2M074RLW1qn6_ &
-			{
-				box-shadow: 0 2px 4px transparent !important;
-			}
-		}
-
-		&:hover
-		{
-			background: color-mix(in srgb, currentColor var(--adw-trough-hover-opacity), transparent);
-
-			div._1PQppcgkuXQAiFPar9AGi-
-			{
-				background: white !important;
-			}
-		}
-
-		&:active
-		{
-			background: color-mix(in srgb, currentColor var(--adw-trough-active-opacity), transparent);
-
-			div._1PQppcgkuXQAiFPar9AGi-
-			{
-				background: white !important;
-			}
-		}
-
-		/* Checked */
-		&.yLrDAetGoWx0GYqA6ShfS
-		{
-			color: var(--adw-accent-fg) !important;
-			background: var(--adw-accent-bg) !important;
-
-			&:hover
-			{
-				background-image: linear-gradient(0deg, color-mix(in srgb, currentColor 10%, transparent), color-mix(in srgb, currentColor 10%, transparent)) !important;
-			}
-
-			&:active
-			{
-				background-image: linear-gradient(0deg, rgba(0, 0, 6, 0.2), rgba(0, 0, 6, 0.2)) !important;
-			}
-
-			div._1PQppcgkuXQAiFPar9AGi-
-			{
-				background: white !important;
-				transform: translateX(20px) !important;
-			}
-		}
-
-		/* Expand interactive area to fill the row */
-		&::before
-		{
-			content: "";
-			position: absolute;
-			top: -50px;
-			left: calc(var(--adw-pagedsettings-width) * -1);
-			right: -50px;
-			bottom: -50px;
-		}
-	}
+    div.DialogToggle_Label
+    {
+        color: var(--adw-window-fg) !important;
+        font-family: var(--adw-text-font) !important;
+        font-size: 13px !important;
+        font-weight: 400 !important;
+    }
 }

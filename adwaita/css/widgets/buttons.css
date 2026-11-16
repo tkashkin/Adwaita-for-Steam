@@ -1,31 +1,31 @@
 :root
 {
-	--adw-button-suggested-fg: var(--adw-accent-fg);
-	--adw-button-suggested-bg: linear-gradient(var(--adw-accent-bg), var(--adw-accent-bg)) transparent;
-	--adw-button-suggested-overlay-hover: color-mix(in srgb, currentColor 10%, transparent);
-	--adw-button-suggested-overlay-active: rgba(0, 0, 6, 20%);
+    --adw-button-suggested-fg: var(--adw-accent-fg);
+    --adw-button-suggested-bg: linear-gradient(var(--adw-accent-bg), var(--adw-accent-bg)) transparent;
+    --adw-button-suggested-overlay-hover: color-mix(in srgb, currentColor 10%, transparent);
+    --adw-button-suggested-overlay-active: rgba(0, 0, 6, 20%);
 
-	--adw-button-radius: 9px;
-	--adw-button-pill-radius: 9999px;
+    --adw-button-radius: 9px;
+    --adw-button-pill-radius: 9999px;
 
-	--adw-button-bg-opacity: 10%;
-	--adw-button-bg-opacity-hover: 15%;
-	--adw-button-bg-opacity-active: 30%;
-	--adw-button-checked-bg-opacity: 30%;
-	--adw-button-checked-bg-opacity-hover: 35%;
-	--adw-button-checked-bg-opacity-active: 40%;
+    --adw-button-bg-opacity: 10%;
+    --adw-button-bg-opacity-hover: 15%;
+    --adw-button-bg-opacity-active: 30%;
+    --adw-button-checked-bg-opacity: 30%;
+    --adw-button-checked-bg-opacity-hover: 35%;
+    --adw-button-checked-bg-opacity-active: 40%;
 
-	--adw-button-osd-fg: rgba(255, 255, 255, 0.9);
-	--adw-button-osd-fg-hover: rgb(255, 255, 255);
-	--adw-button-osd-fg-active: rgb(255, 255, 255);
-	--adw-button-osd-bg: rgba(0, 0, 0, 0.8);
-	--adw-button-osd-bg-hover: rgba(38, 38, 38, 0.8);
-	--adw-button-osd-bg-active: rgba(64, 64, 64, 0.8);
+    --adw-button-osd-fg: rgba(255, 255, 255, 0.9);
+    --adw-button-osd-fg-hover: rgb(255, 255, 255);
+    --adw-button-osd-fg-active: rgb(255, 255, 255);
+    --adw-button-osd-bg: rgba(0, 0, 0, 0.8);
+    --adw-button-osd-bg-hover: rgba(38, 38, 38, 0.8);
+    --adw-button-osd-bg-active: rgba(64, 64, 64, 0.8);
 
-	--adw-button-hc-outline: inset 0 0 0 1px transparent;
+    --adw-button-hc-outline: inset 0 0 0 1px transparent;
 
-	@media (prefers-contrast: more)
-	{
-		--adw-button-hc-outline: inset 0 0 0 1px color-mix(in srgb, currentColor var(--adw-border-opacity), transparent);
-	}
+    @media (prefers-contrast: more)
+    {
+        --adw-button-hc-outline: inset 0 0 0 1px color-mix(in srgb, currentColor var(--adw-border-opacity), transparent);
+    }
 }
