@@ -963,6 +963,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
             }
 
             &.IIJeieZ-ZPRfIULY7uSDG, /* SteamOS/Deck compatibility */
+            &.UAhWiMg9Q2VPsQQBj_ikT, /* Achievements */
             &:has(div._3ooxUb30k7736aTVnO179S), /* Game version */
             &:has(button._1qG6xUlNu-qvdhpSxwed5) /* Cloud sync error */
             {
@@ -985,13 +986,6 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
                         background: color-mix(in srgb, var(--adw-window-fg) var(--adw-button-bg-opacity-active), transparent) !important;
                     }
                 }
-            }
-
-            /* Achievements - suppress clicks to not scroll the entire window */
-            &.UAhWiMg9Q2VPsQQBj_ikT
-            {
-                cursor: default !important;
-                pointer-events: none !important;
             }
         }
 

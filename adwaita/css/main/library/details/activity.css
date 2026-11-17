@@ -100,7 +100,6 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
         background-color: var(--adw-card-bg) !important;
         --adw-hover-overlay: 0%;
         background-image: linear-gradient(0deg, color-mix(in srgb, currentColor var(--adw-hover-overlay), transparent), color-mix(in srgb, currentColor var(--adw-hover-overlay), transparent)) !important;
-        color: var(--adw-card-fg) !important;
         border-radius: 0 !important;
         box-shadow: var(--adw-card-shadow), var(--adw-card-outline) !important;
         border: none !important;
@@ -1093,7 +1092,6 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
                     background-color: var(--adw-card-bg) !important;
                     --adw-hover-overlay: 0%;
                     background-image: linear-gradient(0deg, color-mix(in srgb, currentColor var(--adw-hover-overlay), transparent), color-mix(in srgb, currentColor var(--adw-hover-overlay), transparent)) !important;
-                    color: var(--adw-card-fg) !important;
                     border-radius: var(--adw-card-radius) !important;
                     box-shadow: var(--adw-card-shadow), var(--adw-card-outline-last) !important;
                     border: none !important;

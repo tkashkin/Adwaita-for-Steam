@@ -541,7 +541,7 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2aor4XVOYzN1PBSREk0UbO
     }
 
     /* Achievements */
-    div._31ptFGGMZrSQc5BCX1e5lm:has(img._2V2sHETNfa62yMoDwSF3_t, div._1ABm6sfuqiZZDSL9z8mW1a)
+    div._31ptFGGMZrSQc5BCX1e5lm:has(> div._38t1mljBjmJfqjpVzMT1CG > div._3jC8om-5Sci_dkUB-6VYiU)
     {
         margin-top: -6px !important;
 
@@ -570,180 +570,216 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA div._2aor4XVOYzN1PBSREk0UbO
             }
         }
 
+        /* Progress bar container */
+        div._1SYKvWwSL8VCFp-KXZyjXf
+        {
+            background-color: var(--adw-card-bg) !important;
+            color: var(--adw-card-fg) !important;
+            border-radius: var(--adw-card-radius) var(--adw-card-radius) 0 0 !important;
+            box-shadow: var(--adw-card-shadow), var(--adw-card-outline) !important;
+            border: none !important;
+            width: auto !important;
+            height: 32px !important;
+            box-sizing: border-box !important;
+            padding: 0 8px !important;
+            margin: 0 !important;
+
+            span._2EZqJBCxzsAuIxcN4FeHLr
+            {
+                --award-base: 20px !important;
+
+                svg path
+                {
+                    fill: var(--adw-warning) !important;
+                }
+            }
+
+            div._1u7tlq5OcUVR8p7-ic_ZVw
+            {
+                height: 4px !important;
+                border-radius: var(--adw-button-pill-radius) !important;
+                background: color-mix(in srgb, var(--adw-card-fg) var(--adw-trough-opacity), transparent) !important;
+
+                @media (prefers-contrast: more)
+                {
+                    box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--adw-card-fg) var(--adw-border-opacity), transparent) !important;
+                }
+
+                div._3WOeX9PHv29FSw4EKlG77h
+                {
+                    background: var(--adw-accent-bg) !important;
+                }
+
+                div._3WOeX9PHv29FSw4EKlG77h._2enJwIutXoVwW16Bbu6S6O
+                {
+                    background: var(--adw-success-bg) !important;
+                }
+            }
+        }
+
         div._5uvIN6jXDXzzck59F-nhv
         {
             position: relative !important;
             background-color: var(--adw-card-bg) !important;
             color: var(--adw-card-fg) !important;
-            border-radius: var(--adw-card-radius) !important;
+            border-radius: 0 0 var(--adw-card-radius) var(--adw-card-radius) !important;
             box-shadow: var(--adw-card-shadow), var(--adw-card-outline-last) !important;
             border: none !important;
             width: auto !important;
-            height: 80px !important;
             box-sizing: border-box !important;
             padding: 8px !important;
             margin: 0 !important;
+            display: grid !important;
+            grid-template-columns: 64px minmax(0, 1fr) !important;
+            gap: 4px !important;
+            align-items: start !important;
 
-            /* Last unlocked achievement */
-            div._14U8eM1W6Z4uJhCc5zvbKC > div._2CK1m9x0gtA_oSAQa2FpS3
+            /* Achievement sets */
+            div._3RNWlqbjgrjY8dgjfUoJvY
             {
-                position: absolute !important;
-                top: 8px !important;
-                left: 8px !important;
-                width: 64px !important;
-                height: 64px !important;
-            }
+                grid-column: 1 / -1 !important;
+                display: flex !important;
+                flex-direction: row !important;
+                flex-wrap: wrap !important;
+                gap: 4px !important;
+                padding: 0 !important;
+                margin: 0 0 4px 0 !important;
 
-            /* Unlocked achievements */
-            div._1IIKwlQaVZU6bIeEQJvmTK
-            {
-                position: absolute !important;
-                top: 8px !important;
-                left: 76px !important;
-                right: 0 !important;
-                width: auto !important;
-                height: 30px !important;
-
-                div._2H_ytAwp5tfeou0kdWjLl4
+                & > div
                 {
-                    width: 30px !important;
-                    height: 30px !important;
-                    line-height: 30px !important;
-                    padding: 0 4px 0 0 !important;
+                    padding: 0 6px !important;
                     margin: 0 !important;
-                    flex: none !important;
+                    border-radius: var(--adw-gameicon-radius) !important;
+                    background: var(--adw-accent-bg) !important;
+                    color: var(--adw-accent-fg) !important;
+                    box-shadow: none !important;
+                    font-size: var(--adw-text-subtitle-size) !important;
+                    font-weight: var(--adw-text-subtitle-weight) !important;
+                    min-height: auto !important;
+                    line-height: normal !important;
+
+                    /* DLC set */
+                    &._3rlhwEkKW72fm952pZicBK
+                    {
+                        background: var(--adw-success-bg) !important;
+                        color: var(--adw-success-fg) !important;
+                    }
                 }
             }
 
-            /* Locked achievements */
+            /* Last unlocked achievement */
+            & > div._14U8eM1W6Z4uJhCc5zvbKC
+            {
+                grid-column: 1 !important;
+                grid-row: span 2 !important;
+                width: 64px !important;
+                height: 64px !important;
+                padding: 0 !important;
+                margin: 0 !important;
+                background: none !important;
+                border: none !important;
+                box-shadow: none !important;
+            }
+
+            & > div._1rvHQ_ELBAWYmrssg3iNZE,
+            & > div._3ca11X3AK6npLS3emMa5Lr > div._1rvHQ_ELBAWYmrssg3iNZE
+            {
+                --icon-size: 30px !important;
+                --grid-gap: 4px !important;
+                padding: 0 !important;
+                margin: 0 -4px 0 0 !important;
+
+                /* Remainder */
+                div._3-4uPm6iJyvxHpK3DT7x6L
+                {
+                    background: rgba(0, 0, 0, var(--adw-dimmer-opacity)) !important;
+                    border: none !important;
+                    border-radius: var(--adw-gameicon-radius) !important;
+                    cursor: var(--adw-cursor-pointer) !important;
+
+                    span
+                    {
+                        --text-color: var(--adw-card-fg) !important;
+                        --text-weight: var(--adw-text-row-subtitle-weight) !important;
+                        color: var(--adw-card-fg) !important;
+                        font-family: var(--adw-text-font) !important;
+                        font-size: var(--adw-text-row-subtitle-size) !important;
+                        font-weight: var(--adw-text-row-subtitle-weight) !important;
+                        text-shadow: none !important;
+                        letter-spacing: normal !important;
+                    }
+                }
+            }
+
+            /* No last unlocked achievement: rows span the full width */
+            & > div._1rvHQ_ELBAWYmrssg3iNZE,
+            & > div._3ca11X3AK6npLS3emMa5Lr
+            {
+                grid-column: 1 / -1 !important;
+            }
+
+            /* Last unlocked achievement present: rows sit to the right of it */
+            & > div._14U8eM1W6Z4uJhCc5zvbKC ~ div._1rvHQ_ELBAWYmrssg3iNZE,
+            & > div._14U8eM1W6Z4uJhCc5zvbKC ~ div._3ca11X3AK6npLS3emMa5Lr
+            {
+                grid-column: 2 !important;
+            }
+
+            /* Locked achievements section */
             div._3ca11X3AK6npLS3emMa5Lr
             {
                 padding: 0 !important;
                 margin: 0 !important;
                 border: none !important;
-
-                div._1IIKwlQaVZU6bIeEQJvmTK
-                {
-                    top: 42px !important;
-                    height: 30px !important;
-                }
             }
 
-            /* No last unlocked */
-            &:not(:has(div._14U8eM1W6Z4uJhCc5zvbKC > div._2CK1m9x0gtA_oSAQa2FpS3)) div._1IIKwlQaVZU6bIeEQJvmTK
+            /* Achievement wrapper */
+            & > div._14U8eM1W6Z4uJhCc5zvbKC,
+            & > div._1rvHQ_ELBAWYmrssg3iNZE,
+            & > div._3ca11X3AK6npLS3emMa5Lr > div._1rvHQ_ELBAWYmrssg3iNZE
             {
-                left: 8px !important;
-            }
-
-            /* No unlocked, no locked */
-            &:not(:has(> div._3eVREaIAGyRjbf0bkFjR9Y > div._1IIKwlQaVZU6bIeEQJvmTK)) div._3ca11X3AK6npLS3emMa5Lr div._1IIKwlQaVZU6bIeEQJvmTK,
-            &:not(:has(div._3ca11X3AK6npLS3emMa5Lr div._1IIKwlQaVZU6bIeEQJvmTK)) > div._3eVREaIAGyRjbf0bkFjR9Y > div._1IIKwlQaVZU6bIeEQJvmTK
-            {
-                top: 8px !important;
-
-                div._2H_ytAwp5tfeou0kdWjLl4
+                /* Achievement icon wrapper */
+                & > div._1DmdUWkRKPlUYGtbBrrRtx
                 {
-                    width: 64px !important;
-                    height: 64px !important;
-                    line-height: 64px !important;
+                    padding: 0 !important;
+                    margin: 0 !important;
+                    width: 100% !important;
+                    height: 100% !important;
+                    line-height: inherit !important;
+                    flex: none !important;
+                    background: none !important;
+                    border-radius: var(--adw-gameicon-radius) !important;
+                    cursor: var(--adw-cursor-pointer) !important;
+
+                    /* Icon */
+                    & > img.M5YgSyrfvCXXY_XYhYzcl
+                    {
+                        border-radius: var(--adw-gameicon-radius) !important;
+                        box-sizing: border-box !important;
+                        cursor: var(--adw-cursor-pointer) !important;
+                        overflow: hidden !important;
+
+                        /* Not rare */
+                        &:not(._2BCoqu4wd4ehkJkelVhjb3)
+                        {
+                            box-shadow: none !important;
+                            outline: 1px solid color-mix(in srgb, currentColor var(--adw-border-opacity), transparent) !important;
+                            outline-offset: -1px !important;
+                        }
+
+                        &::after
+                        {
+                            content: none !important;
+                        }
+                    }
                 }
             }
-        }
-
-        div._2CK1m9x0gtA_oSAQa2FpS3,
-        div._1fEbX-PfpZ2FhkhttWcm-V,
-        div._2aVnDeExEHiUFX0zwr_BTO,
-        div.lZ2c49vTWJ60klQOY9l2K,
-        div._2gISWIeEzZ9PNuAzVuMaWd,
-        div._1-H7tKj_QcGHLUbx5wVsGg
-        {
-            padding: 0 !important;
-            margin: 0 !important;
-            width: 100% !important;
-            height: 100% !important;
-            line-height: inherit !important;
-            flex: none !important;
-            background: none !important;
-            border-radius: var(--adw-gameicon-radius) !important;
-            cursor: var(--adw-cursor-pointer) !important;
-        }
-
-        /* Achievement */
-        div._1fEbX-PfpZ2FhkhttWcm-V,
-        div._1-H7tKj_QcGHLUbx5wVsGg
-        {
-            position: relative !important;
-
-            /* Not rare */
-            &:not(:has(img._3s4Rq3jnntBVP7HbJj1RMQ))
-            {
-                img
-                {
-                    box-shadow: none !important;
-                }
-
-                &::after
-                {
-                    content: "";
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    z-index: 1;
-                    border-radius: inherit;
-                    box-shadow: inset 0 0 0 1px color-mix(in srgb, currentColor var(--adw-border-opacity), transparent);
-                    pointer-events: none;
-                }
-            }
-        }
-
-        /* Icon */
-        img._2V2sHETNfa62yMoDwSF3_t
-        {
-            border-radius: var(--adw-gameicon-radius) !important;
-            box-sizing: border-box !important;
-            cursor: var(--adw-cursor-pointer) !important;
-            overflow: hidden !important;
         }
 
         /* Achievement text */
         div._1s_9cSxUjb4609MSH0EjWH
         {
             display: none !important;
-        }
-
-        /* remainderlist_ItemWrapper */
-        div._2H_ytAwp5tfeou0kdWjLl4
-        {
-            padding-right: 4px !important;
-            cursor: var(--adw-cursor-pointer) !important;
-        }
-
-        /* appdetailsachievementssection_RemainderText */
-        div._1-H7tKj_QcGHLUbx5wVsGg
-        {
-            color: var(--adw-card-fg) !important;
-            font-family: var(--adw-text-font) !important;
-            font-size: var(--adw-text-row-subtitle-size) !important;
-            font-weight: var(--adw-text-row-subtitle-weight) !important;
-            text-shadow: none !important;
-            letter-spacing: normal !important;
-            background: rgba(0, 0, 0, var(--adw-dimmer-opacity)) !important;
-            border-radius: var(--adw-gameicon-radius) !important;
-        }
-
-        /* All achivements unlocked icon */
-        svg._2TfBqZtHXY0TJKN7_qaVm6
-        {
-            position: absolute !important;
-            inset-inline-start: unset !important;
-            top: auto !important;
-            bottom: -81px !important;
-            left: 44px !important;
-            width: 32px !important;
-            height: 32px !important;
-            z-index: 1 !important;
         }
 
         div._3ns9185LizH61StaAXuAp6,
