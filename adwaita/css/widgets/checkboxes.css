@@ -21,7 +21,8 @@ html.client_chat_frame
     div._1Qku5jMXBi5-wawzqY1kzG,
     div._2ULTJEgaq0SZefVsQLCQ6B,
     div._2qURXDJ4ZtfSVOesDk7A73,
-    div.bTuHD5QOYlrI7ljo-zst7
+    div.bTuHD5QOYlrI7ljo-zst7,
+    div._2cCWZqqqazcW4NU2qo0MR9
     {
         -webkit-app-region: no-drag !important;
         cursor: var(--adw-cursor-pointer) !important;
@@ -30,7 +31,8 @@ html.client_chat_frame
         --adw-checkbox-overlay: transparent;
 
         div.DialogCheckbox,
-        div.LBS7IDpob52Sb4ZoKobh0
+        div.LBS7IDpob52Sb4ZoKobh0,
+        div._2yqO16VrJmXTQtsz8EQTY9
         {
             width: 20px !important;
             min-width: 20px !important;
@@ -65,6 +67,7 @@ html.client_chat_frame
             }
 
             div._28MB9LhS2kVTalIp0NHDv4,
+            div._2golWWWeCDL9Veo3SWc54h,
             svg
             {
                 display: none !important;
@@ -96,11 +99,11 @@ html.client_chat_frame
         }
 
         /* Checked */
-        &:has(.Active),
-        &:has(._28MB9LhS2kVTalIp0NHDv4)
+        &:has(.Active, ._28MB9LhS2kVTalIp0NHDv4, ._2golWWWeCDL9Veo3SWc54h)
         {
             div.DialogCheckbox,
-            div.LBS7IDpob52Sb4ZoKobh0
+            div.LBS7IDpob52Sb4ZoKobh0,
+            div._2yqO16VrJmXTQtsz8EQTY9
             {
                 background-color: var(--adw-accent-bg) !important;
                 color: var(--adw-accent-fg) !important;
