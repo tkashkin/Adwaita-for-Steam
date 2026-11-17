@@ -1,74 +1,74 @@
 :root
 {
-	--adw-windowcontrols-button-width: 24px !important;
-	--adw-windowcontrols-button-height: 24px !important;
-	--adw-windowcontrols-button-gap: 13px !important;
-	--adw-windowcontrols-buttons-margin-outer: 12px !important;
-	--adw-windowcontrols-buttons-margin-inner: 6px !important;
+    --adw-windowcontrols-button-width: 24px !important;
+    --adw-windowcontrols-button-height: 24px !important;
+    --adw-windowcontrols-button-gap: 13px !important;
+    --adw-windowcontrols-buttons-margin-outer: 12px !important;
+    --adw-windowcontrols-buttons-margin-inner: 6px !important;
 }
 
 body.DesktopUI,
 html.client_chat_frame
 {
-	.title-bar-actions
-	{
-		.title-area-icon
-		{
-			border-radius: 50% !important;
-			color: var(--adw-headerbar-fg) !important;
-			background-color: color-mix(in srgb, currentColor var(--adw-button-bg-opacity), transparent) !important;
-			box-shadow: var(--adw-button-hc-outline) !important;
+    .title-bar-actions
+    {
+        .title-area-icon
+        {
+            border-radius: 50% !important;
+            color: var(--adw-headerbar-fg) !important;
+            background-color: color-mix(in srgb, currentColor var(--adw-button-bg-opacity), transparent) !important;
+            box-shadow: var(--adw-button-hc-outline) !important;
 
-			&:hover
-			{
-				background-color: color-mix(in srgb, currentColor var(--adw-button-bg-opacity-hover), transparent) !important;
-			}
+            &:hover
+            {
+                background-color: color-mix(in srgb, currentColor var(--adw-button-bg-opacity-hover), transparent) !important;
+            }
 
-			&:active
-			{
-				background-color: color-mix(in srgb, currentColor var(--adw-button-bg-opacity-active), transparent) !important;
-			}
+            &:active
+            {
+                background-color: color-mix(in srgb, currentColor var(--adw-button-bg-opacity-active), transparent) !important;
+            }
 
-			.title-bar-actions.window-controls > &
-			{
-				> div
-				{
-					display: none !important;
-				}
+            .title-bar-actions.window-controls > &
+            {
+                & > div
+                {
+                    display: none !important;
+                }
 
-				&::before
-				{
-					color: inherit;
-					background-color: currentColor;
-					content: "";
-					display: block;
-					width: 16px;
-					height: 16px;
-					-webkit-mask-repeat: no-repeat;
-					-webkit-mask-position: center;
-					-webkit-mask-size: 16px;
-				}
+                &::before
+                {
+                    color: inherit;
+                    background-color: currentColor;
+                    content: "";
+                    display: block;
+                    width: 16px;
+                    height: 16px;
+                    -webkit-mask-repeat: no-repeat;
+                    -webkit-mask-position: center;
+                    -webkit-mask-size: 16px;
+                }
 
-				&.closeButton::before
-				{
-					-webkit-mask-image: var(--adw-icon-window-close);
-				}
+                &.closeButton::before
+                {
+                    -webkit-mask-image: var(--adw-icon-window-close);
+                }
 
-				&.maximizeButton::before
-				{
-					-webkit-mask-image: var(--adw-icon-window-maximize);
-				}
+                &.maximizeButton::before
+                {
+                    -webkit-mask-image: var(--adw-icon-window-maximize);
+                }
 
-				&.minimizeButton::before
-				{
-					-webkit-mask-image: var(--adw-icon-window-minimize);
-				}
+                &.minimizeButton::before
+                {
+                    -webkit-mask-image: var(--adw-icon-window-minimize);
+                }
 
-				&.restoreButton::before
-				{
-					-webkit-mask-image: var(--adw-icon-window-restore);
-				}
-			}
-		}
-	}
+                &.restoreButton::before
+                {
+                    -webkit-mask-image: var(--adw-icon-window-restore);
+                }
+            }
+        }
+    }
 }
