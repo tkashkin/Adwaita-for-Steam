@@ -1,3 +1,10 @@
+:root
+{
+    --adw-library-sidebar-min-width: 300px;
+    --adw-library-sidebar-max-width: 500px;
+    --adw-library-sidebar-collapsible-width: 300px;
+}
+
 div._1ijTaXJJA5YWl_fW2IxcaT, /* .gamelist_Container */
 div._1rDh5rXSFZJOqCa4UpnI4z > div._3x1HklzyDs4TEjACrRO2tB > div._1fbRpYO_BFDlMdFLsQMGVE /* .gamelist_NoSearchResultsContainer */
 {
@@ -71,6 +78,12 @@ div._1ijTaXJJA5YWl_fW2IxcaT
     }
 }
 
+div._9sPoVBFyE_vE87mnZJ5aB
+{
+    min-width: var(--adw-library-sidebar-min-width) !important;
+    max-width: var(--adw-library-sidebar-max-width) !important;
+}
+
 /* .gamelistbar_Container */
 div._3x1HklzyDs4TEjACrRO2tB
 {
@@ -91,7 +104,8 @@ div._3x1HklzyDs4TEjACrRO2tB
         gap: 6px !important;
 
         /* Library: Home, Collections */
-        a
+        a,
+        input.adw-sidebar-toggle
         {
             -webkit-app-region: no-drag !important;
             -webkit-user-drag: none !important;
@@ -104,9 +118,9 @@ div._3x1HklzyDs4TEjACrRO2tB
             height: 34px !important;
             padding: 9px !important;
             margin: 0 !important;
-            /* transition: var(--adw-button-transition) !important; */
             transition: none !important;
             border: none !important;
+            appearance: none !important;
 
             & > *
             {
@@ -135,6 +149,11 @@ div._3x1HklzyDs4TEjACrRO2tB
                 -webkit-mask-image: var(--adw-icon-nav-library);
             }
 
+            &.adw-sidebar-toggle::before
+            {
+                -webkit-mask-image: var(--adw-icon-sidebar);
+            }
+
             &:hover
             {
                 background: color-mix(in srgb, currentColor var(--adw-hover-opacity), transparent) !important;
@@ -145,6 +164,21 @@ div._3x1HklzyDs4TEjACrRO2tB
             {
                 background: color-mix(in srgb, currentColor var(--adw-active-opacity), transparent) !important;
                 box-shadow: var(--adw-button-hc-outline) !important;
+            }
+
+            &:checked
+            {
+                background: color-mix(in srgb, currentColor var(--adw-selected-opacity), transparent) !important;
+
+                &:hover
+                {
+                    background: color-mix(in srgb, currentColor var(--adw-selected-hover-opacity), transparent) !important;
+                }
+
+                &:active
+                {
+                    background: color-mix(in srgb, currentColor var(--adw-selected-active-opacity), transparent) !important;
+                }
             }
         }
     }
@@ -160,11 +194,9 @@ div._3x1HklzyDs4TEjACrRO2tB
         border-radius: var(--adw-button-radius) !important;
         background: color-mix(in srgb, currentColor var(--adw-button-bg-opacity), transparent) !important;
         box-shadow: var(--adw-button-hc-outline) !important;
-        transition: var(--adw-button-transition) !important;
-
+        transition: var(--adw-button-transition), var(--adw-focus-transition) !important;
         outline: 0 solid transparent !important;
         outline-offset: 4px !important;
-        transition: var(--adw-focus-transition) !important;
 
         &:focus-within
         {
@@ -725,4 +757,72 @@ div._1rDh5rXSFZJOqCa4UpnI4z > div._3x1HklzyDs4TEjACrRO2tB > div._20QAC4WMXm8qFE8
 {
     margin-top: 0 !important;
     padding-right: 0 !important;
+}
+
+body.DesktopUI.adw-sidebar-toggle
+{
+    div._9sPoVBFyE_vE87mnZJ5aB > div._3x1HklzyDs4TEjACrRO2tB > div._2TKEazUUS3TlniZfpc8OOe > input.adw-sidebar-toggle,
+    div._9sPoVBFyE_vE87mnZJ5aB > div._3x1HklzyDs4TEjACrRO2tB > label.adw-sidebar-scrim
+    {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px)
+{
+    body.DesktopUI.adw-sidebar-toggle div._9sPoVBFyE_vE87mnZJ5aB
+    {
+        min-width: var(--adw-library-sidebar-collapsible-width) !important;
+        max-width: var(--adw-library-sidebar-collapsible-width) !important;
+        position: absolute !important;
+        top: 46px !important;
+        bottom: 0 !important;
+        left: calc(var(--adw-library-sidebar-collapsible-width) * -1 - 1px) !important;
+        transition: left var(--adw-transition) !important;
+        z-index: 10 !important;
+        border-right: 1px var(--adw-sidebar-border) solid !important;
+
+        & > div._3x1HklzyDs4TEjACrRO2tB
+        {
+            & > div._2TKEazUUS3TlniZfpc8OOe
+            {
+                & > input.adw-sidebar-toggle
+                {
+                    display: block !important;
+                }
+            }
+
+            & > label.adw-sidebar-scrim
+            {
+                display: block !important;
+                position: absolute !important;
+                background-color: rgba(0, 0, 0, 0.25) !important;
+                background-image: linear-gradient(to right, rgba(0, 0, 0, 0.175), rgba(0, 0, 0, 0.035) 40px, rgba(0, 0, 0, 0) 56px), linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.035) 7px, rgba(0, 0, 0, 0) 24px) !important;
+                top: 0 !important;
+                left: var(--adw-library-sidebar-collapsible-width) !important;
+                width: 100vw !important;
+                height: 100vh !important;
+                opacity: 0 !important;
+                transition: opacity var(--adw-transition) !important;
+                pointer-events: none !important;
+            }
+        }
+    }
+
+    /* Sidebar separator */
+    body.DesktopUI.adw-sidebar-toggle div._276E6ijBpjMA2_iTxNhhjc
+    {
+        display: none !important;
+    }
+
+    body.DesktopUI.adw-sidebar-toggle.adw-sidebar-library-gamelist-open div._9sPoVBFyE_vE87mnZJ5aB
+    {
+        left: 0 !important;
+
+        & > div._3x1HklzyDs4TEjACrRO2tB > label.adw-sidebar-scrim
+        {
+            opacity: 1 !important;
+            pointer-events: all !important;
+        }
+    }
 }

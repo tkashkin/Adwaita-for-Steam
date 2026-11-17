@@ -1,0 +1,33 @@
+const scripts = [
+    ["SP Desktop_", ["/adwaita/js/main/main.js"]],
+    ["friendslist_", ["/adwaita/js/chat/chat.js"]],
+    ["PopupWindow_", ["/adwaita/js/main/popup.js"]]
+];
+
+function inject(popup) {
+    for (const [prefix, sources] of scripts) {
+        if (!popup.m_strName.startsWith(prefix)) continue;
+        for (const src of sources) {
+            injectScript(popup.m_popup.document, src)
+        }
+        return;
+    }
+}
+
+function injectScript(doc, src) {
+    if ([...doc.scripts].some(s => s.src === src)) return;
+    doc.head.append(Object.assign(doc.createElement("script"), { type: "module", src }));
+}
+
+function waitForKey(object, key, callback, interval = 100) {
+    if (Object.hasOwn(object, key) && object[key] != null) {
+        callback(object[key]);
+    } else {
+        setTimeout(() => waitForKey(object, key, callback, interval), interval);
+    }
+}
+
+waitForKey(globalThis, "g_PopupManager", popupManager => {
+    popupManager.GetPopups().forEach(inject);
+    popupManager.AddPopupCreatedCallback(inject);
+});

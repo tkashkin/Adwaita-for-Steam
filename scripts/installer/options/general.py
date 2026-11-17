@@ -9,6 +9,7 @@ from ..consts import *
 
 from ..utils.args import *
 from ..utils.css import *
+from ..utils.js import *
 from ..utils.log import *
 from ..utils.os_settings import *
 
@@ -48,6 +49,7 @@ class AdwInstallTarget:
     css_dir: Path = field(repr=False)
     skin_dir: Path = field(repr=False)
     skin_config_css: Path = field(repr=False)
+    skin_config_js: Path = field(repr=False)
     skin_custom_css: Path = field(repr=False)
     skin_v3_libraryroot_css: Path = field(repr=False)
 
@@ -57,13 +59,14 @@ class AdwInstallTarget:
         self.css_dir = self.steamui_dir / "css"
         self.skin_dir = self.steamui_dir / ADW_ROOT
         self.skin_config_css = self.skin_dir / "config.css"
+        self.skin_config_js = self.skin_dir / "config.js"
         self.skin_custom_css = self.skin_dir / "custom.css"
         self.skin_v3_libraryroot_css = self.steamui_dir / "libraryroot.custom.css"
         self.update()
 
     def update(self):
-        patch_files = list(map(lambda f: self.css_dir / f, ADW_PATCH_FILES.values()))
-        self.is_valid = self.css_dir.is_dir() and all(map(lambda f: f.is_file(), patch_files))
+        patch_files = [self.css_dir / f for f in ADW_PATCH_FILES.values()]
+        self.is_valid = self.css_dir.is_dir() and all(f.is_file() for f in patch_files)
         self.is_installed = False
         self.is_v3_installed = self.skin_v3_libraryroot_css.is_file()
         if self.is_valid and self.skin_dir.is_dir():
@@ -79,6 +82,7 @@ class AdwGeneral(AdwParsedOptionGroup):
     action: AdwInstallAction
     targets: list[AdwInstallTarget]
     optimize: bool
+    patch_js: bool
     debug: bool
     list_options: bool
 
@@ -99,6 +103,12 @@ class AdwGeneralOptions(AdwOptionGroup):
             "--no-optimize",
             dest="optimize",
             help="skip CSS bundling and minification",
+            action="store_false"
+        )
+        args.add_argument(
+            "--no-js",
+            dest="patch_js",
+            help="disable JavaScript patches",
             action="store_false"
         )
         args.add_argument(
@@ -137,10 +147,11 @@ class AdwGeneralOptions(AdwOptionGroup):
             action=AdwInstallAction.UNINSTALL if args.uninstall else AdwInstallAction.INSTALL,
             targets=self._resolve_targets(args.target),
             optimize=args.optimize,
+            patch_js=args.patch_js,
             debug=args.debug,
             list_options=args.list_options
         )
-    
+
     def list_options(self):
         pass
 

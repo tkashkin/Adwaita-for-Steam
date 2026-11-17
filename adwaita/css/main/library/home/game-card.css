@@ -165,7 +165,6 @@ body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._1pwP4eeP1zQD7PEgmsep0W
             {
                 margin: 4px !important;
                 transition: opacity var(--adw-transition-duration), transform var(--adw-transition-duration) !important;
-                will-change: opacity, transform !important;
                 opacity: 0;
                 transform: translateY(8px);
 
@@ -260,7 +259,6 @@ body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._1pwP4eeP1zQD7PEgmsep0W
         margin: 0 !important;
         pointer-events: none !important;
         transition: opacity var(--adw-transition-duration), transform var(--adw-transition-duration) !important;
-        will-change: opacity, transform !important;
         opacity: 0 !important;
         transform: translateY(-8px) !important;
 
@@ -310,7 +308,6 @@ body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._1pwP4eeP1zQD7PEgmsep0W
         text-transform: none !important;
         letter-spacing: normal !important;
         transition: opacity var(--adw-transition-duration), transform var(--adw-transition-duration) !important;
-        will-change: opacity, transform !important;
         opacity: 0 !important;
         transform: translateY(8px) !important;
 

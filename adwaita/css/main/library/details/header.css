@@ -661,14 +661,14 @@ body.DesktopUI div._2iE-78WxX2Pj4GHbq7YJiA
                         border: none !important;
                         border-radius: var(--adw-gameicon-radius) !important;
                         box-shadow: var(--adw-card-shadow), var(--adw-card-outline-last) !important;
-                        will-change: transform !important;
                         contain: strict !important;
                         z-index: 2 !important;
-                        transition: width var(--adw-transition),
-                        height var(--adw-transition),
-                        translate var(--adw-transition),
-                        box-shadow var(--adw-transition),
-                        border-radius var(--adw-transition) !important;
+                        transition:
+                            width var(--adw-transition),
+                            height var(--adw-transition),
+                            translate var(--adw-transition),
+                            box-shadow var(--adw-transition),
+                            border-radius var(--adw-transition) !important;
 
                         div._1R9r2OBCxAmtuUVrgBEUBw
                         {

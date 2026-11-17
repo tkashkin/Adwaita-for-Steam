@@ -126,13 +126,6 @@
                 "No": { "adwaita/extras/library/hide-whats-new.css": ["desktop"] }
             }
         },
-        "Show Library Sidebar on hover": {
-            "type": "checkbox",
-            "values": {
-                "No": { },
-                "Yes": { "adwaita/extras/library/sidebar-hover.css": ["desktop"] }
-            }
-        },
         "Square icons in game details": {
             "type": "checkbox",
             "values": {
