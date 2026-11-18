@@ -30,13 +30,11 @@ match sys.platform:
                 ).stdout.strip().strip("'")
             except:
                 return None
-        
+
         def linux_get_setting(path: str, key: str) -> Any | None:
             return linux_get_setting_portal(path, key) or linux_get_setting_gsettings(path, key)
 
     case "win32" | "cygwin":
-        import winreg
-
         def win32_get_reg_value(key: int, subkey: str, name: str) -> str | None:
             try:
                 import winreg

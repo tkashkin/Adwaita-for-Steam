@@ -1,192 +1,192 @@
 /* What's New */
 body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._17uEBe5Ri8TMsnfELvs8-N
 {
-	background: var(--adw-view-bg) !important;
-	border-bottom: 1px solid color-mix(in srgb, currentColor var(--adw-thin-border-opacity), transparent) !important;
-	padding: 16px !important;
+    background: var(--adw-view-bg) !important;
+    border-bottom: 1px solid color-mix(in srgb, currentColor var(--adw-thin-border-opacity), transparent) !important;
+    padding: 16px !important;
 
-	/* Settings button */
-	div._1eFe5VbyACJE4RVGpOWKMC
-	{
-		position: absolute !important;
-		right: 16px !important;
-		cursor: var(--adw-cursor-pointer) !important;
-		box-sizing: border-box !important;
-		width: 34px !important;
-		height: 34px !important;
-		padding: 9px !important;
-		margin: 0 !important;
-		background: transparent !important;
-		border-radius: var(--adw-button-radius) !important;
-		color: var(--adw-window-fg) !important;
-		transition: var(--adw-button-transition) !important;
+    /* Settings button */
+    div._1eFe5VbyACJE4RVGpOWKMC
+    {
+        position: absolute !important;
+        right: 16px !important;
+        cursor: var(--adw-cursor-pointer) !important;
+        box-sizing: border-box !important;
+        width: 34px !important;
+        height: 34px !important;
+        padding: 9px !important;
+        margin: 0 !important;
+        background: transparent !important;
+        border-radius: var(--adw-button-radius) !important;
+        color: var(--adw-window-fg) !important;
+        transition: var(--adw-button-transition) !important;
 
-		&:hover
-		{
-			background: color-mix(in srgb, currentColor var(--adw-hover-opacity), transparent) !important;
-			box-shadow: var(--adw-button-hc-outline) !important;
-		}
+        &:hover
+        {
+            background: color-mix(in srgb, currentColor var(--adw-hover-opacity), transparent) !important;
+            box-shadow: var(--adw-button-hc-outline) !important;
+        }
 
-		&:active
-		{
-			background: color-mix(in srgb, currentColor var(--adw-active-opacity), transparent) !important;
-			box-shadow: var(--adw-button-hc-outline) !important;
-		}
+        &:active
+        {
+            background: color-mix(in srgb, currentColor var(--adw-active-opacity), transparent) !important;
+            box-shadow: var(--adw-button-hc-outline) !important;
+        }
 
-		svg path
-		{
-			fill: var(--adw-window-fg) !important;
-		}
-	}
+        svg path
+        {
+            fill: var(--adw-window-fg) !important;
+        }
+    }
 
-	/* Updates carousel */
-	div._3CJctA7pLVdwHzNF5JmORE
-	{
-		padding-bottom: 16px !important;
-	}
+    /* Updates carousel */
+    div._3CJctA7pLVdwHzNF5JmORE
+    {
+        padding-bottom: 16px !important;
+    }
 
-	/* Update card */
-	div._3YO5BpDmZERh_G8kaWbaSJ.Panel
-	{
-		background-color: var(--adw-card-bg) !important;
-		--adw-hover-overlay: 0%;
-		background-image: linear-gradient(0deg, color-mix(in srgb, currentColor var(--adw-hover-overlay), transparent), color-mix(in srgb, currentColor var(--adw-hover-overlay), transparent)) !important;
-		color: var(--adw-card-fg) !important;
-		border-radius: var(--adw-card-radius) !important;
-		box-shadow: var(--adw-card-shadow) !important;
-		transition: var(--adw-button-transition), filter var(--adw-transition-duration) !important;
-		cursor: var(--adw-cursor-pointer) !important;
-		position: relative !important;
-		overflow: visible !important;
-		margin-top: 20px !important;
-		display: flex !important;
-		flex-direction: column !important;
+    /* Update card */
+    div._3YO5BpDmZERh_G8kaWbaSJ.Panel
+    {
+        background-color: var(--adw-card-bg) !important;
+        --adw-hover-overlay: 0%;
+        background-image: linear-gradient(0deg, color-mix(in srgb, currentColor var(--adw-hover-overlay), transparent), color-mix(in srgb, currentColor var(--adw-hover-overlay), transparent)) !important;
+        color: var(--adw-card-fg) !important;
+        border-radius: var(--adw-card-radius) !important;
+        box-shadow: var(--adw-card-shadow) !important;
+        transition: var(--adw-button-transition), filter var(--adw-transition-duration) !important;
+        cursor: var(--adw-cursor-pointer) !important;
+        position: relative !important;
+        overflow: visible !important;
+        margin-top: 20px !important;
+        display: flex !important;
+        flex-direction: column !important;
 
-		&::after
-		{
-			content: "";
-			position: absolute;
-			top: 0;
-			width: 100%;
-			height: 100%;
-			border-radius: var(--adw-card-radius);
-			box-shadow: inset 0 0 0 1px color-mix(in srgb, currentColor var(--adw-border-opacity), transparent);
-			pointer-events: none;
-			z-index: 2;
-		}
+        &::after
+        {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: var(--adw-card-radius);
+            box-shadow: inset 0 0 0 1px color-mix(in srgb, currentColor var(--adw-border-opacity), transparent);
+            pointer-events: none;
+            z-index: 2;
+        }
 
-		&:hover
-		{
-			--adw-hover-overlay: var(--adw-view-hover-opacity);
+        &:hover
+        {
+            --adw-hover-overlay: var(--adw-view-hover-opacity);
 
-			&::after
-			{
-				box-shadow: inset 0 0 0 1px color-mix(in srgb, currentColor calc(var(--adw-border-opacity) + var(--adw-hover-opacity)), transparent);
-			}
-		}
+            &::after
+            {
+                box-shadow: inset 0 0 0 1px color-mix(in srgb, currentColor calc(var(--adw-border-opacity) + var(--adw-hover-opacity)), transparent);
+            }
+        }
 
-		&:active
-		{
-			--adw-hover-overlay: var(--adw-view-active-opacity);
+        &:active
+        {
+            --adw-hover-overlay: var(--adw-view-active-opacity);
 
-			&::after
-			{
-				box-shadow: inset 0 0 0 1px color-mix(in srgb, currentColor calc(var(--adw-border-opacity) + var(--adw-active-opacity)), transparent);
-			}
-		}
+            &::after
+            {
+                box-shadow: inset 0 0 0 1px color-mix(in srgb, currentColor calc(var(--adw-border-opacity) + var(--adw-active-opacity)), transparent);
+            }
+        }
 
-		/* EventTime */
-		div._2rlKqvybYupc-uk64cdQ8D
-		{
-			position: absolute !important;
-			top: -20px !important;
-			color: color-mix(in srgb, currentColor var(--adw-dim-label-opacity), transparent) !important;
-			font-family: var(--adw-text-font) !important;
-			font-size: var(--adw-text-subtitle-size) !important;
-			font-weight: var(--adw-text-subtitle-weight) !important;
-			pointer-events: none !important;
-		}
+        /* EventTime */
+        div._2rlKqvybYupc-uk64cdQ8D
+        {
+            position: absolute !important;
+            top: -20px !important;
+            color: color-mix(in srgb, currentColor var(--adw-dim-label-opacity), transparent) !important;
+            font-family: var(--adw-text-font) !important;
+            font-size: var(--adw-text-subtitle-size) !important;
+            font-weight: var(--adw-text-subtitle-weight) !important;
+            pointer-events: none !important;
+        }
 
-		/* Image and text */
-		div.B-vCdL38RiJlhfSRgZv78
-		{
-			border-radius: var(--adw-card-radius) var(--adw-card-radius) 0 0 !important;
-			overflow: hidden !important;
-			cursor: var(--adw-cursor-pointer) !important;
+        /* Image and text */
+        div.B-vCdL38RiJlhfSRgZv78
+        {
+            border-radius: var(--adw-card-radius) var(--adw-card-radius) 0 0 !important;
+            overflow: hidden !important;
+            cursor: var(--adw-cursor-pointer) !important;
 
-			div.SPz0ipLqfF1oAO7tdrkdY
-			{
-				border-radius: 0 !important;
-			}
-		}
+            div.SPz0ipLqfF1oAO7tdrkdY
+            {
+                border-radius: 0 !important;
+            }
+        }
 
-		/* Game icon and name */
-		div._3_xMyCJAh_Dv99KgZ54P3j
-		{
-			padding: 4px 12px !important;
-			width: auto !important;
-			margin: 0 !important;
-			color: inherit !important;
-			background: transparent !important;
-			transition: var(--adw-button-transition) !important;
-			cursor: var(--adw-cursor-pointer) !important;
-			border-top: 1px color-mix(in srgb, currentColor var(--adw-border-opacity), transparent) solid !important;
+        /* Game icon and name */
+        div._3_xMyCJAh_Dv99KgZ54P3j
+        {
+            padding: 4px 12px !important;
+            width: auto !important;
+            margin: 0 !important;
+            color: inherit !important;
+            background: transparent !important;
+            transition: var(--adw-button-transition) !important;
+            cursor: var(--adw-cursor-pointer) !important;
+            border-top: 1px color-mix(in srgb, currentColor var(--adw-border-opacity), transparent) solid !important;
 
-			&:hover
-			{
-				background: color-mix(in srgb, currentColor var(--adw-hover-opacity), transparent) !important;
-			}
-			
-			&:active
-			{
-				background: color-mix(in srgb, currentColor var(--adw-active-opacity), transparent) !important;
-			}
+            &:hover
+            {
+                background: color-mix(in srgb, currentColor var(--adw-hover-opacity), transparent) !important;
+            }
 
-			/* Icon */
-			div._3tdftHFf8tvdJW34S-KwjR
-			{
-				width: 20px !important;
-				height: 20px !important;
-				border-radius: var(--adw-gameicon-radius) !important;
-				overflow: hidden !important;
-				margin: 0 !important;
-				flex-shrink: 0 !important;
-			}
+            &:active
+            {
+                background: color-mix(in srgb, currentColor var(--adw-active-opacity), transparent) !important;
+            }
 
-			/* Name */
-			div._28IqrZIgxpqkUQyhdaLDUN
-			{
-				color: inherit !important;
-				padding: 0 6px !important;
-				margin: 0 !important;
-				font-family: var(--adw-text-font) !important;
-				font-weight: var(--adw-text-title4-weight) !important;
-				font-size: var(--adw-text-title4-size) !important;
-				line-height: 20px !important;
-				text-transform: none !important;
-				letter-spacing: normal !important;
-			}
-		}
+            /* Icon */
+            div._3tdftHFf8tvdJW34S-KwjR
+            {
+                width: 20px !important;
+                height: 20px !important;
+                border-radius: var(--adw-gameicon-radius) !important;
+                overflow: hidden !important;
+                margin: 0 !important;
+                flex-shrink: 0 !important;
+            }
 
-		/* Title container */
-		div.aqYQCF7Ny9x3EKcjCOTRY
-		{
-			order: 1 !important;
-			padding: 0 !important;
-			margin: 0 !important;
-			color: inherit !important;
+            /* Name */
+            div._28IqrZIgxpqkUQyhdaLDUN
+            {
+                color: inherit !important;
+                padding: 0 6px !important;
+                margin: 0 !important;
+                font-family: var(--adw-text-font) !important;
+                font-weight: var(--adw-text-title4-weight) !important;
+                font-size: var(--adw-text-title4-size) !important;
+                line-height: 20px !important;
+                text-transform: none !important;
+                letter-spacing: normal !important;
+            }
+        }
 
-			/* Title */
-			div.DVBcpUzJ0x6kaRMfug0OJ
-			{
-				color: inherit !important;
-				font-family: var(--adw-text-font) !important;
-				font-weight: var(--adw-text-base-weight) !important;
-				font-size: var(--adw-text-title3-size) !important;
-				padding: 2px 12px 8px 12px !important;
-				display: block !important;
-				white-space: nowrap !important;
-			}
-		}
-	}
+        /* Title container */
+        div.aqYQCF7Ny9x3EKcjCOTRY
+        {
+            order: 1 !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            color: inherit !important;
+
+            /* Title */
+            div.DVBcpUzJ0x6kaRMfug0OJ
+            {
+                color: inherit !important;
+                font-family: var(--adw-text-font) !important;
+                font-weight: var(--adw-text-base-weight) !important;
+                font-size: var(--adw-text-title3-size) !important;
+                padding: 2px 12px 8px 12px !important;
+                display: block !important;
+                white-space: nowrap !important;
+            }
+        }
+    }
 }

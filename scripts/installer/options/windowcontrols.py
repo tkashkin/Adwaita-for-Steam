@@ -13,23 +13,24 @@ from ..utils.log import *
 from ..utils.os_settings import *
 
 ADW_WINDOWCONTROLS_PRESETS = {
-	"gnome": ":close",
-	"pantheon": "close:maximize",
-	"kde": ":minimize,maximize,close",
-	"windows": ":minimize,maximize,close",
-	"macos": "close,minimize,maximize:"
+    "gnome": ":close",
+    "pantheon": "close:maximize",
+    "kde": ":minimize,maximize,close",
+    "windows": ":minimize,maximize,close",
+    "macos": "close,minimize,maximize:"
 }
 
 ADW_WINDOWCONTROLS_SELECTORS = {
-	"minimize": ["&.minimizeButton"],
-	"maximize": ["&.maximizeButton", "&.restoreButton"],
-	"close": ["&.closeButton"]
+    "minimize": ["&.minimizeButton"],
+    "maximize": ["&.maximizeButton", "&.restoreButton"],
+    "close": ["&.closeButton"]
 }
 
 ADW_WINDOWCONTROLS_SELECTORS_CHAT = {
     "left": ["html.client_chat_frame div.chat_main.singlewindow:not(:has(div.friendsListContainer.collapsed)) div.multiChatDialog &"],
     "right": ["html.client_chat_frame div.chat_main.singlewindow div.friendsListContainer:not(.collapsed) &"]
 }
+
 
 class AdwWindowControlsTheme(StrEnum):
     AUTO = "auto"
@@ -61,6 +62,7 @@ class AdwWindowControlsTheme(StrEnum):
     def __repr__(self) -> str:
         return self.value
 
+
 @dataclass
 class AdwWindowControlsLayout:
     preset: str
@@ -74,13 +76,13 @@ class AdwWindowControlsLayout:
         (buttons_left, buttons_right) = [[b for b in s.split(",") if b in ADW_WINDOWCONTROLS_SELECTORS] for s in self.layout.split(":")]
 
         vars = [
-            f"--adw-windowcontrols-left-has-buttons: { 0 if len(buttons_left) == 0 else 1 };",
-            f"--adw-windowcontrols-left-buttons: { len(buttons_left) };",
-            f"--adw-windowcontrols-right-has-buttons: { 0 if len(buttons_right) == 0 else 1 };",
-            f"--adw-windowcontrols-right-buttons: { len(buttons_right) };",
+            f"--adw-windowcontrols-left-has-buttons: {0 if len(buttons_left) == 0 else 1};",
+            f"--adw-windowcontrols-left-buttons: {len(buttons_left)};",
+            f"--adw-windowcontrols-right-has-buttons: {0 if len(buttons_right) == 0 else 1};",
+            f"--adw-windowcontrols-right-buttons: {len(buttons_right)};",
             f"--adw-windowcontrols-close-margin: calc(var(--adw-windowcontrols-buttons-margin-outer) + var(--adw-windowcontrols-button-width) + var(--adw-windowcontrols-buttons-margin-inner));",
-            f"--adw-windowcontrols-close-margin-left: calc({ 1 if "close" in buttons_left else 0 } * var(--adw-windowcontrols-close-margin));",
-            f"--adw-windowcontrols-close-margin-right: calc({ 1 if "close" in buttons_right else 0 } * var(--adw-windowcontrols-close-margin));"
+            f"--adw-windowcontrols-close-margin-left: calc({1 if "close" in buttons_left else 0} * var(--adw-windowcontrols-close-margin));",
+            f"--adw-windowcontrols-close-margin-right: calc({1 if "close" in buttons_right else 0} * var(--adw-windowcontrols-close-margin));"
         ]
 
         (buttons_left, buttons_right) = (list(enumerate(buttons_left)), list(enumerate(reversed(buttons_right))))
@@ -88,23 +90,23 @@ class AdwWindowControlsLayout:
         buttons_right = map(AdwWindowControlsLayout._button_to_css("right"), buttons_right)
 
         return [
-        	AdwCSSBlock(
-        		selectors=[":root"],
-        		rules=vars,
-            	comment=f"Window controls layout variables: {self.preset} - {self.layout}"
-        	),
-        	AdwCSSBlock(
-				selectors=["body.DesktopUI", "html.client_chat_frame"],
-				rules=[],
-				nested_blocks=[
-					AdwCSSBlock(
-						selectors=[".title-bar-actions.window-controls .title-area-icon"],
-						rules=["visibility: hidden !important;"],
-						nested_blocks=[*buttons_left, *buttons_right]
-					)
-				],
-            	comment=f"Window controls layout styles: {self.preset} - {self.layout}"
-			)
+            AdwCSSBlock(
+                selectors=[":root"],
+                rules=vars,
+                comment=f"Window controls layout variables: {self.preset} - {self.layout}"
+            ),
+            AdwCSSBlock(
+                selectors=["body.DesktopUI", "html.client_chat_frame"],
+                rules=[],
+                nested_blocks=[
+                    AdwCSSBlock(
+                        selectors=[".title-bar-actions.window-controls .title-area-icon"],
+                        rules=["visibility: hidden !important;"],
+                        nested_blocks=[*buttons_left, *buttons_right]
+                    )
+                ],
+                comment=f"Window controls layout styles: {self.preset} - {self.layout}"
+            )
         ]
 
     @staticmethod
@@ -122,6 +124,8 @@ class AdwWindowControlsLayout:
                     return ADW_WINDOWCONTROLS_PRESETS["windows"]
                 case "darwin":
                     return ADW_WINDOWCONTROLS_PRESETS["macos"]
+                case _:
+                    return ADW_WINDOWCONTROLS_PRESETS["gnome"]
         elif preset in ADW_WINDOWCONTROLS_PRESETS:
             return ADW_WINDOWCONTROLS_PRESETS[preset]
 
@@ -146,6 +150,7 @@ class AdwWindowControlsLayout:
             ]
         )
 
+
 @dataclass
 class AdwWindowControls(AdwParsedOptionGroup):
     theme: AdwWindowControlsTheme
@@ -161,6 +166,7 @@ class AdwWindowControls(AdwParsedOptionGroup):
             ],
             blocks=self.layout.to_css()
         )
+
 
 class AdwWindowControlsOptions(AdwOptionGroup):
     title = "window controls"

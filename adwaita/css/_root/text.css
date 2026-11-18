@@ -1,53 +1,53 @@
 :root
 {
-	--adw-text-font-primary: "Adwaita Sans";
-	--adw-text-font-fallback: "Noto Sans", "Motiva Sans", Arial, Helvetica, sans-serif;
-	--adw-text-font: var(--adw-text-font-primary), var(--adw-text-font-fallback);
+    --adw-text-font-primary: "Adwaita Sans";
+    --adw-text-font-fallback: "Noto Sans", "Motiva Sans", Arial, Helvetica, sans-serif;
+    --adw-text-font: var(--adw-text-font-primary), var(--adw-text-font-fallback);
 
-	--adw-text-font-monospace-primary: "Adwaita Mono";
-	--adw-text-font-monospace-fallback: "Consolas", "Lucida Console", monospace;
-	--adw-text-font-monospace: var(--adw-text-font-monospace-primary), var(--adw-text-font-monospace-fallback);
+    --adw-text-font-monospace-primary: "Adwaita Mono";
+    --adw-text-font-monospace-fallback: "Consolas", "Lucida Console", monospace;
+    --adw-text-font-monospace: var(--adw-text-font-monospace-primary), var(--adw-text-font-monospace-fallback);
 
-	--adw-text-base-size: 15px;
-	--adw-text-base-weight: 400;
+    --adw-text-base-size: 15px;
+    --adw-text-base-weight: 400;
 
-	--adw-text-largetitle-size: 26px;
-	--adw-text-largetitle-weight: 800;
+    --adw-text-largetitle-size: 26px;
+    --adw-text-largetitle-weight: 800;
 
-	--adw-text-title1-size: 20px;
-	--adw-text-title1-weight: 800;
+    --adw-text-title1-size: 20px;
+    --adw-text-title1-weight: 800;
 
-	--adw-text-title2-size: 15px;
-	--adw-text-title2-weight: 800;
+    --adw-text-title2-size: 15px;
+    --adw-text-title2-weight: 800;
 
-	--adw-text-title3-size: 14px;
-	--adw-text-title3-weight: 700;
+    --adw-text-title3-size: 14px;
+    --adw-text-title3-weight: 700;
 
-	--adw-text-title4-size: 13px;
-	--adw-text-title4-weight: 700;
+    --adw-text-title4-size: 13px;
+    --adw-text-title4-weight: 700;
 
-	--adw-text-header-size: 14px;
-	--adw-text-header-weight: 700;
+    --adw-text-header-size: 14px;
+    --adw-text-header-weight: 700;
 
-	--adw-text-label-size: 15px;
-	--adw-text-label-weight: 400;
+    --adw-text-label-size: 15px;
+    --adw-text-label-weight: 400;
 
-	--adw-text-link-size: 14px;
-	--adw-text-link-weight: 700;
+    --adw-text-link-size: 14px;
+    --adw-text-link-weight: 700;
 
-	--adw-text-subtitle-size: 13px;
-	--adw-text-subtitle-weight: 400;
+    --adw-text-subtitle-size: 13px;
+    --adw-text-subtitle-weight: 400;
 
-	--adw-text-row-title-size: 14px;
-	--adw-text-row-title-weight: 400;
-	--adw-text-row-subtitle-size: 12px;
-	--adw-text-row-subtitle-weight: 400;
+    --adw-text-row-title-size: 14px;
+    --adw-text-row-title-weight: 400;
+    --adw-text-row-subtitle-size: 12px;
+    --adw-text-row-subtitle-weight: 400;
 
-	--adw-text-menu-size: 14px;
-	--adw-text-menu-weight: 400;
+    --adw-text-menu-size: 14px;
+    --adw-text-menu-weight: 400;
 
-	--adw-text-gamelist-size: 14px;
-	--adw-text-gamelist-weight: 400;
-	--adw-text-gamelist-section-size: 14px;
-	--adw-text-gamelist-section-weight: 700;
+    --adw-text-gamelist-size: 14px;
+    --adw-text-gamelist-weight: 400;
+    --adw-text-gamelist-section-size: 14px;
+    --adw-text-gamelist-section-weight: 700;
 }

@@ -1,10 +1,11 @@
-[*.py]
+[*]
 indent_style = space
 indent_size = 4
-insert_final_newline = true
+insert_final_newline = false
 trim_trailing_whitespace = true
+ij_any_keep_blank_lines_in_code = 2
 
-[*.css]
-indent_style = tab
-insert_final_newline = true
-trim_trailing_whitespace = true
+[*.json]
+ij_json_spaces_within_braces = true
+ij_json_object_wrapping = off
+ij_json_array_wrapping = off

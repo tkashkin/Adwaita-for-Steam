@@ -1,5 +1,5 @@
 /* Keep pointer cursor for clickable elements */
 :root
 {
-	--adw-cursor-pointer: pointer !important;
+    --adw-cursor-pointer: pointer !important;
 }
