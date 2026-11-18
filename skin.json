@@ -17,12 +17,14 @@
     "UseDefaultPatches": false,
     "Patches": [
         {
-            "MatchRegexString": "^Steam$",
-            "TargetCss": "injectors/millennium/full.css"
+            "MatchRegexString": ".DesktopUI",
+            "TargetCss": "injectors/millennium/full.css",
+            "TargetJs": "adwaita/js/main/main.js"
         },
         {
             "MatchRegexString": ".friendsui-container",
-            "TargetCss": "injectors/millennium/full.css"
+            "TargetCss": "injectors/millennium/full.css",
+            "TargetJs": "adwaita/js/chat/chat.js"
         },
         {
             "MatchRegexString": "Supernav$",
